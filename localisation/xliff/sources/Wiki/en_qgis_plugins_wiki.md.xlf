@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_plugins_wiki.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">(content:references:wiki:plugins)=</source>
+<target xml:lang="fr">(content:references:wiki:plugins)=</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Plugins <bpt id="1">&lt;a id="plugins"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Plugins <bpt id="1">&lt;a id="plugins"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">There are numerous extensions for QGIS, also called plugins, which provide extended functionalities. Usually, if you have a specific task and QGIS does not have the right functionality, look for a plugin. You google or search in the plugin window.</source>
+<target xml:lang="fr">There are numerous extensions for QGIS, also called plugins, which provide extended functionalities. Usually, if you have a specific task and QGIS does not have the right functionality, look for a plugin. You google or search in the plugin window.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Plugins in QGIS are useful additional tools you can use to make some tasks easier. Plugins are written by QGIS developers and other independent users who want to extend the core functionality of the software. These plugins are made available in QGIS for all the users for free. Once installed, plugins remain available in QGIS.</source>
+<target xml:lang="fr">Plugins in QGIS are useful additional tools you can use to make some tasks easier. Plugins are written by QGIS developers and other independent users who want to extend the core functionality of the software. These plugins are made available in QGIS for all the users for free. Once installed, plugins remain available in QGIS.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+You don’t have to reinstall plugins for every new project.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+You don’t have to reinstall plugins for every new project.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Installation of plugins <bpt id="1">&lt;a id="installation-of-plugins"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Installation of plugins <bpt id="1">&lt;a id="installation-of-plugins"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">To install a plugin <ph id="1">`Plugins`</ph> → <ph id="2">`Manage and Install Plugins…`</ph> → <ph id="3">`All`</ph> → Search for the plugin → <ph id="4">`Install Plugin`</ph>.</source>
+<target xml:lang="fr">To install a plugin <ph id="1">`Plugins`</ph> → <ph id="2">`Manage and Install Plugins…`</ph> → <ph id="3">`All`</ph> → Search for the plugin → <ph id="4">`Install Plugin`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph>
+If you cannot find a specific extension, check your capitalisation and correct use of spaces. If you still cannot find an extension, you may need to allow the experimental extensions in the options (see below).
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph>
+If you cannot find a specific extension, check your capitalisation and correct use of spaces. If you still cannot find an extension, you may need to allow the experimental extensions in the options (see below).
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Manage Plugins <bpt id="1">&lt;a id="manage-plugins"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Manage Plugins <bpt id="1">&lt;a id="manage-plugins"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">If you are currently not using installed plugins it might be useful to deactivate these plugins to avoid crowded toolbars and to reduce open panels.</source>
+<target xml:lang="fr">If you are currently not using installed plugins it might be useful to deactivate these plugins to avoid crowded toolbars and to reduce open panels.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Allow experimental extensions <bpt id="1">&lt;a id="allow-experimental-extensions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Allow experimental extensions <bpt id="1">&lt;a id="allow-experimental-extensions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Experimental extensions are either still under development, or they are obsolete extensions that are no longer further optimised/adapted for the newer versions of QGIS. Nevertheless, the use of experimental extensions can be useful:</source>
+<target xml:lang="fr">Experimental extensions are either still under development, or they are obsolete extensions that are no longer further optimised/adapted for the newer versions of QGIS. Nevertheless, the use of experimental extensions can be useful:</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Specific functions are not supported in any other extension.</source>
+<target xml:lang="fr">Specific functions are not supported in any other extension.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Alternative if there are problems with another extension.</source>
+<target xml:lang="fr">Alternative if there are problems with another extension.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">A tutorial makes use of a specific extension.</source>
+<target xml:lang="fr">A tutorial makes use of a specific extension.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph>
+Due to the often missing optimization for the used QGIS version, experimental extensions may cause more error messages or other problems up to a crash of QGIS. Experimental extensions should therefore only be activated for use and then deactivated again. In addition, make sure that the current working progress is saved to avoid data loss when QGIS crashes.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph>
+Due to the often missing optimization for the used QGIS version, experimental extensions may cause more error messages or other problems up to a crash of QGIS. Experimental extensions should therefore only be activated for use and then deactivated again. In addition, make sure that the current working progress is saved to avoid data loss when QGIS crashes.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Downloading the Quick OSM plugin <bpt id="1">&lt;a id="downloading-the-quick-osm-plugin"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Downloading the Quick OSM plugin <bpt id="1">&lt;a id="downloading-the-quick-osm-plugin"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">To download data from data and import it into your QGIS the plugin <bpt id="1">**</bpt>QuickOSM<ept id="1">**</ept> is great. First you need to install it by searching for it in the <ph id="2">`Manage and Install Plugins`</ph> Tab.</source>
+<target xml:lang="fr">To download data from data and import it into your QGIS the plugin <bpt id="1">**</bpt>QuickOSM<ept id="1">**</ept> is great. First you need to install it by searching for it in the <ph id="2">`Manage and Install Plugins`</ph> Tab.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph>How to download the plugin</source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph>How to download the plugin</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/managa_install_plugins.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/managa_install_plugins.png</ph></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 400px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: managa_install_plugins_wiki</ph></source>
+<target xml:lang="fr"><ph id="1">width: 400px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: managa_install_plugins_wiki</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Manage and Install Plugins.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Manage and Install Plugins.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/install_quickosm.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/install_quickosm.png</ph></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 800px</ph>
+<ph id="2">name: install_quickosm_wiki</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 800px</ph>
+<ph id="2">name: install_quickosm_wiki</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Installing QuickOSM.
+<ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr">Installing QuickOSM.
+<ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">To launch the newly installed plugin, click on <bpt id="1">![</bpt><ept id="1">](fig/quickosmplugin.png)</ept> or click under <ph id="2">`vector`</ph> → <ph id="3">`QuickOSM`</ph>.</source>
+<target xml:lang="fr">To launch the newly installed plugin, click on <bpt id="1">![</bpt><ept id="1">](fig/quickosmplugin.png)</ept> or click under <ph id="2">`vector`</ph> → <ph id="3">`QuickOSM`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Follow the steps to fetch for data:</source>
+<target xml:lang="fr">Follow the steps to fetch for data:</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Select a Key and Value from the dropdown list. If you are unsure, check here: <bpt id="1">[</bpt>taginfo.openstreetmap.org<ept id="1">](https://taginfo.openstreetmap.org)</ept>.</source>
+<target xml:lang="fr">Select a Key and Value from the dropdown list. If you are unsure, check here: <bpt id="1">[</bpt>taginfo.openstreetmap.org<ept id="1">](https://taginfo.openstreetmap.org)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/key_value_quickosm.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/key_value_quickosm.png</ph></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 800px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: key_value_quickosm_wiki</ph></source>
+<target xml:lang="fr"><ph id="1">width: 800px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: key_value_quickosm_wiki</ph></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Choosing key and value in QuickOSM.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Choosing key and value in QuickOSM.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Limit the area by typing in the name of your area of interest.</source>
+<target xml:lang="fr">Limit the area by typing in the name of your area of interest.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Unfold the tab <ph id="1">`Advanced`</ph>. Only select the datatypes you are expecting to minimize errors.</source>
+<target xml:lang="fr">Unfold the tab <ph id="1">`Advanced`</ph>. Only select the datatypes you are expecting to minimize errors.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/quickosm_usage.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/quickosm_usage.png</ph></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 800px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: quickosm_usage_wiki</ph></source>
+<target xml:lang="fr"><ph id="1">width: 800px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: quickosm_usage_wiki</ph></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Running the QuickOSM plugin.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Running the QuickOSM plugin.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Run query`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Run query`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>How to fetch data for multiple queries</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>How to fetch data for multiple queries</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">If you want to get more data in the same area, you can add a query by clicking on the <bpt id="1">![</bpt><ept id="1">](fig/plus_quickosm.png)</ept>. Be careful choosing the right logical operator <ph id="2">`And`</ph> or <ph id="3">`Or`</ph>. If you are unsure check this <bpt id="4">[</bpt>Wikipage<ept id="4">](/content/Wiki/en_qgis_non_spatial_queries_wiki)</ept>.</source>
+<target xml:lang="fr">If you want to get more data in the same area, you can add a query by clicking on the <bpt id="1">![</bpt><ept id="1">](fig/plus_quickosm.png)</ept>. Be careful choosing the right logical operator <ph id="2">`And`</ph> or <ph id="3">`Or`</ph>. If you are unsure check this <bpt id="4">[</bpt>Wikipage<ept id="4">](/content/Wiki/en_qgis_non_spatial_queries_wiki)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

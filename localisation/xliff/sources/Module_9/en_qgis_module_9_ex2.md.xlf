@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_9/en_qgis_module_9_ex2.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">🚧 This section of the training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</source>
+<target xml:lang="fr">🚧 This section of the training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Task 2 - Access healthcare - avoid areas <bpt id="1">&lt;a id="task-2-access-healthcare-avoid-areas"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 2 - Access healthcare - avoid areas <bpt id="1">&lt;a id="task-2-access-healthcare-avoid-areas"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">For the main area of Kutupalong Refugee Camp, we have the boundary, the path and road network, water streams and health facilities. In this task we will compare openrouteservice isochrone and QGIS built-in service area catchments. Also we will showcase the avoid area feature in openrouteservice to account for a simple simulated flooding.</source>
+<target xml:lang="fr">For the main area of Kutupalong Refugee Camp, we have the boundary, the path and road network, water streams and health facilities. In this task we will compare openrouteservice isochrone and QGIS built-in service area catchments. Also we will showcase the avoid area feature in openrouteservice to account for a simple simulated flooding.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Download all datasets <bpt id="1">__</bpt><bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_9/Modul_9_Exercise_2_Access_healthcare_avoid_areas/Modul_9_Exercise_2.zip)</ept><ept id="1">__</ept>.
+ Save the folder on your computer.
+ Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects.
+ Under "data > input" you find the geopackage file <ph id="3">`task2.gpkg`</ph> which contains the following vector layers:</source>
+<target xml:lang="fr">Download all datasets <bpt id="1">__</bpt><bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_9/Modul_9_Exercise_2_Access_healthcare_avoid_areas/Modul_9_Exercise_2.zip)</ept><ept id="1">__</ept>.
+ Save the folder on your computer.
+ Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects.
+ Under "data > input" you find the geopackage file <ph id="3">`task2.gpkg`</ph> which contains the following vector layers:</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`camp18_healthcare`</ph> (points): Healthcare facility locations within camp 18 (from <ph id="2">`OpenStreetMap`</ph>)</source>
+<target xml:lang="fr"><ph id="1">`camp18_healthcare`</ph> (points): Healthcare facility locations within camp 18 (from <ph id="2">`OpenStreetMap`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`camp18_ways`</ph> (points): Roads and paths within camp 18 (from <ph id="2">`OpenStreetMap`</ph>)</source>
+<target xml:lang="fr"><ph id="1">`camp18_ways`</ph> (points): Roads and paths within camp 18 (from <ph id="2">`OpenStreetMap`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`camp18_streams`</ph> (points): Water streams within camp 18 (from <ph id="2">`OpenStreetMap`</ph>)</source>
+<target xml:lang="fr"><ph id="1">`camp18_streams`</ph> (points): Water streams within camp 18 (from <ph id="2">`OpenStreetMap`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`camp18_boundary`</ph> (polygons): The camps legal boundary (from <ph id="2">`HDX`</ph>)</source>
+<target xml:lang="fr"><ph id="1">`camp18_boundary`</ph> (polygons): The camps legal boundary (from <ph id="2">`HDX`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">STEP 1: Healthcare catchment - Isochrones <bpt id="1">&lt;a id="step-1-healthcare-catchment-isochrones"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 1: Healthcare catchment - Isochrones <bpt id="1">&lt;a id="step-1-healthcare-catchment-isochrones"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">First we need to reproject our layers. To do so, open the <ph id="1">`Processing Toolbox`</ph> and search for <ph id="2">`Reproject layer`</ph>. Select one of your layers as your input layer and choose <bpt id="3">**</bpt>WGS 84 / UTM zone 46N<ept id="3">**</ept> as your target CRS. Maybe you have to click on the planet button on the right and search for it, if it is not in the list. Leave all other settings at default. Repeat the process with all your layers to reproject all of them.</source>
+<target xml:lang="fr">First we need to reproject our layers. To do so, open the <ph id="1">`Processing Toolbox`</ph> and search for <ph id="2">`Reproject layer`</ph>. Select one of your layers as your input layer and choose <bpt id="3">**</bpt>WGS 84 / UTM zone 46N<ept id="3">**</ept> as your target CRS. Maybe you have to click on the planet button on the right and search for it, if it is not in the list. Leave all other settings at default. Repeat the process with all your layers to reproject all of them.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">To get the isochrones click in the toolbar on the ORS Tools plugin Icon. Click on <ph id="1">`Batch Jobs`</ph> -> <ph id="2">`Isochrones from Layer`</ph>.
+Leave all settings at default except:
+|                              |                              |
+|------------------------------|------------------------------|
+| Travel mode                  | foot-walking                 |
+| Input Point layer            | camp_healthcare              |
+| Comma separated ranges       | 5, 10                        |</source>
+<target xml:lang="fr">To get the isochrones click in the toolbar on the ORS Tools plugin Icon. Click on <ph id="1">`Batch Jobs`</ph> -> <ph id="2">`Isochrones from Layer`</ph>.
+Leave all settings at default except:
+|                              |                              |
+|------------------------------|------------------------------|
+| Travel mode                  | foot-walking                 |
+| Input Point layer            | camp_healthcare              |
+| Comma separated ranges       | 5, 10                        |</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Watch here:
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Watch here:
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">STEP 2: Healthcare catchment - QGIS Service area <bpt id="1">&lt;a id="step-2-healthcare-catchment-qgis-service-area"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 2: Healthcare catchment - QGIS Service area <bpt id="1">&lt;a id="step-2-healthcare-catchment-qgis-service-area"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Isochrones in QGIS can be generated via the service area tool in combination with the minimum bounding geometry tool. Based on a road network, we define origins, a default speed, and a maximum cost.</source>
+<target xml:lang="fr">Isochrones in QGIS can be generated via the service area tool in combination with the minimum bounding geometry tool. Based on a road network, we define origins, a default speed, and a maximum cost.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Open the <ph id="1">`Processing Toolbox`</ph> and scroll down to <ph id="2">`Network Analysis`</ph>, choose <ph id="3">`Service area (from layer)`</ph> or enter "Service area (from layer)" in the search bar.
+Leave all settings at default except:
+|                                      |                                     |
+|--------------------------------------|-------------------------------------|
+| Vector layer representing network    | camp_ways                           |
+| Path type to calculate               | shortest                            |
+| Vector layer with start points       | camp_healthcare                     |
+| Travel cost                          | 500 (meters)                        |
+| <bpt id="4">**</bpt>Advanced Parameters<ept id="4">**</ept>              |                                     |
+| Default speed                        | 5.0 (pedestrian)                    |
+| Topology tolerance                   | 50.0                                |</source>
+<target xml:lang="fr">Open the <ph id="1">`Processing Toolbox`</ph> and scroll down to <ph id="2">`Network Analysis`</ph>, choose <ph id="3">`Service area (from layer)`</ph> or enter "Service area (from layer)" in the search bar.
+Leave all settings at default except:
+|                                      |                                     |
+|--------------------------------------|-------------------------------------|
+| Vector layer representing network    | camp_ways                           |
+| Path type to calculate               | shortest                            |
+| Vector layer with start points       | camp_healthcare                     |
+| Travel cost                          | 500 (meters)                        |
+| <bpt id="4">**</bpt>Advanced Parameters<ept id="4">**</ept>              |                                     |
+| Default speed                        | 5.0 (pedestrian)                    |
+| Topology tolerance                   | 50.0                                |</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">QGIS on-the-fly creates a network graph from the road and path network. The graph is rather simple. All edges can be traveled in both ways, there are no weights included. Travel cost is represented by the length of a segment and the default average speed. The output is a simplification of the input road &amp; path geometry but with the attributes of the healthcare facilities. For every healthcare facility we see a multiline geometry object in the output. We can style it according to the attribute “@osmId” to see which segments are assigned to which facility.</source>
+<target xml:lang="fr">QGIS on-the-fly creates a network graph from the road and path network. The graph is rather simple. All edges can be traveled in both ways, there are no weights included. Travel cost is represented by the length of a segment and the default average speed. The output is a simplification of the input road &amp; path geometry but with the attributes of the healthcare facilities. For every healthcare facility we see a multiline geometry object in the output. We can style it according to the attribute “@osmId” to see which segments are assigned to which facility.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Your result should look like this:</source>
+<target xml:lang="fr">Your result should look like this:</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">STEP 3: Service area by minimum bounding box <bpt id="1">&lt;a id="step-3-service-area-by-minimum-bounding-box"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 3: Service area by minimum bounding box <bpt id="1">&lt;a id="step-3-service-area-by-minimum-bounding-box"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">In order to better compare the result of the service areas and isochrones we will again compute the minimum bounding geometry. But this time for the multiline output of the service area tool.</source>
+<target xml:lang="fr">In order to better compare the result of the service areas and isochrones we will again compute the minimum bounding geometry. But this time for the multiline output of the service area tool.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Open the <ph id="1">`Processing Toolbox`</ph>, choose <ph id="2">`Network Analysis`</ph>,then choose <ph id="3">`Minimum Bounding Geometry`</ph>or enter "Minimum Bounding Geometry" in the search bar.
+Leave all settings at default except:
+|                              |                              |
+|------------------------------|------------------------------|
+| Input layer                  | Service area (lines)         |
+| Field                        | @osmId                       |
+| Geometry type                | Convex Hull                  |</source>
+<target xml:lang="fr">Open the <ph id="1">`Processing Toolbox`</ph>, choose <ph id="2">`Network Analysis`</ph>,then choose <ph id="3">`Minimum Bounding Geometry`</ph>or enter "Minimum Bounding Geometry" in the search bar.
+Leave all settings at default except:
+|                              |                              |
+|------------------------------|------------------------------|
+| Input layer                  | Service area (lines)         |
+| Field                        | @osmId                       |
+| Geometry type                | Convex Hull                  |</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Watch here:
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Watch here:
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">STEP 4: Healthcare catchment - Isochrones avoid flood <bpt id="1">&lt;a id="step-4-healthcare-catchment-isochrones-avoid-flood"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">STEP 4: Healthcare catchment - Isochrones avoid flood <bpt id="1">&lt;a id="step-4-healthcare-catchment-isochrones-avoid-flood"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">In this part we will again calculate catchments based on the same configured isochrones. But we will include a polygon for the avoid area functionality in openrouteservice. For the <bpt id="1">**</bpt>avoid area<ept id="1">**</ept> we will use the water streams that run through the main camp area. The avoid areas function of openrouteservice only allows polygons as input, not line geometries. Therefore we need to conduct some preprocessing steps:</source>
+<target xml:lang="fr">In this part we will again calculate catchments based on the same configured isochrones. But we will include a polygon for the avoid area functionality in openrouteservice. For the <bpt id="1">**</bpt>avoid area<ept id="1">**</ept> we will use the water streams that run through the main camp area. The avoid areas function of openrouteservice only allows polygons as input, not line geometries. Therefore we need to conduct some preprocessing steps:</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Reproject the the camp_stream layer to be able to use a metric distance to buffer. Like before use <bpt id="1">**</bpt>WGS 84 / UTM zone 46N<ept id="1">**</ept> as the target projection.</source>
+<target xml:lang="fr">Reproject the the camp_stream layer to be able to use a metric distance to buffer. Like before use <bpt id="1">**</bpt>WGS 84 / UTM zone 46N<ept id="1">**</ept> as the target projection.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Now buffer the reprojected stream layer into a polygon layer with a distance of 2 meters</source>
+<target xml:lang="fr">Now buffer the reprojected stream layer into a polygon layer with a distance of 2 meters</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">We are set to use the buffered stream layer as avoid area or exclusion layer for the routing.</source>
+<target xml:lang="fr">We are set to use the buffered stream layer as avoid area or exclusion layer for the routing.</target>
+</trans-unit>
+<trans-unit id="sd1_sf15_tu2" resname="sd1_1" restype="x-alt" xml:space="preserve">
+<source xml:lang="en">Icon</source>
+<target xml:lang="fr">Icon</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Click in the toolbar on the ORS Tools plugin Icon <ph id="1">[#$sd1_sf15_dp1]</ph>. Click on <ph id="2">`Batch Jobs`</ph> -> <ph id="3">`Isochrones from Layer`</ph>.
+Leave all settings at default except:
+|                              |                              |
+|------------------------------|------------------------------|
+| Travel mode                  | foot-walking                 |
+| Input Point layer            | camp_healthcare              |
+| Comma separated ranges       | 5, 10                        |
+| <bpt id="4">**</bpt>Advanced Parameters<ept id="4">**</ept>      |                              |
+| Polygons to avoid            | stream_buffer                |</source>
+<target xml:lang="fr">Click in the toolbar on the ORS Tools plugin Icon <ph id="1">[#$sd1_sf15_dp1]</ph>. Click on <ph id="2">`Batch Jobs`</ph> -> <ph id="3">`Isochrones from Layer`</ph>.
+Leave all settings at default except:
+|                              |                              |
+|------------------------------|------------------------------|
+| Travel mode                  | foot-walking                 |
+| Input Point layer            | camp_healthcare              |
+| Comma separated ranges       | 5, 10                        |
+| <bpt id="4">**</bpt>Advanced Parameters<ept id="4">**</ept>      |                              |
+| Polygons to avoid            | stream_buffer                |</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Watch here:
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Watch here:
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

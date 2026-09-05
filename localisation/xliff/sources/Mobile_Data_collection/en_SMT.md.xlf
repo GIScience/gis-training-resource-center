@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Mobile_Data_collection/en_SMT.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Sketch Map Tool <bpt id="1">&lt;a id="sketch-map-tool"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Sketch Map Tool <bpt id="1">&lt;a id="sketch-map-tool"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">What is the Sketch Map Tool? <bpt id="1">&lt;a id="what-is-the-sketch-map-tool"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">What is the Sketch Map Tool? <bpt id="1">&lt;a id="what-is-the-sketch-map-tool"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">The <bpt id="1">[</bpt>Sketch Map Tool<ept id="1">](https://sketch-map-tool.heigit.org/)</ept> simplifies participatory mapping, by facilitating the creation and digitisation of paper-based maps, the so-called Sketch Maps. This low-tech solution enables the offline collection of local knowledge and perceptions with pen and paper maps. Every SketchMap contains a basemap with OpenStreetMap data or satellite imagery, which provides a scale and orientation to the user. Upon uploading pictures of marked maps, the tool automatically digitizes and georeferences the markings to download and integrate into Geographic Information Systems. The Sketch Map Tool combines widely used, analogue mapping with digital analysis, fosters community involvement and the usability of gained results.</source>
+<target xml:lang="fr">The <bpt id="1">[</bpt>Sketch Map Tool<ept id="1">](https://sketch-map-tool.heigit.org/)</ept> simplifies participatory mapping, by facilitating the creation and digitisation of paper-based maps, the so-called Sketch Maps. This low-tech solution enables the offline collection of local knowledge and perceptions with pen and paper maps. Every SketchMap contains a basemap with OpenStreetMap data or satellite imagery, which provides a scale and orientation to the user. Upon uploading pictures of marked maps, the tool automatically digitizes and georeferences the markings to download and integrate into Geographic Information Systems. The Sketch Map Tool combines widely used, analogue mapping with digital analysis, fosters community involvement and the usability of gained results.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">What is a Sketch Map? <bpt id="1">&lt;a id="what-is-a-sketch-map"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">What is a Sketch Map? <bpt id="1">&lt;a id="what-is-a-sketch-map"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Satellite imagery</source>
+<target xml:lang="fr">Satellite imagery</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">OSM data</source>
+<target xml:lang="fr">OSM data</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Data source</source>
+<target xml:lang="fr">Data source</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>World Imagery ESRI<ept id="1">](https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9#!)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>World Imagery ESRI<ept id="1">](https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9#!)</ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>OpenStreetMap Community<ept id="1">](https://www.openstreetmap.org/#map=6/51.330/10.453)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>OpenStreetMap Community<ept id="1">](https://www.openstreetmap.org/#map=6/51.330/10.453)</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Example map</source>
+<target xml:lang="fr">Example map</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/SMT_Satelite_Heidelberg_empty.jpg)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/SMT_Satelite_Heidelberg_empty.jpg)</ept></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/SMT_Heidelberg_empty.jpg)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/SMT_Heidelberg_empty.jpg)</ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Currentness</source>
+<target xml:lang="fr">Currentness</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">The satellite imagery is typically within 3-5 years of currency.</source>
+<target xml:lang="fr">The satellite imagery is typically within 3-5 years of currency.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Current OSM-data is used in the base map.</source>
+<target xml:lang="fr">Current OSM-data is used in the base map.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Biggest benefit</source>
+<target xml:lang="fr">Biggest benefit</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Impression of the landscape and topography</source>
+<target xml:lang="fr">Impression of the landscape and topography</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Clear outlines and at times labels especially of important infrastructure e.g. hospitals, possibility to improve the map by contributing to OSM.</source>
+<target xml:lang="fr">Clear outlines and at times labels especially of important infrastructure e.g. hospitals, possibility to improve the map by contributing to OSM.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Introduction in the Workflow Sketch Map Tool <bpt id="1">&lt;a id="introduction-in-the-workflow-sketch-map-tool"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Introduction in the Workflow Sketch Map Tool <bpt id="1">&lt;a id="introduction-in-the-workflow-sketch-map-tool"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">The Sketch Map Tool and its use in the EVCA <bpt id="1">&lt;a id="the-sketch-map-tool-and-its-use-in-the-evca"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">The Sketch Map Tool and its use in the EVCA <bpt id="1">&lt;a id="the-sketch-map-tool-and-its-use-in-the-evca"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">The Enhanced Vulnerability and Capacity Assessment (EVCA) is a participatory process developed for communities to become more resilient through the assessment and analysis of the risks they face and the identification of actions to reduce these risks. The EVCA guidelines contains different tools in order to help National Societies to understand the dynamics of risk in a specific community.
+In order to spatially assess and identify risk factors, the EVCA recommends to conduct a mapping activity throughout the process where community members jointly create a spatial map, hazard &amp; exposure map and vulnerability &amp; capacity map. Mapping is done with paper and pen and generally on blank paper. The Sketch Map Tool has great potential to support a sustainable participatory mapping process by digitising the process while, at the same time, keeping it simple.</source>
+<target xml:lang="fr">The Enhanced Vulnerability and Capacity Assessment (EVCA) is a participatory process developed for communities to become more resilient through the assessment and analysis of the risks they face and the identification of actions to reduce these risks. The EVCA guidelines contains different tools in order to help National Societies to understand the dynamics of risk in a specific community.
+In order to spatially assess and identify risk factors, the EVCA recommends to conduct a mapping activity throughout the process where community members jointly create a spatial map, hazard &amp; exposure map and vulnerability &amp; capacity map. Mapping is done with paper and pen and generally on blank paper. The Sketch Map Tool has great potential to support a sustainable participatory mapping process by digitising the process while, at the same time, keeping it simple.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>For more information on the EVCA:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>For more information on the EVCA:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>EVCA Mapping Toolbox<ept id="1">](https://preparecenter.org/wp-content/uploads/2023/08/EVCA-tools-compiled.pdf)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>EVCA Mapping Toolbox<ept id="1">](https://preparecenter.org/wp-content/uploads/2023/08/EVCA-tools-compiled.pdf)</ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>EVCA Guide<ept id="1">](https://communityengagementhub.org/resource/evca-guide/)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>EVCA Guide<ept id="1">](https://communityengagementhub.org/resource/evca-guide/)</ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Sketch Map Tool for digitisation of community mapping in the EVCA process<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/EVCA-Sketch_Map_Tool_Updated_3_24.pptx)</ept>: As part of the efforts to digitize the EVCA Process, we prepared a customized training package on the Sketch Map Tool for digitisation of community mapping, that can be used by trainers throughout the regional EVCA Training of Trainers workshops.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Sketch Map Tool for digitisation of community mapping in the EVCA process<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/EVCA-Sketch_Map_Tool_Updated_3_24.pptx)</ept>: As part of the efforts to digitize the EVCA Process, we prepared a customized training package on the Sketch Map Tool for digitisation of community mapping, that can be used by trainers throughout the regional EVCA Training of Trainers workshops.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Digitising Paper-Based Community mapping in the EVCA<ept id="1">](https://preparecenter.org/wp-content/uploads/2024/03/202403-Case-Study-DDR-in-Action-Columbia.pdf)</ept>: Case Study on the SKetch Map Tool in action for Disaster Risk Reduction Activities in Colombia.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Digitising Paper-Based Community mapping in the EVCA<ept id="1">](https://preparecenter.org/wp-content/uploads/2024/03/202403-Case-Study-DDR-in-Action-Columbia.pdf)</ept>: Case Study on the SKetch Map Tool in action for Disaster Risk Reduction Activities in Colombia.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>For gaining experiences on the use of the Sketch Map Tool:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>For gaining experiences on the use of the Sketch Map Tool:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Find our customized introduction to the SKetch Map Tool <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx)</ept>.</source>
+<target xml:lang="fr">Find our customized introduction to the SKetch Map Tool <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Click <bpt id="1">[</bpt>here<ept id="1">](/content/Mobile_Data_collection/en_SMT_training.md)</ept> to navigate to the training exercises provided on this platform on the use of the Sketch Map Tool.</source>
+<target xml:lang="fr">Click <bpt id="1">[</bpt>here<ept id="1">](/content/Mobile_Data_collection/en_SMT_training.md)</ept> to navigate to the training exercises provided on this platform on the use of the Sketch Map Tool.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

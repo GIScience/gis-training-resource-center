@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Trainers_corner/en_training_graphical_outline.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Training Agenda and Handout <bpt id="1">&lt;a id="training-agenda-and-handout"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Training Agenda and Handout <bpt id="1">&lt;a id="training-agenda-and-handout"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">An agenda is where participants can find all the relevant information about the workshop, what they need to bring, what they will need to succeed, and how they can prepare on their own, before, during, and after the training. This section will highlight main elements and aspects that are needed to create a detailed agenda for the training.</source>
+<target xml:lang="fr">An agenda is where participants can find all the relevant information about the workshop, what they need to bring, what they will need to succeed, and how they can prepare on their own, before, during, and after the training. This section will highlight main elements and aspects that are needed to create a detailed agenda for the training.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">The plan can be designed in various different formats, such as paper handouts or digital whiteboards such as <bpt id="1">[</bpt>miro boards<ept id="1">](https://miro.com)</ept>, <bpt id="2">[</bpt>padlets<ept id="2">](https://padlet.com)</ept>. A digital agenda offers participants the possibility to ask questions and review the input of other participants at any time (for example, when they are preparing for the next session.), however it requires an internet connection. You can also sketch out flowcharts using <bpt id="3">[</bpt>draw.io<ept id="3">](https://app.diagrams.net)</ept>.</source>
+<target xml:lang="fr">The plan can be designed in various different formats, such as paper handouts or digital whiteboards such as <bpt id="1">[</bpt>miro boards<ept id="1">](https://miro.com)</ept>, <bpt id="2">[</bpt>padlets<ept id="2">](https://padlet.com)</ept>. A digital agenda offers participants the possibility to ask questions and review the input of other participants at any time (for example, when they are preparing for the next session.), however it requires an internet connection. You can also sketch out flowcharts using <bpt id="3">[</bpt>draw.io<ept id="3">](https://app.diagrams.net)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">What does an agenda need? <bpt id="1">&lt;a id="what-does-an-agenda-need"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">What does an agenda need? <bpt id="1">&lt;a id="what-does-an-agenda-need"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">The agenda should contain all the relevant information for the training. The time, dates, location or link to a video call (including instructions how to enter), requirements (in most cases a computer with QGIS installed and enough disk space to download the exercise data), as well as what the participants can expect, and what the trainers expect from the participants.</source>
+<target xml:lang="fr">The agenda should contain all the relevant information for the training. The time, dates, location or link to a video call (including instructions how to enter), requirements (in most cases a computer with QGIS installed and enough disk space to download the exercise data), as well as what the participants can expect, and what the trainers expect from the participants.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">It is also good to include information on how the course is structured. If you are using the material from the training platform, you should explain how the platform is structured (i.e. the three main components - modules, wiki, and exercises - and where participants can find information).</source>
+<target xml:lang="fr">It is also good to include information on how the course is structured. If you are using the material from the training platform, you should explain how the platform is structured (i.e. the three main components - modules, wiki, and exercises - and where participants can find information).</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">The agenda should also provide an overview on what will be done on what day or time, so participants can contextualize each session into the larger training program. This can be done as a timeline for example.</source>
+<target xml:lang="fr">The agenda should also provide an overview on what will be done on what day or time, so participants can contextualize each session into the larger training program. This can be done as a timeline for example.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Lastly, you should provide a link to the material (slides, handouts, exercise data) prepared for the workshop, so participants can find it quickly without searching through email or webpages.</source>
+<target xml:lang="fr">Lastly, you should provide a link to the material (slides, handouts, exercise data) prepared for the workshop, so participants can find it quickly without searching through email or webpages.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">The table below summarizes each item and gives a short description of what its content could be.</source>
+<target xml:lang="fr">The table below summarizes each item and gives a short description of what its content could be.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Information</source>
+<target xml:lang="fr">Information</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Time &amp; dates</source>
+<target xml:lang="fr">Time &amp; dates</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Time &amp; dates for the participants to plan their own working days around it</source>
+<target xml:lang="fr">Time &amp; dates for the participants to plan their own working days around it</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Location or link to webinar</source>
+<target xml:lang="fr">Location or link to webinar</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Address or link for participants to quickly join the training</source>
+<target xml:lang="fr">Address or link for participants to quickly join the training</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Requirements</source>
+<target xml:lang="fr">Requirements</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">What are the requirements for the participation (laptop, internet connection) and completion of the seminar (attendance, ...)</source>
+<target xml:lang="fr">What are the requirements for the participation (laptop, internet connection) and completion of the seminar (attendance, ...)</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Expectations</source>
+<target xml:lang="fr">Expectations</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">What competences are expected of the participants?</source>
+<target xml:lang="fr">What competences are expected of the participants?</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Structure of the training/material</source>
+<target xml:lang="fr">Structure of the training/material</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Convey the structure of the platform.</source>
+<target xml:lang="fr">Convey the structure of the platform.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Timeline</source>
+<target xml:lang="fr">Timeline</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Provide a timeline for the course.</source>
+<target xml:lang="fr">Provide a timeline for the course.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Available material</source>
+<target xml:lang="fr">Available material</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Add a link for participants to find and download all the necessary material</source>
+<target xml:lang="fr">Add a link for participants to find and download all the necessary material</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">You should adapt the agenda to your needs and the needs of your participants. For example, after each day, provide them with a question to reflect on what they have learnt or how they can apply their newfound skills.</source>
+<target xml:lang="fr">You should adapt the agenda to your needs and the needs of your participants. For example, after each day, provide them with a question to reflect on what they have learnt or how they can apply their newfound skills.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Tip}</ph>
+You can also add blank sticky notes or spaces (in-person or digitally), where participants can write down their notes, findings, ideas or questions.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Tip}</ph>
+You can also add blank sticky notes or spaces (in-person or digitally), where participants can write down their notes, findings, ideas or questions.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Agenda ideas <bpt id="1">&lt;a id="agenda-ideas"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Agenda ideas <bpt id="1">&lt;a id="agenda-ideas"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Be creative when preparing the agenda, since you can use it to actively engage participants during the training and make them feel more secure to ask questions. Most importantly, trainings should be an open learning environment where the different needs of participants are acknowledged.</source>
+<target xml:lang="fr">Be creative when preparing the agenda, since you can use it to actively engage participants during the training and make them feel more secure to ask questions. Most importantly, trainings should be an open learning environment where the different needs of participants are acknowledged.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Below are some examples of graphical outlines of past training workshops:</source>
+<target xml:lang="fr">Below are some examples of graphical outlines of past training workshops:</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><ph id="1">https://miro.com/app/board/uXjVNi7BRoQ=/</ph></source>
+<target xml:lang="fr"><ph id="1">https://miro.com/app/board/uXjVNi7BRoQ=/</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

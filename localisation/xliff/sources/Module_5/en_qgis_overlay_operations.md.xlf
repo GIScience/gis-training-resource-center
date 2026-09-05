@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_5/en_qgis_overlay_operations.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Overlay Operations (Clip, Dissolve, Buffer) <bpt id="1">&lt;a id="overlay-operations-clip-dissolve-buffer"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Overlay Operations (Clip, Dissolve, Buffer) <bpt id="1">&lt;a id="overlay-operations-clip-dissolve-buffer"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Overlay operations allow us to combine the geometries of two layers in different ways (see <ph id="1">{numref}</ph><ph id="2">`overlay_operations`</ph>).</source>
+<target xml:lang="fr">Overlay operations allow us to combine the geometries of two layers in different ways (see <ph id="1">{numref}</ph><ph id="2">`overlay_operations`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">The difference to spatial joins is that the <bpt id="1">__</bpt>geometries are transformed in the process<ept id="1">__</ept>, and not primarily the attributes.</source>
+<target xml:lang="fr">The difference to spatial joins is that the <bpt id="1">__</bpt>geometries are transformed in the process<ept id="1">__</ept>, and not primarily the attributes.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/overlay_operations.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/overlay_operations.png</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: overlay_operations</ph>
+<ph id="2">width: 500 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: overlay_operations</ph>
+<ph id="2">width: 500 px</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Visual representation of different overlay operations.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Visual representation of different overlay operations.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Overlay operations include <bpt id="1">__</bpt>Clipping, Buffering, and Dissolving<ept id="1">__</ept>. In the next subchapters, we will take a look at each of these overlay operations in turn and provide some examples for humanitarian work.</source>
+<target xml:lang="fr">Overlay operations include <bpt id="1">__</bpt>Clipping, Buffering, and Dissolving<ept id="1">__</ept>. In the next subchapters, we will take a look at each of these overlay operations in turn and provide some examples for humanitarian work.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Clip <bpt id="1">&lt;a id="clip"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Clip <bpt id="1">&lt;a id="clip"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">The <bpt id="1">![</bpt><ept id="1">](/fig/mAlgorithmClip.png)</ept> <ph id="2">`Clip`</ph> tool is used to cut a vector layer using the boundaries of another polygon layer. In other words, it extracts a portion of a dataset based on the boundaries of another.</source>
+<target xml:lang="fr">The <bpt id="1">![</bpt><ept id="1">](/fig/mAlgorithmClip.png)</ept> <ph id="2">`Clip`</ph> tool is used to cut a vector layer using the boundaries of another polygon layer. In other words, it extracts a portion of a dataset based on the boundaries of another.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">It keeps only the parts of the features in the input layer that are inside the polygons of the overlay layer, producing a refined dataset.</source>
+<target xml:lang="fr">It keeps only the parts of the features in the input layer that are inside the polygons of the overlay layer, producing a refined dataset.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">While the core attributes of the features remain the same, some properties, like area or length, may change after the clipping operation. If you've stored these properties as attributes, you might need to update them manually.</source>
+<target xml:lang="fr">While the core attributes of the features remain the same, some properties, like area or length, may change after the clipping operation. If you've stored these properties as attributes, you might need to update them manually.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Humanitarian Example:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+<bpt id="4">*</bpt>Flood extent data for Pakistan is available, but the focus is on mapping flood damage in a specific administrative region. In this case, the flood layer can be clipped to the administrative boundaries of the area of interest.<ept id="4">*</ept></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Humanitarian Example:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+<bpt id="4">*</bpt>Flood extent data for Pakistan is available, but the focus is on mapping flood damage in a specific administrative region. In this case, the flood layer can be clipped to the administrative boundaries of the area of interest.<ept id="4">*</ept></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">The tool has two different input options:</source>
+<target xml:lang="fr">The tool has two different input options:</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Input layer<ept id="1">__</ept>: Layer from which the selection is clipped</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Input layer<ept id="1">__</ept>: Layer from which the selection is clipped</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Overlay layer<ept id="1">__</ept>: Area of interest to which the input layer will be clipped</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Overlay layer<ept id="1">__</ept>: Area of interest to which the input layer will be clipped</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_clip_sudan.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_clip_sudan.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 550 px</ph>
+<ph id="2">name: en_clip_sudan</ph></source>
+<target xml:lang="fr"><ph id="1">width: 550 px</ph>
+<ph id="2">name: en_clip_sudan</ph></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Screenshot of the Clip tool with the input data.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Screenshot of the Clip tool with the input data.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Exercise: Clipping a roads layer to administrative boundaries <bpt id="1">&lt;a id="exercise-clipping-a-roads-layer-to-administrative-boundaries"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise: Clipping a roads layer to administrative boundaries <bpt id="1">&lt;a id="exercise-clipping-a-roads-layer-to-administrative-boundaries"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Information on road infrastructure for humanitarian aid operations is of great importance and can be easily retrieved from open-source data sources like OpenStreetMap. However, this information is often included in extensive datasets that contain a significant amount of irrelevant details for specific operations or it covers a lot more area than is necessary for the operation. To make working with this data more efficient, it is common practice toclip the data to the area of interest. In addition to clipping, data can often be filtered, in order to remove data we are not interested in.</source>
+<target xml:lang="fr">Information on road infrastructure for humanitarian aid operations is of great importance and can be easily retrieved from open-source data sources like OpenStreetMap. However, this information is often included in extensive datasets that contain a significant amount of irrelevant details for specific operations or it covers a lot more area than is necessary for the operation. To make working with this data more efficient, it is common practice toclip the data to the area of interest. In addition to clipping, data can often be filtered, in order to remove data we are not interested in.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Load the OSM roads data from the HOT Export tool (part of the Humanitarian OpenStreetMap Team) <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Spatial_geodataprocessing/hotosm_sdn_roads_lines_shp.zip)</ept> .
+as a new layer: <bpt id="2">__</bpt>Road_infrastructure_Sudan.geojson<ept id="2">__</ept>.</source>
+<target xml:lang="fr">Load the OSM roads data from the HOT Export tool (part of the Humanitarian OpenStreetMap Team) <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_5/Spatial_geodataprocessing/hotosm_sdn_roads_lines_shp.zip)</ept> .
+as a new layer: <bpt id="2">__</bpt>Road_infrastructure_Sudan.geojson<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Filter the layer by using the <bpt id="1">__</bpt>query builder<ept id="1">__</ept> to only show <bpt id="2">__</bpt>primary and residential roads<ept id="2">__</ept> ("highway" = 'primary' OR "highway" = 'residential').</source>
+<target xml:lang="fr">Filter the layer by using the <bpt id="1">__</bpt>query builder<ept id="1">__</ept> to only show <bpt id="2">__</bpt>primary and residential roads<ept id="2">__</ept> ("highway" = 'primary' OR "highway" = 'residential').</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Load the admin1 layer for Sudan which contains the district White Nile, <bpt id="1">__</bpt>ne_10m_admin_1_Sudan_White_Nile.geojson<ept id="1">__</ept>. They are downloaded from <bpt id="2">[</bpt>Natural Earth Data<ept id="2">](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/)</ept>.</source>
+<target xml:lang="fr">Load the admin1 layer for Sudan which contains the district White Nile, <bpt id="1">__</bpt>ne_10m_admin_1_Sudan_White_Nile.geojson<ept id="1">__</ept>. They are downloaded from <bpt id="2">[</bpt>Natural Earth Data<ept id="2">](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Select the roads layer and open the <bpt id="1">__</bpt>Clip<ept id="1">__</ept> dialogue from <ph id="2">`Vector`</ph> → <ph id="3">`Geoprocessing Tools`</ph>.</source>
+<target xml:lang="fr">Select the roads layer and open the <bpt id="1">__</bpt>Clip<ept id="1">__</ept> dialogue from <ph id="2">`Vector`</ph> → <ph id="3">`Geoprocessing Tools`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Set roads as the <bpt id="1">__</bpt>input layer<ept id="1">__</ept> and the district boundaries of White Nile as the <bpt id="2">__</bpt>overlay layer<ept id="2">__</ept>.</source>
+<target xml:lang="fr">Set roads as the <bpt id="1">__</bpt>input layer<ept id="1">__</ept> and the district boundaries of White Nile as the <bpt id="2">__</bpt>overlay layer<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Click <bpt id="1">__</bpt>Run<ept id="1">__</ept> to generate a temporary layer called Clipped.</source>
+<target xml:lang="fr">Click <bpt id="1">__</bpt>Run<ept id="1">__</ept> to generate a temporary layer called Clipped.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">You now have a tidy roads layer which contains the necessary information.</source>
+<target xml:lang="fr">You now have a tidy roads layer which contains the necessary information.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Solution: Clipping a roads layer to administrative boundaries
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Solution: Clipping a roads layer to administrative boundaries
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Dissolve <bpt id="1">&lt;a id="dissolve"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Dissolve <bpt id="1">&lt;a id="dissolve"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">The <bpt id="1">![</bpt><ept id="1">](/fig/mAlgorithmDissolve.png)</ept> <ph id="2">`Dissolve`</ph>-tool creates a new layer and merges overlapping features from one or two vector layers. You can pick one or more attributes to group together features that share the same value for those attributes. Alternatively, you can combine all features into one. If you're working with polygons, it will remove shared boundaries between them.</source>
+<target xml:lang="fr">The <bpt id="1">![</bpt><ept id="1">](/fig/mAlgorithmDissolve.png)</ept> <ph id="2">`Dissolve`</ph>-tool creates a new layer and merges overlapping features from one or two vector layers. You can pick one or more attributes to group together features that share the same value for those attributes. Alternatively, you can combine all features into one. If you're working with polygons, it will remove shared boundaries between them.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">If you turn on the "Keep disjoint features separate" option when running the tool, it'll make sure that features or parts that don't overlap or touch each other are saved as separate features instead of being part of one big feature. This allows you to create several vector layers.</source>
+<target xml:lang="fr">If you turn on the "Keep disjoint features separate" option when running the tool, it'll make sure that features or parts that don't overlap or touch each other are saved as separate features instead of being part of one big feature. This allows you to create several vector layers.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Humanitarian Example:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+<bpt id="4">*</bpt>Two datasets show the flood extent of two different flood events in the past year. Both layers overlap but show differences. Dissolve can create polygons that show the flooded area in the past year.<ept id="4">*</ept>
+<ph id="5">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Humanitarian Example:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+<bpt id="4">*</bpt>Two datasets show the flood extent of two different flood events in the past year. Both layers overlap but show differences. Dissolve can create polygons that show the flooded area in the past year.<ept id="4">*</ept>
+<ph id="5">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_buffer_dissolve.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_buffer_dissolve.png</ph></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 550 px</ph>
+<ph id="2">name: buffer_dissolve</ph></source>
+<target xml:lang="fr"><ph id="1">width: 550 px</ph>
+<ph id="2">name: buffer_dissolve</ph></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Buffer zones with dissolved (left) and with intact boundaries (right) showing overlapping areas <ph id="1">&lt;br /></ph> (Source: <bpt id="2">[</bpt>QGIS Documentation<ept id="2">](https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve)</ept>, Version 3.28)
+<ph id="3">:::</ph></source>
+<target xml:lang="fr">Buffer zones with dissolved (left) and with intact boundaries (right) showing overlapping areas <ph id="1">&lt;br /></ph> (Source: <bpt id="2">[</bpt>QGIS Documentation<ept id="2">](https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve)</ept>, Version 3.28)
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">In the next section on <bpt id="1">__</bpt>buffers<ept id="1">__</ept> we will be using the <bpt id="2">__</bpt>dissolve-tool<ept id="2">__</ept>.</source>
+<target xml:lang="fr">In the next section on <bpt id="1">__</bpt>buffers<ept id="1">__</ept> we will be using the <bpt id="2">__</bpt>dissolve-tool<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Buffer <bpt id="1">&lt;a id="buffer"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Buffer <bpt id="1">&lt;a id="buffer"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Buffering creates zones of predetermined distances around geometric features as a new polygon layer. These buffers surround the input vector features. This buffer zone is typically uniform and extends outward from the original input features, making it useful for various spatial analyses and mapping applications. Buffers can be created around points, lines, and polygons as shown in <ph id="1">{numref}</ph><ph id="2">`buffering_options`</ph>.</source>
+<target xml:lang="fr">Buffering creates zones of predetermined distances around geometric features as a new polygon layer. These buffers surround the input vector features. This buffer zone is typically uniform and extends outward from the original input features, making it useful for various spatial analyses and mapping applications. Buffers can be created around points, lines, and polygons as shown in <ph id="1">{numref}</ph><ph id="2">`buffering_options`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Examples for analyses using buffers could be:</source>
+<target xml:lang="fr">Examples for analyses using buffers could be:</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Creating of buffer zones to protect the environment</source>
+<target xml:lang="fr">Creating of buffer zones to protect the environment</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Analysing greenbelts around residential area</source>
+<target xml:lang="fr">Analysing greenbelts around residential area</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Creating risk areas for natural disasters.</source>
+<target xml:lang="fr">Creating risk areas for natural disasters.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Humanitarian Example:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+To analyze access to clean water sources, a scenario considers how far the population can walk to reach them. A 2 km buffer is created around a dataset of wells to visualize which areas fall within this distance. This method helps assess coverage and identify gaps in access to clean water.</source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Humanitarian Example:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+To analyze access to clean water sources, a scenario considers how far the population can walk to reach them. A 2 km buffer is created around a dataset of wells to visualize which areas fall within this distance. This method helps assess coverage and identify gaps in access to clean water.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_buffer_point_line_polygon.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_buffer_point_line_polygon.png</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 550 px</ph>
+<ph id="2">name: buffering_options</ph></source>
+<target xml:lang="fr"><ph id="1">width: 550 px</ph>
+<ph id="2">name: buffering_options</ph></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Different kinds of buffer zones <ph id="1">&lt;br /></ph> (Adapted after <bpt id="2">[</bpt>QGIS Documentation<ept id="2">](https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve)</ept>, Version 3.28)
+<ph id="3">:::</ph></source>
+<target xml:lang="fr">Different kinds of buffer zones <ph id="1">&lt;br /></ph> (Adapted after <bpt id="2">[</bpt>QGIS Documentation<ept id="2">](https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html?highlight=dissolve)</ept>, Version 3.28)
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">There are several variations in buffering. The <bpt id="1">__</bpt>buffer distance<ept id="1">__</ept> or <bpt id="2">__</bpt>buffer size can vary<ept id="2">__</ept> according to the numerical values provided. The numerical values have to be defined in map units according to the Coordinate Reference System (CRS) used with the data.</source>
+<target xml:lang="fr">There are several variations in buffering. The <bpt id="1">__</bpt>buffer distance<ept id="1">__</ept> or <bpt id="2">__</bpt>buffer size can vary<ept id="2">__</ept> according to the numerical values provided. The numerical values have to be defined in map units according to the Coordinate Reference System (CRS) used with the data.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{Attention}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{Attention}</ph></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_dist_in_degrees_error_msg.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_dist_in_degrees_error_msg.png</ph></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 450 px</ph>
+<ph id="2">name: dist_degree_error_message</ph></source>
+<target xml:lang="fr"><ph id="1">width: 450 px</ph>
+<ph id="2">name: dist_degree_error_message</ph></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">The error message QGIS displays when performing distance based calculations in a geographic coordinate system.
+<ph id="1">:::</ph>
+If...</source>
+<target xml:lang="fr">The error message QGIS displays when performing distance based calculations in a geographic coordinate system.
+<ph id="1">:::</ph>
+If...</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">You get a projection warning message</source>
+<target xml:lang="fr">You get a projection warning message</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Your layer(s) don't show up</source>
+<target xml:lang="fr">Your layer(s) don't show up</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Layers look odd ‒ e.g. squashed</source>
+<target xml:lang="fr">Layers look odd ‒ e.g. squashed</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Error message "using degrees" when using distances (as shown in <ph id="1">{numref}</ph><ph id="2">`dist_degree_error_message`</ph>)
+... it might be a <bpt id="3">[</bpt>projection<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html)</ept> issue.</source>
+<target xml:lang="fr">Error message "using degrees" when using distances (as shown in <ph id="1">{numref}</ph><ph id="2">`dist_degree_error_message`</ph>)
+... it might be a <bpt id="3">[</bpt>projection<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html)</ept> issue.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">To solve it, try...</source>
+<target xml:lang="fr">To solve it, try...</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Changing the CRS for the layer</source>
+<target xml:lang="fr">Changing the CRS for the layer</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Reprojecting the layer</source>
+<target xml:lang="fr">Reprojecting the layer</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">For example, if you are trying to make a buffer on a layer with a Geographical Coordinate System, QGIS will warn you and suggest to reprojecting the layer to a <bpt id="1">__</bpt>metric Coordinate System<ept id="1">__</ept>. This is because when you are using a metric coordinate system, the algorithm will use degrees to calculate the distance of the buffer size. However, the distance between degrees are not uniform and depend on the latitude (see <ph id="2">{numref}</ph><ph id="3">`distance_longitudes`</ph>)</source>
+<target xml:lang="fr">For example, if you are trying to make a buffer on a layer with a Geographical Coordinate System, QGIS will warn you and suggest to reprojecting the layer to a <bpt id="1">__</bpt>metric Coordinate System<ept id="1">__</ept>. This is because when you are using a metric coordinate system, the algorithm will use degrees to calculate the distance of the buffer size. However, the distance between degrees are not uniform and depend on the latitude (see <ph id="2">{numref}</ph><ph id="3">`distance_longitudes`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_dist_longitudes.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_dist_longitudes.png</ph></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: distance_longitudes</ph>
+<ph id="2">width: 450 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: distance_longitudes</ph>
+<ph id="2">width: 450 px</ph></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">This image illustrates this – 10 degrees of longitude at the equator is 1,113km, but 10 degrees of
+longitude at 70 degrees latitude is only 381km. (Source: <bpt id="1">[</bpt>Ricky Angueria<ept id="1">](https://x.com/RickyAngueira/status/1594030866132410368)</ept>).
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">This image illustrates this – 10 degrees of longitude at the equator is 1,113km, but 10 degrees of
+longitude at 70 degrees latitude is only 381km. (Source: <bpt id="1">[</bpt>Ricky Angueria<ept id="1">](https://x.com/RickyAngueira/status/1594030866132410368)</ept>).
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">This is why you’ll need to convert to a local/projected coordinate system to be able to specify distances in km/miles (e.g. when using the buffer tool).</source>
+<target xml:lang="fr">This is why you’ll need to convert to a local/projected coordinate system to be able to specify distances in km/miles (e.g. when using the buffer tool).</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">Exercise: Create 10km buffer around health centres <bpt id="1">&lt;a id="exercise-create-10km-buffer-around-health-centres"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise: Create 10km buffer around health centres <bpt id="1">&lt;a id="exercise-create-10km-buffer-around-health-centres"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Another example relevant for humanitarian action can be the creation of a map which provides information about the coverage of health sites in the distance of 10 km.
+To achieve this, a buffer of 10 km is created around points representing healthsites. In some cases, this will create buffer zones which overlap. In order to create a homogenous area, we can dissolve overlapping buffer zones.</source>
+<target xml:lang="fr">Another example relevant for humanitarian action can be the creation of a map which provides information about the coverage of health sites in the distance of 10 km.
+To achieve this, a buffer of 10 km is created around points representing healthsites. In some cases, this will create buffer zones which overlap. In order to create a homogenous area, we can dissolve overlapping buffer zones.</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Download the <bpt id="1">__</bpt>Sudan health sites<ept id="1">__</ept> data from <bpt id="2">[</bpt>HDX<ept id="2">](https://data.humdata.org/dataset/sudan-healthsites)</ept> as a shapefile.</source>
+<target xml:lang="fr">Download the <bpt id="1">__</bpt>Sudan health sites<ept id="1">__</ept> data from <bpt id="2">[</bpt>HDX<ept id="2">](https://data.humdata.org/dataset/sudan-healthsites)</ept> as a shapefile.</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Load your new data into QGIS. Also add the district boundaries of Khartoum, <bpt id="1">__</bpt>ne_10m_admin_1_Sudan_Khartoum.geojson<ept id="1">__</ept>.
+They are also downloaded and adapted from <bpt id="2">[</bpt>Natural Earth Data<ept id="2">](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/)</ept>.</source>
+<target xml:lang="fr">Load your new data into QGIS. Also add the district boundaries of Khartoum, <bpt id="1">__</bpt>ne_10m_admin_1_Sudan_Khartoum.geojson<ept id="1">__</ept>.
+They are also downloaded and adapted from <bpt id="2">[</bpt>Natural Earth Data<ept id="2">](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Clip your health sites to the boundaries of Karthoum district.</source>
+<target xml:lang="fr">Clip your health sites to the boundaries of Karthoum district.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Reproject<ept id="1">__</ept> the health sites layer to a local coordinate system to enable setting distances Kilometers.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Reproject<ept id="1">__</ept> the health sites layer to a local coordinate system to enable setting distances Kilometers.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Vector menu → Data Management Tools → <bpt id="1">__</bpt>Reproject Layer<ept id="1">__</ept>.</source>
+<target xml:lang="fr">Vector menu → Data Management Tools → <bpt id="1">__</bpt>Reproject Layer<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">Select the <bpt id="1">__</bpt>health sites<ept id="1">__</ept> layer as the input layer.</source>
+<target xml:lang="fr">Select the <bpt id="1">__</bpt>health sites<ept id="1">__</ept> layer as the input layer.</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Set the target <bpt id="1">__</bpt>CRS to WGS 84 / UTM zone 36N<ept id="1">__</ept> (click the projections icon to search the full list of options).</source>
+<target xml:lang="fr">Set the target <bpt id="1">__</bpt>CRS to WGS 84 / UTM zone 36N<ept id="1">__</ept> (click the projections icon to search the full list of options).</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Click  <ph id="1">`Run`</ph> to reproject.</source>
+<target xml:lang="fr">Click  <ph id="1">`Run`</ph> to reproject.</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Open the <bpt id="1">__</bpt>Buffer<ept id="1">__</ept> tool by accessing <ph id="2">`Vector`</ph> → <ph id="3">`Geoprocessing Tools`</ph> → <ph id="4">`Buffer`</ph>.</source>
+<target xml:lang="fr">Open the <bpt id="1">__</bpt>Buffer<ept id="1">__</ept> tool by accessing <ph id="2">`Vector`</ph> → <ph id="3">`Geoprocessing Tools`</ph> → <ph id="4">`Buffer`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Select the <bpt id="1">__</bpt>reprojected layer<ept id="1">__</ept> as the input layer.</source>
+<target xml:lang="fr">Select the <bpt id="1">__</bpt>reprojected layer<ept id="1">__</ept> as the input layer.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Set the distance to <bpt id="1">__</bpt>10km<ept id="1">__</ept>.</source>
+<target xml:lang="fr">Set the distance to <bpt id="1">__</bpt>10km<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Check the option to <bpt id="1">__</bpt>dissolve<ept id="1">__</ept> result.</source>
+<target xml:lang="fr">Check the option to <bpt id="1">__</bpt>dissolve<ept id="1">__</ept> result.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Leave the other options as defaults and click <ph id="1">`Run`</ph>.</source>
+<target xml:lang="fr">Leave the other options as defaults and click <ph id="1">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Now you have a rough overview over the coverage with health sites for the district of Khartoum.</source>
+<target xml:lang="fr">Now you have a rough overview over the coverage with health sites for the district of Khartoum.</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Solution: Create 10km buffer around health centres
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Solution: Create 10km buffer around health centres
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">More advanced clipping operations <bpt id="1">&lt;a id="more-advanced-clipping-operations"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">More advanced clipping operations <bpt id="1">&lt;a id="more-advanced-clipping-operations"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">In addition to the standard QGIS operation <bpt id="1">__</bpt>Clip<ept id="1">__</ept>, there are two other more advanced tools for performing clipping processes. These tools are GDAL operations, which enable the definition of the clipping extent. This extent can be either a specific area or a mask layer. The second option is quite similar to the standard clipping process provided by QGIS.</source>
+<target xml:lang="fr">In addition to the standard QGIS operation <bpt id="1">__</bpt>Clip<ept id="1">__</ept>, there are two other more advanced tools for performing clipping processes. These tools are GDAL operations, which enable the definition of the clipping extent. This extent can be either a specific area or a mask layer. The second option is quite similar to the standard clipping process provided by QGIS.</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_gdal_clipping_tools.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_gdal_clipping_tools.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 250 px</ph>
+<ph id="2">name: gdal_clipping_tools</ph></source>
+<target xml:lang="fr"><ph id="1">width: 250 px</ph>
+<ph id="2">name: gdal_clipping_tools</ph></target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">The GDAL tools Clip vector by extent and Clip vector by mask layer.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The GDAL tools Clip vector by extent and Clip vector by mask layer.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::{tab-set}</ph></source>
+<target xml:lang="fr"><ph id="1">:::::{tab-set}</ph></target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-item} </ph>Clip vector by extent</source>
+<target xml:lang="fr"><ph id="1">::::{tab-item} </ph>Clip vector by extent</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">This operation clips any vector file to a given extent. This clip extent will be defined by a bounding box that should be used for the vector output file. It also has to be defined in the target CRS coordinates. There are different methods to define the bounding box, which are the great difference between this tool and the standard clipping process:</source>
+<target xml:lang="fr">This operation clips any vector file to a given extent. This clip extent will be defined by a bounding box that should be used for the vector output file. It also has to be defined in the target CRS coordinates. There are different methods to define the bounding box, which are the great difference between this tool and the standard clipping process:</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Calculate from a layer: this uses the extent of a layer loaded into the current project.</source>
+<target xml:lang="fr">Calculate from a layer: this uses the extent of a layer loaded into the current project.</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Calculate from layout map: uses the extent of a layout map item in the active project.</source>
+<target xml:lang="fr">Calculate from layout map: uses the extent of a layout map item in the active project.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Calculate from bookmark: uses the extent of a saved bookmark.</source>
+<target xml:lang="fr">Calculate from bookmark: uses the extent of a saved bookmark.</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Use map canvas extent.</source>
+<target xml:lang="fr">Use map canvas extent.</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">Draw on canvas: click and drag a rectangle delimiting the area to take into account.</source>
+<target xml:lang="fr">Draw on canvas: click and drag a rectangle delimiting the area to take into account.</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Enter the coordinates as xmin, xmax, ymin, ymax.</source>
+<target xml:lang="fr">Enter the coordinates as xmin, xmax, ymin, ymax.</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_clip_vector_by_extent.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_clip_vector_by_extent.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 450 px</ph>
+<ph id="2">name: en_clip_vector_by_extent</ph></source>
+<target xml:lang="fr"><ph id="1">width: 450 px</ph>
+<ph id="2">name: en_clip_vector_by_extent</ph></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">Screenshot of the tool Clip vector by extent
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Screenshot of the tool Clip vector by extent
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-item} </ph>Clip vector by mask layer
+This operation uses a mask polygon layer to clip any vector layer. This operation only takes two input:</source>
+<target xml:lang="fr"><ph id="1">::::{tab-item} </ph>Clip vector by mask layer
+This operation uses a mask polygon layer to clip any vector layer. This operation only takes two input:</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">The input layer</source>
+<target xml:lang="fr">The input layer</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">The mask layer which is used as the clipping extent for the input vector layer</source>
+<target xml:lang="fr">The mask layer which is used as the clipping extent for the input vector layer</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_clip_vector_by_mask_layer.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_clip_vector_by_mask_layer.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 450 px</ph>
+<ph id="2">name: clip_vector_by_mask_layer</ph></source>
+<target xml:lang="fr"><ph id="1">width: 450 px</ph>
+<ph id="2">name: clip_vector_by_mask_layer</ph></target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Screenshot of the tool Clip vector by mask layer.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Screenshot of the tool Clip vector by mask layer.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::::</ph></target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What is an overlay operation in GIS, and when is it useful?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What is an overlay operation in GIS, and when is it useful?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">An overlay operation is a type of vector geoprocessing tool in GIS that combines or manipulates the geometries of two (or more) layers based on their spatial relationships (such as intersection, union, clipping, etc.).<ph id="1">  </ph>
+It is useful when:</source>
+<target xml:lang="fr">An overlay operation is a type of vector geoprocessing tool in GIS that combines or manipulates the geometries of two (or more) layers based on their spatial relationships (such as intersection, union, clipping, etc.).<ph id="1">  </ph>
+It is useful when:</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">When you want to extract a subset of features from a larger dataset (e.g., clip roads to an administrative boundary)</source>
+<target xml:lang="fr">When you want to extract a subset of features from a larger dataset (e.g., clip roads to an administrative boundary)</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">When you want to merge or aggregate spatial areas (e.g., dissolve overlapping flood extents into one combined area).</source>
+<target xml:lang="fr">When you want to merge or aggregate spatial areas (e.g., dissolve overlapping flood extents into one combined area).</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">In humanitarian or operational workflows: e.g., determining the coverage area of health centres, the extent of hazard zones inside a region, or trimming large datasets to an area of interest to improve efficiency.</source>
+<target xml:lang="fr">In humanitarian or operational workflows: e.g., determining the coverage area of health centres, the extent of hazard zones inside a region, or trimming large datasets to an area of interest to improve efficiency.</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>When carrying out overlay operations in QGIS, how do attribute tables of input layers combine in the output layer? What happens to attributes from each input?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>When carrying out overlay operations in QGIS, how do attribute tables of input layers combine in the output layer? What happens to attributes from each input?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">In most cases, QGIS allows you to specify which attributes will be copied from which input to the algorithm output. If nothing is specified, QGIS will usually copy all attributes from both layers to the resulting layer.</source>
+<target xml:lang="fr">In most cases, QGIS allows you to specify which attributes will be copied from which input to the algorithm output. If nothing is specified, QGIS will usually copy all attributes from both layers to the resulting layer.</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">While the core attributes of the features remain the same, some properties, like area or length, may change after the clipping operation. If you’ve stored these properties as attributes, you might need to update them in the resulting layer.</source>
+<target xml:lang="fr">While the core attributes of the features remain the same, some properties, like area or length, may change after the clipping operation. If you’ve stored these properties as attributes, you might need to update them in the resulting layer.</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

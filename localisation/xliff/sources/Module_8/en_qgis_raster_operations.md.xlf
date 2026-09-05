@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_8/en_qgis_raster_operations.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Common Raster Operations <bpt id="1">&lt;a id="common-raster-operations"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Common Raster Operations <bpt id="1">&lt;a id="common-raster-operations"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">In this chapter, we will go over a few common raster operations used in GIS. We will cover the basics, such as reprojecting raster layers and removing NoData cells and go on to more advanced processing such as clipping rasters, working with several raster layers, calculating statistics based on raster values, and vectorising raster layers.</source>
+<target xml:lang="fr">In this chapter, we will go over a few common raster operations used in GIS. We will cover the basics, such as reprojecting raster layers and removing NoData cells and go on to more advanced processing such as clipping rasters, working with several raster layers, calculating statistics based on raster values, and vectorising raster layers.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Parts of the content of this page has been inspired by the <bpt id="1">[</bpt>GIS4Schools Webbook<ept id="1">](https://gis4schools.readthedocs.io/en/latest/part2/2_5.html)</ept> by GEOLab.</source>
+<target xml:lang="fr">Parts of the content of this page has been inspired by the <bpt id="1">[</bpt>GIS4Schools Webbook<ept id="1">](https://gis4schools.readthedocs.io/en/latest/part2/2_5.html)</ept> by GEOLab.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Investigating the Layer properties <bpt id="1">&lt;a id="investigating-the-layer-properties"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Investigating the Layer properties <bpt id="1">&lt;a id="investigating-the-layer-properties"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">The first thing you should do when working with geodata is to familiarise yourself with the dataset. You can do that by investigating the layer in the map canvas, using the identify tool <bpt id="1">![</bpt><ept id="1">](/fig/mod8_ex1_informationtool.png)</ept> to see the values of a few of the raster cells. You should also look at their properties to find out the <bpt id="2">[</bpt>Coordinate Reference System (CRS)<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html#how-to-choose-an-appropriate-projected-coordinate-system)</ept> and the cell size. When working with multiple raster layers, in most cases, it is important that the raster cells overlap exactly. Therefore, the CRS of the raster layers will have to be the same as well as the cell size and the raster extent. You might be unable to compare or combine raster layers correctly if they do not share a common CRS or the raster cells are not aligned. This might lead to unwanted interpolation or the processing operation not succeeding.</source>
+<target xml:lang="fr">The first thing you should do when working with geodata is to familiarise yourself with the dataset. You can do that by investigating the layer in the map canvas, using the identify tool <bpt id="1">![</bpt><ept id="1">](/fig/mod8_ex1_informationtool.png)</ept> to see the values of a few of the raster cells. You should also look at their properties to find out the <bpt id="2">[</bpt>Coordinate Reference System (CRS)<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html#how-to-choose-an-appropriate-projected-coordinate-system)</ept> and the cell size. When working with multiple raster layers, in most cases, it is important that the raster cells overlap exactly. Therefore, the CRS of the raster layers will have to be the same as well as the cell size and the raster extent. You might be unable to compare or combine raster layers correctly if they do not share a common CRS or the raster cells are not aligned. This might lead to unwanted interpolation or the processing operation not succeeding.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">To check the CRS and cell size, <bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the raster layer and select <ph id="2">`Properties`</ph> → <ph id="3">`Information`</ph>.</source>
+<target xml:lang="fr">To check the CRS and cell size, <bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the raster layer and select <ph id="2">`Properties`</ph> → <ph id="3">`Information`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Reprojecting Raster Layers <bpt id="1">&lt;a id="reprojecting-raster-layers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Reprojecting Raster Layers <bpt id="1">&lt;a id="reprojecting-raster-layers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Reprojecting a raster layers works in a similar way as reprojecting vector layers.</source>
+<target xml:lang="fr">Reprojecting a raster layers works in a similar way as reprojecting vector layers.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">In the top bar, navigate to <ph id="1">`Raster`</ph> → <ph id="2">`Projections`</ph> → <ph id="3">`Warp (Reproject)`</ph>. The Warp (Reproject)-Tool will open.</source>
+<target xml:lang="fr">In the top bar, navigate to <ph id="1">`Raster`</ph> → <ph id="2">`Projections`</ph> → <ph id="3">`Warp (Reproject)`</ph>. The Warp (Reproject)-Tool will open.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Here, you can select the input layer, the source CRS, the Target CRS and the resampling method. The resampling method determines how the algorithm determines the value of a cell, if it's location shifts during the reprojection. Except when you are working with <bpt id="1">[</bpt>continuous data<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_classification.html#nominal-ordinal-and-metric-scales)</ept> such as temperature or rainfall, you can leave the resampling method on <ph id="2">`nearest neighbor`</ph>.</source>
+<target xml:lang="fr">Here, you can select the input layer, the source CRS, the Target CRS and the resampling method. The resampling method determines how the algorithm determines the value of a cell, if it's location shifts during the reprojection. Except when you are working with <bpt id="1">[</bpt>continuous data<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_classification.html#nominal-ordinal-and-metric-scales)</ept> such as temperature or rainfall, you can leave the resampling method on <ph id="2">`nearest neighbor`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Once you have set the parameters, click on <ph id="1">`Run`</ph>. A new layer will be added to your QGIS project. If it is a temporary layer, it will be called "Reprojected" and you should rename it to better identify the layer.</source>
+<target xml:lang="fr">Once you have set the parameters, click on <ph id="1">`Run`</ph>. A new layer will be added to your QGIS project. If it is a temporary layer, it will be called "Reprojected" and you should rename it to better identify the layer.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Aligning Rasters <bpt id="1">&lt;a id="aligning-rasters"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Aligning Rasters <bpt id="1">&lt;a id="aligning-rasters"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">When working with multiple rasters, it is important that the raster cells are aligned. Otherwise, you might get wrong results. With the "Align rasters" tool, raster datasets with different spatial resolutions, grid orientation or Coordinate Reference systems can be aligned. This is particularly useful when preprocessing raster layer for conducting precise spatial analysis, such as overlay operations, statistical analysis, raster calculator operations in general.</source>
+<target xml:lang="fr">When working with multiple rasters, it is important that the raster cells are aligned. Otherwise, you might get wrong results. With the "Align rasters" tool, raster datasets with different spatial resolutions, grid orientation or Coordinate Reference systems can be aligned. This is particularly useful when preprocessing raster layer for conducting precise spatial analysis, such as overlay operations, statistical analysis, raster calculator operations in general.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Example: We have a elevation and precipitation rasters with different spatial resolution and want to align the rasters for the analysis of precipitation sums in high altitude areas:
+    1. Click on the three dots next to the "Input layers" prompt and choose the rasters you want to align by checking the boxes next to them.
+    2. Choose the raster you want to use as blueprint for the alignment. In this cas we want to align both rasters to the parameters of the "Elevation" raster.
+    3. If you want to reproject the aligned rasters to a new CRS different from the Reference layers you can choose it under "Override reference CRS".</source>
+<target xml:lang="fr">Example: We have a elevation and precipitation rasters with different spatial resolution and want to align the rasters for the analysis of precipitation sums in high altitude areas:
+    1. Click on the three dots next to the "Input layers" prompt and choose the rasters you want to align by checking the boxes next to them.
+    2. Choose the raster you want to use as blueprint for the alignment. In this cas we want to align both rasters to the parameters of the "Elevation" raster.
+    3. If you want to reproject the aligned rasters to a new CRS different from the Reference layers you can choose it under "Override reference CRS".</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Clipping Raster layers <bpt id="1">&lt;a id="clipping-raster-layers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Clipping Raster layers <bpt id="1">&lt;a id="clipping-raster-layers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Performing calculations using raster layers can quickly become very CPU-intensive and take an exponential amount of time. There are two ways of reducing the number of cells in a raster layer:</source>
+<target xml:lang="fr">Performing calculations using raster layers can quickly become very CPU-intensive and take an exponential amount of time. There are two ways of reducing the number of cells in a raster layer:</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Reduce the raster resolution</source>
+<target xml:lang="fr">Reduce the raster resolution</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">This is equivalent to making the cells bigger in size: You can convert four 100 m² cells into 1 200 m² cell. However, you have to consider the type of data stored in the cells. For example, for raster layer containing information on the population living in a 100 meter grid, you will have to add the four cell values to obtain the new value for the 200 m² cell. But if the data contained in the cell holds temperature data, you might want to interpolate or select the median of the four values as the new value.</source>
+<target xml:lang="fr">This is equivalent to making the cells bigger in size: You can convert four 100 m² cells into 1 200 m² cell. However, you have to consider the type of data stored in the cells. For example, for raster layer containing information on the population living in a 100 meter grid, you will have to add the four cell values to obtain the new value for the 200 m² cell. But if the data contained in the cell holds temperature data, you might want to interpolate or select the median of the four values as the new value.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Clip the Raster to remove cell values that are not needed.</source>
+<target xml:lang="fr">Clip the Raster to remove cell values that are not needed.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">For example, we want to find out how much precipitation in mm fell in the last month in Cambodia. However, our raster extent spans over a larger area than Cambodia. We can remove the cells we are uninterested in by clipping the raster extent to a mask layer.</source>
+<target xml:lang="fr">For example, we want to find out how much precipitation in mm fell in the last month in Cambodia. However, our raster extent spans over a larger area than Cambodia. We can remove the cells we are uninterested in by clipping the raster extent to a mask layer.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">To clip a raster layer:</source>
+<target xml:lang="fr">To clip a raster layer:</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">In the processing toolbox, search for "Clip Raster" and select <ph id="1">`Clip Raster by Mask Layer`</ph>.</source>
+<target xml:lang="fr">In the processing toolbox, search for "Clip Raster" and select <ph id="1">`Clip Raster by Mask Layer`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">A new window will open. Here you can select the vector layer containing the polygons which will be used as zones.</source>
+<target xml:lang="fr">A new window will open. Here you can select the vector layer containing the polygons which will be used as zones.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Raster Calculator <bpt id="1">&lt;a id="raster-calculator"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Raster Calculator <bpt id="1">&lt;a id="raster-calculator"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">The raster calculator let's you perform mathematical operations with the raster values using one or multiple raster layers. Similar to the <bpt id="1">[</bpt>field calculator<ept id="1">]()</ept> for vector data, you can enter expressions. These expressions can include arithmetic operations such as multiplication, comparison operators such as <ph id="2">`&lt;`</ph>. <ph id="3">`>`</ph>, <ph id="4">`=`</ph>, conditional expressions like "IF" "THEN" statements, and statistical functions such as "mean" or "sum".</source>
+<target xml:lang="fr">The raster calculator let's you perform mathematical operations with the raster values using one or multiple raster layers. Similar to the <bpt id="1">[</bpt>field calculator<ept id="1">]()</ept> for vector data, you can enter expressions. These expressions can include arithmetic operations such as multiplication, comparison operators such as <ph id="2">`&lt;`</ph>. <ph id="3">`>`</ph>, <ph id="4">`=`</ph>, conditional expressions like "IF" "THEN" statements, and statistical functions such as "mean" or "sum".</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Example:
+You have a Digital Elevation Model with the Altitude in m and a land cover classification raster. You want to produce a raster with all agricultural areas (raster value = 5) above 1500m.</source>
+<target xml:lang="fr">Example:
+You have a Digital Elevation Model with the Altitude in m and a land cover classification raster. You want to produce a raster with all agricultural areas (raster value = 5) above 1500m.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">In the raster calculator,</source>
+<target xml:lang="fr">In the raster calculator,</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">click on the elevation raster layer to add it to the expression builder.</source>
+<target xml:lang="fr">click on the elevation raster layer to add it to the expression builder.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Enter the comparison operator <ph id="1">`>`</ph> and enter 1500. This will select the raster cells representing an altitude higher than 1500 meters.</source>
+<target xml:lang="fr">Enter the comparison operator <ph id="1">`>`</ph> and enter 1500. This will select the raster cells representing an altitude higher than 1500 meters.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Put the expression into parentheses. The first part of the expression should be as follows</source>
+<target xml:lang="fr">Put the expression into parentheses. The first part of the expression should be as follows</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Enter the second part of the Expression:</source>
+<target xml:lang="fr">Enter the second part of the Expression:</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">This selects all the raster cells where the cell value equals 5.</source>
+<target xml:lang="fr">This selects all the raster cells where the cell value equals 5.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">The full expression should be:</source>
+<target xml:lang="fr">The full expression should be:</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`OK`</ph></source>
+<target xml:lang="fr">Click <ph id="1">`OK`</ph></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">The result will be a new raster where the cells that fulfill the condition of our expression will have the value <ph id="1">`1`</ph>, while all other pixels have the value <ph id="2">`0`</ph>.</source>
+<target xml:lang="fr">The result will be a new raster where the cells that fulfill the condition of our expression will have the value <ph id="1">`1`</ph>, while all other pixels have the value <ph id="2">`0`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Zonal Statistics <bpt id="1">&lt;a id="zonal-statistics"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Zonal Statistics <bpt id="1">&lt;a id="zonal-statistics"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">The Zonal Statistics tool calculates statistics (like mean, median, sum, etc.) for each zone. A zone can be a polygon of a vector layer or another raster layer.  This is particularly useful for analyzing raster data within defined geographic zones, such as administrative boundaries or land use classes. For example, with a population raster dataset, we can calculate the population sum per district using a vector layer with administrative boundaries. Or, we could calculate the mean temperature of a country.</source>
+<target xml:lang="fr">The Zonal Statistics tool calculates statistics (like mean, median, sum, etc.) for each zone. A zone can be a polygon of a vector layer or another raster layer.  This is particularly useful for analyzing raster data within defined geographic zones, such as administrative boundaries or land use classes. For example, with a population raster dataset, we can calculate the population sum per district using a vector layer with administrative boundaries. Or, we could calculate the mean temperature of a country.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">In the example below, we will calculate the population count affected by recent floods in Pakistan.</source>
+<target xml:lang="fr">In the example below, we will calculate the population count affected by recent floods in Pakistan.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">We have the following datasets:</source>
+<target xml:lang="fr">We have the following datasets:</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">administrative boundaries (adm2) for Pakistan: <ph id="1">`Pakistan_admin2`</ph>.</source>
+<target xml:lang="fr">administrative boundaries (adm2) for Pakistan: <ph id="1">`Pakistan_admin2`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Example: We have a raster layer with population count affected by a recent flood in Pakistan and a polygon layer with administrative districts. We want to calculate the number of flood affected people per district.</source>
+<target xml:lang="fr">Example: We have a raster layer with population count affected by a recent flood in Pakistan and a polygon layer with administrative districts. We want to calculate the number of flood affected people per district.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">As "Input Layer" choose your polygon layer with district extents. "Pakistan_admin2" in this case.</source>
+<target xml:lang="fr">As "Input Layer" choose your polygon layer with district extents. "Pakistan_admin2" in this case.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">As "Raster Layer" choose the layer with the cell values you want to base your statistics on. "Pop_floodextent" in this case.</source>
+<target xml:lang="fr">As "Raster Layer" choose the layer with the cell values you want to base your statistics on. "Pop_floodextent" in this case.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Defining a prefix for your output column is optional but can be helpful for finding the calculated values in large attribute tables. For population counts you can for example choose "pop_" as "Output column prefix".</source>
+<target xml:lang="fr">Defining a prefix for your output column is optional but can be helpful for finding the calculated values in large attribute tables. For population counts you can for example choose "pop_" as "Output column prefix".</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Below "Statistics to calculate" click on the <bpt id="1">![</bpt><ept id="1">](/fig/mod8_ex1_optionsicon.png)</ept> icon to access the different options of statistical operations available for calculating polygon values based on your raster. In this case "sum" would be the operation of choice as we want the total sum of flood affected people per district.</source>
+<target xml:lang="fr">Below "Statistics to calculate" click on the <bpt id="1">![</bpt><ept id="1">](/fig/mod8_ex1_optionsicon.png)</ept> icon to access the different options of statistical operations available for calculating polygon values based on your raster. In this case "sum" would be the operation of choice as we want the total sum of flood affected people per district.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Solution
+<ph id="2">:open:</ph>
+"Sum" is the appropriate method, as we want the total population count per district that results from the additions of the values of all cells with affected population per district.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Solution
+<ph id="2">:open:</ph>
+"Sum" is the appropriate method, as we want the total population count per district that results from the additions of the values of all cells with affected population per district.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Name your layer "Floodaffected_pop_admin2", save it to your "output" folder and click <ph id="1">`Run`</ph>.</source>
+<target xml:lang="fr">Name your layer "Floodaffected_pop_admin2", save it to your "output" folder and click <ph id="1">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Vectorise <bpt id="1">&lt;a id="vectorise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Vectorise <bpt id="1">&lt;a id="vectorise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Exercise_tracks/fr_mdg_aa_cyclones.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Piste d'Exercice : Analyse d’Action Anticipative pour les Cyclones à Madagascar</source>
+<target xml:lang="fr">Piste d'Exercice : Analyse d’Action Anticipative pour les Cyclones à Madagascar</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Cette piste d’exercice se concentre sur l’évaluation préliminaire d’un événement cyclonique à Madagascar. L’objectif est de créer un flux de travail analytique sous forme de modèle QGIS permettant d’estimer la population exposée, les infrastructures exposées et les terres agricoles exposées. De plus, l’accessibilité des régions exposées peut être évaluée à l’aide d’isochrones pré-calculées.
+Dans cette piste, vous construirez un flux de travail analytique sous forme de modèle QGIS et visualiserez les résultats à l’aide de modèles de cartes et de fichiers de style.</source>
+<target xml:lang="fr">Cette piste d’exercice se concentre sur l’évaluation préliminaire d’un événement cyclonique à Madagascar. L’objectif est de créer un flux de travail analytique sous forme de modèle QGIS permettant d’estimer la population exposée, les infrastructures exposées et les terres agricoles exposées. De plus, l’accessibilité des régions exposées peut être évaluée à l’aide d’isochrones pré-calculées.
+Dans cette piste, vous construirez un flux de travail analytique sous forme de modèle QGIS et visualiserez les résultats à l’aide de modèles de cartes et de fichiers de style.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>English version - Version anglaise
+<ph id="2">:class:</ph></source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>English version - Version anglaise
+<ph id="2">:class:</ph></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">We offer an english version of this exercise track which can be found here:</source>
+<target xml:lang="fr">We offer an english version of this exercise track which can be found here:</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_mdg_aa_cyclones.html</ph>
+English version
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Exercise_tracks/en_mdg_aa_cyclones.html</ph>
+English version
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{card}</ph>
+Contexte
+<ph id="2">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{card}</ph>
+Contexte
+<ph id="2">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Madagascar est fréquemment exposé à des cyclones tropicaux intenses, qui peuvent entraîner des dégâts
+considérables, des déplacements de population et des pertes humaines. Une analyse anticipative est essentielle pour
+réduire l’impact de ces événements météorologiques extrêmes. En utilisant des données de prévision et des outils
+géospatiaux pour anticiper les zones susceptibles d’être touchées, les acteurs humanitaires et les autorités
+locales peuvent prendre des mesures précoces, telles que le prépositionnement de stocks ou la diffusion d’alertes,
+afin de protéger les vies humaines et les moyens de subsistance avant que la catastrophe ne survienne. Cette
+approche proactive renforce les capacités de préparation et de réponse, tout en permettant de gagner du temps, de
+préserver des ressources et de sauver des vies.</source>
+<target xml:lang="fr">Madagascar est fréquemment exposé à des cyclones tropicaux intenses, qui peuvent entraîner des dégâts
+considérables, des déplacements de population et des pertes humaines. Une analyse anticipative est essentielle pour
+réduire l’impact de ces événements météorologiques extrêmes. En utilisant des données de prévision et des outils
+géospatiaux pour anticiper les zones susceptibles d’être touchées, les acteurs humanitaires et les autorités
+locales peuvent prendre des mesures précoces, telles que le prépositionnement de stocks ou la diffusion d’alertes,
+afin de protéger les vies humaines et les moyens de subsistance avant que la catastrophe ne survienne. Cette
+approche proactive renforce les capacités de préparation et de réponse, tout en permettant de gagner du temps, de
+préserver des ressources et de sauver des vies.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Aina, experte SIG à la Croix-Rouge Malagasy (CRM), se prépare pour la prochaine saison cyclonique. Elle souhaite
+renforcer la capacité de son équipe à réagir rapidement dès qu’un cyclone est prévu, en automatisant des analyses
+clés dans QGIS. Celles-ci incluent l’estimation des populations exposées, l’identification des services impactés
+comme la santé et l’éducation, ainsi que l’évaluation de l’accessibilité des postes de santé depuis les entrepôts
+stratégiques, dans une fenêtre critique de 10 heures.</source>
+<target xml:lang="fr">Aina, experte SIG à la Croix-Rouge Malagasy (CRM), se prépare pour la prochaine saison cyclonique. Elle souhaite
+renforcer la capacité de son équipe à réagir rapidement dès qu’un cyclone est prévu, en automatisant des analyses
+clés dans QGIS. Celles-ci incluent l’estimation des populations exposées, l’identification des services impactés
+comme la santé et l’éducation, ainsi que l’évaluation de l’accessibilité des postes de santé depuis les entrepôts
+stratégiques, dans une fenêtre critique de 10 heures.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">L’objectif est de mettre en place un flux de travail complet d’analyse et de visualisation qui soutienne une action
+anticipative rapide et fondée sur les données, avant que le cyclone n’atteigne les côtes.</source>
+<target xml:lang="fr">L’objectif est de mettre en place un flux de travail complet d’analyse et de visualisation qui soutienne une action
+anticipative rapide et fondée sur les données, avant que le cyclone n’atteigne les côtes.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/fr_qgis_module_5_mdg_aa_ex_1.html</ph>
+<bpt id="3">__</bpt>Exercice 1 : Estimation de la population exposée – L’approche manuelle d’Aina (Module 5)<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Module_5/fr_qgis_module_5_mdg_aa_ex_1.html</ph>
+<bpt id="3">__</bpt>Exercice 1 : Estimation de la population exposée – L’approche manuelle d’Aina (Module 5)<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">importation des jeux de données dans QGIS</source>
+<target xml:lang="fr">importation des jeux de données dans QGIS</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">reprojection des couches</source>
+<target xml:lang="fr">reprojection des couches</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">création de zones tampons autour des couches vectorielles</source>
+<target xml:lang="fr">création de zones tampons autour des couches vectorielles</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">découpage des couches raster</source>
+<target xml:lang="fr">découpage des couches raster</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">calcul des statistiques zonales</source>
+<target xml:lang="fr">calcul des statistiques zonales</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">application d’une classification graduée aux résultats</source>
+<target xml:lang="fr">application d’une classification graduée aux résultats</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Module_7/fr_module_7_mdg_aa_ex_2.html</ph>
+<bpt id="3">__</bpt>Exercice 2 : Automatisation de l’estimation de la population exposée – Le modèle d’Aina (Module 7)<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Module_7/fr_module_7_mdg_aa_ex_2.html</ph>
+<bpt id="3">__</bpt>Exercice 2 : Automatisation de l’estimation de la population exposée – Le modèle d’Aina (Module 7)<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">utilisation du générateur de modèles</source>
+<target xml:lang="fr">utilisation du générateur de modèles</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">reprojection des couches</source>
+<target xml:lang="fr">reprojection des couches</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">création de zones tampons autour des couches vectorielles</source>
+<target xml:lang="fr">création de zones tampons autour des couches vectorielles</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">découpage des couches raster</source>
+<target xml:lang="fr">découpage des couches raster</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">calcul des statistiques zonales</source>
+<target xml:lang="fr">calcul des statistiques zonales</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">application d’une classification graduée aux résultats</source>
+<target xml:lang="fr">application d’une classification graduée aux résultats</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Module_7/fr_module_7_mdg_aa_ex_3.html</ph>
+<bpt id="3">__</bpt>Exercice 3 : Identification des établissements de santé et écoles affectés – Aina ajoute des couches (Module 7)<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Module_7/fr_module_7_mdg_aa_ex_3.html</ph>
+<bpt id="3">__</bpt>Exercice 3 : Identification des établissements de santé et écoles affectés – Aina ajoute des couches (Module 7)<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">extension du modèle</source>
+<target xml:lang="fr">extension du modèle</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">comptage des points dans les polygones</source>
+<target xml:lang="fr">comptage des points dans les polygones</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">utilisation de la calculatrice de champs</source>
+<target xml:lang="fr">utilisation de la calculatrice de champs</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Module_4/fr_module_4_mdg_aa_ex_4.html</ph>
+<bpt id="3">__</bpt>Exercice 4 : Visualisation des résultats d’impact du cyclone – Aina applique des styles à ses couches (Module 4)<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Module_4/fr_module_4_mdg_aa_ex_4.html</ph>
+<bpt id="3">__</bpt>Exercice 4 : Visualisation des résultats d’impact du cyclone – Aina applique des styles à ses couches (Module 4)<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">utilisation du panneau de style</source>
+<target xml:lang="fr">utilisation du panneau de style</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">application de fichiers de style aux couches</source>
+<target xml:lang="fr">application de fichiers de style aux couches</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">enregistrement de fichiers de style</source>
+<target xml:lang="fr">enregistrement de fichiers de style</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Module_4/fr_module_4_mdg_aa_ex_5.html</ph>
+<bpt id="3">__</bpt>Exercice 5 : Création rapide de cartes – Aina utilise des modèles de carte (Module 4)<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Module_4/fr_module_4_mdg_aa_ex_5.html</ph>
+<bpt id="3">__</bpt>Exercice 5 : Création rapide de cartes – Aina utilise des modèles de carte (Module 4)<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">utilisation du composeur de mise en page pour créer une carte</source>
+<target xml:lang="fr">utilisation du composeur de mise en page pour créer une carte</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">utilisation de modèles de carte</source>
+<target xml:lang="fr">utilisation de modèles de carte</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">utilisation des tables attributaires dans le composeur de mise en page</source>
+<target xml:lang="fr">utilisation des tables attributaires dans le composeur de mise en page</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Module_7/fr_module_7_mdg_aa_ex_6.html</ph>
+<bpt id="3">__</bpt>Exercice 6 : Exportation des résultats du modèle pour l’équipe des opérations (Module 7)<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Module_7/fr_module_7_mdg_aa_ex_6.html</ph>
+<bpt id="3">__</bpt>Exercice 6 : Exportation des résultats du modèle pour l’équipe des opérations (Module 7)<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">extension du modèle</source>
+<target xml:lang="fr">extension du modèle</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">jointure des résultats du modèle</source>
+<target xml:lang="fr">jointure des résultats du modèle</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">exportation des résultats du modèle au format tableur (.csv)</source>
+<target xml:lang="fr">exportation des résultats du modèle au format tableur (.csv)</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Module_9/fr_qgis_module_9_mdg_aa_ex_7.html</ph>
+<bpt id="3">__</bpt>Exercice 7 : Accessibilité des postes de santé depuis les entrepôts de la CRM<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Module_9/fr_qgis_module_9_mdg_aa_ex_7.html</ph>
+<bpt id="3">__</bpt>Exercice 7 : Accessibilité des postes de santé depuis les entrepôts de la CRM<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Filtrage des jeux de données</source>
+<target xml:lang="fr">Filtrage des jeux de données</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Réalisation d’une analyse d’accessibilité</source>
+<target xml:lang="fr">Réalisation d’une analyse d’accessibilité</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Mise à jour des ensembles de données avec de nouvelles informations</source>
+<target xml:lang="fr">Mise à jour des ensembles de données avec de nouvelles informations</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Visualisation de l’accessibilité des établissements de santé</source>
+<target xml:lang="fr">Visualisation de l’accessibilité des établissements de santé</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_9/en_qgis_module_9_exercises.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Exercises Module 9: Network Analysis <bpt id="1">&lt;a id="exercises-module-9-network-analysis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercises Module 9: Network Analysis <bpt id="1">&lt;a id="exercises-module-9-network-analysis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">The following exercises for module 9 comprise one full network analysis from start to finish. Each exercise deals with one step of the analysis process.</source>
+<target xml:lang="fr">The following exercises for module 9 comprise one full network analysis from start to finish. Each exercise deals with one step of the analysis process.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Visualisation <bpt id="1">&lt;a id="visualisation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Visualisation <bpt id="1">&lt;a id="visualisation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Exercise</source>
+<target xml:lang="fr">Exercise</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Estimated time</source>
+<target xml:lang="fr">Estimated time</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Task 1: Assess water distribution access<ept id="2">](/content/Module_9/en_qgis_module_9_ex1.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Task 1: Assess water distribution access<ept id="2">](/content/Module_9/en_qgis_module_9_ex1.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Task 2: Access healthcare - avoid areas<ept id="2">](/content/Module_9/en_qgis_module_9_ex2.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Task 2: Access healthcare - avoid areas<ept id="2">](/content/Module_9/en_qgis_module_9_ex2.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Task 3: Larger scale accessibility analyses<ept id="2">](/content/Module_9/en_qgis_module_9_ex3.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Task 3: Larger scale accessibility analyses<ept id="2">](/content/Module_9/en_qgis_module_9_ex3.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Task 4<ept id="2">](/content/Module_9/en_qgis_module_9_ex4.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Task 4<ept id="2">](/content/Module_9/en_qgis_module_9_ex4.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Task 5: Identifying critical road segments<ept id="2">](/content/Module_9/en_qgis_module_9_ex5.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Task 5: Identifying critical road segments<ept id="2">](/content/Module_9/en_qgis_module_9_ex5.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Task 6: West Germany / Ahrtal flood logistics<ept id="2">](/content/Module_9/en_qgis_module_9_ex6.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Task 6: West Germany / Ahrtal flood logistics<ept id="2">](/content/Module_9/en_qgis_module_9_ex6.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Anticipatory Action <bpt id="1">&lt;a id="anticipatory-action"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Anticipatory Action <bpt id="1">&lt;a id="anticipatory-action"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Exercise</source>
+<target xml:lang="fr">Exercise</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Estimated time</source>
+<target xml:lang="fr">Estimated time</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise: Reachability of health Posts from CRM Warehouses<ept id="2">](/content/Module_9/en_qgis_module_9_mdg_aa_ex_7.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise: Reachability of health Posts from CRM Warehouses<ept id="2">](/content/Module_9/en_qgis_module_9_mdg_aa_ex_7.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">This exercise is the sixth task of the exercise track "Anticipatory Action Analysis for Cyclones in Madagascar". In this exercise, we will use isochrones indicating the areas which can be reached from a warehouse of the Malagasy Red Cross and calculate which cyclone exposed healthposts can be serviced by specific warehouses.</source>
+<target xml:lang="fr">This exercise is the sixth task of the exercise track "Anticipatory Action Analysis for Cyclones in Madagascar". In this exercise, we will use isochrones indicating the areas which can be reached from a warehouse of the Malagasy Red Cross and calculate which cyclone exposed healthposts can be serviced by specific warehouses.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">1 hour</source>
+<target xml:lang="fr">1 hour</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

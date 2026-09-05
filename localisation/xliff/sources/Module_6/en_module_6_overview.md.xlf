@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_6/en_module_6_overview.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Data Analysis with QGIS <bpt id="1">&lt;a id="data-analysis-with-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data Analysis with QGIS <bpt id="1">&lt;a id="data-analysis-with-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">The last modules introduced the operations and tools necessary to perform geographic data analysis within QGIS. This module takes the knowledge from the previous modules and applies them to create an understanding of spatial analysis. The first chapter discusses what spatial analysis means, and how it can help us understand phenomenons and answer questions. In this chapter, basic analysis methods, such as basic statistics, buffer analysis, Density maps, or interpolation, are explained. The second chapter focuses more in depth at data analysis methods within the humanitarian sector.</source>
+<target xml:lang="fr">The last modules introduced the operations and tools necessary to perform geographic data analysis within QGIS. This module takes the knowledge from the previous modules and applies them to create an understanding of spatial analysis. The first chapter discusses what spatial analysis means, and how it can help us understand phenomenons and answer questions. In this chapter, basic analysis methods, such as basic statistics, buffer analysis, Density maps, or interpolation, are explained. The second chapter focuses more in depth at data analysis methods within the humanitarian sector.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Chapter<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Chapter<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Competences &amp; Objectives<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Competences &amp; Objectives<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 1: Data analysis with QGIS<ept id="2">](/content/Module_6/en_qgis_data_analysis_theory.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 1: Data analysis with QGIS<ept id="2">](/content/Module_6/en_qgis_data_analysis_theory.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Know what can be understood as spatial analysis;  Know how to perform a buffer analysis; Know how to create a heatmap; Know how to gain information by joining attributes; Know how to select locations according to a set of criteria; Know how to interpolate.</source>
+<target xml:lang="fr">Know what can be understood as spatial analysis;  Know how to perform a buffer analysis; Know how to create a heatmap; Know how to gain information by joining attributes; Know how to select locations according to a set of criteria; Know how to interpolate.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 2: Spatial analysis in Humanitarian Work<ept id="2">](/content/Module_6/en_qgis_common_data_analysis.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 2: Spatial analysis in Humanitarian Work<ept id="2">](/content/Module_6/en_qgis_common_data_analysis.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Know common data analysis methods in humanitarian Work</source>
+<target xml:lang="fr">Know common data analysis methods in humanitarian Work</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercises for module 6<ept id="2">](/content/Module_6/en_qgis_module_6_exercises.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercises for module 6<ept id="2">](/content/Module_6/en_qgis_module_6_exercises.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Here you can find the exercises for module 6.</source>
+<target xml:lang="fr">Here you can find the exercises for module 6.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

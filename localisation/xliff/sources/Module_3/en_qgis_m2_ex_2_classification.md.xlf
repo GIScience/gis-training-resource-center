@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_3/en_qgis_m2_ex_2_classification.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Exercise 2 (Geodata Classification): Map of food insecurity in Sierra Leone <bpt id="1">&lt;a id="exercise-2-geodata-classification-map-of-food-insecurity-in-sierra-leone"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise 2 (Geodata Classification): Map of food insecurity in Sierra Leone <bpt id="1">&lt;a id="exercise-2-geodata-classification-map-of-food-insecurity-in-sierra-leone"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Aim of the exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Aim of the exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">This exercise aims to create an overview map of the distribution of food insecurity in Sierra Leone at district level. To do this, we will visualise both the distribution of food insecurity and key infrastructure elements such as hospitals, airports and roads.</source>
+<target xml:lang="fr">This exercise aims to create an overview map of the distribution of food insecurity in Sierra Leone at district level. To do this, we will visualise both the distribution of food insecurity and key infrastructure elements such as hospitals, airports and roads.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type of exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type of exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">This exercise can be used in online and presence training.</source>
+<target xml:lang="fr">This exercise can be used in online and presence training.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">It can be done as a follow-along exercise or individually as a self-study.</source>
+<target xml:lang="fr">It can be done as a follow-along exercise or individually as a self-study.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>These skills are relevant for<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>These skills are relevant for<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">QGIS Essentials</source>
+<target xml:lang="fr">QGIS Essentials</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">The skills tested in this exercise are necessary for all GIS-users.</source>
+<target xml:lang="fr">The skills tested in this exercise are necessary for all GIS-users.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Classifying geographic data</source>
+<target xml:lang="fr">Classifying geographic data</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">The exercise takes around 1 hour to complete, depending on the number of participants and trainers.</source>
+<target xml:lang="fr">The exercise takes around 1 hour to complete, depending on the number of participants and trainers.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki Articles<ept id="2">__</ept>:
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki Articles<ept id="2">__</ept>:
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>QGIS Interface<ept id="1">](/content/Wiki/en_qgis_interface_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>QGIS Interface<ept id="1">](/content/Wiki/en_qgis_interface_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Types of Geodata<ept id="1">](/content/Wiki/en_qgis_geodata_types_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Types of Geodata<ept id="1">](/content/Wiki/en_qgis_geodata_types_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Layer Concept<ept id="1">](/content/Wiki/en_qgis_layer_concept_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Layer Concept<ept id="1">](/content/Wiki/en_qgis_layer_concept_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Attribute table<ept id="1">](/content/Wiki/en_qgis_attribute_table_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Attribute table<ept id="1">](/content/Wiki/en_qgis_attribute_table_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Table function - Add field<ept id="1">](/content/Wiki/en_qgis_table_functions_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Table function - Add field<ept id="1">](/content/Wiki/en_qgis_table_functions_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Classification- Categorized<ept id="1">](/content/Wiki/en_qgis_categorized_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Classification- Categorized<ept id="1">](/content/Wiki/en_qgis_categorized_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Classification- Graduated<ept id="1">](/content/Wiki/en_qgis_graduated_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Classification- Graduated<ept id="1">](/content/Wiki/en_qgis_graduated_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Digitization- Point data<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Digitization- Point data<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)</ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Take the time to familiarise yourself with the exercise and the provided material.</source>
+<target xml:lang="fr">Take the time to familiarise yourself with the exercise and the provided material.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</source>
+<target xml:lang="fr">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</source>
+<target xml:lang="fr">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction.</source>
+<target xml:lang="fr">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Introduce the idea and aim of the exercise.</source>
+<target xml:lang="fr">Introduce the idea and aim of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</source>
+<target xml:lang="fr">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</source>
+<target xml:lang="fr">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</source>
+<target xml:lang="fr">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</source>
+<target xml:lang="fr">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Leave time for any issues or questions concerning the tasks at the end of the exercise.</source>
+<target xml:lang="fr">Leave time for any issues or questions concerning the tasks at the end of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Leave some time for open questions.</source>
+<target xml:lang="fr">Leave some time for open questions.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Download all datasets <bpt id="1">__</bpt><bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_2/Module_3_Exercise_2_Sierra_Leone_Food_Insecurity.zip)</ept><ept id="1">__</ept> and save the folder on your computer. Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects. Under "data > input" you will find the following files:</source>
+<target xml:lang="fr">Download all datasets <bpt id="1">__</bpt><bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_2/Module_3_Exercise_2_Sierra_Leone_Food_Insecurity.zip)</ept><ept id="1">__</ept> and save the folder on your computer. Unzip the .zip file. The unzipped folder is structured according to the recommended folder structure for QGIS projects. Under "data > input" you will find the following files:</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Sierra_leone_foodinsecurity_2015.shp`</ph> (Polygon) Shapefile</source>
+<target xml:lang="fr"><ph id="1">`Sierra_leone_foodinsecurity_2015.shp`</ph> (Polygon) Shapefile</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Sierra_leone_borders.gpkg`</ph> (MultiLineString) GeoPackage</source>
+<target xml:lang="fr"><ph id="1">`Sierra_leone_borders.gpkg`</ph> (MultiLineString) GeoPackage</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Sierra_Leone_national_borders (Lines)</source>
+<target xml:lang="fr">Sierra_Leone_national_borders (Lines)</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Sierra_Leone_provinces (Lines)</source>
+<target xml:lang="fr">Sierra_Leone_provinces (Lines)</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Sierra_leone_roads.gpd`</ph> (Lines) GeoPackage</source>
+<target xml:lang="fr"><ph id="1">`Sierra_leone_roads.gpd`</ph> (Lines) GeoPackage</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Sierra_leone_healthsites.gpkg`</ph> (Points) Geopackage</source>
+<target xml:lang="fr"><ph id="1">`Sierra_leone_healthsites.gpkg`</ph> (Points) Geopackage</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`sl_airports.gpkg`</ph> (Points) GeoPackage</source>
+<target xml:lang="fr"><ph id="1">`sl_airports.gpkg`</ph> (Points) GeoPackage</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Tasks <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Tasks <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Our goal is to produce an overview of the 2015 food insecurity situation in Sierra Leone together with the display of main infrastructure elements. To achieve this, we will visualise total food insecurity classifications alongside airports, hospitals, and primary roads in a map.</source>
+<target xml:lang="fr">Our goal is to produce an overview of the 2015 food insecurity situation in Sierra Leone together with the display of main infrastructure elements. To achieve this, we will visualise total food insecurity classifications alongside airports, hospitals, and primary roads in a map.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Open QGIS and create a <bpt id="1">[</bpt>new project<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch)</ept> by clicking on <ph id="2">`Project`</ph> → <ph id="3">`New`</ph>.</source>
+<target xml:lang="fr">Open QGIS and create a <bpt id="1">[</bpt>new project<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch)</ept> by clicking on <ph id="2">`Project`</ph> → <ph id="3">`New`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Once the project is created save the project in the “project” folder of the “Ex_Sierra_Leone_foodinsecurity”. To do that click on <ph id="1">`Project`</ph> → <ph id="2">`Save as`</ph> and navigate to the folder. Name the project “Sierra_Leone_foodinsecurity”.</source>
+<target xml:lang="fr">Once the project is created save the project in the “project” folder of the “Ex_Sierra_Leone_foodinsecurity”. To do that click on <ph id="1">`Project`</ph> → <ph id="2">`Save as`</ph> and navigate to the folder. Name the project “Sierra_Leone_foodinsecurity”.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Import the GeoPackages <ph id="1">`Sierra_leone_borders.gpkg`</ph>, <ph id="2">`Sierra_leone_airports`</ph>, <ph id="3">`Sierra_leone_healthsites`</ph> and <ph id="4">`Sierra_leone_roads.gpkg`</ph> as well as the shapefile <ph id="5">`Sierra_leone_foodinsecurity_2015.shp`</ph> into your project via drag and drop (<bpt id="6">[</bpt>Wiki Video<ept id="6">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-raster-data-via-drag-and-drop)</ept>).
+Or by clicking <ph id="7">`Layer`</ph> → <ph id="8">`Add Layer`</ph> → <ph id="9">`Add Vector Layer`</ph>: Click on the three dots <bpt id="10">![</bpt><ept id="10">](/fig/Three_points.png)</ept> and navigate to "Sierra_leone_borders.gpkg" in your file Browser. Select the file and click <ph id="11">`Open`</ph>. Back in QGIS click <ph id="12">`Add`</ph> (<bpt id="13">[</bpt>Wiki Video<ept id="13">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-raster-data-via-layer-tab)</ept>).</source>
+<target xml:lang="fr">Import the GeoPackages <ph id="1">`Sierra_leone_borders.gpkg`</ph>, <ph id="2">`Sierra_leone_airports`</ph>, <ph id="3">`Sierra_leone_healthsites`</ph> and <ph id="4">`Sierra_leone_roads.gpkg`</ph> as well as the shapefile <ph id="5">`Sierra_leone_foodinsecurity_2015.shp`</ph> into your project via drag and drop (<bpt id="6">[</bpt>Wiki Video<ept id="6">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-raster-data-via-drag-and-drop)</ept>).
+Or by clicking <ph id="7">`Layer`</ph> → <ph id="8">`Add Layer`</ph> → <ph id="9">`Add Vector Layer`</ph>: Click on the three dots <bpt id="10">![</bpt><ept id="10">](/fig/Three_points.png)</ept> and navigate to "Sierra_leone_borders.gpkg" in your file Browser. Select the file and click <ph id="11">`Open`</ph>. Back in QGIS click <ph id="12">`Add`</ph> (<bpt id="13">[</bpt>Wiki Video<ept id="13">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#open-raster-data-via-layer-tab)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Attention}</ph>
+GeoPackages can contain multiple files and even whole QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Attention}</ph>
+GeoPackages can contain multiple files and even whole QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">First, let's add a basemap to your map canvas using the plugin <ph id="1">`QuickMapServices`</ph> by clicking on the <bpt id="2">![</bpt><ept id="2">](/fig/QMS_search_icon.png)</ept> symbol in you project toolbar. Search for "Bing Maps Satellite Imagery" in the QMS panel and add the base map layer via double click.  For an optimised view <bpt id="3">[</bpt>adjust the opacity<ept id="3">](https://www.youtube.com/watch?v=WguUkN1YRzY&amp;ab_channel=GISBigfootAnswers)</ept> of your layers to optimise the use of the base map.</source>
+<target xml:lang="fr">First, let's add a basemap to your map canvas using the plugin <ph id="1">`QuickMapServices`</ph> by clicking on the <bpt id="2">![</bpt><ept id="2">](/fig/QMS_search_icon.png)</ept> symbol in you project toolbar. Search for "Bing Maps Satellite Imagery" in the QMS panel and add the base map layer via double click.  For an optimised view <bpt id="3">[</bpt>adjust the opacity<ept id="3">](https://www.youtube.com/watch?v=WguUkN1YRzY&amp;ab_channel=GISBigfootAnswers)</ept> of your layers to optimise the use of the base map.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Using  the attribute table of the airports layer zoom to Tongo Airport by right-clicking on the row in the attribute table and selecting <ph id="1">`Zoom to Feature`</ph>(<bpt id="2">[</bpt>Wiki Video<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)</ept>). Check the Basemap. Do you think the airstrip is still operational? The answer is no, according to Wikipedia. Delete Tongo Airport in the <bpt id="3">[</bpt>Attribute table<ept id="3">](/content/Wiki/en_qgis_attribute_table_wiki.md)</ept>. Delete Kabala airport too, since it is also not operational anymore.</source>
+<target xml:lang="fr">Using  the attribute table of the airports layer zoom to Tongo Airport by right-clicking on the row in the attribute table and selecting <ph id="1">`Zoom to Feature`</ph>(<bpt id="2">[</bpt>Wiki Video<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)</ept>). Check the Basemap. Do you think the airstrip is still operational? The answer is no, according to Wikipedia. Delete Tongo Airport in the <bpt id="3">[</bpt>Attribute table<ept id="3">](/content/Wiki/en_qgis_attribute_table_wiki.md)</ept>. Delete Kabala airport too, since it is also not operational anymore.</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Now we want to check out the airports of the cities of Bo and Kenema. Are these airstrips in better shape? If yes, add them to the airport layer. To find these cities on your map interface use the QGIS Plugin <ph id="1">`OSM Place Search`</ph>.
+To add the plugin <ph id="2">`OSM Place Search`</ph>, click on <ph id="3">`Plugins`</ph> → <ph id="4">`Manage and Install Plugins…`</ph> → <ph id="5">`All`</ph> and search for "OSM Place Search". Once you have found it click on it and select <ph id="6">`Install Plugin`</ph>. You can open the <ph id="7">`OSM Place Search Panel`</ph> like every other panel by clicking on <ph id="8">`View`</ph> → <ph id="9">`Panels`</ph> and checking <ph id="10">`OSM Place Search Panel`</ph>(<bpt id="11">[</bpt>Wiki Video<ept id="11">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html)</ept>).</source>
+<target xml:lang="fr">Now we want to check out the airports of the cities of Bo and Kenema. Are these airstrips in better shape? If yes, add them to the airport layer. To find these cities on your map interface use the QGIS Plugin <ph id="1">`OSM Place Search`</ph>.
+To add the plugin <ph id="2">`OSM Place Search`</ph>, click on <ph id="3">`Plugins`</ph> → <ph id="4">`Manage and Install Plugins…`</ph> → <ph id="5">`All`</ph> and search for "OSM Place Search". Once you have found it click on it and select <ph id="6">`Install Plugin`</ph>. You can open the <ph id="7">`OSM Place Search Panel`</ph> like every other panel by clicking on <ph id="8">`View`</ph> → <ph id="9">`Panels`</ph> and checking <ph id="10">`OSM Place Search Panel`</ph>(<bpt id="11">[</bpt>Wiki Video<ept id="11">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">In the panel, you can search for places on the OpenStreetMap by typing the name in the search bar. Often it makes sense to add additional information like the name of the country. Try for example “Bo, Sierra Leone”.</source>
+<target xml:lang="fr">In the panel, you can search for places on the OpenStreetMap by typing the name in the search bar. Often it makes sense to add additional information like the name of the country. Try for example “Bo, Sierra Leone”.</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/mod3_classification_ex_OSMsearch.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/mod3_classification_ex_OSMsearch.png</ph></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 400px</ph>
+<ph id="2">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 400px</ph>
+<ph id="2">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">OSM place search.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">OSM place search.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Add the airports of Bo and Kenema as points to the layer <ph id="1">`Sierra_Leone_airports`</ph>. Find help on the addition of features to a point layer <bpt id="2">[</bpt>here<ept id="2">](/content/Wiki/en_qgis_digitisation_wiki.md)</ept>.</source>
+<target xml:lang="fr">Add the airports of Bo and Kenema as points to the layer <ph id="1">`Sierra_Leone_airports`</ph>. Find help on the addition of features to a point layer <bpt id="2">[</bpt>here<ept id="2">](/content/Wiki/en_qgis_digitisation_wiki.md)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Optional:<ept id="1">*</ept> In the attribute table, create a new column <ph id="2">`Runway_length`</ph> and add the length of the runways of Bo and Kenema by measuring them approximately with the measuring tool <bpt id="3">![</bpt><ept id="3">](/fig/measuring_tool_icon.png)</ept>.</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Optional:<ept id="1">*</ept> In the attribute table, create a new column <ph id="2">`Runway_length`</ph> and add the length of the runways of Bo and Kenema by measuring them approximately with the measuring tool <bpt id="3">![</bpt><ept id="3">](/fig/measuring_tool_icon.png)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Now we want to create a intuitive visualisation of the differences in food insecurity. To achieve this we use the "<bpt id="1">[</bpt>Graduated Classification<ept id="1">](/content/Wiki/en_qgis_graduated_wiki.md)</ept>" visualization option for the layer <ph id="2">`Sierra_leone_foodinsecurity_2015`</ph> by displaying the polygons according to classes created based on the "Total_FI" column in the attribute table.</source>
+<target xml:lang="fr">Now we want to create a intuitive visualisation of the differences in food insecurity. To achieve this we use the "<bpt id="1">[</bpt>Graduated Classification<ept id="1">](/content/Wiki/en_qgis_graduated_wiki.md)</ept>" visualization option for the layer <ph id="2">`Sierra_leone_foodinsecurity_2015`</ph> by displaying the polygons according to classes created based on the "Total_FI" column in the attribute table.</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">Right-click on the layer <ph id="1">`Sierra_leone_foodinsecurity_2015.shp`</ph> in the <ph id="2">`Layer Panel`</ph> → <ph id="3">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="4">`Symbology`</ph> tab.</source>
+<target xml:lang="fr">Right-click on the layer <ph id="1">`Sierra_leone_foodinsecurity_2015.shp`</ph> in the <ph id="2">`Layer Panel`</ph> → <ph id="3">`Properties`</ph>. A new window will open up with a vertical tab section on the left. Navigate to the <ph id="4">`Symbology`</ph> tab.</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">In the topmost dropdown menu choose <ph id="1">`Graduated`</ph>. Under <ph id="2">`Value`</ph> select “Total_FI”.</source>
+<target xml:lang="fr">In the topmost dropdown menu choose <ph id="1">`Graduated`</ph>. Under <ph id="2">`Value`</ph> select “Total_FI”.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Further down the window click on <ph id="1">`Classify`</ph>. You now should see multiple classes based on the value range of the "TotalFI" column represented with different colours.  You can adjust the colours by picking different colour palettes in the drop down menu <ph id="2">`Color ramp`</ph>. Also, you can modify the value distribution of the classes by selecting different classification modes (<bpt id="3">[</bpt>Wiki<ept id="3">](/content/Wiki/en_qgis_graduated_wiki.md)</ept>) in the <ph id="4">`Mode`</ph> dropdown menu.</source>
+<target xml:lang="fr">Further down the window click on <ph id="1">`Classify`</ph>. You now should see multiple classes based on the value range of the "TotalFI" column represented with different colours.  You can adjust the colours by picking different colour palettes in the drop down menu <ph id="2">`Color ramp`</ph>. Also, you can modify the value distribution of the classes by selecting different classification modes (<bpt id="3">[</bpt>Wiki<ept id="3">](/content/Wiki/en_qgis_graduated_wiki.md)</ept>) in the <ph id="4">`Mode`</ph> dropdown menu.</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Play around with these options to achieve a colour scheme that suits the data. Once you are done, click <ph id="1">`Apply`</ph> and <ph id="2">`OK`</ph> to close the symbology window.</source>
+<target xml:lang="fr">Play around with these options to achieve a colour scheme that suits the data. Once you are done, click <ph id="1">`Apply`</ph> and <ph id="2">`OK`</ph> to close the symbology window.</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/mod3_classification_ex_Graduatedclassification.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/mod3_classification_ex_Graduatedclassification.png</ph></target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 900px</ph>
+<ph id="2">name: basic classification</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 900px</ph>
+<ph id="2">name: basic classification</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Sierra Leone food insecurity classification.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Sierra Leone food insecurity classification.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">To give the hospitals and airports a more distinctive visualization, open the <ph id="1">`Symbology`</ph> tab again for the respective layers and choose "Topology" in the dropdown menu above the bottom panel top panel. Search for the airport/hospital symbol and select it by clicking on it. Again, apply your changes by clicking <ph id="2">`Apply`</ph> and <ph id="3">`OK`</ph>.</source>
+<target xml:lang="fr">To give the hospitals and airports a more distinctive visualization, open the <ph id="1">`Symbology`</ph> tab again for the respective layers and choose "Topology" in the dropdown menu above the bottom panel top panel. Search for the airport/hospital symbol and select it by clicking on it. Again, apply your changes by clicking <ph id="2">`Apply`</ph> and <ph id="3">`OK`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/mod3_classification_ex_Topology.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/mod3_classification_ex_Topology.png</ph></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 900px</ph>
+<ph id="2">name: basic classification</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 900px</ph>
+<ph id="2">name: basic classification</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Symbol for hospital.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Symbol for hospital.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">As a last visualisation step open the <ph id="1">`Symbology`</ph> tab <ph id="2">`Sierra_Leone_roads (Lines)`</ph> and like in step 9 open the top dropdown menu. Now instead of <ph id="3">`Graduated`</ph> choose <bpt id="4">[</bpt>Categorized Classification<ept id="4">](/content/Wiki/en_qgis_categorized_wiki.md)</ept> and select "highway" in the <ph id="5">`Value`</ph> menu. Click <ph id="6">`Classify`</ph> to get a classification with individual colours for all unique values of the "highway" column. In the squares next to the classes, deselect all classes except for "primary". You can change the colour of the classes by manually clicking and adjusting the colour in the drop "Symbol" dropdown menu near the top of the window.</source>
+<target xml:lang="fr">As a last visualisation step open the <ph id="1">`Symbology`</ph> tab <ph id="2">`Sierra_Leone_roads (Lines)`</ph> and like in step 9 open the top dropdown menu. Now instead of <ph id="3">`Graduated`</ph> choose <bpt id="4">[</bpt>Categorized Classification<ept id="4">](/content/Wiki/en_qgis_categorized_wiki.md)</ept> and select "highway" in the <ph id="5">`Value`</ph> menu. Click <ph id="6">`Classify`</ph> to get a classification with individual colours for all unique values of the "highway" column. In the squares next to the classes, deselect all classes except for "primary". You can change the colour of the classes by manually clicking and adjusting the colour in the drop "Symbol" dropdown menu near the top of the window.</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/mod3_classification_ex_Categorizedclassification.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/mod3_classification_ex_Categorizedclassification.png</ph></target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 900px</ph>
+<ph id="2">name: basic classification</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 900px</ph>
+<ph id="2">name: basic classification</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Categorized highways Sierra Leone.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Categorized highways Sierra Leone.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">Set all the layers you loaded into your project to visible and arrange them in an order that is suitable for a good visualization of the food insecurity as well as the infrastructure elements. Choose a basemap that you think is suitable. Your final result could look like this:</source>
+<target xml:lang="fr">Set all the layers you loaded into your project to visible and arrange them in an order that is suitable for a good visualization of the food insecurity as well as the infrastructure elements. Choose a basemap that you think is suitable. Your final result could look like this:</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/mod3_classification_ex_Result.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/mod3_classification_ex_Result.png</ph></target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 900px</ph>
+<ph id="2">name: basic classification</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 900px</ph>
+<ph id="2">name: basic classification</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Example for the result of this exercise.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Example for the result of this exercise.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">The layer order here from top to bottom is:</source>
+<target xml:lang="fr">The layer order here from top to bottom is:</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Sierra_Leone_health`</ph></source>
+<target xml:lang="fr"><ph id="1">`Sierra_Leone_health`</ph></target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Sierra_Leone_airports`</ph></source>
+<target xml:lang="fr"><ph id="1">`Sierra_Leone_airports`</ph></target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Sierra_Leone_roads`</ph></source>
+<target xml:lang="fr"><ph id="1">`Sierra_Leone_roads`</ph></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Sierra_Leone_national_borders`</ph></source>
+<target xml:lang="fr"><ph id="1">`Sierra_Leone_national_borders`</ph></target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Sierra_leone_foodinsecurity_2015`</ph></source>
+<target xml:lang="fr"><ph id="1">`Sierra_leone_foodinsecurity_2015`</ph></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">Basemap: <ph id="1">`OpenStreetMap`</ph></source>
+<target xml:lang="fr">Basemap: <ph id="1">`OpenStreetMap`</ph></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/mod3_classification_ex_LayerOrder.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/mod3_classification_ex_LayerOrder.png</ph></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">name: basic classification</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">name: basic classification</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">Layer order.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Layer order.
+<ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

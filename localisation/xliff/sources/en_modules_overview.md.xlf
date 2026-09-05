@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/en_modules_overview.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Modules</source>
+<target xml:lang="fr">Modules</target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">The learning modules form the core of the GIS Training Resource Center. They provide structured training material for learning <bpt id="1">**</bpt>QGIS and GIS concepts in a humanitarian context<ept id="1">**</ept>, guiding participants from basic concepts to more advanced spatial analysis workflows.</source>
+<target xml:lang="fr">The learning modules form the core of the GIS Training Resource Center. They provide structured training material for learning <bpt id="1">**</bpt>QGIS and GIS concepts in a humanitarian context<ept id="1">**</ept>, guiding participants from basic concepts to more advanced spatial analysis workflows.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Each module combines theoretical explanations, step-by-step tutorials, and practical exercises. The modules can be used sequentially in a training course or individually for self-learning. Together they build the foundational GIS skills required for humanitarian mapping, analysis, and decision-making.</source>
+<target xml:lang="fr">Each module combines theoretical explanations, step-by-step tutorials, and practical exercises. The modules can be used sequentially in a training course or individually for self-learning. Together they build the foundational GIS skills required for humanitarian mapping, analysis, and decision-making.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Below you can find an overview of all available modules and their main topics.</source>
+<target xml:lang="fr">Below you can find an overview of all available modules and their main topics.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>1 2 2 2
+<ph id="2">:gutter: 3</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>1 2 2 2
+<ph id="2">:gutter: 3</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card} </ph>Module 1 — Introduction to GIS
+<ph id="2">:link: ../Module_1/en_module_1_overview</ph>
+<ph id="3">:link-type: doc</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card} </ph>Module 1 — Introduction to GIS
+<ph id="2">:link: ../Module_1/en_module_1_overview</ph>
+<ph id="3">:link-type: doc</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Learn the fundamental concepts of Geographic Information Systems and become familiar with the QGIS environment.</source>
+<target xml:lang="fr">Learn the fundamental concepts of Geographic Information Systems and become familiar with the QGIS environment.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Contents<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Contents<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">What is GIS?</source>
+<target xml:lang="fr">What is GIS?</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Setting up QGIS</source>
+<target xml:lang="fr">Setting up QGIS</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Getting started with QGIS</source>
+<target xml:lang="fr">Getting started with QGIS</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">QGIS interface and basic navigation</source>
+<target xml:lang="fr">QGIS interface and basic navigation</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Introduction exercises
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Introduction exercises
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card} </ph>Module 2 — Working with Geodata
+<ph id="2">:link: ../Module_2/en_module_2_overview.html</ph>
+<ph id="3">:link-type: doc</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card} </ph>Module 2 — Working with Geodata
+<ph id="2">:link: ../Module_2/en_module_2_overview.html</ph>
+<ph id="3">:link-type: doc</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Understand how geospatial data is structured and how it can be accessed and managed in QGIS.</source>
+<target xml:lang="fr">Understand how geospatial data is structured and how it can be accessed and managed in QGIS.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Contents<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Contents<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Introduction to geodata and layers</source>
+<target xml:lang="fr">Introduction to geodata and layers</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Coordinate reference systems and projections</source>
+<target xml:lang="fr">Coordinate reference systems and projections</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Geodata management and file structures</source>
+<target xml:lang="fr">Geodata management and file structures</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Working with attribute tables</source>
+<target xml:lang="fr">Working with attribute tables</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Finding and accessing data sources</source>
+<target xml:lang="fr">Finding and accessing data sources</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Using basemaps in QGIS</source>
+<target xml:lang="fr">Using basemaps in QGIS</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Practical exercises on geodata handling
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Practical exercises on geodata handling
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card} </ph>Module 3 — Basic GIS Operations
+<ph id="2">:link: ../Module_3/en_module_3_overview</ph>
+<ph id="3">:link-type: doc</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card} </ph>Module 3 — Basic GIS Operations
+<ph id="2">:link: ../Module_3/en_module_3_overview</ph>
+<ph id="3">:link-type: doc</ph></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Apply fundamental GIS techniques to create, edit, and analyse spatial data.</source>
+<target xml:lang="fr">Apply fundamental GIS techniques to create, edit, and analyse spatial data.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Contents<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Contents<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Digitising geospatial features</source>
+<target xml:lang="fr">Digitising geospatial features</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Feature selection and spatial queries</source>
+<target xml:lang="fr">Feature selection and spatial queries</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Geodata classification</source>
+<target xml:lang="fr">Geodata classification</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Georeferencing raster maps</source>
+<target xml:lang="fr">Georeferencing raster maps</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Hands-on exercises for core GIS operations
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Hands-on exercises for core GIS operations
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card} </ph>Module 4 — Visualisation and Map Making
+<ph id="2">:link: ../content/Module_4/en_module_4_overview.html</ph>
+<ph id="3">:link-type: doc</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card} </ph>Module 4 — Visualisation and Map Making
+<ph id="2">:link: ../content/Module_4/en_module_4_overview.html</ph>
+<ph id="3">:link-type: doc</ph></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Learn how to design effective maps and visualise geospatial information for communication and decision-making.</source>
+<target xml:lang="fr">Learn how to design effective maps and visualise geospatial information for communication and decision-making.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Contents<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Contents<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Symbology and colour schemes</source>
+<target xml:lang="fr">Symbology and colour schemes</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Styling vector and raster datasets</source>
+<target xml:lang="fr">Styling vector and raster datasets</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Labels and annotation</source>
+<target xml:lang="fr">Labels and annotation</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Exporting and importing map styles</source>
+<target xml:lang="fr">Exporting and importing map styles</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Print layout and map composition</source>
+<target xml:lang="fr">Print layout and map composition</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Good map design and common cartographic errors</source>
+<target xml:lang="fr">Good map design and common cartographic errors</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Operational mapping tutorials and exercises
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Operational mapping tutorials and exercises
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card} </ph>Module 5 — Intermediate GIS Operations
+<ph id="2">:link: ../content/Module_5/en_module_5_overview.html</ph>
+<ph id="3">:link-type: url</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card} </ph>Module 5 — Intermediate GIS Operations
+<ph id="2">:link: ../content/Module_5/en_module_5_overview.html</ph>
+<ph id="3">:link-type: url</ph></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Extend your GIS skills with more advanced spatial processing techniques.</source>
+<target xml:lang="fr">Extend your GIS skills with more advanced spatial processing techniques.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Contents<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Contents<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Spatial data processing workflows</source>
+<target xml:lang="fr">Spatial data processing workflows</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Overlay operations (clip, dissolve, buffer)</source>
+<target xml:lang="fr">Overlay operations (clip, dissolve, buffer)</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Centroid calculations</source>
+<target xml:lang="fr">Centroid calculations</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Non-spatial processing and attribute operations</source>
+<target xml:lang="fr">Non-spatial processing and attribute operations</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Practice exercises for intermediate GIS analysis
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Practice exercises for intermediate GIS analysis
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card} </ph>Module 6 — Data Analysis with QGIS
+<ph id="2">:link: ../content/Module_6/en_module_6_overview.html</ph>
+<ph id="3">:link-type: url</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card} </ph>Module 6 — Data Analysis with QGIS
+<ph id="2">:link: ../content/Module_6/en_module_6_overview.html</ph>
+<ph id="3">:link-type: url</ph></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Use GIS to perform spatial analyses and support evidence-based decision-making.</source>
+<target xml:lang="fr">Use GIS to perform spatial analyses and support evidence-based decision-making.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Contents<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Contents<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Analytical workflows in QGIS</source>
+<target xml:lang="fr">Analytical workflows in QGIS</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Spatial analysis concepts</source>
+<target xml:lang="fr">Spatial analysis concepts</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Data analysis in humanitarian contexts</source>
+<target xml:lang="fr">Data analysis in humanitarian contexts</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Applied exercises on geospatial analysis
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Applied exercises on geospatial analysis
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card} </ph>Module 7 — Automation with QGIS
+<ph id="2">:link: ../content/Module_7/en_module_7_overview.html</ph>
+<ph id="3">:link-type: url</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card} </ph>Module 7 — Automation with QGIS
+<ph id="2">:link: ../content/Module_7/en_module_7_overview.html</ph>
+<ph id="3">:link-type: url</ph></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Increase efficiency by automating GIS workflows using QGIS tools.</source>
+<target xml:lang="fr">Increase efficiency by automating GIS workflows using QGIS tools.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Contents<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Contents<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Introduction to the QGIS Model Designer</source>
+<target xml:lang="fr">Introduction to the QGIS Model Designer</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Building automated processing workflows</source>
+<target xml:lang="fr">Building automated processing workflows</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Running and adapting GIS models</source>
+<target xml:lang="fr">Running and adapting GIS models</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Exercises on workflow automation
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Exercises on workflow automation
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card} </ph>Module 8 — Remote Sensing and Raster Data
+<ph id="2">:link: ../content/Module_8/en_module_8_overview.html</ph>
+<ph id="3">:link-type: url</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card} </ph>Module 8 — Remote Sensing and Raster Data
+<ph id="2">:link: ../content/Module_8/en_module_8_overview.html</ph>
+<ph id="3">:link-type: url</ph></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Work with raster datasets and remote sensing imagery to complement vector-based GIS analyses.</source>
+<target xml:lang="fr">Work with raster datasets and remote sensing imagery to complement vector-based GIS analyses.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Contents<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Contents<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Remote sensing fundamentals</source>
+<target xml:lang="fr">Remote sensing fundamentals</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">Raster data structures and concepts</source>
+<target xml:lang="fr">Raster data structures and concepts</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Common raster processing techniques</source>
+<target xml:lang="fr">Common raster processing techniques</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Practical raster analysis exercises
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Practical raster analysis exercises
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card} </ph>Module 9 — Network Analysis
+<ph id="2">:link: ../content/Module_9/en_module_9_overview.html</ph>
+<ph id="3">:link-type: url</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card} </ph>Module 9 — Network Analysis
+<ph id="2">:link: ../content/Module_9/en_module_9_overview.html</ph>
+<ph id="3">:link-type: url</ph></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Analyse transportation and infrastructure networks using GIS tools.</source>
+<target xml:lang="fr">Analyse transportation and infrastructure networks using GIS tools.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Contents<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Contents<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Spatial network analysis concepts</source>
+<target xml:lang="fr">Spatial network analysis concepts</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">Using the OpenRouteService plugin</source>
+<target xml:lang="fr">Using the OpenRouteService plugin</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Network centrality and accessibility analysis</source>
+<target xml:lang="fr">Network centrality and accessibility analysis</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Exercises on network-based workflows
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Exercises on network-based workflows
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">How to use the modules</source>
+<target xml:lang="fr">How to use the modules</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">The modules are designed to support <bpt id="1">**</bpt>both structured training courses and self-paced learning<ept id="1">**</ept>. Trainers can combine the material with the exercises and wiki articles available on the platform to create interactive learning sessions.</source>
+<target xml:lang="fr">The modules are designed to support <bpt id="1">**</bpt>both structured training courses and self-paced learning<ept id="1">**</ept>. Trainers can combine the material with the exercises and wiki articles available on the platform to create interactive learning sessions.</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Depending on the training objectives, modules can be taught sequentially or selected individually to focus on specific GIS skills.</source>
+<target xml:lang="fr">Depending on the training objectives, modules can be taught sequentially or selected individually to focus on specific GIS skills.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

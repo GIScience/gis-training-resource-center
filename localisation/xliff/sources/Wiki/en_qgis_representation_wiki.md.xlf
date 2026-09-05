@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_representation_wiki.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Visualisation and Map Making in QGIS <bpt id="1">&lt;a id="visualisation-and-map-making-in-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Visualisation and Map Making in QGIS <bpt id="1">&lt;a id="visualisation-and-map-making-in-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Subsections <bpt id="1">&lt;a id="subsections"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Subsections <bpt id="1">&lt;a id="subsections"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Visualisation of geodata in QGIS<ept id="1">](/content/wiki/en_qgis_visualisation_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Visualisation of geodata in QGIS<ept id="1">](/content/wiki/en_qgis_visualisation_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>The Print Layout Composer<ept id="1">](/content/wiki/en_qgis_map_making_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>The Print Layout Composer<ept id="1">](/content/wiki/en_qgis_map_making_wiki.md)</ept></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

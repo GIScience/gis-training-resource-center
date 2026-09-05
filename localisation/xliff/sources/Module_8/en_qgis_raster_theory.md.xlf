@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_8/en_qgis_raster_theory.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Remote Sensing and Raster data theory 🛰️ <bpt id="1">&lt;a id="remote-sensing-and-raster-data-theory"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Remote Sensing and Raster data theory 🛰️ <bpt id="1">&lt;a id="remote-sensing-and-raster-data-theory"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</source>
+<target xml:lang="fr">🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">What is Raster Data <bpt id="1">&lt;a id="what-is-raster-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">What is Raster Data <bpt id="1">&lt;a id="what-is-raster-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Raster data is next to vector data a fundamental component of GIS and represents spatial information as a rectangular grid of cells or pixels that are each associated with a specific geographical information. Each cell contains a value representing a certain attribute, such as elevation, temperature or land cover within a specific area. Regarding their structure, spatial rasters are very similar the representation of optical information in a digital picture, the difference being that a spatial raster is accompanied by spatial information that connects the data to a particular location.</source>
+<target xml:lang="fr">Raster data is next to vector data a fundamental component of GIS and represents spatial information as a rectangular grid of cells or pixels that are each associated with a specific geographical information. Each cell contains a value representing a certain attribute, such as elevation, temperature or land cover within a specific area. Regarding their structure, spatial rasters are very similar the representation of optical information in a digital picture, the difference being that a spatial raster is accompanied by spatial information that connects the data to a particular location.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">The data format raster data is particularly useful for capturing continuous phenomena across a geographical area such as temperature or elevation that do not suit the visualization with vector geometries due to their continuous nature without clear boundaries.</source>
+<target xml:lang="fr">The data format raster data is particularly useful for capturing continuous phenomena across a geographical area such as temperature or elevation that do not suit the visualization with vector geometries due to their continuous nature without clear boundaries.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">In each raster cell information is stored with a value that can be interpreted in the context of the attribute/phenomenon the raster expresses, for example elevation in meters or colour intensity in case of an image.</source>
+<target xml:lang="fr">In each raster cell information is stored with a value that can be interpreted in the context of the attribute/phenomenon the raster expresses, for example elevation in meters or colour intensity in case of an image.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Types of Raster Data <bpt id="1">&lt;a id="types-of-raster-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Types of Raster Data <bpt id="1">&lt;a id="types-of-raster-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Raster data can be distinguished in two two common types according to the type of information that is displayed: Continuous and categorical raster data.</source>
+<target xml:lang="fr">Raster data can be distinguished in two two common types according to the type of information that is displayed: Continuous and categorical raster data.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Continuous raster data refers to datasets where the values assigned to each pixel represent continuous phenomena that vary smoothly across the area covered by the raster. Some examples of continuous rasters include:</source>
+<target xml:lang="fr">Continuous raster data refers to datasets where the values assigned to each pixel represent continuous phenomena that vary smoothly across the area covered by the raster. Some examples of continuous rasters include:</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Precipitation Maps<ept id="1">**</ept> displaying variable precipitation sums</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Precipitation Maps<ept id="1">**</ept> displaying variable precipitation sums</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Digital Elevation Models<ept id="1">**</ept> containing altitude values</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Digital Elevation Models<ept id="1">**</ept> containing altitude values</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Spatially variable Indices<ept id="1">**</ept> such as the Normalized Difference vegetation Index (NDVI)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Spatially variable Indices<ept id="1">**</ept> such as the Normalized Difference vegetation Index (NDVI)</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Discontinuous<ept id="1">**</ept> rasters contain categorical data, where each pixel represents a discrete class value rather than a value on a continuous scale. The information in these types of raster is sometimes also suitable for the storage with vector data. Some examples of classified maps include:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Discontinuous<ept id="1">**</ept> rasters contain categorical data, where each pixel represents a discrete class value rather than a value on a continuous scale. The information in these types of raster is sometimes also suitable for the storage with vector data. Some examples of classified maps include:</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Landcover/Land Use Maps<ept id="1">**</ept> with discrete classes</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Landcover/Land Use Maps<ept id="1">**</ept> with discrete classes</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Tree height maps classified<ept id="1">**</ept> as short, medium, and tall trees</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Tree height maps classified<ept id="1">**</ept> as short, medium, and tall trees</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Risk maps<ept id="1">**</ept> with multiple distinct risk classes</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Risk maps<ept id="1">**</ept> with multiple distinct risk classes</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Properties of Raster data <bpt id="1">&lt;a id="properties-of-raster-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Properties of Raster data <bpt id="1">&lt;a id="properties-of-raster-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Spatial Extent <bpt id="1">&lt;a id="spatial-extent"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Spatial Extent <bpt id="1">&lt;a id="spatial-extent"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">The spatial extent of a raster refers to the geographical area covered by the grid of cells in the raster dataset. It defines the boundaries of the raster dataset in terms of its geographical coordinates. The spatial extent is typically described by the minimum and maximum values of the spatial coordinates in every geographical direction (e.g. minimum and maximum latitude and longitude) that encompass all pixels of the raster.</source>
+<target xml:lang="fr">The spatial extent of a raster refers to the geographical area covered by the grid of cells in the raster dataset. It defines the boundaries of the raster dataset in terms of its geographical coordinates. The spatial extent is typically described by the minimum and maximum values of the spatial coordinates in every geographical direction (e.g. minimum and maximum latitude and longitude) that encompass all pixels of the raster.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Spatial Resolution <bpt id="1">&lt;a id="spatial-resolution"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Spatial Resolution <bpt id="1">&lt;a id="spatial-resolution"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">The spatial resolution of a raster refers to the area represented by each individual pixel on the ground in the real world. It quantifies the level of detail of the spatial representation within the dataset. For example, a spatial resolution of 30 metres per pixel means that each pixel represents an area of 30x30 metres on the ground. High spatial resolution means smaller pixel sizes, resulting in finer detail and more accurate representation of spatial features within the dataset.</source>
+<target xml:lang="fr">The spatial resolution of a raster refers to the area represented by each individual pixel on the ground in the real world. It quantifies the level of detail of the spatial representation within the dataset. For example, a spatial resolution of 30 metres per pixel means that each pixel represents an area of 30x30 metres on the ground. High spatial resolution means smaller pixel sizes, resulting in finer detail and more accurate representation of spatial features within the dataset.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Coordinate Reference Sytem (CRS) <bpt id="1">&lt;a id="coordinate-reference-sytem-crs"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Coordinate Reference Sytem (CRS) <bpt id="1">&lt;a id="coordinate-reference-sytem-crs"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">As with vector data, the Coordinate Reference System (CRS) of a raster dataset refers to the spatial reference framework used to define the geographic location and orientation of the raster on the Earth's surface (CRS WIKI link). It provides a standardised way of representing spatial coordinates and ensures that raster data can be accurately geolocated and integrated with other geo-spatial datasets.<ph id="1">&lt;br></ph><ph id="2">&lt;br></ph>
+The CRS includes a number of different parameters:<ph id="3">&lt;br></ph></source>
+<target xml:lang="fr">As with vector data, the Coordinate Reference System (CRS) of a raster dataset refers to the spatial reference framework used to define the geographic location and orientation of the raster on the Earth's surface (CRS WIKI link). It provides a standardised way of representing spatial coordinates and ensures that raster data can be accurately geolocated and integrated with other geo-spatial datasets.<ph id="1">&lt;br></ph><ph id="2">&lt;br></ph>
+The CRS includes a number of different parameters:<ph id="3">&lt;br></ph></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Coordinate system<ept id="1">**</ept>: This defines how spatial coordinates are represented. Common coordinate systems include geographic (latitude and longitude) and projected (e.g. Universal Transverse Mercator - UTM).</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Coordinate system<ept id="1">**</ept>: This defines how spatial coordinates are represented. Common coordinate systems include geographic (latitude and longitude) and projected (e.g. Universal Transverse Mercator - UTM).</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Datum<ept id="1">**</ept>: The datum specifies the reference ellipsoid and geodetic parameters used to model the shape of the Earth. It ensures consistency of spatial measurements across different datasets (e.g. the WGS 84 ellipsoid).</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Datum<ept id="1">**</ept>: The datum specifies the reference ellipsoid and geodetic parameters used to model the shape of the Earth. It ensures consistency of spatial measurements across different datasets (e.g. the WGS 84 ellipsoid).</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Unit<ept id="1">**</ept>: The unit of measurement for spatial coordinates, such as metres (e.g. in UTM) or degrees in the case of geographical coordinates.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Unit<ept id="1">**</ept>: The unit of measurement for spatial coordinates, such as metres (e.g. in UTM) or degrees in the case of geographical coordinates.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Origin<ept id="1">**</ept>: The origin or reference point of the coordinate system, which may vary depending on the projection method used.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Origin<ept id="1">**</ept>: The origin or reference point of the coordinate system, which may vary depending on the projection method used.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Metadata <bpt id="1">&lt;a id="metadata"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Metadata <bpt id="1">&lt;a id="metadata"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Metadata for raster data consists of descriptive information that provides context and details about the raster dataset. It includes information such as the dataset source, creation date, spatial extent, spatial resolution, coordinate reference system (CRS), data type, units, compression techniques, processing steps, accuracy ratings, and copyright/licensing information.<ph id="1">&lt;br></ph><ph id="2">&lt;br></ph>
+This metadata helps users to understand the content, origin, quality and appropriate use of raster data. It facilitates data discovery, evaluation and integration into geospatial workflows, ensuring that users can effectively interpret and use the data for their specific applications.</source>
+<target xml:lang="fr">Metadata for raster data consists of descriptive information that provides context and details about the raster dataset. It includes information such as the dataset source, creation date, spatial extent, spatial resolution, coordinate reference system (CRS), data type, units, compression techniques, processing steps, accuracy ratings, and copyright/licensing information.<ph id="1">&lt;br></ph><ph id="2">&lt;br></ph>
+This metadata helps users to understand the content, origin, quality and appropriate use of raster data. It facilitates data discovery, evaluation and integration into geospatial workflows, ensuring that users can effectively interpret and use the data for their specific applications.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">File Format <bpt id="1">&lt;a id="file-format"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">File Format <bpt id="1">&lt;a id="file-format"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">There are multiple different file formats for storing an working with raster data. Following a short overview over the most common formats that you will likely come by as you work with spaptial rasters:</source>
+<target xml:lang="fr">There are multiple different file formats for storing an working with raster data. Following a short overview over the most common formats that you will likely come by as you work with spaptial rasters:</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>GeoTIFF (.tif/.tiff)<ept id="1">**</ept>: Widely used file format, supports georeferencing and metadata.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>GeoTIFF (.tif/.tiff)<ept id="1">**</ept>: Widely used file format, supports georeferencing and metadata.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>GeoPackage (.gpkg)<ept id="1">**</ept>: Open format for storing geospatial data, supports raster and vec-tor.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>GeoPackage (.gpkg)<ept id="1">**</ept>: Open format for storing geospatial data, supports raster and vec-tor.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>JPEG (.jpg/.jpeg) &amp; PNG (.png)<ept id="1">**</ept>: Common formats for images, lacks georeferencing.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>JPEG (.jpg/.jpeg) &amp; PNG (.png)<ept id="1">**</ept>: Common formats for images, lacks georeferencing.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Esri Grid (.adf)<ept id="1">**</ept>: Esri's raster format, used in ArcGIS, supports georeferncing amd metadata</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Esri Grid (.adf)<ept id="1">**</ept>: Esri's raster format, used in ArcGIS, supports georeferncing amd metadata</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>GeoPackage (.gpkg)<ept id="1">**</ept>: Open format for storing geospatial data, supports raster and vec-tor.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>GeoPackage (.gpkg)<ept id="1">**</ept>: Open format for storing geospatial data, supports raster and vec-tor.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

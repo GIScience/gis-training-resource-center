@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_4/en_qgis_map_design_I.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Symbology and Colours <bpt id="1">&lt;a id="symbology-and-colours"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Symbology and Colours <bpt id="1">&lt;a id="symbology-and-colours"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">The representation of geodata in maps is essential for providing useful location-based insights. This subchapter will cover the basics of good map design, how to create a map design in QGIS, as well as common mistakes when designing or interpreting maps.</source>
+<target xml:lang="fr">The representation of geodata in maps is essential for providing useful location-based insights. This subchapter will cover the basics of good map design, how to create a map design in QGIS, as well as common mistakes when designing or interpreting maps.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">In this chapter we will go over the basics of symbology, colours, and how to adjust individual layers in QGIS to create comprehensive maps.</source>
+<target xml:lang="fr">In this chapter we will go over the basics of symbology, colours, and how to adjust individual layers in QGIS to create comprehensive maps.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>Recap: Types of Maps
+<ph id="2">:class: seealso</ph></source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>Recap: Types of Maps
+<ph id="2">:class: seealso</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">In general, there are two main types of maps: <bpt id="1">__</bpt>topographic maps<ept id="1">__</ept> and <bpt id="2">__</bpt>thematic maps<ept id="2">__</ept>.</source>
+<target xml:lang="fr">In general, there are two main types of maps: <bpt id="1">__</bpt>topographic maps<ept id="1">__</ept> and <bpt id="2">__</bpt>thematic maps<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Topographic maps<ept id="1">__</ept> are intended to be exhaustive, including elements fundamental to localisation (localities, road networks, terrain, hydrography). They display the physical location of objects in the real world. The representation of elements in topographic maps is done using conventional signs (e.g. blue for water, green for forests, yellow for agricultural land).</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Topographic maps<ept id="1">__</ept> are intended to be exhaustive, including elements fundamental to localisation (localities, road networks, terrain, hydrography). They display the physical location of objects in the real world. The representation of elements in topographic maps is done using conventional signs (e.g. blue for water, green for forests, yellow for agricultural land).</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_topographic_map_examples.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_topographic_map_examples.png</ph></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">name: en_30.30.2_topographic_map_examples</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">name: en_30.30.2_topographic_map_examples</ph></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Examples for topographic maps.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Examples for topographic maps.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">%%</ph> SOURCE?</source>
+<target xml:lang="fr"><ph id="1">%%</ph> SOURCE?</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Thematic maps<ept id="1">__</ept> display the distribution of specific data or statistically processed information, such as population size, disease incidence, flooding risk, etc. The representation of elements on thematic maps is decided according to the rules of graphic semiology.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Thematic maps<ept id="1">__</ept> display the distribution of specific data or statistically processed information, such as population size, disease incidence, flooding risk, etc. The representation of elements on thematic maps is decided according to the rules of graphic semiology.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_thematic_maps_examples.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_thematic_maps_examples.png</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">name: en_30.30.2_thematic_maps_examples</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">name: en_30.30.2_thematic_maps_examples</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Examples for thematic maps.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Examples for thematic maps.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><ph id="1">%%</ph> SOURCE?</source>
+<target xml:lang="fr"><ph id="1">%%</ph> SOURCE?</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">These two maps use design elements differently. Topographic maps will use symbols and colours out of convention and readability, whereas in designing thematic maps, the symbols and colours you use depend on the context and the information you want to convey.</source>
+<target xml:lang="fr">These two maps use design elements differently. Topographic maps will use symbols and colours out of convention and readability, whereas in designing thematic maps, the symbols and colours you use depend on the context and the information you want to convey.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Visual Variables <bpt id="1">&lt;a id="visual-variables"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Visual Variables <bpt id="1">&lt;a id="visual-variables"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_graphic_semiology_signs.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_graphic_semiology_signs.png</ph></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 500px</ph>
+<ph id="2">name: en_30.30.2_graphic_semiology_signs</ph></source>
+<target xml:lang="fr"><ph id="1">width: 500px</ph>
+<ph id="2">name: en_30.30.2_graphic_semiology_signs</ph></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">You can use different graphic signs depending on the type of information you want to display (Source: Unknown; This figure is included for illustrative purposes only and is not subject to the Creative Commons license of this platform).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">You can use different graphic signs depending on the type of information you want to display (Source: Unknown; This figure is included for illustrative purposes only and is not subject to the Creative Commons license of this platform).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Visual variables are the <bpt id="1">__</bpt>graphical means for visually transcribing information<ept id="1">__</ept>. The visual variables are <bpt id="2">__</bpt>shape, size, hue, value, texture, and orientation<ept id="2">__</ept>. You can adjust these variables to appropriately represent the data at your disposal. They allow for the expression of <bpt id="3">__</bpt>relationship of difference, order, association, or quantity<ept id="3">__</ept> between each element, helping to display different information.</source>
+<target xml:lang="fr">Visual variables are the <bpt id="1">__</bpt>graphical means for visually transcribing information<ept id="1">__</ept>. The visual variables are <bpt id="2">__</bpt>shape, size, hue, value, texture, and orientation<ept id="2">__</ept>. You can adjust these variables to appropriately represent the data at your disposal. They allow for the expression of <bpt id="3">__</bpt>relationship of difference, order, association, or quantity<ept id="3">__</ept> between each element, helping to display different information.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_visual_variables.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_visual_variables.png</ph></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_visual_variables</ph>
+<ph id="2">width: 500px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_visual_variables</ph>
+<ph id="2">width: 500px</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Visual variables according to Bertin (1967).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Visual variables according to Bertin (1967).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Caution}</ph>
+Visual perception varies from one person to the next according to various capabilities:</source>
+<target xml:lang="fr"><ph id="1">:::{Caution}</ph>
+Visual perception varies from one person to the next according to various capabilities:</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Physiological (e.g. colour blindness)</source>
+<target xml:lang="fr">Physiological (e.g. colour blindness)</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Transcultural (green = nature, blue = water)
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Transcultural (green = nature, blue = water)
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Using visual variables in cartography <bpt id="1">&lt;a id="using-visual-variables-in-cartography"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Using visual variables in cartography <bpt id="1">&lt;a id="using-visual-variables-in-cartography"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Based on these visual variables, cartographers are able to interpret and communicate information crucial to humanitarian operations. Depending on the use case and the intended audience, you will use different stylings to communicate different data. OpenStreetMap offers several map products: OSM Standard, Tracestack Topo, CyclOSM or the public transportation map, for example. The data behind the maps is the same, but the styling is different. In each case, the cartographers had different goals in mind (e.g., for the cycling map, show the safest biking routes, bike repair stations and resting places) and chose the styling accordingly.</source>
+<target xml:lang="fr">Based on these visual variables, cartographers are able to interpret and communicate information crucial to humanitarian operations. Depending on the use case and the intended audience, you will use different stylings to communicate different data. OpenStreetMap offers several map products: OSM Standard, Tracestack Topo, CyclOSM or the public transportation map, for example. The data behind the maps is the same, but the styling is different. In each case, the cartographers had different goals in mind (e.g., for the cycling map, show the safest biking routes, bike repair stations and resting places) and chose the styling accordingly.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::{grid} </ph>2
+<ph id="2">::::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">:::::{grid} </ph>2
+<ph id="2">::::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/m4_OSM_Overviewmap_example.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/m4_OSM_Overviewmap_example.png</ph></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: m4_OSM_Overviewmap_example</ph>
+<ph id="2">width: 375 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: m4_OSM_Overviewmap_example</ph>
+<ph id="2">width: 375 px</ph></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>OSM<ept id="1">](https://www.openstreetmap.org)</ept> Standard
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>OSM<ept id="1">](https://www.openstreetmap.org)</ept> Standard
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid-item}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid-item}</ph></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/m4_OSM_bikemap.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/m4_OSM_bikemap.png</ph></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: m4_OSM_bikemap</ph>
+<ph id="2">width: 375 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: m4_OSM_bikemap</ph>
+<ph id="2">width: 375 px</ph></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">OSM Cycling Map
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">OSM Cycling Map
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph>
+<ph id="2">:::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph>
+<ph id="2">:::::</ph></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">In the following dropdowns, you will find different examples of maps used in humanitarian work.</source>
+<target xml:lang="fr">In the following dropdowns, you will find different examples of maps used in humanitarian work.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Now it's your turn!
+<ph id="2">:class: tip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Now it's your turn!
+<ph id="2">:class: tip</ph></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">What type of visual variables or symbolisation methods can you identify in these maps?</source>
+<target xml:lang="fr">What type of visual variables or symbolisation methods can you identify in these maps?</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">What kind of information has been communicated in which way (e.g. information about infrastructure, natural landscapes, etc.)</source>
+<target xml:lang="fr">What kind of information has been communicated in which way (e.g. information about infrastructure, natural landscapes, etc.)</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">What other methods to communicate information can you imagine or do you know?</source>
+<target xml:lang="fr">What other methods to communicate information can you imagine or do you know?</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">You can also use maps from you encountered in your work or daily life.</source>
+<target xml:lang="fr">You can also use maps from you encountered in your work or daily life.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph><bpt id="2">__</bpt>Map Example 1<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph><bpt id="2">__</bpt>Map Example 1<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png</ph></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4</ph>
+<ph id="2">width: 750 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4</ph>
+<ph id="2">width: 750 px</ph></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Flood affected areas and roads in the Somali Region, Ethiopia (Source: OCHA).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Flood affected areas and roads in the Somali Region, Ethiopia (Source: OCHA).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph><bpt id="2">__</bpt>Map Example 2<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph><bpt id="2">__</bpt>Map Example 2<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/proportional_circles_example.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/proportional_circles_example.png</ph></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: proportional_circles_example</ph>
+<ph id="2">width: 500 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: proportional_circles_example</ph>
+<ph id="2">width: 500 px</ph></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Internally Displaced Persons (IDPs), 30 September 2024 (Source: <bpt id="1">[</bpt>UNHCR<ept id="1">](https://reliefweb.int/map/sudan/regional-bureau-east-horn-africa-and-great-lakes-region-internally-displaced-persons-idps-30-september-2024)</ept>).
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">Internally Displaced Persons (IDPs), 30 September 2024 (Source: <bpt id="1">[</bpt>UNHCR<ept id="1">](https://reliefweb.int/map/sudan/regional-bureau-east-horn-africa-and-great-lakes-region-internally-displaced-persons-idps-30-september-2024)</ept>).
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph><bpt id="2">__</bpt>Map Example 3<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph><bpt id="2">__</bpt>Map Example 3<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/choropleth_hum_example.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/choropleth_hum_example.png</ph></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: choropleth_hum_example</ph>
+<ph id="2">width: 700 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: choropleth_hum_example</ph>
+<ph id="2">width: 700 px</ph></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">South Sudan: Humanitarian Situation Monitoring, April-May 2024 - Damaged shelters (Source: <bpt id="1">[</bpt>REACH<ept id="1">](https://repository.impact-initiatives.org/document/impact/897badb8/REACH_SSD_Map_HSM_AprilMay2024_DamagedShelters_June2024-1.pdf)</ept>).
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">South Sudan: Humanitarian Situation Monitoring, April-May 2024 - Damaged shelters (Source: <bpt id="1">[</bpt>REACH<ept id="1">](https://repository.impact-initiatives.org/document/impact/897badb8/REACH_SSD_Map_HSM_AprilMay2024_DamagedShelters_June2024-1.pdf)</ept>).
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph><bpt id="2">__</bpt>Map Example 4<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph><bpt id="2">__</bpt>Map Example 4<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_m4_operational_overview_example.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_m4_operational_overview_example.png</ph></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_m4_operational_overview_example</ph>
+<ph id="2">width: 650 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_m4_operational_overview_example</ph>
+<ph id="2">width: 650 px</ph></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Operational overview or response activity map (Source: <bpt id="1">[</bpt>Shelter Cluster Vanuata<ept id="1">](https://reliefweb.int/map/vanuatu/vanuatu-tropical-cyclone-lola-distribution-and-gap-map-malampa-13022024)</ept>).
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">Operational overview or response activity map (Source: <bpt id="1">[</bpt>Shelter Cluster Vanuata<ept id="1">](https://reliefweb.int/map/vanuatu/vanuatu-tropical-cyclone-lola-distribution-and-gap-map-malampa-13022024)</ept>).
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Choropleth &amp; Graduated Symbol Maps <bpt id="1">&lt;a id="choropleth-and-graduated-symbol-maps"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Choropleth &amp; Graduated Symbol Maps <bpt id="1">&lt;a id="choropleth-and-graduated-symbol-maps"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Choropleth and Graduated symbol maps are two common thematic map types used in humanitarian
+work.</source>
+<target xml:lang="fr">Choropleth and Graduated symbol maps are two common thematic map types used in humanitarian
+work.</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">In essence:</source>
+<target xml:lang="fr">In essence:</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Data is divided into areas on the map.</source>
+<target xml:lang="fr">Data is divided into areas on the map.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Choropleth maps<ept id="1">__</ept> are maps that show data using colors or shading within specific geographic areas, like countries, states, or counties. It helps to visualize data patterns or distributions across regions. For example, a choropleth map could show population density, where darker shades indicate higher densities and lighter shades indicate lower densities.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Choropleth maps<ept id="1">__</ept> are maps that show data using colors or shading within specific geographic areas, like countries, states, or counties. It helps to visualize data patterns or distributions across regions. For example, a choropleth map could show population density, where darker shades indicate higher densities and lighter shades indicate lower densities.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Graduated Symbol maps<ept id="1">__</ept> use circles or other symbols of varying sizes to represent data values across different locations. The larger the circle, the higher the data value it represents. This makes it useful for showing quantities or comparing values across different points on a map.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Graduated Symbol maps<ept id="1">__</ept> use circles or other symbols of varying sizes to represent data values across different locations. The larger the circle, the higher the data value it represents. This makes it useful for showing quantities or comparing values across different points on a map.</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">For choropleth maps, colours or shades represent different values for each area. Usually, the darker or more intense colour signifies higher values. The effectiveness of a choropleth map is dependent on the <bpt id="1">__</bpt>colouring scheme<ept id="1">__</ept>.</source>
+<target xml:lang="fr">For choropleth maps, colours or shades represent different values for each area. Usually, the darker or more intense colour signifies higher values. The effectiveness of a choropleth map is dependent on the <bpt id="1">__</bpt>colouring scheme<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Choropleth maps are usually created by <bpt id="1">[</bpt>classifying<ept id="1">](/content/Module_3/en_qgis_data_classification.md)</ept> geodata into distinct groups, either using categorised or graduated classification.</source>
+<target xml:lang="fr">Choropleth maps are usually created by <bpt id="1">[</bpt>classifying<ept id="1">](/content/Module_3/en_qgis_data_classification.md)</ept> geodata into distinct groups, either using categorised or graduated classification.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Graduated symbols maps are created by changing the size of a symbol in relation to a value in the attribute table.</source>
+<target xml:lang="fr">Graduated symbols maps are created by changing the size of a symbol in relation to a value in the attribute table.</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Choropleth maps and graduated symbol maps are ideal for showing patterns over large areas but should be used carefully, as they don’t show exact values within each region, just an overall gradient or level of intensity and they are used in almost every application of mapping and GIS.</source>
+<target xml:lang="fr">Choropleth maps and graduated symbol maps are ideal for showing patterns over large areas but should be used carefully, as they don’t show exact values within each region, just an overall gradient or level of intensity and they are used in almost every application of mapping and GIS.</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/choropleth_intro_example.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/choropleth_intro_example.png</ph></target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: choropleth_intro_example</ph>
+<ph id="2">width: 600 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: choropleth_intro_example</ph>
+<ph id="2">width: 600 px</ph></target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">An example of a choropleth map (Source: <bpt id="1">[</bpt>AxisMaps<ept id="1">](https://www.axismaps.com/guide/choropleth)</ept>).
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">An example of a choropleth map (Source: <bpt id="1">[</bpt>AxisMaps<ept id="1">](https://www.axismaps.com/guide/choropleth)</ept>).
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Use cases <bpt id="1">&lt;a id="use-cases"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Use cases <bpt id="1">&lt;a id="use-cases"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Humanitarian Action<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Humanitarian Action<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">In humanitarian action, choropleth maps or graduated symbol maps are used to:</source>
+<target xml:lang="fr">In humanitarian action, choropleth maps or graduated symbol maps are used to:</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Identify vulnerable regions: Maps can show areas with high poverty rates, conflict, or disaster impact, helping responders prioritize regions most in need of aid.</source>
+<target xml:lang="fr">Identify vulnerable regions: Maps can show areas with high poverty rates, conflict, or disaster impact, helping responders prioritize regions most in need of aid.</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">Track disease outbreaks: For instance, during an epidemic, you can show areas with high infection rates, helping to direct medical resources and prevent further spread.</source>
+<target xml:lang="fr">Track disease outbreaks: For instance, during an epidemic, you can show areas with high infection rates, helping to direct medical resources and prevent further spread.</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Monitor food insecurity and famine risks: Maps that illustrate food scarcity help humanitarian organizations focus on regions where food aid is needed the most.</source>
+<target xml:lang="fr">Monitor food insecurity and famine risks: Maps that illustrate food scarcity help humanitarian organizations focus on regions where food aid is needed the most.</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Environmental Science<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Environmental Science<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">Show pollution levels: Depict air or water quality across regions, helping to identify polluted areas.</source>
+<target xml:lang="fr">Show pollution levels: Depict air or water quality across regions, helping to identify polluted areas.</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Track deforestation: Maps highlighting forest coverage changes make it easy to spot deforestation trends.</source>
+<target xml:lang="fr">Track deforestation: Maps highlighting forest coverage changes make it easy to spot deforestation trends.</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Climate impact: Regions prone to temperature rise or extreme weather can be highlighted to aid climate adaptation efforts.</source>
+<target xml:lang="fr">Climate impact: Regions prone to temperature rise or extreme weather can be highlighted to aid climate adaptation efforts.</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Public Health<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Public Health<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Visualize health disparities: Show regions with high rates of disease, poor access to healthcare, or varying vaccination rates.</source>
+<target xml:lang="fr">Visualize health disparities: Show regions with high rates of disease, poor access to healthcare, or varying vaccination rates.</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Resource allocation: Health authorities use these maps to allocate medical resources based on areas with higher health needs.</source>
+<target xml:lang="fr">Resource allocation: Health authorities use these maps to allocate medical resources based on areas with higher health needs.</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Urban Planning and Infrastructure<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Urban Planning and Infrastructure<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Display population density: Maps show where populations are concentrated, helping in city planning and infrastructure development.</source>
+<target xml:lang="fr">Display population density: Maps show where populations are concentrated, helping in city planning and infrastructure development.</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">Identify socioeconomic patterns: Urban planners use these maps to see income, employment, and education levels across neighborhoods.</source>
+<target xml:lang="fr">Identify socioeconomic patterns: Urban planners use these maps to see income, employment, and education levels across neighborhoods.</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Symbology and styling <bpt id="1">&lt;a id="symbology-and-styling"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Symbology and styling <bpt id="1">&lt;a id="symbology-and-styling"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">Depending on the use case and type of geodata at your disposal, there are multiple ways to visualise geodata in a comprehensive format. For example, you can:</source>
+<target xml:lang="fr">Depending on the use case and type of geodata at your disposal, there are multiple ways to visualise geodata in a comprehensive format. For example, you can:</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">You can change the 'styling' and colour of the data.</source>
+<target xml:lang="fr">You can change the 'styling' and colour of the data.</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Change the thickness, colour of lines, or assign a dash pattern.</source>
+<target xml:lang="fr">Change the thickness, colour of lines, or assign a dash pattern.</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">Change the colour and outlines of polygons.</source>
+<target xml:lang="fr">Change the colour and outlines of polygons.</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">You can assign symbols or pictures to geodata.</source>
+<target xml:lang="fr">You can assign symbols or pictures to geodata.</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Change the size, colour and orientation of symbols.</source>
+<target xml:lang="fr">Change the size, colour and orientation of symbols.</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">You can add text labels.</source>
+<target xml:lang="fr">You can add text labels.</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">You can change the font, colour and orientation of the text label.</source>
+<target xml:lang="fr">You can change the font, colour and orientation of the text label.</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">For raster data, you can assign a colour gradient for the different values.</source>
+<target xml:lang="fr">For raster data, you can assign a colour gradient for the different values.</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">The styling of a layer is how you communicate the information to your audience. Each data-layer in your QGIS-project has its own styling rules. These can range from simple (e.g. display line data as black lines, assigning a colour to polygons) to more complex (e.g. differentiate between different types of roads, add complex fill-patterns to polygons, or add SVG-symbols of varying sizes).</source>
+<target xml:lang="fr">The styling of a layer is how you communicate the information to your audience. Each data-layer in your QGIS-project has its own styling rules. These can range from simple (e.g. display line data as black lines, assigning a colour to polygons) to more complex (e.g. differentiate between different types of roads, add complex fill-patterns to polygons, or add SVG-symbols of varying sizes).</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Symbology <bpt id="1">&lt;a id="symbology"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Symbology <bpt id="1">&lt;a id="symbology"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Symbology is used to change the look of features on a map.</source>
+<target xml:lang="fr">Symbology is used to change the look of features on a map.</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">It makes maps more visually appealing and easier to read.</source>
+<target xml:lang="fr">It makes maps more visually appealing and easier to read.</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Colours and styles represent a specific information.</source>
+<target xml:lang="fr">Colours and styles represent a specific information.</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">Symbology is applied to layers, but within the same layer we can assign multiple styles to features.</source>
+<target xml:lang="fr">Symbology is applied to layers, but within the same layer we can assign multiple styles to features.</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">The symbology of a layer can be <bpt id="1">__</bpt>changed based on one of the layer's attributes<ept id="1">__</ept>.</source>
+<target xml:lang="fr">The symbology of a layer can be <bpt id="1">__</bpt>changed based on one of the layer's attributes<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">Colours <bpt id="1">&lt;a id="colours"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Colours <bpt id="1">&lt;a id="colours"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Colours are arguably the most striking visual variables as they are easily distinguishable. However, depending on the type of data and the information you wish to convey, there are a few things to consider when choosing a colour scheme for your map. The most important variables for colours are the <bpt id="1">__</bpt>hue<ept id="1">__</ept>, the <bpt id="2">__</bpt>value<ept id="2">__</ept> (saturation) and the <bpt id="3">__</bpt>transparency<ept id="3">__</ept>.</source>
+<target xml:lang="fr">Colours are arguably the most striking visual variables as they are easily distinguishable. However, depending on the type of data and the information you wish to convey, there are a few things to consider when choosing a colour scheme for your map. The most important variables for colours are the <bpt id="1">__</bpt>hue<ept id="1">__</ept>, the <bpt id="2">__</bpt>value<ept id="2">__</ept> (saturation) and the <bpt id="3">__</bpt>transparency<ept id="3">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">Colours schemes can be <bpt id="1">__</bpt>categorial, sequential, or diverging<ept id="1">__</ept>. If you wish to display different types of buildings or roads, the colour schemes should be categorial. Colour gradients, either sequential or diverging, are used for numerical data or data that can be ordered. For example, for the population sizes of districts a sequential colouring scheme is best to show the relative difference between the values. However, if the data has positive <bpt id="2">__</bpt>and<ept id="2">__</ept> negative values, a diverging colour gradient should be used.</source>
+<target xml:lang="fr">Colours schemes can be <bpt id="1">__</bpt>categorial, sequential, or diverging<ept id="1">__</ept>. If you wish to display different types of buildings or roads, the colour schemes should be categorial. Colour gradients, either sequential or diverging, are used for numerical data or data that can be ordered. For example, for the population sizes of districts a sequential colouring scheme is best to show the relative difference between the values. However, if the data has positive <bpt id="2">__</bpt>and<ept id="2">__</ept> negative values, a diverging colour gradient should be used.</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_colour_gradients_qualities.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_colour_gradients_qualities.png</ph></target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_colour_gradients_qualities</ph>
+<ph id="2">width: 750px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_colour_gradients_qualities</ph>
+<ph id="2">width: 750px</ph></target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">Different types of colouring schemes.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Different types of colouring schemes.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">When choosing colour gradients, a clear gradient from lighter to darker colours is usually the most appropriate, as the gradation is easily distinguishable and translates well into black and white. In the figure below, examples A and B are not good colour schemes, as it is difficult to make out the gradation and it does not translate well into black and white. You can achieve a clear sequence by grading the <bpt id="1">__</bpt>saturation<ept id="1">__</ept> of the colour gradient.</source>
+<target xml:lang="fr">When choosing colour gradients, a clear gradient from lighter to darker colours is usually the most appropriate, as the gradation is easily distinguishable and translates well into black and white. In the figure below, examples A and B are not good colour schemes, as it is difficult to make out the gradation and it does not translate well into black and white. You can achieve a clear sequence by grading the <bpt id="1">__</bpt>saturation<ept id="1">__</ept> of the colour gradient.</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/de_colour_gradients_saturation.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/de_colour_gradients_saturation.png</ph></target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: de_colour_gradients_saturation</ph>
+<ph id="2">width: 750px</ph></source>
+<target xml:lang="fr"><ph id="1">name: de_colour_gradients_saturation</ph>
+<ph id="2">width: 750px</ph></target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">Examples for different colour gradients translated into black and white. Pay attention to the saturation gradient under each example. (Source: Stauffer, Reto &amp; Mayr, Georg &amp; Dabernig, Markus &amp; Zeileis, Achim. (2014). Somewhere Over the Rainbow: How to Make Effective Use of Colours in Meteorological Visualizations. Bulletin of the American Meteorological Society. 96. 140710055335002. 10.1175/BAMS-D-13-00155.1.)
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Examples for different colour gradients translated into black and white. Pay attention to the saturation gradient under each example. (Source: Stauffer, Reto &amp; Mayr, Georg &amp; Dabernig, Markus &amp; Zeileis, Achim. (2014). Somewhere Over the Rainbow: How to Make Effective Use of Colours in Meteorological Visualizations. Bulletin of the American Meteorological Society. 96. 140710055335002. 10.1175/BAMS-D-13-00155.1.)
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">Colour gradients can also encompass multiple hues:</source>
+<target xml:lang="fr">Colour gradients can also encompass multiple hues:</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/colour_gradients_hues.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/colour_gradients_hues.png</ph></target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: colour_gradients_hues</ph>
+<ph id="2">width: 750px</ph></source>
+<target xml:lang="fr"><ph id="1">name: colour_gradients_hues</ph>
+<ph id="2">width: 750px</ph></target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">Single hue gradient on the left; Multiple hue gradient on the right.<ph id="1">  </ph>
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">Single hue gradient on the left; Multiple hue gradient on the right.<ph id="1">  </ph>
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph>
+The <bpt id="2">[</bpt>Colourbrewer website<ept id="2">](colorbrewer2.org)</ept> is a quick and useful tool to select and
+generate colour palettes for your use case.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph>
+The <bpt id="2">[</bpt>Colourbrewer website<ept id="2">](colorbrewer2.org)</ept> is a quick and useful tool to select and
+generate colour palettes for your use case.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">Colourblindness <bpt id="1">&lt;a id="colourblindness"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Colourblindness <bpt id="1">&lt;a id="colourblindness"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">When choosing the colours, you have to keep in mind that colour gradients (especially diverging Red-Green gradients) can be hard or impossible to distinguish for people with colour blindness.</source>
+<target xml:lang="fr">When choosing the colours, you have to keep in mind that colour gradients (especially diverging Red-Green gradients) can be hard or impossible to distinguish for people with colour blindness.</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/Colour_Blindness.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/Colour_Blindness.png</ph></target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: Colour_Blindness</ph>
+<ph id="2">width: 750px</ph></source>
+<target xml:lang="fr"><ph id="1">name: Colour_Blindness</ph>
+<ph id="2">width: 750px</ph></target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Different Colour schemes for the Colour Vision Impaired (Source: Jenny, Bernhard, and Nathaniel Vaughn Kelso. (2007). Color Design for the Color Vision Impaired. <bpt id="1">*</bpt>Cartographic Perspectives<ept id="1">*</ept>, no. 58 (September 1, 2007): 61-67. <ph id="2">https://doi.org/10.14714/CP58.270</ph>).
+<ph id="3">:::</ph></source>
+<target xml:lang="fr">Different Colour schemes for the Colour Vision Impaired (Source: Jenny, Bernhard, and Nathaniel Vaughn Kelso. (2007). Color Design for the Color Vision Impaired. <bpt id="1">*</bpt>Cartographic Perspectives<ept id="1">*</ept>, no. 58 (September 1, 2007): 61-67. <ph id="2">https://doi.org/10.14714/CP58.270</ph>).
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">Complex Maps <bpt id="1">&lt;a id="complex-maps"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Complex Maps <bpt id="1">&lt;a id="complex-maps"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en">The different symbolisation methods discussed in this chapter can be combined in different ways to create sophisticated reports and maps. By combining several methods, you can communicate different phenomena intuitively to the reader. A classical example is a combination of a choropleth map (graduated colours) with a proportional circles map (see <ph id="1">{numref}</ph><ph id="2">`en_complex_map_lebanon`</ph>).</source>
+<target xml:lang="fr">The different symbolisation methods discussed in this chapter can be combined in different ways to create sophisticated reports and maps. By combining several methods, you can communicate different phenomena intuitively to the reader. A classical example is a combination of a choropleth map (graduated colours) with a proportional circles map (see <ph id="1">{numref}</ph><ph id="2">`en_complex_map_lebanon`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Complex Map 1:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Complex Map 1:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_complex_map_lebanon.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_complex_map_lebanon.png</ph></target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_complex_map_lebanon</ph>
+<ph id="2">width: 550 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_complex_map_lebanon</ph>
+<ph id="2">width: 550 px</ph></target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">A complex map using graduated colours and proportional circles (Source: <bpt id="1">[</bpt>REACH<ept id="1">](https://reliefweb.int/map/lebanon/lebanon-conflict-and-displacement-overview-30-september-2024)</ept>)
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">A complex map using graduated colours and proportional circles (Source: <bpt id="1">[</bpt>REACH<ept id="1">](https://reliefweb.int/map/lebanon/lebanon-conflict-and-displacement-overview-30-september-2024)</ept>)
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Complex Map 2:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Complex Map 2:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_complex_bivariate_map.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_complex_bivariate_map.png</ph></target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_complex_bivariate_map</ph>
+<ph id="2">width: 550 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_complex_bivariate_map</ph>
+<ph id="2">width: 550 px</ph></target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">A complex map combining layer styling and different visual variables to communicate a complex situation (Source: <bpt id="1">[</bpt>SIMS<ept id="1">](https://rcrcsims.org/portfolio/view/18)</ept>).
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">A complex map combining layer styling and different visual variables to communicate a complex situation (Source: <bpt id="1">[</bpt>SIMS<ept id="1">](https://rcrcsims.org/portfolio/view/18)</ept>).
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Complex Map 3:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Complex Map 3:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_complex_map_example_yemen.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_complex_map_example_yemen.png</ph></target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_complex_map_example_yemen</ph>
+<ph id="2">width: 550 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_complex_map_example_yemen</ph>
+<ph id="2">width: 550 px</ph></target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en">A complex map using graduated colours to signify flood depth as well as the flood hazard for IDP sites (Source: <bpt id="1">[</bpt>REACH<ept id="1">](https://reliefweb.int/map/yemen/flood-hazard-idp-sites-marib-governorate-flood-depth-model-january-2024-production-date-07-may-2024)</ept>)
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">A complex map using graduated colours to signify flood depth as well as the flood hazard for IDP sites (Source: <bpt id="1">[</bpt>REACH<ept id="1">](https://reliefweb.int/map/yemen/flood-hazard-idp-sites-marib-governorate-flood-depth-model-january-2024-production-date-07-may-2024)</ept>)
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Now it's your turn!
+<ph id="2">:class: tip</ph>
+<ph id="3">{numref}</ph><ph id="4">`en_complex_map_lebanon`</ph>, <ph id="5">{numref}</ph><ph id="6">`en_complex_bivariate_map`</ph> and <ph id="7">{numref}</ph><ph id="8">`en_complex_map_example_yemen`</ph> make use of graduated colours as well as graduated symbols. What other symbolisation principles can you detect on these maps?
+<ph id="9">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Now it's your turn!
+<ph id="2">:class: tip</ph>
+<ph id="3">{numref}</ph><ph id="4">`en_complex_map_lebanon`</ph>, <ph id="5">{numref}</ph><ph id="6">`en_complex_bivariate_map`</ph> and <ph id="7">{numref}</ph><ph id="8">`en_complex_map_example_yemen`</ph> make use of graduated colours as well as graduated symbols. What other symbolisation principles can you detect on these maps?
+<ph id="9">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en">Now that we have learned the different visual variables, and know how to use them to create complex maps, the next chapter <bpt id="1">[</bpt>Symbology for Vector data<ept id="1">](/content/Module_4/en_qgis_styling_vector_data.md)</ept> will explain how to set up different symbolisation and styling methods in QGIS.</source>
+<target xml:lang="fr">Now that we have learned the different visual variables, and know how to use them to create complex maps, the next chapter <bpt id="1">[</bpt>Symbology for Vector data<ept id="1">](/content/Module_4/en_qgis_styling_vector_data.md)</ept> will explain how to set up different symbolisation and styling methods in QGIS.</target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What are “visual variables” (graphic variables) and how do they help in map design?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What are “visual variables” (graphic variables) and how do they help in map design?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en">Visual variables are graphical properties of map symbols (points, lines, polygons) that can be varied to encode information (e.g. hue, value, size, shape, orientation, texture).</source>
+<target xml:lang="fr">Visual variables are graphical properties of map symbols (points, lines, polygons) that can be varied to encode information (e.g. hue, value, size, shape, orientation, texture).</target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en">They help to design the visual representation of geodata to communicate information:</source>
+<target xml:lang="fr">They help to design the visual representation of geodata to communicate information:</target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en">use the size to show the magnitude</source>
+<target xml:lang="fr">use the size to show the magnitude</target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en">use different colours to distinguish between classes</source>
+<target xml:lang="fr">use different colours to distinguish between classes</target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en">use the intensity of a colour (value) to show a progression or an increase in intensity of a phenomenon.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">use the intensity of a colour (value) to show a progression or an increase in intensity of a phenomenon.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Why is it important to consider colour schemes (hue, value, saturation) when styling maps?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Why is it important to consider colour schemes (hue, value, saturation) when styling maps?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Hue<ept id="1">__</ept> is the “color family” (red, blue, green, etc.); it’s good for <bpt id="2">__</bpt>distinguishing categories<ept id="2">__</ept>.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Hue<ept id="1">__</ept> is the “color family” (red, blue, green, etc.); it’s good for <bpt id="2">__</bpt>distinguishing categories<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Value<ept id="1">__</ept> (or lightness/darkness) gives a sense of order: darker → more, lighter → less. Useful for quantitative data.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Value<ept id="1">__</ept> (or lightness/darkness) gives a sense of order: darker → more, lighter → less. Useful for quantitative data.</target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Saturation<ept id="1">__</ept> (intensity of color) influences how vivid or muted a color appears; high saturation draws attention, low saturation recedes.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Saturation<ept id="1">__</ept> (intensity of color) influences how vivid or muted a color appears; high saturation draws attention, low saturation recedes.</target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en">Using inappropriate combinations (e.g. very saturated adjacent hues, or small value differences) can reduce contrast, make features indistinguishable, or cause color “vibrations” or optical illusions.
+The scheme must be perceptually effective, accessible (e.g. for color-blind readers), consistent, and appropriate to the type of data (nominal vs ordinal vs interval) and map purpose.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Using inappropriate combinations (e.g. very saturated adjacent hues, or small value differences) can reduce contrast, make features indistinguishable, or cause color “vibrations” or optical illusions.
+The scheme must be perceptually effective, accessible (e.g. for color-blind readers), consistent, and appropriate to the type of data (nominal vs ordinal vs interval) and map purpose.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What is the difference between categorical (qualitative), sequential, and diverging colour schemes? When is each appropriate?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What is the difference between categorical (qualitative), sequential, and diverging colour schemes? When is each appropriate?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown}</ph></target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Categorical (qualitative)<ept id="1">__</ept>
+    Used for nominal (no inherent order) data. Each category gets a distinct hue (or shape) without implying magnitude. Example: land‑use types (forest, urban, water).</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Categorical (qualitative)<ept id="1">__</ept>
+    Used for nominal (no inherent order) data. Each category gets a distinct hue (or shape) without implying magnitude. Example: land‑use types (forest, urban, water).</target>
+</trans-unit>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Sequential<ept id="1">__</ept>
+    Used for data that progress in one direction (low → high). Usually a single hue whose value or saturation changes gradually (e.g. light to dark). Appropriate for e.g. population density, income, temperature.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Sequential<ept id="1">__</ept>
+    Used for data that progress in one direction (low → high). Usually a single hue whose value or saturation changes gradually (e.g. light to dark). Appropriate for e.g. population density, income, temperature.</target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Diverging<ept id="1">__</ept>
+    Used for data that deviate around a meaningful midpoint (e.g. zero, average). Two contrasting hues diverge from a central neutral color. Example: change maps (positive growth vs negative decline), anomalies above/below average.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Diverging<ept id="1">__</ept>
+    Used for data that deviate around a meaningful midpoint (e.g. zero, average). Two contrasting hues diverge from a central neutral color. Example: change maps (positive growth vs negative decline), anomalies above/below average.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu175" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What are some common ways to style vector data (lines, points, polygons)? Give examples (e.g. changing stroke, fill, using symbols).<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What are some common ways to style vector data (lines, points, polygons)? Give examples (e.g. changing stroke, fill, using symbols).<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu176" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu177" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Points:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Points:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu178" xml:space="preserve">
+<source xml:lang="en">Change symbol shape (circle, square, star)</source>
+<target xml:lang="fr">Change symbol shape (circle, square, star)</target>
+</trans-unit>
+<trans-unit id="tu179" xml:space="preserve">
+<source xml:lang="en">Vary size according to attribute (proportional symbol)</source>
+<target xml:lang="fr">Vary size according to attribute (proportional symbol)</target>
+</trans-unit>
+<trans-unit id="tu180" xml:space="preserve">
+<source xml:lang="en">Use colour or fill for classification</source>
+<target xml:lang="fr">Use colour or fill for classification</target>
+</trans-unit>
+<trans-unit id="tu181" xml:space="preserve">
+<source xml:lang="en">Add outline (stroke) or halo for contrast</source>
+<target xml:lang="fr">Add outline (stroke) or halo for contrast</target>
+</trans-unit>
+<trans-unit id="tu182" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Lines:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Lines:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu183" xml:space="preserve">
+<source xml:lang="en">Adjust stroke (width) to indicate magnitude (e.g. make majord roads thicker)</source>
+<target xml:lang="fr">Adjust stroke (width) to indicate magnitude (e.g. make majord roads thicker)</target>
+</trans-unit>
+<trans-unit id="tu184" xml:space="preserve">
+<source xml:lang="en">Use different line styles (solid, dashes, dotted) for categories</source>
+<target xml:lang="fr">Use different line styles (solid, dashes, dotted) for categories</target>
+</trans-unit>
+<trans-unit id="tu185" xml:space="preserve">
+<source xml:lang="en">Change colour of lines to distinguish types (e.g. rivers, roads, administrative boundaries)</source>
+<target xml:lang="fr">Change colour of lines to distinguish types (e.g. rivers, roads, administrative boundaries)</target>
+</trans-unit>
+<trans-unit id="tu186" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Polygons:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Polygons:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu187" xml:space="preserve">
+<source xml:lang="en">Use fill color (hue + value) to indicate category or intensity</source>
+<target xml:lang="fr">Use fill color (hue + value) to indicate category or intensity</target>
+</trans-unit>
+<trans-unit id="tu188" xml:space="preserve">
+<source xml:lang="en">Use transparency (opacity) to let background features show through</source>
+<target xml:lang="fr">Use transparency (opacity) to let background features show through</target>
+</trans-unit>
+<trans-unit id="tu189" xml:space="preserve">
+<source xml:lang="en">Use strokes (borders) of varying width or colour (emphasis or boundary types)</source>
+<target xml:lang="fr">Use strokes (borders) of varying width or colour (emphasis or boundary types)</target>
+</trans-unit>
+<trans-unit id="tu190" xml:space="preserve">
+<source xml:lang="en">Add hatching, textures, or pattern fills for categorical detail
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Add hatching, textures, or pattern fills for categorical detail
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu191" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What is a choropleth map? How is it different from a graduated symbol map?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What is a choropleth map? How is it different from a graduated symbol map?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu192" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu193" xml:space="preserve">
+<source xml:lang="en">A choropleth map is a thematic map in which areas (polygons) are shaded or colored according to the value of a variable (often normalized, e.g. per capita). All of the polygon is filled, with the color (hue/value) representing the magnitude of that variable.</source>
+<target xml:lang="fr">A choropleth map is a thematic map in which areas (polygons) are shaded or colored according to the value of a variable (often normalized, e.g. per capita). All of the polygon is filled, with the color (hue/value) representing the magnitude of that variable.</target>
+</trans-unit>
+<trans-unit id="tu194" xml:space="preserve">
+<source xml:lang="en">A graduated symbol map (or proportional / graduated symbols) uses symbols (usually points placed within regions or centroids) whose size (or possibly color) varies to represent the magnitude of data. The underlying polygons themselves might remain unshaded or lightly styled.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">A graduated symbol map (or proportional / graduated symbols) uses symbols (usually points placed within regions or centroids) whose size (or possibly color) varies to represent the magnitude of data. The underlying polygons themselves might remain unshaded or lightly styled.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu195" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_5/en_qgis_spatial_tools.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Spatial data processing <bpt id="1">&lt;a id="spatial-data-processing"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Spatial data processing <bpt id="1">&lt;a id="spatial-data-processing"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Introduction <bpt id="1">&lt;a id="introduction"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Introduction <bpt id="1">&lt;a id="introduction"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Spatial processing uses spatial information to extract new meaning from GIS data. It does so by using the <bpt id="1">__</bpt>spatial relationship<ept id="1">__</ept> of different layers or features. Spatial relationships describe how things are located in relation to one another. In humanitarian work, this helps answer critical questions like “Which communities are near a water source?” or “Which areas are isolated from health services?”. Or, we might want to identify the best locations for distributing aid, assess flood risk areas, or plan evacuation routes.</source>
+<target xml:lang="fr">Spatial processing uses spatial information to extract new meaning from GIS data. It does so by using the <bpt id="1">__</bpt>spatial relationship<ept id="1">__</ept> of different layers or features. Spatial relationships describe how things are located in relation to one another. In humanitarian work, this helps answer critical questions like “Which communities are near a water source?” or “Which areas are isolated from health services?”. Or, we might want to identify the best locations for distributing aid, assess flood risk areas, or plan evacuation routes.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">We have already encountered spatial relationships in module 3 in the subchapter on <bpt id="1">__</bpt><bpt id="2">[</bpt>geometrical operators<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_queries.html#geometric-operators)</ept><ept id="1">__</ept>— also called geometrical predicates in QGIS.
+The table below describes spatial relationships and gives examples when these spatial relationships are relevant in humanitarian aid.</source>
+<target xml:lang="fr">We have already encountered spatial relationships in module 3 in the subchapter on <bpt id="1">__</bpt><bpt id="2">[</bpt>geometrical operators<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_data_queries.html#geometric-operators)</ept><ept id="1">__</ept>— also called geometrical predicates in QGIS.
+The table below describes spatial relationships and gives examples when these spatial relationships are relevant in humanitarian aid.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Spatial Relationships <bpt id="1">&lt;a id="spatial-relationships"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Spatial Relationships <bpt id="1">&lt;a id="spatial-relationships"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Spatial Relationship<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Spatial Relationship<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Description<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Description<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">*</bpt>Humanitarian Example<ept id="2">*</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">*</bpt>Humanitarian Example<ept id="2">*</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Proximity<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Proximity<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">How close one thing is to another</source>
+<target xml:lang="fr">How close one thing is to another</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Find the nearest shelters to a displaced community<ept id="1">*</ept></source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Find the nearest shelters to a displaced community<ept id="1">*</ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Containment<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Containment<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Whether something is inside another area/polygon</source>
+<target xml:lang="fr">Whether something is inside another area/polygon</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Identify which schools are within a specific conflict-affected zone<ept id="1">*</ept></source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Identify which schools are within a specific conflict-affected zone<ept id="1">*</ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Intersection<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Intersection<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Identify geometric features that overlap</source>
+<target xml:lang="fr">Identify geometric features that overlap</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Look for areas where damaged infrastructure overlaps with vulnerable populations<ept id="1">*</ept></source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Look for areas where damaged infrastructure overlaps with vulnerable populations<ept id="1">*</ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Adjacency<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Adjacency<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Geometric features that share a point or a boundary</source>
+<target xml:lang="fr">Geometric features that share a point or a boundary</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Identify regions bordering a conflict zone that may be at risk of displacement<ept id="1">*</ept></source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Identify regions bordering a conflict zone that may be at risk of displacement<ept id="1">*</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Connectivity<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Connectivity<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">How things are connected through networks such as roads, rivers, or even trade routes</source>
+<target xml:lang="fr">How things are connected through networks such as roads, rivers, or even trade routes</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Map the shortest path between villages and hospitals to plan emergency evacuations<ept id="1">*</ept></source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Map the shortest path between villages and hospitals to plan emergency evacuations<ept id="1">*</ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Direction<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Direction<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Relative position, like north, south, east, west, or relative position to the flow of a river, for example</source>
+<target xml:lang="fr">Relative position, like north, south, east, west, or relative position to the flow of a river, for example</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Locate villages north of a river that are cut off due to flooding and inaccessibility of connecting bridges<ept id="1">*</ept></source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Locate villages north of a river that are cut off due to flooding and inaccessibility of connecting bridges<ept id="1">*</ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">QGIS offers a variety of spatial processing tools that we can use to analyse and create new insights using these spatial relationships. For instance:</source>
+<target xml:lang="fr">QGIS offers a variety of spatial processing tools that we can use to analyse and create new insights using these spatial relationships. For instance:</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Spatial Joins<ept id="1">__</ept> let us join attribute values from one layer to another based on their spatial relationship. This enables us to enrich datasets and
+incorporate additional information from  layers, which can help us understand a situation.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Spatial Joins<ept id="1">__</ept> let us join attribute values from one layer to another based on their spatial relationship. This enables us to enrich datasets and
+incorporate additional information from  layers, which can help us understand a situation.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">The overlay operation <bpt id="1">__</bpt>Clip<ept id="1">__</ept> can be employed to extract specific areas of interest from multiple layers, allowing us to focus our attention where it is most needed.</source>
+<target xml:lang="fr">The overlay operation <bpt id="1">__</bpt>Clip<ept id="1">__</ept> can be employed to extract specific areas of interest from multiple layers, allowing us to focus our attention where it is most needed.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">The <bpt id="1">__</bpt>Dissolve<ept id="1">__</ept> operation allows us to simplify geometries by joining geometries from two distinct layers.</source>
+<target xml:lang="fr">The <bpt id="1">__</bpt>Dissolve<ept id="1">__</ept> operation allows us to simplify geometries by joining geometries from two distinct layers.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Using <bpt id="1">__</bpt>Buffer<ept id="1">__</ept>, we can create zones around features to help identify vulnerable areas and plan evacuation routes in the event of a flooding event.</source>
+<target xml:lang="fr">Using <bpt id="1">__</bpt>Buffer<ept id="1">__</ept>, we can create zones around features to help identify vulnerable areas and plan evacuation routes in the event of a flooding event.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Centroids<ept id="1">__</ept> create points in the geometric centre of the geometries of a layer. This is especially useful when creating graduated symbol maps</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Centroids<ept id="1">__</ept> create points in the geometric centre of the geometries of a layer. This is especially useful when creating graduated symbol maps</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_module5_spatial_geodataprocessing.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_module5_spatial_geodataprocessing.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 750 px</ph>
+<ph id="2">name: en_module5_spatial_geodataprocessing</ph></source>
+<target xml:lang="fr"><ph id="1">width: 750 px</ph>
+<ph id="2">name: en_module5_spatial_geodataprocessing</ph></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Different spatial geoprocessing tools. Source: Adapted from <bpt id="1">[</bpt>Saylor Academy<ept id="1">](https://saylordotorg.github.io/text_essentials-of-geographic-information-systems/s11-geospatial-analysis-i-vector-o.html)</ept>
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">Different spatial geoprocessing tools. Source: Adapted from <bpt id="1">[</bpt>Saylor Academy<ept id="1">](https://saylordotorg.github.io/text_essentials-of-geographic-information-systems/s11-geospatial-analysis-i-vector-o.html)</ept>
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">In this chapter, we will first explore <bpt id="1">__</bpt>spatial joins<ept id="1">__</ept>. Spatial joins, for example, allow us to import attributes from one layer to another on the basis of their location in relation to geofeatures in another layer. These Spatial relationships can also be used to select features of a layer. Furthermore, we will go over the spatial processing tools <bpt id="2">__</bpt>buffer<ept id="2">__</ept>, <bpt id="3">__</bpt>clip<ept id="3">__</ept>, and <bpt id="4">__</bpt>dissolve<ept id="4">__</ept>. These operations allow us to combine geometries from two layers in various ways (see <ph id="5">{numref}</ph><ph id="6">`en_module5_spatial_geodataprocessing`</ph>).</source>
+<target xml:lang="fr">In this chapter, we will first explore <bpt id="1">__</bpt>spatial joins<ept id="1">__</ept>. Spatial joins, for example, allow us to import attributes from one layer to another on the basis of their location in relation to geofeatures in another layer. These Spatial relationships can also be used to select features of a layer. Furthermore, we will go over the spatial processing tools <bpt id="2">__</bpt>buffer<ept id="2">__</ept>, <bpt id="3">__</bpt>clip<ept id="3">__</ept>, and <bpt id="4">__</bpt>dissolve<ept id="4">__</ept>. These operations allow us to combine geometries from two layers in various ways (see <ph id="5">{numref}</ph><ph id="6">`en_module5_spatial_geodataprocessing`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Spatial joins <bpt id="1">&lt;a id="spatial-joins"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Spatial joins <bpt id="1">&lt;a id="spatial-joins"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Joins are ways to combine two different data layers. In general, there are two types of joins: <bpt id="1">__</bpt>non-spatial joins<ept id="1">__</ept> and <bpt id="2">__</bpt>spatial joins<ept id="2">__</ept>.</source>
+<target xml:lang="fr">Joins are ways to combine two different data layers. In general, there are two types of joins: <bpt id="1">__</bpt>non-spatial joins<ept id="1">__</ept> and <bpt id="2">__</bpt>spatial joins<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Non-spatial joins rely on specific attribute values, which are used as ID-fields, to combine two layers. These are covered in the chapter "<bpt id="1">[</bpt>Non-spatial processing tools<ept id="1">](/content/Module_5/en_qgis_non_spatial_tools.md)</ept>" in this module.</source>
+<target xml:lang="fr">Non-spatial joins rely on specific attribute values, which are used as ID-fields, to combine two layers. These are covered in the chapter "<bpt id="1">[</bpt>Non-spatial processing tools<ept id="1">](/content/Module_5/en_qgis_non_spatial_tools.md)</ept>" in this module.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Sometimes we want to combine information from different layers that don't share a common value. In these cases, we can use spatial joins, which let us join data based on location rules.</source>
+<target xml:lang="fr">Sometimes we want to combine information from different layers that don't share a common value. In these cases, we can use spatial joins, which let us join data based on location rules.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Spatial joins in QGIS enhance the attributes of the input layer by adding additional information from the join layer, relying on their <bpt id="1">__</bpt>spatial relationship<ept id="1">__</ept>. This process enriches your data by incorporating relevant details from one layer into another based on their geographical associations.</source>
+<target xml:lang="fr">Spatial joins in QGIS enhance the attributes of the input layer by adding additional information from the join layer, relying on their <bpt id="1">__</bpt>spatial relationship<ept id="1">__</ept>. This process enriches your data by incorporating relevant details from one layer into another based on their geographical associations.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">In QGIS, a spatial join creates a new layer by comparing the features of one layer to another, depending on
+their spatial relationship.</source>
+<target xml:lang="fr">In QGIS, a spatial join creates a new layer by comparing the features of one layer to another, depending on
+their spatial relationship.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">The resulting joined layer <bpt id="1">__</bpt>receives attributes<ept id="1">__</ept> from both layers based on the chosen parameters.</source>
+<target xml:lang="fr">The resulting joined layer <bpt id="1">__</bpt>receives attributes<ept id="1">__</ept> from both layers based on the chosen parameters.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">For example:</source>
+<target xml:lang="fr">For example:</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Any point <bpt id="1">__</bpt>within<ept id="1">__</ept> a polygon should inherit attributes of the polygon.</source>
+<target xml:lang="fr">Any point <bpt id="1">__</bpt>within<ept id="1">__</ept> a polygon should inherit attributes of the polygon.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{card}</ph>
+<bpt id="2">__</bpt>Humanitarian Example:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+<bpt id="4">*</bpt>A flood depth model is available, and the goal is to determine which buildings are flooded under this scenario. This can be achieved by performing a spatial join to add the flood depth to the polygon layer containing the houses.<ept id="4">*</ept></source>
+<target xml:lang="fr"><ph id="1">::::{card}</ph>
+<bpt id="2">__</bpt>Humanitarian Example:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+<bpt id="4">*</bpt>A flood depth model is available, and the goal is to determine which buildings are flooded under this scenario. This can be achieved by performing a spatial join to add the flood depth to the polygon layer containing the houses.<ept id="4">*</ept></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>The resulting map could look something like this:<ept id="1">*</ept></source>
+<target xml:lang="fr"><bpt id="1">*</bpt>The resulting map could look something like this:<ept id="1">*</ept></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_flood_damage_assessement_libya.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_flood_damage_assessement_libya.png</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_flood_damage_assessement_libya</ph>
+<ph id="2">width: 450 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_flood_damage_assessement_libya</ph>
+<ph id="2">width: 450 px</ph></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">A building footprint layer combined with a flood extent layer. By joining them, we can assess which houses are at risk to be damaged by flooding (Source: IFRC).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">A building footprint layer combined with a flood extent layer. By joining them, we can assess which houses are at risk to be damaged by flooding (Source: IFRC).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Geometrical operators <bpt id="1">&lt;a id="geometrical-operators"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Geometrical operators <bpt id="1">&lt;a id="geometrical-operators"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Spatial joins rely on the geometrical operators. In the tabs below, you can find the different geometrical operators available in QGIS and how they affect the data processing.</source>
+<target xml:lang="fr">Spatial joins rely on the geometrical operators. In the tabs below, you can find the different geometrical operators available in QGIS and how they affect the data processing.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-set}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{tab-set}</ph></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Intersect
+Tests whether the geometry of the two layers intersects with one another. The algorithm returns the value "True" (1), if the geometries intersect spatially. This means that they share any portion of space, overlap, or touch. If they don't overlap, the algorithms returns the value "False" (0). In the picture below, the algorithm return the circles <bpt id="2">__</bpt>1, 2, and 3<ept id="2">__</ept>.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Intersect
+Tests whether the geometry of the two layers intersects with one another. The algorithm returns the value "True" (1), if the geometries intersect spatially. This means that they share any portion of space, overlap, or touch. If they don't overlap, the algorithms returns the value "False" (0). In the picture below, the algorithm return the circles <bpt id="2">__</bpt>1, 2, and 3<ept id="2">__</ept>.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Disjoint
+Disjoint features do not share any portion of space. This means that they don't touch or overlap. In the picture below, the algorithm would output a layer with only the circle 4.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Disjoint
+Disjoint features do not share any portion of space. This means that they don't touch or overlap. In the picture below, the algorithm would output a layer with only the circle 4.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Equal
+The algorithm returns a layer with geometries that are exactly the same (all the points and lines are equal). In the picture below, no circles are returned (added to the output layer).<ph id="2">  </ph>
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Equal
+The algorithm returns a layer with geometries that are exactly the same (all the points and lines are equal). In the picture below, no circles are returned (added to the output layer).<ph id="2">  </ph>
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Touch
+Tests whether a geometry touches another. The algorithm outputs a new layer with the geometries that have at least one point in common, but their interiors do not intersect. In the image below, only circle 3 is returned.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Touch
+Tests whether a geometry touches another. The algorithm outputs a new layer with the geometries that have at least one point in common, but their interiors do not intersect. In the image below, only circle 3 is returned.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Overlap
+Tests whether geometries overlap. Returns geometries if they share space, are of the same dimension, but are not completely contained by each other. In the image below, only circle 2 is returned.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Overlap
+Tests whether geometries overlap. Returns geometries if they share space, are of the same dimension, but are not completely contained by each other. In the image below, only circle 2 is returned.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Are within
+Tests whether one geometry is within another. Returns geometries a if they are completely inside of geometry b. Only circle 1 is returned.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Are within
+Tests whether one geometry is within another. Returns geometries a if they are completely inside of geometry b. Only circle 1 is returned.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Contain
+Returns geometries if and only if no points of b lie in the exterior of a, and at least one point of the interior of b lies in the interior of a. In the picture, no circle is returned, but the rectangle would be if you would look for it the other way around, as it contains circle 1 completely. This is the opposite of "are within".
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Contain
+Returns geometries if and only if no points of b lie in the exterior of a, and at least one point of the interior of b lies in the interior of a. In the picture, no circle is returned, but the rectangle would be if you would look for it the other way around, as it contains circle 1 completely. This is the opposite of "are within".
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Cross
+Returns geometries that have some, but not all, interior points in common and the actual crossing is of a lower dimension than the highest supplied geometry. For example, a line crossing a polygon will cross as a line (true). Two lines crossing will cross as a point (true). Two polygons cross as a polygon (false). In the picture below, no circles will be returned.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Cross
+Returns geometries that have some, but not all, interior points in common and the actual crossing is of a lower dimension than the highest supplied geometry. For example, a line crossing a polygon will cross as a line (true). Two lines crossing will cross as a point (true). Two polygons cross as a polygon (false). In the picture below, no circles will be returned.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_select_by_location.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_select_by_location.png</ph></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600 px</ph>
+<ph id="2">name: en_select_by_location</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600 px</ph>
+<ph id="2">name: en_select_by_location</ph></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Looking for spatial relations between layers <ph id="1">&lt;br /></ph> (Source: <bpt id="2">[</bpt>QGIS Documentation<ept id="2">](https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html?highlight=join%20attributes%20location)</ept>, Version 3.28)
+<ph id="3">:::</ph></source>
+<target xml:lang="fr">Looking for spatial relations between layers <ph id="1">&lt;br /></ph> (Source: <bpt id="2">[</bpt>QGIS Documentation<ept id="2">](https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html?highlight=join%20attributes%20location)</ept>, Version 3.28)
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">Exercise: Performing a spatial join <bpt id="1">&lt;a id="exercise-performing-a-spatial-join"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise: Performing a spatial join <bpt id="1">&lt;a id="exercise-performing-a-spatial-join"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Now it's your turn!
+<ph id="2">:class: tip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Now it's your turn!
+<ph id="2">:class: tip</ph></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Practical exercise is crucial to understand how GIS, and QGIS, works. You can follow along by downloading the necessary data.</source>
+<target xml:lang="fr">Practical exercise is crucial to understand how GIS, and QGIS, works. You can follow along by downloading the necessary data.</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">In the example above (<ph id="1">{numref}</ph><ph id="2">`en_spatial_join_example`</ph>), we have a dataset containing the healthsites by healthsite.ioand a dataset with the administrative boundaries (adm2) of Nigeria. We want to know in which state each healthsite is located. To do this, we need to use the tool "Join Attributes by Location".</source>
+<target xml:lang="fr">In the example above (<ph id="1">{numref}</ph><ph id="2">`en_spatial_join_example`</ph>), we have a dataset containing the healthsites by healthsite.ioand a dataset with the administrative boundaries (adm2) of Nigeria. We want to know in which state each healthsite is located. To do this, we need to use the tool "Join Attributes by Location".</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_spatial_join_example.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_spatial_join_example.png</ph></target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_spatial_join_example</ph>
+<ph id="2">width: 400 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_spatial_join_example</ph>
+<ph id="2">width: 400 px</ph></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">An example of a situation where you will use a spatial join (Source: BRC)
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">An example of a situation where you will use a spatial join (Source: BRC)
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{margin}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{margin}</ph></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph>
+You can find and activate the processing toolbox panel by navigating to <ph id="2">`View`</ph> → <ph id="3">`Panels`</ph> → <ph id="4">`Processing Toolbox`</ph>. It should appear on the right side of your screen.
+<ph id="5">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph>
+You can find and activate the processing toolbox panel by navigating to <ph id="2">`View`</ph> → <ph id="3">`Panels`</ph> → <ph id="4">`Processing Toolbox`</ph>. It should appear on the right side of your screen.
+<ph id="5">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph><bpt id="2">__</bpt>Tool:<ept id="2">__</ept> Join attributes by location</source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph><bpt id="2">__</bpt>Tool:<ept id="2">__</ept> Join attributes by location</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">This tool takes two input layers and creates a new vector layer which has the attributes of both layers in its attribute table.</source>
+<target xml:lang="fr">This tool takes two input layers and creates a new vector layer which has the attributes of both layers in its attribute table.</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">The first input layer (see "Join to features in" in <ph id="1">{numref}</ph><ph id="2">`en_spatial_join_1`</ph>) dictates which geometric features will be copied to the new layer.</source>
+<target xml:lang="fr">The first input layer (see "Join to features in" in <ph id="1">{numref}</ph><ph id="2">`en_spatial_join_1`</ph>) dictates which geometric features will be copied to the new layer.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">The second input layer (see "By comparing to" in <ph id="1">{numref}</ph><ph id="2">`en_spatial_join_1`</ph>) dictates the attributes that will be added to the new layer on top of the attributes of the first input layer. You can select which of these attributes should be transferred to the new layer.</source>
+<target xml:lang="fr">The second input layer (see "By comparing to" in <ph id="1">{numref}</ph><ph id="2">`en_spatial_join_1`</ph>) dictates the attributes that will be added to the new layer on top of the attributes of the first input layer. You can select which of these attributes should be transferred to the new layer.</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_spatial_join_1.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_spatial_join_1.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 450 px</ph>
+<ph id="2">name: en_spatial_join_1</ph></source>
+<target xml:lang="fr"><ph id="1">width: 450 px</ph>
+<ph id="2">name: en_spatial_join_1</ph></target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">The "Join Attributes by Location"-tool in QGIS 3.36.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The "Join Attributes by Location"-tool in QGIS 3.36.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Download the necessary datasets from HDX</source>
+<target xml:lang="fr">Download the necessary datasets from HDX</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>nigeria-healthsites-shp<ept id="1">](https://data.humdata.org/dataset/nigeria-healthsites)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>nigeria-healthsites-shp<ept id="1">](https://data.humdata.org/dataset/nigeria-healthsites)</ept></target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>nga_adm_osgof_20190417.zip<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_spatial_tools.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>nga_adm_osgof_20190417.zip<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_spatial_tools.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">Unzip the files, create a new QGIS-project, and load the files into the QGIS-project.</source>
+<target xml:lang="fr">Unzip the files, create a new QGIS-project, and load the files into the QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Search for the tool <bpt id="1">__</bpt>"Join Attributes by Location"<ept id="1">__</ept> in the processing toolbox and <bpt id="2">&lt;kbd></bpt>Double-Click<ept id="2">&lt;/kbd></ept> on it. A new window will open
+(see <ph id="3">{numref}</ph><ph id="4">`join_by_location_ex1`</ph>).</source>
+<target xml:lang="fr">Search for the tool <bpt id="1">__</bpt>"Join Attributes by Location"<ept id="1">__</ept> in the processing toolbox and <bpt id="2">&lt;kbd></bpt>Double-Click<ept id="2">&lt;/kbd></ept> on it. A new window will open
+(see <ph id="3">{numref}</ph><ph id="4">`join_by_location_ex1`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Use the health facilities layer as the target ("Join to feature in") and the adm2 layer as the comparison layer ("By comparing to").</source>
+<target xml:lang="fr">Use the health facilities layer as the target ("Join to feature in") and the adm2 layer as the comparison layer ("By comparing to").</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Use the <ph id="1">`are within`</ph> as geometrical predicate.</source>
+<target xml:lang="fr">Use the <ph id="1">`are within`</ph> as geometrical predicate.</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Select the fields to add: <ph id="1">`ADM2_EN`</ph>, <ph id="2">`ADM2_PCODE`</ph></source>
+<target xml:lang="fr">Select the fields to add: <ph id="1">`ADM2_EN`</ph>, <ph id="2">`ADM2_PCODE`</ph></target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Select <ph id="1">`Discard records that could not be joined`</ph></source>
+<target xml:lang="fr">Select <ph id="1">`Discard records that could not be joined`</ph></target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph> to proceed; the log should confirm success.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph> to proceed; the log should confirm success.</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">A new (temporary) layer called "Joined features" will appear in your layers-panel</source>
+<target xml:lang="fr">A new (temporary) layer called "Joined features" will appear in your layers-panel</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the layer and select "Export" or "Make Permanent" to save the new layer.</source>
+<target xml:lang="fr"><bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the layer and select "Export" or "Make Permanent" to save the new layer.</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Congratulations, we now have added the information about the administrative region to the health facilities layer! We can symbolise the joined layer with the categorised symbology to verify if it worked (see <ph id="1">{numref}</ph><ph id="2">`spatial_join_ex1_results_categorised`</ph>). Note that the points in the original dataset which were outside of Nigeria's border have been discarded as they could not be joined.</source>
+<target xml:lang="fr">Congratulations, we now have added the information about the administrative region to the health facilities layer! We can symbolise the joined layer with the categorised symbology to verify if it worked (see <ph id="1">{numref}</ph><ph id="2">`spatial_join_ex1_results_categorised`</ph>). Note that the points in the original dataset which were outside of Nigeria's border have been discarded as they could not be joined.</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/spatial_join_ex1_results_categorised.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/spatial_join_ex1_results_categorised.png</ph></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: spatial_join_ex1_results_categorised</ph>
+<ph id="2">width: 500 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: spatial_join_ex1_results_categorised</ph>
+<ph id="2">width: 500 px</ph></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">The different colours for the points indicate that they are located in a different state (adm2).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The different colours for the points indicate that they are located in a different state (adm2).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">More spatial join-tools in QGIS <bpt id="1">&lt;a id="more-spatial-join-tools-in-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">More spatial join-tools in QGIS <bpt id="1">&lt;a id="more-spatial-join-tools-in-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">By default, QGIS provides three different tools to perform spatial joins.</source>
+<target xml:lang="fr">By default, QGIS provides three different tools to perform spatial joins.</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">The first, and the most common one, is the tool <bpt id="1">__</bpt>"Join attributes by location"<ept id="1">__</ept> which we used in the previous exercise.</source>
+<target xml:lang="fr">The first, and the most common one, is the tool <bpt id="1">__</bpt>"Join attributes by location"<ept id="1">__</ept> which we used in the previous exercise.</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">There are also the tools <bpt id="1">__</bpt>"Join attributes by location (summary)"<ept id="1">__</ept> and <bpt id="2">__</bpt>"Join attributes by nearest"<ept id="2">__</ept>.</source>
+<target xml:lang="fr">There are also the tools <bpt id="1">__</bpt>"Join attributes by location (summary)"<ept id="1">__</ept> and <bpt id="2">__</bpt>"Join attributes by nearest"<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::{tab-set}</ph></source>
+<target xml:lang="fr"><ph id="1">:::::{tab-set}</ph></target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-item} </ph>Join attributes by location (summary)</source>
+<target xml:lang="fr"><ph id="1">::::{tab-item} </ph>Join attributes by location (summary)</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">This tool is similar to the "Join Attributes by Location"-tool. However, on top of adding the attributes from one layer to another, this algorithm also calculates statistical summaries for the values from matching features in the second layer. These summaries include a wide range of options, such as <bpt id="1">__</bpt>minimum and maximum values<ept id="1">__</ept>, <bpt id="2">__</bpt>mean values<ept id="2">__</ept>, as well as <bpt id="3">__</bpt>counts<ept id="3">__</ept>, <bpt id="4">__</bpt>sums<ept id="4">__</ept>, <bpt id="5">__</bpt>standard deviation<ept id="5">__</ept>, and more.</source>
+<target xml:lang="fr">This tool is similar to the "Join Attributes by Location"-tool. However, on top of adding the attributes from one layer to another, this algorithm also calculates statistical summaries for the values from matching features in the second layer. These summaries include a wide range of options, such as <bpt id="1">__</bpt>minimum and maximum values<ept id="1">__</ept>, <bpt id="2">__</bpt>mean values<ept id="2">__</ept>, as well as <bpt id="3">__</bpt>counts<ept id="3">__</ept>, <bpt id="4">__</bpt>sums<ept id="4">__</ept>, <bpt id="5">__</bpt>standard deviation<ept id="5">__</ept>, and more.</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_spatial_join_3.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_spatial_join_3.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 450 px</ph>
+<ph id="2">name: en_spatial_join_3</ph></source>
+<target xml:lang="fr"><ph id="1">width: 450 px</ph>
+<ph id="2">name: en_spatial_join_3</ph></target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Screenshot of the tool Join attributes by location (summary) in QGIS 3.36.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Screenshot of the tool Join attributes by location (summary) in QGIS 3.36.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-item} </ph>Join attributes by nearest</source>
+<target xml:lang="fr"><ph id="1">::::{tab-item} </ph>Join attributes by nearest</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">This type of spatial join is similar to the other two joins but the joining of features occurs by <bpt id="1">__</bpt>identifying the closest features<ept id="1">__</ept> from each of these layers. Furthermore, if a maximum distance is specified, only the features that are within this designated distance will be considered as suitable matches for the joining process.</source>
+<target xml:lang="fr">This type of spatial join is similar to the other two joins but the joining of features occurs by <bpt id="1">__</bpt>identifying the closest features<ept id="1">__</ept> from each of these layers. Furthermore, if a maximum distance is specified, only the features that are within this designated distance will be considered as suitable matches for the joining process.</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_spatial_join_2.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_spatial_join_2.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 450 px</ph>
+<ph id="2">name: en_spatial_join_2</ph></source>
+<target xml:lang="fr"><ph id="1">width: 450 px</ph>
+<ph id="2">name: en_spatial_join_2</ph></target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">Screenshot of the tool Join attributes by nearest in QGIS 3.36
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Screenshot of the tool Join attributes by nearest in QGIS 3.36
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::::</ph></target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+A detailed description of the functions and settings of these tools can be found in the <bpt id="2">[</bpt>QGIS documentation<ept id="2">](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html#join-attributes-by-location)</ept></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+A detailed description of the functions and settings of these tools can be found in the <bpt id="2">[</bpt>QGIS documentation<ept id="2">](https://docs.qgis.org/3.34/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html#join-attributes-by-location)</ept></target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">Exercise: Calculate sum of affected population and flooded area for the Area of interest <bpt id="1">&lt;a id="exercise-calculate-sum-of-affected-population-and-flooded-area-for-the-area-of-interest"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise: Calculate sum of affected population and flooded area for the Area of interest <bpt id="1">&lt;a id="exercise-calculate-sum-of-affected-population-and-flooded-area-for-the-area-of-interest"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">In the aftermath of flooding events, data on the affected population and the extent of flooding is crucial. This information can be refined from a nationwide dataset to provide specific numbers for individual districts or states. This can aid in identifying the areas most heavily impacted, leading to more efficient relief operations. In the upcoming exercise, we will calculate the total flooding extent in square kilometers and the affected population for Unity State, South Sudan. To accomplish this, we will utilize the <bpt id="1">__</bpt>Join attributes by location (summary)<ept id="1">__</ept> tool.</source>
+<target xml:lang="fr">In the aftermath of flooding events, data on the affected population and the extent of flooding is crucial. This information can be refined from a nationwide dataset to provide specific numbers for individual districts or states. This can aid in identifying the areas most heavily impacted, leading to more efficient relief operations. In the upcoming exercise, we will calculate the total flooding extent in square kilometers and the affected population for Unity State, South Sudan. To accomplish this, we will utilize the <bpt id="1">__</bpt>Join attributes by location (summary)<ept id="1">__</ept> tool.</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">Load the necessary data for this exercise into your QGIS. Both datasets were downloaded from HDX:</source>
+<target xml:lang="fr">Load the necessary data for this exercise into your QGIS. Both datasets were downloaded from HDX:</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>South Sudan - Subnational Administrative Boundaries<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Spatial_Join/State_Unity_South_Sudan.zip)</ept>:<ph id="2">&lt;br /></ph> <bpt id="3">__</bpt>State_Unity_South_Sudan.shp<ept id="3">__</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>South Sudan - Subnational Administrative Boundaries<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Spatial_Join/State_Unity_South_Sudan.zip)</ept>:<ph id="2">&lt;br /></ph> <bpt id="3">__</bpt>State_Unity_South_Sudan.shp<ept id="3">__</ept></target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Satellite detected water extents between 11 and 15 August 2023 over South Sudan<ept id="1">](https://data.humdata.org/dataset/satellite-detected-water-extents-between-11-and-15-august-2023-over-south-sudan)</ept>: Download the folder <bpt id="2">__</bpt>FL20220424SSD_SHP.zip<ept id="2">__</ept>, unzip it, and search for the file <bpt id="3">__</bpt>VIIRS_20230811_20230815_MaximumFloodWaterExtent_SouthSudan.shp<ept id="3">__</ept>.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Satellite detected water extents between 11 and 15 August 2023 over South Sudan<ept id="1">](https://data.humdata.org/dataset/satellite-detected-water-extents-between-11-and-15-august-2023-over-south-sudan)</ept>: Download the folder <bpt id="2">__</bpt>FL20220424SSD_SHP.zip<ept id="2">__</ept>, unzip it, and search for the file <bpt id="3">__</bpt>VIIRS_20230811_20230815_MaximumFloodWaterExtent_SouthSudan.shp<ept id="3">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">Locate the tool named <bpt id="1">__</bpt>Join attribute by location (summary)<ept id="1">__</ept>.</source>
+<target xml:lang="fr">Locate the tool named <bpt id="1">__</bpt>Join attribute by location (summary)<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">Choose <bpt id="1">__</bpt>state boundaries<ept id="1">__</ept> as the target layer for joining features.</source>
+<target xml:lang="fr">Choose <bpt id="1">__</bpt>state boundaries<ept id="1">__</ept> as the target layer for joining features.</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en">Set <bpt id="1">__</bpt>intersect<ept id="1">__</ept> as the spatial relationship.</source>
+<target xml:lang="fr">Set <bpt id="1">__</bpt>intersect<ept id="1">__</ept> as the spatial relationship.</target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">Select  <bpt id="1">__</bpt>flood extent layer<ept id="1">__</ept> as the comparison layer.</source>
+<target xml:lang="fr">Select  <bpt id="1">__</bpt>flood extent layer<ept id="1">__</ept> as the comparison layer.</target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">Specify the fields to be summarized as <bpt id="1">__</bpt>Area_km2<ept id="1">__</ept> and <bpt id="2">__</bpt>Pop<ept id="2">__</ept>.</source>
+<target xml:lang="fr">Specify the fields to be summarized as <bpt id="1">__</bpt>Area_km2<ept id="1">__</ept> and <bpt id="2">__</bpt>Pop<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">Choose <bpt id="1">__</bpt>sum<ept id="1">__</ept> as the type of summaries to be calculated.</source>
+<target xml:lang="fr">Choose <bpt id="1">__</bpt>sum<ept id="1">__</ept> as the type of summaries to be calculated.</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph> to start the process.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph> to start the process.</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">Once completed, you will have access to information on the <bpt id="1">__</bpt>total affected population<ept id="1">__</ept> and <bpt id="2">__</bpt>flooded areas<ept id="2">__</ept> for the entire state of Unity.</source>
+<target xml:lang="fr">Once completed, you will have access to information on the <bpt id="1">__</bpt>total affected population<ept id="1">__</ept> and <bpt id="2">__</bpt>flooded areas<ept id="2">__</ept> for the entire state of Unity.</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Solution: Calculate sum of affected population and flooded area for the Area of interest
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Solution: Calculate sum of affected population and flooded area for the Area of interest
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What differentiates a spatial processing tool from a non-spatial processing tool?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What differentiates a spatial processing tool from a non-spatial processing tool?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer
+A <bpt id="2">__</bpt>spatial processing<ept id="2">__</ept> tool operates on the geometry (location, shape, spatial relationship) of features (points, lines, polygons, or raster cells) and uses that spatial information (e.g., distance, adjacency, overlap) in its operation. A <bpt id="3">__</bpt>non‑spatial processing<ept id="3">__</ept> tool operates only on attribute or tabular data without regard to the geometry (for example sorting a table, calculating a field, joining tables by key).
+<ph id="4">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer
+A <bpt id="2">__</bpt>spatial processing<ept id="2">__</ept> tool operates on the geometry (location, shape, spatial relationship) of features (points, lines, polygons, or raster cells) and uses that spatial information (e.g., distance, adjacency, overlap) in its operation. A <bpt id="3">__</bpt>non‑spatial processing<ept id="3">__</ept> tool operates only on attribute or tabular data without regard to the geometry (for example sorting a table, calculating a field, joining tables by key).
+<ph id="4">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Name and briefly describe at least three common spatial tools or operations covered (e.g. buffer, clip, dissolve, intersect, union).<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Name and briefly describe at least three common spatial tools or operations covered (e.g. buffer, clip, dissolve, intersect, union).<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Buffer:<ept id="1">__</ept> Creates a zone at a specified distance around input features (points, lines or polygons). For example, around a road line you create a 100 m buffer zone polygon that represents all area within 100 m of the road.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Buffer:<ept id="1">__</ept> Creates a zone at a specified distance around input features (points, lines or polygons). For example, around a road line you create a 100 m buffer zone polygon that represents all area within 100 m of the road.</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Clip:<ept id="1">__</ept> Uses one layer (the “clip” layer) to trim or cut another layer so that only the portion of the input layer falling inside (or maybe outside) the clip layer remains. Effectively extracts a subset of geometry.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Clip:<ept id="1">__</ept> Uses one layer (the “clip” layer) to trim or cut another layer so that only the portion of the input layer falling inside (or maybe outside) the clip layer remains. Effectively extracts a subset of geometry.</target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Dissolve:<ept id="1">__</ept> Merges adjacent or overlapping features in a layer based on a shared attribute (or simply removes internal boundaries) so that features become larger aggregated shapes. For instance, combining many small administrative units into one larger one based on a region code.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Dissolve:<ept id="1">__</ept> Merges adjacent or overlapping features in a layer based on a shared attribute (or simply removes internal boundaries) so that features become larger aggregated shapes. For instance, combining many small administrative units into one larger one based on a region code.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>If you have a layer of roads and you apply a buffer of 100 m around each road, what is the resulting geometry and what is one possible use case<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>If you have a layer of roads and you apply a buffer of 100 m around each road, what is the resulting geometry and what is one possible use case<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">The output will be polygon features (zones) that represent all areas within 100 m of each road. So if your input roads are line features, after the buffer you will have polygon(s) that “wrap” around each road line, extending on both sides by 100 m (assuming a simple planar buffer).</source>
+<target xml:lang="fr">The output will be polygon features (zones) that represent all areas within 100 m of each road. So if your input roads are line features, after the buffer you will have polygon(s) that “wrap” around each road line, extending on both sides by 100 m (assuming a simple planar buffer).</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en">A buffer could be used to buffer a cyclone track to approximate the cyclone-affected region (see <bpt id="1">[</bpt>QGIS Trigger Workflow for Madagascar<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_cyclone_trigger_madagascar.html)</ept>).</source>
+<target xml:lang="fr">A buffer could be used to buffer a cyclone track to approximate the cyclone-affected region (see <bpt id="1">[</bpt>QGIS Trigger Workflow for Madagascar<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_cyclone_trigger_madagascar.html)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Why is it important to check whether input layers have compatible projections / CRSs before running spatial tools?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Why is it important to check whether input layers have compatible projections / CRSs before running spatial tools?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en">If layers have different CRSs (or datums) and you apply a spatial tool without performing a proper reprojection, the geometry calculations (distances, areas, buffers, overlay) may be incorrect or misleading. For example a buffer of “100 m” may in fact be 100 units of a different coordinate system (degrees or feet) so the real world distance is wrong.</source>
+<target xml:lang="fr">If layers have different CRSs (or datums) and you apply a spatial tool without performing a proper reprojection, the geometry calculations (distances, areas, buffers, overlay) may be incorrect or misleading. For example a buffer of “100 m” may in fact be 100 units of a different coordinate system (degrees or feet) so the real world distance is wrong.</target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en">Spatial operations rely on accurate geometric relationships; if one layer is in e.g., WGS84 geographic degrees and another is in a projected metre‐based CRS, the mismatch can cause mis‐alignment, stretching, distortion, or errors in results.</source>
+<target xml:lang="fr">Spatial operations rely on accurate geometric relationships; if one layer is in e.g., WGS84 geographic degrees and another is in a projected metre‐based CRS, the mismatch can cause mis‐alignment, stretching, distortion, or errors in results.</target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">Ensuring compatible projections helps maintain spatial accuracy, area/distance correctness, and valid topological relationships (e.g., overlays, intersections) which are critical for meaningful results.</source>
+<target xml:lang="fr">Ensuring compatible projections helps maintain spatial accuracy, area/distance correctness, and valid topological relationships (e.g., overlays, intersections) which are critical for meaningful results.</target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

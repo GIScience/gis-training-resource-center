@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_4/en_qgis_understanding_print_layout.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Understanding the Print Layout Composer <bpt id="1">&lt;a id="understanding-the-print-layout-composer"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Understanding the Print Layout Composer <bpt id="1">&lt;a id="understanding-the-print-layout-composer"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_understanding_the_print_layout_composer.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_understanding_the_print_layout_composer.png</ph></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_30.30.2_understanding_the_print_layout_composer</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_30.30.2_understanding_the_print_layout_composer</ph></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">The interface of the Print Layout Composer.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The interface of the Print Layout Composer.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Layout Settings<ept id="1">__</ept> (Add pages, Export Map, manage panels)</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Layout Settings<ept id="1">__</ept> (Add pages, Export Map, manage panels)</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Dialer Tools<ept id="1">__</ept> (Save, New, Duplicate, Add items from template, Save template)</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Dialer Tools<ept id="1">__</ept> (Save, New, Duplicate, Add items from template, Save template)</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Navigation bar<ept id="1">__</ept> (Zoom, Refresh, Lock/Unlock elements)</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Navigation bar<ept id="1">__</ept> (Zoom, Refresh, Lock/Unlock elements)</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Toolbar<ept id="1">__</ept> (Zoom, Select, Move in Map, Add new map/image/text/legend/scale/shape/...)</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Toolbar<ept id="1">__</ept> (Zoom, Select, Move in Map, Add new map/image/text/legend/scale/shape/...)</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Feature Panel<ept id="1">__</ept>: Displays the elements added to the print layout</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Feature Panel<ept id="1">__</ept>: Displays the elements added to the print layout</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Advanced Options<ept id="1">__</ept>: Customise each element of the layer</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Advanced Options<ept id="1">__</ept>: Customise each element of the layer</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">The print layout manager also works with toolbars (on the left side of the screen), where you can select different tools (e.g. to add images) and panels (on the right side of the screen), where you can change the settings of the tools or the elements you have added to the map.</source>
+<target xml:lang="fr">The print layout manager also works with toolbars (on the left side of the screen), where you can select different tools (e.g. to add images) and panels (on the right side of the screen), where you can change the settings of the tools or the elements you have added to the map.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">First of all, you should always set the size of your map:</source>
+<target xml:lang="fr">First of all, you should always set the size of your map:</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Right-click on the blank map > <ph id="1">`Page Properties`</ph>.</source>
+<target xml:lang="fr">Right-click on the blank map > <ph id="1">`Page Properties`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Choose <bpt id="1">__</bpt>the size of your document<ept id="1">__</ept> (A4, A3, A2). A4 and A3 are the most commonly used sizes for maps.</source>
+<target xml:lang="fr">Choose <bpt id="1">__</bpt>the size of your document<ept id="1">__</ept> (A4, A3, A2). A4 and A3 are the most commonly used sizes for maps.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Choose the orientation (Landscape or Portrait).</source>
+<target xml:lang="fr">Choose the orientation (Landscape or Portrait).</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Adding Elements to the Print Layout <bpt id="1">&lt;a id="adding-elements-to-the-print-layout"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Adding Elements to the Print Layout <bpt id="1">&lt;a id="adding-elements-to-the-print-layout"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Adding a New Map <bpt id="1">&lt;a id="adding-a-new-map"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Adding a New Map <bpt id="1">&lt;a id="adding-a-new-map"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Add a new map by clicking on the <bpt id="1">![</bpt><ept id="1">](/fig/30.30.2_print_layout_insert_map_icon.png)</ept> <ph id="2">`Add map`</ph>-button on the <bpt id="3">__</bpt>toolbar on the left<ept id="3">__</ept> and drag a rectangle on the map canvas.</source>
+<target xml:lang="fr">Add a new map by clicking on the <bpt id="1">![</bpt><ept id="1">](/fig/30.30.2_print_layout_insert_map_icon.png)</ept> <ph id="2">`Add map`</ph>-button on the <bpt id="3">__</bpt>toolbar on the left<ept id="3">__</ept> and drag a rectangle on the map canvas.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">To move the map on the canvas, simply <bpt id="1">__</bpt>select the map<ept id="1">__</ept> and <bpt id="2">__</bpt>drag<ept id="2">__</ept> it with your mouse.</source>
+<target xml:lang="fr">To move the map on the canvas, simply <bpt id="1">__</bpt>select the map<ept id="1">__</ept> and <bpt id="2">__</bpt>drag<ept id="2">__</ept> it with your mouse.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">To move within a map select <bpt id="1">![</bpt><ept id="1">](/fig/30.30.2_print_layout_move_content_icon.png)</ept> <ph id="2">`Move item content`</ph>-button on the left toolbar.</source>
+<target xml:lang="fr">To move within a map select <bpt id="1">![</bpt><ept id="1">](/fig/30.30.2_print_layout_move_content_icon.png)</ept> <ph id="2">`Move item content`</ph>-button on the left toolbar.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">To zoom in on the map, while using the <bpt id="1">![</bpt><ept id="1">](/fig/30.30.2_print_layout_move_content_icon.png)</ept> <ph id="2">`Move item content`</ph> tool, you can <bpt id="3">__</bpt>Press CTRL + scroll the mouse wheel<ept id="3">__</ept> (gently) or enter the scale manually in the item properties.</source>
+<target xml:lang="fr">To zoom in on the map, while using the <bpt id="1">![</bpt><ept id="1">](/fig/30.30.2_print_layout_move_content_icon.png)</ept> <ph id="2">`Move item content`</ph> tool, you can <bpt id="3">__</bpt>Press CTRL + scroll the mouse wheel<ept id="3">__</ept> (gently) or enter the scale manually in the item properties.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_adding_a_map.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_adding_a_map.png</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 750px</ph>
+<ph id="2">name: en_30.30.2_adding_a_map</ph></source>
+<target xml:lang="fr"><ph id="1">width: 750px</ph>
+<ph id="2">name: en_30.30.2_adding_a_map</ph></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Adding a new map to the Print Layout (Source: CartONG).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Adding a new map to the Print Layout (Source: CartONG).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-set}</ph>
+<ph id="2">:::{tab-item} </ph>Adding a new map</source>
+<target xml:lang="fr"><ph id="1">::::{tab-set}</ph>
+<ph id="2">:::{tab-item} </ph>Adding a new map</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Moving and scaling the map</source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Moving and scaling the map</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Adding a Title or a Text Box <bpt id="1">&lt;a id="adding-a-title-or-a-text-box"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Adding a Title or a Text Box <bpt id="1">&lt;a id="adding-a-title-or-a-text-box"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">A title should describe the phenomenon represented on the map.</source>
+<target xml:lang="fr">A title should describe the phenomenon represented on the map.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">To add text (title, explanations), use the <bpt id="1">![</bpt><ept id="1">](../../fig/30.30.2_print_layout_add_text.png)</ept> <ph id="2">`Add Label`</ph>-tool and draw a rectangle of the desired size.</source>
+<target xml:lang="fr">To add text (title, explanations), use the <bpt id="1">![</bpt><ept id="1">](../../fig/30.30.2_print_layout_add_text.png)</ept> <ph id="2">`Add Label`</ph>-tool and draw a rectangle of the desired size.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">In the <bpt id="1">__</bpt>Item Properties<ept id="1">__</ept> panel (on the right of your screen) you can <bpt id="2">__</bpt>enter your text<ept id="2">__</ept> and <bpt id="3">__</bpt>change the font, style, colour, etc.<ept id="3">__</ept> (Remember to use the scroll bar in the window to see all the options).</source>
+<target xml:lang="fr">In the <bpt id="1">__</bpt>Item Properties<ept id="1">__</ept> panel (on the right of your screen) you can <bpt id="2">__</bpt>enter your text<ept id="2">__</ept> and <bpt id="3">__</bpt>change the font, style, colour, etc.<ept id="3">__</ept> (Remember to use the scroll bar in the window to see all the options).</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_print_layout_add_text.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_print_layout_add_text.png</ph></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 750px</ph>
+<ph id="2">name: en_30.30.2_print_layout_add_tex</ph></source>
+<target xml:lang="fr"><ph id="1">width: 750px</ph>
+<ph id="2">name: en_30.30.2_print_layout_add_tex</ph></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Adding text to the print layout (Source: CartONG).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Adding text to the print layout (Source: CartONG).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Adding a textbox</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Adding a textbox</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Adding an Image or Logo <bpt id="1">&lt;a id="adding-an-image-or-logo"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Adding an Image or Logo <bpt id="1">&lt;a id="adding-an-image-or-logo"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">If you are working for an organisation, most likely you will add the logo of that organization on the maps you produce.</source>
+<target xml:lang="fr">If you are working for an organisation, most likely you will add the logo of that organization on the maps you produce.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Click on the <bpt id="1">![</bpt><ept id="1">](../../fig/30.30.2_print_layout_add_image.png)</ept> <ph id="2">`Add image`</ph>-tool in the left toolbar.</source>
+<target xml:lang="fr">Click on the <bpt id="1">![</bpt><ept id="1">](../../fig/30.30.2_print_layout_add_image.png)</ept> <ph id="2">`Add image`</ph>-tool in the left toolbar.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Drag a rectangle on the canvas.</source>
+<target xml:lang="fr">Drag a rectangle on the canvas.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">In the <bpt id="1">__</bpt>Item Properties<ept id="1">__</ept> tab, you will have the option to choose an SVG image from your SVG-library in QGIS or choose a <bpt id="2">__</bpt>Raster image<ept id="2">__</ept>. Most image files are raster images.</source>
+<target xml:lang="fr">In the <bpt id="1">__</bpt>Item Properties<ept id="1">__</ept> tab, you will have the option to choose an SVG image from your SVG-library in QGIS or choose a <bpt id="2">__</bpt>Raster image<ept id="2">__</ept>. Most image files are raster images.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Select <ph id="1">`Raster image`</ph> and click on <ph id="2">`...`</ph> to choose the location of the image.</source>
+<target xml:lang="fr">Select <ph id="1">`Raster image`</ph> and click on <ph id="2">`...`</ph> to choose the location of the image.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Your image will appear in the print layout. In order to make sure that the image does not get distorted, leave the <ph id="1">`Resize Mode`</ph> on "Zoom".</source>
+<target xml:lang="fr">Your image will appear in the print layout. In order to make sure that the image does not get distorted, leave the <ph id="1">`Resize Mode`</ph> on "Zoom".</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/3.36_print_layout_add_image.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/3.36_print_layout_add_image.png</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: 3.36_print_layout_add_image</ph>
+<ph id="2">width: 650 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: 3.36_print_layout_add_image</ph>
+<ph id="2">width: 650 px</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Adding an image or logo to the print layout.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Adding an image or logo to the print layout.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Adding an image to the print layout
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Adding an image to the print layout
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Adding a Legend <bpt id="1">&lt;a id="adding-a-legend"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Adding a Legend <bpt id="1">&lt;a id="adding-a-legend"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Before adding a legend, make sure that:</source>
+<target xml:lang="fr">Before adding a legend, make sure that:</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">All your layers have an explicit name ("rivers", "primary roads",...).</source>
+<target xml:lang="fr">All your layers have an explicit name ("rivers", "primary roads",...).</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">You use the final version of your map (no more layers to add, move, rename or modify). You can still modify them later but you will have to redo the legend.</source>
+<target xml:lang="fr">You use the final version of your map (no more layers to add, move, rename or modify). You can still modify them later but you will have to redo the legend.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">To add a legend, you can use the <bpt id="1">![</bpt><ept id="1">](../../fig/30.30.2_print_layout_add_legend.png)</ept> <ph id="2">`Add legend`</ph>-button on the <bpt id="3">__</bpt>left toolbar<ept id="3">__</ept>.</source>
+<target xml:lang="fr">To add a legend, you can use the <bpt id="1">![</bpt><ept id="1">](../../fig/30.30.2_print_layout_add_legend.png)</ept> <ph id="2">`Add legend`</ph>-button on the <bpt id="3">__</bpt>left toolbar<ept id="3">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_print_layout_add_legend.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_print_layout_add_legend.png</ph></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 750px</ph>
+<ph id="2">name: en_30.30.2_print_layout_add_legend</ph></source>
+<target xml:lang="fr"><ph id="1">width: 750px</ph>
+<ph id="2">name: en_30.30.2_print_layout_add_legend</ph></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Adding a legend to the print layout.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Adding a legend to the print layout.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">In the <bpt id="1">__</bpt>Item Properties<ept id="1">__</ept> panel, if you keep the <bpt id="2">__</bpt><ph id="3">`Auto update`</ph><ept id="2">__</ept> option checked, new layers added to your project will automatically be added to the legend but you cannot control them individually (rename if necessary, reorder or remove items).<ph id="4">  </ph>
+Once the option is unchecked, you can update the name of the layers, group them, remove or reorganise them, etc.</source>
+<target xml:lang="fr">In the <bpt id="1">__</bpt>Item Properties<ept id="1">__</ept> panel, if you keep the <bpt id="2">__</bpt><ph id="3">`Auto update`</ph><ept id="2">__</ept> option checked, new layers added to your project will automatically be added to the legend but you cannot control them individually (rename if necessary, reorder or remove items).<ph id="4">  </ph>
+Once the option is unchecked, you can update the name of the layers, group them, remove or reorganise them, etc.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">If you have too many items on your legend, and they don't fit on your map horizontally, you can also split the legend into several columns by navigating through the Item Properties panel, expand the <ph id="1">`Columns`</ph>-section, and increase the <ph id="2">`Count`</ph>.</source>
+<target xml:lang="fr">If you have too many items on your legend, and they don't fit on your map horizontally, you can also split the legend into several columns by navigating through the Item Properties panel, expand the <ph id="1">`Columns`</ph>-section, and increase the <ph id="2">`Count`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-set}</ph>
+<ph id="2">:::{tab-item} </ph>Adding a legend</source>
+<target xml:lang="fr"><ph id="1">::::{tab-set}</ph>
+<ph id="2">:::{tab-item} </ph>Adding a legend</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Editing the legend</source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Editing the legend</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Adding a two-column legend</source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Adding a two-column legend</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Sometimes the space on your map is not suited for a single vertical legend. In this case, it is useful to add multiple columns. Make sure to group the legend items logically so that the vertical legend is easier to read.</source>
+<target xml:lang="fr">Sometimes the space on your map is not suited for a single vertical legend. In this case, it is useful to add multiple columns. Make sure to group the legend items logically so that the vertical legend is easier to read.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">Adding a Scale Bar <bpt id="1">&lt;a id="adding-a-scale-bar"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Adding a Scale Bar <bpt id="1">&lt;a id="adding-a-scale-bar"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Before adding a scale bar, select your main map and check in the <bpt id="1">__</bpt>Item Properties<ept id="1">__</ept> panel that the <ph id="2">`Scale`</ph> field has a <bpt id="3">__</bpt>round number<ept id="3">__</ept> .</source>
+<target xml:lang="fr">Before adding a scale bar, select your main map and check in the <bpt id="1">__</bpt>Item Properties<ept id="1">__</ept> panel that the <ph id="2">`Scale`</ph> field has a <bpt id="3">__</bpt>round number<ept id="3">__</ept> .</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_print_layout_scale.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_print_layout_scale.png</ph></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 750px</ph>
+<ph id="2">name: en_30.30.2_print_layout_scale</ph></source>
+<target xml:lang="fr"><ph id="1">width: 750px</ph>
+<ph id="2">name: en_30.30.2_print_layout_scale</ph></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Make sure that the scale is at a round number.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Make sure that the scale is at a round number.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">To add a scale bar, you can use the <bpt id="1">![</bpt><ept id="1">](../../fig/30.30.2_print_layout_scale_bar.png)</ept><ph id="2">`Add scale bar`</ph>-button on the <bpt id="3">__</bpt>left toolbar<ept id="3">__</ept>. In the <bpt id="4">__</bpt>Item Properties<ept id="4">__</ept> panel, customize the following functions.</source>
+<target xml:lang="fr">To add a scale bar, you can use the <bpt id="1">![</bpt><ept id="1">](../../fig/30.30.2_print_layout_scale_bar.png)</ept><ph id="2">`Add scale bar`</ph>-button on the <bpt id="3">__</bpt>left toolbar<ept id="3">__</ept>. In the <bpt id="4">__</bpt>Item Properties<ept id="4">__</ept> panel, customize the following functions.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Which Map <bpt id="1">__</bpt>is related to the scale<ept id="1">__</ept>.</source>
+<target xml:lang="fr">Which Map <bpt id="1">__</bpt>is related to the scale<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Unit system of the bar<ept id="1">__</ept> (metres, miles, degrees).</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Unit system of the bar<ept id="1">__</ept> (metres, miles, degrees).</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Segments on the left<ept id="1">__</ept>: segments shown before 0 m (always set to 0).</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Segments on the left<ept id="1">__</ept>: segments shown before 0 m (always set to 0).</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Fixed width<ept id="1">__</ept>: define the width of each segment (e.g. 1 km, 10 km, 50 km, ...).</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Fixed width<ept id="1">__</ept>: define the width of each segment (e.g. 1 km, 10 km, 50 km, ...).</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Height<ept id="1">__</ept>: height (thickness) of the scale bar.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Height<ept id="1">__</ept>: height (thickness) of the scale bar.</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">There are many other options to customize the scale bar (change the font, colours, etc.).</source>
+<target xml:lang="fr">There are many other options to customize the scale bar (change the font, colours, etc.).</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_print_layout_add_scale_bar.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_print_layout_add_scale_bar.png</ph></target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 750px</ph>
+<ph id="2">name: en_30.30.2_print_layout_add_scale_bar</ph></source>
+<target xml:lang="fr"><ph id="1">width: 750px</ph>
+<ph id="2">name: en_30.30.2_print_layout_add_scale_bar</ph></target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Adding and customising the scale bar.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Adding and customising the scale bar.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown}</ph>
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown}</ph>
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">Adding an Overview Map <bpt id="1">&lt;a id="adding-an-overview-map"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Adding an Overview Map <bpt id="1">&lt;a id="adding-an-overview-map"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Adding an overview map in the corner of your map will help locate the area you are viewing on the main map.</source>
+<target xml:lang="fr">Adding an overview map in the corner of your map will help locate the area you are viewing on the main map.</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">To create an overview map, you need to follow these steps:</source>
+<target xml:lang="fr">To create an overview map, you need to follow these steps:</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Make sure that you <bpt id="1">__</bpt>lock the layers and layer styling<ept id="1">__</ept> for your main map.</source>
+<target xml:lang="fr">Make sure that you <bpt id="1">__</bpt>lock the layers and layer styling<ept id="1">__</ept> for your main map.</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">Navigate to the <bpt id="1">__</bpt>item properties<ept id="1">__</ept> panel > <ph id="2">`Lock layers`</ph> and <ph id="3">`Lock styles for layers`</ph>.</source>
+<target xml:lang="fr">Navigate to the <bpt id="1">__</bpt>item properties<ept id="1">__</ept> panel > <ph id="2">`Lock layers`</ph> and <ph id="3">`Lock styles for layers`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Prepare a <bpt id="1">__</bpt>layer with national or subnational borders or important landmarks<ept id="1">__</ept> in your project (e.g: Administrative boundaries, Capitals). These should not be the same layers as your main map. If necessary, you can duplicate layers you wish to use on the overview map (such as administrative boundaries). Do not change the layers of your main map, if you intend to change the symbology later on.</source>
+<target xml:lang="fr">Prepare a <bpt id="1">__</bpt>layer with national or subnational borders or important landmarks<ept id="1">__</ept> in your project (e.g: Administrative boundaries, Capitals). These should not be the same layers as your main map. If necessary, you can duplicate layers you wish to use on the overview map (such as administrative boundaries). Do not change the layers of your main map, if you intend to change the symbology later on.</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Insert the overview map<ept id="1">__</ept> into your print layout, by using the <bpt id="2">![</bpt><ept id="2">](../../fig/30.30.2_print_layout_insert_map_icon.png)</ept><ph id="3">`Add Map`</ph> tool (in the bottom right corner, for example).</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Insert the overview map<ept id="1">__</ept> into your print layout, by using the <bpt id="2">![</bpt><ept id="2">](../../fig/30.30.2_print_layout_insert_map_icon.png)</ept><ph id="3">`Add Map`</ph> tool (in the bottom right corner, for example).</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Lock the new map<ept id="1">__</ept> in the Item properties panel.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Lock the new map<ept id="1">__</ept> in the Item properties panel.</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Add a rectangle to display the extent of your main map.</source>
+<target xml:lang="fr">Add a rectangle to display the extent of your main map.</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Go to the <bpt id="1">__</bpt>properties<ept id="1">__</ept> of your Main map > scroll down until you see <bpt id="2">__</bpt>"Overviews"<ept id="2">__</ept>.</source>
+<target xml:lang="fr">Go to the <bpt id="1">__</bpt>properties<ept id="1">__</ept> of your Main map > scroll down until you see <bpt id="2">__</bpt>"Overviews"<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Add an Overview by clicking on the <ph id="1">`+`</ph>-button.</source>
+<target xml:lang="fr">Add an Overview by clicking on the <ph id="1">`+`</ph>-button.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Link the main map<ept id="1">__</ept> by selecting it in the <ph id="2">`Map frame`</ph> option.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Link the main map<ept id="1">__</ept> by selecting it in the <ph id="2">`Map frame`</ph> option.</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_print_layout_overview_map_preparations.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_print_layout_overview_map_preparations.png</ph></target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 500px</ph>
+<ph id="2">name: en_30.30.2_print_layout_overview_map_preparations</ph></source>
+<target xml:lang="fr"><ph id="1">width: 500px</ph>
+<ph id="2">name: en_30.30.2_print_layout_overview_map_preparations</ph></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">An overview map should show important landmarks and borders so the reader is able to locate the region shown on the map without having specific knowledge of the region.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">An overview map should show important landmarks and borders so the reader is able to locate the region shown on the map without having specific knowledge of the region.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_30.30.2_print_layout_add_overview_map.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_30.30.2_print_layout_add_overview_map.png</ph></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 750px</ph>
+<ph id="2">name: en_30.30.2_print_layout_add_overview_map</ph></source>
+<target xml:lang="fr"><ph id="1">width: 750px</ph>
+<ph id="2">name: en_30.30.2_print_layout_add_overview_map</ph></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">Add an overview map and <bpt id="1">__</bpt>lock the layer<ept id="1">__</ept>.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">Add an overview map and <bpt id="1">__</bpt>lock the layer<ept id="1">__</ept>.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Setting up an overview map
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Setting up an overview map
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Caution}</ph>
+This method requires you to be sure that you are not going to modify the overview map, as once the layers are locked, they will keep the style, and any updates will not affect the overview map.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Caution}</ph>
+This method requires you to be sure that you are not going to modify the overview map, as once the layers are locked, they will keep the style, and any updates will not affect the overview map.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">Exporting the print layout <bpt id="1">&lt;a id="exporting-the-print-layout"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exporting the print layout <bpt id="1">&lt;a id="exporting-the-print-layout"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Once you are finished with the map composition, it is time to export the print layout as a PDF or SVG file.</source>
+<target xml:lang="fr">Once you are finished with the map composition, it is time to export the print layout as a PDF or SVG file.</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">In the toolbar above the canvas, click on the <bpt id="1">![</bpt><ept id="1">](../../fig/30.30.2_print_layout_export_pdf.png)</ept> <ph id="2">`Export as PDF`</ph>-button.</source>
+<target xml:lang="fr">In the toolbar above the canvas, click on the <bpt id="1">![</bpt><ept id="1">](../../fig/30.30.2_print_layout_export_pdf.png)</ept> <ph id="2">`Export as PDF`</ph>-button.</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Give the new file a name and select the location you want to save it.</source>
+<target xml:lang="fr">Give the new file a name and select the location you want to save it.</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Save`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Save`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">A new window "PDF Export Options" will open. Here you can adjust the compression algorithm. For the best results, select the lossless image compression.</source>
+<target xml:lang="fr">A new window "PDF Export Options" will open. Here you can adjust the compression algorithm. For the best results, select the lossless image compression.</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Save`</ph> again.</source>
+<target xml:lang="fr">Click <ph id="1">`Save`</ph> again.</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">A new green bar will pop up underneath the toolbars. Click on the file link to <bpt id="1">__</bpt>review the exported map<ept id="1">__</ept>.</source>
+<target xml:lang="fr">A new green bar will pop up underneath the toolbars. Click on the file link to <bpt id="1">__</bpt>review the exported map<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+Make sure to check the map after exporting the PDF as some design elements might have changed in the exporting process.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+Make sure to check the map after exporting the PDF as some design elements might have changed in the exporting process.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Map Templates <bpt id="1">&lt;a id="map-templates"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Map Templates <bpt id="1">&lt;a id="map-templates"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Map templates can simplify and speed up the creation of a print layout by saving the arrangement of elements. However, they do not save the project's layers and images, which will need to be reconfigured each time.
+If you work for an organisation that frequently publishes maps, or you need to create several maps on the same topics but in different regions or times, you can use map templates to skip the arrangement of elements.</source>
+<target xml:lang="fr">Map templates can simplify and speed up the creation of a print layout by saving the arrangement of elements. However, they do not save the project's layers and images, which will need to be reconfigured each time.
+If you work for an organisation that frequently publishes maps, or you need to create several maps on the same topics but in different regions or times, you can use map templates to skip the arrangement of elements.</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+The individual layers, maps and images are not saved in the template. However, if you have the same layers in the project you load the template into, the legend will update accordingly.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+The individual layers, maps and images are not saved in the template. However, if you have the same layers in the project you load the template into, the legend will update accordingly.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-set}</ph>
+<ph id="2">:::{tab-item} </ph>Saving a template</source>
+<target xml:lang="fr"><ph id="1">::::{tab-set}</ph>
+<ph id="2">:::{tab-item} </ph>Saving a template</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">Once you are satisfied with your map layout, click on the <bpt id="1">![</bpt><ept id="1">](../../fig/en_30.30.2_save_as_template.png)</ept> <ph id="2">`Save as template`</ph>-button in the toolbar above the canvas to save it as a new template.</source>
+<target xml:lang="fr">Once you are satisfied with your map layout, click on the <bpt id="1">![</bpt><ept id="1">](../../fig/en_30.30.2_save_as_template.png)</ept> <ph id="2">`Save as template`</ph>-button in the toolbar above the canvas to save it as a new template.</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">Choose a location where you want to save the template. Ideally, you should choose the template directory.</source>
+<target xml:lang="fr">Choose a location where you want to save the template. Ideally, you should choose the template directory.</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Save`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Save`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">You can open the template by dragging it into a QGIS-project.</source>
+<target xml:lang="fr">You can open the template by dragging it into a QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en"><ph id="1">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Opening a template</source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Opening a template</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">You can drag and drop template-files (<ph id="1">`.qpt`</ph>, QGIS template file) into QGIS or use the <bpt id="2">__</bpt>Layout manager<ept id="2">__</ept>.</source>
+<target xml:lang="fr">You can drag and drop template-files (<ph id="1">`.qpt`</ph>, QGIS template file) into QGIS or use the <bpt id="2">__</bpt>Layout manager<ept id="2">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">Open the Layout manager under <ph id="1">`Layout`</ph> → <ph id="2">`Layout Manager`</ph>.</source>
+<target xml:lang="fr">Open the Layout manager under <ph id="1">`Layout`</ph> → <ph id="2">`Layout Manager`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">Navigate to the section "<bpt id="1">__</bpt>New from Template<ept id="1">__</ept>".</source>
+<target xml:lang="fr">Navigate to the section "<bpt id="1">__</bpt>New from Template<ept id="1">__</ept>".</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">Choose <ph id="1">`Specific`</ph> and select the location where you saved your template.</source>
+<target xml:lang="fr">Choose <ph id="1">`Specific`</ph> and select the location where you saved your template.</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Open`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Open`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Template directory</source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Template directory</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en">The template directory is where QGIS stores layout templates. If you have templates saved here, you can load templates directly through the layout manager without selecting the file.
+On Windows computers, the file path is <ph id="1">`\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates`</ph>.</source>
+<target xml:lang="fr">The template directory is where QGIS stores layout templates. If you have templates saved here, you can load templates directly through the layout manager without selecting the file.
+On Windows computers, the file path is <ph id="1">`\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph>
+The layout manager in QGIS already has a dedicated location for map templates. On Windows computers, the file path is <ph id="2">`\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates`</ph>.
+If you save templates here, you can load templates directly through the layout manager without looking for the file.
+You can also add file paths in the QGIS template settings.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph>
+The layout manager in QGIS already has a dedicated location for map templates. On Windows computers, the file path is <ph id="2">`\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates`</ph>.
+If you save templates here, you can load templates directly through the layout manager without looking for the file.
+You can also add file paths in the QGIS template settings.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">The Atlas Function (Automatic Map Generation) <bpt id="1">&lt;a id="the-atlas-function-automatic-map-generation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">The Atlas Function (Automatic Map Generation) <bpt id="1">&lt;a id="the-atlas-function-automatic-map-generation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">In some cases, it can be necessary to create multiple maps for different locations with the same layers. For example, if you have a detailed dataset on affected flood areas in Nigeria, you can create a more detailed map for each subnational district. In QGIS, this can be done automatically with the <bpt id="1">__</bpt>Atlas Function<ept id="1">__</ept>.</source>
+<target xml:lang="fr">In some cases, it can be necessary to create multiple maps for different locations with the same layers. For example, if you have a detailed dataset on affected flood areas in Nigeria, you can create a more detailed map for each subnational district. In QGIS, this can be done automatically with the <bpt id="1">__</bpt>Atlas Function<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">The Atlas Function can be found in the <bpt id="1">__</bpt>Print Layout Composer<ept id="1">__</ept> on the toolbar.</source>
+<target xml:lang="fr">The Atlas Function can be found in the <bpt id="1">__</bpt>Print Layout Composer<ept id="1">__</ept> on the toolbar.</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/en_atlas_toolbar.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/en_atlas_toolbar.png</ph></target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_atlas_toolbar</ph>
+<ph id="2">width: 500 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_atlas_toolbar</ph>
+<ph id="2">width: 500 px</ph></target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">The atlas toolbar.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The atlas toolbar.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+If you can't see the Atlas Tools, you must first activate the Atlas Toolbar under <ph id="2">`View`</ph> → <ph id="3">`Toolbars`</ph> → <ph id="4">`Atlas Toolbar`</ph>.
+<ph id="5">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+If you can't see the Atlas Tools, you must first activate the Atlas Toolbar under <ph id="2">`View`</ph> → <ph id="3">`Toolbars`</ph> → <ph id="4">`Atlas Toolbar`</ph>.
+<ph id="5">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en">Generating an Atlas <bpt id="1">&lt;a id="generating-an-atlas"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Generating an Atlas <bpt id="1">&lt;a id="generating-an-atlas"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en">An atlas will generate a new page with the same map layout for each feature in a layer. For most purposes, it is useful to first create a map layout with the elements such as legend, sources and overview map and then insert the map item that will be controlled by the Atlas. To generate an atlas:</source>
+<target xml:lang="fr">An atlas will generate a new page with the same map layout for each feature in a layer. For most purposes, it is useful to first create a map layout with the elements such as legend, sources and overview map and then insert the map item that will be controlled by the Atlas. To generate an atlas:</target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">Click on the <bpt id="1">![</bpt><ept id="1">](../../fig/30.30.2_print_layout_atlas_settings.png)</ept> <ph id="2">`Atlas Settings`</ph>-button in the Atlas Toolbar.</source>
+<target xml:lang="fr">Click on the <bpt id="1">![</bpt><ept id="1">](../../fig/30.30.2_print_layout_atlas_settings.png)</ept> <ph id="2">`Atlas Settings`</ph>-button in the Atlas Toolbar.</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">In the new window, activate the <ph id="1">`Generate an Atlas`</ph> option.</source>
+<target xml:lang="fr">In the new window, activate the <ph id="1">`Generate an Atlas`</ph> option.</target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">Select the <ph id="1">`Coverage Layer`</ph>. This will determine the features or polygons that will be displayed on a page. In our example, we will use the subnational administrative regions in Nigeria (<ph id="2">`ADM1`</ph>).</source>
+<target xml:lang="fr">Select the <ph id="1">`Coverage Layer`</ph>. This will determine the features or polygons that will be displayed on a page. In our example, we will use the subnational administrative regions in Nigeria (<ph id="2">`ADM1`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">Select the <ph id="1">`Page Name`</ph>. This should be the name of the subnational region or location that is displayed on that page. To display the name of the region, we will choose the column <ph id="2">`ADM1_REF`</ph>, which holds the names of the regions in English.</source>
+<target xml:lang="fr">Select the <ph id="1">`Page Name`</ph>. This should be the name of the subnational region or location that is displayed on that page. To display the name of the region, we will choose the column <ph id="2">`ADM1_REF`</ph>, which holds the names of the regions in English.</target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en">Now let's add a map to the empty print layout.</source>
+<target xml:lang="fr">Now let's add a map to the empty print layout.</target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">Click on the map and navigate to the <bpt id="1">__</bpt>Layer Properties<ept id="1">__</ept> window on the right.</source>
+<target xml:lang="fr">Click on the map and navigate to the <bpt id="1">__</bpt>Layer Properties<ept id="1">__</ept> window on the right.</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en">Scroll down until you see the option <ph id="1">`Controlled by Atlas`</ph> and activate it.</source>
+<target xml:lang="fr">Scroll down until you see the option <ph id="1">`Controlled by Atlas`</ph> and activate it.</target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en">Now activate the preview of the Atlas in the <bpt id="1">__</bpt>Atlas Toolbar<ept id="1">__</ept>. Otherwise, the print layout will not update to show you the atlas page. You can click through each page to see how it looks. Depending on the amount of features on your map, they may take a while to render.</source>
+<target xml:lang="fr">Now activate the preview of the Atlas in the <bpt id="1">__</bpt>Atlas Toolbar<ept id="1">__</ept>. Otherwise, the print layout will not update to show you the atlas page. You can click through each page to see how it looks. Depending on the amount of features on your map, they may take a while to render.</target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en">Now you can adjust the <bpt id="1">__</bpt>Margin options<ept id="1">__</ept> to best fit the readability of the map. By default, it is set to 10% and this should fit most purposes.</source>
+<target xml:lang="fr">Now you can adjust the <bpt id="1">__</bpt>Margin options<ept id="1">__</ept> to best fit the readability of the map. By default, it is set to 10% and this should fit most purposes.</target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en">Before printing or exporting the atlas, make sure to check every page that other elements of the map do not cover the represented region.</source>
+<target xml:lang="fr">Before printing or exporting the atlas, make sure to check every page that other elements of the map do not cover the represented region.</target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Note}</ph>
+The only item in the print layout that is being controlled by the atlas is the map we added (unless you specify otherwise in the item properties). The other elements of the map will be the same on every page.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Note}</ph>
+The only item in the print layout that is being controlled by the atlas is the map we added (unless you specify otherwise in the item properties). The other elements of the map will be the same on every page.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Setting up an Atlas
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Setting up an Atlas
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>How do you create or open a layout in QGIS?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>How do you create or open a layout in QGIS?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en">In QGIS, you go to <ph id="1">`Project`</ph> → <ph id="2">`New Print Layout`</ph> to create a new layout.</source>
+<target xml:lang="fr">In QGIS, you go to <ph id="1">`Project`</ph> → <ph id="2">`New Print Layout`</ph> to create a new layout.</target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en">That opens the Print Layout Composer, a new window where you can begin composing your map layout.</source>
+<target xml:lang="fr">That opens the Print Layout Composer, a new window where you can begin composing your map layout.</target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en">If you already have layouts saved <bpt id="1">__</bpt>in this project<ept id="1">__</ept>, you can open them via the <bpt id="2">__</bpt>Layout Manager<ept id="2">__</ept> (<ph id="3">`Project`</ph> → <ph id="4">`Layout Manager`</ph>), where you will find a list of existing layouts.</source>
+<target xml:lang="fr">If you already have layouts saved <bpt id="1">__</bpt>in this project<ept id="1">__</ept>, you can open them via the <bpt id="2">__</bpt>Layout Manager<ept id="2">__</ept> (<ph id="3">`Project`</ph> → <ph id="4">`Layout Manager`</ph>), where you will find a list of existing layouts.</target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en">Additionally, you can create a layout from a template file via the Layout Manager (<bpt id="1">__</bpt>"New from template"<ept id="1">__</ept>) if you have saved a <ph id="2">`.qpt`</ph> file.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr">Additionally, you can create a layout from a template file via the Layout Manager (<bpt id="1">__</bpt>"New from template"<ept id="1">__</ept>) if you have saved a <ph id="2">`.qpt`</ph> file.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What is the difference between the “map item” (map frame) inside a layout and the main QGIS map canvas?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What is the difference between the “map item” (map frame) inside a layout and the main QGIS map canvas?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en">The map item in the print layout composer is a of the map canvas in the main QGIS window and shows the layers as they are shown in the main window.</source>
+<target xml:lang="fr">The map item in the print layout composer is a of the map canvas in the main QGIS window and shows the layers as they are shown in the main window.</target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en">In the main map canvas, you are able to interact with the data whereas you can only see the data in the print layout composer.</source>
+<target xml:lang="fr">In the main map canvas, you are able to interact with the data whereas you can only see the data in the print layout composer.</target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en">The map item shows the map as it is in the map canvas (you might have to update the map item to show changed symbology), unless you lock the layers and layers styles for the specific map item.
+<ph id="1">::</ph></source>
+<target xml:lang="fr">The map item shows the map as it is in the map canvas (you might have to update the map item to show changed symbology), unless you lock the layers and layers styles for the specific map item.
+<ph id="1">::</ph></target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>How do you lock layer in a map you've added to the print layout?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>How do you lock layer in a map you've added to the print layout?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer
+Locking is essential if you want the layout’s map item to preserve exactly what you set, even if later you change things in the project.</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer
+Locking is essential if you want the layout’s map item to preserve exactly what you set, even if later you change things in the project.</target>
+</trans-unit>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en">Select the map item in the print layout composer</source>
+<target xml:lang="fr">Select the map item in the print layout composer</target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en">In its <bpt id="1">__</bpt>Item properties panel<ept id="1">__</ept>, there is an option to <bpt id="2">__</bpt>lock layers and styling<ept id="2">__</ept> for that map.</source>
+<target xml:lang="fr">In its <bpt id="1">__</bpt>Item properties panel<ept id="1">__</ept>, there is an option to <bpt id="2">__</bpt>lock layers and styling<ept id="2">__</ept> for that map.</target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en">Once locked, you can change the layer order or layer symbology in the main QGIS window without changing the map in the print layout.</source>
+<target xml:lang="fr">Once locked, you can change the layer order or layer symbology in the main QGIS window without changing the map in the print layout.</target>
+</trans-unit>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

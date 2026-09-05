@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_non_spatial_queries_wiki.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Non-Spatial Queries <bpt id="1">&lt;a id="non-spatial-queries"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Non-Spatial Queries <bpt id="1">&lt;a id="non-spatial-queries"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Manual selection <bpt id="1">&lt;a id="manual-selection"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Manual selection <bpt id="1">&lt;a id="manual-selection"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Select the features manually in the <bpt id="1">__</bpt>attribute table<ept id="1">__</ept> by clicking on it.</source>
+<target xml:lang="fr">Select the features manually in the <bpt id="1">__</bpt>attribute table<ept id="1">__</ept> by clicking on it.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Holding <bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> while selecting features lets you select multiple features at once.</source>
+<target xml:lang="fr">Holding <bpt id="1">&lt;kbd></bpt>Ctrl<ept id="1">&lt;/kbd></ept> while selecting features lets you select multiple features at once.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Manually select countries with the attribute table
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Manually select countries with the attribute table
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Select by expression <bpt id="1">&lt;a id="select-by-expression"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Select by expression <bpt id="1">&lt;a id="select-by-expression"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">The <ph id="1">`Select by Expression`</ph> tool lets you build an expression to select features of a layer. For example, you can select specific attributes, or select features where the value of an attribute in a specific range.</source>
+<target xml:lang="fr">The <ph id="1">`Select by Expression`</ph> tool lets you build an expression to select features of a layer. For example, you can select specific attributes, or select features where the value of an attribute in a specific range.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Open the attribute table and select the <ph id="1">`Select by Expression`</ph>-tool.</source>
+<target xml:lang="fr">Open the attribute table and select the <ph id="1">`Select by Expression`</ph>-tool.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/en_select_features_expression.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/en_select_features_expression.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">The expression builder will open.</source>
+<target xml:lang="fr">The expression builder will open.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/en_query_builder.PNG)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/en_query_builder.PNG)</ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Comparison operators <bpt id="1">&lt;a id="comparison-operators"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Comparison operators <bpt id="1">&lt;a id="comparison-operators"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`>`</ph>, <ph id="2">`&lt;`</ph>, <ph id="3">`=`</ph>, <ph id="4">`!=`</ph></source>
+<target xml:lang="fr"><ph id="1">`>`</ph>, <ph id="2">`&lt;`</ph>, <ph id="3">`=`</ph>, <ph id="4">`!=`</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Select all cities with more than 20 million inhabitants in 2015: <ph id="2">`"2015" > 20000`</ph>
+<ph id="3">:open:</ph>
+<ph id="4">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Select all cities with more than 20 million inhabitants in 2015: <ph id="2">`"2015" > 20000`</ph>
+<ph id="3">:open:</ph>
+<ph id="4">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Special operators <bpt id="1">&lt;a id="special-operators"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Special operators <bpt id="1">&lt;a id="special-operators"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`LIKE`</ph></source>
+<target xml:lang="fr"><ph id="1">`LIKE`</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Select all countries in Asia: <ph id="2">`"continent" LIKE 'asia'`</ph>
+<ph id="3">:open:</ph>
+<ph id="4">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Select all countries in Asia: <ph id="2">`"continent" LIKE 'asia'`</ph>
+<ph id="3">:open:</ph>
+<ph id="4">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Logical operators <bpt id="1">&lt;a id="logical-operators"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Logical operators <bpt id="1">&lt;a id="logical-operators"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`AND`</ph>, <ph id="2">`OR`</ph></source>
+<target xml:lang="fr"><ph id="1">`AND`</ph>, <ph id="2">`OR`</ph></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Can be used to combine different queries or criteria.</source>
+<target xml:lang="fr">Can be used to combine different queries or criteria.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Cities, not having a population of one million inhabitants in 1950, had surged to over 10 million inhabitants by 2015: <ph id="2">`"1950" &lt; 1000 AND "2015" > 10000`</ph>
+<ph id="3">:open:</ph>
+<ph id="4">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Cities, not having a population of one million inhabitants in 1950, had surged to over 10 million inhabitants by 2015: <ph id="2">`"1950" &lt; 1000 AND "2015" > 10000`</ph>
+<ph id="3">:open:</ph>
+<ph id="4">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Complex Expressions <bpt id="1">&lt;a id="complex-expressions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Complex Expressions <bpt id="1">&lt;a id="complex-expressions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">It is also possible to add expressions that chain different requirements. In this case do not forget to put brackets around individual parts of the expression such as:</source>
+<target xml:lang="fr">It is also possible to add expressions that chain different requirements. In this case do not forget to put brackets around individual parts of the expression such as:</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Save selected features as a new file <bpt id="1">&lt;a id="save-selected-features-as-a-new-file"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Save selected features as a new file <bpt id="1">&lt;a id="save-selected-features-as-a-new-file"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Layer-Properties`</ph> → <ph id="2">`Export`</ph> → <ph id="3">`Save only selected features`</ph>.</source>
+<target xml:lang="fr"><ph id="1">`Layer-Properties`</ph> → <ph id="2">`Export`</ph> → <ph id="3">`Save only selected features`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Export selected features as a new file
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Export selected features as a new file
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Select by expression options <bpt id="1">&lt;a id="select-by-expression-options"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Select by expression options <bpt id="1">&lt;a id="select-by-expression-options"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-set}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{tab-set}</ph></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Arithmetic operators
+| operator | functionality          |
+|----------|------------------------|
+| <bpt id="2">__</bpt><ph id="3">`+`</ph><ept id="2">__</ept>    | addition               |
+| <bpt id="4">__</bpt><ph id="5">`-`</ph><ept id="4">__</ept>    | subtraction           |
+| <bpt id="6">__</bpt><ph id="7">`*`</ph><ept id="6">__</ept>    | multiplication         |
+| <bpt id="8">__</bpt><ph id="9">`/`</ph><ept id="8">__</ept>    | division               |
+| <bpt id="10">__</bpt><ph id="11">`%`</ph><ept id="10">__</ept>    | remainder of division  |
+<ph id="12">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Arithmetic operators
+| operator | functionality          |
+|----------|------------------------|
+| <bpt id="2">__</bpt><ph id="3">`+`</ph><ept id="2">__</ept>    | addition               |
+| <bpt id="4">__</bpt><ph id="5">`-`</ph><ept id="4">__</ept>    | subtraction           |
+| <bpt id="6">__</bpt><ph id="7">`*`</ph><ept id="6">__</ept>    | multiplication         |
+| <bpt id="8">__</bpt><ph id="9">`/`</ph><ept id="8">__</ept>    | division               |
+| <bpt id="10">__</bpt><ph id="11">`%`</ph><ept id="10">__</ept>    | remainder of division  |
+<ph id="12">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Comparison operators
+| operator | functionality            |
+|----------|--------------------------|
+| <bpt id="2">__</bpt><ph id="3">`=`</ph><ept id="2">__</ept>    | equals                   |
+| <bpt id="4">__</bpt><ph id="5">`!=`</ph><ept id="4">__</ept>   | not equal                |
+| <bpt id="6">__</bpt><ph id="7">`&lt;`</ph><ept id="6">__</ept>    | less than                |
+| <bpt id="8">__</bpt><ph id="9">`>`</ph><ept id="8">__</ept>    | greater than             |
+| <bpt id="10">__</bpt><ph id="11">`&lt;=`</ph><ept id="10">__</ept>   | less than or equal to    |
+| <bpt id="12">__</bpt><ph id="13">`>=`</ph><ept id="12">__</ept>   | greater than or equal to |
+<ph id="14">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Comparison operators
+| operator | functionality            |
+|----------|--------------------------|
+| <bpt id="2">__</bpt><ph id="3">`=`</ph><ept id="2">__</ept>    | equals                   |
+| <bpt id="4">__</bpt><ph id="5">`!=`</ph><ept id="4">__</ept>   | not equal                |
+| <bpt id="6">__</bpt><ph id="7">`&lt;`</ph><ept id="6">__</ept>    | less than                |
+| <bpt id="8">__</bpt><ph id="9">`>`</ph><ept id="8">__</ept>    | greater than             |
+| <bpt id="10">__</bpt><ph id="11">`&lt;=`</ph><ept id="10">__</ept>   | less than or equal to    |
+| <bpt id="12">__</bpt><ph id="13">`>=`</ph><ept id="12">__</ept>   | greater than or equal to |
+<ph id="14">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Logical operators
+Operators such as AND, OR can be used to combine different queries or criteria
+| operator | functionality          |
+|----------|------------------------|
+| <bpt id="2">__</bpt><ph id="3">`AND`</ph><ept id="2">__</ept>  | logical AND            |
+| <bpt id="4">__</bpt><ph id="5">`OR`</ph><ept id="4">__</ept>   | logical OR             |
+| <bpt id="6">__</bpt><ph id="7">`NOT`</ph><ept id="6">__</ept>  | logical NOT            |
+<ph id="8">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Logical operators
+Operators such as AND, OR can be used to combine different queries or criteria
+| operator | functionality          |
+|----------|------------------------|
+| <bpt id="2">__</bpt><ph id="3">`AND`</ph><ept id="2">__</ept>  | logical AND            |
+| <bpt id="4">__</bpt><ph id="5">`OR`</ph><ept id="4">__</ept>   | logical OR             |
+| <bpt id="6">__</bpt><ph id="7">`NOT`</ph><ept id="6">__</ept>  | logical NOT            |
+<ph id="8">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Special operators
+| operator      | functionality                                  |
+|---------------|------------------------------------------------|
+| <bpt id="2">__</bpt><ph id="3">`LIKE`</ph><ept id="2">__</ept>      | pattern matching                               |
+| <bpt id="4">__</bpt><ph id="5">`IN`</ph><ept id="4">__</ept>        | checks if a value is in a list of values       |
+| <bpt id="6">__</bpt><ph id="7">`IS NULL`</ph><ept id="6">__</ept>   | checks for null values                         |
+| <bpt id="8">__</bpt><ph id="9">`BETWEEN`</ph><ept id="8">__</ept>   | checks if a value is within a specified range  |
+| <bpt id="10">__</bpt><ph id="11">`CASE WHEN`</ph><ept id="10">__</ept> | conditional expressions                        |
+<ph id="12">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Special operators
+| operator      | functionality                                  |
+|---------------|------------------------------------------------|
+| <bpt id="2">__</bpt><ph id="3">`LIKE`</ph><ept id="2">__</ept>      | pattern matching                               |
+| <bpt id="4">__</bpt><ph id="5">`IN`</ph><ept id="4">__</ept>        | checks if a value is in a list of values       |
+| <bpt id="6">__</bpt><ph id="7">`IS NULL`</ph><ept id="6">__</ept>   | checks for null values                         |
+| <bpt id="8">__</bpt><ph id="9">`BETWEEN`</ph><ept id="8">__</ept>   | checks if a value is within a specified range  |
+| <bpt id="10">__</bpt><ph id="11">`CASE WHEN`</ph><ept id="10">__</ept> | conditional expressions                        |
+<ph id="12">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Further resources <bpt id="1">&lt;a id="further-resources"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Further resources <bpt id="1">&lt;a id="further-resources"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">You can access information about logical operators in QGIS documentation through the <bpt id="1">[</bpt>following link<ept id="1">](https://docs.qgis.org/3.28/en/docs/user_manual/working_with_vector/attribute_table.html#selecting-features)</ept>.</source>
+<target xml:lang="fr">You can access information about logical operators in QGIS documentation through the <bpt id="1">[</bpt>following link<ept id="1">](https://docs.qgis.org/3.28/en/docs/user_manual/working_with_vector/attribute_table.html#selecting-features)</ept>.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

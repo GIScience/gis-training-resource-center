@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Trainers_corner/en_how_to_teach_GIS.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">How to teach GIS <bpt id="1">&lt;a id="how-to-teach-gis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">How to teach GIS <bpt id="1">&lt;a id="how-to-teach-gis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Learning GIS can be challenging, especially for individuals who are new to the topic or have limited experience with technology beyond standard office systems. The concept of geodata and everything that it entails is quite removed from the things many people work on day to day in the humanitarian sector. However, to grasp these concepts is essential to work effectively with GIS and solve problems. That being said, often there is not enough time to dive deep into topics like projections or algorithms. And we lean more through practical hands-on training than lectures about GIS theory.</source>
+<target xml:lang="fr">Learning GIS can be challenging, especially for individuals who are new to the topic or have limited experience with technology beyond standard office systems. The concept of geodata and everything that it entails is quite removed from the things many people work on day to day in the humanitarian sector. However, to grasp these concepts is essential to work effectively with GIS and solve problems. That being said, often there is not enough time to dive deep into topics like projections or algorithms. And we lean more through practical hands-on training than lectures about GIS theory.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">This is why we must be aware of balancing practical hands-on and theory when teaching GIS.
+In the following article, we will present best practices for teaching GIS according to our experiences. We will start with discussing the difference in teaching theory and teaching with hands-on exercises and the importance of connecting GIS to their profession or work requirements. Later on, the article discusses practical considerations to do when teaching GIS and methods to avoid and solve problems.</source>
+<target xml:lang="fr">This is why we must be aware of balancing practical hands-on and theory when teaching GIS.
+In the following article, we will present best practices for teaching GIS according to our experiences. We will start with discussing the difference in teaching theory and teaching with hands-on exercises and the importance of connecting GIS to their profession or work requirements. Later on, the article discusses practical considerations to do when teaching GIS and methods to avoid and solve problems.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Theory vs. Hands-on <bpt id="1">&lt;a id="theory-vs-hands-on"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Theory vs. Hands-on <bpt id="1">&lt;a id="theory-vs-hands-on"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">In general, we want to teach GIS in a way that people understand how they can do specific things needed in their work in the easiest way possible. This means we focus on practical exercises with a real-world connection so it is easy for people to see how they can use GIS in their work. However, sometimes we need to teach things theoretically. Usually, because they are either so essential people have to understand the concept before doing anything in GIS e.g. the layer concept. Or, not knowing the concept results in errors and problems when working with GIS and geodata e.g. projections.</source>
+<target xml:lang="fr">In general, we want to teach GIS in a way that people understand how they can do specific things needed in their work in the easiest way possible. This means we focus on practical exercises with a real-world connection so it is easy for people to see how they can use GIS in their work. However, sometimes we need to teach things theoretically. Usually, because they are either so essential people have to understand the concept before doing anything in GIS e.g. the layer concept. Or, not knowing the concept results in errors and problems when working with GIS and geodata e.g. projections.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Balancing theory and hands-on practice is essential in GIS training. Below, we outline some good practices for incorporating both aspects effectively:</source>
+<target xml:lang="fr">Balancing theory and hands-on practice is essential in GIS training. Below, we outline some good practices for incorporating both aspects effectively:</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Make the trainees understand why it is important to understand the concept (e.g. avoiding mistakes and wrong results or being able to work much faster). For example, if they work with geodata that is projected in different coordinate reference systems.</source>
+<target xml:lang="fr">Make the trainees understand why it is important to understand the concept (e.g. avoiding mistakes and wrong results or being able to work much faster). For example, if they work with geodata that is projected in different coordinate reference systems.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Use graphics, videos and other mediums to explain the concept. For example, to teach the topic of projections in module 1, we use videos and graphics. You can even bring a paper model and <bpt id="1">[</bpt>demonstrate<ept id="1">](https://education.nationalgeographic.org/resource/the-cartographers-dilemma/)</ept> the concept example.</source>
+<target xml:lang="fr">Use graphics, videos and other mediums to explain the concept. For example, to teach the topic of projections in module 1, we use videos and graphics. You can even bring a paper model and <bpt id="1">[</bpt>demonstrate<ept id="1">](https://education.nationalgeographic.org/resource/the-cartographers-dilemma/)</ept> the concept example.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Make the connection from the theory to the practical use of GIS. For example, show what kind of errors using a wrong projection can create and why projections like UTM are important to use, or the difference between metric and geographic coordinate systems (for example, when using meters or kilometers when creating buffers).</source>
+<target xml:lang="fr">Make the connection from the theory to the practical use of GIS. For example, show what kind of errors using a wrong projection can create and why projections like UTM are important to use, or the difference between metric and geographic coordinate systems (for example, when using meters or kilometers when creating buffers).</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">(handson)=</source>
+<target xml:lang="fr">(handson)=</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Hands-on exercises <bpt id="1">&lt;a id="hands-on-exercises"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Hands-on exercises <bpt id="1">&lt;a id="hands-on-exercises"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Hands-on exercises are highly effective when teaching GIS on all skill levels. From exploring the interface to running a whole spatial analysis, doing these tasks gives people a better understanding how to work with GIS. It is always recommended to use hands-on exercises above theoretical presentations.</source>
+<target xml:lang="fr">Hands-on exercises are highly effective when teaching GIS on all skill levels. From exploring the interface to running a whole spatial analysis, doing these tasks gives people a better understanding how to work with GIS. It is always recommended to use hands-on exercises above theoretical presentations.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">There are two very common types of hands-on training: Follow-along exercises and group exercises.</source>
+<target xml:lang="fr">There are two very common types of hands-on training: Follow-along exercises and group exercises.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{card} </ph>Follow-along exercises
+Follow-along exercises are a great tool to introduce new tools and functions because the trainer is directly there to answer questions and help solve problems.</source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{card} </ph>Follow-along exercises
+Follow-along exercises are a great tool to introduce new tools and functions because the trainer is directly there to answer questions and help solve problems.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card} </ph>Group exercises
+Group exercises rely more on the independent work of the trainees. This is great for fostering discussions and exchange among the trainees.</source>
+<target xml:lang="fr"><ph id="1">:::{card} </ph>Group exercises
+Group exercises rely more on the independent work of the trainees. This is great for fostering discussions and exchange among the trainees.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Beginning of an exercise <bpt id="1">&lt;a id="beginning-of-an-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Beginning of an exercise <bpt id="1">&lt;a id="beginning-of-an-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Independent from the type of exercise, you should briefly go over the following points with the trainees at the beginning of the exercise:</source>
+<target xml:lang="fr">Independent from the type of exercise, you should briefly go over the following points with the trainees at the beginning of the exercise:</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Aim of the exercise:<ept id="1">__</ept> In general, a hands-on exercise should start with explaining the goal of the exercise. For example: <bpt id="2">_</bpt>„This exercise aims to teach the process of basic spatial data processing using the tools Clip, Merge and dissolve."<ept id="2">_</ept> This is a good opportunity to highlight the practical use of the tools the participants will learn to boost motivation.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Aim of the exercise:<ept id="1">__</ept> In general, a hands-on exercise should start with explaining the goal of the exercise. For example: <bpt id="2">_</bpt>„This exercise aims to teach the process of basic spatial data processing using the tools Clip, Merge and dissolve."<ept id="2">_</ept> This is a good opportunity to highlight the practical use of the tools the participants will learn to boost motivation.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Background:<ept id="1">__</ept> Ideally, the exercise is built around a real-world example or a fictional scenario within the humanitarian work. In this case, you should quickly explain the background and story. An example of this is the exercise in module 3 (<bpt id="2">[</bpt>Exercise 4: Nigeria Floods<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex4.html)</ept>).</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Background:<ept id="1">__</ept> Ideally, the exercise is built around a real-world example or a fictional scenario within the humanitarian work. In this case, you should quickly explain the background and story. An example of this is the exercise in module 3 (<bpt id="2">[</bpt>Exercise 4: Nigeria Floods<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_module_3_ex4.html)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Exercise Data:<ept id="1">__</ept>  Most hands-on exercises use real-world data (from <bpt id="2">[</bpt>HDX<ept id="2">](https://data.humdata.org)</ept>, for example). Each dataset used in the exercise should be explained shortly. This information can be found on each exercise on the platform. Make sure that everybody has downloaded the exercise data before you start. Note that some trainees are not familiar with <ph id="3">`zip.`</ph> files. Make sure the trainees unzip the folders before trying to import them into QGIS and take the time to solve any other issues concerning the exercise data.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Exercise Data:<ept id="1">__</ept>  Most hands-on exercises use real-world data (from <bpt id="2">[</bpt>HDX<ept id="2">](https://data.humdata.org)</ept>, for example). Each dataset used in the exercise should be explained shortly. This information can be found on each exercise on the platform. Make sure that everybody has downloaded the exercise data before you start. Note that some trainees are not familiar with <ph id="3">`zip.`</ph> files. Make sure the trainees unzip the folders before trying to import them into QGIS and take the time to solve any other issues concerning the exercise data.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">During the exercise: Follow-along <bpt id="1">&lt;a id="during-the-exercise-follow-along"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">During the exercise: Follow-along <bpt id="1">&lt;a id="during-the-exercise-follow-along"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">If you run a follow-along exercise, you can follow these basic principles for going through the exercise. Explain the purpose of each step. E.g. <bpt id="1">_</bpt>„In this step we load the data into QGIS“<ept id="1">_</ept> or <bpt id="2">_</bpt>„In this step, we cut out all points expat the ones in the area of interest“<ept id="2">_</ept>. Expect to show every step three times. Either on a large screen or by sharing your screen (remote). For this, you might need to have a lot of patience. People will need to switch between watching you perform the steps on your screen and orienting themselves in the QGIS interface on their own computer to perform the steps. This will take a lot of time and there is no sense in rushing things. The goal of the workshop is to not leave anybody behind. Be very deliberate and show everything step by step, even very small things. You might have to ask several times if there are any issues.</source>
+<target xml:lang="fr">If you run a follow-along exercise, you can follow these basic principles for going through the exercise. Explain the purpose of each step. E.g. <bpt id="1">_</bpt>„In this step we load the data into QGIS“<ept id="1">_</ept> or <bpt id="2">_</bpt>„In this step, we cut out all points expat the ones in the area of interest“<ept id="2">_</ept>. Expect to show every step three times. Either on a large screen or by sharing your screen (remote). For this, you might need to have a lot of patience. People will need to switch between watching you perform the steps on your screen and orienting themselves in the QGIS interface on their own computer to perform the steps. This will take a lot of time and there is no sense in rushing things. The goal of the workshop is to not leave anybody behind. Be very deliberate and show everything step by step, even very small things. You might have to ask several times if there are any issues.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">During the first demonstration encourage the trainees to just watch what you are doing. Do this slowly and deliberately.</source>
+<target xml:lang="fr">During the first demonstration encourage the trainees to just watch what you are doing. Do this slowly and deliberately.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">In the second demonstration let the trainees follow along on their computers.</source>
+<target xml:lang="fr">In the second demonstration let the trainees follow along on their computers.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">The third demonstration can be used to address problems some of the participants might encounter during the second demonstration. Sometimes it is worthed to give the trainees some time to explore different options. For example during tasks that have to do with styling of layers or maps.</source>
+<target xml:lang="fr">The third demonstration can be used to address problems some of the participants might encounter during the second demonstration. Sometimes it is worthed to give the trainees some time to explore different options. For example during tasks that have to do with styling of layers or maps.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Once everybody has managed to produce the desired results, you can move on.</source>
+<target xml:lang="fr">Once everybody has managed to produce the desired results, you can move on.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">During the exercise: Group work <bpt id="1">&lt;a id="during-the-exercise-group-work"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">During the exercise: Group work <bpt id="1">&lt;a id="during-the-exercise-group-work"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">In case you doing group work there are some other things to look out for.</source>
+<target xml:lang="fr">In case you doing group work there are some other things to look out for.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Sort all trainees into groups after you have done the introduction to the exercise. During the introduction of group work, it is important to explain if and how the groups should present their results.</source>
+<target xml:lang="fr">Sort all trainees into groups after you have done the introduction to the exercise. During the introduction of group work, it is important to explain if and how the groups should present their results.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Once this is done, give them some time to organize themselves and go over the instructions.</source>
+<target xml:lang="fr">Once this is done, give them some time to organize themselves and go over the instructions.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">After some time you should check and go through the groups to see if there are any questions or misunderstandings.</source>
+<target xml:lang="fr">After some time you should check and go through the groups to see if there are any questions or misunderstandings.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">After the initial round, visit the groups if necessary. Ask if the groups need more time and adjust the times accordingly</source>
+<target xml:lang="fr">After the initial round, visit the groups if necessary. Ask if the groups need more time and adjust the times accordingly</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Once the group work is over gather the trainees together. Check if there are any problems or questions.</source>
+<target xml:lang="fr">Once the group work is over gather the trainees together. Check if there are any problems or questions.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Once this is done, let the groups present their results.</source>
+<target xml:lang="fr">Once this is done, let the groups present their results.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">End of an exercise <bpt id="1">&lt;a id="end-of-an-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">End of an exercise <bpt id="1">&lt;a id="end-of-an-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">After an exercise, you should take some time to ask the participants if they found the exercise relevant and if they are happy with to complexity level. Reflect with the trainees again on the possible use case of the things they just learned. Encourage discussion among the trainees and plan some time for the participants to exchange their experiences.</source>
+<target xml:lang="fr">After an exercise, you should take some time to ask the participants if they found the exercise relevant and if they are happy with to complexity level. Reflect with the trainees again on the possible use case of the things they just learned. Encourage discussion among the trainees and plan some time for the participants to exchange their experiences.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Discussion and Group work <bpt id="1">&lt;a id="discussion-and-group-work"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Discussion and Group work <bpt id="1">&lt;a id="discussion-and-group-work"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Discussion and group work play vital roles in GIS training, fostering collaboration, critical thinking, and knowledge exchange among participants. By engaging in discussions and collaborative activities, participants can deepen their understanding of GIS concepts and methodologies while also gaining valuable insights from their peers. The list below summarizes a few key reasons why discussion and group work are important in GIS training:</source>
+<target xml:lang="fr">Discussion and group work play vital roles in GIS training, fostering collaboration, critical thinking, and knowledge exchange among participants. By engaging in discussions and collaborative activities, participants can deepen their understanding of GIS concepts and methodologies while also gaining valuable insights from their peers. The list below summarizes a few key reasons why discussion and group work are important in GIS training:</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Exchange of ideas and perspectives:<ept id="1">__</ept> Group discussions provide opportunities for participants to share their experiences, insights, and perspectives on various GIS topics. This exchange of ideas enriches the learning environment and exposes participants to different approaches and problem-solving strategies.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Exchange of ideas and perspectives:<ept id="1">__</ept> Group discussions provide opportunities for participants to share their experiences, insights, and perspectives on various GIS topics. This exchange of ideas enriches the learning environment and exposes participants to different approaches and problem-solving strategies.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Critical reflection:<ept id="1">__</ept> Group activities encourage participants to critically evaluate GIS methods, data sources, and analytical techniques. Through guided discussions and peer feedback, participants can assess the strengths and limitations of different approaches, enhancing their ability to make informed decisions in real-world GIS projects.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Critical reflection:<ept id="1">__</ept> Group activities encourage participants to critically evaluate GIS methods, data sources, and analytical techniques. Through guided discussions and peer feedback, participants can assess the strengths and limitations of different approaches, enhancing their ability to make informed decisions in real-world GIS projects.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Learning from peers:<ept id="1">__</ept> Collaborative exercises and group projects enable participants to learn from each other's strengths and expertise. By working together to solve challenges and address complex problems, participants can learn diverse skill sets and knowledge backgrounds to achieve shared learning goals.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Learning from peers:<ept id="1">__</ept> Collaborative exercises and group projects enable participants to learn from each other's strengths and expertise. By working together to solve challenges and address complex problems, participants can learn diverse skill sets and knowledge backgrounds to achieve shared learning goals.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Enhanced engagement and participation:<ept id="1">__</ept> Group work promotes active learning and engagement, as participants collaborate on hands-on exercises, case studies, and project-based tasks. This interactive learning approach fosters a sense of ownership and accountability, motivating participants to actively contribute to the learning process.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Enhanced engagement and participation:<ept id="1">__</ept> Group work promotes active learning and engagement, as participants collaborate on hands-on exercises, case studies, and project-based tasks. This interactive learning approach fosters a sense of ownership and accountability, motivating participants to actively contribute to the learning process.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Skill development:<ept id="1">__</ept> Through group activities, participants have opportunities to develop essential skills such as communication, teamwork, and problem-solving. These transferable skills are valuable not only in GIS but also in various professional contexts, enhancing participants' overall professional development.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Skill development:<ept id="1">__</ept> Through group activities, participants have opportunities to develop essential skills such as communication, teamwork, and problem-solving. These transferable skills are valuable not only in GIS but also in various professional contexts, enhancing participants' overall professional development.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Incorporating discussions and group work into GIS training sessions can create dynamic learning environments where participants can collaborate, learn from each other, and apply GIS concepts and skills in practical contexts.</source>
+<target xml:lang="fr">Incorporating discussions and group work into GIS training sessions can create dynamic learning environments where participants can collaborate, learn from each other, and apply GIS concepts and skills in practical contexts.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">GIS for tackling real-world problems <bpt id="1">&lt;a id="gis-for-tackling-real-world-problems"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">GIS for tackling real-world problems <bpt id="1">&lt;a id="gis-for-tackling-real-world-problems"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">In the fast-paced world of humanitarian aid, time is a precious commodity, and the need to assist those in need directly is paramount. The motivation of trainees is highly dependent on them seeing the value GIS can bring to their daily work. That is why we always should work with real-life examples, data and exercises. Abstract exercises are not as effective as real-world ones as trainees will not understand the relevance of the methods and workflows in the exercise.</source>
+<target xml:lang="fr">In the fast-paced world of humanitarian aid, time is a precious commodity, and the need to assist those in need directly is paramount. The motivation of trainees is highly dependent on them seeing the value GIS can bring to their daily work. That is why we always should work with real-life examples, data and exercises. Abstract exercises are not as effective as real-world ones as trainees will not understand the relevance of the methods and workflows in the exercise.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">This topic is reflected on the whole platform. The principal section dealing with the topic is "<bpt id="1">[</bpt>Module 1: Examples of GIS used by humanitarian organisations<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_theory.html#examples-of-gis-used-by-humanitarian-organisations)</ept>".</source>
+<target xml:lang="fr">This topic is reflected on the whole platform. The principal section dealing with the topic is "<bpt id="1">[</bpt>Module 1: Examples of GIS used by humanitarian organisations<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_1/en_qgis_theory.html#examples-of-gis-used-by-humanitarian-organisations)</ept>".</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Nearly all exercises are oriented on methods, workflows or products that are standard in the humanitarian sector like overview maps or maps of affected regions.</source>
+<target xml:lang="fr">Nearly all exercises are oriented on methods, workflows or products that are standard in the humanitarian sector like overview maps or maps of affected regions.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Practical tips to make exercise and teaching relevant for humanitarian work:</source>
+<target xml:lang="fr">Practical tips to make exercise and teaching relevant for humanitarian work:</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Audience:<ept id="1">__</ept> Reflect on your audience and think about what kind of products they would need the most.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Audience:<ept id="1">__</ept> Reflect on your audience and think about what kind of products they would need the most.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Common products:<ept id="1">__</ept> In the beginning, go with easy map products for reports and presentations. In our experience that is interesting for everybody since everybody needs to present and report their work in reports or proposals.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Common products:<ept id="1">__</ept> In the beginning, go with easy map products for reports and presentations. In our experience that is interesting for everybody since everybody needs to present and report their work in reports or proposals.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Scenarios:<ept id="1">__</ept> Customize the exercises to simulate scenarios commonly encountered in humanitarian work, such as creating situational maps for emergency response teams or analyzing spatial data to identify high-risk areas.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Scenarios:<ept id="1">__</ept> Customize the exercises to simulate scenarios commonly encountered in humanitarian work, such as creating situational maps for emergency response teams or analyzing spatial data to identify high-risk areas.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Real datasets:<ept id="1">__</ept> Encourage trainees to explore real datasets and develop GIS solutions for actual humanitarian challenges, fostering hands-on learning and problem-solving skills.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Real datasets:<ept id="1">__</ept> Encourage trainees to explore real datasets and develop GIS solutions for actual humanitarian challenges, fostering hands-on learning and problem-solving skills.</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Success stories:<ept id="1">__</ept> Utilize case studies or success stories from organizations such as on <bpt id="2">[</bpt>Reliefweb<ept id="2">](https://reliefweb.int)</ept> to illustrate the tangible impact of GIS in humanitarian operations, inspiring trainees and reinforcing the value of their training.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Success stories:<ept id="1">__</ept> Utilize case studies or success stories from organizations such as on <bpt id="2">[</bpt>Reliefweb<ept id="2">](https://reliefweb.int)</ept> to illustrate the tangible impact of GIS in humanitarian operations, inspiring trainees and reinforcing the value of their training.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Fulfilling a mission:<ept id="1">__</ept> Present instances where GIS has been instrumental in fulfilling a mission.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Fulfilling a mission:<ept id="1">__</ept> Present instances where GIS has been instrumental in fulfilling a mission.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Planning process:<ept id="1">__</ept> Empower trainees by involving them in the curriculum planning process, allowing them to identify the types of maps and products most relevant to their work.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Planning process:<ept id="1">__</ept> Empower trainees by involving them in the curriculum planning process, allowing them to identify the types of maps and products most relevant to their work.</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Practice problem-solving: What if you are stuck? <bpt id="1">&lt;a id="practice-problem-solving-what-if-you-are-stuck"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Practice problem-solving: What if you are stuck? <bpt id="1">&lt;a id="practice-problem-solving-what-if-you-are-stuck"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Working with GIS will always entail that there is one point where you do not know how to proceed. Picture yourself wanting to achieve a specific task e.g. displaying only certain parts of the attribute table on your print map.</source>
+<target xml:lang="fr">Working with GIS will always entail that there is one point where you do not know how to proceed. Picture yourself wanting to achieve a specific task e.g. displaying only certain parts of the attribute table on your print map.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">In the vast realm of QGIS, mastering every function is impractical. Instead, developing problem-solving methods is an important skill when working with GIS.
+The ability to navigate challenges, and knowing where and how to seek solutions, is fundamental in GIS. Any comprehensive GIS training should prioritize the development of this skill. Here, we explore strategies to empower your participants in problem-solving within QGIS.</source>
+<target xml:lang="fr">In the vast realm of QGIS, mastering every function is impractical. Instead, developing problem-solving methods is an important skill when working with GIS.
+The ability to navigate challenges, and knowing where and how to seek solutions, is fundamental in GIS. Any comprehensive GIS training should prioritize the development of this skill. Here, we explore strategies to empower your participants in problem-solving within QGIS.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Utilizing the IFRF GIS Training Plattform Wiki:<ept id="1">__</ept> Encourage trainees to take advantage of QGIS training resources on this platform!</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Utilizing the IFRF GIS Training Plattform Wiki:<ept id="1">__</ept> Encourage trainees to take advantage of QGIS training resources on this platform!</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Effective use of search engines like Google:<ept id="1">__</ept> Teach trainees how to formulate precise search queries using relevant keywords related to their specific problem. Emphasize the importance of including relevant GIS software names, error messages, and specific task descriptions to yield accurate search results.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Effective use of search engines like Google:<ept id="1">__</ept> Teach trainees how to formulate precise search queries using relevant keywords related to their specific problem. Emphasize the importance of including relevant GIS software names, error messages, and specific task descriptions to yield accurate search results.</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Effective use of QGIS Documentation:<ept id="1">__</ept> Trainees should learn how to effectively navigate <bpt id="2">[</bpt>QGIS documentation<ept id="2">](https://docs.qgis.org/3.34/en/docs/user_manual/)</ept>, including user manuals, tutorials, and FAQs. Teach them how to use keywords related to their specific problem to find relevant information and step-by-step guides within the QGIS documentation.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Effective use of QGIS Documentation:<ept id="1">__</ept> Trainees should learn how to effectively navigate <bpt id="2">[</bpt>QGIS documentation<ept id="2">](https://docs.qgis.org/3.34/en/docs/user_manual/)</ept>, including user manuals, tutorials, and FAQs. Teach them how to use keywords related to their specific problem to find relevant information and step-by-step guides within the QGIS documentation.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Engaging with QGIS user community:<ept id="1">__</ept> Introduce trainees to <bpt id="2">[</bpt>online forums, Telegram groups and communities<ept id="2">](https://www.qgis.org/en/site/forusers/support.html)</ept> dedicated to QGIS users, such as the QGIS Community Forum and <bpt id="3">[</bpt>QGIS subreddit<ept id="3">](https://www.reddit.com/r/QGIS/)</ept>. Encourage active participation in discussions, where they can seek advice from experienced users, share their experiences, and collaborate on problem-solving.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Engaging with QGIS user community:<ept id="1">__</ept> Introduce trainees to <bpt id="2">[</bpt>online forums, Telegram groups and communities<ept id="2">](https://www.qgis.org/en/site/forusers/support.html)</ept> dedicated to QGIS users, such as the QGIS Community Forum and <bpt id="3">[</bpt>QGIS subreddit<ept id="3">](https://www.reddit.com/r/QGIS/)</ept>. Encourage active participation in discussions, where they can seek advice from experienced users, share their experiences, and collaborate on problem-solving.</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Exploring QGIS tutorial videos:<ept id="1">__</ept> Recommend trainees to explore tutorial videos specifically focused on QGIS available on platforms like YouTube. These videos often provide visual demonstrations of QGIS functionalities and troubleshooting techniques for common issues.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Exploring QGIS tutorial videos:<ept id="1">__</ept> Recommend trainees to explore tutorial videos specifically focused on QGIS available on platforms like YouTube. These videos often provide visual demonstrations of QGIS functionalities and troubleshooting techniques for common issues.</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Leveraging QGIS chatbots and AI assistants:<ept id="1">__</ept> Introduce trainees to AI-powered assistants like ChatGPT, specifically trained to provide instant responses to QGIS-related queries and offer guidance on troubleshooting specific issues. Teach them how to interact effectively with these assistants to obtain relevant information and solutions tailored to QGIS.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Leveraging QGIS chatbots and AI assistants:<ept id="1">__</ept> Introduce trainees to AI-powered assistants like ChatGPT, specifically trained to provide instant responses to QGIS-related queries and offer guidance on troubleshooting specific issues. Teach them how to interact effectively with these assistants to obtain relevant information and solutions tailored to QGIS.</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Engaging with QGIS user groups:<ept id="1">__</ept> Encourage trainees to <bpt id="2">[</bpt>join local or online QGIS user groups<ept id="2">](https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups)</ept> and Surge Information Management Support (SIMS) Geo group on Slack. In these communities they can connect with other QGIS users, mentors, and experts. Participating in user groups provides opportunities for networking, knowledge exchange, and mentorship in QGIS.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Engaging with QGIS user groups:<ept id="1">__</ept> Encourage trainees to <bpt id="2">[</bpt>join local or online QGIS user groups<ept id="2">](https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups)</ept> and Surge Information Management Support (SIMS) Geo group on Slack. In these communities they can connect with other QGIS users, mentors, and experts. Participating in user groups provides opportunities for networking, knowledge exchange, and mentorship in QGIS.</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Common mistakes, problems and hurdles <bpt id="1">&lt;a id="common-mistakes-problems-and-hurdles"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Common mistakes, problems and hurdles <bpt id="1">&lt;a id="common-mistakes-problems-and-hurdles"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">People new to GIS often fall over the same stumbling blocks. Each GIS application has its typical challenges and mistakes. In the process of teaching GIS, it's important to anticipate these common pitfalls to quickly address trainees' hurdles.
+Typical problems can be mishandling shapefiles, not seeing data on the map canvas because the order of layers is wrong, or using the wrong tool becaus of similar names (e.g. <ph id="1">`Join by location`</ph> and <ph id="2">`Join by location (summary)`</ph>).</source>
+<target xml:lang="fr">People new to GIS often fall over the same stumbling blocks. Each GIS application has its typical challenges and mistakes. In the process of teaching GIS, it's important to anticipate these common pitfalls to quickly address trainees' hurdles.
+Typical problems can be mishandling shapefiles, not seeing data on the map canvas because the order of layers is wrong, or using the wrong tool becaus of similar names (e.g. <ph id="1">`Join by location`</ph> and <ph id="2">`Join by location (summary)`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">As a seasoned GIS user, you might avoid these mistakes automatically and don’t think about them often. Apprentice GIS users lack this experience.</source>
+<target xml:lang="fr">As a seasoned GIS user, you might avoid these mistakes automatically and don’t think about them often. Apprentice GIS users lack this experience.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">To deal with such issues you can follow the tips below:</source>
+<target xml:lang="fr">To deal with such issues you can follow the tips below:</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Wiki:<ept id="1">__</ept> Point trainees to a curated <bpt id="2">[</bpt>list of common problems and solutions<ept id="2">](/content/Wiki/en_qgis_common_errors_and_Issues.md)</ept> available on the training platform, serving as a valuable reference resource.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Wiki:<ept id="1">__</ept> Point trainees to a curated <bpt id="2">[</bpt>list of common problems and solutions<ept id="2">](/content/Wiki/en_qgis_common_errors_and_Issues.md)</ept> available on the training platform, serving as a valuable reference resource.</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Google and ChatGPT:<ept id="1">__</ept> Encourage trainees to use online resources like Google and utilize ChatGPT for additional problem-solving assistance, strengthening self-reliance and resourcefulness.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Google and ChatGPT:<ept id="1">__</ept> Encourage trainees to use online resources like Google and utilize ChatGPT for additional problem-solving assistance, strengthening self-reliance and resourcefulness.</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Be proactive:<ept id="1">__</ept> When conducting exercises, proactively flag potential issues and provide step-by-step guidance to preemptively address trainees' concerns.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Be proactive:<ept id="1">__</ept> When conducting exercises, proactively flag potential issues and provide step-by-step guidance to preemptively address trainees' concerns.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Collaborative learning:<ept id="1">__</ept> Foster a collaborative learning environment where trainees can share their experiences and solutions to common problems, promoting peer-to-peer support and knowledge sharing.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Collaborative learning:<ept id="1">__</ept> Foster a collaborative learning environment where trainees can share their experiences and solutions to common problems, promoting peer-to-peer support and knowledge sharing.</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Breakout rooms:<ept id="1">__</ept> Consider utilizing breakout rooms for one-on-one troubleshooting sessions. This allows trainers to address individual challenges without disrupting the larger group. Be aware that the follow-along exercise might continue in the main room. Make sure the participants in the breakout room can catch up.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Breakout rooms:<ept id="1">__</ept> Consider utilizing breakout rooms for one-on-one troubleshooting sessions. This allows trainers to address individual challenges without disrupting the larger group. Be aware that the follow-along exercise might continue in the main room. Make sure the participants in the breakout room can catch up.</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Best practices:<ept id="1">__</ept> Emphasize the importance of adhering to best practices in data management to mitigate common problems, highlighting the impact of proper data handling on GIS workflows, and their efficiency and accuracy.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Best practices:<ept id="1">__</ept> Emphasize the importance of adhering to best practices in data management to mitigate common problems, highlighting the impact of proper data handling on GIS workflows, and their efficiency and accuracy.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">By proactively addressing common mistakes and challenges in GIS training, you can empower your trainees to navigate the complexities of GIS effectively. Through collaborative problem-solving and adherence to best practices, we ensure a more fruitful and rewarding learning experience for all participants.</source>
+<target xml:lang="fr">By proactively addressing common mistakes and challenges in GIS training, you can empower your trainees to navigate the complexities of GIS effectively. Through collaborative problem-solving and adherence to best practices, we ensure a more fruitful and rewarding learning experience for all participants.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Mobile_Data_collection/en_SMT_ex4_.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Sketch Map Tool Exercise 4 - Basic Visualization of the results in QGIS &amp; uMAP <bpt id="1">&lt;a id="sketch-map-tool-exercise-4-basic-visualization-of-the-results-in-qgis-and-umap"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Sketch Map Tool Exercise 4 - Basic Visualization of the results in QGIS &amp; uMAP <bpt id="1">&lt;a id="sketch-map-tool-exercise-4-basic-visualization-of-the-results-in-qgis-and-umap"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Although all data and assumptions are fictional, they were created in the context of a real flood event described in a news article.</source>
+<target xml:lang="fr">Although all data and assumptions are fictional, they were created in the context of a real flood event described in a news article.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Aim of this exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+Learn how you can visualize your Sketch Map Tool Outputs in either <bpt id="4">[</bpt>QGIS<ept id="4">](/content/Wiki/en_qgis_installation_wiki.md)</ept> or <bpt id="5">[</bpt>uMAP<ept id="5">](https://umap.openstreetmap.fr/en/)</ept>.</source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Aim of this exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+Learn how you can visualize your Sketch Map Tool Outputs in either <bpt id="4">[</bpt>QGIS<ept id="4">](/content/Wiki/en_qgis_installation_wiki.md)</ept> or <bpt id="5">[</bpt>uMAP<ept id="5">](https://umap.openstreetmap.fr/en/)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type of trainings exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph>
+This exercise can be used in online and presence training and is focused on an hands-on experience with the basic of QGIS or UMAP.</source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type of trainings exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph>
+This exercise can be used in online and presence training and is focused on an hands-on experience with the basic of QGIS or UMAP.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Focus group (GIS-Knowlege Level) <bpt id="1">&lt;a id="focus-group-gis-knowlege-level"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Focus group (GIS-Knowlege Level) <bpt id="1">&lt;a id="focus-group-gis-knowlege-level"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Exercise builds on prior-knowledge of Sketch Map Tool. Make sure <bpt id="1">[</bpt>Exercise 1<ept id="1">](/content/Mobile_Data_collection/en_SMT_ex1_.md)</ept> has been done before or knowledge on the background on Sketch Map Tool is there.</source>
+<target xml:lang="fr">Exercise builds on prior-knowledge of Sketch Map Tool. Make sure <bpt id="1">[</bpt>Exercise 1<ept id="1">](/content/Mobile_Data_collection/en_SMT_ex1_.md)</ept> has been done before or knowledge on the background on Sketch Map Tool is there.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">GIS Beginners-level: no specific knowledge about QGIS/uMAP required</source>
+<target xml:lang="fr">GIS Beginners-level: no specific knowledge about QGIS/uMAP required</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Phase of participatory/community mapping <bpt id="1">&lt;a id="phase-of-participatorycommunity-mapping"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Phase of participatory/community mapping <bpt id="1">&lt;a id="phase-of-participatorycommunity-mapping"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Analysing participatory mapping</source>
+<target xml:lang="fr">Analysing participatory mapping</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2</source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Estimated time demand for the exercise. <bpt id="1">&lt;a id="estimated-time-demand-for-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Estimated time demand for the exercise. <bpt id="1">&lt;a id="estimated-time-demand-for-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Exercise A<ept id="1">__</ept>: with absolute beginners approx. 2 hours</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Exercise A<ept id="1">__</ept>: with absolute beginners approx. 2 hours</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Exercise B<ept id="1">__</ept>: 30 min</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Exercise B<ept id="1">__</ept>: 30 min</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Introductory slides on the Sketch Map Tool<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Introductory slides on the Sketch Map Tool<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx)</ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Download the data for this exercise <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_4.zip)</ept> and unzip the folder</source>
+<target xml:lang="fr">Download the data for this exercise <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_4.zip)</ept> and unzip the folder</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">In the data subfolder (<ph id="1">`\data\input`</ph>), you will find the data you need to start the exercise (created raw map &amp; pre-marked and photographed map). You will also find de geodata of the results (<ph id="2">`\data\output`</ph>) and the intermediate result(<ph id="3">`\data\temp`</ph>).</source>
+<target xml:lang="fr">In the data subfolder (<ph id="1">`\data\input`</ph>), you will find the data you need to start the exercise (created raw map &amp; pre-marked and photographed map). You will also find de geodata of the results (<ph id="2">`\data\output`</ph>) and the intermediate result(<ph id="3">`\data\temp`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Printable exercise factsheet<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_4.pdf)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Printable exercise factsheet<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_4.pdf)</ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Online access and devices (PC)</source>
+<target xml:lang="fr">Online access and devices (PC)</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">QGIS installed on the computer</source>
+<target xml:lang="fr">QGIS installed on the computer</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Take a look and make yourself familiar on the provided material for the exercise and the Sketch Map Tool in general.</source>
+<target xml:lang="fr">Take a look and make yourself familiar on the provided material for the exercise and the Sketch Map Tool in general.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction</source>
+<target xml:lang="fr">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Conduct the training: <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Conduct the training: <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Introduce the idea, the aim and the general workflow of the Sketch Map Tool beforehand</source>
+<target xml:lang="fr">Introduce the idea, the aim and the general workflow of the Sketch Map Tool beforehand</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Provide access to the needed material</source>
+<target xml:lang="fr">Provide access to the needed material</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">check-in if there are questions or problems.</source>
+<target xml:lang="fr">check-in if there are questions or problems.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Take some time at the end to wrap up and that several people present their result map</source>
+<target xml:lang="fr">Take some time at the end to wrap up and that several people present their result map</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Discuss Benefits of showing results as a map</source>
+<target xml:lang="fr">Discuss Benefits of showing results as a map</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Time to for Open questions.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Time to for Open questions.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Step-by step introduction for participants <bpt id="1">&lt;a id="step-by-step-introduction-for-participants"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step-by step introduction for participants <bpt id="1">&lt;a id="step-by-step-introduction-for-participants"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>You can choose whether you want to do the exercise with QGIS (Exercise A) or with uMAP (Exercise B) (or both)<ept id="1">__</ept>. An internet connection is required to work with uMAP.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>You can choose whether you want to do the exercise with QGIS (Exercise A) or with uMAP (Exercise B) (or both)<ept id="1">__</ept>. An internet connection is required to work with uMAP.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2</source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex4_.html#exercise-a-exploration-basic-visualization-of-sketch-map-tool-outputs-in-qgis</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex4_.html#exercise-a-exploration-basic-visualization-of-sketch-map-tool-outputs-in-qgis</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Click here to start exercise A (QGIS)<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Click here to start exercise A (QGIS)<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex4_.html#exercise-b-basic-visualization-of-sketch-map-tool-outputs-in-umap</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/Mobile_Data_collection/en_SMT_ex4_.html#exercise-b-basic-visualization-of-sketch-map-tool-outputs-in-umap</ph></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Click here to start exercise B (uMAP)<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Click here to start exercise B (uMAP)<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">If you experience any problems during your use of the <bpt id="1">[</bpt>Sketch Map Tool<ept id="1">](https://sketch-map-tool.heigit.org/)</ept>, please take a look at the <bpt id="2">[</bpt>Help page<ept id="2">](https://sketch-map-tool.heigit.org/help)</ept>.</source>
+<target xml:lang="fr">If you experience any problems during your use of the <bpt id="1">[</bpt>Sketch Map Tool<ept id="1">](https://sketch-map-tool.heigit.org/)</ept>, please take a look at the <bpt id="2">[</bpt>Help page<ept id="2">](https://sketch-map-tool.heigit.org/help)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Exercise A: Exploration &amp; basic visualization of Sketch Map Tool outputs in QGIS <bpt id="1">&lt;a id="exercise-a-exploration-and-basic-visualization-of-sketch-map-tool-outputs-in-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise A: Exploration &amp; basic visualization of Sketch Map Tool outputs in QGIS <bpt id="1">&lt;a id="exercise-a-exploration-and-basic-visualization-of-sketch-map-tool-outputs-in-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph>Exercise A: Exploration &amp; basic visualization of Sketch Map Tool outputs in QGIS
+<ph id="2">:open:</ph></source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph>Exercise A: Exploration &amp; basic visualization of Sketch Map Tool outputs in QGIS
+<ph id="2">:open:</ph></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">1. Scenario and Background <bpt id="1">&lt;a id="1-scenario-and-background"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">1. Scenario and Background <bpt id="1">&lt;a id="1-scenario-and-background"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Map the flood extent, potential emergency shelters and potential hazardous substances in a fictional flooding scenario in Kumasi using Sketch Maps.</source>
+<target xml:lang="fr">Map the flood extent, potential emergency shelters and potential hazardous substances in a fictional flooding scenario in Kumasi using Sketch Maps.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">1. Data Collection <bpt id="1">&lt;a id="1-data-collection"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">1. Data Collection <bpt id="1">&lt;a id="1-data-collection"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Please download the prepared maps <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_4.zip)</ept>.
+Unzip the .zip folder in order and navigate to <ph id="2">`data\Input\marked_sketch_maps`</ph>.</source>
+<target xml:lang="fr">Please download the prepared maps <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_4.zip)</ept>.
+Unzip the .zip folder in order and navigate to <ph id="2">`data\Input\marked_sketch_maps`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Optional: You find the empty map in the data input folder: <ph id="1">`\Sketch_Map_Tool_Exercise_4\data\input\empty_sketch_map`</ph>. Feel free to draw some additional flood maps by printing the template out and drawing on it or by using a simple graphics editor.</source>
+<target xml:lang="fr">Optional: You find the empty map in the data input folder: <ph id="1">`\Sketch_Map_Tool_Exercise_4\data\input\empty_sketch_map`</ph>. Feel free to draw some additional flood maps by printing the template out and drawing on it or by using a simple graphics editor.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">2. Geo-referencing and auto-extraction with the Sketch Map tool <bpt id="1">&lt;a id="2-geo-referencing-and-auto-extraction-with-the-sketch-map-tool"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">2. Geo-referencing and auto-extraction with the Sketch Map tool <bpt id="1">&lt;a id="2-geo-referencing-and-auto-extraction-with-the-sketch-map-tool"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Upload the marked sketch maps back to the tool’s website ( already marked sketch maps: <ph id="1">`\Sketch_Map_Tool_Exercise_4\data\input\marked_sketch_maps`</ph>). Head to <bpt id="2">[</bpt>sketch-map-tool.heigit.org<ept id="2">](https://sketch-map-tool.heigit.org/)</ept> and choose 'Digitize your Sketch maps' on the right. Upload all your sketches in .png or .jpg format. You can mark your sketches and simply drag and drop them into the window.</source>
+<target xml:lang="fr">Upload the marked sketch maps back to the tool’s website ( already marked sketch maps: <ph id="1">`\Sketch_Map_Tool_Exercise_4\data\input\marked_sketch_maps`</ph>). Head to <bpt id="2">[</bpt>sketch-map-tool.heigit.org<ept id="2">](https://sketch-map-tool.heigit.org/)</ept> and choose 'Digitize your Sketch maps' on the right. Upload all your sketches in .png or .jpg format. You can mark your sketches and simply drag and drop them into the window.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">The sketch maps are now being processed and georeferenced with the annotations extracted and vectorized. Download the vectors. You may use the ones we have prepared in the input data folder: <ph id="1">`\Sketch_Map_Tool_Exercise_4\data\output\Kumasi_SMT_Ex4.geojson`</ph>.</source>
+<target xml:lang="fr">The sketch maps are now being processed and georeferenced with the annotations extracted and vectorized. Download the vectors. You may use the ones we have prepared in the input data folder: <ph id="1">`\Sketch_Map_Tool_Exercise_4\data\output\Kumasi_SMT_Ex4.geojson`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">3. Start your QGIS Project <bpt id="1">&lt;a id="3-start-your-qgis-project"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">3. Start your QGIS Project <bpt id="1">&lt;a id="3-start-your-qgis-project"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Open QGIS and navigate to <ph id="1">`Project`</ph> -> <ph id="2">`New`</ph> and click on <ph id="3">`Save`</ph>. Navigate to where you want to save your project, give it a name and click <ph id="4">`Save`</ph> again. When working in QGIS always remember to save your project every now and then.</source>
+<target xml:lang="fr">Open QGIS and navigate to <ph id="1">`Project`</ph> -> <ph id="2">`New`</ph> and click on <ph id="3">`Save`</ph>. Navigate to where you want to save your project, give it a name and click <ph id="4">`Save`</ph> again. When working in QGIS always remember to save your project every now and then.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Now load your vector file ("Kumasi_SMT_Ex4.geojson") and geotiff files ("Kumasi_sketch-map_Ex4_1.geotiff") by dragging and dropping them into the layer panel.</source>
+<target xml:lang="fr">Now load your vector file ("Kumasi_SMT_Ex4.geojson") and geotiff files ("Kumasi_sketch-map_Ex4_1.geotiff") by dragging and dropping them into the layer panel.</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">3. Explore the data <bpt id="1">&lt;a id="3-explore-the-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">3. Explore the data <bpt id="1">&lt;a id="3-explore-the-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Orientate in the User Interface<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Orientate in the User Interface<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">If you are a beginner to QGIS get to know the basics of the QGIS User Interface <bpt id="1">[</bpt>here<ept id="1">](/content/Wiki/en_qgis_interface_wiki.md)</ept>.</source>
+<target xml:lang="fr">If you are a beginner to QGIS get to know the basics of the QGIS User Interface <bpt id="1">[</bpt>here<ept id="1">](/content/Wiki/en_qgis_interface_wiki.md)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Add a Basemap<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Add a Basemap<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">For a better overview and orientation it is always helpful to add a basemap to your project and put your situation in a spatial context. Find in the <ph id="1">`Browser`</ph> Panel <ph id="2">`XYZ Tiles`</ph>, open the dropdown by clicking on it and select OpenStreetMap or another basemap.</source>
+<target xml:lang="fr">For a better overview and orientation it is always helpful to add a basemap to your project and put your situation in a spatial context. Find in the <ph id="1">`Browser`</ph> Panel <ph id="2">`XYZ Tiles`</ph>, open the dropdown by clicking on it and select OpenStreetMap or another basemap.</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Click <bpt id="1">[</bpt>here<ept id="1">](/content/Wiki/en_qgis_basemaps_wiki.md)</ept> for more information on basemaps and how to add them to your project.</source>
+<target xml:lang="fr">Click <bpt id="1">[</bpt>here<ept id="1">](/content/Wiki/en_qgis_basemaps_wiki.md)</ept> for more information on basemaps and how to add them to your project.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Understand the Layer Concept<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Understand the Layer Concept<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">By dragging and dropping your data into QGIS the data will be visualized in the map canvas and its description will be visible in the <ph id="1">`Layers`</ph> Panel. You should now have 7 layers in your panel: your geojson output (vector), your 5 geotiffs (Raster) and the OpenStreetMap basemap. In order to see all the information you have to bing them into order. It is important to understand the <bpt id="2">[</bpt>Layer Concept<ept id="2">](/content/Wiki/en_qgis_layer_concept_wiki.md)</ept>.</source>
+<target xml:lang="fr">By dragging and dropping your data into QGIS the data will be visualized in the map canvas and its description will be visible in the <ph id="1">`Layers`</ph> Panel. You should now have 7 layers in your panel: your geojson output (vector), your 5 geotiffs (Raster) and the OpenStreetMap basemap. In order to see all the information you have to bing them into order. It is important to understand the <bpt id="2">[</bpt>Layer Concept<ept id="2">](/content/Wiki/en_qgis_layer_concept_wiki.md)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Explore the data<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Explore the data<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Vector data<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Vector data<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">In order to explore your detected markings, right-click on your vector file and navigate to <ph id="1">`Open Attribute Table`</ph> and click on it. The table has one entry (row) for each detected marking. In our example, 13 markings where detected. The column "color" describes the color which has been detected for each marking and the column "name" contains the name of your uploaded Sketch Map.</source>
+<target xml:lang="fr">In order to explore your detected markings, right-click on your vector file and navigate to <ph id="1">`Open Attribute Table`</ph> and click on it. The table has one entry (row) for each detected marking. In our example, 13 markings where detected. The column "color" describes the color which has been detected for each marking and the column "name" contains the name of your uploaded Sketch Map.</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>GeoTIFF<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>GeoTIFF<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">The Raster file as result of the Sketch Map Tool is the photo you took of your Sketch Map, but georeferenced. You see if the georeferencing is correct when it matches the base map. Furthermore your <ph id="1">`.tiff`</ph>-file is helpful to compare and review the marking detection (vector file). In this case your tiff is your "ground truth" and you can check if the marking detection by the tool is true or if there are pieces missing or wrongly detected.</source>
+<target xml:lang="fr">The Raster file as result of the Sketch Map Tool is the photo you took of your Sketch Map, but georeferenced. You see if the georeferencing is correct when it matches the base map. Furthermore your <ph id="1">`.tiff`</ph>-file is helpful to compare and review the marking detection (vector file). In this case your tiff is your "ground truth" and you can check if the marking detection by the tool is true or if there are pieces missing or wrongly detected.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Question:
+    Do your different output match or do you find any errors?</source>
+<target xml:lang="fr">Question:
+    Do your different output match or do you find any errors?</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">-> Yes, you are right. Unfortunately, one marked polygon did not get detected. This can happen since markings are being detected by machine learning algorithms that can encounter problems in some situations.</source>
+<target xml:lang="fr">-> Yes, you are right. Unfortunately, one marked polygon did not get detected. This can happen since markings are being detected by machine learning algorithms that can encounter problems in some situations.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">5. Correct or enhance your data <bpt id="1">&lt;a id="5-correct-or-enhance-your-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">5. Correct or enhance your data <bpt id="1">&lt;a id="5-correct-or-enhance-your-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>1. Digitization: Add a marking manually<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>1. Digitization: Add a marking manually<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">So what can we do if a marking has not been detected? We can add missing markings manually by tracking the drawing on the geotiff file. This process is also called <bpt id="1">[</bpt>digitisation<ept id="1">](/content/Module_3/en_qgis_digitalisation.md)</ept>.</source>
+<target xml:lang="fr">So what can we do if a marking has not been detected? We can add missing markings manually by tracking the drawing on the geotiff file. This process is also called <bpt id="1">[</bpt>digitisation<ept id="1">](/content/Module_3/en_qgis_digitalisation.md)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Right-click on your vector file and click on <ph id="1">`Toggle Editing`</ph>. The <ph id="2">`Digitizing Toolbox`</ph> in your menu bar on top of your QGIS will be activated:</source>
+<target xml:lang="fr">Right-click on your vector file and click on <ph id="1">`Toggle Editing`</ph>. The <ph id="2">`Digitizing Toolbox`</ph> in your menu bar on top of your QGIS will be activated:</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Add Feature: Capture Polygon`</ph><bpt id="2">![</bpt><ept id="2">](/fig/mActionCapturePolygon.png)</ept>. You will note that your mouse pointer now changed its symbol into a target. This means you can now start tracing the missing polygon my left-clicking. You finish your polygon by a right-click and you will be asked to enter the descriptions. Enter the information and click ok.</source>
+<target xml:lang="fr">Click on <ph id="1">`Add Feature: Capture Polygon`</ph><bpt id="2">![</bpt><ept id="2">](/fig/mActionCapturePolygon.png)</ept>. You will note that your mouse pointer now changed its symbol into a target. This means you can now start tracing the missing polygon my left-clicking. You finish your polygon by a right-click and you will be asked to enter the descriptions. Enter the information and click ok.</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">In the map canvas you can already see your hand-drawn polygon. In order to save it, you should now right-click on your vector layer and turn off the Editing mode by clicking on <ph id="1">`Toggle Editing`</ph> -> <ph id="2">`Save`</ph>. Check your result by looking at the Attribute Table again: You now have 14 features in your table.</source>
+<target xml:lang="fr">In the map canvas you can already see your hand-drawn polygon. In order to save it, you should now right-click on your vector layer and turn off the Editing mode by clicking on <ph id="1">`Toggle Editing`</ph> -> <ph id="2">`Save`</ph>. Check your result by looking at the Attribute Table again: You now have 14 features in your table.</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">The whole process of Digitization is explained in detail <bpt id="1">[</bpt>here<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitalisation.html?highlight=digitize#digitalisation)</ept>.</source>
+<target xml:lang="fr">The whole process of Digitization is explained in detail <bpt id="1">[</bpt>here<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_3/en_qgis_digitalisation.html?highlight=digitize#digitalisation)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>2. Add a property/column to the Attribute Table<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>2. Add a property/column to the Attribute Table<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">Normally, you know the meaning of the markings in your Sketch Map. We will now learn how to add them to your vector layer. In our example, we assume we know that blue were used to mark flood extents, red was used to mark potential hazardous substances and green to mark potential emergency shelters. We want to replicate this:</source>
+<target xml:lang="fr">Normally, you know the meaning of the markings in your Sketch Map. We will now learn how to add them to your vector layer. In our example, we assume we know that blue were used to mark flood extents, red was used to mark potential hazardous substances and green to mark potential emergency shelters. We want to replicate this:</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Right-click on your vector layer, navigate to <ph id="1">`Open Attribute Table`</ph> and click on it.</source>
+<target xml:lang="fr">Right-click on your vector layer, navigate to <ph id="1">`Open Attribute Table`</ph> and click on it.</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">In the upper left corner click on <bpt id="1">![</bpt><ept id="1">](/fig/mActionToggleEditing.png)</ept> to toggle editing mode</source>
+<target xml:lang="fr">In the upper left corner click on <bpt id="1">![</bpt><ept id="1">](/fig/mActionToggleEditing.png)</ept> to toggle editing mode</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">click on <bpt id="1">![</bpt><ept id="1">](/fig/mActionNewAttribute.png)</ept> to add a new field to the data source</source>
+<target xml:lang="fr">click on <bpt id="1">![</bpt><ept id="1">](/fig/mActionNewAttribute.png)</ept> to add a new field to the data source</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">As <ph id="1">`Name`</ph> enter "Description", choose "Text (String)" <ph id="2">`Type`</ph>, as <ph id="3">`Length`</ph> enter "20" and click <ph id="4">`OK`</ph></source>
+<target xml:lang="fr">As <ph id="1">`Name`</ph> enter "Description", choose "Text (String)" <ph id="2">`Type`</ph>, as <ph id="3">`Length`</ph> enter "20" and click <ph id="4">`OK`</ph></target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">by clicking on each field you can now enter the respective descriptions to the colors:</source>
+<target xml:lang="fr">by clicking on each field you can now enter the respective descriptions to the colors:</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Make sure that you don't have any typos in the description</source>
+<target xml:lang="fr">Make sure that you don't have any typos in the description</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">Save by clicking on <bpt id="1">![</bpt><ept id="1">](/fig/mActionToggleEditing.png)</ept> once more -> <ph id="2">`Save`</ph></source>
+<target xml:lang="fr">Save by clicking on <bpt id="1">![</bpt><ept id="1">](/fig/mActionToggleEditing.png)</ept> once more -> <ph id="2">`Save`</ph></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">6. Visualize your data <bpt id="1">&lt;a id="6-visualize-your-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">6. Visualize your data <bpt id="1">&lt;a id="6-visualize-your-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Now we want to visualize our results and generate a printable map so the results can be shown to third parties in a clear and comprehensible manner. We can now delete the geotiff layer by right-click -> <ph id="1">`Remove Layer`</ph> since we will be working with the vector marking detections.</source>
+<target xml:lang="fr">Now we want to visualize our results and generate a printable map so the results can be shown to third parties in a clear and comprehensible manner. We can now delete the geotiff layer by right-click -> <ph id="1">`Remove Layer`</ph> since we will be working with the vector marking detections.</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>1. Customize Symbology<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>1. Customize Symbology<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">We can customize the symbology of our vector layer by right-clicking on it in the <ph id="1">`Layers`</ph> Panel -> <ph id="2">`Properties`</ph> -> <ph id="3">`Symbology`</ph>.</source>
+<target xml:lang="fr">We can customize the symbology of our vector layer by right-clicking on it in the <ph id="1">`Layers`</ph> Panel -> <ph id="2">`Properties`</ph> -> <ph id="3">`Symbology`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">First of all we want to assign different colors for different features:</source>
+<target xml:lang="fr">First of all we want to assign different colors for different features:</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">In the topmost drop-down menu, choose <ph id="1">`Categorized`</ph>. As Value choose "Description" and then click on the bottom left on <ph id="2">`Classify`</ph>. We are now able to choose colors depending on the value in the column "Description". By double-clicking on the colored box in your window next to your value and Legend descriptions the <ph id="3">`Symbol Selector`</ph> will open in a new window where you can choose the color of your preference by clicking on the drop-down arrow next to "Color".
+Right below you can also adjust the opacity level of your feature.</source>
+<target xml:lang="fr">In the topmost drop-down menu, choose <ph id="1">`Categorized`</ph>. As Value choose "Description" and then click on the bottom left on <ph id="2">`Classify`</ph>. We are now able to choose colors depending on the value in the column "Description". By double-clicking on the colored box in your window next to your value and Legend descriptions the <ph id="3">`Symbol Selector`</ph> will open in a new window where you can choose the color of your preference by clicking on the drop-down arrow next to "Color".
+Right below you can also adjust the opacity level of your feature.</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">In the <ph id="1">`Symbol Selector`</ph>, you can also click on <ph id="2">`Simple line`</ph> in the upper window and change the <ph id="3">`Symbol Layer Type`</ph>. In this example, we would like to symbolize the potential hazardous substances with red outlines, so we choose "Outline: Simple Line". Just below we can adjust the color, stroke width, stroke line type, etc. You can find more information about the visualization of vector data <bpt id="4">[</bpt>here<ept id="4">](/content/Wiki/en_qgis_visualisation_wiki.md)</ept>.</source>
+<target xml:lang="fr">In the <ph id="1">`Symbol Selector`</ph>, you can also click on <ph id="2">`Simple line`</ph> in the upper window and change the <ph id="3">`Symbol Layer Type`</ph>. In this example, we would like to symbolize the potential hazardous substances with red outlines, so we choose "Outline: Simple Line". Just below we can adjust the color, stroke width, stroke line type, etc. You can find more information about the visualization of vector data <bpt id="4">[</bpt>here<ept id="4">](/content/Wiki/en_qgis_visualisation_wiki.md)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>2. Make a printable Map<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>2. Make a printable Map<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">Open a new print layout by clicking on <ph id="1">`Project`</ph> -> <ph id="2">`New Print Layout`</ph> -> enter the name of your current Project e.g "Kumasi Flooding Sketch Map Tool". A new window will open with a blank canvas and a different set of tools. This is the <bpt id="3">__</bpt>print layout designer<ept id="3">__</ept>.</source>
+<target xml:lang="fr">Open a new print layout by clicking on <ph id="1">`Project`</ph> -> <ph id="2">`New Print Layout`</ph> -> enter the name of your current Project e.g "Kumasi Flooding Sketch Map Tool". A new window will open with a blank canvas and a different set of tools. This is the <bpt id="3">__</bpt>print layout designer<ept id="3">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Insert a new map by clicking on the <bpt id="1">![</bpt>New Map Icon<ept id="1">](/fig/30.30.2_print_layout_insert_map_icon.png)</ept> ("Add Map") on the left toolbar, and drawing a rectangle on the print canvas. <bpt id="2">[</bpt>Video<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#adding-a-new-map)</ept></source>
+<target xml:lang="fr">Insert a new map by clicking on the <bpt id="1">![</bpt>New Map Icon<ept id="1">](/fig/30.30.2_print_layout_insert_map_icon.png)</ept> ("Add Map") on the left toolbar, and drawing a rectangle on the print canvas. <bpt id="2">[</bpt>Video<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_4/en_qgis_map_design_2.html#adding-a-new-map)</ept></target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Move and position the map so that the entire country is visible at a reasonable scale.</source>
+<target xml:lang="fr">Move and position the map so that the entire country is visible at a reasonable scale.</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">Let's add a title:</source>
+<target xml:lang="fr">Let's add a title:</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">Click on the <bpt id="1">![</bpt>Add text icon<ept id="1">](/fig/30.30.2_print_layout_add_text.png)</ept> (<ph id="2">`Add text`</ph>)</source>
+<target xml:lang="fr">Click on the <bpt id="1">![</bpt>Add text icon<ept id="1">](/fig/30.30.2_print_layout_add_text.png)</ept> (<ph id="2">`Add text`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Drag a rectangle on the canvas</source>
+<target xml:lang="fr">Drag a rectangle on the canvas</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">In the items properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter your map title (e.g.: Flood Extent, Potential Emergency Shelters and Potential Hazardous Substances in Kumasi, Ghana (fictional)).</source>
+<target xml:lang="fr">In the items properties window on the right, you will find a text box with the text "Lorem ipsum". Here you can enter your map title (e.g.: Flood Extent, Potential Emergency Shelters and Potential Hazardous Substances in Kumasi, Ghana (fictional)).</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Adjust the font size: Click on the <bpt id="1">__</bpt>Font<ept id="1">__</ept> dropdown menu and adjust the font size for a title (25p or more). Adjust the text box if necessary.</source>
+<target xml:lang="fr">Adjust the font size: Click on the <bpt id="1">__</bpt>Font<ept id="1">__</ept> dropdown menu and adjust the font size for a title (25p or more). Adjust the text box if necessary.</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Let's add a legend:</source>
+<target xml:lang="fr">Let's add a legend:</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Click on the <bpt id="1">![</bpt>Add legend icon<ept id="1">](/fig/30.30.2_print_layout_add_legend.png)</ept> (<ph id="2">`Add legend`</ph>).</source>
+<target xml:lang="fr">Click on the <bpt id="1">![</bpt>Add legend icon<ept id="1">](/fig/30.30.2_print_layout_add_legend.png)</ept> (<ph id="2">`Add legend`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Navigate to the <bpt id="1">__</bpt>Item Properties<ept id="1">__</ept> panel on the right.</source>
+<target xml:lang="fr">Navigate to the <bpt id="1">__</bpt>Item Properties<ept id="1">__</ept> panel on the right.</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">Scroll down a bit and check turn off <ph id="1">`Auto Update`</ph> by unchecking the check box. Now you can freely edit every item on the legend</source>
+<target xml:lang="fr">Scroll down a bit and check turn off <ph id="1">`Auto Update`</ph> by unchecking the check box. Now you can freely edit every item on the legend</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">Adjust the legend by removing unnecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on <bpt id="1">![</bpt>Edit Icon<ept id="1">](/fig/30.30.2_print_layout_legend_edit.png)</ept> (<ph id="2">`Edit selected item properties`</ph>) below the legend entries.</source>
+<target xml:lang="fr">Adjust the legend by removing unnecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on <bpt id="1">![</bpt>Edit Icon<ept id="1">](/fig/30.30.2_print_layout_legend_edit.png)</ept> (<ph id="2">`Edit selected item properties`</ph>) below the legend entries.</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">Now, let's add a scale bar:</source>
+<target xml:lang="fr">Now, let's add a scale bar:</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Click on the <bpt id="1">![</bpt>Add Scale bar icon<ept id="1">](/fig/30.30.2_print_layout_add_scale_bar.png)</ept> (<ph id="2">`Add Scale bar`</ph>)</source>
+<target xml:lang="fr">Click on the <bpt id="1">![</bpt>Add Scale bar icon<ept id="1">](/fig/30.30.2_print_layout_add_scale_bar.png)</ept> (<ph id="2">`Add Scale bar`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">Draw a rectangle on the map and position the scale bar on the edge of the map. You can adjust the scale bar units (meters, kilometers, ...), the fixed segment width (50 km, 75 km, 100 km, ...) and the number of segments (to the right).</source>
+<target xml:lang="fr">Draw a rectangle on the map and position the scale bar on the edge of the map. You can adjust the scale bar units (meters, kilometers, ...), the fixed segment width (50 km, 75 km, 100 km, ...) and the number of segments (to the right).</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">Let's add North arrow:</source>
+<target xml:lang="fr">Let's add North arrow:</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">Click on the <bpt id="1">![</bpt>Add North Arrow Icon<ept id="1">](/fig/30.30.2_print_layout_add_orientation.png)</ept> (<ph id="2">`Add North Arrow`</ph>).</source>
+<target xml:lang="fr">Click on the <bpt id="1">![</bpt>Add North Arrow Icon<ept id="1">](/fig/30.30.2_print_layout_add_orientation.png)</ept> (<ph id="2">`Add North Arrow`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">Drag a rectangle on the print layout. Adjust the size and location of the north arrow. You can also change the icon in the item properties.</source>
+<target xml:lang="fr">Drag a rectangle on the print layout. Adjust the size and location of the north arrow. You can also change the icon in the item properties.</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">Add a text box with additional information, sources, the author (you), and date of creation.</source>
+<target xml:lang="fr">Add a text box with additional information, sources, the author (you), and date of creation.</target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">When you are happy with your print layout. You can export it as a PDF. You can save it in the project folder under "results".</source>
+<target xml:lang="fr">When you are happy with your print layout. You can export it as a PDF. You can save it in the project folder under "results".</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">Once you have exported the map. Look at the PDF and make sure it looks how you intended. Some things might look different in the PDF. If it does not look correct you may need to make some adjustments in the symbology.</source>
+<target xml:lang="fr">Once you have exported the map. Look at the PDF and make sure it looks how you intended. Some things might look different in the PDF. If it does not look correct you may need to make some adjustments in the symbology.</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">The finished map could look something like this:</source>
+<target xml:lang="fr">The finished map could look something like this:</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">You can find Videos along with all the necessary information about making printable maps and the print layout composer in the <bpt id="1">[</bpt>Print Layout Chapter<ept id="1">](/content/Module_4/en_qgis_map_design_2.md#understanding-the-print-layout-composer)</ept>, the <bpt id="2">[</bpt>Symbology Chapter<ept id="2">](/content/Module_4/en_qgis_map_design_I.md)</ept>, and in the <bpt id="3">[</bpt>Map Making Wiki<ept id="3">](/content/Wiki/en_qgis_map_making_wiki.md)</ept></source>
+<target xml:lang="fr">You can find Videos along with all the necessary information about making printable maps and the print layout composer in the <bpt id="1">[</bpt>Print Layout Chapter<ept id="1">](/content/Module_4/en_qgis_map_design_2.md#understanding-the-print-layout-composer)</ept>, the <bpt id="2">[</bpt>Symbology Chapter<ept id="2">](/content/Module_4/en_qgis_map_design_I.md)</ept>, and in the <bpt id="3">[</bpt>Map Making Wiki<ept id="3">](/content/Wiki/en_qgis_map_making_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">Exercise B: Basic visualization of Sketch Map Tool outputs in uMap <bpt id="1">&lt;a id="exercise-b-basic-visualization-of-sketch-map-tool-outputs-in-umap"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise B: Basic visualization of Sketch Map Tool outputs in uMap <bpt id="1">&lt;a id="exercise-b-basic-visualization-of-sketch-map-tool-outputs-in-umap"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph>Exercise B: Basic visualization of Sketch Map Tool outputs in uMap
+<ph id="2">:open:</ph></source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph>Exercise B: Basic visualization of Sketch Map Tool outputs in uMap
+<ph id="2">:open:</ph></target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">1. Background Information on UMAP <bpt id="1">&lt;a id="1-background-information-on-umap"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">1. Background Information on UMAP <bpt id="1">&lt;a id="1-background-information-on-umap"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">uMap is an online platform that allows users to create custom maps with OpenStreetMap (OSM) as basemap layer. Neither installation nor registration is necessary. This enables users to quickly gain an intuitive overview of their data.
+Users can customize the appearance of the map and share it with others. It's particularly useful for collaborative mapping projects, quick visualization of geographic data, and creating custom maps tailored to specific needs.</source>
+<target xml:lang="fr">uMap is an online platform that allows users to create custom maps with OpenStreetMap (OSM) as basemap layer. Neither installation nor registration is necessary. This enables users to quickly gain an intuitive overview of their data.
+Users can customize the appearance of the map and share it with others. It's particularly useful for collaborative mapping projects, quick visualization of geographic data, and creating custom maps tailored to specific needs.</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">Feature</source>
+<target xml:lang="fr">Feature</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">QGIS</source>
+<target xml:lang="fr">QGIS</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">UMAP</source>
+<target xml:lang="fr">UMAP</target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Type</source>
+<target xml:lang="fr">Type</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">Desktop Geographic Information System (GIS) software</source>
+<target xml:lang="fr">Desktop Geographic Information System (GIS) software</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en">Online mapping platform</source>
+<target xml:lang="fr">Online mapping platform</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en">Accessibility</source>
+<target xml:lang="fr">Accessibility</target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en">Requires installation on a desktop computer</source>
+<target xml:lang="fr">Requires installation on a desktop computer</target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">Accessible online via web browser</source>
+<target xml:lang="fr">Accessible online via web browser</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">Purpose</source>
+<target xml:lang="fr">Purpose</target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">Comprehensive GIS software for spatial data analysis</source>
+<target xml:lang="fr">Comprehensive GIS software for spatial data analysis</target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">Interactive mapping tool for creating custom maps</source>
+<target xml:lang="fr">Interactive mapping tool for creating custom maps</target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en">Data Import</source>
+<target xml:lang="fr">Data Import</target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">Supports various data formats (shapefiles, geodatabases, etc.)</source>
+<target xml:lang="fr">Supports various data formats (shapefiles, geodatabases, etc.)</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en">Vector data only, user input via map canvas, some geo formats (geojson, .gpx, .kml, .osm)</source>
+<target xml:lang="fr">Vector data only, user input via map canvas, some geo formats (geojson, .gpx, .kml, .osm)</target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en">Data Visualization and Analysis</source>
+<target xml:lang="fr">Data Visualization and Analysis</target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en">Offers extensive visualization and analysis capabilities, Provides a wide range of spatial analysis tools</source>
+<target xml:lang="fr">Offers extensive visualization and analysis capabilities, Provides a wide range of spatial analysis tools</target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en">Focuses on creating interactive maps with custom elements; No analysis tools</source>
+<target xml:lang="fr">Focuses on creating interactive maps with custom elements; No analysis tools</target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en">Output</source>
+<target xml:lang="fr">Output</target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en">Printable map with all necessary map elements</source>
+<target xml:lang="fr">Printable map with all necessary map elements</target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">URL so share map online</source>
+<target xml:lang="fr">URL so share map online</target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en">2. Data Collection <bpt id="1">&lt;a id="2-data-collection"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">2. Data Collection <bpt id="1">&lt;a id="2-data-collection"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en">Please download the prepared maps <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_4.zip)</ept>.
+Unzip the .zip folder in order to be able to access the geotiff output.</source>
+<target xml:lang="fr">Please download the prepared maps <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_4.zip)</ept>.
+Unzip the .zip folder in order to be able to access the geotiff output.</target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en">Optional: You find the empty map in the data input folder: <ph id="1">`\Sketch_Map_Tool_Exercise_4\data\input\empty_sketch_map`</ph>. Feel free to draw some additional flood maps by printing the template out and drawing on it or by using a simple graphics editor.</source>
+<target xml:lang="fr">Optional: You find the empty map in the data input folder: <ph id="1">`\Sketch_Map_Tool_Exercise_4\data\input\empty_sketch_map`</ph>. Feel free to draw some additional flood maps by printing the template out and drawing on it or by using a simple graphics editor.</target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en">3. Georeferencing and auto-extraction with the Sketch Map tool <bpt id="1">&lt;a id="3-georeferencing-and-auto-extraction-with-the-sketch-map-tool"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">3. Georeferencing and auto-extraction with the Sketch Map tool <bpt id="1">&lt;a id="3-georeferencing-and-auto-extraction-with-the-sketch-map-tool"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en">Upload the marked sketch maps back to the tool’s website (already marked sketch maps:  <ph id="1">`\Sketch_Map_Tool_Exercise_4\data\input\marked_sketch_maps`</ph>). Head to <bpt id="2">[</bpt>sketch-map-tool.heigit.org<ept id="2">](https://sketch-map-tool.heigit.org/)</ept> and choose 'Digitize your Sketch maps' on the right. Upload all your sketches in .png or .jpg format. You can mark your sketches and simply drag and drop them into the window.</source>
+<target xml:lang="fr">Upload the marked sketch maps back to the tool’s website (already marked sketch maps:  <ph id="1">`\Sketch_Map_Tool_Exercise_4\data\input\marked_sketch_maps`</ph>). Head to <bpt id="2">[</bpt>sketch-map-tool.heigit.org<ept id="2">](https://sketch-map-tool.heigit.org/)</ept> and choose 'Digitize your Sketch maps' on the right. Upload all your sketches in .png or .jpg format. You can mark your sketches and simply drag and drop them into the window.</target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en">The sketch maps are now being processed and georeferenced with the annotations extracted and vectorized. Download the vectors. You may use the ones we have prepared in the output data folder: <ph id="1">`\Sketch_Map_Tool_Exercise_4\output\Kumasi_SMT_Ex4.geojson`</ph>.</source>
+<target xml:lang="fr">The sketch maps are now being processed and georeferenced with the annotations extracted and vectorized. Download the vectors. You may use the ones we have prepared in the output data folder: <ph id="1">`\Sketch_Map_Tool_Exercise_4\output\Kumasi_SMT_Ex4.geojson`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en">4. Load your data <bpt id="1">&lt;a id="4-load-your-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">4. Load your data <bpt id="1">&lt;a id="4-load-your-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en">Open the Browser of your choice and navigate to the <bpt id="1">[</bpt>uMap Website<ept id="1">](https://umap.openstreetmap.fr/en/)</ept> and click on the large green button <ph id="2">`Create a Map`</ph>. Your Map Canvas and User interface will open.</source>
+<target xml:lang="fr">Open the Browser of your choice and navigate to the <bpt id="1">[</bpt>uMap Website<ept id="1">](https://umap.openstreetmap.fr/en/)</ept> and click on the large green button <ph id="2">`Create a Map`</ph>. Your Map Canvas and User interface will open.</target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en">Right above your map canvas, you can click in "Untitled Map" in order to edit your map properties. Give your Map a title and a short description.</source>
+<target xml:lang="fr">Right above your map canvas, you can click in "Untitled Map" in order to edit your map properties. Give your Map a title and a short description.</target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en">You can load your data into the map frame by clicking on the arrow button. The <ph id="1">`Import data`</ph> window will open on the right hand side. Click on <ph id="2">`Select file`</ph> and navigate to your vector output from the Sketch Map Tool ("Kumasi_SMT_Ex4.geojson") and click on <ph id="3">`Open`</ph>. uMap will automatically detect that your vector is a geojason format. Click on <ph id="4">`Import`</ph> to load your data to your map canvas.</source>
+<target xml:lang="fr">You can load your data into the map frame by clicking on the arrow button. The <ph id="1">`Import data`</ph> window will open on the right hand side. Click on <ph id="2">`Select file`</ph> and navigate to your vector output from the Sketch Map Tool ("Kumasi_SMT_Ex4.geojson") and click on <ph id="3">`Open`</ph>. uMap will automatically detect that your vector is a geojason format. Click on <ph id="4">`Import`</ph> to load your data to your map canvas.</target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en">Click in the upper right corner on <ph id="1">`Save`</ph>. If you are not logged in you will be provided with an URL where you can access and your map any time later on. Save it somewhere or send it to your email.</source>
+<target xml:lang="fr">Click in the upper right corner on <ph id="1">`Save`</ph>. If you are not logged in you will be provided with an URL where you can access and your map any time later on. Save it somewhere or send it to your email.</target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en">5. Customize your map <bpt id="1">&lt;a id="5-customize-your-map"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">5. Customize your map <bpt id="1">&lt;a id="5-customize-your-map"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en">Now that you imported your own data, you are ready to customize your own map in order to show your results to others in a vivid manner.
+In the toolbar on the right hand side you have various options to do so.</source>
+<target xml:lang="fr">Now that you imported your own data, you are ready to customize your own map in order to show your results to others in a vivid manner.
+In the toolbar on the right hand side you have various options to do so.</target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>1. Change the background<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>1. Change the background<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Change tilelayers`</ph><bpt id="2">![</bpt><ept id="2">](/fig/en_SMT_ex4_UMAP_basemap.PNG)</ept> to choose another background map.</source>
+<target xml:lang="fr">Click on <ph id="1">`Change tilelayers`</ph><bpt id="2">![</bpt><ept id="2">](/fig/en_SMT_ex4_UMAP_basemap.PNG)</ept> to choose another background map.</target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>2. Explore and Manage Data Layers<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>2. Explore and Manage Data Layers<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Manage Layers`</ph><bpt id="2">![</bpt><ept id="2">](/fig/en_SMT_ex4_UMAP_layers.PNG)</ept> to open your layers panel. In this windows you will see all the layers in your project (in our case it is just one) and you are able to add additional information layers. The small symbols on the left hand side of you layer give you the option to hide, zoom to or delete your layer.</source>
+<target xml:lang="fr">Click on <ph id="1">`Manage Layers`</ph><bpt id="2">![</bpt><ept id="2">](/fig/en_SMT_ex4_UMAP_layers.PNG)</ept> to open your layers panel. In this windows you will see all the layers in your project (in our case it is just one) and you are able to add additional information layers. The small symbols on the left hand side of you layer give you the option to hide, zoom to or delete your layer.</target>
+</trans-unit>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en">You can click on the table button <bpt id="1">![</bpt><ept id="1">](/fig/en_SMT_ex4_UMAP_Table.PNG)</ept> in order to view or edit properties in the attribute table of your layer. The table has one entry (row) for each detected marking. In our example 13 markings where detected. The column "color" describes the color which has been detected for each marking and the column "name" contains the name of your uploaded Sketch Map.</source>
+<target xml:lang="fr">You can click on the table button <bpt id="1">![</bpt><ept id="1">](/fig/en_SMT_ex4_UMAP_Table.PNG)</ept> in order to view or edit properties in the attribute table of your layer. The table has one entry (row) for each detected marking. In our example 13 markings where detected. The column "color" describes the color which has been detected for each marking and the column "name" contains the name of your uploaded Sketch Map.</target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>2. Customize your visualization<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>2. Customize your visualization<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu175" xml:space="preserve">
+<source xml:lang="en">Now we want to display the potential emergency shelters in green, potential hazardous substances in red and the flood extents in blue. For this we first have to create a group for each:</source>
+<target xml:lang="fr">Now we want to display the potential emergency shelters in green, potential hazardous substances in red and the flood extents in blue. For this we first have to create a group for each:</target>
+</trans-unit>
+<trans-unit id="tu176" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Manage Layers`</ph><bpt id="2">![</bpt><ept id="2">](/fig/en_SMT_ex4_UMAP_layers.PNG)</ept> <ph id="3">`Add Layers`</ph></source>
+<target xml:lang="fr">Click on <ph id="1">`Manage Layers`</ph><bpt id="2">![</bpt><ept id="2">](/fig/en_SMT_ex4_UMAP_layers.PNG)</ept> <ph id="3">`Add Layers`</ph></target>
+</trans-unit>
+<trans-unit id="tu177" xml:space="preserve">
+<source xml:lang="en">We name the first new layer "Potential Emergency Shelters" and choose as <ph id="1">`Type of layer`</ph> -> <ph id="2">`Clustered`</ph>
+When you click on  <ph id="3">`Close`</ph> and then on <ph id="4">`Manage Layers`</ph><bpt id="5">![</bpt><ept id="5">](/fig/en_SMT_ex4_UMAP_layers.PNG)</ept> again, you will see you recently create layer "Potential Emergency Shelters"</source>
+<target xml:lang="fr">We name the first new layer "Potential Emergency Shelters" and choose as <ph id="1">`Type of layer`</ph> -> <ph id="2">`Clustered`</ph>
+When you click on  <ph id="3">`Close`</ph> and then on <ph id="4">`Manage Layers`</ph><bpt id="5">![</bpt><ept id="5">](/fig/en_SMT_ex4_UMAP_layers.PNG)</ept> again, you will see you recently create layer "Potential Emergency Shelters"</target>
+</trans-unit>
+<trans-unit id="tu178" xml:space="preserve">
+<source xml:lang="en">repeat the process creating clustered layers for "Flood Extent" and "Potential Hazardous Substances"</source>
+<target xml:lang="fr">repeat the process creating clustered layers for "Flood Extent" and "Potential Hazardous Substances"</target>
+</trans-unit>
+<trans-unit id="tu179" xml:space="preserve">
+<source xml:lang="en">In the map canvas, you can now click on one of the polygons and toggle editing modus by clicking on the small pen button that appears.</source>
+<target xml:lang="fr">In the map canvas, you can now click on one of the polygons and toggle editing modus by clicking on the small pen button that appears.</target>
+</trans-unit>
+<trans-unit id="tu180" xml:space="preserve">
+<source xml:lang="en">The <ph id="1">`Feature properties`</ph> window will open on the right hand side. On the very top, you can now choose the layer group you want to assign this feature to. Choose a meaningful name. For the flood polygons, we can simply choose as name "Flood Extent" and for the potential emergency shelters polygons you can either choose "Potential Emergency Shelter" or "school" or "hotel" as just an example. Click on <ph id="2">`Close`</ph>. If you click on a flood extent polygon and toggle editing you assign it to you layer "Flood Extent" and if you click on a potential emergency shelter polygon and toggle editing you assign it to you layer "Potential Emergency Shelters". Assign now all 13 polygons to the respective layer.</source>
+<target xml:lang="fr">The <ph id="1">`Feature properties`</ph> window will open on the right hand side. On the very top, you can now choose the layer group you want to assign this feature to. Choose a meaningful name. For the flood polygons, we can simply choose as name "Flood Extent" and for the potential emergency shelters polygons you can either choose "Potential Emergency Shelter" or "school" or "hotel" as just an example. Click on <ph id="2">`Close`</ph>. If you click on a flood extent polygon and toggle editing you assign it to you layer "Flood Extent" and if you click on a potential emergency shelter polygon and toggle editing you assign it to you layer "Potential Emergency Shelters". Assign now all 13 polygons to the respective layer.</target>
+</trans-unit>
+<trans-unit id="tu181" xml:space="preserve">
+<source xml:lang="en">Now click on <ph id="1">`Manage Layers`</ph><bpt id="2">![</bpt><ept id="2">](/fig/en_SMT_ex4_UMAP_layers.PNG)</ept> again and <ph id="3">`Edit`</ph><bpt id="4">![</bpt><ept id="4">](/fig/en_SMT_ex4_UMAP_Edit.PNG)</ept> one of your new layers (e.g. "Flood Extent"). Click on <ph id="5">`Shape Properties`</ph> to change the color of the layer. You can explore other option you have for styling your features. You finish by clicking on <ph id="6">`Close`</ph> in the upper right corner.</source>
+<target xml:lang="fr">Now click on <ph id="1">`Manage Layers`</ph><bpt id="2">![</bpt><ept id="2">](/fig/en_SMT_ex4_UMAP_layers.PNG)</ept> again and <ph id="3">`Edit`</ph><bpt id="4">![</bpt><ept id="4">](/fig/en_SMT_ex4_UMAP_Edit.PNG)</ept> one of your new layers (e.g. "Flood Extent"). Click on <ph id="5">`Shape Properties`</ph> to change the color of the layer. You can explore other option you have for styling your features. You finish by clicking on <ph id="6">`Close`</ph> in the upper right corner.</target>
+</trans-unit>
+<trans-unit id="tu182" xml:space="preserve">
+<source xml:lang="en">In <ph id="1">`Interaction Options`</ph> the behavior of the labeling can be determined. For example, you can choose <ph id="2">`Popup`</ph> as <ph id="3">`Popup shape`</ph> and set <ph id="4">`Display label`</ph> either <ph id="5">`on hover`</ph> in order to only display the features descriptions when you scroll with the mouse over the respective feature on the map, or on <ph id="6">`always`</ph>, in order to always see the respective description.</source>
+<target xml:lang="fr">In <ph id="1">`Interaction Options`</ph> the behavior of the labeling can be determined. For example, you can choose <ph id="2">`Popup`</ph> as <ph id="3">`Popup shape`</ph> and set <ph id="4">`Display label`</ph> either <ph id="5">`on hover`</ph> in order to only display the features descriptions when you scroll with the mouse over the respective feature on the map, or on <ph id="6">`always`</ph>, in order to always see the respective description.</target>
+</trans-unit>
+<trans-unit id="tu183" xml:space="preserve">
+<source xml:lang="en">6. Save and publish your map <bpt id="1">&lt;a id="6-save-and-publish-your-map"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">6. Save and publish your map <bpt id="1">&lt;a id="6-save-and-publish-your-map"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu184" xml:space="preserve">
+<source xml:lang="en">Your map could now look like this:</source>
+<target xml:lang="fr">Your map could now look like this:</target>
+</trans-unit>
+<trans-unit id="tu185" xml:space="preserve">
+<source xml:lang="en">If you have displayed everything you want and you have zoomed to the map extent of your choice, you can click on <ph id="1">`Save this center and zoom`</ph><bpt id="2">![</bpt><ept id="2">](/fig/en_SMT_ex4_UMAP_save.PNG)</ept> in order to save your map section. Next, click on <ph id="3">`Save`</ph> in the upper right corner.</source>
+<target xml:lang="fr">If you have displayed everything you want and you have zoomed to the map extent of your choice, you can click on <ph id="1">`Save this center and zoom`</ph><bpt id="2">![</bpt><ept id="2">](/fig/en_SMT_ex4_UMAP_save.PNG)</ept> in order to save your map section. Next, click on <ph id="3">`Save`</ph> in the upper right corner.</target>
+</trans-unit>
+<trans-unit id="tu186" xml:space="preserve">
+<source xml:lang="en">In order to publish the map, you can click on <ph id="1">`Share and download`</ph><bpt id="2">![</bpt><ept id="2">](/fig/en_SMT_ex4_UMAP_share.PNG)</ept> on the menu bar on the left side.</source>
+<target xml:lang="fr">In order to publish the map, you can click on <ph id="1">`Share and download`</ph><bpt id="2">![</bpt><ept id="2">](/fig/en_SMT_ex4_UMAP_share.PNG)</ept> on the menu bar on the left side.</target>
+</trans-unit>
+<trans-unit id="tu187" xml:space="preserve">
+<source xml:lang="en">On the top beneath <ph id="1">`Link to view the map`</ph>, you receive a URL that you can share with other people so they can view the map you have created.
+You also have the option to download your layers as data files, a full backup of the project or to copy an iframe link so you can embed your map on your own website.</source>
+<target xml:lang="fr">On the top beneath <ph id="1">`Link to view the map`</ph>, you receive a URL that you can share with other people so they can view the map you have created.
+You also have the option to download your layers as data files, a full backup of the project or to copy an iframe link so you can embed your map on your own website.</target>
+</trans-unit>
+<trans-unit id="tu188" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

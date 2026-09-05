@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2" its:version="2.0">
+  <file original="./content/About/about_1.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+    <body>
+      <trans-unit id="tu1" xml:space="preserve" approved="yes">
+<source xml:lang="en">About</source>
+<target xml:lang="fr" state="final">À propos</target>
+</trans-unit>
+      <trans-unit id="tu2" xml:space="preserve" approved="yes">
+<source xml:lang="en">Whether being a beginner or already having some experiences, working with QGIS can be difficult.<ph id="1">  </ph>
+Our goal is to provide a comprehensive platform containing the essential skills and resources for the use in humanitarian aid without having to google for hours. 🔎
+In addition to the modules, we offer exercises and a wiki to enable individuals to work through the material and learn independently.<ph id="2">  </ph>
+This QGIS training is made by people who believe GIS can help humanitarians to serve people in need better.</source>
+<target xml:lang="fr" state="final">Que vous soyez débutant ou que vous ayez déjà une certaine expérience, travailler avec QGIS peut être difficile.<ph id="1">  </ph> 
+Notre objectif est de fournir une plateforme complète contenant les compétences et ressources essentielles pour une utilisation dans l’aide humanitaire, sans devoir passer des heures à chercher sur Google. 🔎
+En plus des modules, nous proposons des exercices et un wiki afin de permettre aux personnes de parcourir le contenu et d’apprendre de manière autonome.<ph id="2">  </ph>  
+Cette formation QGIS est créée par des personnes qui croient que les SIG peuvent aider les acteurs humanitaires à mieux servir les personnes dans le besoin.</target>
+</trans-unit>
+      <trans-unit id="tu3" xml:space="preserve" approved="yes">
+<source xml:lang="en">Our Mission: <ph id="1">{mission}</ph></source>
+<target xml:lang="fr" state="final">Notre mission :<ph id="1">{mission}</ph></target>
+</trans-unit>
+      <trans-unit id="tu4" xml:space="preserve" approved="yes">
+<source xml:lang="en">We share the commitment to humanitarian aid. Through this website, our goal is to offer a unified, accessible and comprehensive resource, equipping individuals and organizations with the knowledge and tools necessary for working with QGIS.
+This Resource Center is also the resource for guided training modules.</source>
+<target xml:lang="fr" state="final">Nous partageons l’engagement envers l’aide humanitaire. Grâce à ce site web, notre objectif est d’offrir une ressource unifiée, accessible et complète, dotant les individus et les organisations des connaissances et des outils nécessaires pour travailler avec QGIS. 
+Ce Centre de ressources est également la ressource utilisée pour les modules de formation guidée.</target>
+</trans-unit>
+      <trans-unit id="tu5" xml:space="preserve" approved="yes">
+<source xml:lang="en">About Us:</source>
+<target xml:lang="fr" state="final">À propos de nous :</target>
+</trans-unit>
+      <trans-unit id="tu6" xml:space="preserve" approved="yes">
+<source xml:lang="en">The idea for this training platform originated from a group of people from the German Red Cross, British Red Cross and Netherlands Red Cross.</source>
+<target xml:lang="fr" state="final">L’idée de cette plateforme de formation est née d’un groupe de personnes issues de la Croix-Rouge allemande, de la Croix-Rouge britannique et de la Croix-Rouge néerlandaise.</target>
+</trans-unit>
+      <trans-unit id="tu7" xml:space="preserve" approved="yes">
+<source xml:lang="en">A group of dedicated student assistants and employees of the Heidelberg Institute for Geoinformation Technology (HeiGIT) are working to put together the materials on this platform. 🔨</source>
+<target xml:lang="fr" state="final">Un groupe d’étudiants assistants et d’employés dévoués de l’Institut de technologie de géoinformation d'Heidelberg (HeiGIT) travaille à rassembler les supports présents sur cette plateforme. 🔨</target>
+</trans-unit>
+      <group id="sd1_ssf1" resname="sub-filter:sd1">
+</group>
+      <group id="sd1_ssf2" resname="sub-filter:sd1">
+        <trans-unit id="sd1_sf2_tu1" resname="sd1_2" restype="x-paragraph" xml:space="preserve" approved="yes">
+<source xml:lang="en">The International Federation of Red Cross and Red Crescent Societies:<ph id="1">&lt;br&gt;</ph>
+      The International Federation of Red Cross and Red Crescent Societies (IFRC) is the world’s largest humanitarian network, comprising 191 National Red Cross and Red Crescent Societies working to save lives, build community resilience, strengthen localization and promote dignity around the world. The organization focuses on disaster response, preparedness, health, and community development, with a commitment to the principles of humanity, impartiality, neutrality, independence, voluntary service, unity, and universality.</source>
+<target xml:lang="fr" state="final">Fédération internationale des Sociétés de la Croix-Rouge et du Croissant-Rouge :<ph id="1">&lt;br&gt;</ph>
+      La Fédération internationale des Sociétés de la Croix-Rouge et du Croissant-Rouge (FICR) est le plus grand réseau humanitaire au monde, regroupant 191 Sociétés nationales de la Croix-Rouge et du Croissant-Rouge qui œuvrent pour sauver des vies, renforcer la résilience des communautés, consolider la localisation et promouvoir la dignité dans le monde entier. L’organisation se concentre sur l’intervention en cas de catastrophe, la préparation, la santé et le développement communautaire, avec un engagement envers les principes d’humanité, d’impartialité, de neutralité, d’indépendance, de volontariat, d’unité et d’universalité.</target>
+</trans-unit>
+      </group>
+      <trans-unit id="tu8" xml:space="preserve" approved="yes">
+<source xml:lang="en"><bpt id="1">[</bpt>Learn more →<ept id="1">](https://www.ifrc.org)</ept></source>
+<target xml:lang="fr" state="final"><bpt id="1">[</bpt>En savoir plus →<ept id="1">](https://www.ifrc.org)</ept></target>
+</trans-unit>
+      <group id="sd1_ssf3" resname="sub-filter:sd1">
+</group>
+      <group id="sd1_ssf4" resname="sub-filter:sd1">
+        <trans-unit id="sd1_sf4_tu2" resname="sd1_2" restype="x-alt" xml:space="preserve" approved="yes">
+<source xml:lang="en">IFRC Logo</source>
+<target xml:lang="fr" state="final">IFRC Logo</target>
+</trans-unit>
+        <trans-unit id="sd1_sf4_tu1" resname="sd1_4" xml:space="preserve" approved="yes">
+<source xml:lang="en">
+    <ph id="1">[#$sd1_sf4_dp2]</ph>
+  </source>
+<target xml:lang="fr" state="final">
+    <ph id="1">[#$sd1_sf4_dp2]</ph>
+  </target>
+</trans-unit>
+      </group>
+      <group id="sd1_ssf5" resname="sub-filter:sd1">
+        <trans-unit id="sd1_sf5_tu1" resname="sd1_2" restype="x-paragraph" xml:space="preserve" approved="yes">
+<source xml:lang="en">
+German Red Cross:
+<ph id="1">&lt;br&gt;</ph>
+      The German Red Cross (Deutsches Rotes Kreuz) saves people, helps in emergencies, offers people a community, assists the poor and people in need; holds and monitors the international humanitarian law - in Germany and all over the world. The GRC is a official part of the International Red Cross and Red Crescent Movement and supported by voluntary commitment. It acts selflessly, in accordance with its statutes, is non-profit and officially recognized as the national Red Cross Society of the Federal Republic of Germany.</source>
+<target xml:lang="fr" state="final">
+Croix-Rouge allemande :
+<ph id="1">&lt;br&gt;</ph>
+       La Croix-Rouge allemande (Deutsches Rotes Kreuz) sauve des personnes, apporte son aide en cas d’urgence, offre une communauté aux personnes, assiste les personnes pauvres et les personnes dans le besoin ; elle respecte et surveille le droit international humanitaire, en Allemagne et dans le monde entier. La Croix-Rouge allemande fait officiellement partie du Mouvement international de la Croix-Rouge et du Croissant-Rouge et est soutenue par l’engagement bénévole. Elle agit de manière désintéressée, conformément à ses statuts, est à but non lucratif et officiellement reconnue comme la Société nationale de la Croix-Rouge de la République fédérale d’Allemagne.</target>
+</trans-unit>
+      </group>
+      <trans-unit id="tu9" xml:space="preserve" approved="yes">
+<source xml:lang="en"><bpt id="1">[</bpt>Learn more →<ept id="1">](https://www.drk.de)</ept></source>
+<target xml:lang="fr" state="final"><bpt id="1">[</bpt>En savoir plus →<ept id="1">](https://www.drk.de)</ept></target>
+</trans-unit>
+      <group id="sd1_ssf6" resname="sub-filter:sd1">
+</group>
+      <group id="sd1_ssf7" resname="sub-filter:sd1">
+        <trans-unit id="sd1_sf7_tu2" resname="sd1_2" restype="x-alt" xml:space="preserve" approved="yes">
+<source xml:lang="en">German Red Cross Logo</source>
+<target xml:lang="fr" state="final">German Red Cross Logo</target>
+</trans-unit>
+        <trans-unit id="sd1_sf7_tu1" resname="sd1_4" xml:space="preserve" approved="yes">
+<source xml:lang="en">
+    <ph id="1">[#$sd1_sf7_dp2]</ph>
+  </source>
+<target xml:lang="fr" state="final">
+    <ph id="1">[#$sd1_sf7_dp2]</ph>
+  </target>
+</trans-unit>
+      </group>
+      <group id="sd1_ssf8" resname="sub-filter:sd1">
+        <trans-unit id="sd1_sf8_tu1" resname="sd1_2" restype="x-paragraph" xml:space="preserve" approved="yes">
+<source xml:lang="en">British Red Cross:<ph id="1">&lt;br&gt;</ph>
+      The British Red Cross is a well-established humanitarian organization that has been actively involved in responding to emergencies and supporting individuals and communities in crisis. The BRC is a volunteer-led movement that connects those who have kindness to share, with the people who need it most in the UK and anywhere in the world. As official part of the International Red Cross and Red Crescent Movement they offer a wide range of aid,  including first aid training, health and social care, and emergency response.</source>
+<target xml:lang="fr" state="final">Croix-Rouge britannique :<ph id="1">&lt;br&gt;</ph>
+      La Croix-Rouge britannique est une organisation humanitaire bien établie qui participe activement aux interventions d’urgence et au soutien des individus et des communautés en situation de crise. La Croix-Rouge britannique est un mouvement animé par des bénévoles qui met en relation celles et ceux qui ont de la bienveillance à offrir avec les personnes qui en ont le plus besoin, au Royaume-Uni et partout dans le monde. En tant que partie officielle du Mouvement international de la Croix-Rouge et du Croissant-Rouge, elle propose une large gamme d’aides, notamment des formations aux premiers secours, des services de santé et d’aide sociale, ainsi que des interventions d’urgence.</target>
+</trans-unit>
+      </group>
+      <trans-unit id="tu10" xml:space="preserve" approved="yes">
+<source xml:lang="en"><bpt id="1">[</bpt>Learn more →<ept id="1">](https://www.redcross.org.uk)</ept></source>
+<target xml:lang="fr" state="final"><bpt id="1">[</bpt>En savoir plus →<ept id="1">](https://www.redcross.org.uk)</ept></target>
+</trans-unit>
+      <group id="sd1_ssf9" resname="sub-filter:sd1">
+</group>
+      <group id="sd1_ssf10" resname="sub-filter:sd1">
+        <trans-unit id="sd1_sf10_tu2" resname="sd1_2" restype="x-alt" xml:space="preserve" approved="yes">
+<source xml:lang="en">British Red Cross Logo</source>
+<target xml:lang="fr" state="final">British Red Cross Logo</target>
+</trans-unit>
+        <trans-unit id="sd1_sf10_tu1" resname="sd1_4" xml:space="preserve" approved="yes">
+<source xml:lang="en">
+    <ph id="1">[#$sd1_sf10_dp2]</ph>
+  </source>
+<target xml:lang="fr" state="final">
+    <ph id="1">[#$sd1_sf10_dp2]</ph>
+  </target>
+</trans-unit>
+      </group>
+      <group id="sd1_ssf11" resname="sub-filter:sd1">
+        <trans-unit id="sd1_sf11_tu1" resname="sd1_2" restype="x-paragraph" xml:space="preserve" approved="yes">
+<source xml:lang="en">Netherlands Red Cross:<ph id="1">&lt;br&gt;</ph>
+      The Netherlands Red Cross (Rode Kruis) helps people in need during emergencies, conflicts and disasters. As official part of the International Red Cross and Red Crescent Movement, they focus on emergency response, volunteer assistance, first aid at events, first aid training, and assisted self-reliance, dedicated to providing assistance to those affected by disasters and conflicts. The organization is committed to principles such as humanity, impartiality, and neutrality.</source>
+<target xml:lang="fr" state="final">Croix-Rouge néerlandaise :<ph id="1">&lt;br&gt;</ph>
+      La Croix-Rouge néerlandaise (Rode Kruis) aide les personnes dans le besoin lors d’urgences, de conflits et de catastrophes. En tant que partie officielle du Mouvement international de la Croix-Rouge et du Croissant-Rouge, elle se concentre sur les interventions d’urgence, l’assistance bénévole, les premiers secours lors d’événements, la formation aux premiers secours et l’autonomie accompagnée, avec pour objectif d’apporter une aide aux personnes touchées par des catastrophes et des conflits. L’organisation est attachée à des principes tels que l’humanité, l’impartialité et la neutralité.</target>
+</trans-unit>
+      </group>
+      <trans-unit id="tu11" xml:space="preserve" approved="yes">
+<source xml:lang="en"><bpt id="1">[</bpt>Learn more →<ept id="1">](https://www.rodekruis.nl/en/)</ept></source>
+<target xml:lang="fr" state="final"><bpt id="1">[</bpt>En savoir plus →<ept id="1">](https://www.rodekruis.nl/en/)</ept></target>
+</trans-unit>
+      <group id="sd1_ssf12" resname="sub-filter:sd1">
+</group>
+      <group id="sd1_ssf13" resname="sub-filter:sd1">
+        <trans-unit id="sd1_sf13_tu2" resname="sd1_2" restype="x-alt" xml:space="preserve" approved="yes">
+<source xml:lang="en">Netherlands Red Cross Logo</source>
+<target xml:lang="fr" state="final">Vétérans Red Cross Logo</target>
+</trans-unit>
+        <trans-unit id="sd1_sf13_tu1" resname="sd1_4" xml:space="preserve" approved="yes">
+<source xml:lang="en">
+    <ph id="1">[#$sd1_sf13_dp2]</ph>
+  </source>
+<target xml:lang="fr" state="final">
+    <ph id="1">[#$sd1_sf13_dp2]</ph>
+  </target>
+</trans-unit>
+      </group>
+      <group id="sd1_ssf14" resname="sub-filter:sd1">
+        <trans-unit id="sd1_sf14_tu1" resname="sd1_2" restype="x-paragraph" xml:space="preserve" approved="yes">
+<source xml:lang="en">Heidelberg Institute for Geoinformation Technology (HeiGIT):<ph id="1">&lt;br&gt;</ph>
+      The Heidelberg Institute for Geoinformation Technology (HeiGIT) is a research institute specializing in geoinformatics and its application in addressing societal challenges. Affiliated with Heidelberg University, HeiGIT focuses on developing innovative solutions that leverage geographic information systems (GIS) and spatial technologies. The institute's work extends to areas such as disaster management, mobility, and environmental monitoring and align with its vision "A better society and environment through the improvement of free geoinformation and geoinformation technology".</source>
+<target xml:lang="fr" state="final">Institut de technologie de géoinformation d'Heidelberg (HeiGIT) : <ph id="1">&lt;br&gt;</ph>
+      L’Institut de technologie de géoinformation de Heidelberg (HeiGIT) est un institut de recherche spécialisé en géoinformatique et dans son application pour répondre aux défis sociétaux. Affilié à l’Université de Heidelberg, HeiGIT se concentre sur le développement de solutions innovantes qui s’appuient sur les systèmes d’information géographique (SIG) et les technologies spatiales. Les travaux de l’institut s’étendent à des domaines tels que la gestion des catastrophes, la mobilité et la surveillance environnementale, et s’alignent sur sa vision : « Une société et un environnement meilleurs grâce à l’amélioration de la géoinformation libre et de la technologie de géoinformation ».</target>
+</trans-unit>
+      </group>
+      <trans-unit id="tu12" xml:space="preserve" approved="yes">
+<source xml:lang="en"><bpt id="1">[</bpt>Learn more →<ept id="1">](https://heigit.org)</ept>
+</source>
+<target xml:lang="fr" state="final"><bpt id="1">[</bpt>En savoir plus →<ept id="1">](https://heigit.org)</ept>
+</target>
+</trans-unit>
+      <group id="sd1_ssf16" resname="sub-filter:sd1">
+</group>
+      <group id="sd1_ssf17" resname="sub-filter:sd1">
+        <trans-unit id="sd1_sf17_tu2" resname="sd1_2" restype="x-alt" xml:space="preserve" approved="yes">
+<source xml:lang="en">HeiGIT Logo</source>
+<target xml:lang="fr" state="final">Logo HeiGIT</target>
+</trans-unit>
+        <trans-unit id="sd1_sf17_tu1" resname="sd1_4" xml:space="preserve" approved="yes">
+<source xml:lang="en">
+    <ph id="1">[#$sd1_sf17_dp2]</ph>
+  </source>
+<target xml:lang="fr" state="final">
+    <ph id="1">[#$sd1_sf17_dp2]</ph>
+  </target>
+</trans-unit>
+      </group>
+      <trans-unit id="tu13" xml:space="preserve" approved="yes">
+<source xml:lang="en">To achieve the goal of creating a complete and comprehensive platform, we rely on a variety of sources to enhance the content we put together. Resources from our cooperating partners are provided to us, and thus, don't require additional citation. However, we do strive to provide sources, links, citations, and acknowledgments to other sources we may use throughout the platform.</source>
+<target xml:lang="fr" state="final">Pour atteindre l’objectif de créer une plateforme complète et exhaustive, nous nous appuyons sur diverses sources afin d’enrichir le contenu que nous rassemblons. Les ressources de nos partenaires de coopération nous sont fournies et ne nécessitent donc pas de citation supplémentaire. Toutefois, nous nous efforçons de fournir des sources, des liens, des citations et des remerciements pour les autres sources que nous pouvons utiliser sur l’ensemble de la plateforme.</target>
+</trans-unit>
+      <trans-unit id="tu14" xml:space="preserve" approved="yes">
+<source xml:lang="en">Thank you for visiting our <bpt id="1">**</bpt>GIS Training Resource Center<ept id="1">**</ept> and we hope you find the information we provide to be useful and informative. ❤️<ph id="2">  </ph>
+If you have any questions or concerns, please don't hesitate to contact us:<ph id="3">  </ph>
+gis-training-platform@heigit.org</source>
+<target xml:lang="fr" state="final">Merci de visiter notre <bpt id="1">**</bpt>Centre de ressources pour la formation SIG<ept id="1">**</ept> ; nous espérons que les informations que nous fournissons vous seront utiles et instructives. ❤️<ph id="2">  </ph>
+Si vous avez des questions ou des préoccupations, n’hésitez pas à nous contacter : <ph id="3">  </ph>
+gis-training-platform@heigit.org</target>
+</trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_raster_basic_wiki.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Basic Raster Operations <bpt id="1">&lt;a id="basic-raster-operations"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Basic Raster Operations <bpt id="1">&lt;a id="basic-raster-operations"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Zonal statistics <bpt id="1">&lt;a id="zonal-statistics"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Zonal statistics <bpt id="1">&lt;a id="zonal-statistics"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">The <ph id="1">`Zonal Statistics`</ph> allows the combination of vector and raster data.</source>
+<target xml:lang="fr">The <ph id="1">`Zonal Statistics`</ph> allows the combination of vector and raster data.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">It calculates the statistics for each vector feature on the basis of the raster layer (see table below).</source>
+<target xml:lang="fr">It calculates the statistics for each vector feature on the basis of the raster layer (see table below).</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Statistic</source>
+<target xml:lang="fr">Statistic</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Count</source>
+<target xml:lang="fr">Count</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Number of cells with valid values in each zone.</source>
+<target xml:lang="fr">Number of cells with valid values in each zone.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Sum</source>
+<target xml:lang="fr">Sum</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Total sum of values within each zone.</source>
+<target xml:lang="fr">Total sum of values within each zone.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Mean</source>
+<target xml:lang="fr">Mean</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Average value within each zone.</source>
+<target xml:lang="fr">Average value within each zone.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Median</source>
+<target xml:lang="fr">Median</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Middle value in the distribution within zones.</source>
+<target xml:lang="fr">Middle value in the distribution within zones.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Standard Deviation</source>
+<target xml:lang="fr">Standard Deviation</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Measure of the amount of variation or dispersion.</source>
+<target xml:lang="fr">Measure of the amount of variation or dispersion.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Minimum</source>
+<target xml:lang="fr">Minimum</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Lowest value within each zone.</source>
+<target xml:lang="fr">Lowest value within each zone.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Maximum</source>
+<target xml:lang="fr">Maximum</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Highest value within each zone.</source>
+<target xml:lang="fr">Highest value within each zone.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Range</source>
+<target xml:lang="fr">Range</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Difference between the maximum and minimum values.</source>
+<target xml:lang="fr">Difference between the maximum and minimum values.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Minority</source>
+<target xml:lang="fr">Minority</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Least frequently occurring value within zones.</source>
+<target xml:lang="fr">Least frequently occurring value within zones.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Majority</source>
+<target xml:lang="fr">Majority</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Most frequently occurring value within zones.</source>
+<target xml:lang="fr">Most frequently occurring value within zones.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Variety</source>
+<target xml:lang="fr">Variety</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Number of unique values within each zone.</source>
+<target xml:lang="fr">Number of unique values within each zone.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Variance</source>
+<target xml:lang="fr">Variance</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Measure of the spread of values within each zone.</source>
+<target xml:lang="fr">Measure of the spread of values within each zone.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`´Processing`</ph> → <ph id="2">`Toolbox`</ph> → Search for <ph id="3">`Zonal Statistics`</ph></source>
+<target xml:lang="fr">Click <ph id="1">`´Processing`</ph> → <ph id="2">`Toolbox`</ph> → Search for <ph id="3">`Zonal Statistics`</ph></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Input Layer`</ph>: Select your vector layer</source>
+<target xml:lang="fr"><ph id="1">`Input Layer`</ph>: Select your vector layer</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Raster Layer`</ph>: Select your raster layer</source>
+<target xml:lang="fr"><ph id="1">`Raster Layer`</ph>: Select your raster layer</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Statistics to calculate`</ph>: Here you can select the statistic you want to calculate. For example the mean temperature of SPI.</source>
+<target xml:lang="fr"><ph id="1">`Statistics to calculate`</ph>: Here you can select the statistic you want to calculate. For example the mean temperature of SPI.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Zonal Statistics`</ph>: Specify where you want to save the results and give it a good name.</source>
+<target xml:lang="fr"><ph id="1">`Zonal Statistics`</ph>: Specify where you want to save the results and give it a good name.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_2/en_qgis_geodata_concept.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Introduction to geodata and layers <bpt id="1">&lt;a id="introduction-to-geodata-and-layers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Introduction to geodata and layers <bpt id="1">&lt;a id="introduction-to-geodata-and-layers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Competences:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Competences:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">In this chapter, you will learn what <bpt id="1">__</bpt>geodata<ept id="1">__</ept> is, and understand the difference between <bpt id="2">__</bpt>vector and raster data<ept id="2">__</ept>. Furthermore, this chapter explains the <bpt id="3">__</bpt>layer concept<ept id="3">__</ept> of GIS-software, which is fundamental to every map you will create.</source>
+<target xml:lang="fr">In this chapter, you will learn what <bpt id="1">__</bpt>geodata<ept id="1">__</ept> is, and understand the difference between <bpt id="2">__</bpt>vector and raster data<ept id="2">__</ept>. Furthermore, this chapter explains the <bpt id="3">__</bpt>layer concept<ept id="3">__</ept> of GIS-software, which is fundamental to every map you will create.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">What is geodata? <bpt id="1">&lt;a id="what-is-geodata"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">What is geodata? <bpt id="1">&lt;a id="what-is-geodata"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Geodata, geospatial data, or geographic data is data that has geographical information. This means that the data refers to a location, that is defined by coordinates. It is similar to other forms of data that can be represented in tables (such as Excel spreadsheets or CSV files) but each item in the data set also holds coordinate information (see <ph id="1">{numref}</ph><ph id="2">`en_vector_raster`</ph>).GIS software helps us visualise and manipulate geodata in a 2D (or even 3D) space. There are two primary types of geographic data: <bpt id="3">**</bpt>vector data and raster data<ept id="3">**</ept>. Both types represent tangible or intangible things in the real world. However, how they store this data is quite different. Because of this, the manipulation and representation of these two types differs dramatically. Understanding the difference between these two types, and how to work with each type on its own, as well as combining both types, will be one of the main skills you will acquire when learning GIS.</source>
+<target xml:lang="fr">Geodata, geospatial data, or geographic data is data that has geographical information. This means that the data refers to a location, that is defined by coordinates. It is similar to other forms of data that can be represented in tables (such as Excel spreadsheets or CSV files) but each item in the data set also holds coordinate information (see <ph id="1">{numref}</ph><ph id="2">`en_vector_raster`</ph>).GIS software helps us visualise and manipulate geodata in a 2D (or even 3D) space. There are two primary types of geographic data: <bpt id="3">**</bpt>vector data and raster data<ept id="3">**</ept>. Both types represent tangible or intangible things in the real world. However, how they store this data is quite different. Because of this, the manipulation and representation of these two types differs dramatically. Understanding the difference between these two types, and how to work with each type on its own, as well as combining both types, will be one of the main skills you will acquire when learning GIS.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_vector_raster.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_vector_raster.png</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 500px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_vector_raster</ph></source>
+<target xml:lang="fr"><ph id="1">width: 500px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_vector_raster</ph></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Raster / vector concept (Source: Adapted from <bpt id="1">[</bpt>WikiMedia<ept id="1">](https://commons.wikimedia.org/wiki/File:Raster_vector_tikz.png)</ept>).
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">Raster / vector concept (Source: Adapted from <bpt id="1">[</bpt>WikiMedia<ept id="1">](https://commons.wikimedia.org/wiki/File:Raster_vector_tikz.png)</ept>).
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">What type of information can be stored in geodata is almost endless. It can hold information about the physical world - such as:</source>
+<target xml:lang="fr">What type of information can be stored in geodata is almost endless. It can hold information about the physical world - such as:</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">elevation (height) data</source>
+<target xml:lang="fr">elevation (height) data</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">environmental data (soils, climate, temperature, rainfall, information about
+weather events or natural phenomena, such as flooding extent)</source>
+<target xml:lang="fr">environmental data (soils, climate, temperature, rainfall, information about
+weather events or natural phenomena, such as flooding extent)</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">data about the infrastructure, buildings, transportation, etc.</source>
+<target xml:lang="fr">data about the infrastructure, buildings, transportation, etc.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">sociocultural or economic data - such as demographic data, administrative boundaries, social events, crime, etc.</source>
+<target xml:lang="fr">sociocultural or economic data - such as demographic data, administrative boundaries, social events, crime, etc.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Geodata usually represents data entries as <bpt id="1">__</bpt>geometries<ept id="1">__</ept> on a 2D canvas. These geometries can be points, lines, polygons, or even pixels and can represent various objects that exist in the physical world - such as roads, lakes, trees, etc. - or represent intangible objects - such as administrative boundaries, population numbers, health indicators, historical events, etc.</source>
+<target xml:lang="fr">Geodata usually represents data entries as <bpt id="1">__</bpt>geometries<ept id="1">__</ept> on a 2D canvas. These geometries can be points, lines, polygons, or even pixels and can represent various objects that exist in the physical world - such as roads, lakes, trees, etc. - or represent intangible objects - such as administrative boundaries, population numbers, health indicators, historical events, etc.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Vector data <bpt id="1">&lt;a id="vector-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Vector data <bpt id="1">&lt;a id="vector-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Vector data are digital features and they can store geographic/spatial information, as well as other data attributes. As such, they are ideal to visualise information on a map. Each feature can be displayed on a maps using one out of three geometries: <bpt id="1">__</bpt>points, lines, or polygons<ept id="1">__</ept> (see <ph id="2">{numref}</ph><ph id="3">`en_vector_data_overview`</ph>). A layer can only contain features with same type of geometry.</source>
+<target xml:lang="fr">Vector data are digital features and they can store geographic/spatial information, as well as other data attributes. As such, they are ideal to visualise information on a map. Each feature can be displayed on a maps using one out of three geometries: <bpt id="1">__</bpt>points, lines, or polygons<ept id="1">__</ept> (see <ph id="2">{numref}</ph><ph id="3">`en_vector_data_overview`</ph>). A layer can only contain features with same type of geometry.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_vector_data_overview.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_vector_data_overview.png</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 650px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_vector_data_overview</ph></source>
+<target xml:lang="fr"><ph id="1">width: 650px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_vector_data_overview</ph></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Vector data overview (Source: HeiGIT).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Vector data overview (Source: HeiGIT).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Point data usually only has one set of coordinates per data entry (longitude, latitude and sometimes elevation, usually referred to as x, y, and z).</source>
+<target xml:lang="fr">Point data usually only has one set of coordinates per data entry (longitude, latitude and sometimes elevation, usually referred to as x, y, and z).</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Lines are constructed by connecting multiple points which are saved as a single data entry.</source>
+<target xml:lang="fr">Lines are constructed by connecting multiple points which are saved as a single data entry.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Polygons are also constructed by connecting several points, but they form a closed geometry. Each geometry is then represented by a single data entry.</source>
+<target xml:lang="fr">Polygons are also constructed by connecting several points, but they form a closed geometry. Each geometry is then represented by a single data entry.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Each feature stores the location (as address or coordinates) and further attributes, e.g. name, ID, or any other sort of information (<ph id="1">{numref}</ph><ph id="2">`en_geodata_example_2`</ph>). Which geometry is used depends on the type of data that is represented. For example, a road might be represented by a line, a building footprint might be represented by polygon and a tree might be represented by a point.</source>
+<target xml:lang="fr">Each feature stores the location (as address or coordinates) and further attributes, e.g. name, ID, or any other sort of information (<ph id="1">{numref}</ph><ph id="2">`en_geodata_example_2`</ph>). Which geometry is used depends on the type of data that is represented. For example, a road might be represented by a line, a building footprint might be represented by polygon and a tree might be represented by a point.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_geodata_example_2.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_geodata_example_2.png</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_geodata_example_2</ph>
+<ph id="2">width: 700px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_geodata_example_2</ph>
+<ph id="2">width: 700px</ph></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Geographic information can be an address and/or GPS coordinates (Source: British Red Cross).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Geographic information can be an address and/or GPS coordinates (Source: British Red Cross).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Features are displayed on maps with a geometric representation, but they are made of information organized in tables (see <ph id="1">{numref}</ph><ph id="2">`Geodata_attribute_table_example`</ph>).</source>
+<target xml:lang="fr">Features are displayed on maps with a geometric representation, but they are made of information organized in tables (see <ph id="1">{numref}</ph><ph id="2">`Geodata_attribute_table_example`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Each row in the table will be one feature on the map, while each column will contain one attribute information (field).</source>
+<target xml:lang="fr">Each row in the table will be one feature on the map, while each column will contain one attribute information (field).</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Multiple attributes can be associated to each feature.</source>
+<target xml:lang="fr">Multiple attributes can be associated to each feature.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/Geodata_attribute_table_example.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/Geodata_attribute_table_example.png</ph></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: Geodata_attribute_table_example</ph>
+<ph id="2">width: 750px</ph></source>
+<target xml:lang="fr"><ph id="1">name: Geodata_attribute_table_example</ph>
+<ph id="2">width: 750px</ph></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">A data table in Microsoft Excel with geographic information. (Source: British Red Cross).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">A data table in Microsoft Excel with geographic information. (Source: British Red Cross).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><ph id="1">{numref}</ph><ph id="2">`example_geometric_vs_attribute_view`</ph> shows the same dataset displayed both as its geometric representation and as an attribute table.</source>
+<target xml:lang="fr"><ph id="1">{numref}</ph><ph id="2">`example_geometric_vs_attribute_view`</ph> shows the same dataset displayed both as its geometric representation and as an attribute table.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/example_geometric_and_attribute_view.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/example_geometric_and_attribute_view.png</ph></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: example_geometric_vs_attribute_view</ph>
+<ph id="2">width: 700 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: example_geometric_vs_attribute_view</ph>
+<ph id="2">width: 700 px</ph></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Each polygon on the left represents one row (feature) on the right. (Source: British Red Cross).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Each polygon on the left represents one row (feature) on the right. (Source: British Red Cross).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Vector file formats <bpt id="1">&lt;a id="vector-file-formats"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Vector file formats <bpt id="1">&lt;a id="vector-file-formats"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">There are several file formats for vector data. They each differ in how the geometries and attributes are stored. However, they still all only contain points, lines, or polygons. Some formats have advantages over others, while others are still used out of convention, although they are outdated.
+The following table gives a short description of commonly used vector file formats.</source>
+<target xml:lang="fr">There are several file formats for vector data. They each differ in how the geometries and attributes are stored. However, they still all only contain points, lines, or polygons. Some formats have advantages over others, while others are still used out of convention, although they are outdated.
+The following table gives a short description of commonly used vector file formats.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Filename extension</source>
+<target xml:lang="fr">Filename extension</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Name</source>
+<target xml:lang="fr">Name</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`.shp`</ph></source>
+<target xml:lang="fr"><ph id="1">`.shp`</ph></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Shapefile</source>
+<target xml:lang="fr">Shapefile</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">A shapefile is a vector data file format commonly used for geospatial analysis. Shapefiles store the location, geometry, and attribution of point, line, and polygon features. It's a common files format used by most GIS software and online mapping platforms. The format is old but still widely used geodata format. One shapefile can only contain one dataset. A complete shapefile has to consist of at least three different files (.shp, .shx, .dbf)</source>
+<target xml:lang="fr">A shapefile is a vector data file format commonly used for geospatial analysis. Shapefiles store the location, geometry, and attribution of point, line, and polygon features. It's a common files format used by most GIS software and online mapping platforms. The format is old but still widely used geodata format. One shapefile can only contain one dataset. A complete shapefile has to consist of at least three different files (.shp, .shx, .dbf)</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`.gpkg`</ph></source>
+<target xml:lang="fr"><ph id="1">`.gpkg`</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">GeoPackage</source>
+<target xml:lang="fr">GeoPackage</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">The new standard for geodata. GPKG files are an open, portable SQLite-based format for storing vector and raster geospatial data, compatible with various GIS platforms on desktop, web, and mobile. Can contain multiple datafiles (vector, raster and non-spatial data such as tables)</source>
+<target xml:lang="fr">The new standard for geodata. GPKG files are an open, portable SQLite-based format for storing vector and raster geospatial data, compatible with various GIS platforms on desktop, web, and mobile. Can contain multiple datafiles (vector, raster and non-spatial data such as tables)</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`.kml`</ph>/<ph id="2">`.kmz.`</ph></source>
+<target xml:lang="fr"><ph id="1">`.kml`</ph>/<ph id="2">`.kmz.`</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Keyhole Markup Language</source>
+<target xml:lang="fr">Keyhole Markup Language</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Geodata format for use with <bpt id="1">[</bpt>Google Earth<ept id="1">](https://earth.google.com/web/)</ept>. KMZ files are compressed versions of KML (Keyhole Markup Language) files used to store geographic data, such as points, paths, and polygons, along with any associated media like images and icons. Commonly used with Google Earth and other mapping software, KMZ files bundle both spatial data and resources in one compact file, making it easy to share interactive maps and visualizations.</source>
+<target xml:lang="fr">Geodata format for use with <bpt id="1">[</bpt>Google Earth<ept id="1">](https://earth.google.com/web/)</ept>. KMZ files are compressed versions of KML (Keyhole Markup Language) files used to store geographic data, such as points, paths, and polygons, along with any associated media like images and icons. Commonly used with Google Earth and other mapping software, KMZ files bundle both spatial data and resources in one compact file, making it easy to share interactive maps and visualizations.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`.gpx`</ph></source>
+<target xml:lang="fr"><ph id="1">`.gpx`</ph></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">GPS Exchange Format</source>
+<target xml:lang="fr">GPS Exchange Format</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Geodata format for the exchange of coordinates. For example for waypoints of tracks.</source>
+<target xml:lang="fr">Geodata format for the exchange of coordinates. For example for waypoints of tracks.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`.geojson`</ph></source>
+<target xml:lang="fr"><ph id="1">`.geojson`</ph></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">GeoJSON</source>
+<target xml:lang="fr">GeoJSON</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Open data format using Javascript Object Notation (JSON) to store geographic data. Can store multiple type of geometries in one file and is widely compatible with web and mobile applications.</source>
+<target xml:lang="fr">Open data format using Javascript Object Notation (JSON) to store geographic data. Can store multiple type of geometries in one file and is widely compatible with web and mobile applications.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`.gdb`</ph></source>
+<target xml:lang="fr"><ph id="1">`.gdb`</ph></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Geodatabase</source>
+<target xml:lang="fr">Geodatabase</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Designed for efficient data management, spatial analysis, and complex geospatial workflows. Geodatabase files are a proprietary Esri format for storing and managing large volumes of spatial data, including feature classes, tables, and relationships in a structured database.</source>
+<target xml:lang="fr">Designed for efficient data management, spatial analysis, and complex geospatial workflows. Geodatabase files are a proprietary Esri format for storing and managing large volumes of spatial data, including feature classes, tables, and relationships in a structured database.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">The different file formats have different use cases, as well as advantages or shortcomings.</source>
+<target xml:lang="fr">The different file formats have different use cases, as well as advantages or shortcomings.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">For instance, <bpt id="1">__</bpt>GeoJSON<ept id="1">__</ept> files cannot store projection info and are conventionally limited to the WGS84 ellipsoid. This makes it difficult to use GeoJSON files in projects where you are using region-specific projections or use projections based on different ellipsoids.</source>
+<target xml:lang="fr">For instance, <bpt id="1">__</bpt>GeoJSON<ept id="1">__</ept> files cannot store projection info and are conventionally limited to the WGS84 ellipsoid. This makes it difficult to use GeoJSON files in projects where you are using region-specific projections or use projections based on different ellipsoids.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Geodatabase<ept id="1">__</ept> and <bpt id="2">__</bpt>Geopackage<ept id="2">__</ept> are, unlike the other formats, databases. In GIS, databases store spatial data in structured, scalable systems that support multi-user access, complex queries, and large datasets, making them ideal for enterprise-level analysis and data management. Files, on the other hand, store data in individual, portable formats like Shapefiles, GeoJSON, or GeoPackage, which are easier to share and use offline but lack advanced querying capabilities and scalability.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Geodatabase<ept id="1">__</ept> and <bpt id="2">__</bpt>Geopackage<ept id="2">__</ept> are, unlike the other formats, databases. In GIS, databases store spatial data in structured, scalable systems that support multi-user access, complex queries, and large datasets, making them ideal for enterprise-level analysis and data management. Files, on the other hand, store data in individual, portable formats like Shapefiles, GeoJSON, or GeoPackage, which are easier to share and use offline but lack advanced querying capabilities and scalability.</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Shapefile structure <bpt id="1">&lt;a id="shapefile-structure"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Shapefile structure <bpt id="1">&lt;a id="shapefile-structure"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">A shapefile is a collection of separate files which commonly come in a single folder/directory. Some files are mandatory, others are optional (see <ph id="1">{numref}</ph><ph id="2">`en_shapefile_structure`</ph>). In order to have a functioning shapefile, you need to have all the mandatory files in the same folder.</source>
+<target xml:lang="fr">A shapefile is a collection of separate files which commonly come in a single folder/directory. Some files are mandatory, others are optional (see <ph id="1">{numref}</ph><ph id="2">`en_shapefile_structure`</ph>). In order to have a functioning shapefile, you need to have all the mandatory files in the same folder.</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_shapefile_structure.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_shapefile_structure.png</ph></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_shapefile_structure</ph>
+<ph id="2">width: 400 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_shapefile_structure</ph>
+<ph id="2">width: 400 px</ph></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>SHP, SHX<ept id="1">__</ept> and <bpt id="2">__</bpt>DBF<ept id="2">__</ept> are the <bpt id="3">__</bpt>mandatory<ept id="3">__</ept> files that every shapefile must contain to work properly. The SHP is the main file and contains the geometry.<ph id="4">  </ph>
+<ph id="5">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>SHP, SHX<ept id="1">__</ept> and <bpt id="2">__</bpt>DBF<ept id="2">__</ept> are the <bpt id="3">__</bpt>mandatory<ept id="3">__</ept> files that every shapefile must contain to work properly. The SHP is the main file and contains the geometry.<ph id="4">  </ph>
+<ph id="5">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Raster data <bpt id="1">&lt;a id="raster-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Raster data <bpt id="1">&lt;a id="raster-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Another type of geospatial data is raster data. Raster data consists of cells that are organized into a grid with rows and columns, thus forming a raster. Each cell, or pixel, contains a value which holds information (for example, temperature, or population density). Since raster data consists of pixels, aerial photographs or satellite imagery can also be used as raster data, if they have geographical coordinates (see <bpt id="1">[</bpt>module 3: Georeferencing<ept id="1">](/content/Module_3/en_qgis_georeferencing.md)</ept>).</source>
+<target xml:lang="fr">Another type of geospatial data is raster data. Raster data consists of cells that are organized into a grid with rows and columns, thus forming a raster. Each cell, or pixel, contains a value which holds information (for example, temperature, or population density). Since raster data consists of pixels, aerial photographs or satellite imagery can also be used as raster data, if they have geographical coordinates (see <bpt id="1">[</bpt>module 3: Georeferencing<ept id="1">](/content/Module_3/en_qgis_georeferencing.md)</ept>).</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Typical uses for raster data are:</source>
+<target xml:lang="fr">Typical uses for raster data are:</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">elevation data (often referred to as a digital elevation model or DEM)</source>
+<target xml:lang="fr">elevation data (often referred to as a digital elevation model or DEM)</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">precipitation data</source>
+<target xml:lang="fr">precipitation data</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">interpolated temperature data</source>
+<target xml:lang="fr">interpolated temperature data</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">population density</source>
+<target xml:lang="fr">population density</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">The value of each cell is usually visualised by assigning a color to a value. For elevation data, for example, a color ramp is usually used. For categorical data, such as landuse, color categories (such as green = forest; yellow = agricultural landuse, red = residential).</source>
+<target xml:lang="fr">The value of each cell is usually visualised by assigning a color to a value. For elevation data, for example, a color ramp is usually used. For categorical data, such as landuse, color categories (such as green = forest; yellow = agricultural landuse, red = residential).</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::{grid} </ph>2
+<ph id="2">::::{grid-item-card}</ph></source>
+<target xml:lang="fr"><ph id="1">:::::{grid} </ph>2
+<ph id="2">::::{grid-item-card}</ph></target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/raster_data_example_corine_LC.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/raster_data_example_corine_LC.png</ph></target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: raster_data_example_corine_LC</ph>
+<ph id="2">width: 350 px</ph>
+<ph id="3">align: left</ph></source>
+<target xml:lang="fr"><ph id="1">name: raster_data_example_corine_LC</ph>
+<ph id="2">width: 350 px</ph>
+<ph id="3">align: left</ph></target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">The Copernicus CORINE Landcover Dataset (Source: <bpt id="1">[</bpt>EEA/Copernicus<ept id="1">](https://land.copernicus.eu/en/map-viewer?product=130299ac96e54c30a12edd575eff80f7)</ept>).
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">The Copernicus CORINE Landcover Dataset (Source: <bpt id="1">[</bpt>EEA/Copernicus<ept id="1">](https://land.copernicus.eu/en/map-viewer?product=130299ac96e54c30a12edd575eff80f7)</ept>).
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid-item-card}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid-item-card}</ph></target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/NASADEM_Alps_example.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/NASADEM_Alps_example.png</ph></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: NASADEM_Alps_example</ph>
+<ph id="2">width: 300 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: NASADEM_Alps_example</ph>
+<ph id="2">width: 300 px</ph></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">The NASA DEM showing the alps (Source: <bpt id="1">[</bpt>NASA/USGS/JPL-CALTECH<ept id="1">](https://lpdaac.usgs.gov/products/nasadem_hgtv001/)</ept>).
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">The NASA DEM showing the alps (Source: <bpt id="1">[</bpt>NASA/USGS/JPL-CALTECH<ept id="1">](https://lpdaac.usgs.gov/products/nasadem_hgtv001/)</ept>).
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph>
+<ph id="2">:::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph>
+<ph id="2">:::::</ph></target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Raster values usually have only one value per cell, however, it can also have multiple (color) bands. Satellite imagery usually offers several bands to represent data collected from different parts of the light spectrum, which we can use to analyze different phenomena, such as the humidity of plants. Multiple bands means that you have more than one value per cell.</source>
+<target xml:lang="fr">Raster values usually have only one value per cell, however, it can also have multiple (color) bands. Satellite imagery usually offers several bands to represent data collected from different parts of the light spectrum, which we can use to analyze different phenomena, such as the humidity of plants. Multiple bands means that you have more than one value per cell.</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">The main spatial characteristics are the extent - the area the grid represents in the real world (10km², 100km²) - and the raster resolution - the size of each pixel. In <ph id="1">{numref}</ph><ph id="2">`en_quality_raster`</ph>, you can see two raster datasets with different resolutions.</source>
+<target xml:lang="fr">The main spatial characteristics are the extent - the area the grid represents in the real world (10km², 100km²) - and the raster resolution - the size of each pixel. In <ph id="1">{numref}</ph><ph id="2">`en_quality_raster`</ph>, you can see two raster datasets with different resolutions.</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_quality_raster.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_quality_raster.png</ph></target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 800px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_quality_raster</ph></source>
+<target xml:lang="fr"><ph id="1">width: 800px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_quality_raster</ph></target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Two raster datasets with different resolution covering the same region. (Source: <bpt id="1">[</bpt>CartONG<ept id="1">](https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_3_vector_raster_data)</ept>).
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">Two raster datasets with different resolution covering the same region. (Source: <bpt id="1">[</bpt>CartONG<ept id="1">](https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_3_vector_raster_data)</ept>).
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">In <ph id="1">{numref}</ph><ph id="2">`Vector`</ph> and <ph id="3">{numref}</ph><ph id="4">`Raster`</ph> you can see the same location, on the left as vector data, visualising streets and urban area, and on the right hand as raster data (satellite image), showing the land cover.</source>
+<target xml:lang="fr">In <ph id="1">{numref}</ph><ph id="2">`Vector`</ph> and <ph id="3">{numref}</ph><ph id="4">`Raster`</ph> you can see the same location, on the left as vector data, visualising streets and urban area, and on the right hand as raster data (satellite image), showing the land cover.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::{grid} </ph>2
+<ph id="2">::::{card} </ph>Vector</source>
+<target xml:lang="fr"><ph id="1">:::::{grid} </ph>2
+<ph id="2">::::{card} </ph>Vector</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_same_location_vector.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_same_location_vector.png</ph></target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 400px</ph>
+<ph id="2">name: Vector</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 400px</ph>
+<ph id="2">name: Vector</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Features represented with vector data. (Source: British Red Cross).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Features represented with vector data. (Source: British Red Cross).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{card} </ph>Raster</source>
+<target xml:lang="fr"><ph id="1">::::{card} </ph>Raster</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_same_location_raster.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_same_location_raster.png</ph></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 400px</ph>
+<ph id="2">name: Raster</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 400px</ph>
+<ph id="2">name: Raster</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">The same location represented as a raster image. (Source: British Red Cross).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The same location represented as a raster image. (Source: British Red Cross).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph>
+<ph id="2">:::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph>
+<ph id="2">:::::</ph></target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">Raster data formats <bpt id="1">&lt;a id="raster-data-formats"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Raster data formats <bpt id="1">&lt;a id="raster-data-formats"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">Raster data can have the following data formats:</source>
+<target xml:lang="fr">Raster data can have the following data formats:</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Filename extension</source>
+<target xml:lang="fr">Filename extension</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Name</source>
+<target xml:lang="fr">Name</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`.tif`</ph>/<ph id="2">`.tiff`</ph>/<ph id="3">`.geotiff`</ph></source>
+<target xml:lang="fr"><ph id="1">`.tif`</ph>/<ph id="2">`.tiff`</ph>/<ph id="3">`.geotiff`</ph></target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Tag Image File Format</source>
+<target xml:lang="fr">Tag Image File Format</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Common raster and image data format. Does not necessarily have georeferenced data. If a <ph id="1">`.tif`</ph> file is georeferenced it is referred to as GeoTIFF.</source>
+<target xml:lang="fr">Common raster and image data format. Does not necessarily have georeferenced data. If a <ph id="1">`.tif`</ph> file is georeferenced it is referred to as GeoTIFF.</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`.nc`</ph></source>
+<target xml:lang="fr"><ph id="1">`.nc`</ph></target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">netCDF</source>
+<target xml:lang="fr">netCDF</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Standard data format for scientific data like speed or temperature. Can be a raster file. Can contain multiple datasets</source>
+<target xml:lang="fr">Standard data format for scientific data like speed or temperature. Can be a raster file. Can contain multiple datasets</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`.asc`</ph></source>
+<target xml:lang="fr"><ph id="1">`.asc`</ph></target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">Esri ASCII Grid files</source>
+<target xml:lang="fr">Esri ASCII Grid files</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">Old, simple raster file format, always with georeferenced data</source>
+<target xml:lang="fr">Old, simple raster file format, always with georeferenced data</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>The advantage of geodatabases</source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>The advantage of geodatabases</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Databases such as Geodatabase (<ph id="1">`.gdb`</ph>) or Geopackage (<ph id="2">`gkpg`</ph>) can also hold raster layers.</source>
+<target xml:lang="fr">Databases such as Geodatabase (<ph id="1">`.gdb`</ph>) or Geopackage (<ph id="2">`gkpg`</ph>) can also hold raster layers.</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">The layer concept <bpt id="1">&lt;a id="the-layer-concept"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">The layer concept <bpt id="1">&lt;a id="the-layer-concept"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">GIS software helps us visualise geographic data. It does so by displaying the geometries or raster cells on a 2D canvas. However, when creating a map, we are using multiple datasets at once. Every type of geographic data, such as raster data, polygons, points, or lines, is usually stored inside a <bpt id="1">__</bpt>layer<ept id="1">__</ept>. Each layer consists of geographic objects of the same type (line, polygon, raster, ...). GIS software displays these layers on top of each other and let's you rearrange the order of these layer, in order to create insightful maps (see <ph id="2">{numref}</ph><ph id="3">`en_layer`</ph>).</source>
+<target xml:lang="fr">GIS software helps us visualise geographic data. It does so by displaying the geometries or raster cells on a 2D canvas. However, when creating a map, we are using multiple datasets at once. Every type of geographic data, such as raster data, polygons, points, or lines, is usually stored inside a <bpt id="1">__</bpt>layer<ept id="1">__</ept>. Each layer consists of geographic objects of the same type (line, polygon, raster, ...). GIS software displays these layers on top of each other and let's you rearrange the order of these layer, in order to create insightful maps (see <ph id="2">{numref}</ph><ph id="3">`en_layer`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">By adding different layers, you build your map and can combine information from different sources. With those, you can then perform analyses or adapt the representation by using symbols and colors.</source>
+<target xml:lang="fr">By adding different layers, you build your map and can combine information from different sources. With those, you can then perform analyses or adapt the representation by using symbols and colors.</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_layer.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_layer.png</ph></target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 800px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_layer</ph></source>
+<target xml:lang="fr"><ph id="1">width: 800px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_layer</ph></target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">Layers in a GIS (Source: <bpt id="1">[</bpt>CartONG<ept id="1">](https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_1_layers)</ept>).
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">Layers in a GIS (Source: <bpt id="1">[</bpt>CartONG<ept id="1">](https://cartong.pages.gitlab.cartong.org/learning-corner/en/3_key_gis_concepts/3_3_key_concepts/3_3_1_layers)</ept>).
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>Now it's your turn!
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>Now it's your turn!
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">Practical experience is key to mastering GIS. Now is a good moment to apply what we've learned in the first exercise of module 2.</source>
+<target xml:lang="fr">Practical experience is key to mastering GIS. Now is a good moment to apply what we've learned in the first exercise of module 2.</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:class-card: sd-text-center sd-rounded-2 sd-border-1</ph>
+<ph id="3">:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept_ex1.html</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:class-card: sd-text-center sd-rounded-2 sd-border-1</ph>
+<ph id="3">:link: https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_geodata_concept_ex1.html</ph></target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Module 2 Exercise 1: Understanding Geodata<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Module 2 Exercise 1: Understanding Geodata<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">Data import <bpt id="1">&lt;a id="data-import"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data import <bpt id="1">&lt;a id="data-import"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">Before you can start creating maps in QGIS, you will need to load your data into QGIS. Depending on which file format you want to import, the process differs slightly.</source>
+<target xml:lang="fr">Before you can start creating maps in QGIS, you will need to load your data into QGIS. Depending on which file format you want to import, the process differs slightly.</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">Vector data import <bpt id="1">&lt;a id="vector-data-import"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Vector data import <bpt id="1">&lt;a id="vector-data-import"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">Typical vector data formats are Shapefile (<ph id="1">`.shp`</ph>) and GeoPackage (<ph id="2">`.gpkg`</ph>). The process of importing vector data in either of the two formats is the same.</source>
+<target xml:lang="fr">Typical vector data formats are Shapefile (<ph id="1">`.shp`</ph>) and GeoPackage (<ph id="2">`.gpkg`</ph>). The process of importing vector data in either of the two formats is the same.</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">QGIS offers a few ways to load vector data. The most immediate is via drag-and-drop, where you simply drag the data files you want to add from your file browser into the QGIS window. Another method is via the "<bpt id="1">__</bpt>Data Source Manager<ept id="1">__</ept>" (<ph id="2">`Layer`</ph> → <ph id="3">`Data Source Manager`</ph>). You can also open the Data Source Manager with the keyboard-shortcut <bpt id="4">&lt;kbd></bpt>CTRL<ept id="4">&lt;/kbd></ept> + <bpt id="5">&lt;kbd></bpt>L<ept id="5">&lt;/kbd></ept>.</source>
+<target xml:lang="fr">QGIS offers a few ways to load vector data. The most immediate is via drag-and-drop, where you simply drag the data files you want to add from your file browser into the QGIS window. Another method is via the "<bpt id="1">__</bpt>Data Source Manager<ept id="1">__</ept>" (<ph id="2">`Layer`</ph> → <ph id="3">`Data Source Manager`</ph>). You can also open the Data Source Manager with the keyboard-shortcut <bpt id="4">&lt;kbd></bpt>CTRL<ept id="4">&lt;/kbd></ept> + <bpt id="5">&lt;kbd></bpt>L<ept id="5">&lt;/kbd></ept>.</target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Note}</ph>
+GeoPackage files can contain multiple datasets and even whole QGIS projects. When you load a GeoPackage in QGIS, a window will appear where you can select the datasets you want to load.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Note}</ph>
+GeoPackage files can contain multiple datasets and even whole QGIS projects. When you load a GeoPackage in QGIS, a window will appear where you can select the datasets you want to load.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">Open vector data via the Data Source Manager <bpt id="1">&lt;a id="open-vector-data-via-the-data-source-manager"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Open vector data via the Data Source Manager <bpt id="1">&lt;a id="open-vector-data-via-the-data-source-manager"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add Vector Layer...`</ph>. This will open the Data Source Manager.</source>
+<target xml:lang="fr">Click on <ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add Vector Layer...`</ph>. This will open the Data Source Manager.</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en">Click on the three points <bpt id="1">![</bpt><ept id="1">](/fig/Three_points.png)</ept> and navigate to your
+   vector file.</source>
+<target xml:lang="fr">Click on the three points <bpt id="1">![</bpt><ept id="1">](/fig/Three_points.png)</ept> and navigate to your
+   vector file.</target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en">Select the file and click <ph id="1">`Open`</ph>. More options will appear. In most cases, you can leave these options as they are.</source>
+<target xml:lang="fr">Select the file and click <ph id="1">`Open`</ph>. More options will appear. In most cases, you can leave these options as they are.</target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">Back in the QGIS window, click <ph id="1">`Add`</ph>.</source>
+<target xml:lang="fr">Back in the QGIS window, click <ph id="1">`Add`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Attention}</ph>
+QGIS only lets you import <bpt id="2">__</bpt>unzipped<ept id="2">__</ept> shapefiles. Make sure to unzip your data files before importing them into QGIS.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Attention}</ph>
+QGIS only lets you import <bpt id="2">__</bpt>unzipped<ept id="2">__</ept> shapefiles. Make sure to unzip your data files before importing them into QGIS.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Importing vector data via the Data Source Manager</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Importing vector data via the Data Source Manager</target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en">Open vector data via drag-and-drop <bpt id="1">&lt;a id="open-vector-data-via-drag-and-drop"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Open vector data via drag-and-drop <bpt id="1">&lt;a id="open-vector-data-via-drag-and-drop"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">QGIS lets you open data in your QGIS project by simply dragging the files from your file browser onto your QGIS window. Shapefiles contain only one layer per shapefile, which will be added automatically into you layer panel. Geopackage files (<ph id="1">`.gpkg`</ph>) can contain multiple layers in a single file. If you add a geopackage file, a new window will open where you will be prompted to select the layers you want to add to your project.</source>
+<target xml:lang="fr">QGIS lets you open data in your QGIS project by simply dragging the files from your file browser onto your QGIS window. Shapefiles contain only one layer per shapefile, which will be added automatically into you layer panel. Geopackage files (<ph id="1">`.gpkg`</ph>) can contain multiple layers in a single file. If you add a geopackage file, a new window will open where you will be prompted to select the layers you want to add to your project.</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Importing vector data via drag-and-drop
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Importing vector data via drag-and-drop
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en">Delimited text import (.csv, .txt) <bpt id="1">&lt;a id="delimited-text-import-csv-txt"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Delimited text import (.csv, .txt) <bpt id="1">&lt;a id="delimited-text-import-csv-txt"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en">In your GIS-career, you will come across geodata in the  format of delimited text files, such as <ph id="1">`.csv`</ph> files (Comma Separated Values). These files contain tabular data, which can be opened by programs such as Microsoft Excel. They contain geographical or positional information as point coordinates in separated columns (for example, latitude and longitude, or x- and y-coordinates), or as "Well Known Text" (WKT), which represents complex geometries, such as polygons or lines.</source>
+<target xml:lang="fr">In your GIS-career, you will come across geodata in the  format of delimited text files, such as <ph id="1">`.csv`</ph> files (Comma Separated Values). These files contain tabular data, which can be opened by programs such as Microsoft Excel. They contain geographical or positional information as point coordinates in separated columns (for example, latitude and longitude, or x- and y-coordinates), or as "Well Known Text" (WKT), which represents complex geometries, such as polygons or lines.</target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en">Open Delimited Text Layer <bpt id="1">&lt;a id="open-delimited-text-layer"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Open Delimited Text Layer <bpt id="1">&lt;a id="open-delimited-text-layer"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Tip}</ph>
+To load data from spreadsheets such as Comma Separated Value (<ph id="2">`.csv`</ph>) or Excel (<ph id="3">`.xlsx`</ph>), the datasets need to have columns containing geometry - this is most often in the form of latitude (Y field) and longitude (X field), but might also be in other formats, such as WKT. In this case, you can also have complex geometries in your delimited text file.<ph id="4">  </ph>
+<ph id="5">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Tip}</ph>
+To load data from spreadsheets such as Comma Separated Value (<ph id="2">`.csv`</ph>) or Excel (<ph id="3">`.xlsx`</ph>), the datasets need to have columns containing geometry - this is most often in the form of latitude (Y field) and longitude (X field), but might also be in other formats, such as WKT. In this case, you can also have complex geometries in your delimited text file.<ph id="4">  </ph>
+<ph id="5">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_import_delimeted_text.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_import_delimeted_text.png</ph></target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_import_delimeted_text</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_import_delimeted_text</ph></target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en">Import delimited text in QGIS 3.36.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Import delimited text in QGIS 3.36.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Open Delimited Text Layer`</ph>.</source>
+<target xml:lang="fr"><ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Open Delimited Text Layer`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`File name`</ph> click on the three points <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept> and navigate to your CSV file and click <ph id="3">`Open`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`File name`</ph> click on the three points <bpt id="2">![</bpt><ept id="2">](/fig/Three_points.png)</ept> and navigate to your CSV file and click <ph id="3">`Open`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`File Format`</ph>: Here you can specify which delimiter is used in the file you want to import. In a standard CSV file, commas <ph id="2">`,`</ph> are used. If this is not the case, select <ph id="3">`Custom delimiters`</ph>. Here you can choose the exact delimiter used in your file.</source>
+<target xml:lang="fr"><ph id="1">`File Format`</ph>: Here you can specify which delimiter is used in the file you want to import. In a standard CSV file, commas <ph id="2">`,`</ph> are used. If this is not the case, select <ph id="3">`Custom delimiters`</ph>. Here you can choose the exact delimiter used in your file.</target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Tip}</ph>
+To find out which delimiter is used you can open your .csv file in Notepad or Excel. There you can check which delimiter is used to separate the information.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Tip}</ph>
+To find out which delimiter is used you can open your .csv file in Notepad or Excel. There you can check which delimiter is used to separate the information.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_delimited_text_fileformat.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_delimited_text_fileformat.png</ph></target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_delimited_text_fileformat</ph></source>
+<target xml:lang="fr"><ph id="1">width: 600px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: en_delimited_text_fileformat</ph></target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en">Adjusting the file format parameters while importing a delimited text layer into QGIS.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Adjusting the file format parameters while importing a delimited text layer into QGIS.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Geometry definition`</ph>: In this section, you specify which columns of the file contain the spatial information to georeference the data on the map. If the file has a column containing <bpt id="2">__</bpt>latitude<ept id="2">__</ept> and another with <bpt id="3">__</bpt>longitude<ept id="3">__</ept> data, you can use them to georeferenced the data. Check <ph id="4">`Point Coordinates`</ph> if the <ph id="5">`.csv`</ph>-file contains point data. Select for <ph id="6">`X field`</ph> “LONGITUDE” and for <ph id="7">`Y field`</ph> “LATITUDE”.</source>
+<target xml:lang="fr"><ph id="1">`Geometry definition`</ph>: In this section, you specify which columns of the file contain the spatial information to georeference the data on the map. If the file has a column containing <bpt id="2">__</bpt>latitude<ept id="2">__</ept> and another with <bpt id="3">__</bpt>longitude<ept id="3">__</ept> data, you can use them to georeferenced the data. Check <ph id="4">`Point Coordinates`</ph> if the <ph id="5">`.csv`</ph>-file contains point data. Select for <ph id="6">`X field`</ph> “LONGITUDE” and for <ph id="7">`Y field`</ph> “LATITUDE”.</target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Geometry CRS`</ph> select the coordinate reference system (CRS). By default, QGIS will select the CRS of the project. If the file does not have spatial information choose the option <ph id="2">`No geometry (attribute only table)`</ph>.</source>
+<target xml:lang="fr">Under <ph id="1">`Geometry CRS`</ph> select the coordinate reference system (CRS). By default, QGIS will select the CRS of the project. If the file does not have spatial information choose the option <ph id="2">`No geometry (attribute only table)`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Add`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Add`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Opening delimited text files in QGIS</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Opening delimited text files in QGIS</target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en">Raster data import <bpt id="1">&lt;a id="raster-data-import"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Raster data import <bpt id="1">&lt;a id="raster-data-import"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en">The import of raster data works in the same way as for vector data. You can either drag-and-drop the raster files onto your QGIS window, or open then through the "Data Source Manager".</source>
+<target xml:lang="fr">The import of raster data works in the same way as for vector data. You can either drag-and-drop the raster files onto your QGIS window, or open then through the "Data Source Manager".</target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Open raster data via the Data Source Manager</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Open raster data via the Data Source Manager</target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add Raster Layer`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add Raster Layer`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en">Click on the three points <bpt id="1">![</bpt><ept id="1">](/fig/Three_points.png)</ept> and navigate to your raster file.</source>
+<target xml:lang="fr">Click on the three points <bpt id="1">![</bpt><ept id="1">](/fig/Three_points.png)</ept> and navigate to your raster file.</target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en">Select the file and click <ph id="1">`Open`</ph>.</source>
+<target xml:lang="fr">Select the file and click <ph id="1">`Open`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu175" xml:space="preserve">
+<source xml:lang="en">Back in QGIS click <ph id="1">`Add`</ph>.</source>
+<target xml:lang="fr">Back in QGIS click <ph id="1">`Add`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu176" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu177" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Open raster data via drag-and-drop</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Open raster data via drag-and-drop</target>
+</trans-unit>
+<trans-unit id="tu178" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu179" xml:space="preserve">
+<source xml:lang="en">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu180" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu181" xml:space="preserve">
+<source xml:lang="en">Check whether you know the key concepts from this chapter by answering the questions below.</source>
+<target xml:lang="fr">Check whether you know the key concepts from this chapter by answering the questions below.</target>
+</trans-unit>
+<trans-unit id="tu182" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Define Geodata. What does it distinguish from regular tabular data?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Define Geodata. What does it distinguish from regular tabular data?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu183" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer
+Geodata, or spatial data, refers to information that is associated with a specific location on the Earth's surface. It includes both the geometry (the spatial component) and the attributes (the descriptive data). Unlike regular tabular data, which consists solely of rows and columns without any spatial reference, geodata has a geographic component that allows it to be mapped and analyzed in a spatial context.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer
+Geodata, or spatial data, refers to information that is associated with a specific location on the Earth's surface. It includes both the geometry (the spatial component) and the attributes (the descriptive data). Unlike regular tabular data, which consists solely of rows and columns without any spatial reference, geodata has a geographic component that allows it to be mapped and analyzed in a spatial context.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu184" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What are the two main types of geodata and how do they store information?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What are the two main types of geodata and how do they store information?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu185" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer
+The two main types of geodata are:</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer
+The two main types of geodata are:</target>
+</trans-unit>
+<trans-unit id="tu186" xml:space="preserve">
+<source xml:lang="en">Vector Data: Represents geographic features using points, lines, and polygons. Each feature has associated attribute data stored in a table. Common formats include Shapefile (<ph id="1">`.shp`</ph>), GeoPackage (<ph id="2">`.gpkg`</ph>), and GeoJSON (<ph id="3">`.geojson`</ph>).</source>
+<target xml:lang="fr">Vector Data: Represents geographic features using points, lines, and polygons. Each feature has associated attribute data stored in a table. Common formats include Shapefile (<ph id="1">`.shp`</ph>), GeoPackage (<ph id="2">`.gpkg`</ph>), and GeoJSON (<ph id="3">`.geojson`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu187" xml:space="preserve">
+<source xml:lang="en">Raster Data: Represents geographic data as a matrix of cells (pixels), each with a value representing information, such as temperature or elevation. Common formats include GeoTIFF (<ph id="1">`.tif`</ph> or <ph id="2">`.tiff`</ph>), JPEG2000 (<ph id="3">`.jp2`</ph>), and Esri ASCII Grid (<ph id="4">`.asc`</ph>).</source>
+<target xml:lang="fr">Raster Data: Represents geographic data as a matrix of cells (pixels), each with a value representing information, such as temperature or elevation. Common formats include GeoTIFF (<ph id="1">`.tif`</ph> or <ph id="2">`.tiff`</ph>), JPEG2000 (<ph id="3">`.jp2`</ph>), and Esri ASCII Grid (<ph id="4">`.asc`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu188" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu189" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Give examples of real‑world phenomena or features that are better represented as vector data vs. raster data.<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Give examples of real‑world phenomena or features that are better represented as vector data vs. raster data.<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu190" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer
+<bpt id="2">__</bpt>Vector Data:<ept id="2">__</ept> Suitable for representing discrete features with well-defined boundaries, such as</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer
+<bpt id="2">__</bpt>Vector Data:<ept id="2">__</ept> Suitable for representing discrete features with well-defined boundaries, such as</target>
+</trans-unit>
+<trans-unit id="tu191" xml:space="preserve">
+<source xml:lang="en">Administrative boundaries (countries, districts)</source>
+<target xml:lang="fr">Administrative boundaries (countries, districts)</target>
+</trans-unit>
+<trans-unit id="tu192" xml:space="preserve">
+<source xml:lang="en">Roads and rivers</source>
+<target xml:lang="fr">Roads and rivers</target>
+</trans-unit>
+<trans-unit id="tu193" xml:space="preserve">
+<source xml:lang="en">Land parcels</source>
+<target xml:lang="fr">Land parcels</target>
+</trans-unit>
+<trans-unit id="tu194" xml:space="preserve">
+<source xml:lang="en">Buildings and infrastructure
+<bpt id="1">__</bpt>Raster Data:<ept id="1">__</ept> Suitable for continuous data that varies across space, such as</source>
+<target xml:lang="fr">Buildings and infrastructure
+<bpt id="1">__</bpt>Raster Data:<ept id="1">__</ept> Suitable for continuous data that varies across space, such as</target>
+</trans-unit>
+<trans-unit id="tu195" xml:space="preserve">
+<source xml:lang="en">Satellite imagery</source>
+<target xml:lang="fr">Satellite imagery</target>
+</trans-unit>
+<trans-unit id="tu196" xml:space="preserve">
+<source xml:lang="en">Elevation models (e.g, Digital Elevation Models or Terrain models)</source>
+<target xml:lang="fr">Elevation models (e.g, Digital Elevation Models or Terrain models)</target>
+</trans-unit>
+<trans-unit id="tu197" xml:space="preserve">
+<source xml:lang="en">Temperature or precipitation maps</source>
+<target xml:lang="fr">Temperature or precipitation maps</target>
+</trans-unit>
+<trans-unit id="tu198" xml:space="preserve">
+<source xml:lang="en">Land cover classification
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Land cover classification
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu199" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Describe the structure of a shapefile. What mandatory component files must accompany it?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Describe the structure of a shapefile. What mandatory component files must accompany it?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu200" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu201" xml:space="preserve">
+<source xml:lang="en">A Shapefile is a widely used vector data format that consists of at least three mandatory component files:</source>
+<target xml:lang="fr">A Shapefile is a widely used vector data format that consists of at least three mandatory component files:</target>
+</trans-unit>
+<trans-unit id="tu202" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`.shp`</ph>: Contains the geometry data (points, lines, or polygons).</source>
+<target xml:lang="fr"><ph id="1">`.shp`</ph>: Contains the geometry data (points, lines, or polygons).</target>
+</trans-unit>
+<trans-unit id="tu203" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`.shx`</ph>: Contains the shape index data, enabling fast spatial queries.</source>
+<target xml:lang="fr"><ph id="1">`.shx`</ph>: Contains the shape index data, enabling fast spatial queries.</target>
+</trans-unit>
+<trans-unit id="tu204" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`.dbf`</ph>: Contains attribute data in a tabular format, corresponding to each geometry.</source>
+<target xml:lang="fr"><ph id="1">`.dbf`</ph>: Contains attribute data in a tabular format, corresponding to each geometry.</target>
+</trans-unit>
+<trans-unit id="tu205" xml:space="preserve">
+<source xml:lang="en">It can also contain additional files such as <ph id="1">`.prj`</ph>. These files together, which share a name, make up the shapefile
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">It can also contain additional files such as <ph id="1">`.prj`</ph>. These files together, which share a name, make up the shapefile
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu206" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Explain the concept of a “layer” in GIS. Why do GIS systems use layers when building maps?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Explain the concept of a “layer” in GIS. Why do GIS systems use layers when building maps?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu207" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown}</ph>
+In GIS, a layer is a collection of geographic data representing a specific type of information, such as roads, rivers, or land use. Layers are stacked on top of each other to create a comprehensive map. Using layers allows for:</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown}</ph>
+In GIS, a layer is a collection of geographic data representing a specific type of information, such as roads, rivers, or land use. Layers are stacked on top of each other to create a comprehensive map. Using layers allows for:</target>
+</trans-unit>
+<trans-unit id="tu208" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Organized data management<ept id="1">__</ept>: Each layer can be edited or analyzed independently.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Organized data management<ept id="1">__</ept>: Each layer can be edited or analyzed independently.</target>
+</trans-unit>
+<trans-unit id="tu209" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Clear visualisation<ept id="1">__</ept>: Different types of data can be styled and displayed separately.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Clear visualisation<ept id="1">__</ept>: Different types of data can be styled and displayed separately.</target>
+</trans-unit>
+<trans-unit id="tu210" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Efficient analysis<ept id="1">__</ept>: Layers can be turned on or off to focus on specific aspects of the data.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Efficient analysis<ept id="1">__</ept>: Layers can be turned on or off to focus on specific aspects of the data.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu211" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Do you know how to import vector data into a QGIS project?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Do you know how to import vector data into a QGIS project?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu212" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer
+Vector data can be imported into a QGIS project by:</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer
+Vector data can be imported into a QGIS project by:</target>
+</trans-unit>
+<trans-unit id="tu213" xml:space="preserve">
+<source xml:lang="en">In the top bar, use the <ph id="1">`Layer`</ph> menu → <ph id="2">`Add vector layer`</ph>.</source>
+<target xml:lang="fr">In the top bar, use the <ph id="1">`Layer`</ph> menu → <ph id="2">`Add vector layer`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu214" xml:space="preserve">
+<source xml:lang="en">Dragging and dropping the vector file directly into the QGIS map canvas.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Dragging and dropping the vector file directly into the QGIS map canvas.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu215" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Where are the layers imported into a QGIS project saved?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Where are the layers imported into a QGIS project saved?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu216" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer
+The layers are not stored inside of a QGIS project. When layers are imported into a QGIS project, they are not moved or copied. Instead, QGIS stores the path to the data source in the project file (.qgz). If the data source is moved or deleted, QGIS will not be able to locate it unless the path is updated.
+Additionally, manipulating the layer will change the original dataset.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer
+The layers are not stored inside of a QGIS project. When layers are imported into a QGIS project, they are not moved or copied. Instead, QGIS stores the path to the data source in the project file (.qgz). If the data source is moved or deleted, QGIS will not be able to locate it unless the path is updated.
+Additionally, manipulating the layer will change the original dataset.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu217" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>If you have a <ph id="2">`.csv`</ph> file or another delimited text file, what information must it contain in order to import it into QGIS as a point layer?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>If you have a <ph id="2">`.csv`</ph> file or another delimited text file, what information must it contain in order to import it into QGIS as a point layer?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu218" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer
+To import a <ph id="2">`.csv`</ph> or delimited text file as a point layer in QGIS, the file must:</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer
+To import a <ph id="2">`.csv`</ph> or delimited text file as a point layer in QGIS, the file must:</target>
+</trans-unit>
+<trans-unit id="tu219" xml:space="preserve">
+<source xml:lang="en">Contain a header row with field names</source>
+<target xml:lang="fr">Contain a header row with field names</target>
+</trans-unit>
+<trans-unit id="tu220" xml:space="preserve">
+<source xml:lang="en">Include at least two columns representing X (longitude) and Y (latitude) coordinates.</source>
+<target xml:lang="fr">Include at least two columns representing X (longitude) and Y (latitude) coordinates.</target>
+</trans-unit>
+<trans-unit id="tu221" xml:space="preserve">
+<source xml:lang="en">Ensure that the coordinate values are numeric and correctly formatted.</source>
+<target xml:lang="fr">Ensure that the coordinate values are numeric and correctly formatted.</target>
+</trans-unit>
+<trans-unit id="tu222" xml:space="preserve">
+<source xml:lang="en">QGIS uses the coordinate columns to plot the points on the map canvas.</source>
+<target xml:lang="fr">QGIS uses the coordinate columns to plot the points on the map canvas.</target>
+</trans-unit>
+<trans-unit id="tu223" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu224" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

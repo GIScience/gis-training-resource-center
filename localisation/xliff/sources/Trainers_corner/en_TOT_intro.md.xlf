@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Trainers_corner/en_TOT_intro.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Train of trainers introduction <bpt id="1">&lt;a id="train-of-trainers-introduction"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Train of trainers introduction <bpt id="1">&lt;a id="train-of-trainers-introduction"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Welcome to the trainer’s corner! Here you can find all the needed information about how to plan your training and teach GIS. This section presents an overview of the training platform and all the functions of the trainer’s corner.</source>
+<target xml:lang="fr">Welcome to the trainer’s corner! Here you can find all the needed information about how to plan your training and teach GIS. This section presents an overview of the training platform and all the functions of the trainer’s corner.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">What this platform offers <bpt id="1">&lt;a id="what-this-platform-offers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">What this platform offers <bpt id="1">&lt;a id="what-this-platform-offers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">This platform intends to make your life as a trainer easier by providing you with: explanatory articles called modules, exercises and a Wiki. The platform, however, does not eliminate the need to prepare and plan your training.</source>
+<target xml:lang="fr">This platform intends to make your life as a trainer easier by providing you with: explanatory articles called modules, exercises and a Wiki. The platform, however, does not eliminate the need to prepare and plan your training.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">🎓 The modules are intended to serve as references for participants who want to delve deeper into a topic or review concepts. Think of the modules as an enhanced version of PowerPoint slides that you would normally share with participants, providing them with comprehensive information. They can also serve as a guide for trainers to assess what participants should learn at different stages of their GIS education.</source>
+<target xml:lang="fr">🎓 The modules are intended to serve as references for participants who want to delve deeper into a topic or review concepts. Think of the modules as an enhanced version of PowerPoint slides that you would normally share with participants, providing them with comprehensive information. They can also serve as a guide for trainers to assess what participants should learn at different stages of their GIS education.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">✍️ The <bpt id="1">__</bpt>exercises<ept id="1">__</ept> encompass all the content covered in the modules. They range from smaller exercises focused on specific topics like the QGIS interface to larger-scale exercises covering entire modules. These exercises can be utilized in any order or format, including <bpt id="2">[</bpt>follow-along exercises or group work<ept id="2">](handson)</ept>. Additionally, trainers can assign exercises as homework for participants who are capable of completing them independently.</source>
+<target xml:lang="fr">✍️ The <bpt id="1">__</bpt>exercises<ept id="1">__</ept> encompass all the content covered in the modules. They range from smaller exercises focused on specific topics like the QGIS interface to larger-scale exercises covering entire modules. These exercises can be utilized in any order or format, including <bpt id="2">[</bpt>follow-along exercises or group work<ept id="2">](handson)</ept>. Additionally, trainers can assign exercises as homework for participants who are capable of completing them independently.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">📖 The Wiki serves as a support resource for both participants and trainers while using QGIS, whether during exercises or in day-to-day work. It provides trainers with the assurance that their participants have access to an updated, interactive resource to help solve challenges encountered while using QGIS.</source>
+<target xml:lang="fr">📖 The Wiki serves as a support resource for both participants and trainers while using QGIS, whether during exercises or in day-to-day work. It provides trainers with the assurance that their participants have access to an updated, interactive resource to help solve challenges encountered while using QGIS.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">In summary:</source>
+<target xml:lang="fr">In summary:</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{card} </ph>What the Platform offers ✔️
+||
+|---|
+|➕ Provide explanatory modules that can be used by the trainees as a reference and for reiterating and understanding content.|
+|➕ Provide large and small exercises that can be used for teaching.|
+|➕ A Wiki that provides practical resources and tasks for participants. |<ph id="3">  </ph>
+|➕ Tips and guidance on how to plan and teach a GIS training.|<ph id="4">  </ph>
+|➕ Tools to assess the GIS skill of participants before and after a training.|</source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{card} </ph>What the Platform offers ✔️
+||
+|---|
+|➕ Provide explanatory modules that can be used by the trainees as a reference and for reiterating and understanding content.|
+|➕ Provide large and small exercises that can be used for teaching.|
+|➕ A Wiki that provides practical resources and tasks for participants. |<ph id="3">  </ph>
+|➕ Tips and guidance on how to plan and teach a GIS training.|<ph id="4">  </ph>
+|➕ Tools to assess the GIS skill of participants before and after a training.|</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card} </ph>What the Platform doesn't offer❌
+||
+|---|
+|➖ No ready-to-use presentations.|
+|➖ No participant management.|
+|➖ Not intended to be a self-learning platform.|</source>
+<target xml:lang="fr"><ph id="1">:::{card} </ph>What the Platform doesn't offer❌
+||
+|---|
+|➖ No ready-to-use presentations.|
+|➖ No participant management.|
+|➖ Not intended to be a self-learning platform.|</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Your trainer journey <bpt id="1">&lt;a id="your-trainer-journey"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Your trainer journey <bpt id="1">&lt;a id="your-trainer-journey"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">This section will outline the function of all article in the trainer's corner and give an overview of the training platform.</source>
+<target xml:lang="fr">This section will outline the function of all article in the trainer's corner and give an overview of the training platform.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">The Article <bpt id="1">[</bpt><bpt id="2">__</bpt>How to Plan a GIS Training<ept id="2">__</ept><ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> provides a checklist of considerations when planning a training. Additionally, it includes a list of essential content for basic GIS training, aiding trainers in selecting exercises suitable for their audience.</source>
+<target xml:lang="fr">The Article <bpt id="1">[</bpt><bpt id="2">__</bpt>How to Plan a GIS Training<ept id="2">__</ept><ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> provides a checklist of considerations when planning a training. Additionally, it includes a list of essential content for basic GIS training, aiding trainers in selecting exercises suitable for their audience.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt><bpt id="2">__</bpt>Training Agenda and Handout<ept id="2">__</ept><ept id="1">](/content/Trainers_corner/en_training_graphical_outline.md)</ept> offers insights into various methods for efficiently providing administrative information to participants. This can range from a simple table in an email to a more elaborate Miro board.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt><bpt id="2">__</bpt>Training Agenda and Handout<ept id="2">__</ept><ept id="1">](/content/Trainers_corner/en_training_graphical_outline.md)</ept> offers insights into various methods for efficiently providing administrative information to participants. This can range from a simple table in an email to a more elaborate Miro board.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt><bpt id="2">__</bpt>How to Plan and Structure a GIS Training Session<ept id="2">__</ept><ept id="1">](/content/Trainers_corner/en_training_day_structure.md)</ept> delves into detailed strategies for structuring training sessions, particularly beneficial for novice trainers seeking confidence in conducting training sessions.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt><bpt id="2">__</bpt>How to Plan and Structure a GIS Training Session<ept id="2">__</ept><ept id="1">](/content/Trainers_corner/en_training_day_structure.md)</ept> delves into detailed strategies for structuring training sessions, particularly beneficial for novice trainers seeking confidence in conducting training sessions.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt><bpt id="2">__</bpt>How to Teach GIS<ept id="2">__</ept><ept id="1">](/content/Trainers_corner/en_how_to_teach_GIS.md)</ept> compiles best practices, tips, and experiences in teaching GIS, providing valuable insights and strategies for trainers to enhance their teaching methodologies.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt><bpt id="2">__</bpt>How to Teach GIS<ept id="2">__</ept><ept id="1">](/content/Trainers_corner/en_how_to_teach_GIS.md)</ept> compiles best practices, tips, and experiences in teaching GIS, providing valuable insights and strategies for trainers to enhance their teaching methodologies.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt><bpt id="2">__</bpt>Assessments in GIS Training: A Guide<ept id="2">__</ept><ept id="1">](/content/Trainers_corner/en_how_to_assessment.md)</ept> presents tools available on this platform to evaluate participants’ GIS skill levels before and after training sessions.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt><bpt id="2">__</bpt>Assessments in GIS Training: A Guide<ept id="2">__</ept><ept id="1">](/content/Trainers_corner/en_how_to_assessment.md)</ept> presents tools available on this platform to evaluate participants’ GIS skill levels before and after training sessions.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

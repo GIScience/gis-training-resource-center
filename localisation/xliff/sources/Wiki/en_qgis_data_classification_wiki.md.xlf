@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_data_classification_wiki.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Geodata Classification <bpt id="1">&lt;a id="geodata-classification"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Geodata Classification <bpt id="1">&lt;a id="geodata-classification"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Spatial data classification in GIS involves categorizing geographic information into distinct groups or classes based on shared characteristics. This process enhances the organization and interpretation of spatial data.</source>
+<target xml:lang="fr">Spatial data classification in GIS involves categorizing geographic information into distinct groups or classes based on shared characteristics. This process enhances the organization and interpretation of spatial data.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">The attributes of geospatial data are stored in a specific column within the attribute table. Essentially, we choose a column containing the specific characteristics of interest, allowing QGIS to group the data based on these selected attributes.</source>
+<target xml:lang="fr">The attributes of geospatial data are stored in a specific column within the attribute table. Essentially, we choose a column containing the specific characteristics of interest, allowing QGIS to group the data based on these selected attributes.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/classification_basic.drawio.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/classification_basic.drawio.png</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 800px</ph>
+<ph id="2">name: classification_basic_wiki</ph>
+<ph id="3">align: center</ph></source>
+<target xml:lang="fr"><ph id="1">width: 800px</ph>
+<ph id="2">name: classification_basic_wiki</ph>
+<ph id="3">align: center</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">QGIS offers several ways to classify geodata:</source>
+<target xml:lang="fr">QGIS offers several ways to classify geodata:</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Single-symbol classification<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_single_symbol_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Single-symbol classification<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_single_symbol_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Categorised classification<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorised_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Categorised classification<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_categorised_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Graduated Classification<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Graduated Classification<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_graduated_wiki.html)</ept></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

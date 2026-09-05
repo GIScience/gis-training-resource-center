@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_9/en_qgis_openrouteservice_tools.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">🚧 This section of the training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</source>
+<target xml:lang="fr">🚧 This section of the training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">(content:references:module9:ors-tools-plugin)=</source>
+<target xml:lang="fr">(content:references:module9:ors-tools-plugin)=</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Plugin: Openrouteservice (ORS) tools <bpt id="1">&lt;a id="plugin-openrouteservice-ors-tools"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Plugin: Openrouteservice (ORS) tools <bpt id="1">&lt;a id="plugin-openrouteservice-ors-tools"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Openrouteservice QGIS Plugin <bpt id="1">&lt;a id="openrouteservice-qgis-plugin"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Openrouteservice QGIS Plugin <bpt id="1">&lt;a id="openrouteservice-qgis-plugin"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Install the Plugin <bpt id="1">&lt;a id="install-the-plugin"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Install the Plugin <bpt id="1">&lt;a id="install-the-plugin"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Go under tab <ph id="1">`Plugins`</ph></source>
+<target xml:lang="fr">Go under tab <ph id="1">`Plugins`</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Manage and install plugins`</ph>, a new window will open up</source>
+<target xml:lang="fr">Click on <ph id="1">`Manage and install plugins`</ph>, a new window will open up</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Search for "ORS Tools" in search line and click <ph id="1">`Install plugin`</ph> (right bottom)</source>
+<target xml:lang="fr">Search for "ORS Tools" in search line and click <ph id="1">`Install plugin`</ph> (right bottom)</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Close the window</source>
+<target xml:lang="fr">Close the window</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">After a few seconds the plugin should appear under "Web" tab in QGIS as "ORS Tools"</source>
+<target xml:lang="fr">After a few seconds the plugin should appear under "Web" tab in QGIS as "ORS Tools"</target>
+</trans-unit>
+<trans-unit id="sd1_sf7_tu2" resname="sd1_1" restype="x-alt" xml:space="preserve">
+<source xml:lang="en">Icon</source>
+<target xml:lang="fr">Icon</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Open the "ORS tools" plugin - click on the ORS Tolls icon in the toolbar <ph id="1">[#$sd1_sf7_dp1]</ph></source>
+<target xml:lang="fr">Open the "ORS tools" plugin - click on the ORS Tolls icon in the toolbar <ph id="1">[#$sd1_sf7_dp1]</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">To make use of the ORS tools, you first need to sign up. Therefore click <ph id="1">`Sign Up`</ph></source>
+<target xml:lang="fr">To make use of the ORS tools, you first need to sign up. Therefore click <ph id="1">`Sign Up`</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Sign up and setup <bpt id="1">&lt;a id="sign-up-and-setup"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Sign up and setup <bpt id="1">&lt;a id="sign-up-and-setup"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">You will be redirected to the Openrouteservice site, where you need to create     a user account</source>
+<target xml:lang="fr">You will be redirected to the Openrouteservice site, where you need to create     a user account</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">After submitting your profile, a confirmation e-mail will be sent to your mail address</source>
+<target xml:lang="fr">After submitting your profile, a confirmation e-mail will be sent to your mail address</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Please confirm your account</source>
+<target xml:lang="fr">Please confirm your account</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">You are now able to create tokens (API keys) which allow you to run queries through the ORS Tools plugin in QGIS</source>
+<target xml:lang="fr">You are now able to create tokens (API keys) which allow you to run queries through the ORS Tools plugin in QGIS</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Click into the field under "Request a token" and choose "Free"</source>
+<target xml:lang="fr">Click into the field under "Request a token" and choose "Free"</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Choose a "Token Name" in the field to the right and "Create token"</source>
+<target xml:lang="fr">Choose a "Token Name" in the field to the right and "Create token"</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">The token will directly appear above in the "key" field</source>
+<target xml:lang="fr">The token will directly appear above in the "key" field</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Click on the token, it will directly be copied. You can now go back into QGIS for further setup</source>
+<target xml:lang="fr">Click on the token, it will directly be copied. You can now go back into QGIS for further setup</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Configure the plugin <bpt id="1">&lt;a id="configure-the-plugin"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Configure the plugin <bpt id="1">&lt;a id="configure-the-plugin"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">In QGIS and go to <ph id="1">`Provider Settings`</ph> in the ORS Tools window by clicking the settings icon (right next to „Provider field“)</source>
+<target xml:lang="fr">In QGIS and go to <ph id="1">`Provider Settings`</ph> in the ORS Tools window by clicking the settings icon (right next to „Provider field“)</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Add the API key you just created into the „API Key“ field</source>
+<target xml:lang="fr">Add the API key you just created into the „API Key“ field</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Add URL: <ph id="1">https://api.openrouteservice.org</ph> into the Base URL field</source>
+<target xml:lang="fr">Add URL: <ph id="1">https://api.openrouteservice.org</ph> into the Base URL field</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">(Potentially: Click <ph id="1">`Add`</ph> and enter „openrouteservice“ into the pop up window „Enter a name for the provider“)</source>
+<target xml:lang="fr">(Potentially: Click <ph id="1">`Add`</ph> and enter „openrouteservice“ into the pop up window „Enter a name for the provider“)</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">For further information: <it id="1" pos="open">[</it><ph id="2">https://github.com/GIScience/orstools-qgis-plugin]</ph></source>
+<target xml:lang="fr">For further information: <it id="1" pos="open">[</it><ph id="2">https://github.com/GIScience/orstools-qgis-plugin]</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

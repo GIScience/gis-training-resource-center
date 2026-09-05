@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Trainers_corner/en_training_plans.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Basic QGIS Training: Full training <bpt id="1">&lt;a id="basic-qgis-training-full-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Basic QGIS Training: Full training <bpt id="1">&lt;a id="basic-qgis-training-full-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

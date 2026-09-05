@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_2/en_qgis_geodata_concept_ex1.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Exercise 1: Understanding Geodata <bpt id="1">&lt;a id="exercise-1-understanding-geodata"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise 1: Understanding Geodata <bpt id="1">&lt;a id="exercise-1-understanding-geodata"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Aim of this exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Aim of this exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">The objective of this exercise is to make your first steps in QGIS. Understand the user interface and get to know the layer concept. You will learn to import and display vector data into QGIS and open the attribute table. Furthermore, we will learn to reproject or change the projection of the vector datasets.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The objective of this exercise is to make your first steps in QGIS. Understand the user interface and get to know the layer concept. You will learn to import and display vector data into QGIS and open the attribute table. Furthermore, we will learn to reproject or change the projection of the vector datasets.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type of trainings exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type of trainings exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">This exercise can be used in online and presence training.</source>
+<target xml:lang="fr">This exercise can be used in online and presence training.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">It can be done as a follow-along exercise or individually.</source>
+<target xml:lang="fr">It can be done as a follow-along exercise or individually.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>These skills are relevant for:<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>These skills are relevant for:<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">QGIS-Essentials</source>
+<target xml:lang="fr">QGIS-Essentials</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Understanding spatial components of datasets</source>
+<target xml:lang="fr">Understanding spatial components of datasets</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Navigating the QGIS-interface</source>
+<target xml:lang="fr">Navigating the QGIS-interface</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Managing and manipulating geodata</source>
+<target xml:lang="fr">Managing and manipulating geodata</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Performing basic and advanced spatial analyses</source>
+<target xml:lang="fr">Performing basic and advanced spatial analyses</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">The exercise takes around 30 to 60 minutes to complete, depending on the number of participants and their familiarity with computer systems.</source>
+<target xml:lang="fr">The exercise takes around 30 to 60 minutes to complete, depending on the number of participants and their familiarity with computer systems.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki articles<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki articles<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>QGIS Interface<ept id="1">](/content/Wiki/en_qgis_interface_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>QGIS Interface<ept id="1">](/content/Wiki/en_qgis_interface_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Layer Concept<ept id="1">](/content/Wiki/en_qgis_layer_concept_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Layer Concept<ept id="1">](/content/Wiki/en_qgis_layer_concept_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Attribute Table in QGIS<ept id="1">](/content/Wiki/en_qgis_attribute_table_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Attribute Table in QGIS<ept id="1">](/content/Wiki/en_qgis_attribute_table_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Projections<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Projections<ept id="1">](/content/Wiki/en_qgis_projections_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Take the time to familiarise yourself with the exercise and the provided material.</source>
+<target xml:lang="fr">Take the time to familiarise yourself with the exercise and the provided material.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</source>
+<target xml:lang="fr">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</source>
+<target xml:lang="fr">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction</source>
+<target xml:lang="fr">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Introduce the idea and aim of the exercise.</source>
+<target xml:lang="fr">Introduce the idea and aim of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</source>
+<target xml:lang="fr">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</source>
+<target xml:lang="fr">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</source>
+<target xml:lang="fr">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</source>
+<target xml:lang="fr">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Leave time for any issues or questions concerning the tasks at the end of the exercise.</source>
+<target xml:lang="fr">Leave time for any issues or questions concerning the tasks at the end of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Leave some time for open questions.</source>
+<target xml:lang="fr">Leave some time for open questions.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Exercise <bpt id="1">&lt;a id="exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise <bpt id="1">&lt;a id="exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:class-card: sd-text-center</ph>
+<ph id="3">:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_Understanding_Geodata.zip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:class-card: sd-text-center</ph>
+<ph id="3">:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_Understanding_Geodata.zip</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Download all datasets <bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_Understanding_Geodata.zip)</ept> and unzip the folder.<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Download all datasets <bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_1/Module_2_Exercise_1_Understanding_Geodata.zip)</ept> and unzip the folder.<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">The zip folder includes:</source>
+<target xml:lang="fr">The zip folder includes:</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Dataset name</source>
+<target xml:lang="fr">Dataset name</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Original title</source>
+<target xml:lang="fr">Original title</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Publisher</source>
+<target xml:lang="fr">Publisher</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Downloaded from</source>
+<target xml:lang="fr">Downloaded from</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`sle_admbnda_adm0_adm1_gov_ocha.gpkg`</ph> (Polygons)</source>
+<target xml:lang="fr"><ph id="1">`sle_admbnda_adm0_adm1_gov_ocha.gpkg`</ph> (Polygons)</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Sierra Leone - Subnational Administrative Boundaries</source>
+<target xml:lang="fr">Sierra Leone - Subnational Administrative Boundaries</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">United Nations Office for the Coordination of Humanitarian Affairs (OCHA)</source>
+<target xml:lang="fr">United Nations Office for the Coordination of Humanitarian Affairs (OCHA)</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>HDX<ept id="1">](https://data.humdata.org/dataset/cod-ab-sle)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>HDX<ept id="1">](https://data.humdata.org/dataset/cod-ab-sle)</ept></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`sierra_leone_health_HOT.shp`</ph> (Points)</source>
+<target xml:lang="fr"><ph id="1">`sierra_leone_health_HOT.shp`</ph> (Points)</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Sierra Leone Health Facilities (OpenStreetMap Export)</source>
+<target xml:lang="fr">Sierra Leone Health Facilities (OpenStreetMap Export)</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Humanitarian OpenStreetMap Team (HOT)</source>
+<target xml:lang="fr">Humanitarian OpenStreetMap Team (HOT)</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>HDX<ept id="1">](https://data.humdata.org/dataset/hotosm_sle_health_facilities)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>HDX<ept id="1">](https://data.humdata.org/dataset/hotosm_sle_health_facilities)</ept></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`sl-airports.csv`</ph> (CSV)</source>
+<target xml:lang="fr"><ph id="1">`sl-airports.csv`</ph> (CSV)</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Airports in Sierra Leone</source>
+<target xml:lang="fr">Airports in Sierra Leone</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Our Airports</source>
+<target xml:lang="fr">Our Airports</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>HDX<ept id="1">](https://data.humdata.org/dataset/ourairports-sle)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>HDX<ept id="1">](https://data.humdata.org/dataset/ourairports-sle)</ept></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">The GeoPackage <ph id="1">`Sierra_leone_administrative_boundaries.gpkg`</ph> contains administrative information for Sierra Leone at both national and provincial level. Additionally, the shapefile <ph id="2">`sierra_leone_health_HOT.shp`</ph> provides information on various health facilities within the country, while the <ph id="3">`sl-airports.csv`</ph> CSV-file offers information on airports.</source>
+<target xml:lang="fr">The GeoPackage <ph id="1">`Sierra_leone_administrative_boundaries.gpkg`</ph> contains administrative information for Sierra Leone at both national and provincial level. Additionally, the shapefile <ph id="2">`sierra_leone_health_HOT.shp`</ph> provides information on various health facilities within the country, while the <ph id="3">`sl-airports.csv`</ph> CSV-file offers information on airports.</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Folder structure
+<ph id="2">:type: hint</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Folder structure
+<ph id="2">:type: hint</ph></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Keep your data management clean by creating a <bpt id="1">[</bpt>standard folder structure<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure)</ept> on your computer for your QGIS-projects and geodata.
+The exercise data should be saved in a location where you can easily find them and the corresponding QGIS-project.</source>
+<target xml:lang="fr">Keep your data management clean by creating a <bpt id="1">[</bpt>standard folder structure<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure)</ept> on your computer for your QGIS-projects and geodata.
+The exercise data should be saved in a location where you can easily find them and the corresponding QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Tasks <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Tasks <bpt id="1">&lt;a id="tasks"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Open the files you have downloaded in QGIS.</source>
+<target xml:lang="fr">Open the files you have downloaded in QGIS.</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Unzip the folder<ept id="1">__</ept> with the exercise data.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Unzip the folder<ept id="1">__</ept> with the exercise data.</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">The geopackage (<ph id="1">`.gpkg`</ph>) and shapefile (<ph id="2">`.shp`</ph>) can be dragged and dropped onto the map canvas in QGIS.</source>
+<target xml:lang="fr">The geopackage (<ph id="1">`.gpkg`</ph>) and shapefile (<ph id="2">`.shp`</ph>) can be dragged and dropped onto the map canvas in QGIS.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">The .csv file needs to be imported via the layer menu.</source>
+<target xml:lang="fr">The .csv file needs to be imported via the layer menu.</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Navigate to <ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add delimited text layer`</ph>. A new window will open. Here you can select the file you want to import by clicking on <ph id="4">`...`</ph> to the right of the <bpt id="5">__</bpt>File name<ept id="5">__</ept>  field at the top.</source>
+<target xml:lang="fr">Navigate to <ph id="1">`Layer`</ph> → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add delimited text layer`</ph>. A new window will open. Here you can select the file you want to import by clicking on <ph id="4">`...`</ph> to the right of the <bpt id="5">__</bpt>File name<ept id="5">__</ept>  field at the top.</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Navigate to the folder with the exercise files and select <ph id="1">`sl-airports.csv`</ph>.</source>
+<target xml:lang="fr">Navigate to the folder with the exercise files and select <ph id="1">`sl-airports.csv`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Click open. The CSV-import window will update and show you a preview of the CSV-table.</source>
+<target xml:lang="fr">Click open. The CSV-import window will update and show you a preview of the CSV-table.</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">The table contains geographic information. We will need to specify this under <bpt id="1">__</bpt>"Geometry Definition"<ept id="1">__</ept>.</source>
+<target xml:lang="fr">The table contains geographic information. We will need to specify this under <bpt id="1">__</bpt>"Geometry Definition"<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Point Coordinates`</ph> and select <ph id="2">`longitude_deg`</ph> as your <bpt id="3">__</bpt>"X field"<ept id="3">__</ept> and <ph id="4">`latitude_deg`</ph> as your <bpt id="5">__</bpt>"Y field"<ept id="5">__</ept>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Point Coordinates`</ph> and select <ph id="2">`longitude_deg`</ph> as your <bpt id="3">__</bpt>"X field"<ept id="3">__</ept> and <ph id="4">`latitude_deg`</ph> as your <bpt id="5">__</bpt>"Y field"<ept id="5">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Click add. a new point layer with the airports should appear on your map canvas.</source>
+<target xml:lang="fr">Click add. a new point layer with the airports should appear on your map canvas.</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_3.36_add_csv.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_3.36_add_csv.png</ph></target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 500 px</ph>
+<ph id="2">name: navigation to add csv layer</ph></source>
+<target xml:lang="fr"><ph id="1">width: 500 px</ph>
+<ph id="2">name: navigation to add csv layer</ph></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">Opening the CSV-import window.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Opening the CSV-import window.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_delimited_text_screenshot.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_delimited_text_screenshot.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 80%</ph>
+<ph id="2">name: delimited_text</ph></source>
+<target xml:lang="fr"><ph id="1">width: 80%</ph>
+<ph id="2">name: delimited_text</ph></target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Screenshot of the Data Source Manager - Delimited Text to load a CSV file
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Screenshot of the Data Source Manager - Delimited Text to load a CSV file
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">Interact with the map and explore the datasets. Use the zoom tool and move
+   the map. Focus on the scale window and observe how it varies as you zoom in and out.</source>
+<target xml:lang="fr">Interact with the map and explore the datasets. Use the zoom tool and move
+   the map. Focus on the scale window and observe how it varies as you zoom in and out.</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Familiarise yourself with the layer panel (layer list). Show and hide
+   different layers and move layers around in the hierarchy. Give the data layer
+   a meaningful name.</source>
+<target xml:lang="fr">Familiarise yourself with the layer panel (layer list). Show and hide
+   different layers and move layers around in the hierarchy. Give the data layer
+   a meaningful name.</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Note}</ph>
+Renaming the layer does not affect the data source, such as file names or
+storage location.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Note}</ph>
+Renaming the layer does not affect the data source, such as file names or
+storage location.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Check out the attribute data of the layers by examining the attribute table.</source>
+<target xml:lang="fr">Check out the attribute data of the layers by examining the attribute table.</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Change the projection in the map view to <ph id="1">`WGS 84 / Pseudo-Mercator EPSG:3857`</ph>. You can do this in the bottom right corner of your QGIS window.</source>
+<target xml:lang="fr">Change the projection in the map view to <ph id="1">`WGS 84 / Pseudo-Mercator EPSG:3857`</ph>. You can do this in the bottom right corner of your QGIS window.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Note}</ph>
+This does not change the projection (coordinates) of the files, only the
+projection of the map view. Verify this by looking at the properties of the point
+layer. What projection is shown there?
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Note}</ph>
+This does not change the projection (coordinates) of the files, only the
+projection of the map view. Verify this by looking at the properties of the point
+layer. What projection is shown there?
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Hint}</ph>
+To obtain information about a layer and its projections, double-click on the layer and look for the <ph id="2">`Information`</ph> section. This section contains general details such as the file name and file path, as well as information about the Coordinate Reference System (CRS) in the respective section.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Hint}</ph>
+To obtain information about a layer and its projections, double-click on the layer and look for the <ph id="2">`Information`</ph> section. This section contains general details such as the file name and file path, as well as information about the Coordinate Reference System (CRS) in the respective section.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">Save the health facility layer in the <ph id="1">`WGS 84 / Pseudo-Mercator EPSG:3857`</ph> projection. This will change the projection of the file. This can be done by right-clicking on the layer → <ph id="2">`Export`</ph> → <ph id="3">`Save Features As..`</ph>. In the pop-up window, select <bpt id="4">**</bpt>GeoPackage as the output file format<ept id="4">**</ept> and <bpt id="5">**</bpt>specify the file location and name<ept id="5">**</ept> by clicking on the three small points. The file can also be given a layer name, which will be displayed when it is loaded into QGIS. Before running this process, the <bpt id="6">**</bpt>projection can be changed<ept id="6">**</ept> by selecting the desired CRS in the designated section. Verify the changed projection by looking at the properties of the newly created layer.</source>
+<target xml:lang="fr">Save the health facility layer in the <ph id="1">`WGS 84 / Pseudo-Mercator EPSG:3857`</ph> projection. This will change the projection of the file. This can be done by right-clicking on the layer → <ph id="2">`Export`</ph> → <ph id="3">`Save Features As..`</ph>. In the pop-up window, select <bpt id="4">**</bpt>GeoPackage as the output file format<ept id="4">**</ept> and <bpt id="5">**</bpt>specify the file location and name<ept id="5">**</ept> by clicking on the three small points. The file can also be given a layer name, which will be displayed when it is loaded into QGIS. Before running this process, the <bpt id="6">**</bpt>projection can be changed<ept id="6">**</ept> by selecting the desired CRS in the designated section. Verify the changed projection by looking at the properties of the newly created layer.</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_ex1_export_layer.PNG</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_ex1_export_layer.PNG</ph></target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 40%</ph>
+<ph id="2">name: export_layer</ph></source>
+<target xml:lang="fr"><ph id="1">width: 40%</ph>
+<ph id="2">name: export_layer</ph></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">Screenshot of the export window.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Screenshot of the export window.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en">Save your project.</source>
+<target xml:lang="fr">Save your project.</target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Optional: You can add the OpenStreetMap base map via the browser window,
+   under <ph id="1">`XYZ Tiles`</ph>.</source>
+<target xml:lang="fr">Optional: You can add the OpenStreetMap base map via the browser window,
+   under <ph id="1">`XYZ Tiles`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Note}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Note}</ph></target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">Combining layers in different projections with online basemaps (typically have their own projections) can lead to display issues due to <bpt id="1">[</bpt>CRS conflicts<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html#how-to-choose-an-appropriate-projected-coordinate-system)</ept>. When layers have a distinct CRS, they may not align correctly or appear distorted when overlaid with an online basemap. To mitigate these problems, it's advisable to either reproject the layers to match the CRS of the basemap (which is often not applicable) or temporarily remove the basemap before saving the project. This ensures that the map is displayed accurately and avoids potential visual discrepancies caused by CRS inconsistencies.</source>
+<target xml:lang="fr">Combining layers in different projections with online basemaps (typically have their own projections) can lead to display issues due to <bpt id="1">[</bpt>CRS conflicts<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_projections.html#how-to-choose-an-appropriate-projected-coordinate-system)</ept>. When layers have a distinct CRS, they may not align correctly or appear distorted when overlaid with an online basemap. To mitigate these problems, it's advisable to either reproject the layers to match the CRS of the basemap (which is often not applicable) or temporarily remove the basemap before saving the project. This ensures that the map is displayed accurately and avoids potential visual discrepancies caused by CRS inconsistencies.</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_result_geodata_concept_exercise.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_result_geodata_concept_exercise.png</ph></target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 80%</ph>
+<ph id="2">name: en_result_geodata_concept_exercise</ph></source>
+<target xml:lang="fr"><ph id="1">width: 80%</ph>
+<ph id="2">name: en_result_geodata_concept_exercise</ph></target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">This is how your output could look like in the end.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">This is how your output could look like in the end.
+<ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

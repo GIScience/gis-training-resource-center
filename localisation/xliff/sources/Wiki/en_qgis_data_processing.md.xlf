@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_data_processing.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Data Processing <bpt id="1">&lt;a id="data-processing"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data Processing <bpt id="1">&lt;a id="data-processing"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">QGIS allows you to process and modify the datasets loaded into your QGIS in various ways. In general, there are two types of processing: spatial and non-spatial. Spatial processing modifies the data based on their spatial relationship with features in other layers. Non-spatial processing modifies the data based on the values in their attribute table.</source>
+<target xml:lang="fr">QGIS allows you to process and modify the datasets loaded into your QGIS in various ways. In general, there are two types of processing: spatial and non-spatial. Spatial processing modifies the data based on their spatial relationship with features in other layers. Non-spatial processing modifies the data based on the values in their attribute table.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Admonition} </ph>Be careful when modifying the original datasets
+<ph id="2">:class: Tip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Admonition} </ph>Be careful when modifying the original datasets
+<ph id="2">:class: Tip</ph></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">If you modify the Attribute table or the features in a dataset you imported into your QGIS project, the original dataset will be modified. To make sure to keep the original dataset as it is, make sure to create a copy before doing any changes.</source>
+<target xml:lang="fr">If you modify the Attribute table or the features in a dataset you imported into your QGIS project, the original dataset will be modified. To make sure to keep the original dataset as it is, make sure to create a copy before doing any changes.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

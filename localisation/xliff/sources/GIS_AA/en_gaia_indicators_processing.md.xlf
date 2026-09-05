@@ -1,0 +1,2129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/GIS_AA/en_gaia_indicators_processing.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">GAIA Pipeline Documentation <bpt id="1">&lt;a id="gaia-pipeline-documentation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">GAIA Pipeline Documentation <bpt id="1">&lt;a id="gaia-pipeline-documentation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Overview <bpt id="1">&lt;a id="overview"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Overview <bpt id="1">&lt;a id="overview"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">The Global Aggregation of Indicators for Anticipatory Action (GAIA) Pipeline produces a series of thematic files for a collection from several countries at administrative level 2, covering multiple countries where administrative boundaries and place codes (PCODEs) are available on HDX. Each file captures different aspects of population, infrastructure, and environmental conditions. Below is an overview of the available files:</source>
+<target xml:lang="fr">The Global Aggregation of Indicators for Anticipatory Action (GAIA) Pipeline produces a series of thematic files for a collection from several countries at administrative level 2, covering multiple countries where administrative boundaries and place codes (PCODEs) are available on HDX. Each file captures different aspects of population, infrastructure, and environmental conditions. Below is an overview of the available files:</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt><bpt id="2">**</bpt>Access to Services<ept id="2">**</ept><ept id="1">](#access-to-services)</ept> – Population accessibility to key facilities such as education and health centers.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt><bpt id="2">**</bpt>Access to Services<ept id="2">**</ept><ept id="1">](#access-to-services)</ept> – Population accessibility to key facilities such as education and health centers.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt><bpt id="2">**</bpt>Facilities<ept id="2">**</ept><ept id="1">](#facilities)</ept> – Availability and distribution of essential service infrastructure.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt><bpt id="2">**</bpt>Facilities<ept id="2">**</ept><ept id="1">](#facilities)</ept> – Availability and distribution of essential service infrastructure.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt><bpt id="2">**</bpt>Coping Capacity<ept id="2">**</ept><ept id="1">](#coping-capacity)</ept> – Combined indicators derived from Access, Facilities, Evacuability, and RAI layers.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt><bpt id="2">**</bpt>Coping Capacity<ept id="2">**</ept><ept id="1">](#coping-capacity)</ept> – Combined indicators derived from Access, Facilities, Evacuability, and RAI layers.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt><bpt id="2">**</bpt>Demographics<ept id="2">**</ept><ept id="1">](#demographics)</ept> – Distribution of vulnerable population.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt><bpt id="2">**</bpt>Demographics<ept id="2">**</ept><ept id="1">](#demographics)</ept> – Distribution of vulnerable population.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt><bpt id="2">**</bpt>Rural Population<ept id="2">**</ept><ept id="1">](#rural-population)</ept> – Demographic indicators focused specifically on rural populations.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt><bpt id="2">**</bpt>Rural Population<ept id="2">**</ept><ept id="1">](#rural-population)</ept> – Demographic indicators focused specifically on rural populations.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt><bpt id="2">**</bpt>Rural Accessibility Index (RAI)<ept id="2">**</ept><ept id="1">](#rural-accessibility-index-rai)</ept> – Percentage of rural population within 2 km of a paved road.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt><bpt id="2">**</bpt>Rural Accessibility Index (RAI)<ept id="2">**</ept><ept id="1">](#rural-accessibility-index-rai)</ept> – Percentage of rural population within 2 km of a paved road.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt><bpt id="2">**</bpt>Vulnerability<ept id="2">**</ept><ept id="1">](#vulnerability)</ept> – Composite indicators derived from Demographics and Rural Population layers.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt><bpt id="2">**</bpt>Vulnerability<ept id="2">**</ept><ept id="1">](#vulnerability)</ept> – Composite indicators derived from Demographics and Rural Population layers.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt><bpt id="2">**</bpt>Flood Exposure<ept id="2">**</ept><ept id="1">](#flood-exposure)</ept> – Exposure of populations and facilities to flood hazards.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt><bpt id="2">**</bpt>Flood Exposure<ept id="2">**</ept><ept id="1">](#flood-exposure)</ept> – Exposure of populations and facilities to flood hazards.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt><bpt id="2">**</bpt>Cyclone Exposure<ept id="2">**</ept><ept id="1">](#cyclone-exposure)</ept> – Exposure of populations and facilities to cyclone hazards.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt><bpt id="2">**</bpt>Cyclone Exposure<ept id="2">**</ept><ept id="1">](#cyclone-exposure)</ept> – Exposure of populations and facilities to cyclone hazards.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt><bpt id="2">**</bpt>Evacuability<ept id="2">**</ept><ept id="1">](#evacuability)</ept> – Travel time from at-risk areas to the nearest safe zone.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt><bpt id="2">**</bpt>Evacuability<ept id="2">**</ept><ept id="1">](#evacuability)</ept> – Travel time from at-risk areas to the nearest safe zone.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Further details on GAIA’s methodology are available in the <bpt id="1">[</bpt>GAIA repository on GitHub<ept id="1">](https://github.com/GIScience/gaia)</ept>.</source>
+<target xml:lang="fr">Further details on GAIA’s methodology are available in the <bpt id="1">[</bpt>GAIA repository on GitHub<ept id="1">](https://github.com/GIScience/gaia)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Information
+<ph id="2">:class: tip</ph>
+The <bpt id="3">**</bpt>Coping Capacity<ept id="3">**</ept>, <bpt id="4">**</bpt>Vulnerability<ept id="4">**</ept>, and <bpt id="5">**</bpt>Flood Exposure<ept id="5">**</ept> files can be used directly as input for the Risk Assessment QGIS Plugin when analyzing flood hazards. Only minor adjustments, such as renaming the ID columns, are required for compatibility.
+<ph id="6">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Information
+<ph id="2">:class: tip</ph>
+The <bpt id="3">**</bpt>Coping Capacity<ept id="3">**</ept>, <bpt id="4">**</bpt>Vulnerability<ept id="4">**</ept>, and <bpt id="5">**</bpt>Flood Exposure<ept id="5">**</ept> files can be used directly as input for the Risk Assessment QGIS Plugin when analyzing flood hazards. Only minor adjustments, such as renaming the ID columns, are required for compatibility.
+<ph id="6">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">1. Access to Services <bpt id="1">&lt;a id="1-access-to-services"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">1. Access to Services <bpt id="1">&lt;a id="1-access-to-services"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Represents the share of the population with access to key facilities within defined distances or travel times.</source>
+<target xml:lang="fr">Represents the share of the population with access to key facilities within defined distances or travel times.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Data Sources <bpt id="1">&lt;a id="data-sources"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data Sources <bpt id="1">&lt;a id="data-sources"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Accessibility data (isochrones) downloaded from <bpt id="1">**</bpt>MinIO<ept id="1">**</ept> for the categories: <ph id="2">`education`</ph>, <ph id="3">`hospitals`</ph>, <ph id="4">`primary_healthcare`</ph>.</source>
+<target xml:lang="fr">Accessibility data (isochrones) downloaded from <bpt id="1">**</bpt>MinIO<ept id="1">**</ept> for the categories: <ph id="2">`education`</ph>, <ph id="3">`hospitals`</ph>, <ph id="4">`primary_healthcare`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Population data: WorldPop raster data (vulnerable populations) via <bpt id="1">*</bpt>Demographics<ept id="1">*</ept>.</source>
+<target xml:lang="fr">Population data: WorldPop raster data (vulnerable populations) via <bpt id="1">*</bpt>Demographics<ept id="1">*</ept>.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Processing Steps <bpt id="1">&lt;a id="processing-steps"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Processing Steps <bpt id="1">&lt;a id="processing-steps"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Download accessibility isochrones<ept id="1">**</ept> in GPKG format for each category.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Download accessibility isochrones<ept id="1">**</ept> in GPKG format for each category.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Load administrative boundaries<ept id="1">**</ept> at admin level 2 from local GeoJSON files.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Load administrative boundaries<ept id="1">**</ept> at admin level 2 from local GeoJSON files.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Fetch WorldPop raster datasets<ept id="1">**</ept> and sum relevant indicators to produce a vulnerable population raster.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Fetch WorldPop raster datasets<ept id="1">**</ept> and sum relevant indicators to produce a vulnerable population raster.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">For each category and cutoff:</source>
+<target xml:lang="fr">For each category and cutoff:</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Select isochrone polygons for the cutoff value.</source>
+<target xml:lang="fr">Select isochrone polygons for the cutoff value.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Intersect polygons with administrative boundaries.</source>
+<target xml:lang="fr">Intersect polygons with administrative boundaries.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Use <ph id="1">`rasterstats.zonal_stats`</ph> to compute total population within the isochrone area.</source>
+<target xml:lang="fr">Use <ph id="1">`rasterstats.zonal_stats`</ph> to compute total population within the isochrone area.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Save results as a CSV containing population counts per administrative unit.</source>
+<target xml:lang="fr">Save results as a CSV containing population counts per administrative unit.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Outputs <bpt id="1">&lt;a id="outputs"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Outputs <bpt id="1">&lt;a id="outputs"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">CSV file: <ph id="1">`{country_code}_{admin_level}_access.csv`</ph></source>
+<target xml:lang="fr">CSV file: <ph id="1">`{country_code}_{admin_level}_access.csv`</ph></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Columns: <ph id="1">`{admin_level}_PCODE`</ph>, <ph id="2">`access_pop_education_5km`</ph>, <ph id="3">`access_pop_education_10km`</ph>, etc.</source>
+<target xml:lang="fr">Columns: <ph id="1">`{admin_level}_PCODE`</ph>, <ph id="2">`access_pop_education_5km`</ph>, <ph id="3">`access_pop_education_10km`</ph>, etc.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">CRS: WGS84 (<ph id="1">`EPSG:4326`</ph>)</source>
+<target xml:lang="fr">CRS: WGS84 (<ph id="1">`EPSG:4326`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Units: population count</source>
+<target xml:lang="fr">Units: population count</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Python Script (Access to Services)</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Python Script (Access to Services)</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">2. Facilities <bpt id="1">&lt;a id="2-facilities"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">2. Facilities <bpt id="1">&lt;a id="2-facilities"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Represents the availability and spatial distribution of essential service infrastructure such as schools, hospitals, and primary healthcare centers.</source>
+<target xml:lang="fr">Represents the availability and spatial distribution of essential service infrastructure such as schools, hospitals, and primary healthcare centers.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Data Sources <bpt id="1">&lt;a id="data-sources-2"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data Sources <bpt id="1">&lt;a id="data-sources-2"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>OpenStreetMap (OSM)<ept id="1">**</ept> data, accessed through either:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>OpenStreetMap (OSM)<ept id="1">**</ept> data, accessed through either:</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Overpass API<ept id="1">**</ept>, for direct querying of recent OSM feature data; or</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Overpass API<ept id="1">**</ept>, for direct querying of recent OSM feature data; or</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Ohsome API<ept id="1">**</ept>, for more stable and filtered access to OSM geometries.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Ohsome API<ept id="1">**</ept>, for more stable and filtered access to OSM geometries.</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Administrative boundaries<ept id="1">**</ept> (GeoJSON): Used to spatially aggregate features at administrative level 2.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Administrative boundaries<ept id="1">**</ept> (GeoJSON): Used to spatially aggregate features at administrative level 2.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Processing Steps <bpt id="1">&lt;a id="processing-steps-2"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Processing Steps <bpt id="1">&lt;a id="processing-steps-2"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Load administrative boundaries<ept id="1">**</ept> (GeoJSON) for the target country at the desired administrative level.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Load administrative boundaries<ept id="1">**</ept> (GeoJSON) for the target country at the desired administrative level.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Define filters<ept id="1">**</ept> for each facility type:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Define filters<ept id="1">**</ept> for each facility type:</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Education:<ept id="1">**</ept> <ph id="2">`amenity=school`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Education:<ept id="1">**</ept> <ph id="2">`amenity=school`</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Hospitals:<ept id="1">**</ept> <ph id="2">`amenity=hospital`</ph> or <ph id="3">`healthcare=hospital`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Hospitals:<ept id="1">**</ept> <ph id="2">`amenity=hospital`</ph> or <ph id="3">`healthcare=hospital`</ph></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Primary healthcare:<ept id="1">**</ept> Non-hospital facilities providing healthcare services, such as <ph id="2">`clinic`</ph>, <ph id="3">`doctors`</ph>, <ph id="4">`midwife`</ph>, <ph id="5">`nurse`</ph>, or <ph id="6">`center`</ph>.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Primary healthcare:<ept id="1">**</ept> Non-hospital facilities providing healthcare services, such as <ph id="2">`clinic`</ph>, <ph id="3">`doctors`</ph>, <ph id="4">`midwife`</ph>, <ph id="5">`nurse`</ph>, or <ph id="6">`center`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Determine API source:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Determine API source:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">If Overpass is used, queries are dynamically built and executed using bounding boxes of the country boundary.</source>
+<target xml:lang="fr">If Overpass is used, queries are dynamically built and executed using bounding boxes of the country boundary.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">If Ohsome is used, geometry data is fetched for the same bounding box and time period (if specified).</source>
+<target xml:lang="fr">If Ohsome is used, geometry data is fetched for the same bounding box and time period (if specified).</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Download and parse facility points<ept id="1">**</ept>:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Download and parse facility points<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">For Overpass: CSV results are parsed into GeoDataFrames with <ph id="1">`lon`</ph>, <ph id="2">`lat`</ph>, and <ph id="3">`osmId`</ph> attributes.</source>
+<target xml:lang="fr">For Overpass: CSV results are parsed into GeoDataFrames with <ph id="1">`lon`</ph>, <ph id="2">`lat`</ph>, and <ph id="3">`osmId`</ph> attributes.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">For Ohsome: JSON features are directly converted into GeoDataFrames.</source>
+<target xml:lang="fr">For Ohsome: JSON features are directly converted into GeoDataFrames.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Assign categories and export raw results<ept id="1">**</ept>:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Assign categories and export raw results<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Each facility type (education, hospitals, primary healthcare) is stored as a separate GeoJSON in a <ph id="1">`Temporary`</ph> folder.</source>
+<target xml:lang="fr">Each facility type (education, hospitals, primary healthcare) is stored as a separate GeoJSON in a <ph id="1">`Temporary`</ph> folder.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Aggregate by administrative unit<ept id="1">**</ept>:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Aggregate by administrative unit<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Facilities are spatially joined (<ph id="1">`sjoin`</ph>) with administrative polygons.</source>
+<target xml:lang="fr">Facilities are spatially joined (<ph id="1">`sjoin`</ph>) with administrative polygons.</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">For each category, counts are grouped by <ph id="1">`{admin_level}_PCODE`</ph>.</source>
+<target xml:lang="fr">For each category, counts are grouped by <ph id="1">`{admin_level}_PCODE`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Combine and export results<ept id="1">**</ept>:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Combine and export results<ept id="1">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Counts for all categories are merged into a single summary table.</source>
+<target xml:lang="fr">Counts for all categories are merged into a single summary table.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Output is saved as a CSV file in the <ph id="1">`Output`</ph> directory.</source>
+<target xml:lang="fr">Output is saved as a CSV file in the <ph id="1">`Output`</ph> directory.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Outputs <bpt id="1">&lt;a id="outputs-2"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Outputs <bpt id="1">&lt;a id="outputs-2"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">CSV file: <ph id="1">`{country_code}_{admin_level}_facilities.csv`</ph></source>
+<target xml:lang="fr">CSV file: <ph id="1">`{country_code}_{admin_level}_facilities.csv`</ph></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Columns:</source>
+<target xml:lang="fr">Columns:</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`{admin_level}_PCODE`</ph></source>
+<target xml:lang="fr"><ph id="1">`{admin_level}_PCODE`</ph></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`education_count`</ph></source>
+<target xml:lang="fr"><ph id="1">`education_count`</ph></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`hospitals_count`</ph></source>
+<target xml:lang="fr"><ph id="1">`hospitals_count`</ph></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`primary_healthcare_count`</ph></source>
+<target xml:lang="fr"><ph id="1">`primary_healthcare_count`</ph></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">CRS: WGS84 (<ph id="1">`EPSG:4326`</ph>)</source>
+<target xml:lang="fr">CRS: WGS84 (<ph id="1">`EPSG:4326`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Units: number of facilities per administrative unit</source>
+<target xml:lang="fr">Units: number of facilities per administrative unit</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Intermediate GeoJSON files:</source>
+<target xml:lang="fr">Intermediate GeoJSON files:</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Stored in <ph id="1">`Temporary/`</ph> folder as raw point data for each facility category.</source>
+<target xml:lang="fr">Stored in <ph id="1">`Temporary/`</ph> folder as raw point data for each facility category.</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Python Script (Facilities)</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Python Script (Facilities)</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">3. Coping Capacity <bpt id="1">&lt;a id="3-coping-capacity"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">3. Coping Capacity <bpt id="1">&lt;a id="3-coping-capacity"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Represents the ability of a population to access essential services and benefit from available infrastructure.<ph id="1">  </ph>
+This layer combines <bpt id="2">*</bpt>Access to Services<ept id="2">*</ept>, <bpt id="3">*</bpt>Facilities<ept id="3">*</ept>, <bpt id="4">*</bpt>Evacuability<ept id="4">*</ept>, and <bpt id="5">*</bpt>Rural Accessibility Index (RAI)<ept id="5">*</ept> indicators to assess local capacity to cope with shocks or disruptions.</source>
+<target xml:lang="fr">Represents the ability of a population to access essential services and benefit from available infrastructure.<ph id="1">  </ph>
+This layer combines <bpt id="2">*</bpt>Access to Services<ept id="2">*</ept>, <bpt id="3">*</bpt>Facilities<ept id="3">*</ept>, <bpt id="4">*</bpt>Evacuability<ept id="4">*</ept>, and <bpt id="5">*</bpt>Rural Accessibility Index (RAI)<ept id="5">*</ept> indicators to assess local capacity to cope with shocks or disruptions.</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Data Sources <bpt id="1">&lt;a id="data-sources-3"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data Sources <bpt id="1">&lt;a id="data-sources-3"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Access to Services CSVs:<ept id="1">**</ept> Derived from population accessibility analysis (see <bpt id="2">*</bpt>Access to Services<ept id="2">*</ept> chapter).</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Access to Services CSVs:<ept id="1">**</ept> Derived from population accessibility analysis (see <bpt id="2">*</bpt>Access to Services<ept id="2">*</ept> chapter).</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Facilities CSVs:<ept id="1">**</ept> Derived from OpenStreetMap facility data (see <bpt id="2">*</bpt>Facilities<ept id="2">*</ept> chapter).</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Facilities CSVs:<ept id="1">**</ept> Derived from OpenStreetMap facility data (see <bpt id="2">*</bpt>Facilities<ept id="2">*</ept> chapter).</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Evacuability CSVs:<ept id="1">**</ept> Travel time from at-risk population areas to nearest safe zones (see <bpt id="2">*</bpt>Evacuability<ept id="2">*</ept> chapter).</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Evacuability CSVs:<ept id="1">**</ept> Travel time from at-risk population areas to nearest safe zones (see <bpt id="2">*</bpt>Evacuability<ept id="2">*</ept> chapter).</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>RAI CSVs:<ept id="1">**</ept> Rural Accessibility Index (see <bpt id="2">*</bpt>RAI<ept id="2">*</ept> chapter).</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>RAI CSVs:<ept id="1">**</ept> Rural Accessibility Index (see <bpt id="2">*</bpt>RAI<ept id="2">*</ept> chapter).</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">All inputs are aggregated at the same administrative level (e.g., ADM2).</source>
+<target xml:lang="fr">All inputs are aggregated at the same administrative level (e.g., ADM2).</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en">Processing Steps <bpt id="1">&lt;a id="processing-steps-3"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Processing Steps <bpt id="1">&lt;a id="processing-steps-3"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Input CSVs:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Input CSVs:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Access to Services<ept id="1">*</ept>, <bpt id="2">*</bpt>Facilities<ept id="2">*</ept>, <bpt id="3">*</bpt>Evacuability<ept id="3">*</ept>, and <bpt id="4">*</bpt>RAI<ept id="4">*</ept> CSVs are provided per administrative level.</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Access to Services<ept id="1">*</ept>, <bpt id="2">*</bpt>Facilities<ept id="2">*</ept>, <bpt id="3">*</bpt>Evacuability<ept id="3">*</ept>, and <bpt id="4">*</bpt>RAI<ept id="4">*</ept> CSVs are provided per administrative level.</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">Each CSV includes an identifier column such as <ph id="1">`ADM0_PCODE`</ph>, <ph id="2">`ADM1_PCODE`</ph>, or <ph id="3">`ADM2_PCODE`</ph>.</source>
+<target xml:lang="fr">Each CSV includes an identifier column such as <ph id="1">`ADM0_PCODE`</ph>, <ph id="2">`ADM1_PCODE`</ph>, or <ph id="3">`ADM2_PCODE`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Column Detection:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Column Detection:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">The script automatically detects the administrative identifier column by searching for any column ending with <ph id="1">`_PCODE`</ph>.</source>
+<target xml:lang="fr">The script automatically detects the administrative identifier column by searching for any column ending with <ph id="1">`_PCODE`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Merge Operations:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Merge Operations:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">The access and facilities datasets are merged on the identified <ph id="1">`*_PCODE`</ph> column using a left join.</source>
+<target xml:lang="fr">The access and facilities datasets are merged on the identified <ph id="1">`*_PCODE`</ph> column using a left join.</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">If available, evacuability columns are merged from the evacuability CSV.</source>
+<target xml:lang="fr">If available, evacuability columns are merged from the evacuability CSV.</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">If available, RAI columns are merged from the RAI CSV.</source>
+<target xml:lang="fr">If available, RAI columns are merged from the RAI CSV.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Output Generation:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Output Generation:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">The merged dataset is saved as <ph id="1">`{country_code}_{admin_level}_coping.csv`</ph> under <ph id="2">`Output/`</ph>.</source>
+<target xml:lang="fr">The merged dataset is saved as <ph id="1">`{country_code}_{admin_level}_coping.csv`</ph> under <ph id="2">`Output/`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en">One output is produced per administrative level present in the input data.</source>
+<target xml:lang="fr">One output is produced per administrative level present in the input data.</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Outputs <bpt id="1">&lt;a id="outputs-3"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Outputs <bpt id="1">&lt;a id="outputs-3"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">CSV file: <ph id="1">`{country_code}_{admin_level}_coping.csv`</ph></source>
+<target xml:lang="fr">CSV file: <ph id="1">`{country_code}_{admin_level}_coping.csv`</ph></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">Columns:</source>
+<target xml:lang="fr">Columns:</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`{admin_level}_PCODE`</ph></source>
+<target xml:lang="fr"><ph id="1">`{admin_level}_PCODE`</ph></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">All accessibility indicator columns (e.g., <ph id="1">`access_pop_education_5km`</ph>, <ph id="2">`access_pop_hospitals_1h`</ph>)</source>
+<target xml:lang="fr">All accessibility indicator columns (e.g., <ph id="1">`access_pop_education_5km`</ph>, <ph id="2">`access_pop_hospitals_1h`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">All facility count columns (e.g., <ph id="1">`education_count`</ph>, <ph id="2">`hospitals_count`</ph>, <ph id="3">`primary_healthcare_count`</ph>)</source>
+<target xml:lang="fr">All facility count columns (e.g., <ph id="1">`education_count`</ph>, <ph id="2">`hospitals_count`</ph>, <ph id="3">`primary_healthcare_count`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">All evacuability columns (e.g., <ph id="1">`RP{rp}_evac_time_minutes_mean`</ph>, <ph id="2">`kt34_evac_time_minutes_mean`</ph>)</source>
+<target xml:lang="fr">All evacuability columns (e.g., <ph id="1">`RP{rp}_evac_time_minutes_mean`</ph>, <ph id="2">`kt34_evac_time_minutes_mean`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">All RAI columns (e.g., <ph id="1">`rural_access_total_pop`</ph>, <ph id="2">`RAI_total_pop`</ph>, <ph id="3">`rural_access_dependency_ratio`</ph>)</source>
+<target xml:lang="fr">All RAI columns (e.g., <ph id="1">`rural_access_total_pop`</ph>, <ph id="2">`RAI_total_pop`</ph>, <ph id="3">`rural_access_dependency_ratio`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">CRS: WGS84 (<ph id="1">`EPSG:4326`</ph>)</source>
+<target xml:lang="fr">CRS: WGS84 (<ph id="1">`EPSG:4326`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Units: counts and population values aggregated per administrative unit</source>
+<target xml:lang="fr">Units: counts and population values aggregated per administrative unit</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Python Script (Coping Capacity)</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Python Script (Coping Capacity)</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">4. Demographics <bpt id="1">&lt;a id="4-demographics"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">4. Demographics <bpt id="1">&lt;a id="4-demographics"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Provides population distribution indicators based on <bpt id="1">**</bpt>age<ept id="1">**</ept> and <bpt id="2">**</bpt>sex<ept id="2">**</ept>.<ph id="3">  </ph>
+This layer is derived from the <bpt id="4">[</bpt><bpt id="5">**</bpt>WorldPop<ept id="5">**</ept><ept id="4">](https://www.worldpop.org/)</ept> global population dataset and quantifies vulnerable population groups across administrative boundaries.</source>
+<target xml:lang="fr">Provides population distribution indicators based on <bpt id="1">**</bpt>age<ept id="1">**</ept> and <bpt id="2">**</bpt>sex<ept id="2">**</ept>.<ph id="3">  </ph>
+This layer is derived from the <bpt id="4">[</bpt><bpt id="5">**</bpt>WorldPop<ept id="5">**</ept><ept id="4">](https://www.worldpop.org/)</ept> global population dataset and quantifies vulnerable population groups across administrative boundaries.</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Data Sources <bpt id="1">&lt;a id="data-sources-4"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data Sources <bpt id="1">&lt;a id="data-sources-4"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>WorldPop Age-Sex Population Rasters:<ept id="1">**</ept><ph id="2">  </ph>
+  Downloaded from the <bpt id="3">[</bpt>WorldPop Global Constrained Population dataset<ept id="3">](https://www.worldpop.org/geodata/listing?id=77)</ept> (<ph id="4">`Global_2015_2030`</ph>, Release <ph id="5">`R2025A`</ph>, Year <ph id="6">`2030`</ph>).</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>WorldPop Age-Sex Population Rasters:<ept id="1">**</ept><ph id="2">  </ph>
+  Downloaded from the <bpt id="3">[</bpt>WorldPop Global Constrained Population dataset<ept id="3">](https://www.worldpop.org/geodata/listing?id=77)</ept> (<ph id="4">`Global_2015_2030`</ph>, Release <ph id="5">`R2025A`</ph>, Year <ph id="6">`2030`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Administrative boundaries<ept id="1">**</ept> (GeoJSON): Used to spatially aggregate features at administrative level 2.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Administrative boundaries<ept id="1">**</ept> (GeoJSON): Used to spatially aggregate features at administrative level 2.</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Indicators <bpt id="1">&lt;a id="indicators"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Indicators <bpt id="1">&lt;a id="indicators"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Each demographic indicator represents the <bpt id="1">**</bpt>sum of population counts<ept id="1">**</ept> matching specified age and sex ranges:</source>
+<target xml:lang="fr">Each demographic indicator represents the <bpt id="1">**</bpt>sum of population counts<ept id="1">**</ept> matching specified age and sex ranges:</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">Indicator</source>
+<target xml:lang="fr">Indicator</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">Ages (years)</source>
+<target xml:lang="fr">Ages (years)</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Sexes</source>
+<target xml:lang="fr">Sexes</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`total_pop`</ph></source>
+<target xml:lang="fr"><ph id="1">`total_pop`</ph></target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en">Total population</source>
+<target xml:lang="fr">Total population</target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">0–80+</source>
+<target xml:lang="fr">0–80+</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">f, m</source>
+<target xml:lang="fr">f, m</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`female_pop`</ph></source>
+<target xml:lang="fr"><ph id="1">`female_pop`</ph></target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">Total female population</source>
+<target xml:lang="fr">Total female population</target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">0–80+</source>
+<target xml:lang="fr">0–80+</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">f</source>
+<target xml:lang="fr">f</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`children_u5`</ph></source>
+<target xml:lang="fr"><ph id="1">`children_u5`</ph></target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en">Total children under 5</source>
+<target xml:lang="fr">Total children under 5</target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">0–4</source>
+<target xml:lang="fr">0–4</target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">f, m</source>
+<target xml:lang="fr">f, m</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`female_u5`</ph></source>
+<target xml:lang="fr"><ph id="1">`female_u5`</ph></target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en">Female children under 5</source>
+<target xml:lang="fr">Female children under 5</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">0–4</source>
+<target xml:lang="fr">0–4</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">f</source>
+<target xml:lang="fr">f</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`elderly`</ph></source>
+<target xml:lang="fr"><ph id="1">`elderly`</ph></target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Population aged 65 and above</source>
+<target xml:lang="fr">Population aged 65 and above</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">65+</source>
+<target xml:lang="fr">65+</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en">f, m</source>
+<target xml:lang="fr">f, m</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`pop_u15`</ph></source>
+<target xml:lang="fr"><ph id="1">`pop_u15`</ph></target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en">Population under 15</source>
+<target xml:lang="fr">Population under 15</target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">0–14</source>
+<target xml:lang="fr">0–14</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">f, m</source>
+<target xml:lang="fr">f, m</target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`female_u15`</ph></source>
+<target xml:lang="fr"><ph id="1">`female_u15`</ph></target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">Female population under 15</source>
+<target xml:lang="fr">Female population under 15</target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en">0–14</source>
+<target xml:lang="fr">0–14</target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en">f</source>
+<target xml:lang="fr">f</target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`wra_pop`</ph></source>
+<target xml:lang="fr"><ph id="1">`wra_pop`</ph></target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en">Women of reproductive age (15–49)</source>
+<target xml:lang="fr">Women of reproductive age (15–49)</target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en">15–49</source>
+<target xml:lang="fr">15–49</target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en">f</source>
+<target xml:lang="fr">f</target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`dependency_ratio`</ph></source>
+<target xml:lang="fr"><ph id="1">`dependency_ratio`</ph></target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en">Dependency ratio = (dependents / working) × 100</source>
+<target xml:lang="fr">Dependency ratio = (dependents / working) × 100</target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">Derived</source>
+<target xml:lang="fr">Derived</target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en">—</source>
+<target xml:lang="fr">—</target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en">Processing Steps <bpt id="1">&lt;a id="processing-steps-4"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Processing Steps <bpt id="1">&lt;a id="processing-steps-4"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Download Required WorldPop Tiles<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Download Required WorldPop Tiles<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en">For each indicator, the script identifies which age/sex rasters are needed (e.g., <ph id="1">`m_00`</ph>, <ph id="2">`f_01`</ph>, etc.).</source>
+<target xml:lang="fr">For each indicator, the script identifies which age/sex rasters are needed (e.g., <ph id="1">`m_00`</ph>, <ph id="2">`f_01`</ph>, etc.).</target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en">Tiles are downloaded from <bpt id="1">**</bpt>Worldpop<ept id="1">**</ept> using the <ph id="2">`Global_2015_2030`</ph> / <ph id="3">`R2025A`</ph> / <ph id="4">`2030`</ph> constrained dataset.</source>
+<target xml:lang="fr">Tiles are downloaded from <bpt id="1">**</bpt>Worldpop<ept id="1">**</ept> using the <ph id="2">`Global_2015_2030`</ph> / <ph id="3">`R2025A`</ph> / <ph id="4">`2030`</ph> constrained dataset.</target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Merge and Sum Rasters<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Merge and Sum Rasters<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en">The corresponding age/sex tiles are summed into one raster per indicator.</source>
+<target xml:lang="fr">The corresponding age/sex tiles are summed into one raster per indicator.</target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en">Outputs are saved in <ph id="1">`data/{country}/Temporary/`</ph>.</source>
+<target xml:lang="fr">Outputs are saved in <ph id="1">`data/{country}/Temporary/`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Aggregate by Administrative Units<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Aggregate by Administrative Units<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en">Using the administrative boundary GeoJSON (e.g., <ph id="1">`ADM2`</ph>), zonal statistics are computed for each indicator.</source>
+<target xml:lang="fr">Using the administrative boundary GeoJSON (e.g., <ph id="1">`ADM2`</ph>), zonal statistics are computed for each indicator.</target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en">Population counts are summed per administrative area.</source>
+<target xml:lang="fr">Population counts are summed per administrative area.</target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Derive Dependency Ratio<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Derive Dependency Ratio<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu168" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`dependency_ratio = (dep_dependents / dep_working) × 100`</ph> is computed per administrative unit.</source>
+<target xml:lang="fr"><ph id="1">`dependency_ratio = (dep_dependents / dep_working) × 100`</ph> is computed per administrative unit.</target>
+</trans-unit>
+<trans-unit id="tu169" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Output<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Output<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu170" xml:space="preserve">
+<source xml:lang="en">A single CSV per country: <ph id="1">`{country_code}_{admin_level}_demographics.csv`</ph></source>
+<target xml:lang="fr">A single CSV per country: <ph id="1">`{country_code}_{admin_level}_demographics.csv`</ph></target>
+</trans-unit>
+<trans-unit id="tu171" xml:space="preserve">
+<source xml:lang="en">Saved to <ph id="1">`data/{country}/Output/`</ph></source>
+<target xml:lang="fr">Saved to <ph id="1">`data/{country}/Output/`</ph></target>
+</trans-unit>
+<trans-unit id="tu172" xml:space="preserve">
+<source xml:lang="en">Outputs <bpt id="1">&lt;a id="outputs-4"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Outputs <bpt id="1">&lt;a id="outputs-4"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu173" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>File:<ept id="1">**</ept> <ph id="2">`{country_code}_{admin_level}_demographics.csv`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>File:<ept id="1">**</ept> <ph id="2">`{country_code}_{admin_level}_demographics.csv`</ph></target>
+</trans-unit>
+<trans-unit id="tu174" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Columns:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Columns:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu175" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`{admin_level}_PCODE`</ph></source>
+<target xml:lang="fr"><ph id="1">`{admin_level}_PCODE`</ph></target>
+</trans-unit>
+<trans-unit id="tu176" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`ADM_PCODE`</ph> (alias column for compatibility)</source>
+<target xml:lang="fr"><ph id="1">`ADM_PCODE`</ph> (alias column for compatibility)</target>
+</trans-unit>
+<trans-unit id="tu177" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`total_pop`</ph></source>
+<target xml:lang="fr"><ph id="1">`total_pop`</ph></target>
+</trans-unit>
+<trans-unit id="tu178" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`female_pop`</ph></source>
+<target xml:lang="fr"><ph id="1">`female_pop`</ph></target>
+</trans-unit>
+<trans-unit id="tu179" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`children_u5`</ph></source>
+<target xml:lang="fr"><ph id="1">`children_u5`</ph></target>
+</trans-unit>
+<trans-unit id="tu180" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`female_u5`</ph></source>
+<target xml:lang="fr"><ph id="1">`female_u5`</ph></target>
+</trans-unit>
+<trans-unit id="tu181" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`elderly`</ph></source>
+<target xml:lang="fr"><ph id="1">`elderly`</ph></target>
+</trans-unit>
+<trans-unit id="tu182" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`pop_u15`</ph></source>
+<target xml:lang="fr"><ph id="1">`pop_u15`</ph></target>
+</trans-unit>
+<trans-unit id="tu183" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`female_u15`</ph></source>
+<target xml:lang="fr"><ph id="1">`female_u15`</ph></target>
+</trans-unit>
+<trans-unit id="tu184" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`wra_pop`</ph></source>
+<target xml:lang="fr"><ph id="1">`wra_pop`</ph></target>
+</trans-unit>
+<trans-unit id="tu185" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`dependency_ratio`</ph></source>
+<target xml:lang="fr"><ph id="1">`dependency_ratio`</ph></target>
+</trans-unit>
+<trans-unit id="tu186" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>CRS:<ept id="1">**</ept> WGS84 (<ph id="2">`EPSG:4326`</ph>)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>CRS:<ept id="1">**</ept> WGS84 (<ph id="2">`EPSG:4326`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu187" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Units:<ept id="1">**</ept> Population counts (integer, aggregated per administrative unit), ratio (%)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Units:<ept id="1">**</ept> Population counts (integer, aggregated per administrative unit), ratio (%)</target>
+</trans-unit>
+<trans-unit id="tu188" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Python Script (Demographics)</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Python Script (Demographics)</target>
+</trans-unit>
+<trans-unit id="tu189" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu190" xml:space="preserve">
+<source xml:lang="en">5. Rural Population <bpt id="1">&lt;a id="5-rural-population"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">5. Rural Population <bpt id="1">&lt;a id="5-rural-population"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu191" xml:space="preserve">
+<source xml:lang="en">Represents the proportion and distribution of people living in <bpt id="1">**</bpt>rural areas<ept id="1">**</ept> within each administrative unit. Rural areas are those outside urban extents, typically characterized by lower population density, agricultural or natural land use, and limited infrastructure compared to urban centers.</source>
+<target xml:lang="fr">Represents the proportion and distribution of people living in <bpt id="1">**</bpt>rural areas<ept id="1">**</ept> within each administrative unit. Rural areas are those outside urban extents, typically characterized by lower population density, agricultural or natural land use, and limited infrastructure compared to urban centers.</target>
+</trans-unit>
+<trans-unit id="tu192" xml:space="preserve">
+<source xml:lang="en">This layer combines <bpt id="1">**</bpt>WorldPop population rasters<ept id="1">**</ept> with <bpt id="2">**</bpt>Global Human Settlement Layer (GHS-SMOD)<ept id="2">**</ept> data to estimate rural populations for each demographic group.</source>
+<target xml:lang="fr">This layer combines <bpt id="1">**</bpt>WorldPop population rasters<ept id="1">**</ept> with <bpt id="2">**</bpt>Global Human Settlement Layer (GHS-SMOD)<ept id="2">**</ept> data to estimate rural populations for each demographic group.</target>
+</trans-unit>
+<trans-unit id="tu193" xml:space="preserve">
+<source xml:lang="en">Data Sources <bpt id="1">&lt;a id="data-sources-5"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data Sources <bpt id="1">&lt;a id="data-sources-5"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu194" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>WorldPop Population Rasters:<ept id="1">**</ept><ph id="2">  </ph>
+  Derived from the <bpt id="3">[</bpt>WorldPop Age-Sex structured datasets<ept id="3">](https://www.worldpop.org/geodata/listing?id=77)</ept>.<ph id="4">  </ph>
+  Used to calculate population counts for various demographic indicators (see the <bpt id="5">*</bpt>Demographics<ept id="5">*</ept> chapter).</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>WorldPop Population Rasters:<ept id="1">**</ept><ph id="2">  </ph>
+  Derived from the <bpt id="3">[</bpt>WorldPop Age-Sex structured datasets<ept id="3">](https://www.worldpop.org/geodata/listing?id=77)</ept>.<ph id="4">  </ph>
+  Used to calculate population counts for various demographic indicators (see the <bpt id="5">*</bpt>Demographics<ept id="5">*</ept> chapter).</target>
+</trans-unit>
+<trans-unit id="tu195" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>GHS-SMOD (Settlement Model) Raster:<ept id="1">**</ept><ph id="2">  </ph>
+  Downloaded from the <bpt id="3">[</bpt>JRC GHSL repository<ept id="3">](https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/)</ept> for the year 2030 projection.<ph id="4">  </ph>
+  Used to classify grid cells as <bpt id="5">**</bpt>urban<ept id="5">**</ept> or <bpt id="6">**</bpt>rural<ept id="6">**</ept> based on settlement patterns.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>GHS-SMOD (Settlement Model) Raster:<ept id="1">**</ept><ph id="2">  </ph>
+  Downloaded from the <bpt id="3">[</bpt>JRC GHSL repository<ept id="3">](https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/)</ept> for the year 2030 projection.<ph id="4">  </ph>
+  Used to classify grid cells as <bpt id="5">**</bpt>urban<ept id="5">**</ept> or <bpt id="6">**</bpt>rural<ept id="6">**</ept> based on settlement patterns.</target>
+</trans-unit>
+<trans-unit id="tu196" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Administrative Boundaries:<ept id="1">**</ept><ph id="2">  </ph>
+  GeoJSON boundary files (e.g., ADM2) define the spatial units used for population aggregation.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Administrative Boundaries:<ept id="1">**</ept><ph id="2">  </ph>
+  GeoJSON boundary files (e.g., ADM2) define the spatial units used for population aggregation.</target>
+</trans-unit>
+<trans-unit id="tu197" xml:space="preserve">
+<source xml:lang="en">Processing Steps <bpt id="1">&lt;a id="processing-steps-5"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Processing Steps <bpt id="1">&lt;a id="processing-steps-5"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu198" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Download GHS-SMOD Raster<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Download GHS-SMOD Raster<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu199" xml:space="preserve">
+<source xml:lang="en">The script downloads the global SMOD ZIP archive for 2030.</source>
+<target xml:lang="fr">The script downloads the global SMOD ZIP archive for 2030.</target>
+</trans-unit>
+<trans-unit id="tu200" xml:space="preserve">
+<source xml:lang="en">Extracts and selects the <ph id="1">`.tif`</ph> raster corresponding to global settlement data.</source>
+<target xml:lang="fr">Extracts and selects the <ph id="1">`.tif`</ph> raster corresponding to global settlement data.</target>
+</trans-unit>
+<trans-unit id="tu201" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Reclassify SMOD Raster<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Reclassify SMOD Raster<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu202" xml:space="preserve">
+<source xml:lang="en">Converts original SMOD categories into two classes:</source>
+<target xml:lang="fr">Converts original SMOD categories into two classes:</target>
+</trans-unit>
+<trans-unit id="tu203" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Rural = 1<ept id="1">**</ept> (codes 11–13)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Rural = 1<ept id="1">**</ept> (codes 11–13)</target>
+</trans-unit>
+<trans-unit id="tu204" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Urban = 2<ept id="1">**</ept> (codes 21–30)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Urban = 2<ept id="1">**</ept> (codes 21–30)</target>
+</trans-unit>
+<trans-unit id="tu205" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Excluded/Water = 0<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Excluded/Water = 0<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu206" xml:space="preserve">
+<source xml:lang="en">The resulting raster is saved as <ph id="1">`smod_reclass.tif`</ph>.</source>
+<target xml:lang="fr">The resulting raster is saved as <ph id="1">`smod_reclass.tif`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu207" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Fetch WorldPop Demographic Indicators<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Fetch WorldPop Demographic Indicators<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu208" xml:space="preserve">
+<source xml:lang="en">Ensures that population rasters for indicators such as <ph id="1">`female_pop`</ph>, <ph id="2">`children_u5`</ph>, etc., are available.</source>
+<target xml:lang="fr">Ensures that population rasters for indicators such as <ph id="1">`female_pop`</ph>, <ph id="2">`children_u5`</ph>, etc., are available.</target>
+</trans-unit>
+<trans-unit id="tu209" xml:space="preserve">
+<source xml:lang="en">Reuses outputs from the <ph id="1">`Demographics`</ph> asset.</source>
+<target xml:lang="fr">Reuses outputs from the <ph id="1">`Demographics`</ph> asset.</target>
+</trans-unit>
+<trans-unit id="tu210" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Compute Rural Population<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Compute Rural Population<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu211" xml:space="preserve">
+<source xml:lang="en">Reprojects the SMOD raster to match each WorldPop raster.</source>
+<target xml:lang="fr">Reprojects the SMOD raster to match each WorldPop raster.</target>
+</trans-unit>
+<trans-unit id="tu212" xml:space="preserve">
+<source xml:lang="en">Multiplies each population raster by the rural mask (<ph id="1">`smod == 1`</ph>).</source>
+<target xml:lang="fr">Multiplies each population raster by the rural mask (<ph id="1">`smod == 1`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu213" xml:space="preserve">
+<source xml:lang="en">Performs zonal statistics per administrative unit (e.g., ADM2).</source>
+<target xml:lang="fr">Performs zonal statistics per administrative unit (e.g., ADM2).</target>
+</trans-unit>
+<trans-unit id="tu214" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Output Generation<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Output Generation<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu215" xml:space="preserve">
+<source xml:lang="en">Aggregates results into a CSV file per country and administrative level.</source>
+<target xml:lang="fr">Aggregates results into a CSV file per country and administrative level.</target>
+</trans-unit>
+<trans-unit id="tu216" xml:space="preserve">
+<source xml:lang="en">Adds both absolute (<ph id="1">`_rural`</ph>) and relative (<ph id="2">`_rural_perc`</ph>) population values.</source>
+<target xml:lang="fr">Adds both absolute (<ph id="1">`_rural`</ph>) and relative (<ph id="2">`_rural_perc`</ph>) population values.</target>
+</trans-unit>
+<trans-unit id="tu217" xml:space="preserve">
+<source xml:lang="en">Outputs <bpt id="1">&lt;a id="outputs-5"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Outputs <bpt id="1">&lt;a id="outputs-5"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu218" xml:space="preserve">
+<source xml:lang="en">CSV file: <ph id="1">`{country_code}_{admin_level}_rural_population.csv`</ph></source>
+<target xml:lang="fr">CSV file: <ph id="1">`{country_code}_{admin_level}_rural_population.csv`</ph></target>
+</trans-unit>
+<trans-unit id="tu219" xml:space="preserve">
+<source xml:lang="en">Columns:</source>
+<target xml:lang="fr">Columns:</target>
+</trans-unit>
+<trans-unit id="tu220" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`{admin_level}_PCODE`</ph></source>
+<target xml:lang="fr"><ph id="1">`{admin_level}_PCODE`</ph></target>
+</trans-unit>
+<trans-unit id="tu221" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`ADM_PCODE`</ph> (alias column for compatibility)</source>
+<target xml:lang="fr"><ph id="1">`ADM_PCODE`</ph> (alias column for compatibility)</target>
+</trans-unit>
+<trans-unit id="tu222" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`total_pop_rural`</ph>, <ph id="2">`female_pop_rural`</ph>, <ph id="3">`children_u5_rural`</ph></source>
+<target xml:lang="fr"><ph id="1">`total_pop_rural`</ph>, <ph id="2">`female_pop_rural`</ph>, <ph id="3">`children_u5_rural`</ph></target>
+</trans-unit>
+<trans-unit id="tu223" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`female_u5_rural`</ph>, <ph id="2">`elderly_rural`</ph>, <ph id="3">`pop_u15_rural`</ph>, <ph id="4">`female_u15_rural`</ph>, <ph id="5">`wra_pop_rural`</ph></source>
+<target xml:lang="fr"><ph id="1">`female_u5_rural`</ph>, <ph id="2">`elderly_rural`</ph>, <ph id="3">`pop_u15_rural`</ph>, <ph id="4">`female_u15_rural`</ph>, <ph id="5">`wra_pop_rural`</ph></target>
+</trans-unit>
+<trans-unit id="tu224" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`dependency_ratio_rural`</ph> (rural dependency ratio = dependents / working × 100)</source>
+<target xml:lang="fr"><ph id="1">`dependency_ratio_rural`</ph> (rural dependency ratio = dependents / working × 100)</target>
+</trans-unit>
+<trans-unit id="tu225" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`rural_pop_perc`</ph> (percentage of population living in rural areas)</source>
+<target xml:lang="fr"><ph id="1">`rural_pop_perc`</ph> (percentage of population living in rural areas)</target>
+</trans-unit>
+<trans-unit id="tu226" xml:space="preserve">
+<source xml:lang="en">CRS: WGS84 (<ph id="1">`EPSG:4326`</ph>)</source>
+<target xml:lang="fr">CRS: WGS84 (<ph id="1">`EPSG:4326`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu227" xml:space="preserve">
+<source xml:lang="en">Units: counts and percentages per administrative unit</source>
+<target xml:lang="fr">Units: counts and percentages per administrative unit</target>
+</trans-unit>
+<trans-unit id="tu228" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Python Script (Rural Population)</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Python Script (Rural Population)</target>
+</trans-unit>
+<trans-unit id="tu229" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu230" xml:space="preserve">
+<source xml:lang="en">6. Rural Accessibility Index (RAI) <bpt id="1">&lt;a id="6-rural-accessibility-index-rai"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">6. Rural Accessibility Index (RAI) <bpt id="1">&lt;a id="6-rural-accessibility-index-rai"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu231" xml:space="preserve">
+<source xml:lang="en">Computes the percentage of rural population with access to a paved road within 2 km. The Rural Accessibility Index measures the proportion of people living in rural areas (GHS-SMOD classes 11–13) who live within 2 km of a paved road surface. Results are provided for multiple demographic groups and as a dependency ratio for the accessible rural population.</source>
+<target xml:lang="fr">Computes the percentage of rural population with access to a paved road within 2 km. The Rural Accessibility Index measures the proportion of people living in rural areas (GHS-SMOD classes 11–13) who live within 2 km of a paved road surface. Results are provided for multiple demographic groups and as a dependency ratio for the accessible rural population.</target>
+</trans-unit>
+<trans-unit id="tu232" xml:space="preserve">
+<source xml:lang="en">Data Sources <bpt id="1">&lt;a id="data-sources-6"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data Sources <bpt id="1">&lt;a id="data-sources-6"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu233" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Road Surface Data:<ept id="1">**</ept> Mapillary road surface classification (<ph id="2">`pred_label == 0`</ph> for paved) and Planet road surface classification (<ph id="3">`DL_road_class_2024 == "paved"`</ph>), downloaded from HEiGIT/HDX storage.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Road Surface Data:<ept id="1">**</ept> Mapillary road surface classification (<ph id="2">`pred_label == 0`</ph> for paved) and Planet road surface classification (<ph id="3">`DL_road_class_2024 == "paved"`</ph>), downloaded from HEiGIT/HDX storage.</target>
+</trans-unit>
+<trans-unit id="tu234" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>GHS-SMOD Raster:<ept id="1">**</ept> Global Human Settlement Layer settlement model for 2030, used to classify grid cells as rural (classes 11–13).</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>GHS-SMOD Raster:<ept id="1">**</ept> Global Human Settlement Layer settlement model for 2030, used to classify grid cells as rural (classes 11–13).</target>
+</trans-unit>
+<trans-unit id="tu235" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>WorldPop Population Rasters:<ept id="1">**</ept> Used to extract population counts per demographic group within accessible rural areas.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>WorldPop Population Rasters:<ept id="1">**</ept> Used to extract population counts per demographic group within accessible rural areas.</target>
+</trans-unit>
+<trans-unit id="tu236" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Administrative Boundaries<ept id="1">**</ept> (GeoJSON): Used to disaggregate results per admin unit.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Administrative Boundaries<ept id="1">**</ept> (GeoJSON): Used to disaggregate results per admin unit.</target>
+</trans-unit>
+<trans-unit id="tu237" xml:space="preserve">
+<source xml:lang="en">Indicators <bpt id="1">&lt;a id="indicators-6"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Indicators <bpt id="1">&lt;a id="indicators-6"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu238" xml:space="preserve">
+<source xml:lang="en">Indicator</source>
+<target xml:lang="fr">Indicator</target>
+</trans-unit>
+<trans-unit id="tu239" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu240" xml:space="preserve">
+<source xml:lang="en">Units</source>
+<target xml:lang="fr">Units</target>
+</trans-unit>
+<trans-unit id="tu241" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`rural_access_{group}`</ph></source>
+<target xml:lang="fr"><ph id="1">`rural_access_{group}`</ph></target>
+</trans-unit>
+<trans-unit id="tu242" xml:space="preserve">
+<source xml:lang="en">Population in rural areas within 2 km of a paved road</source>
+<target xml:lang="fr">Population in rural areas within 2 km of a paved road</target>
+</trans-unit>
+<trans-unit id="tu243" xml:space="preserve">
+<source xml:lang="en">people</source>
+<target xml:lang="fr">people</target>
+</trans-unit>
+<trans-unit id="tu244" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`RAI_{group}`</ph></source>
+<target xml:lang="fr"><ph id="1">`RAI_{group}`</ph></target>
+</trans-unit>
+<trans-unit id="tu245" xml:space="preserve">
+<source xml:lang="en">Rural Accessibility Index = rural access / rural pop × 100</source>
+<target xml:lang="fr">Rural Accessibility Index = rural access / rural pop × 100</target>
+</trans-unit>
+<trans-unit id="tu246" xml:space="preserve">
+<source xml:lang="en">%</source>
+<target xml:lang="fr">%</target>
+</trans-unit>
+<trans-unit id="tu247" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`rural_access_dependency_ratio`</ph></source>
+<target xml:lang="fr"><ph id="1">`rural_access_dependency_ratio`</ph></target>
+</trans-unit>
+<trans-unit id="tu248" xml:space="preserve">
+<source xml:lang="en">Dependency ratio within accessible rural areas</source>
+<target xml:lang="fr">Dependency ratio within accessible rural areas</target>
+</trans-unit>
+<trans-unit id="tu249" xml:space="preserve">
+<source xml:lang="en">%</source>
+<target xml:lang="fr">%</target>
+</trans-unit>
+<trans-unit id="tu250" xml:space="preserve">
+<source xml:lang="en">Demographic groups: <ph id="1">`total_pop`</ph>, <ph id="2">`female_pop`</ph>, <ph id="3">`children_u5`</ph>, <ph id="4">`female_u5`</ph>, <ph id="5">`elderly`</ph>, <ph id="6">`pop_u15`</ph>, <ph id="7">`female_u15`</ph>, <ph id="8">`wra_pop`</ph>, <ph id="9">`dependents`</ph>, <ph id="10">`working`</ph>.</source>
+<target xml:lang="fr">Demographic groups: <ph id="1">`total_pop`</ph>, <ph id="2">`female_pop`</ph>, <ph id="3">`children_u5`</ph>, <ph id="4">`female_u5`</ph>, <ph id="5">`elderly`</ph>, <ph id="6">`pop_u15`</ph>, <ph id="7">`female_u15`</ph>, <ph id="8">`wra_pop`</ph>, <ph id="9">`dependents`</ph>, <ph id="10">`working`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu251" xml:space="preserve">
+<source xml:lang="en">Processing Steps <bpt id="1">&lt;a id="processing-steps-6"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Processing Steps <bpt id="1">&lt;a id="processing-steps-6"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu252" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Download road surface data<ept id="1">**</ept> (Mapillary and Planet) for the country, filter to paved roads only.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Download road surface data<ept id="1">**</ept> (Mapillary and Planet) for the country, filter to paved roads only.</target>
+</trans-unit>
+<trans-unit id="tu253" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Buffer paved roads by 2 km<ept id="1">**</ept> in a projected CRS (UTM zone estimated from country centroid).</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Buffer paved roads by 2 km<ept id="1">**</ept> in a projected CRS (UTM zone estimated from country centroid).</target>
+</trans-unit>
+<trans-unit id="tu254" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Intersect buffered roads with admin boundaries<ept id="1">**</ept> to determine per-admin-unit road service areas.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Intersect buffered roads with admin boundaries<ept id="1">**</ept> to determine per-admin-unit road service areas.</target>
+</trans-unit>
+<trans-unit id="tu255" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Download and reclassify GHS-SMOD raster<ept id="1">**</ept> into rural (1) / urban (2) / excluded (0).</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Download and reclassify GHS-SMOD raster<ept id="1">**</ept> into rural (1) / urban (2) / excluded (0).</target>
+</trans-unit>
+<trans-unit id="tu256" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Clip SMOD to country boundary<ept id="1">**</ept> and vectorize rural pixels into polygons.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Clip SMOD to country boundary<ept id="1">**</ept> and vectorize rural pixels into polygons.</target>
+</trans-unit>
+<trans-unit id="tu257" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Intersect rural polygons with buffered roads<ept id="1">**</ept> to identify accessible rural areas.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Intersect rural polygons with buffered roads<ept id="1">**</ept> to identify accessible rural areas.</target>
+</trans-unit>
+<trans-unit id="tu258" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Extract WorldPop population counts<ept id="1">**</ept> for each demographic group within accessible rural areas.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Extract WorldPop population counts<ept id="1">**</ept> for each demographic group within accessible rural areas.</target>
+</trans-unit>
+<trans-unit id="tu259" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Load rural population totals<ept id="1">**</ept> from the <bpt id="2">*</bpt>Rural Population<ept id="2">*</ept> CSV to use as denominator.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Load rural population totals<ept id="1">**</ept> from the <bpt id="2">*</bpt>Rural Population<ept id="2">*</ept> CSV to use as denominator.</target>
+</trans-unit>
+<trans-unit id="tu260" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Compute RAI ratios:<ept id="1">**</ept> <ph id="2">`rural_access_{group} / {group}_rural × 100`</ph>.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Compute RAI ratios:<ept id="1">**</ept> <ph id="2">`rural_access_{group} / {group}_rural × 100`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu261" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Compute dependency ratio:<ept id="1">**</ept> <ph id="2">`rural_access_dependents / rural_access_working × 100`</ph>.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Compute dependency ratio:<ept id="1">**</ept> <ph id="2">`rural_access_dependents / rural_access_working × 100`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu262" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Write CSV<ept id="1">**</ept> per admin unit.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Write CSV<ept id="1">**</ept> per admin unit.</target>
+</trans-unit>
+<trans-unit id="tu263" xml:space="preserve">
+<source xml:lang="en">Outputs <bpt id="1">&lt;a id="outputs-6"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Outputs <bpt id="1">&lt;a id="outputs-6"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu264" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>File:<ept id="1">**</ept> <ph id="2">`{country_code}_{admin_level}_rai.csv`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>File:<ept id="1">**</ept> <ph id="2">`{country_code}_{admin_level}_rai.csv`</ph></target>
+</trans-unit>
+<trans-unit id="tu265" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Columns:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Columns:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu266" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`{admin_level}_PCODE`</ph></source>
+<target xml:lang="fr"><ph id="1">`{admin_level}_PCODE`</ph></target>
+</trans-unit>
+<trans-unit id="tu267" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`rural_access_children_u5`</ph>, <ph id="2">`rural_access_dependents`</ph>, <ph id="3">`rural_access_working`</ph></source>
+<target xml:lang="fr"><ph id="1">`rural_access_children_u5`</ph>, <ph id="2">`rural_access_dependents`</ph>, <ph id="3">`rural_access_working`</ph></target>
+</trans-unit>
+<trans-unit id="tu268" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`rural_access_elderly`</ph>, <ph id="2">`rural_access_female_pop`</ph>, <ph id="3">`rural_access_female_u15`</ph></source>
+<target xml:lang="fr"><ph id="1">`rural_access_elderly`</ph>, <ph id="2">`rural_access_female_pop`</ph>, <ph id="3">`rural_access_female_u15`</ph></target>
+</trans-unit>
+<trans-unit id="tu269" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`rural_access_female_u5`</ph>, <ph id="2">`rural_access_pop_u15`</ph>, <ph id="3">`rural_access_total_pop`</ph></source>
+<target xml:lang="fr"><ph id="1">`rural_access_female_u5`</ph>, <ph id="2">`rural_access_pop_u15`</ph>, <ph id="3">`rural_access_total_pop`</ph></target>
+</trans-unit>
+<trans-unit id="tu270" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`rural_access_wra_pop`</ph>, <ph id="2">`rural_access_dependency_ratio`</ph></source>
+<target xml:lang="fr"><ph id="1">`rural_access_wra_pop`</ph>, <ph id="2">`rural_access_dependency_ratio`</ph></target>
+</trans-unit>
+<trans-unit id="tu271" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`RAI_total_pop`</ph>, <ph id="2">`RAI_female_pop`</ph>, <ph id="3">`RAI_children_u5`</ph>, <ph id="4">`RAI_female_u5`</ph></source>
+<target xml:lang="fr"><ph id="1">`RAI_total_pop`</ph>, <ph id="2">`RAI_female_pop`</ph>, <ph id="3">`RAI_children_u5`</ph>, <ph id="4">`RAI_female_u5`</ph></target>
+</trans-unit>
+<trans-unit id="tu272" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`RAI_elderly`</ph>, <ph id="2">`RAI_pop_u15`</ph>, <ph id="3">`RAI_female_u15`</ph>, <ph id="4">`RAI_wra_pop`</ph></source>
+<target xml:lang="fr"><ph id="1">`RAI_elderly`</ph>, <ph id="2">`RAI_pop_u15`</ph>, <ph id="3">`RAI_female_u15`</ph>, <ph id="4">`RAI_wra_pop`</ph></target>
+</trans-unit>
+<trans-unit id="tu273" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>CRS:<ept id="1">**</ept> WGS84 (<ph id="2">`EPSG:4326`</ph>)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>CRS:<ept id="1">**</ept> WGS84 (<ph id="2">`EPSG:4326`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu274" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Units:<ept id="1">**</ept> population counts, percentages (%)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Units:<ept id="1">**</ept> population counts, percentages (%)</target>
+</trans-unit>
+<trans-unit id="tu275" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Python Script (Rural Accessibility Index)</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Python Script (Rural Accessibility Index)</target>
+</trans-unit>
+<trans-unit id="tu276" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu277" xml:space="preserve">
+<source xml:lang="en">7. Vulnerability <bpt id="1">&lt;a id="7-vulnerability"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">7. Vulnerability <bpt id="1">&lt;a id="7-vulnerability"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu278" xml:space="preserve">
+<source xml:lang="en">Represents the sensitivity of a population to external shocks based on demographic composition and settlement type.<ph id="1">  </ph>
+This layer combines <bpt id="2">*</bpt>Demographics<ept id="2">*</ept> and <bpt id="3">*</bpt>Rural Population<ept id="3">*</ept> indicators to highlight population groups more likely to experience heightened vulnerability in rural or hard-to-reach regions.</source>
+<target xml:lang="fr">Represents the sensitivity of a population to external shocks based on demographic composition and settlement type.<ph id="1">  </ph>
+This layer combines <bpt id="2">*</bpt>Demographics<ept id="2">*</ept> and <bpt id="3">*</bpt>Rural Population<ept id="3">*</ept> indicators to highlight population groups more likely to experience heightened vulnerability in rural or hard-to-reach regions.</target>
+</trans-unit>
+<trans-unit id="tu279" xml:space="preserve">
+<source xml:lang="en">Data Sources <bpt id="1">&lt;a id="data-sources-7"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data Sources <bpt id="1">&lt;a id="data-sources-7"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu280" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Demographics CSVs:<ept id="1">**</ept> Derived from <bpt id="2">[</bpt>WorldPop<ept id="2">](https://www.worldpop.org/)</ept> population datasets, disaggregated by age and sex (see <bpt id="3">*</bpt>Demographics<ept id="3">*</ept> chapter).</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Demographics CSVs:<ept id="1">**</ept> Derived from <bpt id="2">[</bpt>WorldPop<ept id="2">](https://www.worldpop.org/)</ept> population datasets, disaggregated by age and sex (see <bpt id="3">*</bpt>Demographics<ept id="3">*</ept> chapter).</target>
+</trans-unit>
+<trans-unit id="tu281" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Rural Population CSVs:<ept id="1">**</ept> Derived from settlement layer analysis separating rural and urban populations (see <bpt id="2">*</bpt>Rural Population<ept id="2">*</ept> chapter).</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Rural Population CSVs:<ept id="1">**</ept> Derived from settlement layer analysis separating rural and urban populations (see <bpt id="2">*</bpt>Rural Population<ept id="2">*</ept> chapter).</target>
+</trans-unit>
+<trans-unit id="tu282" xml:space="preserve">
+<source xml:lang="en">Both datasets are aggregated to the same administrative level (e.g., ADM2).</source>
+<target xml:lang="fr">Both datasets are aggregated to the same administrative level (e.g., ADM2).</target>
+</trans-unit>
+<trans-unit id="tu283" xml:space="preserve">
+<source xml:lang="en">Processing Steps <bpt id="1">&lt;a id="processing-steps-7"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Processing Steps <bpt id="1">&lt;a id="processing-steps-7"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu284" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Input CSVs:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Input CSVs:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu285" xml:space="preserve">
+<source xml:lang="en">One <bpt id="1">*</bpt>Demographics<ept id="1">*</ept> CSV and one <bpt id="2">*</bpt>Rural Population<ept id="2">*</ept> CSV are provided per administrative level.</source>
+<target xml:lang="fr">One <bpt id="1">*</bpt>Demographics<ept id="1">*</ept> CSV and one <bpt id="2">*</bpt>Rural Population<ept id="2">*</ept> CSV are provided per administrative level.</target>
+</trans-unit>
+<trans-unit id="tu286" xml:space="preserve">
+<source xml:lang="en">Each file contains an identifier column such as <ph id="1">`ADM0_PCODE`</ph>, <ph id="2">`ADM1_PCODE`</ph>, or <ph id="3">`ADM2_PCODE`</ph>.</source>
+<target xml:lang="fr">Each file contains an identifier column such as <ph id="1">`ADM0_PCODE`</ph>, <ph id="2">`ADM1_PCODE`</ph>, or <ph id="3">`ADM2_PCODE`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu287" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Column Detection:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Column Detection:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu288" xml:space="preserve">
+<source xml:lang="en">The script automatically detects the administrative identifier column by finding any column ending with <ph id="1">`_PCODE`</ph>.</source>
+<target xml:lang="fr">The script automatically detects the administrative identifier column by finding any column ending with <ph id="1">`_PCODE`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu289" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Merge Operation:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Merge Operation:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu290" xml:space="preserve">
+<source xml:lang="en">The two datasets are merged on the identified <ph id="1">`*_PCODE`</ph> column using a <bpt id="2">**</bpt>left join<ept id="2">**</ept>.</source>
+<target xml:lang="fr">The two datasets are merged on the identified <ph id="1">`*_PCODE`</ph> column using a <bpt id="2">**</bpt>left join<ept id="2">**</ept>.</target>
+</trans-unit>
+<trans-unit id="tu291" xml:space="preserve">
+<source xml:lang="en">This ensures demographic indicators are retained even when some administrative areas lack rural population data.</source>
+<target xml:lang="fr">This ensures demographic indicators are retained even when some administrative areas lack rural population data.</target>
+</trans-unit>
+<trans-unit id="tu292" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Output Generation:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Output Generation:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu293" xml:space="preserve">
+<source xml:lang="en">The merged dataset is exported as <ph id="1">`{country_code}_{admin_level}_vulnerability.csv`</ph> to the <ph id="2">`Output/`</ph> directory.</source>
+<target xml:lang="fr">The merged dataset is exported as <ph id="1">`{country_code}_{admin_level}_vulnerability.csv`</ph> to the <ph id="2">`Output/`</ph> directory.</target>
+</trans-unit>
+<trans-unit id="tu294" xml:space="preserve">
+<source xml:lang="en">One file is created per administrative level present in the input data.</source>
+<target xml:lang="fr">One file is created per administrative level present in the input data.</target>
+</trans-unit>
+<trans-unit id="tu295" xml:space="preserve">
+<source xml:lang="en">Outputs <bpt id="1">&lt;a id="outputs-7"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Outputs <bpt id="1">&lt;a id="outputs-7"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu296" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>File:<ept id="1">**</ept> <ph id="2">`{country_code}_{admin_level}_vulnerability.csv`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>File:<ept id="1">**</ept> <ph id="2">`{country_code}_{admin_level}_vulnerability.csv`</ph></target>
+</trans-unit>
+<trans-unit id="tu297" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Columns:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Columns:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu298" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`{admin_level}_PCODE`</ph></source>
+<target xml:lang="fr"><ph id="1">`{admin_level}_PCODE`</ph></target>
+</trans-unit>
+<trans-unit id="tu299" xml:space="preserve">
+<source xml:lang="en">All demographic indicator columns (e.g., <ph id="1">`female_pop`</ph>, <ph id="2">`children_u5`</ph>, <ph id="3">`elderly`</ph>, <ph id="4">`pop_u15`</ph>)</source>
+<target xml:lang="fr">All demographic indicator columns (e.g., <ph id="1">`female_pop`</ph>, <ph id="2">`children_u5`</ph>, <ph id="3">`elderly`</ph>, <ph id="4">`pop_u15`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu300" xml:space="preserve">
+<source xml:lang="en">All rural population indicator columns (e.g., <ph id="1">`rural_pop`</ph>, <ph id="2">`urban_pop`</ph>, <ph id="3">`rural_ratio`</ph>)</source>
+<target xml:lang="fr">All rural population indicator columns (e.g., <ph id="1">`rural_pop`</ph>, <ph id="2">`urban_pop`</ph>, <ph id="3">`rural_ratio`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu301" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>CRS:<ept id="1">**</ept> WGS84 (<ph id="2">`EPSG:4326`</ph>)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>CRS:<ept id="1">**</ept> WGS84 (<ph id="2">`EPSG:4326`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu302" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Units:<ept id="1">**</ept> Population counts and ratios aggregated per administrative unit</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Units:<ept id="1">**</ept> Population counts and ratios aggregated per administrative unit</target>
+</trans-unit>
+<trans-unit id="tu303" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Python SCript (Vulnerability)</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Python SCript (Vulnerability)</target>
+</trans-unit>
+<trans-unit id="tu304" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu305" xml:space="preserve">
+<source xml:lang="en">8. Flood Exposure <bpt id="1">&lt;a id="8-flood-exposure"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">8. Flood Exposure <bpt id="1">&lt;a id="8-flood-exposure"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu306" xml:space="preserve">
+<source xml:lang="en">Estimates population and facility exposure to flooding using <bpt id="1">**</bpt>GLOFAS flood hazard rasters<ept id="1">**</ept> and <bpt id="2">**</bpt>WorldPop demographic layers<ept id="2">**</ept>. Flooded areas are identified by usign a threshold of 30 cm, and exposure metrics are aggregated per administrative boundary.</source>
+<target xml:lang="fr">Estimates population and facility exposure to flooding using <bpt id="1">**</bpt>GLOFAS flood hazard rasters<ept id="1">**</ept> and <bpt id="2">**</bpt>WorldPop demographic layers<ept id="2">**</ept>. Flooded areas are identified by usign a threshold of 30 cm, and exposure metrics are aggregated per administrative boundary.</target>
+</trans-unit>
+<trans-unit id="tu307" xml:space="preserve">
+<source xml:lang="en">This layer provides indicators for the number of people affected per demographic group and the percentage/count of critical facilities (education, hospitals, primary healthcare) impacted by flood events of different return periods (RPs).</source>
+<target xml:lang="fr">This layer provides indicators for the number of people affected per demographic group and the percentage/count of critical facilities (education, hospitals, primary healthcare) impacted by flood events of different return periods (RPs).</target>
+</trans-unit>
+<trans-unit id="tu308" xml:space="preserve">
+<source xml:lang="en">Data Sources <bpt id="1">&lt;a id="data-sources-8"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data Sources <bpt id="1">&lt;a id="data-sources-8"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu309" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>GLOFAS Flood Hazard Rasters<ept id="1">**</ept> (<ph id="2">`https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/CEMS-GLOFAS/flood_hazard/`</ph>)<ph id="3">  </ph>
+  Raster tiles containing flood depth values for different return periods (RPs).</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>GLOFAS Flood Hazard Rasters<ept id="1">**</ept> (<ph id="2">`https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/CEMS-GLOFAS/flood_hazard/`</ph>)<ph id="3">  </ph>
+  Raster tiles containing flood depth values for different return periods (RPs).</target>
+</trans-unit>
+<trans-unit id="tu310" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>WorldPop Population Layers<ept id="1">**</ept> (<ph id="2">`scripts/fetch_worldpop.py`</ph>)<ph id="3">  </ph>
+  Demographic rasters for multiple indicators at ~100 m resolution: total population, female, children under 5, elderly, etc.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>WorldPop Population Layers<ept id="1">**</ept> (<ph id="2">`scripts/fetch_worldpop.py`</ph>)<ph id="3">  </ph>
+  Demographic rasters for multiple indicators at ~100 m resolution: total population, female, children under 5, elderly, etc.</target>
+</trans-unit>
+<trans-unit id="tu311" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Facilities Data<ept id="1">**</ept> (<ph id="2">`scripts/fetch_facilities_ohsome_overpass.py`</ph>)<ph id="3">  </ph>
+  Point geometries of critical infrastructure from OHSOME or Overpass APIs.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Facilities Data<ept id="1">**</ept> (<ph id="2">`scripts/fetch_facilities_ohsome_overpass.py`</ph>)<ph id="3">  </ph>
+  Point geometries of critical infrastructure from OHSOME or Overpass APIs.</target>
+</trans-unit>
+<trans-unit id="tu312" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Administrative Boundaries<ept id="1">**</ept> (GeoJSON)<ph id="2">  </ph>
+  Used to aggregate flood exposure per ADM level (e.g., ADM1).</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Administrative Boundaries<ept id="1">**</ept> (GeoJSON)<ph id="2">  </ph>
+  Used to aggregate flood exposure per ADM level (e.g., ADM1).</target>
+</trans-unit>
+<trans-unit id="tu313" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Configuration File<ept id="1">**</ept> (<ph id="2">`configs/assets_config.yaml`</ph>)<ph id="3">  </ph>
+  Specifies:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Configuration File<ept id="1">**</ept> (<ph id="2">`configs/assets_config.yaml`</ph>)<ph id="3">  </ph>
+  Specifies:</target>
+</trans-unit>
+<trans-unit id="tu314" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`setup.flood_threshold`</ph> (flood depth in meters)</source>
+<target xml:lang="fr"><ph id="1">`setup.flood_threshold`</ph> (flood depth in meters)</target>
+</trans-unit>
+<trans-unit id="tu315" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`setup.rps`</ph> (return periods)</source>
+<target xml:lang="fr"><ph id="1">`setup.rps`</ph> (return periods)</target>
+</trans-unit>
+<trans-unit id="tu316" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`facilities_asset.api`</ph> (data source for facilities)</source>
+<target xml:lang="fr"><ph id="1">`facilities_asset.api`</ph> (data source for facilities)</target>
+</trans-unit>
+<trans-unit id="tu317" xml:space="preserve">
+<source xml:lang="en">Indicators <bpt id="1">&lt;a id="indicators-4"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Indicators <bpt id="1">&lt;a id="indicators-4"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu318" xml:space="preserve">
+<source xml:lang="en">Indicator</source>
+<target xml:lang="fr">Indicator</target>
+</trans-unit>
+<trans-unit id="tu319" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu320" xml:space="preserve">
+<source xml:lang="en">Units</source>
+<target xml:lang="fr">Units</target>
+</trans-unit>
+<trans-unit id="tu321" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`RP{rp}_female_pop_{thresh}`</ph></source>
+<target xml:lang="fr"><ph id="1">`RP{rp}_female_pop_{thresh}`</ph></target>
+</trans-unit>
+<trans-unit id="tu322" xml:space="preserve">
+<source xml:lang="en">Number of females affected by flood depth ≥ threshold</source>
+<target xml:lang="fr">Number of females affected by flood depth ≥ threshold</target>
+</trans-unit>
+<trans-unit id="tu323" xml:space="preserve">
+<source xml:lang="en">people</source>
+<target xml:lang="fr">people</target>
+</trans-unit>
+<trans-unit id="tu324" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`RP{rp}_children_u5_{thresh}`</ph></source>
+<target xml:lang="fr"><ph id="1">`RP{rp}_children_u5_{thresh}`</ph></target>
+</trans-unit>
+<trans-unit id="tu325" xml:space="preserve">
+<source xml:lang="en">Number of children under 5 affected</source>
+<target xml:lang="fr">Number of children under 5 affected</target>
+</trans-unit>
+<trans-unit id="tu326" xml:space="preserve">
+<source xml:lang="en">people</source>
+<target xml:lang="fr">people</target>
+</trans-unit>
+<trans-unit id="tu327" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`RP{rp}_female_u5_{thresh}`</ph></source>
+<target xml:lang="fr"><ph id="1">`RP{rp}_female_u5_{thresh}`</ph></target>
+</trans-unit>
+<trans-unit id="tu328" xml:space="preserve">
+<source xml:lang="en">Number of female children under 5 affected</source>
+<target xml:lang="fr">Number of female children under 5 affected</target>
+</trans-unit>
+<trans-unit id="tu329" xml:space="preserve">
+<source xml:lang="en">people</source>
+<target xml:lang="fr">people</target>
+</trans-unit>
+<trans-unit id="tu330" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`RP{rp}_elderly_{thresh}`</ph></source>
+<target xml:lang="fr"><ph id="1">`RP{rp}_elderly_{thresh}`</ph></target>
+</trans-unit>
+<trans-unit id="tu331" xml:space="preserve">
+<source xml:lang="en">Number of elderly (>65) affected</source>
+<target xml:lang="fr">Number of elderly (>65) affected</target>
+</trans-unit>
+<trans-unit id="tu332" xml:space="preserve">
+<source xml:lang="en">people</source>
+<target xml:lang="fr">people</target>
+</trans-unit>
+<trans-unit id="tu333" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`RP{rp}_pop_u15_{thresh}`</ph></source>
+<target xml:lang="fr"><ph id="1">`RP{rp}_pop_u15_{thresh}`</ph></target>
+</trans-unit>
+<trans-unit id="tu334" xml:space="preserve">
+<source xml:lang="en">Number of population under 15 affected</source>
+<target xml:lang="fr">Number of population under 15 affected</target>
+</trans-unit>
+<trans-unit id="tu335" xml:space="preserve">
+<source xml:lang="en">people</source>
+<target xml:lang="fr">people</target>
+</trans-unit>
+<trans-unit id="tu336" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`RP{rp}_female_u15_{thresh}`</ph></source>
+<target xml:lang="fr"><ph id="1">`RP{rp}_female_u15_{thresh}`</ph></target>
+</trans-unit>
+<trans-unit id="tu337" xml:space="preserve">
+<source xml:lang="en">Number of female population under 15 affected</source>
+<target xml:lang="fr">Number of female population under 15 affected</target>
+</trans-unit>
+<trans-unit id="tu338" xml:space="preserve">
+<source xml:lang="en">people</source>
+<target xml:lang="fr">people</target>
+</trans-unit>
+<trans-unit id="tu339" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`RP{rp}_wra_pop_{thresh}`</ph></source>
+<target xml:lang="fr"><ph id="1">`RP{rp}_wra_pop_{thresh}`</ph></target>
+</trans-unit>
+<trans-unit id="tu340" xml:space="preserve">
+<source xml:lang="en">Number of women of reproductive age (15–49) affected</source>
+<target xml:lang="fr">Number of women of reproductive age (15–49) affected</target>
+</trans-unit>
+<trans-unit id="tu341" xml:space="preserve">
+<source xml:lang="en">people</source>
+<target xml:lang="fr">people</target>
+</trans-unit>
+<trans-unit id="tu342" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`RP{rp}_dependency_ratio_{thresh}`</ph></source>
+<target xml:lang="fr"><ph id="1">`RP{rp}_dependency_ratio_{thresh}`</ph></target>
+</trans-unit>
+<trans-unit id="tu343" xml:space="preserve">
+<source xml:lang="en">Dependency ratio of the affected population</source>
+<target xml:lang="fr">Dependency ratio of the affected population</target>
+</trans-unit>
+<trans-unit id="tu344" xml:space="preserve">
+<source xml:lang="en">%</source>
+<target xml:lang="fr">%</target>
+</trans-unit>
+<trans-unit id="tu345" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`RP{rp}_education_{thresh}_pct`</ph></source>
+<target xml:lang="fr"><ph id="1">`RP{rp}_education_{thresh}_pct`</ph></target>
+</trans-unit>
+<trans-unit id="tu346" xml:space="preserve">
+<source xml:lang="en">Percentage of educational facilities flooded</source>
+<target xml:lang="fr">Percentage of educational facilities flooded</target>
+</trans-unit>
+<trans-unit id="tu347" xml:space="preserve">
+<source xml:lang="en">%</source>
+<target xml:lang="fr">%</target>
+</trans-unit>
+<trans-unit id="tu348" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`RP{rp}_education_{thresh}_count`</ph></source>
+<target xml:lang="fr"><ph id="1">`RP{rp}_education_{thresh}_count`</ph></target>
+</trans-unit>
+<trans-unit id="tu349" xml:space="preserve">
+<source xml:lang="en">Number of educational facilities flooded</source>
+<target xml:lang="fr">Number of educational facilities flooded</target>
+</trans-unit>
+<trans-unit id="tu350" xml:space="preserve">
+<source xml:lang="en">count</source>
+<target xml:lang="fr">count</target>
+</trans-unit>
+<trans-unit id="tu351" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`RP{rp}_hospitals_{thresh}_pct`</ph></source>
+<target xml:lang="fr"><ph id="1">`RP{rp}_hospitals_{thresh}_pct`</ph></target>
+</trans-unit>
+<trans-unit id="tu352" xml:space="preserve">
+<source xml:lang="en">Percentage of hospitals flooded</source>
+<target xml:lang="fr">Percentage of hospitals flooded</target>
+</trans-unit>
+<trans-unit id="tu353" xml:space="preserve">
+<source xml:lang="en">%</source>
+<target xml:lang="fr">%</target>
+</trans-unit>
+<trans-unit id="tu354" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`RP{rp}_hospitals_{thresh}_count`</ph></source>
+<target xml:lang="fr"><ph id="1">`RP{rp}_hospitals_{thresh}_count`</ph></target>
+</trans-unit>
+<trans-unit id="tu355" xml:space="preserve">
+<source xml:lang="en">Number of hospitals flooded</source>
+<target xml:lang="fr">Number of hospitals flooded</target>
+</trans-unit>
+<trans-unit id="tu356" xml:space="preserve">
+<source xml:lang="en">count</source>
+<target xml:lang="fr">count</target>
+</trans-unit>
+<trans-unit id="tu357" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`RP{rp}_primary_healthcare_{thresh}_pct`</ph></source>
+<target xml:lang="fr"><ph id="1">`RP{rp}_primary_healthcare_{thresh}_pct`</ph></target>
+</trans-unit>
+<trans-unit id="tu358" xml:space="preserve">
+<source xml:lang="en">Percentage of primary healthcare facilities flooded</source>
+<target xml:lang="fr">Percentage of primary healthcare facilities flooded</target>
+</trans-unit>
+<trans-unit id="tu359" xml:space="preserve">
+<source xml:lang="en">%</source>
+<target xml:lang="fr">%</target>
+</trans-unit>
+<trans-unit id="tu360" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`RP{rp}_primary_healthcare_{thresh}_count`</ph></source>
+<target xml:lang="fr"><ph id="1">`RP{rp}_primary_healthcare_{thresh}_count`</ph></target>
+</trans-unit>
+<trans-unit id="tu361" xml:space="preserve">
+<source xml:lang="en">Number of primary healthcare facilities flooded</source>
+<target xml:lang="fr">Number of primary healthcare facilities flooded</target>
+</trans-unit>
+<trans-unit id="tu362" xml:space="preserve">
+<source xml:lang="en">count</source>
+<target xml:lang="fr">count</target>
+</trans-unit>
+<trans-unit id="tu363" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`{rp}`</ph> is the return period (e.g., 10, 50, 100 years), <ph id="2">`{thresh}`</ph> is the flood threshold in cm.</source>
+<target xml:lang="fr"><ph id="1">`{rp}`</ph> is the return period (e.g., 10, 50, 100 years), <ph id="2">`{thresh}`</ph> is the flood threshold in cm.</target>
+</trans-unit>
+<trans-unit id="tu364" xml:space="preserve">
+<source xml:lang="en">Flood Threshold <bpt id="1">&lt;a id="flood-threshold"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Flood Threshold <bpt id="1">&lt;a id="flood-threshold"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu365" xml:space="preserve">
+<source xml:lang="en">Parameter</source>
+<target xml:lang="fr">Parameter</target>
+</trans-unit>
+<trans-unit id="tu366" xml:space="preserve">
+<source xml:lang="en">Value</source>
+<target xml:lang="fr">Value</target>
+</trans-unit>
+<trans-unit id="tu367" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu368" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`setup.flood_threshold`</ph></source>
+<target xml:lang="fr"><ph id="1">`setup.flood_threshold`</ph></target>
+</trans-unit>
+<trans-unit id="tu369" xml:space="preserve">
+<source xml:lang="en">e.g., 0.3 m</source>
+<target xml:lang="fr">e.g., 0.3 m</target>
+</trans-unit>
+<trans-unit id="tu370" xml:space="preserve">
+<source xml:lang="en">Minimum flood depth considered for exposure (configurable in <ph id="1">`assets_config.yaml`</ph>)</source>
+<target xml:lang="fr">Minimum flood depth considered for exposure (configurable in <ph id="1">`assets_config.yaml`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu371" xml:space="preserve">
+<source xml:lang="en">Processing Steps <bpt id="1">&lt;a id="processing-steps-8"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Processing Steps <bpt id="1">&lt;a id="processing-steps-8"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu372" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Configuration Loading<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Configuration Loading<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu373" xml:space="preserve">
+<source xml:lang="en">Reads <ph id="1">`setup.flood_threshold`</ph> and <ph id="2">`rps`</ph> from <ph id="3">`assets_config.yaml`</ph>.</source>
+<target xml:lang="fr">Reads <ph id="1">`setup.flood_threshold`</ph> and <ph id="2">`rps`</ph> from <ph id="3">`assets_config.yaml`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu374" xml:space="preserve">
+<source xml:lang="en">Computes <ph id="1">`THRESH_SUFFIX`</ph> (flood depth in cm) for indicator naming.</source>
+<target xml:lang="fr">Computes <ph id="1">`THRESH_SUFFIX`</ph> (flood depth in cm) for indicator naming.</target>
+</trans-unit>
+<trans-unit id="tu375" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Input Geometry<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Input Geometry<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu376" xml:space="preserve">
+<source xml:lang="en">Loads administrative boundaries (<ph id="1">`data/{country_code}/{country_code}_{admin_level}.geojson`</ph>) using GeoPandas.</source>
+<target xml:lang="fr">Loads administrative boundaries (<ph id="1">`data/{country_code}/{country_code}_{admin_level}.geojson`</ph>) using GeoPandas.</target>
+</trans-unit>
+<trans-unit id="tu377" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Tile Selection and Download<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Tile Selection and Download<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu378" xml:space="preserve">
+<source xml:lang="en">Queries GLOFAS server for all flood tiles corresponding to each RP.</source>
+<target xml:lang="fr">Queries GLOFAS server for all flood tiles corresponding to each RP.</target>
+</trans-unit>
+<trans-unit id="tu379" xml:space="preserve">
+<source xml:lang="en">Selects only tiles intersecting the country boundary.</source>
+<target xml:lang="fr">Selects only tiles intersecting the country boundary.</target>
+</trans-unit>
+<trans-unit id="tu380" xml:space="preserve">
+<source xml:lang="en">Downloads missing tiles into <ph id="1">`data/{country_code}/Temporary`</ph>.</source>
+<target xml:lang="fr">Downloads missing tiles into <ph id="1">`data/{country_code}/Temporary`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu381" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Raster Merging and Clipping<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Raster Merging and Clipping<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu382" xml:space="preserve">
+<source xml:lang="en">Merges selected tiles into a single raster per RP.</source>
+<target xml:lang="fr">Merges selected tiles into a single raster per RP.</target>
+</trans-unit>
+<trans-unit id="tu383" xml:space="preserve">
+<source xml:lang="en">Clips the merged raster to the country boundary and saves to <ph id="1">`Temporary`</ph>.</source>
+<target xml:lang="fr">Clips the merged raster to the country boundary and saves to <ph id="1">`Temporary`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu384" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>WorldPop Population Preparation<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>WorldPop Population Preparation<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu385" xml:space="preserve">
+<source xml:lang="en">Fetches required demographic rasters (female, children under 5, female under 5, elderly, under 15, female under 15, women of reproductive age, dependents, working-age population).</source>
+<target xml:lang="fr">Fetches required demographic rasters (female, children under 5, female under 5, elderly, under 15, female under 15, women of reproductive age, dependents, working-age population).</target>
+</trans-unit>
+<trans-unit id="tu386" xml:space="preserve">
+<source xml:lang="en">Ensures rasters exist locally for alignment with flood data.</source>
+<target xml:lang="fr">Ensures rasters exist locally for alignment with flood data.</target>
+</trans-unit>
+<trans-unit id="tu387" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Facility Data Preparation<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Facility Data Preparation<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu388" xml:space="preserve">
+<source xml:lang="en">Downloads or loads facilities geometries from the chosen API (<ph id="1">`ohsome-api`</ph>, <ph id="2">`overpass`</ph>).</source>
+<target xml:lang="fr">Downloads or loads facilities geometries from the chosen API (<ph id="1">`ohsome-api`</ph>, <ph id="2">`overpass`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu389" xml:space="preserve">
+<source xml:lang="en">Converts geometries to points and reprojects to match raster CRS.</source>
+<target xml:lang="fr">Converts geometries to points and reprojects to match raster CRS.</target>
+</trans-unit>
+<trans-unit id="tu390" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Flood Exposure Calculation per RP<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Flood Exposure Calculation per RP<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu391" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Flooded population<ept id="1">**</ept>: Multiplies population raster by flood mask (flood depth ≥ threshold) to compute the number of affected people per ADM polygon.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Flooded population<ept id="1">**</ept>: Multiplies population raster by flood mask (flood depth ≥ threshold) to compute the number of affected people per ADM polygon.</target>
+</trans-unit>
+<trans-unit id="tu392" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Flooded facilities<ept id="1">**</ept>: Samples flood raster at facility locations to compute flooded count and percentage per ADM polygon.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Flooded facilities<ept id="1">**</ept>: Samples flood raster at facility locations to compute flooded count and percentage per ADM polygon.</target>
+</trans-unit>
+<trans-unit id="tu393" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Aggregation and CSV Output<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Aggregation and CSV Output<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu394" xml:space="preserve">
+<source xml:lang="en">Merges RP results across population and facilities into a single CSV.</source>
+<target xml:lang="fr">Merges RP results across population and facilities into a single CSV.</target>
+</trans-unit>
+<trans-unit id="tu395" xml:space="preserve">
+<source xml:lang="en">Fills missing values with 0 and rounds numbers to integers.</source>
+<target xml:lang="fr">Fills missing values with 0 and rounds numbers to integers.</target>
+</trans-unit>
+<trans-unit id="tu396" xml:space="preserve">
+<source xml:lang="en">Final CSV saved to <ph id="1">`data/{country_code}/Output/{country_code}_{admin_level}_flood_exposure.csv`</ph>.</source>
+<target xml:lang="fr">Final CSV saved to <ph id="1">`data/{country_code}/Output/{country_code}_{admin_level}_flood_exposure.csv`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu397" xml:space="preserve">
+<source xml:lang="en">Outputs <bpt id="1">&lt;a id="outputs-8"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Outputs <bpt id="1">&lt;a id="outputs-8"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu398" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>File:<ept id="1">**</ept> <ph id="2">`{country_code}_{admin_level}_flood_exposure.csv`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>File:<ept id="1">**</ept> <ph id="2">`{country_code}_{admin_level}_flood_exposure.csv`</ph></target>
+</trans-unit>
+<trans-unit id="tu399" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Columns:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Columns:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu400" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`{admin_level}_PCODE`</ph></source>
+<target xml:lang="fr"><ph id="1">`{admin_level}_PCODE`</ph></target>
+</trans-unit>
+<trans-unit id="tu401" xml:space="preserve">
+<source xml:lang="en">Flooded population indicators per RP</source>
+<target xml:lang="fr">Flooded population indicators per RP</target>
+</trans-unit>
+<trans-unit id="tu402" xml:space="preserve">
+<source xml:lang="en">Flooded facilities indicators per RP</source>
+<target xml:lang="fr">Flooded facilities indicators per RP</target>
+</trans-unit>
+<trans-unit id="tu403" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>CRS:<ept id="1">**</ept> WGS84 (<ph id="2">`EPSG:4326`</ph>)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>CRS:<ept id="1">**</ept> WGS84 (<ph id="2">`EPSG:4326`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu404" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Units:<ept id="1">**</ept> people, %, count</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Units:<ept id="1">**</ept> people, %, count</target>
+</trans-unit>
+<trans-unit id="tu405" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Python Script (Flood Exposure)</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Python Script (Flood Exposure)</target>
+</trans-unit>
+<trans-unit id="tu406" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu407" xml:space="preserve">
+<source xml:lang="en">9. Cyclone Exposure <bpt id="1">&lt;a id="9-cyclone-exposure"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">9. Cyclone Exposure <bpt id="1">&lt;a id="9-cyclone-exposure"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu408" xml:space="preserve">
+<source xml:lang="en">Estimates the exposure of population and critical facilities to tropical cyclones using <bpt id="1">**</bpt>IBTrACS<ept id="1">**</ept> storm track data. Cyclone categories are based on the Saffir-Simpson scale and grouped into three exposure classes (Cat 1, Cat 2-3, Cat 4-5). For each administrative unit, the affected population per demographic group and the count/percentage of flooded facilities are computed per category.</source>
+<target xml:lang="fr">Estimates the exposure of population and critical facilities to tropical cyclones using <bpt id="1">**</bpt>IBTrACS<ept id="1">**</ept> storm track data. Cyclone categories are based on the Saffir-Simpson scale and grouped into three exposure classes (Cat 1, Cat 2-3, Cat 4-5). For each administrative unit, the affected population per demographic group and the count/percentage of flooded facilities are computed per category.</target>
+</trans-unit>
+<trans-unit id="tu409" xml:space="preserve">
+<source xml:lang="en">Data Sources <bpt id="1">&lt;a id="data-sources-9"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data Sources <bpt id="1">&lt;a id="data-sources-9"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu410" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>IBTrACS Storm Tracks:<ept id="1">**</ept> International Best Track Archive for Climate Stewardship (since 1980), downloaded from NOAA NCEI as shapefile lines with Saffir-Simpson wind speed categories.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>IBTrACS Storm Tracks:<ept id="1">**</ept> International Best Track Archive for Climate Stewardship (since 1980), downloaded from NOAA NCEI as shapefile lines with Saffir-Simpson wind speed categories.</target>
+</trans-unit>
+<trans-unit id="tu411" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>WorldPop Population Rasters:<ept id="1">**</ept> Demographic rasters for multiple indicators used to compute exposed populations (see <bpt id="2">*</bpt>Demographics<ept id="2">*</ept> chapter).</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>WorldPop Population Rasters:<ept id="1">**</ept> Demographic rasters for multiple indicators used to compute exposed populations (see <bpt id="2">*</bpt>Demographics<ept id="2">*</ept> chapter).</target>
+</trans-unit>
+<trans-unit id="tu412" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Facilities Data:<ept id="1">**</ept> OSM-derived facility point geometries (education, hospitals, primary healthcare) from Ohsome or Overpass API (see <bpt id="2">*</bpt>Facilities<ept id="2">*</ept> chapter).</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Facilities Data:<ept id="1">**</ept> OSM-derived facility point geometries (education, hospitals, primary healthcare) from Ohsome or Overpass API (see <bpt id="2">*</bpt>Facilities<ept id="2">*</ept> chapter).</target>
+</trans-unit>
+<trans-unit id="tu413" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Administrative Boundaries<ept id="1">**</ept> (GeoJSON): Used to aggregate exposure per ADM level.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Administrative Boundaries<ept id="1">**</ept> (GeoJSON): Used to aggregate exposure per ADM level.</target>
+</trans-unit>
+<trans-unit id="tu414" xml:space="preserve">
+<source xml:lang="en">Indicators <bpt id="1">&lt;a id="indicators-5"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Indicators <bpt id="1">&lt;a id="indicators-5"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu415" xml:space="preserve">
+<source xml:lang="en">Indicator</source>
+<target xml:lang="fr">Indicator</target>
+</trans-unit>
+<trans-unit id="tu416" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu417" xml:space="preserve">
+<source xml:lang="en">Units</source>
+<target xml:lang="fr">Units</target>
+</trans-unit>
+<trans-unit id="tu418" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`kt34_{indicator}_cat{cls}`</ph></source>
+<target xml:lang="fr"><ph id="1">`kt34_{indicator}_cat{cls}`</ph></target>
+</trans-unit>
+<trans-unit id="tu419" xml:space="preserve">
+<source xml:lang="en">Exposed population for a demographic indicator at cyclone category <ph id="1">`{cls}`</ph></source>
+<target xml:lang="fr">Exposed population for a demographic indicator at cyclone category <ph id="1">`{cls}`</ph></target>
+</trans-unit>
+<trans-unit id="tu420" xml:space="preserve">
+<source xml:lang="en">people</source>
+<target xml:lang="fr">people</target>
+</trans-unit>
+<trans-unit id="tu421" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`kt34_dependency_ratio_cat{cls}`</ph></source>
+<target xml:lang="fr"><ph id="1">`kt34_dependency_ratio_cat{cls}`</ph></target>
+</trans-unit>
+<trans-unit id="tu422" xml:space="preserve">
+<source xml:lang="en">Dependency ratio of the exposed population at category <ph id="1">`{cls}`</ph></source>
+<target xml:lang="fr">Dependency ratio of the exposed population at category <ph id="1">`{cls}`</ph></target>
+</trans-unit>
+<trans-unit id="tu423" xml:space="preserve">
+<source xml:lang="en">%</source>
+<target xml:lang="fr">%</target>
+</trans-unit>
+<trans-unit id="tu424" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`kt34_{facility}_count_cat{cls}`</ph></source>
+<target xml:lang="fr"><ph id="1">`kt34_{facility}_count_cat{cls}`</ph></target>
+</trans-unit>
+<trans-unit id="tu425" xml:space="preserve">
+<source xml:lang="en">Number of facilities exposed at category <ph id="1">`{cls}`</ph></source>
+<target xml:lang="fr">Number of facilities exposed at category <ph id="1">`{cls}`</ph></target>
+</trans-unit>
+<trans-unit id="tu426" xml:space="preserve">
+<source xml:lang="en">count</source>
+<target xml:lang="fr">count</target>
+</trans-unit>
+<trans-unit id="tu427" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`kt34_{facility}_perc_cat{cls}`</ph></source>
+<target xml:lang="fr"><ph id="1">`kt34_{facility}_perc_cat{cls}`</ph></target>
+</trans-unit>
+<trans-unit id="tu428" xml:space="preserve">
+<source xml:lang="en">Percentage of facilities exposed at category <ph id="1">`{cls}`</ph></source>
+<target xml:lang="fr">Percentage of facilities exposed at category <ph id="1">`{cls}`</ph></target>
+</trans-unit>
+<trans-unit id="tu429" xml:space="preserve">
+<source xml:lang="en">%</source>
+<target xml:lang="fr">%</target>
+</trans-unit>
+<trans-unit id="tu430" xml:space="preserve">
+<source xml:lang="en">Where <ph id="1">`{cls}`</ph> is the cyclone exposure class (1 = Cat 1, 2 = Cat 2-3, 3 = Cat 4-5), <ph id="2">`{indicator}`</ph> is a demographic group (<ph id="3">`total_pop`</ph>, <ph id="4">`female_pop`</ph>, <ph id="5">`children_u5`</ph>, <ph id="6">`female_u5`</ph>, <ph id="7">`elderly`</ph>, <ph id="8">`pop_u15`</ph>, <ph id="9">`female_u15`</ph>, <ph id="10">`wra_pop`</ph>), and <ph id="11">`{facility}`</ph> is a category (<ph id="12">`education`</ph>, <ph id="13">`hospitals`</ph>, <ph id="14">`primary_healthcare`</ph>).</source>
+<target xml:lang="fr">Where <ph id="1">`{cls}`</ph> is the cyclone exposure class (1 = Cat 1, 2 = Cat 2-3, 3 = Cat 4-5), <ph id="2">`{indicator}`</ph> is a demographic group (<ph id="3">`total_pop`</ph>, <ph id="4">`female_pop`</ph>, <ph id="5">`children_u5`</ph>, <ph id="6">`female_u5`</ph>, <ph id="7">`elderly`</ph>, <ph id="8">`pop_u15`</ph>, <ph id="9">`female_u15`</ph>, <ph id="10">`wra_pop`</ph>), and <ph id="11">`{facility}`</ph> is a category (<ph id="12">`education`</ph>, <ph id="13">`hospitals`</ph>, <ph id="14">`primary_healthcare`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu431" xml:space="preserve">
+<source xml:lang="en">Cyclone Categories <bpt id="1">&lt;a id="cyclone-categories"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Cyclone Categories <bpt id="1">&lt;a id="cyclone-categories"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu432" xml:space="preserve">
+<source xml:lang="en">Exposure Class</source>
+<target xml:lang="fr">Exposure Class</target>
+</trans-unit>
+<trans-unit id="tu433" xml:space="preserve">
+<source xml:lang="en">Saffir-Simpson Category</source>
+<target xml:lang="fr">Saffir-Simpson Category</target>
+</trans-unit>
+<trans-unit id="tu434" xml:space="preserve">
+<source xml:lang="en">Wind Speed (km/h)</source>
+<target xml:lang="fr">Wind Speed (km/h)</target>
+</trans-unit>
+<trans-unit id="tu435" xml:space="preserve">
+<source xml:lang="en">1</source>
+<target xml:lang="fr">1</target>
+</trans-unit>
+<trans-unit id="tu436" xml:space="preserve">
+<source xml:lang="en">Category 1</source>
+<target xml:lang="fr">Category 1</target>
+</trans-unit>
+<trans-unit id="tu437" xml:space="preserve">
+<source xml:lang="en">119–153</source>
+<target xml:lang="fr">119–153</target>
+</trans-unit>
+<trans-unit id="tu438" xml:space="preserve">
+<source xml:lang="en">2</source>
+<target xml:lang="fr">2</target>
+</trans-unit>
+<trans-unit id="tu439" xml:space="preserve">
+<source xml:lang="en">Categories 2–3</source>
+<target xml:lang="fr">Categories 2–3</target>
+</trans-unit>
+<trans-unit id="tu440" xml:space="preserve">
+<source xml:lang="en">154–208</source>
+<target xml:lang="fr">154–208</target>
+</trans-unit>
+<trans-unit id="tu441" xml:space="preserve">
+<source xml:lang="en">3</source>
+<target xml:lang="fr">3</target>
+</trans-unit>
+<trans-unit id="tu442" xml:space="preserve">
+<source xml:lang="en">Categories 4–5</source>
+<target xml:lang="fr">Categories 4–5</target>
+</trans-unit>
+<trans-unit id="tu443" xml:space="preserve">
+<source xml:lang="en">≥ 209</source>
+<target xml:lang="fr">≥ 209</target>
+</trans-unit>
+<trans-unit id="tu444" xml:space="preserve">
+<source xml:lang="en">Processing Steps <bpt id="1">&lt;a id="processing-steps-9"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Processing Steps <bpt id="1">&lt;a id="processing-steps-9"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu445" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Download and extract IBTrACS storm track data<ept id="1">**</ept> from NOAA NCEI.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Download and extract IBTrACS storm track data<ept id="1">**</ept> from NOAA NCEI.</target>
+</trans-unit>
+<trans-unit id="tu446" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Filter storms<ept id="1">**</ept> with Saffir-Simpson intensity ≥ 1 and intersecting the country bounding box.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Filter storms<ept id="1">**</ept> with Saffir-Simpson intensity ≥ 1 and intersecting the country bounding box.</target>
+</trans-unit>
+<trans-unit id="tu447" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Buffer storm tracks<ept id="1">**</ept> using the mean radius of maximum winds (R34) converted to meters.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Buffer storm tracks<ept id="1">**</ept> using the mean radius of maximum winds (R34) converted to meters.</target>
+</trans-unit>
+<trans-unit id="tu448" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Clip buffers<ept id="1">**</ept> to the country administrative boundary.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Clip buffers<ept id="1">**</ept> to the country administrative boundary.</target>
+</trans-unit>
+<trans-unit id="tu449" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Rasterize<ept id="1">**</ept> the buffered tracks into a classified exposure raster (classes 1, 2, 3) aligned to WorldPop resolution.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Rasterize<ept id="1">**</ept> the buffered tracks into a classified exposure raster (classes 1, 2, 3) aligned to WorldPop resolution.</target>
+</trans-unit>
+<trans-unit id="tu450" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Compute population exposure:<ept id="1">**</ept> For each demographic indicator and cyclone class, multiply the population raster by the class mask and sum per admin unit using zonal statistics.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Compute population exposure:<ept id="1">**</ept> For each demographic indicator and cyclone class, multiply the population raster by the class mask and sum per admin unit using zonal statistics.</target>
+</trans-unit>
+<trans-unit id="tu451" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Compute dependency ratio:<ept id="1">**</ept> <ph id="2">`kt34_dependency_ratio = (dependents / working) × 100`</ph> per class.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Compute dependency ratio:<ept id="1">**</ept> <ph id="2">`kt34_dependency_ratio = (dependents / working) × 100`</ph> per class.</target>
+</trans-unit>
+<trans-unit id="tu452" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Compute facility exposure:<ept id="1">**</ept> Sample the cyclone exposure raster at facility point locations, then count and percentage per admin unit per class.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Compute facility exposure:<ept id="1">**</ept> Sample the cyclone exposure raster at facility point locations, then count and percentage per admin unit per class.</target>
+</trans-unit>
+<trans-unit id="tu453" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Save CSV<ept id="1">**</ept> with all exposure columns.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Save CSV<ept id="1">**</ept> with all exposure columns.</target>
+</trans-unit>
+<trans-unit id="tu454" xml:space="preserve">
+<source xml:lang="en">Outputs <bpt id="1">&lt;a id="outputs-9"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Outputs <bpt id="1">&lt;a id="outputs-9"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu455" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>File:<ept id="1">**</ept> <ph id="2">`{country_code}_{admin_level}_cyclone_exposure.csv`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>File:<ept id="1">**</ept> <ph id="2">`{country_code}_{admin_level}_cyclone_exposure.csv`</ph></target>
+</trans-unit>
+<trans-unit id="tu456" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Columns:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Columns:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu457" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`{admin_level}_PCODE`</ph></source>
+<target xml:lang="fr"><ph id="1">`{admin_level}_PCODE`</ph></target>
+</trans-unit>
+<trans-unit id="tu458" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`ADM_PCODE`</ph> (alias column)</source>
+<target xml:lang="fr"><ph id="1">`ADM_PCODE`</ph> (alias column)</target>
+</trans-unit>
+<trans-unit id="tu459" xml:space="preserve">
+<source xml:lang="en">Population exposed per demographic group per class: <ph id="1">`kt34_total_pop_cat1`</ph>, <ph id="2">`kt34_female_pop_cat2`</ph>, <ph id="3">`kt34_children_u5_cat3`</ph>, etc.</source>
+<target xml:lang="fr">Population exposed per demographic group per class: <ph id="1">`kt34_total_pop_cat1`</ph>, <ph id="2">`kt34_female_pop_cat2`</ph>, <ph id="3">`kt34_children_u5_cat3`</ph>, etc.</target>
+</trans-unit>
+<trans-unit id="tu460" xml:space="preserve">
+<source xml:lang="en">Dependency ratio per class: <ph id="1">`kt34_dependency_ratio_cat1`</ph>, <ph id="2">`kt34_dependency_ratio_cat2`</ph>, <ph id="3">`kt34_dependency_ratio_cat3`</ph></source>
+<target xml:lang="fr">Dependency ratio per class: <ph id="1">`kt34_dependency_ratio_cat1`</ph>, <ph id="2">`kt34_dependency_ratio_cat2`</ph>, <ph id="3">`kt34_dependency_ratio_cat3`</ph></target>
+</trans-unit>
+<trans-unit id="tu461" xml:space="preserve">
+<source xml:lang="en">Facility counts and percentages per class: <ph id="1">`kt34_education_count_cat1`</ph>, <ph id="2">`kt34_education_perc_cat1`</ph>, etc.</source>
+<target xml:lang="fr">Facility counts and percentages per class: <ph id="1">`kt34_education_count_cat1`</ph>, <ph id="2">`kt34_education_perc_cat1`</ph>, etc.</target>
+</trans-unit>
+<trans-unit id="tu462" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>CRS:<ept id="1">**</ept> WGS84 (<ph id="2">`EPSG:4326`</ph>)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>CRS:<ept id="1">**</ept> WGS84 (<ph id="2">`EPSG:4326`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu463" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Units:<ept id="1">**</ept> people, count, %</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Units:<ept id="1">**</ept> people, count, %</target>
+</trans-unit>
+<trans-unit id="tu464" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Python Script (Cyclone Exposure)</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Python Script (Cyclone Exposure)</target>
+</trans-unit>
+<trans-unit id="tu465" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu466" xml:space="preserve">
+<source xml:lang="en">10. Evacuability <bpt id="1">&lt;a id="10-evacuability"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">10. Evacuability <bpt id="1">&lt;a id="10-evacuability"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu467" xml:space="preserve">
+<source xml:lang="en">Estimates the travel time (in minutes) from at-risk areas (flooded or cyclone-affected population) to the nearest safe zone using least-cost path analysis on a motorized friction surface. This provides a measure of how quickly people in hazard-prone areas can reach areas not affected by the hazard.</source>
+<target xml:lang="fr">Estimates the travel time (in minutes) from at-risk areas (flooded or cyclone-affected population) to the nearest safe zone using least-cost path analysis on a motorized friction surface. This provides a measure of how quickly people in hazard-prone areas can reach areas not affected by the hazard.</target>
+</trans-unit>
+<trans-unit id="tu468" xml:space="preserve">
+<source xml:lang="en">Data Sources <bpt id="1">&lt;a id="data-sources-10"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Data Sources <bpt id="1">&lt;a id="data-sources-10"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu469" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Flood Hazard Rasters:<ept id="1">**</ept> GLOFAS flood depth rasters for each return period (RP), produced by the <bpt id="2">*</bpt>Flood Exposure<ept id="2">*</ept> asset.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Flood Hazard Rasters:<ept id="1">**</ept> GLOFAS flood depth rasters for each return period (RP), produced by the <bpt id="2">*</bpt>Flood Exposure<ept id="2">*</ept> asset.</target>
+</trans-unit>
+<trans-unit id="tu470" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Cyclone Exposure Raster:<ept id="1">**</ept> IBTrACS cyclone exposure raster (binary: affected / not affected), produced by the <bpt id="2">*</bpt>Cyclone Exposure<ept id="2">*</ept> asset.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Cyclone Exposure Raster:<ept id="1">**</ept> IBTrACS cyclone exposure raster (binary: affected / not affected), produced by the <bpt id="2">*</bpt>Cyclone Exposure<ept id="2">*</ept> asset.</target>
+</trans-unit>
+<trans-unit id="tu471" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Friction Surface:<ept id="1">**</ept> Global motorized friction surface COG (2020) hosted on MinIO (<ph id="2">`2020_motorized_friction_surface_cog.tif`</ph>), representing travel impedance per pixel.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Friction Surface:<ept id="1">**</ept> Global motorized friction surface COG (2020) hosted on MinIO (<ph id="2">`2020_motorized_friction_surface_cog.tif`</ph>), representing travel impedance per pixel.</target>
+</trans-unit>
+<trans-unit id="tu472" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>WorldPop Population Rasters:<ept id="1">**</ept> Used to identify the demographic composition of at-risk areas.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>WorldPop Population Rasters:<ept id="1">**</ept> Used to identify the demographic composition of at-risk areas.</target>
+</trans-unit>
+<trans-unit id="tu473" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Administrative Boundaries<ept id="1">**</ept> (GeoJSON): Used to aggregate travel time statistics per admin unit.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Administrative Boundaries<ept id="1">**</ept> (GeoJSON): Used to aggregate travel time statistics per admin unit.</target>
+</trans-unit>
+<trans-unit id="tu474" xml:space="preserve">
+<source xml:lang="en">Indicators <bpt id="1">&lt;a id="indicators-7"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Indicators <bpt id="1">&lt;a id="indicators-7"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu475" xml:space="preserve">
+<source xml:lang="en">Indicator</source>
+<target xml:lang="fr">Indicator</target>
+</trans-unit>
+<trans-unit id="tu476" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu477" xml:space="preserve">
+<source xml:lang="en">Units</source>
+<target xml:lang="fr">Units</target>
+</trans-unit>
+<trans-unit id="tu478" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`RP{rp}_evac_time_minutes_mean`</ph></source>
+<target xml:lang="fr"><ph id="1">`RP{rp}_evac_time_minutes_mean`</ph></target>
+</trans-unit>
+<trans-unit id="tu479" xml:space="preserve">
+<source xml:lang="en">Mean travel time from flooded areas to safe zone (for return period <ph id="1">`{rp}`</ph>)</source>
+<target xml:lang="fr">Mean travel time from flooded areas to safe zone (for return period <ph id="1">`{rp}`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu480" xml:space="preserve">
+<source xml:lang="en">minutes</source>
+<target xml:lang="fr">minutes</target>
+</trans-unit>
+<trans-unit id="tu481" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`RP{rp}_evac_time_minutes_max`</ph></source>
+<target xml:lang="fr"><ph id="1">`RP{rp}_evac_time_minutes_max`</ph></target>
+</trans-unit>
+<trans-unit id="tu482" xml:space="preserve">
+<source xml:lang="en">Maximum travel time from flooded areas to safe zone</source>
+<target xml:lang="fr">Maximum travel time from flooded areas to safe zone</target>
+</trans-unit>
+<trans-unit id="tu483" xml:space="preserve">
+<source xml:lang="en">minutes</source>
+<target xml:lang="fr">minutes</target>
+</trans-unit>
+<trans-unit id="tu484" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`RP{rp}_evac_time_minutes_median`</ph></source>
+<target xml:lang="fr"><ph id="1">`RP{rp}_evac_time_minutes_median`</ph></target>
+</trans-unit>
+<trans-unit id="tu485" xml:space="preserve">
+<source xml:lang="en">Median travel time from flooded areas to safe zone</source>
+<target xml:lang="fr">Median travel time from flooded areas to safe zone</target>
+</trans-unit>
+<trans-unit id="tu486" xml:space="preserve">
+<source xml:lang="en">minutes</source>
+<target xml:lang="fr">minutes</target>
+</trans-unit>
+<trans-unit id="tu487" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`RP{rp}_pixels_at_risk`</ph></source>
+<target xml:lang="fr"><ph id="1">`RP{rp}_pixels_at_risk`</ph></target>
+</trans-unit>
+<trans-unit id="tu488" xml:space="preserve">
+<source xml:lang="en">Number of flooded pixels with computed travel time</source>
+<target xml:lang="fr">Number of flooded pixels with computed travel time</target>
+</trans-unit>
+<trans-unit id="tu489" xml:space="preserve">
+<source xml:lang="en">count</source>
+<target xml:lang="fr">count</target>
+</trans-unit>
+<trans-unit id="tu490" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`kt34_evac_time_minutes_mean`</ph></source>
+<target xml:lang="fr"><ph id="1">`kt34_evac_time_minutes_mean`</ph></target>
+</trans-unit>
+<trans-unit id="tu491" xml:space="preserve">
+<source xml:lang="en">Mean travel time from cyclone-affected areas to safe zone</source>
+<target xml:lang="fr">Mean travel time from cyclone-affected areas to safe zone</target>
+</trans-unit>
+<trans-unit id="tu492" xml:space="preserve">
+<source xml:lang="en">minutes</source>
+<target xml:lang="fr">minutes</target>
+</trans-unit>
+<trans-unit id="tu493" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`kt34_evac_time_minutes_max`</ph></source>
+<target xml:lang="fr"><ph id="1">`kt34_evac_time_minutes_max`</ph></target>
+</trans-unit>
+<trans-unit id="tu494" xml:space="preserve">
+<source xml:lang="en">Maximum travel time from cyclone-affected areas to safe zone</source>
+<target xml:lang="fr">Maximum travel time from cyclone-affected areas to safe zone</target>
+</trans-unit>
+<trans-unit id="tu495" xml:space="preserve">
+<source xml:lang="en">minutes</source>
+<target xml:lang="fr">minutes</target>
+</trans-unit>
+<trans-unit id="tu496" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`kt34_evac_time_minutes_median`</ph></source>
+<target xml:lang="fr"><ph id="1">`kt34_evac_time_minutes_median`</ph></target>
+</trans-unit>
+<trans-unit id="tu497" xml:space="preserve">
+<source xml:lang="en">Median travel time from cyclone-affected areas to safe zone</source>
+<target xml:lang="fr">Median travel time from cyclone-affected areas to safe zone</target>
+</trans-unit>
+<trans-unit id="tu498" xml:space="preserve">
+<source xml:lang="en">minutes</source>
+<target xml:lang="fr">minutes</target>
+</trans-unit>
+<trans-unit id="tu499" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`kt34_pixels_at_risk`</ph></source>
+<target xml:lang="fr"><ph id="1">`kt34_pixels_at_risk`</ph></target>
+</trans-unit>
+<trans-unit id="tu500" xml:space="preserve">
+<source xml:lang="en">Number of cyclone-affected pixels with computed travel time</source>
+<target xml:lang="fr">Number of cyclone-affected pixels with computed travel time</target>
+</trans-unit>
+<trans-unit id="tu501" xml:space="preserve">
+<source xml:lang="en">count</source>
+<target xml:lang="fr">count</target>
+</trans-unit>
+<trans-unit id="tu502" xml:space="preserve">
+<source xml:lang="en">Processing Steps <bpt id="1">&lt;a id="processing-steps-10"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Processing Steps <bpt id="1">&lt;a id="processing-steps-10"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu503" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Load hazard raster<ept id="1">**</ept> (flood depth per RP or cyclone binary raster) for the country.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Load hazard raster<ept id="1">**</ept> (flood depth per RP or cyclone binary raster) for the country.</target>
+</trans-unit>
+<trans-unit id="tu504" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Fetch friction surface<ept id="1">**</ept> window covering the same extent and align to the hazard raster CRS/resolution.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Fetch friction surface<ept id="1">**</ept> window covering the same extent and align to the hazard raster CRS/resolution.</target>
+</trans-unit>
+<trans-unit id="tu505" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Classify pixels<ept id="1">**</ept> into:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Classify pixels<ept id="1">**</ept> into:</target>
+</trans-unit>
+<trans-unit id="tu506" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Safe zones:<ept id="1">**</ept> pixels where hazard ≤ threshold (flood) or hazard = 0 (cyclone).</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Safe zones:<ept id="1">**</ept> pixels where hazard ≤ threshold (flood) or hazard = 0 (cyclone).</target>
+</trans-unit>
+<trans-unit id="tu507" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>At-risk zones:<ept id="1">**</ept> pixels where hazard > threshold.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>At-risk zones:<ept id="1">**</ept> pixels where hazard > threshold.</target>
+</trans-unit>
+<trans-unit id="tu508" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Downsample<ept id="1">**</ept> if pixel count exceeds performance limit (10 million pixels).</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Downsample<ept id="1">**</ept> if pixel count exceeds performance limit (10 million pixels).</target>
+</trans-unit>
+<trans-unit id="tu509" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Compute least-cost distances<ept id="1">**</ept> using <ph id="2">`MCP_Geometric`</ph> from scikit-image, treating safe zones as source cells and friction as cost per meter.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Compute least-cost distances<ept id="1">**</ept> using <ph id="2">`MCP_Geometric`</ph> from scikit-image, treating safe zones as source cells and friction as cost per meter.</target>
+</trans-unit>
+<trans-unit id="tu510" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Upsample<ept id="1">**</ept> travel time raster back to original resolution if downsampled.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Upsample<ept id="1">**</ept> travel time raster back to original resolution if downsampled.</target>
+</trans-unit>
+<trans-unit id="tu511" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Summarize per admin unit:<ept id="1">**</ept> mean, max, median travel time and pixel count for at-risk zones.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Summarize per admin unit:<ept id="1">**</ept> mean, max, median travel time and pixel count for at-risk zones.</target>
+</trans-unit>
+<trans-unit id="tu512" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Write CSV<ept id="1">**</ept> with flood evacuability per RP and cyclone evacuability columns.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Write CSV<ept id="1">**</ept> with flood evacuability per RP and cyclone evacuability columns.</target>
+</trans-unit>
+<trans-unit id="tu513" xml:space="preserve">
+<source xml:lang="en">Outputs <bpt id="1">&lt;a id="outputs-10"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Outputs <bpt id="1">&lt;a id="outputs-10"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu514" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>File:<ept id="1">**</ept> <ph id="2">`{country_code}_{admin_level}_evacuability.csv`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>File:<ept id="1">**</ept> <ph id="2">`{country_code}_{admin_level}_evacuability.csv`</ph></target>
+</trans-unit>
+<trans-unit id="tu515" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Columns:<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Columns:<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu516" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`{admin_level}_PCODE`</ph></source>
+<target xml:lang="fr"><ph id="1">`{admin_level}_PCODE`</ph></target>
+</trans-unit>
+<trans-unit id="tu517" xml:space="preserve">
+<source xml:lang="en">Flood evacuability per return period: <ph id="1">`RP{rp}_evac_time_minutes_mean`</ph>, <ph id="2">`RP{rp}_evac_time_minutes_max`</ph>, <ph id="3">`RP{rp}_evac_time_minutes_median`</ph>, <ph id="4">`RP{rp}_pixels_at_risk`</ph></source>
+<target xml:lang="fr">Flood evacuability per return period: <ph id="1">`RP{rp}_evac_time_minutes_mean`</ph>, <ph id="2">`RP{rp}_evac_time_minutes_max`</ph>, <ph id="3">`RP{rp}_evac_time_minutes_median`</ph>, <ph id="4">`RP{rp}_pixels_at_risk`</ph></target>
+</trans-unit>
+<trans-unit id="tu518" xml:space="preserve">
+<source xml:lang="en">Cyclone evacuability (if cyclone data exists): <ph id="1">`kt34_evac_time_minutes_mean`</ph>, <ph id="2">`kt34_evac_time_minutes_max`</ph>, <ph id="3">`kt34_evac_time_minutes_median`</ph>, <ph id="4">`kt34_pixels_at_risk`</ph></source>
+<target xml:lang="fr">Cyclone evacuability (if cyclone data exists): <ph id="1">`kt34_evac_time_minutes_mean`</ph>, <ph id="2">`kt34_evac_time_minutes_max`</ph>, <ph id="3">`kt34_evac_time_minutes_median`</ph>, <ph id="4">`kt34_pixels_at_risk`</ph></target>
+</trans-unit>
+<trans-unit id="tu519" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>CRS:<ept id="1">**</ept> WGS84 (<ph id="2">`EPSG:4326`</ph>)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>CRS:<ept id="1">**</ept> WGS84 (<ph id="2">`EPSG:4326`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu520" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Units:<ept id="1">**</ept> minutes (travel time), pixel count</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Units:<ept id="1">**</ept> minutes (travel time), pixel count</target>
+</trans-unit>
+<trans-unit id="tu521" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Python Script (Evacuability)</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Python Script (Evacuability)</target>
+</trans-unit>
+<trans-unit id="tu522" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

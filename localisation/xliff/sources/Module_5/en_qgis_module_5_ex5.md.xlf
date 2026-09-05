@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_5/en_qgis_module_5_ex5.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Exercise 5: Aggregate and Assess G2P Money Transfers in Pakistan <bpt id="1">&lt;a id="exercise-5-aggregate-and-assess-g2p-money-transfers-in-pakistan"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise 5: Aggregate and Assess G2P Money Transfers in Pakistan <bpt id="1">&lt;a id="exercise-5-aggregate-and-assess-g2p-money-transfers-in-pakistan"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Aim of the exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+The aim of this exercise is to introduce a workflow that combines both spatial and non-spatial processing. A common step is to aggregate data on administrative scales such as adm2 or adm3. This exercise will teach you how to aggregate information about cash transfers on administrative levels and then join the statistics with a polygon data for the administrative boundaries.</source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Aim of the exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+The aim of this exercise is to introduce a workflow that combines both spatial and non-spatial processing. A common step is to aggregate data on administrative scales such as adm2 or adm3. This exercise will teach you how to aggregate information about cash transfers on administrative levels and then join the statistics with a polygon data for the administrative boundaries.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type of trainings exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type of trainings exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">This exercise can be used in online and presence training.</source>
+<target xml:lang="fr">This exercise can be used in online and presence training.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">It can be done as a follow-along exercise or individually as a self-study.</source>
+<target xml:lang="fr">It can be done as a follow-along exercise or individually as a self-study.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>These skills are relevant for<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>These skills are relevant for<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Aggregating and analysing data</source>
+<target xml:lang="fr">Aggregating and analysing data</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Creating situational reports</source>
+<target xml:lang="fr">Creating situational reports</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Estimated time demand for the exercise<ept id="1">__</ept>
+<ph id="2">^^^</ph>
+~ 60 minutes</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Estimated time demand for the exercise<ept id="1">__</ept>
+<ph id="2">^^^</ph>
+~ 60 minutes</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki Articles<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki Articles<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Statistics by Categories<ept id="1">](/content/Module_5/en_qgis_non_spatial_tools.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Statistics by Categories<ept id="1">](/content/Module_5/en_qgis_non_spatial_tools.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Non-Spatial Join<ept id="1">](/content/Wiki/en_qgis_joins_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Non-Spatial Join<ept id="1">](/content/Wiki/en_qgis_joins_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Take the time to familiarise yourself with the exercise and the provided material.</source>
+<target xml:lang="fr">Take the time to familiarise yourself with the exercise and the provided material.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</source>
+<target xml:lang="fr">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</source>
+<target xml:lang="fr">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction</source>
+<target xml:lang="fr">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Introduce the idea and aim of the exercise.</source>
+<target xml:lang="fr">Introduce the idea and aim of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</source>
+<target xml:lang="fr">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</source>
+<target xml:lang="fr">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</source>
+<target xml:lang="fr">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</source>
+<target xml:lang="fr">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Leave time for any issues or questions concerning the tasks at the end of the exercise.</source>
+<target xml:lang="fr">Leave time for any issues or questions concerning the tasks at the end of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Leave some time for open questions.</source>
+<target xml:lang="fr">Leave some time for open questions.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Step-by-step instructions <bpt id="1">&lt;a id="step-by-step-instructions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step-by-step instructions <bpt id="1">&lt;a id="step-by-step-instructions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:class-card: sd-text-justify sd-rounded-3 sd-border-2</ph>
+<ph id="3">:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Exercise_5/Module_5_Exercise_5_aggregating_adm.zip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:class-card: sd-text-justify sd-rounded-3 sd-border-2</ph>
+<ph id="3">:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Exercise_5/Module_5_Exercise_5_aggregating_adm.zip</ph></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Click <bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Exercise_5/Module_5_Exercise_5_aggregating_adm.zip)</ept> to download the datasets for this exercise.<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Click <bpt id="2">[</bpt>here<ept id="2">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Exercise_5/Module_5_Exercise_5_aggregating_adm.zip)</ept> to download the datasets for this exercise.<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Available Data:<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Available Data:<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`G2P_disbursement_report_cleaned.csv`</ph> - Data table with cash transactions. This dataset has been cleaned and all personal information has been removed.</source>
+<target xml:lang="fr"><ph id="1">`G2P_disbursement_report_cleaned.csv`</ph> - Data table with cash transactions. This dataset has been cleaned and all personal information has been removed.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`pak_admbnda_adm2_wfp_20220909.shp`</ph> - Administrative boundaries on adm2 level (districts).
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">`pak_admbnda_adm2_wfp_20220909.shp`</ph> - Administrative boundaries on adm2 level (districts).
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{margin}</ph>
+<ph id="2">:::{tip}</ph>
+To load the CSV-file, navigate to <ph id="3">`Layer`</ph> → <ph id="4">`Add Layer`</ph> → <ph id="5">`Add delimited text layer`</ph>.
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{margin}</ph>
+<ph id="2">:::{tip}</ph>
+To load the CSV-file, navigate to <ph id="3">`Layer`</ph> → <ph id="4">`Add Layer`</ph> → <ph id="5">`Add delimited text layer`</ph>.
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Preparing the data <bpt id="1">&lt;a id="preparing-the-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Preparing the data <bpt id="1">&lt;a id="preparing-the-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Unzip the exercise data and create a new QGIS-project.</source>
+<target xml:lang="fr">Unzip the exercise data and create a new QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Load the data into your QGIS-project.</source>
+<target xml:lang="fr">Load the data into your QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Let's familiarise ourselves with the data. Open the attribute table of each layer and see what kind of information is stored in the datasets.</source>
+<target xml:lang="fr">Let's familiarise ourselves with the data. Open the attribute table of each layer and see what kind of information is stored in the datasets.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{note}</ph>
+We want to aggregate the information about money transactions on adm3- or adm2-level. Can you identify which column in the <ph id="2">`G2P_disbursement_report_cleaned`</ph>-layer corresponds to adm2 and adm3?</source>
+<target xml:lang="fr"><ph id="1">::::{note}</ph>
+We want to aggregate the information about money transactions on adm3- or adm2-level. Can you identify which column in the <ph id="2">`G2P_disbursement_report_cleaned`</ph>-layer corresponds to adm2 and adm3?</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Solution</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Solution</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">By comparing the values in the column <ph id="1">`admin2_EN`</ph> from the <ph id="2">`pak_admbnda_adm2_wfp_20220909`</ph>-layer, we can see that the column <ph id="3">`var_attr_03`</ph> corresponds to the admin2-level in the <ph id="4">`G2P_disbursement_report_cleaned`</ph>-layer. By sorting the layers alphabetically, it is easier to find matching values in both attribute tables.</source>
+<target xml:lang="fr">By comparing the values in the column <ph id="1">`admin2_EN`</ph> from the <ph id="2">`pak_admbnda_adm2_wfp_20220909`</ph>-layer, we can see that the column <ph id="3">`var_attr_03`</ph> corresponds to the admin2-level in the <ph id="4">`G2P_disbursement_report_cleaned`</ph>-layer. By sorting the layers alphabetically, it is easier to find matching values in both attribute tables.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Step 1: Aggregating the amount of transferred money on admin2 <bpt id="1">&lt;a id="step-1-aggregating-the-amount-of-transferred-money-on-admin2"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step 1: Aggregating the amount of transferred money on admin2 <bpt id="1">&lt;a id="step-1-aggregating-the-amount-of-transferred-money-on-admin2"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">In the processing toolbox, search for the tool <ph id="1">`Aggregate`</ph> under <ph id="2">`Vector Geometry`</ph>. <bpt id="3">&lt;kbd></bpt>Double-Click<ept id="3">&lt;/kbd></ept> on it. A new window will open (see <ph id="4">{numref}</ph><ph id="5">`aggregate_tool`</ph>).</source>
+<target xml:lang="fr">In the processing toolbox, search for the tool <ph id="1">`Aggregate`</ph> under <ph id="2">`Vector Geometry`</ph>. <bpt id="3">&lt;kbd></bpt>Double-Click<ept id="3">&lt;/kbd></ept> on it. A new window will open (see <ph id="4">{numref}</ph><ph id="5">`aggregate_tool`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_3.36_aggregate.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_3.36_aggregate.png</ph></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: aggregate_tool</ph>
+<ph id="2">width: 600 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: aggregate_tool</ph>
+<ph id="2">width: 600 px</ph></target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">The Aggregate-tool in QGIS 3.36
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The Aggregate-tool in QGIS 3.36
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">In the "Aggregate"-window,</source>
+<target xml:lang="fr">In the "Aggregate"-window,</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Select the <ph id="1">`G2P_disbursement_report_cleaned`</ph>-layer as input layer.</source>
+<target xml:lang="fr">Select the <ph id="1">`G2P_disbursement_report_cleaned`</ph>-layer as input layer.</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Group by Expression`</ph> is where we select which column we want to have grouped (or selected as category). We want to identify the amount of money transferred to each district (admin2-level), so we need to select the corresponding column. In our case, this is the column <ph id="2">`var_attr_03`</ph>.</source>
+<target xml:lang="fr"><ph id="1">`Group by Expression`</ph> is where we select which column we want to have grouped (or selected as category). We want to identify the amount of money transferred to each district (admin2-level), so we need to select the corresponding column. In our case, this is the column <ph id="2">`var_attr_03`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">This box is where we select how the tool aggregates the different columns:</source>
+<target xml:lang="fr">This box is where we select how the tool aggregates the different columns:</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">We want to calculate the <ph id="1">`Sum`</ph> for the column "Amount".</source>
+<target xml:lang="fr">We want to calculate the <ph id="1">`Sum`</ph> for the column "Amount".</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">For the column "var attr 03" we want to select <ph id="1">`Concatenate_unique`</ph>. This returns all unique strings from a field.</source>
+<target xml:lang="fr">For the column "var attr 03" we want to select <ph id="1">`Concatenate_unique`</ph>. This returns all unique strings from a field.</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">The other columns can be set to <ph id="1">`concatenate_unique`</ph></source>
+<target xml:lang="fr">The other columns can be set to <ph id="1">`concatenate_unique`</ph></target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph>. A new layer called "Aggregated" will appear in the layers-panel. Close the "Aggregate"-window.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph>. A new layer called "Aggregated" will appear in the layers-panel. Close the "Aggregate"-window.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    :::{figure} /fig/en_3.36_aggregate_settings.png</ph></source>
+<target xml:lang="fr"><ph id="1">    :::{figure} /fig/en_3.36_aggregate_settings.png</ph></target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    name: aggregate_settings</ph>
+<ph id="2">    width: 650 px</ph></source>
+<target xml:lang="fr"><ph id="1">    name: aggregate_settings</ph>
+<ph id="2">    width: 650 px</ph></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">Adjust the aggregation function for the relevant columns. Pay attention that the <ph id="1">`Type`</ph> for the amount is set to "Integer". If you have imported the table correctly into QGIS, this should be set automatically.
+<ph id="2">    :::</ph></source>
+<target xml:lang="fr">Adjust the aggregation function for the relevant columns. Pay attention that the <ph id="1">`Type`</ph> for the amount is set to "Integer". If you have imported the table correctly into QGIS, this should be set automatically.
+<ph id="2">    :::</ph></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition}</ph>
+    :type: note
+    If the <ph id="2">`Type`</ph> for the amount column is set to "Text (string)", this means that QGIS reads the data format for this column as being a string value. QGIS can't perform mathematic operations on string values because they are being read as non-numeric data. Make sure to import the layer through the <ph id="3">`Add delimited text layer`</ph>-dialogue (<ph id="4">`Layer`</ph> > <ph id="5">`Add Layer`</ph> > <ph id="6">`Add delimited text layer...`</ph>) and make sure the <ph id="7">`Type`</ph> for the column "Amount" is set to Integer.
+<ph id="8">    :::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition}</ph>
+    :type: note
+    If the <ph id="2">`Type`</ph> for the amount column is set to "Text (string)", this means that QGIS reads the data format for this column as being a string value. QGIS can't perform mathematic operations on string values because they are being read as non-numeric data. Make sure to import the layer through the <ph id="3">`Add delimited text layer`</ph>-dialogue (<ph id="4">`Layer`</ph> > <ph id="5">`Add Layer`</ph> > <ph id="6">`Add delimited text layer...`</ph>) and make sure the <ph id="7">`Type`</ph> for the column "Amount" is set to Integer.
+<ph id="8">    :::</ph></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Let's take a look at the new layer by opening the attribute table. If you have done everything correctly, the table should look like <ph id="1">{numref}</ph><ph id="2">`aggregate_results`</ph>. We can see on row for each distinct value in the <ph id="3">`var attr 03`</ph> column (Gwardar, Jamshoro, Dadu, Kambar Shahdadkot, Shiparpur). In the column <ph id="4">`Amount`</ph> we see the sum of all the individual transfers. In the other columns, we can see a string with the different values of the original table separated by commas (e.g. the different admin3-units, Thesils, under the column <ph id="5">`var attr 04`</ph>).</source>
+<target xml:lang="fr">Let's take a look at the new layer by opening the attribute table. If you have done everything correctly, the table should look like <ph id="1">{numref}</ph><ph id="2">`aggregate_results`</ph>. We can see on row for each distinct value in the <ph id="3">`var attr 03`</ph> column (Gwardar, Jamshoro, Dadu, Kambar Shahdadkot, Shiparpur). In the column <ph id="4">`Amount`</ph> we see the sum of all the individual transfers. In the other columns, we can see a string with the different values of the original table separated by commas (e.g. the different admin3-units, Thesils, under the column <ph id="5">`var attr 04`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    :::{figure} /fig/en_aggregate_results.png</ph></source>
+<target xml:lang="fr"><ph id="1">    :::{figure} /fig/en_aggregate_results.png</ph></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    name: aggregate_results</ph>
+<ph id="2">    width: 650 px</ph></source>
+<target xml:lang="fr"><ph id="1">    name: aggregate_results</ph>
+<ph id="2">    width: 650 px</ph></target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">The aggregated data from <ph id="1">`G2P_disbursement_report_cleaned`</ph>.
+<ph id="2">    :::</ph></source>
+<target xml:lang="fr">The aggregated data from <ph id="1">`G2P_disbursement_report_cleaned`</ph>.
+<ph id="2">    :::</ph></target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Step 2: Joining the aggregated data with administrative boundaries <bpt id="1">&lt;a id="step-2-joining-the-aggregated-data-with-administrative-boundaries"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step 2: Joining the aggregated data with administrative boundaries <bpt id="1">&lt;a id="step-2-joining-the-aggregated-data-with-administrative-boundaries"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">In this step, we want to add the aggregated information we gained from the CSV file to the administrative boundaries. We need to join the aggregated table with the <ph id="1">`pak_admbnda_adm2_wfp_20220909`</ph>-layer.</source>
+<target xml:lang="fr">In this step, we want to add the aggregated information we gained from the CSV file to the administrative boundaries. We need to join the aggregated table with the <ph id="1">`pak_admbnda_adm2_wfp_20220909`</ph>-layer.</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">In the processing toolbox, search for <ph id="1">`Join attributes by field value`</ph>. <bpt id="2">&lt;kbd></bpt>Double click<ept id="2">&lt;/kbd></ept> on it. A new window will open.</source>
+<target xml:lang="fr">In the processing toolbox, search for <ph id="1">`Join attributes by field value`</ph>. <bpt id="2">&lt;kbd></bpt>Double click<ept id="2">&lt;/kbd></ept> on it. A new window will open.</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    :::{figure} /fig/en_3.36_join_by_attr.png</ph></source>
+<target xml:lang="fr"><ph id="1">    :::{figure} /fig/en_3.36_join_by_attr.png</ph></target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en"><ph id="1">    name: join_by_attr</ph>
+<ph id="2">    width: 700 px</ph></source>
+<target xml:lang="fr"><ph id="1">    name: join_by_attr</ph>
+<ph id="2">    width: 700 px</ph></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">The Join attributes by field value dialogue box in QGIS 3.36.
+<ph id="1">    :::</ph></source>
+<target xml:lang="fr">The Join attributes by field value dialogue box in QGIS 3.36.
+<ph id="1">    :::</ph></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">The input layer should be <ph id="1">`pak_admbnda_adm2_wfp_20220909`</ph>-layer. This will be the layer that will receive additional information. The geometries of the input layer will be preserved. The <ph id="2">`Table field`</ph> should be set to "ADM2_EN". These are english names for the admin2-level.</source>
+<target xml:lang="fr">The input layer should be <ph id="1">`pak_admbnda_adm2_wfp_20220909`</ph>-layer. This will be the layer that will receive additional information. The geometries of the input layer will be preserved. The <ph id="2">`Table field`</ph> should be set to "ADM2_EN". These are english names for the admin2-level.</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">The second input layer should be the <ph id="1">`Aggregated`</ph> layer from the previous step. <ph id="2">`Table field 2`</ph> should also be the english names for the administrative boundaries. In our case, the corresponding column is "var attr 03". Under <ph id="3">`Layer 2 fields to copy`</ph>, only select <ph id="4">`amount`</ph> as we are not interested in the other values.</source>
+<target xml:lang="fr">The second input layer should be the <ph id="1">`Aggregated`</ph> layer from the previous step. <ph id="2">`Table field 2`</ph> should also be the english names for the administrative boundaries. In our case, the corresponding column is "var attr 03". Under <ph id="3">`Layer 2 fields to copy`</ph>, only select <ph id="4">`amount`</ph> as we are not interested in the other values.</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph>. A new layer <ph id="2">`Joined Layer`</ph> will appear in the layer-panel.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph>. A new layer <ph id="2">`Joined Layer`</ph> will appear in the layer-panel.</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">Close the joining dialogue window and investigate the new layer by opening it's attribute table. Scroll the right to find the new column "amount" that has been joined.</source>
+<target xml:lang="fr">Close the joining dialogue window and investigate the new layer by opening it's attribute table. Scroll the right to find the new column "amount" that has been joined.</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Notice how most of the rows have <ph id="1">`NULL`</ph> as their value in this column? This is because the aggregated table only has 5 distinct districts (adm2) that received money. You can sort the table by clicking on the column header.</source>
+<target xml:lang="fr">Notice how most of the rows have <ph id="1">`NULL`</ph> as their value in this column? This is because the aggregated table only has 5 distinct districts (adm2) that received money. You can sort the table by clicking on the column header.</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Congratulations, we have successfully joined a CSV-file with a polygon layer!</source>
+<target xml:lang="fr">Congratulations, we have successfully joined a CSV-file with a polygon layer!</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_m5_ex5_results.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_m5_ex5_results.png</ph></target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: aggregation_ex_results</ph>
+<ph id="2">width: 750 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: aggregation_ex_results</ph>
+<ph id="2">width: 750 px</ph></target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">The aggregated amount joined to a layer of the administrative boundaries.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The aggregated amount joined to a layer of the administrative boundaries.
+<ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_3/en_module_3_overview.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Basic GIS Operations <bpt id="1">&lt;a id="basic-gis-operations"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Basic GIS Operations <bpt id="1">&lt;a id="basic-gis-operations"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">The third module addresses operations and data manipulation that GIS practitioners will undertake frequently. The first chapter teaches the process of digitisation, which is the process of creating geodata, either from existing images, or maps, or from your own knowledge. After data collection, digitisation lets you prepare the collected data for spatial analysis in QGIS. It is also useful to communicate the spatial distribution of phenomena or to simply show the collected data on a map. Next, the second chapter focuses on the classification of geodata. Spatial data can have a lot of information stored in the attribute table and the classification of geodata puts this information into distinct classes. Through this classification, we can gain new insights and it lets us visualise geographic data on maps. The third chapter, covers selecting and querying geodata. For example, you can select all data entries that are under a certain distance from a point, or you could simply select data based on specific values and see their spatial distribution.</source>
+<target xml:lang="fr">The third module addresses operations and data manipulation that GIS practitioners will undertake frequently. The first chapter teaches the process of digitisation, which is the process of creating geodata, either from existing images, or maps, or from your own knowledge. After data collection, digitisation lets you prepare the collected data for spatial analysis in QGIS. It is also useful to communicate the spatial distribution of phenomena or to simply show the collected data on a map. Next, the second chapter focuses on the classification of geodata. Spatial data can have a lot of information stored in the attribute table and the classification of geodata puts this information into distinct classes. Through this classification, we can gain new insights and it lets us visualise geographic data on maps. The third chapter, covers selecting and querying geodata. For example, you can select all data entries that are under a certain distance from a point, or you could simply select data based on specific values and see their spatial distribution.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{list-table}</ph>
+<ph id="2">:header-rows: 1</ph>
+<ph id="3">:widths: 150 600</ph></source>
+<target xml:lang="fr"><ph id="1">:::{list-table}</ph>
+<ph id="2">:header-rows: 1</ph>
+<ph id="3">:widths: 150 600</ph></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Chapter<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Chapter<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Competences &amp; Objectives<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Competences &amp; Objectives<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 1: Digitisation<ept id="2">](/content/Module_3/en_qgis_digitisation.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 1: Digitisation<ept id="2">](/content/Module_3/en_qgis_digitisation.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">understand the process of digitisation,</source>
+<target xml:lang="fr">understand the process of digitisation,</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">know how to create and edit vector data,</source>
+<target xml:lang="fr">know how to create and edit vector data,</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">know which digitising errors to avoid.</source>
+<target xml:lang="fr">know which digitising errors to avoid.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 2: Geodata Classification<ept id="2">](/content/Module_3/en_qgis_data_classification.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 2: Geodata Classification<ept id="2">](/content/Module_3/en_qgis_data_classification.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">know how to classify geodata in order to gain useful insights,</source>
+<target xml:lang="fr">know how to classify geodata in order to gain useful insights,</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">know how and when to use categorised classification,</source>
+<target xml:lang="fr">know how and when to use categorised classification,</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">know how and when to use graduated classification.</source>
+<target xml:lang="fr">know how and when to use graduated classification.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 3: Geodata Selection and Queries<ept id="2">](/content/Module_3/en_qgis_data_queries.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 3: Geodata Selection and Queries<ept id="2">](/content/Module_3/en_qgis_data_queries.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">know how to select features manually,</source>
+<target xml:lang="fr">know how to select features manually,</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">know how to select features based on attributes,</source>
+<target xml:lang="fr">know how to select features based on attributes,</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">know how to formulate a data query with the expression builder,</source>
+<target xml:lang="fr">know how to formulate a data query with the expression builder,</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">know how to select features by location,</source>
+<target xml:lang="fr">know how to select features by location,</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">know the geometric operators.</source>
+<target xml:lang="fr">know the geometric operators.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 4: Georeferencing<ept id="2">](/content/Module_3/en_qgis_georeferencing.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Chapter 4: Georeferencing<ept id="2">](/content/Module_3/en_qgis_georeferencing.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>At the end of this chapter, you should:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">know how to georeference a map in QGIS,</source>
+<target xml:lang="fr">know how to georeference a map in QGIS,</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">know how to set the transparency of a georeferenced (raster) layer.</source>
+<target xml:lang="fr">know how to set the transparency of a georeferenced (raster) layer.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">know how to digitise vector features from a georeferenced map.</source>
+<target xml:lang="fr">know how to digitise vector features from a georeferenced map.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercises for Module 3<ept id="2">](/content/Module_3/en_qgis_module_3_exercises.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercises for Module 3<ept id="2">](/content/Module_3/en_qgis_module_3_exercises.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Here you can find all the exercises for module 3.</source>
+<target xml:lang="fr">Here you can find all the exercises for module 3.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

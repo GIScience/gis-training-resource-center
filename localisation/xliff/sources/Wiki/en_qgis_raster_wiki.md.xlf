@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_raster_wiki.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Raster Data <bpt id="1">&lt;a id="raster-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Raster Data <bpt id="1">&lt;a id="raster-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Raster data in GIS is a type of spatial data that represents the world as a grid of pixels (cells), where each pixel has a value representing information such as:</source>
+<target xml:lang="fr">Raster data in GIS is a type of spatial data that represents the world as a grid of pixels (cells), where each pixel has a value representing information such as:</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Elevation</source>
+<target xml:lang="fr">Elevation</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Temperature</source>
+<target xml:lang="fr">Temperature</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Land cover type</source>
+<target xml:lang="fr">Land cover type</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Satellite imagery</source>
+<target xml:lang="fr">Satellite imagery</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Each cell has a fixed size (e.g., 10x10 meters), and the data is often stored in formats like GeoTIFF, IMG, or ASCII Grid.</source>
+<target xml:lang="fr">Each cell has a fixed size (e.g., 10x10 meters), and the data is often stored in formats like GeoTIFF, IMG, or ASCII Grid.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Raster data is best for continuous data (like elevation or rainfall), and it’s commonly used in remote sensing, environmental modeling, and image analysis.</source>
+<target xml:lang="fr">Raster data is best for continuous data (like elevation or rainfall), and it’s commonly used in remote sensing, environmental modeling, and image analysis.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">In contrast, vector data represents features as points, lines, or polygons.</source>
+<target xml:lang="fr">In contrast, vector data represents features as points, lines, or polygons.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Subsections: <bpt id="1">&lt;a id="subsections"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Subsections: <bpt id="1">&lt;a id="subsections"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Basic Raster Operations<ept id="1">](/content/wiki/en_qgis_raster_basic_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Basic Raster Operations<ept id="1">](/content/wiki/en_qgis_raster_basic_wiki.md)</ept></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_geodata_management_sharepoint.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Geodata Management with Sharepoint <bpt id="1">&lt;a id="geodata-management-with-sharepoint"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Geodata Management with Sharepoint <bpt id="1">&lt;a id="geodata-management-with-sharepoint"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Small organisations often struggle to keep geospatial data consistent and accessible.<ph id="1">  </ph>
+A simple, well-structured geodata hub helps <bpt id="2">**</bpt>standardise GIS work<ept id="2">**</ept>, <bpt id="3">**</bpt>prepare for responses<ept id="3">**</ept>, and <bpt id="4">**</bpt>onboard new staff<ept id="4">**</ept> efficiently.<ph id="5">  </ph>
+This guide outlines a practical approach using <bpt id="6">**</bpt>SharePoint<ept id="6">**</ept>, which many organisations already use for document management.</source>
+<target xml:lang="fr">Small organisations often struggle to keep geospatial data consistent and accessible.<ph id="1">  </ph>
+A simple, well-structured geodata hub helps <bpt id="2">**</bpt>standardise GIS work<ept id="2">**</ept>, <bpt id="3">**</bpt>prepare for responses<ept id="3">**</ept>, and <bpt id="4">**</bpt>onboard new staff<ept id="4">**</ept> efficiently.<ph id="5">  </ph>
+This guide outlines a practical approach using <bpt id="6">**</bpt>SharePoint<ept id="6">**</ept>, which many organisations already use for document management.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Purpose &amp; Audience <bpt id="1">&lt;a id="purpose-and-audience"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Purpose &amp; Audience <bpt id="1">&lt;a id="purpose-and-audience"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Who<ept id="1">**</ept>: Small organisations starting or formalising GIS work.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Who<ept id="1">**</ept>: Small organisations starting or formalising GIS work.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Why<ept id="1">**</ept>: Establish a lightweight, standardised structure for <bpt id="2">**</bpt>data, projects, and templates<ept id="2">**</ept>.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Why<ept id="1">**</ept>: Establish a lightweight, standardised structure for <bpt id="2">**</bpt>data, projects, and templates<ept id="2">**</ept>.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Outcome<ept id="1">**</ept>: Faster onboarding, fewer broken links, consistent maps and analyses.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Outcome<ept id="1">**</ept>: Faster onboarding, fewer broken links, consistent maps and analyses.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">The role of the Data Steward <bpt id="1">&lt;a id="the-role-of-the-data-steward"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">The role of the Data Steward <bpt id="1">&lt;a id="the-role-of-the-data-steward"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">A <bpt id="1">**</bpt>data steward<ept id="1">**</ept> is a designated person (or small team) responsible for:</source>
+<target xml:lang="fr">A <bpt id="1">**</bpt>data steward<ept id="1">**</ept> is a designated person (or small team) responsible for:</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Approving and uploading new datasets into <ph id="1">`10_Data`</ph> and <ph id="2">`20_Raster_Data/`</ph>.</source>
+<target xml:lang="fr">Approving and uploading new datasets into <ph id="1">`10_Data`</ph> and <ph id="2">`20_Raster_Data/`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Managing permissions (e.g. who can edit vs. who can only view).</source>
+<target xml:lang="fr">Managing permissions (e.g. who can edit vs. who can only view).</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Supporting colleagues with questions about dataset quality or standards.</source>
+<target xml:lang="fr">Supporting colleagues with questions about dataset quality or standards.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Having a clear steward role prevents accidental overwrites and ensures that all staff work with <bpt id="1">**</bpt>trusted, consistent data<ept id="1">**</ept>.</source>
+<target xml:lang="fr">Having a clear steward role prevents accidental overwrites and ensures that all staff work with <bpt id="1">**</bpt>trusted, consistent data<ept id="1">**</ept>.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph>
+If your organisation outgrows this setup (many editors, heavy edits, very large rasters), keep SharePoint for distribution and documentation, and add a spatial database (e.g., PostGIS) for multi-user editing.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph>
+If your organisation outgrows this setup (many editors, heavy edits, very large rasters), keep SharePoint for distribution and documentation, and add a spatial database (e.g., PostGIS) for multi-user editing.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Example Folder Structures <bpt id="1">&lt;a id="example-folder-structures"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Example Folder Structures <bpt id="1">&lt;a id="example-folder-structures"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Below are three possible structures, from simple to more advanced.<ph id="1">  </ph>
+Choose the one that matches your organisation’s size and capacity.</source>
+<target xml:lang="fr">Below are three possible structures, from simple to more advanced.<ph id="1">  </ph>
+Choose the one that matches your organisation’s size and capacity.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">1. Minimalist Setup (very small teams) <bpt id="1">&lt;a id="1-minimalist-setup-very-small-teams"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">1. Minimalist Setup (very small teams) <bpt id="1">&lt;a id="1-minimalist-setup-very-small-teams"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">💡 <bpt id="1">**</bpt>Use when:<ept id="1">**</ept> The team is very small, with limited data and little overlap between users. This structure is quick to set up and easy for non-technical colleagues.</source>
+<target xml:lang="fr">💡 <bpt id="1">**</bpt>Use when:<ept id="1">**</ept> The team is very small, with limited data and little overlap between users. This structure is quick to set up and easy for non-technical colleagues.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">⚠️ <bpt id="1">**</bpt>Limitation:<ept id="1">**</ept> Everything is mixed into one <ph id="2">`Data/`</ph> folder — it is not obvious which datasets are authoritative vs. drafts, and scaling up later can get messy.</source>
+<target xml:lang="fr">⚠️ <bpt id="1">**</bpt>Limitation:<ept id="1">**</ept> Everything is mixed into one <ph id="2">`Data/`</ph> folder — it is not obvious which datasets are authoritative vs. drafts, and scaling up later can get messy.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Naming conventions for Minimalist Setup<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Naming conventions for Minimalist Setup<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Keep filenames simple and descriptive, e.g.:</source>
+<target xml:lang="fr">Keep filenames simple and descriptive, e.g.:</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`Boundaries_ADM2_MDG_2024.gpkg`</ph></source>
+<target xml:lang="fr"><ph id="1">`Boundaries_ADM2_MDG_2024.gpkg`</ph></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`HealthFacilities_SOM_2025.csv`</ph></source>
+<target xml:lang="fr"><ph id="1">`HealthFacilities_SOM_2025.csv`</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">For projects, prefix deliverables with project name, e.g.:</source>
+<target xml:lang="fr">For projects, prefix deliverables with project name, e.g.:</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`ProjectA_Map_202501.pdf`</ph></source>
+<target xml:lang="fr"><ph id="1">`ProjectA_Map_202501.pdf`</ph></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`ProjectB_QGISProject.qgz`</ph></source>
+<target xml:lang="fr"><ph id="1">`ProjectB_QGISProject.qgz`</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Dates can be optional here, since the dataset volume is low.</source>
+<target xml:lang="fr">Dates can be optional here, since the dataset volume is low.</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">2. Balanced Setup (general small organisations) <bpt id="1">&lt;a id="2-balanced-setup-general-small-organisations"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">2. Balanced Setup (general small organisations) <bpt id="1">&lt;a id="2-balanced-setup-general-small-organisations"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>💡 Use when:<ept id="1">**</ept>
+The organisation wants to keep all curated data together in <ph id="2">`10_Data/`</ph>, while separating raster data (<ph id="3">`20_Raster_Data/`</ph>), shared styles (<ph id="4">`30_Styles_Templates/`</ph>), drafts (<ph id="5">`40_Working_Data/`</ph>), and project outputs (<ph id="6">`50_Projects/`</ph>). This setup works well for most small NGOs.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>💡 Use when:<ept id="1">**</ept>
+The organisation wants to keep all curated data together in <ph id="2">`10_Data/`</ph>, while separating raster data (<ph id="3">`20_Raster_Data/`</ph>), shared styles (<ph id="4">`30_Styles_Templates/`</ph>), drafts (<ph id="5">`40_Working_Data/`</ph>), and project outputs (<ph id="6">`50_Projects/`</ph>). This setup works well for most small NGOs.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>⚠️ Limitation:<ept id="1">**</ept>
+Staff need to understand that <ph id="2">`10_Data/`</ph> and <ph id="3">`20_Raster_Data/`</ph> are read-only. If edits are saved there, datasets can be overwritten or corrupted.
+<ph id="4">:::{note}</ph>
+Large raster files (e.g., DEMs, satellite scenes, wind or rainfall rasters) can slow down OneDrive sync and fill local drives quickly.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>⚠️ Limitation:<ept id="1">**</ept>
+Staff need to understand that <ph id="2">`10_Data/`</ph> and <ph id="3">`20_Raster_Data/`</ph> are read-only. If edits are saved there, datasets can be overwritten or corrupted.
+<ph id="4">:::{note}</ph>
+Large raster files (e.g., DEMs, satellite scenes, wind or rainfall rasters) can slow down OneDrive sync and fill local drives quickly.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">To reduce issues:</source>
+<target xml:lang="fr">To reduce issues:</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Keep only the most important raster layers in <ph id="1">`20_Raster_Data/`</ph>.</source>
+<target xml:lang="fr">Keep only the most important raster layers in <ph id="1">`20_Raster_Data/`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Archive old raster versions in a separate library if needed.<ph id="1">  </ph>
+<ph id="2">:::</ph>
+<bpt id="3">**</bpt>Naming conventions for Balanced Setup (general use)<ept id="3">**</ept></source>
+<target xml:lang="fr">Archive old raster versions in a separate library if needed.<ph id="1">  </ph>
+<ph id="2">:::</ph>
+<bpt id="3">**</bpt>Naming conventions for Balanced Setup (general use)<ept id="3">**</ept></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">To keep files easy to find and avoid duplication, use a consistent naming pattern:</source>
+<target xml:lang="fr">To keep files easy to find and avoid duplication, use a consistent naming pattern:</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Data (all shared):<ept id="1">**</ept><ph id="2">  </ph>
+  Pattern: <ph id="3">`[Theme]_[Location/ADMlevel]_[Source]_[YYYYMM].[ext]`</ph><ph id="4">  </ph>
+<bpt id="5">*</bpt>Example:<ept id="5">*</ept> <ph id="6">`Boundaries_ADM2_MDG_GADM_202407.gpkg`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Data (all shared):<ept id="1">**</ept><ph id="2">  </ph>
+  Pattern: <ph id="3">`[Theme]_[Location/ADMlevel]_[Source]_[YYYYMM].[ext]`</ph><ph id="4">  </ph>
+<bpt id="5">*</bpt>Example:<ept id="5">*</ept> <ph id="6">`Boundaries_ADM2_MDG_GADM_202407.gpkg`</ph></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Raster data:<ept id="1">**</ept><ph id="2">  </ph>
+  Pattern: <ph id="3">`[Theme]_[Location]_[Source]_[YYYYMM].[ext]`</ph><ph id="4">  </ph>
+<bpt id="5">*</bpt>Example:<ept id="5">*</ept> <ph id="6">`Rainfall_MDG_CHIRPS_202502.tif`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Raster data:<ept id="1">**</ept><ph id="2">  </ph>
+  Pattern: <ph id="3">`[Theme]_[Location]_[Source]_[YYYYMM].[ext]`</ph><ph id="4">  </ph>
+<bpt id="5">*</bpt>Example:<ept id="5">*</ept> <ph id="6">`Rainfall_MDG_CHIRPS_202502.tif`</ph></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Projects:<ept id="1">**</ept><ph id="2">  </ph>
+  Pattern: <ph id="3">`[ProjectName]_[OutputType]_[Region]_[YYYYMM]_vX.[ext]`</ph><ph id="4">  </ph>
+<bpt id="5">*</bpt>Example:<ept id="5">*</ept> <ph id="6">`HealthAssessment_Report_SOM_202503_v1.pdf`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Projects:<ept id="1">**</ept><ph id="2">  </ph>
+  Pattern: <ph id="3">`[ProjectName]_[OutputType]_[Region]_[YYYYMM]_vX.[ext]`</ph><ph id="4">  </ph>
+<bpt id="5">*</bpt>Example:<ept id="5">*</ept> <ph id="6">`HealthAssessment_Report_SOM_202503_v1.pdf`</ph></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">3. Extended Setup (with EAP workflows) <bpt id="1">&lt;a id="3-extended-setup-with-eap-workflows"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">3. Extended Setup (with EAP workflows) <bpt id="1">&lt;a id="3-extended-setup-with-eap-workflows"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">💡 <bpt id="1">**</bpt>Use when:<ept id="1">**</ept><ph id="2">  </ph>
+The organisation wants to keep all curated data together in <ph id="3">`10_Data/`</ph>, while separating <bpt id="4">**</bpt>heavy raster data<ept id="4">**</ept> (<ph id="5">`20_Raster_Data/`</ph>), <bpt id="6">**</bpt>shared styles<ept id="6">**</ept> (<ph id="7">`30_Styles_Templates/`</ph>), and <bpt id="8">**</bpt>project-specific or EAP workflows<ept id="8">**</ept>.</source>
+<target xml:lang="fr">💡 <bpt id="1">**</bpt>Use when:<ept id="1">**</ept><ph id="2">  </ph>
+The organisation wants to keep all curated data together in <ph id="3">`10_Data/`</ph>, while separating <bpt id="4">**</bpt>heavy raster data<ept id="4">**</ept> (<ph id="5">`20_Raster_Data/`</ph>), <bpt id="6">**</bpt>shared styles<ept id="6">**</ept> (<ph id="7">`30_Styles_Templates/`</ph>), and <bpt id="8">**</bpt>project-specific or EAP workflows<ept id="8">**</ept>.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">⚠️ <bpt id="1">**</bpt>Limitation:<ept id="1">**</ept><ph id="2">  </ph>
+Staff need to understand that <ph id="3">`10_Data/`</ph> and <ph id="4">`20_Raster_Data/`</ph> are <bpt id="5">**</bpt>read-only<ept id="5">**</ept>. If users save edits there, datasets can be overwritten or corrupted.</source>
+<target xml:lang="fr">⚠️ <bpt id="1">**</bpt>Limitation:<ept id="1">**</ept><ph id="2">  </ph>
+Staff need to understand that <ph id="3">`10_Data/`</ph> and <ph id="4">`20_Raster_Data/`</ph> are <bpt id="5">**</bpt>read-only<ept id="5">**</ept>. If users save edits there, datasets can be overwritten or corrupted.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+Large raster files (e.g. DEMs, cyclone wind or flood depth grids) can slow down OneDrive sync and fill local disks.<ph id="2">  </ph>
+To reduce problems:</source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+Large raster files (e.g. DEMs, cyclone wind or flood depth grids) can slow down OneDrive sync and fill local disks.<ph id="2">  </ph>
+To reduce problems:</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Keep only the most important raster layers in <ph id="1">`20_Raster_Data/`</ph>.</source>
+<target xml:lang="fr">Keep only the most important raster layers in <ph id="1">`20_Raster_Data/`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Archive older rasters in <ph id="1">`30_Snapshots/`</ph> if you need to keep historical versions.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">Archive older rasters in <ph id="1">`30_Snapshots/`</ph> if you need to keep historical versions.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Naming conventions for Balanced Setup (with EAPs)<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Naming conventions for Balanced Setup (with EAPs)<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">To keep files easy to find and avoid duplicates, use a consistent naming pattern.<ph id="1">  </ph>
+Below are suggested conventions with examples:</source>
+<target xml:lang="fr">To keep files easy to find and avoid duplicates, use a consistent naming pattern.<ph id="1">  </ph>
+Below are suggested conventions with examples:</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Data (all shared):<ept id="1">**</ept><ph id="2">  </ph>
+  Pattern: <ph id="3">`[Theme]_[Location/ADMlevel]_[Source]_[YYYYMM].[ext]`</ph><ph id="4">  </ph>
+  Example: <ph id="5">`Boundaries_ADM2_MDG_GADM_202407.gpkg`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Data (all shared):<ept id="1">**</ept><ph id="2">  </ph>
+  Pattern: <ph id="3">`[Theme]_[Location/ADMlevel]_[Source]_[YYYYMM].[ext]`</ph><ph id="4">  </ph>
+  Example: <ph id="5">`Boundaries_ADM2_MDG_GADM_202407.gpkg`</ph></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Raster data:<ept id="1">**</ept><ph id="2">  </ph>
+  Pattern: <ph id="3">`[Theme]_[Location]_[Source]_[YYYYMM].[ext]`</ph><ph id="4">  </ph>
+  Example: <ph id="5">`Rainfall_MDG_CHIRPS_202502.tif`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Raster data:<ept id="1">**</ept><ph id="2">  </ph>
+  Pattern: <ph id="3">`[Theme]_[Location]_[Source]_[YYYYMM].[ext]`</ph><ph id="4">  </ph>
+  Example: <ph id="5">`Rainfall_MDG_CHIRPS_202502.tif`</ph></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>EAP Models:<ept id="1">**</ept><ph id="2">  </ph>
+  Pattern: <ph id="3">`Model_[Hazard]_[Version]_[YYYYMM].[ext]`</ph><ph id="4">  </ph>
+  Example: <ph id="5">`Model_CycloneTrigger_v3_202502.model3`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>EAP Models:<ept id="1">**</ept><ph id="2">  </ph>
+  Pattern: <ph id="3">`Model_[Hazard]_[Version]_[YYYYMM].[ext]`</ph><ph id="4">  </ph>
+  Example: <ph id="5">`Model_CycloneTrigger_v3_202502.model3`</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Activations:<ept id="1">**</ept><ph id="2">  </ph>
+  Pattern: <ph id="3">`Cyclone_[Name]_[Year]_[OutputType]_[Region].[ext]`</ph><ph id="4">  </ph>
+  Example: <ph id="5">`Cyclone_Freddy_2023_ImpactMap_ADM2_MDG.pdf`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Activations:<ept id="1">**</ept><ph id="2">  </ph>
+  Pattern: <ph id="3">`Cyclone_[Name]_[Year]_[OutputType]_[Region].[ext]`</ph><ph id="4">  </ph>
+  Example: <ph id="5">`Cyclone_Freddy_2023_ImpactMap_ADM2_MDG.pdf`</ph></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Projects:<ept id="1">**</ept><ph id="2">  </ph>
+  Pattern: <ph id="3">`[ProjectName]_[OutputType]_[Region]_[YYYYMM]_vX.[ext]`</ph><ph id="4">  </ph>
+  Example: <ph id="5">`ClimateRiskAssessment_Map_MDG_202502_v1.pdf`</ph></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Projects:<ept id="1">**</ept><ph id="2">  </ph>
+  Pattern: <ph id="3">`[ProjectName]_[OutputType]_[Region]_[YYYYMM]_vX.[ext]`</ph><ph id="4">  </ph>
+  Example: <ph id="5">`ClimateRiskAssessment_Map_MDG_202502_v1.pdf`</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Advantages, Limitations, and Permissions <bpt id="1">&lt;a id="advantages-limitations-and-permissions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Advantages, Limitations, and Permissions <bpt id="1">&lt;a id="advantages-limitations-and-permissions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">When setting up a geodata hub in SharePoint, there are clear benefits, but also some important boundaries to be aware of.<ph id="1">  </ph>
+Below is a short overview of the <bpt id="2">**</bpt>advantages<ept id="2">**</ept>, the <bpt id="3">**</bpt>limitations<ept id="3">**</ept>, and how to handle <bpt id="4">**</bpt>permissions<ept id="4">**</ept> effectively.</source>
+<target xml:lang="fr">When setting up a geodata hub in SharePoint, there are clear benefits, but also some important boundaries to be aware of.<ph id="1">  </ph>
+Below is a short overview of the <bpt id="2">**</bpt>advantages<ept id="2">**</ept>, the <bpt id="3">**</bpt>limitations<ept id="3">**</ept>, and how to handle <bpt id="4">**</bpt>permissions<ept id="4">**</ept> effectively.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Advantages <bpt id="1">&lt;a id="advantages"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Advantages <bpt id="1">&lt;a id="advantages"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Using SharePoint for geodata management gives small organisations a strong starting point:</source>
+<target xml:lang="fr">Using SharePoint for geodata management gives small organisations a strong starting point:</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Standardisation<ept id="1">**</ept> — all staff work with the same datasets, style files, and map templates, which reduces confusion and ensures consistent outputs.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Standardisation<ept id="1">**</ept> — all staff work with the same datasets, style files, and map templates, which reduces confusion and ensures consistent outputs.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Easy onboarding<ept id="1">**</ept> — new colleagues don’t waste time hunting for files; the folder structure makes it obvious where to look.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Easy onboarding<ept id="1">**</ept> — new colleagues don’t waste time hunting for files; the folder structure makes it obvious where to look.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Built-in versioning<ept id="1">**</ept> — SharePoint automatically stores file history, so it’s easy to recover previous versions if mistakes happen.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Built-in versioning<ept id="1">**</ept> — SharePoint automatically stores file history, so it’s easy to recover previous versions if mistakes happen.</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Flexible permissions<ept id="1">**</ept> — you can decide who can only view, who can edit, and who has full control.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Flexible permissions<ept id="1">**</ept> — you can decide who can only view, who can edit, and who has full control.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Integration with QGIS<ept id="1">**</ept> — through OneDrive sync, datasets can be accessed locally and reliably within QGIS projects.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Integration with QGIS<ept id="1">**</ept> — through OneDrive sync, datasets can be accessed locally and reliably within QGIS projects.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Limitations <bpt id="1">&lt;a id="limitations"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Limitations <bpt id="1">&lt;a id="limitations"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">However, SharePoint is not a GIS database, and this introduces some constraints:</source>
+<target xml:lang="fr">However, SharePoint is not a GIS database, and this introduces some constraints:</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Concurrency issues<ept id="1">**</ept> — file-based geodata formats (like GeoPackage) can corrupt if multiple people try to edit them simultaneously.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Concurrency issues<ept id="1">**</ept> — file-based geodata formats (like GeoPackage) can corrupt if multiple people try to edit them simultaneously.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Performance bottlenecks<ept id="1">**</ept> — very large rasters or high-frequency edits will quickly become slow; in these cases, a spatial database such as PostGIS is better.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Performance bottlenecks<ept id="1">**</ept> — very large rasters or high-frequency edits will quickly become slow; in these cases, a spatial database such as PostGIS is better.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Discipline required<ept id="1">**</ept> — the system relies on users consistently following folder structures and naming conventions; otherwise, the hub loses its value.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Discipline required<ept id="1">**</ept> — the system relies on users consistently following folder structures and naming conventions; otherwise, the hub loses its value.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{important}</ph>
+Think of SharePoint as a <bpt id="2">**</bpt>distribution and coordination hub<ept id="2">**</ept>.<ph id="3">  </ph>
+For <bpt id="4">**</bpt>multi-user editing<ept id="4">**</ept> or <bpt id="5">**</bpt>large-scale storage<ept id="5">**</ept>, you’ll need a database backend.
+<ph id="6">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{important}</ph>
+Think of SharePoint as a <bpt id="2">**</bpt>distribution and coordination hub<ept id="2">**</ept>.<ph id="3">  </ph>
+For <bpt id="4">**</bpt>multi-user editing<ept id="4">**</ept> or <bpt id="5">**</bpt>large-scale storage<ept id="5">**</ept>, you’ll need a database backend.
+<ph id="6">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Permissions <bpt id="1">&lt;a id="permissions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Permissions <bpt id="1">&lt;a id="permissions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Managing access well is essential to protect authoritative data while allowing collaboration.<ph id="1">  </ph>
+A good practice is to differentiate between <bpt id="2">**</bpt>authoritative data<ept id="2">**</ept>, <bpt id="3">**</bpt>working data<ept id="3">**</ept>, and <bpt id="4">**</bpt>project outputs<ept id="4">**</ept>:</source>
+<target xml:lang="fr">Managing access well is essential to protect authoritative data while allowing collaboration.<ph id="1">  </ph>
+A good practice is to differentiate between <bpt id="2">**</bpt>authoritative data<ept id="2">**</ept>, <bpt id="3">**</bpt>working data<ept id="3">**</ept>, and <bpt id="4">**</bpt>project outputs<ept id="4">**</ept>:</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Authoritative_Data<ept id="1">**</ept> — read-only for most staff; only designated data stewards can upload or edit.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Authoritative_Data<ept id="1">**</ept> — read-only for most staff; only designated data stewards can upload or edit.</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Working_Data<ept id="1">**</ept> — restricted to editors; enable check-in/check-out so files aren’t overwritten accidentally.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Working_Data<ept id="1">**</ept> — restricted to editors; enable check-in/check-out so files aren’t overwritten accidentally.</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Projects<ept id="1">**</ept> — editable by project teams, but can be read-only for others to avoid unwanted edits.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Projects<ept id="1">**</ept> — editable by project teams, but can be read-only for others to avoid unwanted edits.</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Sensitive datasets<ept id="1">**</ept> — if distribution needs to be controlled, use <bpt id="2">*</bpt>View-only<ept id="2">*</ept> links combined with <bpt id="3">*</bpt>Block download<ept id="3">*</ept>.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Sensitive datasets<ept id="1">**</ept> — if distribution needs to be controlled, use <bpt id="2">*</bpt>View-only<ept id="2">*</ept> links combined with <bpt id="3">*</bpt>Block download<ept id="3">*</ept>.</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Keep permissions simple.<ept id="1">**</ept><ph id="2">  </ph>
+Instead of assigning rights to individuals, create SharePoint groups such as:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Keep permissions simple.<ept id="1">**</ept><ph id="2">  </ph>
+Instead of assigning rights to individuals, create SharePoint groups such as:</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Owners<ept id="1">*</ept> (Full Control)</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Owners<ept id="1">*</ept> (Full Control)</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Editors<ept id="1">*</ept> (Edit)</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Editors<ept id="1">*</ept> (Edit)</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Viewers<ept id="1">*</ept> (Read)</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Viewers<ept id="1">*</ept> (Read)</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">This makes management much easier when staff join or leave the organisation.</source>
+<target xml:lang="fr">This makes management much easier when staff join or leave the organisation.</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Metadata &amp; Cataloguing <bpt id="1">&lt;a id="metadata-and-cataloguing"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Metadata &amp; Cataloguing <bpt id="1">&lt;a id="metadata-and-cataloguing"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Even if your files are well-organised in folders, it can still be hard for new staff to know <bpt id="1">**</bpt>which dataset is the latest<ept id="1">**</ept> or <bpt id="2">**</bpt>what each file is used for<ept id="2">**</ept>.<ph id="3">  </ph>
+This is where <bpt id="4">*</bpt>metadata<ept id="4">*</ept> comes in. In SharePoint, you can add extra information fields (columns) to your libraries. These fields make it easy to filter, sort, and search across all data — without relying only on file names.</source>
+<target xml:lang="fr">Even if your files are well-organised in folders, it can still be hard for new staff to know <bpt id="1">**</bpt>which dataset is the latest<ept id="1">**</ept> or <bpt id="2">**</bpt>what each file is used for<ept id="2">**</ept>.<ph id="3">  </ph>
+This is where <bpt id="4">*</bpt>metadata<ept id="4">*</ept> comes in. In SharePoint, you can add extra information fields (columns) to your libraries. These fields make it easy to filter, sort, and search across all data — without relying only on file names.</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Why use metadata? <bpt id="1">&lt;a id="why-use-metadata"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Why use metadata? <bpt id="1">&lt;a id="why-use-metadata"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Clarity<ept id="1">**</ept>: Staff can quickly see which dataset is authoritative, draft, or outdated.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Clarity<ept id="1">**</ept>: Staff can quickly see which dataset is authoritative, draft, or outdated.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Consistency<ept id="1">**</ept>: Everyone uses the same standard fields.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Consistency<ept id="1">**</ept>: Everyone uses the same standard fields.</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Search &amp; filter<ept id="1">**</ept>: Instead of browsing dozens of folders, users can filter by country, hazard, or date updated.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Search &amp; filter<ept id="1">**</ept>: Instead of browsing dozens of folders, users can filter by country, hazard, or date updated.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Documentation<ept id="1">**</ept>: Key context (like source and update cycle) is stored with the file itself, not just in someone’s memory.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Documentation<ept id="1">**</ept>: Key context (like source and update cycle) is stored with the file itself, not just in someone’s memory.</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Suggested metadata fields <bpt id="1">&lt;a id="suggested-metadata-fields"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Suggested metadata fields <bpt id="1">&lt;a id="suggested-metadata-fields"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">When creating or editing a SharePoint library, you can add simple columns such as:</source>
+<target xml:lang="fr">When creating or editing a SharePoint library, you can add simple columns such as:</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Theme<ept id="1">**</ept> (e.g. Boundaries, Health, Logistics, Hazards)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Theme<ept id="1">**</ept> (e.g. Boundaries, Health, Logistics, Hazards)</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Location / ISO3 code<ept id="1">**</ept> (e.g. MDG, SOM, region name)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Location / ISO3 code<ept id="1">**</ept> (e.g. MDG, SOM, region name)</target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Source<ept id="1">**</ept> (e.g. WFP, UNOCHA, OSM)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Source<ept id="1">**</ept> (e.g. WFP, UNOCHA, OSM)</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>DateUpdated<ept id="1">**</ept> (YYYYMMDD)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>DateUpdated<ept id="1">**</ept> (YYYYMMDD)</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Contact / Owner<ept id="1">**</ept> (responsible person or team)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Contact / Owner<ept id="1">**</ept> (responsible person or team)</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>URL<ept id="1">**</ept> (link to the original data source or documentation)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>URL<ept id="1">**</ept> (link to the original data source or documentation)</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph>
+You don’t need to tag <bpt id="2">*</bpt>everything<ept id="2">*</ept>. Start with 3–4 core fields that help your team find data quickly.<ph id="3">  </ph>
+For example: <bpt id="4">*</bpt>Theme<ept id="4">*</ept>, <bpt id="5">*</bpt>Location<ept id="5">*</ept>, <bpt id="6">*</bpt>Source<ept id="6">*</ept>, and <bpt id="7">*</bpt>DateUpdated<ept id="7">*</ept>. More can be added later if needed.
+<ph id="8">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph>
+You don’t need to tag <bpt id="2">*</bpt>everything<ept id="2">*</ept>. Start with 3–4 core fields that help your team find data quickly.<ph id="3">  </ph>
+For example: <bpt id="4">*</bpt>Theme<ept id="4">*</ept>, <bpt id="5">*</bpt>Location<ept id="5">*</ept>, <bpt id="6">*</bpt>Source<ept id="6">*</ept>, and <bpt id="7">*</bpt>DateUpdated<ept id="7">*</ept>. More can be added later if needed.
+<ph id="8">:::</ph></target>
+</trans-unit>
+<group id="sd1_ssf29" resname="sub-filter:sd1">
+<trans-unit id="sd1_sf29_tu2" resname="sd1_1" restype="x-title" xml:space="preserve">
+<source xml:lang="en">YouTube video player</source>
+<target xml:lang="fr">YouTube video player</target>
+</trans-unit>
+<trans-unit id="sd1_sf29_tu1" resname="sd1_2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/qB2acPUSF_o?si=JyjVHEqcTNHqTKUK" [#$sd1_sf29_tu2] frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></bpt><ept id="1">&lt;/iframe></ept></source>
+<target xml:lang="fr"><bpt id="1">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/qB2acPUSF_o?si=JyjVHEqcTNHqTKUK" [#$sd1_sf29_tu2] frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></bpt><ept id="1">&lt;/iframe></ept></target>
+</trans-unit>
+</group>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Implementation Guide (Quick Start) <bpt id="1">&lt;a id="implementation-guide-quick-start"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Implementation Guide (Quick Start) <bpt id="1">&lt;a id="implementation-guide-quick-start"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Setting up a geodata hub in SharePoint is straightforward.<ph id="1">  </ph>
+Follow these steps to get started:</source>
+<target xml:lang="fr">Setting up a geodata hub in SharePoint is straightforward.<ph id="1">  </ph>
+Follow these steps to get started:</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Create a new SharePoint document library<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Create a new SharePoint document library<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Name it clearly, e.g., <ph id="1">`GIS_Hub`</ph>.</source>
+<target xml:lang="fr">Name it clearly, e.g., <ph id="1">`GIS_Hub`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">This will be the root space for all your geodata folders.</source>
+<target xml:lang="fr">This will be the root space for all your geodata folders.</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Set up the folder structure<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Set up the folder structure<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Recreate the agreed structure (Minimalist, Balanced, or Extended) inside the library.</source>
+<target xml:lang="fr">Recreate the agreed structure (Minimalist, Balanced, or Extended) inside the library.</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">Example for the Balanced Setup:</source>
+<target xml:lang="fr">Example for the Balanced Setup:</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`00_Admin/`</ph></source>
+<target xml:lang="fr"><ph id="1">`00_Admin/`</ph></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`10_Data/`</ph></source>
+<target xml:lang="fr"><ph id="1">`10_Data/`</ph></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`20_Raster_Data/`</ph></source>
+<target xml:lang="fr"><ph id="1">`20_Raster_Data/`</ph></target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`30_Styles_Templates/`</ph></source>
+<target xml:lang="fr"><ph id="1">`30_Styles_Templates/`</ph></target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`40_Working_Data/`</ph></source>
+<target xml:lang="fr"><ph id="1">`40_Working_Data/`</ph></target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en"><ph id="1">`50_Projects/`</ph></source>
+<target xml:lang="fr"><ph id="1">`50_Projects/`</ph></target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Configure permissions<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Configure permissions<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">Use SharePoint groups: <bpt id="1">*</bpt>Owners<ept id="1">*</ept> (Full Control), <bpt id="2">*</bpt>Editors<ept id="2">*</ept> (Edit), <bpt id="3">*</bpt>Viewers<ept id="3">*</ept> (Read).</source>
+<target xml:lang="fr">Use SharePoint groups: <bpt id="1">*</bpt>Owners<ept id="1">*</ept> (Full Control), <bpt id="2">*</bpt>Editors<ept id="2">*</ept> (Edit), <bpt id="3">*</bpt>Viewers<ept id="3">*</ept> (Read).</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Set <ph id="1">`10_Data/`</ph> and <ph id="2">`20_Raster_Data/`</ph> as read-only for most users.</source>
+<target xml:lang="fr">Set <ph id="1">`10_Data/`</ph> and <ph id="2">`20_Raster_Data/`</ph> as read-only for most users.</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">Restrict <ph id="1">`40_Working_Data/`</ph> to editors only.</source>
+<target xml:lang="fr">Restrict <ph id="1">`40_Working_Data/`</ph> to editors only.</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Add initial content<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Add initial content<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Upload authoritative datasets into <ph id="1">`10_Data/`</ph> (boundaries, roads, exposure layers).</source>
+<target xml:lang="fr">Upload authoritative datasets into <ph id="1">`10_Data/`</ph> (boundaries, roads, exposure layers).</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Upload a few DEMs or land cover rasters into <ph id="1">`20_Raster_Data/`</ph>.</source>
+<target xml:lang="fr">Upload a few DEMs or land cover rasters into <ph id="1">`20_Raster_Data/`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Add shared QGIS styles (<ph id="1">`.qml`</ph>) and layouts (<ph id="2">`.qpt`</ph>) into <ph id="3">`30_Styles_Templates/`</ph>.</source>
+<target xml:lang="fr">Add shared QGIS styles (<ph id="1">`.qml`</ph>) and layouts (<ph id="2">`.qpt`</ph>) into <ph id="3">`30_Styles_Templates/`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Enable OneDrive sync for offline access<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Enable OneDrive sync for offline access<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Staff can sync the <ph id="1">`GIS_Hub`</ph> library to their laptops.</source>
+<target xml:lang="fr">Staff can sync the <ph id="1">`GIS_Hub`</ph> library to their laptops.</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">This allows QGIS to use local file paths (more stable than online links).</source>
+<target xml:lang="fr">This allows QGIS to use local file paths (more stable than online links).</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">**Document SOPs in <bpt id="1">**</bpt><ph id="2">`00_Admin/`</ph><ept id="1">**</ept></source>
+<target xml:lang="fr">**Document SOPs in <bpt id="1">**</bpt><ph id="2">`00_Admin/`</ph><ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">Add a simple <ph id="1">`ReadMe.md`</ph> or <ph id="2">`SOPs.pdf`</ph> explaining:</source>
+<target xml:lang="fr">Add a simple <ph id="1">`ReadMe.md`</ph> or <ph id="2">`SOPs.pdf`</ph> explaining:</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">Which folders are read-only.</source>
+<target xml:lang="fr">Which folders are read-only.</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">How to name files.</source>
+<target xml:lang="fr">How to name files.</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">Where to save drafts vs. final outputs.</source>
+<target xml:lang="fr">Where to save drafts vs. final outputs.</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Onboard staff<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Onboard staff<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">Show new staff where to find data, projects, and styles.</source>
+<target xml:lang="fr">Show new staff where to find data, projects, and styles.</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">Emphasise that only data stewards update the <ph id="1">`10_Data/`</ph> and <ph id="2">`20_Raster_Data/`</ph> folders.</source>
+<target xml:lang="fr">Emphasise that only data stewards update the <ph id="1">`10_Data/`</ph> and <ph id="2">`20_Raster_Data/`</ph> folders.</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph>
+Start small. Don’t upload everything at once. Begin with the datasets most often used in your projects (e.g., admin boundaries, health facilities, WorldPop).<ph id="2">  </ph>
+You can expand later as the team gets used to the system.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph>
+Start small. Don’t upload everything at once. Begin with the datasets most often used in your projects (e.g., admin boundaries, health facilities, WorldPop).<ph id="2">  </ph>
+You can expand later as the team gets used to the system.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en">Standard Operating Procedures (SOPs) <bpt id="1">&lt;a id="standard-operating-procedures-sops"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Standard Operating Procedures (SOPs) <bpt id="1">&lt;a id="standard-operating-procedures-sops"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">A clear folder structure is only useful if everyone applies it consistently.<ph id="1">  </ph>
+To avoid confusion and data loss, organisations should agree on a few simple rules.<ph id="2">  </ph>
+These <bpt id="3">**</bpt>Standard Operating Procedures (SOPs)<ept id="3">**</ept> can serve as a starting point:</source>
+<target xml:lang="fr">A clear folder structure is only useful if everyone applies it consistently.<ph id="1">  </ph>
+To avoid confusion and data loss, organisations should agree on a few simple rules.<ph id="2">  </ph>
+These <bpt id="3">**</bpt>Standard Operating Procedures (SOPs)<ept id="3">**</ept> can serve as a starting point:</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Data upload<ept id="1">**</ept><ph id="2">  </ph>
+   Only data stewards may add or update files in <ph id="3">`10_Data/`</ph> and <ph id="4">`20_Raster_Data/`</ph>.<ph id="5">  </ph>
+   Other staff can download these datasets but not modify them.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Data upload<ept id="1">**</ept><ph id="2">  </ph>
+   Only data stewards may add or update files in <ph id="3">`10_Data/`</ph> and <ph id="4">`20_Raster_Data/`</ph>.<ph id="5">  </ph>
+   Other staff can download these datasets but not modify them.</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>File naming<ept id="1">**</ept><ph id="2">  </ph>
+   Always follow the agreed naming convention (see section on naming).<ph id="3">  </ph>
+   This ensures datasets are easy to find and avoids duplication.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>File naming<ept id="1">**</ept><ph id="2">  </ph>
+   Always follow the agreed naming convention (see section on naming).<ph id="3">  </ph>
+   This ensures datasets are easy to find and avoids duplication.</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Working data<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Working data<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">Use <ph id="1">`40_Working_Data/`</ph> only for drafts, intermediate processing, or temporary edits.</source>
+<target xml:lang="fr">Use <ph id="1">`40_Working_Data/`</ph> only for drafts, intermediate processing, or temporary edits.</target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">To avoid sync problems (especially with large files), staff can also keep working files <bpt id="1">**</bpt>locally on their own computer<ept id="1">**</ept>.</source>
+<target xml:lang="fr">To avoid sync problems (especially with large files), staff can also keep working files <bpt id="1">**</bpt>locally on their own computer<ept id="1">**</ept>.</target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en">Before weekends, or whenever results need to be shared with the team (for backup and contingencies), upload the relevant files to <ph id="1">`40_Working_Data/`</ph>.</source>
+<target xml:lang="fr">Before weekends, or whenever results need to be shared with the team (for backup and contingencies), upload the relevant files to <ph id="1">`40_Working_Data/`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Project folders<ept id="1">**</ept><ph id="2">  </ph>
+   Each project must have its own subfolder in <ph id="3">`50_Projects/`</ph> (e.g., <ph id="4">`FloodResponse_2025/`</ph>).<ph id="5">  </ph>
+   Store there:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Project folders<ept id="1">**</ept><ph id="2">  </ph>
+   Each project must have its own subfolder in <ph id="3">`50_Projects/`</ph> (e.g., <ph id="4">`FloodResponse_2025/`</ph>).<ph id="5">  </ph>
+   Store there:</target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en">QGIS projects (<ph id="1">`.qgz`</ph>)</source>
+<target xml:lang="fr">QGIS projects (<ph id="1">`.qgz`</ph>)</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">Final analysis outputs (maps, reports, tables)</source>
+<target xml:lang="fr">Final analysis outputs (maps, reports, tables)</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en">A copy of the <bpt id="1">**</bpt>datasets actually used in the project<ept id="1">**</ept> (so the work can be reproduced later).</source>
+<target xml:lang="fr">A copy of the <bpt id="1">**</bpt>datasets actually used in the project<ept id="1">**</ept> (so the work can be reproduced later).</target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Templates<ept id="1">**</ept><ph id="2">  </ph>
+   Always apply the shared QGIS styles and layouts from <ph id="3">`30_Styles_Templates/`</ph> when producing maps or analyses.<ph id="4">  </ph>
+   This keeps outputs consistent across the organisation.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Templates<ept id="1">**</ept><ph id="2">  </ph>
+   Always apply the shared QGIS styles and layouts from <ph id="3">`30_Styles_Templates/`</ph> when producing maps or analyses.<ph id="4">  </ph>
+   This keeps outputs consistent across the organisation.</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>EAP workflows (if relevant)<ept id="1">**</ept><ph id="2">  </ph>
+   For anticipatory action, store baseline data in <ph id="3">`50_Cyclone_EAP/Fixed_Data/`</ph>, models in <ph id="4">`50_Cyclone_EAP/Models/`</ph>,<ph id="5">  </ph>
+   and create a new folder for each activation under <ph id="6">`50_Cyclone_EAP/Activations/`</ph>.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>EAP workflows (if relevant)<ept id="1">**</ept><ph id="2">  </ph>
+   For anticipatory action, store baseline data in <ph id="3">`50_Cyclone_EAP/Fixed_Data/`</ph>, models in <ph id="4">`50_Cyclone_EAP/Models/`</ph>,<ph id="5">  </ph>
+   and create a new folder for each activation under <ph id="6">`50_Cyclone_EAP/Activations/`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Change log<ept id="1">**</ept><ph id="2">  </ph>
+   Keep a simple log in <ph id="3">`00_Admin/`</ph> (e.g., <ph id="4">`Change_Log.xlsx`</ph>) where stewards record updates to data or templates.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Change log<ept id="1">**</ept><ph id="2">  </ph>
+   Keep a simple log in <ph id="3">`00_Admin/`</ph> (e.g., <ph id="4">`Change_Log.xlsx`</ph>) where stewards record updates to data or templates.</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Permissions<ept id="1">**</ept><ph id="2">  </ph>
+   Manage access through SharePoint groups, not individuals:</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Permissions<ept id="1">**</ept><ph id="2">  </ph>
+   Manage access through SharePoint groups, not individuals:</target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Owners<ept id="1">*</ept> → Full Control</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Owners<ept id="1">*</ept> → Full Control</target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Editors<ept id="1">*</ept> → Edit (e.g., for <ph id="2">`40_Working_Data/`</ph> and project folders)</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Editors<ept id="1">*</ept> → Edit (e.g., for <ph id="2">`40_Working_Data/`</ph> and project folders)</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">*</bpt>Viewers<ept id="1">*</ept> → Read-only (for most data folders)</source>
+<target xml:lang="fr"><bpt id="1">*</bpt>Viewers<ept id="1">*</ept> → Read-only (for most data folders)</target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph>
+Short SOPs are most effective if they fit on <bpt id="2">**</bpt>one page<ept id="2">**</ept>.<ph id="3">  </ph>
+Keep them simple and review once a year to make sure they are still relevant.<ph id="4">  </ph>
+Emphasise that <bpt id="5">**</bpt>day-to-day work files can stay on individual laptops<ept id="5">**</ept>.<ph id="6">  </ph>
+Only upload to <ph id="7">`40_Working_Data/`</ph> before weekends, handovers, or when results need to be shared for team use and contingency.
+<ph id="8">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph>
+Short SOPs are most effective if they fit on <bpt id="2">**</bpt>one page<ept id="2">**</ept>.<ph id="3">  </ph>
+Keep them simple and review once a year to make sure they are still relevant.<ph id="4">  </ph>
+Emphasise that <bpt id="5">**</bpt>day-to-day work files can stay on individual laptops<ept id="5">**</ept>.<ph id="6">  </ph>
+Only upload to <ph id="7">`40_Working_Data/`</ph> before weekends, handovers, or when results need to be shared for team use and contingency.
+<ph id="8">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

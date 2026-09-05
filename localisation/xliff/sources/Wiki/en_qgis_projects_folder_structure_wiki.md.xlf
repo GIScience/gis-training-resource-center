@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_projects_folder_structure_wiki.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Projects and Folder Structure <bpt id="1">&lt;a id="projects-and-folder-structure"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Projects and Folder Structure <bpt id="1">&lt;a id="projects-and-folder-structure"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">This wiki article covers the best practices for the creation and management of geodata and QGIS projects.</source>
+<target xml:lang="fr">This wiki article covers the best practices for the creation and management of geodata and QGIS projects.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Step-by-step: Setting up a new QGIS project from scratch <bpt id="1">&lt;a id="step-by-step-setting-up-a-new-qgis-project-from-scratch"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step-by-step: Setting up a new QGIS project from scratch <bpt id="1">&lt;a id="step-by-step-setting-up-a-new-qgis-project-from-scratch"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Tip}</ph>
+It is good practice to use a <bpt id="2">__</bpt>standard folder structure<ept id="2">__</ept> for QGIS projects in which the project, all used geodata, styling files and documentation is stored.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Tip}</ph>
+It is good practice to use a <bpt id="2">__</bpt>standard folder structure<ept id="2">__</ept> for QGIS projects in which the project, all used geodata, styling files and documentation is stored.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Copy the standard folder structure for QGIS projects to the place you want to store your whole project. You can download the standard folder structure <bpt id="1">*</bpt>here<ept id="1">*</ept>.</source>
+<target xml:lang="fr">Copy the standard folder structure for QGIS projects to the place you want to store your whole project. You can download the standard folder structure <bpt id="1">*</bpt>here<ept id="1">*</ept>.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Open QGIS and create a new project. Click on <ph id="1">`Project`</ph> -> <ph id="2">`New Project`</ph></source>
+<target xml:lang="fr">Open QGIS and create a new project. Click on <ph id="1">`Project`</ph> -> <ph id="2">`New Project`</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Create a new QGIS Project <bpt id="1">&lt;a id="create-a-new-qgis-project"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Create a new QGIS Project <bpt id="1">&lt;a id="create-a-new-qgis-project"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Save the new project in the <ph id="1">`Project`</ph> folder in the standard folder structure and git push.</source>
+<target xml:lang="fr">Save the new project in the <ph id="1">`Project`</ph> folder in the standard folder structure and git push.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Give your project a name and click <ph id="1">`Save`</ph>.
+<ph id="2">:::{Tip}</ph>
+Do not use spaces <ph id="3">` `</ph> in the name, instead always use underscores <ph id="4">`_`</ph>.
+<ph id="5">:::</ph></source>
+<target xml:lang="fr">Give your project a name and click <ph id="1">`Save`</ph>.
+<ph id="2">:::{Tip}</ph>
+Do not use spaces <ph id="3">` `</ph> in the name, instead always use underscores <ph id="4">`_`</ph>.
+<ph id="5">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Save Project <bpt id="1">&lt;a id="save-project"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Save Project <bpt id="1">&lt;a id="save-project"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Check the Coordinate Reference System (CRS)/EPSG code of the project to the CRS/EPSG you want to use. For more information check the wiki article on <bpt id="1">[</bpt>Projection<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#how-to-check-epsg-code-crs-of-your-qgis-project-and-change-it)</ept>.</source>
+<target xml:lang="fr">Check the Coordinate Reference System (CRS)/EPSG code of the project to the CRS/EPSG you want to use. For more information check the wiki article on <bpt id="1">[</bpt>Projection<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html#how-to-check-epsg-code-crs-of-your-qgis-project-and-change-it)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Check and change CRS/EPSG <bpt id="1">&lt;a id="check-and-change-crsepsg"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Check and change CRS/EPSG <bpt id="1">&lt;a id="check-and-change-crsepsg"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Tip}</ph>
+The layer data used in the project are not saved in the project file. Instead, the project file only contains the file paths where the layer data were located at the time the project was last saved on the PC. If the location of this layer data is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.
+Good data organisation with a fixed and well thought-out folder structure prevents such problems.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Tip}</ph>
+The layer data used in the project are not saved in the project file. Instead, the project file only contains the file paths where the layer data were located at the time the project was last saved on the PC. If the location of this layer data is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.
+Good data organisation with a fixed and well thought-out folder structure prevents such problems.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Open existing QGIS Projects <bpt id="1">&lt;a id="open-existing-qgis-projects"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Open existing QGIS Projects <bpt id="1">&lt;a id="open-existing-qgis-projects"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Open QGIS → <ph id="1">`Project`</ph> → <ph id="2">`Open`</ph> → Select your project</source>
+<target xml:lang="fr">Open QGIS → <ph id="1">`Project`</ph> → <ph id="2">`Open`</ph> → Select your project</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Open QGIS Project<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Open QGIS Project<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Standard Folder Structure <bpt id="1">&lt;a id="standard-folder-structure"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Standard Folder Structure <bpt id="1">&lt;a id="standard-folder-structure"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">The standard folder structure has two principal advantages:</source>
+<target xml:lang="fr">The standard folder structure has two principal advantages:</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">By sharing the whole project folder, we can be certain that the project will run without problems on a different computer.</source>
+<target xml:lang="fr">By sharing the whole project folder, we can be certain that the project will run without problems on a different computer.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">The folder structure supports the proper organization of geodata and supports the stable function of a QGIS project.</source>
+<target xml:lang="fr">The folder structure supports the proper organization of geodata and supports the stable function of a QGIS project.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">The folder structure template can be downloaded <bpt id="1">[</bpt><bpt id="2">__</bpt>here<ept id="2">__</ept><ept id="1">](https://github.com/GIScience/gis-training-resource-center/blob/main/fig/GIS_Project_folder_template.zip)</ept>.</source>
+<target xml:lang="fr">The folder structure template can be downloaded <bpt id="1">[</bpt><bpt id="2">__</bpt>here<ept id="2">__</ept><ept id="1">](https://github.com/GIScience/gis-training-resource-center/blob/main/fig/GIS_Project_folder_template.zip)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/Standard_project_folder_structure.drawio.svg</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/Standard_project_folder_structure.drawio.svg</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 800px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: Standard_project_folder_structure_wikki</ph></source>
+<target xml:lang="fr"><ph id="1">width: 800px</ph>
+<ph id="2">align: center</ph>
+<ph id="3">name: Standard_project_folder_structure_wikki</ph></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Standard folder structure. Source: HeiGIT
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Standard folder structure. Source: HeiGIT
+<ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

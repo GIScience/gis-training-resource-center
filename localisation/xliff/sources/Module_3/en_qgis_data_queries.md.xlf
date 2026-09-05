@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_3/en_qgis_data_queries.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Geodata Selection and Queries <bpt id="1">&lt;a id="geodata-selection-and-queries"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Geodata Selection and Queries <bpt id="1">&lt;a id="geodata-selection-and-queries"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Geodata selection and queries in QGIS allow targeted parts of geospatial datasets to be selected. This can be utilized for filtering and analyzing geospatial information, which are essential tasks when working with spatial data.
+<ph id="1">\</ph>
+<ph id="2">\</ph>
+Three general types of selection/queries in QGIS that will cover the majority of your needs include:<ph id="3">\</ph>
+<bpt id="4">**</bpt>1. Manual Selection:<ept id="4">**</ept> Selection by manually choosing features with one of various selection tools offered by QGIS.</source>
+<target xml:lang="fr">Geodata selection and queries in QGIS allow targeted parts of geospatial datasets to be selected. This can be utilized for filtering and analyzing geospatial information, which are essential tasks when working with spatial data.
+<ph id="1">\</ph>
+<ph id="2">\</ph>
+Three general types of selection/queries in QGIS that will cover the majority of your needs include:<ph id="3">\</ph>
+<bpt id="4">**</bpt>1. Manual Selection:<ept id="4">**</ept> Selection by manually choosing features with one of various selection tools offered by QGIS.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>2. Attribute based Selection:<ept id="1">**</ept> Selection based on attribute values stored in the attribute table.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>2. Attribute based Selection:<ept id="1">**</ept> Selection based on attribute values stored in the attribute table.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>3. Layer based spatial Selection:<ept id="1">**</ept> Selecting features in one layer based on specified geometric relationships with features in another layer.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>3. Layer based spatial Selection:<ept id="1">**</ept> Selecting features in one layer based on specified geometric relationships with features in another layer.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>Now it's your turn!</source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>Now it's your turn!</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Querying data is essential to understanding and manipulating your datasets. You can follow the steps outlined below by downloading <bpt id="1">[</bpt>this dataset<ept id="1">](https://datacatalog.worldbank.org/search/dataset/0038272/World-Bank-Official-Boundaries)</ept>.</source>
+<target xml:lang="fr">Querying data is essential to understanding and manipulating your datasets. You can follow the steps outlined below by downloading <bpt id="1">[</bpt>this dataset<ept id="1">](https://datacatalog.worldbank.org/search/dataset/0038272/World-Bank-Official-Boundaries)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:class-card: sd-text-justify sd-rounded-3 sd-border-2</ph>
+<ph id="3">:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Module_3_world_bank_official_boundaries.zip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:class-card: sd-text-justify sd-rounded-3 sd-border-2</ph>
+<ph id="3">:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Module_3_world_bank_official_boundaries.zip</ph></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Download World Bank Official Boundaries<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Download World Bank Official Boundaries<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Manual Selection <bpt id="1">&lt;a id="manual-selection"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Manual Selection <bpt id="1">&lt;a id="manual-selection"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">Manual selection is done mostly using one of the click-based selection tools available under   in your project toolbar (alternative: <ph id="1">`Edit`</ph> → <ph id="2">`Select`</ph>). These include <ph id="3">`Select Feature(s)`</ph>, <ph id="4">`Select Feature by Polygon`</ph>, <ph id="5">`Select Feature by Freehand`</ph> and <ph id="6">`Select Feature by Radius`</ph>.
+<ph id="7">\</ph>
+<ph id="8">\</ph>
+Example: <ph id="9">`Select Feature(s)`</ph></source>
+<target xml:lang="fr">Manual selection is done mostly using one of the click-based selection tools available under   in your project toolbar (alternative: <ph id="1">`Edit`</ph> → <ph id="2">`Select`</ph>). These include <ph id="3">`Select Feature(s)`</ph>, <ph id="4">`Select Feature by Polygon`</ph>, <ph id="5">`Select Feature by Freehand`</ph> and <ph id="6">`Select Feature by Radius`</ph>.
+<ph id="7">\</ph>
+<ph id="8">\</ph>
+Example: <ph id="9">`Select Feature(s)`</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Select Feature(s)`</ph> in the drop down menu of <bpt id="2">![</bpt><ept id="2">](/fig/mActionSelectRectangle.png)</ept>.</source>
+<target xml:lang="fr">Click <ph id="1">`Select Feature(s)`</ph> in the drop down menu of <bpt id="2">![</bpt><ept id="2">](/fig/mActionSelectRectangle.png)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Select features by clicking on the or drawing a rectangle overlapping them.</source>
+<target xml:lang="fr">Select features by clicking on the or drawing a rectangle overlapping them.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Use the tool outside of selectable features to end your selection.</source>
+<target xml:lang="fr">Use the tool outside of selectable features to end your selection.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Tip}</ph>
+Holding down "Shift" during click-based selection allows you to select multiple features.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Tip}</ph>
+Holding down "Shift" during click-based selection allows you to select multiple features.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Manually select country polygons by click
+<ph id="2">:open:</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Manually select country polygons by click
+<ph id="2">:open:</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">The other options of <bpt id="1">![</bpt><ept id="1">](/fig/mActionSelectRectangle.png)</ept> function in a similar way, selecting all features overlapping with the respective geometry generated by the tools.</source>
+<target xml:lang="fr">The other options of <bpt id="1">![</bpt><ept id="1">](/fig/mActionSelectRectangle.png)</ept> function in a similar way, selecting all features overlapping with the respective geometry generated by the tools.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Select Feature(s) by Polygon`</ph> in the drop down menu of <bpt id="2">![</bpt><ept id="2">](/fig/mActionSelectRectangle.png)</ept>.</source>
+<target xml:lang="fr">Click <ph id="1">`Select Feature(s) by Polygon`</ph> in the drop down menu of <bpt id="2">![</bpt><ept id="2">](/fig/mActionSelectRectangle.png)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Select features by left clicking around the features you want to select.</source>
+<target xml:lang="fr">Select features by left clicking around the features you want to select.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Right-click when you are done drawing the polygon.</source>
+<target xml:lang="fr">Right-click when you are done drawing the polygon.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Manually select countries by drawing a polygon
+<ph id="2">:open:</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Manually select countries by drawing a polygon
+<ph id="2">:open:</ph></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Note}</ph>
+Selected features are highlighted in bright yellow in the geospatial view and blue in the attribute table.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Note}</ph>
+Selected features are highlighted in bright yellow in the geospatial view and blue in the attribute table.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Attribute Based Selection <bpt id="1">&lt;a id="attribute-based-selection"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Attribute Based Selection <bpt id="1">&lt;a id="attribute-based-selection"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">A query based on specific Attributes can be done utilizing the <ph id="1">`Select Features by Expression`</ph> tool available under <bpt id="2">![</bpt><ept id="2">](/fig/mActionSelectbyExpression.png)</ept> in the project toolbar and the attribute table (alternative: <ph id="3">`Edit`</ph> → <ph id="4">`Select`</ph> → <ph id="5">`Select`</ph> Features by Expression).</source>
+<target xml:lang="fr">A query based on specific Attributes can be done utilizing the <ph id="1">`Select Features by Expression`</ph> tool available under <bpt id="2">![</bpt><ept id="2">](/fig/mActionSelectbyExpression.png)</ept> in the project toolbar and the attribute table (alternative: <ph id="3">`Edit`</ph> → <ph id="4">`Select`</ph> → <ph id="5">`Select`</ph> Features by Expression).</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">In the tool interface, expand <ph id="1">`Fields and Values`</ph> in the right hand panel.</source>
+<target xml:lang="fr">In the tool interface, expand <ph id="1">`Fields and Values`</ph> in the right hand panel.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Choose the field you want to base your selection on by double clicking it (it should now appear in the expression panel on the left-hand side).</source>
+<target xml:lang="fr">Choose the field you want to base your selection on by double clicking it (it should now appear in the expression panel on the left-hand side).</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Use an expression with specific operators to specify your selection in the left hand panel (e.g <ph id="1">`"continent"  LIKE  'Asia'`</ph> to select all features with the value “Asia” in the field "continent" ).</source>
+<target xml:lang="fr">Use an expression with specific operators to specify your selection in the left hand panel (e.g <ph id="1">`"continent"  LIKE  'Asia'`</ph> to select all features with the value “Asia” in the field "continent" ).</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Tip}</ph>
+Click on <ph id="2">`Show Values`</ph> in the top right corner when a field is selected to get an overview over the different values of the respective field by clicking <ph id="3">`All Unique`</ph>/<ph id="4">`10 Samples`</ph>. Double click values to use them in the expression panel on the left.
+<ph id="5">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Tip}</ph>
+Click on <ph id="2">`Show Values`</ph> in the top right corner when a field is selected to get an overview over the different values of the respective field by clicking <ph id="3">`All Unique`</ph>/<ph id="4">`10 Samples`</ph>. Double click values to use them in the expression panel on the left.
+<ph id="5">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{tab-set}</ph></source>
+<target xml:lang="fr"><ph id="1">::::{tab-set}</ph></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Comparison operators
+| operator | functionality            |
+|----------|--------------------------|
+| <bpt id="2">__</bpt>=<ept id="2">__</ept>    | equals                   |
+| <bpt id="3">__</bpt>!=<ept id="3">__</ept>   | not equal                |
+| <bpt id="4">__</bpt><ph id="5">&lt;__    | less than                |
+| __></ph><ept id="4">__</ept>    | greater than             |
+| <bpt id="6">__</bpt><ph id="7">&lt;=__   | less than or equal to    |
+| __></ph>=<ept id="6">__</ept>   | greater than or equal to |
+<ph id="8">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Comparison operators
+| operator | functionality            |
+|----------|--------------------------|
+| <bpt id="2">__</bpt>=<ept id="2">__</ept>    | equals                   |
+| <bpt id="3">__</bpt>!=<ept id="3">__</ept>   | not equal                |
+| <bpt id="4">__</bpt><ph id="5">&lt;__    | less than                |
+| __></ph><ept id="4">__</ept>    | greater than             |
+| <bpt id="6">__</bpt><ph id="7">&lt;=__   | less than or equal to    |
+| __></ph>=<ept id="6">__</ept>   | greater than or equal to |
+<ph id="8">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Logical operators
+Operators such as AND, OR can be used to combine different queries or criteria.
+| operator | functionality          |
+|----------|------------------------|
+| <bpt id="2">__</bpt>AND<ept id="2">__</ept>  | logical AND            |
+| <bpt id="3">__</bpt>OR<ept id="3">__</ept>   | logical OR             |
+| <bpt id="4">__</bpt>NOT<ept id="4">__</ept>  | logical NOT            |
+<ph id="5">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Logical operators
+Operators such as AND, OR can be used to combine different queries or criteria.
+| operator | functionality          |
+|----------|------------------------|
+| <bpt id="2">__</bpt>AND<ept id="2">__</ept>  | logical AND            |
+| <bpt id="3">__</bpt>OR<ept id="3">__</ept>   | logical OR             |
+| <bpt id="4">__</bpt>NOT<ept id="4">__</ept>  | logical NOT            |
+<ph id="5">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tab-item} </ph>Special operators
+| operator      | functionality                                  |
+|---------------|------------------------------------------------|
+| <bpt id="2">__</bpt>LIKE<ept id="2">__</ept>      | pattern matching                               |
+| <bpt id="3">__</bpt>IN<ept id="3">__</ept>        | checks if a value is in a list of values       |
+| <bpt id="4">__</bpt>IS NULL<ept id="4">__</ept>   | checks for null values                         |
+| <bpt id="5">__</bpt>BETWEEN<ept id="5">__</ept>   | checks if a value is within a specified range  |
+| <bpt id="6">__</bpt>CASE WHEN<ept id="6">__</ept> | conditional expressions                        |
+<ph id="7">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tab-item} </ph>Special operators
+| operator      | functionality                                  |
+|---------------|------------------------------------------------|
+| <bpt id="2">__</bpt>LIKE<ept id="2">__</ept>      | pattern matching                               |
+| <bpt id="3">__</bpt>IN<ept id="3">__</ept>        | checks if a value is in a list of values       |
+| <bpt id="4">__</bpt>IS NULL<ept id="4">__</ept>   | checks for null values                         |
+| <bpt id="5">__</bpt>BETWEEN<ept id="5">__</ept>   | checks if a value is within a specified range  |
+| <bpt id="6">__</bpt>CASE WHEN<ept id="6">__</ept> | conditional expressions                        |
+<ph id="7">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Select all country polygons that share the value <ph id="2">`Asia`</ph> in the field "continent"
+<ph id="3">:open:</ph>
+<ph id="4">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Select all country polygons that share the value <ph id="2">`Asia`</ph> in the field "continent"
+<ph id="3">:open:</ph>
+<ph id="4">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Layer Based Spatial Selection <bpt id="1">&lt;a id="layer-based-spatial-selection"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Layer Based Spatial Selection <bpt id="1">&lt;a id="layer-based-spatial-selection"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Spatial selection of features enables selecting parts of a layer based on their relationship with features in another geospatial layer (e.g. the selection of all point features in layer A that are located within a polygon feature in Layer B). It can be achieved by using the tool “Select by Location” available under <bpt id="1">![</bpt><ept id="1">](/fig/mActionSelectbyLocation.png)</ept> in the project toolbar or (alternative: <ph id="2">`Vector`</ph> → <ph id="3">`Research Tools`</ph> → <ph id="4">`Select by Location`</ph>).</source>
+<target xml:lang="fr">Spatial selection of features enables selecting parts of a layer based on their relationship with features in another geospatial layer (e.g. the selection of all point features in layer A that are located within a polygon feature in Layer B). It can be achieved by using the tool “Select by Location” available under <bpt id="1">![</bpt><ept id="1">](/fig/mActionSelectbyLocation.png)</ept> in the project toolbar or (alternative: <ph id="2">`Vector`</ph> → <ph id="3">`Research Tools`</ph> → <ph id="4">`Select by Location`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">In the tool interface, choose the vector layer you want to select features from using <ph id="1">`Select features from`</ph> and the layer you want to base the selection on using <ph id="2">`By comparing to the features from`</ph>.</source>
+<target xml:lang="fr">In the tool interface, choose the vector layer you want to select features from using <ph id="1">`Select features from`</ph> and the layer you want to base the selection on using <ph id="2">`By comparing to the features from`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Choose the geometric operator that will be used to select features (see bottom paragraph).</source>
+<target xml:lang="fr">Choose the geometric operator that will be used to select features (see bottom paragraph).</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">In the bottom prompt, choose how you want to proceed with the newly selected features. The options include:</source>
+<target xml:lang="fr">In the bottom prompt, choose how you want to proceed with the newly selected features. The options include:</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Creating a new selection.</source>
+<target xml:lang="fr">Creating a new selection.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Adding to the current selection.</source>
+<target xml:lang="fr">Adding to the current selection.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Selecting within the current selection.</source>
+<target xml:lang="fr">Selecting within the current selection.</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Removing from the current selection.</source>
+<target xml:lang="fr">Removing from the current selection.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Selected features are again highlighted in bright yellow in your geospatial interface.</source>
+<target xml:lang="fr">Selected features are again highlighted in bright yellow in your geospatial interface.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Select Cities (Point features) that intersect with the polygon "China"
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Select Cities (Point features) that intersect with the polygon "China"
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example 2: Select all country polygons that touch the polygon "China"
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example 2: Select all country polygons that touch the polygon "China"
+<ph id="2">:open:</ph>
+<ph id="3">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Geometric Operators <bpt id="1">&lt;a id="geometric-operators"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Geometric Operators <bpt id="1">&lt;a id="geometric-operators"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">The geometric operators define the conditions of the relationship between your source and target layer that the selection will be based on. There are eight total options:</source>
+<target xml:lang="fr">The geometric operators define the conditions of the relationship between your source and target layer that the selection will be based on. There are eight total options:</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Operation</source>
+<target xml:lang="fr">Operation</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Example</source>
+<target xml:lang="fr">Example</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Intersect</source>
+<target xml:lang="fr">Intersect</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Features from the target layer are selected if they intersect with any features in the source layer.</source>
+<target xml:lang="fr">Features from the target layer are selected if they intersect with any features in the source layer.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Selecting all roads that cross a polygon representing a national park.</source>
+<target xml:lang="fr">Selecting all roads that cross a polygon representing a national park.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Contain</source>
+<target xml:lang="fr">Contain</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Features from the target layer are selected if they completely contain features in the source layer.</source>
+<target xml:lang="fr">Features from the target layer are selected if they completely contain features in the source layer.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Selecting a country polygon that completely contains smaller polygons of cities.</source>
+<target xml:lang="fr">Selecting a country polygon that completely contains smaller polygons of cities.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Disjoint</source>
+<target xml:lang="fr">Disjoint</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Features are disjoint if they do not share any common point or area.</source>
+<target xml:lang="fr">Features are disjoint if they do not share any common point or area.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Selecting administrative districts that have no common boundary or area.</source>
+<target xml:lang="fr">Selecting administrative districts that have no common boundary or area.</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Equal</source>
+<target xml:lang="fr">Equal</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Features are equal if their geometries are identical.</source>
+<target xml:lang="fr">Features are equal if their geometries are identical.</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Selecting two line segments with the exact same set of coordinates.</source>
+<target xml:lang="fr">Selecting two line segments with the exact same set of coordinates.</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">Touch</source>
+<target xml:lang="fr">Touch</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Features from the target layer are selected if they touch features in the source layer.</source>
+<target xml:lang="fr">Features from the target layer are selected if they touch features in the source layer.</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Selecting parks that touch a specific road.</source>
+<target xml:lang="fr">Selecting parks that touch a specific road.</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Overlap</source>
+<target xml:lang="fr">Overlap</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Features from the target layer are selected if they share any common space with features in the source layer.</source>
+<target xml:lang="fr">Features from the target layer are selected if they share any common space with features in the source layer.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Selecting land parcels that overlap with a proposed construction zone.</source>
+<target xml:lang="fr">Selecting land parcels that overlap with a proposed construction zone.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">Are within</source>
+<target xml:lang="fr">Are within</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">Features from the target layer are selected if they are completely within features in the source layer.</source>
+<target xml:lang="fr">Features from the target layer are selected if they are completely within features in the source layer.</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Selecting building polygons that are entirely within a polygon of a city boundary.</source>
+<target xml:lang="fr">Selecting building polygons that are entirely within a polygon of a city boundary.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Cross</source>
+<target xml:lang="fr">Cross</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Features from the target layer are selected if they cross features in the source layer.</source>
+<target xml:lang="fr">Features from the target layer are selected if they cross features in the source layer.</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Selecting rivers that cross a road.</source>
+<target xml:lang="fr">Selecting rivers that cross a road.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What are the three general types of selection or queries in QGIS? Give a brief description of each.<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What are the three general types of selection or queries in QGIS? Give a brief description of each.<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Manual selection<ept id="1">__</ept>:
+    You select features with your mouse using the <ph id="2">`Select Features`</ph>-tool in the map canvas or by clicking on the row column in the attribute table (the numbers on the left of the attribute table). In the map canvas, selected features will be highlighted in bright yellow, in the attribute table they are highlighted in blue.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Manual selection<ept id="1">__</ept>:
+    You select features with your mouse using the <ph id="2">`Select Features`</ph>-tool in the map canvas or by clicking on the row column in the attribute table (the numbers on the left of the attribute table). In the map canvas, selected features will be highlighted in bright yellow, in the attribute table they are highlighted in blue.</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Attribute-based queries<ept id="1">__</ept> (Select by Attribute or Select by Expression):
+    You build a query selecting attributes with specific values (e.g. <ph id="2">`"population" > 10000 AND "type" = 'urban'`</ph>).</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Attribute-based queries<ept id="1">__</ept> (Select by Attribute or Select by Expression):
+    You build a query selecting attributes with specific values (e.g. <ph id="2">`"population" > 10000 AND "type" = 'urban'`</ph>).</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Spatial queries<ept id="1">__</ept> (Select by Location):<ph id="2">  </ph>
+    You select features based on their spatial relationship to features in another layer (e.g. those that intersect, touch or are disjoint)
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Spatial queries<ept id="1">__</ept> (Select by Location):<ph id="2">  </ph>
+    You select features based on their spatial relationship to features in another layer (e.g. those that intersect, touch or are disjoint)
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Name at least four geometric operators in spatial queries (e.g. “Intersect”, “Within”) and explain what they do.<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Name at least four geometric operators in spatial queries (e.g. “Intersect”, “Within”) and explain what they do.<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">Operator</source>
+<target xml:lang="fr">Operator</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">Meaning / Behavior</source>
+<target xml:lang="fr">Meaning / Behavior</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Intersect<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Intersect<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Selects features from layer A that intersect (share any part) with features from layer B (they overlap in any way)</source>
+<target xml:lang="fr">Selects features from layer A that intersect (share any part) with features from layer B (they overlap in any way)</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Within<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Within<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Selects features of A that lie completely inside features of B</source>
+<target xml:lang="fr">Selects features of A that lie completely inside features of B</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Contains<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Contains<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">Selects features of A that entirely contain features of B</source>
+<target xml:lang="fr">Selects features of A that entirely contain features of B</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Touches<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Touches<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Selects features of A that touch (share a boundary or point) with features of B but do not overlap internally</source>
+<target xml:lang="fr">Selects features of A that touch (share a boundary or point) with features of B but do not overlap internally</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Crosses<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Crosses<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en">Selects features of A that pass through features of B (they cross each other)</source>
+<target xml:lang="fr">Selects features of A that pass through features of B (they cross each other)</target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Overlaps<ept id="1">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Overlaps<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Selects features of A and B that overlap but neither is completely inside the other</source>
+<target xml:lang="fr">Selects features of A and B that overlap but neither is completely inside the other</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">As examples:</source>
+<target xml:lang="fr">As examples:</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">If you want all roads that cross a park boundary, use Intersect or Crosses</source>
+<target xml:lang="fr">If you want all roads that cross a park boundary, use Intersect or Crosses</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">If you want all building footprints entirely inside a flood zone, use Within.</source>
+<target xml:lang="fr">If you want all building footprints entirely inside a flood zone, use Within.</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_4/en_qgis_map_design_I_ex_5.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Creating a map of the flooding situation in Beledweyr, Somalia <bpt id="1">&lt;a id="creating-a-map-of-the-flooding-situation-in-beledweyr-somalia"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Creating a map of the flooding situation in Beledweyr, Somalia <bpt id="1">&lt;a id="creating-a-map-of-the-flooding-situation-in-beledweyr-somalia"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Aim of the exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Aim of the exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">This exercise aims to create an overview map of the flood extent and potentially damaged critical infrastructure. We will use the data we processed in <bpt id="1">[</bpt>module 3 exercise 3: data queries<ept id="1">](/content/Module_3/en_qgis_m2_ex_3_data_queries.md)</ept>.</source>
+<target xml:lang="fr">This exercise aims to create an overview map of the flood extent and potentially damaged critical infrastructure. We will use the data we processed in <bpt id="1">[</bpt>module 3 exercise 3: data queries<ept id="1">](/content/Module_3/en_qgis_m2_ex_3_data_queries.md)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type of exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type of exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">This exercise can be used in online and presence training.</source>
+<target xml:lang="fr">This exercise can be used in online and presence training.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">It can be done as a follow-along exercise or individually as a self-study.</source>
+<target xml:lang="fr">It can be done as a follow-along exercise or individually as a self-study.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>These skills are relevant for<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>These skills are relevant for<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">QGIS Essentials</source>
+<target xml:lang="fr">QGIS Essentials</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">The skills tested in this exercise are necessary for all GIS-users.</source>
+<target xml:lang="fr">The skills tested in this exercise are necessary for all GIS-users.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Classifying geographic data</source>
+<target xml:lang="fr">Classifying geographic data</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">The exercise takes around 1 hour to complete, depending on the number of participants and trainers.</source>
+<target xml:lang="fr">The exercise takes around 1 hour to complete, depending on the number of participants and trainers.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki Articles<ept id="2">__</ept>:
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki Articles<ept id="2">__</ept>:
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>QGIS Interface<ept id="1">](/content/Wiki/en_qgis_interface_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>QGIS Interface<ept id="1">](/content/Wiki/en_qgis_interface_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Types of Geodata<ept id="1">](/content/Wiki/en_qgis_geodata_types_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Types of Geodata<ept id="1">](/content/Wiki/en_qgis_geodata_types_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](/content/Wiki/en_qgis_import_geodata_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Layer Concept<ept id="1">](/content/Wiki/en_qgis_layer_concept_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Layer Concept<ept id="1">](/content/Wiki/en_qgis_layer_concept_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Attribute table<ept id="1">](/content/Wiki/en_qgis_attribute_table_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Attribute table<ept id="1">](/content/Wiki/en_qgis_attribute_table_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Table function - Add field<ept id="1">](/content/Wiki/en_qgis_table_functions_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Table function - Add field<ept id="1">](/content/Wiki/en_qgis_table_functions_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Classification- Categorized<ept id="1">](/content/Wiki/en_qgis_categorized_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Classification- Categorized<ept id="1">](/content/Wiki/en_qgis_categorized_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Classification- Graduated<ept id="1">](/content/Wiki/en_qgis_graduated_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Classification- Graduated<ept id="1">](/content/Wiki/en_qgis_graduated_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Digitization- Point data<ept id="1">](/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Digitization- Point data<ept id="1">](/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)</ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Take the time to familiarise yourself with the exercise and the provided material.</source>
+<target xml:lang="fr">Take the time to familiarise yourself with the exercise and the provided material.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</source>
+<target xml:lang="fr">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</source>
+<target xml:lang="fr">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction</source>
+<target xml:lang="fr">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Introduce the idea and aim of the exercise.</source>
+<target xml:lang="fr">Introduce the idea and aim of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</source>
+<target xml:lang="fr">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</source>
+<target xml:lang="fr">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</source>
+<target xml:lang="fr">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</source>
+<target xml:lang="fr">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Leave time for any issues or questions concerning the tasks at the end of the exercise.</source>
+<target xml:lang="fr">Leave time for any issues or questions concerning the tasks at the end of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Leave some time for open questions.</source>
+<target xml:lang="fr">Leave some time for open questions.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

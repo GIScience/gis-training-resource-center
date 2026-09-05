@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_5/en_qgis_data_preparation_ex.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Exercise: Data preparation (Importing PDF tables into QGIS) <bpt id="1">&lt;a id="exercise-data-preparation-importing-pdf-tables-into-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise: Data preparation (Importing PDF tables into QGIS) <bpt id="1">&lt;a id="exercise-data-preparation-importing-pdf-tables-into-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>4 2</source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>4 2</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Aim of this exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Aim of this exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Many times in your GIS-career, you will come across data that is not easily accessible, or hard to work with.
+The objective of this exercise is to understand how to prepare and clean data that is in a PDf-file for usage in a QGIS-project.</source>
+<target xml:lang="fr">Many times in your GIS-career, you will come across data that is not easily accessible, or hard to work with.
+The objective of this exercise is to understand how to prepare and clean data that is in a PDf-file for usage in a QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki articles:<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Relevant Wiki articles:<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>QGIS Interface<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>QGIS Interface<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Import CSV-files into QGIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-importl)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Import CSV-files into QGIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-importl)</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Attribute Table in QGIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.md)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Attribute Table in QGIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.md)</ept></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Topic} </ph>Context</source>
+<target xml:lang="fr"><ph id="1">:::{Topic} </ph>Context</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. The flood impact on infrastructure is highly dependent on the building material of houses.  To determine the vulnerability of the infrastructure to flood damage, we will use data on the wall material of the houses in each province. The objective is to create a dataset indicating which provinces are more prone to flood damage due to the durability of the material used for buildings.
+First, we need to extract the data from the PDF-file and save it to a <ph id="1">`.csv`</ph>- file. Then, we need to clean and prepare the <ph id="2">`.csv`</ph>-file to remove errors and inconsistencies. Finally, we can import the <ph id="3">`.csv`</ph>-file and perform an attribute join to attach the information on wall material to a vector-layer containing the polygons of the pakistani provinces.</source>
+<target xml:lang="fr">In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. The flood impact on infrastructure is highly dependent on the building material of houses.  To determine the vulnerability of the infrastructure to flood damage, we will use data on the wall material of the houses in each province. The objective is to create a dataset indicating which provinces are more prone to flood damage due to the durability of the material used for buildings.
+First, we need to extract the data from the PDF-file and save it to a <ph id="1">`.csv`</ph>- file. Then, we need to clean and prepare the <ph id="2">`.csv`</ph>-file to remove errors and inconsistencies. Finally, we can import the <ph id="3">`.csv`</ph>-file and perform an attribute join to attach the information on wall material to a vector-layer containing the polygons of the pakistani provinces.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Instructions for the Trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Instructions for the Trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{attention}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{attention}</ph></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">This exercise makes use of the <bpt id="1">[</bpt>tabula.technology tool<ept id="1">](tabula.technology)</ept>, an open source application which let's you easily extract tables from a PDF-file. Tabula requires you to have <bpt id="2">[</bpt>Java<ept id="2">](https://www.java.com/en/download/)</ept> installed on your device.</source>
+<target xml:lang="fr">This exercise makes use of the <bpt id="1">[</bpt>tabula.technology tool<ept id="1">](tabula.technology)</ept>, an open source application which let's you easily extract tables from a PDF-file. Tabula requires you to have <bpt id="2">[</bpt>Java<ept id="2">](https://www.java.com/en/download/)</ept> installed on your device.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Take the time to familiarise yourself with the exercise and the provided material.</source>
+<target xml:lang="fr">Take the time to familiarise yourself with the exercise and the provided material.</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</source>
+<target xml:lang="fr">Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</source>
+<target xml:lang="fr">Before starting the exercise, make sure everybody has installed QGIS and has downloaded <bpt id="1">__</bpt>and unzipped<ept id="1">__</ept> the data folder.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings)</ept> for some general tips on facilitating trainings.</source>
+<target xml:lang="fr">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings)</ept> for some general tips on facilitating trainings.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Conduct the training <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Introduce the idea and aim of the exercise.</source>
+<target xml:lang="fr">Introduce the idea and aim of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</source>
+<target xml:lang="fr">Provide the download link and make sure everybody has unzipped the folder before beginning the tasks.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Follow-along:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</source>
+<target xml:lang="fr">Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</source>
+<target xml:lang="fr">Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</source>
+<target xml:lang="fr">Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Leave time for any issues or questions concerning the tasks at the end of the exercise.</source>
+<target xml:lang="fr">Leave time for any issues or questions concerning the tasks at the end of the exercise.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Leave some time for open questions.</source>
+<target xml:lang="fr">Leave some time for open questions.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Exercise <bpt id="1">&lt;a id="exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercise <bpt id="1">&lt;a id="exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Available Data <bpt id="1">&lt;a id="available-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Exercise_7/Module_5_Exercise_7_data_cleaning.zip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Exercise_7/Module_5_Exercise_7_data_cleaning.zip</ph></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Download the datasets <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Exercise_7/Module_5_Exercise_7_data_cleaning.zip)</ept> and unzip them.</source>
+<target xml:lang="fr">Download the datasets <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/Exercise_7/Module_5_Exercise_7_data_cleaning.zip)</ept> and unzip them.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Dataset</source>
+<target xml:lang="fr">Dataset</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Source</source>
+<target xml:lang="fr">Source</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Administrative boundaries for pakistan</source>
+<target xml:lang="fr">Administrative boundaries for pakistan</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>HDX<ept id="1">](https://data.humdata.org/dataset/cod-ab-pak)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>HDX<ept id="1">](https://data.humdata.org/dataset/cod-ab-pak)</ept></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">The administrative boundaries (adm0-adm3) for pakistan can be accessed via the humanitarian data exchange. For this exercise, we are interested in the districts (adm2)</source>
+<target xml:lang="fr">The administrative boundaries (adm0-adm3) for pakistan can be accessed via the humanitarian data exchange. For this exercise, we are interested in the districts (adm2)</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Percent distribution of households by material used for walls</source>
+<target xml:lang="fr">Percent distribution of households by material used for walls</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Pakistan Bureau of Statistics<ept id="1">](https://www.pbs.gov.pk/content/statistical-tables-pslm-2019-20)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Pakistan Bureau of Statistics<ept id="1">](https://www.pbs.gov.pk/content/statistical-tables-pslm-2019-20)</ept></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Table 7.7 in the <bpt id="1">*</bpt>Pakistan Social and living Standards Measurement Survey (2019-20)<ept id="1">*</ept> shows the materials used for walls per household in percents.</source>
+<target xml:lang="fr">Table 7.7 in the <bpt id="1">*</bpt>Pakistan Social and living Standards Measurement Survey (2019-20)<ept id="1">*</ept> shows the materials used for walls per household in percents.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Task 1: Get the data from the PDF file into a CSV file <bpt id="1">&lt;a id="task-1-get-the-data-from-the-pdf-file-into-a-csv-file"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 1: Get the data from the PDF file into a CSV file <bpt id="1">&lt;a id="task-1-get-the-data-from-the-pdf-file-into-a-csv-file"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Topic} </ph>Context</source>
+<target xml:lang="fr"><ph id="1">:::{Topic} </ph>Context</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">The data on wall materials has been published by the <bpt id="1">[</bpt>STATISTICAL BUREAU PAKISTAN<ept id="1">]</ept> as a table in a pdf-file. The table in the pdf-file cannot be imported into QGIS as is. First, the table in the PDF needs to be converted into a <ph id="2">`.csv`</ph>-file.</source>
+<target xml:lang="fr">The data on wall materials has been published by the <bpt id="1">[</bpt>STATISTICAL BUREAU PAKISTAN<ept id="1">]</ept> as a table in a pdf-file. The table in the pdf-file cannot be imported into QGIS as is. First, the table in the PDF needs to be converted into a <ph id="2">`.csv`</ph>-file.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">In your web-browser, go to <bpt id="1">[</bpt>Tabula.technology<ept id="1">](https://tabula.technology)</ept> and download the application.</source>
+<target xml:lang="fr">In your web-browser, go to <bpt id="1">[</bpt>Tabula.technology<ept id="1">](https://tabula.technology)</ept> and download the application.</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Tabula
+<ph id="2">:type: tldr</ph>
+Tabula is an open source application that let's you extract data tables from PDF-files as <ph id="3">`.csv`</ph>-files. The <ph id="4">`.csv`</ph>-files can be imported into excel, QGIS, or other data manipulation programs.</source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Tabula
+<ph id="2">:type: tldr</ph>
+Tabula is an open source application that let's you extract data tables from PDF-files as <ph id="3">`.csv`</ph>-files. The <ph id="4">`.csv`</ph>-files can be imported into excel, QGIS, or other data manipulation programs.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_tabula_website.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_tabula_website.png</ph></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_tabula_website</ph>
+<ph id="2">width: 550 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_tabula_website</ph>
+<ph id="2">width: 550 px</ph></target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">The Tabula.technology website with the download links to the left.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The Tabula.technology website with the download links to the left.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Unzip the downloaded file into a location of your choosing (e.g., Programs, Desktop, ...).</source>
+<target xml:lang="fr">Unzip the downloaded file into a location of your choosing (e.g., Programs, Desktop, ...).</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">Open the folder where you unzipped the file and open the "Tabula" application.</source>
+<target xml:lang="fr">Open the folder where you unzipped the file and open the "Tabula" application.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_tabula_folder.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_tabula_folder.png</ph></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_tabula_folder</ph>
+<ph id="2">width: 450 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_tabula_folder</ph>
+<ph id="2">width: 450 px</ph></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">A new browser window will open with this address: <ph id="1">http://localhost:8080.</ph> This is the application. If the browser does not open automatically, you can open the browser and enter this go to this address manually.</source>
+<target xml:lang="fr">A new browser window will open with this address: <ph id="1">http://localhost:8080.</ph> This is the application. If the browser does not open automatically, you can open the browser and enter this go to this address manually.</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_tabula_import.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_tabula_import.png</ph></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_tabula_import</ph>
+<ph id="2">width: 550 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_tabula_import</ph>
+<ph id="2">width: 550 px</ph></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">Now let's import the PDF file with the wall types into tabula:</source>
+<target xml:lang="fr">Now let's import the PDF file with the wall types into tabula:</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Browse`</ph> and navigate to the exercise data folder: <ph id="2">`...\data\input`</ph> and select the PDF "pakistan_wall_type7.7". Click <ph id="3">`Open`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Browse`</ph> and navigate to the exercise data folder: <ph id="2">`...\data\input`</ph> and select the PDF "pakistan_wall_type7.7". Click <ph id="3">`Open`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Import`</ph> and wait for the PDF to load. Once loaded, it will open automatically.</source>
+<target xml:lang="fr">Click <ph id="1">`Import`</ph> and wait for the PDF to load. Once loaded, it will open automatically.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_Tabula_main_view.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_Tabula_main_view.png</ph></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_Tabula_main_view</ph>
+<ph id="2">width: 550 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_Tabula_main_view</ph>
+<ph id="2">width: 550 px</ph></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Here we will select the portion of the PDF that contains the data table. Tabula expects a table with one row of headers at the top for each column, followed by the rows with the data. By dragging a rectangle on the PDF, we can create a selection where tabula should look for the data table. Drag a rectangle and adjust the boarders so the table fits as precisely as possible into selection. Make sure to only capture the relevant information. Since the headers in this table has an unconventional formatting, it should be left out so the resulting csv table is easier to adjust. We will add the headers manually once extracted.</source>
+<target xml:lang="fr">Here we will select the portion of the PDF that contains the data table. Tabula expects a table with one row of headers at the top for each column, followed by the rows with the data. By dragging a rectangle on the PDF, we can create a selection where tabula should look for the data table. Drag a rectangle and adjust the boarders so the table fits as precisely as possible into selection. Make sure to only capture the relevant information. Since the headers in this table has an unconventional formatting, it should be left out so the resulting csv table is easier to adjust. We will add the headers manually once extracted.</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_tabula_selection.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_tabula_selection.png</ph></target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_tabula_selection</ph>
+<ph id="2">width: 550 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_tabula_selection</ph>
+<ph id="2">width: 550 px</ph></target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Once you are satisfied with the selection, you can click on <ph id="1">`Repeat this Selection`</ph> to duplicate the selection on the next pages.</source>
+<target xml:lang="fr">Once you are satisfied with the selection, you can click on <ph id="1">`Repeat this Selection`</ph> to duplicate the selection on the next pages.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Take a look on the following pages and make sure the table is still fully contained by the selection.</source>
+<target xml:lang="fr">Take a look on the following pages and make sure the table is still fully contained by the selection.</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Preview &amp; Export Extracted Data`</ph> on the top right of the window.</source>
+<target xml:lang="fr">Click on <ph id="1">`Preview &amp; Export Extracted Data`</ph> on the top right of the window.</target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en">A new window will appear where the data will show up. At first, nothing will be visible. First, click on <ph id="1">`Stream`</ph> on the left.</source>
+<target xml:lang="fr">A new window will appear where the data will show up. At first, nothing will be visible. First, click on <ph id="1">`Stream`</ph> on the left.</target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_tabula_preview_extracted_1.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_tabula_preview_extracted_1.png</ph></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_tabula_preview_extracted_1</ph>
+<ph id="2">width: 550 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_tabula_preview_extracted_1</ph>
+<ph id="2">width: 550 px</ph></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">The data from the PDF table will appear in the main window. Review the table.</source>
+<target xml:lang="fr">The data from the PDF table will appear in the main window. Review the table.</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_tabula_data_preview.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_tabula_data_preview.png</ph></target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_tabula_data_preview</ph>
+<ph id="2">width: 550 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_tabula_data_preview</ph>
+<ph id="2">width: 550 px</ph></target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Export`</ph>, this will save the <ph id="2">`.csv`</ph> into your downloads folder.</source>
+<target xml:lang="fr">Click on <ph id="1">`Export`</ph>, this will save the <ph id="2">`.csv`</ph> into your downloads folder.</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">Move the file to the <ph id="1">`/data/interim/`</ph>-folder.</source>
+<target xml:lang="fr">Move the file to the <ph id="1">`/data/interim/`</ph>-folder.</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en">Congratulations, the data from the PDF has been extracted into a CSV file!</source>
+<target xml:lang="fr">Congratulations, the data from the PDF has been extracted into a CSV file!</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en">Task 2: Clean the data from errors and unwanted entries <bpt id="1">&lt;a id="task-2-clean-the-data-from-errors-and-unwanted-entries"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 2: Clean the data from errors and unwanted entries <bpt id="1">&lt;a id="task-2-clean-the-data-from-errors-and-unwanted-entries"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{topic} </ph>Context
+The data has been extracted from the PDF. However, there are a few formatting errors and unwanted information. Before loading the extracted CSV into QGIS, we need to clean the formatting and remove unwanted entries. This can be done in many ways, for example in a spreadsheet editor such as Microsoft Excel or Libreoffice Calc.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{topic} </ph>Context
+The data has been extracted from the PDF. However, there are a few formatting errors and unwanted information. Before loading the extracted CSV into QGIS, we need to clean the formatting and remove unwanted entries. This can be done in many ways, for example in a spreadsheet editor such as Microsoft Excel or Libreoffice Calc.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+The necessary steps to filter the data might be different depending on the editor you use. In this exercise, we will go through the workflow with the free version of Microsoft Excel.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+The necessary steps to filter the data might be different depending on the editor you use. In this exercise, we will go through the workflow with the free version of Microsoft Excel.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">Open the extracted CSV file in Excel. It might look like this:</source>
+<target xml:lang="fr">Open the extracted CSV file in Excel. It might look like this:</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_tabula_csv_excel.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_tabula_csv_excel.png</ph></target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_tabula_csv_excel</ph>
+<ph id="2">width: 300 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_tabula_csv_excel</ph>
+<ph id="2">width: 300 px</ph></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Excel does not automatically recognise the comma delimited format. We can fix this by selecting the column A, navigating to <ph id="1">`Data`</ph> → <ph id="2">`Text to Columns`</ph>. A new window will open. Leave the settings as they are and click <ph id="3">`Ok`</ph>.</source>
+<target xml:lang="fr">Excel does not automatically recognise the comma delimited format. We can fix this by selecting the column A, navigating to <ph id="1">`Data`</ph> → <ph id="2">`Text to Columns`</ph>. A new window will open. Leave the settings as they are and click <ph id="3">`Ok`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph></target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">In the web version of excel, you can fix the columns by selecting column A, navigating to <ph id="1">`Data`</ph> → <ph id="2">`Split Text to Columns`</ph></source>
+<target xml:lang="fr">In the web version of excel, you can fix the columns by selecting column A, navigating to <ph id="1">`Data`</ph> → <ph id="2">`Split Text to Columns`</ph></target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_m5_data_cleaning_ex_task2.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_m5_data_cleaning_ex_task2.png</ph></target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_m5_data_cleaning_ex_task2</ph>
+<ph id="2">width: 450 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_m5_data_cleaning_ex_task2</ph>
+<ph id="2">width: 450 px</ph></target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">The data table should now look like this. It is still missing column headers (red).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The data table should now look like this. It is still missing column headers (red).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">We have to add the column names back, as we did not extract them with tabular. <bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the first row and select <ph id="2">`Insert 1 Row Above`</ph>. A new row should appear.</source>
+<target xml:lang="fr">We have to add the column names back, as we did not extract them with tabular. <bpt id="1">&lt;kbd></bpt>Right-click<ept id="1">&lt;/kbd></ept> on the first row and select <ph id="2">`Insert 1 Row Above`</ph>. A new row should appear.</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">Enter the column headings as they are in the PDF-file:</source>
+<target xml:lang="fr">Enter the column headings as they are in the PDF-file:</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Province &amp; District</source>
+<target xml:lang="fr">Province &amp; District</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">Burnt Bricks/Blocks</source>
+<target xml:lang="fr">Burnt Bricks/Blocks</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Mud Bricks/Mud</source>
+<target xml:lang="fr">Mud Bricks/Mud</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Wood</source>
+<target xml:lang="fr">Wood</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">Other</source>
+<target xml:lang="fr">Other</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Total</source>
+<target xml:lang="fr">Total</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">Now we can format the data into an excel table. This will allow us to apply filters to remove the unwanted entries. Select the columns A to F and navigate to <ph id="1">`Home`</ph> → <ph id="2">`Format as Table`</ph> and select a table styling of your choosing.</source>
+<target xml:lang="fr">Now we can format the data into an excel table. This will allow us to apply filters to remove the unwanted entries. Select the columns A to F and navigate to <ph id="1">`Home`</ph> → <ph id="2">`Format as Table`</ph> and select a table styling of your choosing.</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">Now we have a usable .csv file with the information. However, there are still some unwanted entries and a few formatting mistakes. First, let's remove all the rows with the data on rural and urban distribution. We want to visualise the distribution on district level, so a distinction between urban and rural is not necessary.</source>
+<target xml:lang="fr">Now we have a usable .csv file with the information. However, there are still some unwanted entries and a few formatting mistakes. First, let's remove all the rows with the data on rural and urban distribution. We want to visualise the distribution on district level, so a distinction between urban and rural is not necessary.</target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">Click on the small arrow next to the "Province &amp; District" column. A dropdown-menu will open.</source>
+<target xml:lang="fr">Click on the small arrow next to the "Province &amp; District" column. A dropdown-menu will open.</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">In the dropdown-menu, uncheck the <ph id="1">`Select All`</ph>-Box and scroll down to check all the entries with the value <ph id="2">`Urban`</ph> and <ph id="3">`Rural`</ph>. Also add the entries that have numerical values attached to <ph id="4">`Urban`</ph> or <ph id="5">`Rural`</ph>. Click <ph id="6">`Apply`</ph>.</source>
+<target xml:lang="fr">In the dropdown-menu, uncheck the <ph id="1">`Select All`</ph>-Box and scroll down to check all the entries with the value <ph id="2">`Urban`</ph> and <ph id="3">`Rural`</ph>. Also add the entries that have numerical values attached to <ph id="4">`Urban`</ph> or <ph id="5">`Rural`</ph>. Click <ph id="6">`Apply`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::::{grid} </ph>2</source>
+<target xml:lang="fr"><ph id="1">:::::{grid} </ph>2</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid-item}</ph>
+<ph id="2">:::{figure} /fig/en_m5_data_cleaning_ex_filter_excel.png</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid-item}</ph>
+<ph id="2">:::{figure} /fig/en_m5_data_cleaning_ex_filter_excel.png</ph></target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_m5_data_cleaning_ex_filter_excel</ph>
+<ph id="2">width: 350 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_m5_data_cleaning_ex_filter_excel</ph>
+<ph id="2">width: 350 px</ph></target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph>
+<ph id="3">::::{grid-item}</ph>
+<ph id="4">:::{figure} /fig/en_m5_data_cleaning_ex_filter_excel_2.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph>
+<ph id="3">::::{grid-item}</ph>
+<ph id="4">:::{figure} /fig/en_m5_data_cleaning_ex_filter_excel_2.png</ph></target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_m5_data_cleaning_ex_filter_excel_2</ph>
+<ph id="2">width: 350 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_m5_data_cleaning_ex_filter_excel_2</ph>
+<ph id="2">width: 350 px</ph></target>
+</trans-unit>
+<trans-unit id="tu126" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph>
+<ph id="3">:::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph>
+<ph id="3">:::::</ph></target>
+</trans-unit>
+<trans-unit id="tu127" xml:space="preserve">
+<source xml:lang="en">The table should now only show the entries with rural or urban in the "Province &amp; District". Select them all and click on <ph id="1">`Remove selected rows`</ph>.</source>
+<target xml:lang="fr">The table should now only show the entries with rural or urban in the "Province &amp; District". Select them all and click on <ph id="1">`Remove selected rows`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu128" xml:space="preserve">
+<source xml:lang="en">Now, we have to remove the filter we applied.</source>
+<target xml:lang="fr">Now, we have to remove the filter we applied.</target>
+</trans-unit>
+<trans-unit id="tu129" xml:space="preserve">
+<source xml:lang="en">Lets go through the resulting table and see if we need to fix more entries. There are a few entries where the the values for the percentages are not formatted correctly. Copy the values from the columns <bpt id="1">__</bpt>Burnt Bricks/Blocks<ept id="1">__</ept>, <bpt id="2">__</bpt>Mud Bricks/Mud<ept id="2">__</ept>, <bpt id="3">__</bpt>Wood<ept id="3">__</ept>, <bpt id="4">__</bpt>Other<ept id="4">__</ept> one cell to the right and enter the numerical value that mistakenly got added to the <bpt id="5">__</bpt>Provinces &amp; District<ept id="5">__</ept> column.</source>
+<target xml:lang="fr">Lets go through the resulting table and see if we need to fix more entries. There are a few entries where the the values for the percentages are not formatted correctly. Copy the values from the columns <bpt id="1">__</bpt>Burnt Bricks/Blocks<ept id="1">__</ept>, <bpt id="2">__</bpt>Mud Bricks/Mud<ept id="2">__</ept>, <bpt id="3">__</bpt>Wood<ept id="3">__</ept>, <bpt id="4">__</bpt>Other<ept id="4">__</ept> one cell to the right and enter the numerical value that mistakenly got added to the <bpt id="5">__</bpt>Provinces &amp; District<ept id="5">__</ept> column.</target>
+</trans-unit>
+<trans-unit id="tu130" xml:space="preserve">
+<source xml:lang="en">Save the formatted csv file in the input data folder (<ph id="1">`.../module_5_ex_7_data_cleansing/data/input/`</ph>) under the name <ph id="2">`tabula-pakistan_wall_type7.7`</ph>.</source>
+<target xml:lang="fr">Save the formatted csv file in the input data folder (<ph id="1">`.../module_5_ex_7_data_cleansing/data/input/`</ph>) under the name <ph id="2">`tabula-pakistan_wall_type7.7`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu131" xml:space="preserve">
+<source xml:lang="en">Great! Now we are ready to import the CSV-file into QGIS!</source>
+<target xml:lang="fr">Great! Now we are ready to import the CSV-file into QGIS!</target>
+</trans-unit>
+<trans-unit id="tu132" xml:space="preserve">
+<source xml:lang="en">Task 3: Import the Data into QGIS <bpt id="1">&lt;a id="task-3-import-the-data-into-qgis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 3: Import the Data into QGIS <bpt id="1">&lt;a id="task-3-import-the-data-into-qgis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu133" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{topic}</ph>
+With the data formatted as a usable CSV-file, we can import it into QGIS and join it with a polygon layer containing the districts (adm2) by using the columns containing the district names in english. However, in this step, we might encounter the problem that the district names are written differently. In this case, we can't simply perform a <bpt id="2">[</bpt>attribute join<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_spatial_tools.html#spatial-joins)</ept> as the attributes need to <bpt id="3">__</bpt>match exactly<ept id="3">__</ept>. To fix this, we have to perform a <bpt id="4">__</bpt>fuzzy merge<ept id="4">__</ept>.</source>
+<target xml:lang="fr"><ph id="1">:::{topic}</ph>
+With the data formatted as a usable CSV-file, we can import it into QGIS and join it with a polygon layer containing the districts (adm2) by using the columns containing the district names in english. However, in this step, we might encounter the problem that the district names are written differently. In this case, we can't simply perform a <bpt id="2">[</bpt>attribute join<ept id="2">](https://giscience.github.io/gis-training-resource-center/content/Module_5/en_qgis_spatial_tools.html#spatial-joins)</ept> as the attributes need to <bpt id="3">__</bpt>match exactly<ept id="3">__</ept>. To fix this, we have to perform a <bpt id="4">__</bpt>fuzzy merge<ept id="4">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu134" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu135" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+Fuzzy merge is a technique used in data processing to combine two datasets based on similar, but not necessarily identical, values. This is particularly useful when dealing with data that may have inconsistencies, such as typos or different formats.</source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+Fuzzy merge is a technique used in data processing to combine two datasets based on similar, but not necessarily identical, values. This is particularly useful when dealing with data that may have inconsistencies, such as typos or different formats.</target>
+</trans-unit>
+<trans-unit id="tu136" xml:space="preserve">
+<source xml:lang="en">Instead of looking for exact matches, fuzzy merge uses algorithms to compare values and determine how similar they are. For example, "Jon" and John" might be considered a match because how similar they are. Each comparison generates a similarity score, which indicates how closely the two values match.</source>
+<target xml:lang="fr">Instead of looking for exact matches, fuzzy merge uses algorithms to compare values and determine how similar they are. For example, "Jon" and John" might be considered a match because how similar they are. Each comparison generates a similarity score, which indicates how closely the two values match.</target>
+</trans-unit>
+<trans-unit id="tu137" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu138" xml:space="preserve">
+<source xml:lang="en">Open QGIS and create a new project.</source>
+<target xml:lang="fr">Open QGIS and create a new project.</target>
+</trans-unit>
+<trans-unit id="tu139" xml:space="preserve">
+<source xml:lang="en">Save the project in the exercise folder.</source>
+<target xml:lang="fr">Save the project in the exercise folder.</target>
+</trans-unit>
+<trans-unit id="tu140" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Import the CSV layer into QGIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-import)</ept>.</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Import the CSV layer into QGIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html#text-data-import)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu141" xml:space="preserve">
+<source xml:lang="en">Import the administrative boundaries located in the data input folder: <ph id="1">`.../module_5_ex_7_data_cleansing/data/input/`</ph></source>
+<target xml:lang="fr">Import the administrative boundaries located in the data input folder: <ph id="1">`.../module_5_ex_7_data_cleansing/data/input/`</ph></target>
+</trans-unit>
+<trans-unit id="tu142" xml:space="preserve">
+<source xml:lang="en">Now let's perform a fuzzy merge: Open the <bpt id="1">[</bpt>field calculator<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field)</ept> <bpt id="2">__</bpt>for the layer called <ph id="3">`tabula-pakistan_wall_type7.7`</ph><ept id="2">__</ept> and enter the following expression:</source>
+<target xml:lang="fr">Now let's perform a fuzzy merge: Open the <bpt id="1">[</bpt>field calculator<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_table_functions_wiki.html#calculate-field)</ept> <bpt id="2">__</bpt>for the layer called <ph id="3">`tabula-pakistan_wall_type7.7`</ph><ept id="2">__</ept> and enter the following expression:</target>
+</trans-unit>
+<trans-unit id="tu143" xml:space="preserve">
+<source xml:lang="en">Enter an <ph id="1">`Output field name`</ph>, set the <ph id="2">`Output field type`</ph> to <ph id="3">`Text (string)`</ph> and increase the <ph id="4">`output field length`</ph> to 40.</source>
+<target xml:lang="fr">Enter an <ph id="1">`Output field name`</ph>, set the <ph id="2">`Output field type`</ph> to <ph id="3">`Text (string)`</ph> and increase the <ph id="4">`output field length`</ph> to 40.</target>
+</trans-unit>
+<trans-unit id="tu144" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`OK`</ph>. The CSV file should now have a new column. In this column you will find the values from the adm2 polygon layer which have been matched using the fuzzy merge algorithm.</source>
+<target xml:lang="fr">Click <ph id="1">`OK`</ph>. The CSV file should now have a new column. In this column you will find the values from the adm2 polygon layer which have been matched using the fuzzy merge algorithm.</target>
+</trans-unit>
+<trans-unit id="tu145" xml:space="preserve">
+<source xml:lang="en">We can now perform an attribute join by selecting the <ph id="1">`ADM2_EN`</ph> and newly created fuzzy merge column as identifying column. In the processing toolbox, search for the tool <bpt id="2">__</bpt>"Join attributes by field value"<ept id="2">__</ept>. <bpt id="3">&lt;kbd></bpt>Double-click<ept id="3">&lt;/kbd></ept> on it.</source>
+<target xml:lang="fr">We can now perform an attribute join by selecting the <ph id="1">`ADM2_EN`</ph> and newly created fuzzy merge column as identifying column. In the processing toolbox, search for the tool <bpt id="2">__</bpt>"Join attributes by field value"<ept id="2">__</ept>. <bpt id="3">&lt;kbd></bpt>Double-click<ept id="3">&lt;/kbd></ept> on it.</target>
+</trans-unit>
+<trans-unit id="tu146" xml:space="preserve">
+<source xml:lang="en">A new window will open. Here, set the following parameters:</source>
+<target xml:lang="fr">A new window will open. Here, set the following parameters:</target>
+</trans-unit>
+<trans-unit id="tu147" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Input layer:<ept id="1">__</ept> ADM2 polygon layer</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Input layer:<ept id="1">__</ept> ADM2 polygon layer</target>
+</trans-unit>
+<trans-unit id="tu148" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Table field:<ept id="1">__</ept> <ph id="2">`ADM2_EN`</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Table field:<ept id="1">__</ept> <ph id="2">`ADM2_EN`</ph></target>
+</trans-unit>
+<trans-unit id="tu149" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Input layer 2:<ept id="1">__</ept> <ph id="2">`tabula-pakistan_wall_type7.7`</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Input layer 2:<ept id="1">__</ept> <ph id="2">`tabula-pakistan_wall_type7.7`</ph></target>
+</trans-unit>
+<trans-unit id="tu150" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Table field 2:<ept id="1">__</ept> <ph id="2">`Fuzzy_match`</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Table field 2:<ept id="1">__</ept> <ph id="2">`Fuzzy_match`</ph></target>
+</trans-unit>
+<trans-unit id="tu151" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Layer 2 fields to copy:<ept id="1">__</ept> <ph id="2">`Burnt Bricks/Blocks, Mud Bricks/Mud, Wood, Other`</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Layer 2 fields to copy:<ept id="1">__</ept> <ph id="2">`Burnt Bricks/Blocks, Mud Bricks/Mud, Wood, Other`</ph></target>
+</trans-unit>
+<trans-unit id="tu152" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_3.36_m5_ex_7_attr_join.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_3.36_m5_ex_7_attr_join.png</ph></target>
+</trans-unit>
+<trans-unit id="tu153" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: m5_ex7_attr_join</ph>
+<ph id="2">width: 450 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: m5_ex7_attr_join</ph>
+<ph id="2">width: 450 px</ph></target>
+</trans-unit>
+<trans-unit id="tu154" xml:space="preserve">
+<source xml:lang="en">The "Join attributes by field value" parameters
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The "Join attributes by field value" parameters
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu155" xml:space="preserve">
+<source xml:lang="en">Click <ph id="1">`Run`</ph>.</source>
+<target xml:lang="fr">Click <ph id="1">`Run`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu156" xml:space="preserve">
+<source xml:lang="en">Congratulations, we have now successfully joined the information from the PDF file to a polygon layer!</source>
+<target xml:lang="fr">Congratulations, we have now successfully joined the information from the PDF file to a polygon layer!</target>
+</trans-unit>
+<trans-unit id="tu157" xml:space="preserve">
+<source xml:lang="en">Task 4: Visualisation of the Data <bpt id="1">&lt;a id="task-4-visualisation-of-the-data"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Task 4: Visualisation of the Data <bpt id="1">&lt;a id="task-4-visualisation-of-the-data"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu158" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{topic}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{topic}</ph></target>
+</trans-unit>
+<trans-unit id="tu159" xml:space="preserve">
+<source xml:lang="en">We extracted the data from the PDF and now have a polygon layer containing the information on the wall material per district. With the new column, we can create a map visualising the amount of buildings that have, for example, burnt bricks or blocks as wall material.</source>
+<target xml:lang="fr">We extracted the data from the PDF and now have a polygon layer containing the information on the wall material per district. With the new column, we can create a map visualising the amount of buildings that have, for example, burnt bricks or blocks as wall material.</target>
+</trans-unit>
+<trans-unit id="tu160" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu161" xml:space="preserve">
+<source xml:lang="en">Open the layer styling panel and select the <bpt id="1">__</bpt>Graduated<ept id="1">__</ept> symbolisation method.</source>
+<target xml:lang="fr">Open the layer styling panel and select the <bpt id="1">__</bpt>Graduated<ept id="1">__</ept> symbolisation method.</target>
+</trans-unit>
+<trans-unit id="tu162" xml:space="preserve">
+<source xml:lang="en">Under <ph id="1">`Value`</ph>, select <ph id="2">`Burnt Bricks/Blocks`</ph>.</source>
+<target xml:lang="fr">Under <ph id="1">`Value`</ph>, select <ph id="2">`Burnt Bricks/Blocks`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu163" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Classify`</ph>.</source>
+<target xml:lang="fr">Click on <ph id="1">`Classify`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu164" xml:space="preserve">
+<source xml:lang="en">The resulting symbolisation could look something like this:</source>
+<target xml:lang="fr">The resulting symbolisation could look something like this:</target>
+</trans-unit>
+<trans-unit id="tu165" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/m5_ex_7_visualisation_result.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/m5_ex_7_visualisation_result.png</ph></target>
+</trans-unit>
+<trans-unit id="tu166" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: m5_ex_7_visualisation_results</ph>
+<ph id="2">width: 600 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: m5_ex_7_visualisation_results</ph>
+<ph id="2">width: 600 px</ph></target>
+</trans-unit>
+<trans-unit id="tu167" xml:space="preserve">
+<source xml:lang="en">The darker the colour, the higher the percentage of buildings having burnt bricks or blocks as wall type. The grey areas are the districts where we there is no data available.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">The darker the colour, the higher the percentage of buildings having burnt bricks or blocks as wall type. The grey areas are the districts where we there is no data available.
+<ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_4/en_qgis_map_examples.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Good Map Design &amp; Semiological Errors <bpt id="1">&lt;a id="good-map-design-and-semiological-errors"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Good Map Design &amp; Semiological Errors <bpt id="1">&lt;a id="good-map-design-and-semiological-errors"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">In this chapter we will discuss well designed maps and give examples of how to recreate specific design elements in QGIS. A second part of this chapter will focus on common semiological missteps. If you need further examples for good map design, check out these websites/repositories:</source>
+<target xml:lang="fr">In this chapter we will discuss well designed maps and give examples of how to recreate specific design elements in QGIS. A second part of this chapter will focus on common semiological missteps. If you need further examples for good map design, check out these websites/repositories:</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>impact-initiatives.org/resource-centre maps<ept id="1">](https://www.impact-initiatives.org/resource-centre/?category%5B%5D=information_products&amp;category%5B%5D=data_methods&amp;type%5B%5D=281&amp;order=latest&amp;limit=10)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>impact-initiatives.org/resource-centre maps<ept id="1">](https://www.impact-initiatives.org/resource-centre/?category%5B%5D=information_products&amp;category%5B%5D=data_methods&amp;type%5B%5D=281&amp;order=latest&amp;limit=10)</ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>geo.msf.org maps<ept id="1">](https://geo.msf.org/catalogue/DOCID-1877329211-4979?from=0&amp;sort=_score&amp;desc=true)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>geo.msf.org maps<ept id="1">](https://geo.msf.org/catalogue/DOCID-1877329211-4979?from=0&amp;sort=_score&amp;desc=true)</ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>reliefweb.int maps<ept id="1">](https://reliefweb.int/updates?list=Maps%20/%20Infographics&amp;view=maps)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>reliefweb.int maps<ept id="1">](https://reliefweb.int/updates?list=Maps%20/%20Infographics&amp;view=maps)</ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Map Examples <bpt id="1">&lt;a id="map-examples"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Map Examples <bpt id="1">&lt;a id="map-examples"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Map Example 1: Flood-affected areas and roads in the Somali Region, Ethiopia <bpt id="1">&lt;a id="map-example-1-flood-affected-areas-and-roads-in-the-somali-region-ethiopia"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Map Example 1: Flood-affected areas and roads in the Somali Region, Ethiopia <bpt id="1">&lt;a id="map-example-1-flood-affected-areas-and-roads-in-the-somali-region-ethiopia"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png</ph></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: Flood affected Areas in Somali</ph>
+<ph id="2">width: 800 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: Flood affected Areas in Somali</ph>
+<ph id="2">width: 800 px</ph></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Flood affected areas and roads in the Somali Region, Ethiopia (Source: OCHA).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Flood affected areas and roads in the Somali Region, Ethiopia (Source: OCHA).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Context: Situation in Ethiopia</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Context: Situation in Ethiopia</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">The Greater Horn of Africa receives 20 to 70 percent of the annual total rainfall in the months from October to December. The IFRC reports an exceptionally high forecast probability (over 80%) of experiencing wetter than normal rainfall conditions. Additionally, El Niño conditions started between July and August, which further accrued the possibility of high rainfall conditions in Ethiopia.</source>
+<target xml:lang="fr">The Greater Horn of Africa receives 20 to 70 percent of the annual total rainfall in the months from October to December. The IFRC reports an exceptionally high forecast probability (over 80%) of experiencing wetter than normal rainfall conditions. Additionally, El Niño conditions started between July and August, which further accrued the possibility of high rainfall conditions in Ethiopia.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Since October, floods have affected at least 763,000 people in the region, taken 33 lives in the Somali Region alone, and killed 4,806 livestock. The flooding has also resulted in immense damage to infrastructure, transportation, and schooling. The population's livelihood and health have been greatly affected.<ph id="1">  </ph>
+The impact of flooding is projected to increase in the next few years, which will lead to more flash and river floods.</source>
+<target xml:lang="fr">Since October, floods have affected at least 763,000 people in the region, taken 33 lives in the Somali Region alone, and killed 4,806 livestock. The flooding has also resulted in immense damage to infrastructure, transportation, and schooling. The population's livelihood and health have been greatly affected.<ph id="1">  </ph>
+The impact of flooding is projected to increase in the next few years, which will lead to more flash and river floods.</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Access maps, such as the one above, play a crucial role in helping inform information managers and ground staff which areas are accessible. This is especially important as a timely deployment of relief or aid operations is essential in flooding disasters.</source>
+<target xml:lang="fr">Access maps, such as the one above, play a crucial role in helping inform information managers and ground staff which areas are accessible. This is especially important as a timely deployment of relief or aid operations is essential in flooding disasters.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">(Source: <bpt id="1">[</bpt>IFRC<ept id="1">](https://go.ifrc.org/emergencies/6773/details)</ept>)
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">(Source: <bpt id="1">[</bpt>IFRC<ept id="1">](https://go.ifrc.org/emergencies/6773/details)</ept>)
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">The map above shows the flood-affected areas, as well as the important road networks in the Somali Region, Ethiopia in November 2023. Maps such as these are crucial for humanitarian aid workers when planning relief or aid operations and need to be up-to-date. They display important settlements and, most importantly, the accessibility of roads and airstrips.</source>
+<target xml:lang="fr">The map above shows the flood-affected areas, as well as the important road networks in the Somali Region, Ethiopia in November 2023. Maps such as these are crucial for humanitarian aid workers when planning relief or aid operations and need to be up-to-date. They display important settlements and, most importantly, the accessibility of roads and airstrips.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">This is a thematic map with a clear purpose, featuring only the most essential elements relevant to that purpose.</source>
+<target xml:lang="fr">This is a thematic map with a clear purpose, featuring only the most essential elements relevant to that purpose.</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">A shapefile for the flood affected areas was given a hashed fill. In QGIS, you can find this symbology.</source>
+<target xml:lang="fr">A shapefile for the flood affected areas was given a hashed fill. In QGIS, you can find this symbology.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">A layer with the road network has been put above the layer with the flood-affected areas. The road symbology has been <bpt id="1">__</bpt>categorised<ept id="1">__</ept> into three categories: Accessible road (green), partially accessible road (grey), and hard-to-reach road (red).</source>
+<target xml:lang="fr">A layer with the road network has been put above the layer with the flood-affected areas. The road symbology has been <bpt id="1">__</bpt>categorised<ept id="1">__</ept> into three categories: Accessible road (green), partially accessible road (grey), and hard-to-reach road (red).</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">The topmost layer is a point-layer with information on inaccessible roads or bridges as well as the location of airstrips and which airstrips are accessible. The points have been symbolized with SVG-symbols.</source>
+<target xml:lang="fr">The topmost layer is a point-layer with information on inaccessible roads or bridges as well as the location of airstrips and which airstrips are accessible. The points have been symbolized with SVG-symbols.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">(The administrative boundaries of Ethiopia are set apart from the surrounding countries by making the polygon a clear white and the surrounding countries in a shade of grey. This can be achieved by copying the polygon of Ethiopia into a new layer, and changing the symbology respectively).</source>
+<target xml:lang="fr">(The administrative boundaries of Ethiopia are set apart from the surrounding countries by making the polygon a clear white and the surrounding countries in a shade of grey. This can be achieved by copying the polygon of Ethiopia into a new layer, and changing the symbology respectively).</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{note}</ph>
+The colour scheme of the roads makes it possible to read the map intuitively, as red is typically associated with negative qualities and green with positive qualities. It should be noted, however, that people with colourblindness will have trouble reading the map.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{note}</ph>
+The colour scheme of the roads makes it possible to read the map intuitively, as red is typically associated with negative qualities and green with positive qualities. It should be noted, however, that people with colourblindness will have trouble reading the map.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Map Example 2: Flooding Risk in the Ouham Region, Central African Republic <bpt id="1">&lt;a id="map-example-2-flooding-risk-in-the-ouham-region-central-african-republic"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Map Example 2: Flooding Risk in the Ouham Region, Central African Republic <bpt id="1">&lt;a id="map-example-2-flooding-risk-in-the-ouham-region-central-african-republic"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} ../../fig/REACH_CAF_Susceptibilite_inondations_CF32_Juillet2023_A3_FR.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} ../../fig/REACH_CAF_Susceptibilite_inondations_CF32_Juillet2023_A3_FR.png</ph></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: REACH Flooding Risk Ouhman Region, Central African Republic</ph>
+<ph id="2">width: 720 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: REACH Flooding Risk Ouhman Region, Central African Republic</ph>
+<ph id="2">width: 720 px</ph></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Flooding risk in the Ouham Region, Central African Republic (Source: REACH).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Flooding risk in the Ouham Region, Central African Republic (Source: REACH).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Context: Situation in the Central African Republic</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Context: Situation in the Central African Republic</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">The Central African Republic has been hit by destructive floods in late 2019, which displaced over 100,000 people and caused considerable damage to infrastructure. The floods have destroyed shelters, obstructed transportation routes, and have led to disease outbreaks such as cholera and malaria. Due to climate change, such floods will become more frequent, leading to increased vulnerability for towns and villages. Since natural hazards are hard to predict, the changing climate reduces community resilience.</source>
+<target xml:lang="fr">The Central African Republic has been hit by destructive floods in late 2019, which displaced over 100,000 people and caused considerable damage to infrastructure. The floods have destroyed shelters, obstructed transportation routes, and have led to disease outbreaks such as cholera and malaria. Due to climate change, such floods will become more frequent, leading to increased vulnerability for towns and villages. Since natural hazards are hard to predict, the changing climate reduces community resilience.</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Source: <bpt id="1">[</bpt>REACH Initiative<ept id="1">](https://reliefweb.int/report/central-african-republic/central-african-republic-flood-susceptibility-risk)</ept>
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">Source: <bpt id="1">[</bpt>REACH Initiative<ept id="1">](https://reliefweb.int/report/central-african-republic/central-african-republic-flood-susceptibility-risk)</ept>
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">This map displays the flooding risk using a raster image. The raster data was calculated using several factors, including the precipitation intensity, the maximum duration of precipitation, the height of the nearest drainage, the flow direction and river network, the topographic humidity, a digital elevation model, and the ground cover.</source>
+<target xml:lang="fr">This map displays the flooding risk using a raster image. The raster data was calculated using several factors, including the precipitation intensity, the maximum duration of precipitation, the height of the nearest drainage, the flow direction and river network, the topographic humidity, a digital elevation model, and the ground cover.</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">The raster data is displayed using a diverging colour ramp. (Here you can see how to assign a colour ramp).</source>
+<target xml:lang="fr">The raster data is displayed using a diverging colour ramp. (Here you can see how to assign a colour ramp).</target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en">The surrounding administrative districts have been overlayed with a transparent grey.</source>
+<target xml:lang="fr">The surrounding administrative districts have been overlayed with a transparent grey.</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">The river network has been added in blue.</source>
+<target xml:lang="fr">The river network has been added in blue.</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">The main roads as well have been added in black.</source>
+<target xml:lang="fr">The main roads as well have been added in black.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Settlements are displayed as black dots. This helps to identify areas with a higher population density in the areas most at risk.</source>
+<target xml:lang="fr">Settlements are displayed as black dots. This helps to identify areas with a higher population density in the areas most at risk.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Common Missteps in Semiology <bpt id="1">&lt;a id="common-missteps-in-semiology"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Common Missteps in Semiology <bpt id="1">&lt;a id="common-missteps-in-semiology"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">The Modifiable Areal Unit Problem <bpt id="1">&lt;a id="the-modifiable-areal-unit-problem"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">The Modifiable Areal Unit Problem <bpt id="1">&lt;a id="the-modifiable-areal-unit-problem"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{caution}</ph>
+Be careful when representing data in administrative regions.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{caution}</ph>
+Be careful when representing data in administrative regions.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">The Modifiable Areal Unit Problem (MAUP) is a statistical bias that arises when spatial data is aggregated into regions. It highlights how the results of spatial analysis can change depending on how data is grouped into areal units (spatial zones).</source>
+<target xml:lang="fr">The Modifiable Areal Unit Problem (MAUP) is a statistical bias that arises when spatial data is aggregated into regions. It highlights how the results of spatial analysis can change depending on how data is grouped into areal units (spatial zones).</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">The Modifiable Areal Unit Problem has two key components:</source>
+<target xml:lang="fr">The Modifiable Areal Unit Problem has two key components:</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Scale Effect:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Scale Effect:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">The scale of aggregation (small vs. large areas) affects the results.</source>
+<target xml:lang="fr">The scale of aggregation (small vs. large areas) affects the results.</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">When smaller units (e.g., census blocks) are used, the analysis may capture fine-grained local variations.</source>
+<target xml:lang="fr">When smaller units (e.g., census blocks) are used, the analysis may capture fine-grained local variations.</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">When larger units (e.g., counties or states) are used, local variations get smoothed out, and the results may show broader trends. For example, average income might vary significantly at the neighborhood level but look more uniform at the county level.</source>
+<target xml:lang="fr">When larger units (e.g., counties or states) are used, local variations get smoothed out, and the results may show broader trends. For example, average income might vary significantly at the neighborhood level but look more uniform at the county level.</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Zoning Effect:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Zoning Effect:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">The shape and arrangement of the zones used for aggregation can also affect the results.</source>
+<target xml:lang="fr">The shape and arrangement of the zones used for aggregation can also affect the results.</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Changing the boundaries of zones (e.g., splitting a city into east-west vs. north-south regions) can lead to different outcomes, even if the total population or data remains the same. This happens because boundaries influence how values are averaged or summed.</source>
+<target xml:lang="fr">Changing the boundaries of zones (e.g., splitting a city into east-west vs. north-south regions) can lead to different outcomes, even if the total population or data remains the same. This happens because boundaries influence how values are averaged or summed.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Why is this important in GIS?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Why is this important in GIS?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Policy Decisions: If the analysis depends on arbitrary boundaries, decisions (e.g., allocating resources) might be based on misleading results.</source>
+<target xml:lang="fr">Policy Decisions: If the analysis depends on arbitrary boundaries, decisions (e.g., allocating resources) might be based on misleading results.</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">Spatial Statistics: Correlations, regressions, and other analyses involving spatial data can be biased due to MAUP.</source>
+<target xml:lang="fr">Spatial Statistics: Correlations, regressions, and other analyses involving spatial data can be biased due to MAUP.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_modifiable_areal_unit_problem_diagram.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_modifiable_areal_unit_problem_diagram.png</ph></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_modifiable_areal_unit_problem_diagram</ph>
+<ph id="2">width: 500 px</ph></source>
+<target xml:lang="fr"><ph id="1">name: en_modifiable_areal_unit_problem_diagram</ph>
+<ph id="2">width: 500 px</ph></target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Visualising the Modifiable Areal Unit Problem: The same indicator represented at three different scales (Source: Kitchin, Rob &amp; Lauriault, Tracey &amp; McArdle, Gavin. (2015). Knowing and governing cities through urban indicators, city benchmarking and real-time dashboards. Regional Studies, Regional Science. 2. 6-28. 10.1080/21681376.2014.983149.).
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Visualising the Modifiable Areal Unit Problem: The same indicator represented at three different scales (Source: Kitchin, Rob &amp; Lauriault, Tracey &amp; McArdle, Gavin. (2015). Knowing and governing cities through urban indicators, city benchmarking and real-time dashboards. Regional Studies, Regional Science. 2. 6-28. 10.1080/21681376.2014.983149.).
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Proportional Circles vs. Solid Colours <bpt id="1">&lt;a id="proportional-circles-vs-solid-colours"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Proportional Circles vs. Solid Colours <bpt id="1">&lt;a id="proportional-circles-vs-solid-colours"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{caution}</ph>
+Be cautious when representing <bpt id="2">__</bpt>quantitative<ept id="2">__</ept> data with a <bpt id="3">__</bpt>solid colour<ept id="3">__</ept>.
+<ph id="4">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{caution}</ph>
+Be cautious when representing <bpt id="2">__</bpt>quantitative<ept id="2">__</ept> data with a <bpt id="3">__</bpt>solid colour<ept id="3">__</ept>.
+<ph id="4">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">While it is graphically appealing, representing quantitative data with solid colours can lead to problems and distract from the message of the map:</source>
+<target xml:lang="fr">While it is graphically appealing, representing quantitative data with solid colours can lead to problems and distract from the message of the map:</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">You lose the <bpt id="1">__</bpt>order relationship between the data<ept id="1">__</ept> (a circle can be twice as big as another one, a colour cannot be "twice as dark").</source>
+<target xml:lang="fr">You lose the <bpt id="1">__</bpt>order relationship between the data<ept id="1">__</ept> (a circle can be twice as big as another one, a colour cannot be "twice as dark").</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Countries with a large surface area stand out visually (e.g. Russia in the example below).</source>
+<target xml:lang="fr">Countries with a large surface area stand out visually (e.g. Russia in the example below).</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">We are trying to represent <bpt id="1">__</bpt>data that has nothing to do with the area of a country<ept id="1">__</ept>.</source>
+<target xml:lang="fr">We are trying to represent <bpt id="1">__</bpt>data that has nothing to do with the area of a country<ept id="1">__</ept>.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Colour Gradient vs. Distinct Colour Palette <bpt id="1">&lt;a id="colour-gradient-vs-distinct-colour-palette"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Colour Gradient vs. Distinct Colour Palette <bpt id="1">&lt;a id="colour-gradient-vs-distinct-colour-palette"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{caution}</ph>
+DO NOT use a <bpt id="2">__</bpt>separate<ept id="2">__</ept> colour palette to represent <bpt id="3">__</bpt>ordered entities<ept id="3">__</ept>.
+<ph id="4">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{caution}</ph>
+DO NOT use a <bpt id="2">__</bpt>separate<ept id="2">__</ept> colour palette to represent <bpt id="3">__</bpt>ordered entities<ept id="3">__</ept>.
+<ph id="4">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">A representation that "feels right" because it seems logical that a "low" rate would be represented differently than a "high" rate.</source>
+<target xml:lang="fr">A representation that "feels right" because it seems logical that a "low" rate would be represented differently than a "high" rate.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">It is a mistake because:</source>
+<target xml:lang="fr">It is a mistake because:</target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">By using a differentiating colour variable, <bpt id="1">__</bpt>you lose the ordinal relationship between entities<ept id="1">__</ept>. Instead, a <bpt id="2">__</bpt>gradient of the same colour<ept id="2">__</ept> that should be used.</source>
+<target xml:lang="fr">By using a differentiating colour variable, <bpt id="1">__</bpt>you lose the ordinal relationship between entities<ept id="1">__</ept>. Instead, a <bpt id="2">__</bpt>gradient of the same colour<ept id="2">__</ept> that should be used.</target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Different colours are used to differentiate between distinct entities.</source>
+<target xml:lang="fr">Different colours are used to differentiate between distinct entities.</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Gradient in a Single Colour vs. Gradient between two Colours <bpt id="1">&lt;a id="gradient-in-a-single-colour-vs-gradient-between-two-colours"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Gradient in a Single Colour vs. Gradient between two Colours <bpt id="1">&lt;a id="gradient-in-a-single-colour-vs-gradient-between-two-colours"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Caution}</ph>
+Be cautious when using a <bpt id="2">__</bpt>gradient across two different colours<ept id="2">__</ept> for data that is <bpt id="3">__</bpt>always positive<ept id="3">__</ept> (or negative).
+<ph id="4">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Caution}</ph>
+Be cautious when using a <bpt id="2">__</bpt>gradient across two different colours<ept id="2">__</ept> for data that is <bpt id="3">__</bpt>always positive<ept id="3">__</ept> (or negative).
+<ph id="4">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">This is difficult because our brains are used to prioritising certain colours, especially green to red, or blue to red. We must remember that <bpt id="1">__</bpt>if our values do not have a meaningful zero point<ept id="1">__</ept>, it might be better to stay in the same single colour and use different shades of that colour to indicate different values. Alternatively, a colour gradient that is not diverging can be used.</source>
+<target xml:lang="fr">This is difficult because our brains are used to prioritising certain colours, especially green to red, or blue to red. We must remember that <bpt id="1">__</bpt>if our values do not have a meaningful zero point<ept id="1">__</ept>, it might be better to stay in the same single colour and use different shades of that colour to indicate different values. Alternatively, a colour gradient that is not diverging can be used.</target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">A diverging gradient between two colours can be used when it is necessary to show a gradation that can go from negative to positive. As for temperatures, it makes sense to distinguish negative values (in shades of blue for example) and positive values (in shades of red).</source>
+<target xml:lang="fr">A diverging gradient between two colours can be used when it is necessary to show a gradation that can go from negative to positive. As for temperatures, it makes sense to distinguish negative values (in shades of blue for example) and positive values (in shades of red).</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">It is a mistake because:</source>
+<target xml:lang="fr">It is a mistake because:</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">By choosing different colours for values that are linked to each other, our eyes perceive a difference between the elements, and not an order.</source>
+<target xml:lang="fr">By choosing different colours for values that are linked to each other, our eyes perceive a difference between the elements, and not an order.</target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Darker colours stand out more than lighter colours, and can be perceived as more important.</source>
+<target xml:lang="fr">Darker colours stand out more than lighter colours, and can be perceived as more important.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">The map will send a message of divergence, of opposition between certain values, when we are simply trying to represent a hierarchy between values.</source>
+<target xml:lang="fr">The map will send a message of divergence, of opposition between certain values, when we are simply trying to represent a hierarchy between values.</target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">In this way, the colour itself directly indicates information about the trend (positive/negative or increasing/decreasing).</source>
+<target xml:lang="fr">In this way, the colour itself directly indicates information about the trend (positive/negative or increasing/decreasing).</target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">Limited Geometric Symbols vs. Complex Icons and Symbols <bpt id="1">&lt;a id="limited-geometric-symbols-vs-complex-icons-and-symbols"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Limited Geometric Symbols vs. Complex Icons and Symbols <bpt id="1">&lt;a id="limited-geometric-symbols-vs-complex-icons-and-symbols"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Caution}</ph>
+DO NOT use <bpt id="2">__</bpt>too many symbols<ept id="2">__</ept> in a thematic map.
+<ph id="3">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Caution}</ph>
+DO NOT use <bpt id="2">__</bpt>too many symbols<ept id="2">__</ept> in a thematic map.
+<ph id="3">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Incorporating a multitude of symbols (and data) for an informative map is a common desire. However, too many symbols can <bpt id="1">__</bpt>overload the map<ept id="1">__</ept> and <bpt id="2">__</bpt>reduce the readability<ept id="2">__</ept> of the map. Using too many symbols (especially geometric ones) can make it difficult to read and understand the map.<ph id="3">  </ph>
+<bpt id="4">__</bpt>The eye can easily distinguish between four to five different symbols.<ept id="4">__</ept> Beyond that, it is difficult to tell elements apart. However, this is a less serious error because it does not convey false information on the map.</source>
+<target xml:lang="fr">Incorporating a multitude of symbols (and data) for an informative map is a common desire. However, too many symbols can <bpt id="1">__</bpt>overload the map<ept id="1">__</ept> and <bpt id="2">__</bpt>reduce the readability<ept id="2">__</ept> of the map. Using too many symbols (especially geometric ones) can make it difficult to read and understand the map.<ph id="3">  </ph>
+<bpt id="4">__</bpt>The eye can easily distinguish between four to five different symbols.<ept id="4">__</ept> Beyond that, it is difficult to tell elements apart. However, this is a less serious error because it does not convey false information on the map.</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">It is a mistake because:</source>
+<target xml:lang="fr">It is a mistake because:</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">It complicates the map and limits its impact.</source>
+<target xml:lang="fr">It complicates the map and limits its impact.</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Sometimes you are forced to represent several symbols, so you must be careful about overlapping points and overloading the map.</source>
+<target xml:lang="fr">Sometimes you are forced to represent several symbols, so you must be careful about overlapping points and overloading the map.</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>Test your knowledge
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What makes a map “good” or effective? In your own words, list at least three qualities or principles illustrated by the example maps.<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What makes a map “good” or effective? In your own words, list at least three qualities or principles illustrated by the example maps.<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Clarity/readability at a glance<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Clarity/readability at a glance<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">A good map allows the viewer to immediately understand the key message or distribution without having to decipher overly complex symbology. For example, the example maps use clean colour schemes (or minimal distractions) so that the spatial pattern stands out.</source>
+<target xml:lang="fr">A good map allows the viewer to immediately understand the key message or distribution without having to decipher overly complex symbology. For example, the example maps use clean colour schemes (or minimal distractions) so that the spatial pattern stands out.</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Appropriate visual hierarchy and focus<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Appropriate visual hierarchy and focus<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">That means emphasising the main theme or data of the map, while de-emphasising background or context layers so they don’t compete. For example, context features (roads, boundaries, basemap) are often light, subtle, or greyed out; while the thematic layers are bold. This directs the viewer’s eye to what matters. One of the example maps shows how subsidiary layers are subdued so the main data pops out.</source>
+<target xml:lang="fr">That means emphasising the main theme or data of the map, while de-emphasising background or context layers so they don’t compete. For example, context features (roads, boundaries, basemap) are often light, subtle, or greyed out; while the thematic layers are bold. This directs the viewer’s eye to what matters. One of the example maps shows how subsidiary layers are subdued so the main data pops out.</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Fit for purpose/audience and effective design choices<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Fit for purpose/audience and effective design choices<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">A good map aligns its design (colours, symbols, labelling, orientation) with the intended audience and the purpose (operational, humanitarian, public communication, scientific). For example, using intuitive colours (e.g., red for high risk, green for safe) or simplified icons for non‑technical audiences. The module implicitly shows different example map types tailored to humanitarian use, operational decision‑making, etc.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">A good map aligns its design (colours, symbols, labelling, orientation) with the intended audience and the purpose (operational, humanitarian, public communication, scientific). For example, using intuitive colours (e.g., red for high risk, green for safe) or simplified icons for non‑technical audiences. The module implicitly shows different example map types tailored to humanitarian use, operational decision‑making, etc.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Consider the intended audience and use case for one of the example maps (e.g. humanitarian, operational, public communication). How do design choices reflect that audience (e.g. simplicity, clarity, icon selection)?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Consider the intended audience and use case for one of the example maps (e.g. humanitarian, operational, public communication). How do design choices reflect that audience (e.g. simplicity, clarity, icon selection)?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer
+Design choices should reflect that:</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer
+Design choices should reflect that:</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Simplicity and clarity<ept id="1">__</ept>: The map avoids overly detailed or decorative features; it focuses on the essential: the affected area, safe zones/routes, relief hubs in the context of a flood-response map.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Simplicity and clarity<ept id="1">__</ept>: The map avoids overly detailed or decorative features; it focuses on the essential: the affected area, safe zones/routes, relief hubs in the context of a flood-response map.</target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Use of intuitive icons/symbology<ept id="1">__</ept>: For instance, a shelter icon, or a triangle for hazard, arrows for movement — easily understood without needing deep legend lookup.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Use of intuitive icons/symbology<ept id="1">__</ept>: For instance, a shelter icon, or a triangle for hazard, arrows for movement — easily understood without needing deep legend lookup.</target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>High contrast and meaningul colours<ept id="1">__</ept>: For instance, red/orange for hazardous zones, green for safe or cleared areas, possibly a neutral grey for context. This helps non‑technical users quickly interpret what’s urgent.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>High contrast and meaningul colours<ept id="1">__</ept>: For instance, red/orange for hazardous zones, green for safe or cleared areas, possibly a neutral grey for context. This helps non‑technical users quickly interpret what’s urgent.</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Minimal distractions<ept id="1">__</ept>: The background may be subdued, roads/boundaries muted, to make the operational layer stand out. Also large readable fonts for titles/labels because maybe viewed in the field.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Minimal distractions<ept id="1">__</ept>: The background may be subdued, roads/boundaries muted, to make the operational layer stand out. Also large readable fonts for titles/labels because maybe viewed in the field.</target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Clear map elements and layout for quick reference<ept id="1">__</ept>: Big title (e.g., “Flood Damage Zones – 24 Oct 2025”), a prominent legend, scale bar, north arrow, and possibly an inset map for orientation.
+Thus, the design choices reflect the audience by prioritising readability, immediacy, and intuitive interpretability over cartographic elegance or deep detail.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Clear map elements and layout for quick reference<ept id="1">__</ept>: Big title (e.g., “Flood Damage Zones – 24 Oct 2025”), a prominent legend, scale bar, north arrow, and possibly an inset map for orientation.
+Thus, the design choices reflect the audience by prioritising readability, immediacy, and intuitive interpretability over cartographic elegance or deep detail.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

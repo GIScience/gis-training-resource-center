@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_2/en_qgis_basemap.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Basemaps <bpt id="1">&lt;a id="basemaps"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Basemaps <bpt id="1">&lt;a id="basemaps"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Base maps in QGIS serve as foundational layers that provide essential geographical context for other spatial data layers. They typically include features like roads, rivers, administrative boundaries, terrain information, and in some cases, satellite imagery. The primary purpose of base maps is to offer a visual reference for spatial analysis, data visualization, and map creation within QGIS projects.</source>
+<target xml:lang="fr">Base maps in QGIS serve as foundational layers that provide essential geographical context for other spatial data layers. They typically include features like roads, rivers, administrative boundaries, terrain information, and in some cases, satellite imagery. The primary purpose of base maps is to offer a visual reference for spatial analysis, data visualization, and map creation within QGIS projects.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Advantages of using base maps in QGIS, including satellite imagery, include:</source>
+<target xml:lang="fr">Advantages of using base maps in QGIS, including satellite imagery, include:</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Contextual Reference: Base maps offer a backdrop against which other spatial data layers can be overlaid, providing users with valuable context for their analyses and visualizations.</source>
+<target xml:lang="fr">Contextual Reference: Base maps offer a backdrop against which other spatial data layers can be overlaid, providing users with valuable context for their analyses and visualizations.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Enhanced Visualization: Incorporating satellite imagery as base maps adds an extra layer of detail and realism to maps created in QGIS. Satellite imagery provides high-resolution views of the Earth's surface, enabling users to visualize features such as land cover, vegetation, and urban areas with precision.</source>
+<target xml:lang="fr">Enhanced Visualization: Incorporating satellite imagery as base maps adds an extra layer of detail and realism to maps created in QGIS. Satellite imagery provides high-resolution views of the Earth's surface, enabling users to visualize features such as land cover, vegetation, and urban areas with precision.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Quick Project Setup: Incorporating pre-existing base maps, including satellite imagery, into QGIS projects allows users to quickly set up new projects without the need to digitise or create base layers from scratch.</source>
+<target xml:lang="fr">Quick Project Setup: Incorporating pre-existing base maps, including satellite imagery, into QGIS projects allows users to quickly set up new projects without the need to digitise or create base layers from scratch.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Limitations of base maps, including satellite imagery, in QGIS may include:</source>
+<target xml:lang="fr">Limitations of base maps, including satellite imagery, in QGIS may include:</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Limited Detail: While satellite imagery provides high-resolution views of the Earth's surface, it may not capture certain features or details visible in other types of base maps, such as topographic or thematic maps.</source>
+<target xml:lang="fr">Limited Detail: While satellite imagery provides high-resolution views of the Earth's surface, it may not capture certain features or details visible in other types of base maps, such as topographic or thematic maps.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Data Accuracy: Depending on the source of the satellite imagery, there may be variations in data accuracy, completeness, or currency, which can affect the reliability of analyses or visualizations.</source>
+<target xml:lang="fr">Data Accuracy: Depending on the source of the satellite imagery, there may be variations in data accuracy, completeness, or currency, which can affect the reliability of analyses or visualizations.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Dependency on Internet Connectivity: Some satellite imagery base maps, particularly those sourced from online mapping services, require an active internet connection to access and may not be available offline.</source>
+<target xml:lang="fr">Dependency on Internet Connectivity: Some satellite imagery base maps, particularly those sourced from online mapping services, require an active internet connection to access and may not be available offline.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Overall, base maps, including satellite imagery, play a crucial role in QGIS projects by providing a foundational layer of geographic context and visual reference. Users should leverage the advantages of satellite imagery while being mindful of its limitations and considering complementary data sources for comprehensive analyses and visualizations.</source>
+<target xml:lang="fr">Overall, base maps, including satellite imagery, play a crucial role in QGIS projects by providing a foundational layer of geographic context and visual reference. Users should leverage the advantages of satellite imagery while being mindful of its limitations and considering complementary data sources for comprehensive analyses and visualizations.</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">The following section will provide an overview on how to access and add basemaps to your QGIS-project.</source>
+<target xml:lang="fr">The following section will provide an overview on how to access and add basemaps to your QGIS-project.</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Standard QGIS Basemaps <bpt id="1">&lt;a id="standard-qgis-basemaps"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Standard QGIS Basemaps <bpt id="1">&lt;a id="standard-qgis-basemaps"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">You can always add the standard OpenStreetMap as a basemap to your map canvas.</source>
+<target xml:lang="fr">You can always add the standard OpenStreetMap as a basemap to your map canvas.</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{tip}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{tip}</ph></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">The <bpt id="1">[</bpt>wiki article on basemaps<ept id="1">](content/wiki/en_qgis_basemaps_wiki.md)</ept>, has a tutorial
+on adding more types of basemaps (e.g. from Google Maps) to the standard basemap
+options in QGIS.</source>
+<target xml:lang="fr">The <bpt id="1">[</bpt>wiki article on basemaps<ept id="1">](content/wiki/en_qgis_basemaps_wiki.md)</ept>, has a tutorial
+on adding more types of basemaps (e.g. from Google Maps) to the standard basemap
+options in QGIS.</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">There are two ways to add OpenStreetMap as a basemap:</source>
+<target xml:lang="fr">There are two ways to add OpenStreetMap as a basemap:</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Find in the <ph id="1">`Browser`</ph> panel <ph id="2">`XYZ Tiles`</ph>. Open the dropdown by
+   clicking on the arrow next to it and select OpenStreetMap.</source>
+<target xml:lang="fr">Find in the <ph id="1">`Browser`</ph> panel <ph id="2">`XYZ Tiles`</ph>. Open the dropdown by
+   clicking on the arrow next to it and select OpenStreetMap.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">In the <ph id="1">`Layer`</ph> menu → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add XYZ layer...`</ph> → Select OpenStreetMap.</source>
+<target xml:lang="fr">In the <ph id="1">`Layer`</ph> menu → <ph id="2">`Add Layer`</ph> → <ph id="3">`Add XYZ layer...`</ph> → Select OpenStreetMap.</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">QuickMapServices <bpt id="1">&lt;a id="quickmapservices"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">QuickMapServices <bpt id="1">&lt;a id="quickmapservices"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">There are lots of plugins available for QGIS that provide additional tools not available in a standard installation. The <bpt id="1">[</bpt>article on plugins<ept id="1">](/content/Wiki/en_qgis_plugins_wiki.md)</ept> in the wiki provides more detailed example information. One useful plugin is <bpt id="2">[</bpt>QuickMapServices<ept id="2">](https://nextgis.com/blog/quickmapservices/)</ept>. This plugin lets you access a wide range of basemaps that are not available in QGIS by default, such as Bing or Sentinel-2 satellite imagery.</source>
+<target xml:lang="fr">There are lots of plugins available for QGIS that provide additional tools not available in a standard installation. The <bpt id="1">[</bpt>article on plugins<ept id="1">](/content/Wiki/en_qgis_plugins_wiki.md)</ept> in the wiki provides more detailed example information. One useful plugin is <bpt id="2">[</bpt>QuickMapServices<ept id="2">](https://nextgis.com/blog/quickmapservices/)</ept>. This plugin lets you access a wide range of basemaps that are not available in QGIS by default, such as Bing or Sentinel-2 satellite imagery.</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{dropdown} </ph>Installation of plugins</source>
+<target xml:lang="fr"><ph id="1">::::{dropdown} </ph>Installation of plugins</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">To <bpt id="1">[</bpt>install a plugin<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html)</ept>, in the top bar, navigate to <ph id="2">`Plugins`</ph> → <ph id="3">`Manage and Install Plugins…`</ph> → <ph id="4">`All`</ph> → Search for the plugin → <ph id="5">`Install Plugin`</ph>.</source>
+<target xml:lang="fr">To <bpt id="1">[</bpt>install a plugin<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html)</ept>, in the top bar, navigate to <ph id="2">`Plugins`</ph> → <ph id="3">`Manage and Install Plugins…`</ph> → <ph id="4">`All`</ph> → Search for the plugin → <ph id="5">`Install Plugin`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Tip}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Tip}</ph></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">If you cannot find a specific extension, check that you have not used spaces in the plugin name where they don't belong (e.g., when looking for QuickMapServices, searching “Quick Map” will not return results, but “quickmap” will). You can use an asterisk (<ph id="1">`*`</ph>) as a wildcard in searches (so "quick*map" will return results with or without a space between "quick" and "map").</source>
+<target xml:lang="fr">If you cannot find a specific extension, check that you have not used spaces in the plugin name where they don't belong (e.g., when looking for QuickMapServices, searching “Quick Map” will not return results, but “quickmap” will). You can use an asterisk (<ph id="1">`*`</ph>) as a wildcard in searches (so "quick*map" will return results with or without a space between "quick" and "map").</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">If you still cannot find an extension, you may need to allow experimental
+extensions in the options (see below).</source>
+<target xml:lang="fr">If you still cannot find an extension, you may need to allow experimental
+extensions in the options (see below).</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_30.30.2_plugin_installation_experimental_checkbox.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_30.30.2_plugin_installation_experimental_checkbox.png</ph></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><ph id="1">name: en_30.30.2_plugin_installation_experimental_checkbox</ph>
+width 400 px</source>
+<target xml:lang="fr"><ph id="1">name: en_30.30.2_plugin_installation_experimental_checkbox</ph>
+width 400 px</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Plugin Manager settings to show experimental plugins.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Plugin Manager settings to show experimental plugins.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">To add a basemap from the QuickMapServices plugin:</source>
+<target xml:lang="fr">To add a basemap from the QuickMapServices plugin:</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">In the main menu in the top bar of your screen, navigate to <ph id="1">`Web`</ph> → <ph id="2">`QuickMapServices`</ph>.</source>
+<target xml:lang="fr">In the main menu in the top bar of your screen, navigate to <ph id="1">`Web`</ph> → <ph id="2">`QuickMapServices`</ph>.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Click on <ph id="1">`Search QMS`</ph>. A new panel will open, most likely at the bottom right.</source>
+<target xml:lang="fr">Click on <ph id="1">`Search QMS`</ph>. A new panel will open, most likely at the bottom right.</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Here, you can search for a basemap of your choice. For example, Bing Aerial, different versions of OpenStreetMap, Sentinel-2 satellite imagery.</source>
+<target xml:lang="fr">Here, you can search for a basemap of your choice. For example, Bing Aerial, different versions of OpenStreetMap, Sentinel-2 satellite imagery.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Tip}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Tip}</ph></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">A list of basemaps and useful search queries for the QMS-plugin can be found on <bpt id="1">[</bpt>this website<ept id="1">](https://qms.nextgis.com)</ept>. This link can also be found in the "About" section of the QMS-plugin.</source>
+<target xml:lang="fr">A list of basemaps and useful search queries for the QMS-plugin can be found on <bpt id="1">[</bpt>this website<ept id="1">](https://qms.nextgis.com)</ept>. This link can also be found in the "About" section of the QMS-plugin.</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Video: Functionality of the QuickMapServices Plugin__</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Video: Functionality of the QuickMapServices Plugin__</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Note}</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Note}</ph></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">When you are using QuickMapServices, be aware that some of these maps are under copyright laws that restrict the reproduction of these maps. Be aware of these restrictions by looking up the copyright licenses for the basemaps you are using. In general, satellite imagery is not free to use. This means you can not publish maps with all of the available base maps!</source>
+<target xml:lang="fr">When you are using QuickMapServices, be aware that some of these maps are under copyright laws that restrict the reproduction of these maps. Be aware of these restrictions by looking up the copyright licenses for the basemaps you are using. In general, satellite imagery is not free to use. This means you can not publish maps with all of the available base maps!</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Self-Assessment Questions <bpt id="1">&lt;a id="self-assessment-questions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{admonition} </ph>Check your skills
+<ph id="2">:class: note</ph></source>
+<target xml:lang="fr"><ph id="1">::::{admonition} </ph>Check your skills
+<ph id="2">:class: note</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Check whether you know the key concepts from this chapter by answering the questions below.</source>
+<target xml:lang="fr">Check whether you know the key concepts from this chapter by answering the questions below.</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What is a basemap, and why is it useful in GIS projects?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What is a basemap, and why is it useful in GIS projects?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer
+A basemap is a foundational or background map layer that provides geographic context (e.g. roads, rivers, terrain, satellite imagery, administrative boundaries) over which you overlay your thematic or analytical data. It is useful because it helps users orient themselves geographically, provides visual reference and spatial context (for example, seeing how your data sit relative to roads, cities, water bodies), and speeds up setting and delivering projects and maps.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer
+A basemap is a foundational or background map layer that provides geographic context (e.g. roads, rivers, terrain, satellite imagery, administrative boundaries) over which you overlay your thematic or analytical data. It is useful because it helps users orient themselves geographically, provides visual reference and spatial context (for example, seeing how your data sit relative to roads, cities, water bodies), and speeds up setting and delivering projects and maps.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>How do you add a basemap to QGIS? Describe at least one method (plugin, XYZ tiles, etc.).<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>How do you add a basemap to QGIS? Describe at least one method (plugin, XYZ tiles, etc.).<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">In the <ph id="1">`Browser`</ph>-panel, expand the "<bpt id="2">*</bpt>XYZ Tiles<ept id="2">*</ept>" group and select a service such as OpenStreetMap.</source>
+<target xml:lang="fr">In the <ph id="1">`Browser`</ph>-panel, expand the "<bpt id="2">*</bpt>XYZ Tiles<ept id="2">*</ept>" group and select a service such as OpenStreetMap.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Alternatively, <bpt id="1">[</bpt>install the QuickMapServices plugin<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_basemap.html#quickmapservices)</ept> and use it to add a map.
+<ph id="2">:::</ph></source>
+<target xml:lang="fr">Alternatively, <bpt id="1">[</bpt>install the QuickMapServices plugin<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Module_2/en_qgis_basemap.html#quickmapservices)</ept> and use it to add a map.
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>What are attribution requirements, and how should you handle them when using basemaps from third‑party providers?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>What are attribution requirements, and how should you handle them when using basemaps from third‑party providers?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Answer</source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Answer</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Attribution requirements<ept id="1">__</ept> are obligations set by the data provider or map service regarding how you must credit (acknowledge) their work when you use their basemaps. This may include displaying a copyright notice, data source name, or logo on your map or in your project.</source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Attribution requirements<ept id="1">__</ept> are obligations set by the data provider or map service regarding how you must credit (acknowledge) their work when you use their basemaps. This may include displaying a copyright notice, data source name, or logo on your map or in your project.</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Many basemap or satellite imagery services are under copyright or restrictive licenses, meaning you cannot freely reproduce or publish maps using them without following the licensing rules.</source>
+<target xml:lang="fr">Many basemap or satellite imagery services are under copyright or restrictive licenses, meaning you cannot freely reproduce or publish maps using them without following the licensing rules.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">To handle attribution properly:</source>
+<target xml:lang="fr">To handle attribution properly:</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Check the terms of service or license of the basemap provider before using their tiles.</source>
+<target xml:lang="fr">Check the terms of service or license of the basemap provider before using their tiles.</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Include the required attribution somewhere visible on your map.
+For example, when using OpenStreeMap basemaps, make sure you include the attribution "© OpenStreetMap contributors" somewhere on your map. If that is done, you can freely distribute and publish the map.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Include the required attribution somewhere visible on your map.
+For example, when using OpenStreeMap basemaps, make sure you include the attribution "© OpenStreetMap contributors" somewhere on your map. If that is done, you can freely distribute and publish the map.
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

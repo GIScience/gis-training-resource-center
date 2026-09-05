@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_wiki_homepage.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Wiki Overview <bpt id="1">&lt;a id="wiki-overview"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Wiki Overview <bpt id="1">&lt;a id="wiki-overview"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">🚧 Under Construction 🚧</source>
+<target xml:lang="fr">🚧 Under Construction 🚧</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Welcome to the <bpt id="1">**</bpt>Wiki<ept id="1">**</ept> section of the GIS Training Resource Center.</source>
+<target xml:lang="fr">Welcome to the <bpt id="1">**</bpt>Wiki<ept id="1">**</ept> section of the GIS Training Resource Center.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">This space is designed to complement the main training modules by offering <bpt id="1">**</bpt>practical guides<ept id="1">**</ept>, <bpt id="2">**</bpt>how-tos<ept id="2">**</ept>, <bpt id="3">**</bpt>troubleshooting tips<ept id="3">**</ept>, and <bpt id="4">**</bpt>reference material<ept id="4">**</ept>. Whether you're a trainer, trainee, or GIS enthusiast, this wiki supports your journey through applied GIS skills — especially within humanitarian and anticipatory action contexts.</source>
+<target xml:lang="fr">This space is designed to complement the main training modules by offering <bpt id="1">**</bpt>practical guides<ept id="1">**</ept>, <bpt id="2">**</bpt>how-tos<ept id="2">**</ept>, <bpt id="3">**</bpt>troubleshooting tips<ept id="3">**</ept>, and <bpt id="4">**</bpt>reference material<ept id="4">**</ept>. Whether you're a trainer, trainee, or GIS enthusiast, this wiki supports your journey through applied GIS skills — especially within humanitarian and anticipatory action contexts.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Here you will find short <bpt id="1">**</bpt>technical<ept id="1">**</ept> descriptions and <bpt id="2">**</bpt>practical<ept id="2">**</ept> guides on how to perform processing steps in QGIS and work with geodata in general. It is aimed to be a companion when you are working with QGIS in your daily life to quickly look up information. The theoretical input for the individual steps can be found in the <bpt id="3">**</bpt>modules<ept id="3">**</ept>.</source>
+<target xml:lang="fr">Here you will find short <bpt id="1">**</bpt>technical<ept id="1">**</ept> descriptions and <bpt id="2">**</bpt>practical<ept id="2">**</ept> guides on how to perform processing steps in QGIS and work with geodata in general. It is aimed to be a companion when you are working with QGIS in your daily life to quickly look up information. The theoretical input for the individual steps can be found in the <bpt id="3">**</bpt>modules<ept id="3">**</ept>.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Purpose of the Wiki <bpt id="1">&lt;a id="purpose-of-the-wiki"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Purpose of the Wiki <bpt id="1">&lt;a id="purpose-of-the-wiki"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Provide <bpt id="1">**</bpt>quick-reference documentation<ept id="1">**</ept> to support GIS learning and teaching.</source>
+<target xml:lang="fr">Provide <bpt id="1">**</bpt>quick-reference documentation<ept id="1">**</ept> to support GIS learning and teaching.</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Serve as a <bpt id="1">**</bpt>knowledge base<ept id="1">**</ept> of best practices, common pitfalls, and frequently asked questions.</source>
+<target xml:lang="fr">Serve as a <bpt id="1">**</bpt>knowledge base<ept id="1">**</ept> of best practices, common pitfalls, and frequently asked questions.</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Offer <bpt id="1">**</bpt>detailed explanations<ept id="1">**</ept> of tools, methods, and workflows beyond the scope of the training modules.</source>
+<target xml:lang="fr">Offer <bpt id="1">**</bpt>detailed explanations<ept id="1">**</ept> of tools, methods, and workflows beyond the scope of the training modules.</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Help trainers <bpt id="1">**</bpt>adapt content<ept id="1">**</ept> to specific audiences, regions, or workflows.</source>
+<target xml:lang="fr">Help trainers <bpt id="1">**</bpt>adapt content<ept id="1">**</ept> to specific audiences, regions, or workflows.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">Wiki Topics <bpt id="1">&lt;a id="wiki-topics"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Wiki Topics <bpt id="1">&lt;a id="wiki-topics"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2</source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt><bpt id="3">[</bpt>QGIS Basics<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_qgis_basics_wiki.html)</ept>:<ept id="2">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt><bpt id="3">[</bpt>QGIS Basics<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_qgis_basics_wiki.html)</ept>:<ept id="2">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>QGIS Installation<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_installation_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>QGIS Installation<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_installation_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>QGIS Interface<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>QGIS Interface<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_interface_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Projects and Folder Structure<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Projects and Folder Structure<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projects_folder_structure_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Projections<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Projections<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_projections_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Basemaps<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Basemaps<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_basemaps_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Plugins<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Plugins<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_plugins_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Data Sources<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_data_sources_wiki.html)</ept>
+<ph id="2">:::</ph></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Data Sources<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_data_sources_wiki.html)</ept>
+<ph id="2">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt><bpt id="3">[</bpt>General Geodata and Data Management<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_wiki.html)</ept><ept id="2">__</ept>
+<ph id="4">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt><bpt id="3">[</bpt>General Geodata and Data Management<ept id="3">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_wiki.html)</ept><ept id="2">__</ept>
+<ph id="4">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Types of Geodata<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Types of Geodata<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_geodata_types_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Geodata Import in QGIS<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_import_geodata_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>OpenStreetMap (OSM) Data<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_OpenStreetMap_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>OpenStreetMap (OSM) Data<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_OpenStreetMap_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>The Layer Concept<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>The Layer Concept<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_layer_concept_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>The Attribute Table<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>The Attribute Table<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_attribute_table_wiki.html)</ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Digitisation<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html)</ept>
+<ph id="2">:::</ph>
+<ph id="3">::::</ph></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Digitisation<ept id="1">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_digitisation_wiki.html)</ept>
+<ph id="2">:::</ph>
+<ph id="3">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:gutter: 2</ph>
+<ph id="3">:::{grid-item}</ph>
+<bpt id="4">__</bpt><bpt id="5">[</bpt>Geodata Classification<ept id="5">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_data_classification_wiki.html)</ept>:<ept id="4">__</ept></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:gutter: 2</ph>
+<ph id="3">:::{grid-item}</ph>
+<bpt id="4">__</bpt><bpt id="5">[</bpt>Geodata Classification<ept id="5">](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_data_classification_wiki.html)</ept>:<ept id="4">__</ept></target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt><ept id="1">]</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt><ept id="1">]</ept></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

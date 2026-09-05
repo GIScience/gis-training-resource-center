@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_2/en_qgis_module_2_exercises.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Exercises for Module 2 <bpt id="1">&lt;a id="exercises-for-module-2"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercises for Module 2 <bpt id="1">&lt;a id="exercises-for-module-2"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">These exercises are designed to support a QGIS-training and can be done with participants as follow-along exercises or as homework before the next training.</source>
+<target xml:lang="fr">These exercises are designed to support a QGIS-training and can be done with participants as follow-along exercises or as homework before the next training.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Exercise 1 and 2 cover the basics to familiarise beginners with geodata and how to import, inspect, and save vector data in QGIS. These exercises are suited for follow-along sessions.</source>
+<target xml:lang="fr">Exercise 1 and 2 cover the basics to familiarise beginners with geodata and how to import, inspect, and save vector data in QGIS. These exercises are suited for follow-along sessions.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Exercise 2 and 3 expand on the first two exercises and aim to teach GIS beginners to find, download, and import data from the web.</source>
+<target xml:lang="fr">Exercise 2 and 3 expand on the first two exercises and aim to teach GIS beginners to find, download, and import data from the web.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Exercise 5 recapitulates module 2 and can be used by trainees to refresh their QGIS-skills <bpt id="1">__</bpt>on their own<ept id="1">__</ept> before the next session.</source>
+<target xml:lang="fr">Exercise 5 recapitulates module 2 and can be used by trainees to refresh their QGIS-skills <bpt id="1">__</bpt>on their own<ept id="1">__</ept> before the next session.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Exercise</source>
+<target xml:lang="fr">Exercise</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Focus Group</source>
+<target xml:lang="fr">Focus Group</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Estimated time</source>
+<target xml:lang="fr">Estimated time</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 1: Understanding Geodata<ept id="2">](/content/Module_2/en_qgis_geodata_concept_ex1.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 1: Understanding Geodata<ept id="2">](/content/Module_2/en_qgis_geodata_concept_ex1.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">The objective of this exercise is to make your first steps in QGIS. Understand the user interface and get to know the layer concept. Display vector data in QGIS and view the attributes of the data. Reproject the vector data (i.e. by changing the projection of the data)</source>
+<target xml:lang="fr">The objective of this exercise is to make your first steps in QGIS. Understand the user interface and get to know the layer concept. Display vector data in QGIS and view the attributes of the data. Reproject the vector data (i.e. by changing the projection of the data)</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">QGIS Essentials</source>
+<target xml:lang="fr">QGIS Essentials</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">2 hours</source>
+<target xml:lang="fr">2 hours</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 2: Basic Geodata Processing<ept id="2">](/content/Module_2/en_qgis_basic_data_processing_ex2.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 2: Basic Geodata Processing<ept id="2">](/content/Module_2/en_qgis_basic_data_processing_ex2.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">The objective of this exercise is to get a feeling for geodata and start working with it. Understand the attribute table, sort it, select manually and export the selection.</source>
+<target xml:lang="fr">The objective of this exercise is to get a feeling for geodata and start working with it. Understand the attribute table, sort it, select manually and export the selection.</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">QGIS Essentials</source>
+<target xml:lang="fr">QGIS Essentials</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">1 hour</source>
+<target xml:lang="fr">1 hour</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 3: Data Sources<ept id="2">](/content/Module_2/en_qgis_data_sources_ex3.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 3: Data Sources<ept id="2">](/content/Module_2/en_qgis_data_sources_ex3.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">The aim of this exercise is to navigate various data sources, gain an understanding of where and how to access relevant data, and identify potential problems.</source>
+<target xml:lang="fr">The aim of this exercise is to navigate various data sources, gain an understanding of where and how to access relevant data, and identify potential problems.</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">QGIS Essentials</source>
+<target xml:lang="fr">QGIS Essentials</target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">1-2 hours</source>
+<target xml:lang="fr">1-2 hours</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 4: Exporting OSM Data<ept id="2">](/content/Module_2/en_qgis_data_sources_ex4.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 4: Exporting OSM Data<ept id="2">](/content/Module_2/en_qgis_data_sources_ex4.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">The aim of this exercise is to learn multiple ways to export OpenStreetMap (OSM) data as vector files and load them into QGIS.</source>
+<target xml:lang="fr">The aim of this exercise is to learn multiple ways to export OpenStreetMap (OSM) data as vector files and load them into QGIS.</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">Data acquirement and data management</source>
+<target xml:lang="fr">Data acquirement and data management</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">2 hours</source>
+<target xml:lang="fr">2 hours</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 5: The World<ept id="2">](/content/Module_2/en_qgis_module_2_ex_alt.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 5: The World<ept id="2">](/content/Module_2/en_qgis_module_2_ex_alt.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">The aim of this exercise is to create a QGIS project, import vector data, move layers in the layer hierarchy, and save the progress made to your QGIS-project. This exercise can be done alone at home.</source>
+<target xml:lang="fr">The aim of this exercise is to create a QGIS project, import vector data, move layers in the layer hierarchy, and save the progress made to your QGIS-project. This exercise can be done alone at home.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">QGIS Essentials</source>
+<target xml:lang="fr">QGIS Essentials</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">1 hour</source>
+<target xml:lang="fr">1 hour</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Mobile_Data_collection/en_SMT_ex2_.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Sketch Map Tool Exercise 2 - Traffic light <bpt id="1">&lt;a id="sketch-map-tool-exercise-2-traffic-light"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Sketch Map Tool Exercise 2 - Traffic light <bpt id="1">&lt;a id="sketch-map-tool-exercise-2-traffic-light"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">This exercise focuses on the first step of working with the Sketch Map Tool “Create a Sketch Map” and especially the characteristics, differences, weaknesses and strengths of the satellite and the OSM basemap.</source>
+<target xml:lang="fr">This exercise focuses on the first step of working with the Sketch Map Tool “Create a Sketch Map” and especially the characteristics, differences, weaknesses and strengths of the satellite and the OSM basemap.</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Characteristics of the exercise <bpt id="1">&lt;a id="characteristics-of-the-exercise"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Aim of this exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<bpt id="2">__</bpt>Aim of this exercise:<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Get familiar with the OSM and Satellite-image base maps and the Quality reports.</source>
+<target xml:lang="fr">Get familiar with the OSM and Satellite-image base maps and the Quality reports.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Get a feeling about how to assess the suitability of a basemaps and familiarise yourself with possible problems.</source>
+<target xml:lang="fr">Get a feeling about how to assess the suitability of a basemaps and familiarise yourself with possible problems.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Get a first introduction to quality analysis
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Get a first introduction to quality analysis
+<ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type of trainings exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph>
+This exercise can be used in online and in presence, and is focused on group discussions.
+<ph id="5">:::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Type of trainings exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph>
+This exercise can be used in online and in presence, and is focused on group discussions.
+<ph id="5">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Focus group (GIS-Knowlege Level):<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+Planners/Facilitators  (Beginners-level: no knowledge required about QGIS)</source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Focus group (GIS-Knowlege Level):<ept id="2">__</ept>
+<ph id="3">^^^</ph>
+Planners/Facilitators  (Beginners-level: no knowledge required about QGIS)</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph>
+<ph id="2">::::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph>
+<ph id="2">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph>
+About 20 min in groups + each group 5 min to present + 10 min general discussion/buffer</source>
+<target xml:lang="fr"><ph id="1">::::{grid} </ph>2
+<ph id="2">:::{grid-item-card}</ph>
+<bpt id="3">__</bpt>Estimated time demand for the exercise:<ept id="3">__</ept>
+<ph id="4">^^^</ph>
+About 20 min in groups + each group 5 min to present + 10 min general discussion/buffer</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Available data<ept id="2">__</ept>
+<ph id="3">^^^</ph></source>
+<target xml:lang="fr"><ph id="1">:::{grid-item-card}</ph>
+<bpt id="2">__</bpt>Available data<ept id="2">__</ept>
+<ph id="3">^^^</ph></target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Introductory slides on the Sketch Map Tool<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Introductory slides on the Sketch Map Tool<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx)</ept></target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Case Studies Maps:</source>
+<target xml:lang="fr">Case Studies Maps:</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Case Study Map 1<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_1_Sudan.zip)</ept>,</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Case Study Map 1<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_1_Sudan.zip)</ept>,</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Case Study Map 2<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_2_Bolivien.zip)</ept>,</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Case Study Map 2<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_2_Bolivien.zip)</ept>,</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Case Study Map 3<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_3_Port_Harcourt.zip)</ept>,</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Case Study Map 3<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_3_Port_Harcourt.zip)</ept>,</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Case Study Map 4<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_4_Borgo_San_Lorenzo.zip)</ept>,</source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Case Study Map 4<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_4_Borgo_San_Lorenzo.zip)</ept>,</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Case Study Map 5<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_5_Adelaide.zip)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Case Study Map 5<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_5_Adelaide.zip)</ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>Printable exercise factsheet<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_Ex_2.pdf)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>Printable exercise factsheet<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_Ex_2.pdf)</ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Instructions for the trainers <bpt id="1">&lt;a id="instructions-for-the-trainers"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph><bpt id="2">__</bpt>Trainers Corner<ept id="2">__</ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Prepare the training <bpt id="1">&lt;a id="prepare-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Online access and devices (PC) to be able to use the Sketch Map Tool and create maps online.</source>
+<target xml:lang="fr">Online access and devices (PC) to be able to use the Sketch Map Tool and create maps online.</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">For each group one individual set of the Sketch Maps (OSM + satellite) digitally or as a print and reports of one area OSM + satellite-map and the fitting report.</source>
+<target xml:lang="fr">For each group one individual set of the Sketch Maps (OSM + satellite) digitally or as a print and reports of one area OSM + satellite-map and the fitting report.</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">Take a look and make yourself familiar on the provided material for the exercise and the Sketch Map Tool in general. There are 5 case study maps available which contain each two sketch maps (one based on OSM, one on satellite imagery) and the respective Quality Report</source>
+<target xml:lang="fr">Take a look and make yourself familiar on the provided material for the exercise and the Sketch Map Tool in general. There are 5 case study maps available which contain each two sketch maps (one based on OSM, one on satellite imagery) and the respective Quality Report</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">Prepare a board (it can be a white board/flipchart/or digital e.g. Miro-board) where the participants can add their findings.</source>
+<target xml:lang="fr">Prepare a board (it can be a white board/flipchart/or digital e.g. Miro-board) where the participants can add their findings.</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction</source>
+<target xml:lang="fr">Check out <bpt id="1">[</bpt>How to do trainings?<ept id="1">](/content/Trainers_corner/en_how_to_training.md)</ept> for some general tips on training conduction</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Conduct the training: <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Conduct the training: <bpt id="1">&lt;a id="conduct-the-training"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Introduction:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Make sure everyone is familiar with the basic understanding about OSM and satellite maps. Introduce the aim of the exercise and the idea of the traffic lights and the analysis before you start the exercise!</source>
+<target xml:lang="fr">Make sure everyone is familiar with the basic understanding about OSM and satellite maps. Introduce the aim of the exercise and the idea of the traffic lights and the analysis before you start the exercise!</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Provide access to the needed material and build groups of 3 to 6 people in order to discuss the findings.</source>
+<target xml:lang="fr">Provide access to the needed material and build groups of 3 to 6 people in order to discuss the findings.</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Time for group work:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Time for group work:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">Check-in with the groups to see if there are any questions or problems.</source>
+<target xml:lang="fr">Check-in with the groups to see if there are any questions or problems.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Prepare the presentation tool (e.g. Miro, White-board, etc.) for the wrap-up.</source>
+<target xml:lang="fr">Prepare the presentation tool (e.g. Miro, White-board, etc.) for the wrap-up.</target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Wrap up:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">All groups present their findings (each 5 min, make it short but display the maps they are talking about).</source>
+<target xml:lang="fr">All groups present their findings (each 5 min, make it short but display the maps they are talking about).</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Discuss benefits, as well as challenges and problems in the use of the Sketch Map Tool.</source>
+<target xml:lang="fr">Discuss benefits, as well as challenges and problems in the use of the Sketch Map Tool.</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Time to for open questions.
+<ph id="1">::::</ph></source>
+<target xml:lang="fr">Time to for open questions.
+<ph id="1">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">What you need to know - Background information <bpt id="1">&lt;a id="what-you-need-to-know-background-information"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">What you need to know - Background information <bpt id="1">&lt;a id="what-you-need-to-know-background-information"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Characteristics of the two base maps <bpt id="1">&lt;a id="characteristics-of-the-two-base-maps"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Characteristics of the two base maps <bpt id="1">&lt;a id="characteristics-of-the-two-base-maps"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">Satellite imagery</source>
+<target xml:lang="fr">Satellite imagery</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">OSM data</source>
+<target xml:lang="fr">OSM data</target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en">Data source</source>
+<target xml:lang="fr">Data source</target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>World Imagery ESRI<ept id="1">](https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9#!)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>World Imagery ESRI<ept id="1">](https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9#!)</ept></target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">[</bpt>OpenStreetMap Community<ept id="1">](https://www.openstreetmap.org/#map=6/51.330/10.453)</ept></source>
+<target xml:lang="fr"><bpt id="1">[</bpt>OpenStreetMap Community<ept id="1">](https://www.openstreetmap.org/#map=6/51.330/10.453)</ept></target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Example map</source>
+<target xml:lang="fr">Example map</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/SMT_Satelite_Heidelberg_empty.jpg)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/SMT_Satelite_Heidelberg_empty.jpg)</ept></target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/SMT_Heidelberg_empty.jpg)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/SMT_Heidelberg_empty.jpg)</ept></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Currentness</source>
+<target xml:lang="fr">Currentness</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">The satellite imagery is typically within 3-5 years of currency.</source>
+<target xml:lang="fr">The satellite imagery is typically within 3-5 years of currency.</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Current OSM-data is used in the base map.</source>
+<target xml:lang="fr">Current OSM-data is used in the base map.</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">Biggest benefit</source>
+<target xml:lang="fr">Biggest benefit</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">Impression of the landscape and topography</source>
+<target xml:lang="fr">Impression of the landscape and topography</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Clear outlines and at times labels especially of important infrastructure e.g. hospitals, possibility to improve the map by contributing to OSM.</source>
+<target xml:lang="fr">Clear outlines and at times labels especially of important infrastructure e.g. hospitals, possibility to improve the map by contributing to OSM.</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">What does georeferenced mean? <bpt id="1">&lt;a id="what-does-georeferenced-mean"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">What does georeferenced mean? <bpt id="1">&lt;a id="what-does-georeferenced-mean"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Non-Georeferenced image</source>
+<target xml:lang="fr">Non-Georeferenced image</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">Georeferenced image – GeoTIFF</source>
+<target xml:lang="fr">Georeferenced image – GeoTIFF</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">This is just an image, even if you load it into QGIS and give it a coordination system it can´t be located and the image is shown somewhere in the Atlantic.</source>
+<target xml:lang="fr">This is just an image, even if you load it into QGIS and give it a coordination system it can´t be located and the image is shown somewhere in the Atlantic.</target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">The file contains information about its coordinate system and its location, so you can combine it with other geodata e.g. with GPS data.</source>
+<target xml:lang="fr">The file contains information about its coordinate system and its location, so you can combine it with other geodata e.g. with GPS data.</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/SMT_Map_Not_georefferenced.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/SMT_Map_Not_georefferenced.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/SMT_Geofrefference_map.png)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/SMT_Geofrefference_map.png)</ept></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Map Quality Check <bpt id="1">&lt;a id="map-quality-check"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Map Quality Check <bpt id="1">&lt;a id="map-quality-check"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">The Sketch Map Tool can evaluate how well-suited an area of the <bpt id="1">[</bpt>OpenStreetMap (OSM)<ept id="1">](https://www.openstreetmap.org/#map=6/51.330/10.453)</ept> basemap is for participatory mapping based on a quality analysis of the OpenStreetMap (OSM) basemap data through the <bpt id="2">[</bpt>HeiGIT ohsome quality analyst<ept id="2">](https://heigit.org/big-spatial-data-analytics-en/ohsome/ohsome-quality-analyst-oqt/)</ept>.</source>
+<target xml:lang="fr">The Sketch Map Tool can evaluate how well-suited an area of the <bpt id="1">[</bpt>OpenStreetMap (OSM)<ept id="1">](https://www.openstreetmap.org/#map=6/51.330/10.453)</ept> basemap is for participatory mapping based on a quality analysis of the OpenStreetMap (OSM) basemap data through the <bpt id="2">[</bpt>HeiGIT ohsome quality analyst<ept id="2">](https://heigit.org/big-spatial-data-analytics-en/ohsome/ohsome-quality-analyst-oqt/)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu68" xml:space="preserve">
+<source xml:lang="en">The Map Quality Check assists in evaluating the suitability of the area of interest for participatory mapping through a quality analysis of the OpenStreetMap data with the HeiGIT ohsome quality analyst. The fitness report can be downloaded as a PDF file by clicking on the blue button. It provides an evaluation of the suitability of the local OSM data and recommendations for subsequent field data collection.</source>
+<target xml:lang="fr">The Map Quality Check assists in evaluating the suitability of the area of interest for participatory mapping through a quality analysis of the OpenStreetMap data with the HeiGIT ohsome quality analyst. The fitness report can be downloaded as a PDF file by clicking on the blue button. It provides an evaluation of the suitability of the local OSM data and recommendations for subsequent field data collection.</target>
+</trans-unit>
+<trans-unit id="tu69" xml:space="preserve">
+<source xml:lang="en">Step-by step introduction for participants <bpt id="1">&lt;a id="step-by-step-introduction-for-participants"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Step-by step introduction for participants <bpt id="1">&lt;a id="step-by-step-introduction-for-participants"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu70" xml:space="preserve">
+<source xml:lang="en">Download a printable factsheet to guide you through this exercise <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_2.pdf)</ept>.</source>
+<target xml:lang="fr">Download a printable factsheet to guide you through this exercise <bpt id="1">[</bpt>here<ept id="1">](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_2.pdf)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu71" xml:space="preserve">
+<source xml:lang="en">If you experiences any problems during your use of the <bpt id="1">[</bpt>Sketch Map Tool<ept id="1">](https://sketch-map-tool.heigit.org/)</ept> please take a look at the <bpt id="2">[</bpt>Help page<ept id="2">](https://sketch-map-tool.heigit.org/help)</ept>.</source>
+<target xml:lang="fr">If you experiences any problems during your use of the <bpt id="1">[</bpt>Sketch Map Tool<ept id="1">](https://sketch-map-tool.heigit.org/)</ept> please take a look at the <bpt id="2">[</bpt>Help page<ept id="2">](https://sketch-map-tool.heigit.org/help)</ept>.</target>
+</trans-unit>
+<trans-unit id="tu72" xml:space="preserve">
+<source xml:lang="en">Preparation <bpt id="1">&lt;a id="preparation"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Preparation <bpt id="1">&lt;a id="preparation"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu73" xml:space="preserve">
+<source xml:lang="en">Internet access and connection, and devices that enable to use the Sketch Map Tool.</source>
+<target xml:lang="fr">Internet access and connection, and devices that enable to use the Sketch Map Tool.</target>
+</trans-unit>
+<trans-unit id="tu74" xml:space="preserve">
+<source xml:lang="en">1.	Create the maps and reports <bpt id="1">&lt;a id="1-create-the-maps-and-reports"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">1.	Create the maps and reports <bpt id="1">&lt;a id="1-create-the-maps-and-reports"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu75" xml:space="preserve">
+<source xml:lang="en">Open the <bpt id="1">[</bpt>Sketch Map Tool<ept id="1">](https://sketch-map-tool.heigit.org/)</ept></source>
+<target xml:lang="fr">Open the <bpt id="1">[</bpt>Sketch Map Tool<ept id="1">](https://sketch-map-tool.heigit.org/)</ept></target>
+</trans-unit>
+<trans-unit id="tu76" xml:space="preserve">
+<source xml:lang="en">With you group, decide on an area fitting to your case-study. You can also choose an area you know very well or find interesting.</source>
+<target xml:lang="fr">With you group, decide on an area fitting to your case-study. You can also choose an area you know very well or find interesting.</target>
+</trans-unit>
+<trans-unit id="tu77" xml:space="preserve">
+<source xml:lang="en">Zoom in and select your map area: Try different zoom levels and change the orientation.</source>
+<target xml:lang="fr">Zoom in and select your map area: Try different zoom levels and change the orientation.</target>
+</trans-unit>
+<trans-unit id="tu78" xml:space="preserve">
+<source xml:lang="en">Create several maps of the same area with different orientation, zoom-level or basemaps.</source>
+<target xml:lang="fr">Create several maps of the same area with different orientation, zoom-level or basemaps.</target>
+</trans-unit>
+<trans-unit id="tu79" xml:space="preserve">
+<source xml:lang="en">Click on the "Get quality report"-button for one of the maps to open a new tab with the ohsome dashboard and leave it open for later.</source>
+<target xml:lang="fr">Click on the "Get quality report"-button for one of the maps to open a new tab with the ohsome dashboard and leave it open for later.</target>
+</trans-unit>
+<trans-unit id="tu80" xml:space="preserve">
+<source xml:lang="en">Sketch Map with a satellite base map</source>
+<target xml:lang="fr">Sketch Map with a satellite base map</target>
+</trans-unit>
+<trans-unit id="tu81" xml:space="preserve">
+<source xml:lang="en">Sketch Map with a OSM base map</source>
+<target xml:lang="fr">Sketch Map with a OSM base map</target>
+</trans-unit>
+<trans-unit id="tu82" xml:space="preserve">
+<source xml:lang="en">Map Quality Check</source>
+<target xml:lang="fr">Map Quality Check</target>
+</trans-unit>
+<trans-unit id="tu83" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/SMT_Satelite_Heidelberg_empty.jpg)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/SMT_Satelite_Heidelberg_empty.jpg)</ept></target>
+</trans-unit>
+<trans-unit id="tu84" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/SMT_Heidelberg_empty.jpg)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/SMT_Heidelberg_empty.jpg)</ept></target>
+</trans-unit>
+<trans-unit id="tu85" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">![</bpt><ept id="1">](/fig/SMT_Heidelberg_report_1.jpg)</ept></source>
+<target xml:lang="fr"><bpt id="1">![</bpt><ept id="1">](/fig/SMT_Heidelberg_report_1.jpg)</ept></target>
+</trans-unit>
+<trans-unit id="tu86" xml:space="preserve">
+<source xml:lang="en">2.	Collect your insights to the following questions <bpt id="1">&lt;a id="2-collect-your-insights-to-the-following-questions"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">2.	Collect your insights to the following questions <bpt id="1">&lt;a id="2-collect-your-insights-to-the-following-questions"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu87" xml:space="preserve">
+<source xml:lang="en">Add your insights to a presentation or share it on a (digital) board:</source>
+<target xml:lang="fr">Add your insights to a presentation or share it on a (digital) board:</target>
+</trans-unit>
+<trans-unit id="tu88" xml:space="preserve">
+<source xml:lang="en">Which difference can you detect between satellite and OSM basemaps?</source>
+<target xml:lang="fr">Which difference can you detect between satellite and OSM basemaps?</target>
+</trans-unit>
+<trans-unit id="tu89" xml:space="preserve">
+<source xml:lang="en">What are the main characteristics of the area you see on the basemap?  Describe separately both basemaps, the one with the satellite imagery and the OSM data.</source>
+<target xml:lang="fr">What are the main characteristics of the area you see on the basemap?  Describe separately both basemaps, the one with the satellite imagery and the OSM data.</target>
+</trans-unit>
+<trans-unit id="tu90" xml:space="preserve">
+<source xml:lang="en">Could you orient yourself on the basemap? Are there points of interests (POIs, which are important for map orientation) or something else that you could use as an orientation point?</source>
+<target xml:lang="fr">Could you orient yourself on the basemap? Are there points of interests (POIs, which are important for map orientation) or something else that you could use as an orientation point?</target>
+</trans-unit>
+<trans-unit id="tu91" xml:space="preserve">
+<source xml:lang="en">Would you say the basemaps are suited for participatory mapping? Reason your answer and think about participants that are not familiar with basemaps.</source>
+<target xml:lang="fr">Would you say the basemaps are suited for participatory mapping? Reason your answer and think about participants that are not familiar with basemaps.</target>
+</trans-unit>
+<trans-unit id="tu92" xml:space="preserve">
+<source xml:lang="en">Think about what you could map on these base maps, e.g. frequently flooded areas or water access points. Is the level of detail of the base maps (satellite and OSM) suitable for that, or would you need to zoom in or out a bit more?</source>
+<target xml:lang="fr">Think about what you could map on these base maps, e.g. frequently flooded areas or water access points. Is the level of detail of the base maps (satellite and OSM) suitable for that, or would you need to zoom in or out a bit more?</target>
+</trans-unit>
+<trans-unit id="tu93" xml:space="preserve">
+<source xml:lang="en">In which use cases would you prefer the OSM basemap? In which use cases would you prefer the satellite basemap?</source>
+<target xml:lang="fr">In which use cases would you prefer the OSM basemap? In which use cases would you prefer the satellite basemap?</target>
+</trans-unit>
+<trans-unit id="tu94" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{admonition} </ph>Take a look at the quality aspects of the OSM data behind your map
+<ph id="2">:class: tip</ph></source>
+<target xml:lang="fr"><ph id="1">:::{admonition} </ph>Take a look at the quality aspects of the OSM data behind your map
+<ph id="2">:class: tip</ph></target>
+</trans-unit>
+<trans-unit id="tu95" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Why is this relevant?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Why is this relevant?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu96" xml:space="preserve">
+<source xml:lang="en">OpenStreetMap (OSM) is more than a map, it is mapped by volunteers in various ways over time. This setup could mean
+that some information of the OSM base map you see is more or less updated or complete, depending on the number of volunteers that are active in an area of interest at what time. It could therefore, for example, be the case that an old building which burned down 5 years ago is still on the map, or that a whole other part of the city is not yet mapped, while another part of the city is mapped in detail and up-to-date. Therefore, it is useful to assess the OSM data.</source>
+<target xml:lang="fr">OpenStreetMap (OSM) is more than a map, it is mapped by volunteers in various ways over time. This setup could mean
+that some information of the OSM base map you see is more or less updated or complete, depending on the number of volunteers that are active in an area of interest at what time. It could therefore, for example, be the case that an old building which burned down 5 years ago is still on the map, or that a whole other part of the city is not yet mapped, while another part of the city is mapped in detail and up-to-date. Therefore, it is useful to assess the OSM data.</target>
+</trans-unit>
+<trans-unit id="tu97" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>How do you know if the OSM data in your area of interest is good enough for mapping?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>How do you know if the OSM data in your area of interest is good enough for mapping?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu98" xml:space="preserve">
+<source xml:lang="en">First of all, don't worry: Just because some houses are not mapped yet or the map is a bit outdated <bpt id="1">__</bpt>doesn't mean you can't use<ept id="1">__</ept> it as a basemap for participatory mapping. It is, however, important to know how accurate it is.</source>
+<target xml:lang="fr">First of all, don't worry: Just because some houses are not mapped yet or the map is a bit outdated <bpt id="1">__</bpt>doesn't mean you can't use<ept id="1">__</ept> it as a basemap for participatory mapping. It is, however, important to know how accurate it is.</target>
+</trans-unit>
+<trans-unit id="tu99" xml:space="preserve">
+<source xml:lang="en">One way to find out if the OSM data in your basemap is good enough to start mapping is to discuss the basemap with locals and/or to try orienting yourself with the map.</source>
+<target xml:lang="fr">One way to find out if the OSM data in your basemap is good enough to start mapping is to discuss the basemap with locals and/or to try orienting yourself with the map.</target>
+</trans-unit>
+<trans-unit id="tu100" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu101" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Using the ohsome Dashboard:<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Using the ohsome Dashboard:<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu102" xml:space="preserve">
+<source xml:lang="en">Take a look at the ohsome dashboard of your selected region or open the screenshots of the ohsome dashboard if you prefer to work with a pre-prepared case.</source>
+<target xml:lang="fr">Take a look at the ohsome dashboard of your selected region or open the screenshots of the ohsome dashboard if you prefer to work with a pre-prepared case.</target>
+</trans-unit>
+<trans-unit id="tu103" xml:space="preserve">
+<source xml:lang="en">Take a look at the first automatically created analysis results on the road network</source>
+<target xml:lang="fr">Take a look at the first automatically created analysis results on the road network</target>
+</trans-unit>
+<trans-unit id="tu104" xml:space="preserve">
+<source xml:lang="en">Currentness of the road network:</source>
+<target xml:lang="fr">Currentness of the road network:</target>
+</trans-unit>
+<trans-unit id="tu105" xml:space="preserve">
+<source xml:lang="en">What is the level of currentness?</source>
+<target xml:lang="fr">What is the level of currentness?</target>
+</trans-unit>
+<trans-unit id="tu106" xml:space="preserve">
+<source xml:lang="en">What is interesting about the graph (e.g. are there special peaks)?</source>
+<target xml:lang="fr">What is interesting about the graph (e.g. are there special peaks)?</target>
+</trans-unit>
+<trans-unit id="tu107" xml:space="preserve">
+<source xml:lang="en">How many features were edited over 8 years ago?</source>
+<target xml:lang="fr">How many features were edited over 8 years ago?</target>
+</trans-unit>
+<trans-unit id="tu108" xml:space="preserve">
+<source xml:lang="en">Based on this one indicator, do you think the map is good enough as a base map?</source>
+<target xml:lang="fr">Based on this one indicator, do you think the map is good enough as a base map?</target>
+</trans-unit>
+<trans-unit id="tu109" xml:space="preserve">
+<source xml:lang="en">Mapping saturation of the road network</source>
+<target xml:lang="fr">Mapping saturation of the road network</target>
+</trans-unit>
+<trans-unit id="tu110" xml:space="preserve">
+<source xml:lang="en">What is the level of completeness?</source>
+<target xml:lang="fr">What is the level of completeness?</target>
+</trans-unit>
+<trans-unit id="tu111" xml:space="preserve">
+<source xml:lang="en">Looking at the road network on your map, does it look like what you expected?</source>
+<target xml:lang="fr">Looking at the road network on your map, does it look like what you expected?</target>
+</trans-unit>
+<trans-unit id="tu112" xml:space="preserve">
+<source xml:lang="en">What is interesting about the graph (e.g. are there special peaks)?</source>
+<target xml:lang="fr">What is interesting about the graph (e.g. are there special peaks)?</target>
+</trans-unit>
+<trans-unit id="tu113" xml:space="preserve">
+<source xml:lang="en">Based on this one indicator, do you think the map good enough as a base map?</source>
+<target xml:lang="fr">Based on this one indicator, do you think the map good enough as a base map?</target>
+</trans-unit>
+<trans-unit id="tu114" xml:space="preserve">
+<source xml:lang="en">Select another topic of your interest, like POIs, parks or the building area. Ask yourself similar questions as in the step before, but also reflect on how important, e.g. buildings are for the participant's orientation in the map or what you would like to map on this base map.</source>
+<target xml:lang="fr">Select another topic of your interest, like POIs, parks or the building area. Ask yourself similar questions as in the step before, but also reflect on how important, e.g. buildings are for the participant's orientation in the map or what you would like to map on this base map.</target>
+</trans-unit>
+<trans-unit id="tu115" xml:space="preserve">
+<source xml:lang="en">You can select the topics in the top left corner.</source>
+<target xml:lang="fr">You can select the topics in the top left corner.</target>
+</trans-unit>
+<trans-unit id="tu116" xml:space="preserve">
+<source xml:lang="en">Then run the analysis by clicking the green button, then the analysis will start and your new results will show up on top.</source>
+<target xml:lang="fr">Then run the analysis by clicking the green button, then the analysis will start and your new results will show up on top.</target>
+</trans-unit>
+<trans-unit id="tu117" xml:space="preserve">
+<source xml:lang="en">If you take a look at the labels in the left corner of your result graphs, you get a rough estimate in traffic light colours about the level of, e.g. the completeness- if it is high, medium or low. If the level is low, especially for important aspects like the road mapping saturation, please take a proper look at whether your base map seems good enough for participatory mapping and consider organizing a mapathon to improve the OSM data before you use it in a Sketch Map (link to mapathon FAQ).</source>
+<target xml:lang="fr">If you take a look at the labels in the left corner of your result graphs, you get a rough estimate in traffic light colours about the level of, e.g. the completeness- if it is high, medium or low. If the level is low, especially for important aspects like the road mapping saturation, please take a proper look at whether your base map seems good enough for participatory mapping and consider organizing a mapathon to improve the OSM data before you use it in a Sketch Map (link to mapathon FAQ).</target>
+</trans-unit>
+<trans-unit id="tu118" xml:space="preserve">
+<source xml:lang="en">3.	Wrap-up: <bpt id="1">&lt;a id="3-wrap-up"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">3.	Wrap-up: <bpt id="1">&lt;a id="3-wrap-up"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu119" xml:space="preserve">
+<source xml:lang="en">Make some notes and prepare yourself for a short presentation of your maps to share with the other participants:</source>
+<target xml:lang="fr">Make some notes and prepare yourself for a short presentation of your maps to share with the other participants:</target>
+</trans-unit>
+<trans-unit id="tu120" xml:space="preserve">
+<source xml:lang="en">Prepare your Presentation and decide who is going to present.</source>
+<target xml:lang="fr">Prepare your Presentation and decide who is going to present.</target>
+</trans-unit>
+<trans-unit id="tu121" xml:space="preserve">
+<source xml:lang="en">Think about open questions, as well as feedback to the exercise</source>
+<target xml:lang="fr">Think about open questions, as well as feedback to the exercise</target>
+</trans-unit>
+<trans-unit id="tu122" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Why could the ohsome dashboard with its statistics be interesting to you?<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Why could the ohsome dashboard with its statistics be interesting to you?<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu123" xml:space="preserve">
+<source xml:lang="en">You think about organising a mapathon, but you’re not sure if this is necessary? The ohsome dashboard offers you some numbers and graphs on currentness, map saturation, and attribute completeness to base your decision on.</source>
+<target xml:lang="fr">You think about organising a mapathon, but you’re not sure if this is necessary? The ohsome dashboard offers you some numbers and graphs on currentness, map saturation, and attribute completeness to base your decision on.</target>
+</trans-unit>
+<trans-unit id="tu124" xml:space="preserve">
+<source xml:lang="en">You already planned a mapathon, because you can see that the map is not good enough. Take a look at the ohsome dashboard of your selected area before and after your activities to see and showcase your mapathons' impact on the OSM data.</source>
+<target xml:lang="fr">You already planned a mapathon, because you can see that the map is not good enough. Take a look at the ohsome dashboard of your selected area before and after your activities to see and showcase your mapathons' impact on the OSM data.</target>
+</trans-unit>
+<trans-unit id="tu125" xml:space="preserve">
+<source xml:lang="en">You are just curious to learn more about data quality analysis. Then the dashboard is also the place to start.</source>
+<target xml:lang="fr">You are just curious to learn more about data quality analysis. Then the dashboard is also the place to start.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

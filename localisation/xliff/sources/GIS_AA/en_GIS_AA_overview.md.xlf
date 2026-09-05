@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/GIS_AA/en_GIS_AA_overview.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">GIS in Anticipatory Action <bpt id="1">&lt;a id="gis-in-anticipatory-action"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">GIS in Anticipatory Action <bpt id="1">&lt;a id="gis-in-anticipatory-action"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Why GIS for Anticipatory Action? <bpt id="1">&lt;a id="why-gis-for-anticipatory-action"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Why GIS for Anticipatory Action? <bpt id="1">&lt;a id="why-gis-for-anticipatory-action"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Anticipatory Action (AA) seeks to reduce humanitarian impacts by taking action before a hazard escalates into a disaster. Geographic Information Systems (GIS) support this approach by enabling spatial risk analysis, monitoring triggers and thresholds, estimating potential impacts, and identifying where early actions should be targeted. By integrating these capabilities, GIS helps humanitarian actors make timely, evidence-based decisions. This section of the IFRC GIS Training Platform highlights practical GIS workflows for Anticipatory Action, grounded in real-world humanitarian operations.</source>
+<target xml:lang="fr">Anticipatory Action (AA) seeks to reduce humanitarian impacts by taking action before a hazard escalates into a disaster. Geographic Information Systems (GIS) support this approach by enabling spatial risk analysis, monitoring triggers and thresholds, estimating potential impacts, and identifying where early actions should be targeted. By integrating these capabilities, GIS helps humanitarian actors make timely, evidence-based decisions. This section of the IFRC GIS Training Platform highlights practical GIS workflows for Anticipatory Action, grounded in real-world humanitarian operations.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">What You’ll Find in This Section <bpt id="1">&lt;a id="what-youll-find-in-this-section"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">What You’ll Find in This Section <bpt id="1">&lt;a id="what-youll-find-in-this-section"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">The GIS in Anticipatory Action content brings together <bpt id="1">**</bpt>case studies, applied analyses, and exercises<ept id="1">**</ept> that demonstrate how GIS supports AA across different hazards and countries.</source>
+<target xml:lang="fr">The GIS in Anticipatory Action content brings together <bpt id="1">**</bpt>case studies, applied analyses, and exercises<ept id="1">**</ept> that demonstrate how GIS supports AA across different hazards and countries.</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">You will find:</source>
+<target xml:lang="fr">You will find:</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Country- and hazard-specific case studies</source>
+<target xml:lang="fr">Country- and hazard-specific case studies</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">End-to-end GIS workflows</source>
+<target xml:lang="fr">End-to-end GIS workflows</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en">Examples of trigger and impact analyses</source>
+<target xml:lang="fr">Examples of trigger and impact analyses</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Exercises focused on AA-relevant methods</source>
+<target xml:lang="fr">Exercises focused on AA-relevant methods</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">This content is designed for:</source>
+<target xml:lang="fr">This content is designed for:</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">GIS trainers</source>
+<target xml:lang="fr">GIS trainers</target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">AA practitioners</source>
+<target xml:lang="fr">AA practitioners</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Technical staff supporting anticipatory decision-making</source>
+<target xml:lang="fr">Technical staff supporting anticipatory decision-making</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Available Case Studies and Analyses <bpt id="1">&lt;a id="available-case-studies-and-analyses"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Available Case Studies and Analyses <bpt id="1">&lt;a id="available-case-studies-and-analyses"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Cyclone Anticipatory Action – Madagascar <bpt id="1">&lt;a id="cyclone-anticipatory-action-madagascar"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Cyclone Anticipatory Action – Madagascar <bpt id="1">&lt;a id="cyclone-anticipatory-action-madagascar"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Focus:<ept id="1">**</ept> Forecast-based risk and impact analysis for tropical cyclones<ph id="2">  </ph>
+<bpt id="3">**</bpt>Key elements:<ept id="3">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Focus:<ept id="1">**</ept> Forecast-based risk and impact analysis for tropical cyclones<ph id="2">  </ph>
+<bpt id="3">**</bpt>Key elements:<ept id="3">**</ept></target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Spatial exposure and vulnerability analysis</source>
+<target xml:lang="fr">Spatial exposure and vulnerability analysis</target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">Risk-based prioritisation</source>
+<target xml:lang="fr">Risk-based prioritisation</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Use of QGIS for anticipatory decision support</source>
+<target xml:lang="fr">Use of QGIS for anticipatory decision support</target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_cyclone_trigger_madagascar.html</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: https://giscience.github.io/gis-training-resource-center/content/GIS_AA/en_qgis_cyclone_trigger_madagascar.html</ph></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>QGIS Model Workflow: Cyclone Anticipatory Action - Madagascar<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>QGIS Model Workflow: Cyclone Anticipatory Action - Madagascar<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Drought Early Action Protocol Trigger Analysis – Somalia <bpt id="1">&lt;a id="drought-early-action-protocol-trigger-analysis-somalia"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Drought Early Action Protocol Trigger Analysis – Somalia <bpt id="1">&lt;a id="drought-early-action-protocol-trigger-analysis-somalia"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Focus:<ept id="1">**</ept> Trigger monitoring and threshold analysis for drought<ph id="2">  </ph>
+<bpt id="3">**</bpt>Key elements:<ept id="3">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Focus:<ept id="1">**</ept> Trigger monitoring and threshold analysis for drought<ph id="2">  </ph>
+<bpt id="3">**</bpt>Key elements:<ept id="3">**</ept></target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">Hazard indicators and thresholds</source>
+<target xml:lang="fr">Hazard indicators and thresholds</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">Spatial aggregation and analysis</source>
+<target xml:lang="fr">Spatial aggregation and analysis</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Integration of GIS into trigger-based frameworks</source>
+<target xml:lang="fr">Integration of GIS into trigger-based frameworks</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: ../content/GIS_AA/en_qgis_drought_trigger_somalia</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: ../content/GIS_AA/en_qgis_drought_trigger_somalia</ph></target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>QGIS Model Workflow: Drought EAP Trigger for Somalia<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>QGIS Model Workflow: Drought EAP Trigger for Somalia<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">🌊 Historical Impact Assessment – Flooding in Sudan <bpt id="1">&lt;a id="historical-impact-assessment-flooding-in-sudan"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">🌊 Historical Impact Assessment – Flooding in Sudan <bpt id="1">&lt;a id="historical-impact-assessment-flooding-in-sudan"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Focus:<ept id="1">**</ept> Retrospective analysis to inform anticipatory planning<ph id="2">  </ph>
+<bpt id="3">**</bpt>Key elements:<ept id="3">**</ept></source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Focus:<ept id="1">**</ept> Retrospective analysis to inform anticipatory planning<ph id="2">  </ph>
+<bpt id="3">**</bpt>Key elements:<ept id="3">**</ept></target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en">Historical flood impact data</source>
+<target xml:lang="fr">Historical flood impact data</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en">Spatial pattern analysis</source>
+<target xml:lang="fr">Spatial pattern analysis</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en">Learning from past events to improve future triggers</source>
+<target xml:lang="fr">Learning from past events to improve future triggers</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: ../content/GIS_AA/en_qgis_historical_impact_assessment_sudan</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: ../content/GIS_AA/en_qgis_historical_impact_assessment_sudan</ph></target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Historical Impact Assessment of Flooding in Sudan<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Historical Impact Assessment of Flooding in Sudan<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: ../content/GIS_AA/en_qgis_historical_impact_assessment_sudan</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: ../content/GIS_AA/en_qgis_historical_impact_assessment_sudan</ph></target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Historical Impact Assessment of Flooding in Sudan<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Historical Impact Assessment of Flooding in Sudan<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Exercises: GIS for Anticipatory Action <bpt id="1">&lt;a id="exercises-gis-for-anticipatory-action"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercises: GIS for Anticipatory Action <bpt id="1">&lt;a id="exercises-gis-for-anticipatory-action"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">In addition to the case studies, this section includes hands-on follow-along exercises that focus on the specific GIS techniques used in the case studies:</source>
+<target xml:lang="fr">In addition to the case studies, this section includes hands-on follow-along exercises that focus on the specific GIS techniques used in the case studies:</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{card}</ph>
+<ph id="2">:link: ../content/Exercise_tracks/en_mdg_aa_cyclones</ph></source>
+<target xml:lang="fr"><ph id="1">:::{card}</ph>
+<ph id="2">:link: ../content/Exercise_tracks/en_mdg_aa_cyclones</ph></target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>Cyclone Anticipatory Action Analysis Exercise Track<ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>Cyclone Anticipatory Action Analysis Exercise Track<ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu47" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu48" xml:space="preserve">
+<source xml:lang="en">Spatial risk analysis</source>
+<target xml:lang="fr">Spatial risk analysis</target>
+</trans-unit>
+<trans-unit id="tu49" xml:space="preserve">
+<source xml:lang="en">Exposure and impact estimation</source>
+<target xml:lang="fr">Exposure and impact estimation</target>
+</trans-unit>
+<trans-unit id="tu50" xml:space="preserve">
+<source xml:lang="en">Working with hazard and vulnerability data</source>
+<target xml:lang="fr">Working with hazard and vulnerability data</target>
+</trans-unit>
+<trans-unit id="tu51" xml:space="preserve">
+<source xml:lang="en">These exercises can be used independently or embedded into broader AA-focused trainings.</source>
+<target xml:lang="fr">These exercises can be used independently or embedded into broader AA-focused trainings.</target>
+</trans-unit>
+<trans-unit id="tu52" xml:space="preserve">
+<source xml:lang="en">Tools and Methods Used in GIS for AA <bpt id="1">&lt;a id="tools-and-methods-used-in-gis-for-aa"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Tools and Methods Used in GIS for AA <bpt id="1">&lt;a id="tools-and-methods-used-in-gis-for-aa"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu53" xml:space="preserve">
+<source xml:lang="en">Many GIS analyses in Anticipatory Action analyses rely on <bpt id="1">**</bpt>specialised tools and platforms<ept id="1">**</ept>.
+These tools are documented in the <bpt id="2">**</bpt>Tools &amp; Methods<ept id="2">**</ept> section of this platform.</source>
+<target xml:lang="fr">Many GIS analyses in Anticipatory Action analyses rely on <bpt id="1">**</bpt>specialised tools and platforms<ept id="1">**</ept>.
+These tools are documented in the <bpt id="2">**</bpt>Tools &amp; Methods<ept id="2">**</ept> section of this platform.</target>
+</trans-unit>
+<trans-unit id="tu54" xml:space="preserve">
+<source xml:lang="en">Commonly used tools include:</source>
+<target xml:lang="fr">Commonly used tools include:</target>
+</trans-unit>
+<trans-unit id="tu55" xml:space="preserve">
+<source xml:lang="en">Risk Assessment QGIS Plugin</source>
+<target xml:lang="fr">Risk Assessment QGIS Plugin</target>
+</trans-unit>
+<trans-unit id="tu56" xml:space="preserve">
+<source xml:lang="en">AILAS</source>
+<target xml:lang="fr">AILAS</target>
+</trans-unit>
+<trans-unit id="tu57" xml:space="preserve">
+<source xml:lang="en">GAIA</source>
+<target xml:lang="fr">GAIA</target>
+</trans-unit>
+<trans-unit id="tu58" xml:space="preserve">
+<source xml:lang="en">Each tool is documented separately to highlight:</source>
+<target xml:lang="fr">Each tool is documented separately to highlight:</target>
+</trans-unit>
+<trans-unit id="tu59" xml:space="preserve">
+<source xml:lang="en">Reusability beyond a single case study</source>
+<target xml:lang="fr">Reusability beyond a single case study</target>
+</trans-unit>
+<trans-unit id="tu60" xml:space="preserve">
+<source xml:lang="en">Application across different hazards and countries</source>
+<target xml:lang="fr">Application across different hazards and countries</target>
+</trans-unit>
+<trans-unit id="tu61" xml:space="preserve">
+<source xml:lang="en">👉 Refer to the <bpt id="1">**</bpt>Tools &amp; Methods<ept id="1">**</ept> section for detailed documentation.</source>
+<target xml:lang="fr">👉 Refer to the <bpt id="1">**</bpt>Tools &amp; Methods<ept id="1">**</ept> section for detailed documentation.</target>
+</trans-unit>
+<trans-unit id="tu62" xml:space="preserve">
+<source xml:lang="en">Getting Started <bpt id="1">&lt;a id="getting-started"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Getting Started <bpt id="1">&lt;a id="getting-started"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu63" xml:space="preserve">
+<source xml:lang="en">If you are new to GIS for Anticipatory Action:</source>
+<target xml:lang="fr">If you are new to GIS for Anticipatory Action:</target>
+</trans-unit>
+<trans-unit id="tu64" xml:space="preserve">
+<source xml:lang="en">Start with the <bpt id="1">**</bpt>basic GIS modules<ept id="1">**</ept></source>
+<target xml:lang="fr">Start with the <bpt id="1">**</bpt>basic GIS modules<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu65" xml:space="preserve">
+<source xml:lang="en">Explore one <bpt id="1">**</bpt>AA case study<ept id="1">**</ept></source>
+<target xml:lang="fr">Explore one <bpt id="1">**</bpt>AA case study<ept id="1">**</ept></target>
+</trans-unit>
+<trans-unit id="tu66" xml:space="preserve">
+<source xml:lang="en">Review the <bpt id="1">**</bpt>tools<ept id="1">**</ept> used in that case</source>
+<target xml:lang="fr">Review the <bpt id="1">**</bpt>tools<ept id="1">**</ept> used in that case</target>
+</trans-unit>
+<trans-unit id="tu67" xml:space="preserve">
+<source xml:lang="en">Integrate selected exercises into your training or workflow</source>
+<target xml:lang="fr">Integrate selected exercises into your training or workflow</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

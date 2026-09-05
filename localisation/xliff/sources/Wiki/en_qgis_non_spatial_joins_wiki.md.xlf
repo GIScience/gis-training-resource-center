@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Wiki/en_qgis_non_spatial_joins_wiki.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en">Non-Spatial Joins <bpt id="1">&lt;a id="non-spatial-joins"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Non-Spatial Joins <bpt id="1">&lt;a id="non-spatial-joins"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt>🔙<bpt id="2">[</bpt>Back to Homepage<ept id="2">](/content/intro.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">Join attributes by field value <bpt id="1">&lt;a id="join-attributes-by-field-value"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Join attributes by field value <bpt id="1">&lt;a id="join-attributes-by-field-value"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Adds attributes of a non-spatial table to the layer</source>
+<target xml:lang="fr">Adds attributes of a non-spatial table to the layer</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Join using a field that is present in both data sets</source>
+<target xml:lang="fr">Join using a field that is present in both data sets</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{dropdown} </ph>Example: Add population figures from a table to the states layer
+<ph id="2">
+:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{dropdown} </ph>Example: Add population figures from a table to the states layer
+<ph id="2">
+:::</ph></target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{Hint}</ph>
+If a table join does not work via the <bpt id="2">__</bpt>Join attributes by field value<ept id="2">__</ept> tool, a join can also be performed via the <bpt id="3">__</bpt>layer properties<ept id="3">__</ept> (<ph id="4">`right-click`</ph>, <ph id="5">`Properties`</ph>) under the <ph id="6">`Join`</ph> tab.
+<ph id="7">:::</ph></source>
+<target xml:lang="fr"><ph id="1">:::{Hint}</ph>
+If a table join does not work via the <bpt id="2">__</bpt>Join attributes by field value<ept id="2">__</ept> tool, a join can also be performed via the <bpt id="3">__</bpt>layer properties<ept id="3">__</ept> (<ph id="4">`right-click`</ph>, <ph id="5">`Properties`</ph>) under the <ph id="6">`Join`</ph> tab.
+<ph id="7">:::</ph></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en"><ph id="1">:::{figure} /fig/en_qgis_add_vector_join_wiki.png</ph></source>
+<target xml:lang="fr"><ph id="1">:::{figure} /fig/en_qgis_add_vector_join_wiki.png</ph></target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><ph id="1">width: 75%</ph>
+<ph id="2">name: en_qgis_add_vector_join_wiki</ph></source>
+<target xml:lang="fr"><ph id="1">width: 75%</ph>
+<ph id="2">name: en_qgis_add_vector_join_wiki</ph></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">Screenshot of the Add Vector join tool.
+<ph id="1">:::</ph></source>
+<target xml:lang="fr">Screenshot of the Add Vector join tool.
+<ph id="1">:::</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>

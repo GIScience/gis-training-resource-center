@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_1/en_qgis_module_1_exercises.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">Exercises for Module 1 <bpt id="1">&lt;a id="exercises-for-module-1"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Exercises for Module 1 <bpt id="1">&lt;a id="exercises-for-module-1"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">This page has all the exercises from Module 1 - Introduction to GIS.</source>
+<target xml:lang="fr">This page has all the exercises from Module 1 - Introduction to GIS.</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">In all the exercises you find a list of relevant wiki articles and videos. Whenever you are stuck, have a look at the wiki. If you still have questions afterwards, contact your trainers.</source>
+<target xml:lang="fr">In all the exercises you find a list of relevant wiki articles and videos. Whenever you are stuck, have a look at the wiki. If you still have questions afterwards, contact your trainers.</target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Exercise</source>
+<target xml:lang="fr">Exercise</target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Description</source>
+<target xml:lang="fr">Description</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Focus Group</source>
+<target xml:lang="fr">Focus Group</target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Estimated time</source>
+<target xml:lang="fr">Estimated time</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 1: Understanding the QGIS interface<ept id="2">](/content/Module_1/en_qgis_interface_ex1.md)</ept><ept id="1">__</ept></source>
+<target xml:lang="fr"><bpt id="1">__</bpt><bpt id="2">[</bpt>Exercise 1: Understanding the QGIS interface<ept id="2">](/content/Module_1/en_qgis_interface_ex1.md)</ept><ept id="1">__</ept></target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en">This exercise gives a comprehensive overview of the interface of QGIS and teaches how to create, save, and open a QGIS-project. It explains how to find toolbars and panels, and how to move panels around.</source>
+<target xml:lang="fr">This exercise gives a comprehensive overview of the interface of QGIS and teaches how to create, save, and open a QGIS-project. It explains how to find toolbars and panels, and how to move panels around.</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en">QGIS Essentials</source>
+<target xml:lang="fr">QGIS Essentials</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">30 to 60 minutes</source>
+<target xml:lang="fr">30 to 60 minutes</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions" xmlns:its="http://www.w3.org/2005/11/its" xmlns:itsxlf="http://www.w3.org/ns/its-xliff/" its:version="2.0">
+<file original="./content/Module_9/en_qgis_network_analysis_theory.md" source-language="en" target-language="fr" datatype="x-text/markdown" okp:inputEncoding="UTF-8" okp:configId="/home/runner/work/gis-training-resource-center/gis-training-resource-center/./scripts/localisation/okf_markdown@MyST.fprm">
+<body>
+<trans-unit id="tu1" xml:space="preserve">
+<source xml:lang="en"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></source>
+<target xml:lang="fr"><ph id="1">::::{grid} auto</ph>
+<ph id="2">:::{grid-item-card}</ph>
+<ph id="3">:class-card: sd-text-center sd-rounded-circle</ph>
+<ph id="4">:link: https://giscience.github.io/gis-training-resource-center/content/intro.html</ph>
+<ph id="5">{octicon}`home-fill;1.5em;sd-text-danger`</ph>
+<ph id="6">:::</ph>
+<ph id="7">::::</ph></target>
+</trans-unit>
+<trans-unit id="tu2" xml:space="preserve">
+<source xml:lang="en">🚧 This section of the training platform and the entire content is under ⚠️construction⚠️ and
+may not be shared or published! 🚧</source>
+<target xml:lang="fr">🚧 This section of the training platform and the entire content is under ⚠️construction⚠️ and
+may not be shared or published! 🚧</target>
+</trans-unit>
+<trans-unit id="tu3" xml:space="preserve">
+<source xml:lang="en">(content:references:module9:network-theory)=</source>
+<target xml:lang="fr">(content:references:module9:network-theory)=</target>
+</trans-unit>
+<trans-unit id="tu4" xml:space="preserve">
+<source xml:lang="en">Spatial Network Analysis Theory <bpt id="1">&lt;a id="spatial-network-analysis-theory"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Spatial Network Analysis Theory <bpt id="1">&lt;a id="spatial-network-analysis-theory"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu5" xml:space="preserve">
+<source xml:lang="en">Understanding Networks: Analysis and Insights <bpt id="1">&lt;a id="understanding-networks-analysis-and-insights"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Understanding Networks: Analysis and Insights <bpt id="1">&lt;a id="understanding-networks-analysis-and-insights"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu6" xml:space="preserve">
+<source xml:lang="en">Networks serve as simplified representations of real-world systems. A network comprises nodes and edges, representing entities and their relationships respectively. Rather than being defined by coordinates, positions within a network are determined by connectivity. In GIS (Geographic Information Systems), networks play integral roles in transportation modeling and supply chain networks such as water and energy distribution. Additionally, they are utilized for analyzing the service areas of healthcare facilities. For instance, analyses can assess areas vulnerable to flooding to ascertain the potential impact on healthcare services during a disaster.</source>
+<target xml:lang="fr">Networks serve as simplified representations of real-world systems. A network comprises nodes and edges, representing entities and their relationships respectively. Rather than being defined by coordinates, positions within a network are determined by connectivity. In GIS (Geographic Information Systems), networks play integral roles in transportation modeling and supply chain networks such as water and energy distribution. Additionally, they are utilized for analyzing the service areas of healthcare facilities. For instance, analyses can assess areas vulnerable to flooding to ascertain the potential impact on healthcare services during a disaster.</target>
+</trans-unit>
+<trans-unit id="tu7" xml:space="preserve">
+<source xml:lang="en">Components of a Graph <bpt id="1">&lt;a id="components-of-a-graph"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Components of a Graph <bpt id="1">&lt;a id="components-of-a-graph"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu8" xml:space="preserve">
+<source xml:lang="en">Creating a graph involves defining its nodes (vertices) and edges (connections between nodes).</source>
+<target xml:lang="fr">Creating a graph involves defining its nodes (vertices) and edges (connections between nodes).</target>
+</trans-unit>
+<trans-unit id="tu9" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Defining Nodes:<ept id="1">**</ept> entities, objects, locations <bpt id="2">**</bpt>→<ept id="2">**</ept> Features in OpenStreetMap (hospitals, schools etc.)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Defining Nodes:<ept id="1">**</ept> entities, objects, locations <bpt id="2">**</bpt>→<ept id="2">**</ept> Features in OpenStreetMap (hospitals, schools etc.)</target>
+</trans-unit>
+<trans-unit id="tu10" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Identifying Edges:<ept id="1">**</ept> roads or pathways between locations <bpt id="2">**</bpt>→<ept id="2">**</ept> Ways in OpenStreetMap (roads, paths, cycleways)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Identifying Edges:<ept id="1">**</ept> roads or pathways between locations <bpt id="2">**</bpt>→<ept id="2">**</ept> Ways in OpenStreetMap (roads, paths, cycleways)</target>
+</trans-unit>
+<trans-unit id="tu11" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Additional Information<ept id="1">**</ept>
+Edges can be endowed with diverse weights. OpenStreetMap features tags such as road type, segment length, speed limit, and surface condition, which can be interpreted as weight attributes. Depending on your requirements, you  can compute the shortest route or opt for the route with minimal elevation gain.</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Additional Information<ept id="1">**</ept>
+Edges can be endowed with diverse weights. OpenStreetMap features tags such as road type, segment length, speed limit, and surface condition, which can be interpreted as weight attributes. Depending on your requirements, you  can compute the shortest route or opt for the route with minimal elevation gain.</target>
+</trans-unit>
+<trans-unit id="tu12" xml:space="preserve">
+<source xml:lang="en">Dijkstra Algorithm <bpt id="1">&lt;a id="dijkstra-algorithm"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Dijkstra Algorithm <bpt id="1">&lt;a id="dijkstra-algorithm"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu13" xml:space="preserve">
+<source xml:lang="en">E. W. Dijkstra</source>
+<target xml:lang="fr">E. W. Dijkstra</target>
+</trans-unit>
+<trans-unit id="tu14" xml:space="preserve">
+<source xml:lang="en">Discovered 1956, published 1959</source>
+<target xml:lang="fr">Discovered 1956, published 1959</target>
+</trans-unit>
+<trans-unit id="tu15" xml:space="preserve">
+<source xml:lang="en">Single pair shortest path algorithm (SPSP) - for directions / A → B routing</source>
+<target xml:lang="fr">Single pair shortest path algorithm (SPSP) - for directions / A → B routing</target>
+</trans-unit>
+<trans-unit id="tu16" xml:space="preserve">
+<source xml:lang="en">Single source shortest path algorithm (SSSP) - for isochrones</source>
+<target xml:lang="fr">Single source shortest path algorithm (SSSP) - for isochrones</target>
+</trans-unit>
+<trans-unit id="tu17" xml:space="preserve">
+<source xml:lang="en">Base of a multitude of routing algorithms</source>
+<target xml:lang="fr">Base of a multitude of routing algorithms</target>
+</trans-unit>
+<trans-unit id="tu18" xml:space="preserve">
+<source xml:lang="en">Analysis <bpt id="1">&lt;a id="analysis"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Analysis <bpt id="1">&lt;a id="analysis"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu19" xml:space="preserve">
+<source xml:lang="en">You can determine directions or standard routes, which unveil the shortest path between two points. Isochrones offer insight into the area accessible within a specified time or distance threshold. Additionally, generating a matrix enables the assessment of time or distance between predefined locations. Alternatively, graphs facilitate travel optimization by computing the most efficient sequence for visiting a given set of points.</source>
+<target xml:lang="fr">You can determine directions or standard routes, which unveil the shortest path between two points. Isochrones offer insight into the area accessible within a specified time or distance threshold. Additionally, generating a matrix enables the assessment of time or distance between predefined locations. Alternatively, graphs facilitate travel optimization by computing the most efficient sequence for visiting a given set of points.</target>
+</trans-unit>
+<trans-unit id="tu20" xml:space="preserve">
+<source xml:lang="en">Openrouteservice <bpt id="1">&lt;a id="openrouteservice"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Openrouteservice <bpt id="1">&lt;a id="openrouteservice"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu21" xml:space="preserve">
+<source xml:lang="en">General Information <bpt id="1">&lt;a id="general-information"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">General Information <bpt id="1">&lt;a id="general-information"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu22" xml:space="preserve">
+<source xml:lang="en">Graphhopper based routing machine since 2008</source>
+<target xml:lang="fr">Graphhopper based routing machine since 2008</target>
+</trans-unit>
+<trans-unit id="tu23" xml:space="preserve">
+<source xml:lang="en">Completely Open-Source</source>
+<target xml:lang="fr">Completely Open-Source</target>
+</trans-unit>
+<trans-unit id="tu24" xml:space="preserve">
+<source xml:lang="en">Global public API</source>
+<target xml:lang="fr">Global public API</target>
+</trans-unit>
+<trans-unit id="tu25" xml:space="preserve">
+<source xml:lang="en">updates every week</source>
+<target xml:lang="fr">updates every week</target>
+</trans-unit>
+<trans-unit id="tu26" xml:space="preserve">
+<source xml:lang="en">more than 100GB RAM per routing profile</source>
+<target xml:lang="fr">more than 100GB RAM per routing profile</target>
+</trans-unit>
+<trans-unit id="tu27" xml:space="preserve">
+<source xml:lang="en">some limitations due to computational capacities</source>
+<target xml:lang="fr">some limitations due to computational capacities</target>
+</trans-unit>
+<trans-unit id="tu28" xml:space="preserve">
+<source xml:lang="en">Can also run on your local laptop</source>
+<target xml:lang="fr">Can also run on your local laptop</target>
+</trans-unit>
+<trans-unit id="tu29" xml:space="preserve">
+<source xml:lang="en">a small to medium country with one profile</source>
+<target xml:lang="fr">a small to medium country with one profile</target>
+</trans-unit>
+<trans-unit id="tu30" xml:space="preserve">
+<source xml:lang="en">freedom of choice on limitations</source>
+<target xml:lang="fr">freedom of choice on limitations</target>
+</trans-unit>
+<trans-unit id="tu31" xml:space="preserve">
+<source xml:lang="en">Different routing profiles (car, hgv, bike, pedestrian, wheelchair)</source>
+<target xml:lang="fr">Different routing profiles (car, hgv, bike, pedestrian, wheelchair)</target>
+</trans-unit>
+<trans-unit id="tu32" xml:space="preserve">
+<source xml:lang="en">Services <bpt id="1">&lt;a id="services"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Services <bpt id="1">&lt;a id="services"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu33" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Directions/standard routing<ept id="1">**</ept>: Shortest path between two locations</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Directions/standard routing<ept id="1">**</ept>: Shortest path between two locations</target>
+</trans-unit>
+<trans-unit id="tu34" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Isochrones<ept id="1">**</ept>: Area reachable within a limit (time | distance)</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Isochrones<ept id="1">**</ept>: Area reachable within a limit (time | distance)</target>
+</trans-unit>
+<trans-unit id="tu35" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Matrix<ept id="1">**</ept>: Times / Distances between a set of locations</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Matrix<ept id="1">**</ept>: Times / Distances between a set of locations</target>
+</trans-unit>
+<trans-unit id="tu36" xml:space="preserve">
+<source xml:lang="en"><bpt id="1">**</bpt>Optimization<ept id="1">**</ept>: Best order to visit a set of points</source>
+<target xml:lang="fr"><bpt id="1">**</bpt>Optimization<ept id="1">**</ept>: Best order to visit a set of points</target>
+</trans-unit>
+<trans-unit id="tu37" xml:space="preserve">
+<source xml:lang="en">This module provides an accessibility analysis based on Openrouteservice isochrones.</source>
+<target xml:lang="fr">This module provides an accessibility analysis based on Openrouteservice isochrones.</target>
+</trans-unit>
+<trans-unit id="tu38" xml:space="preserve">
+<source xml:lang="en">Isochrones <bpt id="1">&lt;a id="isochrones"></bpt><ept id="1">&lt;/a></ept></source>
+<target xml:lang="fr">Isochrones <bpt id="1">&lt;a id="isochrones"></bpt><ept id="1">&lt;/a></ept></target>
+</trans-unit>
+<trans-unit id="tu39" xml:space="preserve">
+<source xml:lang="en">Different profiles: car, pedestrian, bike, heavy goods vehicles (HGV)</source>
+<target xml:lang="fr">Different profiles: car, pedestrian, bike, heavy goods vehicles (HGV)</target>
+</trans-unit>
+<trans-unit id="tu40" xml:space="preserve">
+<source xml:lang="en">Avoid areas, avoid, road types</source>
+<target xml:lang="fr">Avoid areas, avoid, road types</target>
+</trans-unit>
+<trans-unit id="tu41" xml:space="preserve">
+<source xml:lang="en">Further dynamic preferences: green routing, noise aware routing, landmark routing, (heat aware routing)</source>
+<target xml:lang="fr">Further dynamic preferences: green routing, noise aware routing, landmark routing, (heat aware routing)</target>
+</trans-unit>
+<trans-unit id="tu42" xml:space="preserve">
+<source xml:lang="en">Based on profile and preferences what area is reachable within a given time limit?</source>
+<target xml:lang="fr">Based on profile and preferences what area is reachable within a given time limit?</target>
+</trans-unit>
+<trans-unit id="tu43" xml:space="preserve">
+<source xml:lang="en">Determine: reachability, catchment areas</source>
+<target xml:lang="fr">Determine: reachability, catchment areas</target>
+</trans-unit>
+<trans-unit id="tu44" xml:space="preserve">
+<source xml:lang="en">Max. 60minutes on the public API</source>
+<target xml:lang="fr">Max. 60minutes on the public API</target>
+</trans-unit>
+<trans-unit id="tu45" xml:space="preserve">
+<source xml:lang="en">SDKs &amp; Plugins: Python, R, JavaScript, QGIS Plugin "ORS Tools"</source>
+<target xml:lang="fr">SDKs &amp; Plugins: Python, R, JavaScript, QGIS Plugin "ORS Tools"</target>
+</trans-unit>
+<trans-unit id="tu46" xml:space="preserve">
+<source xml:lang="en">For more information click here: <it id="1" pos="open">[</it><ph id="2">https://openrouteservice.org/]</ph></source>
+<target xml:lang="fr">For more information click here: <it id="1" pos="open">[</it><ph id="2">https://openrouteservice.org/]</ph></target>
+</trans-unit>
+</body>
+</file>
+</xliff>
