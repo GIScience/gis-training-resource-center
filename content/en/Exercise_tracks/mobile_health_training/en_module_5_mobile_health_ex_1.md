@@ -9,7 +9,8 @@
 
 
 %% To Do:
-%% SPECIFY 
+%% SPECIFY TARGET POPULATION
+%% 
 %% --- ---
 %% Cut from draft: Before proposing where an MHU should go, you first need to show, with evidence, who currently lacks reasonable access to primary healthcare (PHC) — and to be honest about what a GIS access model can and cannot tell you about that.
 
@@ -114,6 +115,8 @@ __Wrap up:__
 In the municipios XX and XX, it is confirmed that the local national society will run a mobile health programme to complement local health post and hospital system. The need is confirmed, and the donor signalled 
 
 You are tasked to design the route of the programme and assess the population reached with this route. The funding for the first 12 months is secured with the aim to complete at least 10 deployments of the mobile health unit. 
+
+According to the SPHERE standards, a minimum of 80% of the population must live within a one hour walking distance from a primary healthcare facilities. Additionally, in rural areas, it is estimated that at least 1 primary healthcare facility is needed for 50 000 inhabitants
 %% AND REACH XXXX INHABITANTS?
 %% ADD SOME MORE CONTEXTUAL INFORMATION ABOUT THE COL/VEN BORDER REGION?
 
@@ -208,18 +211,34 @@ In your QGIS window, in the top bar, navigate to `Web` → `ORS tools` → `Prov
 
 ### Task 4: Estimate the demographic distribution for each proposed MHU stops
 
-Stopping at each proposed stop wouldn't be logistically feasible. Furthermore, in some cases, there is already a fixed primary healthcare facility present, so adding additional MHU stops 
+Stopping at each proposed stop wouldn't be logistically feasible. It is your task to find a route that can be done in approximately 2 weeks time and adds substantial new coverage. Keep in mind that we do not want to duplicate existing healthcare coverage and it will be impossible to cover the entire population. Knowing which areas are not covered is also very valuable. In some cases, there is already a fixed primary healthcare facility present, so adding additional MHU stops. 
 
+In this step, we want to calculate the demographic characteristics of the population living inside our new isochrones:
+
+1. Calculate the general population living inside the isochrones using `Zonal statistics`. 
+2. Calculate the zonal statistics for the population under 5 and 
+3. We want to have all this information in a single layer. If the new columns are not in a single layer yet, we can combine the layers with the tool `Join layers by field value`. 
+4. 
+
+%% Review and fill in target population
+
+> Great, we now have the demographic distribution for each stop, we can investigate the data by classifying the data in the symbolisation tab. 
 
 
 ### Task 5: Evaluating additional information
 
-From the communities, we have received additional information on the current healthcare system and coverage. Below, you will find short summaries of the reports
+In this step, we want to evaluate which proposed MHU stops make the most sense. For this, we want to see where we can reach the largest population, and where we would not duplicate existing healthcare structures. We want a route that can be done within 14 days. Per day, we estimated that the MHU medical team can see about 20 patients. The MHU is equipped with a state of the art medical bus and can be operational within 2 hours upon arrival, so we can count the day of arrival as the start of the consultations. We assume that upon arrival, around 10% percent of the population will seek out primary healthcare services.   
+From the communities, we have received additional information on the current healthcare system and coverage. Below, you will find short summaries of the reports. 
 
 
 :::{card} 
 
-In the 
+
+:::
+
+
+:::{card}
+
 
 :::
 
