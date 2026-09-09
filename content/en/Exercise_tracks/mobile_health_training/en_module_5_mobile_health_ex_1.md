@@ -194,18 +194,23 @@ The layer `col_t_05_2026_CN_100m_R2025A_v1` contains the population aged 5 and o
 
     - Clip the raster files to our AOI.
     - Open the [raster calcualtor](../../Module_8/en_qgis_raster_operations.md)
-    - Add the clipped layers and save the file in `/data/temp/` under `AOI_pop_under_5_t_AOI.tif` 
+    - Add the clipped layers and save the file in `/data/temp/` under `AOI_pop_under_5_t_2026.tif`.
 
+<details>
+<summary>Hint</summary>
+  
+- In the raster calculator in the top left box, you can select the raster layers and associated raster bands in the top left box "Raster Bands". 
+- Select one of the clipped population raster and <kbd>Double-click</kbd> on it to add it to the Raster Calculator Expression and add a `+` after the layer, then add the next raster band to the expression.
+</detail>
 
 3. Calculate the population of women in childbearing age (15 - 49) per municipio:
+    - Identify the .tiff files in the `data/input/col_agesex_structures_2026_CN_100m_R2025A_v1/`-folder that represent the female population from age 15 until 49.
+    - Add them to the project, clip, them, and use the raster calculator to calculate the new raster. 
     
-4. Take a look at the distribution of healthcare facilities in the AOI
+4. Take a look at the distribution of healthcare facilities in the AOI.
 %% 5. Take a look at the distribution of the the PHC Accessibility
 %% Discussion point (see end of exercise): our facility dataset tells us a facility exists, not what it can treat or whether it has capacity — what would you want to know from the field before trusting this layer?
 
-
-
-> RESULT: 
 
 ### Task 3: Calculate the potential coverage of the proposed MHU stops
 
