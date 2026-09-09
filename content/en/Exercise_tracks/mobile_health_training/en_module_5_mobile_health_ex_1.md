@@ -184,10 +184,20 @@ Worldpop offers population estimates by age groups and gender. In the data folde
 <details>
 <summary>Hint</summary>
 
-test
-
+The correct layers are called:
+    - `col_t_05_2026_CN_100m_R2025A_v1`
+    - `col_t_05_2026_CN_100m_R2025A_v1`
+    - `col_t_00_2026_CN_100m_R2025A_v1`
 
 </details>
+
+    - Clip the raster files to our AOI.
+    - Open the [raster calcualtor](../../Module_8/en_qgis_raster_operations.md.md)
+<details>
+<summary>Hint</summary>
+
+
+
 
 3. Calculate the population of women in childbearing age (15 - 49) per municipio:
     
