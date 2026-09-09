@@ -63,7 +63,7 @@ To clip a raster layer:
 
 
 
-### Raster Calculator <a id="raster-calculator"></a>
+## Raster Calculator <a id="raster-calculator"></a>
 
 The raster calculator let's you perform mathematical operations with the raster values using one or multiple raster layers. Similar to the [field calculator]() for vector data, you can enter expressions. These expressions can include arithmetic operations such as multiplication, comparison operators such as `<`. `>`, `=`, conditional expressions like "IF" "THEN" statements, and statistical functions such as "mean" or "sum". 
 
@@ -99,7 +99,7 @@ In the raster calculator,
 
 
 
-### Zonal Statistics <a id="zonal-statistics"></a>
+## Zonal Statistics <a id="zonal-statistics"></a>
 
 The Zonal Statistics tool calculates statistics (like mean, median, sum, etc.) for each zone. A zone can be a polygon of a vector layer or another raster layer.  This is particularly useful for analyzing raster data within defined geographic zones, such as administrative boundaries or land use classes. For example, with a population raster dataset, we can calculate the population sum per district using a vector layer with administrative boundaries. Or, we could calculate the mean temperature of a country. 
 
@@ -138,6 +138,6 @@ Interface of the "Zonal statistics" tool
 
 
 
-## Vectorise <a id="vectorise"></a>
+%% ## Vectorise <a id="vectorise"></a>
 
 
