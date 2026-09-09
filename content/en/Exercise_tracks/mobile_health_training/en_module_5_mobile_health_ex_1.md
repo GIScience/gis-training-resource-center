@@ -180,23 +180,21 @@ Worldpop offers population estimates by age groups and gender. In the data folde
 %% Are almost 4 GB to much for the training/for the trainees to handle?
 
 2. Calculate the population under 5 per municipio
-    - Add the tif files for the age groups 0, 1, and 5. 
+    - Add the tif files for the age groups 0, and 1.
 <details>
 <summary>Hint</summary>
 
 The correct layers are called:
-    - `col_t_05_2026_CN_100m_R2025A_v1`
-    - `col_t_05_2026_CN_100m_R2025A_v1`
+    - `col_t_01_2026_CN_100m_R2025A_v1`
     - `col_t_00_2026_CN_100m_R2025A_v1`
+
+The layer `col_t_05_2026_CN_100m_R2025A_v1` contains the population aged 5 and over. 
 
 </details>
 
     - Clip the raster files to our AOI.
-    - Open the [raster calcualtor](../../Module_8/en_qgis_raster_operations.md.md)
-<details>
-<summary>Hint</summary>
-
-
+    - Open the [raster calcualtor](../../Module_8/en_qgis_raster_operations.md)
+    - Add the clipped layers and save the file in `/data/temp/` under `AOI_pop_under_5_t_AOI.tif` 
 
 
 3. Calculate the population of women in childbearing age (15 - 49) per municipio:
