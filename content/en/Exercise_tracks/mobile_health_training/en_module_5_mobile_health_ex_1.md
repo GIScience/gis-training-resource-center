@@ -10,7 +10,7 @@
 
 %% To Do:
 %% SPECIFY TARGET POPULATION
-%%
+%% MAYBE ALSO ADD THAT WE ARE USING INCOMPLETE PROXY DATA (HDX), SOME AREAS DONT HAVE GOOD DATA AVAILABLE SO IT WOULD ALSO BE YOUR JOB TO IDENTIFY DATA GAPS AND IN A REAL OPERATION YOU WOULD IDEALLY BE ABLE TO FILL THE GAPS THROUGH INFORMANTS OR ...
 %% --- ---
 %% Cut from draft: Before proposing where an MHU should go, you first need to show, with evidence, who currently lacks reasonable access to primary healthcare (PHC) — and to be honest about what a GIS access model can and cannot tell you about that.
 
@@ -171,11 +171,31 @@ In this step, we want to get an overview of the target population. On top of gen
 We will estimate the population distribution based on the population data provided by [WorldPop](https://hub.worldpop.org/). Keep in mind that these numbers are estimations, and not definitive numbers by a census. The analysis should be adapted with data from the field and the communities to better understand the actual needs of the population. 
 
 1. Calculate the demographic distribution per municipio (Tip: using zonal statistics)
+::::{margin}
+:::{tip}
+Worldpop offers population estimates by age groups and gender. In the data folder locate `col_agesex_structures_2026_R2025A_v1`. The folder has estimated population for age groups 0, 1, 5, and then in five year groups until 80+. 
+
+:::
+::::
+%% Are almost 4 GB to much for the training/for the trainees to handle?
+
 2. Calculate the population under 5 per municipio
-3. Calculate the population of women in childbearing age (15 - 46) per municipio
+    - Add the tif files for the age groups 0, 1, and 5. 
+<details>
+<summary>Hint</summary>
+
+test
+
+
+</details>
+
+3. Calculate the population of women in childbearing age (15 - 49) per municipio:
+    
 4. Take a look at the distribution of healthcare facilities in the AOI
 %% 5. Take a look at the distribution of the the PHC Accessibility
 %% Discussion point (see end of exercise): our facility dataset tells us a facility exists, not what it can treat or whether it has capacity — what would you want to know from the field before trusting this layer?
+
+
 
 > RESULT: 
 
