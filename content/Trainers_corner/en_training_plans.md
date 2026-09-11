@@ -1,1 +1,0 @@
-# Basic QGIS Training: Full training
