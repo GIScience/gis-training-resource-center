@@ -98,7 +98,7 @@ With the SD card inserted, connect the card reader to a computer.
 
 ### 3. Sign in to Panoramax <a id="3-sign-in-to-panoramax"></a>
 
-Open the AILAS project's [Panoramax website](https://panoramax.heigit.org) and click "Log in" on the right side of the top navigation bar.
+Open the AILAS project's [Panoramax website](https://madagascar-panoramax.heigit.org) and click "Log in" on the right side of the top navigation bar.
 
 ```{figure} ../../../fig/AILAS_Panoramax_login_en.png
 ---
@@ -114,7 +114,7 @@ If this is your first time logging in, you will use an initial password provided
 
 :::{admonition} Other Panoramax instances
 :class: tip
-For the AILAS project, images are expected to be uploaded to a [specific instance of Panoramax](https://panoramax.heigit.org). Access to the images on this instance is restricted to selected humanitarian partners. If you do not have access to this instance, but want to share your street-level imagery _in the public_, check out available public instances at https://panoramax.fr.
+For the AILAS project, images are expected to be uploaded to a [specific instance of Panoramax](https://madagascar-panoramax.heigit.org). Access to the images on this instance is restricted to selected humanitarian partners. If you do not have access to this instance, but want to share your street-level imagery _in the public_, check out available public instances at https://panoramax.fr.
 :::
 
 ### 4. Upload images <a id="4-upload-images"></a>

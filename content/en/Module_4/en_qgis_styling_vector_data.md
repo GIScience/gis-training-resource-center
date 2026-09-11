@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -12,7 +12,7 @@ The previous chapter went over the fundamentals of graphical symbolisation and t
 
 ## Styling Panel <a id="styling-panel"></a>
 
-:::{figure} ../../fig/en_30.30.2_styling_panel.png
+:::{figure} ../../../fig/en_30.30.2_styling_panel.png
 ---
 height: 400px
 name: en_30.30.2_styling_panel
@@ -23,7 +23,7 @@ Styling panel in QGIS 3.30.2.
 
 For each layer in QGIS, there is a styling panel where you can change the symbology, colour and label for the features in that layer. There are two ways to open the layer styling options in QGIS:  
 
-1. Right click on the layer you wish to style and select `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `ymbology`-tab. 
+1. Right click on the layer you wish to style and select `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology`-tab. 
 2. Open the layer styling panel by enabling it under `View` → `Panels` → `Styling Panel`. Usually, the panel will appear on the right side of the map canvas.
 
 On the left of the styling panel you can choose the different tabs to access different styling options.
@@ -38,7 +38,7 @@ In the styling panel you can change the styling for all features of a layer, set
 
 You can use graphical variables to style vector data. As we have already learned, vector data can be either points, lines, or polygons. There are different options to symbolize these different types of vector data. 
 
-:::{figure} ../../fig/en_symbolization_vector_data.png
+:::{figure} ../../../fig/en_symbolization_vector_data.png
 ---
 name: en_symbolization_vector_data
 width: 750px
@@ -132,7 +132,7 @@ To change the symbology of a single layer:
 3. Click on the arrow to the right of `Fill Colour`.
 4. Check the `Transparent Fill` option.
 
-:::{figure} ../../fig/en_30.30.2_vector_layer_styling_transparent.png
+:::{figure} ../../../fig/en_30.30.2_vector_layer_styling_transparent.png
 ---
 name: en_30.30.2_vector_layer_styling_transparent
 width: 500 px
@@ -152,7 +152,7 @@ __Step 1: Ordering the layers__
 1. Import the administrative boundaries into your QGIS-project.
 2. We need to order the layers in the Layers panel so that the `adm0`-layer sits on top, followed by `adm1` and `adm2`. At first, this might look weird because `Adm0` will cover everything.
 
-:::{figure} ../../fig/en_30.30.2_changing_layer_style_1.png
+:::{figure} ../../../fig/en_30.30.2_changing_layer_style_1.png
 ---
 name: en_30.30.2_changing_layer_style_1
 height: 400px 
@@ -172,7 +172,7 @@ Order the layers and navigate to the styling panel of the topmost layer.
 12. Use the same Stroke Colour` as for Adm0 and Adm1, but make the width 0.1 Millimeters and the Stroke Style a __Dash Line__.
 13. Click OK and look at your map: Hopefully it's starting to look nicer!
 
-:::{figure} ../../fig/en_30.30.2_changing_layer_style_3.png
+:::{figure} ../../../fig/en_30.30.2_changing_layer_style_3.png
 ---
 width: 500 px
 name: en_30.30.2_changing_layer_style_3
@@ -198,7 +198,7 @@ If a layer contains numeric values that are continuous, they can be organized in
 4. Open its `Symbology` options and choose `Graduated`.
 5. __Select the value you want to use to assign colours__, in this case, it will be `total_pop`.
 
-:::{figure} ../../fig/en_30.30.2_symbology_variable_ranges.png
+:::{figure} ../../../fig/en_30.30.2_symbology_variable_ranges.png
 ---
 name: en_30.30.2_symbology_variable_ranges
 width: 550px
@@ -212,7 +212,7 @@ With variable ranges, select __Graduated__ symbology and choose the attribute wi
 9. Click on __the arrow next to the colour ramp__ to choose another combination of colours - let's say a color ramp from white to blue.
 10. Click `Apply` to preview the look of your layer, then `OK`.
 
-:::{figure} ../../fig/en_30.30.2_symbology_variable_ranges_2.png
+:::{figure} ../../../fig/en_30.30.2_symbology_variable_ranges_2.png
 ---
 name: en_30.30.2_symbology_variable_ranges_2
 width: 500px
@@ -222,7 +222,7 @@ You can categorize the continuous values into classes and assign a colour ramp.
 
 The following map shows the most populated States of Nigeria using a graduated colour categorization. These types of maps are called __Choropleth maps__. 
 
-:::{figure} ../../fig/en_map_design_example_variable_ranges.png
+:::{figure} ../../../fig/en_map_design_example_variable_ranges.png
 ---
 name: en_map_design_example_variable_ranges
 width: 500px
@@ -291,12 +291,12 @@ We can use symbology to __show the difference between features__ in the same lay
 Categorized symbology is used when you have ***discrete*** variables.
 :::
 
-:::{figure} ../../fig/en_30.30.2_categorized_layer_symbology_1.png
+:::{figure} ../../../fig/en_30.30.2_categorized_layer_symbology_1.png
 ---
 name: en_30.30.2_categorized_layer_symbology_1
 width: 500px
 ---
-Change the symbology type to "categorised" and choose the `value` (attribute) you wish to display.
+Change the symbology type to "Categorised" and choose the `Value` (attribute) you wish to display.
 :::
 
 3. Now we need to __choose which attributes we want to display through the symbology__. In this case, it could be the number of casualties, or the actor who perpetrated the act. Let's categorize the features by `event_type`.
@@ -307,7 +307,7 @@ Change the symbology type to "categorised" and choose the `value` (attribute) yo
 8. Click on `OK`, then Apply to preview what the layer will look like.
 9. Click `OK` again. 
 
-:::{figure} ../../fig/en_30.30.2_categorized_layer_symbology_2.png
+:::{figure} ../../../fig/en_30.30.2_categorized_layer_symbology_2.png
 ---
 name: en_30.30.2_categorized_layer_symbology_2
 width: 500px
@@ -317,7 +317,7 @@ By double clicking on the __unique values__ in the classified list, you can chan
 
 Now we have a map of Nigeria where you can locate the areas that are affected by explosions more than others. On the map below, we also added text labels, which will be explained below.
 
-:::{figure} ../../fig/en_exercise_map_design_example_Nigeria.png
+:::{figure} ../../../fig/en_exercise_map_design_example_Nigeria.png
 ---
 name: en_exercise_map_design_example_Nigeria
 width: 500px
@@ -353,7 +353,7 @@ On top of simple markers, QGIS lets you also use SVG-symbols and raster images a
 In some cases, you might want to use more complex symbols in your map. For example, you want to use a cross to signify a hospital, a book to signify a library, or a plane to signify an airport. In these cases, you can use SVG-symbols. Keep in mind that, ordinarily, SVG-symbols work only for point data. 
 To use SVG-symbols:
 
-1. Open the styling panel and open the `single marker` options.
+1. Open the styling panel and open the `Single marker` options.
 2. Under `Symbol layer type`, select __"SVG Marker"__.
 3. Scroll down to the SVG-Browser. Here you will find all the folders of your installed SVG-libraries.
 

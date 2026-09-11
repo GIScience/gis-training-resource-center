@@ -150,7 +150,7 @@ Les étapes clés suivantes sont exécutées dans le modèle :
 
 ### Comment exécuter le modèle <a id="comment-executer-le-modele"></a>
 
-Le [QGIS Model Designer](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer) est un outil visuel qui permet aux utilisateurs de créer et de modifier un flux de travail avec tous les outils disponibles dans QGIS qui peuvent être utilisés de manière répétée, simple et rapide, tout en garantissant la reproductibilité. Il fournit une interface graphique pour créer des flux de travail en connectant des outils et des algorithmes de géomatique. L'utilisateur peut définir les entrées, les sorties et le flux de données entre les différentes étapes de traitement.
+Le [QGIS Model Designer](../Wiki/en_qgis_automatisation_wiki.md#the-qgis-model-designer) est un outil visuel qui permet aux utilisateurs de créer et de modifier un flux de travail avec tous les outils disponibles dans QGIS qui peuvent être utilisés de manière répétée, simple et rapide, tout en garantissant la reproductibilité. Il fournit une interface graphique pour créer des flux de travail en connectant des outils et des algorithmes de géomatique. L'utilisateur peut définir les entrées, les sorties et le flux de données entre les différentes étapes de traitement.
 
 
 ### Étape 1 : Explication de la structure des fichiers <a id="etape-1-explication-de-la-structure-des-fichiers"></a>
@@ -284,7 +284,7 @@ Ce groupe comprend les isochrones pour tous les entrepôts, calculées pour des 
 #### Ouvrir le modèle dans QGIS <a id="ouvrir-le-modele-dans-qgis"></a>
 
 Nous allons ouvrir le modèle QGIS :
-1. Dans la barre du haut de votre fenêtre QGIS, naviguez vers `Traîtement` -> `Modeleur`. Une nouvelle fenêtre s'ouvrira. Il s'agit du concepteur de modèles.
+1. Dans la barre du haut de votre fenêtre QGIS, naviguez vers `Traîtement` → `Modeleur`. Une nouvelle fenêtre s'ouvrira. Il s'agit du concepteur de modèles.
 2. Dans le panneau du haut, cliquez sur `Modèle` -> `Ouvrir le Modèle` et naviguez jusqu'à votre dossier "AA_Cyclone_Monitoring_Trigger_MAD/trigger_model".
 3. Sélectionnez "Cyclones_EAP_MAD_Trigger.model3" et cliquez sur `Ouvrir`. Le modèle s'ouvrira et vous verrez des boîtes jaunes, blanches, vertes et grises.
 
@@ -326,7 +326,7 @@ __Outils:__ Modeleur de QGIS
 __Entrées et sorties du modèle:__
 
 
-1. Un modèle QGIS peut être exécuté en naviguant vers la barre du haut > `Modèle` > `Exécuter le modèle` ou en cliquant sur l'icône ![](../../../fig/Module_7/qgis_3.44_run_model.png). 
+1. Un modèle QGIS peut être exécuté en naviguant vers la barre du haut → `Modèle` → `Exécuter le modèle` ou en cliquant sur l'icône ![](../../../fig/Module_7/qgis_3.44_run_model.png). 
 
 
 2. Une nouvelle fenêtre s'ouvrira. Vous devrez y définir les entrées et les sorties du modèle. Pour chacune de ces entrées obligatoires, cliquez sur la flèche déroulante et sélectionnez le fichier correspondant.
@@ -361,7 +361,7 @@ Si vous ne spécifiez pas l'emplacement où sauvegarder les fichiers de sortie, 
 :::
 ::::
 
-4. Plus bas, vous devez spécifier où sauvegarder les sorties. Pour chaque sortie, cliquez sur les trois points ![](../../../fig/Three_points.png) > `Enregistrer dans un Geopackage...`. Une fenêtre de l'explorateur de fichiers s'ouvrira. Naviguez jusqu'au dossier `.../AA_Cyclone_Monitoring_Trigger_MDG/model_outputs/` et donnez-lui __le nom de la couche de sortie et la date__ (AAAAMMJJ). 
+4. Plus bas, vous devez spécifier où sauvegarder les sorties. Pour chaque sortie, cliquez sur les trois points ![](../../../fig/Three_points.png) → `Enregistrer dans un Geopackage...`. Une fenêtre de l'explorateur de fichiers s'ouvrira. Naviguez jusqu'au dossier `.../AA_Cyclone_Monitoring_Trigger_MDG/model_outputs/` et donnez-lui __le nom de la couche de sortie et la date__ (AAAAMMJJ). 
     1. `Exposed_Cyclone_Area_AAAAMMJJ`, par exemple, `Exposed_Cyclone_Area_20250805`
     2. Une des sorties s'appelle `Spreadsheet_Exposed_District` pour laquelle le modèle produira un fichier `.csv`. Pour cette couche, choisissez `Enregistrer vers un fichier...`, naviguez jusqu'au dossier `.../AA_Cyclone_Monitoring_Trigger_MDG/model_outputs/` et donnez-lui le nom `Spreadsheet_Exposed_Districts_AAAAMMJJ`
     3. `Exposed_Education_Facilities_points_AAAAMMJJ`
@@ -423,9 +423,9 @@ Nous générerons deux types de cartes différents pour faciliter l'analyse :
 :::
 
 Nous allons créer les cartes en deux étapes:
-Tout d'abord, nous allons utiliser le __[layer styling panel (panneau de style des couches)](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_styling_vector_data.html#styling-panel)__ et le __layer style files (fichiers de style des couches) (.qml)__ pour ajuster la visualisation des couches sur le canevas de la carte.
+Tout d'abord, nous allons utiliser le __[layer styling panel (panneau de style des couches)](../Module_4/en_qgis_styling_vector_data.md#styling-panel)__ et le __layer style files (fichiers de style des couches) (.qml)__ pour ajuster la visualisation des couches sur le canevas de la carte.
 
-La deuxième étape consiste à utiliser le __[print layout composer](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)__ pour créer des cartes imprimables avec des tableaux de données supplémentaires.
+La deuxième étape consiste à utiliser le __[print layout composer](../Module_4/en_qgis_map_design_2.md#print-layout)__ pour créer des cartes imprimables avec des tableaux de données supplémentaires.
 
 <!---
 
@@ -483,20 +483,19 @@ align: center
 
 #### Carte 1: Stylisation des couches <a id="carte-1-stylisation-des-couches"></a>
 
-1. Faites un clic droit sur la couche exposed_districts -> `Propriétés` -> `Symbologie`
-2. Dans le coin inférieur gauche, cliquez sur `Style` -> `Charger le style`
+1. Faites un clic droit sur la couche exposed_districts → `Propriétés` → `Symbologie`
+2. Dans le coin inférieur gauche, cliquez sur `Style` → `Charger le style`
 3. Dans la nouvelle fenêtre, cliquez sur les trois points ![](../../../fig/Three_points.png). Naviguez jusqu'au dossier "AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” et sélectionnez le fichier __“exposed_districts_style.qml”__.
 4. Cliquez sur `Ouvrir`. Cliquez ensuite sur `Charger le style`
-5. De retour dans la fenêtre “Propriétés de la couche” cliquez sur `Appliquer` et `OK`
-
+5. De retour dans la fenêtre “Propriétés de la couche” cliquez sur `Appliquer` et `OK`.
 Répétez ce processus pour les couches de sortie suivantes, ainsi que pour leurs feuilles de style correspondantes:
 
-| Nom de la couche | Style | Remarques
-| ----- | --- | --- |
-|`Admin1_Impact_Overview_Map`| `adm1_style.qml` | préchargé |
-|`CRM_warehouses` | `relevant_warehouses_style.qml` | résultat du modèle |
-|`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| résultat du modèle |
-|`cyclone_track`| `storm_track_cyclone_style.qml`| préchargé |
+| Nom de la couche             | Style                            | Remarques          |
+|------------------------------|----------------------------------|--------------------|
+| `Admin1_Impact_Overview_Map` | `adm1_style.qml`                 | préchargé          |
+| `CRM_warehouses`             | `relevant_warehouses_style.qml`  | résultat du modèle |
+| `exposed_cyclone_area`       | `exposed_cyclone_area_style.qml` | résultat du modèle |
+| `cyclone_track`              | `storm_track_cyclone_style.qml`  | préchargé          |
 
 6. Le style de la couche `CRM_warehouses` n'est pas encore défini. Cliquez avec le bouton droit sur la couche `CRM_warehouses` > `Propriétés` et naviguez à la section `Symbologie`.
   :::{figure} ../../../fig/AA/fr_mdg_aa_fix_warehouse_icon.png
@@ -520,11 +519,11 @@ Pour conserver un espace de travail clair et organisé, regroupez les couches de
 
 #### Carte 1: Création de la mise en page <a id="carte-1-creation-de-la-mise-en-page"></a>
 
-Pour faciliter la visualisation, nous avons créé ces [modèles de carte](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html#map-templates) afin de présenter les résultats de l'analyse des déclencheurs. Ces modèles servent de base à vos propres visualisations et sont disponibles dans le répertoire suivant: `AA_Cyclone_Monitoring_Trigger_MAD/map_templates`. Vous pouvez personnaliser les modèles en fonction de vos besoins et préférences. Vous trouverez de l'aide [ici](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html#print-layout).
+Pour faciliter la visualisation, nous avons créé ces [modèles de carte](../Module_4/en_qgis_map_design_2.html#map-templates) afin de présenter les résultats de l'analyse des déclencheurs. Ces modèles servent de base à vos propres visualisations et sont disponibles dans le répertoire suivant: `AA_Cyclone_Monitoring_Trigger_MAD/map_templates`. Vous pouvez personnaliser les modèles en fonction de vos besoins et préférences. Vous trouverez de l'aide [ici](../Module_4/en_qgis_map_design_2.md#print-layout).
 
 
 1. Désactivez tous les groupes de couches à l'exception du groupe `Map_Cyclone_Impact_Overview` et de la carte de base `OpenStreetMap`.
-2. Ouvrez une nouvelle mise en page en cliquant sur `Projet` -> `Gestionnaire de mise en page`. Une petite fenêtre apparaîtra. Vous pouvez y sélectionner une mise en page existante ou créer une nouvelle mise en page à partir d'un modèle.
+2. Ouvrez une nouvelle mise en page en cliquant sur `Projet` → `Gestionnaire de mise en page`. Une petite fenêtre apparaîtra. Vous pouvez y sélectionner une mise en page existante ou créer une nouvelle mise en page à partir d'un modèle.
 3. Nous voulons créer une nouvelle mise en page à partir d'un modèle. Cliquez sur le menu déroulant `Mise en page vide` et sélectionnez `Spécifique`. 
 4. Ci-dessous, cliquez sur les trois points ![](../../../fig/Three_points.png) et naviguez jusqu'au dossier `../AA_Cyclone_Monitoring_Trigger_MAD/map_templates/` et sélectionnez le fichier nommé `cyclone_impact_overview_map_template`. Cliquez sur `Ouvrir`, enpuis sur `Créer`. 
 5. QGIS vous demandera de nommer la nouvelle mise en page. Donnez-lui un nom tel que "Cyclone_Overview_Map_Freddy_2023". Cliquez sur `OK`. Une nouvelle fenêtre s'ouvrira. Il s'agit du compositeur de mise en page. Il devrait ressembler à la figure ci-dessous.
@@ -660,7 +659,7 @@ Une fois la conception de votre carte terminée, vous pouvez l'exporter au forma
 
 __Exporter en tant qu'image__  
 
-1. Dans la mise en page, cliquez sur `Mise en page` -> `Exporter en tant qu'image`.
+1. Dans la mise en page, cliquez sur `Mise en page` → `Exporter en tant qu'image`.
 2. Choisissez le dossier __map_outputs__. Donnez au fichier le nom de l'événement, par exemple **MDG_Trigger_Impact_Overview_Map_Freddy_2023**.  
 3. Cliquez sur `Sauvegarder`.  
 4. La fenêtre `Options d'exportation d'image` apparaîtra.  
@@ -686,7 +685,7 @@ Couches nécessaires pour cette carte:
 - `Exposed_Population`
 - `Admin1_Impact_Assessment_Map` déjà chargé et stylisé dans QGIS
 
-Cliquez avec le bouton droit sur chaque couche > `Dupliquer la couche` et déplacez les copies vers le groupe "Map_Cyclone_Impact_Assessment"
+Cliquez avec le bouton droit sur chaque couche → `Dupliquer la couche` et déplacez les copies vers le groupe "Map_Cyclone_Impact_Assessment"
 
 ```{figure} ../../../fig/MAD_Trigger_layer_order_impact_map.PNG
 ---
@@ -702,20 +701,20 @@ align: center
 #### Carte 2: Stylisation des couches <a id="carte-2-stylisation-des-couches"></a>
 
 1. Désactivez toutes les couches sauf le groupe "Map_Cyclone_Impact_Assessment" et la carte de base OpenStreetMap.
-2. Cliquez avec le bouton droit sur la couche "exposed_population - copy" (population_exposée copie) -> `Propriétés` -> `Symbologie`
-3. Dans le coin inférieur gauche, cliquez sur `Style` -> `Charger le Style`
+2. Cliquez avec le bouton droit sur la couche "exposed_population - copy" (population_exposée copie) → `Propriétés` → `Symbologie`
+3. Dans le coin inférieur gauche, cliquez sur `Style` → `Charger le Style`
 4. Dans la nouvelle fenêtre, cliquez sur les trois points ![](../../../fig/Three_points.png). Naviguez jusqu'au dossier "AA_Cyclone_Monitoring_Trigger_MAD/layer_styles” et sélectionnez le fichier __“exposed_population_style.qml”__.
 5. Cliquez sur `Ouvrir`. Cliquez ensuite sur `Charger le style`
 6. De retour dans la fenêtre “Propriétés de la couche” cliquez sur `Appliquer` et `OK`
 
 Répétez ce processus pour les couches de sortie suivantes, ainsi que pour leurs feuilles de style correspondantes:
 
-| Nom de la couche | Style | Remarques
-| ----- | --- | --- |
-|`Admin1_Impact_Assessment_Map`| `adm1_style.qml` | préchargé |
-|`CRM_warehouses` | `CRM_warehouses_style.qml` | résultat du modèle |
-|`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| résultat du modèle |
-|`cyclone_track`| `storm_track_cyclone_style.qml`| chargé par l'utilisateur |
+| Nom de la couche               | Style                            | Remarques                |
+|--------------------------------|----------------------------------|--------------------------|
+| `Admin1_Impact_Assessment_Map` | `adm1_style.qml`                 | préchargé                |
+| `CRM_warehouses`               | `CRM_warehouses_style.qml`       | résultat du modèle       |
+| `exposed_cyclone_area`         | `exposed_cyclone_area_style.qml` | résultat du modèle       |
+| `cyclone_track`                | `storm_track_cyclone_style.qml`  | chargé par l'utilisateur |
 
 :::{attention}
 
@@ -731,18 +730,18 @@ Pour conserver un espace de travail clair et organisé, regroupez les couches de
 La documentation couvre la carte d'évaluation de l'impact sur la population exposée. Cependant, le modèle estime également les bâtiments exposés, la couverture terrestre et les établissements de santé et d'enseignement. Ces variables peuvent également être affichées sur la carte à l'aide des fichiers de style suivants. Pour que la carte reste facilement compréhensible, n'utilisez qu'une seule des variables.
 
 
-| Nom de la couche | Style | Remarques
-| ----- | --- | --- |
-|`exposed_population`|`exposed_population_style.qml`|résultat du modèle|
-|`exposed_building`|`exposed_building_style.qml`|résultat du modèle|
-|`exposed_health_facilities`| `exposed_health_facilities_style.qml` | résultat du modèle |
-|`exposed_education_facilities`| `exposed_education_facilities_style.qml` | résultat du modèle |
-|`exposed_agricultural_landcover`| `exposed_agriculture_landcover_style.qml` | résultat du modèle |
-|`exposed_health_facilities_points`| `points_exposed_health_facilities_style.qml` | résultat du modèle |
-|`exposed_education_facilities_points`| `points_exposed_education_facilities_style.qml` | résultat du modèle |
-|`CRM_warehouses` | `CRM_warehouses_style.qml` | résultat du modèle |
-|`exposed_cyclone_area`|`exposed_cyclone_area_style.qml`| résultat du modèle |
-|`cyclone_track`| `storm_track_cyclone_style.qml`| chargé par l'utilisateur |
+| Nom de la couche                      | Style                                           | Remarques                |
+|---------------------------------------|-------------------------------------------------|--------------------------|
+| `exposed_population`                  | `exposed_population_style.qml`                  | résultat du modèle       |
+| `exposed_building`                    | `exposed_building_style.qml`                    | résultat du modèle       |
+| `exposed_health_facilities`           | `exposed_health_facilities_style.qml`           | résultat du modèle       |
+| `exposed_education_facilities`        | `exposed_education_facilities_style.qml`        | résultat du modèle       |
+| `exposed_agricultural_landcover`      | `exposed_agriculture_landcover_style.qml`       | résultat du modèle       |
+| `exposed_health_facilities_points`    | `points_exposed_health_facilities_style.qml`    | résultat du modèle       |
+| `exposed_education_facilities_points` | `points_exposed_education_facilities_style.qml` | résultat du modèle       |
+| `CRM_warehouses`                      | `CRM_warehouses_style.qml`                      | résultat du modèle       |
+| `exposed_cyclone_area`                | `exposed_cyclone_area_style.qml`                | résultat du modèle       |
+| `cyclone_track`                       | `storm_track_cyclone_style.qml`                 | chargé par l'utilisateur |
 <!--Move this somewhere else where it is easier to understand OR add pictures to illustrate the different maps?-->
 ::::
 
@@ -752,7 +751,7 @@ La documentation couvre la carte d'évaluation de l'impact sur la population exp
 Le même processus s'applique aux cinq variables d'impact: population, bâtiments, établissements scolaires, sites de santé et couverture agricole. L'exemple suivant illustre le processus de création de la carte d'impact sur la population. Les autres cartes peuvent être générées en suivant les mêmes étapes.
 ```
 
-1. Ouvrez une nouvelle mise en page en cliquant sur `Projet` -> `Gestionnaire de mise en page`. Une petite fenêtre apparaîtra. Vous pouvez y sélectionner une mise en page existante ou créer une nouvelle mise en page à partir d'un modèle.
+1. Ouvrez une nouvelle mise en page en cliquant sur `Projet` → `Gestionnaire de mise en page`. Une petite fenêtre apparaîtra. Vous pouvez y sélectionner une mise en page existante ou créer une nouvelle mise en page à partir d'un modèle.
 2. Nous voulons créer une nouvelle mise en page à partir d'un modèle. Cliquez sur le menu déroulant `Mise en page vide` et sélectionnez `Spécifique`. 
 3. Ci-dessous, cliquez sur les trois points ![](../../../fig/Three_points.png) et naviguez jusqu'au dossier`../AA_Cyclone_Monitoring_Trigger_MAD/map_templates/` et sélectionnez le fichier nommé `cyclone_impact_population_map_template`. Cliquez sur `Ouvrir`, enpuis sur `Créer`. 
 4.  QGIS vous demandera de nommer la nouvelle mise en page. Donnez-lui un nom tel que "Cyclone_Overview_Map_Freddy_2023". Cliquez sur `OK`. Une nouvelle fenêtre s'ouvrira. Il s'agit du compositeur de mise en page. Il devrait ressembler à la figure ci-dessous.
@@ -1028,7 +1027,7 @@ Une fois la conception de votre carte terminée, vous pouvez l'exporter au forma
 
 __Exporter en tant qu'image__  
 
-1. Dans la mise en page, cliquez sur `Mise en page` -> `Exporter en tant qu'image`.
+1. Dans la mise en page, cliquez sur `Mise en page` → `Exporter en tant qu'image`.
 2. Choisissez le dossier __map_outputs__. Donnez au fichier le nom de l'événement, par exemple **MDG_Trigger_Impact_Overview_Map_Freddy_2023**.  
 3. Cliquez sur `Sauvegarder`.  
 4. La fenêtre `Options d'exportation d'image` apparaîtra.  
@@ -1038,7 +1037,7 @@ L'image se trouve maintenant dans le dossier de résultats.
 
 __Exporter au format PDF__
 
-1. Dans la mise en page d'impression, cliquez sur `Mise en page` -> `Exporter au format PDF`
+1. Dans la mise en page d'impression, cliquez sur `Mise en page` → `Exporter au format PDF`
 2. Sélectionnez le dossier __map_outputs__. Donnez au fichier le nom de l'événement, par exemple **MDG_Trigger_Impact_Overview_Map_Freddy_2023**.  
 3. Cliquez sur `Sauvegarder`.
 4. La fenêtre `Options d'exportation PDF` s'affiche. Pour obtenir les meilleurs résultats, sélectionnez la compression d'image `sans perte`.

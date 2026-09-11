@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: /content/intro
+:link: ../intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::

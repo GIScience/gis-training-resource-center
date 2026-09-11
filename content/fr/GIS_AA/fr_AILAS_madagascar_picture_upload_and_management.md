@@ -52,7 +52,7 @@ Panoramax empêche l’identification des personnes présentes dans les images e
 
 Alors qu’une des principales fonctionnalités de Panoramax est son **métacatalogue global public** qui permet de retrouver les images de toutes les instances fédérées, nous avons délibérément choisi de ne pas rejoindre la fédération avec l’instance Panoramax du projet AILAS. Cela signifie que les images téléversées sur notre instance ne peuvent pas être consultées via l’API globale.
 
-L’API de l’instance Panoramax du projet AILAS fonctionne sur un serveur accessible uniquement depuis notre propre réseau. Les images et leurs dérivés sont stockés dans un bucket privé MinIO. Le site web et l’API donnant accès aux images et aux données sont actuellement hébergés sur un réseau fermé.
+L’instance Panoramax utilisée par le projet AILAS a un paramètre par défaut qui rend les images téléversées visibles uniquement aux utilisateurs connectés du site web. Les utilisateurs ne peuvent pas créer eux-mêmes de compte sur cette instance Panoramax ; les comptes doivent être créés par les administrateurs. Cela signifie que les images et les séquences d’images téléversées ne seront pas visibles par le grand public.
 
 ## Téléversement des images <a id="televersement-des-images"></a>
 🚧 Le processus décrit ici est une solution temporaire et va changer. 🚧
@@ -99,7 +99,7 @@ Avec la carte SD insérée, connectez le lecteur de cartes à un ordinateur.
 
 ### 3. Se connecter à Panoramax <a id="3-se-connecter-a-panoramax"></a>
 
-Ouvrez le [site web Panoramax](https://panoramax.heigit.org) du projet AILAS et cliquez sur « Connexion » à droite de la barre de navigation supérieure.
+Ouvrez le [site web Panoramax](https://madagascar-panoramax.heigit.org) du projet AILAS et cliquez sur « Connexion » à droite de la barre de navigation supérieure.
 
 ```{figure} /fig/AILAS_Panoramax_login_fr.png
 ---
@@ -115,7 +115,7 @@ Si c’est votre première connexion, vous utiliserez un mot de passe initial qu
 
 :::{admonition} Autres instances de Panoramax
 :class: tip
-Pour le projet AILAS, les images doivent être téléversées sur une [instance spécifique de Panoramax](https://panoramax.heigit.org). L’accès aux images sur cette instance est restreint à certains partenaires humanitaires sélectionnés. Si vous n’avez pas accès à cette instance mais souhaitez partager vos images _publiquement_, consultez les instances publiques disponibles sur https://panoramax.fr.
+Pour le projet AILAS, les images doivent être téléversées sur une [instance spécifique de Panoramax](https://madagascar-panoramax.heigit.org). L’accès aux images sur cette instance est restreint à certains partenaires humanitaires sélectionnés. Si vous n’avez pas accès à cette instance mais souhaitez partager vos images _publiquement_, consultez les instances publiques disponibles sur https://panoramax.fr.
 :::
 
 ### 4. Téléverser des images <a id="4-televerser-des-images"></a>

@@ -17,9 +17,9 @@ The objective of this exercise is to understand how to prepare and clean data th
 :::{card}
 __Relevant Wiki articles:__
 ^^^
-* [QGIS Interface](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_interface_wiki.html)
-* [Import CSV-files into QGIS](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#text-data-importl)
-* [Attribute Table in QGIS](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.md)
+* [QGIS Interface](../Wiki/en_qgis_interface_wiki.md)
+* [Import CSV-files into QGIS](../Wiki/en_qgis_import_geodata_wiki.md#text-data-importl)
+* [Attribute Table in QGIS](../Wiki/en_qgis_attribute_table_wiki.md)
 
 :::
 
@@ -50,7 +50,7 @@ This exercise makes use of the [tabula.technology tool](tabula.technology), an o
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/english/content/en/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on facilitating trainings. 
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on facilitating trainings. 
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -269,7 +269,7 @@ Great! Now we are ready to import the CSV-file into QGIS!
 ### Task 3: Import the Data into QGIS <a id="task-3-import-the-data-into-qgis"></a>
 
 :::{topic}
-With the data formatted as a usable CSV-file, we can import it into QGIS and join it with a polygon layer containing the districts (adm2) by using the columns containing the district names in english. However, in this step, we might encounter the problem that the district names are written differently. In this case, we can't simply perform a [attribute join](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_5/en_qgis_spatial_tools.html#spatial-joins) as the attributes need to __match exactly__. To fix this, we have to perform a __fuzzy merge__. 
+With the data formatted as a usable CSV-file, we can import it into QGIS and join it with a polygon layer containing the districts (adm2) by using the columns containing the district names in english. However, in this step, we might encounter the problem that the district names are written differently. In this case, we can't simply perform a [attribute join](../Module_5/en_qgis_spatial_tools.md#spatial-joins) as the attributes need to __match exactly__. To fix this, we have to perform a __fuzzy merge__. 
 
 :::
 
@@ -283,9 +283,9 @@ Instead of looking for exact matches, fuzzy merge uses algorithms to compare val
 
 1. Open QGIS and create a new project.
 2. Save the project in the exercise folder.
-3. [Import the CSV layer into QGIS](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#text-data-import).
+3. [Import the CSV layer into QGIS](../Wiki/en_qgis_import_geodata_wiki.md#text-data-import).
 4. Import the administrative boundaries located in the data input folder: `.../module_5_ex_7_data_cleansing/data/input/`
-5. Now let's perform a fuzzy merge: Open the [field calculator](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_table_functions_wiki.html#calculate-field) __for the layer called `tabula-pakistan_wall_type7.7`__ and enter the following expression: 
+5. Now let's perform a fuzzy merge: Open the [field calculator](../Wiki/en_qgis_table_functions_wiki.md#calculate-field) __for the layer called `tabula-pakistan_wall_type7.7`__ and enter the following expression: 
     ```
     array_first(aggregate(
     layer:= 'pak_admbnda_adm2_wfp_20220909',

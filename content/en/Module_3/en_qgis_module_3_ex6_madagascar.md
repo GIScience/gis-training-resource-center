@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -47,13 +47,13 @@ __Estimated time demand for the exercise:__
 __Relevant wiki articles:__
 ^^^
 
-* [Geodata Import in QGIS](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html)
-* [Layer Concept](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_layer_concept_wiki.html)
-* [Geodata Classification- Categorized](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_categorized_wiki.html)
-* [Geodata Classification - Graduated](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_graduated_wiki.html)
-* [Spatial Queries](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_queries_wiki.html)
-* [Table function - Add field](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_table_functions_wiki.html#add-field)
-* [Digitisation- Point data](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)
+* [Geodata Import in QGIS](../Wiki/en_qgis_import_geodata_wiki.md)
+* [Layer Concept](../Wiki/en_qgis_layer_concept_wiki.md)
+* [Geodata Classification- Categorized](../Wiki/en_qgis_categorized_wiki.md)
+* [Geodata Classification - Graduated](../Wiki/en_qgis_graduated_wiki.md)
+* [Spatial Queries](../Wiki/en_qgis_spatial_queries_wiki.md)
+* [Table function - Add field](../Wiki/en_qgis_table_functions_wiki.md#add-field)
+* [Digitisation- Point data](../Wiki/en_qgis_digitisation_wiki.md#add-geometries-to-a-layer)
 
 :::
 ::::
@@ -77,7 +77,7 @@ __Context:__
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/english/content/en/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on facilitating trainings. 
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on facilitating trainings. 
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -149,15 +149,15 @@ You have been deployed as an information manager to the flood-affected regions o
 
 ::::
  
-1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` → `New`.
-2. Once the project is created [save the project](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_projects_folder_structure_wiki.html#save) in the "project" folder of the exercise “Module_3_Exercise_2_Flood_Larkana”. To do that click on `Project` → `Save as` and navigate to the folder. Name the project "MDG_Sava_flood_2024".
+1. Open QGIS and create a [new project](../Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` → `New`.
+2. Once the project is created [save the project](../Wiki/en_qgis_projects_folder_structure_wiki.md#save-project) in the "project" folder of the exercise "Module_3_Exercise_2_Flood_Larkana". To do that click on `Project` → `Save as` and navigate to the folder. Name the project "MDG_Sava_flood_2024".
 3. First, we want to add the OpenStreetMap as a base map for orientation. To add the OSM as a base map click on `Layer` → `Add Layer` → `Add XYZ Layer…`. Choose `OpenStreetMap` and click `Add`. 
 
 :::{Tip}
 You cannot interact with a base map!
 :::
 
-4. Next, load the GeoPackage __"mdg_admin2.gpkg"__ in your project by drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). Or click on `Layer` → `Add Layer` → `Add Vector Layer`. Click on the three points ![](../../../fig/Three_points.png) and navigate to __"mdg_admin2.gpkg"__. Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
+4. Next, load the GeoPackage __"mdg_admin2.gpkg"__ in your project by drag and drop ([Wiki Video](../Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Or click on `Layer` → `Add Layer` → `Add Vector Layer`. Click on the three points ![](../../../fig/Three_points.png) and navigate to __"mdg_admin2.gpkg"__. Select the file and click `Open`. Back in QGIS click `Add`([Wiki Video](../Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
 
 
 :::{Attention}
@@ -165,11 +165,11 @@ GeoPackage files can contain multiple files and even entire QGIS projects. When 
 :::
 
 5. First, we want to export the district __Sambava__ and the neighbouring district __Vohemar__ from __mdg_admin2__ to have it as a stand-alone vector layer. To do that: 
-    * Open the attribute table of __mdg_admin2__ by right click on the layer  → `Open Attribute Table` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.html)).
-    * Find the row of Sambava in the column __ADM2_EN__ and mark it by clicking on the number on the very left-hand side of the attribute table. The row will appear blue and the area of Sambava will turn yellow on the map canvas. You can right-click on the row and click `Zoom to Feature` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)).
-    To select the Vohemar district, click on the `Select Feature(s)` ![](../../../fig/selection_toolbar_feature_selection.png) icon in the QGIS Toolbar, hold the `Shift` button on your keyboard, and click on the districts either on the map or the attribute table ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_queries_wiki.html#manual-selection)).
+    * Open the attribute table of __mdg_admin2__ by right click on the layer → `Open Attribute Table` ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md)).
+    * Find the row of Sambava in the column __ADM2_EN__ and mark it by clicking on the number on the very left-hand side of the attribute table. The row will appear blue and the area of Sambava will turn yellow on the map canvas. You can right-click on the row and click `Zoom to Feature` ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#zoom-in-on-a-specific-feature)).
+    To select the Vohemar district, click on the `Select Feature(s)` ![](../../../fig/selection_toolbar_feature_selection.png) icon in the QGIS Toolbar, hold the `Shift` button on your keyboard, and click on the districts either on the map or the attribute table ([Wiki Video](../Wiki/en_qgis_spatial_queries_wiki.md#manual-selection)).
     * After you are done selecting districts, click on the icon ![](../../../fig/qgis_move_symbol.png) to end the feature selection mode.
-    * Now right-click on the layer in the Layer Panel and click on `Export` → `Save Selected Features as`. We want to save the selected districts as a GeoPackage, so choose the `Format` option accordingly. Click on the three points and navigate to your `temp` folder. Here you can give it the layer the name __“Flood_2024_AOI”__ and click `Save`. Now you should see the same name in the `Layer name` field. Click `OK` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_non_spatial_queries_wiki.html#save-selected-features-as-a-new-file)).
+    * Now right-click on the layer in the Layer Panel and click on `Export` → `Save Selected Features as`. We want to save the selected districts as a GeoPackage, so choose the `Format` option accordingly. Click on the three points and navigate to your `temp` folder. Here you can give it the layer the name __“Flood_2024_AOI”__ and click `Save`. Now you should see the same name in the `Layer name` field. Click `OK` ([Wiki Video](../Wiki/en_qgis_non_spatial_queries_wiki.md#save-selected-features-as-a-new-file)).
     * Click on the icon ![](../../../fig/selection_toolbar_feature_deselection.png) in the toolbar to end the feature selection.
 
 :::{card}
@@ -204,9 +204,9 @@ Posts on social media have indicated a significant impact on the healthcare syst
 
 1. The first thing to do is to find out where the health facilities are located in the area. To do that, you do a quick search on HDX. You find the dataset Madagascar Health Facilities (OpenStreetMap Export). This will do for now.
 
-    * Load the GeoPackage __"hotosm_mdg_health_facilities.gpkg"__ in your project by drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). Or click on `Layer` → `Add Layer` → `Add Vector Layer`. Click on the three points ![](../../../fig/Three_points.png) and navigate to __"mdg_admin2.gpkg"__. Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-layer-tab)).
+    * Load the GeoPackage __"hotosm_mdg_health_facilities.gpkg"__ in your project by drag and drop ([Wiki Video](../Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Or click on `Layer` → `Add Layer` → `Add Vector Layer`. Click on the three points ![](../../../fig/Three_points.png) and navigate to __"mdg_admin2.gpkg"__. Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](../Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
     * First, we must extract the health facilities in our area of interest. We will use the tool __"Extract by Location"__ to do that.
-    * Open the `Processing Toolbox` ([here is how](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_interface_wiki.html#open-toolbox)) and search for the tool.
+    * Open the `Processing Toolbox` ([here is how](../Wiki/en_qgis_interface_wiki.md#open-toolbox)) and search for the tool.
         * As `Input Layer` we will use "hotosm_mdg_health_facilities".
         * For `By comparing to the features from` we use the layer “Flood_2024_AOI”.
         * As `Geometric predicate` we use `intersect`. 
@@ -219,32 +219,32 @@ width: 400px
 name: m3_ex6_qgis_task2_1
 align: center
 ---
-Extract by location. 
+Extracting by location in QGIS. 
 :::
 
 Ok, now we have a good overview of the location of health facilities. We need much better information about the flooded area to identify the health facilities impacted by the flood. Fortunately, the UN has just shared a dataset about the extent of floods. Satellite detected water extent over Sambava and Vohemar Districts, Sava Region, Madagascar as of 01 April 2024.
 
 2. Load the dataset __"TDX_20240401_FloodExtent_SambavaDistrict_MDG.shp"__ into your QGIS.
    * Adjust the opacity of the flood layer by right-clicking on layer __"TDX_20240401_FloodExtent_SambavaDistrict_MDG"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab. Adjusted the opacity to around 60 % by moving the slider.
-3. Once you have loaded the layers in QGIS, you can see that they are correctly displayed. However, upon checking the layer information, you can see that the new layers have a different Coordinate Reference System (CRS). They have the EPSG Code 9707 whereas our project has 4326 ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_projections_wiki.html#how-to-check-epsg-code-crs-of-your-qgis-project-and-change-it)).
-    * Right click on the data layer, click on  “Properties”.
-    * The “Layer Properties” Window of the data layer will open. Click on “Information”.
-    * Under the headline “Coordinate Reference System (CRS)” you find all information about the CRS. The most important are:
+3. Once you have loaded the layers in QGIS, you can see that they are correctly displayed. However, upon checking the layer information, you can see that the new layers have a different Coordinate Reference System (CRS). They have the EPSG Code 9707 whereas our project has 4326 ([Wiki Video](../Wiki/en_qgis_projections_wiki.md#how-to-check-epsg-code-crs-of-your-qgis-project-and-change-it)).
+    * Right click on the data layer, click on  "Properties".
+    * The “Layer Properties” Window of the data layer will open. Click on "Information".
+    * Under the headline "Coordinate Reference System (CRS)" you find all information about the CRS. The most important are:
     - __Name:__     Here you find the EPSG Code.
     - __Unites:__    Here you can find whether it is possible to use meters with this data layer, degrees or latitude and longitude. 
-4. This will be a problem as soon as we do something different then just displaying the layers. Since we want to manipulate the layers in the next step we need to reproject them first ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_projections_wiki.html#changing-the-projection-of-a-vector-layer)). 
-    * Click on the `Vector` tab -> `Data Management Tools` -> `Reproject Layer` or search for the tool in the `Processing Toolbox`.
+4. This will be a problem as soon as we do something different then just displaying the layers. Since we want to manipulate the layers in the next step we need to reproject them first ([Wiki Video](../Wiki/en_qgis_projections_wiki.md#changing-the-projection-of-a-vector-layer)). 
+    * Click on the `Vector` tab → `Data Management Tools` → `Reproject Layer` or search for the tool in the `Processing Toolbox`.
     * As `Input layer` select __"TDX_20240401_FloodExtent_SambavaDistrict_MDG.shp"__
     * Select as target CRS/ EPSG-Code __4326__.
     * Save the new file in your `temp` folder by clicking on the three dots ![](../../../fig/Three_points.png) next to `Reprojected`, specify the file name as __"2024_MinFloodExtend_reprojected"__.
-    * Click `Run`
-    * Delete the old layer from the layer panel by right click on the layer -> `Remove layer`.
+    * Click `Run`.
+    * Delete the old layer from the layer panel by right click on the layer → `Remove layer`.
     * Adjust the opacity of the flood layer by right-clicking on layer __"TDX_20240401_FloodExtent_SambavaDistrict_MDG"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab. Adjusted the opacity to around 60% by moving the slider.
 
 We have observed that certain health facilities are located within the flooded area. In order to visualise this information on the map, we plan to include a new attribute called __"affected"__ in the attribute table of __"Health_Facilities_Flood_2024_AOI"__.
 To accomplish this, our first step will involve selecting all the affected health facilities. A new column containing this information is then appended to the __"Health_Facilities_Flood_2024_AOI"__ attribute table.
 
-5. Open the `Processing Toolbox` ([here is how](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_interface_wiki.html#open-toolbox)) and search for the tool __"Select by Location"__.
+5. Open the `Processing Toolbox` ([here is how](../Wiki/en_qgis_interface_wiki.md#open-toolbox)) and search for the tool __"Select by Location"__.
     * `Select features from` = __"Health_Facilities_Flood_2024_AOI"__.
     * As `Geometric predicate` we use `intersect`.
     * For `By comparing to the features from` we use the layer __"TDX_20240401_FloodExtent_SambavaDistrict_MDG"__.
@@ -270,12 +270,12 @@ Selecting the flood affected health facilities.
 In case you encounter the error:
 
 ```
-Feature (1) from “TDX_20240401_FloodExtent_SambavaDistrict_MDG” has invalid geometry. Please fix the geometry or change the Processing setting to the “Ignore invalid input features” option. Execution failed after 0.07 seconds
+Feature (1) from "TDX_20240401_FloodExtent_SambavaDistrict_MDG" has invalid geometry. Please fix the geometry or change the Processing setting to the "Ignore invalid input features" option. Execution failed after 0.07 seconds
 ```
 
 You need to first use the tool __"Fix Geometry"__ before repeating the previously failed step 5 of using the tool __"Select by Location"__.
 
-* To do so open the `Processing Toolbox` ([here is how](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_interface_wiki.html#open-toolbox)) and search for the tool __"Fix Geometries"__.
+* To do so open the `Processing Toolbox` ([here is how](/Wiki/en_qgis_interface_wiki.md#open-toolbox)) and search for the tool __"Fix Geometries"__.
 * `Input layer` = `TDX_20240401_FloodExtent_SambavaDistrict_MDG`
 * Save the new file in your `temp` folder by clicking on the three dots ![](../../../fig/Three_points.png), specify the file name as __"TDX_20240401_FloodExtent_SambavaDistrict_MDG_fix"__.
 * Click `Run`.
@@ -291,8 +291,8 @@ Fixing the geometry
 
 ::::
 
-6.  Open the attribute table of __"Health_Facilities_Flood_2024_AOI"__ by right click on the layer  → `Open Attribute Table`([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.html)) and activate the editing mode by clicking on ![](../../../fig/mActionToggleEditing.png) ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table)). Now you are able to edit the data directly in the table.
-7. First, we add a new column with the name __“Flood_affected”__. To do so, click on ![](../../../fig/mActionNewAttribute.png). In the `Add field` window, you have to add the name and set the `Type` to `Text(string)`. Click `OK` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.html#add-new-column)).
+6.  Open the attribute table of __"Health_Facilities_Flood_2024_AOI"__ by right click on the layer  → `Open Attribute Table`([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md)) and activate the editing mode by clicking on ![](../../../fig/mActionToggleEditing.png) ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#change-data-in-the-attribute-table)). Now you are able to edit the data directly in the table.
+7. First, we add a new column with the name __“Flood_affected”__. To do so, click on ![](../../../fig/mActionNewAttribute.png). In the `Add field` window, you have to add the name and set the `Type` to `Text(string)`. Click `OK` ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#add-new-column)).
 
 
 :::{figure} ../../../fig/ PAK_flood_new_column.PNG
@@ -304,13 +304,13 @@ align: center
 Add new column
 :::
 
-8. Now look for the `Show all Features` option in the lower left corner and click on it. Then, select the option `Show selected features` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.html#manually-select-features-in-the-attribute-table)). This will filter the table to display only the rows that represent the health facilities directly impacted by the flood.
+8. Now look for the `Show all Features` option in the lower left corner and click on it. Then, select the option `Show selected features` ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#manually-select-features-in-the-attribute-table)). This will filter the table to display only the rows that represent the health facilities directly impacted by the flood.
 Fortunately, no health facilities are directly affected by the flood.
 9. If any were affected: Write `Yes` in the __"Flood_affected"__ column.
- * When you are done, click ![](../../../fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](../../../fig/mActionToggleEditing.png)([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.html#change-data-in-the-attribute-table)).
+ * When you are done, click ![](../../../fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](../../../fig/mActionToggleEditing.png)([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#change-data-in-the-attribute-table)).
  * Click on the icon ![](../../../fig/selection_toolbar_feature_deselection.png) in the toolbar to end the feature selection.
 
-* To visualise the enriched data set, we use the function "Categorized Classification" function. This means that we select a column from the attribute table and use the content as categories to sort and display the data ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_categorized_wiki.html)).
+* To visualise the enriched data set, we use the function "Categorized Classification" function. This means that we select a column from the attribute table and use the content as categories to sort and display the data ([Wiki Video](../Wiki/en_qgis_categorized_wiki.md)).
     * Right-click on the layer __"Health_Facilities_Flood_2024_AOI"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
     * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select “Flood_affected”.
     * Further down the window, click on `Classify`. Now you should see all unique values or attributes of the selected “Flood_affected” column. You can adjust the colours by double-clicking on each colour in the central field. Once you are done, click `Apply` and `OK` to close the symbology window.
@@ -355,8 +355,8 @@ In order to get a clearer picture, we need to import the road network data for t
 ::::
 
 1. Load the dataset __"roads_sava.gpkg"__ from your input folder into your QGIS.
-2. For categorized classification right-click on the layer __"roads_sava"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_categorized_wiki.html)).
-    * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select “highway”.
+2. For categorized classification right-click on the layer __"roads_sava"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab ([Wiki Video](../Wiki/en_qgis_categorized_wiki.md)).
+    * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select "highway".
     * Further down the window, click on `Classify`.  Now you should see all unique values or attributes of the selected “Flood_affacted” column.  You can adjust the colours by double-clicking on the coluors in each row in the central field.
     * Remove the tick from all categories except: `motorway`, `primary`, `secondary`, `trunk`.
     :::{figure} ../../../fig/m3_ex6_qgis_task3_2.png
@@ -378,7 +378,7 @@ In order to get a clearer picture, we need to import the road network data for t
     :::
     * Once you are done, click `Apply` and `OK` to close the symbology window.
 3. To simplify the process, we will visually search for blocked roads and mark them with points. For this purpose, we will create an entirely new point dataset representing blocked roads.
-    * Click on  `Layer` → `Create Layer` → `New GeoPackage Layer`([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_digitisation_wiki.html#create-a-new-layer)). 
+    * Click on  `Layer` → `Create Layer` → `New GeoPackage Layer`([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#create-a-new-layer)). 
     - Under `Database` click on ![](../../../fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name __“MDG_flood_2024_blocked_road”__. Click `Save`.
     - `Geometry type`: Select `Point`
     - Under `Additional dimension` you should always make sure that you check none of them.. 
@@ -398,7 +398,7 @@ In order to get a clearer picture, we need to import the road network data for t
     ---
     New layer with the blocked roads.
     :::
-4. Now you can create a point for each place where the flood layer covers the main roads leading through AOI [wiki](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_digitisation_wiki.html#creation-of-point-data). Currently the new layer __“MDG_flood_2024_blocked_road”__ is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar, click on the tab `View` → `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creation-of-point-data)).  ![](../../../fig/Digitizing_Toolbar.png) 
+4. Now you can create a point for each place where the flood layer covers the main roads leading through AOI [wiki](../Wiki/en_qgis_digitisation_wiki.md#creation-of-point-data). Currently the new layer __“MDG_flood_2024_blocked_road”__ is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar, click on the tab `View` → `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creation-of-point-data)).  ![](../../../fig/Digitizing_Toolbar.png) 
     * Activate the editing mode by clicking on ![](../../../fig/mActionToggleEditing.png). Activate then the option to add new points by clicking on ![](../../../fig/mActionCapturePoint.png).
     * Look out for places where the flood layer covers the main roads or bridges. Once you have found one, left-click on the location you want to digitise.
     * Once you click on a place, a window will appear. Indicate that the road is blocked by writing `Yes` in the field `Blocked_road`.
@@ -413,7 +413,7 @@ In order to get a clearer picture, we need to import the road network data for t
     :::
     * Once you are done with digitizing click on ![](../../../fig/mActionSaveEdits.png) to save your edits.
     * Click again on ![](../../../fig/mActionToggleEditing.png) to end the editing mode.
-5. Now, we have mapped all roads in our AOI that are blocked by the flood. We can use icons instead of just points to display the layer __“MDG_flood_2024_blocked_road”__ to visualise this fact better [wiki](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_single_symbol_wiki.html).
+5. Now, we have mapped all roads in our AOI that are blocked by the flood. We can use icons instead of just points to display the layer __“MDG_flood_2024_blocked_road”__ to visualise this fact better [wiki](../Wiki/en_qgis_single_symbol_wiki.md).
 
     * Right-click on the layer __“MDG_flood_2024_blocked_road”__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
     * Keep the `Single Symbol` option. Select any symbol from the list that is appropriate for marking blocked roads (make sure the filter is set to `Favourites` or `All Symbols`).

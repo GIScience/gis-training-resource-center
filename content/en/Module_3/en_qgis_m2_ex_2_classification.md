@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -59,9 +59,9 @@ __Relevant Wiki Articles__:
 * [Layer Concept](../Wiki/en_qgis_layer_concept_wiki.md)
 * [Attribute table](../Wiki/en_qgis_attribute_table_wiki.md)
 * [Table function - Add field](../Wiki/en_qgis_table_functions_wiki.md)
-* [Geodata Classification- Categorized](/content/Wiki/en_qgis_categorized_wiki.md)
+* [Geodata Classification- Categorized](../Wiki/en_qgis_categorized_wiki.md)
 * [Geodata Classification- Graduated](../Wiki/en_qgis_graduated_wiki.md)
-* [Digitization- Point data](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)
+* [Digitization- Point data](../Wiki/en_qgis_digitisation_wiki.md#add-geometries-to-a-layer)
 
 :::
 
@@ -115,12 +115,12 @@ Download all datasets __[here](https://nexus.heigit.org/repository/gis-training-
 
 Our goal is to produce an overview of the 2015 food insecurity situation in Sierra Leone together with the display of main infrastructure elements. To achieve this, we will visualise total food insecurity classifications alongside airports, hospitals, and primary roads in a map.
 
-1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` → `New`.
+1. Open QGIS and create a [new project](../Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` → `New`.
 
 2. Once the project is created save the project in the “project” folder of the “Ex_Sierra_Leone_foodinsecurity”. To do that click on `Project` → `Save as` and navigate to the folder. Name the project “Sierra_Leone_foodinsecurity”.
 
-3. Import the GeoPackages `Sierra_leone_borders.gpkg`, `Sierra_leone_airports`, `Sierra_leone_healthsites` and `Sierra_leone_roads.gpkg` as well as the shapefile `Sierra_leone_foodinsecurity_2015.shp` into your project via drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#open-raster-data-via-drag-and-drop)). 
-Or by clicking `Layer` → `Add Layer` → `Add Vector Layer`: Click on the three dots ![](../../../fig/Three_points.png) and navigate to "Sierra_leone_borders.gpkg" in your file Browser. Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#open-raster-data-via-layer-tab)).
+3. Import the GeoPackages `Sierra_leone_borders.gpkg`, `Sierra_leone_airports`, `Sierra_leone_healthsites` and `Sierra_leone_roads.gpkg` as well as the shapefile `Sierra_leone_foodinsecurity_2015.shp` into your project via drag and drop ([Wiki Video](../Wiki/en_qgis_import_geodata_wiki.md#open-raster-data-via-drag-and-drop)). 
+Or by clicking `Layer` → `Add Layer` → `Add Vector Layer`: Click on the three dots ![](../../../fig/Three_points.png) and navigate to "Sierra_leone_borders.gpkg" in your file Browser. Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](../Wiki/en_qgis_import_geodata_wiki.md#open-raster-data-via-layer-tab)).
 
 :::{Attention}
 GeoPackages can contain multiple files and even whole QGIS projects. When you load such a file in QGIS a window will appear in which you have to select the files you want to load in your QGIS project.
@@ -128,10 +128,10 @@ GeoPackages can contain multiple files and even whole QGIS projects. When you lo
 
 4. First, let's add a basemap to your map canvas using the plugin `QuickMapServices` by clicking on the ![](../../../fig/QMS_search_icon.png) symbol in you project toolbar. Search for "Bing Maps Satellite Imagery" in the QMS panel and add the base map layer via double click.  For an optimised view [adjust the opacity](https://www.youtube.com/watch?v=WguUkN1YRzY&ab_channel=GISBigfootAnswers) of your layers to optimise the use of the base map. 
 
-5. Using  the attribute table of the airports layer zoom to Tongo Airport by right-clicking on the row in the attribute table and selecting `Zoom to Feature`([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.html#zoom-in-on-a-specific-feature)). Check the Basemap. Do you think the airstrip is still operational? The answer is no, according to Wikipedia. Delete Tongo Airport in the [Attribute table](../Wiki/en_qgis_attribute_table_wiki.md). Delete Kabala airport too, since it is also not operational anymore.
+5. Using  the attribute table of the airports layer zoom to Tongo Airport by right-clicking on the row in the attribute table and selecting `Zoom to Feature`([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#zoom-in-on-a-specific-feature)). Check the Basemap. Do you think the airstrip is still operational? The answer is no, according to Wikipedia. Delete Tongo Airport in the [Attribute table](../Wiki/en_qgis_attribute_table_wiki.md#attribute-table---data-editing). Delete Kabala airport too, since it is also not operational anymore.
 
 6. Now we want to check out the airports of the cities of Bo and Kenema. Are these airstrips in better shape? If yes, add them to the airport layer. To find these cities on your map interface use the QGIS Plugin `OSM Place Search`. 
-To add the plugin `OSM Place Search`, click on `Plugins` → `Manage and Install Plugins…` → `All` and search for "OSM Place Search". Once you have found it click on it and select `Install Plugin`. You can open the `OSM Place Search Panel` like every other panel by clicking on `View` → `Panels` and checking `OSM Place Search Panel`([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_plugins_wiki.html)).
+To add the plugin `OSM Place Search`, click on `Plugins` → `Manage and Install Plugins…` → `All` and search for "OSM Place Search". Once you have found it click on it and select `Install Plugin`. You can open the `OSM Place Search Panel` like every other panel by clicking on `View` → `Panels` and checking `OSM Place Search Panel`([Wiki Video](../Wiki/en_qgis_plugins_wiki.md)).
     * In the panel, you can search for places on the OpenStreetMap by typing the name in the search bar. Often it makes sense to add additional information like the name of the country. Try for example “Bo, Sierra Leone”.
 
 :::{figure} ../../../fig/mod3_classification_ex_OSMsearch.png
@@ -173,7 +173,7 @@ align: center
 Symbol for hospital.
 :::
 
-11. As a last visualisation step open the `Symbology` tab `Sierra_Leone_roads (Lines)` and like in step 9 open the top dropdown menu. Now instead of `Graduated` choose [Categorized Classification](/content/Wiki/en_qgis_categorized_wiki.md) and select "highway" in the `Value` menu. Click `Classify` to get a classification with individual colours for all unique values of the "highway" column. In the squares next to the classes, deselect all classes except for "primary". You can change the colour of the classes by manually clicking and adjusting the colour in the drop "Symbol" dropdown menu near the top of the window.
+11. As a last visualisation step open the `Symbology` tab `Sierra_Leone_roads (Lines)` and like in step 9 open the top dropdown menu. Now instead of `Graduated` choose [Categorized Classification](../Wiki/en_qgis_categorized_wiki.md) and select "highway" in the `Value` menu. Click `Classify` to get a classification with individual colours for all unique values of the "highway" column. In the squares next to the classes, deselect all classes except for "primary". You can change the colour of the classes by manually clicking and adjusting the colour in the drop "Symbol" dropdown menu near the top of the window.
 
 :::{figure} ../../../fig/mod3_classification_ex_Categorizedclassification.png
 ---

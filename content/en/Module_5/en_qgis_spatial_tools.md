@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -12,7 +12,7 @@
 
 Spatial processing uses spatial information to extract new meaning from GIS data. It does so by using the __spatial relationship__ of different layers or features. Spatial relationships describe how things are located in relation to one another. In humanitarian work, this helps answer critical questions like “Which communities are near a water source?” or “Which areas are isolated from health services?”. Or, we might want to identify the best locations for distributing aid, assess flood risk areas, or plan evacuation routes.
 
-We have already encountered spatial relationships in module 3 in the subchapter on __[geometrical operators](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_data_queries.html#geometric-operators)__— also called geometrical predicates in QGIS. 
+We have already encountered spatial relationships in module 3 in the subchapter on __[geometrical operators](../Module_3/en_qgis_data_queries.md#geometric-operators)__— also called geometrical predicates in QGIS. 
 The table below describes spatial relationships and gives examples when these spatial relationships are relevant in humanitarian aid. 
 
 ## Spatial Relationships <a id="spatial-relationships"></a>
@@ -174,7 +174,7 @@ The "Join Attributes by Location"-tool in QGIS 3.36.
 
 1. Download the necessary datasets from HDX 
     - [nigeria-healthsites-shp](https://data.humdata.org/dataset/nigeria-healthsites)
-    - [nga_adm_osgof_20190417.zip](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_5/en_qgis_spatial_tools.html)
+    - [nga_adm_osgof_20190417.zip](../Module_5/en_qgis_spatial_tools.md)
 2. Unzip the files, create a new QGIS-project, and load the files into the QGIS-project.
 3. Search for the tool __"Join Attributes by Location"__ in the processing toolbox and <kbd>Double-Click</kbd> on it. A new window will open 
 (see {numref}`join_by_location_ex1`). 
@@ -290,7 +290,7 @@ A __spatial processing__ tool operates on the geometry (location, shape, spatial
 
 :::{dropdown} Answer
 - The output will be polygon features (zones) that represent all areas within 100 m of each road. So if your input roads are line features, after the buffer you will have polygon(s) that “wrap” around each road line, extending on both sides by 100 m (assuming a simple planar buffer).
-- A buffer could be used to buffer a cyclone track to approximate the cyclone-affected region (see [QGIS Trigger Workflow for Madagascar](https://giscience.github.io/gis-training-resource-center/english/content/en/GIS_AA/en_qgis_cyclone_trigger_madagascar.html)).
+- A buffer could be used to buffer a cyclone track to approximate the cyclone-affected region (see [QGIS Trigger Workflow for Madagascar](../GIS_AA/en_qgis_cyclone_trigger_madagascar.md)).
 
 :::
 

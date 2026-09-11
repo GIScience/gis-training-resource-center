@@ -13,7 +13,7 @@ parts:
           - file: Module_1/en_qgis_theory.md
           - file: Module_1/en_qgis_installation.md
           - file: Module_1/en_qgis_start.md
-          - file: /Module_1/en_qgis_module_1_exercises.md
+          - file: Module_1/en_qgis_module_1_exercises.md
       - file: Module_2/en_module_2_overview.md
         sections:
           - file: Module_2/en_qgis_geodata_concept.md

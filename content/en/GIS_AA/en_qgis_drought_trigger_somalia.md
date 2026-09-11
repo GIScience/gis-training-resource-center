@@ -104,12 +104,12 @@ $ IPC\ Index =  Weights \times \frac{District\ Pop\ per\ IPC\ Phase}{Total\ Dist
 Where the weights are defined as:
 
 | IPC Phase | Weight |
-| ----- | --- |
-|IPC 1  |0  |
-|IPC 2  |0  |
-|IPC 3  |1  |
-|IPC 4  |3  |
-|IPC 5  |6  |
+|-----------|--------|
+| IPC 1     | 0      |
+| IPC 2     | 0      |
+| IPC 3     | 1      |
+| IPC 4     | 3      |
+| IPC 5     | 6      |
 
 
 The IPC Index represents low-population districts equal to high-population districts. No under-representation of high food insecurity of small districts occurs.
@@ -117,9 +117,9 @@ The IPC Index represents low-population districts equal to high-population distr
 
 # Trigger Workflow Automated <a id="trigger-workflow-automated"></a>
 
-As explained in the beginning of this [chapter](https://giscience.github.io/gis-training-resource-center/english/content/en/GIS_AA/en_qgis_drought_trigger_somalia.html#qgis-trigger-workflow-for-somalia), the 9 main steps of the developed trigger workflow are done automatically by a QGIS model. In the previous chapters you have learned the purpose and needed tools of each step and how to perform them manually. In this chapter it is explained how to run the automated model.
+As explained in the beginning of this [chapter](../GIS_AA/en_qgis_drought_trigger_somalia.md#qgis-trigger-workflow-for-somalia), the 9 main steps of the developed trigger workflow are done automatically by a QGIS model. In the previous chapters you have learned the purpose and needed tools of each step and how to perform them manually. In this chapter it is explained how to run the automated model.
 
-The [QGIS Model Designer](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_automatisation_wiki.html#the-qgis-model-designer) is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
+The [QGIS Model Designer](../Wiki/en_qgis_automatisation_wiki.md#the-qgis-model-designer) is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
 
 <!--The Model designer chapter is completely unfinished. Also, what are the previous chapters? the modules?-->
 
@@ -129,7 +129,7 @@ The [QGIS Model Designer](https://giscience.github.io/gis-training-resource-cent
 When updating the monitoring, make sure you compare the new input layers with the previous input layers.
 It can happen that the data structure from FEWSNET or ICPAC changes. For example, the attribute columns are called differently, or the values for the classes change. In these cases, the model can break and output error messages. 
 
-To fix these issues, take a look at the subsection on [Troubleshooting the model](https://giscience.github.io/gis-training-resource-center/english/content/en/GIS_AA/en_qgis_drought_trigger_somalia.html#troubleshooting-the-model).
+To fix these issues, take a look at the subsection on [Troubleshooting the model](../GIS_AA/en_qgis_drought_trigger_somalia.md#troubleshooting-the-model).
 
 :::
 
@@ -236,7 +236,7 @@ As of December 2024, the FEWSNET Website does not offer the IPC data for ML1 and
 -->
 
 1. Go to the [IPC website](https://www.ipcinfo.org)
-2. In the top bar, navigate to `Latest Analyses` > `IPC Analyses` > `Acute Food Insecurity Classification`.
+2. In the top bar, navigate to `Latest Analyses` → `IPC Analyses` → `Acute Food Insecurity Classification`.
 3. On the new website, select Somalia as a country and select the newest dataset.
 4. On this website, you will see both a map of the current and the projected IPC phase classifications, as well as some metadata. On the right side of the map, click on the button `Download GIS format`. This will download the analysis in a GeoJSON format, containing polygons for the administrative boundaries and IPC phases, as well as points for the IPC phase classification for IDP camps. 
 
@@ -319,9 +319,9 @@ __Purpose:__ In this step, all the data needed will be loaded into QGIS.
 
 __Tool:__ No specific tools are needed, only QGIS.
 
-1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
-2. Once the project is created save the project in the folder you created in Step 1 (e.g. 2022_05). To do that click on `Project` -> `Save as` and navigate to the folder. Give the project the same name as the folder you created (e.g. 2022_05). Then click `Save`
-3. Load all input data in QGIS by [drag and drop](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#open-raster-data-via-drag-and-drop). Click on `Project` -> `Save` 
+1. Open QGIS and create a [new project](../Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` → `New`
+2. Once the project is created save the project in the folder you created in Step 1 (e.g. 2022_05). To do that click on `Project` → `Save as` and navigate to the folder. Give the project the same name as the folder you created (e.g. 2022_05). Then click `Save`.
+3. Load all input data in QGIS by [drag and drop](../Wiki/en_qgis_import_geodata_wiki.md#open-raster-data-via-drag-and-drop). Click on `Project` → `Save` 
   * From the input monitoring folder you created in step 1:
     * IPC Phase Classification
     * SPI-12
@@ -350,8 +350,8 @@ align: center
 ```
 
 
-1. Open the tool under `Processing` -> `Graphical Modeler`
-2. In the upper panel click `Model` -> `Open Model` and navigate to your folder "FbF_Drought_Monitoring_Trigger", mark the "Triggermodel_Somalia.model3" (or the updated model: "IPC_Som_drought_revision_2.1.model3") file an click on `Open`. The model will open and you will see yellow, white and green boxes.
+1. Open the tool under `Processing` → `Graphical Modeler`
+2. In the upper panel click `Model` → `Open Model` and navigate to your folder "FbF_Drought_Monitoring_Trigger", mark the "Triggermodel_Somalia.model3" (or the updated model: "IPC_Som_drought_revision_2.1.model3") file an click on `Open`. The model will open and you will see yellow, white and green boxes.
 
 ```{dropdown} Video: Open Model
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/load_model.mp4"></video>
@@ -366,7 +366,7 @@ align: center
 ```
 
 | Box | Significance | Description |
-| ----- | --- | --- |
+| ----| ---          | ---         |
 |Yellow| Model Input |Definition of the input data for the model the model will perform on|
 |White| Algorithms | Algorithms or Tools are specific geoprocessing steps that perform specific tasks, such as clipping, reprojecting or buffering. |
 |Green| Model Output| The results created by the model (Output layers) are automatically added to your layers panel in your QGIS project interface|
@@ -390,28 +390,28 @@ In the dropdown list, only layers that are currently loaded in your QGIS Project
 
 For each of these mandatory inputs, you click on the dropdown arrow and choose the respective file.
 
-1. In the upper panel click on `Model` -> `Run Model`. A window will open where you need to define the model input and output.
+1. In the upper panel click on `Model` → `Run Model`. A window will open where you need to define the model input and output.
 2. The model needs the following 3 inputs:
     1. `Somalia-Acute Food Insecurity January 2025`: IPC Projection
     3. `SPI12` (SPI12 forecast): SPI-12 raster data
     4. `Worldpop` (Population Raster data): Worldpop raster data
 3. Further down, you have to specify where to save the output: 
-    1. `Trigger_activation`: Click on the three points ![](../../../fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    1. `Trigger_activation`: Click on the three points ![](../../../fig/Three_points.png) → `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
     ```md
     Trigger_activation
     ```
 
-    2. `Indices`: Click on the three points ![](../../../fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    2. `Indices`: Click on the three points ![](../../../fig/Three_points.png) → `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
     ```md
     Indices
     ```
 
-    3. `IPC_Phase_C`:Click on the three points ![](../../../fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    3. `IPC_Phase_C`:Click on the three points ![](../../../fig/Three_points.png) → `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
     ```md
     IPC_Phase_C
     ```
 
-    4. `IPC_Phase_P`:Click on the three points ![](../../../fig/Three_points.png)-> `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
+    4. `IPC_Phase_P`:Click on the three points ![](../../../fig/Three_points.png) → `Save to File` and navigate to `Results`folder in the folder you created in step 1 (Year_month). Give the output the name: 
     ```md
     IPC_Phase_P
     ```
@@ -491,15 +491,15 @@ align: center
 
 __Purpose:__ Definition of how features are represented visually on the map.
 
-__Tool:__ [Symbology tab](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_I.html#symbology-for-vector-data)
+__Tool:__ [Symbology tab](../Module_4/en_qgis_map_design_I.md#symbology-for-vector-data)
 
 __Trigger Activation__
 
-1. Right click on the “Trigger_activation” layer -> `Properties` -> `Symbology`
-2. In the down left corner click on `Style` -> `Load Style`
+1. Right click on the “Trigger_activation” layer → `Properties` → `Symbology`.
+2. In the down left corner click on `Style` → `Load Style`.
 3. In the new window click on the three points ![](../../../fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“Style_Trigger_Activation.qml”__.
-4. Click `Open`. Then click on `Load Style`
-5. Back in the “Layer Properties” Window click `Apply` and `OK`
+4. Click `Open`. Then click on `Load Style`.
+5. Back in the “Layer Properties” Window click `Apply` and `OK`.
 
 ```{dropdown} Info: Trigger Activation Layer
 You will now see districts where no trigger is activated in green and districts with trigger activation in pink.
@@ -517,26 +517,26 @@ align: center
 __Risk Assessment__
 
 
-7. Right click on the "risk_assessment_districts" layer -> `Properties` -> `Symbology`
-8. In the down left corner click on `Style` -> `Load Style`
+7. Right click on the "risk_assessment_districts" layer → `Properties` → `Symbology`.
+8. In the down left corner click on `Style` → `Load Style`.
 9. In the new window click on the three points ![](../../../fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“somalia_risk_assessment_style.qml”__ style layer.
-10. Move the "risk_assessment_district" layer __below__ "Trigger_Activation" layer ([Layer Concept](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_geodata_concept.html?highlight=layer#layer-concept)).
-11. Back in the “Layer Properties” Window click `Apply` and `OK`
+10. Move the "risk_assessment_district" layer __below__ "Trigger_Activation" layer ([Layer Concept](../Module_2/en_qgis_geodata_concept.md?highlight=layer#layer-concept)).
+11. Back in the “Layer Properties” Window click `Apply` and `OK`.
 
 
 ```{dropdown} Info: Risk Assessment Layer
 For the creation of an __Intervention Map__ we will have to add the risk assessment data and the respective style file.
-For this first of all load from "FbF_Drought_Monitoring_Trigger/Fixed_data/Risk_Assessment" the file "risk_assessment_districts.gpkg". This file is the output of the conducted risk assessment and contains a risk value for each district of Somaliland and Somalia.  In order to visualize it 
+For this first of all load from "FbF_Drought_Monitoring_Trigger/Fixed_data/Risk_Assessment" the file "risk_assessment_districts.gpkg". This file is the output of the conducted risk assessment and contains a risk value for each district of Somaliland and Somalia.  In order to visualize it: <!--?--> 
 ```
 
 __Administrative 2 Boundaries (Regions)__
 
-12. Right click on the "Som_Admbnda_Adm1_UNDP" (Regiond) layer -> `Properties` -> `Symbology`
-13. In the down left corner click on `Style` -> `Load Style`
+12. Right click on the "Som_Admbnda_Adm1_UNDP" (Regiond) layer → `Properties` → `Symbology`.
+13. In the down left corner click on `Style` → `Load Style`.
 14. In the new window click on the three points ![](../../../fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“somalia_risk_assessment_style.qml”__.
-15. Click `Open`. Then click on `Load Style` 
-16. Back in the “Layer Properties” Window click `Apply` and `OK`
-17. Add a the OpenStreetMap basemap by clicking on `Layer` -> `Add Layer` -> `Add XYZ layer...` -> Select the OpenStreetMap. Click `Add`. ([Wiki basemap](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_basemaps_wiki.html?highlight=osm#basemaps))
+15. Click `Open`. Then click on `Load Style`.
+16. Back in the “Layer Properties” Window click `Apply` and `OK`.
+17. Add a the OpenStreetMap basemap by clicking on `Layer` → `Add Layer` → `Add XYZ layer...` → Select the OpenStreetMap. Click `Add`. ([Wiki basemap](../Wiki/en_qgis_basemaps_wiki.md#basemaps))
 18. Place the OpenStreetMap basemap on the bottom.
 19. Delet all layers exept:
     * Trigger_activation
@@ -574,7 +574,7 @@ __Administrative 2 Boundaries (Regions)__
 ``````
 
 ```{Attention}
-Remember the [layer concept](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_geodata_concept.html?highlight=layer#layer-concept) and make sure the basemap layer is at the bottom of your layers panel.
+Remember the [layer concept](../Module_2/en_qgis_geodata_concept.md#the-layer-concept) and make sure the basemap layer is at the bottom of your layers panel.
 ```
 
 
@@ -590,12 +590,12 @@ align: center
 ```
 __Purpose:__ Viualisation of the map features in a printable map layout
 
-__Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+__Tool:__  [Print Layout](../Module_4/en_qgis_map_design_2.md#the-print-layout)
 
 
 1. If not done before, delet all layers expect __Trigger_activation__, __risk_assessment_districts__ and __OpenStreetMap__
-2. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "2022_04".
-3. Go the the __FbF_Drought_Monitoring_Trigger__` folder and drag and drop the file `Trigger_activation_Intervention_map.qpt` in the print layout
+2. Open a new print layout by clicking on `Project` → `New Print Layout` -> enter the name of your current Project e.g "2022_04".
+3. Go the the __FbF_Drought_Monitoring_Trigger__` folder and drag and drop the file `Trigger_activation_Intervention_map.qpt` in the print layout.
 4. Change the date to the current date by clicking on "Further map info…" in the items panel. Click on the `Item Properties` tab and scroll down. Here you can change the date in the `Main Properties` field.
 5. Adjust the Lgend by clicking on the legend in the  `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there check if you have to open the dropdown. Make sure `Auto update` is not checked.
     * Remove all itemes in the legend be clicking on the item and then on the red minus icon below.
@@ -612,9 +612,9 @@ Make sure you edit the Map Information on the template, e.g. current date. Also 
 
 
 In order to easily visualize the output of the trigger analysis we provide you with a 
-[map template](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html#map-templates) that can be used as a base for your visualization. You can find the template in the following directory: ".../FbF_Drought_Monitoring_Trigger/maps_somalia_template_risk_assessment.qpt".
+[map template](../Module_4/en_qgis_map_design_2.md#map-templates) that can be used as a base for your visualization. You can find the template in the following directory: ".../FbF_Drought_Monitoring_Trigger/maps_somalia_template_risk_assessment.qpt".
 
-You can also adapt the template to your needs and preferences. You can find help [here](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html#print-layout).
+You can also adapt the template to your needs and preferences. You can find help [here](../Module_4/en_qgis_map_design_2.md#print-layout).
 
 ```{Attention}
 Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
@@ -634,27 +634,27 @@ align: center
 __Purpose:__ Export the designed and finalized map layout in order tp print it as a pdf or format of your choice.
 
 
-__Tool:__ [Print Layout](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+__Tool:__ [Print Layout](../Module_4/en_qgis_map_design_2.md?highlight=print+layout#print-layout)
 
 When you have finished the design of you map you can export it as pdf or image file in different datafromats.
 
 __Export as Image__
 
-1. In the print layout click on `Layer` -> `Export as Image`
-2. Chose the __Result__ folder in the folder you have created in step 1. Give the file the name of the project e.g 2022_04
-3.  Click on `Save`
-4. The window "Image Export Options" will appear. Click `Save`
-Now the image can be found in the result folder in the folder you created in Step 1
+1. In the print layout click on `Layer` → `Export as Image`.
+2. Chose the __Result__ folder in the folder you have created in step 1. Give the file the name of the project e.g 2022_04.
+3.  Click on `Save`.
+4. The window "Image Export Options" will appear. Click `Save`.
+Now the image can be found in the result folder in the folder you created in Step 1.
 
 
 __Export as PDF__
 
-1. In the print layout click on `Layer` -> `Export as PDF`
-2. Chose the __Result__ folder in the folder you have created in step 1. Give the file the name of the project e.g 2022_04
-3.  Click on `Save`
+1. In the print layout click on `Layer` → `Export as PDF`.
+2. Chose the __Result__ folder in the folder you have created in step 1. Give the file the name of the project e.g 2022_04.
+3.  Click on `Save`.
 4. The window "PDF Export Options" will appear.  For the best results, select the `lossless` image compression.
-5. Click `Save`
-Now the image can be found in the result folder in the folder you created in Step 1
+5. Click `Save`.
+Now the image can be found in the result folder in the folder you created in Step 1.
 
 ```{dropdown} Video: Export image and PDF
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_trigger_export_image_pdf.mp4"></video>
@@ -682,7 +682,7 @@ __For example__,
 
 FEWSNET changed the structure of the IPC Food Security Projection Data:
 - The data for ML1 and ML2 is no longer available as two distinct shapefiles, but the (overlapping) polygons for both scenarios are contained in a single geojson file. 
-- Furthermore, the values for the [different food insecurity phase](https://giscience.github.io/gis-training-resource-center/english/content/en/GIS_AA/en_qgis_drought_trigger_somalia.html#what-is-ipc-food-security-projection-data) (1 to 5: Minimal, Stressed, Crisis, Emergency, Famine) are no longer in a column called "ML1" and "ML2" respectively, but in a column with the name __"value"__.
+- Furthermore, the values for the [different food insecurity phase](../GIS_AA/en_qgis_drought_trigger_somalia.md#what-is-ipc-food-security-projection-data) (1 to 5: Minimal, Stressed, Crisis, Emergency, Famine) are no longer in a column called "ML1" and "ML2" respectively, but in a column with the name __"value"__.
 - The model components "weighing pop-sum based on IPC phase" are expecting a column with the name "ML1" and "ML2", but the columns with this information (IPC Phase) with the new input layers are no longer called "ML1" and "ML2" and are called "value".
 
 ```{figure} ../../../fig/troubleshooting_model_example.png
@@ -819,7 +819,7 @@ As of December 2024, the FEWSNET Website does not offer the IPC data for ML1 and
 -->
 
 1. Go to the [IPC website](https://www.ipcinfo.org)
-2. In the top bar, navigate to `Latest Analyses` > `IPC Analyses` > `Acute Food Insecurity Classification`.
+2. In the top bar, navigate to `Latest Analyses` → `IPC Analyses` → `Acute Food Insecurity Classification`.
 3. On the new website, select Somalia as a country and select the newest dataset.
 4. On this website, you will see both a map of the current and the projected IPC phase classifications, as well as some metadata. On the right side of the map, click on the button `Download GIS format`. This will download the analysis in a GeoJSON format, containing polygons for the administrative boundaries and IPC phases, as well as points for the IPC phase classification for IDP camps. 
 
@@ -930,7 +930,7 @@ __Purpose:__ In this step, all the data needed will be loaded into QGIS.
 
 __Tool:__ No specific tools are needed, only QGIS.
 
-1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
+1. Open QGIS and create a [new project](../Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
 2. Once the project is created save the project in the folder you created in Step 1 (e.g. 2022_05). To do that click on `Project` -> `Save as` and navigate to the folder. Give the project the same name as the folder you created (e.g. 2022_05). Then click `Save`
 3. Load all input data in QGIS by [drag and drop](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#open-raster-data-via-drag-and-drop). Click on `Project` -> `Save` 
   * From the folder you created in step 1

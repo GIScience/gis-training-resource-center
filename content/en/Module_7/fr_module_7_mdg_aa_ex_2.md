@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -45,12 +45,12 @@ __Temps estimé pour l'exercice__
 __Articles Wiki pertinents__
 ^^^
 
-* [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_raster_basic_wiki.html)
-* [Intersection](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
+* [Zonal Statistics](../Wiki/en_qgis_raster_basic_wiki.md)
+* [Intersection](../Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
 * [Projections](../Wiki/en_qgis_projections_wiki.md)
 * [Buffer](../Wiki/en_qgis_projections_wiki.md)
 * [Clip](../Wiki/en_qgis_projections_wiki.md)
-* [Automation](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_automation_wiki.html)
+* [Automation](../Wiki/en_qgis_automation_wiki.md)
 
 :::
 
@@ -77,7 +77,7 @@ L'objectif est de préparer un workflow d'analyse et de visualisation pour soute
 - Prenez du temps pour vous familiariser avec l'exercice et le matériel founi. 
 - Préparez un tableau blanc. Cela peut être un tableau physique, un paperboard (tableau blanc virtuel, e.g., Miro Board) où les participant·es peuvent ajouter leurs observations et questions. 
 - Avant de commencer l'exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé __et dézippé__ le dossier de données.
-- Consultez [How to do trainings?](https://giscience.github.io/gis-training-resource-center/english/content/en/Trainers_corner/en_how_to_training.html#how-to-do-trainings) pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).
+- Consultez [How to do trainings?](../Trainers_corner/en_how_to_training.md#how-to-do-trainings) pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).
 
 
 ### Animer la formation <a id="animer-la-formation"></a>
@@ -124,7 +124,7 @@ __Téléchargez les données pour cet exercice ici et dezipé le fichier.__
 ## Tâches <a id="taches"></a>
 
 1. **Ouvrir le modeleur**:
-   - Ouvrez le modeleur depuis le menu du haut: `Traitement` (`Processing`) -> `Modeleur` (`Graphic Modeler`)   
+   - Ouvrez le modeleur depuis le menu du haut: `Traitement` (`Processing`) → `Modeleur` (`Graphic Modeler`)   
      `Processing` → `Graphical Modeler…`
 
 2. **Nommer le modèle**:   
@@ -136,7 +136,7 @@ __Téléchargez les données pour cet exercice ici et dezipé le fichier.__
 
 3. **Enregistrer le modèle:**
    - Pour enregistrer le modèle:
-     - Cliquez sur l'icône __Enregistrer__ (💾) ou naviguez à `Modèle` -> `Enregistrer`. 
+     - Cliquez sur l'icône __Enregistrer__ (💾) ou naviguez à `Modèle` → `Enregistrer`. 
      - Naviguez jusqu'au dossier `/models/` de votre structure de dossier pour la formation
      - Enregistrer le modèle sous: `Esimation_Population_Exposée`.
 
@@ -260,7 +260,7 @@ Reprojeter le tampon vers EPSG:4326.
   - Dans la fenêtre de configuration:
     - Ajoutez une description: `Decouper la couche raster de population avec le tampon du cyclone`.
     - Comme __"Couche source"__, choisissez la Entrée `Raster Population`
-    - Comme __"Couche de Masquage"__, choisissez le tampon du cyclone (sous `Sortie d'un algorithme` -> `"Mis en tampon" créé par l'algorithme "Tamponner la trajectoire du cyclone reprojetée"`)
+    - Comme __"Couche de Masquage"__, choisissez le tampon du cyclone (sous `Sortie d'un algorithme` → `"Mis en tampon" créé par l'algorithme "Tamponner la trajectoire du cyclone reprojetée"`)
     - Laissez la sortie de l'algorithme (`reprojeté`) vide.
     - Cliquez sur `OK` pour ajouter l'étape au modèle.
 
@@ -308,12 +308,12 @@ Votre modèle devrait ressembler à ceci. Tous les algorithmes sont correctement
 ```
 
 10. **Valider le modèle (recommandé)**
-  - Avant d'enregistrer ou exécuter le modèle. Dans le menu en haut de la fenêtre, cliquez sur `Modèle` -> ✔️  `Valider le modèle`.  
+  - Avant d'enregistrer ou exécuter le modèle. Dans le menu en haut de la fenêtre, cliquez sur `Modèle` → ✔️  `Valider le modèle`.  
   - Corrigez les éventuels avertissements ou erreurs affichés dans le panneau de journal. 
   - Cela permet de s'assurer que le modèle est complet et qu'il s'exécutera sans erreur.
 
 11. **Exécuter le modèle**
-  - Exécutez le modèle: Dans le menu en haut de la fenêtre, cliquez sur `Modèle` -> `Exècuter le modèle...`
+  - Exécutez le modèle: Dans le menu en haut de la fenêtre, cliquez sur `Modèle` → `Exècuter le modèle...`
     - Maintenant, vous devez définir les __Couches Source__ pour le modèle. Vous pouvez choisir les couches que vous avez importées dans votre projet QGIS.
     - Sous __Frontières Administratives__, choisissez: 
       `mdg_admbnda_adm2_BNGRC_OCHA_20281031.gpkg`
@@ -359,7 +359,7 @@ align: center
 ```
 
 13. **Exécuter à nouveau le modèle**  
-  - Exécutez le modèle en cliquant sur `Modèle` -> `Exécuter le modèle...`.
+  - Exécutez le modèle en cliquant sur `Modèle` → `Exécuter le modèle...`.
     - Sous __Frontières Administratives__, choisissez: 
       `mdg_admbnda_adm2_BNGRC_OCHA_20281031.gpkg`
     - Sous __Raster Population__, choisissez:

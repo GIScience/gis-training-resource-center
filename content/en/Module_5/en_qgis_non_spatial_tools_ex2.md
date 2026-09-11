@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -52,7 +52,7 @@ Become familiar with different types of non-spatial analysis and geoprocessing t
 * [Projections](../Wiki/en_qgis_projections_wiki.md)
 * [Spatial Queries](../Wiki/en_qgis_spatial_queries_wiki.md)
 * [Geoprocessing](../Wiki/en_qgis_geoprocessing_wiki.md)
-* [Categorized classification](/content/Wiki/en_qgis_categorized_wiki.md)
+* [Categorized classification](../Wiki/en_qgis_categorized_wiki.md)
 
 :::
 
