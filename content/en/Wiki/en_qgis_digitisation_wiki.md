@@ -47,7 +47,7 @@ If you plan to perform distance-based calculation with the new dataset, make sur
 ### Creating point data <a id="creating-point-data"></a>
 
 1.	Select the point layer you want to add data to in the Layer panel
-2.	Go to the digitisation toolbar and click on![](../../../fig/mActionToggleEditing.png). Now the layer is in the editing mode.
+2.	Go to the digitisation toolbar and click on ![](../../../fig/mActionToggleEditing.png). Now the layer is in the editing mode.
 3.	Click on ![](../../../fig/mActionCapturePoint.png). 
 4.	Left-click on the feature you want to digitise.
 5.	Once you click, a window named `[Your Layer Name]- Feature Attribute` will appear. Here you can add the information about this feature to the different columns, based on the attribute table of the layer.
@@ -61,8 +61,8 @@ align: center
 :::
 % Add another picture with more columns
 
-5.	Once you are done with digitisation ![](../../../fig/mActionSaveEdits.png) to save your edits.
-6.	Click again on ![](../../../fig/mActionToggleEditing.png) to end the editing mode.
+6.	Once you are done with digitisation ![](../../../fig/mActionSaveEdits.png) to save your edits.
+7.	Click again on ![](../../../fig/mActionToggleEditing.png) to end the editing mode.
 
 <video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_point_feature.mp4"></video>
 
@@ -93,7 +93,7 @@ If you create a new line layer remember to change the geometry type into lines b
 3. Click on `Capture Polygon`![](../../../fig/mActionCapturePolygon.png) to add polygons.
 4. Draw a polygon in the map canvas using <kbd>Left-click</kbd>. <kbd>Right-click</kbd> will finish the polygon creation and join the first and the last point you have added. 
 5. A new window will open. Here you can add the column information for this feature. 
-4. Save edits by clicking on the ![](../../../fig/mActionSaveEdits.png) icon and exiting the edit mode by clicking on the ![](../../../fig/mActionToggleEditing.png) icon. 
+6. Save edits by clicking on the ![](../../../fig/mActionSaveEdits.png) icon and exiting the edit mode by clicking on the ![](../../../fig/mActionToggleEditing.png) icon. 
 
 <video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_digitize_add_feature.mp4"></video>
 
@@ -102,7 +102,7 @@ If you create a new line layer remember to change the geometry type into lines b
 ## Modifying existing geometries <a id="modifying-existing-geometries"></a>
 
 1. In the layers panel, select the layer with the geometry you want to edit by clicking on it. It will appear blue.
-2. In the digitising toolbar, click on ![](../../../fig/mActionToggleEditing.png) start `edit mode`. 
+2. In the digitising toolbar, click on ![](../../../fig/mActionToggleEditing.png) start the `Edit mode`. 
 3. In the digitising toolbar, click on ![](../../../fig/qgis_3.40_vertex_tool.png). Now, you can move and edit vertices of geometries. 
 4. Once you are done, don't forget to exit the editing mode by clicking on ![](../../../fig/mActionToggleEditing.png) and saving your edits. 
 
@@ -126,4 +126,4 @@ In QGIS, adding rings to polygons is done with the "Advanced Digitisation Toolba
 
 The YouTube Video below shows the whole process of digitizing polygons in QGIS in some more detail. Note that the YouTuber is using an older version of QGIS, so things might be different in your version.
 
-<iframe width="560" height="315" src="https://youtu.be/embed/Zer558SnKX4?si=ELKStx6y5_B_ilRe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Zer558SnKX4?si=ELKStx6y5_B_ilRe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
