@@ -4,7 +4,7 @@ Here we are collecting common QGIS errors and issues as general QGIS training su
 
 # Table of content <!-- omit from toc --> <a id="table-of-content-omit-from-toc"></a>
 
-- [Different QGIS versions](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#different-qgis-versions)
+- [Different QGIS versions](#different-qgis-versions)
 - [QGIS on Mac doesn't open](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#qgis-on-mac-doesnt-open)
 - [A layer is not displayed in QGIS](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#a-layer-is-not-displayed-in-qgis)
 - [A layer window has disappeared in QGIS](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#a-layer-window-has-disappeared-in-qgis)
