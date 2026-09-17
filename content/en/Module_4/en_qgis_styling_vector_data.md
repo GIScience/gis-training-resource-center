@@ -381,7 +381,7 @@ The new SVG-symbols are in your SVG library.
 :::{admonition} IFRC- and UN-Symbols repositories
 :class: tip
 
-The IFRC provides icons and symbols that can be used in your maps. You can find them under [this link](https://go-user-library.ifrc.org/brand-design/iconography). 
+The IFRC provides icons and symbols that can be used in your maps. You can find them under [this link](https://ifrcgo.org/go-icons/). 
 
 There is also a library with humanitarian icons by the [United Nations Office for the Coordination of Humanitarian affairs](https://www.unocha.org) which can be found [here](https://github.com/mapaction/ocha-humanitarian-icons-for-gis?tab=readme-ov-file). The files are available in different formats you can use in QGIS. 
 
