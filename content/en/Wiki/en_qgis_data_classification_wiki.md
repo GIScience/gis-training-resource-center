@@ -20,5 +20,3 @@ QGIS offers several ways to classify geodata:
 - [Single-symbol classification](en_qgis_single_symbol_wiki.md)
 - [Categorised classification](en_qgis_categorised_wiki.md)
 - [Graduated Classification](en_qgis_graduated_wiki.md)
-
-

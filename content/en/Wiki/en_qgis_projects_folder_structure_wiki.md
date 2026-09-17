@@ -11,7 +11,7 @@ This wiki article covers the best practices for the creation and management of g
 It is good practice to use a __standard folder structure__ for QGIS projects in which the project, all used geodata, styling files and documentation is stored.
 :::
 
-1. Copy the standard folder structure for QGIS projects to the place you want to store your whole project. You can download the standard folder structure *here*.
+1. Copy the standard folder structure for QGIS projects to the place you want to store your whole project. You can download the standard folder structure [__here__](https://nexus.heigit.org/repository/gis-training-resource-center/Templates/GIS_project_folder_template.zip).
 
 2. Open QGIS and create a new project. Click on `Project` -> `New Project`
 
@@ -21,6 +21,7 @@ It is good practice to use a __standard folder structure__ for QGIS projects in 
 
 3. Save the new project in the `Project` folder in the standard folder structure and git push. 
 4. Give your project a name and click `Save`.
+
 :::{Tip}
 Do not use spaces ` ` in the name, instead always use underscores `_`.
 :::
@@ -30,7 +31,7 @@ Do not use spaces ` ` in the name, instead always use underscores `_`.
 
 
 
-4. Check the Coordinate Reference System (CRS)/EPSG code of the project to the CRS/EPSG you want to use. For more information check the wiki article on [Projection](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_projections_wiki.html#how-to-check-epsg-code-crs-of-your-qgis-project-and-change-it).
+5. Check the Coordinate Reference System (CRS)/EPSG code of the project to the CRS/EPSG you want to use. For more information check the wiki article on [Projection](en_qgis_projections_wiki.md#how-to-check-epsg-codecrs-of-your-qgis-project-and-change-it).
 
 ### Check and change CRS/EPSG <a id="check-and-change-crsepsg"></a>
 
@@ -55,14 +56,14 @@ The standard folder structure has two principal advantages:
 1. By sharing the whole project folder, we can be certain that the project will run without problems on a different computer.
 2. The folder structure supports the proper organization of geodata and supports the stable function of a QGIS project. 
 
-The folder structure template can be downloaded [__here__](https://github.com/GIScience/gis-training-resource-center/blob/main/fig/GIS_Project_folder_template.zip).
+The folder structure template can be downloaded [__here__](https://nexus.heigit.org/repository/gis-training-resource-center/Templates/GIS_project_folder_template.zip).
 
 
 :::{figure} ../../../fig/Standard_project_folder_structure.drawio.svg
 ---
 width: 800px
 align: center
-name: Standard_project_folder_structure_wikki
+name: Standard_project_folder_structure_wiki
 ---
 Standard folder structure. Source: HeiGIT 
 :::

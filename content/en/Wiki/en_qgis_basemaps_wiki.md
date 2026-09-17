@@ -49,7 +49,7 @@ Advantages of using basemaps from XYZ Tiles are:
 * Support printing
 *  Supported by online applications like [QField]( https://qfield.org/)
 
-## Basemaps from [QuickMapServices](https://nextgis.com/blog/quickmapservices/) Plugin <a id="basemaps-from-quickmapserviceshttpsnextgiscomblogquickmapservices-plugin"></a>
+## Basemaps from [QuickMapServices](https://nextgis.com/blog/quickmapservices/) Plugin <a id="basemaps-from-quickmapservices-plugin"></a>
 
 The QuickMapServices Plugin allows to access to a wide range of basemaps. 
 
