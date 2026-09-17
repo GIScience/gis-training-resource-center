@@ -22,7 +22,6 @@ QGIS is open source and therefore freely available to everyone at no cost. You c
 :::{Warning} 
 
 There are several versions of QGIS available to download. It is recommended to use the __Long Term Release__ versions because it is the most stable and contains the fewest bugs.
-The current __Long Term Release__ is __[QGIS 3.40.4. 'Bratislava'](https://qgis.org/download/)__
 
 :::
 
