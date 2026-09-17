@@ -2,7 +2,7 @@
         async src="//gc.zgo.at/count.js"></script>
 
 
-:::{figure} /fig/HeiGIT_Logo_base.svg
+:::{figure} ../../../fig/HeiGIT_Logo_base.svg
 ---
 height: 75 
 name: Logo HeiGIT
@@ -22,18 +22,18 @@ Le guichet unique pour enseigner les compétences en Systèmes d’Information G
 ## Comment utiliser la plateforme de formation SIG du Réseau de la FICR
 
 ::::{grid} 2
-:::{card} __[Commencer à enseigner](https://giscience.github.io/gis-training-resource-center/fremcj/content/fr/Trainers_corner/fr_TOT_intro.html)__ 
-:link: https://giscience.github.io/gis-training-resource-center/content/fr/Trainers_corner/fr_TOT_intro.html
+:::{card} __[Commencer à enseigner](../Trainers_corner/fr_TOT_intro.md)__ 
+:link: ../Trainers_corner/fr_TOT_intro.md
 
-Une [section dédiée aux formateurs](https://giscience.github.io/gis-training-resource-center/french/content/fr/Trainers_corner/fr_TOT_intro.html) est disponible pour celles et ceux qui souhaitent utiliser la plateforme.
+Une [section dédiée aux formateurs](../fr/Trainers_corner/fr_TOT_intro.md) est disponible pour celles et ceux qui souhaitent utiliser la plateforme.
 
 L’élément le plus important est constitué des plans de formation. Ceux-ci vous donnent une orientation sur le moment et la manière d’utiliser les différents contenus dans votre cycle de formation.  
 Néanmoins, chaque composant du matériel pédagogique est conçu pour être utilisé de manière indépendante. En plus des plans de formation, vous trouverez une multitude de ressources, allant des bonnes pratiques en matière de formation à des méthodes innovantes pour enseigner les SIG. 
 
 :::
 
-:::{card} __[Commencer à apprendre](https://giscience.github.io/gis-training-resource-center/content/fr/Module_1/fr_module_1_overview.html)__ 
-:link: https://giscience.github.io/gis-training-resource-center/content/fr/Module_1/fr_module_1_overview.html
+:::{card} __[Commencer à apprendre](../Module_1/fr_module_1_overview.md)__ 
+:link: ../Module_1/fr_module_1_overview.html
 
 Vos formateurs seront vos guides sur cette plateforme. Si vous avez des questions, n’hésitez pas à leur poser toutes vos questions concernant cette plateforme de formation.  
 Il ne s’agit pas d’une plateforme d’autoformation. Si vous souhaitez apprendre QGIS, il est toujours préférable de participer à un cours et d’apprendre auprès d’un formateur expérimenté. Toutefois, vous êtes les bienvenus pour utiliser cette plateforme afin de perfectionner vos compétences QGIS ; gardez simplement à l’esprit que l’autoformation n’est pas l’objectif principal de la plateforme.
@@ -109,14 +109,14 @@ Les compétences QGIS proposées sur cette plateforme couvrent les niveaux débu
 
 
 ___
-
+<!---
 ## Formations publiques à venir
 
 | Titre | Date | Inscription | Organisation | Format | Langue | Niveau | Info |
 |-------|------|--------------|--------------|--------|--------|--------|------|
 |The Use of Geoinformation in Anticipatory Humanitarian Action|15.01-26.01.2024|Closed ⛔ |[German Red Cross](https://www.drk.de/) & [HeiGIT](https://heigit.org/)|En ligne|Anglais|Débutant|[Info](https://aha-trainings.de/courses/the-use-of-geoinformation-in-anticipatory-humanitarian)|
 |Current Approaches and GIS Methods to Support Anticipatory Humanitarian Action|11.03-22.03.2024|Closed ⛔ |[German Red Cross](https://www.drk.de/) & [HeiGIT](https://heigit.org/)|En ligne|Anglais|Intermédiaire|[Info](https://aha-trainings.de/courses/current-approaches-and-gis-methods)|
-
+-->
 ___
 
 ## Contact
@@ -127,7 +127,7 @@ Vous avez des questions, des retours ou des commentaires sur la plateforme et so
 
 ## Contribuer
 
-Nous accueillons chaleureusement toute personne souhaitant contribuer et collaborer au développement de la plateforme de formation SIG de la FICR, afin de favoriser le partage des connaissances et la croissance collective. Avant de contribuer, veuillez lire le [Plan de contribution](https://giscience.github.io/gis-training-resource-center/content/contribution_plan.html).
+Nous accueillons chaleureusement toute personne souhaitant contribuer et collaborer au développement de la plateforme de formation SIG de la FICR, afin de favoriser le partage des connaissances et la croissance collective. Avant de contribuer, veuillez lire le [Plan de contribution](contribution_plan).
 
 ## Rejoindre la communauté
 
@@ -138,7 +138,7 @@ Bonne cartographie !
 
 :::{card}
 
-:::{figure} /fig/Training_Somalia.JPG
+:::{figure} ../../../fig/Training_Somalia.JPG
 ---
 width: 800px
 name: 

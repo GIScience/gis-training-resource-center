@@ -36,7 +36,7 @@ Before you plan your training, you need to make some basic decisions about the s
 
 ## 2. Planning <a id="2-planning"></a>
 
- You can use the platform's modular structure and the [skill levels](https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html#learning-objectives) as a guide when planning your training schedule. On a practical level, you should consider the following:  
+ You can use the platform's modular structure and the [skill levels](../intro.md#learning-objectives) as a guide when planning your training schedule. On a practical level, you should consider the following:  
 
 - Define the learning objectives in detail and communicate them at the beginning of the training. Organizing the material is easier if you know what you want to achieve. The participants need to know what they are expected to learn and where they are during the training process.
 - When planning the structure of your training, you can use the sample structure as a guide, but you can also adapt it to the specific needs of your participants. If possible, use material and exercises that are related to the participant’s background.

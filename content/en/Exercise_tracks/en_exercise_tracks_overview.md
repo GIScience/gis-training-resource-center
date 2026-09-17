@@ -21,14 +21,17 @@ You can adapt most of the exercise of module 3 for a consecutive map making exer
 
 ## Exercises per module
 
-- __[Module 1 Exercises](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_1/en_qgis_module_1_exercises.html)__
-- __[Module 2 Exercises](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_module_2_exercises.html)__
-- __[Module 3 Exercises](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_module_3_exercises.html)__
-- __[Module 4 Exercises](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_module_4_exercises.html)__
-- __[Module 5 Exercises](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_5/en_qgis_module_5_exercises.html)__
+- __[Module 1 Exercises](../Module_1/en_qgis_module_1_exercises.md)__
+- __[Module 2 Exercises](../Module_2/en_qgis_module_2_exercises.md)__
+- __[Module 3 Exercises](../Module_3/en_qgis_module_3_exercises.md)__
+- __[Module 4 Exercises](../Module_4/en_qgis_module_4_exercises.md)__
+- __[Module 5 Exercises](../Module_5/en_qgis_module_5_exercises.md)__
 
 ## Available exercise tracks:
+
+%% MAKE THESE INTO CARDS?
 
 - [Larkana Flood Response](en_larkana_flood_response.md)
 - [Anticipatory Action Analysis for Cyclones in Madagascar](en_mdg_aa_cyclones.md)
 - [Public Health: Outbreak and Preparedness](en_public_health_outbreak_and_preparedness.md)
+- [Mobile Health: Designing a MHU programme in Colombia](mobile_health_training/en_ex_track_mobile_health_overview.md)

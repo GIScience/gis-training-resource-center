@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -25,7 +25,7 @@ __Type of trainings exercise:__
 :::{grid-item-card}
 __Exercise Track:__
 
-This exercise is part of the [Madagascar Anticipatory Action Cyclon Analysis Exercise Track](https://giscience.github.io/gis-training-resource-center/english/content/en/Exercise_tracks/en_mdg_aa_cyclones.html)
+This exercise is part of the [Madagascar Anticipatory Action Cyclon Analysis Exercise Track](../Exercise_tracks/en_mdg_aa_cyclones)
 
 :::
 
@@ -43,12 +43,12 @@ __Estimated time demand for the exercise__
 __Relevant Wiki Articles__
 ^^^
 
-* [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_raster_basic_wiki.html)
-* [Intersection](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
+* [Zonal Statistics](../Wiki/en_qgis_raster_basic_wiki.md#zonal-statistics)
+* [Intersection](../Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
 * [Projections](../Wiki/en_qgis_projections_wiki.md)
 * [Buffer](../Wiki/en_qgis_projections_wiki.md)
 * [Clip](../Wiki/en_qgis_projections_wiki.md)
-* [Automatisation](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_automatisation_wiki.html)
+* [Automatisation](../Wiki/en_qgis_automatisation_wiki.md)
 
 :::
 
@@ -74,7 +74,7 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/english/content/en/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on facilitating trainings.
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on facilitating trainings.
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -158,11 +158,11 @@ You will manually buffer the cyclone track, clip the population raster, and calc
 
 
 
-1. **Open QGIS** and [create a new project](../Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` → `New`
+1. **Open QGIS** and [create a new project](../Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` → `New`.
 
 2. **Save the project** in the “project” folder. To do that click on `Project` → `Save as` and navigate to the folder. Name the project “Cyclon_Harald_Exposure”.
 
-3. **Load the GeoJOSN** file "example_Harald_2025_Track.geojson" in your project by drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)) . Open the folder `data` → `input`.
+3. **Load the GeoJOSN** file "example_Harald_2025_Track.geojson" in your project by drag and drop ([Wiki Video](../Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)) . Open the folder `data` → `input`.
 
 
 4. **Reproject the cyclone track** to use meters instead of degrees (important for accurate buffering):

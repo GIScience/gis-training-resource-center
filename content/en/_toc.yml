@@ -13,7 +13,7 @@ parts:
           - file: Module_1/en_qgis_theory.md
           - file: Module_1/en_qgis_installation.md
           - file: Module_1/en_qgis_start.md
-          - file: /Module_1/en_qgis_module_1_exercises.md
+          - file: Module_1/en_qgis_module_1_exercises.md
       - file: Module_2/en_module_2_overview.md
         sections:
           - file: Module_2/en_qgis_geodata_concept.md
@@ -86,45 +86,53 @@ parts:
           - file: Wiki/en_qgis_installation_wiki.md
           - file: Wiki/en_qgis_interface_wiki.md
           - file: Wiki/en_qgis_projects_folder_structure_wiki.md
-          - file: Wiki/en_qgis_projections_wiki.md
           - file: Wiki/en_qgis_basemaps_wiki.md
           - file: Wiki/en_qgis_plugins_wiki.md
-          - file: Wiki/en_qgis_data_sources_wiki.md
-          - file: Wiki/en_licensing_data.md
       - file: Wiki/en_qgis_geodata_wiki.md
         sections:
-          - file: Wiki/en_qgis_geodata_types_wiki.md      
+          - file: Wiki/en_qgis_geodata_types_wiki.md
           - file: Wiki/en_qgis_import_geodata_wiki.md
           - file: Wiki/en_qgis_OpenStreetMap_wiki.md
           - file: Wiki/en_qgis_layer_concept_wiki.md
+          - file: Wiki/en_qgis_digitisation_wiki.md
+          - file: Wiki/en_qgis_projections_wiki.md
+      - file: Wiki/en_qgis_attribute_data_wiki.md
+        sections:
           - file: Wiki/en_qgis_attribute_table_wiki.md
-          - file: Wiki/en_qgis_digitisation_wiki.md   
-      - file: Wiki/en_qgis_data_classification_wiki.md
+          - file: Wiki/en_qgis_table_functions_wiki.md
+          - file: Wiki/en_qgis_queries_wiki.md
+            sections:
+              - file: Wiki/en_qgis_spatial_queries_wiki.md
+              - file: Wiki/en_qgis_non_spatial_queries_wiki.md
+          - file: Wiki/en_qgis_joins_wiki.md
+            sections:
+              - file: Wiki/en_qgis_spatial_joins_wiki.md
+              - file: Wiki/en_qgis_non_spatial_joins_wiki.md
+      - file: Wiki/en_qgis_processing_wiki.md
         sections:
-          - file: Wiki/en_qgis_single_symbol_wiki.md
-          - file: Wiki/en_qgis_categorised_wiki.md
-          - file: Wiki/en_qgis_graduated_wiki.md
-      - file: Wiki/en_qgis_geoprocessing_wiki.md
-      - file: Wiki/en_qgis_queries_wiki.md
+          - file: Wiki/en_qgis_geoprocessing_wiki.md
+          - file: Wiki/en_qgis_raster_wiki.md
+            sections:
+              - file: Wiki/en_qgis_raster_basic_wiki.md
+          - file: Wiki/en_qgis_automation_wiki.md
+      - file: Wiki/en_qgis_cartography_wiki.md
         sections:
-          - file: Wiki/en_qgis_spatial_queries_wiki.md
-          - file: Wiki/en_qgis_non_spatial_queries_wiki.md
-      - file: Wiki/en_qgis_table_functions_wiki.md
-      - file: Wiki/en_qgis_joins_wiki.md
+          - file: Wiki/en_qgis_data_classification_wiki.md
+            sections:
+              - file: Wiki/en_qgis_single_symbol_wiki.md
+              - file: Wiki/en_qgis_categorised_wiki.md
+              - file: Wiki/en_qgis_graduated_wiki.md
+          - file: Wiki/en_qgis_representation_wiki.md
+            sections:
+              - file: Wiki/en_qgis_visualisation_wiki.md
+              - file: Wiki/en_qgis_map_making_wiki.md
+      - file: Wiki/en_qgis_data_management_wiki.md
         sections:
-          - file: Wiki/en_qgis_spatial_joins_wiki.md
-          - file: Wiki/en_qgis_non_spatial_joins_wiki.md      
-      - file: Wiki/en_qgis_raster_wiki.md
-        sections:
-          - file: Wiki/en_qgis_raster_basic_wiki.md
-      - file: Wiki/en_qgis_automation_wiki.md
-      - file: Wiki/en_qgis_representation_wiki.md
-        sections:
-          - file: Wiki/en_qgis_visualisation_wiki.md
-          - file: Wiki/en_qgis_map_making_wiki.md
-      - file: Wiki/en_qgis_common_errors_and_Issues.md   
+          - file: Wiki/en_qgis_data_sources_wiki.md
+          - file: Wiki/en_licensing_data.md
+          - file: Wiki/en_geodata_management_sharepoint.md
       - file: Wiki/en_web_and_mobile_apps_wiki.md
-      - file: Wiki/en_geodata_management_sharepoint.md
+      - file: Wiki/en_qgis_common_errors_and_Issues.md
   - caption: Trainers corner
     chapters:
       - file: Trainers_corner/en_TOT_intro.md  

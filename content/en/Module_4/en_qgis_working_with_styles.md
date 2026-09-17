@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -26,7 +26,7 @@ For example, if you want to send a layer to your colleague with the same styling
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_exporting_style_to_send_to_colleague
 .mp4"></video>
 
-:::{figure} ../../fig/en_30.30.2_save_layer_style_window.png
+:::{figure} ../../../fig/en_30.30.2_save_layer_style_window.png
 ---
 width: 350px
 name: en_30.30.2_save_layer_style_window
@@ -43,7 +43,7 @@ When a styling is saved in the same location as the data and has the same name a
 ### Loading a Style into a QGIS-project <a id="loading-a-style-into-a-qgis-project"></a>
 
 1. Open the style manager: `Settings` → `Style manager`.
-2. Click on `import/export` and select `import items`.
+2. Click on `Import / Export` and select `Import Items`.
 3. Navigate to the folder where the style is saved and click import.
 4. The style should now be available as a preset in the styling panel.
 
@@ -78,7 +78,7 @@ You can copy styles from one layer to another:
 2. __How do you import or export a style?__
 
 :::{dropdown} Answer
-1. In QGIS, right-click on the layer → `Properties` → `Symbology`
+1. In QGIS, right-click on the layer → `Properties` → `Symbology`.
 2. In the bottom left corner, there is a dropdown menu called `Style` with options to import or export styles. 
 :::
 

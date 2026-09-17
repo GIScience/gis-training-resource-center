@@ -1,5 +1,8 @@
 # OpenStreetMap (OSM) Data <a id="openstreetmap-osm-data"></a>
 
+
+__🔙[Back to Homepage](../intro.md)__
+
 ## Geofabrik <a id="geofabrik"></a>
 
 The [Geofabrik website](https://download.geofabrik.de/) offers downloads for OSM data by regions. You can select a region of interest and download all the OSM data inside of that region. This is the most extensive method. We recommend using this method if you want to explore the OSM data or you need a lot of OSM data. However, if you only need specific data, such as roads, or settlement points, or buildings, it might be better to choose the HOT export tool or QuickOSM. 
@@ -7,7 +10,7 @@ The [Geofabrik website](https://download.geofabrik.de/) offers downloads for OSM
 ***Example***
 
 1. Go to __https://download.geofabrik.de/__ and navigate to the Mauritius  
-   dataset by clicking on `Africa` → ` Mauritius`
+   dataset by clicking on `Africa` → `Mauritius`
 2. Under __Commonly Used Formats__ select the option `mauritius-latest-free.shp.zip` 
    and download the file. Place it somewhere on your computer where you can find 
    it again and unzip it.
@@ -26,9 +29,9 @@ The [Geofabrik website](https://download.geofabrik.de/) offers downloads for OSM
 7. Load the file `gis_osm_buildings_a_free_1.shp`. This polygon 
    layer contains all buildings in Mauritius mapped on OSM. Take some time 
    to explore the layer. 
-8. Add a satellite base map by using the [QuickMapServices plugin](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_basemaps_wiki.html#basemaps-from-quickmapservices-plugin) 
+8. Add a satellite base map by using the [QuickMapServices plugin](en_qgis_basemaps_wiki.md#basemaps-from-quickmapservices-plugin) 
    to check if there are unmapped buildings. 
-8. Load the file `gis_osm_landuse_a_free_1.shp`. Check out the 
+9. Load the file `gis_osm_landuse_a_free_1.shp`. Check out the 
     dataset and use the classification function to get a better overview.
     * Right-click on the layer `gis_osm_landuse_a_free_1` in the `Layer Panel` 
       -> `Properties`. A new window will open up with a vertical tab section on 
@@ -52,7 +55,7 @@ You will need to formulate a data query to find the data that you are looking fo
    [Map features](https://wiki.openstreetmap.org/wiki/Map_features) article. 
 2. [Taginfo](https://taginfo.openstreetmap.org/)
 
-This method has the advantage that you can specifically download the data that you need but you need to know how to formulate queries. To use QuickOSM, you have to [install the QGIS plugin](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_plugins_wiki.html). 
+This method has the advantage that you can specifically download the data that you need but you need to know how to formulate queries. To use QuickOSM, you have to [install the QGIS plugin](en_qgis_plugins_wiki.md). 
 
 ## Overpass Turbo <a id="overpass-turbo"></a>
 

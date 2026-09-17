@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: https://giscience.github.io/gis-training-resource-center/en/intro.html 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -26,7 +26,7 @@ Examples for Projections (Source:Unknown. This figure is included for illustrati
 Every projection has its use case. For example, the Mercator projection displays the angles between to points correctly. This was used extensively during the seafaring age without satellites, as ships could navigate to a destination by following a straight line on a map. For example, the Mercator projection displays road intersections correctly: a road that crosses another road at a right angle, will be displayed as such on a mercator projection. This is especially useful when navigating. The shape of an area remains correct, since the angles between each line stay true. However, if you increase the scale of the map, the size and distances get distorted dramatically (see figure below). Furthermore, the further away from the equator you get, the more distortion you get.
 
 :::{note} The True Size of
-The mercator projection is famous for distorting the size of different countries. You can check the true size in comparison to different placements on the map on [TheTrueSize.com website](https://www.thetruesize.com).A popular example is Greenland in comparison with Africa, which seem on the map to be about the same size, but in reality Africa is a lot bigger.
+The mercator projection is famous for distorting the size of different countries. You can check the true size in comparison to different placements on the map on [TheTrueSize.com website](https://www.thetruesize.com). A popular example is Greenland in comparison with Africa, which seem on the map to be about the same size, but in reality Africa is a lot bigger.
 :::
 
 
@@ -44,7 +44,7 @@ Comparison Greenland - Africa (Source: [The True Size of](https://www.thetruesiz
 
 In GIS, we project the earth onto a flat coordinate system (hence the name coordinate reference system or CRS). It is crucial that you are aware that your data can be in one CRS and your QGIS project in another CRS. 
 
-The project CRS is displayed on the bottom rightcorner of the [QGIS interface](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_1/en_qgis_start.html#overview-of-qgis-interface). Here, you can see the EPSG code. EPSG stands for European Petroleum Survey Group, and it refers to a standardized code system for coordinate reference systems (CRS) and projections. Each EPSG code (e.g., EPSG:4326 for WGS84) uniquely identifies a specific CRS, helping ensure consistency and interoperability in geospatial data across different platforms and applications. 
+The project CRS is displayed on the bottom rightcorner of the [QGIS interface](https://giscience.github.io/gis-training-resource-center/en/Module_1/en_qgis_start.html#overview-of-qgis-interface). Here, you can see the EPSG code. EPSG stands for European Petroleum Survey Group, and it refers to a standardized code system for coordinate reference systems (CRS) and projections. Each EPSG code (e.g., EPSG:4326 for WGS84) uniquely identifies a specific CRS, helping ensure consistency and interoperability in geospatial data across different platforms and applications. 
 
 - __EPSG Codes:__ These are numerical identifiers assigned by the EPSG database to specific coordinate reference systems, making them concise and unambiguous (e.g., EPSG:4326 for WGS84). They provide a standardized way to reference CRS across various GIS applications.
 - __CRS Names:__ These are typically descriptive names for coordinate reference systems (e.g., "WGS 84" or "NAD83"). While names can provide insight into the system being used, they may not be unique or universally recognized, leading to potential confusion without the accompanying EPSG code.

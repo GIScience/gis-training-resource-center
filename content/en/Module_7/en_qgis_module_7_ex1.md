@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -44,12 +44,12 @@ __Estimated time demand for the exercise__
 __Relevant Wiki Articles__
 ^^^
 
-* [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_raster_basic_wiki.html)
-* [Intersection](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
+* [Zonal Statistics](../Wiki/en_qgis_raster_basic_wiki.md)
+* [Intersection](../Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
 * [Projections](../Wiki/en_qgis_projections_wiki.md)
 * [Buffer](../Wiki/en_qgis_projections_wiki.md)
 * [Clip](../Wiki/en_qgis_projections_wiki.md)
-* [Automation](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_automation_wiki.html)
+* [Automation](../Wiki/en_qgis_automation_wiki.md)
 
 :::
 
@@ -75,7 +75,7 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](https://giscience.github.io/gis-training-resource-center/english/content/en/Trainers_corner/en_how_to_training.html#how-to-do-trainings) for some general tips on training conduction
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on training conduction
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -102,7 +102,7 @@ __Wrap up:__
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_7/Exercise_1.zip
 
-__Download all datasets [here](), save the folder on your computer and unzip the file.__ 
+__Download all datasets [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_7/Exercise_1.zip), save the folder on your computer and unzip the file.__ 
 
 :::
 
@@ -156,11 +156,11 @@ You will manually buffer the cyclone track, clip the population raster, and calc
 
 
 
-1. **Open QGIS** and create a [new project](../Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
+1. **Open QGIS** and create a [new project](../Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` → `New`
 
-2. **Save the project** in the “project” folder. To do that click on `Project` -> `Save as` and navigate to the folder. Name the project “Cyclon_Harald_Exposure”.
+2. **Save the project** in the “project” folder. To do that click on `Project` → `Save as` and navigate to the folder. Name the project “Cyclon_Harald_Exposure”.
 
-3. **Load the GeoJOSN** file "example_Harald_2025_Track.geojson" in your project by drag and drop ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)) . Open the folder `data` -> `input`
+3. **Load the GeoJOSN** file "example_Harald_2025_Track.geojson" in your project by drag and drop ([Wiki Video](../Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)) . Open the folder `data` → `input`.
 
 
 4. **Reproject the cyclone track** to use meters instead of degrees (important for accurate buffering):
@@ -173,7 +173,7 @@ You will manually buffer the cyclone track, clip the population raster, and calc
 width: 600px
 align: center
 ---
-Reprojetter la trajectoire du cyclone
+Reprojetter la trajectoire du cyclone.
 ```
 
 ```{Attention}
@@ -924,13 +924,13 @@ If any are missing:
 ### 2. **Apply Predefined Style Files** <a id="2-apply-predefined-style-files"></a>
 Apply the following`.qml` style files to the respective layers:
 
-| **Layer**                              | **Style File**                            |
-|----------------------------------------|-------------------------------------------|
-| `example_Harald_2025_Track`                    | `storm_track_cyclone_style.qml`           |
-| `cyclone_harald_buffer`                  | `exposed_cyclone_area_style.qml`          |
-| `Harald_Exposed_Population`            | `exposed_population_style.qml`            |
-| `admin2_health_affected`          | `exposed_healthsites_style.qml`           |
-| `admin2_education_affected`            | `exposed_education_facilities_style.qml`  |
+| **Layer**                   | **Style File**                           |
+|-----------------------------|------------------------------------------|
+| `example_Harald_2025_Track` | `storm_track_cyclone_style.qml`          |
+| `cyclone_harald_buffer`     | `exposed_cyclone_area_style.qml`         |
+| `Harald_Exposed_Population` | `exposed_population_style.qml`           |
+| `admin2_health_affected`    | `exposed_healthsites_style.qml`          |
+| `admin2_education_affected` | `exposed_education_facilities_style.qml` |
 
 ```{note}
 ⚠️ For the **health** and **education facilities**, the provided style files are linked to the column containing the **sum of exposed facilities**.  
@@ -1161,13 +1161,13 @@ To fix this, open the table properties in the layout and **reduce the font size*
 
 ### ✅ Final Checklist <a id="final-checklist"></a>
 
-| Task                                           | Done |
-|------------------------------------------------|------|
-| Page set to A3 Landscape                       | ☐    |
-| Only relevant layer group active               | ☐    |
-| Exposed districts attribute table updated      | ☐    |
-| Legend cleaned and renamed                     | ☐    |
-| All text elements updated                      | ☐    |
+| Task                                      | Done |
+|-------------------------------------------|------|
+| Page set to A3 Landscape                  | ☐    |
+| Only relevant layer group active          | ☐    |
+| Exposed districts attribute table updated | ☐    |
+| Legend cleaned and renamed                | ☐    |
+| All text elements updated                 | ☐    |
 
 ---
 

@@ -58,10 +58,10 @@ The `Select by Expression` tool lets you build an expression to select features 
 It is also possible to add expressions that chain different requirements. In this case do not forget to put brackets around individual parts of the expression such as:
 
 ```
-
+("continent" = 'Asia' OR "continent" = 'Europe') AND "2015" > 10000
 ```
 
-### Save selected features as a new file <a id="save-selected-features-as-a-new-file"></a>
+## Save selected features as a new file <a id="save-selected-features-as-a-new-file"></a>
 
 - `Layer-Properties` → `Export` → `Save only selected features`.
 

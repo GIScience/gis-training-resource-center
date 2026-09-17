@@ -129,14 +129,14 @@ SKetch Map Tool workflow
 UMAP is an online platform that allows users to create custom maps with OpenStreetMap (OSM) as a basemap layer. No installation or registration is necessary to use the platform. This enables users to quickly gain an intuitive overview of their data.
 Users can customize the appearance of the map and share it with others. It's particularly useful for collaborative mapping projects, quick visualization of geographic data, and creating custom maps tailored to specific needs.
 
-| Feature | QGIS | uMap |
-| :-------------------- | :----------------- | :---------- |
-| Type | Desktop Geographic Information System (GIS) software | Online mapping platform|
-| Accessibility| Requires installation on a desktop computer | Accessible online via web browser |
-| Purpose | Comprehensive GIS software for spatial data analysis | Interactive mapping tool for creating custom maps |
-| Data Import | Supports various data formats (shapefiles, geodatabases, raster data, etc.) | Vector data only, user input via map canvas, some geodata formats (geojson, .gpx, .kml, .osm) |
-| Data Visualisation and Analysis |Offers extensive visualisation and analysis capabilities; Provides a wide range of geospatial analysis tools  | Focuses on the creation of interactive maps with custom elements; No analysis tools |
-| Output | Printable map with all necessary map elements | URL to share map online |
+| Feature                         | QGIS                                                                                                         | uMap                                                                                          |
+|:--------------------------------|:-------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------|
+| Type                            | Desktop Geographic Information System (GIS) software                                                         | Online mapping platform                                                                       |
+| Accessibility                   | Requires installation on a desktop computer                                                                  | Accessible online via web browser                                                             |
+| Purpose                         | Comprehensive GIS software for spatial data analysis                                                         | Interactive mapping tool for creating custom maps                                             |
+| Data Import                     | Supports various data formats (shapefiles, geodatabases, raster data, etc.)                                  | Vector data only, user input via map canvas, some geodata formats (geojson, .gpx, .kml, .osm) |
+| Data Visualisation and Analysis | Offers extensive visualisation and analysis capabilities; Provides a wide range of geospatial analysis tools | Focuses on the creation of interactive maps with custom elements; No analysis tools           |
+| Output                          | Printable map with all necessary map elements                                                                | URL to share map online                                                                       |
 
 
 ```{Hint}
@@ -187,7 +187,7 @@ Print your maps and mark with real pens to experience the real use of the Sketch
 - You can choose to use either QGIS (__Option A__) or [uMap](https://umap.openstreetmap.fr/en/) (__Option B__) for the next part of the exercise.
 
 ```{Tip}
-If you like to learn more about the [visualisation](../Module_4/en_module_4_overview.md) and one possible analysis of the Sketch Maps explore exercise [4](https://giscience.github.io/gis-training-resource-center/english/content/en/Mobile_Data_collection/en_SMT_ex4_.html) and [5](https://giscience.github.io/gis-training-resource-center/english/content/en/Mobile_Data_collection/en_SMT_ex5_.html).
+If you like to learn more about the [visualisation](../Module_4/en_module_4_overview.md) and one possible analysis of the Sketch Maps explore exercise [4](en_SMT_ex4_) and [5](en_SMT_ex5_).
 ```
 
 :::{dropdown} Option A: Open your results in QGIS
@@ -197,18 +197,18 @@ If you like to learn more about the [visualisation](../Module_4/en_module_4_over
 
 1. __Open QGIS__
 
-    Open QGIS and navigate to `Project` -> `New` and click on `Save`. Navigate to the folder where you want to save your project, give it a name and click `Save` again. When working in QGIS always remember to save your project every now and then.
+    Open QGIS and navigate to `Project` → `New` and click on `Save`. Navigate to the folder where you want to save your project, give it a name and click `Save` again. When working in QGIS always remember to save your project every now and then.
 
 2. __Add a Basemap__
 
     For a better overview and orientation, it is always helpful to add a basemap to your project and put your situation in a spatial context. Navigate to the browser `Browser` Panel > `XYZ Tiles`, and open the dropdown by clicking on it. Next, select OpenStreetMap or another basemap.
 
-    Click [here](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_basemaps_wiki.html#standard-qgis-basemaps) for more information on basemaps and how toa dd them to your project.
+    Click [here](../Wiki/en_qgis_basemaps_wiki.md#standard-qgis-basemaps) for more information on basemaps and how toa dd them to your project.
 
 2. __Load your results in QGIS__
 
     - First, unzip the folder you downloaded from the Sketch Map Tool website. In it, you will find a vector file (`geojson`) and a raster file (`geotiff`, `tiff`, or `tif`).
-    - Load both files into QGIS by dragging them onto QGIS. Be aware which files are at the top, because you might not be able to see the layers which are below. If it is your first time using QGIS, take your time to familiarise yourself with the [QGIS interface](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_interface_wiki.html).  
+    - Load both files into QGIS by dragging them onto QGIS. Be aware which files are at the top, because you might not be able to see the layers which are below. If it is your first time using QGIS, take your time to familiarise yourself with the [QGIS interface](../Wiki/en_qgis_interface_wiki.md).  
     - Take a look at the detected markings, compare it with your map. Which differences can you see? Are some markings missing in the Sketch Map Tool results?
 
 :::

@@ -8,7 +8,7 @@ __🔙[Back to Homepage](../intro.md)__
 Always check that the Coordinate Reference System (CRS)/EPSG code of your data is the same as the CRS/EPSG-code of your project!
 :::
 
-The default CRS/EPSG code of every QGIS project is the World Geodetic System 84 (EPSG: 4326). This CRS is optimized for world maps. So not perfect for most applications, because we mostly use maps for small areas.
+The default CRS/EPSG code of every QGIS project is the World Geodetic System 84 (EPSG: 4326). This CRS is optimized for world maps. So it's not perfect for most applications, because we mostly use maps for small areas.
 
 ### How to check EPSG-Code/CRS of your QGIS Project and change it <a id="how-to-check-epsg-codecrs-of-your-qgis-project-and-change-it"></a>
 :::{Note}
@@ -31,7 +31,7 @@ After loading any spatial data in QGIS, check the CRS/EPSG code of the data to m
 2. The “Layer Properties” Window of the data layer will open. Click on `Information`.
 3. Under the headline “Coordinate Reference System (CRS)” you find all information about the CRS. The most important are:
     - __Name:__     Here you find the EPSG Code.
-    - __Unites:__    Here you can find whether it is possible to use meters with this data layer or latitude and longitude.
+    - __Units:__    Here you can find whether it is possible to use meters with this data layer or latitude and longitude.
 
 
 ## Changing the projection of a vector layer <a id="changing-the-projection-of-a-vector-layer"></a>
@@ -39,7 +39,7 @@ After loading any spatial data in QGIS, check the CRS/EPSG code of the data to m
 1. `Vector` Tab → `Data Management Tools` → `Reproject Layer`.
 2. Select target CRS/ EPSG-Code.
 3. Save the new file by clicking on the three dots next to `Reprojected`, specify the file name and the location where you want to save the file.
-5. Click `Run`.
+4. Click `Run`.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_vector.mp4"></video>
 
@@ -56,4 +56,4 @@ After loading any spatial data in QGIS, check the CRS/EPSG code of the data to m
 
 ## Common mistakes with Coordinate Reference Systems <a id="common-mistakes-with-coordinate-reference-systems"></a>
 
-The website [__I Hate Coordinate Systems!__](https://ihatecoordinatesystems.com/) offers a “a problem-based guide of common CRS issues, root causes, and solutions.”.
+The website [__I Hate Coordinate Systems!__](https://ihatecoordinatesystems.com/) offers a “a problem-based guide of common CRS issues, root causes, and solutions.”

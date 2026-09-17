@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: ../fr_intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -26,7 +26,7 @@ __Type d'exercice:__
 __Piste d'Exercice:__
 ^^^
 
-Cet exercice est le quatrième exercice de la piste d'exercice ["Analyse d’Action Anticipative pour les Cyclones à Madagascar"](/content/Exercise_tracks/fr_mdg_aa_cyclones.md)
+Cet exercice est le quatrième exercice de la piste d'exercice ["Analyse d’Action Anticipative pour les Cyclones à Madagascar"](../Exercise_tracks/fr_mdg_aa_cyclones.md)
 
 :::
 
@@ -45,8 +45,8 @@ __Temps estimé pour l'exercice__
 __Articles Wiki pertinents__
 ^^^
 
-* [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html)
-* [Intersection](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
+* [Zonal Statistics](../Wiki/fr_qgis_raster_basic_wiki.html)
+* [Intersection](../Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
 * [Projections](/content/Wiki/en_qgis_projections_wiki.md)
 * [Buffer](/content/Wiki/en_qgis_projections_wiki.md)
 * [Clip](/content/Wiki/en_qgis_projections_wiki.md)

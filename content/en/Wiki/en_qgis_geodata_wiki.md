@@ -1,11 +1,11 @@
-# General Geodata <a id="general-geodata"></a>
+# Working with Geodata <a id="general-geodata"></a>
 
 __🔙[Back to Homepage](../intro.md)__
 
 ## Subsections: <a id="subsections"></a>
-- [Types of Geodata](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_geodata_types_wiki.html)
-- [Geodata import in QGIS](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html)
-- [OpenStreetMap (OSM) Data](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_OpenStreetMap_wiki.html)
-- [The Layer Concept](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_layer_concept_wiki.html)
-- [The Attribute Table](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.html)
-- [Digitisation](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_digitisation_wiki.html)
+- [Types of Geodata](en_qgis_geodata_types_wiki.md)
+- [Geodata import in QGIS](en_qgis_import_geodata_wiki.md)
+- [OpenStreetMap (OSM) Data](en_qgis_OpenStreetMap_wiki.md)
+- [The Layer Concept](en_qgis_layer_concept_wiki.md)
+- [Digitisation](en_qgis_digitisation_wiki.md)
+- [Projections](en_qgis_projections_wiki.md)

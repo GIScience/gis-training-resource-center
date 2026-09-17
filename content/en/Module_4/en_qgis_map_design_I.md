@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -19,7 +19,7 @@ In general, there are two main types of maps: __topographic maps__ and __themati
 
 __Topographic maps__ are intended to be exhaustive, including elements fundamental to localisation (localities, road networks, terrain, hydrography). They display the physical location of objects in the real world. The representation of elements in topographic maps is done using conventional signs (e.g. blue for water, green for forests, yellow for agricultural land). 
 
-:::{figure} ../../fig/en_30.30.2_topographic_map_examples.png
+:::{figure} ../../../fig/en_30.30.2_topographic_map_examples.png
 ---
 width: 600px
 name: en_30.30.2_topographic_map_examples
@@ -32,7 +32,7 @@ Examples for topographic maps.
 __Thematic maps__ display the distribution of specific data or statistically processed information, such as population size, disease incidence, flooding risk, etc. The representation of elements on thematic maps is decided according to the rules of graphic semiology. 
 
 
-:::{figure} ../../fig/en_30.30.2_thematic_maps_examples.png
+:::{figure} ../../../fig/en_30.30.2_thematic_maps_examples.png
 ---
 width: 600px
 name: en_30.30.2_thematic_maps_examples
@@ -48,7 +48,7 @@ These two maps use design elements differently. Topographic maps will use symbol
 
 ## Visual Variables <a id="visual-variables"></a>
 
-:::{figure} ../../fig/en_30.30.2_graphic_semiology_signs.png
+:::{figure} ../../../fig/en_30.30.2_graphic_semiology_signs.png
 ---
 width: 500px
 name: en_30.30.2_graphic_semiology_signs
@@ -58,7 +58,7 @@ You can use different graphic signs depending on the type of information you wan
 
 Visual variables are the __graphical means for visually transcribing information__. The visual variables are __shape, size, hue, value, texture, and orientation__. You can adjust these variables to appropriately represent the data at your disposal. They allow for the expression of __relationship of difference, order, association, or quantity__ between each element, helping to display different information.
 
-:::{figure} ../../fig/en_visual_variables.png
+:::{figure} ../../../fig/en_visual_variables.png
 ---
 name: en_visual_variables
 width: 500px
@@ -258,7 +258,7 @@ Colours are arguably the most striking visual variables as they are easily disti
 
 Colours schemes can be __categorial, sequential, or diverging__. If you wish to display different types of buildings or roads, the colour schemes should be categorial. Colour gradients, either sequential or diverging, are used for numerical data or data that can be ordered. For example, for the population sizes of districts a sequential colouring scheme is best to show the relative difference between the values. However, if the data has positive __and__ negative values, a diverging colour gradient should be used.
 
-:::{figure} ../../fig/en_colour_gradients_qualities.png
+:::{figure} ../../../fig/en_colour_gradients_qualities.png
 ---
 name: en_colour_gradients_qualities
 width: 750px
@@ -268,7 +268,7 @@ Different types of colouring schemes.
 
 When choosing colour gradients, a clear gradient from lighter to darker colours is usually the most appropriate, as the gradation is easily distinguishable and translates well into black and white. In the figure below, examples A and B are not good colour schemes, as it is difficult to make out the gradation and it does not translate well into black and white. You can achieve a clear sequence by grading the __saturation__ of the colour gradient.
 
-:::{figure} ../../fig/de_colour_gradients_saturation.png
+:::{figure} ../../../fig/de_colour_gradients_saturation.png
 ---
 name: de_colour_gradients_saturation
 width: 750px
@@ -278,7 +278,7 @@ Examples for different colour gradients translated into black and white. Pay att
 
 Colour gradients can also encompass multiple hues:
 
-:::{figure} ../../fig/colour_gradients_hues.png
+:::{figure} ../../../fig/colour_gradients_hues.png
 ---
 name: colour_gradients_hues
 width: 750px
@@ -295,7 +295,7 @@ generate colour palettes for your use case.
 
 When choosing the colours, you have to keep in mind that colour gradients (especially diverging Red-Green gradients) can be hard or impossible to distinguish for people with colour blindness.
 
-:::{figure} ../../fig/Colour_Blindness.png
+:::{figure} ../../../fig/Colour_Blindness.png
 ---
 name: Colour_Blindness
 width: 750px
