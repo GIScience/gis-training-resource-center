@@ -48,7 +48,7 @@ __[Working with Geodata](en_qgis_geodata_wiki.md):__
 ::::{grid} 2
 
 :::{grid-item-card}
-__Attribute Data:__
+__[Attribute Data](en_qgis_attribute_data_wiki.md):__
 ^^^
 - [The Attribute Table](en_qgis_attribute_table_wiki.md)
 - [Manipulating the Attribute Table](en_qgis_table_functions_wiki.md)
@@ -57,7 +57,7 @@ __Attribute Data:__
 :::
 
 :::{grid-item-card}
-__Processing:__
+__[Processing](en_qgis_processing_wiki.md):__
 ^^^
 - [Spatial Processing](en_qgis_geoprocessing_wiki.md)
 - [Raster Data](en_qgis_raster_wiki.md)
@@ -69,14 +69,14 @@ __Processing:__
 ::::{grid} 2
 
 :::{grid-item-card}
-__Visualisation & Cartography:__
+__[Visualisation & Cartography](en_qgis_cartography_wiki.md):__
 ^^^
 - [Geodata Classification](en_qgis_data_classification_wiki.md)
 - [Visualisation and Map Making in QGIS](en_qgis_representation_wiki.md)
 :::
 
 :::{grid-item-card}
-__Data Management:__
+__[Data Management](en_qgis_data_management_wiki.md):__
 ^^^
 - [Data Sources](en_qgis_data_sources_wiki.md)
 - [Data Licenses](en_licensing_data.md)

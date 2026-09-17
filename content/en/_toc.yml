@@ -81,9 +81,6 @@ parts:
   - caption: Wiki
     chapters:
       - file: Wiki/en_wiki_homepage.md
-
-  - caption: Wiki - Getting Started
-    chapters:
       - file: Wiki/en_qgis_qgis_basics_wiki.md
         sections:
           - file: Wiki/en_qgis_installation_wiki.md
@@ -91,9 +88,6 @@ parts:
           - file: Wiki/en_qgis_projects_folder_structure_wiki.md
           - file: Wiki/en_qgis_basemaps_wiki.md
           - file: Wiki/en_qgis_plugins_wiki.md
-
-  - caption: Wiki - Working with Geodata
-    chapters:
       - file: Wiki/en_qgis_geodata_wiki.md
         sections:
           - file: Wiki/en_qgis_geodata_types_wiki.md
@@ -102,52 +96,42 @@ parts:
           - file: Wiki/en_qgis_layer_concept_wiki.md
           - file: Wiki/en_qgis_digitisation_wiki.md
           - file: Wiki/en_qgis_projections_wiki.md
-
-  - caption: Wiki - Attribute Data
-    chapters:
-      - file: Wiki/en_qgis_attribute_table_wiki.md
-      - file: Wiki/en_qgis_table_functions_wiki.md
-      - file: Wiki/en_qgis_queries_wiki.md
+      - file: Wiki/en_qgis_attribute_data_wiki.md
         sections:
-          - file: Wiki/en_qgis_spatial_queries_wiki.md
-          - file: Wiki/en_qgis_non_spatial_queries_wiki.md
-      - file: Wiki/en_qgis_joins_wiki.md
+          - file: Wiki/en_qgis_attribute_table_wiki.md
+          - file: Wiki/en_qgis_table_functions_wiki.md
+          - file: Wiki/en_qgis_queries_wiki.md
+            sections:
+              - file: Wiki/en_qgis_spatial_queries_wiki.md
+              - file: Wiki/en_qgis_non_spatial_queries_wiki.md
+          - file: Wiki/en_qgis_joins_wiki.md
+            sections:
+              - file: Wiki/en_qgis_spatial_joins_wiki.md
+              - file: Wiki/en_qgis_non_spatial_joins_wiki.md
+      - file: Wiki/en_qgis_processing_wiki.md
         sections:
-          - file: Wiki/en_qgis_spatial_joins_wiki.md
-          - file: Wiki/en_qgis_non_spatial_joins_wiki.md
-
-  - caption: Wiki - Processing
-    chapters:
-      - file: Wiki/en_qgis_geoprocessing_wiki.md
-      - file: Wiki/en_qgis_raster_wiki.md
+          - file: Wiki/en_qgis_geoprocessing_wiki.md
+          - file: Wiki/en_qgis_raster_wiki.md
+            sections:
+              - file: Wiki/en_qgis_raster_basic_wiki.md
+          - file: Wiki/en_qgis_automation_wiki.md
+      - file: Wiki/en_qgis_cartography_wiki.md
         sections:
-          - file: Wiki/en_qgis_raster_basic_wiki.md
-      - file: Wiki/en_qgis_automation_wiki.md
-
-  - caption: Wiki - Visualisation & Cartography
-    chapters:
-      - file: Wiki/en_qgis_data_classification_wiki.md
+          - file: Wiki/en_qgis_data_classification_wiki.md
+            sections:
+              - file: Wiki/en_qgis_single_symbol_wiki.md
+              - file: Wiki/en_qgis_categorised_wiki.md
+              - file: Wiki/en_qgis_graduated_wiki.md
+          - file: Wiki/en_qgis_representation_wiki.md
+            sections:
+              - file: Wiki/en_qgis_visualisation_wiki.md
+              - file: Wiki/en_qgis_map_making_wiki.md
+      - file: Wiki/en_qgis_data_management_wiki.md
         sections:
-          - file: Wiki/en_qgis_single_symbol_wiki.md
-          - file: Wiki/en_qgis_categorised_wiki.md
-          - file: Wiki/en_qgis_graduated_wiki.md
-      - file: Wiki/en_qgis_representation_wiki.md
-        sections:
-          - file: Wiki/en_qgis_visualisation_wiki.md
-          - file: Wiki/en_qgis_map_making_wiki.md
-
-  - caption: Wiki - Data Management
-    chapters:
-      - file: Wiki/en_qgis_data_sources_wiki.md
-      - file: Wiki/en_licensing_data.md
-      - file: Wiki/en_geodata_management_sharepoint.md
-
-  - caption: Wiki - Other Platforms
-    chapters:
+          - file: Wiki/en_qgis_data_sources_wiki.md
+          - file: Wiki/en_licensing_data.md
+          - file: Wiki/en_geodata_management_sharepoint.md
       - file: Wiki/en_web_and_mobile_apps_wiki.md
-
-  - caption: Wiki - Troubleshooting
-    chapters:
       - file: Wiki/en_qgis_common_errors_and_Issues.md
   - caption: Trainers corner
     chapters:
