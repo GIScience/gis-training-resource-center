@@ -13,7 +13,7 @@ In this chapter, we will prepare the setup for the training. This includes insta
 
 ## Quick guide QGIS 3.34.12 - installation and basic setup <a id="quick-guide-qgis-33412-installation-and-basic-setup"></a>
 
-<iframe width="800" height="515" src="https://youtube.com/embed/ck4PjoOIwMQ?si=8HHR03VzpyuhXOmr" title="YouTube Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="800" height="515" src="https://www.youtube.com/embed/Ku3VXoqrzUU?si=bo4nCCHLFuNNp9qQ" title="YouTube Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## QGIS Download and Installation <a id="qgis-download-and-installation"></a>
 
