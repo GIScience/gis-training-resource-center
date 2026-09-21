@@ -454,7 +454,7 @@ align: center
 ---
 ```
 
-__Tool:__ [Symbology tab](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_I.html#symbology-for-vector-data)
+__Tool:__ [Symbology tab](../Module_4/en_qgis_map_design_I.md#symbology-for-vector-data)
 
 ```{figure} ../../../fig/MAD_Trigger_workflow_Step4b.png
 ---
@@ -465,7 +465,7 @@ align: center
 ```
 
 
-__Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+__Tool:__  [Print Layout](../Module_4/en_qgis_map_design_2.md#print-layout)
 
 -->
 
@@ -688,7 +688,7 @@ align: center
 __Purpose:__ Export the designed and finalized map layout in order to print it as a pdf or format of your choice.
 
 
-__Tool:__ [Print Layout Composer](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html?highlight=print+layout#print-layout)
+__Tool:__ [Print Layout Composer](../Module_4/en_qgis_map_design_2.md#print-layout)
 
 -->
 
