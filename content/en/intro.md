@@ -24,7 +24,7 @@ The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work i
 ::::{grid} 1 2 2 2
 :gutter: 2
 
-:::{grid-item-card} __[Start teaching](Trainers_corner/en_TOT_intro.md)__ 
+:::{grid-item-card} __Start teaching__ 
 :link: /Trainers_corner/en_TOT_intro
 
 There is a dedicated [section for trainers](Trainers_corner/en_TOT_intro.md) who want to use the platform.
@@ -33,7 +33,7 @@ Nevertheless, every component of the training material is designed to be utilize
 
 :::
 
-:::{grid-item-card} __[Start learning](Module_1/en_module_1_overview.md)__ 
+:::{grid-item-card} __Start learning__ 
 :link: /Module_1/en_module_1_overview
 
 Your trainers will be your guides for this platform. If you have any questions, feel free to ask them any questions about this training platform.
@@ -102,7 +102,7 @@ The QGIS skills offered on this platform span basic, intermediate, and advanced 
 :::
 
 :::{dropdown} Advanced Skills
-| Module 7 - Automation  | Module 8 - Remote sensing and raster data (*under construction*) | Module 9 - Accessibility (*under construction*) |
+| Module 7 - Automation      | Module 8 - Remote sensing and raster data (*under construction*) | Module 9 - Accessibility (*under construction*) |
 |----------------------------|------------------------------------------------------------------|-------------------------------------------------|
 | Introduction to automation | Zonal statistics                                                 | Accessibility analyses                          |
 | The model designer         | Extraction of raster values                                      | Spatial analysis                                |
@@ -154,10 +154,10 @@ Currently, there are no public trainings scheduled. Most of our trainings are or
 <!--
 ## Past public trainings
 
-| Title | Date | Application | Organization | Format | Language | Skill Level | Info |
-|-------|------|--------------|--------------|--------|----------|-------------|------|
-|The Use of Geoinformation in Anticipatory Humanitarian Action|15.01-26.01.2024|Closed ⛔ |[German Red Cross](https://www.drk.de/) & [HeiGIT](https://heigit.org/)|Online|English|Basic|[Info](https://aha-trainings.de/courses/the-use-of-geoinformation-in-anticipatory-humanitarian)|
-|Current Approaches and GIS Methods to Support Anticipatory Humanitarian Action|11.03-22.03.2024|Closed ⛔ |[German Red Cross](https://www.drk.de/) & [HeiGIT](https://heigit.org/)|Online|English|Intermidate|[Info](https://aha-trainings.de/courses/current-approaches-and-gis-methods)|
+| Title                                                                          | Date             | Application | Organization                                                            | Format | Language | Skill Level | Info                                                                                            |
+|--------------------------------------------------------------------------------|------------------|-------------|-------------------------------------------------------------------------|--------|----------|-------------|-------------------------------------------------------------------------------------------------|
+| The Use of Geoinformation in Anticipatory Humanitarian Action                  | 15.01-26.01.2024 | Closed ⛔    | [German Red Cross](https://www.drk.de/) & [HeiGIT](https://heigit.org/) | Online | English  | Basic       | [Info](https://aha-trainings.de/courses/the-use-of-geoinformation-in-anticipatory-humanitarian) |
+| Current Approaches and GIS Methods to Support Anticipatory Humanitarian Action | 11.03-22.03.2024 | Closed ⛔    | [German Red Cross](https://www.drk.de/) & [HeiGIT](https://heigit.org/) | Online | English  | Intermidate | [Info](https://aha-trainings.de/courses/current-approaches-and-gis-methods)                     |
 --->
 ___
 
