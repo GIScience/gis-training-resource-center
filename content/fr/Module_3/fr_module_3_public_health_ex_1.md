@@ -34,7 +34,7 @@ Au cours du mois dernier, les autorités sanitaires au Tchad ont signalé une ha
 
 :::{note}
 
-Dans cet exercice, nous téléchargerons de vrais jeux de données depuis le [Humanitarian Data Exchange (HDX)](humdata.org) afin d’identifier et d’analyser des informations pertinentes. Toutefois, les jeux de données sur les capacités des structures de santé et la couverture vaccinale utilisés ici sont fictifs et ont été créés uniquement à des fins de formation. Ils ne représentent pas des données du monde réel.
+Dans cet exercice, nous téléchargerons de vrais jeux de données depuis le [Humanitarian Data Exchange (HDX)](https://humdata.org) afin d’identifier et d’analyser des informations pertinentes. Toutefois, les jeux de données sur les capacités des structures de santé et la couverture vaccinale utilisés ici sont fictifs et ont été créés uniquement à des fins de formation. Ils ne représentent pas des données du monde réel.
 
 :::
 

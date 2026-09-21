@@ -44,7 +44,7 @@ Un groupe d’étudiants assistants et d’employés dévoués de l’Institut d
   </div>
 
   <div class="logo">
-    <img src="../../_static/Logo-Horizontal-RGB.svg" alt="IFRC Logo">
+    <img src="../../../_static/Logo-Horizontal-RGB.svg" alt="IFRC Logo">
   </div>
 </div>
 
@@ -61,7 +61,7 @@ Croix-Rouge allemande :
   </div>
 
   <div class="logo">
-    <img src="../../_static/logo-drk.svg" alt="German Red Cross Logo">
+    <img src="../../../_static/logo-drk.svg" alt="German Red Cross Logo">
   </div>
 </div>
 
@@ -75,7 +75,7 @@ Croix-Rouge allemande :
   </div>
 
   <div class="logo">
-    <img src="../../_static/British_Red_Cross_logo.svg.png" alt="British Red Cross Logo">
+    <img src="../../../_static/British_Red_Cross_logo.svg.png" alt="British Red Cross Logo">
   </div>
 </div>
 
@@ -89,7 +89,7 @@ Croix-Rouge allemande :
   </div>
 
   <div class="logo">
-    <img src="../../_static/rode-kruis-logo-nav.svg" alt="Vétérans Red Cross Logo">
+    <img src="../../../_static/rode-kruis-logo-nav.svg" alt="Vétérans Red Cross Logo">
   </div>
 </div>
 
@@ -103,7 +103,7 @@ Croix-Rouge allemande :
   </div>
 
   <div class="logo">
-    <img src="../../_static/HeiGIT_Logo_base.png" alt="Logo HeiGIT">
+    <img src="../../../_static/HeiGIT_Logo_base.png" alt="Logo HeiGIT">
   </div>
 </div>
 

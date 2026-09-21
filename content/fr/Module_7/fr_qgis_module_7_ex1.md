@@ -42,12 +42,12 @@ __Temps estimé pour l'exercice__
 __Articles Wiki pertinents__
 ^^^
 
-* [Zonal Statistics](../en/Wiki/en_qgis_raster_basic_wiki.md)
-* [Intersection](../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
-* [Projections](../en/Wiki/en_qgis_projections_wiki.md)
-* [Buffer](../en/Wiki/en_qgis_projections_wiki.md)
-* [Clip](../en/Wiki/en_qgis_projections_wiki.md)
-* [Automatisation](../en/Wiki/en_qgis_automatisation_wiki.md)
+* [Zonal Statistics](../../en/Wiki/en_qgis_raster_basic_wiki.md)
+* [Intersection](../../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Projections](../../en/Wiki/en_qgis_projections_wiki.md)
+* [Buffer](../../en/Wiki/en_qgis_projections_wiki.md)
+* [Clip](../../en/Wiki/en_qgis_projections_wiki.md)
+* [Automatisation](../../en/Wiki/en_qgis_automation_wiki.md)
 
 :::
 
@@ -75,7 +75,7 @@ L'objectif est de préparer un workflow d'analyse et de visualisation pour soute
 - Prenez du temps pour vous familiariser avec l'exercice et le matériel founi. 
 - Préparez un tableau blanc. Cela peut être un tableau physique, un paperboard (tableau blanc virtuel, e.g., Miro Board) où les participant·es peuvent ajouter leurs observations et questions. 
 - Avant de commencer l'exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé __et dézippé__ le dossier de données.
-- Consultez [How to do trainings?](../en/Trainers_corner/en_how_to_training.md#how-to-do-trainings) pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).
+- Consultez [How to do trainings?](../../en/Trainers_corner/en_how_to_training.md#how-to-do-trainings) pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).
 
 
 ### Animer la formation <a id="animer-la-formation"></a>
@@ -107,7 +107,7 @@ __Téléchargez toutes les données [ici](https://nexus.heigit.org/repository/gi
 
 :::
 
-Le dossier s'appelle __"__ et contient toute la [structure de dossier standard](../en/Module_2/en_qgis_geodata_management.md#standard-folder-structure) avec toutes les données dans le sous-dossier `/data/input/` et la documentation supplémentaire dans le dossier `/documentation/`. 
+Le dossier s'appelle __"__ et contient toute la [structure de dossier standard](../../en/Module_2/en_qgis_geodata_management.md#standard-folder-structure) avec toutes les données dans le sous-dossier `/data/input/` et la documentation supplémentaire dans le dossier `/documentation/`. 
 
 | Ensemble de données | Source | Descriptions |
 | ----- | --- | --- |
@@ -158,14 +158,14 @@ Vous allez tamponner manuellement la trajectoire du cyclone, découper le raster
 
 
 
-1. __Ouvrez QGIS__ et créez un [nouveau projet](../en/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) en cliquant sur `Projet` → `Nouveau Projet`.
+1. __Ouvrez QGIS__ et créez un [nouveau projet](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) en cliquant sur `Projet` → `Nouveau Projet`.
 
 2. __Enregistrez le projet__ dans le dossier `/project`: Cliquez sur `Projet` → `Enregistrer sous...` et naviguez jusqu’au dossier. Nommez le projet "Cyclon_Harald_Exposure".
 
 3. __Importer le fichier__ GeoJSON "example_Harald_2025_Track.geojson" dans votre projet en le glissant-déposant (Vidéo Wiki). Le fichier se trouve dans le dossier `/data/input`
 
 4. __Reprojetez la trajectoire du cyclone__ pour utiliser des mètres au lieu de degrés (ceci est important pour un tampon précis):
-    - Dans la __[Boîte à outils de traitement](../en/Module_1/en_qgis_start.md?highlight=processing+toolbox#toolbox-toolbars)__, cherchez `Reprojeter une couche`.
+    - Dans la __[Boîte à outils de traitement](../../en/Module_1/en_qgis_start.md?highlight=processing+toolbox#toolbox-toolbars)__, cherchez `Reprojeter une couche`.
     - Couche source: example_Harald_2025_Track
     - SCR cible : EPSG:29738 ou un autre SCR projeté en mètres adapté à Madagascar.
     - Enregistrez le résultat dans le dossier temp sous le nom: `Harald_Track_Reprojected`
