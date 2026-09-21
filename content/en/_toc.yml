@@ -144,7 +144,7 @@ parts:
           - file: Trainers_corner/en_how_to_assessment.md
   - caption: GIS in Anticipatory Action
     chapters:
-      - file: GIS_AA/GIS_AA_overview.md
+      - file: GIS_AA/en_GIS_AA_overview.md
       - file: GIS_AA/en_qgis_cyclone_trigger_madagascar.md
         sections:
           - file: GIS_AA/fr_qgis_cyclone_trigger_madagascar.md
@@ -155,6 +155,16 @@ parts:
         sections:
           - file: GIS_AA/en_qgis_historical_impact_assessment_sudan_ex1.md
       - file: GIS_AA/en_qgis_GIS_AA_exercises.md
+  - caption: Tools & Methods
+    chapters:
+      - file: Mobile_Data_collection/en_SMT.md
+      - file: Mobile_Data_collection/en_SMT_training.md
+        sections:
+          - file: Mobile_Data_collection/en_SMT_ex1_.md
+          - file: Mobile_Data_collection/en_SMT_ex2_.md
+          - file: Mobile_Data_collection/en_SMT_ex3_.md
+          - file: Mobile_Data_collection/en_SMT_ex4_.md
+          - file: Mobile_Data_collection/en_SMT_ex5_.md
       - file: GIS_AA/en_AILAS_madagascar.md
         sections:
           - file: GIS_AA/en_AILAS_madagascar_camera_usage_guide.md
@@ -167,16 +177,6 @@ parts:
         sections:
           - file: GIS_AA/en_qgis_generate_indicators_for_plugin.md
           - file: GIS_AA/en_gaia_indicators_processing.md
-  - caption: Mobile Data Collection
-    chapters:
-      - file: Mobile_Data_collection/en_SMT.md
-      - file: Mobile_Data_collection/en_SMT_training.md
-        sections:
-          - file: Mobile_Data_collection/en_SMT_ex1_.md
-          - file: Mobile_Data_collection/en_SMT_ex2_.md
-          - file: Mobile_Data_collection/en_SMT_ex3_.md
-          - file: Mobile_Data_collection/en_SMT_ex4_.md
-          - file: Mobile_Data_collection/en_SMT_ex5_.md
   - caption: About
     chapters:
       - file: About/about_1.md
