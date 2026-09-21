@@ -69,7 +69,7 @@ name: QGIS User Interface
 QGIS User Interface.
 ```
 
-3. Vous pouvez détacher un panneau de son emplacement en cliquant sur son titre et en le faisant glisser. Vous pouvez soit l’ancrer à un autre panneau (il apparaîtra alors sous forme d’onglet), soit le transformer en fenêtre indépendante. Vous pouvez également redimensionner les panneaux. Essayez par exemple de déplacer le panneau des couches vers la droite ([Vidéo Wiki](https://giscience.github.io/gis-training-resource-center/en/Wiki/en_qgis_interface_wiki.html#move-and-arrange-toolbars)).
+3. Vous pouvez détacher un panneau de son emplacement en cliquant sur son titre et en le faisant glisser. Vous pouvez soit l’ancrer à un autre panneau (il apparaîtra alors sous forme d’onglet), soit le transformer en fenêtre indépendante. Vous pouvez également redimensionner les panneaux. Essayez par exemple de déplacer le panneau des couches vers la droite ([Vidéo Wiki](../../en/Wiki/en_qgis_interface_wiki.md#move-and-arrange-toolbars)).
 
 :::{tip}
 

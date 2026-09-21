@@ -2,7 +2,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html
+:link: ../fr_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -18,23 +18,23 @@ Le premier module vise à familiariser les débutant·e·s avec le concept de Sy
 
 *   - __Chapitre__
     - __Compétences & Objectifs__
-*   - __[Chapitre 1 : Qu'est-ce qu'un SIG ?](/content/Module_1/en_qgis_theory)__
+*   - __[Chapitre 1 : Qu'est-ce qu'un SIG ?](fr_qgis_theory.md)__
     - __À la fin de ce chapitre, vous devriez :__
         - Comprendre le concept de Systèmes d'information Géographique (SIG)
         - Comprendre les usages des SIG
         - Savoir ce que signifient l'analyse spatiale et la cartographie
         - Connaître les différents types de cartes utilisés dans l'action humanitaire
         - Avoir une compréhension de base des données géographiques
-*   - __[Chapitre 2 : Préparer l’environnement de formation](/content/Module_1/en_qgis_installation)__
+*   - __[Chapitre 2 : Préparer l’environnement de formation](fr_qgis_installation.md)__
     - __À la fin de ce chapitre, vous devriez :__
         - Disposer d’une arborescence de dossiers pour la formation
         - Savoir comment installer QGIS
-*   - __[Chapitre 3 : Premiers pas avec QGIS](/content/Module_1/en_qgis_start)__
+*   - __[Chapitre 3 : Premiers pas avec QGIS](fr_qgis_start.md)__
     - __À la fin de ce chapitre, vous devriez :__
         - Savoir ce que vous pouvez faire avec QGIS
         - Savoir comment créer, enregistrer et ouvrir des projets QGIS
         - Comprendre l'interface QGIS et ses composants
-*   -  __[Exercices du module 1](/content/Module_1/en_qgis_module_1_exercises)__
+*   -  __[Exercices du module 1](fr_qgis_module_1_exercises.md)__
     - Vous trouverez ici une liste d'exercices touchant le contenu du module 1.
 
 :::

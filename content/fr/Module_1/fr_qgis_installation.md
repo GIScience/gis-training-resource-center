@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: /content/intro
+:link: ../fr_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -32,7 +32,7 @@ La version__Long Term Release__ actuelle est __[QGIS 3.44 ](https://qgis.org/dow
 2. Sélectionnez `Download for Windows`, `Download for macOS` ou `Download for Linux`, selon votre système d'exploitation.
 3. Cliquez sur `Looking for the most stable version? Get QGIS 3.34 LTR`
 
-```{figure} /fig/QGIS_download_LTR_version.png
+```{figure} ../../../fig/QGIS_download_LTR_version.png
 ---
 width: 600 px
 name: QGIS_download_LTR_version
@@ -88,7 +88,7 @@ Garder vos données et vos fichiers de projet bien organisés est essentiel pour
 - Lors du téléchargement des données pour les exercices, créez des sous-dossiers pour chaque module et exercice de formation (par exemple `/GIS_Training/Module_1/Exercise_1`).
 - Enregistrez tous les projets QGIS ainsi que les ressources téléchargées pour les exercices dans ces dossiers.
 
-[Module 2](/content/Module_2/en_qgis_geodata_concept.md) approfondira la gestion des données géographiques et présentera une arborescence standard pour les projets QGIS.
+[Module 2](../Module_2/fr_qgis_geodata_concept.md) approfondira la gestion des données géographiques et présentera une arborescence standard pour les projets QGIS.
 
 :::{note}
 

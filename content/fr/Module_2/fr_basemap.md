@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/fr/fr_intro.html 
+:link: ../fr_intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -32,7 +32,7 @@ Vous pouvez toujours ajouter OpenStreetMap comme fond de carte dans votre caneva
 
 :::{tip}
 
-L’[article wiki sur les fonds de carte](/content/fr/Wiki/fr_qgis_basemaps_wiki.md) propose un tutoriel pour ajouter d’autres types de fonds de carte (par exemple depuis Google Maps) aux options standards de QGIS.
+L’[article wiki sur les fonds de carte](../../en/Wiki/en_qgis_basemaps_wiki.md) propose un tutoriel pour ajouter d’autres types de fonds de carte (par exemple depuis Google Maps) aux options standards de QGIS.
 
 :::
 
@@ -45,11 +45,11 @@ Il existe deux méthodes pour ajouter OpenStreetMap comme fond de carte :
 
 ## QuickMapServices <a id="quickmapservices"></a>
 
-Il existe de nombreux plugins pour QGIS qui fournissent des outils supplémentaires non disponibles dans l’installation standard. L’[article sur les plugins](/content/fr/Wiki/fr_qgis_plugins_wiki.md) du wiki donne des informations détaillées. Un plugin particulièrement utile est [QuickMapServices](https://nextgis.com/blog/quickmapservices/). Ce plugin permet d’accéder à une large gamme de fonds de carte non disponibles par défaut dans QGIS, comme les images satellites Bing ou Sentinel-2.
+Il existe de nombreux plugins pour QGIS qui fournissent des outils supplémentaires non disponibles dans l’installation standard. L’[article sur les plugins](../../en/Wiki/en_qgis_plugins_wiki.md) du wiki donne des informations détaillées. Un plugin particulièrement utile est [QuickMapServices](https://nextgis.com/blog/quickmapservices/). Ce plugin permet d’accéder à une large gamme de fonds de carte non disponibles par défaut dans QGIS, comme les images satellites Bing ou Sentinel-2.
 
 ::::{dropdown} Installation des plugins
 
-Pour [installer un plugin](https://giscience.github.io/gis-training-resource-center/content/fr/Wiki/fr_qgis_plugins_wiki.html), dans la barre supérieure, allez dans `Plugins` → `Manage and Install Plugins…` → `All` → recherchez le plugin → `Install Plugin`.
+Pour [installer un plugin](../../en/Wiki/en_qgis_plugins_wiki.md), dans la barre supérieure, allez dans `Plugins` → `Manage and Install Plugins…` → `All` → recherchez le plugin → `Install Plugin`.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_plugins.mp4"></video>
 
@@ -61,7 +61,7 @@ Si vous ne trouvez pas une extension spécifique, vérifiez que vous n’avez pa
 
 Si vous ne trouvez toujours pas l’extension, vous devrez peut-être activer les extensions expérimentales dans les options (voir ci-dessous).
 
-:::{figure} /fig/en_30.30.2_plugin_installation_experimental_checkbox.png
+:::{figure} ../../../fig/en_30.30.2_plugin_installation_experimental_checkbox.png
 ---
 name: en_30.30.2_plugin_installation_experimental_checkbox
 width 400 px

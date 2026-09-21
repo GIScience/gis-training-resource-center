@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/fr/fr_intro.html 
+:link: ../fr_intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -13,7 +13,7 @@ Le géoréférencement dans QGIS est le processus qui consiste à aligner une im
 
 Dans de nombreux cas, les institutions gouvernementales publient des cartes uniquement au format PDF, sans accès public aux données sous-jacentes. Dans ces cas, savoir géoréférencer correctement une carte vous permet d’accéder à l’information et de l’utiliser dans vos analyses SIG. Dans le cas présenté dans ce chapitre, la carte de dégradation des sols de la Somalie n’est disponible que dans un rapport PDF. Afin d’utiliser cette information dans une analyse SIG, nous pouvons utiliser le géoréférenceur pour attribuer des coordonnées géographiques aux pixels de l’image. Après le géoréférencement de l’image, le résultat est un fichier raster (`.tiff`). Ce jeu de données peut être vectorisé (converti en données vectorielles) ou combiné avec d’autres données raster afin d’obtenir des informations supplémentaires.
 
-:::{figure} /fig/example_georefencing_hague.png
+:::{figure} ../../../fig/example_georefencing_hague.png
 ---
 width: 750 px
 name: example_georeferencing_hague
@@ -29,7 +29,7 @@ Dans QGIS, l’outil Georeferencer est utilisé pour ce processus. Les utilisate
 
 Il existe plusieurs algorithmes de transformation disponibles dans QGIS pour géoréférencer une carte. Si la carte est dans le même CRS et doit seulement être pivotée, une transformation linéaire est suffisante. En revanche, si l’image ou la carte est dans un CRS différent ou est visiblement déformée, une transformation polynomiale est nécessaire. Plus l’algorithme de transformation est complexe, plus vous aurez besoin de points de contrôle au sol.
 
-:::{figure} /fig/en_georef_transformations.png
+:::{figure} ../../../fig/en_georef_transformations.png
 ---
 width: 600 px
 name: en_georef_transformations
@@ -54,7 +54,7 @@ Afin de géoréférencer une carte PDF, vous devez suivre les étapes suivantes 
 Idéalement, utilisez un fond de carte sur lequel vous pouvez identifier des emplacements précis à la fois sur le fond de carte et sur la carte que vous souhaitez géoréférencer.
 3. Ouvrez le Georeferencer en allant dans la barre supérieure → `Layer` → `Georeferencer` (voir {numref}`open_georeferencer`).
 
-:::{figure} /fig/en_3.36_open_georefencer.png
+:::{figure} ../../../fig/en_3.36_open_georefencer.png
 ---
 name: en_3.36_open_georefencer
 width: 500 px
@@ -62,14 +62,14 @@ width: 500 px
 Ouverture du géoréférenceur dans QGIS 3.36.
 :::
 
-4. Une nouvelle fenêtre s’ouvrira. Il s’agit du __géoréférenceur__. Pour ajouter une image à géoréférencer, cliquez sur ![](/fig/3.36_add_raster_georef.png) `Open Raster`.
+4. Une nouvelle fenêtre s’ouvrira. Il s’agit du __géoréférenceur__. Pour ajouter une image à géoréférencer, cliquez sur ![](../../../fig/3.36_add_raster_georef.png) `Open Raster`.
 5. Sélectionnez l’image de la carte que vous souhaitez géoréférencer. Vous pouvez charger des fichiers image ainsi que des PDF. Cliquez sur `Open`.
-6. L’image apparaîtra au centre de la fenêtre du géoréférenceur. Cliquez sur ![](/fig/3.36_georef_transformation_settings.png) `Transformation settings...`.
+6. L’image apparaîtra au centre de la fenêtre du géoréférenceur. Cliquez sur ![](../../../fig/3.36_georef_transformation_settings.png) `Transformation settings...`.
 7. Une nouvelle fenêtre s’ouvrira. Vous pourrez y définir le type de transformation et le CRS cible. En dessous, vous pouvez définir le nom et l’emplacement d’enregistrement du fichier. Assurez-vous que l’option `Load in the project when done` est cochée. 
 
 :::{note} Définir le système de coordonnées de référence approprié 
 :class: tip
-Idéalement, vous devez définir le CRS de la carte géoréférencée identique à celui de votre projet / des autres couches de votre projet. Pour apprendre à choisir un CRS approprié, consultez le [chapitre sur les projections](/content/fr/Module_2/fr_qgis_projections.md) dans le module 2.
+Idéalement, vous devez définir le CRS de la carte géoréférencée identique à celui de votre projet / des autres couches de votre projet. Pour apprendre à choisir un CRS approprié, consultez le [chapitre sur les projections](../Module_2/fr_qgis_projections.md) dans le module 2.
 :::
 
 ::::{margin}
@@ -81,15 +81,15 @@ Dans la plupart des cas, vous pouvez laisser le type de transformation sur liné
 ::::
 
 8. Cliquez sur `Ok`. 
-9. Une fois le type de transformation défini, vous pouvez commencer à ajouter des Ground Control Points (GCP) en cliquant sur ![](/fig/3.36_georef_add_point.png) `Add Point`. Les Ground Control Points sont des points auxquels vous attribuez des coordonnées géographiques spécifiques. 
+9. Une fois le type de transformation défini, vous pouvez commencer à ajouter des Ground Control Points (GCP) en cliquant sur ![](../../../fig/3.36_georef_add_point.png) `Add Point`. Les Ground Control Points sont des points auxquels vous attribuez des coordonnées géographiques spécifiques. 
 10. Cliquez sur un point de l’image de la carte. Il doit s’agir d’un emplacement précis que vous pouvez identifier à la fois sur le fond de carte et sur la carte que vous souhaitez géoréférencer. 
 11. Une fois que vous avez cliqué sur une position, une nouvelle fenêtre apparaîtra. Vous y ajoutez les coordonnées du point sélectionné. Il existe deux options pour cela :  
     - Saisir les coordonnées manuellement. Vous devez connaître la coordonnée exacte. Parfois, une grille de coordonnées figure sur les cartes, ce qui peut vous aider. 
-    - Sélectionner les points ![](/fig/en_3.36_georef_select_from_canvas.png). Ce mode réduira le géoréférenceur et ouvrira le canevas cartographique de QGIS. Zoomez sur le même emplacement que celui sélectionné sur la carte non géoréférencée et cliquez une fois.
+    - Sélectionner les points ![](../../../fig/en_3.36_georef_select_from_canvas.png). Ce mode réduira le géoréférenceur et ouvrira le canevas cartographique de QGIS. Zoomez sur le même emplacement que celui sélectionné sur la carte non géoréférencée et cliquez une fois.
     - Une fois les coordonnées saisies, cliquez sur `Ok`.
 12. La fenêtre du géoréférenceur s’ouvrira à nouveau. Cette fois, sous l’image de la carte, vous verrez un point dans le tableau. Ce sont les Ground Control Points. Continuez à ajouter d’autres GCP. Répartissez-les sur l’ensemble de la carte. Assurez-vous que la `Mean error` en bas à droite de la fenêtre du géoréférenceur soit aussi faible que possible (idéalement inférieure à 5). 
 
-:::{figure} /fig/en_3.36_georef_dialogue_GCP.png
+:::{figure} ../../../fig/en_3.36_georef_dialogue_GCP.png
 ---
 width: 700 px
 name: en_3.36_georef_dialogue_GCP
@@ -97,12 +97,12 @@ name: en_3.36_georef_dialogue_GCP
 Boîte de dialogue du géoréférenceur dans QGIS 3.36.
 :::
 
-13. Une fois que vous avez ajouté suffisamment de points, cliquez sur ![](/fig/3.36_start_georef.png) `Start Georeferencing`. QGIS utilisera les points que vous avez ajoutés pour transformer l’image en une image géoréférencée, dans laquelle chaque pixel possède des coordonnées GPS qui lui sont attribuées. 
+13. Une fois que vous avez ajouté suffisamment de points, cliquez sur ![](../../../fig/3.36_start_georef.png) `Start Georeferencing`. QGIS utilisera les points que vous avez ajoutés pour transformer l’image en une image géoréférencée, dans laquelle chaque pixel possède des coordonnées GPS qui lui sont attribuées. 
 14. Vous pouvez fermer la fenêtre du géoréférenceur. Décidez si vous souhaitez enregistrer les points GPC dans un fichier. Si vous n’êtes pas sûr que la précision de votre géoréférencement soit suffisante, enregistrez les points GPC afin de ne pas avoir à refaire tout le travail. 
 15. Félicitations, la carte géoréférencée apparaîtra maintenant comme une couche raster dans votre projet QGIS
 
 
-:::{figure} /fig/en_3.36_finished_georef.png
+:::{figure} ../../../fig/en_3.36_finished_georef.png
 ---
 width: 700 px
 name: en_3.36_finished_georef
@@ -123,7 +123,7 @@ Il est également possible de supprimer l’arrière-plan blanc. Cela se fait en
 1. Ouvrez les propriétés de la couche en <kbd>faisant un clic droit</kbd> sur la couche, puis en sélectionnant __Properties__.
 2. Allez dans l’__onglet Transparency__.
 3. Dans la zone __Custom Transparency Options__, sous Transparency Band, sélectionnez Band 4 (Alpha).
-4. À droite, cliquez sur ![](/fig/en_3.36_add_value_from_display) `Add value from display`.
+4. À droite, cliquez sur ![](../../../fig/en_3.36_add_value_from_display) `Add value from display`.
 5. Cliquez sur la couleur blanche de la carte géoréférencée dans le canevas cartographique.
 6. Cliquez sur `Apply`.
 

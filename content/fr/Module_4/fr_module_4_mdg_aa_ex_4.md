@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../fr_intro
+:link: ../fr_intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -45,12 +45,12 @@ __Temps estimé pour l'exercice__
 __Articles Wiki pertinents__
 ^^^
 
-* [Zonal Statistics](../Wiki/fr_qgis_raster_basic_wiki.html)
-* [Intersection](../Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
-* [Projections](/content/Wiki/en_qgis_projections_wiki.md)
-* [Buffer](/content/Wiki/en_qgis_projections_wiki.md)
-* [Clip](/content/Wiki/en_qgis_projections_wiki.md)
-* [Automatisation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html)
+* [Zonal Statistics](../en/Wiki/en_qgis_raster_basic_wiki.md)
+* [Intersection](../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Projections](../en/Wiki/en_qgis_projections_wiki.md)
+* [Buffer](../en/Wiki/en_qgis_projections_wiki.md)
+* [Clip](../en/Wiki/en_qgis_projections_wiki.md)
+* [Automatisation](../../en/Wiki/en_qgis_automation_wiki.md)
 
 :::
 
@@ -77,7 +77,7 @@ L'objectif est de préparer un workflow d'analyse et de visualisation pour soute
 - Prenez du temps pour vous familiariser avec l'exercice et le matériel founi. 
 - Préparez un tableau blanc. Cela peut être un tableau physique, un paperboard (tableau blanc virtuel, e.g., Miro Board) où les participant·es peuvent ajouter leurs observations et questions. 
 - Avant de commencer l'exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé __et dézippé__ le dossier de données.
-- Consultez [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).
+- Consultez [How to do trainings?](../en/Trainers_corner/en_how_to_training.md#how-to-do-trainings) pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).
 
 
 ### Animer la formation <a id="animer-la-formation"></a>
@@ -165,7 +165,7 @@ Ils ne sont **pas** basés sur la colonne de pourcentage.
 - Sélectionnez **Propriétés**  
 - Dans la fenêtre qui s’ouvre, allez dans l’onglet **Symbologie**  
 - En bas à gauche, cliquez sur **Style** → **Charger le style…**
-- Cliquez sur les trois points ![](/fig/Three_points.png)  
+- Cliquez sur les trois points ![](../../../fig/Three_points.png)  
 - Naviguez jusqu’au fichier `.qml` correspondant dans le dossier `layer_style` et sélectionnez-le  
 - Cliquez sur **Ouvrir**, puis **Appliquer** et **OK** pour confirmer  
 
@@ -178,37 +178,37 @@ comparez les noms des champs.*
 ---
 
 
-::::{tab-set}
+:::::{tab-set}
 
-:::{tab-item} Résultat intermédiaire: Population exposée
+::::{tab-item} Résultat intermédiaire: Population exposée
 
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG
+:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG
 ---
 width: 600px
 align: center
 ---
 Carte montrant le nombre de personnes exposées par district après l’application du style .qml.
-```
 :::
-:::{tab-item} Résultat intermédiaire: Établissements de santé exposés
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG
+::::
+::::{tab-item} Résultat intermédiaire: Établissements de santé exposés
+:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG
 ---
 width: 600px
 align: center
 ---
 Carte indiquant le nombre total d’établissements de santé exposés par district, représentés avec le style prédéfini.
-```
 :::
-:::{tab-item} Résultat intermédiaire: Établissements scolaires exposés
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG
+::::
+::::{tab-item} Résultat intermédiaire: Établissements scolaires exposés
+:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG
 ---
 width: 600px
 align: center
 ---
 Carte affichant le nombre total d’établissements scolaires exposés par district, après application du fichier de style .qml.
-```
 :::
 ::::
+:::::
 
 ### 3. **Styliser manuellement les couches de pourcentage** <a id="3-styliser-manuellement-les-couches-de-pourcentage"></a>
 

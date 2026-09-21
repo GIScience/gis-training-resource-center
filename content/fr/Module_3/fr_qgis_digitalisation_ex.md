@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/fr/fr_intro.html 
+:link: ../fr_intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -47,10 +47,10 @@ __Durée estimée de l’exercice :__
 __Articles wiki pertinents :__
 ^^^
 
-* [Interface QGIS](/content/fr/Wiki/fr_qgis_interface_wiki.md)
-* [Types de données géographiques](/content/fr/Wiki/fr_qgis_geodata_types_wiki.md)
-* [Numérisation](/content/fr/Wiki/fr_qgis_digitisation_wiki.md)
-* [Fonds de carte](/content/fr/Wiki/fr_qgis_basemaps_wiki.md)
+* [Interface QGIS](../../en/Wiki/en_qgis_interface_wiki.md)
+* [Types de données géographiques](../../en/Wiki/en_qgis_geodata_types_wiki.md)
+* [Numérisation](../../en/Wiki/en_qgis_digitisation_wiki.md)
+* [Fonds de carte](../../en/Wiki/en_qgis_basemaps_wiki.md)
 
 :::
 
@@ -72,7 +72,7 @@ Cet exercice utilise un plugin qui n’est pas installé par défaut : `OSM Plac
 - Prenez le temps de vous familiariser avec l’exercice et le matériel fourni.
 - Préparez un tableau blanc. Il peut s’agir d’un tableau blanc physique, d’un paperboard ou d’un tableau blanc numérique (par ex. Miro) sur lequel les participant·e·s peuvent ajouter leurs constats et leurs questions. 
 - Avant de commencer l’exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé __et décompressé__ le dossier de données.
-- Consultez [Comment animer des formations ?](/content/fr/Trainers_corner/fr_how_to_training.mdhow-to-do-trainings) pour quelques conseils généraux sur la conduite d’une formation.
+- Consultez [Comment animer des formations ?](../../en/Trainers_corner/en_how_to_training.mdhow-to-do-trainings) pour quelques conseils généraux sur la conduite d’une formation.
 
 ### Conduire la formation <a id="conduct-the-training"></a>
 
@@ -96,7 +96,7 @@ __Conclusion :__
 
 
 :::{Attention}
-Essayez d’utiliser systématiquement l’arborescence de dossiers standard. Vous pouvez trouver un modèle __[ici](/content/fr/Wiki/fr_qgis_projects_folder_structure_wiki.mf#standard-folder-structure)__.
+Essayez d’utiliser systématiquement l’arborescence de dossiers standard. Vous pouvez trouver un modèle __[ici](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure)__.
 :::
 
 ## Contexte : pénurie de liquidités à Abuja <a id="background-cash-crunch-in-abuja"></a>
@@ -112,23 +112,23 @@ Pour cela, nous allons représenter la numérisation de First Bank, du bâtiment
 ### Ajouter un fond de carte <a id="add-a-basemap"></a>
 
 1.  Ajoutez OSM comme fond de carte. Pour ajouter OSM comme fond de carte, cliquez sur `Layer` → `Add Layer` → `Add XYZ Layer…`. Choisissez `OpenStreetMap` puis cliquez sur `Add`. 
-Organisez vos couches dans le `Layer Panel` de façon à ce que l’OSM soit tout en bas ([Vidéo wiki](/content/fr/Wiki/fr_qgis_basemaps_wiki.md)).
+Organisez vos couches dans le `Layer Panel` de façon à ce que l’OSM soit tout en bas ([Vidéo wiki](../../en/Wiki/en_qgis_basemaps_wiki.md)).
 
 :::{Tip}
 Vous ne pouvez pas interagir directement avec un fond de carte !
 :::
 
-2. Pour ajouter le plugin `OSM Place Search`, cliquez sur `Plugins` → `Manage and Install Plugins…` → `All` puis recherchez `OSM Place Search`. Une fois le plugin trouvé, cliquez dessus puis sur `Install Plugin`. Vous pouvez ouvrir le `OSM Place Search Panel` comme n’importe quel autre panneau en cliquant sur `View` → `Panels` puis en cochant `OSM Place Search Panel` ([Vidéo wiki](/content/fr/Wiki/fr_qgis_plugins_wiki.md)).
+2. Pour ajouter le plugin `OSM Place Search`, cliquez sur `Plugins` → `Manage and Install Plugins…` → `All` puis recherchez `OSM Place Search`. Une fois le plugin trouvé, cliquez dessus puis sur `Install Plugin`. Vous pouvez ouvrir le `OSM Place Search Panel` comme n’importe quel autre panneau en cliquant sur `View` → `Panels` puis en cochant `OSM Place Search Panel` ([Vidéo wiki](../../en/Wiki/en_qgis_plugins_wiki.md)).
 3. Dans le panneau `OSM place search`, recherchez "Abuja Central Business District" puis choisissez Abuja Municipality Area Council, City. Zoomez sur le Central Business District. Nous voulons numériser l’emplacement de banques dans cette zone. 
 Pour cela, nous devons créer une nouvelle couche de points : 
-    1. Cliquez sur `Layer` → `Create Layer` → `New GeoPackage Layer` ([Vidéo wiki](/content/fr/Wiki/fr_qgis_digitisation_wiki.md)).
-    - Sous `Database`, cliquez sur ![](/fig/Three_points.png) puis accédez au dossier `temp` de votre dossier de projet. Donnez au nouveau jeu de données le nom “Abuja_bank_point”. Cliquez sur `Save`.
+    1. Cliquez sur `Layer` → `Create Layer` → `New GeoPackage Layer` ([Vidéo wiki](../../en/Wiki/en_qgis_digitisation_wiki.md)).
+    - Sous `Database`, cliquez sur ![](../../../fig/Three_points.png) puis accédez au dossier `temp` de votre dossier de projet. Donnez au nouveau jeu de données le nom “Abuja_bank_point”. Cliquez sur `Save`.
     - Sous `Geometry type`, sélectionnez `Point`.
     - Sélectionnez le système de coordonnées de référence (SCR) "EPSG:4326-WGS 84". Par défaut, QGIS sélectionne le SCR du projet. 
     - Sous `New Field`, vous pouvez ajouter des colonnes à la nouvelle couche. Ajoutez la colonne "Name".
         * `Name` = "Name"
         * `Type`: sélectionnez `Text (string)`.
-        * Cliquez sur `Add to Fields List` ![](/fig/mActionNewAttribute.png) pour ajouter la nouvelle colonne à la `Fields List`.
+        * Cliquez sur `Add to Fields List` ![](../../../fig/mActionNewAttribute.png) pour ajouter la nouvelle colonne à la `Fields List`.
         * Cliquez sur `OK`.
     * Votre nouvelle couche apparaîtra dans le `Layer Panel`.
 
@@ -140,7 +140,7 @@ Vous pouvez numériser encore plus d’informations en ajoutant davantage de col
 
 :::
 
-:::{figure} /fig/new_layer_abuja.png
+:::{figure} ../../../fig/new_layer_abuja.png
 ---
 height: 400px
 name: New point layer Abuja
@@ -149,17 +149,17 @@ align: center
 Création d’une nouvelle couche de points.
 :::
 
-4. Vous pouvez maintenant créer un point pour chacune des trois banques de la zone [wiki](/content/fr/Wiki/fr_qgis_digitisation_wiki.md#add-geometries-to-a-layer). Pour l’instant, la nouvelle couche “Abuja_bank_point” est vide. Pour ajouter des entités, nous pouvons utiliser la `Digitizing Toolbar`. Si vous ne voyez pas cette barre d’outils, allez dans `View` → `Toolbars` puis cochez `Digitizing Toolbar` ([Vidéo wiki](/content/fr/Wiki/fr_qgis_digitisation_wiki.md#creation-of-point-data)).  ![](/fig/Digitizing_Toolbar.png) 
-    1. Sélectionnez la couche de points “Abuja_bank_point” dans le panneau des couches. Accédez à la barre d’outils de numérisation puis cliquez sur ![](/fig/mActionToggleEditing.png). La couche passe alors en mode édition.
-    2. Recherchez des banques sur la carte ou utilisez le panneau OSM Place Search. Une fois que vous en avez trouvé une, cliquez sur ![](/fig/mActionCapturePoint.png). Faites un clic gauche sur l’entité que vous souhaitez numériser.
+4. Vous pouvez maintenant créer un point pour chacune des trois banques de la zone [wiki](../../en/Wiki/en_qgis_digitisation_wiki.md). Pour l’instant, la nouvelle couche “Abuja_bank_point” est vide. Pour ajouter des entités, nous pouvons utiliser la `Digitizing Toolbar`. Si vous ne voyez pas cette barre d’outils, allez dans `View` → `Toolbars` puis cochez `Digitizing Toolbar` ([Vidéo wiki](../../en/Wiki/en_qgis_digitisation_wiki.md)).  ![](../../../fig/Digitizing_Toolbar.png) 
+    1. Sélectionnez la couche de points “Abuja_bank_point” dans le panneau des couches. Accédez à la barre d’outils de numérisation puis cliquez sur ![](../../../fig/mActionToggleEditing.png). La couche passe alors en mode édition.
+    2. Recherchez des banques sur la carte ou utilisez le panneau OSM Place Search. Une fois que vous en avez trouvé une, cliquez sur ![](../../../fig/mActionCapturePoint.png). Faites un clic gauche sur l’entité que vous souhaitez numériser.
     3. Une fois le clic effectué, une fenêtre "Abuja_bank_point" apparaîtra. Vous pourrez y saisir le nom de la banque.
     4. Répétez le même processus pour autant de banques que vous pouvez en trouver.
-    5. Une fois la numérisation terminée, cliquez sur ![](/fig/mActionSaveEdits.png) pour enregistrer vos modifications.
-    6. Cliquez de nouveau sur ![](/fig/mActionToggleEditing.png) pour quitter le mode édition.
+    5. Une fois la numérisation terminée, cliquez sur ![](../../../fig/mActionSaveEdits.png) pour enregistrer vos modifications.
+    6. Cliquez de nouveau sur ![](../../../fig/mActionToggleEditing.png) pour quitter le mode édition.
 
 Voici à quoi votre résultat devrait ressembler.
 
-:::{figure} /fig/Abuja_Banks_Point_Layers.png
+:::{figure} ../../../fig/Abuja_Banks_Point_Layers.png
 ---
 height: 200px
 name: Abuja_Banks_Point_Layers
@@ -173,21 +173,21 @@ Les entités numérisées pourraient ressembler à ceci.
 Nous disposons d’informations fiables indiquant qu’un barrage routier dû à des travaux se trouve au carrefour de "Independent Avenue" et "Tafawa Balewa Way". Pour le visualiser sur notre carte, nous voulons créer un polygone représentant ce barrage routier. Le polygone doit couvrir tout le carrefour.
 
 1. Pour cela, nous avons de nouveau besoin d’une nouvelle couche. Dans ce cas, une couche polygonale. Sa création est en grande partie identique à celle de la couche de points.
-    1. Cliquez sur `Layer` → `Create Layer` → `New GeoPackage Layer` ([Wiki](/content/fr/Wiki/fr_qgis_digitisation_wiki.md)). 
-    2. Sous `Database`, cliquez sur ![](/fig/Three_points.png) puis accédez au dossier `temp`. Donnez au nouveau jeu de données le nom “Abuja_roadbloc_polygon”. Cliquez sur `Save`.
+    1. Cliquez sur `Layer` → `Create Layer` → `New GeoPackage Layer` ([Wiki](../../en/Wiki/en_qgis_digitisation_wiki.md)). 
+    2. Sous `Database`, cliquez sur ![](../../../fig/Three_points.png) puis accédez au dossier `temp`. Donnez au nouveau jeu de données le nom “Abuja_roadbloc_polygon”. Cliquez sur `Save`.
     3. `Geometry type`: sélectionnez `Polygon`.
     4. Sélectionnez le système de coordonnées de référence (SCR) "EPSG:4326-WGS 84".
     5. Sous `New Field`, vous pouvez ajouter des colonnes à la nouvelle couche. Ajoutez la colonne "Roadblock_type".
         * `Name` = "Roadblock_type"
         * `Type`: sélectionnez `Text (string)`.
-        * Cliquez sur `Add to Fields List` ![](/fig/mActionNewAttribute.png) pour ajouter la nouvelle colonne à la `Fields List`.
+        * Cliquez sur `Add to Fields List` ![](../../../fig/mActionNewAttribute.png) pour ajouter la nouvelle colonne à la `Fields List`.
         * Cliquez sur `OK`.
 
     6. Votre nouvelle couche apparaîtra dans le `Layer Panel`.
-2. Pour numériser cette zone, cliquez sur votre nouvelle couche „Abuja_roadbloc_polygon“ ([Wiki](/content/fr/Wiki/fr_qgis_digitisation_wiki.md)). 
-    - Cliquez sur ![](/fig/mActionToggleEditing.png) pour démarrer le `edit mode`, puis ajoutez une entité avec `Capture Polygon` ![](/fig/mActionCapturePolygon.png)|. 
+2. Pour numériser cette zone, cliquez sur votre nouvelle couche „Abuja_roadbloc_polygon“ ([Wiki](../../en/Wiki/en_qgis_digitisation_wiki.md)). 
+    - Cliquez sur ![](../../../fig/mActionToggleEditing.png) pour démarrer le `edit mode`, puis ajoutez une entité avec `Capture Polygon` ![](../../../fig/mActionCapturePolygon.png)|. 
     - Dessinez les géométries et saisissez les `feature attributes`, "Roadblock_type" = "Construction_site".
-    - Enregistrez les modifications ![](/fig/mActionSaveEdits.png), puis quittez le `Edit mode`. 
+    - Enregistrez les modifications ![](../../../fig/mActionSaveEdits.png), puis quittez le `Edit mode`. 
 
     
 ## Cartographier les itinéraires de liaison <a id="map-the-connection-routes"></a>
@@ -197,13 +197,13 @@ Un homme d’affaires a parcouru toute la partie nord de Herbert Macauley Way da
 Créez une couche linéaire représentant l’itinéraire routier qui lui permettra d’atteindre facilement Zenith Bank.
 
 1. Pour cela, nous avons de nouveau besoin d’une nouvelle couche. Dans ce cas, une couche linéaire. Sa création est presque identique à celle de la couche de points.
-    - Cliquez sur `Layer` → `Create Layer` → `New GeoPackage Layer` ([Wiki](/content/fr/Wiki/fr_qgis_digitisation_wiki.md)). 
-    - Sous `Database`, cliquez sur ![](/fig/Three_points.png) puis accédez au dossier `temp`. Donnez au nouveau jeu de données le nom “Abuja_bank_road_connection_line”. Cliquez sur `Save`.
+    - Cliquez sur `Layer` → `Create Layer` → `New GeoPackage Layer` ([Wiki](../../en/Wiki/en_qgis_digitisation_wiki.md)). 
+    - Sous `Database`, cliquez sur ![](../../../fig/Three_points.png) puis accédez au dossier `temp`. Donnez au nouveau jeu de données le nom “Abuja_bank_road_connection_line”. Cliquez sur `Save`.
     - `Geometry type`: sélectionnez `Line`.
     - Sélectionnez le système de coordonnées de référence (SCR) "EPSG:4326-WGS 84".
     - Sous `New Field`, vous pouvez ajouter des colonnes à la nouvelle couche. Ajoutez la colonne “Road_type”.
         * `Name` = "Road_type"
-        * Cliquez sur `Add to Fields List` ![](/fig/mActionNewAttribute.png) pour ajouter la nouvelle colonne à la `Fields List`.
+        * Cliquez sur `Add to Fields List` ![](../../../fig/mActionNewAttribute.png) pour ajouter la nouvelle colonne à la `Fields List`.
         * Cliquez sur `OK`.
             :::{admonition} Ajouter davantage d’informations
             :class: tip
@@ -212,15 +212,15 @@ Créez une couche linéaire représentant l’itinéraire routier qui lui permet
 
             :::
     * Votre nouvelle couche apparaîtra dans le `Layer Panel`.
-2. Sélectionnez la couche linéaire “Abuja_bank_road_connection_line” dans laquelle ajouter les données dans le panneau des couches [Wiki](/content/fr/Wiki/fr_qgis_digitisation_wiki.md). 
-    1. Allez dans la barre d’outils de numérisation puis cliquez sur ![](/fig/mActionToggleEditing.png). La couche passe alors en mode édition.
-    2.	Cliquez sur ![](/fig/mActionCaptureLine.png). 
+2. Sélectionnez la couche linéaire “Abuja_bank_road_connection_line” dans laquelle ajouter les données dans le panneau des couches [Wiki](../../en/Wiki/en_qgis_digitisation_wiki.md). 
+    1. Allez dans la barre d’outils de numérisation puis cliquez sur ![](../../../fig/mActionToggleEditing.png). La couche passe alors en mode édition.
+    2.	Cliquez sur ![](../../../fig/mActionCaptureLine.png). 
     3.	Pour numériser une entité linéaire, cliquez le long de la ligne. Une fois terminé, faites un clic droit sur le dernier point de la ligne pour terminer l’entité.
     4.	Une fois le clic effectué, une fenêtre "Abuja_bank_road_connection_line- Feature Attribute" apparaîtra. Ajoutez le type de route, qui est "Secondary_road".
-    5.	Une fois la numérisation terminée, cliquez sur ![](/fig/mActionSaveEdits.png) pour enregistrer vos modifications.
-    6.	Cliquez de nouveau sur ![](/fig/mActionToggleEditing.png) pour quitter le mode édition.
+    5.	Une fois la numérisation terminée, cliquez sur ![](../../../fig/mActionSaveEdits.png) pour enregistrer vos modifications.
+    6.	Cliquez de nouveau sur ![](../../../fig/mActionToggleEditing.png) pour quitter le mode édition.
 
-:::{figure} /fig/Abuja_Banks_final.png
+:::{figure} ../../../fig/Abuja_Banks_final.png
 ---
 height: 400px
 name: Abuja_Banks_final

@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: ../fr_intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -26,7 +26,7 @@ __Type d'exercice:__
 __Piste d'Exercice:__
 ^^^
 
-Cet exercice est le deuxième exercice de la piste d'exercice ["Analyse d’Action Anticipative pour les Cyclones à Madagascar"](/content/Exercise_tracks/fr_mdg_aa_cyclones.md)
+Cet exercice est le deuxième exercice de la piste d'exercice ["Analyse d’Action Anticipative pour les Cyclones à Madagascar"](../Exercise_tracks/fr_mdg_aa_cyclones.md)
 
 :::
 
@@ -45,12 +45,12 @@ __Temps estimé pour l'exercice__
 __Articles Wiki pertinents__
 ^^^
 
-* [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html)
-* [Intersection](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Projections](/content/Wiki/en_qgis_projections_wiki.md)
-* [Buffer](/content/Wiki/en_qgis_projections_wiki.md)
-* [Clip](/content/Wiki/en_qgis_projections_wiki.md)
-* [Automation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automation_wiki.html)
+* [Zonal Statistics](../en/Wiki/en_qgis_raster_basic_wiki.md)
+* [Intersection](../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Projections](../en/Wiki/en_qgis_projections_wiki.md)
+* [Buffer](../en/Wiki/en_qgis_projections_wiki.md)
+* [Clip](../en/Wiki/en_qgis_projections_wiki.md)
+* [Automation](../en/Wiki/en_qgis_automation_wiki.md)
 
 :::
 
@@ -77,7 +77,7 @@ L'objectif est de préparer un workflow d'analyse et de visualisation pour soute
 - Prenez du temps pour vous familiariser avec l'exercice et le matériel founi. 
 - Préparez un tableau blanc. Cela peut être un tableau physique, un paperboard (tableau blanc virtuel, e.g., Miro Board) où les participant·es peuvent ajouter leurs observations et questions. 
 - Avant de commencer l'exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé __et dézippé__ le dossier de données.
-- Consultez [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).
+- Consultez [How to do trainings?](../en/Trainers_corner/en_how_to_training.md#how-to-do-trainings) pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).
 
 
 ### Animer la formation <a id="animer-la-formation"></a>
@@ -124,7 +124,7 @@ __Téléchargez les données pour cet exercice ici et dezipé le fichier.__
 ## Tâches <a id="taches"></a>
 
 1. **Ouvrir le modeleur**:
-   - Ouvrez le modeleur depuis le menu du haut: `Traitement` (`Processing`) -> `Modeleur` (`Graphic Modeler`)   
+   - Ouvrez le modeleur depuis le menu du haut: `Traitement` (`Processing`) → `Modeleur` (`Graphic Modeler`)   
      `Processing` → `Graphical Modeler…`
 
 2. **Nommer le modèle**:   
@@ -136,7 +136,7 @@ __Téléchargez les données pour cet exercice ici et dezipé le fichier.__
 
 3. **Enregistrer le modèle:**
    - Pour enregistrer le modèle:
-     - Cliquez sur l'icône __Enregistrer__ (💾) ou naviguez à `Modèle` -> `Enregistrer`. 
+     - Cliquez sur l'icône __Enregistrer__ (💾) ou naviguez à `Modèle` → `Enregistrer`. 
      - Naviguez jusqu'au dossier `/models/` de votre structure de dossier pour la formation
      - Enregistrer le modèle sous: `Esimation_Population_Exposée`.
 
@@ -162,7 +162,7 @@ __Téléchargez les données pour cet exercice ici et dezipé le fichier.__
 ::::{tab-set}
 
 :::{tab-item} Entrée: trajectoire du cylcone
-```{figure} /fig/fr_MDG_AA_model_input_cyclon_track.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_input_cyclon_track.PNG
 ---
 width: 600px
 align: center
@@ -172,7 +172,7 @@ Ajouter la entrée couche vecteur pour la trajectoire du cyclone
 :::
 
 :::{tab-item} Entrée: Frontières administratives
-```{figure} /fig/fr_MDG_AA_model_input_admin_bounderies.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_input_admin_bounderies.PNG
 ---
 width: 600px
 align: center
@@ -181,7 +181,7 @@ Ajouter la entrée couche vecteur pour les frontières administratives
 :::
 
 :::{tab-item} Entrée: Raster Population
-```{figure} /fig/fr_MDG_AA_model_input_population_raster.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_input_population_raster.PNG
 ---
 width: 600px
 align: center
@@ -192,7 +192,7 @@ Ajouter la couche raster pour les données de population
 ::::
 **Résultat intermédiaire:**
 
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_input.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_input.PNG
 ---
 width: 600px
 name: mdg_modele_resultat_intermed
@@ -209,7 +209,7 @@ Résultat intermédiaire de la définition des données d'entrée du modèle
     - Définissez la SCR cible sur `EPSG:29738 - Tananarive / UTM zone 38 S`
     - Cliquez sur `OK` pour ajouter l'étape au model. 
 
-```{figure} /fig/fr_MDG_AA_model_reporject_cyclon_track.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_reporject_cyclon_track.PNG
 ---
 width: 600px
 name: mdg_reproj_cyclone_track
@@ -228,7 +228,7 @@ Reprojeter la couche du trajectoire du cyclone vers un système de référence d
     - Regrouper le résultat: `Oui`.
     - Cliquez sur `OK`. L'algorithme sera ajouter au modèle. 
 
-```{figure} /fig/fr_MDG_AA_model_buffer_cyclon_track.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_buffer_cyclon_track.PNG
 ---
 width: 600px
 name: fr_mdg_tamponner_cyclone
@@ -245,7 +245,7 @@ Ajouter l'étape pour tamponner la couche Cyclone reprojetée.
     - SCR cible: `EPSG: 4326 - WGS 84`
     - Cliquez sur `OK` pour ajouter l'étape au modèle. 
 
-```{figure} /fig/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG
 ---
 width: 600px
 name: mdg_reprojeter_tampon_cyclone
@@ -260,11 +260,11 @@ Reprojeter le tampon vers EPSG:4326.
   - Dans la fenêtre de configuration:
     - Ajoutez une description: `Decouper la couche raster de population avec le tampon du cyclone`.
     - Comme __"Couche source"__, choisissez la Entrée `Raster Population`
-    - Comme __"Couche de Masquage"__, choisissez le tampon du cyclone (sous `Sortie d'un algorithme` -> `"Mis en tampon" créé par l'algorithme "Tamponner la trajectoire du cyclone reprojetée"`)
+    - Comme __"Couche de Masquage"__, choisissez le tampon du cyclone (sous `Sortie d'un algorithme` → `"Mis en tampon" créé par l'algorithme "Tamponner la trajectoire du cyclone reprojetée"`)
     - Laissez la sortie de l'algorithme (`reprojeté`) vide.
     - Cliquez sur `OK` pour ajouter l'étape au modèle.
 
-```{figure} /fig/fr_MDG_AA_model_clip_pop_raster.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_clip_pop_raster.PNG
 ---
 width: 600px
 name: mdg_model_clip_pop_raster
@@ -287,7 +287,7 @@ Découper la couche raster de population pour l'étendre au tampon cyclon.
       ```
     - Cliquez sur `OK` pour ajouter l'étape au modèle.
 
-```{figure} /fig/fr_MDG_AA_model_zonal_statistic_pop_admin2.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_zonal_statistic_pop_admin2.PNG
 ---
 width: 600px
 name: mdg_statistiques_de_zone
@@ -298,7 +298,7 @@ Calcul de la population exposée aux cyclones par district utilisant l'algorithm
 
 **Vos résultats devraient ressembler à ceci:** 
 
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_algorythms.PNG
 ---
 width: 600px
 name: fr_resultat_modele
@@ -308,12 +308,12 @@ Votre modèle devrait ressembler à ceci. Tous les algorithmes sont correctement
 ```
 
 10. **Valider le modèle (recommandé)**
-  - Avant d'enregistrer ou exécuter le modèle. Dans le menu en haut de la fenêtre, cliquez sur `Modèle` -> ✔️  `Valider le modèle`.  
+  - Avant d'enregistrer ou exécuter le modèle. Dans le menu en haut de la fenêtre, cliquez sur `Modèle` → ✔️  `Valider le modèle`.  
   - Corrigez les éventuels avertissements ou erreurs affichés dans le panneau de journal. 
   - Cela permet de s'assurer que le modèle est complet et qu'il s'exécutera sans erreur.
 
 11. **Exécuter le modèle**
-  - Exécutez le modèle: Dans le menu en haut de la fenêtre, cliquez sur `Modèle` -> `Exècuter le modèle...`
+  - Exécutez le modèle: Dans le menu en haut de la fenêtre, cliquez sur `Modèle` → `Exècuter le modèle...`
     - Maintenant, vous devez définir les __Couches Source__ pour le modèle. Vous pouvez choisir les couches que vous avez importées dans votre projet QGIS.
     - Sous __Frontières Administratives__, choisissez: 
       `mdg_admbnda_adm2_BNGRC_OCHA_20281031.gpkg`
@@ -321,13 +321,13 @@ Votre modèle devrait ressembler à ceci. Tous les algorithmes sont correctement
       `MDG_WorldPop_2020_constrained.tif`
     - Sous __Trajectoire Cyclone__, choisissez:
       `example_Harald_2025_Track`
-    - Definissez la sortie du modèle __"exposed_population_sum"__ comme: `Harald_Exposed_Population` et engeristrez-le dans le dossier `/data/output/` en cliquant sur les trois points ![](/fig/3.36_three_dots.png).
+    - Definissez la sortie du modèle __"exposed_population_sum"__ comme: `Harald_Exposed_Population` et engeristrez-le dans le dossier `/data/output/` en cliquant sur les trois points ![](../../../fig/3.36_three_dots.png).
     - Cliquez sur `Éxecuter`.
 
 
 Vous pouvez maintenant exécuter ce modèle chaque fois qu’une nouvelle trajectoire de cyclone est disponible.
 
-```{figure} /fig/fr_MDG_AA_model_run_model_M7_e1_task2.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_run_model_M7_e1_task2.PNG
 ---
 width: 600px
 align: center
@@ -336,7 +336,7 @@ Pour exécuter le modèle, spécifiez l'entrée comme indiqué dans l'image et d
 ```
 
 **Vos résultats devraient ressembler à ceci:**
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_task1_basics.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_task1_basics.PNG
 ---
 width: 600px
 name: mdgtask_model_result
@@ -350,7 +350,7 @@ align: center
   - Cliquez sur `OK` pour enregistrer la modification. 
   - Maintenant, le modèle va produire à la fois les résultats de population exposée __et__ la zone tampon du cyclone lors de son exécution. 
 
-```{figure} /fig/fr_MDG_AA_model_output_buffer.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_output_buffer.PNG
 ---
 width: 600px
 name: mdg_model_add_buffer_output
@@ -359,14 +359,14 @@ align: center
 ```
 
 13. **Exécuter à nouveau le modèle**  
-  - Exécutez le modèle en cliquant sur `Modèle` -> `Exécuter le modèle...`.
+  - Exécutez le modèle en cliquant sur `Modèle` → `Exécuter le modèle...`.
     - Sous __Frontières Administratives__, choisissez: 
       `mdg_admbnda_adm2_BNGRC_OCHA_20281031.gpkg`
     - Sous __Raster Population__, choisissez:
       `MDG_WorldPop_2020_constrained.tif`
     - Sous __Trajectoire Cyclone__, choisissez:
       `example_Harald_2025_Track`
-    - Definissez la sortie du modèle __"exposed_population_sum"__ comme: `Harald_Exposed_Population` et engeristrez-le dans le dossier `/data/output/` en cliquant sur les trois points ![](/fig/3.36_three_dots.png).
+    - Definissez la sortie du modèle __"exposed_population_sum"__ comme: `Harald_Exposed_Population` et engeristrez-le dans le dossier `/data/output/` en cliquant sur les trois points ![](../../../fig/3.36_three_dots.png).
     - Sous __cyclone_harald_buffer__, cliquez sur les trois points et naviguez au dossier `/data/output/` et nommez la sortie comme `cyclone_harald_buffer`. 
     - Cliquez sur `Éxecuter`.
 
@@ -376,7 +376,7 @@ align: center
 
 :::{tab-item} Le modèle modifié
 
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_graphic.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_graphic.PNG
 ---
 width: 600px
 name: the_world_result
@@ -388,7 +388,7 @@ Le modèle modifié devrait resembler à ceci.
 :::
 
 :::{tab-item} Exécuter le modèle avec la nouvelle sortie
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_model_exicution.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_model_exicution.PNG
 ---
 width: 600px
 align: center
@@ -397,7 +397,7 @@ align: center
 :::
 
 :::{tab-item} Résultat du modèle
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG
 ---
 width: 600px
 align: center

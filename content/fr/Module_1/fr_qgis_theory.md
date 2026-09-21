@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/fr/fr_intro.html 
+:link: ../fr_intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -18,7 +18,7 @@
 
 :::
 
-:::{figure} /fig/GIS_Core_functunality.drawio.svg
+:::{figure} ../../../fig/GIS_Core_functunality.drawio.svg
 ---
 height: 500px
 name: GIS_Core_functunality
@@ -38,7 +38,7 @@ Un Système d’Information Géographique (SIG) est un outil numérique qui asso
 Un SIG ne se résume pas à un logiciel. C’est un système qui comprend
 plusieurs éléments :
 
-:::{figure} /fig/GIS_definition_icons.drawio.svg
+:::{figure} ../../../fig/GIS_definition_icons.drawio.svg
 ---
 height: 200px
 name: GIS_definition_icons
@@ -80,7 +80,7 @@ Le Comité international de la Croix-Rouge (CICR) dispose d’une unité spécia
 
 REACH Initiative est une ONG humanitaire spécialisée dans la collecte et l’analyse de données, avec une forte expertise SIG. Le [REACH Resource Centre](https://www.impact-initiatives.org/resource-centre/) est l’espace où l’organisation publie ses contenus, notamment des [cartes autonomes](https://www.impact-initiatives.org/resource-centre/?category[]=information_products&category[]=data_methods&type[]=281&order=latest&limit=10) et des [rapports](https://www.impact-initiatives.org/resource-centre/?category[]=information_products&category[]=data_methods&order=latest&limit=10) qui incluent souvent des cartes et des analyses spatiales.
 
-:::{figure} /fig/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_FEB2024_EN_A4-1.png
+:::{figure} ../../../fig/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_FEB2024_EN_A4-1.png
 ---
 height: 500px
 name: REACH_UKR_Map_CSM_SituationOverview_ActiveSites_FEB2024_EN_A4
@@ -124,7 +124,7 @@ Le WFP développe également des tableaux de bord pour le plaidoyer, comme Hunge
 
 iMAAP est une ONG spécialisée en gestion de l’information qui apporte un appui aux Nations Unies et à des ONG internationales. Son [portfolio de produits](https://immap.org/products/) comprend des exemples de cartes utilisées dans des synthèses de situation, des tableaux de bord interactifs et des analyses sectorielles.
 
-:::{figure} /fig/Afghanistan-Earthquake-Events-Overview-February-2024_page-0001-scaled.jpg
+:::{figure} ../../../fig/Afghanistan-Earthquake-Events-Overview-February-2024_page-0001-scaled.jpg
 ---
 height: 500px
 name: Afghanistan-Earthquake-Events-Overview-February-2024_page-0001-scaled
@@ -139,7 +139,7 @@ Carte exemple : Afghanistan Earthquake Events Overview February 2024 (Source : [
 
 MapAction produit des cartes et apporte un appui en données et analyses géospatiales pour soutenir la prise de décision lors des réponses aux urgences. Leur page [maps and data](https://maps.mapaction.org/) montre des productions récentes, et leur [catalogue de produits](https://guides.mapaction.org/) donne un aperçu des types de services proposés.
 
-:::{figure} /fig/cluster-camp-coordination.jpg
+:::{figure} ../../../fig/cluster-camp-coordination.jpg
 ---
 height: 500px
 name: cluster-camp-coordination
@@ -181,7 +181,7 @@ La __carte du choléra de 1854 réalisée par le Dr Snow__ ({numref}`John_snow_z
 
 Cette version interactive de la carte montre la superposition sur un fond de carte du Londres actuel.
 
-:::{figure} /fig/John_snow_zoom_map2.png
+:::{figure} ../../../fig/John_snow_zoom_map2.png
 ---
 height: 600px
 name: John_snow_zoom_map2
@@ -216,7 +216,7 @@ Le secteur humanitaire utilise régulièrement certains types de cartes. Ils son
 - Peuvent être __stylisées__ selon le public cible
 
 
-:::{figure} /fig/general_ref_map_nigeria_ogun.png
+:::{figure} ../../../fig/general_ref_map_nigeria_ogun.png
 ---
 height: 600px
 name: general_ref_map_nigeria_ogun
@@ -234,7 +234,7 @@ Les cartes d’infrastructures, dans un contexte humanitaire, représentent les 
  - Niveau de __détail__ élevé
  - Produites après une __collecte de données__ sur le terrain
 
-:::{figure} /fig/en_Infrastructure_Map_Nigeria.png
+:::{figure} ../../../fig/en_Infrastructure_Map_Nigeria.png
 ---
 height: 600px
 name: en_Infrastructure_Map_Nigeria
@@ -253,7 +253,7 @@ Les cartes thématiques représentent un thème spécifique, comme la densité d
 - Utilisent des __couleurs et des formes__ pour représenter des données quantitatives et qualitatives
 - Sensibilisent (__awareness__) à un sujet spécifique
 
-:::{figure} /fig/en_thematic_map_example_IFRC.png
+:::{figure} ../../../fig/en_thematic_map_example_IFRC.png
 ---
 height: 600px
 name: en_thematic_map_example_IFRC
@@ -272,7 +272,7 @@ Les cartes d’analyse servent à examiner et interpréter les données, en mett
 - __Soutiennent__ les décideurs
 - Affichent généralement un __niveau de détail__ plus élevé
 
-:::{figure} /fig/en_Analysis_Map_Yemen.png
+:::{figure} ../../../fig/en_Analysis_Map_Yemen.png
 ---
 height: 600px
 name: en_Analysis_Map_Yemen
@@ -289,7 +289,7 @@ Les cartes de situation (ou descriptives) fournissent un état des lieux de cond
 - Peuvent inclure des éléments __narratifs__ et graphiques
 - Peuvent être intégrées dans des rapports et/ou servir à __sensibiliser__ à un événement
 
-:::{figure} /fig/en_Pop_Syrian_Refugees_2023.png
+:::{figure} ../../../fig/en_Pop_Syrian_Refugees_2023.png
 ---
 width: 600px
 name: en_Pop_Syrian_Refugees_2023

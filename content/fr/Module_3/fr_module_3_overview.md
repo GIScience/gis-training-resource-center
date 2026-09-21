@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/fr/fr_intro.html 
+:link: ../fr_intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -17,29 +17,29 @@ Le troisième module traite des opérations et des manipulations de données que
 
 *   - __Chapitre__
     - __Compétences et objectifs__
-*   - __[Chapitre 1 : Numérisation](/content/fr/Module_3/fr_qgis_digitisation.md)__ 
+*   - __[Chapitre 1 : Numérisation](fr_qgis_digitisation.md)__ 
     - __À la fin de ce chapitre, vous devriez :__
         - comprendre le processus de numérisation,
         - savoir créer et modifier des données vectorielles,
         - connaître les erreurs de numérisation à éviter.
-*   - __[Chapitre 2 : Classification des données géographiques](/content/fr/Module_3/fr_qgis_data_classification.md)__
+*   - __[Chapitre 2 : Classification des données géographiques](fr_qgis_data_classification.md)__
     - __À la fin de ce chapitre, vous devriez :__
         - savoir classifier des données géographiques afin d’en tirer des informations utiles,
         - savoir comment et quand utiliser une classification catégorisée,
         - savoir comment et quand utiliser une classification graduée.
-*   - __[Chapitre 3 : Sélection et requêtes sur les données géographiques](/content/fr/Module_3/fr_qgis_data_queries.md)__
+*   - __[Chapitre 3 : Sélection et requêtes sur les données géographiques](fr_qgis_data_queries.md)__
     - __À la fin de ce chapitre, vous devriez :__
         - savoir sélectionner manuellement des entités,
         - savoir sélectionner des entités à partir de leurs attributs,
         - savoir formuler une requête avec le générateur d’expressions,
         - savoir sélectionner des entités selon leur localisation,
         - connaître les opérateurs géométriques.
-*   - __[Chapitre 4 : Géoréférencement](/content/fr/Module_3/fr_qgis_georeferencing.md)__
+*   - __[Chapitre 4 : Géoréférencement](fr_qgis_georeferencing.md)__
     - __À la fin de ce chapitre, vous devriez :__
         - savoir géoréférencer une carte dans QGIS,
         - savoir régler la transparence d’une couche géoréférencée (raster),
         - savoir numériser des entités vectorielles à partir d’une carte géoréférencée. 
-*   - __[Exercices du module 3](/content/fr/Module_3/fr_qgis_module_3_exercises.md)__
+*   - __[Exercices du module 3](fr_qgis_module_3_exercises.md)__
     - Vous trouverez ici tous les exercices du module 3.
 
 :::

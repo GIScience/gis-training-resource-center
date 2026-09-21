@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/fr/fr_intro.html 
+:link: ../fr_intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -40,7 +40,7 @@ La sélection manuelle se fait principalement à l’aide des outils de sélecti
 \
 Exemple : `Select Feature(s)`
 
-1.	Cliquez sur `Select Feature(s)` dans le menu déroulant de ![](/fig/mActionSelectRectangle.png).
+1.	Cliquez sur `Select Feature(s)` dans le menu déroulant de ![](../../../fig/mActionSelectRectangle.png).
 2.	Sélectionnez les entités en cliquant dessus ou en dessinant un rectangle qui les recouvre.
 3.	Utilisez l’outil en dehors des entités sélectionnables pour terminer la sélection.
 
@@ -55,9 +55,9 @@ Maintenir la touche "Shift" enfoncée lors de la sélection permet de sélection
 
 :::
 
-Les autres options de ![](/fig/mActionSelectRectangle.png) fonctionnent de manière similaire, en sélectionnant toutes les entités qui intersectent la géométrie dessinée avec l’outil.
+Les autres options de ![](../../../fig/mActionSelectRectangle.png) fonctionnent de manière similaire, en sélectionnant toutes les entités qui intersectent la géométrie dessinée avec l’outil.
 
-1. Cliquez sur `Select Feature(s) by Polygon` dans le menu déroulant de ![](/fig/mActionSelectRectangle.png).
+1. Cliquez sur `Select Feature(s) by Polygon` dans le menu déroulant de ![](../../../fig/mActionSelectRectangle.png).
 2. Sélectionnez les entités en cliquant avec le bouton gauche autour des entités que vous souhaitez sélectionner.
 3. Faites un clic droit lorsque vous avez terminé de dessiner le polygone. 
 
@@ -74,7 +74,7 @@ Les entités sélectionnées sont surlignées en jaune vif dans la vue cartograp
 
 ## Sélection basée sur les attributs <a id="attribute-based-selection"></a>
 
-Une requête basée sur des attributs spécifiques peut être réalisée à l’aide de l’outil `Select Features by Expression`, disponible via ![](/fig/mActionSelectbyExpression.png) dans la barre d’outils du projet ainsi que dans la table attributaire (alternative : `Edit` → `Select` → `Select Features by Expression`).
+Une requête basée sur des attributs spécifiques peut être réalisée à l’aide de l’outil `Select Features by Expression`, disponible via ![](../../../fig/mActionSelectbyExpression.png) dans la barre d’outils du projet ainsi que dans la table attributaire (alternative : `Edit` → `Select` → `Select Features by Expression`).
 
 1.	Dans l’interface de l’outil, développez `Fields and Values` dans le panneau de droite.
 2.	Choisissez le champ sur lequel baser votre sélection en double-cliquant dessus (il apparaît alors dans le panneau d’expression à gauche).
@@ -126,7 +126,7 @@ Des opérateurs tels que AND, OR peuvent être utilisés pour combiner différen
 
 ## Sélection spatiale basée sur une couche <a id="layer-based-spatial-selection"></a>
 
-La sélection spatiale permet de sélectionner des entités d’une couche en fonction de leur relation avec des entités d’une autre couche géospatiale (par ex. sélectionner tous les points d’une couche A situés à l’intérieur d’un polygone d’une couche B). Elle peut être réalisée à l’aide de l’outil “Select by Location” disponible via ![](/fig/mActionSelectbyLocation.png) dans la barre d’outils du projet (alternative : `Vector` → `Research Tools` → `Select by Location`).
+La sélection spatiale permet de sélectionner des entités d’une couche en fonction de leur relation avec des entités d’une autre couche géospatiale (par ex. sélectionner tous les points d’une couche A situés à l’intérieur d’un polygone d’une couche B). Elle peut être réalisée à l’aide de l’outil “Select by Location” disponible via ![](../../../fig/mActionSelectbyLocation.png) dans la barre d’outils du projet (alternative : `Vector` → `Research Tools` → `Select by Location`).
 
 1.	Dans l’interface de l’outil, choisissez la couche à partir de laquelle vous souhaitez sélectionner des entités via `Select features from` et la couche de référence via `By comparing to the features from`.
 2.	Choisissez l’opérateur géométrique qui sera utilisé pour la sélection (voir paragraphe ci-dessous).
@@ -200,4 +200,4 @@ Exemples :
 
 ::::
 
-[def]: /fig/mActionSelectRectangle.png
+[def]: ../../../fig/mActionSelectRectangle.png

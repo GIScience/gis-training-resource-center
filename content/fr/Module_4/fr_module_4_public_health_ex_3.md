@@ -75,7 +75,7 @@ Le composeur de mise en page est une fenêtre distincte de QGIS dans laquelle vo
 1. Premièrement, nous devons créer une nouvelle mise en page d'impression :
     - Menu haut : `Project` → `New Print Layout…`
     - Nommez le : **Health_Facilities_Capacity_Map**
-    - Une nouvelle fenêtre s'ouvrira, il s'agit du [éditeur de mise en page d'impression](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html). Prenez le temps de  [comprendre l'interface et les différents outils](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_understanding_print_layout.html).
+    - Une nouvelle fenêtre s'ouvrira, il s'agit du [éditeur de mise en page d'impression](fr_qgis_map_design_2.md). Prenez le temps de  [comprendre l'interface et les différents outils](../../en/Module_4/en_qgis_understanding_print_layout.md).
 
 2. Ajoutez un nouveau cadre de carte :
     - Sélectionnez `Add Map` ![](../../../fig/30.30.2_print_layout_insert_map_icon.png) dans la barre d'outils à gauche.

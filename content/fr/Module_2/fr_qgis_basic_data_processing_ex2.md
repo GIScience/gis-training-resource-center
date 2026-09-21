@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/fr/intro.html 
+:link: ../fr_intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -54,11 +54,11 @@ __Durée estimée de l’exercice :__
 __Articles wiki associés :__
 ^^^
 
-* [Interface QGIS](/content/fr/Wiki/fr_qgis_interface_wiki.md)
-* [Import de données dans QGIS](/content/fr/Wiki/fr_qgis_import_geodata_wiki.md)
-* [Concept de couche](/content/fr/Wiki/fr_qgis_layer_concept_wiki.md)
-* [Table attributaire dans QGIS](/content/fr/Wiki/fr_qgis_attribute_table_wiki.md)
-* [Projections](/content/fr/Wiki/fr_qgis_projections_wiki.md)
+* [Interface QGIS](../../en/Wiki/en_qgis_interface_wiki.md)
+* [Import de données dans QGIS](../../en/Wiki/en_qgis_import_geodata_wiki.md)
+* [Concept de couche](../../en/Wiki/en_qgis_layer_concept_wiki.md)
+* [Table attributaire dans QGIS](../../en/Wiki/en_qgis_attribute_table_wiki.md)
+* [Projections](../../en/Wiki/en_qgis_projections_wiki.md)
 
 :::
 
@@ -72,7 +72,7 @@ __Préparation de la formation :__
 - Prenez le temps de vous familiariser avec l’exercice et les ressources fournies.
 - Préparez un tableau (physique ou numérique, par exemple Miro) permettant aux participants de noter leurs observations et questions. 
 - Avant de commencer, assurez-vous que tous les participants ont installé QGIS et ont téléchargé __et décompressé__ les données.
-- Consultez [Comment organiser une formation ?](/content/fr/Trainers_corner/fr_how_to_training.md) pour des conseils généraux.
+- Consultez [Comment organiser une formation ?](../../en/Trainers_corner/en_how_to_training.md) pour des conseils généraux.
 
 __Conduite de la formation :__
 
@@ -141,7 +141,7 @@ Aucun calcul n’étant nécessaire (surface, distance), le système WGS84 (EPSG
 :::
 
 6. Répétez les étapes pour la couche `nigeria_boundaries.geojson` et exportez uniquement le district où se trouve **Zuyel**. Nommez le fichier de manière appropriée.  
-Utilisez l’outil ![](/fig/qgis_identify_features.png) `Identify Features` pour identifier le district, puis sélectionnez-le dans la table attributaire.
+Utilisez l’outil ![](../../../fig/qgis_identify_features.png) `Identify Features` pour identifier le district, puis sélectionnez-le dans la table attributaire.
 
 7. Supprimez toutes les couches initiales, puis ouvrez la table attributaire de vos nouvelles couches pour vérifier qu’elles contiennent chacune une seule entité.
 
@@ -149,7 +149,7 @@ Utilisez l’outil ![](/fig/qgis_identify_features.png) `Identify Features` pour
 
 ### Résultat <a id="result"></a>
 
-:::{figure} /fig/en_result_geodata_processing_exercise.png
+:::{figure} ../../../fig/en_result_geodata_processing_exercise.png
 ---
 width: 80%
 name: en_result_geodata_processing_exercise
