@@ -118,12 +118,28 @@ Geographic Information Systems (GIS) play a central role in anticipatory action 
 
 In addition to the training materials above, the platform also hosts a collection of case studies and workflows on the use of GIS in Anticipatory Action. These examples illustrate how geospatial analysis can support the development of anticipatory action protocols, including risk analysis, trigger monitoring, impact estimation, and the targeting of early actions.
 
-The case studies present applied GIS workflows based on real operational contexts and highlight the tools and datasets used in the analyses.
+The case studies present applied GIS workflows based on real operational contexts and highlight the tools and datasets used in the analyses — many of these tools are documented in more detail in the Tools & Methods section below.
 ::::{grid} auto
+:class-container: sd-d-flex sd-justify-content-center
 :::{grid-item-card}
 :class-body: sd-text-center
 :link: GIS_AA/en_GIS_AA_overview
 __GIS in Anticipatory Action__
+:::
+::::
+
+## Tools & Methods
+
+In addition to the case studies above, the platform documents a set of **reusable tools and methods** that are applied across different GIS in Anticipatory Action workflows and humanitarian mapping contexts. These are documented separately from individual case studies, since the same tools are often reused across different hazards, countries, and operational contexts.
+
+Currently available tools include the **Sketch Map Tool** for offline, participatory mapping, the **AILAS** street-level imagery collection workflow for road passability assessment, and the **Risk Assessment QGIS Plugin** (including GAIA indicator processing).
+
+::::{grid} auto
+:class-container: sd-d-flex sd-justify-content-center
+:::{grid-item-card}
+:class-body: sd-text-center
+:link: Mobile_Data_collection/en_SMT
+__Tools & Methods__
 :::
 ::::
 
