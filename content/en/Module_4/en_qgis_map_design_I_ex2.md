@@ -48,7 +48,7 @@ __Relevant wiki articles:__
 * [Visualisation of Vector Data](../Wiki/en_qgis_visualisation_wiki.md)
 * [Map Making](../Wiki/en_qgis_map_making_wiki.md)
 * [Layer Concept](../Wiki/en_qgis_layer_concept_wiki.md)
-* [Geodata Classification- Categorized](../Wiki/en_qgis_categorized_wiki.md)
+* [Geodata Classification- Categorized](../Wiki/en_qgis_categorised_wiki.md)
 * [Geodata Classification - Graduated](../Wiki/en_qgis_graduated_wiki.md)
 
 :::

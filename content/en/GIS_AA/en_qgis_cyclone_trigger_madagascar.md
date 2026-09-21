@@ -171,7 +171,7 @@ The following key processing steps are run inside the model:
 
 ### How to run the model <a id="how-to-run-the-model"></a>
 
-The [QGIS Model Designer](../Wiki/en_qgis_automatisation_wiki.md#the-qgis-model-designer) is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner, while ensuring reproducibility. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
+The [QGIS Model Designer](../Wiki/en_qgis_automation_wiki.md#the-qgis-model-designer) is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner, while ensuring reproducibility. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
 
 
 ### Step 1: Explanation of the folder structure <a id="step-1-explanation-of-the-folder-structure"></a>

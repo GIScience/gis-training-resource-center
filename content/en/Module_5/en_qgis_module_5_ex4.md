@@ -61,7 +61,7 @@ __Relevant wiki articles:__
 
 * [Geodata Import in QGIS](../Wiki/en_qgis_import_geodata_wiki)
 * [Layer Concept](../Wiki/en_qgis_layer_concept_wiki)
-* [Geodata Classification- Categorized](../Wiki/en_qgis_categorized_wiki)
+* [Geodata Classification- Categorized](../Wiki/en_qgis_categorised_wiki)
 * [Digitisation- Point data](../Wiki/en_qgis_digitisation_wiki#add-geometries-to-a-layer)
 :::
 ::::

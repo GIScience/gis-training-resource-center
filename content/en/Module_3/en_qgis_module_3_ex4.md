@@ -53,7 +53,7 @@ __Relevant Wiki Articles__:
 * [Layer Concept](../Wiki/en_qgis_layer_concept_wiki.md)
 * [Attribute table](../Wiki/en_qgis_attribute_table_wiki.md)
 * [Table function - Add field](../Wiki/en_qgis_table_functions_wiki.md)
-* [Geodata Classification- Categorized](../content/Wiki/en_qgis_categorized_wiki.md)
+* [Geodata Classification- Categorized](../content/Wiki/en_qgis_categorised_wiki.md)
 * [Geodata Classification- Graduated](../Wiki/en_qgis_graduated_wiki.md)
 * [Digitization- Point data](../Wiki/en_qgis_digitisation_wiki.md#add-geometries-to-a-layer)
 
@@ -151,7 +151,7 @@ Open the Excel or pdf file "Nigeria_flood_2022_affacted_population" and open the
     * In the next step check in the Excel/PDF table which LGAs were affected and put “Yes” in the attribute table for those LGAs.
     * When you are done, click ![](../../../fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](../../../fig/mActionToggleEditing.png) ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)).
 
-8. To visualise the enriched data set, we use the function "Categorized Classification" function. This means that we select a column from the attribute table and use the content as categories to sort and display the data ([Wiki Video](../Wiki/en_qgis_categorized_wiki.md)).
+8. To visualise the enriched data set, we use the function "Categorized Classification" function. This means that we select a column from the attribute table and use the content as categories to sort and display the data ([Wiki Video](../Wiki/en_qgis_categorised_wiki.md)).
     * Right-click on the layer "Borno_admin2_pop" in the `Layer Panel` → `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
     * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select "Flood_affected".
     * Further down the window, click on `Classify`. Now you should see all unique values or attributes of the selected “Flood_affected” column.  You can adjust the colours by double-clicking on one row in the central field. Once you are done, click `Apply` and `OK` to close the symbology window.

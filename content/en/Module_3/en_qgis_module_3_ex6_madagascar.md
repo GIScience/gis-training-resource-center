@@ -49,7 +49,7 @@ __Relevant wiki articles:__
 
 * [Geodata Import in QGIS](../Wiki/en_qgis_import_geodata_wiki.md)
 * [Layer Concept](../Wiki/en_qgis_layer_concept_wiki.md)
-* [Geodata Classification- Categorized](../Wiki/en_qgis_categorized_wiki.md)
+* [Geodata Classification- Categorized](../Wiki/en_qgis_categorised_wiki.md)
 * [Geodata Classification - Graduated](../Wiki/en_qgis_graduated_wiki.md)
 * [Spatial Queries](../Wiki/en_qgis_spatial_queries_wiki.md)
 * [Table function - Add field](../Wiki/en_qgis_table_functions_wiki.md#add-field)
@@ -310,7 +310,7 @@ Fortunately, no health facilities are directly affected by the flood.
  * When you are done, click ![](../../../fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](../../../fig/mActionToggleEditing.png)([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#change-data-in-the-attribute-table)).
  * Click on the icon ![](../../../fig/selection_toolbar_feature_deselection.png) in the toolbar to end the feature selection.
 
-* To visualise the enriched data set, we use the function "Categorized Classification" function. This means that we select a column from the attribute table and use the content as categories to sort and display the data ([Wiki Video](../Wiki/en_qgis_categorized_wiki.md)).
+* To visualise the enriched data set, we use the function "Categorized Classification" function. This means that we select a column from the attribute table and use the content as categories to sort and display the data ([Wiki Video](../Wiki/en_qgis_categorised_wiki.md)).
     * Right-click on the layer __"Health_Facilities_Flood_2024_AOI"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
     * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select “Flood_affected”.
     * Further down the window, click on `Classify`. Now you should see all unique values or attributes of the selected “Flood_affected” column. You can adjust the colours by double-clicking on each colour in the central field. Once you are done, click `Apply` and `OK` to close the symbology window.
@@ -355,7 +355,7 @@ In order to get a clearer picture, we need to import the road network data for t
 ::::
 
 1. Load the dataset __"roads_sava.gpkg"__ from your input folder into your QGIS.
-2. For categorized classification right-click on the layer __"roads_sava"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab ([Wiki Video](../Wiki/en_qgis_categorized_wiki.md)).
+2. For categorized classification right-click on the layer __"roads_sava"__ in the Layer Panel and click on `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab ([Wiki Video](../Wiki/en_qgis_categorised_wiki.md)).
     * On the top you find a dropdown menu. Open it and choose `Categorized`. Under `Value` select "highway".
     * Further down the window, click on `Classify`.  Now you should see all unique values or attributes of the selected “Flood_affacted” column.  You can adjust the colours by double-clicking on the coluors in each row in the central field.
     * Remove the tick from all categories except: `motorway`, `primary`, `secondary`, `trunk`.

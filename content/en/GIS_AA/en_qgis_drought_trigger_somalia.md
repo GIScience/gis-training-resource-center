@@ -119,7 +119,7 @@ The IPC Index represents low-population districts equal to high-population distr
 
 As explained in the beginning of this [chapter](../GIS_AA/en_qgis_drought_trigger_somalia.md#qgis-trigger-workflow-for-somalia), the 9 main steps of the developed trigger workflow are done automatically by a QGIS model. In the previous chapters you have learned the purpose and needed tools of each step and how to perform them manually. In this chapter it is explained how to run the automated model.
 
-The [QGIS Model Designer](../Wiki/en_qgis_automatisation_wiki.md#the-qgis-model-designer) is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
+The [QGIS Model Designer](../Wiki/en_qgis_automation_wiki.md#the-qgis-model-designer) is a visual tool that allows users to create and edit a workflow with all tools available in QGIS that can be used repeatedly in a simple and time-efficient manner. It provides a graphical interface to build workflows by connecting geoprocessing tools and algorithms. The user can define inputs, outputs, and the flow of data between different processing steps.
 
 <!--The Model designer chapter is completely unfinished. Also, what are the previous chapters? the modules?-->
 

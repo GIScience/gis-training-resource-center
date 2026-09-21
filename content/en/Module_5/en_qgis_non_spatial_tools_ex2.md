@@ -52,7 +52,7 @@ Become familiar with different types of non-spatial analysis and geoprocessing t
 * [Projections](../Wiki/en_qgis_projections_wiki.md)
 * [Spatial Queries](../Wiki/en_qgis_spatial_queries_wiki.md)
 * [Geoprocessing](../Wiki/en_qgis_geoprocessing_wiki.md)
-* [Categorized classification](../Wiki/en_qgis_categorized_wiki.md)
+* [Categorized classification](../Wiki/en_qgis_categorised_wiki.md)
 
 :::
 

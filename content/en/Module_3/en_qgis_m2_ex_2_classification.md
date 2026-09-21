@@ -59,7 +59,7 @@ __Relevant Wiki Articles__:
 * [Layer Concept](../Wiki/en_qgis_layer_concept_wiki.md)
 * [Attribute table](../Wiki/en_qgis_attribute_table_wiki.md)
 * [Table function - Add field](../Wiki/en_qgis_table_functions_wiki.md)
-* [Geodata Classification- Categorized](../Wiki/en_qgis_categorized_wiki.md)
+* [Geodata Classification- Categorized](../Wiki/en_qgis_categorised_wiki.md)
 * [Geodata Classification- Graduated](../Wiki/en_qgis_graduated_wiki.md)
 * [Digitization- Point data](../Wiki/en_qgis_digitisation_wiki.md#add-geometries-to-a-layer)
 
@@ -173,7 +173,7 @@ align: center
 Symbol for hospital.
 :::
 
-11. As a last visualisation step open the `Symbology` tab `Sierra_Leone_roads (Lines)` and like in step 9 open the top dropdown menu. Now instead of `Graduated` choose [Categorized Classification](../Wiki/en_qgis_categorized_wiki.md) and select "highway" in the `Value` menu. Click `Classify` to get a classification with individual colours for all unique values of the "highway" column. In the squares next to the classes, deselect all classes except for "primary". You can change the colour of the classes by manually clicking and adjusting the colour in the drop "Symbol" dropdown menu near the top of the window.
+11. As a last visualisation step open the `Symbology` tab `Sierra_Leone_roads (Lines)` and like in step 9 open the top dropdown menu. Now instead of `Graduated` choose [Categorized Classification](../Wiki/en_qgis_categorised_wiki.md) and select "highway" in the `Value` menu. Click `Classify` to get a classification with individual colours for all unique values of the "highway" column. In the squares next to the classes, deselect all classes except for "primary". You can change the colour of the classes by manually clicking and adjusting the colour in the drop "Symbol" dropdown menu near the top of the window.
 
 :::{figure} ../../../fig/mod3_classification_ex_Categorizedclassification.png
 ---

@@ -48,7 +48,7 @@ __Relevant wiki articles and module chapters__
 
 * [Geodata Import in QGIS](../Wiki/en_qgis_import_geodata_wiki.md)
 * [Layer Concept](../Wiki/en_qgis_layer_concept_wiki.md)
-* [Geodata Classification- Categorized](../Wiki/en_qgis_categorized_wiki.md)
+* [Geodata Classification- Categorized](../Wiki/en_qgis_categorised_wiki.md)
 * [Geodata Classification - Graduated](../Wiki/en_qgis_graduated_wiki.md)
 * [Spatial Queries](../Wiki/en_qgis_spatial_queries_wiki.md)
 * [Table function - Add field](../Wiki/en_qgis_table_functions_wiki.md#add-field)
@@ -360,7 +360,7 @@ Adding a new column to the attribute table for the healthsites layer.
     - When you are done, click ![](../../../fig/mActionSaveEdits.png) to save your edits and switch off the editing mode by again clicking on ![](../../../fig/mActionToggleEditing.png) ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#change-data-in-the-attribute-table)).
     - Click on the icon ![](../../../fig/selection_toolbar_feature_deselection.png) in the toolbar to end the feature selection.
 
-8. We can display the enriched dataset by visualising it using the categorised classification symbolisation method. This means that we select a column from the attribute table and use the values/content as categories to sort and display the data ([Wiki Video](../Wiki/en_qgis_categorized_wiki.md)):
+8. We can display the enriched dataset by visualising it using the categorised classification symbolisation method. This means that we select a column from the attribute table and use the values/content as categories to sort and display the data ([Wiki Video](../Wiki/en_qgis_categorised_wiki.md)):
     - In the layers panel, right-click on the layer __"Health_Facilities_Flood_2024_AOI"__ and select `Properties`. A new window will open up with a vertical tab section on the left.
     - Navigate to the `Symbology` tab.
     - At the top of the window, there is a dropdown menu. Open it and choose `Categorized`.
@@ -423,7 +423,7 @@ width: 750 px
 2. Lets set up the categorised classification. OpenStreetMap data distinguishes between different road types using the column "highway". 
     - Right-click on the layer __"Roads_Larkana"__ and select `Properties`. The properties window will open up. 
     - Navigate to the `Symbology`-tab.
-    - At the top, select `Categorized` ([Wiki Video](../Wiki/en_qgis_categorized_wiki.md)).
+    - At the top, select `Categorized` ([Wiki Video](../Wiki/en_qgis_categorised_wiki.md)).
     - Under `Value`, select "highway".
     - Click on `Classify`. You should see all the unique values for the "highway" column. 
     - Remove the ticks for all categories except for `motorway`, `primary`, `secondary`, and `trunk`.

@@ -48,7 +48,7 @@ __Relevant Wiki Articles__
 * [Projections](../Wiki/en_qgis_projections_wiki.md)
 * [Buffer](../Wiki/en_qgis_projections_wiki.md)
 * [Clip](../Wiki/en_qgis_projections_wiki.md)
-* [Automation](../Wiki/en_qgis_automation_wiki.mds)
+* [Automation](../Wiki/en_qgis_automation_wiki.md)
 
 :::
 
