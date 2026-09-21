@@ -71,13 +71,13 @@ parts:
           - file: Module_9/en_qgis_centrality.md
           - file: Module_9/en_qgis_module_9_exercises.md
   - caption: Exercises
-    chapters: 
+    chapters:
       - file: Exercise_tracks/en_exercise_tracks_overview.md
         sections:
           - file: Exercise_tracks/en_larkana_flood_response.md
           - file: Exercise_tracks/en_mdg_aa_cyclones.md
-          - file: Exercise_tracks/fr_mdg_aa_cyclones.md
           - file: Exercise_tracks/en_public_health_outbreak_and_preparedness.md
+          - file: Exercise_tracks/mobile_health_training/en_ex_track_mobile_health_overview.md
   - caption: Wiki
     chapters:
       - file: Wiki/en_wiki_homepage.md
@@ -135,12 +135,13 @@ parts:
       - file: Wiki/en_qgis_common_errors_and_Issues.md
   - caption: Trainers corner
     chapters:
-      - file: Trainers_corner/en_TOT_intro.md  
-      - file: Trainers_corner/en_how_to_training.md
-      - file: Trainers_corner/en_training_graphical_outline.md
-      - file: Trainers_corner/en_training_day_structure.md  
-      - file: Trainers_corner/en_how_to_teach_GIS.md
-      - file: Trainers_corner/en_how_to_assessment.md   
+      - file: Trainers_corner/en_TOT_intro.md
+        sections:
+          - file: Trainers_corner/en_how_to_training.md
+          - file: Trainers_corner/en_training_graphical_outline.md
+          - file: Trainers_corner/en_training_day_structure.md
+          - file: Trainers_corner/en_how_to_teach_GIS.md
+          - file: Trainers_corner/en_how_to_assessment.md
   - caption: GIS in Anticipatory Action
     chapters:
       - file: GIS_AA/GIS_AA_overview.md

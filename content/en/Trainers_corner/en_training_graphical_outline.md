@@ -42,7 +42,7 @@ Below are some examples of graphical outlines of past training workshops:
 
 - https://miro.com/app/board/uXjVNi7BRoQ=/
 
-```{figure} ../../fig/en_miro_board_example.png
+```{figure} ../../../fig/en_miro_board_example.png
 ---
 name: example Miro board
 width: 760 px
