@@ -146,8 +146,6 @@ parts:
     chapters:
       - file: GIS_AA/en_GIS_AA_overview.md
       - file: GIS_AA/en_qgis_cyclone_trigger_madagascar.md
-        sections:
-          - file: GIS_AA/fr_qgis_cyclone_trigger_madagascar.md
       - file: GIS_AA/en_qgis_drought_trigger_somalia.md
         sections:
           - file: GIS_AA/en_qgis_srcs_basic_ex.md
@@ -169,10 +167,6 @@ parts:
         sections:
           - file: GIS_AA/en_AILAS_madagascar_camera_usage_guide.md
           - file: GIS_AA/en_AILAS_madagascar_picture_upload_and_management.md
-      - file: GIS_AA/fr_AILAS_madagascar.md
-        sections:
-          - file: GIS_AA/fr_AILAS_madagascar_camera_usage_guide.md
-          - file: GIS_AA/fr_AILAS_madagascar_picture_upload_and_management.md
       - file: GIS_AA/en_qgis_risk_assessment_plugin.md
         sections:
           - file: GIS_AA/en_qgis_generate_indicators_for_plugin.md
