@@ -86,9 +86,9 @@ Keep in mind that you don't need to follow the module structure. It is there to 
         QGIS installation  
         QGIS interface  
     - 
-        [Exercise 1: Understanding the Interface](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_1/en_qgis_interface_ex1.html)
+        [Exercise 1: Understanding the Interface](../Module_1/en_qgis_interface_ex1.md)
     - 
-        [QGIS Basics](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_qgis_basics_wiki.html)
+        [QGIS Basics](../Wiki/en_qgis_qgis_basics_wiki.md)
 *   - __Module 2: Working with Geodata__
     - 
         Introduction to geodata (vector and raster data)  
@@ -99,28 +99,28 @@ Keep in mind that you don't need to follow the module structure. It is there to 
         Data sources  
         Attribute table
     - 
-        [Exercise 1: Geodata Concept](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_geodata_concept_ex1.html)  
+        [Exercise 1: Geodata Concept](../Module_2/en_qgis_geodata_concept_ex1.md)  
         [Exercise 2: The World](https://giscience.github.io/gis-training-resource-center/english/content/en/Modul_2/en_qgis_modul_2_ex_1.html)  
     - 
-        [Geodata](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_geodata_wiki.html)  
-        [Projections](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_projections_wiki.html)  
-        [Basemaps](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_basemaps_wiki.html)  
-        [Data sources](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_data_sources_wiki.html)  
-        [Plugins](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_plugins_wiki.html)  
+        [Geodata](../Wiki/en_qgis_geodata_wiki.md)  
+        [Projections](../Wiki/en_qgis_projections_wiki.md)  
+        [Basemaps](../Wiki/en_qgis_basemaps_wiki.md)  
+        [Data sources](../Wiki/en_qgis_data_sources_wiki.md)  
+        [Plugins](../Wiki/en_qgis_plugins_wiki.md)  
 *   - __Module 3: Basic GIS operations__
     - 
         Digitization  
         Geodata selection and queries  
         Geodata classification  
     - 
-        [Exercise 1: Access to financial institutions](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_digitisation_ex.html)  
-        [Exercise 2: Overview map of the prevalence of stunting in Sierra Leone](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_classification_exe.html)  
+        [Exercise 1: Access to financial institutions](../Module_3/en_qgis_digitalisation_ex.md)  
+        [Exercise 2: Overview map of the prevalence of stunting in Sierra Leone](../Module_3/en_qgis_m2_ex_2_classification.md)  
         Big Exercise: 
-        [Exercise 3: Nigeria Floods](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_module_3_ex4.html)  
+        [Exercise 3: Nigeria Floods](../Module_3/en_qgis_module_3_ex4.md)  
     - 
-        [Digitization](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_digitisation_wiki.html)  
-        [Geodata classification](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_data_classification_wiki.html)  
-        [Spatial and non-spatial queries](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_queries_wiki.html) 
+        [Digitization](../Wiki/en_qgis_digitisation_wiki.md)  
+        [Geodata classification](../Wiki/en_qgis_data_classification_wiki.md)  
+        [Spatial and non-spatial queries](../Wiki/en_qgis_queries_wiki.md) 
 *   - __Module 4: Representation__
     - 
         Graphic semiology  
@@ -131,10 +131,10 @@ Keep in mind that you don't need to follow the module structure. It is there to 
         Map composition   
         Atlas function
     - 
-        [Exercise 1: Creating a Map of Ghana](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_I_ex2.html)   
+        [Exercise 1: Creating a Map of Ghana](../Module_4/en_qgis_map_design_I_ex2.md)   
     - 
-        [Visualization](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_visualisation_wiki.html)  
-        [Map making](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_map_making_wiki.html)  
+        [Visualization](../Wiki/en_qgis_visualisation_wiki.md)  
+        [Map making](../Wiki/en_qgis_map_making_wiki.md)  
 *   - __Module 5: Intermediate GIS operations__
     -   Spatial and non-spatial geoprocessing    
         Clip  
@@ -147,17 +147,17 @@ Keep in mind that you don't need to follow the module structure. It is there to 
         Non-spatial queries
         Non-spatial joins  
     - Spatial Geoprocessing:  
-        [Exercise 1: Healthsite distribution in Saint Louis Region](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_5/en_qgis_spatial_tools_ex1.html)  
-        [Exercise 2: Calculate vulnerability index - Part 1](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_5/en_qgis_spatial_tools_ex2.html)  
+        [Exercise 1: Healthsite distribution in Saint Louis Region](../Module_5/en_qgis_spatial_tools_ex1.md)  
+        [Exercise 2: Calculate vulnerability index - Part 1](../Module_5/en_qgis_spatial_tools_ex2.md)  
     Non-spatial geodataprocessing:  
         [Exercise 3: Disaster effects in different regions of Senegal](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_5/en_qgis_non_spatial_tools_ex1.html)  
-        [Exercise 2: Calculate vulnerability index - Part 2](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_5/en_qgis_non_spatial_tools_ex2.html)  
+        [Exercise 2: Calculate vulnerability index - Part 2](../Module_5/en_qgis_non_spatial_tools_ex2.md)  
     Big exercise:  
-        [Exercise 4: Trigger & Intervention Map for Forecast-based-Action](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_5/en_qgis_module_5_ex2.html)  
+        [Exercise 4: Trigger & Intervention Map for Forecast-based-Action](../Module_5/en_qgis_module_5_ex3.md)  
     - 
-        [Spatial and non-spatial queries](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_queries_wiki.html)  
-        [Table functions](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_table_functions_wiki.html)  
-        [Geoprocessing](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_geoprocessing_wiki.html)  
+        [Spatial and non-spatial queries](../Wiki/en_qgis_queries_wiki.md)  
+        [Table functions](../Wiki/en_qgis_table_functions_wiki.md)  
+        [Geoprocessing](../Wiki/en_qgis_geoprocessing_wiki.md)  
 
 :::
 

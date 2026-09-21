@@ -82,6 +82,8 @@ __Two open data questions to resolve before running this exercise for real:__
 2. Confirm whether the Health Cluster attribute table (`Health_Facilities_ES.dbf`) has a facility type/level field, and what its values are. Task 2 below is written to let participants discover this themselves, but you should know the answer in advance.
 :::
 
+%% Check if above is still needed
+
 ### Conduct the training <a id="conduct-the-training"></a>
 
 __Introduction:__
@@ -169,12 +171,16 @@ You have two facility lists that disagree with each other, and neither is perfec
 :::{note}
 This isn't just a training artefact. Checking geometrically, roughly one in five official facilities (about 21%) has no OSM-mapped clinical facility within 1km of it — OSM's health data is noticeably thinner in exactly the remote, conflict-affected areas this exercise is about. That's a reason to treat the official 2021 list as the primary source for "what exists today," and OSM as a secondary layer for cross-checking and filling specific gaps (like facility type, discussed in Task 4) — not the other way around.
 :::
+%% BUT THIS IS ONLY IF WE USE THE HEALTHSITES_ES LAYER WHICH DOES NOT INCLUDE THE HS TYPE
+
 
 ## 3. Read the Existing Accessibility Layer <a id="3-read-the-existing-accessibility-layer"></a>
 
 `COL_primary_healthcare_access.gpkg` already contains the answer to "who can reach a primary healthcare facility by car within one hour" — HeiGIT built it by generating drive-time isochrones from every primary healthcare facility and intersecting them with population and administrative boundaries.
 
 1. **Load the adm2 layer** from `COL_primary_healthcare_access.gpkg` (already filtered to your study area from Task 1).
+
+%% HERE WE SHOULD ACTUALLY DO ZONAL STATISTICS FOR OUR AOI. 
 2. **Open its attribute table** and identify the fields holding total population, population reached within the 60-minute drive isochrone, and the percentage reached. *(Field names to confirm with your trainer — this exercise assumes something like `pop_total`, `pop_within_60min_drive`, `pop_share_within_60min_drive`.)*
 3. **Calculate the population outside 60-minute drive access** per municipio using the Field Calculator:
    - **Output field name:** `pop_beyond_60min_drive`
@@ -187,6 +193,8 @@ This isn't just a training artefact. Checking geometrically, roughly one in five
 ## 4. Stress-Test the Layer's Assumption About Hospitals <a id="4-stress-test-the-layers-assumption-about-hospitals"></a>
 
 HeiGIT built the accessibility layer from *primary healthcare* facilities only. But a hospital can also provide primary care — so a municipio whose only facility is a hospital may be marked "unserved" in Task 3's map even though it isn't, in practice.
+%% THIS WAS ALSO JUST ASSUMPTION: The hospital access actually has the same gaps as the PHC access layers.
+
 
 1. **Select the hospitals** in your clinical OSM layer from Task 2:
    ```qgis
@@ -194,6 +202,7 @@ HeiGIT built the accessibility layer from *primary healthcare* facilities only. 
    ```
    Export as `data/temp/osm_hospitals.gpkg`.
 2. **Select by location**: find municipios (from Task 3's layer) that contain at least one hospital **and** have a low `pop_share_within_60min_drive` value.
+%% Also maybe too vague to discuss
 3. **Discuss as a group**: should these municipios be removed from your underserved shortlist, downgraded in priority, or kept as-is with a caveat? There's no single correct answer — Sphere doesn't specify how many patients per day a hospital can absorb as "primary care overflow," so this is a judgement call your team needs to make and justify, not something the GIS layer can decide for you.
 
 > ⚠️ **Don't try to re-run the isochrone analysis with hospitals added in this exercise.** That would mean regenerating HeiGIT's drive-time model from scratch, which is out of scope here. Instead, treat Task 3's map as a first draft and Task 4 as a manual sense-check on top of it.
@@ -205,7 +214,7 @@ HeiGIT built the accessibility layer from *primary healthcare* facilities only. 
 1. Rank the municipios in your study area by `pop_beyond_60min_drive`, adjusted for your Task 4 judgement calls.
 2. As a team, agree on **two or three priority underserved clusters** to carry forward — not the entire four-department area. The next exercise in this track will design MHU stops for these clusters specifically.
 3. Record, for each chosen cluster: total population, population within 60-minute drive access, population outside it, and the percentage figure. You'll present this exact set of numbers again at the end of the track.
-
+%% The record the demographics for each cluster
 ---
 
 ## Discussion <a id="discussion"></a>

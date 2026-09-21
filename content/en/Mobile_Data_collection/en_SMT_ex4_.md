@@ -99,14 +99,14 @@ __You can choose whether you want to do the exercise with QGIS (Exercise A) or w
 ::::{grid} 2
 
 :::{grid-item-card}
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/Mobile_Data_collection/en_SMT_ex4_.html#exercise-a-exploration-basic-visualization-of-sketch-map-tool-outputs-in-qgis
+:link: en_SMT_ex4_.md#exercise-a-exploration-basic-visualization-of-sketch-map-tool-outputs-in-qgis
 
 __Click here to start exercise A (QGIS)__
 
 :::
 
 :::{grid-item-card}
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/Mobile_Data_collection/en_SMT_ex4_.html#exercise-b-basic-visualization-of-sketch-map-tool-outputs-in-umap
+:link: en_SMT_ex4_.md#exercise-b-basic-visualization-of-sketch-map-tool-outputs-in-umap
 
 __Click here to start exercise B (uMAP)__
 
@@ -329,7 +329,7 @@ __2. Make a printable Map__
 
 1. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "Kumasi Flooding Sketch Map Tool". A new window will open with a blank canvas and a different set of tools. This is the __print layout designer__.
 
-- Insert a new map by clicking on the ![New Map Icon](../../../fig/30.30.2_print_layout_insert_map_icon.png) ("Add Map") on the left toolbar, and drawing a rectangle on the print canvas. [Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html#adding-a-new-map)
+- Insert a new map by clicking on the ![New Map Icon](../../../fig/30.30.2_print_layout_insert_map_icon.png) ("Add Map") on the left toolbar, and drawing a rectangle on the print canvas. [Video](../Module_4/en_qgis_map_design_2.md#adding-a-new-map)
 2. Move and position the map so that the entire country is visible at a reasonable scale. 
 4. Let's add a title: 
     - Click on the ![Add text icon](../../../fig/30.30.2_print_layout_add_text.png) (`Add text`)
