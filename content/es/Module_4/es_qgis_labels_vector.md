@@ -44,7 +44,7 @@ Asignar el valor de atributo correcto en las opciones de etiquetado. QGIS necesi
 5. __Añadamos un buffer blanco__ alrededor de la etiqueta. En la pestaña `Etiquetas`, encontrará una lista con diferentes opciones para diseñar las etiquetas. Ahora, estamos en el menú `Texto`. Seleccione `Buffer` y marque la opción `Dibujar buffer de texto`. Esto hará que las etiquetas se destaquen más en mapas oscuros o con mucha información.
 7. Haga clic en `Aplicar` y `Aceptar`.
 
-:::{figure} ../../fig/en_30.30.2_setting_up_labels.png
+:::{figure} ../../../fig/en_30.30.2_setting_up_labels.png
 ---
 width: 600px
 name: en_30.30.2_setting_up_labels
@@ -105,7 +105,7 @@ A continuación se exponen otras consideraciones que se deben tener en cuenta al
 
 - Si desea mostrar distintos tipos de información como etiquetas, el tipo de letra debe ser diferente para que el lector pueda diferenciar entre los distintos tipos de información que se muestran. Una buena práctica es mostrar las etiquetas en un color similar al de los objetos a los que se refieren. Por ejemplo, texto azul oscuro para las etiquetas de masas de agua azul claro o texto marrón para las etiquetas de casas marrón claro.
 
-:::{figure} ../../fig/good_labels_example.png
+:::{figure} ../../../fig/good_labels_example.png
 ---
 width: 400 px
 name: good_labels_example
@@ -121,7 +121,7 @@ Un buen ejemplo de colocación de etiquetas y tipo de letra. Preste atención a 
 :::::{grid} 2
 ::::{card}
 
-:::{figure} ../../fig/labels_numerical_values_bad_example.png
+:::{figure} ../../../fig/labels_numerical_values_bad_example.png
 ---
 name: labels_numerical_values_bad_example
 ---
@@ -147,7 +147,7 @@ name: labels_graduated_symbology_example
 
 - QGIS coloca las etiquetas automáticamente. A veces, si utiliza muchos contornos negros o colores oscuros, el texto negro es difícil de leer en el mapa. En ese caso, puede añadir un buffer blanco alrededor del texto para hacerlo visible.
 
-:::{figure} ../../fig/label_text_buffer_example.png
+:::{figure} ../../../fig/label_text_buffer_example.png
 ---
 width: 500 px
 name: label_text_buffer_example

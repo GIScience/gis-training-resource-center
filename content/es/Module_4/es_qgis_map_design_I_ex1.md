@@ -213,7 +213,7 @@ Una vez que esté satisfecho con la simbología y los colores de sus datos, el s
     - Haga clic en los tres puntos `...` y seleccione el archivo con su logotipo.
     - Si es necesario, cambie el tamaño o mueva la imagen en el diseño de impresión.
 
-:::{figure} ../../fig/30.30.2_print_layout_add_picture_options.png
+:::{figure} ../../../fig/30.30.2_print_layout_add_picture_options.png
 ---
 name: add picture item properties
 width: 600 px
@@ -227,7 +227,7 @@ El panel de propiedades de las imágenes. Es necesario especificar la ubicación
 
 El mapa terminado podría tener un aspecto similar al siguiente:
 
-:::{figure} ../../fig/en_map_design_exercise_1_results.png
+:::{figure} ../../../fig/en_map_design_exercise_1_results.png
 ---
 name: Main road network and hospitals in Ghana, Africa
 width: 600px

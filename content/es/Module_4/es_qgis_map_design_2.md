@@ -13,7 +13,7 @@ El diseño de impresión en QGIS es donde se diseña y finaliza el mapa con el f
 1. Vaya a __Project > New Print Layout > ingrese un nombre para el nuevo diseño de impresión > haga clic en OK__
 2. Aparecerá una nueva ventana con un diseño de impresión en blanco.
 
-:::{figure} ../../fig/en_30.30.2_create_print_layout.png
+:::{figure} ../../../fig/en_30.30.2_create_print_layout.png
 ---
 width: 700px
 name: Create Print Layout
@@ -48,7 +48,7 @@ Para que el público y los lectores dispongan de información suficiente que les
 - __Mapa general__
 - __Autor__
 
-:::{figure} ../../fig/en_good_map_composition_example.png
+:::{figure} ../../../fig/en_good_map_composition_example.png
 ---
 name: en_good_map_composition_example
 width: 750px
@@ -75,7 +75,7 @@ __La leyenda__ es clave para interpretar la información representada en el mapa
 - __Representativa__: Las cifras del mapa y de la leyenda deben coincidir (mismo tamaño, mismo color, etc.).
 - __Organizada__: Los datos de la leyenda pueden agruparse por categorías temáticas (salud, medio ambiente, mapa de fondo, etc.) o por tipo de figura (punto, línea, superficie) para facilitar la lectura.
 
-:::{figure} ../../fig/en_legend_good_practice.png
+:::{figure} ../../../fig/en_legend_good_practice.png
 ---
 width: 750px
 name: en_legend_good_practice
@@ -89,7 +89,7 @@ __La barra de escala__ es esencial para un mapa, ya que da la correspondencia en
 
 - __La escala gráfica__ se expresa mediante una línea en el mapa, con un valor de distancia asociado. Esta escala es muy útil para comprender las distancias sobre el terreno. La escala gráfica siempre tendrá el tamaño correcto, aunque se utilice un formato de impresión diferente, ya que sufrirá la misma transformación que el resto del mapa
 
-:::{figure} ../../fig/example_scale_bar.png
+:::{figure} ../../../fig/example_scale_bar.png
 ---
 name: example_scale_bar
 ---

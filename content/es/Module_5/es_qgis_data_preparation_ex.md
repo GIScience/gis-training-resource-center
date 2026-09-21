@@ -48,7 +48,7 @@ En primer lugar, debemos extraer los datos del archivo PDF y guardarlos en un ar
 
 :::{attention}
 
-Este ejercicio utiliza la herramienta [Tabula.technology](tabula.technology), una aplicación de código abierto que permite extraer fácilmente tablas de un archivo PDF. Para utilizar Tabula, es necesario tener instalado [Java](https://www.java.com/en/download/) en su equipo.
+Este ejercicio utiliza la herramienta [Tabula.technology](https://tabula.technology), una aplicación de código abierto que permite extraer fácilmente tablas de un archivo PDF. Para utilizar Tabula, es necesario tener instalado [Java](https://www.java.com/en/download/) en su equipo.
 
 :::
 

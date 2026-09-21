@@ -8,7 +8,7 @@
 
 # Comprensión del compositor de diseño de impresión
 
-:::{figure} ../../fig/en_30.30.2_understanding_the_print_layout_composer.png
+:::{figure} ../../../fig/en_30.30.2_understanding_the_print_layout_composer.png
 ---
 name: es_30.30.2_understanding_the_print_layout_composer
 ---
@@ -39,7 +39,7 @@ En primer lugar, siempre deberá configurar el tamaño de su mapa:
 - Para desplazarse dentro de un mapa, seleccione el botón ![](../../../fig/30.30.2_print_layout_move_content_icon.png) `Mover contenido del elemento` de la barra de herramientas de la izquierda.
 - Para acercar zoom sobre el mapa, mientras utiliza la herramienta ![](../../../fig/30.30.2_print_layout_move_content_icon.png) `Mover contenido del elemento`, puede __presionar <kbd>CTRL</kbd> + desplazar la rueda del mouse__ (suavemente) o introducir la escala de manera manual en las propiedades del elemento.
 
-:::{figure} ../../fig/en_30.30.2_adding_a_map.png
+:::{figure} ../../../fig/en_30.30.2_adding_a_map.png
 ---
 width: 750px
 name: es_30.30.2_adding_a_map
@@ -68,7 +68,7 @@ El título deberá describir el fenómeno representado en el mapa.
 - Para añadir texto (título, explicaciones), utilice la herramienta ![](../../fig/30.30.2_print_layout_add_text.png) `Añadir etiquetas` y dibuje un rectángulo del tamaño deseado.
 - En el panel __Propiedades del elemento__ (a la derecha de su pantalla) puede __introducir su texto__ y __cambiar la fuente, el estilo, el color, etc.__ (Recuerde utilizar la barra de desplazamiento de la ventana para ver todas las opciones).
 
-:::{figure} ../../fig/en_30.30.2_print_layout_add_text.png
+:::{figure} ../../../fig/en_30.30.2_print_layout_add_text.png
 ---
 width: 750px
 name: es_30.30.2_print_layout_add_tex
@@ -113,7 +113,7 @@ Antes de añadir una leyenda, asegúrese de que:
 
 Para añadir una leyenda, puede utilizar el botón ![](../../fig/30.30.2_print_layout_add_legend.png) `Añadir Leyenda` de la __barra de herramientas de la izquierda__.
 
-:::{figure} ../../fig/en_30.30.2_print_layout_add_legend.png
+:::{figure} ../../../fig/en_30.30.2_print_layout_add_legend.png
 ---
 width: 750px
 name: es_30.30.2_print_layout_add_legend
@@ -156,7 +156,7 @@ A veces, el espacio de su mapa no es el adecuado para una sola leyenda vertical.
 
 Antes de añadir una barra de escala, seleccione su mapa principal y compruebe en el panel __Propriedades del elemento__ que el campo `Escala` tiene un __número redondo__.
 
-:::{figure} ../../fig/en_30.30.2_print_layout_scale.png
+:::{figure} ../../../fig/en_30.30.2_print_layout_scale.png
 ---
 width: 750px
 name: es_30.30.2_print_layout_scale
@@ -174,7 +174,7 @@ Para añadir una barra de escala, puede utilizar el botón ![](../../fig/30.30.2
 
 Hay muchas otras opciones para personalizar la barra de escala (cambiar la fuente, los colores, etc.).
 
-:::{figure} ../../fig/en_30.30.2_print_layout_add_scale_bar.png
+:::{figure} ../../../fig/en_30.30.2_print_layout_add_scale_bar.png
 ---
 width: 750px
 name: es_30.30.2_print_layout_add_scale_bar
@@ -202,7 +202,7 @@ Para crear un mapa general, debe seguir estos pasos:
     2. Añada una visión general haciendo clic el botón `+`.
     3. __Vincule el mapa principal__ seleccionándolo en la opción `Marco de mapa`.
 
-:::{figure} ../../fig/en_30.30.2_print_layout_overview_map_preparations.png
+:::{figure} ../../../fig/en_30.30.2_print_layout_overview_map_preparations.png
 ---
 width: 500px
 name: es_30.30.2_print_layout_overview_map_preparations
@@ -210,7 +210,7 @@ name: es_30.30.2_print_layout_overview_map_preparations
 Un mapa general deberá mostrar los puntos de referencia y las fronteras importantes para que el lector pueda localizar la región mostrada en el mapa, sin tener conocimientos específicos de la región.
 :::
 
-:::{figure} ../../fig/en_30.30.2_print_layout_add_overview_map.png
+:::{figure} ../../../fig/en_30.30.2_print_layout_add_overview_map.png
 ---
 width: 750px
 name: es_30.30.2_print_layout_add_overview_map
@@ -302,7 +302,7 @@ En algunos casos, puede ser necesario crear varios mapas para distintas ubicacio
 
 La función Atlas se encuentra en el __Compositor de diseños de impresión__ en la barra de herramientas.
 
-:::{figure} ../../fig/en_atlas_toolbar.png
+:::{figure} ../../../fig/en_atlas_toolbar.png
 ---
 name: es_atlas_toolbar
 width: 500 px

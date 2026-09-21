@@ -20,7 +20,7 @@ Para asignar un gradiente de color a los datos ráster:
 4. Haga clic en __la flecha situada a la derecha de la rampa de color__. Aquí puede elegir una rampa de color predefinida.
 5. Puede modificarla __con un clic en la rampa de color__.
 
-:::{figure} ../../fig/en_30.30.2_raster_data_colour_gradient.png
+:::{figure} ../../../fig/en_30.30.2_raster_data_colour_gradient.png
 ---
 name: es_30.30.2_raster_data_colour_gradient
 width: 600px

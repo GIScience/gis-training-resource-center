@@ -62,7 +62,7 @@ El ejercicio se divide en dos partes. En la primera parte, ajustará la Simboliz
 
 ::::
 
-:::{figure} ../../fig/Larkana_Map_Overview.png
+:::{figure} ../../../fig/Larkana_Map_Overview.png
 ---
 width: 700px
 name: Map Larkama
@@ -140,7 +140,7 @@ En `Tipo de capa del símbolo`, seleccione __`Marcador SVG`__.
 
 - Desplácese por la carpeta hasta encontrar un símbolo adecuado (p. ej.:![](../../../fig/en_m4_ex_2_cross_symbol.png)).
 
-:::{figure} ../../fig/crescent_moon.PNG
+:::{figure} ../../../fig/crescent_moon.PNG
 ---
 width: 450px
 name: SVG Marker
@@ -289,7 +289,7 @@ Una vez que esté satisfecho con la simbolización y los colores de sus datos, e
 1. Abra una nueva composición de impresión y asígnele un nombre (p. ej.: Larkana_inundaciones).
     - Vaya a `Proyecto` → `Nueva composición de impresión` → introduzca un nombre para la nueva composición de impresión → haga clic en `Aceptar`.
 
-:::{figure} ../../fig/en_30.30.2_create_print_layout.png
+:::{figure} ../../../fig/en_30.30.2_create_print_layout.png
 ---
 width: 700px
 name: Create Print Layout
@@ -320,7 +320,7 @@ Incorporación del mapa al diseño de impresión.
     - En la ventana de propiedades del elemento, a la derecha, encontrará un cuadro de texto con el texto “Lorem ipsum”. Introduzca "Larkana" en su lugar.
     - Haga clic en el menú desplegable __`Tipo de letra`__ y ajuste el tamaño de la fuente, para que se pueda leer fácilmente.
 
-:::{figure} ../../../fig/Module_4/m4_ex2_print_layout_label_city
+:::{figure} ../../../fig/Module_4/m4_ex2_print_layout_label_city.png
 ---
 name: m4_ex2_print_layout_label_city
 width: 600 px
@@ -352,7 +352,7 @@ Incorporación de un título al diseño de impresión.
     - Ajuste la leyenda eliminando las capas innecesarias (que no se ven en el mapa) y cambie el nombre de la capa en la leyenda haciendo clic en el ![icono Edit](../../../fig/30.30.2_print_layout_legend_edit.png) (`Edit selected item properties`) debajo de las entradas de la leyenda. Utilice el![](../../../fig/Module_4/m4_ex2_print_layout_add_to_legend.png) icono de para agregar o eliminar capas de la leyenda.
     - En `Propriedades principales` superior, inserte "Leyenda" como título.
 
-:::{figure} ../../fig/Larkana_Legend.PNG
+:::{figure} ../../../fig/Larkana_Legend.PNG
 ---
 width: 700px
 name: Create Print Layout
@@ -384,7 +384,7 @@ Cuando haya terminado con el diseño de su mapa, puede exportar el mapa imprimib
 
 Ahora podría tener como resultado un mapa similar a este. Aquí se ha dejado algo de espacio para implementar un mapa general. ¡Si aún dispone de tiempo, haga el ejercicio adicional y añada un mapa general!
 
-:::{figure} ../../fig/Larkana_Map_withoutOverview.png
+:::{figure} ../../../fig/Larkana_Map_withoutOverview.png
 ---
 width: 700px
 name: Map Larkama
@@ -406,7 +406,7 @@ Si terminó con el mapa principal, haga clic en el mapa y vaya a las propiedades
 8. En la opción __`Marco de mapa`__, seleccione “__Mapa 1__”. Esto mostrará el marco del mapa principal en su mapa general.
 9. También, puede agregar una barra de escala y una flecha hacia el norte a su mapa general.
 
-:::{figure} ../../fig/Larkana_Map_Overview.png
+:::{figure} ../../../fig/Larkana_Map_Overview.png
 ---
 width: 700px
 name: Map Larkama

@@ -227,7 +227,7 @@ Una vez que tengamos los sucesos conflictivos como datos de punto, podemos agreg
 	- Haga clic en `Ejecutar`.
 
 
-:::{figure} ../../fig/Create_ponts_from_table.PNG
+:::{figure} ../../../fig/Create_ponts_from_table.PNG
 ---
 width: 700px
 name: create_points_from_table
@@ -245,7 +245,7 @@ Cree puntos a partir de la tabla.
 	- En `Numéro`, haga clic en `...` y guarde la capa en su carpeta `data/results/` como "PAK_num_events_adm3".
 
 
-:::{figure} ../../fig/count_point_polygon.PNG
+:::{figure} ../../../fig/count_point_polygon.PNG
 ---
 width: 700px
 name: es_count_point_polygon
@@ -262,7 +262,7 @@ Cuente los puntos en el polígono
 
 El resultado podría verse parecido a esto:
 
-:::{figure} ../../fig/Number_events_graduated.PNG
+:::{figure} ../../../fig/Number_events_graduated.PNG
 ---
 width: 700px
 name: es_Number_events_graduated

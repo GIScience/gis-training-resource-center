@@ -42,7 +42,7 @@ A continuación se presentan algunos ejemplos de esquemas gráficos de talleres 
 
 - https://miro.com/app/board/uXjVNi7BRoQ=/
 
-```{figure} ../../fig/en_miro_board_example.png
+```{figure} ../../../fig/en_miro_board_example.png
 ---
 name: ejemplo_Miro_board
 width: 760 px

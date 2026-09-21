@@ -107,7 +107,7 @@ Contar centros de salud por distrito
 4. Ahora tenemos el número de centros de salud por distrito. No obstante, sería interesante saber cuántos centros de salud existen por cada 10 000 habitantes. Para esta tarea necesitamos saber en primer lugar cuántos habitantes tiene cada distrito. Podemos procesar esta información utilizando la herramienta __estadísticas de zonal__ de la Caja de herramientas de procesos. Para obtener más información, consulte la entrada de Wiki sobre [estadísticas de zonal](../Wiki/es_qgis_raster_basic_wiki.md). Especifique su capa de entrada (salida del paso 3, por ejemplo, __Num_healthsites__) y su capa ráster (WorldPop Raster), especifique el prefijo de la columna (por ejemplo, ___wpop__) y seleccione las estadísticas a calcular (__sum__). Para cada distrito se sumarán todos los valores de píxel de WorldPop Raster que se encuentren dentro de él. Explore los datos de salida.
 
 
-:::{figure} ../../../fig/en_qgis_modul_5_ex1_zonal_statistics.PNG
+:::{figure} ../../../fig/en_qgis_module_5_ex1_zonal_statistics.PNG
 ---
 width: 100%
 name: es_zonal_statistics
@@ -133,7 +133,7 @@ A lo largo del proceso de procesamiento de indicadores, se obtendrán varios res
 
 * Cuando haya terminado, haga clic en ![](../../../fig/mActionSaveEdits.png) para guardar sus cambios y desactive el modo de edición haciendo clic de nuevo en ![](../../../fig/mActionToggleEditing.png)([video en Wiki](../../en/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)).
 
-:::{figure} ../../../fig/en_qgis_modul_5_ex1_field_calc.PNG
+:::{figure} ../../../fig/en_qgis_module_5_ex1_field_calc.PNG
 ---
 width: 80%
 name: es_Field Calculator
@@ -167,7 +167,7 @@ Explore los datos. Tenemos una columna “LandD_CLas” que indica la gravedad d
 
 Consulte la entrada de Wiki [Unión espacial](../Wiki/es_qgis_spatial_joins_wiki.md) para obtener más información.
 
-:::{figure} ../../../fig/en_qgis_modul_5_ex1_join.PNG
+:::{figure} ../../../fig/en_qgis_module_5_ex1_join.PNG
 ---
 width: 100%
 name: es_Join attributes by location
@@ -192,7 +192,7 @@ Explore los datos. ¿En qué resolución están disponibles los datos? ¿Tiene a
 * Como `Tipo de unión` configurar `Tomar solo los atributos del primer objeto coincidente (uno a uno)`.
 * Guarde la capa en un archivo.
 
-:::{figure} ../../../fig/en_qgis_modul_5_ex1_joinbyvalue.PNG
+:::{figure} ../../../fig/en_qgis_module_5_ex1_joinbyvalue.PNG
 ---
 width: 100%
 name: es_Join attributes by field value
@@ -256,7 +256,7 @@ $ Valor\ normalizado\ = \frac{value\ -\ min value}{max\ value \ - \ min } $
 ```
 * Cuando haya terminado, haga clic en ![](../../../fig/mActionSaveEdits.png) para guardar sus cambios y desactive el modo de edición haciendo clic en ![](../../../fig/mActionToggleEditing.png)([Video Wiki](../../en/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)).
 
-:::{figure} ../../../fig/en_qgis_modul_5_ex1_Part2_normalization.PNG
+:::{figure} ../../../fig/en_qgis_module_5_ex1_Part2_normalization.PNG
 ---
 width: 80%
 name: es_Join attributes by field value
@@ -325,7 +325,7 @@ Añadiendo campo nuevo a indicadores de peso.
 
 * Ahora tenemos la versión normalizada y ponderada para cada indicador:
 
-:::{figure} ../../../fig/en_qgis_modul_5_ex1_part2_weighted_attribute.PNG
+:::{figure} ../../../fig/en_qgis_module_5_ex1_part2_weighted_attribute.PNG
 ---
 width: 100%
 name: es_Attribute Table with "_norm" and "_weighted" indicators
@@ -351,7 +351,7 @@ Para calcular el riesgo tenemos que reunir nuestras tres dimensiones: exposició
 * Haga clic con el botón derecho en una de las capas y seleccione `Propriedades` -> Vaya a la pestaña `Uniones`.
 * Haga clic en el botón `+`, añada una nueva unión y seleccione la capa que desea unir. Defina “admin2Name” como `Unir campo`:
 
-:::{figure} ../../../fig/en_qgis_modul_5_ex1_part2_join_risk.PNG
+:::{figure} ../../../fig/en_qgis_module_5_ex1_part2_join_risk.PNG
 ---
 width: 90%
 name: es_Join Layers
@@ -362,7 +362,7 @@ Uniendo capas por campo de unión.
 * Haga clic con el botón derecho en la capa → `Exportar` → `Guardar objetos como` y guarde la capa como capa "risk" en su carpeta temporal.
 * Ahora trabajaremos con la capa de "risk": Borre todos los campos excepto las puntuaciones normalizadas: Abra la tabla de atributos de su capa de riesgo `Conmutar edición`![](../../../fig/mActionToggleEditing.png) -> `Borrar campo` ![](../../../fig/mActionDeleteAttribute.png) y seleccione todos los campos del indicador. Al final, la capa debería tener este aspecto:
 
-:::{figure} ../../../fig/en_qgis_modul_5_ex1_part2_risklayer_attributetable.PNG
+:::{figure} ../../../fig/en_qgis_module_5_ex1_part2_risklayer_attributetable.PNG
 ---
 width: 70%
 name: es_Risk Layer Attribute Table normalised Scores
@@ -388,7 +388,7 @@ sqrt("Susceptibility" * "exposure_norm")
 
 ```
 
-:::{figure} ../../../fig/en_qgis_modul_5_ex1_part2_risk.PNG
+:::{figure} ../../../fig/en_qgis_module_5_ex1_part2_risk.PNG
 ---
 width: 80%
 name: es_Calculate risk
@@ -418,7 +418,7 @@ Diseño de impresión:
 * Si es necesario, ajuste la leyenda haciendo clic en la leyenda en la pestaña `Propriedades del elemento` y desplácese hacia abajo hasta que vea el campo `elementos de la leyenda`. Si no está visible, verifique si necesita abrir el menú desplegable. Asegúrese de que `Auto actualizar` no esté marcada.
 * Elimine todos los elementos de la leyenda haciendo clic en el elemento y luego en el icono rojo con el signo menos que aparece debajo.
 
-:::{figure} ../../../fig/en_qgis_mondul_5_ex1_possible_result.PNG
+:::{figure} ../../../fig/en_qgis_module_5_ex1_possible_result.PNG
 ---
 width: 90%
 name: es_Possible Map Result

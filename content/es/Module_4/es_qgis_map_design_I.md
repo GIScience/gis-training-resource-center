@@ -325,7 +325,7 @@ Degradado de un solo tono a la izquierda; degradado de varios tonos a la derecha
 :::
 
 :::{tip}
-El [sitio web Colourbrewer](colorbrewer2.org) es una herramienta rápida y útil para seleccionar y
+El [sitio web Colourbrewer](https://colorbrewer2.org) es una herramienta rápida y útil para seleccionar y
 generar paletas de colores para su caso práctico.
 :::
 

@@ -18,7 +18,7 @@ En este capítulo analizaremos los mapas bien diseñados y daremos ejemplos de c
 
 ### Ejemplo de mapa 1: Zonas y carreteras afectadas por las inundaciones en la región somalí de Etiopía
 
-:::{figure} ../../fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
+:::{figure} ../../../fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
 ---
 name: Flood affected Areas in Somali
 width: 800 px
@@ -55,7 +55,7 @@ La combinación de colores de las carreteras permite leer el mapa de forma intui
 
 ### Ejemplo de mapa 2: Riesgo de inundaciones en la región de Ouham de la República Centroafricana
 
-:::{figure} ../../fig/REACH_CAF_Susceptibilite_inondations_CF32_Juillet2023_A3_FR.png
+:::{figure} ../../../fig/REACH_CAF_Susceptibilite_inondations_CF32_Juillet2023_A3_FR.png
 ---
 name: es_EACH Flooding Risk Ouhman Region, Central African Republic
 width: 720 px
