@@ -1,11 +1,15 @@
 🚧This part of training platform is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
-::::{admonition} French Translation 
+::::{admonition} French Translation - Traduction française
 :class: tip
 
-The french version of this page can be found [here](fr_AILAS_madagascar.md).
+The french version of this page can be found here / La version française de cet article se trouve ici :
 
-La version française de cet article se trouve [ici](fr_AILAS_madagascar.md).
+:::{card}
+:link: fr_AILAS_madagascar.md
+French version - Version française
+:::
+
 ::::
 
 # AI Logistic Awareness System (AILAS) Street level image collection Field Experiments <a id="ai-logistic-awareness-system-ailas-street-level-image-collection-field-experiments"></a>
