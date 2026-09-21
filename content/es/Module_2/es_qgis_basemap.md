@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -50,14 +50,14 @@ Hay dos formas de añadir OpenStreetMap como mapa base:
 ## QuickMapServices
 
 Hay muchos complementos disponibles para QGIS que proporcionan herramientas adicionales que no están
-disponibles en una instalación estándar. La [página sobre complementos](/content/es/Wiki/es_qgis_plugins_wiki.md) de la Wiki ofrece información de ejemplo más detallada.
+disponibles en una instalación estándar. La [página sobre complementos](../Wiki/es_qgis_plugins_wiki.md) de la Wiki ofrece información de ejemplo más detallada.
 Un plugin útil es [QuickMapServices](https://nextgis.com/blog/quickmapservices/).
 Este plugin le permite acceder a una amplia gama de mapas base que no están disponibles por defecto en
 QGIS, como las imágenes satelitales de Bing o Sentinel-2.
 
 ::::{dropdown} Instalación de complementos
 
-Para [instalar un plugin](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_plugins_wiki.html), en la barra superior, navegue a `Complementos` -> `Administrat e instalar complementos` → `Todos` → Busque el plugin → `Instalar complemento`.
+Para [instalar un plugin](../Wiki/es_qgis_plugins_wiki.md), en la barra superior, navegue a `Complementos` -> `Administrat e instalar complementos` → `Todos` → Busque el plugin → `Instalar complemento`.
 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_plugins.mp4"></video>
@@ -72,7 +72,7 @@ comodín en las búsquedas (así, “quick*map” dará resultados con o sin esp
 Si sigue sin encontrar una extensión, es posible que tenga que habilitar las extensiones
 experimentales en las opciones (véase más abajo).
 
-:::{figure} /fig/en_30.30.2_plugin_installation_experimental_checkbox.png
+:::{figure} ../../../fig/en_30.30.2_plugin_installation_experimental_checkbox.png
 ---
 name: es_30.30.2_plugin_installation_experimental_checkbox
 width 400 px
@@ -123,7 +123,7 @@ Un mapa base es una capa de mapa fundamental o de fondo que proporciona un conte
 
 :::{dropdown} Respuesta
 - En el panel `Navegador`, expandir el grupo de las teselas “*XYZ Tiles*” y seleccionar un servicio como OpenStreetMap.
-- Alternativamente, [instalar el complemento QuickMapServices](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_basemap.html#quickmapservices) y utilizarlo para añadir un mapa.
+- Alternativamente, [instalar el complemento QuickMapServices](../../en/Module_2/en_qgis_basemap.md#quickmapservices) y utilizarlo para añadir un mapa.
 :::
 
 3. __¿Qué son los requisitos de atribución y cómo hay que gestionarlos cuando se utilizan mapas base de terceros?__

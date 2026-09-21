@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -10,7 +10,7 @@
 
 ## Presentación de QGIS
 
-:::{figure} /fig/en_qgis_banner_website.png
+:::{figure} ../../../fig/en_qgis_banner_website.png
 ---
 name: es_qgis_banner_website
 width: 300 px
@@ -26,7 +26,7 @@ lo que hace que QGIS sea una aplicación gratuita. El código fuente completo pu
 en los que puede hacer clic, formularios que puede llenar para realizar tareas y en general, una experiencia interactiva visual.
 - Puede __ver, editar, capturar y analizar datos geoespaciales o crear mapas imprimibles__ con ellos. QGIS fue creado en 2002
 y es un proyecto impulsado por voluntarios. Y está en __constante cambio__.
-- QGIS está respaldado por una __gran comunidad de usuarios__, por lo que es fácil encontrar soluciones a problemas técnicos mediante el uso de los foros, los blogs o sub-reddits de QGIS. La comunidad oficial de QGIS se encuentra [aquí](https://qgis.org/en/site/forusers/support.html#support). Además, puede encontrar una lista de sitios web útiles en la [Wiki aquí](/content/es/Wiki/es_qgis_common_errors_and_Issues.md).
+- QGIS está respaldado por una __gran comunidad de usuarios__, por lo que es fácil encontrar soluciones a problemas técnicos mediante el uso de los foros, los blogs o sub-reddits de QGIS. La comunidad oficial de QGIS se encuentra [aquí](https://qgis.org/en/site/forusers/support.html#support). Además, puede encontrar una lista de sitios web útiles en la [Wiki aquí](../Wiki/es_qgis_common_errors_and_Issues.md).
 :::
 
 
@@ -58,22 +58,22 @@ En los SIG intervienen muchos algoritmos complejos, pero QGIS se encarga de ello
 
 :::{tab-item} Recopilación y creación de datos
 
-QGIS ofrece herramientas para crear sus propios datos geoespaciales. Por ejemplo, con las herramientas de digitalización se pueden crear puntos, polígonos y líneas con información, que puede representar información espacial. Además, la georreferenciación permite añadir información geográfica a diversos tipos de datos, como imágenes satelitales o mapas dibujados a mano. Aprenderá a crear datos geoespaciales y a georreferenciar datos en el __[módulo 2](/content/es/Module_2/es_module_2_overview.md)__.
+QGIS ofrece herramientas para crear sus propios datos geoespaciales. Por ejemplo, con las herramientas de digitalización se pueden crear puntos, polígonos y líneas con información, que puede representar información espacial. Además, la georreferenciación permite añadir información geográfica a diversos tipos de datos, como imágenes satelitales o mapas dibujados a mano. Aprenderá a crear datos geoespaciales y a georreferenciar datos en el __[módulo 2](../Module_2/es_module_2_overview.md)__.
 
-A veces, trabajar con SIG requiere salir al campo para recopilar los datos. En este caso, puede utilizar [aplicaciones web y móviles](/content/es/Wiki/es_web_and_mobile_apps_wiki.md).
+A veces, trabajar con SIG requiere salir al campo para recopilar los datos. En este caso, puede utilizar [aplicaciones web y móviles](../Wiki/es_web_and_mobile_apps_wiki.md).
 
 :::
 
 :::{tab-item} Procesamiento de datos
 
-QGIS ofrece una amplia gama de algoritmos para procesar datos geoespaciales. En los siguientes módulos, conocerá una serie de algoritmos especialmente útiles para los SIG en el trabajo humanitario. Aprenderá más sobre procesamiento y manipulación de datos a partir del __[módulo 2](https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_module_2_overview.html)__.
+QGIS ofrece una amplia gama de algoritmos para procesar datos geoespaciales. En los siguientes módulos, conocerá una serie de algoritmos especialmente útiles para los SIG en el trabajo humanitario. Aprenderá más sobre procesamiento y manipulación de datos a partir del __[módulo 2](../Module_2/es_module_2_overview.md)__.
 
 
 :::
 
 :::{tab-item} Visualización
 
-QGIS permite visualizar datos geoespaciales y crear mapas para comunicar información. Para ello, asigna símbolos y colores a los distintos elementos de sus datos geoespaciales. Asignar una simbología a los datos geoespaciales es una de las principales habilidades que desarrollará como usuario del SIG y una buena visualización de los datos, es inmensamente útil a la hora de comunicar ideas. Aprenderá a asignar símbolos en el __[Módulo 4: Visualización de datos geoespaciales y elaboración de mapas](/content/es/Module_4/es_qgis_map_design_I.md)__.
+QGIS permite visualizar datos geoespaciales y crear mapas para comunicar información. Para ello, asigna símbolos y colores a los distintos elementos de sus datos geoespaciales. Asignar una simbología a los datos geoespaciales es una de las principales habilidades que desarrollará como usuario del SIG y una buena visualización de los datos, es inmensamente útil a la hora de comunicar ideas. Aprenderá a asignar símbolos en el __[Módulo 4: Visualización de datos geoespaciales y elaboración de mapas](../Module_4/es_qgis_map_design_I.md)__.
 
 
 :::
@@ -86,7 +86,7 @@ QGIS permite visualizar datos geoespaciales y crear mapas para comunicar informa
 __Nota sobre los complementos__
 ^^^
 
-Además de los algoritmos incluidos en la instalación estándar, QGIS ofrece complementos que añaden funciones adicionales a la aplicación QGIS. Estos complementos son desarrollados por organizaciones independientes o por la comunidad QGIS. Por ejemplo, los complementos le permiten conectarse a servicios en línea como OpenStreetMap o añadir más algoritmos para procesar sus datos. Pueden ser muy útiles para determinados casos de uso. También hay complementos diseñados específicamente para el trabajo humanitario. Aprenderá más sobre los complementos en los siguientes módulos. Si quiere saber cómo instalarlos, consulte la [Wiki](/content/es/Wiki/es_qgis_plugins_wiki.md).
+Además de los algoritmos incluidos en la instalación estándar, QGIS ofrece complementos que añaden funciones adicionales a la aplicación QGIS. Estos complementos son desarrollados por organizaciones independientes o por la comunidad QGIS. Por ejemplo, los complementos le permiten conectarse a servicios en línea como OpenStreetMap o añadir más algoritmos para procesar sus datos. Pueden ser muy útiles para determinados casos de uso. También hay complementos diseñados específicamente para el trabajo humanitario. Aprenderá más sobre los complementos en los siguientes módulos. Si quiere saber cómo instalarlos, consulte la [Wiki](../Wiki/es_qgis_plugins_wiki.md).
 
 :::
 
@@ -106,7 +106,7 @@ Un archivo de proyecto de QGIS tiene un formato con la extensión `.qgz`.
 ::::
 1. En la pantalla de inicio, haga clic en `Proyecto Nuevo` en la pestaña "Plantillas de proyectos". 
 
-:::{figure} /fig/en_project_template_BRC.png
+:::{figure} ../../../fig/en_project_template_BRC.png
 ---
 height: 400
 name: e_project_template_BRC
@@ -132,7 +132,7 @@ Cuando pase el puntero sobre los iconos, aparecerá un texto que explica la func
 :::
 ::::
 
-:::{figure} /fig/en_QGIS_GUI.png
+:::{figure} ../../../fig/en_QGIS_GUI.png
 ---
 width: 800px
 align: center
@@ -145,7 +145,7 @@ Interfaz de usuario de QGIS. Fuente: Cruz Roja Británica (BRC).
 
 2. __Barras de herramientas:__  Las __barras de herramientas__ son atajos para ejecutar comandos de uso frecuente. Por ejemplo, hay barras de herramientas especiales para __archivos vectoriales y archivos ráster__, pero también, otras generales para guardar el proyecto, etc. La barra de herramientas contiene, entre otras cosas, una lista de todos los comandos, que puedes utilizar. La barra de herramientas también contiene la __caja de herramientas de procesos__, que se utiliza, más adelante, en muchos de los videos de la Wiki.
 
-:::{figure} /fig/en_Interface_02.png
+:::{figure} ../../../fig/en_Interface_02.png
 ---
 height: 75 px
 name: es_Interface_02
@@ -187,16 +187,16 @@ __Atajos de teclado__ en la interfaz de QGIS ofrecen accesos rápidos a diversos
 
 | Nombre | Opción del menú | Atajo | Descripción |
 |---------------------------|--------------------------------|---------------------------------|---------------------------------------------|
-| Desplazar el mapa | ![](/fig/qgis_pan_map.png) | <kbd>Barra espaciadora</kbd>, <kbd>Re Pág</kbd>, <kbd>Av Pág</kbd> o las <kbd>teclas de flecha</kbd> | Mover el mapa |
-| Desplazar mapa a la selección | ![](/fig/qgis_pan_map_selection.png) |                                  | Desplazar el mapa hacia el elemento seleccionado |
-| Acercar zoom | ![](/fig/qgis_zoom_in.png) | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>+</kbd> o <kbd>rueda del mouse</kbd> | Acercar el mapa |
-| Alejar zoom | ![](/fig/qgis_zoom_out.png) | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>-</kbd> o <kbd>rueda del mouse</kbd> | Aleja zoom del mapa |
-| Zoom completo | ![](/fig/qgis_zoom_full.png) | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> | Zoom al elemento seleccionado |
-| Zoom a la selección | ![](/fig/qgis_zoom_to_selection.png) | <kbd>Ctrl</kbd> + <kbd>L</kbd> | Zoom al elemento seleccionado |
-| Zoom a la capa | ![](/fig/qgis_zoom_to_layer.png) |                                  | Zoom a la capa seleccionada |
-| Zoom a la resolución nativa | ![](/fig/qgis_zoom_native_resolution.png) |                             | Zoom a la resolución nativa (100%) |
-| Zoom último | ![](/fig/qgis_zoom_last.png) |                                 | Zoom al último zoom |
-| Zoom siguiente | ![](/fig/qgis_zoom_next.png) |                                 | Zoom al siguiente Zoom |
+| Desplazar el mapa | ![](../../../fig/qgis_pan_map.png) | <kbd>Barra espaciadora</kbd>, <kbd>Re Pág</kbd>, <kbd>Av Pág</kbd> o las <kbd>teclas de flecha</kbd> | Mover el mapa |
+| Desplazar mapa a la selección | ![](../../../fig/qgis_pan_map_selection.png) |                                  | Desplazar el mapa hacia el elemento seleccionado |
+| Acercar zoom | ![](../../../fig/qgis_zoom_in.png) | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>+</kbd> o <kbd>rueda del mouse</kbd> | Acercar el mapa |
+| Alejar zoom | ![](../../../fig/qgis_zoom_out.png) | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>-</kbd> o <kbd>rueda del mouse</kbd> | Aleja zoom del mapa |
+| Zoom completo | ![](../../../fig/qgis_zoom_full.png) | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> | Zoom al elemento seleccionado |
+| Zoom a la selección | ![](../../../fig/qgis_zoom_to_selection.png) | <kbd>Ctrl</kbd> + <kbd>L</kbd> | Zoom al elemento seleccionado |
+| Zoom a la capa | ![](../../../fig/qgis_zoom_to_layer.png) |                                  | Zoom a la capa seleccionada |
+| Zoom a la resolución nativa | ![](../../../fig/qgis_zoom_native_resolution.png) |                             | Zoom a la resolución nativa (100%) |
+| Zoom último | ![](../../../fig/qgis_zoom_last.png) |                                 | Zoom al último zoom |
+| Zoom siguiente | ![](../../../fig/qgis_zoom_next.png) |                                 | Zoom al siguiente Zoom |
 
 :::
 
@@ -204,12 +204,12 @@ __Atajos de teclado__ en la interfaz de QGIS ofrecen accesos rápidos a diversos
 
 | Nombre | Opción del menú | Atajo | Descripción |
 |-----------------|------------------------------------|------------------|-----------------------------------------|
-| Nuevo proyecto | ![](/fig/qgis_new.png) | <kbd>Ctrl</kbd> + <kbd>N</kbd> | Crear un nuevo proyecto |
-| Abrir Proyecto | ![](/fig/qgis_open_project.png) | <kbd>Ctrl</kbd> + <kbd>A</kbd> | Abrir un proyecto existente |
-| Guardar | ![](/fig/qgis_save_project.png) | <kbd>Ctrl</kbd> + <kbd>G</kbd> | Guardar proyecto |
-| Guardar como… | ![](/fig/qgis_save_project_as.png) | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd> | Guardar proyecto como… |
+| Nuevo proyecto | ![](../../../fig/qgis_new.png) | <kbd>Ctrl</kbd> + <kbd>N</kbd> | Crear un nuevo proyecto |
+| Abrir Proyecto | ![](../../../fig/qgis_open_project.png) | <kbd>Ctrl</kbd> + <kbd>A</kbd> | Abrir un proyecto existente |
+| Guardar | ![](../../../fig/qgis_save_project.png) | <kbd>Ctrl</kbd> + <kbd>G</kbd> | Guardar proyecto |
+| Guardar como… | ![](../../../fig/qgis_save_project_as.png) | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd> | Guardar proyecto como… |
 | Propiedades |                                    | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> | Abrir las propiedades del proyecto |
-| Nueva composición de impresión | ![](/fig/qgis_new_print_layerout.png) | <kbd>Ctrl</kbd> + <kbd>P</kbd> | Abrir el diálogo para crear una nueva composición de impresión |
+| Nueva composición de impresión | ![](../../../fig/qgis_new_print_layerout.png) | <kbd>Ctrl</kbd> + <kbd>P</kbd> | Abrir el diálogo para crear una nueva composición de impresión |
 | Buscar |                                    | <kbd>Ctrl</kbd> + <kbd>K</kbd> | Abrir la barra de búsqueda |
 
 :::
@@ -218,11 +218,11 @@ __Atajos de teclado__ en la interfaz de QGIS ofrecen accesos rápidos a diversos
 
 | Nombre | Opción del menú | Atajo | Descripción |
 |-----------------------------|----------------------------------------------|----------------------|-----------------------------------|
-| Administrador de fuentes de datos | ![](/fig/qgis_data_source_manager.png) |                      | Añadir una nueva capa |
-| Nueva capa GeoPackage | ![](/fig/qgis_new_geopackage_layer.png) | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd> | Añadir una nueva capa GeoPackage |
-| Añadir capa vectorial | ![](/fig/qgis_add_vector_layer.png) | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> | Añadir una nueva capa vectorial |
-| Añadir capa ráster | ![](/fig/qgis_add_raster_layer.png) | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> | Añadir una nueva capa ráster |
-| Eliminar la capa seleccionada | ![](/fig/qgis_remove_selected_layer.png) | <kbd>Ctrl</kbd> + <kbd>E</kbd> | Eliminar la capa seleccionada |
+| Administrador de fuentes de datos | ![](../../../fig/qgis_data_source_manager.png) |                      | Añadir una nueva capa |
+| Nueva capa GeoPackage | ![](../../../fig/qgis_new_geopackage_layer.png) | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd> | Añadir una nueva capa GeoPackage |
+| Añadir capa vectorial | ![](../../../fig/qgis_add_vector_layer.png) | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> | Añadir una nueva capa vectorial |
+| Añadir capa ráster | ![](../../../fig/qgis_add_raster_layer.png) | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> | Añadir una nueva capa ráster |
+| Eliminar la capa seleccionada | ![](../../../fig/qgis_remove_selected_layer.png) | <kbd>Ctrl</kbd> + <kbd>E</kbd> | Eliminar la capa seleccionada |
 | Alternar la vista de las capas |                                              | <kbd>Ctrl</kbd> + <kbd>1</kbd> | Alternar la vista de las capas |
 | Alternar la vista del navegador |                                              | <kbd>Ctrl</kbd> + <kbd>2</kbd> | Alternar la vista del navegador |
 
@@ -232,12 +232,12 @@ __Atajos de teclado__ en la interfaz de QGIS ofrecen accesos rápidos a diversos
 
 | Nombre | Opción del menú | Atajo | Descripción |
 |------------------------------------------|---------------------------------------------|-----------------------------|--------------------------------------------------------|
-| Identificar entidades geográficas | ![](/fig/qgis_identify_features.png) | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> | Identificar entidades geográficas en la vista de mapa, mediante un clic sobre ellas |
-| Seleccionar la entidad geográfica | ![](/fig/qgis_select_features.png) |  | Seleccionar una entidad geográfica por área o con un solo clic |
-| Seleccionar entidad geográfica por valor | ![](/fig/qgis_select_features_by_value.png) | <kbd>F3</kbd> | Seleccionar entidades geográficas por valor |
-| Abrir tabla de atributos | ![](/fig/qgis_open_attribute_table.png) | <kbd>F6</kbd> | Abrir la tabla de atributos |
-| Abrir tabla de atributos (objetos seleccionados) | ![](/fig/qgis_open_attribute_table.png) | <kbd>Shift</kbd> + `F6` | Abrir tabla de atributos (objetos seleccionados) |
-| Abrir tabla de atributos (objetos visibles) | ![](/fig/qgis_open_attribute_table.png) | <kbd>Ctrl</kbd> + `F6` | Abrir la tabla de atributos solo con las entidades geográficas visibles |
+| Identificar entidades geográficas | ![](../../../fig/qgis_identify_features.png) | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> | Identificar entidades geográficas en la vista de mapa, mediante un clic sobre ellas |
+| Seleccionar la entidad geográfica | ![](../../../fig/qgis_select_features.png) |  | Seleccionar una entidad geográfica por área o con un solo clic |
+| Seleccionar entidad geográfica por valor | ![](../../../fig/qgis_select_features_by_value.png) | <kbd>F3</kbd> | Seleccionar entidades geográficas por valor |
+| Abrir tabla de atributos | ![](../../../fig/qgis_open_attribute_table.png) | <kbd>F6</kbd> | Abrir la tabla de atributos |
+| Abrir tabla de atributos (objetos seleccionados) | ![](../../../fig/qgis_open_attribute_table.png) | <kbd>Shift</kbd> + `F6` | Abrir tabla de atributos (objetos seleccionados) |
+| Abrir tabla de atributos (objetos visibles) | ![](../../../fig/qgis_open_attribute_table.png) | <kbd>Ctrl</kbd> + `F6` | Abrir la tabla de atributos solo con las entidades geográficas visibles |
 
 :::
 
@@ -245,8 +245,8 @@ __Atajos de teclado__ en la interfaz de QGIS ofrecen accesos rápidos a diversos
 
 | Nombre | Opción del menú | Atajo | Descripción |
 |-------------------------|----------------------------------------|--------------------|------------------------------|
-| Caja de herramientas de procesos | ![](/fig/qgis_processing_toolbox.png) | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> | Abrir la caja de herramientas de procesos |
-| Consola de Python | ![](/fig/qgis_python_console.png) | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd> | Abrir la Consola de Python |
+| Caja de herramientas de procesos | ![](../../../fig/qgis_processing_toolbox.png) | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> | Abrir la caja de herramientas de procesos |
+| Consola de Python | ![](../../../fig/qgis_python_console.png) | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd> | Abrir la Consola de Python |
 
 :::
 
@@ -271,7 +271,7 @@ Descargar los límites administrativos oficiales del Banco Mundial
 
 :::{tip}
 
-Si mantiene presionada la <kbd>barra espaciadora</kbd> en su teclado, se activa la herramienta ![](/fig/qgis_pan_map.png) `Pan Map`, cuando se sitúa el puntero sobre el lienzo del mapa. Solo tiene que mover el puntero mientras mantiene presionada la <kbd>barra espaciadora</kbd> y podrá mover la vista del mapa.
+Si mantiene presionada la <kbd>barra espaciadora</kbd> en su teclado, se activa la herramienta ![](../../../fig/qgis_pan_map.png) `Pan Map`, cuando se sitúa el puntero sobre el lienzo del mapa. Solo tiene que mover el puntero mientras mantiene presionada la <kbd>barra espaciadora</kbd> y podrá mover la vista del mapa.
 
 :::
 
@@ -279,7 +279,7 @@ Si mantiene presionada la <kbd>barra espaciadora</kbd> en su teclado, se activa 
 
 Para moverse por el lienzo del mapa con el puntero, tiene que activar el botón de la mano.
 
-:::{image} /fig/qgis_move_symbol.png
+:::{image} ../../../fig/qgis_move_symbol.png
 ---
 name: es_qgis_move_symbol
 height: 40 px
@@ -304,7 +304,7 @@ La forma más sencilla de hacer zoom en el lienzo del mapa es __desplazándose__
 
 O con los atajos de teclado <kbd>Ctrl</kbd> + <kbd>+</kbd> y <kbd>Ctrl</kbd> + <kbd>-</kbd>
 
-![](/fig/qgis_zoom_symbol.png)
+![](../../../fig/qgis_zoom_symbol.png)
 
 Otra forma es utilizar los botones de zoom del panel de la caja de herramientas.
 
@@ -327,7 +327,7 @@ Mantener presionado <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> abre y cierr
 
 Para abrir la caja de herramientas en QGIS, haga clic en la rueda de desplazamiento. O haga clic en `Procesos` → `Caja de herramientas`.
 
-![](/fig/Geschlossene_Toolbox_01.png)
+![](../../../fig/Geschlossene_Toolbox_01.png)
 
 Puede utilizar la barra de búsqueda para encontrar herramientas específicas.
 
@@ -365,7 +365,7 @@ En QGIS, los datos geoespaciales con los que trabaja __no__ se guardan en el arc
 Una buena organización de los datos con una estructura de carpetas fija y bien elaborada, evita tales problemas.
 
 :::{Warning}
-¡Siempre organice sus datos! Consulte el artículo de la Wiki sobre la [estructura de carpetas estándar](/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md) para obtener más información.
+¡Siempre organice sus datos! Consulte el artículo de la Wiki sobre la [estructura de carpetas estándar](../Wiki/es_qgis_projects_folder_structure_wiki.md) para obtener más información.
 :::
 
 
@@ -408,7 +408,7 @@ Al presionar <kbd>Ctrl</kbd> + <kbd>G</kbd> se guarda el proyecto, mientras que 
 
 Puede ocurrir que, mientras trabaja con QGIS, se encuentre con iconos de advertencia de color naranja. Esto indica que debe prestar atención. Para entender lo que significa el icono de advertencia, __coloque el puntero sobre el icono__ y aparecerá un texto explicativo. Por ejemplo, en la {numref}`es_warning_icon_example`, el icono de advertencia indica que las unidades de medida son grados, que no son constantes (la distancia entre 1⁰ de longitud es mucho mayor en el ecuador que en los polos).
 
-:::{figure} /fig/en_3.36_warning_icon_example.png
+:::{figure} ../../../fig/en_3.36_warning_icon_example.png
 ---
 name: es_warning_icon_example
 width: 700 px
@@ -425,7 +425,7 @@ Si tiene más preguntas antes o después de la capacitación o necesita ayuda, n
 
 :::{admonition} Errores y problemas comunes
 :class: tip
-Hemos recopilado una lista de __[Errores y problemas comunes](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html)__. Si alguna vez, no sabe qué hacer (¡Lo que puede ocurrir a menudo al trabajar con QGIS!), intente buscar la solución a su problema aquí.
+Hemos recopilado una lista de __[Errores y problemas comunes](../Wiki/es_qgis_common_errors_and_Issues.md)__. Si alguna vez, no sabe qué hacer (¡Lo que puede ocurrir a menudo al trabajar con QGIS!), intente buscar la solución a su problema aquí.
 :::
 
 
@@ -487,7 +487,7 @@ En la barra superior, utilice el `Ver` menú → `Paneles` o los submenús `Barr
 
 :::{dropdown} Respuesta
 
-- En nuestra página [Errores y problemas comunes](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_common_errors_and_Issues.html)
+- En nuestra página [Errores y problemas comunes](../Wiki/es_qgis_common_errors_and_Issues.md)
 - Consultando la [documentación de QGIS](https://docs.qgis.org/3.34/en/docs/index.html)
 - En el [foro de usuarios de QGIS en stackexchange](https://gis.stackexchange.com/?tags=qgis)
 - En [grupos de usuarios de QGIS](https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups)

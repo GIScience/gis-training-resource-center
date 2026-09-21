@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -59,11 +59,11 @@ La mayoría de los marcadores simples constan de un __relleno__ y un __contorno_
 
 - El relleno determina el color de relleno del símbolo. Puede cambiar el color y la transparencia. También puede hacer rellenos más complejos, como un relleno de patrón de línea o un relleno de símbolo SVG.
 - El contorno determina el color, el tipo y el grosor del contorno. Junto al color y la transparencia, el contorno es el elemento más critico para diferenciar entre los distintos elementos. Por ejemplo, las líneas más gruesas para las carreteras suelen significar vías de un orden superior (como autopistas), mientras que las líneas discontinuas finas, podrían significar senderos, inaccesibles para los vehículos de carretera.
-- Puede aplicar estilos a un único símbolo para cada capa o utilizar estilos diferentes basados en un [método de categorización](/content/es/Module_3/es_qgis_data_classification.md).
+- Puede aplicar estilos a un único símbolo para cada capa o utilizar estilos diferentes basados en un [método de categorización](../Module_3/es_qgis_data_classification.md).
 
 En la pestaña Simbología, puede seleccionar entre varios métodos de simbolización (consulte la {numref}`es_3.36_m4_symbolisation_methods`). Los más importantes son __Single Symbol__, __Categorized__, __Graduated__, y __Rule base__.
 
-:::{figure} /fig/en_3.36_m4_symbolisation_methods.png
+:::{figure} ../../../fig/en_3.36_m4_symbolisation_methods.png
 ---
 name: es_3.36_m4_symbolisation_methods
 width: 500 px
@@ -244,13 +244,13 @@ o en situaciones, en las que desee comunicar dos variables, en un mismo mapa. Po
 mapas coropléticos con símbolos graduados.
 La creación de mapas con símbolos graduados se realiza de forma similar a la creación de mapas coropléticos, pero implica un paso adicional:
 Crear centroides de los límites administrativos. Los centroides son puntos, que se sitúan en el centro calculado de
-polígonos (consulte el [módulo 5](/content/es/Module_5/es_qgis_non_spatial_tools.md)). 
+polígonos (consulte el [módulo 5](../Module_5/es_qgis_non_spatial_tools.md)). 
 Utilizaremos la misma capa que para el mapa coroplético (consulte la {numref}`es_map_design_example_variable_ranges`):
 `NGA_Adm1_Pop`.
 
-1. En la [caja de herramientas de procesos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_1/es_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars), busque la herramienta `centroides`. <kbd>Haga doble clic</kbd> en ella. Se abrirá una nueva ventana (consulte la {numref}`es_3.36_m4_centroids`)
+1. En la [caja de herramientas de procesos](../Module_1/es_qgis_start.md), busque la herramienta `centroides`. <kbd>Haga doble clic</kbd> en ella. Se abrirá una nueva ventana (consulte la {numref}`es_3.36_m4_centroids`)
 
-:::{figure} /fig/en_3.36_m4_centroids.png
+:::{figure} ../../../fig/en_3.36_m4_centroids.png
 ---
 name: es_3.36_m4_centroids
 width: 500 px
@@ -266,7 +266,7 @@ Creación de centroides en QGIS 3.36.
 7. Haga clic en `Clasificar`.
 8. *Opcional*: Cambiar el color y la transparencia de los círculos.
 
-:::{figure} /fig/en_m4_graduated_symbols_example.png
+:::{figure} ../../../fig/en_m4_graduated_symbols_example.png
 ---
 name: es_m4_graduated_symbols_example
 width: 550 px

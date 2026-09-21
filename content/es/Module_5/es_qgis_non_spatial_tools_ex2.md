@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -48,11 +48,11 @@ Familiarizarse con los distintos tipos de análisis no espacial y las herramient
 
 ## Artículos relevantes en Wiki
 
-* [Importación de datos geoespaciales en QGIS](/content/es/Wiki/es_qgis_import_geodata_wiki.md)
-* [Proyecciones cartográficas](/content/es/Wiki/es_qgis_projections_wiki.md)
-* [Consultas espaciales](/content/es/Wiki/es_qgis_spatial_queries_wiki.md)
-* [Geoprocesamiento](/content/es/Wiki/es_qgis_geoprocessing_wiki.md)
-* [Clasificación por categorías](/content/es/Wiki/es_qgis_categorized_wiki.md)
+* [Importación de datos geoespaciales en QGIS](../Wiki/es_qgis_import_geodata_wiki.md)
+* [Proyecciones cartográficas](../Wiki/es_qgis_projections_wiki.md)
+* [Consultas espaciales](../Wiki/es_qgis_spatial_queries_wiki.md)
+* [Geoprocesamiento](../Wiki/es_qgis_geoprocessing_wiki.md)
+* [Clasificación por categorías](../Wiki/es_qgis_categorised_wiki.md)
 
 :::
 
@@ -67,7 +67,7 @@ Familiarizarse con los distintos tipos de análisis no espacial y las herramient
 - Tómese su tiempo para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare una pizarra. Puede ser una pizarra blanca física, un rotafolio o una pizarra digital (por ejemplo, una pizarra Miro) donde los participantes puedan añadir sus conclusiones y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos hayan instalado QGIS y hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo realizar capacitaciones?](/content/es/Trainers_corner/es_how_to_training.md#how-to-do-trainings) para obtener algunos consejos generales para impartirlas.
+- Consulte [¿Cómo realizar capacitaciones?](../Trainers_corner/es_how_to_training.md) para obtener algunos consejos generales para impartirlas.
 
 ### Impartir la capacitación
 
@@ -113,11 +113,11 @@ El sistema de coordenadas previsto para Senegal es `EPSG:32628 WGS 84 / UTM zone
 
 1. Cargue la capa de límites administrativos de Senegal (`sen_admbnda_adm1_1m_gov_ocha_20190426.shp`), así como la población por unidad subnacional (`sen_admpop_adm1_2020.csv`) y los datos de Desinventar Sendai de Senegal (`DI_Stat924.xls`) en QGIS.
 
-2. Asegúrese de reproyectar el conjunto de datos con los límites administrativos en la zona UTM 28N. Para obtener más información, consulte la entrada de Wiki sobre [proyecciones cartográficas](/content/es/Wiki/es_qgis_projections_wiki.md).
+2. Asegúrese de reproyectar el conjunto de datos con los límites administrativos en la zona UTM 28N. Para obtener más información, consulte la entrada de Wiki sobre [proyecciones cartográficas](../Wiki/es_qgis_projections_wiki.md).
 
-3. Realice uniones no espaciales basadas en las regiones que figuran en dos conjuntos de datos y el PCODE que figura en estos mismos conjuntos. Consulte la entrada de Wiki sobre [uniones no espaciales](/content/es/Wiki/es_qgis_non_spatial_joins_wiki.md) para obtener más información.
+3. Realice uniones no espaciales basadas en las regiones que figuran en dos conjuntos de datos y el PCODE que figura en estos mismos conjuntos. Consulte la entrada de Wiki sobre [uniones no espaciales](../Wiki/es_qgis_non_spatial_joins_wiki.md) para obtener más información.
 
-:::{figure} /fig/en_ex1_AT_admin_pop_sen.png
+:::{figure} ../../../fig/en_ex1_AT_admin_pop_sen.png
 ---
 width: 100%
 name: es_attributes_all
@@ -131,7 +131,7 @@ Captura de pantalla de las diferentes tablas de atributos con las columnas corre
 :::::{tab-set}
 
 ::::{tab-item} Captura de pantalla de la tarea 4
-:::{figure} /fig/en_ex1_Join_field.png
+:::{figure} ../../../fig/en_ex1_Join_field.png
 ---
 width: 80%
 name: es_join_field
@@ -141,7 +141,7 @@ Captura de pantalla de la herramienta Unir atributos por valor de campo para la 
 ::::
 
 ::::{tab-item} Captura de pantalla de la tarea 5
-:::{figure} /fig/en_ex1_Join_field_2.PNG
+:::{figure} ../../../fig/en_ex1_Join_field_2.PNG
 ---
 width: 80%
 name: es_join_field
@@ -152,16 +152,16 @@ Captura de pantalla de la herramienta Unir atributos por valor de campo para las
 
 :::::
 
-6. Utilice las funciones de tabla para calcular la superficie de cada región en kilómetros cuadrados y la densidad de población. Para obtener más información, consulte la entrada de Wiki sobre las [funciones de la tabla](/content/es/Wiki/es_qgis_table_functions_wiki.md).
+6. Utilice las funciones de tabla para calcular la superficie de cada región en kilómetros cuadrados y la densidad de población. Para obtener más información, consulte la entrada de Wiki sobre las [funciones de la tabla](../Wiki/es_qgis_table_functions_wiki.md).
     - Cree una nueva columna/campo con el nombre `"area_sqkm"` utilizando la calculadora de campos. Asegúrese de que se utilicen números decimales como tipo de campo. Para el cálculo utilice la expresión: `$area / (1000 * 1000)`
     - Cree otra columna/campo con el nombre `"pop_per_sqkm"` con números decimales como tipo de campo. Utilice la expresión: `"Total" / "area_sqkm"` para el cálculo.
 
-Puede acceder a la calculadora de campo a través de su tabla de atributos activando ![](/fig/mActionToggleEditing.png) `Conmutar edición` y haciendo clic en este símbolo ![](/fig/mActionCalculateField.png) para abrir la `calculadora de campo`.
+Puede acceder a la calculadora de campo a través de su tabla de atributos activando ![](../../../fig/mActionToggleEditing.png) `Conmutar edición` y haciendo clic en este símbolo ![](../../../fig/mActionCalculateField.png) para abrir la `calculadora de campo`.
 
 :::::{tab-set}
 
 ::::{tab-item} Capturas de pantalla del cálculo `"area_sqkm"`
-:::{figure} /fig/en_ex1_area_sqkm.png
+:::{figure} ../../../fig/en_ex1_area_sqkm.png
 ---
 width: 80%
 name: es_field_calculator
@@ -171,7 +171,7 @@ Captura de pantalla del cálculo del área utilizando la calculadora de campo.
 ::::
 
 ::::{tab-item} Capturas de pantalla del cálculo `"pop_per_sqkm"`
-:::{figure} /fig/en_ex1_pop_per_sqkm.png
+:::{figure} ../../../fig/en_ex1_pop_per_sqkm.png
 ---
 width: 80%
 name: es_field_calculator_2
@@ -184,7 +184,7 @@ Captura de pantalla del cálculo de la población por km2 mediante la calculador
 
 7. Ahora, debemos cambiar el nombre de las columnas `Indirectly Affected` y `Directly Affected` para que no contengan espacios. Esto garantiza que la calculadora de campo funcione correctamente. Para esta tarea utilizaremos la herramienta `Cambiar nombre de campo`.
 
-:::{figure} /fig/en_ex1_Rename_field.PNG
+:::{figure} ../../../fig/en_ex1_Rename_field.PNG
 ---
 width: 80%
 name: es_rename_field
@@ -199,7 +199,7 @@ Captura de pantalla de la herramienta Renombrar campo.
 :::::{tab-set}
 
 ::::{tab-item} Captura de pantalla afectados indirectamente
-:::{figure} /fig/en_ex1_per_indirect_affected.PNG
+:::{figure} ../../../fig/en_ex1_per_indirect_affected.PNG
 ---
 width: 80%
 name: es_per_indirect_affected
@@ -209,7 +209,7 @@ Cálculo de la proporción de la población indirectamente afectada en relación
 ::::
 
 ::::{tab-item} Captura de pantalla afectados directamente
-:::{figure} /fig/en_ex1_per_direct_affected.PNG
+:::{figure} ../../../fig/en_ex1_per_direct_affected.PNG
 ---
 width: 80%
 name: per_direct_affected

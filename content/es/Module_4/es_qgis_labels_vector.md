@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -19,7 +19,7 @@ QGIS ofrece dos métodos para mostrar etiquetas: __Etiquetas simples__ y __Etiqu
 
 Crea un único estilo de etiqueta para cada entidad de la capa. Puede seleccionar un atributo (valor) que se mostrará. Por ejemplo, el nombre de un asentamiento. Necesita saber qué atributo muestra la información que desea mostrar. Consultar la tabla de atributos del conjunto de datos para averiguarlo.
 
-:::{figure} /fig/labels_single_labels_example_nga_adm1.png
+:::{figure} ../../../fig/labels_single_labels_example_nga_adm1.png
 ---
 width: 600 px
 name: labels_single_labels_example_nga_adm1
@@ -27,7 +27,7 @@ name: labels_single_labels_example_nga_adm1
 Etiquetas simples para cada región administrativa (adm1) de Nigeria. El lector puede asignar cada etiqueta a la entidad administrativa correspondiente.
 :::
 
-:::{figure} /fig/en_30.30.2_assigning_value_to_labels.png
+:::{figure} ../../../fig/en_30.30.2_assigning_value_to_labels.png
 ---
 width: 600 px
 name: en_30.30.2_assigning_value_to_labels
@@ -58,7 +58,7 @@ Configurar etiquetas en QGIS 30.30.2
 
 Las etiquetas simples no siempre son útiles. Por ejemplo, si el conjunto de datos es demasiado grande, o si solo desea mostrar determinadas entidades del conjunto de datos. En el ejemplo siguiente, hay demasiados asentamientos para mostrar etiquetas para cada asentamiento. En cambio, podría ser útil mostrar solo las capitales regionales y nacionales. Para este tipo de casos, el etiquetado basado en reglas es ideal.
 
-:::{figure} /fig/single_labels_bad_example.png
+:::{figure} ../../../fig/single_labels_bad_example.png
 ---
 name: single_labels_bad_example
 width: 400 px
@@ -72,7 +72,7 @@ Se seleccionaron etiquetas simples para mostrar los nombres de los asentamientos
 
 Cree reglas mediante expresiones para seleccionar con precisión las entidades que deben etiquetarse. Cada regla puede tener un formato de texto diferente. Utilícelo si desea tener más control sobre la información que se mostrará como etiquetas. Por ejemplo, puede filtrar los datos para que solo se muestren los nombres de las capitales regionales.
 
-:::{figure} /fig/rule-based_labeling_example_settlements_nga.png
+:::{figure} ../../../fig/rule-based_labeling_example_settlements_nga.png
 ---
 name: rule-based_labeling_example_settlements_nga
 width: 500 px
@@ -132,11 +132,11 @@ Etiquetas numéricas
 
 ::::{card}
 
-:::{figure} /fig/labels_graduated_symbology_example.png
+:::{figure} ../../../fig/labels_graduated_symbology_example.png
 ---
 name: labels_graduated_symbology_example
 ---
-[Simbología graduada](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_3/es_qgis_data_classification.html#graduated-classification)
+[Simbología graduada](../../en/Module_3/en_qgis_data_classification.md#graduated-classification)
 :::
 
 ::::
@@ -165,7 +165,7 @@ Por defecto, QGIS genera las etiquetas de manera que no se superpongan con otras
 
 :::{Attention}
 
-Consulte el [artículo en Wiki](/content/es/Wiki/es_qgis_representation_wiki.md) para obtener tutoriales detallados, paso a paso, sobre cómo utilizar las distintas funciones del panel de estilo.
+Consulte el [artículo en Wiki](../Wiki/es_qgis_representation_wiki.md) para obtener tutoriales detallados, paso a paso, sobre cómo utilizar las distintas funciones del panel de estilo.
 
 También puede leer más en el artículo “[Etiquetado y jerarquía de textos en la cartografía](https://www.axismaps.com/guide/labeling)” de Axis Maps.
 

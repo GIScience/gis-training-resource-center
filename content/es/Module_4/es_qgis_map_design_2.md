@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -117,7 +117,7 @@ Observe los mapas que aparecen a continuación y preste mucha atención a cómo 
 
 ::::{dropdown} __Ejemplo de mapa 1__
 
-:::{figure} /fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
+:::{figure} ../../../fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
 ---
 name: ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4
 width: 750 px
@@ -129,7 +129,7 @@ Zonas y carreteras afectadas por las inundaciones en la región de somalí de E
 
 ::::{dropdown} __Ejemplo de mapa 2__
 
-:::{figure} /fig/proportional_circles_example.png
+:::{figure} ../../../fig/proportional_circles_example.png
 ---
 name: proportional_circles_example
 width: 500 px
@@ -141,7 +141,7 @@ Desplazados internos, 30 de septiembre de 2024 (fuente: [ACNUR](https://relief
 
 ::::{dropdown} __Ejemplo de mapa 3__
 
-:::{figure} /fig/choropleth_hum_example.png
+:::{figure} ../../../fig/choropleth_hum_example.png
 ---
 name: choropleth_hum_example
 width: 700 px
@@ -154,7 +154,7 @@ Sudán del Sur: Seguimiento de la situación humanitaria, abril-mayo de 2024. R
 
 ::::{dropdown} __Ejemplo de mapa 4__
 
-:::{figure} /fig/en_m4_operational_overview_example.png
+:::{figure} ../../../fig/en_m4_operational_overview_example.png
 ---
 name: en_m4_operational_overview_example
 width: 650 px

@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -25,7 +25,7 @@ __Tipo de ejercicio de capacitación:__
 :::{grid-item-card}
 __Programa de ejercicios:__
 
-Este ejercicio forma parte del [programa de ejercicios de análisis de ciclones de acción anticipatoria de Madagascar.](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Exercise_tracks/es_mdg_aa_cyclones.html)
+Este ejercicio forma parte del [programa de ejercicios de análisis de ciclones de acción anticipatoria de Madagascar.](../Exercise_tracks/es_mdg_aa_cyclones.md)
 
 :::
 
@@ -43,12 +43,12 @@ __Duración estimada del ejercicio__
 __Artículos relevantes en Wiki__
 ^^^
 
-* [Estadísticas zonales](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html)
-* [Intersección](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Proyecciones cartográficas](/content/es/Wiki/es_qgis_projections_wiki.md)
-* [Buffer](/content/es/Wiki/es_qgis_projections_wiki.md)
-* [Recorte](/content/es/Wiki/es_qgis_projections_wiki.md)
-* [Automatización](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_automatisation_wiki.html)
+* [Estadísticas zonales](../Wiki/es_qgis_raster_basic_wiki.md)
+* [Intersección](../../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Proyecciones cartográficas](../Wiki/es_qgis_projections_wiki.md)
+* [Buffer](../Wiki/es_qgis_projections_wiki.md)
+* [Recorte](../Wiki/es_qgis_projections_wiki.md)
+* [Automatización](../Wiki/es_qgis_automation_wiki.md)
 
 :::
 
@@ -73,7 +73,7 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 - Tómese el tiempo necesario para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare una pizarra. Puede ser un pizarrón físico, un rotafolio o un pizarrón digital (p. ej., un pizarrón en Miro) donde los participantes puedan añadir sus resultados y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos hayan instalado QGIS y hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo hacer capacitaciones?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Trainers_corner/es_how_to_training.html#how-to-do-trainings) para obtener consejos generales sobre cómo impartirlas.
+- Consulte [¿Cómo hacer capacitaciones?](../Trainers_corner/es_how_to_training.md) para obtener consejos generales sobre cómo impartirlas.
 
 ### Impartir la capacitación
 
@@ -150,7 +150,7 @@ Aplique los siguientes archivos de estilo `.qml` a las capas correspondientes:
 - Seleccione **Properties**
 - En la ventana que se abre, vaya a la pestaña **Symbology**
 - En la parte inferior izquierda, haga clic en **Style** → **Load Style…**
-- Haga clic en los tres puntos ![](/fig/Three_points.png).
+- Haga clic en los tres puntos ![](../../../fig/Three_points.png).
 - Navegue hasta el archivo `.qml` correspondiente en la carpeta `layer_style` y selecciónelo.
 - Haga clic en **Open**, luego **Apply** y **OK** para confirmar.
 
@@ -165,7 +165,7 @@ Aplique los siguientes archivos de estilo `.qml` a las capas correspondientes:
 
 ::::{tab-item} Resultado intermedio: Población expuesta
 
-:::{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG
+:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG
 ---
 width: 600px
 align: center
@@ -174,7 +174,7 @@ Mapa que muestra el número de personas expuestas por distrito después de aplic
 :::
 ::::
 ::::{tab-item} Resultado intermedio: Instalaciones sanitarias expuestas
-:::{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG
+:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG
 ---
 width: 600px
 align: center
@@ -183,7 +183,7 @@ Mapa que indica el número total de establecimientos de salud expuestos por dist
 :::
 ::::
 ::::{tab-item} Resultado intermedio: Instalaciones educativas expuestas
-:::{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG
+:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG
 ---
 width: 600px
 align: center

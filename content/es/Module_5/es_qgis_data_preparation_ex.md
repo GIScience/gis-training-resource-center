@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -27,9 +27,9 @@ El objetivo de este ejercicio es entender cómo preparar y limpiar los datos que
 :::{card}
 __Artículos relevantes en Wiki:__
 ^^^
-* [Interfaz de QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_interface_wiki.html)
-* [Importar archivos CSV a QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html#text-data-importl)
-* [Tabla de atributos en QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.md)
+* [Interfaz de QGIS](../Wiki/es_qgis_interface_wiki.md)
+* [Importar archivos CSV a QGIS](../Wiki/es_qgis_import_geodata_wiki.md)
+* [Tabla de atributos en QGIS](../Wiki/es_qgis_attribute_table_wiki.md)
 
 :::
 
@@ -60,7 +60,7 @@ Este ejercicio utiliza la herramienta [Tabula.technology](tabula.technology), un
 - Tómese su tiempo para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare una pizarra. Puede ser una pizarra blanca física, un rotafolio o una pizarra digital (por ejemplo, una pizarra Miro) donde los participantes puedan añadir sus conclusiones y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos hayan instalado QGIS y hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo realizar capacitaciones?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Trainers_corner/es_how_to_training.html#how-to-do-trainings) para obtener algunos consejos generales para impartirlas.
+- Consulte [¿Cómo realizar capacitaciones?](../Trainers_corner/es_how_to_training.md) para obtener algunos consejos generales para impartirlas.
 
 ### Impartir la capacitación
 
@@ -115,7 +115,7 @@ Tabula es una aplicación de código abierto que permite extraer tablas de datos
 
 :::
 
-:::{figure} /fig/en_tabula_website.png
+:::{figure} ../../../fig/en_tabula_website.png
 ---
 name: es_tabula_website
 width: 550 px
@@ -126,7 +126,7 @@ El sitio web Tabula.technology con los enlaces de descarga a la izquierda.
 2. Descomprima el archivo descargado en una ubicación de su elección (por ejemplo, Programas, Escritorio, etc.).
 3. Abra la carpeta donde haya descomprimido el archivo y ejecute la aplicación “Tabula”.
 
-:::{figure} /fig/en_tabula_folder.png
+:::{figure} ../../../fig/en_tabula_folder.png
 ---
 name: es_tabula_folder
 width: 450 px
@@ -137,7 +137,7 @@ width: 450 px
 4. Se abrirá una nueva ventana del navegador con esta dirección: http://localhost:8080. Esta es la aplicación. Si el navegador no se abre de forma automática, ábralo manualmente e ingrese esta dirección.
 
 
-:::{figure} /fig/en_tabula_import.png
+:::{figure} ../../../fig/en_tabula_import.png
 ---
 name: es_tabula_import
 width: 550 px
@@ -149,7 +149,7 @@ width: 550 px
     1. Haga clic en `Browse` y vaya a la carpeta de datos del ejercicio: `...\data\input` y seleccione el PDF “pakistan_wall_type7.7”. Haga clic en `Open`.
     2. Haga clic en `Import` y espere a que se cargue el PDF. Una vez cargado, se abrirá automáticamente.
 
-:::{figure} /fig/en_Tabula_main_view.png
+:::{figure} ../../../fig/en_Tabula_main_view.png
 ---
 name: es_Tabula_main_view
 width: 550 px
@@ -159,7 +159,7 @@ width: 550 px
 
 6. Aquí seleccionaremos la parte del PDF que contiene la tabla de datos. Tabula espera una tabla con una fila de encabezados en la parte superior para cada columna, seguida de las filas con los datos. Si arrastramos un rectángulo sobre el PDF, podemos crear una selección en la que Tabula buscará la tabla de datos. Arrastre un rectángulo y ajuste los bordes para que la tabla encaje con la mayor precisión posible en la selección. Asegúrese de capturar solo la información relevante. Dado que los encabezados de esta tabla tienen un formato poco convencional, es mejor omitirlos para que la tabla CSV resultante sea más fácil de ajustar. Añadiremos los encabezados manualmente una vez extraídas las tablas.
 
-:::{figure} /fig/en_tabula_selection.png
+:::{figure} ../../../fig/en_tabula_selection.png
 ---
 name: es_tabula_selection
 width: 550 px
@@ -172,7 +172,7 @@ width: 550 px
 9. Haga clic en `Preview & Export Extracted Data` en la parte superior derecha de la ventana.
 10. Aparecerá una nueva ventana donde se mostrarán los datos. Al principio, no se verá nada. Haga clic en `Stream` a la izquierda.
 
-:::{figure} /fig/en_tabula_preview_extracted_1.png
+:::{figure} ../../../fig/en_tabula_preview_extracted_1.png
 ---
 name: es_tabula_preview_extracted_1
 width: 550 px
@@ -182,7 +182,7 @@ width: 550 px
 
 11. Los datos de la tabla PDF aparecerán en la ventana principal. Revise la tabla.
 
-:::{figure} /fig/en_tabula_data_preview.png
+:::{figure} ../../../fig/en_tabula_data_preview.png
 ---
 name: es_tabula_data_preview
 width: 550 px
@@ -208,7 +208,7 @@ Los pasos necesarios para filtrar los datos pueden variar en función del editor
 
 1. Abra el archivo CSV extraído en Excel. Podría verse así:
 
-:::{figure} /fig/en_tabula_csv_excel.png
+:::{figure} ../../../fig/en_tabula_csv_excel.png
 ---
 name: es_tabula_csv_excel
 width: 300 px
@@ -223,7 +223,7 @@ En la versión web de Excel, puede fijar las columnas seleccionando la columna A
 
 :::
 
-:::{figure} /fig/en_m5_data_cleaning_ex_task2.png
+:::{figure} ../../../fig/en_m5_data_cleaning_ex_task2.png
 ---
 name: es_m5_data_cleaning_ex_task2
 width: 450 px
@@ -247,7 +247,7 @@ Ahora tenemos un archivo .csv utilizable con la información. Sin embargo, todav
 :::::{grid} 2
 
 ::::{grid-item}
-:::{figure} /fig/en_m5_data_cleaning_ex_filter_excel.png
+:::{figure} ../../../fig/en_m5_data_cleaning_ex_filter_excel.png
 ---
 name: en_m5_data_cleaning_ex_filter_excel
 width: 350 px
@@ -255,7 +255,7 @@ width: 350 px
 :::
 ::::
 ::::{grid-item}
-:::{figure} /fig/en_m5_data_cleaning_ex_filter_excel_2.png
+:::{figure} ../../../fig/en_m5_data_cleaning_ex_filter_excel_2.png
 ---
 name: en_m5_data_cleaning_ex_filter_excel_2
 width: 350 px
@@ -278,7 +278,7 @@ width: 350 px
 ### Tarea 3: Importar los datos a QGIS
 
 :::{topic}
-Con los datos formateados como un archivo CSV utilizable, vamos a importarlos a QGIS y unirlos a una capa de polígonos que contenga los distritos (adm2) utilizando las columnas con los nombres de los distritos en inglés. Sin embargo, es posible que en este paso nos encontremos con el problema de que los nombres de los distritos estén escritos de forma diferente. En este caso, no podemos simplemente realizar una [unión de atributos](/content/Module_5/en_qgis_spatial_tools.md) ya que los atributos deben __coincidir exactamente__. Para solucionarlo, tenemos que realizar una __fusión difusa __.
+Con los datos formateados como un archivo CSV utilizable, vamos a importarlos a QGIS y unirlos a una capa de polígonos que contenga los distritos (adm2) utilizando las columnas con los nombres de los distritos en inglés. Sin embargo, es posible que en este paso nos encontremos con el problema de que los nombres de los distritos estén escritos de forma diferente. En este caso, no podemos simplemente realizar una [unión de atributos](es_qgis_spatial_tools.md) ya que los atributos deben __coincidir exactamente__. Para solucionarlo, tenemos que realizar una __fusión difusa __.
 
 :::
 
@@ -292,9 +292,9 @@ En lugar de buscar coincidencias exactas, la fusión difusa utiliza algoritmos p
 
 1. Abra QGIS y cree un nuevo proyecto.
 2. Guarde el proyecto en la carpeta de ejercicios.
-3. [Importe la capa CSV a QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html#text-data-import).
+3. [Importe la capa CSV a QGIS](../../en/Wiki/en_qgis_import_geodata_wiki.md#text-data-import).
 4. Importe los límites administrativos situados en la carpeta de entrada de datos: `.../module_5_ex_7_data_cleansing/data/input/`
-5. Ahora vamos a realizar una fusión difusa: Abra la [calculadora de campo](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field) __para la capa denominada `tabula-pakistan_wall_type7.7`__ e introduzca la siguiente expresión:
+5. Ahora vamos a realizar una fusión difusa: Abra la [calculadora de campo](../../en/Wiki/en_qgis_table_functions_wiki.md#calculate-field) __para la capa denominada `tabula-pakistan_wall_type7.7`__ e introduzca la siguiente expresión:
     ```
     array_first(aggregate(
     layer:= 'pak_admbnda_adm2_wfp_20220909',
@@ -318,7 +318,7 @@ En lugar de buscar coincidencias exactas, la fusión difusa utiliza algoritmos p
     4. __Campo de la tabla 2:__ `Fuzzy_match`
     5. __Campos de capa 2 a copiar:__ `Burnt Bricks/Blocks, Mud Bricks/Mud, Wood, Other`
 
-:::{figure} /fig/en_3.36_m5_ex_7_attr_join.png
+:::{figure} ../../../fig/en_3.36_m5_ex_7_attr_join.png
 ---
 name: es_m5_ex7_attr_join
 width: 450 px
@@ -344,7 +344,7 @@ Hemos extraído los datos del PDF y ahora tenemos una capa de polígonos que con
 
 La simbolización resultante podría verse parecida a esto:
 
-:::{figure} /fig/m5_ex_7_visualisation_result.png
+:::{figure} ../../../fig/m5_ex_7_visualisation_result.png
 ---
 name: es_m5_ex_7_visualisation_results
 width: 600 px

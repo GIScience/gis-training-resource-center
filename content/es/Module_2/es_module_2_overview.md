@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -16,39 +16,39 @@ El segundo módulo profundiza en el conocimiento de los datos geoespaciales, las
 
 *   - __Capítulo__
     - __Competencias y objetivos__
-*   - __[Capítulo 1: Introducción a los datos geoespaciales y las capas](/content/es/Module_2/es_qgis_geodata_concept.md)__
+*   - __[Capítulo 1: Introducción a los datos geoespaciales y las capas](es_qgis_geodata_concept.md)__
     - __Al terminar este capítulo, podrá:__
         - conocer la diferencia entre datos vectoriales y datos ráster,
         - conocer distintos tipos de formatos de datos,
         - comprender el concepto de capa,
         - saber cómo importar diferentes formatos de datos vectoriales en QGIS.
-*   - __[Capítulo 2: Proyecciones cartográficas](/content/es/Module_2/es_qgis_projections.md)__
+*   - __[Capítulo 2: Proyecciones cartográficas](es_qgis_projections.md)__
     - __Al terminar este capítulo, podrá:__
         - entender por qué es difícil representar el mundo en una superficie plana,
         - saber qué es un sistema de referencia de coordenadas (SRC),
         - comprender la diferencia entre un SRC geográfico y un SRC métrico,
         - saber elegir un SRC adecuado,
         - saber cómo reproyectar capas vectoriales y cómo cambiar el SRC del proyecto en QGIS.
-*   - __[Capítulo 3: Gestión de datos geoespaciales](/content/es/Module_2/es_qgis_geodata_management.md)__
+*   - __[Capítulo 3: Gestión de datos geoespaciales](es_qgis_geodata_management.md)__
     - __Al terminar este capítulo, podrá:__
         - saber cómo se almacenan los proyectos y datos en QGIS,
         - saber cómo configurar una estructura de carpetas para los proyectos de QGIS y los datos geoespaciales,
         - conocer las buenas prácticas para nombrar los archivos de datos geoespaciales.
-*   - __[Capítulo 4: La tabla de atributos](/content/es/Module_2/es_qgis_attribute_table.md)__
+*   - __[Capítulo 4: La tabla de atributos](es_qgis_attribute_table.md)__
     - __Al terminar este capítulo, podrá:__
         - saber cómo abrir y visualizar la tabla de atributos de un conjunto de datos en QGIS,
         - saber cómo ordenar la tabla de atributos y cómo hacer zoom a las entidades específicas,
         - saber seleccionar las entidades.
-*   - __[Capítulo 5: Fuentes de datos](/content/es/Module_2/es_data_sources.md)__
+*   - __[Capítulo 5: Fuentes de datos](es_data_sources.md)__
     - __Al terminar este capítulo, podrá:__
         - saber qué hay que tener en cuenta al buscar datos geoespaciales,
         - conocer algunos sitios web para encontrar datos específicos,
         - conocer el proyecto cartográfico colaborativo OpenStreetMap,
         - saber cómo exportar datos de OpenStreetMap.
-*   - __[Capítulo 6: Mapas base](/content/es/Module_2/es_qgis_basemap.md)__
+*   - __[Capítulo 6: Mapas base](es_qgis_basemap.md)__
     - __Al terminar este capítulo, podrá:__
         - saber cómo agregar mapas base a su proyecto de QGIS.
-*   - __[Ejercicios para el módulo 2](/content/es/Module_2/es_qgis_module_2_exercises.md)__
+*   - __[Ejercicios para el módulo 2](es_qgis_module_2_exercises.md)__
     - Aquí encontrará todos los ejercicios para el módulo 5.
 
 :::

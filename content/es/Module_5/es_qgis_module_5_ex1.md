@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -44,11 +44,11 @@ __Duración estimada del ejercicio:__
 __Artículos relevantes en Wiki:__
 ^^^
 
-* [Importación de datos geoespaciales en QGIS](/content/es/Wiki/es_qgis_import_geodata_wiki.md)
-* [Intersección](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Estadísticas zonales](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html)
-* [Unir atributos por ubicación (resumen](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Funciones de la tabla](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing)
+* [Importación de datos geoespaciales en QGIS](../Wiki/es_qgis_import_geodata_wiki.md)
+* [Intersección](../../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Estadísticas zonales](../Wiki/es_qgis_raster_basic_wiki.md)
+* [Unir atributos por ubicación (resumen](../../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Funciones de la tabla](../../en/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)
 
 <!--FIME: Check if these wiki articles are relevant-->
 
@@ -96,7 +96,7 @@ Antes de empezar a realizar cualquier operación SIG, __explore siempre los dato
 
 3. Para convertir la información de la capa de puntos de centros de salud en un valor indicador utilizable, ahora podemos contar los centros de salud por distrito. Podemos utilizar la herramienta __Count points in polygon__ de la caja de herramientas de procesos. Eche un vistazo a la descripción de la herramienta y a las entidades adicionales que ofrece. Para nuestra tarea solo tenemos que especificar la capa de entrada de polígonos y puntos, el nombre del campo de recuento (por ejemplo, __Num_healthsites__) y elegir el nombre y el directorio de la capa de salida. Explore los datos de salida.
 
-:::{figure} /fig/Count_points_polygon.PNG
+:::{figure} ../../../fig/Count_points_polygon.PNG
 ---
 width: 100%
 name: es_count_points_polygon
@@ -104,10 +104,10 @@ name: es_count_points_polygon
 Contar centros de salud por distrito
 :::
 
-4. Ahora tenemos el número de centros de salud por distrito. No obstante, sería interesante saber cuántos centros de salud existen por cada 10 000 habitantes. Para esta tarea necesitamos saber en primer lugar cuántos habitantes tiene cada distrito. Podemos procesar esta información utilizando la herramienta __estadísticas de zonal__ de la Caja de herramientas de procesos. Para obtener más información, consulte la entrada de Wiki sobre [estadísticas de zonal](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html). Especifique su capa de entrada (salida del paso 3, por ejemplo, __Num_healthsites__) y su capa ráster (WorldPop Raster), especifique el prefijo de la columna (por ejemplo, ___wpop__) y seleccione las estadísticas a calcular (__sum__). Para cada distrito se sumarán todos los valores de píxel de WorldPop Raster que se encuentren dentro de él. Explore los datos de salida.
+4. Ahora tenemos el número de centros de salud por distrito. No obstante, sería interesante saber cuántos centros de salud existen por cada 10 000 habitantes. Para esta tarea necesitamos saber en primer lugar cuántos habitantes tiene cada distrito. Podemos procesar esta información utilizando la herramienta __estadísticas de zonal__ de la Caja de herramientas de procesos. Para obtener más información, consulte la entrada de Wiki sobre [estadísticas de zonal](../Wiki/es_qgis_raster_basic_wiki.md). Especifique su capa de entrada (salida del paso 3, por ejemplo, __Num_healthsites__) y su capa ráster (WorldPop Raster), especifique el prefijo de la columna (por ejemplo, ___wpop__) y seleccione las estadísticas a calcular (__sum__). Para cada distrito se sumarán todos los valores de píxel de WorldPop Raster que se encuentren dentro de él. Explore los datos de salida.
 
 
-:::{figure} /fig/en_qgis_modul_5_ex1_zonal_statistics.PNG
+:::{figure} ../../../fig/en_qgis_modul_5_ex1_zonal_statistics.PNG
 ---
 width: 100%
 name: es_zonal_statistics
@@ -120,7 +120,7 @@ A lo largo del proceso de procesamiento de indicadores, se obtendrán varios res
 :::
 
 5. Ahora conocemos el número de centros de salud y el número de habitantes por distrito. Estamos listos para calcular nuestro indicador final: Número de centros de salud por cada 10 000 habitantes.
-* Abra la tabla de atributos de “Num_healthsites_wpop” (salida del paso 4) y abra la `Calculador de campo` haciendo clic en el botón ![](/fig/mActionCalculateField.png). Al marcar la casilla `Crear un campo nuevo` podemos hacer cálculos y guardarlos inmediatamente en una nueva columna de atributos.
+* Abra la tabla de atributos de “Num_healthsites_wpop” (salida del paso 4) y abra la `Calculador de campo` haciendo clic en el botón ![](../../../fig/mActionCalculateField.png). Al marcar la casilla `Crear un campo nuevo` podemos hacer cálculos y guardarlos inmediatamente en una nueva columna de atributos.
 * Defina el `Nombre del campo de salida` como "healthsites_10000" y configure `Tipo de campo de salida` como `Número decimal (real)`.
 * Ahora calcularemos en el campo de expresión el número de centros de salud por cada 10 000 habitantes:
 
@@ -131,9 +131,9 @@ A lo largo del proceso de procesamiento de indicadores, se obtendrán varios res
 ```
 
 
-* Cuando haya terminado, haga clic en ![](/fig/mActionSaveEdits.png) para guardar sus cambios y desactive el modo de edición haciendo clic de nuevo en ![](/fig/mActionToggleEditing.png)([video en Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing)).
+* Cuando haya terminado, haga clic en ![](../../../fig/mActionSaveEdits.png) para guardar sus cambios y desactive el modo de edición haciendo clic de nuevo en ![](../../../fig/mActionToggleEditing.png)([video en Wiki](../../en/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)).
 
-:::{figure} /fig/en_qgis_modul_5_ex1_field_calc.PNG
+:::{figure} ../../../fig/en_qgis_modul_5_ex1_field_calc.PNG
 ---
 width: 80%
 name: es_Field Calculator
@@ -147,7 +147,7 @@ Un factor muy importante para las zonas vulnerables a la sequía es el nivel de 
 
 -[Degradación de las tierras en Somalia](https://spatial.faoswalim.org/layers/geonode:SOM_Land_Degradation_FAOSWALIM#/)
 
-:::{figure} /fig/land_degradation.PNG
+:::{figure} ../../../fig/land_degradation.PNG
 ---
 width: 60%
 name: es_land_degradation
@@ -165,9 +165,9 @@ Explore los datos. Tenemos una columna “LandD_CLas” que indica la gravedad d
 * Como `Tipo de unión` configurar `Toma atributos del objeto con el traslape más grande solamente (uno-a-uno)`.
 * Guardar como capa.
 
-Consulte la entrada de Wiki [Unión espacial](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_joins_wiki.html) para obtener más información.
+Consulte la entrada de Wiki [Unión espacial](../Wiki/es_qgis_spatial_joins_wiki.md) para obtener más información.
 
-:::{figure} /fig/en_qgis_modul_5_ex1_join.PNG
+:::{figure} ../../../fig/en_qgis_modul_5_ex1_join.PNG
 ---
 width: 100%
 name: es_Join attributes by location
@@ -192,7 +192,7 @@ Explore los datos. ¿En qué resolución están disponibles los datos? ¿Tiene a
 * Como `Tipo de unión` configurar `Tomar solo los atributos del primer objeto coincidente (uno a uno)`.
 * Guarde la capa en un archivo.
 
-:::{figure} /fig/en_qgis_modul_5_ex1_joinbyvalue.PNG
+:::{figure} ../../../fig/en_qgis_modul_5_ex1_joinbyvalue.PNG
 ---
 width: 100%
 name: es_Join attributes by field value
@@ -206,7 +206,7 @@ En el archivo de registro aparecerá un mensaje: “6 feature(s) from input laye
 Es posible que, después de la importación, en el archivo CSV los encabezados de las columnas de la tabla de atributos no tengan los nombres correctos (en lugar de ello, puede que aparezca “field 1”, “field 2”, etc.). En este caso, los nombres correctos de los campos suelen encontrarse debajo del encabezado.
 :::
 
-:::{figure} /fig/en_qgis_module_5_ex1_error.PNG
+:::{figure} ../../../fig/en_qgis_module_5_ex1_error.PNG
 ---
 width: 100%
 name: es_Join attributes by field value
@@ -231,7 +231,7 @@ En la segunda parte del ejercicio mostraremos los pasos para pasar de los indica
 Puede encontrar todos los datos para la segunda parte del ejercicio en el "Modul_5_Ex1_Part_2".
 Descargue la carpeta de datos para la segunda parte del ejercicio: "Modul_5_Ex1_Part_2". En la primera parte del ejercicio hemos procesado la capa de vulnerabilidad; las capas simplificadas de exposición y falta de capacidad de afrontamiento se han preparado con antelación para este ejercicio. Estas capas solo tienen de 3 a 4 indicadores por razones de complejidad. Véase a continuación un ejemplo de los indicadores que se utilizaron para Somalia:
 
-:::{figure} /fig/Indicators_Rsik_Assessment_Somalia.png
+:::{figure} ../../../fig/Indicators_Rsik_Assessment_Somalia.png
 ---
 width: 80%
 name: es_Indicators Risk Assessment
@@ -246,7 +246,7 @@ Para poder realizar más cálculos sobre los indicadores, tenemos que hacerlos c
 $ Valor\ normalizado\ = \frac{value\ -\ min value}{max\ value \ - \ min } $
 
 
-* Abra la tabla de atributos de “vulnerability_districts” y abra la `Calculador de campo` haciendo clic en el botón ![](/fig/mActionCalculateField.png). Al marcar la casilla `Crear un campo nuevo` podemos hacer cálculos y guardarlos inmediatamente en una nueva columna de atributos.
+* Abra la tabla de atributos de “vulnerability_districts” y abra la `Calculador de campo` haciendo clic en el botón ![](../../../fig/mActionCalculateField.png). Al marcar la casilla `Crear un campo nuevo` podemos hacer cálculos y guardarlos inmediatamente en una nueva columna de atributos.
 * Comience con el primer indicador `LandD_class`.
 * Defina el nombre del campo de salida como “LandD_class_norm” y configure `Tipo del campo de salida` como `Número decimal (real)`
 * Ahora calcularemos en el campo de expresión la normalización del indicador:
@@ -254,9 +254,9 @@ $ Valor\ normalizado\ = \frac{value\ -\ min value}{max\ value \ - \ min } $
 ```md
 ("LandD_Clas" - minimum( "LandD_Clas" ))/( maximum( "LandD_Clas") - minimum( "LandD_Clas" ))
 ```
-* Cuando haya terminado, haga clic en ![](/fig/mActionSaveEdits.png) para guardar sus cambios y desactive el modo de edición haciendo clic en ![](/fig/mActionToggleEditing.png)([Video Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing)).
+* Cuando haya terminado, haga clic en ![](../../../fig/mActionSaveEdits.png) para guardar sus cambios y desactive el modo de edición haciendo clic en ![](../../../fig/mActionToggleEditing.png)([Video Wiki](../../en/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)).
 
-:::{figure} /fig/en_qgis_modul_5_ex1_Part2_normalization.PNG
+:::{figure} ../../../fig/en_qgis_modul_5_ex1_Part2_normalization.PNG
 ---
 width: 80%
 name: es_Join attributes by field value
@@ -285,7 +285,7 @@ $ ponderado=  (1 - valor) \times peso $
 
 La segunda fórmula invierte el valor $(1 - valor)$ antes de aplicar la ponderación, lo que da lugar a un cálculo diferente para las variables con ponderaciones negativas.
 
-No profundizaremos más sobre este tema en este módulo, pero puede encontrar más información [aquí](https://giscience.github.io/gis-training-resource-center/spanish/content/es/GIS_AA/es_qgis_risk_assessment_plugin.html#risk).
+No profundizaremos más sobre este tema en este módulo, pero puede encontrar más información [aquí](../../en/GIS_AA/en_qgis_risk_assessment_plugin.md#risk).
 
 :::{Hint}
 Se recomienda comprobar debidamente la lógica de cada indicador. A menudo, los indicadores de una determinada dimensión siguen la misma lógica, pero siempre hay excepciones. Una vez aplicadas las direcciones a los datos, podemos usar la expresión "falta de capacidad de afrontamiento" en lugar de "capacidad de afrontamiento", ya que hemos forzado los indicadores respectivos en otra dirección siguiendo la lógica predefinida (a mayor valor = peores circunstancias).
@@ -306,7 +306,7 @@ Hasta ahora hemos utilizado la siguiente escala de ponderación:
 | 0,75 | Bastante importante |
 | 1 | Muy importante |
 
-* En la tabla de atributos de su capa podemos calcular los indicadores ponderados para cada indicador normalizado. Para ello tenemos que seguir los mismos pasos que antes: Abra `Calculador de campo` haciendo clic el botón ![](/fig/mActionCalculateField.png), y cree un campo nuevo con el sufijo “_weighted” en el campo de expresión.
+* En la tabla de atributos de su capa podemos calcular los indicadores ponderados para cada indicador normalizado. Para ello tenemos que seguir los mismos pasos que antes: Abra `Calculador de campo` haciendo clic el botón ![](../../../fig/mActionCalculateField.png), y cree un campo nuevo con el sufijo “_weighted” en el campo de expresión.
 
 ```md
 
@@ -315,7 +315,7 @@ Hasta ahora hemos utilizado la siguiente escala de ponderación:
 ```
 
 
-:::{figure} /fig/en_qgis_module_5_ex1_part2_weigthed.PNG
+:::{figure} ../../../fig/en_qgis_module_5_ex1_part2_weigthed.PNG
 ---
 width: 80%
 name: es_Add new field to weight indicators
@@ -325,7 +325,7 @@ Añadiendo campo nuevo a indicadores de peso.
 
 * Ahora tenemos la versión normalizada y ponderada para cada indicador:
 
-:::{figure} /fig/en_qgis_modul_5_ex1_part2_weighted_attribute.PNG
+:::{figure} ../../../fig/en_qgis_modul_5_ex1_part2_weighted_attribute.PNG
 ---
 width: 100%
 name: es_Attribute Table with "_norm" and "_weighted" indicators
@@ -336,7 +336,7 @@ Tabla de atributos con indicadores “_norm” y “_weighted”.
 #### 4. Puntuación de vulnerabilidad / Índice
 
 Ahora estamos listos para calcular la puntuación de vulnerabilidad de cada distrito:
-* Abra la tabla de atributos → abra `Calculador de campo`![](/fig/mActionCalculateField.png) y cree un campo nuevo con el nombre "vulnerability_score" y el tipo de campo “Decimal Number (real)”. En la ventana de expresión, sume todos los valores ponderados de los indicadores:
+* Abra la tabla de atributos → abra `Calculador de campo`![](../../../fig/mActionCalculateField.png) y cree un campo nuevo con el nombre "vulnerability_score" y el tipo de campo “Decimal Number (real)”. En la ventana de expresión, sume todos los valores ponderados de los indicadores:
 
 ```md
 
@@ -351,7 +351,7 @@ Para calcular el riesgo tenemos que reunir nuestras tres dimensiones: exposició
 * Haga clic con el botón derecho en una de las capas y seleccione `Propriedades` -> Vaya a la pestaña `Uniones`.
 * Haga clic en el botón `+`, añada una nueva unión y seleccione la capa que desea unir. Defina “admin2Name” como `Unir campo`:
 
-:::{figure} /fig/en_qgis_modul_5_ex1_part2_join_risk.PNG
+:::{figure} ../../../fig/en_qgis_modul_5_ex1_part2_join_risk.PNG
 ---
 width: 90%
 name: es_Join Layers
@@ -360,9 +360,9 @@ Uniendo capas por campo de unión.
 :::
 
 * Haga clic con el botón derecho en la capa → `Exportar` → `Guardar objetos como` y guarde la capa como capa "risk" en su carpeta temporal.
-* Ahora trabajaremos con la capa de "risk": Borre todos los campos excepto las puntuaciones normalizadas: Abra la tabla de atributos de su capa de riesgo `Conmutar edición`![](/fig/mActionToggleEditing.png) -> `Borrar campo` ![](/fig/mActionDeleteAttribute.png) y seleccione todos los campos del indicador. Al final, la capa debería tener este aspecto:
+* Ahora trabajaremos con la capa de "risk": Borre todos los campos excepto las puntuaciones normalizadas: Abra la tabla de atributos de su capa de riesgo `Conmutar edición`![](../../../fig/mActionToggleEditing.png) -> `Borrar campo` ![](../../../fig/mActionDeleteAttribute.png) y seleccione todos los campos del indicador. Al final, la capa debería tener este aspecto:
 
-:::{figure} /fig/en_qgis_modul_5_ex1_part2_risklayer_attributetable.PNG
+:::{figure} ../../../fig/en_qgis_modul_5_ex1_part2_risklayer_attributetable.PNG
 ---
 width: 70%
 name: es_Risk Layer Attribute Table normalised Scores
@@ -380,7 +380,7 @@ $ susceptibilidad =   \sqrt vulnerabilidad  \times falta\ de\ capacidad\ de\ afr
 $ riesgo=   \sqrt exposición  \times susceptibilidad $
 
 
-* Abra la tabla de atributos → `Calculador de campos`![](/fig/mActionCalculateField.png) y cree un campo "Susceptibility" y escriba la fórmula. Haga lo mismo para crear un campo llamado "risk" y emplee la expresión adecuada.
+* Abra la tabla de atributos → `Calculador de campos`![](../../../fig/mActionCalculateField.png) y cree un campo "Susceptibility" y escriba la fórmula. Haga lo mismo para crear un campo llamado "risk" y emplee la expresión adecuada.
 
 ```md
 
@@ -388,7 +388,7 @@ sqrt("Susceptibility" * "exposure_norm")
 
 ```
 
-:::{figure} /fig/en_qgis_modul_5_ex1_part2_risk.PNG
+:::{figure} ../../../fig/en_qgis_modul_5_ex1_part2_risk.PNG
 ---
 width: 80%
 name: es_Calculate risk
@@ -405,7 +405,7 @@ La media geométrica es un tipo específico de promedio que se calcula multiplic
 
 * Haga clic con el botón derecho en la capa "risk" → `Propriedades` → `Simbología`.
 * En la esquina inferior izquierda, haga clic en `Estilo` → `Cargar estilo`.
-* En la nueva ventana, haga clic en los tres puntos ![](/fig/Three_points.png). Vaya a la subcarpeta “Map Template” y seleccione el archivo __“somalia_risk_assessment_style.qml”__.
+* En la nueva ventana, haga clic en los tres puntos ![](../../../fig/Three_points.png). Vaya a la subcarpeta “Map Template” y seleccione el archivo __“somalia_risk_assessment_style.qml”__.
 * Haga clic en `Abrir`. A continuación, haga clic en `Cargar estilo`.
 * De nuevo en la ventana `Propriedades`, haga clic en `Aplicar` y `Aceptar`.
 
@@ -418,7 +418,7 @@ Diseño de impresión:
 * Si es necesario, ajuste la leyenda haciendo clic en la leyenda en la pestaña `Propriedades del elemento` y desplácese hacia abajo hasta que vea el campo `elementos de la leyenda`. Si no está visible, verifique si necesita abrir el menú desplegable. Asegúrese de que `Auto actualizar` no esté marcada.
 * Elimine todos los elementos de la leyenda haciendo clic en el elemento y luego en el icono rojo con el signo menos que aparece debajo.
 
-:::{figure} /fig/en_qgis_mondul_5_ex1_possible_result.PNG
+:::{figure} ../../../fig/en_qgis_mondul_5_ex1_possible_result.PNG
 ---
 width: 90%
 name: es_Possible Map Result
@@ -431,7 +431,7 @@ Posible resultado del mapa.
 #### 7. Automatización del proceso
 
 HeiGIT ha desarrollado un complemento de evaluación de riesgos para QGIS con el fin de simplificar este proceso y ahorrar tiempo.
-Puede encontrar más información sobre la metodología de riesgos y el uso del complemento [aquí](https://giscience.github.io/gis-training-resource-center/spanish/content/es/GIS_AA/es_qgis_risk_assessment_plugin.html).
+Puede encontrar más información sobre la metodología de riesgos y el uso del complemento [aquí](../../en/GIS_AA/en_qgis_risk_assessment_plugin.md).
 
 
 Para probar el complemento y ver el resultado, utilice los datos de entrada proporcionados en la carpeta: "Modul_5_Ex1_Part_2\Input data\QGIS Plugin Risk Assessment\input"

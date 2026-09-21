@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -18,7 +18,7 @@ Si quiere saber cómo el mapeo comunitario y la digitalización pueden ayudar a 
 
 :::
 
-:::{figure} /fig/en_digitisation_concept.png
+:::{figure} ../../../fig/en_digitisation_concept.png
 ---
 width: 900px
 align: center
@@ -41,7 +41,7 @@ Se ha producido una inundación en un pueblo como consecuencia de las fuertes ll
 
 ### Barras de herramientas de digitalización
 
-:::{figure} /fig/Activate_digitizing_toolbox.png
+:::{figure} ../../../fig/Activate_digitizing_toolbox.png
 ---
 width: 300px
 align: left
@@ -65,7 +65,7 @@ En primer lugar, debe comprobar si la barra de herramientas `Digitalización` es
 
 La barra de herramientas de digitalización ofrece las herramientas básicas para crear, guardar y editar entidades. Sin embargo, para todo lo que va más allá de la simple creación de nuevas entidades y la eliminación de entidades, se necesita la barra de herramientas Advanced Digitization (véase {numref}`es_digitising_toolbar`). Esta última sirve para mover entidades, eliminar partes de entidades y mucho más. Todas las funciones se enumeran en las dos tablas que figuran abajo.
 
-:::{figure} /fig/Toolbox.png
+:::{figure} ../../../fig/Toolbox.png
 ---
 width: 700 px
 name: es_digitising_toolbar
@@ -77,17 +77,17 @@ Barra de herramientas de digitalización en QGIS 3.36.
 :::{dropdown} Barra de herramientas de digitalización
 | Herramienta                                 | Finalidad                                                                                                      | Herramienta                                | Finalidad                                                                    |
 |---------------------------------------------|----------------------------------------------------------------------------------------------------------------|--------------------------------------------|------------------------------------------------------------------------------|
-| ![](/fig/mActionAllEdits.png)               | Permite guardar, retroceder o cancelar cambios simultáneamente en todas las capas o en las capas seleccionadas | ![](/fig/mActionToggleEditing.png)         | Activar o desactivar el modo de edición en las capas seleccionadas.          |
-| ![](/fig/mActionSaveEdits.png)              | Guardar cambios                                                                                                |                                            |
-| ![](/fig/mActionDigitizeWithSegment.png)    | Digitalizar usando segmentos rectos                                                                            | ![](/fig/mActionDigitizeWithCurve.png)     | Digitalizar usando líneas curvas                                             |
-| ![](/fig/mActionStreamingDigitize.png)      | Activar digitalización a mano alzada                                                                           | ![](/fig/mActionDigitizeShape.png)         | Digitalizar polígono de forma regular                                        |
-| ![](/fig/mActionNewTableRow.png)            | Añadir nuevo registro                                                                                          | ![](/fig/mActionCapturePoint.png)          | Añadir objeto espacial: Capturar punto                                       |
-| ![](/fig/mActionCaptureLine.png)            | Añadir objeto espacial: Capturar línea                                                                         | ![](/fig/mActionCapturePolygon.png)        | Añadir objeto espacial: Capturar polígono                                    |
-| ![](/fig/mActionVertexTool.png)             | Herramienta Vértice (todas las capas)                                                                          | ![](/fig/mActionVertexToolActiveLayer.png) | Herramienta Vértice (capa actual)                                            |
-| ![](/fig/checkbox.png)                      | Establecer si el panel del editor de vértices debe abrirse automáticamente                                     | ![](/fig/mActionMultiEdit.png)             | Modificar los atributos de todas las entidades seleccionadas simultáneamente |
-| ![](/fig/mActionDeleteSelectedFeatures.png) | Borrar objetos seleccionados de la capa activa                                                                 | ![](/fig/mActionEditCut.png)               | Cortar entidades de la capa activa                                           |
-| ![](/fig/mActionCopySelected.png)           | Copiar las entidades seleccionadas de la capa activa                                                           | ![](/fig/mActionEditPaste.png)             | Pegar las entidades en la capa activa                                        |
-| ![](/fig/mActionUndo.png)                   | Deshacer cambios en la capa activa                                                                             | ![](/fig/mActionRedo.png)                  | Rehacer cambios en la capa activa                                            |
+| ![](../../../fig/mActionAllEdits.png)               | Permite guardar, retroceder o cancelar cambios simultáneamente en todas las capas o en las capas seleccionadas | ![](../../../fig/mActionToggleEditing.png)         | Activar o desactivar el modo de edición en las capas seleccionadas.          |
+| ![](../../../fig/mActionSaveEdits.png)              | Guardar cambios                                                                                                |                                            |
+| ![](../../../fig/mActionDigitizeWithSegment.png)    | Digitalizar usando segmentos rectos                                                                            | ![](../../../fig/mActionDigitizeWithCurve.png)     | Digitalizar usando líneas curvas                                             |
+| ![](../../../fig/mActionStreamingDigitize.png)      | Activar digitalización a mano alzada                                                                           | ![](../../../fig/mActionDigitizeShape.png)         | Digitalizar polígono de forma regular                                        |
+| ![](../../../fig/mActionNewTableRow.png)            | Añadir nuevo registro                                                                                          | ![](../../../fig/mActionCapturePoint.png)          | Añadir objeto espacial: Capturar punto                                       |
+| ![](../../../fig/mActionCaptureLine.png)            | Añadir objeto espacial: Capturar línea                                                                         | ![](../../../fig/mActionCapturePolygon.png)        | Añadir objeto espacial: Capturar polígono                                    |
+| ![](../../../fig/mActionVertexTool.png)             | Herramienta Vértice (todas las capas)                                                                          | ![](../../../fig/mActionVertexToolActiveLayer.png) | Herramienta Vértice (capa actual)                                            |
+| ![](../../../fig/checkbox.png)                      | Establecer si el panel del editor de vértices debe abrirse automáticamente                                     | ![](../../../fig/mActionMultiEdit.png)             | Modificar los atributos de todas las entidades seleccionadas simultáneamente |
+| ![](../../../fig/mActionDeleteSelectedFeatures.png) | Borrar objetos seleccionados de la capa activa                                                                 | ![](../../../fig/mActionEditCut.png)               | Cortar entidades de la capa activa                                           |
+| ![](../../../fig/mActionCopySelected.png)           | Copiar las entidades seleccionadas de la capa activa                                                           | ![](../../../fig/mActionEditPaste.png)             | Pegar las entidades en la capa activa                                        |
+| ![](../../../fig/mActionUndo.png)                   | Deshacer cambios en la capa activa                                                                             | ![](../../../fig/mActionRedo.png)                  | Rehacer cambios en la capa activa                                            |
 
 :::
 
@@ -97,18 +97,18 @@ Para procedimientos de digitalización más complejos, utilizará la barra de he
 
 | Herramienta                                                                                                 | Propósito                                        | Herramienta                                                                                                                                | Propósito                     |
 |-------------------------------------------------------------------------------------------------------------|--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
-| ![](/fig/cad.png)                                                                                           | Activar herramientas avanzadas de digitalización |
-| ![](/fig/mActionMoveFeature-1.png)![](/fig/mActionMoveFeatureLine.png)![](/fig/mActionMoveFeaturePoint.png) | Mover entidades                                  | ![Texto alternativo](/fig/mActionMoveFeatureCopy.png) ![](/fig/mActionMoveFeatureCopyLine.png) ![](/fig/mActionMoveFeatureCopyPoint-2.png) | Copiar y mover entidades      |
-| ![Texto alternativo](/fig/mActionRotateFeature.png)                                                         | Girar entidades                                  | ![Texto alternativo](/fig/mActionSimplify.png)                                                                                             | Simplificar entidad           |
-| ![Texto alternativo](/fig/mActionScaleFeature.png)                                                          | Escalar entidad                                  |
-| ![Texto alternativo](/fig/mActionAddRing.png)                                                               | Añadir anillo                                    | ![Texto alternativo](/fig/mActionAddPart.png)                                                                                              | Añadir parte                  |
-| ![Texto alternativo](/fig/mActionFillRing.png)                                                              | Rellenar anillo                                  | ![Texto alternativo](/fig/mActionReverseLine.png)                                                                                          | Intercambiar dirección        |
-| ![Texto alternativo](/fig/mActionDeleteRing.png)                                                            | Eliminar anillo                                  | ![Texto alternativo](/fig/mActionDeletePart.png)                                                                                           | Eliminar parte                |
-| ![Texto alternativo](/fig/mActionOffsetCurve.png)                                                           | Desplazar curva                                  | ![Texto alternativo](/fig/mActionReshape.png)                                                                                              | Cambiar la forma de entidades |
-| ![Texto alternativo](/fig/mActionSplitParts.png)                                                            | Separar partes                                   | ![Texto alternativo](/fig/mActionSplitFeatures.png)                                                                                        | Separar entidades             |
-| ![Texto alternativo](/fig/mActionMergeFeatureAttributes.png)                                                | Unir atributos de entidades seleccionadas        | ![Texto alternativo](/fig/mActionMergeFeatures.png)                                                                                        | Unir entidades seleccionadas  |
-| ![Texto alternativo](/fig/mActionRotatePointSymbols.png)                                                    | Rotar símbolos de punto                          | ![Texto alternativo](/fig/mActionOffsetPointSymbols.png)                                                                                   | Desplazar símbolos de punto   |
-| ![Texto alternativo](/fig/mActionTrimExtend.png)                                                            | Recortar o ampliar entidades                     |
+| ![](../../../fig/cad.png)                                                                                           | Activar herramientas avanzadas de digitalización |
+| ![](../../../fig/mActionMoveFeature-1.png)![](../../../fig/mActionMoveFeatureLine.png)![](../../../fig/mActionMoveFeaturePoint.png) | Mover entidades                                  | ![Texto alternativo](../../../fig/mActionMoveFeatureCopy.png) ![](../../../fig/mActionMoveFeatureCopyLine.png) ![](../../../fig/mActionMoveFeatureCopyPoint-2.png) | Copiar y mover entidades      |
+| ![Texto alternativo](../../../fig/mActionRotateFeature.png)                                                         | Girar entidades                                  | ![Texto alternativo](../../../fig/mActionSimplify.png)                                                                                             | Simplificar entidad           |
+| ![Texto alternativo](../../../fig/mActionScaleFeature.png)                                                          | Escalar entidad                                  |
+| ![Texto alternativo](../../../fig/mActionAddRing.png)                                                               | Añadir anillo                                    | ![Texto alternativo](../../../fig/mActionAddPart.png)                                                                                              | Añadir parte                  |
+| ![Texto alternativo](../../../fig/mActionFillRing.png)                                                              | Rellenar anillo                                  | ![Texto alternativo](../../../fig/mActionReverseLine.png)                                                                                          | Intercambiar dirección        |
+| ![Texto alternativo](../../../fig/mActionDeleteRing.png)                                                            | Eliminar anillo                                  | ![Texto alternativo](../../../fig/mActionDeletePart.png)                                                                                           | Eliminar parte                |
+| ![Texto alternativo](../../../fig/mActionOffsetCurve.png)                                                           | Desplazar curva                                  | ![Texto alternativo](../../../fig/mActionReshape.png)                                                                                              | Cambiar la forma de entidades |
+| ![Texto alternativo](../../../fig/mActionSplitParts.png)                                                            | Separar partes                                   | ![Texto alternativo](../../../fig/mActionSplitFeatures.png)                                                                                        | Separar entidades             |
+| ![Texto alternativo](../../../fig/mActionMergeFeatureAttributes.png)                                                | Unir atributos de entidades seleccionadas        | ![Texto alternativo](../../../fig/mActionMergeFeatures.png)                                                                                        | Unir entidades seleccionadas  |
+| ![Texto alternativo](../../../fig/mActionRotatePointSymbols.png)                                                    | Rotar símbolos de punto                          | ![Texto alternativo](../../../fig/mActionOffsetPointSymbols.png)                                                                                   | Desplazar símbolos de punto   |
+| ![Texto alternativo](../../../fig/mActionTrimExtend.png)                                                            | Recortar o ampliar entidades                     |
 :::
 
 
@@ -131,18 +131,18 @@ Piense en un conjunto de datos espaciales que podría necesitar en sus operacion
 :::
 
 1. `Capa` → `Crear capa` → `Nueva capa GeoPackage` o `Nueva capa de archivo Shape...`
-2. Haga clic en ![](/fig/Three_points.png) junto al campo de entrada `file name` y vaya a la carpeta en la que desea guardar el conjunto de datos.
+2. Haga clic en ![](../../../fig/Three_points.png) junto al campo de entrada `file name` y vaya a la carpeta en la que desea guardar el conjunto de datos.
 3. `Codificación de archivo`: Asegúrese de que está configurado como UTF-8.
 4. `tipo de geometría`: Seleccione el tipo de entidad que desea digitalizar, p. ej., puntos o líneas.
 5. En `Dimensiones adicionales ` debe asegurarse siempre de que `Nada` está marcada. Excepto si existe la posibilidad de recoger también los valores Z (elevación). Pero en la mayoría de los casos no es así.
-6. Lista desplegable del SRC: Seleccione el EPSG/SRC que desea establecer para la nueva capa. Por defecto, QGIS selecciona el SRC del proyecto. Si desea cambiarlo, haga clic en ![](/fig/mIconProjectionEnabled.png).
+6. Lista desplegable del SRC: Seleccione el EPSG/SRC que desea establecer para la nueva capa. Por defecto, QGIS selecciona el SRC del proyecto. Si desea cambiarlo, haga clic en ![](../../../fig/mIconProjectionEnabled.png).
 7. En `Nuevo campo` puede añadir columnas a la nueva capa. Aquí puede configurar qué otro tipo de datos desea recopilar en este conjunto de datos.
     * `Tipo`: Seleccione el tipo de datos que tendrá la columna, p. ej. `Texto (cadena)`, `Entero (32 bit)`, `Decimal (doble)`, `Fecha`.
-    * Haga clic en ![](/fig/mActionNewAttribute.png) para añadir la nueva columna a lista de campos.
+    * Haga clic en ![](../../../fig/mActionNewAttribute.png) para añadir la nueva columna a lista de campos.
 8. Haga clic en `Aceptar` para crear los nuevos datos.
 
 
-:::{figure} /fig/New_GeoPackage_Layer.png
+:::{figure} ../../../fig/New_GeoPackage_Layer.png
 ---
 width: 500px
 name: es_new_gpgk_layer
@@ -153,7 +153,7 @@ La ventana de creación de capas en QGIS 3.36.
 
 
 :::{attention}
-Un concepto importante que hay que entender antes de empezar a añadir datos a los conjuntos de datos es que, siempre que se realicen cambios en un conjunto de datos que no sean de estilo, hay que activar el modo de edición. Para ello, seleccione la capa y haga clic en ![](/fig/mActionToggleEditing.png) `Conmutar edición`. Ahora es posible hacer clic en los botones de muchas funciones de la barra de herramientas de digitalización. Cuando haya terminado de manipular la capa, haga clic en ![](/fig/mActionSaveEdits.png) `Guardar cambios de la capa` para guardar los cambios.
+Un concepto importante que hay que entender antes de empezar a añadir datos a los conjuntos de datos es que, siempre que se realicen cambios en un conjunto de datos que no sean de estilo, hay que activar el modo de edición. Para ello, seleccione la capa y haga clic en ![](../../../fig/mActionToggleEditing.png) `Conmutar edición`. Ahora es posible hacer clic en los botones de muchas funciones de la barra de herramientas de digitalización. Cuando haya terminado de manipular la capa, haga clic en ![](../../../fig/mActionSaveEdits.png) `Guardar cambios de la capa` para guardar los cambios.
 :::
 
 Una vez configurada la nueva capa, puede empezar a añadir entidades geométricas. El proceso para los tres tipos geométricos es básicamente el mismo:
@@ -161,24 +161,24 @@ Una vez configurada la nueva capa, puede empezar a añadir entidades geométrica
 ### Crear nuevas entradas de datos.
 
 1. Seleccione la capa a la que se desea añadir datos en el panel Layer.
-2. Vaya a la barra de herramientas de digitalización y haga clic en ![](/fig/mActionToggleEditing.png) `Conmutar edición`. Asegúrese de que la capa está en modo de edición. Si no es así, haga clic en el icono ![](/fig/mActionToggleEditing.png) de la
+2. Vaya a la barra de herramientas de digitalización y haga clic en ![](../../../fig/mActionToggleEditing.png) `Conmutar edición`. Asegúrese de que la capa está en modo de edición. Si no es así, haga clic en el icono ![](../../../fig/mActionToggleEditing.png) de la
 barra de herramientas de digitalización.
 
 ### Crear datos de punto
 
 1.	Seleccione la capa de puntos a la que desea añadir datos en el panel Layer.
-2.	Vaya a la barra de herramientas de digitalización y haga clic en ![](/fig/mActionToggleEditing.png) `Conmutar edición`. Asegúrese de que la capa está en modo de edición. Si no es así, haga clic en el icono ![](/fig/mActionToggleEditing.png) de la barra de herramientas de digitalización.
-3.	Haga clic en ![](/fig/mActionCapturePoint.png).
+2.	Vaya a la barra de herramientas de digitalización y haga clic en ![](../../../fig/mActionToggleEditing.png) `Conmutar edición`. Asegúrese de que la capa está en modo de edición. Si no es así, haga clic en el icono ![](../../../fig/mActionToggleEditing.png) de la barra de herramientas de digitalización.
+3.	Haga clic en ![](../../../fig/mActionCapturePoint.png).
 4.	Haga clic izquierdo en la entidad que desea digitalizar.
 5.	Al hacer clic, aparecerá una ventana `[Nombre de la capa]- Añadir atributos`. Aquí puede añadir la información sobre esta entidad a las diferentes columnas, sobre la base de la tabla de atributos de la capa.
-5.	Una vez que haya terminado la digitalización, ![](/fig/mActionSaveEdits.png) para guardar los cambios.
-6.	Haga clic de nuevo en ![](/fig/mActionToggleEditing.png) para cerrar el modo de edición.
+5.	Una vez que haya terminado la digitalización, ![](../../../fig/mActionSaveEdits.png) para guardar los cambios.
+6.	Haga clic de nuevo en ![](../../../fig/mActionToggleEditing.png) para cerrar el modo de edición.
 
 :::{dropdown} Video: Cómo crear datos de punto
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_point_feature.mp4"></video>
 :::
 
-:::{figure} /fig/point_creation.png
+:::{figure} ../../../fig/point_creation.png
 ---
 width: 750 px
 name: es_point_creation
@@ -197,7 +197,7 @@ information you can add at this stage-->
 
 A veces la forma más fácil de obtener las coordenadas de un lugar, como la oficina de una sociedad nacional de la Cruz Roja o de la Media Luna Roja o simplemente de una casa, es utilizar Google Maps. En Google Maps, puede hacer clic derecho en cualquier lugar para obtener las coordenadas (en grados).
 
-:::{figure} /fig/en_google_maps_rightclick_coords.png
+:::{figure} ../../../fig/en_google_maps_rightclick_coords.png
 ---
 width: 250 px
 align: right
@@ -222,18 +222,18 @@ Intente digitalizar las oficinas de la Cruz Roja y la Media Luna Roja de su paí
 :::
 
 1. Cree un nuevo conjunto de datos de puntos.
-2. Añada un [mapa base](/content/es/Module_2/es_qgis_basemap.md) (OSM o Bing Aerial, por ejemplo).
+2. Añada un [mapa base](../Module_2/es_qgis_basemap.md) (OSM o Bing Aerial, por ejemplo).
 3. Busque las oficinas de la Cruz Roja y la Media Luna Roja de su país en Google Maps.
 4. Una vez localizadas, haga clic derecho en una de ellas en Google Maps y haga clic en las coordenadas. Las coordenadas se copiarán en el portapapeles
 5. Pegue las coordenadas en la barra de búsqueda ubicada en la parte inferior izquierda de la ventana de QGIS. Seleccione ir a las coordenadas. La ubicación se marcará con un punto rojo.
 
-6. Active el modo de edición ![](/fig/mActionToggleEditing.png) en su nueva capa.
-7. Haga clic en ![](/fig/mActionCapturePoint.png).
+6. Active el modo de edición ![](../../../fig/mActionToggleEditing.png) en su nueva capa.
+7. Haga clic en ![](../../../fig/mActionCapturePoint.png).
 8. Añada la entidad de punto en la ubicación indicada.
 9. Añada el nombre de la oficina.
 10. Haga clic en `Aceptar`.
-11. Haga clic en ![](/fig/mActionSaveEdits.png) para guardar los cambios.
-12. Haga clic en ![](/fig/mActionToggleEditing.png) para salir del modo de edición.
+11. Haga clic en ![](../../../fig/mActionSaveEdits.png) para guardar los cambios.
+12. Haga clic en ![](../../../fig/mActionToggleEditing.png) para salir del modo de edición.
 
 
 
@@ -252,12 +252,12 @@ Recuerde cambiar el tipo de geometría a líneas si desea crear una nueva capa d
 La creación de datos de líneas funciona de la misma manera que la creación de datos de puntos (véase más arriba). En primer lugar, debe crear una nueva capa de líneas o utilizar una ya existente.
 
 1.	Seleccione la capa de línea a la que desea añadir datos en el panel Layer.
-2.	Vaya a la barra de herramientas de digitalización y haga clic en ![](/fig/mActionToggleEditing.png). Ahora, la capa está en modo de edición.
-3.	Haga clic en ![](/fig/mActionCaptureLine.png).
+2.	Vaya a la barra de herramientas de digitalización y haga clic en ![](../../../fig/mActionToggleEditing.png). Ahora, la capa está en modo de edición.
+3.	Haga clic en ![](../../../fig/mActionCaptureLine.png).
 4.	Para digitalizar entidades de línea, haga clic a lo largo de la línea. Cuando haya terminado, haga clic derecho en el último punto de la línea para finalizar la entidad.
 5.	Aparecerá una ventana `[Nombre de capa]- Atributos del objeto espacial`. Aquí puede añadir la información sobre esta entidad a las diferentes columnas, sobre la base de la tabla de atributos de la capa.
-6.	Una vez que haya terminado la digitalización, haga clic en ![](/fig/mActionSaveEdits.png) `Guardar modificaciones de la capa` para guardar los cambios.
-7.	Vuelva a hacer clic en ![](/fig/mActionToggleEditing.png) `Conmutar edición` para salir del modo de edición.
+6.	Una vez que haya terminado la digitalización, haga clic en ![](../../../fig/mActionSaveEdits.png) `Guardar modificaciones de la capa` para guardar los cambios.
+7.	Vuelva a hacer clic en ![](../../../fig/mActionToggleEditing.png) `Conmutar edición` para salir del modo de edición.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_line_feature.mp4"></video>
 
@@ -268,12 +268,12 @@ La creación de datos de líneas funciona de la misma manera que la creación de
 La creación de capas de polígonos funciona del mismo modo que para los datos de puntos y líneas.
 
 1.	Seleccione la capa de polígonos a la que desea añadir datos en el panel Layer.
-2.	Vaya a la barra de herramientas de digitalización y haga clic en ![](/fig/mActionToggleEditing.png). Ahora, la capa está en modo de edición.
-3.	Haga clic en ![](/fig/mActionCapturePolygon.png).
+2.	Vaya a la barra de herramientas de digitalización y haga clic en ![](../../../fig/mActionToggleEditing.png). Ahora, la capa está en modo de edición.
+3.	Haga clic en ![](../../../fig/mActionCapturePolygon.png).
 4.	Para digitalizar entidades poligonales, haga clic izquierdo alrededor del área que desea digitalizar. Cuando haya terminado, haga clic derecho en el último punto del área para finalizar la entidad.
 5.	Aparecerá una ventana `[Nombre de la capa] - Atributos del objeto espacial`. Aquí puede añadir la información sobre esta entidad a las diferentes columnas, sobre la base de la tabla de atributos de la capa.
-6.	Una vez que haya terminado la digitalización, ![](/fig/mActionSaveEdits.png) para guardar los cambios.
-7.	Vuelva a hacer clic en ![](/fig/mActionToggleEditing.png) `Toggle Editing` para salir del modo de edición.
+6.	Una vez que haya terminado la digitalización, ![](../../../fig/mActionSaveEdits.png) para guardar los cambios.
+7.	Vuelva a hacer clic en ![](../../../fig/mActionToggleEditing.png) `Toggle Editing` para salir del modo de edición.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_add_feature.mp4"></video>
 
@@ -299,13 +299,13 @@ En algunos casos, es posible que desee modificar o corregir datos vectoriales de
 Para todos los casos:
 
 1. Seleccione la capa que desea editar.
-2. Haga clic en ![](/fig/mActionToggleEditing.png) para activar el modo de edición.
+2. Haga clic en ![](../../../fig/mActionToggleEditing.png) para activar el modo de edición.
 3. Haga los cambios.
-4. Guarde los cambios haciendo clic en ![](/fig/mActionSaveEdits.png).
-5. Haga clic de nuevo en ![](/fig/mActionToggleEditing.png) para cerrar el modo de edición.
+4. Guarde los cambios haciendo clic en ![](../../../fig/mActionSaveEdits.png).
+5. Haga clic de nuevo en ![](../../../fig/mActionToggleEditing.png) para cerrar el modo de edición.
 
 :::{Tip}
-Puede utilizar los botones ![](/fig/mActionUndo.png) y ![](/fig/mActionRedo.png) para deshacer los cambios fácilmente.
+Puede utilizar los botones ![](../../../fig/mActionUndo.png) y ![](../../../fig/mActionRedo.png) para deshacer los cambios fácilmente.
 
 Tenga en cuenta que esto solo es posible __antes__ de guardar los cambios.
 :::
@@ -315,14 +315,14 @@ Tenga en cuenta que esto solo es posible __antes__ de guardar los cambios.
 ::::{tab-item} Eliminar entidades
 
 1.	Seleccione la capa que desea modificar.
-2.	Vaya a la barra de herramientas de digitalización y haga clic en ![](/fig/mActionToggleEditing.png) `Conmutar Edición`.
-3.	Haga clic en ![](/fig/mActionSelectRectangle.png) y seleccione la entidad que desea eliminar (consulte la [wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_queries_wiki.html#seleccion-manual)).
-4.	Una vez seleccionadas las entidades, haga clic en ![](/fig/mActionDeleteSelectedFeatures.png) para eliminarlas.
-5.	Una vez que haya terminado de editar, haga clic en ![](/fig/mActionSaveEdits.png) para guardar los cambios.
-6.	Haga clic de nuevo en ![](/fig/mActionToggleEditing.png) para cerrar el modo de edición.
+2.	Vaya a la barra de herramientas de digitalización y haga clic en ![](../../../fig/mActionToggleEditing.png) `Conmutar Edición`.
+3.	Haga clic en ![](../../../fig/mActionSelectRectangle.png) y seleccione la entidad que desea eliminar (consulte la [wiki](../Wiki/es_qgis_spatial_queries_wiki.md)).
+4.	Una vez seleccionadas las entidades, haga clic en ![](../../../fig/mActionDeleteSelectedFeatures.png) para eliminarlas.
+5.	Una vez que haya terminado de editar, haga clic en ![](../../../fig/mActionSaveEdits.png) para guardar los cambios.
+6.	Haga clic de nuevo en ![](../../../fig/mActionToggleEditing.png) para cerrar el modo de edición.
 
 :::{note}
-Tenga en cuenta que una vez que guarde los cambios ![](/fig/mActionSaveEdits.png), ya no podrá deshacer o recuperar las entidades eliminadas. Los cambios modifican permanentemente el archivo de datos de su carpeta.
+Tenga en cuenta que una vez que guarde los cambios ![](../../../fig/mActionSaveEdits.png), ya no podrá deshacer o recuperar las entidades eliminadas. Los cambios modifican permanentemente el archivo de datos de su carpeta.
 :::
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/delet_feature_geometry.mp4"></video>
 
@@ -333,10 +333,10 @@ Tenga en cuenta que una vez que guarde los cambios ![](/fig/mActionSaveEdits.png
 Existen múltiples métodos para mover entidades. Aquí mostraremos el método que funciona de la misma manera para entidades de punto, línea y polígono. Para esto se necesita la caja de herramientas de digitalización avanzada.
 
 1.	Seleccione la capa de línea a la que desea añadir datos en el panel Layer.
-2.	Vaya a la barra de herramientas de digitalización y haga clic en ![](/fig/mActionToggleEditing.png).
-3.	Haga clic en ![](/fig/mActionMoveFeaturePoint.png) y en la entidad que desea mover. A continuación, haga clic en la ubicación a la que desea desplazar la entidad.
-4.	Una vez que haya terminado de editar, haga clic en ![](/fig/mActionSaveEdits.png) para guardar los cambios.
-5.	Vuelva a hacer clic en ![](/fig/mActionToggleEditing.png) para cerrar el modo de edición.
+2.	Vaya a la barra de herramientas de digitalización y haga clic en ![](../../../fig/mActionToggleEditing.png).
+3.	Haga clic en ![](../../../fig/mActionMoveFeaturePoint.png) y en la entidad que desea mover. A continuación, haga clic en la ubicación a la que desea desplazar la entidad.
+4.	Una vez que haya terminado de editar, haga clic en ![](../../../fig/mActionSaveEdits.png) para guardar los cambios.
+5.	Vuelva a hacer clic en ![](../../../fig/mActionToggleEditing.png) para cerrar el modo de edición.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/move_feature_geometry.mp4"></video>
 
@@ -345,11 +345,11 @@ Existen múltiples métodos para mover entidades. Aquí mostraremos el método q
 ::::{tab-item} Modificar geometrías
 
 1.	Seleccione la capa de línea a la que desea añadir datos en el panel Layer.
-2.	Vaya a la barra de herramientas de digitalización y haga clic en ![](/fig/mActionToggleEditing.png).
-3.	Haga clic en ![](/fig/mActionVertexToolActiveLayer.png).
+2.	Vaya a la barra de herramientas de digitalización y haga clic en ![](../../../fig/mActionToggleEditing.png).
+3.	Haga clic en ![](../../../fig/mActionVertexToolActiveLayer.png).
 4.	Ahora puede mover cada vértice (esquina) de una entidad. Haga clic en el vértice/esquina que desea mover y, a continuación, haga clic en la ubicación a la que desea mover el vértice.
-5.	Una vez que haya terminado de editar, haga clic en ![](/fig/mActionSaveEdits.png) para guardar los cambios.
-6.	Vuelva a hacer clic en ![](/fig/mActionToggleEditing.png) para cerrar el modo de edición.
+5.	Una vez que haya terminado de editar, haga clic en ![](../../../fig/mActionSaveEdits.png) para guardar los cambios.
+6.	Vuelva a hacer clic en ![](../../../fig/mActionToggleEditing.png) para cerrar el modo de edición.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_move_vertices.mp4"></video>
 
@@ -360,11 +360,11 @@ Existen múltiples métodos para mover entidades. Aquí mostraremos el método q
 Un anillo en QGIS es una parte dentro de un polígono que no forma parte del polígono. Imagine un polígono que representa un lago. El anillo es una isla en el lago. Para comprenderlo mejor, vea el video más abajo.
 
 1.	Seleccione la capa de línea a la que desea añadir datos en el panel Layer.
-2.	Vaya a la barra de herramientas de digitalización y haga clic en ![](/fig/mActionToggleEditing.png).
-3.	Haga clic en ![añadir icono de anillo](/fig/mActionAddRing.png).
+2.	Vaya a la barra de herramientas de digitalización y haga clic en ![](../../../fig/mActionToggleEditing.png).
+3.	Haga clic en ![añadir icono de anillo](../../../fig/mActionAddRing.png).
 4.	Cree un anillo haciendo clic en el área que desea excluir. Haga clic derecho para cerrar el anillo.
-5.	Una vez que haya terminado de editar, haga clic en ![](/fig/mActionSaveEdits.png) para guardar los cambios.
-6.	Vuelva a hacer clic en ![](/fig/mActionToggleEditing.png) para cerrar el modo de edición.
+5.	Una vez que haya terminado de editar, haga clic en ![](../../../fig/mActionSaveEdits.png) para guardar los cambios.
+6.	Vuelva a hacer clic en ![](../../../fig/mActionToggleEditing.png) para cerrar el modo de edición.
 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_add_ring.mp4"></video>
@@ -384,12 +384,12 @@ Puede abrir la tabla de atributos de la capa seleccionada pulsando <kbd>F6</kbd>
 :::
 ::::
 
-1. Abra la tabla de [atributos](/content/es/Module_2/es_qgis_attribute_table.md)
-2. Haga clic en ![](/fig/mActionToggleEditing.png) para activar el modo de edición.
+1. Abra la tabla de [atributos](../Module_2/es_qgis_attribute_table.md)
+2. Haga clic en ![](../../../fig/mActionToggleEditing.png) para activar el modo de edición.
 3. Seleccione el campo que desea editar.
 4. Introduzca el valor corregido.
-5. Haga clic en ![](/fig/mActionSaveEdits.png) para guardar los cambios.
-6. Vuelva a hacer clic en ![](/fig/mActionToggleEditing.png) para salir del modo de edición.
+5. Haga clic en ![](../../../fig/mActionSaveEdits.png) para guardar los cambios.
+6. Vuelva a hacer clic en ![](../../../fig/mActionToggleEditing.png) para salir del modo de edición.
 
 Este proceso se denomina __“Limpieza de datos”__ y es importante cuando se realizan análisis de datos o se manipulan datos de cualquier forma. Al recopilar o digitalizar datos, es fácil cometer pequeños errores, como un valor erróneo, un tipo de valor equivocado o una falta de ortografía. Por lo tanto, al realizar los análisis, es importante revisar la tabla de atributos en busca de incoherencias o errores. Si estos errores no se limpian, los resultados serán incorrectos y se podrían sacar conclusiones erróneas.
 
@@ -400,7 +400,7 @@ __Escenario real 3/3__
 
 Con las nuevas capas, ya tiene todo listo para trazar los edificios y las carreteras en las nuevas capas. Ya tiene algunos conocimientos sobre el estado de las carreteras (p. ej., la superficie de la carretera, la calidad y si está inundada) y el estado de las casas (p. ej., si fueron afectadas por la inundación, si tienen varios pisos, etc.). Se trata de información útil que puede almacenarse en los atributos adicionales de la tabla de datos.
 
-:::{figure} /fig/Building_damage_assessement_bangladesh.png
+:::{figure} ../../../fig/Building_damage_assessement_bangladesh.png
 ---
 name: Building_damage_assessement
 width: 750 px
@@ -414,7 +414,7 @@ Evaluación de daños en edificios de Paikgachha Upazila, distrito de Khulna, di
 
 La precisión de los datos geoespaciales es crucial para el análisis espacial. Los errores de posición son inevitables cuando los datos se digitalizan manualmente. Los ejemplos más comunes son el subajuste y el sobreajuste. Cuando las coordenadas no se conectan como deberían, y sobreajuste, cuando las líneas se pasan de donde deberían. A menudo, estos errores no son visibles a menos que se acerque el zoom sobre esas coordenadas. Establecer una tolerancia difusa (tolerancia de ajuste) sirve para reducir los subajustes y los sobreajustes. La tolerancia de ajuste es la distancia mínima tolerada entre nodos, líneas y vértices.
 
-:::{figure} /fig/Digitization_Errors.PNG
+:::{figure} ../../../fig/Digitization_Errors.PNG
 ---
 width: 500px
 align: center

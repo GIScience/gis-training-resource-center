@@ -1,6 +1,6 @@
 # Cómo enseñar SIG
 
-__🔙[Volver a la página principal](/content/intro.md)__
+__🔙[Volver a la página principal](../es_intro.md)__
 
 Aprender SIG puede ser un desafío, especialmente para personas que son nuevas en el tema o tienen experiencia limitada con tecnología más allá de sistemas de oficina estándar. El concepto de geodatos y todo lo que implica está bastante alejado de las actividades diarias de muchas personas en el sector humanitario. Sin embargo, comprender estos conceptos es esencial para trabajar eficazmente con SIG y resolver problemas. Dicho esto, a menudo no hay suficiente tiempo para profundizar en temas como proyecciones o algoritmos. Y aprendemos más a través de la capacitación práctica que de conferencias teóricas sobre SIG.
 
@@ -73,7 +73,7 @@ Los ejercicios en grupo dependen más del trabajo independiente de las personas 
 Independientemente del tipo de ejercicio, se deben repasar brevemente los siguientes puntos con las personas participantes al comienzo del ejercicio:
 
 1. __Objetivo del ejercicio:__ Generalmente, un ejercicio práctico debe comenzar explicando el objetivo del mismo. Por ejemplo: _“Este ejercicio tiene como objetivo enseñar el proceso de procesamiento básico de datos espaciales utilizando las herramientas Clip, Merge y Dissolve”_. Es una buena oportunidad para destacar la utilidad práctica de las herramientas que aprenderán, aumentando la motivación.
-2. __Contexto:__ Idealmente, el ejercicio está basado en un ejemplo real o un escenario ficticio dentro del trabajo humanitario. Debes explicar rápidamente el contexto y la historia. Un ejemplo es el ejercicio del módulo 3 ([Ejercicio 4: Inundaciones en Nigeria](https://giscience.github.io/gis-training-resource-center/content/Module_3/es_qgis_module_3_ex4.html)).
+2. __Contexto:__ Idealmente, el ejercicio está basado en un ejemplo real o un escenario ficticio dentro del trabajo humanitario. Debes explicar rápidamente el contexto y la historia. Un ejemplo es el ejercicio del módulo 3 ([Ejercicio 4: Inundaciones en Nigeria](../Module_3/es_qgis_module_3_ex4.md)).
 3. __Datos del ejercicio:__ La mayoría de los ejercicios prácticos usan datos reales (por ejemplo, de [HDX](https://data.humdata.org)). Cada conjunto de datos debe explicarse brevemente. Esta información está disponible en cada ejercicio en la plataforma. Asegúrate de que todos hayan descargado los datos antes de comenzar. Algunos participantes no están familiarizados con archivos `zip`. Asegúrate de que descompriman las carpetas antes de importarlas en QGIS y dedica tiempo a resolver otros problemas relacionados con los datos del ejercicio.
 
 ### Durante el ejercicio: Paso a paso
@@ -118,7 +118,7 @@ Incorporar discusión y trabajo en grupo crea entornos dinámicos donde los part
 
 En el mundo acelerado de la ayuda humanitaria, el tiempo es un recurso valioso y asistir a quienes lo necesitan es prioritario. La motivación de los participantes depende de ver el valor que SIG aporta a su trabajo diario. Por ello, siempre se deben usar ejemplos, datos y ejercicios de la vida real. Los ejercicios abstractos son menos efectivos porque los participantes no comprenden la relevancia de los métodos y flujos de trabajo.
 
-La plataforma refleja esto. La sección principal sobre este tema es "[Módulo 1: Ejemplos de SIG utilizados por organizaciones humanitarias](https://giscience.github.io/gis-training-resource-center/content/Module_1/es_qgis_theory.html#examples-of-gis-used-by-humanitarian-organisations)".
+La plataforma refleja esto. La sección principal sobre este tema es "[Módulo 1: Ejemplos de SIG utilizados por organizaciones humanitarias](../../en/Module_1/en_qgis_theory.md#examples-of-gis-used-by-humanitarian-organisations)".
 
 Casi todos los ejercicios se orientan a métodos, flujos de trabajo o productos estándar en el sector humanitario, como mapas generales o mapas de regiones afectadas.
 
@@ -154,7 +154,7 @@ Como usuario experimentado de SIG, puedes evitar estos errores automáticamente,
 
 Para abordar estos problemas:
 
-* __Wiki:__ Indica la [lista de problemas y soluciones comunes](/content/Wiki/es_qgis_common_errors_and_Issues.md) disponible en la plataforma.  
+* __Wiki:__ Indica la [lista de problemas y soluciones comunes](../Wiki/es_qgis_common_errors_and_Issues.md) disponible en la plataforma.  
 * __Google y ChatGPT:__ Anima a usar recursos en línea como Google y ChatGPT para fortalecer la autonomía.  
 * __Proactividad:__ Señala posibles problemas durante los ejercicios y ofrece orientación paso a paso.  
 * __Aprendizaje colaborativo:__ Fomenta un entorno donde los participantes compartan experiencias y soluciones.  

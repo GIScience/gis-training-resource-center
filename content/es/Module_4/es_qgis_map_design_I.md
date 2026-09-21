@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -25,7 +25,7 @@ viales, terreno, hidrografía). Muestran la ubicación física de los objetos en
 los elementos en los mapas topográficos se realiza mediante signos convencionales (por ejemplo, azul para el agua, verde para los bosques, amarillo para
 las tierras agrícolas).
 
-:::{figure} /fig/en_30.30.2_topographic_map_examples.png
+:::{figure} ../../../fig/en_30.30.2_topographic_map_examples.png
 ---
 width: 600px
 name: es_30.30.2_topographic_map_examples
@@ -38,7 +38,7 @@ la población, la incidencia de enfermedades, el riesgo de inundaciones, etc. L
 las reglas de la semiología gráfica.
 
 
-:::{figure} /fig/en_30.30.2_thematic_maps_examples.png
+:::{figure} ../../../fig/en_30.30.2_thematic_maps_examples.png
 ---
 width: 600px
 name: es_30.30.2_thematic_maps_examples
@@ -54,7 +54,7 @@ información que se desea transmitir.
 
 ## Variables visuales
 
-:::{figure} /fig/en_30.30.2_graphic_semiology_signs.png
+:::{figure} ../../../fig/en_30.30.2_graphic_semiology_signs.png
 ---
 width: 500px
 name: es_30.30.2_graphic_semiology_signs
@@ -67,7 +67,7 @@ el tamaño, el tono, el valor, la textura y la orientación__. Estas variables p
 a su disposición. Permiten expresar la __relación de diferencia, orden, asociación o cantidad__
 entre cada elemento, lo que ayuda a mostrar información diferente.
 
-:::{figure} /fig/en_visual_variables.png
+:::{figure} ../../../fig/en_visual_variables.png
 ---
 name: es_visual_variables
 width: 500px
@@ -92,7 +92,7 @@ el mapa ciclista, mostrar las rutas ciclistas más seguras, las estaciones de re
 :::::{grid} 2
 ::::{grid-item}
 
-:::{figure} /fig/m4_OSM_Overviewmap_example.png
+:::{figure} ../../../fig/m4_OSM_Overviewmap_example.png
 ---
 name: es_m4_OSM_Overviewmap_example
 width: 375 px
@@ -104,7 +104,7 @@ Norma de [OSM](https://www.openstreetmap.org)
 
 ::::{grid-item}
 
-:::{figure} /fig/m4_OSM_bikemap.png
+:::{figure} ../../../fig/m4_OSM_bikemap.png
 ---
 name: es_m4_OSM_bikemap
 width: 375 px
@@ -130,7 +130,7 @@ También puede utilizar mapas que haya encontrado en su trabajo o en su vida cot
 
 ::::{dropdown} __Ejemplo de mapa 1__
 
-:::{figure} /fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
+:::{figure} ../../../fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
 ---
 name: es_ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4
 width: 750 px
@@ -142,7 +142,7 @@ Zonas y carreteras afectadas por las inundaciones en la región de somalí de E
 
 ::::{dropdown} __Ejemplo de mapa 2__
 
-:::{figure} /fig/proportional_circles_example.png
+:::{figure} ../../../fig/proportional_circles_example.png
 ---
 name: es_proportional_circles_example
 width: 500 px
@@ -154,7 +154,7 @@ Desplazados internos, 30 de septiembre de 2024 (fuente: [ACNUR](https://relief
 
 ::::{dropdown} __Ejemplo de mapa 3__
 
-:::{figure} /fig/choropleth_hum_example.png
+:::{figure} ../../../fig/choropleth_hum_example.png
 ---
 name: es_choropleth_hum_example
 width: 700 px
@@ -167,7 +167,7 @@ Sudán del Sur: Seguimiento de la situación humanitaria, abril-mayo de 2024. R
 
 ::::{dropdown} __Ejemplo de mapa 4__
 
-:::{figure} /fig/en_m4_operational_overview_example.png
+:::{figure} ../../../fig/en_m4_operational_overview_example.png
 ---
 name: es_m4_operational_overview_example
 width: 650 px
@@ -193,7 +193,7 @@ densidades más bajas.
 distintas ubicaciones. Cuanto más grande es el círculo, mayor es el valor de los datos que representa. Esto hace que sea útil para mostrar cantidades o comparar valores en diferentes
 puntos de un mapa.
 - En los mapas coropléticos, los colores o tonos representan valores diferentes para cada zona. Normalmente, el color más oscuro o intenso significa valores más altos. La eficacia de un mapa coroplético depende del __esquema de colores__.
-- Los mapas coropléticos suelen crearse [clasificando](/content/es/Module_3/es_qgis_data_classification.md) los datos geográficos en
+- Los mapas coropléticos suelen crearse [clasificando](../Module_3/es_qgis_data_classification.md) los datos geográficos en
 grupos distintos, ya sea mediante una clasificación categorizada o graduada.
 - Los mapas con símbolos graduados se crean cambiando el tamaño de un símbolo en relación con un valor de la tabla de atributos.
 
@@ -201,7 +201,7 @@ Los mapas coropléticos y los mapas con símbolos graduados son ideales para mos
 exactos dentro de cada región, si no solo un gradiente general o nivel de intensidad, y se utilizan en casi todas las aplicaciones
 de cartografía y SIG.
 
-:::{figure} /fig/choropleth_intro_example.png
+:::{figure} ../../../fig/choropleth_intro_example.png
 ---
 name: es_choropleth_intro_example
 width: 600 px
@@ -290,7 +290,7 @@ datos numéricos o datos que pueden ordenarse. Por ejemplo, para el tamaño de 
 de colores secuencial para mostrar la diferencia relativa entre los valores. Sin embargo, si los datos tienen valores positivo __y__ negativo
 debe utilizarse un gradiente de color divergente.
 
-:::{figure} /fig/en_colour_gradients_qualities.png
+:::{figure} ../../../fig/en_colour_gradients_qualities.png
 ---
 name: es_colour_gradients_qualities
 width: 750px
@@ -303,7 +303,7 @@ la gradación se distingue fácilmente y se traduce bien en blanco y negro. En l
 buenas combinaciones de colores, ya que es difícil distinguir la gradación y no se traducen bien al negro y al
 blanco. Puede conseguir una secuencia clara graduando la __saturación__ del gradiente de color.
 
-:::{figure} /fig/de_colour_gradients_saturation.png
+:::{figure} ../../../fig/de_colour_gradients_saturation.png
 ---
 name: es_colour_gradients_saturation
 width: 750px
@@ -316,7 +316,7 @@ Society. 96. 140710055335002. 10.1175/BAMS-D-13-00155.1.)
 
 Los gradientes de color también pueden abarcar múltiples tonos:
 
-:::{figure} /fig/colour_gradients_hues.png
+:::{figure} ../../../fig/colour_gradients_hues.png
 ---
 name: es_colour_gradients_hues
 width: 750px
@@ -333,7 +333,7 @@ generar paletas de colores para su caso práctico.
 
 Al elegir los colores, hay que tener en cuenta que los gradientes de color (especialmente los degradados divergentes de rojo a verde) pueden ser difíciles o imposibles de distinguir para las personas daltónicas.
 
-:::{figure} /fig/Colour_Blindness.png
+:::{figure} ../../../fig/Colour_Blindness.png
 ---
 name: es_Colour_Blindness
 width: 750px
@@ -347,7 +347,7 @@ Los distintos métodos de simbolización analizados en este capítulo pueden com
 
 __Mapa complejo 1:__
 
-:::{figure} /fig/en_complex_map_lebanon.png
+:::{figure} ../../../fig/en_complex_map_lebanon.png
 ---
 name: es_complex_map_lebanon
 width: 550 px
@@ -357,7 +357,7 @@ Mapa complejo con colores graduados y círculos proporcionales (fuente: [REACH](
 
 __Mapa complejo 2:__
 
-:::{figure} /fig/en_complex_bivariate_map.png
+:::{figure} ../../../fig/en_complex_bivariate_map.png
 ---
 name: es_complex_bivariate_map
 width: 550 px
@@ -367,7 +367,7 @@ Un mapa complejo que combina el estilo de las capas y distintas variables visual
 
 __Mapa complejo 3:__
 
-:::{figure} /fig/en_complex_map_example_yemen.png
+:::{figure} ../../../fig/en_complex_map_example_yemen.png
 ---
 name: es_complex_map_example_yemen
 width: 550 px
@@ -381,7 +381,7 @@ Un mapa complejo que utiliza colores graduados para indicar la profundidad de la
 :::
 
 
-Ahora que hemos aprendido las diferentes variables visuales, y sabemos cómo utilizarlas para crear mapas complejos, el siguiente capítulo [Simbología para datos vectoriales](/content/es/Module_4/es_qgis_styling_vector_data.md) explicará cómo configurar diferentes métodos de simbolización y estilo en QGIS.
+Ahora que hemos aprendido las diferentes variables visuales, y sabemos cómo utilizarlas para crear mapas complejos, el siguiente capítulo [Simbología para datos vectoriales](es_qgis_styling_vector_data.md) explicará cómo configurar diferentes métodos de simbolización y estilo en QGIS.
 
 ## Preguntas de autoevaluación
 

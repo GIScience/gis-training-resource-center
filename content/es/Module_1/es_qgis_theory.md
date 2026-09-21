@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -19,7 +19,7 @@ componente espacial (_datos geoespaciales_). El SIG tiene tres funciones básica
 
 :::
 
-:::{figure} /fig/GIS_Core_functunality.drawio.svg
+:::{figure} ../../../fig/GIS_Core_functunality.drawio.svg
 ---
 height: 500px
 name: es_GIS_Core_functunality
@@ -39,7 +39,7 @@ Un SIG es una herramienta digital que integra datos con mapas. Permite la recopi
 Un SIG es más que un software. Es un sistema e incluye
 múltiples elementos:
 
-:::{figure} /fig/GIS_definition_icons.drawio.svg
+:::{figure} ../../../fig/GIS_definition_icons.drawio.svg
 ---
 height: 200px
 name: es_GIS_definition_icons
@@ -81,7 +81,7 @@ El Comité Internacional de la Cruz Roja (CICR) cuenta con una Unidad de Apoyo e
 
 La Iniciativa REACH es una ONG de recopilación y análisis de datos humanitarios, que tiene una sólida especialización en los SIG. El [Centro de recursos de REACH](https://www.impact-initiatives.org/resource-centre/) es donde la organización publica contenido, que incluye [mapas independientes](https://www.impact-initiatives.org/resource-centre/?category[]=information_products&category[]=data_methods&type[]=281&order=latest&limit=10) e [informes](https://www.impact-initiatives.org/resource-centre/?category[]=information_products&category[]=data_methods&order=latest&limit=10) que también suelen incluir mapas y análisis espaciales.
 
-:::{figure} /fig/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_FEB2024_EN_A4-1.png
+:::{figure} ../../../fig/REACH_UKR_Map_CSM_SituationOverview_ActiveSites_FEB2024_EN_A4-1.png
 ---
 height: 500px
 name: es_REACH_UKR_Map_CSM_SituationOverview_ActiveSites_FEB2024_EN_A4
@@ -125,7 +125,7 @@ El PMA también crea tableros para la promoción, como HungerMap Live:
 
 iMAAP es una ONG de gestión de la información que brinda apoyo a la Organización de las Naciones Unidas (ONU) y a organizaciones internacionales sin fines de lucro. Su [cartera de productos](https://immap.org/products/) incluye ejemplos de mapas utilizados en descripciones generales de situaciones, tableros interactivos y análisis específicos del sector.
 
-:::{figure} /fig/Afghanistan-Earthquake-Events-Overview-February-2024_page-0001-scaled.jpg
+:::{figure} ../../../fig/Afghanistan-Earthquake-Events-Overview-February-2024_page-0001-scaled.jpg
 ---
 height: 500px
 name: es_Afghanistan-Earthquake-Events-Overview-February-2024_page-0001-scaled
@@ -140,7 +140,7 @@ Mapa de ejemplo: Descripción general de los eventos sísmicos en Afganistán, f
 
 MapAction produce mapas y datos geoespaciales que apoyan la toma de decisiones en la respuesta a emergencias. Su página de [mapas y datos](https://maps.mapaction.org/) muestran los productos recientes que han publicado y su [catálogo de productos](https://guides.mapaction.org/). Ofrece una visión general de los tipos de servicios que prestan.
 
-:::{figure} /fig/cluster-camp-coordination.jpg
+:::{figure} ../../../fig/cluster-camp-coordination.jpg
 ---
 height: 500px
 name: es_cluster-camp-coordination
@@ -183,7 +183,7 @@ __El mapa del brote de cólera de 1854 del Dr. Snow__ ({numref}`John_snow_zoom_m
 
 Esta versión interactiva del mapa del cólera, lo muestra superpuesto con un mapa base del Londres moderno.
 
-:::{figure} /fig/John_snow_zoom_map2.png
+:::{figure} ../../../fig/John_snow_zoom_map2.png
 ---
 height: 600px
 name: es_John_snow_zoom_map2
@@ -218,7 +218,7 @@ El sector humanitario tiende a utilizar ciertos tipos de mapas con regularidad. 
 -  Su __estilo__ puede adaptarse al público al que van dirigidos
 
 
-:::{figure} /fig/general_ref_map_nigeria_ogun.png
+:::{figure} ../../../fig/general_ref_map_nigeria_ogun.png
 ---
 height: 600px
 name: es_general_ref_map_nigeria_ogun
@@ -236,7 +236,7 @@ Los mapas de infraestructura en el contexto humanitario proporcionan representac
  - Alto nivel de __detalle__
  - Producidos después de la __recopilación de datos__ en el campo
 
-:::{figure} /fig/en_Infrastructure_Map_Nigeria.png
+:::{figure} ../../../fig/en_Infrastructure_Map_Nigeria.png
 ---
 height: 600px
 name: es_Infrastructure_Map_Nigeria
@@ -255,7 +255,7 @@ Los mapas temáticos muestran temas o asuntos específicos, como la densidad de 
 - Usan __colores y formas__ para mostrar los datos cuantitativos y cualitativos
 - Crear __conciencia__ sobre un tema específico
 
-:::{figure} /fig/en_thematic_map_example_IFRC.png
+:::{figure} ../../../fig/en_thematic_map_example_IFRC.png
 ---
 height: 600px
 name: es_thematic_map_example_IFRC
@@ -274,7 +274,7 @@ Los mapas de análisis se utilizan para examinar e interpretar datos, lo que rev
 - __Apoyan__ a los responsables de la toma de decisiones
 - Generalmente, muestran un mayor __nivel de detalle__
 
-:::{figure} /fig/en_Analysis_Map_Yemen.png
+:::{figure} ../../../fig/en_Analysis_Map_Yemen.png
 ---
 height: 600px
 name: es_Analysis_Map_Yemen
@@ -291,7 +291,7 @@ Los mapas descriptivos o de situación proporcionan un panorama de las condicion
 - Los mapas pueden incluir elementos __narrativos__ y gráficos
 - Se pueden utilizar en informes y/o para __crear conciencia__ sobre un evento específico
 
-:::{figure} /fig/en_Pop_Syrian_Refugees_2023.png
+:::{figure} ../../../fig/en_Pop_Syrian_Refugees_2023.png
 ---
 width: 600px
 name: es_Pop_Syrian_Refugees_2023

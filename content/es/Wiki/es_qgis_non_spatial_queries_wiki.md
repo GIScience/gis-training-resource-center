@@ -1,7 +1,7 @@
 # Consultas no espaciales
 
 
-__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
 ## Selección manual
 
@@ -19,11 +19,11 @@ La herramienta `Seleccionar por expresión` le permite crear una expresión para
 
 1. Abra la tabla de atributos y seleccione la herramienta `Seleccionar por expresión`.
 
-![](/fig/en_select_features_expression.png)
+![](../../../fig/en_select_features_expression.png)
 
 2. Se abrirá el generador de expresiones.
 
-![](/fig/en_query_builder.PNG)
+![](../../../fig/en_query_builder.PNG)
 
 
 

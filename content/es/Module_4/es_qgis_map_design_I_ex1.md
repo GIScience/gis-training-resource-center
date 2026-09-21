@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -54,9 +54,9 @@ __Duración estimada del ejercicio__
 __Artículos relevantes__
 ^^^
 
-- [Visualización](/content/es/Wiki/es_qgis_visualisation_wiki.md)
-- [Módulo 4: Visualización de datos geoespaciales](/content/es/Module_4/es_qgis_map_design_I.md)
-- [Módulo 4: Diseño de mapas: El diseño de impresión](/content/es/Module_4/es_qgis_map_design_2.md)
+- [Visualización](../Wiki/es_qgis_visualisation_wiki.md)
+- [Módulo 4: Visualización de datos geoespaciales](es_qgis_map_design_I.md)
+- [Módulo 4: Diseño de mapas: El diseño de impresión](es_qgis_map_design_2.md)
 :::
 
 ::::
@@ -70,7 +70,7 @@ __Artículos relevantes__
 - Tómese el tiempo necesario para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare una pizarra. Puede ser un pizarrón físico, un rotafolio o un pizarrón digital (p. ej., un pizarrón en Miro) donde los participantes puedan añadir sus resultados y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos hayan instalado QGIS y hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo hacer capacitaciones?](/content/es/Trainers_corner/es_how_to_training.md#how-to-do-trainings) para obtener consejos generales sobre cómo impartirlas.
+- Consulte [¿Cómo hacer capacitaciones?](../Trainers_corner/es_how_to_training.md) para obtener consejos generales sobre cómo impartirlas.
 
 ### Impartir la capacitación
 
@@ -177,7 +177,7 @@ Ahora, como toque final, seleccionemos un símbolo para las instalaciones sanita
 
 Hemos asignado un símbolo para cada capa a nuestra disposición. Observe el mapa que ha creado y decida si quiere ajustar alguna simbología para que el mapa sea más fácil de leer. ¿Necesita cambiar algunos colores? ¿Están las capas ordenadas de forma que la información sea visible? ¿El tamaño de letra es adecuado o tapa demasiada información?
 
-__Paso adicional__: [Añadir un mapa base](/content/es/Wiki/es_qgis_basemaps_wiki.md) puede ayudar a los lectores potenciales a orientarse.
+__Paso adicional__: [Añadir un mapa base](../Wiki/es_qgis_basemaps_wiki.md) puede ayudar a los lectores potenciales a orientarse.
 
 Ahora el mapa debería estar listo para un diseño de impresión.
 
@@ -188,26 +188,26 @@ Una vez que esté satisfecho con la simbología y los colores de sus datos, el s
 1. Abra una nueva composición de impresión (`Proyecto` → `Nueva composición de impresión`) y asígnele un nombre (por ejemplo, Mapa de Ghana con hospitales). Se abrirá una nueva ventana con un lienzo en blanco y un conjunto diferente de herramientas. Este es el maquetador de impresión.
     - A la izquierda, encontrará una barra de herramientas para añadir y mover elementos en el lienzo de diseño de impresión.
     - A la derecha encontrará una lista de los elementos que agregó al diseño de impresión (aún está vacía). Debajo encontrará una pestaña llamada __"Propriedades de elemento"__. Aquí se modifican los elementos del diseño de impresión (por ejemplo, se puede introducir el texto de un cuadro de texto o cambiar el tipo de letra).
-2. Agregue un nuevo mapa haciendo clic en el ![icono New Map](/fig/30.30.2_print_layout_insert_map_icon.png) (`Añadir Mapa`) de la barra de herramientas de la izquierda y dibuje un rectángulo en el lienzo de impresión. [Video](/content/es/Module_4/es_qgis_map_design_2.md#adding-a-new-map)
+2. Agregue un nuevo mapa haciendo clic en el ![icono New Map](../../../fig/30.30.2_print_layout_insert_map_icon.png) (`Añadir Mapa`) de la barra de herramientas de la izquierda y dibuje un rectángulo en el lienzo de impresión. [Video](es_qgis_map_design_2.md)
 3. Mueva el mapa y colóquelo de manera que todo el país sea visible a una escala razonable.
 4. Añadamos un título:
-    - Haga clic en el ![icono Add text](/fig/30.30.2_print_layout_add_text.png) (`Añadir Etiqueta`)
+    - Haga clic en el ![icono Add text](../../../fig/30.30.2_print_layout_add_text.png) (`Añadir Etiqueta`)
     - Arrastre un rectángulo sobre el lienzo.
     - En la ventana de __propiedades del elemento__, a la derecha, encontrará un cuadro de texto con el texto “Lorem ipsum”. Aquí puede introducir el título del mapa (por ejemplo, Mapa de Ghana con carreteras y hospitales).
     - Ajuste el tamaño de fuente: Haga clic en el menú desplegable __Tipo de letra__ y ajuste el tamaño de la fuente para un título (25 pts. o más). Ajuste el cuadro de texto si es necesario.
 5. Añadamos una leyenda:
-    - Haga clic en el ![icono Add legend](/fig/30.30.2_print_layout_add_legend.png) (`Añadir Leyenda`).
+    - Haga clic en el ![icono Add legend](../../../fig/30.30.2_print_layout_add_legend.png) (`Añadir Leyenda`).
     - Vaya al panel __propriedades del elemento__ situado a la derecha.
     - Desplácese un poco hacia abajo y desactive la casilla de verificación `Auto actualizar`. Ahora puede editar libremente cada elemento de la leyenda.
-    - Ajuste la leyenda eliminando las capas innecesarias (que no se ven en el mapa) y cambie el nombre de la capa en la leyenda haciendo clic en el ![icono Edit](/fig/30.30.2_print_layout_legend_edit.png) (`Edit selected item properties`) debajo de las entradas de la leyenda.
+    - Ajuste la leyenda eliminando las capas innecesarias (que no se ven en el mapa) y cambie el nombre de la capa en la leyenda haciendo clic en el ![icono Edit](../../../fig/30.30.2_print_layout_legend_edit.png) (`Edit selected item properties`) debajo de las entradas de la leyenda.
 6. Ahora, añadamos una barra de escala:
-    - Haga clic en el ![icono Add Scale bar](/fig/30.30.2_print_layout_add_scale_bar.png) (`Añadir Barra de escala`)
+    - Haga clic en el ![icono Add Scale bar](../../../fig/30.30.2_print_layout_add_scale_bar.png) (`Añadir Barra de escala`)
     - Dibuje un rectángulo en el mapa y coloque la barra de escala en el borde del mapa. Puede ajustar las unidades de la barra de escala (metros, kilómetros, etc.), el ancho fijo del segmento (50 km, 75 km, 100 km, etc.) y el número de segmentos (a la derecha).
 7. Añadamos una flecha que indique el norte:
-    - Haga clic en el ![icono Add North Arrow](/fig/30.30.2_print_layout_add_orientation.png) (`Añadir Flecha del Norte`).
+    - Haga clic en el ![icono Add North Arrow](../../../fig/30.30.2_print_layout_add_orientation.png) (`Añadir Flecha del Norte`).
     - Arrastre un rectángulo sobre el diseño de impresión. Ajuste el tamaño y la ubicación de la flecha norte. También puede cambiar el icono en las propiedades del elemento.
 8. Añadamos un logotipo (por ejemplo, el de la IFRC o el de su sociedad nacional):
-    - Haga clic en ![Add Picture](/fig/30.30.2_print_layout_add_image.png) (`Añadir Imagen`)
+    - Haga clic en ![Add Picture](../../../fig/30.30.2_print_layout_add_image.png) (`Añadir Imagen`)
     - Arrastre un rectángulo en el lugar donde desea añadir el logotipo.
     - Vaya al panel __Propriedades del elemento__ de la derecha y cambie a `imagen ráster`.
     - Haga clic en los tres puntos `...` y seleccione el archivo con su logotipo.
@@ -242,7 +242,7 @@ Se dejó espacio en la esquina inferior derecha para un mapa general.
 Si terminó con el mapa principal, haga clic en el mapa y vaya a las propiedades del elemento. En la sección de capas, marque las casillas `Bloquear capas` y `Bloquear estilos para las capas`. Esto significa que si cambia el mapa en la ventana principal de QGIS, el mapa que añadió en Ahora puede empezar a trabajar en un mapa general. Utilizaremos un shapefile con los países de África.
 
 1. Vuelva a la ventana principal de QGIS y cargue las capas de la carpeta `Bonus Exercise`.
-2. En el panel __Layer__, oculte las capas del mapa principal haciendo clic en el icono ![Ojo](/fig/30.30.2_layer_visibility_icon.png) situado junto al nombre de la capa.
+2. En el panel __Layer__, oculte las capas del mapa principal haciendo clic en el icono ![Ojo](../../../fig/30.30.2_layer_visibility_icon.png) situado junto al nombre de la capa.
 3. Diseñe un estilo a los países con un color neutro y discreto. Por ejemplo, puede utilizar "__Gray 3 fill__" de las plantillas de estilo.
 4. Una vez que esté satisfecho con el estilo de su mapa general, vuelva a la ventana __composición de impresión__.
 5. Añada un segundo mapa y colóquelo en una esquina.

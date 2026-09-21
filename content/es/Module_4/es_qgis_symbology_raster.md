@@ -1,14 +1,14 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
 
 # Simbología para los datos ráster
 
-Como ya hemos aprendido, los datos ráster son básicamente una cuadrícula de píxeles con diferentes valores (numéricos). Como tal, no se puede aplicar estilo a la forma, ni relleno ni contorno a los datos ráster. Los datos ráster se visualizan con la asignación de una rampa de color al valor del píxel. QGIS ofrece varias opciones para visualizar los datos ráster. Por ejemplo, puede crear un relieve sombreado con un modelo digital de elevación (DEM). Este breve capítulo solo cubre los aspectos básicos de la visualización de datos ráster. Si desea obtener más información sobre datos ráster y cómo trabajar con capas ráster, consulte el [módulo 8](/content/es/Module_8/es_module_8_overview.md).
+Como ya hemos aprendido, los datos ráster son básicamente una cuadrícula de píxeles con diferentes valores (numéricos). Como tal, no se puede aplicar estilo a la forma, ni relleno ni contorno a los datos ráster. Los datos ráster se visualizan con la asignación de una rampa de color al valor del píxel. QGIS ofrece varias opciones para visualizar los datos ráster. Por ejemplo, puede crear un relieve sombreado con un modelo digital de elevación (DEM). Este breve capítulo solo cubre los aspectos básicos de la visualización de datos ráster. Si desea obtener más información sobre datos ráster y cómo trabajar con capas ráster, consulte el [módulo 8](../../en/Module_8/en_module_8_overview.md).
 
 ## Asignar un gradiente de color a datos ráster
 
@@ -45,7 +45,7 @@ Las rampas de color disponibles, por defecto, en QGIS son limitadas y no se ajus
 
 :::
 
-:::{figure} /fig/en_3.36_cpt-city_cat_1.png
+:::{figure} ../../../fig/en_3.36_cpt-city_cat_1.png
 ---
 name: es_3.36_cpt-city_cat_1
 width: 350 px
@@ -58,7 +58,7 @@ Para acceder al catálogo `cpt-city`,
 1. abra la pestaña de simbología de capas ráster y seleccione `monobanda pseudocolor` como método de simbolización.
 2. Navegue hasta la flecha desplegable, situada junto a la rampa de color, esto abrirá un menú desplegable con diferentes rampas de color.
 3. Haga clic en `Crear nueva rampa de color`. Se abrirá un pequeño cuadro de diálogo.
-    :::{figure} /fig/en_3.36_cpt-city_cat_2.png
+    :::{figure} ../../../fig/en_3.36_cpt-city_cat_2.png
     ---
     name: es_3.36_cpt-city_cat_2
     width: 200 px
@@ -67,7 +67,7 @@ Para acceder al catálogo `cpt-city`,
     :::
 4. Se abrirá una nueva ventana. Aquí encontrará una multitud de paletas de colores. Por ejemplo, para un modelo digital de elevación, puede seleccionar una rampa de color para topografía o en concreto, para modelos digitales de elevación.
 
-:::{figure} /fig/en_3.36_cpt-city_cat_3.png
+:::{figure} ../../../fig/en_3.36_cpt-city_cat_3.png
 ---
 name: es_3.36_cpt-city_cat_3
 width: 600 px

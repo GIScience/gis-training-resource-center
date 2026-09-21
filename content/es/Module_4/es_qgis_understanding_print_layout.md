@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -34,10 +34,10 @@ En primer lugar, siempre deberá configurar el tamaño de su mapa:
 
 ### Añadir un nuevo mapa
 
-- Añada un nuevo mapa haciendo clic en el botón ![](/fig/30.30.2_print_layout_insert_map_icon.png) `Añadir mapa` de la __barra de herramientas a la izquierda__ y arrastre un rectángulo sobre el lienzo del mapa.
+- Añada un nuevo mapa haciendo clic en el botón ![](../../../fig/30.30.2_print_layout_insert_map_icon.png) `Añadir mapa` de la __barra de herramientas a la izquierda__ y arrastre un rectángulo sobre el lienzo del mapa.
 - Para desplazar el mapa en el lienzo, basta con __seleccionar el mapa__ y __arrastrarlo__ con el mouse.
-- Para desplazarse dentro de un mapa, seleccione el botón ![](/fig/30.30.2_print_layout_move_content_icon.png) `Mover contenido del elemento` de la barra de herramientas de la izquierda.
-- Para acercar zoom sobre el mapa, mientras utiliza la herramienta ![](/fig/30.30.2_print_layout_move_content_icon.png) `Mover contenido del elemento`, puede __presionar <kbd>CTRL</kbd> + desplazar la rueda del mouse__ (suavemente) o introducir la escala de manera manual en las propiedades del elemento.
+- Para desplazarse dentro de un mapa, seleccione el botón ![](../../../fig/30.30.2_print_layout_move_content_icon.png) `Mover contenido del elemento` de la barra de herramientas de la izquierda.
+- Para acercar zoom sobre el mapa, mientras utiliza la herramienta ![](../../../fig/30.30.2_print_layout_move_content_icon.png) `Mover contenido del elemento`, puede __presionar <kbd>CTRL</kbd> + desplazar la rueda del mouse__ (suavemente) o introducir la escala de manera manual en las propiedades del elemento.
 
 :::{figure} ../../fig/en_30.30.2_adding_a_map.png
 ---
@@ -92,7 +92,7 @@ Si trabaja para una organización, lo más probable es que añada el logotipo de
 4. Seleccione `imagen ráster` y haga clic en `...` para elegir la ubicación de la imagen.
 5. Su imagen aparecerá en el diseño de impresión. Para asegurarse de que la imagen no se distorsione, deje el `Modo de redimensionado` en "Zoom".
 
-:::{figure} /fig/3.36_print_layout_add_image.png
+:::{figure} ../../../fig/3.36_print_layout_add_image.png
 ---
 name: es_3.36_print_layout_add_image
 width: 650 px

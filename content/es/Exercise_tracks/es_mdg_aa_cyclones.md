@@ -9,7 +9,7 @@ En esta serie de ejercicios, usted creará un flujo de trabajo analítico como u
 Contexto
 ^^^
 
-:::{figure} /fig/IFRC-icons-colour_SURGE.png
+:::{figure} ../../../fig/IFRC-icons-colour_SURGE.png
 ---
 width: 100px
 align: right
@@ -28,7 +28,7 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_5/es_qgis_module_5_mdg_aa_ex_1.html
+:link: ../Module_5/es_qgis_module_5_mdg_aa_ex_1.md
 __Ejercicio 1: Estimación de la población expuesta: el método manual de Aina (módulo 5)__
 ^^^
 
@@ -44,7 +44,7 @@ __Ejercicio 1: Estimación de la población expuesta: el método manual de Aina 
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_7/es_module_7_mdg_aa_ex_2.html
+:link: ../Module_7/es_module_7_mdg_aa_ex_2.md
 __Ejercicio 2: Automatización de la estimación de la población expuesta: el modelo de Aina (módulo 7)__
 ^^^
 
@@ -58,7 +58,7 @@ __Ejercicio 2: Automatización de la estimación de la población expuesta: el m
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_7/es_module_7_mdg_aa_ex_3.html
+:link: ../Module_7/es_module_7_mdg_aa_ex_3.md
 __Ejercicio 3: Identificación de centros sanitarios y escuelas afectadas: Aina agrega más capas (módulo 7)__
 ^^^
 
@@ -69,7 +69,7 @@ __Ejercicio 3: Identificación de centros sanitarios y escuelas afectadas: Aina 
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_module_4_mdg_aa_ex_4.html
+:link: ../Module_4/es_module_4_mdg_aa_ex_4.md
 __Ejercicio 4: Visualización de los resultados del impacto del ciclón: Aina diseña sus capas (módulo 4)__
 ^^^
 
@@ -80,7 +80,7 @@ __Ejercicio 4: Visualización de los resultados del impacto del ciclón: Aina di
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_module_4_mdg_aa_ex_5.html
+:link: ../Module_4/es_module_4_mdg_aa_ex_5.md
 __Ejercicio 5: Creación rápida de mapas: Aina utiliza plantillas de mapas (módulo 4)__
 ^^^
 
@@ -91,7 +91,7 @@ __Ejercicio 5: Creación rápida de mapas: Aina utiliza plantillas de mapas (mó
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_7/es_module_7_mdg_aa_ex_6.html
+:link: ../Module_7/es_module_7_mdg_aa_ex_6.md
 __Ejercicio 6: Exportación de resultados del modelo para el equipo de operaciones (módulo 7)__
 ^^^
 
@@ -102,7 +102,7 @@ __Ejercicio 6: Exportación de resultados del modelo para el equipo de operacion
 :::
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_7/es_qgis_module_9mdg_aa_ex_7.html
+:link: ../Module_7/es_module_9mdg_aa_ex_7.md
 __Ejercicio 7: Accesibilidad de las publicaciones de salud desde los almacenes de CRM__
 ^^^
 

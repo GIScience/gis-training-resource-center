@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -112,7 +112,7 @@ __¿Por qué es importante en el sistema de información geográfica (SIG)?__
 - Decisiones políticas: Si el análisis depende de límites arbitrarios, las decisiones (p. ej.:, la asignación de recursos) pueden basarse en resultados engañosos.
 - Estadísticas espaciales: Las correlaciones, las regresiones y otros análisis, que involucran datos geoespaciales, pueden estar sesgados debido al Problema de la Unidad de Área Modificable (MAUP).
 
-:::{figure} /fig/en_modifiable_areal_unit_problem_diagram.png
+:::{figure} ../../../fig/en_modifiable_areal_unit_problem_diagram.png
 ---
 name: es_modifiable_areal_unit_problem_diagram
 width: 500 px
