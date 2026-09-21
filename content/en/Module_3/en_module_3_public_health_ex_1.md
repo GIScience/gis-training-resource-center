@@ -34,7 +34,7 @@ Over the past month, health authorities in Chad have reported a surge in measles
 
 :::{note}
 
-In this exercise, we will download real datasets from the [Humanitarian Data Exchange (HDX)](humdata.org) to identify and analyse relevant information. However, the Healthsite Capacities and Vaccination Coverage datasets used here are fictional and created solely for training purposes. They do not represent real-world data.
+In this exercise, we will download real datasets from the [Humanitarian Data Exchange (HDX)](https://humdata.org) to identify and analyse relevant information. However, the Healthsite Capacities and Vaccination Coverage datasets used here are fictional and created solely for training purposes. They do not represent real-world data.
 
 :::
 

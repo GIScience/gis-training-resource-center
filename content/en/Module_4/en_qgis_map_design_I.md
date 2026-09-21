@@ -287,7 +287,7 @@ Single hue gradient on the left; Multiple hue gradient on the right.
 :::
 
 :::{tip}
-The [Colourbrewer website](colorbrewer2.org) is a quick and useful tool to select and 
+The [Colourbrewer website](https://colorbrewer2.org) is a quick and useful tool to select and 
 generate colour palettes for your use case. 
 :::
 

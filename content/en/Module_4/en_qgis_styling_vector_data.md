@@ -449,7 +449,7 @@ There is also a library with humanitarian icons by the [United Nations Office fo
 
 ## Further Resources <a id="further-resources"></a>
 
-- [Cartography Guide](https://www.axismaps.com/guide) by [Axis Maps](axismaps.com)
+- [Cartography Guide](https://www.axismaps.com/guide) by [Axis Maps](https://axismaps.com)
 - Tutorial on [how to import the SIMS Colour Palette into QGIS](https://learn-sims.org/geospatial/importing-sims-color-palette-to-qgis/) 
 - Tutorial on [how to create a shaded relief map in QGIS](https://learn-sims.org/geospatial/creating-a-shaded-relief-map-in-qgis/)
 - [Creating a 3W (Who, What, Where) Infographic](https://learn-sims.org/information-design/creating-a-3w-who-what-where-infographic/)

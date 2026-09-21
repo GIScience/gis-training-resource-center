@@ -90,7 +90,7 @@ Three times a year (February, June, and October) FEWSNET estimates most likely I
 :::{admonition} UPDATE: IPC Classification Data
 :type: attention
 
-The food security classification projections are generally published twice a year and usually includes a projection for a period of three months and a current phase, which also spans three months. Due to the unavailability of FEWSNET projections, the trigger model is using the [IPC data](www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1156097/?iso3=SOM)
+The food security classification projections are generally published twice a year and usually includes a projection for a period of three months and a current phase, which also spans three months. Due to the unavailability of FEWSNET projections, the trigger model is using the [IPC data](https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1156097/?iso3=SOM)
 
 :::
 

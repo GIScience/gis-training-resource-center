@@ -38,7 +38,7 @@ First, we need to extract the data from the PDF-file and save it to a `.csv`- fi
 
 :::{attention}
 
-This exercise makes use of the [tabula.technology tool](tabula.technology), an open source application which let's you easily extract tables from a PDF-file. Tabula requires you to have [Java](https://www.java.com/en/download/) installed on your device. 
+This exercise makes use of the [tabula.technology tool](https://tabula.technology), an open source application which let's you easily extract tables from a PDF-file. Tabula requires you to have [Java](https://www.java.com/en/download/) installed on your device. 
 
 :::
 

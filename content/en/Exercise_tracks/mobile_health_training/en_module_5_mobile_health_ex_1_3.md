@@ -19,7 +19,7 @@
 
 
 :::{card} 
-:link: en_ex_track_mobile_health_overview.md
+:link: en_ex_track_mobile_health_overview
 __Exercise track: Mobile Health Units__
 ^^^
 This exercise is part of the Mobile Health Exercise track. You can find the overview of the training on [this page]()
@@ -236,11 +236,11 @@ We now have a first, quantitative picture of the health coverage in the AOI. In 
 
 We want to calculate the area that the local population can reach __within 1 hour by foot__ of each proposed stop. There isn't one single correct way to estimate that — below are three methods, each with different data needs, strengths and limitations. You don't need to run all three; pick whichever fits your setup, or (if training in a group) split into teams and have each team run a different method, then compare results at the end of this task.
 
-| Method | What it needs | Best suited for | Main limitation |
-|---|---|---|---|
-| A: Friction surface (`r.cost`) | GRASS enabled in QGIS, a friction raster | Areas where the road/path network isn't fully mapped | Coarse resolution (~1km cells); requires GRASS, which may not be installed everywhere |
-| B: OpenRouteService isochrones | ORS Tools plugin, a free API key, internet, decent OSM path coverage | Areas with good OSM path coverage | Only as accurate as the underlying OSM data; needs a live connection and a shared/rate-limited API |
-| C: Service area (native QGIS) + buffer | A road/path network layer, no plugin or account needed | Explaining results to a non-GIS audience; guaranteed to run on any QGIS install | Coarse rule-of-thumb; depends on an assumed walking speed and buffer width that must be stated explicitly, not hidden |
+| Method                                 | What it needs                                                        | Best suited for                                                                 | Main limitation                                                                                                       |
+|----------------------------------------|----------------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| A: Friction surface (`r.cost`)         | GRASS enabled in QGIS, a friction raster                             | Areas where the road/path network isn't fully mapped                            | Coarse resolution (~1km cells); requires GRASS, which may not be installed everywhere                                 |
+| B: OpenRouteService isochrones         | ORS Tools plugin, a free API key, internet, decent OSM path coverage | Areas with good OSM path coverage                                               | Only as accurate as the underlying OSM data; needs a live connection and a shared/rate-limited API                    |
+| C: Service area (native QGIS) + buffer | A road/path network layer, no plugin or account needed               | Explaining results to a non-GIS audience; guaranteed to run on any QGIS install | Coarse rule-of-thumb; depends on an assumed walking speed and buffer width that must be stated explicitly, not hidden |
 
 Whichever method(s) you use, name your output layer(s) distinguishably (e.g. `coverage_frictionsurface`, `coverage_ors`, `coverage_servicearea`) — Task 4 refers generically to "your coverage layer."
 
@@ -338,8 +338,9 @@ Stopping at each proposed stop wouldn't be logistically feasible. It is your tas
 In this step, we want to calculate the demographic characteristics of the population living inside our new coverage layer:
 
 1. Calculate the general population living inside your coverage layer from Task 3 using `Zonal statistics`. 
-2. Calculate the zonal statistics for the population under 5.
-3. We want to have all this information in a single layer. If the new columns are not in a single layer yet, we can combine the layers with the tool `Join layers by field value`. 
+2. Calculate the zonal statistics for the population under 5. 
+3. Calculate the population of women of childbearing age (15-49).
+4. We want to have all this information in a single layer. If the new columns are not in a single layer yet, we can combine the layers with the tool `Join layers by field value`. 
 
 %% Review and fill in target population
 
@@ -349,6 +350,8 @@ In this step, we want to calculate the demographic characteristics of the popula
 ### Task 5: Evaluating additional information
 
 In this step, we want to evaluate which proposed MHU stops make the most sense. For this, we want to see where we can reach the largest population, and where we would not duplicate existing healthcare structures. We want a route that can be done within 14 days. Per day, we estimated that the MHU medical team can see about 20 patients. The MHU is equipped with a state of the art medical bus and can be operational within 2 hours upon arrival, so we can count the day of arrival as the start of the consultations. We assume that upon arrival, around 10% percent of the population will seek out primary healthcare services.  
+
+
 
 
 %% THIS STEP SHOULD BE WHERE THEY DECIDE ON THE ROUTE. THIS WOULD BE TO THROW OUT MHU STOPS THAT COVER TOO LITTLE POPULATION, OR IS WITHIN THE HEIGIT PHC CAR ACCESSIBILITY -> WE WILL FOCUS ON THE POP OUTSIDE THE CAR PHC ACCESIBLE AREA

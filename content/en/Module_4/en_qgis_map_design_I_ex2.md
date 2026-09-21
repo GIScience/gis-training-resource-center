@@ -320,7 +320,7 @@ Adding the map to the print layout.
     - In the item properties window on the right, you will find a text box with the text "Lorem ipsum". Enter "Larkana" instead. 
     - Click on the __Font__ dropdown menu and adjust the font size so it can be read easily.
     
-:::{figure} ../../../fig/Module_4/m4_ex2_print_layout_label_city
+:::{figure} ../../../fig/Module_4/m4_ex2_print_layout_label_city.png
 ---
 name: m4_ex2_print_layout_label_city
 width: 600 px
