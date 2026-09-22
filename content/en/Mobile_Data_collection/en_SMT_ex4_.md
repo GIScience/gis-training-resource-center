@@ -2,9 +2,7 @@
 
 ## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
 
-Although all data and assumptions are fictional, they were created in the context of a real flood event described in a news article.
-
-:::{card}
+Although all data and assumptions are fictional, they were created in the context of a real flood event described in a
 __Aim of this exercise:__
 ^^^
 Learn how you can visualize your Sketch Map Tool Outputs in either [QGIS](../Wiki/en_qgis_installation_wiki.md) or [uMAP](https://umap.openstreetmap.fr/en/).

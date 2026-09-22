@@ -163,6 +163,7 @@ parts:
           - file: Mobile_Data_collection/en_SMT_ex3_.md
           - file: Mobile_Data_collection/en_SMT_ex4_.md
           - file: Mobile_Data_collection/en_SMT_ex5_.md
+          - file: Mobile_Data_collection/en_SMT_ex6_.md   
       - file: GIS_AA/en_AILAS_madagascar.md
         sections:
           - file: GIS_AA/en_AILAS_madagascar_camera_usage_guide.md

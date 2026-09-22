@@ -18,6 +18,8 @@ The markdown files are built to a static webpage via `jupyter-book`.
 * do your changes to the book in `contents`
 * build it locally `jupyter-book build .`
 * verify changes `cd _build/html/ && python3 -m http.server 8080`
+* happy with you're changes? If not, cancel the local webserver with ctrl+c and go three steps back. 
+* if you're happy with your changes cancel your local webserver with ctrl+c and `cd ../..`
 * push source files via git to the `dev` branch
   * change the branch `git switch dev`
   * `git pull`
