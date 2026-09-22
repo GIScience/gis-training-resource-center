@@ -57,10 +57,10 @@ __Estimated time demand for the exercise__
 __Relevant Wiki Articles__
 ^^^
 
-- [Extract by Location / Selection](../Wiki/en_qgis_data_queries_wiki.md)
-- [Clip](../Wiki/en_qgis_geoprocessing_wiki.md#clip)
-- [Zonal Statistics](../Wiki/en_qgis_raster_basic_wiki.md)
-- [Join Attributes by Field Value](../Wiki/en_qgis_attribute_data_wiki.md)
+- [Extract by Location / Selection](../../Wiki/en_qgis_spatial_queries_wiki.md#select-by-location)
+- [Clip](../../Wiki/en_qgis_geoprocessing_wiki.md#clip)
+- [Zonal Statistics](../../Wiki/en_qgis_raster_basic_wiki.md)
+- [Join Attributes by Field Value](../../Wiki/en_qgis_attribute_data_wiki.md)
 - Cost Distance / Friction Surfaces 
 %% this wiki page doesn't exist yet — link once written, don't fake a URL in the meantime
 
@@ -87,7 +87,7 @@ In this exercise, we will design a potential Mobile Health Unit (MHU) route. We 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on facilitating trainings. 
+- Check out [How to do trainings?](../../Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on facilitating trainings. 
 
 :::{note}
 The friction-surface tool in Task 3 uses GRASS's `r.cost`, which ships with QGIS but exact parameter labels can shift slightly between QGIS/GRASS versions — run through Task 3 yourself in your installed version before the training and adjust the field names in the instructions if needed.

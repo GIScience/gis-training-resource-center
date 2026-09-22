@@ -26,7 +26,7 @@ Here are the different header blocks used in the chapters at the beginning of pa
 :::{grid-item-card}
 :class-card: sd-text-center 
 :link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](en/intro.md)__
 :::
 
 ::::

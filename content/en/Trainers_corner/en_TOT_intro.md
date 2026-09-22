@@ -14,7 +14,7 @@ This platform intends to make your life as a trainer easier by providing you wit
 
 * 🎓 The modules are intended to serve as references for participants who want to delve deeper into a topic or review concepts. Think of the modules as an enhanced version of PowerPoint slides that you would normally share with participants, providing them with comprehensive information. They can also serve as a guide for trainers to assess what participants should learn at different stages of their GIS education.
 
-* ✍️ The __exercises__ encompass all the content covered in the modules. They range from smaller exercises focused on specific topics like the QGIS interface to larger-scale exercises covering entire modules. These exercises can be utilized in any order or format, including [follow-along exercises or group work](handson). Additionally, trainers can assign exercises as homework for participants who are capable of completing them independently.
+* ✍️ The __exercises__ encompass all the content covered in the modules. They range from smaller exercises focused on specific topics like the QGIS interface to larger-scale exercises covering entire modules. These exercises can be utilized in any order or format, including {ref}`follow-along exercises or group work <handson>`. Additionally, trainers can assign exercises as homework for participants who are capable of completing them independently.
 
 * 📖 The Wiki serves as a support resource for both participants and trainers while using QGIS, whether during exercises or in day-to-day work. It provides trainers with the assurance that their participants have access to an updated, interactive resource to help solve challenges encountered while using QGIS.
 

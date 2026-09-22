@@ -275,7 +275,7 @@ Feature (1) from "TDX_20240401_FloodExtent_SambavaDistrict_MDG" has invalid geom
 
 You need to first use the tool __"Fix Geometry"__ before repeating the previously failed step 5 of using the tool __"Select by Location"__.
 
-* To do so open the `Processing Toolbox` ([here is how](/Wiki/en_qgis_interface_wiki.md#open-toolbox)) and search for the tool __"Fix Geometries"__.
+* To do so open the `Processing Toolbox` ([here is how](../Wiki/en_qgis_interface_wiki.md#open-toolbox)) and search for the tool __"Fix Geometries"__.
 * `Input layer` = `TDX_20240401_FloodExtent_SambavaDistrict_MDG`
 * Save the new file in your `temp` folder by clicking on the three dots ![](../../../fig/Three_points.png), specify the file name as __"TDX_20240401_FloodExtent_SambavaDistrict_MDG_fix"__.
 * Click `Run`.

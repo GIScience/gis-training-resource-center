@@ -16,7 +16,7 @@ __Larkana flood response exercise track:__
 This exercise is the third exercise in the [Larkana flood response exercise track](../Exercise_tracks/en_larkana_flood_response.md).
 
 - [Previous exercise](../Module_2/en_qgis_data_sources_ex4.md)
-- [Next exercise](../Module_4/en_qgis_map_design_I_ex4.md)
+- [Next exercise](../Module_4/en_qgis_map_design_I_ex2.md)
 :::
 
 :::{grid-item-card}

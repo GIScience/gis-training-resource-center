@@ -34,5 +34,5 @@ These exercises touch on all the content of module 5.
 
 <!---
 
-*  __⚠️construction⚠️[Risk Assessment](/content/Modul_5/en_qgis_modul_5_ex1.md):__ 
+*  __⚠️construction⚠️[Risk Assessment](en_qgis_module_5_ex1.md):__ 
 >

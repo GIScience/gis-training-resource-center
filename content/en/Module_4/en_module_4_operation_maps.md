@@ -223,7 +223,7 @@ First, we need to open the **data-defined override Expression Builder**.
 1.  Select your hospital layer (the filtered `Malawi_health_facilities_raw`).  
 2. Right-click the layer → **Properties…** → **Symbology**.
 3. Nex to `Symbol` Tab click on the dropdown menue, then click at the top click on `Configure Symbol`.
-4. In the new window click on `Simpel Marker` and then next to `fill colour`on the `data-defined override` symbol![](en_data_defined_overried_icon.png)
+4. In the new window click on `Simpel Marker` and then next to `fill colour`on the `data-defined override` symbol![](../../../fig/en_data_defined_overried_icon.png)
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_open_data_defined_override_edit.mp4"></video>
 ::::
 

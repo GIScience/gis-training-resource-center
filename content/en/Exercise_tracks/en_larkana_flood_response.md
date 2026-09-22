@@ -48,7 +48,7 @@ __Module 3 Exercise 5: Larkana Flood Response__
 :::
 
 :::{card}
-:link: ../en/Module_4/en_qgis_map_design_I_ex2
+:link: ../Module_4/en_qgis_map_design_I_ex2
 __Module 4 Exercise 2: Creating a Flood Situation Map of Larkana, Pakistan__
 ^^^
 
@@ -63,7 +63,7 @@ __Module 4 Exercise 2: Creating a Flood Situation Map of Larkana, Pakistan__
 
 :::{card}
 :link: ../Module_5/en_qgis_module_5_ex4
-__Module 5 Exercise 3: Security in Peshwar, Pakistan__
+__Module 5 Exercise 4: Security in Peshwar, Pakistan__
 
 - Using the QuickMapServices plugin
 - Digitising points with additional information

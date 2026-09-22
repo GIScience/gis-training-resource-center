@@ -166,7 +166,7 @@ Below, you will find a table with the information and locations. Read through th
 In order to digitise the information, we will need two new layers: A point layer and a polygon layer. 
 In case the information states an exact area, create a new polygon layer and map it exactly.
 
-8. [Create a new point and a new polygon layer](../Module_3/en_qgis_digitissation.md#creating-new-datasets) to digitise point and polygon information. 
+8. [Create a new point and a new polygon layer](../Module_3/en_qgis_digitisation.md#creating-new-datasets) to digitise point and polygon information. 
 
 :::{tip}
 When creating the point and polygon layer use the CRS UTM 42 N __EPSG: 32642__. This Coordinate reference system is ideal for Pakistan and the __units of measurement are in meters__. 

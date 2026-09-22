@@ -164,7 +164,7 @@ name: en_30.30.2_print_layout_scale
 Make sure that the scale is at a round number.
 :::
 
-To add a scale bar, you can use the ![](../../../fig/30.30.2_print_layout_scale_bar.png)`Add scale bar`-button on the __left toolbar__. In the __Item Properties__ panel, customize the following functions.
+To add a scale bar, you can use the ![](../../../fig/30.30.2_print_layout_add_scale_bar.png)`Add scale bar`-button on the __left toolbar__. In the __Item Properties__ panel, customize the following functions.
 
 - Which Map __is related to the scale__.
 - __Unit system of the bar__ (metres, miles, degrees).
@@ -257,7 +257,7 @@ The individual layers, maps and images are not saved in the template. However, i
 ::::{tab-set}
 :::{tab-item} Saving a template
 
-1. Once you are satisfied with your map layout, click on the ![](..././../fig/en_30.30.2_save_as_template.png) `Save as template`-button in the toolbar above the canvas to save it as a new template.
+1. Once you are satisfied with your map layout, click on the ![](../../../fig/en_30.30.2_save_as_template.png) `Save as template`-button in the toolbar above the canvas to save it as a new template.
 2. Choose a location where you want to save the template. Ideally, you should choose the template directory.
 3. Click `Save`.
 4. You can open the template by dragging it into a QGIS-project.

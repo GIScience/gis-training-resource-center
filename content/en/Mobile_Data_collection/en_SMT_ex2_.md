@@ -129,7 +129,7 @@ The Map Quality Check assists in evaluating the suitability of the area of inter
 
 ## Step-by step introduction for participants <a id="step-by-step-introduction-for-participants"></a>
 
-Download a printable factsheet to guide you through this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_2.pdf).
+Download a printable factsheet to guide you through this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_Ex_2.pdf).
 
 If you experiences any problems during your use of the [Sketch Map Tool](https://sketch-map-tool.heigit.org/) please take a look at the [Help page](https://sketch-map-tool.heigit.org/help).
 

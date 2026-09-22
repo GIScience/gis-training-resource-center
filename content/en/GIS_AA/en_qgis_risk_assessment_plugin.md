@@ -284,7 +284,7 @@ In general, many input files are required to use the plugin, which makes it high
 
 ## Support & Ressources <a id="support-and-ressources"></a>
 
-[HeiGIT QGIS Training Platform](../Wiki/en_qgis_plugins_wiki.ms)
+[HeiGIT QGIS Training Platform](../Wiki/en_qgis_plugins_wiki.md)
 
 [Weltrisikoindex](https://weltrisikobericht.de/)
 

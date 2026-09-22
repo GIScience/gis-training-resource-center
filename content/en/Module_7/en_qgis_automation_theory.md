@@ -115,7 +115,7 @@ The power of the model designer lies in it's ability to chain several processing
 To chain processing steps together:
 
 1. Add another algorithm to the model canvas (e.g., Clip)
-2. As `Input layer`, instead of ![](../../../fig/qgis_3.40_input_model_input.png) `Model input`, select ![](fig/qgis_3.40_input_model_algo_output.png). `Algorithm output`. 
+2. As `Input layer`, instead of ![](../../../fig/qgis_3.40_input_model_input.png) `Model input`, select ![](../../../fig/qgis_3.40_input_model_algo_output.png). `Algorithm output`. 
 3. Next, select the specific input from a previous processing step. 
 
 

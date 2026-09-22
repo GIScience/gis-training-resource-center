@@ -215,7 +215,7 @@ Now load your vector file ("Kumasi_SMT_Ex4.geojson") and geotiff files ("Kumasi_
 
 __1. Digitization: Add a marking manually__
 
-So what can we do if a marking has not been detected? We can add missing markings manually by tracking the drawing on the geotiff file. This process is also called [digitisation](/content/Module_3/en_qgis_digitalisation.md). 
+So what can we do if a marking has not been detected? We can add missing markings manually by tracking the drawing on the geotiff file. This process is also called [digitisation](../Module_3/en_qgis_digitisation.md). 
 
 Right-click on your vector file and click on `Toggle Editing`. The `Digitizing Toolbox` in your menu bar on top of your QGIS will be activated:
 

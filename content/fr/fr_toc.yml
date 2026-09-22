@@ -9,7 +9,7 @@ parts:
     numbered: True
     chapters:
       - file: Module_1/fr_module_1_overview.md
-        sections: 
+        sections:
           - file: Module_1/fr_qgis_theory.md
           - file: Module_1/fr_qgis_installation.md
           - file: Module_1/fr_qgis_start.md
@@ -31,7 +31,25 @@ parts:
           - file: Module_3/fr_qgis_georeferencing.md
           - file: Module_3/fr_qgis_module_3_exercises.md
       - file: Module_4/fr_module_4_overview.md
-        sections: 
-          - file: Module_4/fr_health_map_design.md
-
-          
+        sections:
+          - file: Module_4/fr_qgis_labels_vector.md
+          - file: Module_4/fr_qgis_map_design_2.md
+          - file: Module_4/fr_qgis_map_examples.md
+          - file: Module_4/fr_qgis_module_4_exercises.md
+  - caption: Exercices
+    chapters:
+      - file: Exercise_tracks/fr_exercise_tracks_overview.md
+        sections:
+          - file: Exercise_tracks/fr_mdg_aa_cyclones.md
+  - caption: GIS in Anticipatory Action
+    chapters:
+      - file: GIS_AA/fr_qgis_cyclone_trigger_madagascar.md
+  - caption: Tools & Methods
+    chapters:
+      - file: GIS_AA/fr_AILAS_madagascar.md
+        sections:
+          - file: GIS_AA/fr_AILAS_madagascar_camera_usage_guide.md
+          - file: GIS_AA/fr_AILAS_madagascar_picture_upload_and_management.md
+  - caption: About
+    chapters:
+      - file: About/about_1.md

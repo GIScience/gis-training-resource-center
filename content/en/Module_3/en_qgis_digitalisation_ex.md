@@ -72,7 +72,7 @@ This exercise makes use of a plugin which is not installed by default: `OSM Plac
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.mdhow-to-do-trainings) for some general tips on how to conduct a training.
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on how to conduct a training.
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -96,7 +96,7 @@ __Wrap up:__
 
 
 :::{Attention}
-Try to always use the standard folder structure. You can find a template __[here](/content/Wiki/en_qgis_projects_folder_structure_wiki.mf#standard-folder-structure)__.
+Try to always use the standard folder structure. You can find a template __[here](../Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure)__.
 :::
 
 ## Background: Cash crunch in Abuja <a id="background-cash-crunch-in-abuja"></a>

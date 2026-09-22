@@ -87,7 +87,7 @@ width: 500 px
 Rule-based labeling allows you to filter datasets. This way, you can display the labels only for selected features without altering the dataset.
 :::
 
-The rules, or filters, are based on an expression. You can use the ![](../../fig/expression_string_builder_icon.png) `Expression string builder` to the right of the __Filter__ option in the label panel.
+The rules, or filters, are based on an expression. You can use the ![](../../../fig/expression_string_builder_icon.png) `Expression string builder` to the right of the __Filter__ option in the label panel.
 
 #### Adding Rule-based Labels to a Layer <a id="adding-rule-based-labels-to-a-layer"></a>
 

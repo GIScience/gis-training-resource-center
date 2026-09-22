@@ -75,7 +75,7 @@ The map we will be making in this exercise (Source: HeiGIT).
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip
 
-- You have created the data for Larkana in [Module 3 Exercise 5](../Module_3/en_qgis_module_3_ex2.md). In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there. 
+- You have created the data for Larkana in [Module 3 Exercise 5](../Module_3/en_qgis_module_3_ex5.md). In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there. 
 - __In case you did not do Module 3 - Exercise 4 you can download the data [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip)__. Save the folder on your computer an unzip the file.
 :::
 
@@ -84,7 +84,7 @@ The map we will be making in this exercise (Source: HeiGIT).
 | :-------------------- | :----------------- |:----------------- |:----------------- |
 | Health_Facilities_Flood_2024_AOI.gpkg |  [Pakistan Health Facilities (OpenStreetMap Export)](https://data.humdata.org/dataset/hotosm_pak_health_facilities) |Humanitarian OpenStreetMap Team (HOT) | HDX |
 | PAK_2024_Minimum_Flood_Extend_reprojected.gpkg | [Satellite detected water extents from 08 to 12 August 2024 over Pakistan)](https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan) | UNO SAT | HDX |
-| PAK_flood_2024_blocked_road.gpkg | PAK_flood_2024_blocked_road | Yourself | This dataset was created in the [previous exercise](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_module_3_ex2.html) | 
+| PAK_flood_2024_blocked_road.gpkg | PAK_flood_2024_blocked_road | Yourself | This dataset was created in the [previous exercise](../Module_3/en_qgis_module_3_ex5.md) | 
 
 
 <!--FIX: add all datasets used in this exercise to the table-->
@@ -214,7 +214,7 @@ We can categorise the roads and then select the relevant roads to be displayed. 
 
 ### __Airports:__ <a id="airports"></a>
 
-In the [previous exercise](../Module_3/en_qgis_module_3_ex2.md) you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let's mark the airport as a point and visualize it!
+In the [previous exercise](../Module_3/en_qgis_module_3_ex5.md) you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let's mark the airport as a point and visualize it!
 
 To do so we will create an entirely new point dataset representing airports.
 * Click on  `Layer` → `Create Layer` → `New GeoPackage Layer` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#create-a-new-layer)) 
@@ -303,7 +303,7 @@ Creating a new print layout.
 
 2. Insert a new map by clicking on ![New Map Icon](../../../fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Wiki Video](en_qgis_understanding_print_layout.md#adding-a-new-map).
 
-3. Move and position the map so that the area of interest is visible at a reasonable scale. To move the map content, use the tool ![](30.30.2_print_layout_move_content_icon) `Move item content`. 
+3. Move and position the map so that the area of interest is visible at a reasonable scale. To move the map content, use the tool ![](../../../fig/30.30.2_print_layout_move_content_icon.png) `Move item content`. 
 
 
 :::{figure} ../../../fig/Module_4/m4_ex2_print_layout_add_map.png

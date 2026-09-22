@@ -49,7 +49,7 @@ __Estimated time demand for the exercise__
 __Relevant Wiki Articles__
 ^^^
 
-* [Select by Expression](../Wiki/en_qgis_data_queries_wiki.md)
+* [Select by Expression](../Wiki/en_qgis_non_spatial_queries_wiki.md#select-by-expression)
 * [Select by Location](../Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
 * [Clip](../Wiki/en_qgis_geoprocessing_wiki.md#clip)
 * [Zonal Statistics](../Wiki/en_qgis_raster_basic_wiki.md)
