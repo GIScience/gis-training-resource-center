@@ -108,7 +108,7 @@ __Exercice guidée:__
 __Téléchargez les données pour cet exercice ici et dezipé le fichier.__
 :::
 
-Le dossier s'appelle __"__ et contient toute la [structure de dossier standard](../Module_2/en_qgis_geodata_management.md#standard-folder-structure) avec toutes les données dans le sous-dossier `/data/input/` et la documentation supplémentaire dans le dossier `/documentation/`. 
+Le dossier s'appelle __"__ et contient toute la [structure de dossier standard](../../en/Module_2/en_qgis_geodata_management.md#standard-folder-structure) avec toutes les données dans le sous-dossier `/data/input/` et la documentation supplémentaire dans le dossier `/documentation/`. 
 
 | Ensemble de données | Source | Descriptions |
 | ----- | --- | --- |

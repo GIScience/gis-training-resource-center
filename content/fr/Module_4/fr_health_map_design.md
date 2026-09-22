@@ -216,7 +216,7 @@ Tout d'abord, nous devons ouvrir le module de substitution **défini par les don
 1.  Sélectionnez votre calque hospitalière (la A filtrée `Malawi_health_facilities_raw`).
 2. Faites un clic droit sur le calque → **Propriétés…** → **Symbologie**.
 3. Nex to `Symbol` Tab cliquez sur le menu déroulant, puis cliquez en haut sur `Configure Symbol`.
-4. <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_open_data_defined_override_edit.mp4"></video>Dans la nouvelle fenêtre, cliquez sur `Simpel Marker` puis sur `fill colour`sur le symbole `data-defined override`![](en_data_defined_overried_icon.png)
+4. <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_open_data_defined_override_edit.mp4"></video>Dans la nouvelle fenêtre, cliquez sur `Simpel Marker` puis sur `fill colour`sur le symbole `data-defined override`![](../../../fig/en_data_defined_overried_icon.png)
 
 ::::
 
@@ -325,7 +325,7 @@ Votre carte des capacités de votre hôpital contient maintenant une riche quant
 - `Outline width`
 - `Stroke style` ← Nous allons utiliser ceci
 5. Ajoutez une substitution définie de données pour le style de trait
-- À côté de `Stroke style`, cliquez sur le petit symbole `data-defined override`![](en_data_defined_overried_icon.png)
+- À côté de `Stroke style`, cliquez sur le petit symbole `data-defined override`![](../../../fig/en_data_defined_overried_icon.png)
 - Choisissez `Edit` → Ceci ouvre l'éditeur d'expressions QGIS.
 6. Écrivez une expression pour assigner des styles de traits à `TYPE`
 

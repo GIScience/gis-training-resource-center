@@ -72,7 +72,7 @@ Cet exercice utilise un plugin qui n’est pas installé par défaut : `OSM Plac
 - Prenez le temps de vous familiariser avec l’exercice et le matériel fourni.
 - Préparez un tableau blanc. Il peut s’agir d’un tableau blanc physique, d’un paperboard ou d’un tableau blanc numérique (par ex. Miro) sur lequel les participant·e·s peuvent ajouter leurs constats et leurs questions. 
 - Avant de commencer l’exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé __et décompressé__ le dossier de données.
-- Consultez [Comment animer des formations ?](../../en/Trainers_corner/en_how_to_training.mdhow-to-do-trainings) pour quelques conseils généraux sur la conduite d’une formation.
+- Consultez [Comment animer des formations ?](../../en/Trainers_corner/en_how_to_training.md#how-to-do-trainings) pour quelques conseils généraux sur la conduite d’une formation.
 
 ### Conduire la formation <a id="conduct-the-training"></a>
 

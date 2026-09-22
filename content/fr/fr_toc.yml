@@ -21,7 +21,7 @@ parts:
           - file: Module_2/fr_qgis_geodata_management.md
           - file: Module_2/fr_qgis_attribute_table.md
           - file: Module_2/fr_data_sources.md
-          - file: Module_2/fr_qgis_basemap.md
+          - file: Module_2/fr_basemap.md
           - file: Module_2/fr_qgis_module_2_exercises.md
       - file: Module_3/fr_module_3_overview.md
         sections:

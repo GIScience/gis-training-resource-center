@@ -1,11 +1,15 @@
 🚧 Cette partie de la plateforme de formation est en ⚠️construction⚠️ et ne doit pas être partagée ni publiée ! 🚧
 
-::::{admonition} English Version 
+::::{admonition} English Version
 :class: tip
 
-La version originale anglaise de cet article se trouve [ici](../../en/GIS_AA/en_AILAS_madagascar.md).
+The english original version of this page can be found here / La version originale anglaise de cet article se trouve ici :
 
-The english original version of this page can be found [here](../../en/GIS_AA/en_AILAS_madagascar.md).
+:::{card}
+:link: ../../en/GIS_AA/en_AILAS_madagascar
+English version - Version anglaise
+:::
+
 ::::
 
 # Système de conscience siuationelle logistique par IA (AILAS): Expérimentations de terrain pour la collecte d’images au niveau de la rue <a id="systeme-de-conscience-siuationelle-logistique-par-ia-ailas-experimentations-de-terrain-pour-la-collecte-dimages-au-niveau-de-la-rue"></a>

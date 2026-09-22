@@ -101,7 +101,7 @@ __Conclusion :__
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_2/Module_2_Exercise_2_Basic_Geodata_Processing.zip 
 
-__Téléchargez tous les jeux de données [ici](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_2/Module_2_Exercise_2_Basic_geodata_processing.zip), enregistrez le dossier sur votre ordinateur et décompressez-le.__ 
+__Téléchargez tous les jeux de données [ici](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_2/Module_2_Exercise_2_Basic_Geodata_Processing.zip), enregistrez le dossier sur votre ordinateur et décompressez-le.__ 
 
 :::
 

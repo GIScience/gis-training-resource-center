@@ -25,7 +25,7 @@ __Type d'exercice:__
 __Piste d'Exercice:__
 ^^^
 
-Cet exercice est le cinquième exercice de la piste d'exercice ["Analyse d’Action Anticipative pour les Cyclones à Madagascar"](../Exercise_tracks/fr_mdg_aa_cyclones.md)
+Cet exercice est le sixième exercice de la piste d'exercice ["Analyse d’Action Anticipative pour les Cyclones à Madagascar"](../Exercise_tracks/fr_mdg_aa_cyclones.md)
 
 :::
 
@@ -47,8 +47,8 @@ __Articles Wiki pertinents__
 * [Zonal Statistics](../../en/Wiki/en_qgis_raster_basic_wiki.md)
 * [Intersection](../../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
 * [Projections](../../en/Wiki/en_qgis_projections_wiki.md)
-* [Buffer](../../en/Wiki/en_qgis_projections_wiki.md)
-* [Clip](../../en/Wiki/en_qgis_projections_wiki.md)
+* [Buffer](../../en/Wiki/en_qgis_geoprocessing_wiki.md#buffer)
+* [Clip](../../en/Wiki/en_qgis_geoprocessing_wiki.md#clip)
 * [Automatisation](../../en/Wiki/en_qgis_automation_wiki.md)
 
 :::

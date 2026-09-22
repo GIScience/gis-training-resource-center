@@ -48,8 +48,8 @@ __Articles Wiki pertinents__
 * [Zonal Statistics](../../en/Wiki/en_qgis_raster_basic_wiki.md)
 * [Intersection](../../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
 * [Projections](../../en/Wiki/en_qgis_projections_wiki.md)
-* [Buffer](../../en/Wiki/en_qgis_projections_wiki.md)
-* [Clip](../../en/Wiki/en_qgis_projections_wiki.md)
+* [Buffer](../../en/Wiki/en_qgis_geoprocessing_wiki.md#buffer)
+* [Clip](../../en/Wiki/en_qgis_geoprocessing_wiki.md#clip)
 * [Automatisation](../../en/Wiki/en_qgis_automation_wiki.md)
 
 :::

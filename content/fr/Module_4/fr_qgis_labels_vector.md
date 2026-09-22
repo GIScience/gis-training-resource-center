@@ -86,7 +86,7 @@ width: 500 px
 L'étiquetage basé sur des règles vous permet de filtrer les jeux de données. De cette façon, vous pouvez afficher les étiquettes uniquement pour les fonctionnalités sélectionnées sans modifier le jeu de données.
 :::
 
-Les règles, ou filtres, sont basées sur une expression. Vous pouvez utiliser la ![](../../fig/expression_string_builder_icon.png) `Expression string builder` à droite de l'option __Filtre__ dans le panneau d'étiquettes.
+Les règles, ou filtres, sont basées sur une expression. Vous pouvez utiliser la ![](../../../fig/expression_string_builder_icon.png) `Expression string builder` à droite de l'option __Filtre__ dans le panneau d'étiquettes.
 
 #### Ajout d'étiquettes basées sur des règles à une couche <a id="adding-rule-based-labels-to-a-layer"></a>
 
@@ -142,7 +142,7 @@ name: labels_numerical_values_bad_example
 ---
 name: labels_graduated_symbology_example
 ---
-[Symbologie graduée](../Module_3/en_qgis_data_classification.md#graduated-classification)
+[Symbologie graduée](../../en/Module_3/en_qgis_data_classification.md#graduated-classification)
 :::
 
 ::::
@@ -171,7 +171,7 @@ Par défaut, QGIS rend les étiquettes de sorte qu'elles ne se chevauchent pas a
 
 :::{Attention}
 
-Consultez l'article [du wiki](../Wiki/en_qgis_representation_wiki.md) pour des tutoriels détaillés étape par étape sur la façon d'utiliser les différentes fonctionnalités du panneau de style.
+Consultez l'article [du wiki](../../en/Wiki/en_qgis_representation_wiki.md) pour des tutoriels détaillés étape par étape sur la façon d'utiliser les différentes fonctionnalités du panneau de style.
 
 Vous pouvez également lire plus loin dans l'article "[Étiquetage et hiérarchie de texte dans la cartographie](https://www.axismaps.com/guide/labeling)" par Axis Maps.
 
