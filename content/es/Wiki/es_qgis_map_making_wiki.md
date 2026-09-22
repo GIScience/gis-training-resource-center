@@ -215,7 +215,7 @@ Asegúrese de comprobar el mapa, después de exportar el PDF, ya que algunos ele
 ::::{tab-set}
 :::{tab-item} Guardar una plantilla
 
-1. Cuando esté satisfecho con el diseño de su mapa, haga clic en el símbolo ![](../../fig/en_30.30.2_save_as_template.png) para guardarlo como nueva plantilla.
+1. Cuando esté satisfecho con el diseño de su mapa, haga clic en el símbolo ![](../../../fig/en_30.30.2_save_as_template.png) para guardarlo como nueva plantilla.
 2. Elija la ubicación en la que desea guardarla. Lo ideal es elegir el directorio de plantillas (consulte el consejo).
 3. Haga clic en `Guardar`.
 4. Puede abrir la plantilla arrastrándola a un proyecto QGIS.

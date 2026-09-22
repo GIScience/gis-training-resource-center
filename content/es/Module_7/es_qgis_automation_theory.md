@@ -115,7 +115,7 @@ La potencia del diseñador de modelos reside en su capacidad para encadenar vari
 Para encadenar etapas de tratamiento:
 
 1. Añada otro algoritmo al lienzo del modelo (por ejemplo, Recortar)
-2. Como `Capa de entrada`, en lugar de ![](../../../fig/qgis_3.40_input_model_input.png) `Usando entrada del modelo`, seleccione ![](fig/qgis_3.40_input_model_algo_output.png). `Salida del algoritmo`.
+2. Como `Capa de entrada`, en lugar de ![](../../../fig/qgis_3.40_input_model_input.png) `Usando entrada del modelo`, seleccione ![](../../../fig/qgis_3.40_input_model_algo_output.png). `Salida del algoritmo`.
 3. A continuación, seleccione la entrada específica de un paso de procesamiento anterior.
 
 

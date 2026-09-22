@@ -186,7 +186,7 @@ Consejo: EPSG:32642 es un SRC ideal para Pakistán.
 ::::{margin}
 :::{tip}
 
-Existen varios algoritmos de recorte en la caja de herramientas. Asegúrese de elegir la herramienta de recorte ![](3.44_clip_vector.png) agrupada en "Vector overlay".
+Existen varios algoritmos de recorte en la caja de herramientas. Asegúrese de elegir la herramienta de recorte ![](../../../fig/3.44_clip_vector.png) agrupada en "Vector overlay".
 :::
 ::::
 
