@@ -2,7 +2,7 @@
         async src="//gc.zgo.at/count.js"></script>
 
 
-:::{figure} ../../../fig/HeiGIT_Logo_base.svg
+:::{figure} ../../fig/HeiGIT_Logo_base.svg
 ---
 height: 75 
 name: Logo HeiGIT
@@ -138,7 +138,7 @@ Bonne cartographie !
 
 :::{card}
 
-:::{figure} ../../../fig/Training_Somalia.JPG
+:::{figure} ../../fig/Training_Somalia.JPG
 ---
 width: 800px
 name: 
