@@ -155,6 +155,7 @@ parts:
       - file: GIS_AA/en_qgis_GIS_AA_exercises.md
   - caption: Tools & Methods
     chapters:
+      - file: Tools_and_Methods/en_tools_methods_overview.md
       - file: Mobile_Data_collection/en_SMT.md
       - file: Mobile_Data_collection/en_SMT_training.md
         sections:
