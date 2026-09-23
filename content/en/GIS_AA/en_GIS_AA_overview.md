@@ -33,7 +33,7 @@ This content is designed for:
 - Use of QGIS for anticipatory decision support
 
 :::{card}
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/GIS_AA/en_qgis_cyclone_trigger_madagascar.html
+:link: en_qgis_cyclone_trigger_madagascar
 
 __QGIS Model Workflow: Cyclone Anticipatory Action - Madagascar__
 
@@ -49,7 +49,7 @@ __QGIS Model Workflow: Cyclone Anticipatory Action - Madagascar__
 - Integration of GIS into trigger-based frameworks
 
 :::{card} 
-:link: ../content/GIS_AA/en_qgis_drought_trigger_somalia
+:link: en_qgis_drought_trigger_somalia
 
 __QGIS Model Workflow: Drought EAP Trigger for Somalia__
 
@@ -65,15 +65,7 @@ __QGIS Model Workflow: Drought EAP Trigger for Somalia__
 - Learning from past events to improve future triggers
 
 :::{card} 
-:link: ../content/GIS_AA/en_qgis_historical_impact_assessment_sudan
-
-__Historical Impact Assessment of Flooding in Sudan__
-
-:::
-
-
-:::{card} 
-:link: ../content/GIS_AA/en_qgis_historical_impact_assessment_sudan
+:link: en_qgis_historical_impact_assessment_sudan
 
 __Historical Impact Assessment of Flooding in Sudan__
 
@@ -86,7 +78,7 @@ __Historical Impact Assessment of Flooding in Sudan__
 In addition to the case studies, this section includes hands-on follow-along exercises that focus on the specific GIS techniques used in the case studies:
 
 :::{card}
-:link: ../content/Exercise_tracks/en_mdg_aa_cyclones
+:link: ../Exercise_tracks/en_mdg_aa_cyclones
 
 __Cyclone Anticipatory Action Analysis Exercise Track__
 
@@ -106,9 +98,10 @@ Many GIS analyses in Anticipatory Action analyses rely on **specialised tools an
 These tools are documented in the **Tools & Methods** section of this platform.
 
 Commonly used tools include:
-- Risk Assessment QGIS Plugin
-- AILAS
-- GAIA
+- [Risk Assessment QGIS Plugin](../GIS_AA/en_qgis_risk_assessment_plugin.md)
+- [AILAS](../GIS_AA/en_AILAS_madagascar.md)
+- [GAIA](../GIS_AA/en_gaia_indicators_processing.md)
+- [Sketch Map Tool](../Mobile_Data_collection/en_SMT.md)
 
 Each tool is documented separately to highlight:
 - Reusability beyond a single case study
@@ -117,7 +110,7 @@ Each tool is documented separately to highlight:
 👉 Refer to the **Tools & Methods** section for detailed documentation.
 
 ---
-<!---
+
 ## How This Content Fits into the Platform <a id="how-this-content-fits-into-the-platform"></a>
 
 - **Learn:** Build foundational GIS skills through modules and exercises  
@@ -126,7 +119,7 @@ Each tool is documented separately to highlight:
 - **Reference:** Deepen understanding through the GIS Wiki
 
 Together, these components support both **capacity building** and **operational application** of GIS for Anticipatory Action.
---->
+
 ---
 
 ## Getting Started <a id="getting-started"></a>

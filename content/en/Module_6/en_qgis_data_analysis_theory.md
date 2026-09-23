@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -24,7 +24,7 @@ Even with a single layer, extensive analysis is possible. However, often the inf
 
 ### Spatial analysis <a id="spatial-analysis"></a>
 
-```{figure} ../../fig/multiple_layer_data_analysis.png
+```{figure} ../../../fig/multiple_layer_data_analysis.png
 ---
 align: center
 name: spatial analysis using multiple layers example
@@ -85,7 +85,7 @@ Unit Problem__, where the results look different depending on the unit of analys
 
 __There are two main types of data analysis__:  
 
-```{figure} ../../fig/en_thematic_analysis.png
+```{figure} ../../../fig/en_thematic_analysis.png
 ---
 name: thematic analysis example
 width: 500px
@@ -97,7 +97,7 @@ Assigning visual variables to different attributes is already an analysis
     * For instance: variations in size depending on population numbers in a refugee camp area.
 
 
-```{figure} ../../fig/thematic_analysis_map_example.png
+```{figure} ../../../fig/thematic_analysis_map_example.png
 ---
 name: thematic analysis example
 width: 600px
@@ -105,7 +105,7 @@ width: 600px
 Thematic analysis using different colours for the roads to discern health accessibility (Source: [UNHCR](https://reliefweb.int/map/bangladesh/rohingya-refugee-responsebangladesh-rohingya-population-location-30-june-2022))
 ```
 
-```{figure} ../../fig/thematic_analysis_map_example_2.png
+```{figure} ../../../fig/thematic_analysis_map_example_2.png
 ---
 name: thematic analysis example 2
 width: 600px
@@ -117,7 +117,7 @@ Thematic analysis using different sizes to distinguish the population number in 
     * For example: crossing two satellite images to extract flooded areas between two dates; or crossing latrine and water catchment areas in a refugee camp; using a digital elevation model to determine which buildings have a high flooding risk.
 
 
-```{figure} ../../fig/en_flood_risk_map_example.png
+```{figure} ../../../fig/en_flood_risk_map_example.png
 ---
 name: flood risk map example
 width: 600 px
@@ -129,12 +129,12 @@ Example of a flood risk map. Source: Frank, Enrico & Ramsbottom, David & Avanzi,
 
 Simply knowing the size of an area or the length of a road section is valuable information. For example, you can determine how much of a road network is inaccessible or how much area is affected by flooding.
 
-These geometrical attributes can be calculated using the [__field calculator__](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_5/en_qgis_non_spatial_tools.html#calculate-field) or the processing tool __"Add geometry attributes"__. 
+These geometrical attributes can be calculated using the [__field calculator__](../Module_5/en_qgis_non_spatial_tools.md#calculate-field) or the processing tool __"Add geometry attributes"__. 
 
 The field calculators has the following functions to calculate geometry attributes as new fields in the attribute table:
 
 | *Function* | *Description* | 
-| -------- | ---|
+| --------   | ------------- |
 | `$area` | Returns the area of the current feature. The area calculated by this function respects both the current project's ellipsoid setting and area unit settings.| 
 | `$length` | Returns the length of a linestring. If you need the length of a border of a polygon, use $perimeter instead. The length calculated by this function respects both the current project's ellipsoid setting and distance unit settings.| 
 | `$perimeter` | Returns the perimeter length of the current feature. The perimeter calculated by this function respects both the current project's ellipsoid setting and distance unit settings.| 
@@ -169,9 +169,9 @@ In the field calculator, we can calculate the length, area, perimeter for each f
 QGIS comes with two basic processing tools to generate statistics:
 
 | *Processing tool* | *Description* |
-|---------- | ---|
-|"__Basic statistics for fields__" | This algorithm generates basic statistics (count, sum, mean, median, standard deviation, quartiles, ...) from the analysis of a values in a field in the attribute table of a vector layer. Numeric, date, time and string fields are supported. The statistics returned will depend on the field type. Statistics are generated as an HTML file.|
-| "__Statistics by categories__" | This algorithm calculates statistics of fields depending on a parent class. In the option `Field to calculate statistics on`, you must select the column that you wish to create statistics for (for example, area/length). In the option `Field(s) with categories` you select the values that will be used as categories in the statistics (for example, flooding=Y/N, type of road, type of building/amenity). | 
+|------------------ | ------------- |
+|"__Basic statistics for fields__"  | This algorithm generates basic statistics (count, sum, mean, median, standard deviation, quartiles, ...) from the analysis of a values in a field in the attribute table of a vector layer. Numeric, date, time and string fields are supported. The statistics returned will depend on the field type. Statistics are generated as an HTML file.|
+| "__Statistics by categories__"    | This algorithm calculates statistics of fields depending on a parent class. In the option `Field to calculate statistics on`, you must select the column that you wish to create statistics for (for example, area/length). In the option `Field(s) with categories` you select the values that will be used as categories in the statistics (for example, flooding=Y/N, type of road, type of building/amenity). | 
 
 
 :::{dropdown} Example: Statistics by categories
@@ -219,7 +219,7 @@ There are a few different types of density maps. The most common are heatmaps an
 
 Heat maps use features in a dataset to calculate the __relative density of points__ on a map. The density is displayed as a colour ramp with colours ranging from "cool" (low density) to "hot" (high density). Heatmaps are useful when you have a large number of features covering an area with areas __where these features cluster together__ and help us visualise __spatial patterns__ of a layer. 
 
-```{figure} ../../fig/point_map_to_heat_map_example.png
+```{figure} ../../../fig/point_map_to_heat_map_example.png
 ---
 name: point map to heat map example
 height: 300px
@@ -237,7 +237,7 @@ In QGIS, there are two methods to create heatmaps. The first method uses the sym
 
 You can create a heatmap in the __symbology tab__ of a point or polyline layer. Navigate to the symbology tab and select the `Heatmap` symbolisation method. Here, you can adjust the __colour ramp, radius, and maximum value__. The __radius__ (in millimetres on your screen) determines the size of the circle that is used to aggregate the points. If it gets bigger more points can be aggregated and the 'heat' increases. The __maximum value__ determines the value that is given the 'hottest' colour. By default, it is set to the highest number of aggregated points. For example, you can __set a threshold__ above which everything has the "hottest" colour. Reducing it changes the visualisation drastically.
 
-```{figure} ../../fig/en_heatmap_radius_max_value_conf_example.png
+```{figure} ../../../fig/en_heatmap_radius_max_value_conf_example.png
 ---
 name: heatmap example with different radii and max value
 width: 700 px
@@ -270,7 +270,7 @@ Next, you will need to join the point data with the hexagon grid. We want to kno
 
 The final step will be to __visualise__ the data by assigning a __graduated symbology__ to the polygons. You can play around with the transparency of your layers to make more information visible. 
 
-```{figure} ../../fig/point_to_hex_map_example.png
+```{figure} ../../../fig/point_to_hex_map_example.png
 ---
 name: point map to hex map example
 width: 700 px
@@ -310,7 +310,7 @@ You can remove the hexagon cells that are not overlapping with the reference lay
  - The tables will be combined via the key identifiers
  - Joining tables will create a new table where the attribute values are added to the key identifiers
 
-```{figure} ../../fig/en_non_spatial_join_aggregate_table.png
+```{figure} ../../../fig/en_non_spatial_join_aggregate_table.png
 ---
 name: non-spatial join aggregate table example
 width: 450 px
@@ -325,14 +325,14 @@ Table aggregation workflow
 
 Sometimes, the tables are not in a suitable format for joining. For example, having multiple zones per country makes the CNTRY_NAME field unsuitable for aggregation. In such cases, pivoting the table is useful. This involves aggregating the fields for the zones and their respective area sizes under the country. The values in the ZONE column will be transformed into columns containing the area values. This way, you can aggregate this table with additional information that includes data on countries.
 
-``` {figure} ../../fig/en_table_pivot_1.png
+``` {figure} ../../../fig/en_table_pivot_1.png
 ---
 name: Table_pivot 1
 ---
 Pivoting tables means transforming values into columns
 ```
 
-``` {figure} ../../fig/en_table_pivot_2.png
+``` {figure} ../../../fig/en_table_pivot_2.png
 ---
 name: Table pivot 2
 ---
@@ -340,17 +340,17 @@ Values of the column `ZONE` are transformed into columns
 ```
 
 
-``` {figure} ../../fig/en_table_pivot_3.png
+``` {figure} ../../../fig/en_table_pivot_3.png
 A country is now represented in a single row
 ```
  
 
-``` {figure} ../../fig/en_table_pivot_4.png
+``` {figure} ../../../fig/en_table_pivot_4.png
 The values for the areas are added to the country column
 ```
 
 
-``` {figure} ../../fig/en_table_pivot_5.png
+``` {figure} ../../../fig/en_table_pivot_5.png
 Red = Pivot field; Blue = Input field; Green = Values field
 ```
 
@@ -361,9 +361,9 @@ Red = Pivot field; Blue = Input field; Green = Values field
 
 <!---insert links-->
 
-Spatial interpolation uses point data to estimate values at other unknown points. This is extremely useful for spatial phenomena that are [continuous](link), such as rainfall or temperature. For example, you have point data of the temperatures at weather stations, but you want to estimate the temperatures in between these points. Spatial Interpolation can estimate the temperature in between those points. This form of interpolation is called a __statistical surface__. Interpolation can be used to calculate missing elevation data, precipitation, snow accumulation, water table, and population density.
+Spatial interpolation uses point data to estimate values at other unknown points. This is extremely useful for spatial phenomena that are continuous, such as rainfall or temperature. For example, you have point data of the temperatures at weather stations, but you want to estimate the temperatures in between these points. Spatial Interpolation can estimate the temperature in between those points. This form of interpolation is called a __statistical surface__. Interpolation can be used to calculate missing elevation data, precipitation, snow accumulation, water table, and population density.
 
-```{figure} ../../fig/interpolation_example_temperature.png
+```{figure} ../../../fig/interpolation_example_temperature.png
 ---
 name: interpolation example temperature heidelberg
 width: 400 px
@@ -384,7 +384,7 @@ Remember that there is no interpolation method that can be applied to every situ
 
 In the IDW interpolation method, the distance between a sample point and the point to be calculated determines how much the sample point's value influences the unknown point's value. A weighting coefficient is assigned to sample points, dictating how their influence decreases with increasing distance. The farther away a known sample point is, the less it influences the point being calculated.
 
-```{figure} ../../fig/en_idw_explanation.png
+```{figure} ../../../fig/en_idw_explanation.png
 ---
 name: IDW interpolation explanation, Mitas & Mitasova 1999
 width: 500px
@@ -392,7 +392,7 @@ width: 500px
 Inverse Distance Weighted interpolation based on weighted sample point distance (left). Interpolated IDW surface from elevation vector points (right). (Source: Mitas, L., Mitasova, H. (1999). Spatial Interpolation. In: P.Longley, M.F. Goodchild, D.J. Maguire, D.W.Rhind (Eds.), Geographical Information Systems: Principles, Techniques, Management and Applications, Wiley.)
 ```
 
-Keep in mind that IDW interpolation has a few __disadvantages__. For example, the quality of the calculated statistical surface decreases, if the distribution of sample points is uneven. Additionally, the highest and lowest values in the interpolated surface only occur at sample points, which is probably not the case in the real world. This often results in peaks or pits around the sample data points (see [IDW interpolation example](/content/Module_6/en_qgis_data_analysis_theorie.md#Interpolation)) (adopted from the [QGIS documentation](https://docs.qgis.org/2.18/de/docs/gentle_gis_introduction/spatial_analysis_interpolation.html)). 
+Keep in mind that IDW interpolation has a few __disadvantages__. For example, the quality of the calculated statistical surface decreases, if the distribution of sample points is uneven. Additionally, the highest and lowest values in the interpolated surface only occur at sample points, which is probably not the case in the real world. This often results in peaks or pits around the sample data points (see [IDW interpolation example](../Module_6/en_qgis_data_analysis_theorie.md#Interpolation)) (adopted from the [QGIS documentation](https://docs.qgis.org/2.18/de/docs/gentle_gis_introduction/spatial_analysis_interpolation.html)). 
 
 ### Spline Interpolation <a id="spline-interpolation"></a>
 

@@ -1,15 +1,15 @@
 # Consultas espaciales
 
 
-__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
 ## Selección manual
 
-- En la barra de herramientas, seleccione la herramienta ![](/fig/selection_toolbar_feature_selection.png) `Seleccionar objetos espaciales`.
+- En la barra de herramientas, seleccione la herramienta ![](../../../fig/selection_toolbar_feature_selection.png) `Seleccionar objetos espaciales`.
 - Seleccione las entidades de forma individual haciendo clic sobre cada entidad.
 - Para seleccionar varias entidades, puede mantener pulsado <kbd>Ctrl</kbd> (<kbd>Cmd</kbd> en MacOS) y seleccionar una entidad tras otra.
 - Las entidades seleccionadas aparecerán resaltadas en amarillo brillante.
-- Si abre la [tabla de atributos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_table_functions_wiki.html), la entidad seleccionada aparecerá en azul.
+- Si abre la [tabla de atributos](es_qgis_table_functions_wiki.md), la entidad seleccionada aparecerá en azul.
 
 
 

@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -25,7 +25,7 @@ __Tipo de ejercicio de capacitación:__
 :::{grid-item-card}
 __Programa de ejercicios:__
 
-Este ejercicio forma parte del [Programa de ejercicios para el análisis de acción anticipatoria de ciclones en Madagascar.](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Exercise_tracks/es_mdg_aa_cyclones.html)
+Este ejercicio forma parte del [Programa de ejercicios para el análisis de acción anticipatoria de ciclones en Madagascar.](../Exercise_tracks/es_mdg_aa_cyclones.md)
 
 :::
 
@@ -43,12 +43,12 @@ __Duración estimada del ejercicio:__
 __Artículos relevantes en Wiki__
 ^^^
 
-* [Estadísticas zonales](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html)
-* [Intersección](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Proyecciones cartográficas](/content/es/Wiki/es_qgis_projections_wiki.md)
-* [Buffer](/content/es/Wiki/es_qgis_projections_wiki.md)
-* [Recorte](/content/es/Wiki/es_qgis_projections_wiki.md)
-* [Automatización](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_automation_wiki.html)
+* [Estadísticas zonales](../Wiki/es_qgis_raster_basic_wiki.md)
+* [Intersección](../../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Proyecciones cartográficas](../Wiki/es_qgis_projections_wiki.md)
+* [Buffer](../Wiki/es_qgis_projections_wiki.md)
+* [Recorte](../Wiki/es_qgis_projections_wiki.md)
+* [Automatización](../Wiki/es_qgis_automation_wiki.md)
 
 :::
 
@@ -74,7 +74,7 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 - Tómese el tiempo para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare una pizarra. Puede tratarse de una pizarra física, un rotafolio o una pizarra digital (p. ej., una pizarra virtual de Miro) en la que los participantes pueden añadir sus hallazgos y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos hayan instalado QGIS y, hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo realizar capacitaciones?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Trainers_corner/es_how_to_training.html#how-to-do-trainings) para obtener algunos consejos generales para impartirlas.
+- Consulte [¿Cómo realizar capacitaciones?](../Trainers_corner/es_how_to_training.md) para obtener algunos consejos generales para impartirlas.
 
 ### Impartir la capacitación
 
@@ -149,7 +149,7 @@ Estimate_Exposed_Population_Health_Education
 :::::{tab-set}
 
 ::::{tab-item} Entrada del modelo: Centros de salud
-:::{figure} /fig/fr_MDG_AA_model_input_health_facilities.PNG
+:::{figure} ../../../fig/fr_MDG_AA_model_input_health_facilities.PNG
 ---
 width: 300px
 name: the_world_result
@@ -159,7 +159,7 @@ Definir una nueva entrada del modelo: capa vectorial de puntos que representa lo
 :::
 ::::
 ::::{tab-item} Entrada del modelo: Establecimientos educativos
-:::{figure} /fig/fr_MDG_AA_model_input_education_facilities.PNG
+:::{figure} ../../../fig/fr_MDG_AA_model_input_education_facilities.PNG
 ---
 width: 300px
 align: center
@@ -179,7 +179,7 @@ Definir una nueva entrada del modelo: capa vectorial de puntos que representa lo
       Total_centros_salud
       ```
      - Deje la salida como **Salida del modelo**
-:::{figure} /fig/fr_MDG_AA_model_count_points_HF_admin2.PNG
+:::{figure} ../../../fig/fr_MDG_AA_model_count_points_HF_admin2.PNG
 ---
 width: 600px
 align: center
@@ -197,7 +197,7 @@ Configuración de la operación: calcular el número de centros de salud de cada
       Total_establc_educativas
       ```
      - Deje la salida como **Salida del modelo**
-:::{figure} /fig/fr_MDG_AA_model_count_points_EF_admin2.PNG
+:::{figure} ../../../fig/fr_MDG_AA_model_count_points_EF_admin2.PNG
 ---
 width: 600px
 align: center
@@ -215,7 +215,7 @@ Configuración de la operación: calcular el número de centros escolares de cad
      - **Capa superpuesta**: zona de influencia ciclónica (utilice "Reproyectado a EPSG:4326" desde **Salida del algoritmo**)
      - Deje la salida como **Salida del modelo**
    - Haga clic en `Ok`
-:::{figure} /fig/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG
+:::{figure} ../../../fig/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG
 ---
 width: 600px
 align: center
@@ -233,7 +233,7 @@ Configuración de la operación: interconectar los centros de salud con la zona 
      - **Capa superpuesta**: zona de influencia ciclónica (utilice "Reproyectado a EPSG:4326" desde **Salida del algoritmo**)
      - Deje la salida como **Salida del modelo**
    - Haga clic en `Ok`
-:::{figure} /fig/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG
+:::{figure} ../../../fig/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG
 ---
 width: 600px
 align: center
@@ -254,7 +254,7 @@ Configuración de la operación: interconectar los centros educativos con la zon
        ```
        sum_centros_salud_expuestas
        ```
-:::{figure} /fig/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG
+:::{figure} ../../../fig/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG
 ---
 width: 600px
 align: center
@@ -275,7 +275,7 @@ Configuración de la operación: cómputo de los centros sanitarios afectados po
        ```
        sum_education_expuesta
        ```
-:::{figure} /fig/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG
+:::{figure} ../../../fig/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG
 ---
 width: 600px
 align: center
@@ -309,7 +309,7 @@ Para calcular el porcentaje de centros de salud afectados por área administrati
    ```
    adm2_centros_salud_expuestos
    ```
-:::{figure} /fig/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG
+:::{figure} ../../../fig/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG
 ---
 width: 600px
 align: center
@@ -343,7 +343,7 @@ Para calcular el porcentaje de centros educativos afectados por zona administrat
      ```
      adm2_educación_expuesta
      ```
-:::{figure} /fig/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG
+:::{figure} ../../../fig/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG
 ---
 width: 600px
 align: center
@@ -387,7 +387,7 @@ Configuration de l’opération : calculer le pourcentage d’établissements d�
 
 ::::{tab-item} Modelador gráfico
 
-:::{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG
+:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG
 ---
 width: 600px
 align: center
@@ -396,7 +396,7 @@ Vista de conjunto del Modelo Gráfico de la Tarea 3 mostrando todos los algoritm
 :::
 ::::
 ::::{tab-item} Configuración del modelo de ejecución
-:::{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG
+:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG
 ---
 width: 600px
 align: center
@@ -405,7 +405,7 @@ Configuration des paramètres pour exécuter le modèle de la tâche 3 avec tout
 :::
 ::::
 ::::{tab-item} Salida del modelo
-:::{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG
+:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG
 ---
 width: 600px
 align: center

@@ -2,11 +2,11 @@
 
 
 
-__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
 
 ## Buffer
-- Calcule un ![](/fig/mAlgorithmBuffer.png) `buffer` con una distancia definida.
+- Calcule un ![](../../../fig/mAlgorithmBuffer.png) `buffer` con una distancia definida.
 - Disolver: si dos o más áreas buffer se superponen, se pueden combinar.
 
 :::{Attention}
@@ -23,7 +23,7 @@ Si se trata de “megabuffers”, realmente grandes, o si solo se pueden elegir 
 :::
 
 ## Recorte
-- Con la herramienta ![](/fig/mAlgorithmClip.png) `Cortar` se puede extraer y conservar la extensión espacial de una capa vectorial en función de los límites de otra capa.
+- Con la herramienta ![](../../../fig/mAlgorithmClip.png) `Cortar` se puede extraer y conservar la extensión espacial de una capa vectorial en función de los límites de otra capa.
 - `Capa de entrada`: se refiere a la capa __específica que se va a recortar__, por ejemplo, una red vial.
 - `Capa de superposición`: por ejemplo, una capa de polígonos de la región (por ejemplo, las fronteras de Heidelberg).
 
@@ -33,7 +33,7 @@ Si se trata de “megabuffers”, realmente grandes, o si solo se pueden elegir 
 :::
 
 ## Disolver
-- La herramienta ![](/fig/mAlgorithmDissolve.png) `Disolver` agrega geometrías con los mismos valores de atributo.
+- La herramienta ![](../../../fig/mAlgorithmDissolve.png) `Disolver` agrega geometrías con los mismos valores de atributo.
 - Cuando dos o más áreas buffer se superponen, se pueden combinar usando disolver.
 
 :::{dropdown} Ejemplo: Extraer la red ferroviaria de Alemania
@@ -47,7 +47,7 @@ En QGIS, solo los atributos seleccionados para la operación de disolución reci
 
 ## Intersección
 
-La herramienta ![](/fig/intersection_icon.png) `Intersección` extrae la parte de las capas que se superponen.
+La herramienta ![](../../../fig/intersection_icon.png) `Intersección` extrae la parte de las capas que se superponen.
 
 1. En la barra superior, navegue a `Vectorial` → `Geoprocessing Tool` → `Intersección` o busca `Intersección` en la 
 2. `Capa de entrada`: seleccione la capa uno
@@ -60,7 +60,7 @@ La herramienta ![](/fig/intersection_icon.png) `Intersección` extrae la parte d
 * ⚠️ Atención: Los valores de atributo que hacen referencia a áreas de salida (por ejemplo, población) ya no son significativos después de la intersección
 :::
 
-:::{figure} /fig/Intersect_concept_2.png
+:::{figure} ../../../fig/Intersect_concept_2.png
 ---
 width: 500px
 name: es_Intersect_concept_2
@@ -74,7 +74,7 @@ name: es_Intersect_concept_2
 
 ## Centroides
 
-Con la herramienta ![](/fig/qgis_3.40_centroids.png) `Centroides`, puede crear una nueva capa con puntos en el centro de cada polígono.
+Con la herramienta ![](../../../fig/qgis_3.40_centroids.png) `Centroides`, puede crear una nueva capa con puntos en el centro de cada polígono.
 
 1. En la barra superior, navegue a `Vectorial` → `Geometry Tools` → `Centroides`. Alternativamente, busque `Centroides` en la [caja de herramientas de procesos]. Abra la herramienta <kbd>haciendo doble clic</kbd>.
 2. `Capa de entrada`: seleccione la capa de polígonos

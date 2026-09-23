@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -55,11 +55,11 @@ __Duración estimada del ejercicio:__
 __Artículos relevantes en Wiki__
 ^^^
 
-* [Interfaz de QGIS](/content/es/Wiki/es_qgis_interface_wiki.md)
-* [Importación de datos geoespaciales en QGIS](/content/es/Wiki/es_qgis_import_geodata_wiki.md)
-* [Concepto de capa](/content/es/Wiki/es_qgis_layer_concept_wiki.md)
-* [Tabla de atributos en QGIS](/content/es/Wiki/es_qgis_attribute_table_wiki.md)
-* [Proyecciones cartográficas](/content/es/Wiki/es_qgis_projections_wiki.md)
+* [Interfaz de QGIS](../Wiki/es_qgis_interface_wiki.md)
+* [Importación de datos geoespaciales en QGIS](../Wiki/es_qgis_import_geodata_wiki.md)
+* [Concepto de capa](../Wiki/es_qgis_layer_concept_wiki.md)
+* [Tabla de atributos en QGIS](../Wiki/es_qgis_attribute_table_wiki.md)
+* [Proyecciones cartográficas](../Wiki/es_qgis_projections_wiki.md)
 
 <!-- FIXME: to be updated -->
 
@@ -76,7 +76,7 @@ __Artículos relevantes en Wiki__
 - Tómese el tiempo necesario para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare un pizarrón. Puede ser un pizarrón físico, un rotafolio o un pizarrón digital (p. ej., un pizarrón en Miro) donde los participantes puedan añadir sus resultados y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos los participantes hayan instalado QGIS y que hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo realizar capacitaciones?](/content/es/Trainers_corner/es_how_to_training.md) para obtener algunos consejos generales para impartirlas.
+- Consulte [¿Cómo realizar capacitaciones?](../Trainers_corner/es_how_to_training.md) para obtener algunos consejos generales para impartirlas.
 
 ### Impartir la capacitación
 
@@ -123,7 +123,7 @@ El GeoPackage `Sierra_leone_administrative_boundaries.gpkg` contiene informació
 :::{admonition} Estructura de las carpetas
 :type: hint
 
-Mantenga la gestión de sus datos organizada creando una [estructura de carpetas estándar](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_geodata_management.html#estructura-de-carpetas-estandar) en su ordenador para sus proyectos QGIS y datos geográficos.
+Mantenga la gestión de sus datos organizada creando una [estructura de carpetas estándar](es_qgis_geodata_management.md) en su ordenador para sus proyectos QGIS y datos geográficos.
 Los datos del ejercicio deben guardarse en un lugar donde pueda encontrarlos fácilmente, así como el proyecto QGIS correspondiente
 
 :::
@@ -142,7 +142,7 @@ Los datos del ejercicio deben guardarse en un lugar donde pueda encontrarlos fá
       - Haz clic en Agregar. Debería aparecer una nueva capa de puntos con los aeropuertos en el lienzo del mapa.
 
 
-:::{figure} /fig/en_3.36_add_csv.png
+:::{figure} ../../../fig/en_3.36_add_csv.png
 ---
 width: 500 px
 name: es_navigation to add csv layer
@@ -151,7 +151,7 @@ Abrir la ventana de importación de CSV.
 :::
 
 
-:::{figure} /fig/en_delimited_text_screenshot.PNG
+:::{figure} ../../../fig/en_delimited_text_screenshot.PNG
 ---
 width: 80%
 name: es_delimited_text
@@ -187,7 +187,7 @@ Para obtener información sobre una capa y sus proyecciones cartográficas, haga
 
 6. Guarde la capa del centro de salud en la proyección cartográfica `WGS 84 / Pseudo-Mercator EPSG:3857`. Esto cambiará la proyección cartográfica del archivo. Para ello, haga clic con el botón derecho en la capa → `Exportar` → `Guardar objetos seleccionados como...`. En la ventana emergente, seleccione **GeoPackage como formato de archivo de salida** y **especifique la ubicación del archivo y el nombre** haciendo clic en los tres puntos pequeños. También se le puede dar al archivo un nombre de capa, que se mostrará cuando se cargue en QGIS. Antes de ejecutar este proceso, **se puede cambiar la proyección** seleccionando el SRC deseado en la sección designada. Verifique la proyección modificada observando las propiedades de la capa recién creada.
 
-:::{figure} /fig/en_ex1_export_layer.PNG
+:::{figure} ../../../fig/en_ex1_export_layer.PNG
 ---
 width: 40%
 name: es_export_layer
@@ -202,12 +202,12 @@ Captura de pantalla de la ventana Exportar
 
 :::{Note}
 
-La combinación de capas en diferentes proyecciones cartográficas con mapas base en línea (que suelen tener sus propias proyecciones) puede dar lugar a problemas de visualización debido a los [conflictos del SRC](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_projections.html#como-elegir-un-sistema-de-coordenadas-proyectadas-apropiado). Cuando las capas tienen un SRC distinto, podrían no alinearse correctamente o aparecer distorsionadas al superponerlas con un mapa base en línea. Para mitigar estos problemas, es aconsejable reproyectar las capas para que coincidan con SRC del mapa base (lo que a menudo no es aplicable) o eliminar temporalmente el mapa base antes de guardar el proyecto. Esto garantiza que el mapa se muestre con precisión y evita posibles discrepancias visuales causadas por incoherencias del SRC.
+La combinación de capas en diferentes proyecciones cartográficas con mapas base en línea (que suelen tener sus propias proyecciones) puede dar lugar a problemas de visualización debido a los [conflictos del SRC](es_qgis_projections.md). Cuando las capas tienen un SRC distinto, podrían no alinearse correctamente o aparecer distorsionadas al superponerlas con un mapa base en línea. Para mitigar estos problemas, es aconsejable reproyectar las capas para que coincidan con SRC del mapa base (lo que a menudo no es aplicable) o eliminar temporalmente el mapa base antes de guardar el proyecto. Esto garantiza que el mapa se muestre con precisión y evita posibles discrepancias visuales causadas por incoherencias del SRC.
 
 :::
 
 
-:::{figure} /fig/en_result_geodata_concept_exercise.png
+:::{figure} ../../../fig/en_result_geodata_concept_exercise.png
 ---
 width: 80%
 name: es_result_geodata_concept_exercise

@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: /content/intro
+:link: ../intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -13,7 +13,7 @@ In this chapter, we will prepare the setup for the training. This includes insta
 
 ## Quick guide QGIS 3.34.12 - installation and basic setup <a id="quick-guide-qgis-33412-installation-and-basic-setup"></a>
 
-<iframe width="800" height="515" src="https://youtube.com/embed/ck4PjoOIwMQ?si=8HHR03VzpyuhXOmr" title="YouTube Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="800" height="515" src="https://www.youtube.com/embed/Ku3VXoqrzUU?si=bo4nCCHLFuNNp9qQ" title="YouTube Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## QGIS Download and Installation <a id="qgis-download-and-installation"></a>
 
@@ -22,7 +22,6 @@ QGIS is open source and therefore freely available to everyone at no cost. You c
 :::{Warning} 
 
 There are several versions of QGIS available to download. It is recommended to use the __Long Term Release__ versions because it is the most stable and contains the fewest bugs.
-The current __Long Term Release__ is __[QGIS 3.40.4. 'Bratislava'](https://qgis.org/download/)__
 
 :::
 

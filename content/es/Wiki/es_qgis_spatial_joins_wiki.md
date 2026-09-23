@@ -1,7 +1,7 @@
 # Uniones espaciales
 
 
-__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
 
 ## Unir atributos por localización

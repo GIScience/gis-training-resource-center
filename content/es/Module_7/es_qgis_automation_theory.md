@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -10,13 +10,13 @@
 
 ## Introducción al diseñador de modelos de QGIS
 
-El ![](/fig/processingModel.png) `Diseñador de modelos`, también conocido como Model Builder, permite a los usuarios crear modelos complejos mediante una interfaz visual. La mayoría de las tareas de análisis en un SIG no están aisladas, sino que forman parte de una cadena de operaciones que dan lugar a una serie de entradas y salidas (por ejemplo, recortar el área de interés, realizar una unión espacial y aplicar algunas funciones de tabla). Con el Modelador Gráfico, esta cadena de operaciones puede combinarse en un único proceso, que luego puede reproducirse fácilmente con un conjunto diferente de entradas. Independientemente de cuántos pasos y algoritmos distintos intervengan en el análisis, un modelo se ejecuta como un único algoritmo, lo que ahorra tiempo y esfuerzo.
+El ![](../../../fig/processingModel.png) `Diseñador de modelos`, también conocido como Model Builder, permite a los usuarios crear modelos complejos mediante una interfaz visual. La mayoría de las tareas de análisis en un SIG no están aisladas, sino que forman parte de una cadena de operaciones que dan lugar a una serie de entradas y salidas (por ejemplo, recortar el área de interés, realizar una unión espacial y aplicar algunas funciones de tabla). Con el Modelador Gráfico, esta cadena de operaciones puede combinarse en un único proceso, que luego puede reproducirse fácilmente con un conjunto diferente de entradas. Independientemente de cuántos pasos y algoritmos distintos intervengan en el análisis, un modelo se ejecuta como un único algoritmo, lo que ahorra tiempo y esfuerzo.
 
 ### Interfaz gráfica de usuario
 
 Se puede acceder al Modelador gráfico desde el menú Procesamiento `Procesos` -> `Diseñador de modelos` como se muestra en {numref}`es_open_graphical_modeler`.
 
-:::{figure} /fig/en_open_graphical_modeler.png
+:::{figure} ../../../fig/en_open_graphical_modeler.png
 ---
 height: 150px
 name: es_open_graphical_modeler
@@ -26,7 +26,7 @@ Cómo abrir el Modelador gráfico en QGIS
 
 Se abrirá la siguiente ventana, que contiene todo lo que necesitamos para construir un modelo.
 
-:::{figure} /fig/en_gui_graphical_modeler.PNG
+:::{figure} ../../../fig/en_gui_graphical_modeler.PNG
 ---
 height: 500px
 name: gui_graphical_modeler
@@ -56,7 +56,7 @@ Para añadir nuevas entradas:
 
 <!---It is also possible to select the `Advanced` checkbox to set the input to be within the Advanced section. This is particularly useful when the model has many parameters and some of them are not trivial, but you still want to be able to select them.-->
 
-:::{figure} /fig/en_vector_layer_modeler.PNG
+:::{figure} ../../../fig/en_vector_layer_modeler.PNG
 ---
 height: 300px
 name: es_vector_layer_modeler
@@ -64,7 +64,7 @@ name: es_vector_layer_modeler
 Capa vectorial como entrada
 :::
 
-:::{figure} /fig/en_input_vector_modeler.PNG
+:::{figure} ../../../fig/en_input_vector_modeler.PNG
 ---
 height: 300px
 name: es_input_vector_modeler
@@ -81,7 +81,7 @@ Para añadir algoritmos:
 2. Utilizando la barra de búsqueda, busque la herramienta `Buffer` algoritmo como se muestra en {numref}`es_model_buffer`.
 3. Añádelo al lienzo del modelo arrastrándolo sobre el lienzo o haciendo doble clic sobre él.
 
-:::{figure} /fig/en_model_buffer.PNG
+:::{figure} ../../../fig/en_model_buffer.PNG
 ---
 height: 300px
 name: es_model_buffer
@@ -98,9 +98,9 @@ La ventana del algoritmo tiene un aspecto un poco diferente que cuando se utiliz
 5. En el campo `Descripción`, ingrese un nombre o una descripción de la etapa de tratamiento (por ejemplo, Red de carretera de amortiguación)
 6. Como `Capa de entrada`, seleccione una capa de entrada para el modelo (por ejemplo, infraestructura vial).
 7. A continuación, queremos especificar el tamaño del amortiguador. Las unidades de medida serán las mismas que para el proyecto CRS. Ingrese 200.000. Esto indicará al algoritmo que cree un amortiguador de 200 metros (o unidades de medida).
-8. Añada un nombre en el campo de salida ![](/fig/qgis_3.40_model_outputs.png) para especificar la salida del algoritmo como salida del modelo.
+8. Añada un nombre en el campo de salida ![](../../../fig/qgis_3.40_model_outputs.png) para especificar la salida del algoritmo como salida del modelo.
 
-:::{figure} /fig/en_qgis_3.40_model_adding_algorithm_buffer.png
+:::{figure} ../../../fig/en_qgis_3.40_model_adding_algorithm_buffer.png
 ---
 name: en_qgis_3.40_model_adding_algorithm_buffer
 width: 500 px
@@ -115,7 +115,7 @@ La potencia del diseñador de modelos reside en su capacidad para encadenar vari
 Para encadenar etapas de tratamiento:
 
 1. Añada otro algoritmo al lienzo del modelo (por ejemplo, Recortar)
-2. Como `Capa de entrada`, en lugar de ![](/fig/qgis_3.40_input_model_input.png) `Usando entrada del modelo`, seleccione ![](fig/qgis_3.40_input_model_algo_output.png). `Salida del algoritmo`.
+2. Como `Capa de entrada`, en lugar de ![](../../../fig/qgis_3.40_input_model_input.png) `Usando entrada del modelo`, seleccione ![](fig/qgis_3.40_input_model_algo_output.png). `Salida del algoritmo`.
 3. A continuación, seleccione la entrada específica de un paso de procesamiento anterior.
 
 

@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/fr/intro.html 
+:link: ../fr_intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -14,7 +14,7 @@
 
 Un enjeu important lors de la création d’une carte d’une région est qu’il est impossible de représenter une sphère sur un plan 2D sans déformer la carte. La transformation d’un objet 3D sur une surface plane peut être réalisée à l’aide d’une __projection__. Au fil des siècles, les cartographes et les mathématiciens ont développé une multitude de méthodes différentes pour projeter la Terre sur une surface plane ({numref}`en_examples_projections_IBIS`). Cependant, il n’est jamais possible de représenter correctement le monde sur une surface plane (voir la vidéo ci-dessus). Toute projection déforme soit la distance entre deux points, soit les angles entre deux lignes (directions), soit la superficie d’une zone. Une projection ne peut représenter correctement qu’une seule de ces trois dimensions. Cela signifie que, selon la méthode de projection utilisée, votre carte du monde ne représentera pas correctement les tailles, les angles ou les distances.
 
-:::{figure} /fig/en_examples_projections_IBIS.png
+:::{figure} ../../../fig/en_examples_projections_IBIS.png
 ---
 width: 700px
 align: center
@@ -29,7 +29,7 @@ Chaque projection a son cas d’usage. Par exemple, la projection de Mercator re
 La projection de Mercator est célèbre pour la déformation qu’elle introduit dans la taille relative des pays. Vous pouvez comparer la taille réelle de différents pays selon leur position sur la carte sur le site [TheTrueSize.com](https://www.thetruesize.com). Un exemple classique est celui du Groenland comparé à l’Afrique, qui semblent avoir une taille similaire sur la carte, alors qu’en réalité l’Afrique est beaucoup plus vaste.
 :::
 
-:::{figure} /fig/en_greenland_africa.png
+:::{figure} ../../../fig/en_greenland_africa.png
 ---
 width: 600px
 align: center
@@ -42,7 +42,7 @@ Comparaison Groenland - Afrique (Source : [The True Size of](https://www.thetrue
 
 En SIG, nous projetons la Terre sur un système de coordonnées plan (d’où le nom de système de coordonnées de référence, ou SCR). Il est essentiel d’avoir à l’esprit que vos données peuvent être dans un SCR et votre projet QGIS dans un autre.
 
-Le SCR du projet est affiché en bas à droite de l’[interface QGIS](https://giscience.github.io/gis-training-resource-center/content/fr/Module_1/fr_qgis_start.html#overview-of-qgis-interface). Vous y voyez le code EPSG. EPSG signifie European Petroleum Survey Group et fait référence à un système normalisé de codes pour les systèmes de coordonnées de référence (SCR) et les projections. Chaque code EPSG (par ex. EPSG:4326 pour WGS84) identifie de manière unique un SCR spécifique, ce qui garantit la cohérence et l’interopérabilité des données géospatiales sur différentes plateformes et applications.
+Le SCR du projet est affiché en bas à droite de l’[interface QGIS](../Module_1/fr_qgis_start.md). Vous y voyez le code EPSG. EPSG signifie European Petroleum Survey Group et fait référence à un système normalisé de codes pour les systèmes de coordonnées de référence (SCR) et les projections. Chaque code EPSG (par ex. EPSG:4326 pour WGS84) identifie de manière unique un SCR spécifique, ce qui garantit la cohérence et l’interopérabilité des données géospatiales sur différentes plateformes et applications.
 
 - __Codes EPSG :__ il s’agit d’identifiants numériques attribués par la base de données EPSG à des systèmes de coordonnées de référence spécifiques, ce qui les rend concis et sans ambiguïté (par ex. EPSG:4326 pour WGS84). Ils offrent une manière normalisée de référencer les SCR dans les différentes applications SIG.
 - __Noms de SCR :__ il s’agit généralement de noms descriptifs de systèmes de coordonnées de référence (par ex. "WGS 84" ou "NAD83"). Bien qu’ils donnent des indications sur le système utilisé, ils ne sont pas toujours uniques ni universellement reconnus, ce qui peut entraîner des confusions en l’absence du code EPSG correspondant.
@@ -56,7 +56,7 @@ Choisissez la projection en fonction de votre zone d’intérêt. Il existe des 
 
 Observez les images suivantes et prêtez attention à la manière dont les différents systèmes de coordonnées de référence modifient et déforment la carte du monde.
 
-:::{figure} /fig/world_mercator_tissots.png
+:::{figure} ../../../fig/world_mercator_tissots.png
 ---
 width: 500 px
 name: world_mercator_tissot
@@ -66,7 +66,7 @@ La projection de Mercator (EPSG:54004) (Source : HeiGIT).
 
 Remarquez que la forme du cercle reste identique. On peut donc en conclure que les angles restent inchangés. En revanche, les cercles deviennent plus grands à mesure qu’ils s’éloignent de l’équateur, et la distance entre eux change également lorsqu’ils s’en éloignent. Nous pouvons donc conclure que les distances et les surfaces sont déformées avec la projection de Mercator. La force de cette projection est qu’elle conserve les angles entre deux lignes. Nous le voyons au fait que les cercles restent parfaitement circulaires, même loin de l’équateur.
 
-:::{figure} /fig/WGS_84_tissots.png
+:::{figure} ../../../fig/WGS_84_tissots.png
 ---
 name: WGS_84_tissots
 width: 500 px
@@ -76,7 +76,7 @@ Le World Geodetic System 1984 (EPSG:4326) (Source : HeiGIT).
 
 Le WGS 84 est un SCR constitué d’un ellipsoïde qui ressemble étroitement à la forme de la Terre. Au lieu d’utiliser des unités métriques, il utilise des degrés angulaires (latitude et longitude). La forme des cercles de Tissot n’est pas déformée près de l’équateur, mais elle s’allonge selon l’axe est-ouest à mesure que l’on s’éloigne de l’équateur. Contrairement à la projection de Mercator, il n’y a pas de déformation dans la direction nord-sud. Comme les cercles se déforment, nous pouvons en déduire que ce SCR déforme les angles.
 
-:::{figure} /fig/World_equidistant_cylindrical_tissots.png
+:::{figure} ../../../fig/World_equidistant_cylindrical_tissots.png
 ---
 name: World_equidistant_cylindrical_tissots
 width: 500 px
@@ -96,7 +96,7 @@ Ce tableau donne un aperçu des projections à utiliser selon la propriété rec
 
 Un autre point très important dans le choix du système de coordonnées de référence est que, selon l’ellipsoïde et la méthode de projection utilisée, un même point peut se trouver à des emplacements différents (voir {numref}`wrong_CRS`). Dans la figure ci-dessous, le même point est encodé dans 3 systèmes de référence différents.
 
-:::{figure} /fig/wrong_CRS.png
+:::{figure} ../../../fig/wrong_CRS.png
 ---
 name: wrong_CRS
 width: 750 px
@@ -115,7 +115,7 @@ Il existe deux types de systèmes de coordonnées de référence : les SCR __gé
    - __Avantages :__ comme il repose sur un plan, il permet de calculer avec précision les distances, les surfaces et les angles.
    - __Inconvénients :__ un SCR projeté donné est généralement optimisé pour une région précise. Son utilisation en dehors de cette zone entraîne souvent des déformations importantes en distance, en surface et en forme.
 
-:::{figure} /fig/Problem_distance_geographic_coords.png
+:::{figure} ../../../fig/Problem_distance_geographic_coords.png
 ---
 name: problem_distance_geographic_coords
 width: 600 px
@@ -131,7 +131,7 @@ Lors du traitement des données géographiques, QGIS utilise toujours les unité
 
 ### SCR locaux et globaux <a id="local-and-global-crs"></a>
 
-:::{figure} /fig/en_local_crs.png
+:::{figure} ../../../fig/en_local_crs.png
 ---
 width: 800px
 name: en_local_crs
@@ -156,7 +156,7 @@ L’une des premières choses à faire lors de la création d’un nouveau proje
 :::
 
 1. Ouvrez un projet QGIS.
-2. Tout en bas à droite de QGIS, vous trouvez le bouton `EPSG`. Le numéro affiché à côté correspond au code EPSG actuellement utilisé dans le projet. Pour afficher davantage d’informations ou modifier le SCR, cliquez sur le bouton `Current CRS` ![](/fig/EPSG_Code.png).
+2. Tout en bas à droite de QGIS, vous trouvez le bouton `EPSG`. Le numéro affiché à côté correspond au code EPSG actuellement utilisé dans le projet. Pour afficher davantage d’informations ou modifier le SCR, cliquez sur le bouton `Current CRS` ![](../../../fig/EPSG_Code.png).
 3. La fenêtre `Project Properties` s’ouvre. Vous pouvez y consulter tous les SCR/codes EPSG disponibles ainsi que leurs propriétés.
 4. Pour modifier le SCR/code EPSG, sélectionnez celui que vous souhaitez utiliser puis cliquez sur `Apply`.
 

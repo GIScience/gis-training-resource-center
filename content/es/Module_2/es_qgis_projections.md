@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -14,7 +14,7 @@
 
 Una cuestión importante a la hora de crear un mapa de una región, es que es imposible crear una representación de una esfera en un plano 2D sin distorsionar el mapa. La transformación de un objeto 3D en una superficie plana puede realizarse con ayuda de una __proyección cartográfica__. A lo largo de los siglos, los cartógrafos y los matemáticos han desarrollado una multitud de métodos diferentes para proyectar la Tierra sobre una superficie plana ({numref}`es_examples_projections_IBIS`). Sin embargo, nunca es posible representar correctamente el mundo en una superficie plana (consulte el video anterior). Toda proyección cartográfica distorsiona la longitud entre dos puntos, los ángulos entre dos líneas (direcciones) o el tamaño de un área. Una proyección cartográfica sólo puede representar correctamente una de estas tres dimensiones. Esto significa que, según método de proyección cartográfica, su mapamundi no representará correctamente el tamaño, los ángulos o las distancias.
 
-:::{figure} /fig/en_examples_projections_IBIS.png
+:::{figure} ../../../fig/en_examples_projections_IBIS.png
 ---
 width: 700px
 align: center
@@ -30,7 +30,7 @@ La proyección cartográfica Mercator es conocida por distorsionar el tamaño de
 :::
 
 
-:::{figure} /fig/en_greenland_africa.png
+:::{figure} ../../../fig/en_greenland_africa.png
 ---
 width: 600px
 align: center
@@ -44,7 +44,7 @@ Comparación Groenlandia - África (fuente: [The True Size of](https://www.thetr
 
 En los SIG, proyectamos la Tierra sobre un sistema de coordenadas plano (de ahí el nombre de sistema de referencia de coordenadas o SRC). Es crucial, que sea consciente de que sus datos pueden estar en un SRC y su proyecto QGIS en otro SRC.
 
-El SRC del proyecto aparece en la esquina inferior derecha de la [interfaz de QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_1/es_qgis_start.html#vision-general-de-la-interfaz-de-qgis). Aquí, puede ver el código EPSG. EPSG son las siglas de European Petroleum Survey Group y se refiere a un sistema de códigos estandarizado para sistemas de referencia de coordenadas (SRC) y sus proyecciones cartográficas. Cada código EPSG (p.ej., EPSG:4326 para WGS84) identifica, de forma única, un SRC específico, lo que ayuda a garantizar la coherencia y la interoperabilidad de los datos geoespaciales entre diferentes plataformas y aplicaciones.
+El SRC del proyecto aparece en la esquina inferior derecha de la [interfaz de QGIS](../Module_1/es_qgis_start.md). Aquí, puede ver el código EPSG. EPSG son las siglas de European Petroleum Survey Group y se refiere a un sistema de códigos estandarizado para sistemas de referencia de coordenadas (SRC) y sus proyecciones cartográficas. Cada código EPSG (p.ej., EPSG:4326 para WGS84) identifica, de forma única, un SRC específico, lo que ayuda a garantizar la coherencia y la interoperabilidad de los datos geoespaciales entre diferentes plataformas y aplicaciones.
 
 - __Códigos EPSG:__ Se trata de identificadores numéricos asignados por la base de datos EPSG a sistemas de referencia de coordenadas específicos, por lo que son concisos e inequívocos (p.ej., EPSG:4326 para WGS84). Proporcionan una forma normalizada de hacer referencia a los SRC en diversas aplicaciones SIG.
 - __Nomenclatura del SRC:__ Suelen ser nombres descriptivos para los sistemas de referencia de coordenadas (p.ej., "WGS 84" o "NAD83"). Aunque los nombres pueden proporcionar información sobre el sistema utilizado, es posible que no sean únicos o universalmente reconocidos, lo que puede dar lugar a confusión sin el código EPSG que los acompaña.
@@ -58,7 +58,7 @@ Elija la proyección cartográfica en función de su área de interés. Existen 
 
 Observe las siguientes imágenes y preste atención a cómo los diferentes sistema de referencia de coordenadas cambian y distorsionan el mapamundi.
 
-:::{figure} /fig/world_mercator_tissots.png
+:::{figure} ../../../fig/world_mercator_tissots.png
 ---
 width: 500 px
 name: es_world_mercator_tissot
@@ -69,7 +69,7 @@ La proyección cartográfica de Mercator (EPSG:54004) (fuente: HeiGIT).
 Observe que la forma del círculo no cambia. Fuera de esto, podemos concluir que los ángulos permanecen iguales. Sin embargo, los círculos se hacen más grandes cuanto más se alejan del ecuador, y la distancia entre estos círculos cambia cuanto más se alejan del ecuador. Por lo tanto, podemos concluir que las distancias y los tamaños se distorsionan con la proyección cartográfica de Mercator. El punto fuerte de la proyección cartográfica de Mercator es que conserva los ángulos entre dos líneas. Podemos verlo porque los círculos permanecen perfectamente redondos cuanto más se alejan del ecuador.
 
 
-:::{figure} /fig/WGS_84_tissots.png
+:::{figure} ../../../fig/WGS_84_tissots.png
 ---
 name: es_WGS_84_tissots
 width: 500 px
@@ -80,7 +80,7 @@ Sistema Geodésico Mundial 1984 (EPSG:4326) (fuente: HeiGIT).
 El WGS 84 es un SRC que consiste en un elipsoide que se asemeja mucho a la forma de la Tierra. En lugar de unidades métricas de medida, utiliza grados angulares (latitud y longitud). La forma de los círculos de Tissot no tiene distorsiones cerca del ecuador, pero se alarga en el eje Este-Oeste, cuanto más se aleja del ecuador. A diferencia de la proyección cartográfica de Mercator, no hay distorsión en la dirección Norte-Sur. Como los círculos se distorsionan, podemos deducir que este SRC distorsiona los ángulos.
 
 
-:::{figure} /fig/World_equidistant_cylindrical_tissots.png
+:::{figure} ../../../fig/World_equidistant_cylindrical_tissots.png
 ---
 name: es_World_equidistant_cylindrical_tissots
 width: 500 px
@@ -100,7 +100,7 @@ Esta tabla muestra una visión general sobre qué proyecciones cartográficas ut
 
 Otra consideración muy importante a la hora de elegir el sistema de referencia de coordenadas es que, dependiendo del elipsoide y del método utilizado para proyectar, un mismo punto puede estar situado en lugares diferentes (véase {numref}`es_wrong_CRS`). En la figura siguiente, el mismo punto se codifica en 3 sistemas de referencia diferentes.
 
-:::{figure} /fig/wrong_CRS.png
+:::{figure} ../../../fig/wrong_CRS.png
 ---
 name: es_wrong_CRS
 width: 750 px
@@ -119,7 +119,7 @@ Existen dos tipos diferentes de sistemas de referencia de coordenadas: __geográ
    - __Ventajas__: Como utiliza una superficie plana, usted puede calcular distancias, áreas y ángulos con precisión.
    - __Desventajas__: Un determinado SRC proyectado suele estar optimizado para una región concreta. Utilizarlo fuera de su área prevista puede provocar distorsiones significativas en la distancia, el área y la forma.
 
-:::{figure} /fig/Problem_distance_geographic_coords.png
+:::{figure} ../../../fig/Problem_distance_geographic_coords.png
 ---
 name: problem_distance_geographic_coords
 width: 600 px
@@ -136,7 +136,7 @@ Al procesar los datos geográficos, el QGIS siempre utiliza las unidades de medi
 ### SRC local y mundial
 
 
-:::{figure} /fig/en_local_crs.png
+:::{figure} ../../../fig/en_local_crs.png
 ---
 width: 800px
 name: en_local_crs
@@ -162,7 +162,7 @@ Una de las primeras cosas que debe hacer al iniciar un nuevo proyecto QGIS es co
 
 
 1. Abrir un proyecto QGIS
-2. En la esquina inferior derecha de QGIS se encuentra el botón `EPSG`. El número que aparece junto a él es el código EPSG utilizado actualmente en el proyecto. Para ver más información o cambiar el SRC, haga clic en el botón `SRC actual`![](/fig/EPSG_Code.png).
+2. En la esquina inferior derecha de QGIS se encuentra el botón `EPSG`. El número que aparece junto a él es el código EPSG utilizado actualmente en el proyecto. Para ver más información o cambiar el SRC, haga clic en el botón `SRC actual`![](../../../fig/EPSG_Code.png).
 3. Se abrirá la ventana `Propriedades del proyecto`. Aquí puede ver todos los códigos SRC/EPSG disponibles y sus propiedades.
 4. Para cambiar el código SRC/EPSG, seleccione el que desee utilizar y haga clic en `Aplicar`.
 

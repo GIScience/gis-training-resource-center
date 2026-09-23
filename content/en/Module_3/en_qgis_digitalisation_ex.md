@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -72,7 +72,7 @@ This exercise makes use of a plugin which is not installed by default: `OSM Plac
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](/content/Trainers_corner/en_how_to_training.mdhow-to-do-trainings) for some general tips on how to conduct a training.
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.mdhow-to-do-trainings) for some general tips on how to conduct a training.
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -101,7 +101,7 @@ Try to always use the standard folder structure. You can find a template __[here
 
 ## Background: Cash crunch in Abuja <a id="background-cash-crunch-in-abuja"></a>
 
-In 2022 there was a cash shortage in Nigeria. Small businesses heavily rely on cash transactions and cash-based services. This lead to a cash crunch in Abuja, the capital city of Nigeria. [No cash article in Abuja](https://businessday.ng/news/article/business-groan-as-cash-crunch-hits-banks-in-abuja/). 
+In 2022 there was a cash shortage in Nigeria. Small businesses heavily rely on cash transactions and cash-based services. This lead to a [cash crunch in Abuja, the capital city of Nigeria](https://businessday.ng/news/article/business-groan-as-cash-crunch-hits-banks-in-abuja/). 
 
 ## Task: Map the banks <a id="task-map-the-banks"></a>
 
@@ -112,16 +112,16 @@ To this end, we will visualize the digitization of the First Bank, Bank of Indus
 ### Add a basemap <a id="add-a-basemap"></a>
 
 1.  Add the OSM as a base map. To add the OSM as a base map click on `Layer` → `Add Layer` → `Add XYZ Layer…`. Choose `OpenStreetMap` and click `Add`. 
-Arrange your layer in the `Layer Panel` so the OSM is at the bottom ([Wiki Video](../Wiki/en_qgis_basemaps_wiki.md)).
+Arrange your layer in the `Layer Panel` so the OSM is at the bottom ([Wiki Video](../Wiki/en_qgis_basemaps_wiki.md#standard-qgis-basemaps)).
 
 :::{Tip}
 You cannot interact with a base map!
 :::
 
-2. To add the plugin `OSM Place Search`, click on `Plugins` → `Manage and Install Plugins…` → `All` and search for `OSM Place Search`. Once you have found it, click on it and click `Install Plugin`. You can open the `OSM Place Search Panel` like every other panel by clicking on `View` → `Panels` and checking `OSM Place Search Panel`([Wiki Video](../Wiki/en_qgis_plugins_wiki.md)).
+2. To add the plugin `OSM Place Search`, click on `Plugins` → `Manage and Install Plugins…` → `All` and search for `OSM Place Search`. Once you have found it, click on it and click `Install Plugin`. You can open the `OSM Place Search Panel` like every other panel by clicking on `View` → `Panels` and checking `OSM Place Search Panel`([Wiki Video](../Wiki/en_qgis_basemaps_wiki.md#basemaps-from-quickmapservices-plugin)).
 3. In the `OSM place search` panel, search "Abuja Central Business District" and choose Abuja Municipality Area Council, City. Zoom to the Central Business District. We want to digitise the location of banks in this region. 
 For this, we will need to create a new point layer: 
-    1. Click on  `Layer` → `Create Layer` → `New GeoPackage Layer`([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md)).
+    1. Click on  `Layer` → `Create Layer` → `New GeoPackage Layer`([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creating-a-new-layer)).
     - Under `Database` click on ![](../../../fig/Three_points.png) and navigate to `temp` folder in your project folder. Give the new dataset the name “Abuja_bank_point”. Click `Save`.
     - Under `Geometry type`: Select `Point`.
     - Select the coordinate reference system (CRS) "EPSG:4326-WGS 84". By default, the QGIS selects the project CRS. 
@@ -173,7 +173,7 @@ The digitised features could look like this.
 There is some reliable information that there is a roadblock due to construction at the junction of "Independent Avenue" and "Tafawa Balewa Way". To visualise this on our map we want to create a polygon of this roadblock.  The Polygon should cover the entire junction.
 
 1. To do that we need again a new layer. In this case a polygon layer. The creation is basically the same as for the point.
-    1. Click on  `Layer` → `Create Layer` → `New GeoPackage Layer`([Wiki](../Wiki/en_qgis_digitisation_wiki.md)). 
+    1. Click on  `Layer` → `Create Layer` → `New GeoPackage Layer`([Wiki](../Wiki/en_qgis_digitisation_wiki.md#creating-a-new-layer)). 
     2. Under `Database` click on ![](../../../fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name “Abuja_roadbloc_polygon”. Click `Save`.
     3. `Geometry type`: Select `Polygon`.
     4. Select the coordinate reference system (CRS) "EPSG:4326-WGS 84".
@@ -184,7 +184,7 @@ There is some reliable information that there is a roadblock due to construction
         * Click `OK`.
 
     6. Your new layer will appear in the `Layer Panel`.
-2. To digitise this area, click on your new „Abuja_roadbloc_polygon“ layer ([Wiki](../Wiki/en_qgis_digitisation_wiki.md)). 
+2. To digitise this area, click on your new „Abuja_roadbloc_polygon“ layer ([Wiki](../Wiki/en_qgis_digitisation_wiki.md#adding-geometries-to-a-layer)). 
     - Clicking on ![](../../../fig/mActionToggleEditing.png) start `edit mode` and Add Feature: `Capture Polygon`![](../../../fig/mActionCapturePolygon.png)|. 
     - Draw geometries and enter `feature attributes`, "Roadblock_type" = "Construction_site".
     - Save edits ![](../../../fig/mActionSaveEdits.png) , exit `Edit mode`. 
@@ -197,7 +197,7 @@ A business man drove all the way from the North of Herbert Macauley Way in the C
 Create a road line layer that will allow him to get to Zenith Bank easily.
 
 1. To do that we need again a new layer. In this case a line layer. The creation of that is nearly the same as for the point.
-    - Click on  `Layer` → `Create Layer` → `New GeoPackage Layer`([Wiki](../Wiki/en_qgis_digitisation_wiki.md)). 
+    - Click on  `Layer` → `Create Layer` → `New GeoPackage Layer`([Wiki](../Wiki/en_qgis_digitisation_wiki.md#creating-a-new-layer)). 
     - Under `Database` click on ![](../../../fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name “Abuja_bank_road_connection_line”. Click `Save`.
     - `Geometry type`: Select `Line`.
     - Select the coordinate reference system (CRS) "EPSG:4326-WGS 84".
@@ -212,7 +212,7 @@ Create a road line layer that will allow him to get to Zenith Bank easily.
 
             :::
     * Your new layer will appear in the `Layer Panel`.
-2. Select the line layer “Abuja_bank_road_connection_line” to add data to in the Layer panel [Wiki](../Wiki/en_qgis_digitisation_wiki.md). 
+2. Select the line layer “Abuja_bank_road_connection_line” to add data to in the Layer panel [Wiki](../Wiki/en_qgis_digitisation_wiki.md#adding-geometries-to-a-layer). 
     1. Go to the digitisation toolbar and click on![](../../../fig/mActionToggleEditing.png). Now the layer is in the editing mode.
     2.	Click on ![](../../../fig/mActionCaptureLine.png). 
     3.	To digitise line features, click along the line. When you are done, right-click on the last point of the line to finish the feature.

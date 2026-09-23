@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -50,9 +50,9 @@ __Duración estimada del ejercicio:__
 __Artículos relevantes en Wiki__
 ^^^
 
-* [Importación de datos geoespaciales en QGIS](/content/es/Wiki/es_qgis_import_geodata_wiki.md)
-* [Estadísticas por categorías](/content/es/Module_5/es_qgis_non_spatial_tools.md)
-* [Unión no espacial](/content/es/Wiki/es_qgis_joins_wiki.md)
+* [Importación de datos geoespaciales en QGIS](../Wiki/es_qgis_import_geodata_wiki.md)
+* [Estadísticas por categorías](es_qgis_non_spatial_tools.md)
+* [Unión no espacial](../Wiki/es_qgis_joins_wiki.md)
 
 :::
 
@@ -67,7 +67,7 @@ __Artículos relevantes en Wiki__
 - Tómese su tiempo para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare una pizarra. Puede ser una pizarra blanca física, un rotafolio o una pizarra digital (por ejemplo, una pizarra Miro) donde los participantes puedan añadir sus conclusiones y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos hayan instalado QGIS y hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo realizar capacitaciones?](/content/es/Trainers_corner/es_how_to_training.md) para obtener algunos consejos generales para impartirlas.
+- Consulte [¿Cómo realizar capacitaciones?](../Trainers_corner/es_how_to_training.md) para obtener algunos consejos generales para impartirlas.
 
 ### Impartir la capacitación
 
@@ -134,7 +134,7 @@ Si comparamos los valores de la columna `admin2_EN` con la capa `pak_admbnda_adm
 
 3. En la caja de herramientas de procesos, busque la herramienta `Agregar` en `Geometría`. Haga <kbd>doble clic</kbd> en ella. Se abrirá una nueva ventana (véase {numref}`es_aggregate_tool`).
 
-:::{figure} /fig/en_3.36_aggregate.png
+:::{figure} ../../../fig/en_3.36_aggregate.png
 ---
 name: es_aggregate_tool
 width: 600 px
@@ -152,7 +152,7 @@ La herramienta Aggregate en QGIS 3.36
     4. Haga clic en `Ejecutar`. Aparecerá una nueva capa llamada "Aggregated" en el panel de capas. Cierre la ventana "Agregar".
 
 
-    :::{figure} /fig/en_3.36_aggregate_settings.png
+    :::{figure} ../../../fig/en_3.36_aggregate_settings.png
     ---
     name: es_aggregate_settings
     width: 650 px
@@ -167,7 +167,7 @@ La herramienta Aggregate en QGIS 3.36
 
     5. Echemos un vistazo a la nueva capa abriendo la tabla de atributos. Si ha hecho todo correctamente, la tabla debería tener el siguiente aspecto: {numref}`es_aggregate_results`. Podemos ver una fila por cada valor distinto en la columna `var attr 03` (Gwardar, Jamshoro, Dadu, Kambar Shahdadkot, Shiparpur). En la columna `Amount` vemos la suma de todas las transferencias individuales. En las demás columnas, podemos ver una cadena con los distintos valores de la tabla original separados por comas (por ejemplo, las distintas unidades admin3, Thesils, bajo la columna `var attr 04`).
 
-    :::{figure} /fig/en_aggregate_results.png
+    :::{figure} ../../../fig/en_aggregate_results.png
     ---
     name: es_aggregate_results
     width: 650 px
@@ -182,7 +182,7 @@ En este paso, agregaremos la información consolidada que hemos obtenido del arc
 
 1. En la caja de herramientas de procesos, busque `Unir atributos por valor de campo`. <kbd>Haga doble clic</kbd> en ella. Se abrirá una nueva ventana.
 
-    :::{figure} /fig/en_3.36_join_by_attr.png
+    :::{figure} ../../../fig/en_3.36_join_by_attr.png
     ---
     name: es_join_by_attr
     width: 700 px
@@ -198,7 +198,7 @@ En este paso, agregaremos la información consolidada que hemos obtenido del arc
 
 ¡Felicitaciones, hemos unido con éxito un archivo CSV con una capa de polígonos!
 
-:::{figure} /fig/en_m5_ex5_results.png
+:::{figure} ../../../fig/en_m5_ex5_results.png
 ---
 name: es_aggregation_ex_results
 width: 750 px

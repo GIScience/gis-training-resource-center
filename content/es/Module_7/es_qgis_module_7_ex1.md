@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -44,12 +44,12 @@ __Duración estimada del ejercicio:__
 __Artículos relevantes en Wiki__
 ^^^
 
-* [Estadísticas zonales](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html)
-* [Intersección](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Proyecciones cartográficas](/content/es/Wiki/es_qgis_projections_wiki.md)
-* [Buffer](/content/es/Wiki/es_qgis_projections_wiki.md)
-* [Recorte](/content/es/Wiki/es_qgis_projections_wiki.md)
-* [Automatización](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_automation_wiki.html)
+* [Estadísticas zonales](../Wiki/es_qgis_raster_basic_wiki.md)
+* [Intersección](../../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Proyecciones cartográficas](../Wiki/es_qgis_projections_wiki.md)
+* [Buffer](../Wiki/es_qgis_projections_wiki.md)
+* [Recorte](../Wiki/es_qgis_projections_wiki.md)
+* [Automatización](../Wiki/es_qgis_automation_wiki.md)
 
 :::
 
@@ -75,7 +75,7 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 - Tómese el tiempo para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare una pizarra. Puede tratarse de una pizarra física, un rotafolio o una pizarra digital (p. ej., una pizarra virtual de Miro) en la que los participantes pueden añadir sus hallazgos y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos hayan instalado QGIS y, hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo realizar capacitaciones?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Trainers_corner/es_how_to_training.html#how-to-do-trainings) para obtener algunos consejos generales para impartirlas.
+- Consulte [¿Cómo realizar capacitaciones?](../Trainers_corner/es_how_to_training.md) para obtener algunos consejos generales para impartirlas.
 
 ### Impartir la capacitación
 
@@ -106,7 +106,7 @@ __Descargue todos los conjuntos de datos [aquí](), guarde la carpeta en su comp
 
 :::
 
-La carpeta se llama “ y contiene toda la [estructura de carpetas estándar](/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md#standard-folder-structure) con todos los datos de la carpeta de entrada y la documentación adicional en la carpeta de documentación.
+La carpeta se llama “ y contiene toda la [estructura de carpetas estándar](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) con todos los datos de la carpeta de entrada y la documentación adicional en la carpeta de documentación.
 
 | Conjunto de datos | Fuente | Descripciones |
 | ----- | --- | --- |
@@ -122,7 +122,7 @@ La carpeta se llama “ y contiene toda la [estructura de carpetas estándar](/c
 __Contexto__
 ^^^
 
-```{figure} /fig/IFRC-icons-colour_SURGE.png
+```{figure} ../../../fig/IFRC-icons-colour_SURGE.png
 ---
 width: 100px
 align: right
@@ -139,7 +139,7 @@ Este año, Aina quiere adelantarse a los acontecimientos. En lugar de analizar m
 
 :::
 
-```{figure} /fig/Module_7/en_ex_m7_cylone_automatisation.drawio.png
+```{figure} ../../../fig/Module_7/en_ex_m7_cylone_automatisation.drawio.png
 ---
 name: Task_1_workflow
 width: 750 px
@@ -156,11 +156,11 @@ Deberá crear manualmente una zona de amortiguación para la trayectoria del cic
 
 
 
-1. **Abra QGIS** y cree un [Nuevo proyecto](/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Project` -> `New`
+1. **Abra QGIS** y cree un [Nuevo proyecto](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Project` -> `New`
 
 2. **Guarde el proyecto** en la carpeta "proyecto". Para ello, haga clic en `Project` -> `Save as` y navegue hasta la carpeta. Asigne el nombre “Cyclon_Harald_Exposure”.
 
-3. **Cargue el GeoJOSN** archivo "example_Harald_2025_Track.geojson" en su proyecto arrastrando y soltando ([Video de Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). Abra la carpeta `data` -> `input`
+3. **Cargue el GeoJOSN** archivo "example_Harald_2025_Track.geojson" en su proyecto arrastrando y soltando ([Video de Wiki](../../en/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Abra la carpeta `data` -> `input`
 
 
 4. **Reproyectar la trayectoria del ciclón** para usar metros en lugar de grados (importante para una amortiguación precisa):
@@ -168,7 +168,7 @@ Deberá crear manualmente una zona de amortiguación para la trayectoria del cic
    - Entrada: `example_Harald_2025_Track`
    - CRS objetivo: `EPSG:29738` u otro SRI basado en medidores apropiado para Madagascar.
    - Guarde el resultado en el archivo `temp` carpeta como: **`Harald_Track_Reprojected`**
-```{figure} /fig/fr_MDG_AA_reproject_cyclon_track.PNG
+```{figure} ../../../fig/fr_MDG_AA_reproject_cyclon_track.PNG
 ---
 width: 600px
 align: center
@@ -186,7 +186,7 @@ Las distancias de zona de amortiguación deben calcularse en metros. Muchos conj
    - Segmentos: Dejar por defecto (5)
    - Disolver: `Yes`
    - Guarde la salida en el archivo `temp` carpeta como: **`Harald_Buffer_200km`**
-```{figure} /fig/fr_MDG_AA_cyclon_track_buffer.PNG
+```{figure} ../../../fig/fr_MDG_AA_cyclon_track_buffer.PNG
 ---
 width: 600px
 align: center
@@ -195,7 +195,7 @@ Tamponner la trajectoire du cyclone
 ```
 
 :::{dropdown} Resultado intermedio: Amortiguación
-```{figure} /fig/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG
 ---
 width: 600px
 align: center
@@ -208,7 +208,7 @@ Les résultats intermédiaires doivent montrer la trajectoire du cyclone et la z
    - Entrada: Harald_Buffer_200km_29738
    - CRS objetivo: EPSG:4326 – WGS 84
    - Guarde la salida en la carpeta temporal como: Harald_Buffer_200km_4326
-```{figure} /fig/fr_MDG_AA_reproject_cyclon_buffer.PNG
+```{figure} ../../../fig/fr_MDG_AA_reproject_cyclon_buffer.PNG
 ---
 width: 600px
 align: center
@@ -227,7 +227,7 @@ Reprojetter la tamponner trajectoire du cyclone
    - Ráster de entrada: `MDG_WorldPop_2020_constrained`
    - Capa de máscara: `Harald_Buffer_200km`
    - Guarde la salida en el archivo `temp` carpeta como: **`Harald_Pop_Clip`**
-```{figure} /fig/fr_MDG_AA_clip_pop_raster.PNG
+```{figure} ../../../fig/fr_MDG_AA_clip_pop_raster.PNG
 ---
 width: 600px
 align: center
@@ -235,7 +235,7 @@ align: center
 Découpez la population ratser selon la zone affectée par le cyclone (trajectoire tampon du cyclone)
 ```
 :::{dropdown} Resultado intermedio: Recorte de Capa ráster de población
-```{figure} /fig/fr_MDG_AA_intermediate_result_clip_pop_raster.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_clip_pop_raster.PNG
 ---
 width: 600px
 align: center
@@ -252,7 +252,7 @@ Résultat intermédiaire du découpage de la couche raster de population à l'é
    - Prefijo de campo: p. ej., `exposed_population_`
    - Guarde la capa vectorial actualizada en la `result` carpeta como: **`Harald_Exposed_Populationg`**
    - El resultado será una nueva columna en la tabla de atributos de la `mdg_admbnda_adm2_BNGRC_OCHA_201810312.gpkg` capa, que muestra la población total dentro de la zona de amortiguación del ciclón por distrito.
-```{figure} /fig/fr_MDG_AA_pop_zonal_statistic.PNG
+```{figure} ../../../fig/fr_MDG_AA_pop_zonal_statistic.PNG
 ---
 width: 600px
 align: center
@@ -275,7 +275,7 @@ Para ello, aplicaremos una **clasificación graduada** a la `Harald_Exposed_Popu
 ```{tip}
 Puede ajustar los límites o las etiquetas de clase haciendo doble clic en cada entrada de clase.
 ```
-```{figure} /fig/fr_MDG_AA_pop_graduadt_classification_exposed_population.PNG
+```{figure} ../../../fig/fr_MDG_AA_pop_graduadt_classification_exposed_population.PNG
 ---
 width: 600px
 align: center
@@ -285,7 +285,7 @@ Configuración de la visualización de la población expuesta en cinco clases.
 
 Sus resultados deberían verse así:
 
-```{figure} /fig/fr_MDG_AA_intermediate_result_visualisation_exposed_population.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_visualisation_exposed_population.PNG
 ---
 width: 600px
 name: the_world_result
@@ -346,7 +346,7 @@ En esta tarea, ayudarás a Aina a construir una versión sencilla de ese modelo 
 ::::{tab-set}
 
 :::{tab-item} Entrada Trayectoria del ciclón
-```{figure} /fig/fr_MDG_AA_model_input_cyclon_track.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_input_cyclon_track.PNG
 ---
 width: 600px
 align: center
@@ -356,7 +356,7 @@ Definición de la entrada del modelo: Trayectoria del ciclón
 :::
 
 :::{tab-item} Entrada de límites administrativos
-```{figure} /fig/fr_MDG_AA_model_input_admin_bounderies.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_input_admin_bounderies.PNG
 ---
 width: 600px
 align: center
@@ -365,7 +365,7 @@ Definición de la entrada del modelo: Límites administrativos
 :::
 
 :::{tab-item} Ráster de población
-```{figure} /fig/fr_MDG_AA_model_input_population_raster.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_input_population_raster.PNG
 ---
 width: 600px
 align: center
@@ -376,7 +376,7 @@ Definición de la entrada del modelo: Ráster de población
 ::::
 **Resultado intermedio**
 
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_input.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_input.PNG
 ---
 width: 600px
 name: the_world_result
@@ -393,7 +393,7 @@ Résultat intermédiaire de la définition des données d'entrée du modèle
      - Configure **SRC de destino** a `EPSG:29738 – Madagascar / Laborde Grid`.
      - Configure la salida como **Salida del modelo** (deje el nombre de la salida **en blanco** ).
    - Haga clic en **Aceptar** para añadir el paso al modelo.
-```{figure} /fig/fr_MDG_AA_model_reporject_cyclon_track.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_reporject_cyclon_track.PNG
 ---
 width: 600px
 name: the_world_result
@@ -412,7 +412,7 @@ Reprojecter la couche de trajectoire du cyclone vers un système de référence 
      - Configure **Resultado de disolución** en `Yes`.
      - Configure la salida como **Salida del modelo** (deje el nombre de la salida **en blanco** ).
    - Haga clic en ``Ok`` para añadir el paso al modelo.
-```{figure} /fig/fr_MDG_AA_model_buffer_cyclon_track.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_buffer_cyclon_track.PNG
 ---
 width: 600px
 name: the_world_result
@@ -429,7 +429,7 @@ Mettre en mémoire tampon la couche Cyclone reprojetée
      - Configure **SRC de destino** a `EPSG:4326 – WGS 84`.
      - Configure la salida como **Salida del modelo** (deje el nombre de la salida **en blanco** ).
    - Haga clic en ``Ok`` para añadir el paso al modelo.
-```{figure} /fig/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG
 ---
 width: 600px
 name: the_world_result
@@ -446,7 +446,7 @@ Reprojecter le tampon vers EPSG:4326
      - Configure la **Capa de máscara** en la salida del paso anterior (de **Salida del algoritmo**).
      - Configure la salida como **Salida del modelo** (deje el nombre de la salida **en blanco** ).
    - Haga clic en ``Ok`` para añadir el paso al modelo.
-```{figure} /fig/fr_MDG_AA_model_clip_pop_raster.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_clip_pop_raster.PNG
 ---
 width: 600px
 name: the_world_result
@@ -467,7 +467,7 @@ Découper la couche raster de population pour l'étendre au tampon Cyclon
       exposed_population_sum
       ```
    - Haga clic en ``Ok`` para añadir el paso al modelo.
-```{figure} /fig/fr_MDG_AA_model_zonal_statistic_pop_admin2.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_zonal_statistic_pop_admin2.PNG
 ---
 width: 600px
 name: the_world_result
@@ -478,7 +478,7 @@ Calcul de la population exposée aux cyclones par district
 
 **Los resultados deberían ser parecidos a los siguientes:**
 
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_algorythms.PNG
 ---
 width: 600px
 name: the_world_result
@@ -502,7 +502,7 @@ Votre modèle devrait resssemler à ceci. Tous les algorithmes sont correctement
 
 Ahora puede ejecutar este modelo cada vez que esté disponible una nueva trayectoria de ciclón.
 
-```{figure} /fig/fr_MDG_AA_model_run_model_M7_e1_task2.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_run_model_M7_e1_task2.PNG
 ---
 width: 600px
 name: the_world_result
@@ -512,7 +512,7 @@ Pour exécuter le modèle, spécifiez l'entrée comme indiqué dans l'image et d
 ```
 
 **Los resultados deberían ser parecidos a los siguientes:**
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_task1_basics.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_task1_basics.PNG
 ---
 width: 600px
 name: the_world_result
@@ -530,7 +530,7 @@ align: center
    - Haga clic en `Ok` para guardar el cambio.
    - Esto permitirá que el modelo genere tanto los resultados de la población expuesta como la zona buffer de impacto del ciclón cuando se ejecute.
 
-```{figure} /fig/fr_MDG_AA_model_output_buffer.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_output_buffer.PNG
 ---
 width: 600px
 name: the_world_result
@@ -552,7 +552,7 @@ align: center
 
 :::{tab-item} Buffer de salida del modelador gráfico
 
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_graphic.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_graphic.PNG
 ---
 width: 600px
 name: the_world_result
@@ -563,7 +563,7 @@ Definición de la entrada del modelo: Límites administrativos
 :::
 
 :::{tab-item} Ejecute modelo con salida de buffer
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_model_exicution.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_model_exicution.PNG
 ---
 width: 600px
 align: center
@@ -573,7 +573,7 @@ Definición de la entrada del modelo: Ráster de población
 :::
 
 :::{tab-item} Salida del modelo
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG
 ---
 width: 600px
 align: center
@@ -629,7 +629,7 @@ Estimate_Exposed_Population_Health_Education
 ::::{tab-set}
 
 :::{tab-item} Entrada del modelo: Centros de salud
-```{figure} /fig/fr_MDG_AA_model_input_health_facilities.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_input_health_facilities.PNG
 ---
 width: 300px
 name: the_world_result
@@ -639,7 +639,7 @@ Définir une nouvelle entrée de modèle : couche vectorielle de points représe
 ```
 :::
 :::{tab-item} Entrada del modelo: Establecimientos educativos
-```{figure} /fig/fr_MDG_AA_model_input_education_facilities.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_input_education_facilities.PNG
 ---
 width: 300px
 align: center
@@ -659,7 +659,7 @@ Définir une nouvelle entrée de modèle : couche vectorielle de points représe
       Count_health_total
       ```
      - Deje la salida como **Salida del modelo**
-```{figure} /fig/fr_MDG_AA_model_count_points_HF_admin2.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_count_points_HF_admin2.PNG
 ---
 width: 600px
 align: center
@@ -677,7 +677,7 @@ Configuration de l'opération : compter le nombre d'établissements de santé da
       count_education_total
       ```
      - Deje la salida como **Salida del modelo**
-```{figure} /fig/fr_MDG_AA_model_count_points_EF_admin2.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_count_points_EF_admin2.PNG
 ---
 width: 600px
 align: center
@@ -695,7 +695,7 @@ Configuration de l'opération : compter le nombre d'établissements scolaires da
      - **Capa superpuesta**: zona de influencia ciclónica (utilice "Reproyectado a EPSG:4326" desde **Salida del algoritmo**)
      - Deje la salida como **Salida del modelo**
    - Haga clic en `Ok`
-```{figure} /fig/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_clip_intersect_HF_cyclone_buffer.PNG
 ---
 width: 600px
 align: center
@@ -713,7 +713,7 @@ Configuration de l'opération : intersecter les établissements de santé avec l
      - **Capa superpuesta**: zona de influencia ciclónica (utilice "Reproyectado a EPSG:4326" desde **Salida del algoritmo**)
      - Deje la salida como **Salida del modelo**
    - Haga clic en `Ok`
-```{figure} /fig/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_clip_intersect_EF_cyclone_buffer.PNG
 ---
 width: 600px
 align: center
@@ -734,7 +734,7 @@ Configuration de l'opération : intersecter les établissements de education ave
        ```
        sum_exposed_health
        ``` 
-```{figure} /fig/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_count_points_HF_affected_admin2.PNG
 ---
 width: 600px
 align: center
@@ -755,7 +755,7 @@ Configuration de l'opération : compter les établissements de santé touchés p
        ```
        sum_exposed_education
        ``` 
-```{figure} /fig/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_count_points_EF_affected_admin2.PNG
 ---
 width: 600px
 align: center
@@ -789,7 +789,7 @@ Para calcular el porcentaje de centros de salud afectados por área administrati
     ```
     admin2_health_affected
     ```
-```{figure} /fig/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_field_calc_pct_health_exposed.PNG
 ---
 width: 600px
 align: center
@@ -823,7 +823,7 @@ Para calcular el porcentaje de centros educativos afectados por zona administrat
      ```
      admin2_education_affected
      ```
-```{figure} /fig/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_field_calc_pct_education_exposed.PNG
 ---
 width: 600px
 align: center
@@ -867,7 +867,7 @@ Configuration de l’opération : calculer le pourcentage d’établissements d�
 
 :::{tab-item} Modelador gráfico
 
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model.PNG
 ---
 width: 600px
 align: center
@@ -876,7 +876,7 @@ Vue d’ensemble du Modèle Graphique de la tâche 3 montrant tous les algorithm
 ```
 :::
 :::{tab-item} Configuración del modelo de ejecución
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG
 ---
 width: 600px
 align: center
@@ -885,7 +885,7 @@ Configuration des paramètres pour exécuter le modèle de la tâche 3 avec tout
 ```
 :::
 :::{tab-item} Salida del modelo
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG
 ---
 width: 600px
 align: center
@@ -943,7 +943,7 @@ Aplique los siguientes archivos de estilo`.qml` a las capas correspondientes:
 - Seleccione **Propiedades**
 - En la ventana que se abre, vaya a la pestaña **Simbología**.
 - En la parte inferior izquierda, haga clic en **Style** → **Load Style…**
-- Haga clic en los tres puntos ![](/fig/Three_points.png)
+- Haga clic en los tres puntos ![](../../../fig/Three_points.png)
 - Navegue hasta el archivo `.qml` correspondiente en la carpeta `layer_sytle` y selecciónelo.
 - Haga clic en **Abrir**,luego en **Aplicar** y **Aceptar** para confirmar
 
@@ -958,7 +958,7 @@ Aplique los siguientes archivos de estilo`.qml` a las capas correspondientes:
 
 :::{tab-item} Resultado intermedio: Población expuesta
 
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_task4_exposed_pop_style.PNG
 ---
 width: 600px
 align: center
@@ -967,7 +967,7 @@ Carte montrant le nombre de personnes exposées par district après l’applicat
 ```
 :::
 :::{tab-item} Resultado intermedio: Instalaciones de salud expuestas
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_task4_exposed_HS_sum_style.PNG
 ---
 width: 600px
 align: center
@@ -976,7 +976,7 @@ Carte indiquant le nombre total d’établissements de santé exposés par distr
 ```
 :::
 :::{tab-item} Resultado intermedio: Instalaciones educativas expuestas
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_task4_exposed_ES_sum_style.PNG
 ---
 width: 600px
 align: center
@@ -1144,7 +1144,7 @@ Para solucionar esto, abra las propiedades de la tabla en el diseño y **reduzca
 6. **Actualice logotipos e iconos**
  - Los logotipos que hay que añadir al mapa están representados por la **X** roja.
  - Haga clic en la imagen de la **lista de elementos**.
- - Haga clic en los tres puntos ![](/fig/Three_points.png) junto a la ruta del archivo.
+ - Haga clic en los tres puntos ![](../../../fig/Three_points.png) junto a la ruta del archivo.
  - Vaya a la carpeta `logos_pictures` y seleccione el archivo del logotipo correcto.
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_map_making_update_logos.mp4"></video>
@@ -1176,7 +1176,7 @@ Para solucionar esto, abra las propiedades de la tabla en el diseño y **reduzca
 ```{dropdown} El resultado final después de aplicar el estilo a la capa debería ser el siguiente
  El mapa muestra ahora claramente la población expuesta dentro de los distritos afectados. Se resalta la línea original de la trayectoria de la tormenta, utilizada como datos de entrada, y la zona de amortiguación de impacto, que sirve como indicador para identificar los distritos expuestos.
  En la parte derecha del mapa, una lista muestra todos los distritos expuestos, con datos sobre la población total y la población expuesta. Los distritos (Admin 2) están organizados en sus regiones correspondientes (Admin 1).
-```{figure} /fig/MAD_Trigger_Impact_Population_Map_example.png
+```{figure} ../../../fig/MAD_Trigger_Impact_Population_Map_example.png
 ---
 width: 1000px
 name:
@@ -1232,7 +1232,7 @@ Uniremos las siguientes capas paso a paso:
   - **Tipo de unión**: Tome los atributos de la primera característica coincidente solamente (uno a uno)
   - Deje la salida como **Salida del modelo**
 
-```{figure} /fig/fr_MDG_AA_model_join_affacted_pop.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_join_affacted_pop.PNG
 ---
 width: 600px
 name: the_world_result
@@ -1262,7 +1262,7 @@ Ahora, una el resultado del paso anterior (salud + educación) a los datos de **
   - **Tipo de unión**: Tome los atributos de la primera característica coincidente solamente (uno a uno)
   - Deje la salida como **Salida del modelo**
 
-```{figure} /fig/fr_MDG_AA_model_join_affacted_pop_HS_ES.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_join_affacted_pop_HS_ES.PNG
 ---
 width: 600px
 name: the_world_result
@@ -1294,7 +1294,7 @@ Copie siempre los nombres de los campos **directamente de la tabla** de atributo
   - Haga clic en `Ok` para agregarlo al modelo.
 Una vez que ejecute el modelo, este paso generará automáticamente una hoja de cálculo con todos los indicadores relevantes listos para el equipo de operaciones.
 
-```{figure} /fig/fr_MDG_AA_model_export_as_table.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_export_as_table.PNG
 ---
 width: 600px
 name: the_world_result
@@ -1346,7 +1346,7 @@ Exportador tous les indicaurs (población, sanidad, educación) vers un tableau 
 
 :::{tab-item} Modelador gráfico
 
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task_6_export_spreadsheet__model.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_algorythms_task_6_export_spreadsheet__model.PNG
 ---
 width: 600px
 align: center
@@ -1355,7 +1355,7 @@ Vue du modeleur graphique avec l’étape d’exportation vers un tableau ajout�
 ```
 :::
 :::{tab-item} Configuración del modelo de ejecución
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task6_export_spreadsheet_run_configurations.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_algorythms_task6_export_spreadsheet_run_configurations.PNG
 ---
 width: 600px
 align: center
@@ -1364,7 +1364,7 @@ Fenêtre de configuration pour exécuter le modèle avec l’option d’export v
 ```
 :::
 :::{tab-item} Salida del modelo
-```{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task6_export_spreadsheet_results_AT.PNG
+```{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_algorythms_task6_export_spreadsheet_results_AT.PNG
 ---
 width: 600px
 align: center
@@ -1478,7 +1478,7 @@ Aina necesita identificar a qué puestos de salud se puede llegar por carretera 
    - Haga clic en **Ejecutar**.
    💡 Los puntos seleccionados son aquellos que se encuentran dentro de las áreas de servicio de 10 horas de los almacenes.
 3. **Cree un campo de accesibilidad para publicaciones de salud seleccionadas**
-   - Abra la **Calculadora de campo** ![](/fig/mActionCalculateField.png) en la capa `health_posts_only`.
+   - Abra la **Calculadora de campo** ![](../../../fig/mActionCalculateField.png) en la capa `health_posts_only`.
    - Confirme ✅ `Only update selected features`
    - **Nombre del campo de salida**: `Reachability_time`
    - **Tipo de campo de salida**: `Text (string)`
@@ -1489,7 +1489,7 @@ Aina necesita identificar a qué puestos de salud se puede llegar por carretera 
    - Haga clic en ``Ok`` para crear y completar el nuevo campo para las características seleccionadas.
 4. **Marque las publicaciones de salud restantes como no accesibles**
    - Invierta la selección: 
-        Vaya a `Edit` → `Invert Feature Selection` ![](/fig/mActionInvertSelection.png) 
+        Vaya a `Edit` → `Invert Feature Selection` ![](../../../fig/mActionInvertSelection.png) 
         o haga clic con el botón derecho en la capa y seleccione `Invert Selection`.
    - Abra la **Calculadora de campo** otra vez.
    - Confirme ✅ `Only update selected features`

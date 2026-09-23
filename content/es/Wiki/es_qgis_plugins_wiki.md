@@ -1,7 +1,7 @@
 (content:references:wiki:plugins)=
 # Complementos
 
-__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
 Existen muchas extensiones para QGIS, también llamadas complementos, que proporcionan funcionalidades adicionales. Si hay que llevar a cabo una tarea específica y QGIS no tiene la funcionalidad adecuada, busque un complemento. Puede buscarlo en Google o en la ventana del complemento.
 
@@ -49,7 +49,7 @@ Para descargar datos e importarlos a QGIS, el complemento **QuickOSM** es una bu
 
 ::::{dropdown} Cómo descargar el complemento
 
-:::{figure} /fig/managa_install_plugins.png
+:::{figure} ../../../fig/managa_install_plugins.png
 ---
 width: 400px
 align: center
@@ -58,7 +58,7 @@ name: es_manage_install_plugins_wiki
 Gestionar e instalar complementos.
 :::
 
-:::{figure} /fig/install_quickosm.png
+:::{figure} ../../../fig/install_quickosm.png
 ---
 width: 800px
 name: es_install_quickosm_wiki
@@ -74,7 +74,7 @@ Siga los pasos para obtener los datos:
 
 1. Seleccione una clave y un valor en la lista desplegable. Si no está seguro, consulte aquí: [taginfo.openstreetmap.org](https://taginfo.openstreetmap.org).
 
-:::{figure} /fig/key_value_quickosm.png
+:::{figure} ../../../fig/key_value_quickosm.png
 ---
 width: 800px
 align: center
@@ -87,7 +87,7 @@ Elegir la clave y el valor en QuickOSM.
 
 3. Despliegue la pestaña `Avanzado`. Solo seleccione los tipos de datos que espera para minimizar la cantidad de errores.
 
-:::{figure} /fig/quickosm_usage.png
+:::{figure} ../../../fig/quickosm_usage.png
 ---
 width: 800px
 align: center
@@ -100,6 +100,6 @@ Ejecutar el complemento QuickOSM.
 
 :::{dropdown} Cómo obtener datos para varias consultas
 
-Si desea obtener más datos en la misma área, puede agregar una consulta haciendo clic en el icono ![](fig/plus_quickosm.png). Tenga cuidado al elegir el operador lógico correcto `AND` o `OR`. Si no está seguro, consulte la [Wiki](/content/es/Wiki/es_qgis_non_spatial_queries_wiki).
+Si desea obtener más datos en la misma área, puede agregar una consulta haciendo clic en el icono ![](../../../fig/plus_quickosm.png). Tenga cuidado al elegir el operador lógico correcto `AND` o `OR`. Si no está seguro, consulte la [Wiki](es_qgis_non_spatial_queries_wiki.md).
 
 :::

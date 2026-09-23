@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -12,7 +12,7 @@ En el capítulo anterior se repasaron los fundamentos de la simbolización gráf
 
 ## Panel de estilo
 
-:::{figure} ../../fig/en_30.30.2_styling_panel.png
+:::{figure} ../../../fig/en_30.30.2_styling_panel.png
 ---
 height: 400px
 name: en_30.30.2_styling_panel
@@ -41,7 +41,7 @@ crear etiquetas y crear rampas de color para diferenciar las entidades con valor
 Puede utilizar variables gráficas para aplicar estilos a los datos vectoriales. Como ya hemos aprendido, los datos vectoriales pueden ser puntos,
 líneas o polígonos. Existen diferentes opciones para simbolizar estos diferentes tipos de datos vectoriales.
 
-:::{figure} ../../fig/en_symbolization_vector_data.png
+:::{figure} ../../../fig/en_symbolization_vector_data.png
 ---
 name: es_symbolization_vector_data
 width: 750px
@@ -59,11 +59,11 @@ La mayoría de los marcadores simples constan de un __relleno__ y un __contorno_
 
 - El relleno determina el color de relleno del símbolo. Puede cambiar el color y la transparencia. También puede hacer rellenos más complejos, como un relleno de patrón de línea o un relleno de símbolo SVG.
 - El contorno determina el color, el tipo y el grosor del contorno. Junto al color y la transparencia, el contorno es el elemento más critico para diferenciar entre los distintos elementos. Por ejemplo, las líneas más gruesas para las carreteras suelen significar vías de un orden superior (como autopistas), mientras que las líneas discontinuas finas, podrían significar senderos, inaccesibles para los vehículos de carretera.
-- Puede aplicar estilos a un único símbolo para cada capa o utilizar estilos diferentes basados en un [método de categorización](/content/es/Module_3/es_qgis_data_classification.md).
+- Puede aplicar estilos a un único símbolo para cada capa o utilizar estilos diferentes basados en un [método de categorización](../Module_3/es_qgis_data_classification.md).
 
 En la pestaña Simbología, puede seleccionar entre varios métodos de simbolización (consulte la {numref}`es_3.36_m4_symbolisation_methods`). Los más importantes son __Single Symbol__, __Categorized__, __Graduated__, y __Rule base__.
 
-:::{figure} /fig/en_3.36_m4_symbolisation_methods.png
+:::{figure} ../../../fig/en_3.36_m4_symbolisation_methods.png
 ---
 name: es_3.36_m4_symbolisation_methods
 width: 500 px
@@ -134,7 +134,7 @@ Para cambiar la simbología de una sola capa:
 3. Haga clic en la flecha situada a la derecha de `Color de relleno`.
 4. Marque la opción `Relleno transparente`.
 
-:::{figure} ../../fig/en_30.30.2_vector_layer_styling_transparent.png
+:::{figure} ../../../fig/en_30.30.2_vector_layer_styling_transparent.png
 ---
 name: es_30.30.2_vector_layer_styling_transparent
 width: 500 px
@@ -154,7 +154,7 @@ __Paso 1: Ordenar las capas__
 1. Importe los límites administrativos a su proyecto QGIS.
 2. Tenemos que ordenar las capas en el panel de capas de modo que la `adm0` capa se sitúe en la parte superior, seguida de `adm1` y `adm2`. Al principio, esto puede parecer raro porque `Adm0` lo cubrirá todo.
 
-:::{figure} ../../fig/en_30.30.2_changing_layer_style_1.png
+:::{figure} ../../../fig/en_30.30.2_changing_layer_style_1.png
 ---
 name: es_30.30.2_changing_layer_style_1
 height: 400px
@@ -174,7 +174,7 @@ Ordene las capas y vaya al panel de estilo de la capa superior
 12. Utilice el mismo `Color de marca` que para Adm0 y Adm1, pero haga que el ancho sea de 0,1 milímetros y el estilo de marca __Dash Line__.
 13. Haga clic en "Aplicar" y mire su mapa: ¡Esperamos que empiece a verse más bonito!
 
-:::{figure} ../../fig/en_30.30.2_changing_layer_style_3.png
+:::{figure} ../../../fig/en_30.30.2_changing_layer_style_3.png
 ---
 width: 500 px
 name: en_30.30.2_changing_layer_style_3
@@ -200,7 +200,7 @@ Si una capa contiene valores numéricos, que son continuos, pueden organizarse e
 4. Abra sus opciones de `Simbología` y elija `Graduado`.
 5. __Seleccione el valor, que desea utilizar para asignar colores__, en este caso, será `total_pop`.
 
-:::{figure} ../../fig/en_30.30.2_symbology_variable_ranges.png
+:::{figure} ../../../fig/en_30.30.2_symbology_variable_ranges.png
 ---
 name: es_30.30.2_symbology_variable_ranges
 width: 550px
@@ -214,7 +214,7 @@ Con rangos variables, seleccione simbología __graduada__ y elija el atributo co
 9. Haga clic en __la flecha situada junto a la rampa de color__ para elegir otra combinación de colores: digamos una rampa de color del blanco al azul.
 10. Haga clic en `Aplicar` para obtener una vista previa del aspecto de su capa, luego haga clic en `Aceptar`.
 
-:::{figure} ../../fig/en_30.30.2_symbology_variable_ranges_2.png
+:::{figure} ../../../fig/en_30.30.2_symbology_variable_ranges_2.png
 ---
 name: es_30.30.2_symbology_variable_ranges_2
 width: 500px
@@ -224,7 +224,7 @@ Puede clasificar los valores continuos en clases y asignarles una rampa de color
 
 El siguiente mapa muestra los estados más poblados de Nigeria mediante una categorización graduada por colores. Este tipo de mapas se denominan __mapas coropléticos__.
 
-:::{figure} ../../fig/en_map_design_example_variable_ranges.png
+:::{figure} ../../../fig/en_map_design_example_variable_ranges.png
 ---
 name: es_map_design_example_variable_ranges
 width: 500px
@@ -244,13 +244,13 @@ o en situaciones, en las que desee comunicar dos variables, en un mismo mapa. Po
 mapas coropléticos con símbolos graduados.
 La creación de mapas con símbolos graduados se realiza de forma similar a la creación de mapas coropléticos, pero implica un paso adicional:
 Crear centroides de los límites administrativos. Los centroides son puntos, que se sitúan en el centro calculado de
-polígonos (consulte el [módulo 5](/content/es/Module_5/es_qgis_non_spatial_tools.md)). 
+polígonos (consulte el [módulo 5](../Module_5/es_qgis_non_spatial_tools.md)). 
 Utilizaremos la misma capa que para el mapa coroplético (consulte la {numref}`es_map_design_example_variable_ranges`):
 `NGA_Adm1_Pop`.
 
-1. En la [caja de herramientas de procesos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_1/es_qgis_start.html?highlight=processing+toolbox#toolbox-toolbars), busque la herramienta `centroides`. <kbd>Haga doble clic</kbd> en ella. Se abrirá una nueva ventana (consulte la {numref}`es_3.36_m4_centroids`)
+1. En la [caja de herramientas de procesos](../Module_1/es_qgis_start.md), busque la herramienta `centroides`. <kbd>Haga doble clic</kbd> en ella. Se abrirá una nueva ventana (consulte la {numref}`es_3.36_m4_centroids`)
 
-:::{figure} /fig/en_3.36_m4_centroids.png
+:::{figure} ../../../fig/en_3.36_m4_centroids.png
 ---
 name: es_3.36_m4_centroids
 width: 500 px
@@ -266,7 +266,7 @@ Creación de centroides en QGIS 3.36.
 7. Haga clic en `Clasificar`.
 8. *Opcional*: Cambiar el color y la transparencia de los círculos.
 
-:::{figure} /fig/en_m4_graduated_symbols_example.png
+:::{figure} ../../../fig/en_m4_graduated_symbols_example.png
 ---
 name: es_m4_graduated_symbols_example
 width: 550 px
@@ -295,7 +295,7 @@ Podemos utilizar la simbología para __mostrar la diferencia entre las entidades
 La simbología categorizada se utiliza cuando se dispone de variables ***distintas***.
 :::
 
-:::{figure} ../../fig/en_30.30.2_categorized_layer_symbology_1.png
+:::{figure} ../../../fig/en_30.30.2_categorized_layer_symbology_1.png
 ---
 name: en_30.30.2_categorized_layer_symbology_1
 width: 500px
@@ -311,7 +311,7 @@ Cambie el tipo de simbología a `Categorized` y elija el valor (variable) que de
 8. Haga clic en `Aceptar`, luego en `Aplicar` para obtener una vista previa del aspecto que tendrá la capa.
 9. Haga clic en `Aceptar` de nuevo.
 
-:::{figure} ../../fig/en_30.30.2_categorized_layer_symbology_2.png
+:::{figure} ../../../fig/en_30.30.2_categorized_layer_symbology_2.png
 ---
 name: es_30.30.2_categorized_layer_symbology_2
 width: 500px
@@ -321,7 +321,7 @@ Al hacer doble clic en los __valores únicos__ de la lista clasificada, puede ca
 
 Ahora, tenemos un mapa de Nigeria, en el que puede localizar las zonas, que fueron afectadas, más que otras, por las explosiones. En el mapa que figura , a continuación, también hemos añadido etiquetas de texto, que se explicarán más adelante.
 
-:::{figure} ../../fig/en_exercise_map_design_example_Nigeria.png
+:::{figure} ../../../fig/en_exercise_map_design_example_Nigeria.png
 ---
 name: en_exercise_map_design_example_Nigeria
 width: 500px
@@ -453,7 +453,7 @@ También existe una biblioteca con iconos humanitarios de la [Oficina de la ONU 
 
 ## Recursos adicionales
 
-- [Cartography Guide](https://www.axismaps.com/guide) de [Axis Maps](axismaps.com)
+- [Cartography Guide](https://www.axismaps.com/guide) de [Axis Maps](https://axismaps.com)
 - Tutorial sobre [cómo importar la paleta de colores SIMS a QGIS](https://learn-sims.org/geospatial/importing-sims-color-palette-to-qgis/)
 - Tutorial sobre [cómo crear un mapa de relieve sombreado en QGIS](https://learn-sims.org/geospatial/creating-a-shaded-relief-map-in-qgis/)
 - [Creating a 3W (Who, What, Where) Infographic](https://learn-sims.org/information-design/creating-a-3w-who-what-where-infographic/)

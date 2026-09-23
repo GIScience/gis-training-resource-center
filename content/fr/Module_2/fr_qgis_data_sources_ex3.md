@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/fr/fr_intro.html 
+:link: ../fr_intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -26,7 +26,7 @@ L’objectif de cet exercice est d’explorer différentes sources de données, 
 __Parcours d’exercices sur la réponse aux inondations à Larkana__
 ^^^
 
-Cet exercice fait partie du [parcours d’exercices sur la réponse aux inondations à Larkana](https://giscience.github.io/gis-training-resource-center/content/fr/Exercise_tracks/fr_larkana_flood_response.html).
+Cet exercice fait partie du [parcours d’exercices sur la réponse aux inondations à Larkana](../../en/Exercise_tracks/en_larkana_flood_response.md).
 
 :::
 
@@ -54,12 +54,12 @@ __Durée estimée de l’exercice :__
 __Articles wiki et chapitres de module pertinents__
 ^^^
 
-* [Interface QGIS](/content/fr/Wiki/fr_qgis_interface_wiki.md)
-* [Types de données géographiques](/content/fr/Wiki/fr_qgis_geodata_types_wiki.md)
-* [Import de données géographiques dans QGIS](/content/fr/Wiki/fr_qgis_import_geodata_wiki.md)
-* [Concept de couche](/content/fr/Wiki/fr_qgis_layer_concept_wiki.md)
-* [Classification des données géographiques - Graduée](/content/fr/Wiki/fr_qgis_graduated_wiki.md)
-* [Sources de données](https://giscience.github.io/gis-training-resource-center/content/fr/Module_2/fr_data_sources.html)
+* [Interface QGIS](../../en/Wiki/en_qgis_interface_wiki.md)
+* [Types de données géographiques](../../en/Wiki/en_qgis_geodata_types_wiki.md)
+* [Import de données géographiques dans QGIS](../../en/Wiki/en_qgis_import_geodata_wiki.md)
+* [Concept de couche](../../en/Wiki/en_qgis_layer_concept_wiki.md)
+* [Classification des données géographiques - Graduée](../../en/Wiki/en_qgis_graduated_wiki.md)
+* [Sources de données](fr_data_sources.md)
 
 :::
 
@@ -73,7 +73,7 @@ __Articles wiki et chapitres de module pertinents__
 - Prenez le temps de vous familiariser avec l’exercice et le matériel fourni.
 - Préparez un tableau blanc. Il peut s’agir d’un tableau blanc physique, d’un paperboard ou d’un tableau blanc numérique (par ex. un tableau Miro) sur lequel les participant·e·s peuvent ajouter leurs remarques et leurs questions. 
 - Avant de commencer l’exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé __et décompressé__ le dossier de données.
-- Consultez [Comment animer des formations ?](/content/fr/Trainers_corner/fr_how_to_training.md) pour quelques conseils généraux sur la conduite d’une formation.
+- Consultez [Comment animer des formations ?](../../en/Trainers_corner/en_how_to_training.md) pour quelques conseils généraux sur la conduite d’une formation.
 
 ## Animer la formation <a id="conduct-the-training"></a>
 
@@ -108,7 +108,7 @@ Téléchargez les données et le fichier projet pour cet exercice [ici](https://
 
 
 ::::{dropdown} Arborescence de dossiers standard
-:::{figure} /fig/standard_folder_structure_new_2025.drawio.png
+:::{figure} ../../../fig/standard_folder_structure_new_2025.drawio.png
 name: standard_folder_struc
 width: 500 px
 ---
@@ -137,7 +137,7 @@ Maintenant que le projet QGIS est créé, nous pouvons commencer à rechercher l
 
 :::{dropdown} Sources de données possibles
 
-Il existe de nombreux dépôts de données sur le web où vous pouvez trouver des données appropriées. Vous trouverez une liste de sources de données possibles [ici](https://giscience.github.io/gis-training-resource-center/content/fr/Module_2/fr_data_sources.html).
+Il existe de nombreux dépôts de données sur le web où vous pouvez trouver des données appropriées. Vous trouverez une liste de sources de données possibles [ici](fr_data_sources.md).
 
 Pour la plupart des données humanitaires, vous pouvez effectuer vos recherches sur le __[Humanitarian Data Exchange/HDX](https://data.humdata.org/)__.
 Le Humanitarian Data Exchange (HDX) est une plateforme de référence pour accéder à des données géospatiales utiles dans les contextes de crise humanitaire. C’est un dépôt centralisé offrant un large éventail de jeux de données issus de différentes sources, ce qui en fait une ressource précieuse pour les organisations d’aide et les chercheur·euse·s.
@@ -166,7 +166,7 @@ La plupart du temps, les jeux de données téléchargés depuis le web sont comp
 :::
 ::::
 
-6. [Chargez les deux fichiers vectoriels dans QGIS](https://giscience.github.io/gis-training-resource-center/content/fr/Module_2/fr_qgis_geodata_concept.html#data-import).
+6. [Chargez les deux fichiers vectoriels dans QGIS](fr_qgis_geodata_concept.md#data-import).
 
 7. Ajoutez ensuite le fond de carte OpenStreetMap via la fenêtre du navigateur → `XYZ Tiles`. L’ajout d’un fond de carte peut vous aider à vous repérer, à mieux comprendre la zone d’intérêt et à produire des cartes plus informatives.
 
@@ -176,7 +176,7 @@ La plupart du temps, les jeux de données téléchargés depuis le web sont comp
 
 :::{Hint}
 
-Pour savoir comment filtrer facilement vos données en sélectionnant manuellement des entités dans la table attributaire après avoir trié une colonne, consultez la page __[table attributaire](/content/fr/Wiki/fr_qgis_attribute_table_wiki.md)__ du wiki.
+Pour savoir comment filtrer facilement vos données en sélectionnant manuellement des entités dans la table attributaire après avoir trié une colonne, consultez la page __[table attributaire](../../en/Wiki/en_qgis_attribute_table_wiki.md)__ du wiki.
 
 :::
 

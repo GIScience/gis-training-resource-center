@@ -1,6 +1,6 @@
 # Instalación de QGIS
 
-__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
 QGIS es de código abierto y por lo tanto, está disponible de forma gratuita para todas las personas. Puede instalar QGIS en computadoras Windows, Mac y Linux.
 
@@ -26,7 +26,7 @@ Desde QGIS 3.20, solo hay ejecutables de Windows de 64 bits.
 
 
 :::{Note}
-A partir de la versión 3.30 SAGA debe integrarse a través del [instalador del complemento](/content/es/Wiki/es_qgis_plugins_wiki.md).
+A partir de la versión 3.30 SAGA debe integrarse a través del [instalador del complemento](es_qgis_plugins_wiki.md).
 :::
 
 ## Consideraciones específicas de Linux
@@ -38,7 +38,7 @@ sudo apt install qgis qgis-plugin-grass
 ```
 
 :::{Note}
-A partir de la versión 3.30 SAGA debe integrarse a través del [instalador del complemento](/content/es/Wiki/es_qgis_plugins_wiki.md).
+A partir de la versión 3.30 SAGA debe integrarse a través del [instalador del complemento](es_qgis_plugins_wiki.md).
 :::
 
 

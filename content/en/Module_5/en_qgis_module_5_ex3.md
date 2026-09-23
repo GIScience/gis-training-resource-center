@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -51,10 +51,10 @@ __Relevant Wiki Articles:__
 ^^^
 
 * [Geodata Import in QGIS](../Wiki/en_qgis_import_geodata_wiki.md)
-* [Intersection](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_raster_basic_wiki.html)
-* [Join Attributes by location (summary](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Table functions](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)
+* [Intersection](../Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Zonal Statistics](../Wiki/en_qgis_raster_basic_wiki.md)
+* [Join Attributes by location (summary](../Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Table functions](../Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)
 
 :::
 
@@ -262,9 +262,9 @@ __Purpose:__ In this step, all the data needed will be loaded into a QGIS-projec
 
 __Tool:__ No specific tools are needed, only QGIS.
 
-1. Open QGIS and create a [new project](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` → `New`.
+1. Open QGIS and create a [new project](../Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` → `New`.
 2. Once the project is created, save the project in the folder you created in Step 1 (e.g. 2022_05). To do that, click on `Project` → `Save as` and navigate to the folder. Give the project the same name as the folder you created (e.g. 2022_05). Then click `Save`.
-3. Load all input data in [QGIS via drag and drop](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop). Click on `Project` → `Save`. 
+3. Load all input data in [QGIS via drag and drop](../Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop). Click on `Project` → `Save`. 
   * From the folder you created in step 1
     * ML1
   * From the `Fixes_data` folder:
@@ -278,7 +278,7 @@ __Result:__ QGIS project with all necessary data ready to be analysed.
 __Purpose:__ The goal is to receive polygon layers which share both the borders and the attributes of both input layers.
 
 
-__Tool:__ [`Intersection`](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_geoprocessing_wiki.html#intersection)
+__Tool:__ [`Intersection`](../Wiki/en_qgis_geoprocessing_wiki.md#intersection)
 
 
 ::::::{list-table}
@@ -317,7 +317,7 @@ The resulting layer can have more rows than the original layers.
 __Purpose:__ Here we calculate the population in each polygon of the intersection layer from step 4.
 
 
-__Tool:__  [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics)
+__Tool:__  [`Zonal Statistics`](../Wiki/en_qgis_raster_basic_wiki.md#zonal-statistics)
 
 ::::::{list-table}
 :header-rows: 1
@@ -325,7 +325,7 @@ __Tool:__  [`Zonal Statistics`](https://giscience.github.io/gis-training-resourc
 
 * - Instruction
   - Screenshot of the Zonal Statistics window
-* - 1.  In the `Toolbox` → Search for [`Zonal Statistics`](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_raster_basic_wiki.html#zonal-statistics).
+* - 1.  In the `Toolbox` → Search for [`Zonal Statistics`](../Wiki/en_qgis_raster_basic_wiki.md#zonal-statistics).
     * Tip: If the `Toolbox` is not open, click `Processing` → `Toolbox`.
     2. `Input Layer`: "ML1_Intersection"
     3. `Raster Layer`: "som_ppp_2020_UNadj_constrained.tif"
@@ -352,7 +352,7 @@ __Result:__ The result should be the "ML1_zonal_statistic" as a polygon layer. T
 ### Step 6: Weighting of the Population based on IPC-Phase <a id="step-6-weighting-of-the-population-based-on-ipc-phase"></a>
 
 
-__Purpose:__ The purpose of this step is the weighting of the population in the five IPC phases as described in [IPC Data](https://giscience.github.io/gis-training-resource-center/english/content/en/GIS_AA/en_qgis_drought_trigger_somalia.html#ipc-population-weighted-index).
+__Purpose:__ The purpose of this step is the weighting of the population in the five IPC phases as described in [IPC Data](../GIS_AA/en_qgis_drought_trigger_somalia.md#ipc-population-weighted-index).
 
 :::{Note} 
 The IPC Index treats low-population districts the same as high-population districts, ensuring that small districts with high food insecurity are not underrepresented.
@@ -376,10 +376,10 @@ Where the weights are defined as:
 
 The IPC Index represents low-population districts equal to high-population districts. No underrepresentation of high food insecurity of small districts occurs.
 :::
-__Tool:__  [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_table_functions_wiki.html#calculate-field)
+__Tool:__  [`Field Calculator`](../Wiki/en_qgis_table_functions_wiki.md#calculate-field)
 
 
-1. Right-click on the layer “ML1_zonal_statistic”  → `Open Attribute Table` → click on [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](../../../fig/mActionCalculateField.png) to open the field calculator.
+1. Right-click on the layer “ML1_zonal_statistic”  → `Open Attribute Table` → click on [`Field Calculator`](../Wiki/en_qgis_table_functions_wiki.md#calculate-field) ![](../../../fig/mActionCalculateField.png) to open the field calculator.
 2. Check `Create new field`.
 3. `Output field name`: Name the new column “pop_sum_weighted”
 4. `Result field type`: Decimal number (real)
@@ -403,9 +403,9 @@ END
 __Purpose:__ In this step, we calculating the [IPC-Population Weighted Index](../GIS_AA/en_qgis_drought_trigger_somalia.md#ipc-population-weighted-index) for every small part of the polygon layer. 
 
 
-__Tool:__[`Field Calculator`](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing)
+__Tool:__[`Field Calculator`](../Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)
 
-1. Right-click on "ML1_zonal_statistic" layer → `Attribute Table”` → click on [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_attribute_table_wiki.html#attribute-table-data-editing) ![](../../../fig/mActionCalculateField.png) to open the field calculator.
+1. Right-click on "ML1_zonal_statistic" layer → `Attribute Table”` → click on [`Field Calculator`](../Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing) ![](../../../fig/mActionCalculateField.png) to open the field calculator.
 2. Check `Create new field`.
 3. `Output field name`: Name the new column "Index_per_IPCPolygon_ML1"
 4. `Result field type`: Decimal number (real)
@@ -472,9 +472,9 @@ __Result:__ As a result, your layer "ML1_IPC_Index" should have the column "Inde
 
 __Purpose:__ The purpose of this step is to gain a quick overview of possible trigger activation without having to revise the actual data. Instead, we will have a binary column with trigger = yes or trigger=no values.
 
-__Tool:__ [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_table_functions_wiki.html#calculate-field)
+__Tool:__ [`Field Calculator`](../Wiki/en_qgis_table_functions_wiki.md#calculate-field)
 
-1. Right-click on "ML1_IPC_Index" layer → `Attribute Table` → click on [`Field Calculator`](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_table_functions_wiki.html#calculate-field) ![](../../../fig/mActionCalculateField.png) to open the field calculator.
+1. Right-click on "ML1_IPC_Index" layer → `Attribute Table` → click on [`Field Calculator`](../Wiki/en_qgis_table_functions_wiki.md#calculate-field) ![](../../../fig/mActionCalculateField.png) to open the field calculator.
 2. Check `Create new field`.
 3. `Output field name`: Name the new column "Trigger_activation".
 4. `Result field type`: Text (string).
@@ -518,7 +518,7 @@ align: center
 
 __Purpose:__ Definition of how features are represented visually on the map.
 
-__Tool:__ [Symbology](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_styling_vector_data.html#symbology-for-vector-data)
+__Tool:__ [Symbology](../Module_4/en_qgis_styling_vector_data.md#symbology-for-vector-data)
 
 __Trigger Activation__
 
@@ -595,7 +595,7 @@ Remember the [layer concept](../Module_2/en_qgis_geodata_concept.md) and make su
 
 __Purpose:__ Visualisation of the map features in a printable map layout.
 
-__Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html)
+__Tool:__  [Print Layout](../Module_4/en_qgis_map_design_2.md)
 
 
 1. If you have not done this before, delete all layers expect __Trigger_activation__, __Som_admin1_regions_UNDP__ and __OpenStreetMap__.
@@ -616,7 +616,7 @@ __Tool:__  [Print Layout](https://giscience.github.io/gis-training-resource-cent
 Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
 :::
 
-You can also adapt the template to your needs and preferences. See [how to use templates in QGIS](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html).
+You can also adapt the template to your needs and preferences. See [how to use templates in QGIS](../Module_4/en_qgis_map_design_2.md).
 
 :::{Attention}
 Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
@@ -628,7 +628,7 @@ Make sure you edit the Map Information on the template, e.g. current date. Also 
 __Purpose:__ Export the designed and finalised map layout in order to print it as a pdf or format of your choice.
 
 
-__Tool:__ [Print Layout](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_4/en_qgis_map_design_2.html)
+__Tool:__ [Print Layout](../Module_4/en_qgis_map_design_2.md)
 
 When you have finished the design of you map, you can export it as pdf or image file in different data types.
 

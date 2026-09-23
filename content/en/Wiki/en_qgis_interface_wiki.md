@@ -9,7 +9,7 @@ __🔙[Back to Homepage](../intro.md)__
 
 1. __Layers List / Browser Panel:__ The __layers list__ shows __all layers/files__ that are __loaded in the project__. You can show/hide layers and set other properties.
 
-2. __Toolsbars:  __Toolbars__ are shortcuts__ to execute frequently used commands. For example, there are special toolbars for __vector and raster files__, but also general ones for saving your project, etc. The toolbar contains, among other things, a list of all the commands you can use. The toolbar also contains the __toolbox__, which is used later in many of the wiki videos.
+2. __Toolbars:__ __Toolbars__ are shortcuts to execute frequently used commands. For example, there are special toolbars for __vector and raster files__, but also general ones for saving your project, etc. The toolbar contains, among other things, a list of all the commands you can use. The toolbar also contains the __toolbox__, which is used later in many of the wiki videos.
 
 ![](../../../fig/Geschlossene_Toolbox_01.png)
 
@@ -21,11 +21,11 @@ __🔙[Back to Homepage](../intro.md)__
 
 6. __Locator bar__. Here you can __search for tools and layers__. If you don't know where to find a tool, you can try here.
 
-__Official QGIS Documentation: [An Overview of the Interface](https://docs.qgis.org/3.4/de/docs/training_manual/introduction/overview.html)__
+__Official QGIS Documentation: [An Overview of the Interface](https://docs.qgis.org/3.28/en/docs/training_manual/basic_map/overview.html)__
 
 ___
 
-## Buttens and Shortcuts <a id="buttens-and-shortcuts"></a>
+## Buttons and Shortcuts <a id="buttons-and-shortcuts"></a>
 
 ### Navigation in the map view <a id="navigation-in-the-map-view"></a>
 
@@ -34,7 +34,7 @@ ___
 | Map pan                   | ![](../../../fig/qgis_pan_map.png)     | <kbd>Space</kbd>, <kbd>Page Up</kbd>, <kbd>Page Down</kbd> or the <kbd>Arrow Keys</kbd> | Move the map                                 |
 | Pan map to selection      | ![](../../../fig/qgis_pan_map_selection.png) |                                  | Pans the map to the selected element        |
 | Zoom in                   | ![](../../../fig/qgis_zoom_in.png)     | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>+</kbd> or using the <kbd>Mouse wheel</kbd>    | Zoom into the map                            |
-| Zoom out                  | ![](../../../fig/qgis_zoom_out.png)    | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> <kbd>-</kbd> or using the <kbd>Mouse wheel</kbd>   | Zoom out of the map                          |
+| Zoom out                  | ![](../../../fig/qgis_zoom_out.png)    | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>-</kbd> or using the <kbd>Mouse wheel</kbd>   | Zoom out of the map                          |
 | Zoom full                 | ![](../../../fig/qgis_zoom_full.png)   | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd>                    | Zoom to the selected element                |
 | Zoom to selection         | ![](../../../fig/qgis_zoom_to_selection.png) | <kbd>Ctrl</kbd> + <kbd>J</kbd>                       | Zoom to the selected element                |
 | Zoom to layer             | ![](../../../fig/qgis_zoom_to_layer.png) |                                  | Zoom to the selected layer                   |
@@ -90,7 +90,7 @@ ___
 
 
 
-## Moving an orientation on the Map Canvas <a id="moving-an-orientation-on-the-map-canvas"></a>
+## Moving and orientating on the Map Canvas <a id="moving-and-orientating-on-the-map-canvas"></a>
 
 ### Moving the map view <a id="moving-the-map-view"></a>
 

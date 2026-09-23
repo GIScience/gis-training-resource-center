@@ -26,7 +26,7 @@ Since QGIS 3.20 there are only 64-bit Windows executables.
 
 
 :::{Note} 
-From version 3.30 SAGA must be integrated via the [plugin installer](/content/wiki/plugin).
+From version 3.30 SAGA must be integrated via the [plugin installer](en_qgis_plugins_wiki.md).
 :::
 
 ## Linux specific considerations <a id="linux-specific-considerations"></a>

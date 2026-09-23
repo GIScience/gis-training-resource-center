@@ -10,11 +10,11 @@ This exercise expands on the previous exercise. This time, we will also import d
 
 ### Wiki: <a id="wiki"></a>
 
-- [Interface](/content/Wiki/en_qgis_interface_wiki)
+- [Interface](../Wiki/en_qgis_interface_wiki)
 
-- [Projections](/content/Wiki/en_qgis_projections_wiki)
+- [Projections](../Wiki/en_qgis_projections_wiki)
 
-- [Layer concept and data import](/content/Wiki/en_qgis_layer_concept_wiki)
+- [Layer concept and data import](../Wiki/en_qgis_layer_concept_wiki)
 
 
 ### Data: <a id="data"></a>

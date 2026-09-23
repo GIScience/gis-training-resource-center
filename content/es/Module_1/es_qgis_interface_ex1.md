@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -23,15 +23,15 @@ El ejercicio abarca:
 
 ## Artículos relacionados de Wiki.
 
-- [Interfaz de QGIS](/content/es/Wiki/es_qgis_interface_wiki.md)
-- [Proyectos y estructura de carpetas](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html)
+- [Interfaz de QGIS](../Wiki/es_qgis_interface_wiki.md)
+- [Proyectos y estructura de carpetas](../Wiki/es_qgis_projects_folder_structure_wiki.md)
 
 
 ## Preparación de datos
 
 En este ejercicio no utilizaremos datos geoespaciales. En su lugar, aprenderemos a navegar por las diferentes interfaces y a guardar y cargar un proyecto de QGIS. Puede descargar la estructura de carpetas modelo en un formato comprimido [aquí](https://nexus.heigit.org/repository/gis-training-resource-center/Modul_1/Modul_1_Exercise_1_Understanding_the_interface/Modul_1_Exercise_1_Understanding_the_interface.zip).
 
-:::{figure} /fig/standard_folder_structure_new_2025.drawio.png
+:::{figure} ../../../fig/standard_folder_structure_new_2025.drawio.png
 ---
 width: 800px
 align: center
@@ -45,7 +45,7 @@ Estructura de carpetas estándar. Fuente: HeiGIT
 
 1. Crear un nuevo proyecto. Al abrir QGIS, aparecerá la capa de inicio, que muestra la interfaz de QGIS sin ningún proyecto cargado. A la izquierda habrá un panel con los proyectos recientes (probablemente estará vacío). A la derecha habrá un panel de noticias, con publicaciones del blog de QGIS y debajo de este se encuentra un panel `Project Templates`.
 
-:::{figure} /fig/en_project_template_BRC.png
+:::{figure} ../../../fig/en_project_template_BRC.png
 ---
 height: 400
 name: Project Template
@@ -59,9 +59,9 @@ align: Left
 
 - Por defecto, las barras de herramientas están en la parte superior de la pantalla. Incluyen los controles, que le permiten cambiar entre distintas formas de interactuar con la interfaz.
 - Por defecto, los paneles están a los lados de la pantalla. Incluyen el explorador de archivos y los paneles de navegación, por capas, situados a la izquierda de la pantalla. Se pueden activar otros paneles para buscar y utilizar herramientas de procesamiento. En el panel de capas, verá los datos, que añadiremos más adelante.
-A la derecha de la pantalla, lo más probable es que tenga el panel __Caja de herramientas de procesos__. Si no lo encuentra, consulte la [página Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#falta-la-caja-de-herramientas).
+A la derecha de la pantalla, lo más probable es que tenga el panel __Caja de herramientas de procesos__. Si no lo encuentra, consulte la [página Wiki](../Wiki/es_qgis_common_errors_and_Issues.md).
 
-:::{figure} /fig/en_QGIS_GUI.png
+:::{figure} ../../../fig/en_QGIS_GUI.png
 ---
 width: 800px
 align: center
@@ -70,7 +70,7 @@ name: es_QGIS_GUI
 Interfaz de usuario de QGIS.
 :::
 
-3. Puede desacoplar los paneles de su ubicación, haciendo clic y arrastrando el título del panel. Puede anclarlo a otro panel (aparecerá como otra pestaña) o convertirlo en una ventana independiente. También puede cambiar el tamaño de los paneles. Inténtelo moviendo el panel de las capas hacia la derecha ([video del Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_interface_wiki.html#mover-y-organizar-las-barras-de-herramientas)).
+3. Puede desacoplar los paneles de su ubicación, haciendo clic y arrastrando el título del panel. Puede anclarlo a otro panel (aparecerá como otra pestaña) o convertirlo en una ventana independiente. También puede cambiar el tamaño de los paneles. Inténtelo moviendo el panel de las capas hacia la derecha ([video del Wiki](../Wiki/es_qgis_interface_wiki.md)).
 
 :::{tip}
 

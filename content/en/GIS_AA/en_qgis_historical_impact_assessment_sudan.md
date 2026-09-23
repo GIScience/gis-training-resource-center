@@ -302,8 +302,8 @@ The date portion of the whole Excel table would look like this:
 | Start Year | Start Date | End Date   | Date       |
 |------------|------------|------------|------------|
 | 2018       | 2018-07-01 | 2018-08-29 | 2018-07-12 |
-| 2019       | 2019-06-01 | 2019-06-31 |  |
-|2020      | 2020-07-20 | 2020-08-11 | |
+| 2019       | 2019-06-01 | 2019-06-31 |            |
+| 2020       | 2020-07-20 | 2020-08-11 |            |
 
 ### Data source <a id="data-source"></a>
 This section is simply one column with the ID of the dataset from which the particular information was taken.
@@ -317,11 +317,11 @@ This section is simply one column with the ID of the dataset from which the part
 ### Location <a id="location"></a>
 Practical all impact information refers to state, locality, town or refugee/IDP camp level. This means we need a column for each of these levels and one column to indicate the level the information is referring to. In this way, we can later filter for all information on for example locality level.
 
-|admin_level | admin_1 | admin_2 | admin_3 | admin_camp|
-|------------|---------|---------|---------|------------|
-|      State      |    West Kordofan      |       |         |           |
-|       Locality    |     South Darfur    |Beliel         |         |           |
-|          Camp  |    South Darfur     |    Beliel     |         |       Kalma Camp    |
+| admin_level | admin_1       | admin_2 | admin_3 | admin_camp |
+|-------------|---------------|---------|---------|------------|
+| State       | West Kordofan |         |         |            |
+| Locality    | South Darfur  | Beliel  |         |            |
+| Camp        | South Darfur  | Beliel  |         | Kalma Camp |
 
 In the Sudan HIA, most of the information has been on the state level, whereas the team found very little information on the camp level.
 
@@ -566,11 +566,11 @@ The impact quality is used if something cannot be described with numbers but wit
 
 Hence we need three columns to describe impacts: impact_typ, impact_quality and impact_quantity.
 
-| impact_typ | impact_quality | impact_quantity |
-|------------|----------------|-----------------|
-| houses_damaged_totaly           |   2500             |                 |
-|      deaths      |              6    |               |
-|      disease_cholera      |               |         yes         |
+| impact_typ            | impact_quality | impact_quantity |
+|-----------------------|----------------|-----------------|
+| houses_damaged_totaly | 2500           |                 |
+| deaths                | 6              |                 |
+| disease_cholera       |                | yes             |
 
 It makes sense to list some of the basic impact types we are interested in or which are very commonly reported. Such as affected people or deaths. The list of impact types can be extended on the fly. It is however important to stay consistent.
 The HeiGIT team used 75 different impact types. You can find the whole list below.
@@ -917,7 +917,7 @@ When creating such a dataset there will be errors like misspellings of names or 
 OpenRefine is a free and open-source specialized data cleaning software.
 You download once the folder with the installation files. To start OpenRefine you need to double-click openrefine.exe. The software will run in your browser! -> [Installation Video](https://www.youtube.com/watch?v=nTlTboXoGj4)
 
-OpenRefine Beginner Tutorials -> __[Video](https://www.youtube.com/watch?v=wfS1qTKFQoI)__
+OpenRefine Beginner Tutorials → __[Video](https://www.youtube.com/watch?v=wfS1qTKFQoI)__
 ```
 
 
@@ -942,7 +942,7 @@ Independent of which tool you will use, here are some important points you have 
 4. **Admin Columns (admin_level, admin_1, admin_2, admin_3, admin_camp):**
    - Check if all administrative units are correctly categorized.
    - Ensure that there are no misspelled or inconsistent administrative unit names.
-   - *OpenRefine Step:* Use the "Text facet" to explore the distribution of values in each admin level column. Click on [`Cluster`](https://openrefine.org/docs/manual/cellediting#cluster-and-edit) and set `Method` to `Key collision` or `Nearest neighbor`. Consolidate the of states and loclities that they are consisten with the list in the [location chapter](https://giscience.github.io/gis-training-resource-center/english/content/en/GIS_AA/en_qgis_historical_impact_assessment_sudan.html#location).Adjust wrong names by checking `Merge` and adjust the `New cell value` and click on `Merge selected & re-cluster` 
+   - *OpenRefine Step:* Use the "Text facet" to explore the distribution of values in each admin level column. Click on [`Cluster`](https://openrefine.org/docs/manual/cellediting#cluster-and-edit) and set `Method` to `Key collision` or `Nearest neighbor`. Consolidate the of states and loclities that they are consisten with the list in the [location chapter](#location).Adjust wrong names by checking `Merge` and adjust the `New cell value` and click on `Merge selected & re-cluster` 
 
 5. **Impact Type Column:**
    - Check if all impact types are correctly categorized and named.
@@ -966,15 +966,15 @@ Independent of which tool you will use, here are some important points you have 
 
 Create a new empty Excel file and name it `Sudan_impact_p_code`.
 
-Open the new Excel file and click on the Data tab. Click on `Data -> Get Data -> From File -> From Excel Workbook` and select your cleaned impact data file from the previous section `HIA Data Cleaning`. We will enrich the information of this table by adding the P-Codes.
+Open the new Excel file and click on the Data tab. Click on `Data → Get Data → From File → From Excel Workbook` and select your cleaned impact data file from the previous section `HIA Data Cleaning`. We will enrich the information of this table by adding the P-Codes.
 
-The `Navigator` Window will open. Select the relevant Excel sheet. Click on the drop-down menu `Load -> Load To...`. The `Import Data` Window will open. Here select `Only Create Connection`.
+The `Navigator` Window will open. Select the relevant Excel sheet. Click on the drop-down menu `Load → Load To...`. The `Import Data` Window will open. Here select `Only Create Connection`.
 
 Repeat the previous two steps for the file `sdn_adminboundaries_tabulardata.xlsx`. Select the sheet `ADM1`. The data can be downloaded from HDX containing the [Subnational Administrative Boundaries of Sudan](https://data.humdata.org/dataset/cod-ab-sdn?). Here we can find information about the different administrative levels of Sudan beginning with 0 (country), 1 (state), and 2 (district). Make sure to download the xlsx file.
 
 Once you have loaded both files you should see the `Queries & Connections` panel on the right-hand side of your Excel. The panel should show the impact sheet and the ADM1 sheet.
 
-Now, click on the `Data tab -> Get Data -> Combine Queries -> Merge`. The window `Merge` should open.
+Now, click on the `Data tab → Get Data → Combine Queries → Merge`. The window `Merge` should open.
 
 In the `Merge` window, select the `admin_1` column for the impact dataset and the `ADM1_EN` for the ADM1 table. Click on these columns to mark them green.
 
@@ -996,14 +996,14 @@ Now we have our impact dataset cleaned and ready to use. Since the dataset is a 
 
 ### Impact Quantity for one year on state level: <a id="impact-quantity-for-one-year-on-state-level"></a>
 1. Open the Excel dataset.
-2. Turn the data in a table by clicking on `Insert` -> `Table`-> check `My table has headers`
+2. Turn the data in a table by clicking on `Insert` → `Table` → check `My table has headers`
 3. Also under the `Insert`-Tab click on `Pivot Table`. Make sure your table range is correct. Check `New Worksheet`. Click `OK`.
 4. Setup the pivot table by placing the columns as follows:
   - Filter: Start_year
   - Columns: Impact_Type
   - Rows: admin_1 or admin_1_PCODE (If you want to use this table in QGIS, you should use admin_1_PCODE Instead of admin_1)
   - Values: Impact_quantity
-5. To see the sum of the different impacts click on Impact_quantity under Values -> `Value Field Settings` -> select `Sum`.
+5. To see the sum of the different impacts click on Impact_quantity under Values → `Value Field Settings` → select `Sum`.
 6. Directly above the pivot table, you should see the option to filter by year. Select the year you are interested in. For the following example the year 2020 was used.
 
 Now you can just copy the whole table, and place it in a new worksheet. Make sure to only paste the values. Save this output as a CSV-file, this will make the import of the subset into QGIS easier. Now we can use this table to join it with an existing geodataset in QGIS. 

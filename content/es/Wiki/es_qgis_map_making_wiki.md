@@ -9,7 +9,7 @@
 - Para desplazarse dentro de un mapa seleccione el botón __Mover contenido del elemento__ en el
 - Para acercar el zoom en el mapa, mientras utiliza el botón __Mover contenido del elemento__, puede __mantener presionado CTRL mientras desplaza la rueda del mouse__ (suavemente) o introducir la escala manualmente en las propiedades del elemento.
 
-:::{figure} ../../fig/en_30.30.2_adding_a_map.png
+:::{figure} ../../../fig/en_30.30.2_adding_a_map.png
 ---
 width: 750px
 name: es_Add a new map
@@ -36,7 +36,7 @@ El título deberá describir el fenómeno representado en el mapa.
 - Para añadir texto (título, explicaciones), utilice la herramienta __Añadir etiqueta__ y dibuje un rectángulo del tamaño deseado.
 - En el panel __Propiedades del elemento__ (a la derecha de su pantalla) puede __introducir su texto__ y __cambiar la fuente, el estilo, el color, etc.__ (Recuerde utilizar la barra de desplazamiento de la ventana para ver todas las opciones).
 
-:::{figure} ../../fig/en_30.30.2_print_layout_add_text.png
+:::{figure} ../../../fig/en_30.30.2_print_layout_add_text.png
 ---
 width: 750px
 name: es_ Add text to the print layout
@@ -72,7 +72,7 @@ Antes de añadir una leyenda, asegúrese de que:
 
 Para añadir una leyenda, puede utilizar el botón __Añadir leyenda__ de la __barra de herramientas de la izquierda__.
 
-:::{figure} ../../fig/en_30.30.2_print_layout_add_legend.png
+:::{figure} ../../../fig/en_30.30.2_print_layout_add_legend.png
 ---
 width: 750px
 name: es_Add a legend to the print layout
@@ -113,7 +113,7 @@ Si tiene demasiados elementos en su leyenda y no caben horizontalmente en el map
 
 Antes de añadir una barra de escala, seleccione su mapa principal y compruebe en el panel __Propiedades del elemento__ que el campo __Escala__ tenga un __número redondo__.
 
-:::{figure} ../../fig/en_30.30.2_print_layout_scale.png
+:::{figure} ../../../fig/en_30.30.2_print_layout_scale.png
 ---
 width: 750px
 name: es_30.30.2_print_layout_scale_2
@@ -131,7 +131,7 @@ Para añadir una barra de escala, puede utilizar el botón __Añadir barra de es
 
 _Hay muchas otras opciones para personalizar la barra de escala (cambiar la fuente, los colores, etc.)._
 
-:::{figure} ../../fig/en_30.30.2_print_layout_add_scale_bar.png
+:::{figure} ../../../fig/en_30.30.2_print_layout_add_scale_bar.png
 ---
 width: 750px
 name: es_30.30.2_print_layout_add_scale_bar_2
@@ -159,7 +159,7 @@ Para crear un mapa general, debe seguir estos pasos:
     3. __Vincule el mapa principal__ seleccionándolo en la opción __“Marco del mapa”__.
 
 
-:::{figure} ../../fig/en_30.30.2_print_layout_overview_map_preparations.png
+:::{figure} ../../../fig/en_30.30.2_print_layout_overview_map_preparations.png
 ---
 width: 500px
 name: es_30.30.2_print_layout_overview_map_preparations_2
@@ -167,7 +167,7 @@ name: es_30.30.2_print_layout_overview_map_preparations_2
 Un mapa general debe mostrar los puntos de referencia y las fronteras importantes.
 :::
 
-:::{figure} ../../fig/en_30.30.2_print_layout_add_overview_map.png
+:::{figure} ../../../fig/en_30.30.2_print_layout_add_overview_map.png
 ---
 width: 750px
 name: es_30.30.2_print_layout_add_overview_map_2
@@ -176,7 +176,7 @@ Añadir un mapa general y __bloquear las capas__.
 :::
 
 
-:::{figure} ../../fig/en_30.30.2_print_layout_add_map_extent_overview_map.png
+:::{figure} ../../../fig/en_30.30.2_print_layout_add_map_extent_overview_map.png
 ---
 width: 750px
 name: es_30.30.2_print_layout_add_map_extent_overview_map_2

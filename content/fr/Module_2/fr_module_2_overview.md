@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/fr/fr_intro.html 
+:link: ../fr_intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -16,39 +16,39 @@ Le deuxième module vise à approfondir la compréhension des données géograph
 
 *   - __Chapitre__
     - __Compétences et objectifs__
-*   - __[Chapitre 1 : Introduction aux données géographiques et aux couches](/content/fr/Module_2/fr_qgis_geodata_concept.md)__
+*   - __[Chapitre 1 : Introduction aux données géographiques et aux couches](fr_qgis_geodata_concept.md)__
     - __À la fin de ce chapitre, vous devriez :__
         - connaître la différence entre les données vectorielles et raster,
         - connaître différents types de formats de données,
         - comprendre le concept de couche,
         - savoir importer différents formats de données vectorielles dans QGIS.
-*   - __[Chapitre 2 : Projections](/content/fr/Module_2/fr_qgis_projections.md)__
+*   - __[Chapitre 2 : Projections](fr_qgis_projections.md)__
     - __À la fin de ce chapitre, vous devriez :__
         - comprendre pourquoi il est difficile de représenter le monde sur une surface plane,
         - savoir ce qu’est un système de coordonnées de référence (SCR),
         - comprendre la différence entre un SCR géographique et un SCR projeté,
         - savoir choisir un SCR adapté,
         - savoir reprojeter des couches vectorielles et modifier le SCR d’un projet QGIS.
-*   - __[Chapitre 3 : Gestion des données géographiques](/content/fr/Module_2/fr_qgis_geodata_management.md)__
+*   - __[Chapitre 3 : Gestion des données géographiques](fr_qgis_geodata_management.md)__
     - __À la fin de ce chapitre, vous devriez :__
         - savoir comment QGIS stocke les projets et les données,
         - savoir mettre en place une arborescence de dossiers pour les projets QGIS et les données géographiques,
         - connaître les bonnes pratiques de nommage des fichiers de données géographiques.
-*   - __[Chapitre 4 : La table attributaire](/content/fr/Module_2/fr_qgis_attribute_table.md)__
+*   - __[Chapitre 4 : La table attributaire](fr_qgis_attribute_table.md)__
     - __À la fin de ce chapitre, vous devriez :__
         - savoir ouvrir et consulter la table attributaire d’un jeu de données dans QGIS,
         - savoir trier la table attributaire et zoomer sur des entités spécifiques,
         - savoir sélectionner des entités.
-*   - __[Chapitre 5 : Sources de données](/content/fr/Module_2/fr_data_sources.md)__
+*   - __[Chapitre 5 : Sources de données](fr_data_sources.md)__
     - __À la fin de ce chapitre, vous devriez :__
         - savoir quels éléments prendre en compte lors de la recherche de données géographiques,
         - connaître quelques sites web pour trouver des données spécifiques,
         - connaître le projet collaboratif de cartographie OpenStreetMap,
         - savoir exporter des données OpenStreetMap.
-*   - __[Chapitre 6 : Fonds de carte](/content/fr/Module_2/fr_qgis_basemap.md)__
+*   - __[Chapitre 6 : Fonds de carte](../../en/Module_2/en_qgis_basemap.md)__
     - __À la fin de ce chapitre, vous devriez :__
         - savoir ajouter des fonds de carte à votre projet QGIS.
-*   - __[Exercices du module 2](/content/fr/Module_2/fr_qgis_module_2_exercises.md)__
+*   - __[Exercices du module 2](fr_qgis_module_2_exercises.md)__
     - Tous les exercices du module 5 sont listés ici.
 
 :::

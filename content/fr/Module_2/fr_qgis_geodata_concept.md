@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/fr/fr_intro.html 
+:link: ../fr_intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -16,7 +16,7 @@ Dans ce chapitre, vous apprendrez ce que sont les __données géographiques__ et
 
 Les données géographiques, ou données géospatiales, sont des données comportant une information géographique. Cela signifie que les données se rapportent à une localisation définie par des coordonnées. Elles sont similaires à d’autres formes de données pouvant être représentées dans des tableaux (comme des feuilles de calcul Excel ou des fichiers CSV), mais chaque élément du jeu de données contient également une information de coordonnées (voir {numref}`en_vector_raster`). Les logiciels SIG nous aident à visualiser et manipuler les données géographiques dans un espace 2D (voire 3D). Il existe deux grands types de données géographiques : **les données vectorielles et les données raster**. Ces deux types représentent des objets tangibles ou non tangibles du monde réel. Toutefois, leur manière de stocker l’information est très différente. Par conséquent, leur manipulation et leur représentation diffèrent fortement. Comprendre la différence entre ces deux types de données, savoir travailler avec chacun séparément, ainsi que les combiner, constitue l’une des compétences principales que vous développerez en apprenant les SIG.
 
-:::{figure} /fig/en_vector_raster.png
+:::{figure} ../../../fig/en_vector_raster.png
 ---
 width: 500px
 align: center
@@ -38,7 +38,7 @@ Les données géographiques représentent généralement les enregistrements de 
 
 Les données vectorielles sont des objets numériques capables de stocker des informations géographiques/spatiales ainsi que d’autres attributs. Elles sont donc idéales pour visualiser des informations sur une carte. Chaque entité peut être représentée sur une carte à l’aide de l’une des trois géométries suivantes : __points, lignes ou polygones__ (voir {numref}`en_vector_data_overview`). Une couche ne peut contenir que des entités ayant le même type de géométrie.
 
-:::{figure} /fig/en_vector_data_overview.png
+:::{figure} ../../../fig/en_vector_data_overview.png
 ---
 width: 650px
 align: center
@@ -53,7 +53,7 @@ Vue d’ensemble des données vectorielles (Source : HeiGIT).
 
 Chaque entité stocke sa localisation (sous forme d’adresse ou de coordonnées) ainsi que d’autres attributs, par exemple un nom, un identifiant ou toute autre information ({numref}`en_geodata_example_2`). Le type de géométrie utilisé dépend du type de donnée représentée. Par exemple, une route pourra être représentée par une ligne, l’emprise d’un bâtiment par un polygone et un arbre par un point.
 
-:::{figure} /fig/en_geodata_example_2.png
+:::{figure} ../../../fig/en_geodata_example_2.png
 ---
 name: en_geodata_example_2
 width: 700px
@@ -65,7 +65,7 @@ L’information géographique peut être une adresse et/ou des coordonnées GPS 
 - Chaque ligne du tableau correspond à une entité sur la carte, tandis que chaque colonne contient une information attributaire (champ).
 - Plusieurs attributs peuvent être associés à chaque entité.
 
-:::{figure} /fig/Geodata_attribute_table_example.png
+:::{figure} ../../../fig/Geodata_attribute_table_example.png
 ---
 name: Geodata_attribute_table_example
 width: 750px
@@ -75,7 +75,7 @@ Table de données dans Microsoft Excel contenant des informations géographiques
 
 {numref}`example_geometric_vs_attribute_view` montre le même jeu de données affiché à la fois sous sa représentation géométrique et sous forme de table attributaire.
 
-:::{figure} /fig/example_geometric_and_attribute_view.png
+:::{figure} ../../../fig/example_geometric_and_attribute_view.png
 ---
 name: example_geometric_vs_attribute_view
 width: 700 px
@@ -111,7 +111,7 @@ Les différents formats de fichiers répondent à des usages distincts et prése
 
 Un shapefile est un ensemble de fichiers distincts, généralement regroupés dans un même dossier/répertoire. Certains fichiers sont obligatoires, d’autres sont optionnels (voir {numref}`en_shapefile_structure`). Pour disposer d’un shapefile fonctionnel, il faut que tous les fichiers obligatoires se trouvent dans le même dossier.
 
-:::{figure} /fig/en_shapefile_structure.png
+:::{figure} ../../../fig/en_shapefile_structure.png
 ---
 name: en_shapefile_structure
 width: 400 px
@@ -121,7 +121,7 @@ __SHP, SHX__ et __DBF__ sont les fichiers __obligatoires__ qu’un shapefile doi
 
 ### Données raster <a id="raster-data"></a>
 
-Un autre type de données géospatiales est constitué par les données raster. Les données raster sont composées de cellules organisées en une grille de lignes et de colonnes, formant ainsi un raster. Chaque cellule, ou pixel, contient une valeur qui porte une information (par exemple la température ou la densité de population). Comme les données raster sont constituées de pixels, les photographies aériennes ou les images satellites peuvent également être utilisées comme données raster, à condition qu’elles possèdent des coordonnées géographiques (voir [module 3 : Géoréférencement](/content/fr/Module_3/fr_qgis_georeferencing.md)).
+Un autre type de données géospatiales est constitué par les données raster. Les données raster sont composées de cellules organisées en une grille de lignes et de colonnes, formant ainsi un raster. Chaque cellule, ou pixel, contient une valeur qui porte une information (par exemple la température ou la densité de population). Comme les données raster sont constituées de pixels, les photographies aériennes ou les images satellites peuvent également être utilisées comme données raster, à condition qu’elles possèdent des coordonnées géographiques (voir [module 3 : Géoréférencement](../Module_3/fr_qgis_georeferencing.md)).
 
 Les usages typiques des données raster sont :
 
@@ -135,7 +135,7 @@ La valeur de chaque cellule est généralement visualisée en associant une coul
 :::::{grid} 2
 ::::{grid-item-card}
 
-:::{figure} /fig/raster_data_example_corine_LC.png
+:::{figure} ../../../fig/raster_data_example_corine_LC.png
 ---
 name: raster_data_example_corine_LC
 width: 350 px
@@ -148,7 +148,7 @@ Le jeu de données CORINE Land Cover de Copernicus (Source : [EEA/Copernicus](ht
 
 ::::{grid-item-card}
 
-:::{figure} /fig/NASADEM_Alps_example.png
+:::{figure} ../../../fig/NASADEM_Alps_example.png
 ---
 name: NASADEM_Alps_example
 width: 300 px
@@ -163,7 +163,7 @@ Les valeurs raster n’ont généralement qu’une seule valeur par cellule, mai
 
 Les principales caractéristiques spatiales sont l’emprise — la surface représentée dans le monde réel (10 km², 100 km²) — et la résolution raster — la taille de chaque pixel. Dans {numref}`en_quality_raster`, vous pouvez voir deux jeux de données raster ayant des résolutions différentes.
 
-:::{figure} /fig/en_quality_raster.png
+:::{figure} ../../../fig/en_quality_raster.png
 ---
 width: 800px
 align: center
@@ -177,7 +177,7 @@ Dans {numref}`Vector` et {numref}`Raster`, vous pouvez voir le même lieu : à g
 :::::{grid} 2
 ::::{card} Vector
 
-:::{figure} /fig/en_same_location_vector.png
+:::{figure} ../../../fig/en_same_location_vector.png
 ---
 width: 400px
 name: Vector
@@ -190,7 +190,7 @@ Entités représentées sous forme de données vectorielles. (Source : British R
 
 ::::{card} Raster
 
-:::{figure} /fig/en_same_location_raster.png
+:::{figure} ../../../fig/en_same_location_raster.png
 ---
 width: 400px
 name: Raster
@@ -226,7 +226,7 @@ Les logiciels SIG nous aident à visualiser les données géographiques. Pour ce
 
 En ajoutant différentes couches, vous construisez votre carte et pouvez combiner des informations provenant de différentes sources. Vous pouvez ensuite réaliser des analyses ou adapter la représentation en utilisant des symboles et des couleurs.
 
-:::{figure} /fig/en_layer.png
+:::{figure} ../../../fig/en_layer.png
 ---
 width: 800px 
 align: center
@@ -242,7 +242,7 @@ La pratique est essentielle pour maîtriser les SIG. C’est le bon moment pour 
 
 :::{card}
 :class-card: sd-text-center sd-rounded-2 sd-border-1
-:link: https://giscience.github.io/gis-training-resource-center/content/fr/Module_2/fr_qgis_geodata_concept_ex1.html
+:link: fr_qgis_geodata_concept_ex1.md
 
 __Module 2 Exercice 1 : Comprendre les données géographiques__
 
@@ -266,7 +266,7 @@ Les fichiers GeoPackage peuvent contenir plusieurs jeux de données et même des
 #### Ouvrir des données vectorielles via le Gestionnaire des sources de données <a id="open-vector-data-via-the-data-source-manager"></a>
 
 1. Cliquez sur `Layer` → `Add Layer` → `Add Vector Layer...`. Cela ouvrira le Gestionnaire des sources de données.
-2. Cliquez sur les trois points ![](/fig/Three_points.png) et accédez à votre fichier vectoriel.
+2. Cliquez sur les trois points ![](../../../fig/Three_points.png) et accédez à votre fichier vectoriel.
 3. Sélectionnez le fichier puis cliquez sur `Open`. D’autres options apparaîtront. Dans la plupart des cas, vous pouvez les laisser telles quelles.
 4. De retour dans la fenêtre QGIS, cliquez sur `Add`.
 
@@ -298,7 +298,7 @@ Au cours de votre pratique des SIG, vous rencontrerez souvent des données géog
 Pour charger des données issues de feuilles de calcul comme des fichiers CSV (`.csv`) ou Excel (`.xlsx`), les jeux de données doivent contenir des colonnes de géométrie — le plus souvent sous la forme de latitude (champ Y) et longitude (champ X), mais cela peut aussi être d’autres formats comme le WKT. Dans ce cas, votre fichier texte délimité peut également contenir des géométries complexes.
 :::
 
-:::{figure} /fig/en_import_delimeted_text.png
+:::{figure} ../../../fig/en_import_delimeted_text.png
 ---
 width: 600px 
 align: center
@@ -308,14 +308,14 @@ Importer un texte délimité dans QGIS 3.36.
 :::
 
 1. `Layer` → `Add Layer` → `Open Delimited Text Layer`.
-2. Cliquez sur `File name`, puis sur les trois points ![](/fig/Three_points.png), accédez à votre fichier CSV et cliquez sur `Open`.
+2. Cliquez sur `File name`, puis sur les trois points ![](../../../fig/Three_points.png), accédez à votre fichier CSV et cliquez sur `Open`.
 3. `File Format` : ici, vous pouvez préciser quel délimiteur est utilisé dans le fichier à importer. Dans un fichier CSV standard, il s’agit de la virgule `,`. Si ce n’est pas le cas, sélectionnez `Custom delimiters`. Vous pourrez alors choisir le délimiteur exact utilisé dans le fichier.
 
 :::{Tip}
 Pour savoir quel délimiteur est utilisé, vous pouvez ouvrir le fichier `.csv` dans le Bloc-notes ou dans Excel. Vous pourrez ainsi vérifier quel caractère sépare les informations.
 :::
 
-:::{figure} /fig/en_delimited_text_fileformat.png
+:::{figure} ../../../fig/en_delimited_text_fileformat.png
 ---
 width: 600px
 align: center
@@ -341,7 +341,7 @@ L’import de données raster fonctionne de la même manière que pour les donn�
 :::{dropdown} Vidéo : ouvrir des données raster via le Gestionnaire des sources de données
 
 1. Cliquez sur `Layer` → `Add Layer` → `Add Raster Layer`.
-2. Cliquez sur les trois points ![](/fig/Three_points.png) et accédez à votre fichier raster.
+2. Cliquez sur les trois points ![](../../../fig/Three_points.png) et accédez à votre fichier raster.
 3. Sélectionnez le fichier puis cliquez sur `Open`.
 4. De retour dans QGIS, cliquez sur `Add`.
 

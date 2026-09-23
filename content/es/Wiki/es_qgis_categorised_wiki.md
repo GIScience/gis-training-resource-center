@@ -1,7 +1,7 @@
 ## Clasificación por categorías
 
 
-__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
 La clasificación por categorías en QGIS agrupa los datos espaciales en categorías distintas con base en atributos específicos. Esta clasificación mejora la organización e interpretación de la información geoespacial para obtener conclusiones más claras.
 
@@ -28,7 +28,7 @@ __Para clasificar los datos en categorías…__
 - Haga clic en `Aplicar` para aplicar el ajuste.
 - Haga clic en `Aceptar` para cerrar la ventana.
 
-:::{figure} /fig/Categorized_district_map_SierraLeone.png
+:::{figure} ../../../fig/Categorized_district_map_SierraLeone.png
 ---
 name: es_Categorized_district_map_SierraLeone
 align: center

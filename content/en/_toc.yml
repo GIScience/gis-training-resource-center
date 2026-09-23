@@ -13,7 +13,7 @@ parts:
           - file: Module_1/en_qgis_theory.md
           - file: Module_1/en_qgis_installation.md
           - file: Module_1/en_qgis_start.md
-          - file: /Module_1/en_qgis_module_1_exercises.md
+          - file: Module_1/en_qgis_module_1_exercises.md
       - file: Module_2/en_module_2_overview.md
         sections:
           - file: Module_2/en_qgis_geodata_concept.md
@@ -71,13 +71,13 @@ parts:
           - file: Module_9/en_qgis_centrality.md
           - file: Module_9/en_qgis_module_9_exercises.md
   - caption: Exercises
-    chapters: 
+    chapters:
       - file: Exercise_tracks/en_exercise_tracks_overview.md
         sections:
           - file: Exercise_tracks/en_larkana_flood_response.md
           - file: Exercise_tracks/en_mdg_aa_cyclones.md
-          - file: Exercise_tracks/fr_mdg_aa_cyclones.md
           - file: Exercise_tracks/en_public_health_outbreak_and_preparedness.md
+          - file: Exercise_tracks/mobile_health_training/en_ex_track_mobile_health_overview.md
   - caption: Wiki
     chapters:
       - file: Wiki/en_wiki_homepage.md
@@ -86,59 +86,66 @@ parts:
           - file: Wiki/en_qgis_installation_wiki.md
           - file: Wiki/en_qgis_interface_wiki.md
           - file: Wiki/en_qgis_projects_folder_structure_wiki.md
-          - file: Wiki/en_qgis_projections_wiki.md
           - file: Wiki/en_qgis_basemaps_wiki.md
           - file: Wiki/en_qgis_plugins_wiki.md
-          - file: Wiki/en_qgis_data_sources_wiki.md
-          - file: Wiki/en_licensing_data.md
       - file: Wiki/en_qgis_geodata_wiki.md
         sections:
-          - file: Wiki/en_qgis_geodata_types_wiki.md      
+          - file: Wiki/en_qgis_geodata_types_wiki.md
           - file: Wiki/en_qgis_import_geodata_wiki.md
           - file: Wiki/en_qgis_OpenStreetMap_wiki.md
           - file: Wiki/en_qgis_layer_concept_wiki.md
+          - file: Wiki/en_qgis_digitisation_wiki.md
+          - file: Wiki/en_qgis_projections_wiki.md
+      - file: Wiki/en_qgis_attribute_data_wiki.md
+        sections:
           - file: Wiki/en_qgis_attribute_table_wiki.md
-          - file: Wiki/en_qgis_digitisation_wiki.md   
-      - file: Wiki/en_qgis_data_classification_wiki.md
+          - file: Wiki/en_qgis_table_functions_wiki.md
+          - file: Wiki/en_qgis_queries_wiki.md
+            sections:
+              - file: Wiki/en_qgis_spatial_queries_wiki.md
+              - file: Wiki/en_qgis_non_spatial_queries_wiki.md
+          - file: Wiki/en_qgis_joins_wiki.md
+            sections:
+              - file: Wiki/en_qgis_spatial_joins_wiki.md
+              - file: Wiki/en_qgis_non_spatial_joins_wiki.md
+      - file: Wiki/en_qgis_processing_wiki.md
         sections:
-          - file: Wiki/en_qgis_single_symbol_wiki.md
-          - file: Wiki/en_qgis_categorised_wiki.md
-          - file: Wiki/en_qgis_graduated_wiki.md
-      - file: Wiki/en_qgis_geoprocessing_wiki.md
-      - file: Wiki/en_qgis_queries_wiki.md
+          - file: Wiki/en_qgis_geoprocessing_wiki.md
+          - file: Wiki/en_qgis_raster_wiki.md
+            sections:
+              - file: Wiki/en_qgis_raster_basic_wiki.md
+          - file: Wiki/en_qgis_automation_wiki.md
+      - file: Wiki/en_qgis_cartography_wiki.md
         sections:
-          - file: Wiki/en_qgis_spatial_queries_wiki.md
-          - file: Wiki/en_qgis_non_spatial_queries_wiki.md
-      - file: Wiki/en_qgis_table_functions_wiki.md
-      - file: Wiki/en_qgis_joins_wiki.md
+          - file: Wiki/en_qgis_data_classification_wiki.md
+            sections:
+              - file: Wiki/en_qgis_single_symbol_wiki.md
+              - file: Wiki/en_qgis_categorised_wiki.md
+              - file: Wiki/en_qgis_graduated_wiki.md
+          - file: Wiki/en_qgis_representation_wiki.md
+            sections:
+              - file: Wiki/en_qgis_visualisation_wiki.md
+              - file: Wiki/en_qgis_map_making_wiki.md
+      - file: Wiki/en_qgis_data_management_wiki.md
         sections:
-          - file: Wiki/en_qgis_spatial_joins_wiki.md
-          - file: Wiki/en_qgis_non_spatial_joins_wiki.md      
-      - file: Wiki/en_qgis_raster_wiki.md
-        sections:
-          - file: Wiki/en_qgis_raster_basic_wiki.md
-      - file: Wiki/en_qgis_automation_wiki.md
-      - file: Wiki/en_qgis_representation_wiki.md
-        sections:
-          - file: Wiki/en_qgis_visualisation_wiki.md
-          - file: Wiki/en_qgis_map_making_wiki.md
-      - file: Wiki/en_qgis_common_errors_and_Issues.md   
+          - file: Wiki/en_qgis_data_sources_wiki.md
+          - file: Wiki/en_licensing_data.md
+          - file: Wiki/en_geodata_management_sharepoint.md
       - file: Wiki/en_web_and_mobile_apps_wiki.md
-      - file: Wiki/en_geodata_management_sharepoint.md
+      - file: Wiki/en_qgis_common_errors_and_Issues.md
   - caption: Trainers corner
     chapters:
-      - file: Trainers_corner/en_TOT_intro.md  
-      - file: Trainers_corner/en_how_to_training.md
-      - file: Trainers_corner/en_training_graphical_outline.md
-      - file: Trainers_corner/en_training_day_structure.md  
-      - file: Trainers_corner/en_how_to_teach_GIS.md
-      - file: Trainers_corner/en_how_to_assessment.md   
+      - file: Trainers_corner/en_TOT_intro.md
+        sections:
+          - file: Trainers_corner/en_how_to_training.md
+          - file: Trainers_corner/en_training_graphical_outline.md
+          - file: Trainers_corner/en_training_day_structure.md
+          - file: Trainers_corner/en_how_to_teach_GIS.md
+          - file: Trainers_corner/en_how_to_assessment.md
   - caption: GIS in Anticipatory Action
     chapters:
-      - file: GIS_AA/GIS_AA_overview.md
+      - file: GIS_AA/en_GIS_AA_overview.md
       - file: GIS_AA/en_qgis_cyclone_trigger_madagascar.md
-        sections:
-          - file: GIS_AA/fr_qgis_cyclone_trigger_madagascar.md
       - file: GIS_AA/en_qgis_drought_trigger_somalia.md
         sections:
           - file: GIS_AA/en_qgis_srcs_basic_ex.md
@@ -146,19 +153,7 @@ parts:
         sections:
           - file: GIS_AA/en_qgis_historical_impact_assessment_sudan_ex1.md
       - file: GIS_AA/en_qgis_GIS_AA_exercises.md
-      - file: GIS_AA/en_AILAS_madagascar.md
-        sections:
-          - file: GIS_AA/en_AILAS_madagascar_camera_usage_guide.md
-          - file: GIS_AA/en_AILAS_madagascar_picture_upload_and_management.md
-      - file: GIS_AA/fr_AILAS_madagascar.md
-        sections:
-          - file: GIS_AA/fr_AILAS_madagascar_camera_usage_guide.md
-          - file: GIS_AA/fr_AILAS_madagascar_picture_upload_and_management.md
-      - file: GIS_AA/en_qgis_risk_assessment_plugin.md
-        sections:
-          - file: GIS_AA/en_qgis_generate_indicators_for_plugin.md
-          - file: GIS_AA/en_gaia_indicators_processing.md
-  - caption: Mobile Data Collection
+  - caption: Tools & Methods
     chapters:
       - file: Mobile_Data_collection/en_SMT.md
       - file: Mobile_Data_collection/en_SMT_training.md
@@ -168,6 +163,15 @@ parts:
           - file: Mobile_Data_collection/en_SMT_ex3_.md
           - file: Mobile_Data_collection/en_SMT_ex4_.md
           - file: Mobile_Data_collection/en_SMT_ex5_.md
+          - file: Mobile_Data_collection/en_SMT_ex6_.md   
+      - file: GIS_AA/en_AILAS_madagascar.md
+        sections:
+          - file: GIS_AA/en_AILAS_madagascar_camera_usage_guide.md
+          - file: GIS_AA/en_AILAS_madagascar_picture_upload_and_management.md
+      - file: GIS_AA/en_qgis_risk_assessment_plugin.md
+        sections:
+          - file: GIS_AA/en_qgis_generate_indicators_for_plugin.md
+          - file: GIS_AA/en_gaia_indicators_processing.md
   - caption: About
     chapters:
       - file: About/about_1.md

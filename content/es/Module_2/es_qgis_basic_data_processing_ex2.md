@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -56,11 +56,11 @@ __Duración estimada del ejercicio:__
 __Artículos relevantes en Wiki:__
 ^^^
 
-* [Interfaz de QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_interface_wiki.html)
-* [Importación de datos geoespaciales en QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html)
-* [Concepto de capa](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_layer_concept_wiki.html)
-* [Tabla de atributos en QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html)
-* [Proyecciones cartográficas](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projections_wiki.html)
+* [Interfaz de QGIS](../Wiki/es_qgis_interface_wiki.md)
+* [Importación de datos geoespaciales en QGIS](../Wiki/es_qgis_import_geodata_wiki.md)
+* [Concepto de capa](../Wiki/es_qgis_layer_concept_wiki.md)
+* [Tabla de atributos en QGIS](../Wiki/es_qgis_attribute_table_wiki.md)
+* [Proyecciones cartográficas](../Wiki/es_qgis_projections_wiki.md)
 <!-- FIXME: to be updated -->
 
 :::
@@ -75,7 +75,7 @@ __Preparar la capacitación:__
 - Tómese el tiempo necesario para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare un pizarrón. Puede ser un pizarrón físico, un rotafolio o un pizarrón digital (p. ej., un pizarrón en Miro) donde los participantes puedan añadir sus resultados y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos los participantes hayan instalado QGIS y que hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo realizar capacitaciones?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Trainers_corner/es_how_to_training.html#como-planificar-una-capacitacion-en-sig) para obtener algunos consejos generales para impartirlas.
+- Consulte [¿Cómo realizar capacitaciones?](../Trainers_corner/es_how_to_training.md) para obtener algunos consejos generales para impartirlas.
 
 __Impartir la capacitación:__
 
@@ -157,7 +157,7 @@ Dado que no se realizan cálculos, p. ej., de área, WGS84 (EPSG:4326) es una bu
 
 
 6. Repita los pasos para la capa `nigeria_boundaries.geojson` y exporte únicamente
-el distrito en el que se encuentra **Zuyel**. Nómbrelo como corresponda. Para encontrar el distrito utilice la herramienta ![](/fig/qgis_identify_features.png) `Identificar objetos espaciales` y después seleccione manualmente el distrito correcto en la tabla de atributos.
+el distrito en el que se encuentra **Zuyel**. Nómbrelo como corresponda. Para encontrar el distrito utilice la herramienta ![](../../../fig/qgis_identify_features.png) `Identificar objetos espaciales` y después seleccione manualmente el distrito correcto en la tabla de atributos.
 
 7. Elimine todas las capas iniciales y, a continuación, abra la tabla de atributos de cada una de las nuevas capas y compruebe que cada capa solo contiene una entidad.
 
@@ -165,7 +165,7 @@ el distrito en el que se encuentra **Zuyel**. Nómbrelo como corresponda. Para e
 
 ### Resultado
 
-:::{figure} /fig/en_result_geodata_processing_exercise.png
+:::{figure} ../../../fig/en_result_geodata_processing_exercise.png
 ---
 width: 80%
 name: en_result_geodata_processing_exercise

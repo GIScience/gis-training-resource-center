@@ -1,11 +1,15 @@
 🚧This part of training platform is under ⚠️construction⚠️ and may not be shared or published! 🚧
 
-::::{admonition} French Translation 
+::::{admonition} French Translation - Traduction française
 :class: tip
 
-The french version of this page can be found [here](fr_AILAS_madagascar.md).
+The french version of this page can be found here / La version française de cet article se trouve ici :
 
-La version française de cet article se trouve [ici](fr_AILAS_madagascar.md).
+:::{card}
+:link: ../../fr/GIS_AA/fr_AILAS_madagascar
+French version - Version française
+:::
+
 ::::
 
 # AI Logistic Awareness System (AILAS) Street level image collection Field Experiments <a id="ai-logistic-awareness-system-ailas-street-level-image-collection-field-experiments"></a>
@@ -16,7 +20,7 @@ AILAS is a planned, weather-adaptive routing service that helps people to plan t
 
 :::{admonition} Technical details
 :class: note
-To develop the system dashcams on CRM vehicles capture geotagged street-level images along planned routes. All images are uploaded a cloud storage (Panoramax), where faces/plates are blurred and standard preprocessing prepares the data for analysis.  Each image is time-stamped and linked to its OpenStreetMap road segment and then classified into different passability classes (e.g. bad passability/ medium passabilty). The classified images will be used as training data fort he development of a deep learning model, whose task will be to automatically classify passability of street level images after training. These classifications are combined with dynamic weather data and further secondary data (e.g. terrain or soil classes) to develop a model that is able to estimate passability based on current weather data/forecasts.  Finally, the results are integrated into openrouteservice to account for the passability of unpaved roads when generating routes.
+To develop the system dashcams on CRM vehicles capture geotagged street-level images along planned routes. All images are uploaded a cloud storage (Panoramax), where faces/plates are blurred and standard preprocessing prepares the data for analysis.  Each image is time-stamped and linked to its OpenStreetMap road segment and then classified into different passability classes (e.g. bad passability / medium passabilty). The classified images will be used as training data fort he development of a deep learning model, whose task will be to automatically classify passability of street level images after training. These classifications are combined with dynamic weather data and further secondary data (e.g. terrain or soil classes) to develop a model that is able to estimate passability based on current weather data/forecasts.  Finally, the results are integrated into openrouteservice to account for the passability of unpaved roads when generating routes.
 
 ```{figure} ../../../fig/AILAS_workflow.png
 ---

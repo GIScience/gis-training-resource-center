@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -227,12 +227,12 @@ The item properties panel for pictures. You need to specify the save location of
 
 The finished map could look something like this:
 
-:::{figure} ../../fig/en_map_design_exercise_1_results.png
+:::{figure} ../../../fig/en_map_design_exercise_1_results.png
 ---
 name: Main road network and hospitals in Ghana, Africa
 width: 600px
 ---
-Some space has been left in the bottom-right corner for an overview map
+Some space has been left in the bottom-right corner for an overview map.
 :::
 
 What can we learn from this map? We can clearly identify areas that are harder to reach and where the travel time to a hospital is much longer than in the populated regions in the south of Ghana. 

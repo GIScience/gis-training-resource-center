@@ -2,6 +2,8 @@
 
 This page is a collection of syntaxes for the different building blocks used in the jupyterbook for standard markdown, markdown Myst and Sphynx design.
 
+Directives have to use colon fences `:::` in order not to mess with OKAPI filters in the localisation pipeline. Directives can be nested.
+
 ## Websites with information
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/display
@@ -49,6 +51,26 @@ OR
 {octicon}`undo;2em;sd-text-danger`
 :::
 ::::
+
+### Figures
+
+:::{figure} ../../../image_name.png
+---
+name: image_name
+width: 600 px
+---
+Caption
+:::
+
+
+### Callouts
+
+
+:::{note}
+
+Text, image, etc.
+
+:::
 
 
 ### Module Chapter Headers:

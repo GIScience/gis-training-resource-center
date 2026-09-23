@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -14,7 +14,7 @@ The ![](../../../fig/processingModel.png) `Graphical Modeler` also known as the 
 
 ### Graphical User Interface <a id="graphical-user-interface"></a>
 
-The Graphical Modeler can be accessed from the Processing menu `Processing -> Graphical Modeler` as shown in {numref}`open_graphical_modeler`.
+The Graphical Modeler can be accessed from the Processing menu `Processing` → `Graphical Modeler` as shown in {numref}`open_graphical_modeler`.
 
 :::{figure} ../../../fig/en_open_graphical_modeler.png
 ---
@@ -159,7 +159,7 @@ Value_1;Value_2;Value_3
 
 When organising your model, you can add group boxes to group algorithms in the model canvas to visually order the different steps. 
 
-- In the top bar, navigate to `Edit` -> `Add Group Box`. A grey box will appear in the background of the model canvas
+- In the top bar, navigate to `Edit` → `Add Group Box`. A grey box will appear in the background of the model canvas
 - <kbd>Double-Click</kbd> on the group box to enter a name and customise the colour.
 
 :::

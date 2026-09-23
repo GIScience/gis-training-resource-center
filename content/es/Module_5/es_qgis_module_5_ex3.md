@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -50,11 +50,11 @@ __Duración estimada del ejercicio:__
 __Artículos relevantes en Wiki:__
 ^^^
 
-* [Importación de datos geoespaciales en QGIS](/content/es/Wiki/es_qgis_import_geodata_wiki.md)
-* [Intersección](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Estadísticas zonales](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html)
-* [Unir atributos por ubicación (resumen](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Funciones de la tabla](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing)
+* [Importación de datos geoespaciales en QGIS](../Wiki/es_qgis_import_geodata_wiki.md)
+* [Intersección](../../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Estadísticas zonales](../Wiki/es_qgis_raster_basic_wiki.md)
+* [Unir atributos por ubicación (resumen](../../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Funciones de la tabla](../../en/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)
 
 :::
 
@@ -69,7 +69,7 @@ __Artículos relevantes en Wiki:__
 - Tómese su tiempo para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare una pizarra. Puede ser una pizarra blanca física, un rotafolio o una pizarra digital (por ejemplo, una pizarra Miro) donde los participantes puedan añadir sus conclusiones y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos hayan instalado QGIS y hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo hacer capacitaciones?](/content/es/Trainers_corner/es_how_to_training.md) para obtener consejos generales sobre cómo impartir una capacitación.
+- Consulte [¿Cómo hacer capacitaciones?](../Trainers_corner/es_how_to_training.md) para obtener consejos generales sobre cómo impartir una capacitación.
 
 ### Impartir la capacitación
 
@@ -127,11 +127,11 @@ Las actualizaciones de Outlook se producen casi todos los meses y también se ti
 
 | Color | Fase | Descripciones |
 | ----- | --- | --- |
-| ![](/fig/IPC_Class_1.drawio.svg) | 1. Mínima | Los hogares son capaces de satisfacer las necesidades alimentarias y no alimentarias esenciales sin recurrir a estrategias atípicas e insostenibles para acceder a los alimentos y los ingresos. |
-| ![](/fig/IPC_Class_2.drawio.svg) | 2. Estrés | Los hogares tienen un consumo de alimentos mínimamente adecuado, pero no pueden hacer frente a algunos gastos no alimentarios esenciales sin recurrir a estrategias de afrontamiento por estrés. |
-| ![](/fig/IPC_Class_3.drawio.svg) | 3. Crisis | Los hogares tienen carencias en el consumo de alimentos que se reflejan en una malnutrición aguda elevada o superior a la habitual __O__ apenas son capaces de satisfacer las necesidades alimentarias mínimas, pero solo pueden hacerlo agotando activos esenciales para su subsistencia o mediante estrategias para hacer frente a la crisis. |
-| ![](/fig/IPC_Class_4.drawio.svg) | 4. Emergencia | Los hogares tienen grandes carencias de consumo alimentario que se reflejan en una malnutrición aguda y una tasa de mortalidad muy elevada; __O__ son capaces de mitigar las grandes carencias de consumo alimentario, pero solo empleando estrategias de subsistencia de emergencia y liquidación de activos. |
-| ![](/fig/IPC_Class_5.drawio.svg) | 5. Hambruna | Los hogares presentan una falta extrema de alimentos y/o de otras necesidades básicas, incluso después de haber empleado por completo todas las estrategias de afrontamiento. El hambre, la muerte, la indigencia y los niveles de desnutrición aguda extremadamente críticos son evidentes. (Para la clasificación de hambruna, la zona debe tener niveles críticos extremos de desnutrición aguda y mortalidad). |
+| ![](../../../fig/IPC_Class_1.drawio.svg) | 1. Mínima | Los hogares son capaces de satisfacer las necesidades alimentarias y no alimentarias esenciales sin recurrir a estrategias atípicas e insostenibles para acceder a los alimentos y los ingresos. |
+| ![](../../../fig/IPC_Class_2.drawio.svg) | 2. Estrés | Los hogares tienen un consumo de alimentos mínimamente adecuado, pero no pueden hacer frente a algunos gastos no alimentarios esenciales sin recurrir a estrategias de afrontamiento por estrés. |
+| ![](../../../fig/IPC_Class_3.drawio.svg) | 3. Crisis | Los hogares tienen carencias en el consumo de alimentos que se reflejan en una malnutrición aguda elevada o superior a la habitual __O__ apenas son capaces de satisfacer las necesidades alimentarias mínimas, pero solo pueden hacerlo agotando activos esenciales para su subsistencia o mediante estrategias para hacer frente a la crisis. |
+| ![](../../../fig/IPC_Class_4.drawio.svg) | 4. Emergencia | Los hogares tienen grandes carencias de consumo alimentario que se reflejan en una malnutrición aguda y una tasa de mortalidad muy elevada; __O__ son capaces de mitigar las grandes carencias de consumo alimentario, pero solo empleando estrategias de subsistencia de emergencia y liquidación de activos. |
+| ![](../../../fig/IPC_Class_5.drawio.svg) | 5. Hambruna | Los hogares presentan una falta extrema de alimentos y/o de otras necesidades básicas, incluso después de haber empleado por completo todas las estrategias de afrontamiento. El hambre, la muerte, la indigencia y los niveles de desnutrición aguda extremadamente críticos son evidentes. (Para la clasificación de hambruna, la zona debe tener niveles críticos extremos de desnutrición aguda y mortalidad). |
 
 ### Datos de capacitación
 
@@ -175,7 +175,7 @@ __Herramienta:__ No se necesitan herramientas ni programas especiales.
     3. Copie la carpeta de plantillas "TEMPLATE_Year_Month" y cámbiele el nombre por el del año y mes actuales `2024_01`.
 
   -
-    :::{figure} /fig/Exercise_Folder_structure_Drought_Monitoring_Trigger.drawio.svg
+    :::{figure} ../../../fig/Exercise_Folder_structure_Drought_Monitoring_Trigger.drawio.svg
     ---
     width: 450px
     name: es_Exercise_Folder_structure_Drought_Monitoring_Trigger
@@ -214,7 +214,7 @@ En el sitio web, tendrá que hacer clic en Somalia para acceder a los datos. Alt
 2. Desplácese hacia abajo. En `Geographic Area`, escriba "Somalia" y haga clic en `Apply`.
 3. Elija el conjunto de datos más reciente.
 
-:::{figure} /fig/IPC_Projections_website.png
+:::{figure} ../../../fig/IPC_Projections_website.png
 ---
 height: 250px
 name: es_IPC_Projections_website
@@ -232,10 +232,10 @@ align: center
   :::
 
 ::::{Warning}
-Recuerde que debe copiar todos los componentes del [shapefile](/content/es/Wiki/es_qgis_geodata_types_wiki.md#vector-data) correspondiente. Lo más probable es que tenga 5 componentes: .cpg, .dbf, .prj, .shp y .shx.
+Recuerde que debe copiar todos los componentes del [shapefile](../../en/Wiki/en_qgis_geodata_types_wiki.md#vector-data) correspondiente. Lo más probable es que tenga 5 componentes: .cpg, .dbf, .prj, .shp y .shx.
 ::::
 
-:::{figure} /fig/IPC_zip.PNG
+:::{figure} ../../../fig/IPC_zip.PNG
 ---
 height: 300px
 name: es_IPC_zip 
@@ -246,7 +246,7 @@ Contenido del archivo .zip descargado que contiene las proyecciones IPC de ML1 y
 :::{tip}
 Puede suscribirse [en la página principal de FEWSNET](https://fews.net/), para recibir información sobre las últimas actualizaciones por correo electrónico. Para ello, desplácese hasta el final de la página y haga clic en `Sign up for Emails`. Tendrá la opción de elegir actualizaciones solo para Somalia.
 
-:::{figure} /fig/IPC_Newsletter.png
+:::{figure} ../../../fig/IPC_Newsletter.png
 ---
 height: 60px
 name: es_FEWSNET Newsletter
@@ -261,9 +261,9 @@ __Propósito:__ En este paso, todos los datos necesarios se cargarán en un proy
 
 __Herramienta:__ No se necesitan herramientas específicas, solo QGIS.
 
-1. Abra QGIS y cree un [nuevo proyecto](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Proyecto` → `Nuevo`
+1. Abra QGIS y cree un [nuevo proyecto](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Proyecto` → `Nuevo`
 2. Una vez creado el proyecto, guárdelo en la carpeta que creó en el paso 1 (por ejemplo, 2022_05). Para ello, haga clic en `Proyecto` → `Guardar como...` y vaya hasta la carpeta. Asigne al proyecto el mismo nombre que la carpeta que ha creado (por ejemplo, 2022_05). A continuación, haga clic en `Guardar`
-3. Cargue todos los datos de entrada en QGIS mediante [arrastrar y soltar](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop). Haga clic en `Proyecto` → `Guardar`
+3. Cargue todos los datos de entrada en QGIS mediante [arrastrar y soltar](../../en/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop). Haga clic en `Proyecto` → `Guardar`
   * Desde la carpeta creada en el paso 1
     * ML1
   * En la carpeta `Fixed_data`:
@@ -277,7 +277,7 @@ __Resultado:__ Proyecto QGIS con todos los datos necesarios listos para ser anal
 __Propósito:__ El objetivo es recibir capas de polígonos que compartan tanto los bordes como los atributos de ambas capas de entrada.
 
 
-__Herramienta:__ [`Intersection`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_geoprocessing_wiki.html#intersection)
+__Herramienta:__ [`Intersection`](../../en/Wiki/en_qgis_geoprocessing_wiki.md#intersection)
 
 
 ::::::{list-table}
@@ -286,13 +286,13 @@ __Herramienta:__ [`Intersection`](https://giscience.github.io/gis-training-resou
 
 * - Instrucciones
   - Captura de pantalla de la ventana Intersección
-* - 1. Haga clic en `Vectorial` → `Geoprocessing Tools` → [`Intersección`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_geoprocessing_wiki.html#intersection)
+* - 1. Haga clic en `Vectorial` → `Geoprocessing Tools` → [`Intersección`](../../en/Wiki/en_qgis_geoprocessing_wiki.md#intersection)
     2. `Capa de entrada`: ML 1
     3. `Capa de superposición`: district_pop_sum
-    4. En `Intersección` haga clic en los tres puntos ![](/fig/Three_points.png) → `Guardar a archivo` y vaya hasta su carpeta de seguimiento [Año_Mes]. Asigne a la salida el nombre "ML1_Intersección" y haga clic en `Guardar`
+    4. En `Intersección` haga clic en los tres puntos ![](../../../fig/Three_points.png) → `Guardar a archivo` y vaya hasta su carpeta de seguimiento [Año_Mes]. Asigne a la salida el nombre "ML1_Intersección" y haga clic en `Guardar`
     5. Haga clic en `Ejecutar`
   -
-    :::{figure} /fig/SRCS_Trigger_step_4_Intersection.png
+    :::{figure} ../../../fig/SRCS_Trigger_step_4_Intersection.png
     ---
     width: 450px
     name: es_SRCS_Trigger_step_4_Intersection
@@ -316,7 +316,7 @@ La capa resultante puede tener más filas que las capas originales.
 __Propósito:__ Aquí calculamos la población en cada polígono de la capa de intersección del paso 4.
 
 
-__Herramienta:__ [Estadísticas de zona`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html#zonal-statistics)
+__Herramienta:__ [Estadísticas de zona`](../../en/Wiki/en_qgis_raster_basic_wiki.md#zonal-statistics)
 
 ::::::{list-table}
 :header-rows: 1
@@ -324,15 +324,15 @@ __Herramienta:__ [Estadísticas de zona`](https://giscience.github.io/gis-traini
 
 * - Instrucciones
   - Captura de pantalla de la ventana de estadísticas zonales
-* - 1. En la Caja de herramientas de Procesos → Buscar [`Estadísticas de zona`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html#zonal-statistics)
+* - 1. En la Caja de herramientas de Procesos → Buscar [`Estadísticas de zona`](../../en/Wiki/en_qgis_raster_basic_wiki.md#zonal-statistics)
     * Consejo: Si la página `Caja de herramientas de Procesos` no está abierta, haga clic en `Procesos` → `Caja de herramientas`
     2. `Capa de entrada`: "ML1_Intersection"
     3. `Capa ráster`: "som_ppp_2020_UNadj_constrained.tif"
     4. Estadísticas para calcular: Solo `Suma`
-    5. En `Estadísticas zonal`, haga clic en los tres puntos ![](/fig/Three_points.png) → `Guardar a archivo` y vaya hasta su carpeta de supervisión [Año_Mes]. Asigne a la salida el nombre "ML1_zonal_statistic" y haga clic en `Guardar`
+    5. En `Estadísticas zonal`, haga clic en los tres puntos ![](../../../fig/Three_points.png) → `Guardar a archivo` y vaya hasta su carpeta de supervisión [Año_Mes]. Asigne a la salida el nombre "ML1_zonal_statistic" y haga clic en `Guardar`
     5. Haga clic en `Ejecutar`.
   -
-    :::{figure} /fig/SRCS_Trigger_step_5_zonal_statistic.png
+    :::{figure} ../../../fig/SRCS_Trigger_step_5_zonal_statistic.png
     ---
     width: 450px
     name: es_SRCS_Trigger_step_5_zonal_statistic
@@ -351,7 +351,7 @@ __Resultado:__ El resultado debería ser la "ML1_zonal_statistic" como capa de p
 ### Paso 6: Ponderación de la población en función de la fase IPC
 
 
-__Propósito:__ La finalidad de este paso es la ponderación de la población en las cinco fases de la IPC, tal como se describe en [IPC Data](https://giscience.github.io/gis-training-resource-center/spanish/content/es/GIS_AA/es_qgis_drought_trigger_somalia.html#ipc-population-weighted-index).
+__Propósito:__ La finalidad de este paso es la ponderación de la población en las cinco fases de la IPC, tal como se describe en [IPC Data](../../en/GIS_AA/en_qgis_drought_trigger_somalia.md#ipc-population-weighted-index).
 
 :::{Note}
 El Índice IPC trata a los distritos de baja población igual que a los de alta población, garantizando que los distritos pequeños con alta inseguridad alimentaria no estén subrepresentados.
@@ -375,10 +375,10 @@ Donde las ponderaciones se definen como:
 
 El índice IPC trata a los distritos con poca población de la misma manera que a los distritos con alta población. No se produce una subrepresentación de la alta inseguridad alimentaria de los distritos pequeños.
 :::
-__Herramienta:__ [`Calculadora de campo`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field)
+__Herramienta:__ [`Calculadora de campo`](../../en/Wiki/en_qgis_table_functions_wiki.md#calculate-field)
 
 
-1. Haga clic con el botón derecho en la capa "ML1_zonal_statistic" → `Abrir tabla de atributos` → haga clic en [`Calculadora de campo`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) para abrir la calculadora de campos
+1. Haga clic con el botón derecho en la capa "ML1_zonal_statistic" → `Abrir tabla de atributos` → haga clic en [`Calculadora de campo`](../../en/Wiki/en_qgis_table_functions_wiki.md#calculate-field) ![](../../../fig/mActionCalculateField.png) para abrir la calculadora de campos
 2. Verifique `Crear un nuevo campo`
 3. `Nombre del campo de salida`: Nombre la nueva columna “pop_suma_ponderada”
 4. `Tipo del campo de salida`: Número decimal (real)
@@ -395,16 +395,16 @@ ELSE "_sum"
 
 END
 ```
-6. Cuando haya terminado, haga clic en ![](/fig/mActionSaveEdits.png) para guardar sus ediciones y desactive el modo de edición haciendo clic de nuevo en ![](/fig/mActionToggleEditing.png)([Wiki Video](/content/es/Wiki/es_qgis_attribute_table_wiki.md#attribute-table-data-editing)).
+6. Cuando haya terminado, haga clic en ![](../../../fig/mActionSaveEdits.png) para guardar sus ediciones y desactive el modo de edición haciendo clic de nuevo en ![](../../../fig/mActionToggleEditing.png)([Wiki Video](../../en/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)).
 
 ## Paso 7: Cálculo de la proporción de población por polígono de intersección
 
-__Propósito:__ En este paso, calculamos el [Índice IPC ponderado por la población](/content/GIS_AA/en_qgis_drought_trigger_somalia.md#ipc-population-weighted-index) para cada pequeña parte de la capa de polígonos.
+__Propósito:__ En este paso, calculamos el [Índice IPC ponderado por la población](../../en/GIS_AA/en_qgis_drought_trigger_somalia.md#ipc-population-weighted-index) para cada pequeña parte de la capa de polígonos.
 
 
-__Herramienta:__[`Calculadora de campo`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing)
+__Herramienta:__[`Calculadora de campo`](../../en/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)
 
-1. Haga clic con el botón derecho en la capa "ML1_zonal_statistic" → `Abrir tabla de atributos` → haga clic en [`Calculadora de campo`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html#attribute-table-data-editing) ![](/fig/mActionCalculateField.png) para abrir la calculadora de campos
+1. Haga clic con el botón derecho en la capa "ML1_zonal_statistic" → `Abrir tabla de atributos` → haga clic en [`Calculadora de campo`](../../en/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing) ![](../../../fig/mActionCalculateField.png) para abrir la calculadora de campos
 2. Verifique `Crear un campo nuevo`
 3. `Nombre del campo de salida `: Nombre la nueva columna “Index_per_IPCPolygon_ML1”
 4. `Tipo del campo de salida`: Número decimal (real)
@@ -413,9 +413,9 @@ __Herramienta:__[`Calculadora de campo`](https://giscience.github.io/gis-trainin
 "pop_sum_weighted"/"districtpo"
 ```
 6. Haga <kbd>clic</kbd> en `Aceptar`.
-7. Guarde la nueva columna haciendo clic en ![](/fig/mActionSaveEdits.png) la tabla de atributos y desactive el modo de edición haciendo clic en ![](/fig/mActionToggleEditing.png).
+7. Guarde la nueva columna haciendo clic en ![](../../../fig/mActionSaveEdits.png) la tabla de atributos y desactive el modo de edición haciendo clic en ![](../../../fig/mActionToggleEditing.png).
 
-:::{figure} /fig/SRCS_Trigger_step_8_field_calculator.png
+:::{figure} ../../../fig/SRCS_Trigger_step_8_field_calculator.png
 ---
 width: 500px
 name: es_SRCS_Trigger_step_8_field_calculator
@@ -449,10 +449,10 @@ __Herramienta:__ `Unir atributos por localización (resumen)`
     4. `Donde los objetos`: Seleccione "intersecan".
     5. `Campos a resumir`: Seleccione "Index_per_IPCPolygon_ML1".
     6. `Resúmenes a calcular`: Marque solo la opción "media".
-    7. En `Capa unida`, haga clic en los tres puntos ![](/fig/Three_points.png) → `Guardar a archivo` y vaya hasta su carpeta de supervisión [Año_Mes]. Asigne a la salida el nombre "ML1_IPC_Index" y haga clic en `Guardar`.
+    7. En `Capa unida`, haga clic en los tres puntos ![](../../../fig/Three_points.png) → `Guardar a archivo` y vaya hasta su carpeta de supervisión [Año_Mes]. Asigne a la salida el nombre "ML1_IPC_Index" y haga clic en `Guardar`.
     8. Haga clic en `Ejecutar`.
   -
-    :::{figure} /fig/Exercise_trigger_join_attributes_location.png
+    :::{figure} ../../../fig/Exercise_trigger_join_attributes_location.png
     ---
     width: 450px
     name: es_Exercise_trigger_join_attributes_location
@@ -471,14 +471,14 @@ __Resultado:__ Como resultado, su capa "ML1_IPC_Index" debería tener la columna
 
 __Propósito:__ El objetivo de este paso es obtener una visión general rápida de la posible activación del desencadenante sin tener que revisar los datos reales. En su lugar, tendremos una columna binaria con valores trigger = sí o trigger=no.
 
-__Herramienta:__ [`Calculadora de campo`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field)
+__Herramienta:__ [`Calculadora de campo`](../../en/Wiki/en_qgis_table_functions_wiki.md#calculate-field)
 
-1. Haga clic con el botón derecho en la capa "ML1_IPC_Index" → `Abrir tabla de atributos` → haga clic en [`Calculadora de campo`](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_table_functions_wiki.html#calculate-field) ![](/fig/mActionCalculateField.png) para abrir la calculadora de campos
+1. Haga clic con el botón derecho en la capa "ML1_IPC_Index" → `Abrir tabla de atributos` → haga clic en [`Calculadora de campo`](../../en/Wiki/en_qgis_table_functions_wiki.md#calculate-field) ![](../../../fig/mActionCalculateField.png) para abrir la calculadora de campos
 2. Verifique `Crear un campo nuevo`
 3. `Nombre del campo de salida`: Nombre la nueva columna "Activación_desencadenante".
 4. `Tipo del campo de salida`: Texto (cadena).
 5. Añada el código siguiente en el campo `Expresión`.
-6. Guarde la nueva columna haciendo clic en ![](/fig/mActionSaveEdits.png) la tabla de atributos y finalice el modo de edición haciendo clic en ![](/fig/mActionToggleEditing.png).
+6. Guarde la nueva columna haciendo clic en ![](../../../fig/mActionSaveEdits.png) la tabla de atributos y finalice el modo de edición haciendo clic en ![](../../../fig/mActionToggleEditing.png).
 
 ::::::{list-table}
 :header-rows: 1
@@ -497,11 +497,11 @@ __Herramienta:__ [`Calculadora de campo`](https://giscience.github.io/gis-traini
 ::::::
 
 6. Haga clic en `Aceptar`.
-7. Guarde la nueva columna haciendo clic en ![](/fig/mActionSaveEdits.png) la tabla de atributos y finalice el modo de edición haciendo clic en ![](/fig/mActionToggleEditing.png).
+7. Guarde la nueva columna haciendo clic en ![](../../../fig/mActionSaveEdits.png) la tabla de atributos y finalice el modo de edición haciendo clic en ![](../../../fig/mActionToggleEditing.png).
 
 __Resultado:__ Una capa con todos los distritos de Somalia con una columna que contiene valores "Sí" y "No" que indica si se han alcanzado o no los niveles de activación.
 
-:::{figure} /fig/Exercise_trigger_evaluation.png
+:::{figure} ../../../fig/Exercise_trigger_evaluation.png
 ---
 width: 600px
 name: es_Exercise_trigger_evaluation
@@ -517,13 +517,13 @@ align: center
 
 __Propósito:__ Definición de cómo se representan visualmente las entidades en el mapa.
 
-__Herramienta:__ [Simbología](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_styling_vector_data.html#symbology-for-vector-data)
+__Herramienta:__ [Simbología](../../en/Module_4/en_qgis_styling_vector_data.md#symbology-for-vector-data)
 
 __Activación del desencadenante__
 
 1. Haga clic con el botón derecho en la capa "ML1_IPC_Index" →  `Propriedades` →  `Simbología`.
 2. En la esquina inferior izquierda, haga clic en `Estilo` →  `Cargar estilo`.
-3. En la nueva ventana, haga clic en los tres puntos ![](/fig/Three_points.png). Vaya hasta la carpeta "FbF_Drought_Monitoring_Trigger/layer_styles" y seleccione el archivo __"Style_Trigger_Activation_ex.qml"__.
+3. En la nueva ventana, haga clic en los tres puntos ![](../../../fig/Three_points.png). Vaya hasta la carpeta "FbF_Drought_Monitoring_Trigger/layer_styles" y seleccione el archivo __"Style_Trigger_Activation_ex.qml"__.
 4. Haga clic en `Abrir`. A continuación, haga clic en `Cargar estilo`.
 5. De nuevo en la ventana “Layer Properties”, haga clic en `Aplicar` y `Aceptar`.
 
@@ -534,7 +534,7 @@ Ahora verá los distritos en los que no hay activación en verde y los distritos
 La capa de estilo "Style_Trigger_Activation.qml" está configurada para mostrar los nombres de los distritos en donde el disparador esté realmente activado. Si no hay activación de un desencadenante puede activar la capa de límites del administrador 1 para una mejor orientación del mapa (véase __Límites del administrador 2__ más abajo).
 ::::
 
-:::{figure} /fig/Map_yes_trigger.PNG
+:::{figure} ../../../fig/Map_yes_trigger.PNG
 ---
 width: 1000px
 name: es_Map_yes_trigger
@@ -547,10 +547,10 @@ __Fronteras administrativas 2 (Regiones)__
 
 6. Haga clic con el botón derecho en la capa "Som_admin1_regions_UNDP.gqkp" (Regiones) →  `Propriedades` →  `Simbología`.
 7. En la esquina inferior izquierda, haga clic en `Estilo` →  `Cargar estilo`.
-8. En la nueva ventana, haga clic en los tres puntos ![](/fig/Three_points.png). Vaya hasta la carpeta "FbF_Drought_Monitoring_Trigger/layer_styles" y seleccione el archivo __"SOM_regions_style_ex.qml"__.
+8. En la nueva ventana, haga clic en los tres puntos ![](../../../fig/Three_points.png). Vaya hasta la carpeta "FbF_Drought_Monitoring_Trigger/layer_styles" y seleccione el archivo __"SOM_regions_style_ex.qml"__.
 9. Haga clic en `Abrir`. A continuación, haga clic en `Cargar estilo`.
 10. De nuevo en la ventana “Layer Properties”, haga clic en `Aplicar` y `Aceptar`.
-11. Añada un mapa base de OpenStreetMap haciendo clic en `Capa` →  `Añadir capa` →  `Añadir capa XYZ...` →  Seleccione OpenStreetMap. Haga clic en `Add`. ([Wiki mapa base](/content/es/Wiki/es_qgis_basemaps_wiki.md)).
+11. Añada un mapa base de OpenStreetMap haciendo clic en `Capa` →  `Añadir capa` →  `Añadir capa XYZ...` →  Seleccione OpenStreetMap. Haga clic en `Add`. ([Wiki mapa base](../Wiki/es_qgis_basemaps_wiki.md)).
 12. Ponga el mapa base de OpenStreetMap en la parte inferior.
 13. Borre todas las capas __excepto__:
     * Activación_desencadenante
@@ -568,7 +568,7 @@ __Fronteras administrativas 2 (Regiones)__
 * - Mapa de intervención __sin__ Activación del desencadenante
   - Mapa de intervención __con__ Activación del desencadenante
 * - 
-    :::{figure} /fig/Map_no_trigger.PNG
+    :::{figure} ../../../fig/Map_no_trigger.PNG
     ---
     width: 1000px
     name: es_Map_no_trigger
@@ -577,7 +577,7 @@ __Fronteras administrativas 2 (Regiones)__
     :::
 
   -
-    :::{figure} /fig/Map_yes_trigger.PNG
+    :::{figure} ../../../fig/Map_yes_trigger.PNG
     ---
     width: 450px
     name: es_Map_yes_trigger
@@ -594,7 +594,7 @@ Recuerde el [concepto de capa](es/Module_2/es_qgis_geodata_concept.md) y asegúr
 
 __Propósito:__ Visualización de las características del mapa en un esquema imprimible.
 
-__Herramienta:__ [Diseño de impresión](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_map_design_2.html)
+__Herramienta:__ [Diseño de impresión](../Module_4/es_qgis_map_design_2.md)
 
 
 1. Si no lo ha hecho antes, elimine todas las capas excepto __Trigger_activation__, __Som_admin1_regions_UNDP__ y __OpenStreetMap__.
@@ -615,7 +615,7 @@ __Herramienta:__ [Diseño de impresión](https://giscience.github.io/gis-trainin
 Asegúrese de editar la información del mapa en la plantilla, por ejemplo, la fecha actual. Asegúrese también de comprobar los elementos de la leyenda: Elimine los elementos innecesarios y, con el tiempo, cambie los nombres por descripciones con sentido.
 :::
 
-También puede adaptar la plantilla a sus necesidades y preferencias. Puede encontrar ayuda [aquí](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_map_design_2.html).
+También puede adaptar la plantilla a sus necesidades y preferencias. Puede encontrar ayuda [aquí](../Module_4/es_qgis_map_design_2.md).
 
 :::{Attention}
 Asegúrese de editar la información del mapa en la plantilla, por ejemplo, la fecha actual. Asegúrese también de comprobar los elementos de la leyenda: Elimine los elementos innecesarios y, con el tiempo, cambie los nombres por descripciones con sentido.
@@ -627,7 +627,7 @@ Asegúrese de editar la información del mapa en la plantilla, por ejemplo, la f
 __Propósito:__ Exporte el mapa diseñado y finalizado para imprimirlo en formato PDF o en el formato que prefiera.
 
 
-__Herramienta:__ [Diseño de impresión](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_4/es_qgis_map_design_2.html)
+__Herramienta:__ [Diseño de impresión](../Module_4/es_qgis_map_design_2.md)
 
 Cuando haya terminado el diseño de su mapa, puede exportarlo como archivo PDF o de imagen en diferentes tipos de datos.
 
@@ -651,7 +651,7 @@ __Exportar como PDF__
 Ahora la imagen se puede encontrar en la carpeta de resultados en la carpeta que creó en el paso 1.
 
 
-:::{figure} /fig/map_output_example_ex.png
+:::{figure} ../../../fig/map_output_example_ex.png
 ---
 width: 1000px
 name: es_map_output_example_ex

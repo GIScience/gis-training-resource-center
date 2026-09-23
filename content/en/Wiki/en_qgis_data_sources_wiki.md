@@ -5,7 +5,7 @@ In our module chapter, you can find an extensive list of possible data sources.
 
 :::{card}
 :class-card: sd-text-center
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_data_sources.html#overview-of-useful-data-repositories
+:link: ../Module_2/en_data_sources.md#overview-of-useful-data-repositories
 __Module 2 Chapter 5: Data Sources__
 
 :::
@@ -32,5 +32,5 @@ Maybe there are different data formats available that you can choose from. Think
 *Data capture date:*
 Make sure to check when the data was collected and if the collection data is in line with your needs. Check if there is potentially more up-to-date data in another framework.
 
-*Data licence:*
-What kind of licence does the data have? How can you use and share it and how do you need to cite the data source? Make sure to check the licensing and to follow the respective regulations to avoid difficulties.
+*Data license:*
+What kind of license does the data have? How can you use and share it and how do you need to cite the data source? Make sure to check the licensing and to follow the respective regulations to avoid difficulties.

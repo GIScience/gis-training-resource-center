@@ -1,8 +1,8 @@
 # Cómo planificar y estructurar una sesión de capacitación en GIS
 
-__🔙[Volver a la página principal](/content/intro.md)__
+__🔙[Volver a la página principal](../es_intro.md)__
 
-Diseñar una capacitación efectiva y atractiva en SIG requiere considerar cuidadosamente varios factores, incluidos los objetivos de la capacitación, el perfil de las personas participantes y sus estilos de aprendizaje preferidos. Gran parte de la información necesaria puede extraerse de la fase inicial de planificación general tratada en el artículo "[Cómo planificar una capacitación completa en SIG](/content/Trainers_corner/es_how_to_training.md)".  
+Diseñar una capacitación efectiva y atractiva en SIG requiere considerar cuidadosamente varios factores, incluidos los objetivos de la capacitación, el perfil de las personas participantes y sus estilos de aprendizaje preferidos. Gran parte de la información necesaria puede extraerse de la fase inicial de planificación general tratada en el artículo "[Cómo planificar una capacitación completa en SIG](es_how_to_training.md)".  
 Un día de capacitación bien estructurado proporciona un marco cohesivo para impartir contenido, facilitar actividades interactivas y maximizar los resultados de aprendizaje de las personas participantes. Desde la bienvenida inicial y la orientación hasta el resumen final y la reflexión, cada aspecto del día contribuye a una experiencia de aprendizaje completa e impactante.
 
 En esta sección, exploraremos los componentes clave para estructurar una sesión de capacitación en SIG, incluyendo la programación, la secuencia de sesiones, los descansos, los ejercicios interactivos y las estrategias para abordar preguntas y desafíos de los participantes. Al organizar estratégicamente el día de capacitación e incorporar diversas metodologías de enseñanza, las personas facilitadoras pueden crear un entorno de aprendizaje inclusivo y efectivo que atienda las necesidades y preferencias de todas las personas participantes.
@@ -17,7 +17,7 @@ Como facilitadores, es importante crear un marco estructurado que marque el tono
 2. __Actividad rompehielos:__ Fomenta la interacción y la camaradería entre las personas participantes con una actividad rompehielos. Esto puede ser un ejercicio grupal diseñado para incentivar la interacción y el trabajo en equipo.
 3. __Ronda de presentaciones:__ Es importante conocer a las personas participantes. Esto puede hacerse mediante una ronda de presentaciones general, combinada con la actividad rompehielos. Un método probado es hacer una breve introducción general y luego formar pequeños grupos donde las personas puedan presentarse con más detalle. En estos grupos se pueden usar preguntas guía como: “¿Cuál ha sido tu trabajo favorito hasta ahora?”.
 4. __Resumen de la agenda de capacitación:__ Proporciona una visión general de la agenda para toda la capacitación y del día presente, señalando los temas que se abordarán y los objetivos de aprendizaje de cada sesión. Esto ayuda a las personas participantes a comprender la estructura de la capacitación y qué podrán lograr.  
-Si utilizas un [plan de capacitación gráfico](/content/Trainers_corner/es_training_graphical_outline.md), preséntalo y comparte el acceso al plan.
+Si utilizas un [plan de capacitación gráfico](es_training_graphical_outline.md), preséntalo y comparte el acceso al plan.
 
 Toda esta sección introductoria puede durar hasta __una hora__ o más. Después de presentar la agenda, se recomienda programar un __descanso de entre 10 y 15 minutos__.
 
@@ -36,15 +36,15 @@ Esta sección debería durar entre 15 y 30 minutos. Si se extiende más, conside
 
 #### Impartición de contenido – Ejemplo: Introducción a SIG
 
-En un bloque de capacitación donde se enseña contenido nuevo o se perfeccionan habilidades, puedes usar una variedad más amplia de métodos. Aprende más sobre los distintos métodos para enseñar SIG en el artículo __[Cómo enseñar SIG](/content/Trainers_corner/es_how_to_teach_GIS.md)__.
+En un bloque de capacitación donde se enseña contenido nuevo o se perfeccionan habilidades, puedes usar una variedad más amplia de métodos. Aprende más sobre los distintos métodos para enseñar SIG en el artículo __[Cómo enseñar SIG](es_how_to_teach_GIS.md)__.
 
-Independientemente del contenido, un bloque así debe estar bien estructurado y preparado. Siempre considera el contenido y los métodos de enseñanza más apropiados. Por ejemplo, en una capacitación básica de QGIS, este es el momento de introducir el concepto de SIG. El [Módulo 1 - Introducción a SIG](https://giscience.github.io/gis-training-resource-center/content/Modul_1/es_qgis_theorie.html) en la plataforma de capacitación cubre este tema.
+Independientemente del contenido, un bloque así debe estar bien estructurado y preparado. Siempre considera el contenido y los métodos de enseñanza más apropiados. Por ejemplo, en una capacitación básica de QGIS, este es el momento de introducir el concepto de SIG. El [Módulo 1 - Introducción a SIG](../Module_1/es_qgis_theory.md) en la plataforma de capacitación cubre este tema.
 
 No existe un método prescrito para impartir este contenido. Puedes utilizar presentaciones en PowerPoint u otros medios adecuados. Al final de la sesión, las personas participantes deberían comprender el concepto básico de SIG y poder identificar las principales funciones de la interfaz. Explorar la interfaz puede hacerse de manera práctica, mientras que la parte teórica sobre el concepto de SIG es más adecuada para presentación.
 
 Consideraciones generales al planificar contenido:
 
-* __Método:__ Selecciona el método apropiado para tu contexto. A menudo, una breve introducción teórica seguida de ejercicios prácticos en estilo "sigue el paso a paso" o trabajo en grupo es efectiva. Sin embargo, para mantener la atención, se recomienda variar los métodos ocasionalmente. Más información sobre estos métodos está disponible [aquí](/content/es/Trainers_corner/es_how_to_teach_GIS.md).
+* __Método:__ Selecciona el método apropiado para tu contexto. A menudo, una breve introducción teórica seguida de ejercicios prácticos en estilo "sigue el paso a paso" o trabajo en grupo es efectiva. Sin embargo, para mantener la atención, se recomienda variar los métodos ocasionalmente. Más información sobre estos métodos está disponible [aquí](es_how_to_teach_GIS.md).
 * __Material de capacitación:__ Comunica claramente qué materiales se utilizarán en la sesión. Comparte enlaces (por ejemplo, al módulo en la plataforma) o distribuye el material. Si usas un plan de capacitación, asegúrate de incluir todos los enlaces relevantes.
 * __Descansos:__ Las personas solo pueden mantener la concentración durante aproximadamente 35 a 45 minutos. Programa descansos y usa un temporizador para que no se omitan.
 * __Cierre estructurado:__ Siempre planifica tiempo para concluir un ejercicio o presentación de manera organizada. Asegúrate de responder todas las preguntas, repasar el propósito del ejercicio y evaluar si se alcanzaron los objetivos. Recoge cualquier retroalimentación inmediata.
@@ -83,7 +83,7 @@ Al final de la capacitación, sin embargo, debes planificar mucho más tiempo pa
 
 1. __Cierre de los ejercicios del día:__ Concluye el día revisando el propósito de los ejercicios, respondiendo preguntas pendientes y ofreciendo retroalimentación.
 
-2. [__Evaluación escrita:__](/content/Trainers_corner/es_how_to_assessment.md) Destina tiempo para una evaluación escrita de la capacitación. Utiliza la plantilla proporcionada en la plataforma o el método de evaluación de tu organización. Realizar la evaluación durante la capacitación asegura la participación de todas las personas participantes.
+2. [__Evaluación escrita:__](es_how_to_assessment.md) Destina tiempo para una evaluación escrita de la capacitación. Utiliza la plantilla proporcionada en la plataforma o el método de evaluación de tu organización. Realizar la evaluación durante la capacitación asegura la participación de todas las personas participantes.
 
 3. **Retroalimentación directa:** Evalúa al grupo con el método que prefieras. El [método de retroalimentación de cinco dedos](https://www.teamecho.com/en/resources/blog/5-finger-feedback/#:~:text=5%20finger%20feedback%20is%20an,clearly%20structured%20and%20comprehensible%20manner.) suele ser efectivo. Este paso es crucial, ya que brinda a las personas participantes la oportunidad de expresar sus opiniones directamente.
 

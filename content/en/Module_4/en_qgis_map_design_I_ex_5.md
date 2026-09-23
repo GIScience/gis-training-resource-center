@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -57,7 +57,7 @@ __Relevant Wiki Articles__:
 * [Layer Concept](../Wiki/en_qgis_layer_concept_wiki.md)
 * [Attribute table](../Wiki/en_qgis_attribute_table_wiki.md)
 * [Table function - Add field](../Wiki/en_qgis_table_functions_wiki.md)
-* [Geodata Classification- Categorized](/content/Wiki/en_qgis_categorized_wiki.md)
+* [Geodata Classification- Categorized](/content/Wiki/en_qgis_categorised_wiki.md)
 * [Geodata Classification- Graduated](../Wiki/en_qgis_graduated_wiki.md)
 * [Digitization- Point data](/content/Wiki/en_qgis_digitisation_wiki.html#add-geometries-to-a-layer)
 

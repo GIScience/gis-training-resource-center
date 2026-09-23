@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -35,7 +35,7 @@ compartirlos y cómo debe citar la fuente de datos? Asegúrese de revisar la
 licencia y cumplir con las regulaciones respectivas para evitar dificultades.
 
 
-:::{figure} /fig/en_data_sources_examples_cartong.png
+:::{figure} ../../../fig/en_data_sources_examples_cartong.png
 ---
 name: es_data_sources_examples_cartong
 width: 600 px
@@ -113,11 +113,11 @@ Los datos para crear mapas o realizar análisis SIG pueden provenir de diversas 
 
 OpenStreetMap (OSM) es un proyecto colaborativo que busca crear un mapa del mundo que sea libre y editable. A diferencia de los mapas tradicionales, que a menudo son propietarios y controlados por entidades comerciales, OSM permite que cualquier persona contribuya y edite datos cartográficos, lo que resulta en un mapa detallado y en constante evolución de caminos, senderos, puntos de referencia y más. Con su naturaleza de código abierto y su comunidad mundial de contribuyentes, OpenStreetMap se ha convertido en un recurso valioso para una amplia gama de aplicaciones, desde la navegación y la planificación urbana hasta la respuesta a desastres y la ayuda humanitaria.
 
-Hay múltiples maneras de obtener datos de OpenStreetMap (OSM) como un archivo vectorial en QGIS. Las tres formas más comunes y fáciles de usar son geofabrik.de, la herramienta de exportación HOT y el [complemento para QGIS](https://giscience.github.io/gis-training-resource-center/content/es/Wiki/es_qgis_plugins_wiki.html) de QuickOSM. Cada una de las opciones tiene ventajas y desventajas.
+Hay múltiples maneras de obtener datos de OpenStreetMap (OSM) como un archivo vectorial en QGIS. Las tres formas más comunes y fáciles de usar son geofabrik.de, la herramienta de exportación HOT y el [complemento para QGIS](../Wiki/es_qgis_plugins_wiki.md) de QuickOSM. Cada una de las opciones tiene ventajas y desventajas.
 
 :::{Tip}
 
-Si desea practicar cómo exportar datos de OSM, puede hacer el __[Ejercicio 4: Exportación de datos de OSM](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_data_sources_ex4.html)__
+Si desea practicar cómo exportar datos de OSM, puede hacer el __[Ejercicio 4: Exportación de datos de OSM](es_qgis_data_sources_ex4.md)__
 
 :::
 
@@ -155,7 +155,7 @@ __Plugin QuickOSM__
 
 :::{tip}
 
-Es posible agregar el mapa base de OSM a su proyecto de forma predeterminada.  Haga clic en `Capa` -> `Añadir Capa` -> `Añadir Capa XYZ...`. Elija `OpenStreetMap` (Esto debería ser la opción predeterminada) y haga clic en `Añadir` ([video en la Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_basemaps_wiki.html#mapas-base-estandar-de-qgis)).
+Es posible agregar el mapa base de OSM a su proyecto de forma predeterminada.  Haga clic en `Capa` -> `Añadir Capa` -> `Añadir Capa XYZ...`. Elija `OpenStreetMap` (Esto debería ser la opción predeterminada) y haga clic en `Añadir` ([video en la Wiki](../Wiki/es_qgis_basemaps_wiki.md)).
 
 :::
 
@@ -183,7 +183,7 @@ Siga los pasos para obtener los datos:
 1. Haga <kbd>clic</kbd> en la pesteña "Constulta rapidá". 
 2. Seleccione una clave y un valor en la lista desplegable. Si tiene la certeza, consulte aquí:
 
-:::{figure} /fig/key_value_quickosm.png
+:::{figure} ../../../fig/key_value_quickosm.png
 ---
 width: 800px
 align: center
@@ -200,7 +200,7 @@ Elegir la clave y el valor en QuickOSM.
    minimizar los errores. Por ejemplo, si sabes que estás buscando carreteras, puedes buscar líneas (vías); si buscas hospitales, puedes seleccionar "puntos".
    <!-- CLARIFY: would be useful to have an example here -->
 
-:::{figure} /fig/quickosm_usage.png
+:::{figure} ../../../fig/quickosm_usage.png
 ---
 width: 800px
 name: es_quickosm_usage
@@ -214,9 +214,9 @@ Ejecutar el plugin QuickOSM.
 :::{dropdown} Cómo obtener datos para varias consultas
 
 Si desea obtener más datos en la misma área, puede agregar una consulta haciendo clic
-en el icono ![](/fig/plus_quickosm.png). Tenga cuidado al elegir el operador lógico correcto
-`And` o `Or`. De no tener certeza, revise la página de [consultas no espaciales](/content/es/Wiki/es_qgis_non_spatial_queries_wiki)
-en la wiki. Hay un ejemplo de esto en el [ejercicio de OSM](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_data_sources_ex4.html) del módulo 2.
+en el icono ![](../../../fig/plus_quickosm.png). Tenga cuidado al elegir el operador lógico correcto
+`And` o `Or`. De no tener certeza, revise la página de [consultas no espaciales](../Wiki/es_qgis_non_spatial_queries_wiki.md)
+en la wiki. Hay un ejemplo de esto en el [ejercicio de OSM](es_qgis_data_sources_ex4.md) del módulo 2.
 
 :::
 
@@ -230,7 +230,7 @@ Con la [herramienta de exportación del Equipo Humanitario de OpenStreetMap (HOT
       Si no tiene una, tendrá que crearla: haga clic en `Log in` y, en la nueva ventana, seleccione la opción de crear una cuenta nueva.
 2. Después de iniciar sesión, haga clic en el botón `Start Exporting` de la página de inicio para cargar la herramienta.
 
-:::{figure} /fig/hot_export.png
+:::{figure} ../../../fig/hot_export.png
 ---
 height: 400px
 align: center
@@ -251,7 +251,7 @@ La herramienta de exportación HOT.
          Haga clic en `Import`.
 8. Luego haga clic en `Next`. Se verá algo como esto:
 
-:::{figure} /fig/hot_export_example.png
+:::{figure} ../../../fig/hot_export_example.png
 ---
 height: 400px
 align: center
@@ -263,7 +263,7 @@ Un ejemplo para la herramienta de exportación HOT.
 9. Haga clic en `Create Export`. A continuación, se ejecutará durante unos minutos y se verá
    así:
 
-:::{figure} /fig/hot_export_running.png
+:::{figure} ../../../fig/hot_export_running.png
 ---
 height: 400px
 align: center
@@ -275,7 +275,7 @@ Se ejecuta la herramienta de exportación HOT.
 10. Después de terminar, el estado cambiará a `COMPLETED` y puede
     descargar su archivo haciendo clic en el enlace:
 
-:::{figure} /fig/hot_export_done.png
+:::{figure} ../../../fig/hot_export_done.png
 ---
 height: 400px
 align: center

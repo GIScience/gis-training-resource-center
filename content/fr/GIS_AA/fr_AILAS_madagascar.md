@@ -1,11 +1,15 @@
 🚧 Cette partie de la plateforme de formation est en ⚠️construction⚠️ et ne doit pas être partagée ni publiée ! 🚧
 
-::::{admonition} English Version 
+::::{admonition} English Version
 :class: tip
 
-La version originale anglaise de cet article se trouve [ici](/content/GIS_AA/en_AILAS_madagascar.md).
+The english original version of this page can be found here / La version originale anglaise de cet article se trouve ici :
 
-The english original version of this page can be found [here](/content/GIS_AA/en_AILAS_madagascar.md).
+:::{card}
+:link: ../../en/GIS_AA/en_AILAS_madagascar
+English version - Version anglaise
+:::
+
 ::::
 
 # Système de conscience siuationelle logistique par IA (AILAS): Expérimentations de terrain pour la collecte d’images au niveau de la rue <a id="systeme-de-conscience-siuationelle-logistique-par-ia-ailas-experimentations-de-terrain-pour-la-collecte-dimages-au-niveau-de-la-rue"></a>
@@ -13,8 +17,8 @@ The english original version of this page can be found [here](/content/GIS_AA/en
 Cette documentation vise à centraliser toutes les informations concernant les expériences de terrain de collecte d’images à l’échelle de la rue pour AILAS  
 et à fournir un aperçu concis du projet AILAS. Elle se concentre sur le processus de collecte d’images de rue et est destinée à être utilisée par les participants aux expériences comme guide pratique.  
 
-Les sous-sections __[Guide d’utilisation de la caméra : projet AILAS](/content/GIS_AA/fr_AILAS_madagascar_camera_usage_guide.md)__  
-et __[Guide de téléchargement et de gestion des photos](/content/GIS_AA/fr_AILAS_madagascar_picture_upload_and_management.md)__  
+Les sous-sections __[Guide d’utilisation de la caméra : projet AILAS](fr_AILAS_madagascar_camera_usage_guide.md)__  
+et __[Guide de téléchargement et de gestion des photos](fr_AILAS_madagascar_picture_upload_and_management.md)__  
 fournissent des instructions détaillées au sujet de l'installation et la configuration de la caméra ainsi que sur le téléversement des données générées.
 
 ## Le projet AILAS <a id="le-projet-ailas"></a>
@@ -30,7 +34,7 @@ Ces classifications sont combinées avec des données météorologiques dynamiqu
 
 Enfin, les résultats sont intégrés dans openrouteservice afin de prendre en compte la praticabilité des routes non revêtues lors de la génération des itinéraires.
 
-```{figure} /fig/AILAS_workflow.png
+```{figure} ../../../fig/AILAS_workflow.png
 ---
 name: Workflow AILAS
 width: 600px
@@ -44,7 +48,7 @@ La collecte d’images de rue de bonne qualité est essentielle pour AILAS, car 
 
 Pour cela, des dashcams montées sur les véhicules CRM enregistrent le long des itinéraires planifiés ; lorsque c’est utile, des images sous licence libre provenant de Mapillary peuvent étendre la couverture. Toutes les images sont téléchargées sur un serveur Panoramax, où un floutage respectueux de la vie privée et un prétraitement standard les préparent pour l’analyse. La capture fiable, la qualité suffisante des images et un téléchargement robuste malgré des connexions instables sont les principaux défis pratiques que nous testerons sur le terrain.  
 
-```{figure} /fig/AILAS_model_demo.png
+```{figure} ../../../fig/AILAS_model_demo.png
 ---
 name: QR Code
 width: 450px
