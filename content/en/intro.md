@@ -25,7 +25,8 @@ The One-Stop-Shop for teaching Geoinformation System (GIS) skills for the work i
 :gutter: 2
 
 :::{grid-item-card} __Start teaching__ 
-:link: /Trainers_corner/en_TOT_intro
+:link: Trainers_corner/en_TOT_intro
+:link-type: doc
 
 There is a dedicated [section for trainers](Trainers_corner/en_TOT_intro.md) who want to use the platform.
 The most important component is the training plans. These give you an orientation on when to use what in your training cycle.
@@ -34,7 +35,8 @@ Nevertheless, every component of the training material is designed to be utilize
 :::
 
 :::{grid-item-card} __Start learning__ 
-:link: /Module_1/en_module_1_overview
+:link: Module_1/en_module_1_overview
+:link-type: doc
 
 Your trainers will be your guides for this platform. If you have any questions, feel free to ask them any questions about this training platform.
 This is not a self-learning platform. If you want to learn QGIS, it is always better to participate in a course and learn from an experienced trainer. However, you are welcome to use this platform for homing your QGIS skills, just be aware that self-learning is not the objective of the platform.
@@ -52,16 +54,19 @@ Trainers for QGIS are the principal audience of the IFRC Network GIS Training Pl
 
 :::{grid-item-card} Wiki 📖
 :link: Wiki/en_wiki_homepage
+:link-type: doc
 The wiki is your companion for working with QGIS in training in real life. It brings together all practical information in the form of how-to guides and videos
 :::
 
 :::{grid-item-card} Modules 🎓
 :link: en_modules_overview
+:link-type: doc
 In the learning modules, all relevant concepts and techniques of QGIS are explained, enabling trainees to reinforce their understanding of the training content
 :::
 
 :::{grid-item-card} Exercises ✍️
 :link: Exercise_tracks/en_exercise_tracks_overview
+:link-type: doc
 In the exercises, essential concepts and practical techniques are presented, providing participants with hands-on opportunities to apply and reinforce their QGIS skills
 :::
 
@@ -72,11 +77,13 @@ In the exercises, essential concepts and practical techniques are presented, pro
 
 :::{grid-item-card} GIS in Anticipatory Action 🌦️
 :link: GIS_AA/en_GIS_AA_overview
+:link-type: doc
 Case studies and workflows showing how geospatial analysis supports anticipatory action protocols, from risk analysis and trigger monitoring to impact estimation and targeting of early actions
 :::
 
 :::{grid-item-card} Tools & Methods 🧰
 :link: Tools_and_Methods/en_tools_methods_overview
+:link-type: doc
 Reusable tools and methods applied across humanitarian mapping contexts, such as the Sketch Map Tool, the AILAS street-level imagery workflow and the Risk Assessment QGIS Plugin
 :::
 
