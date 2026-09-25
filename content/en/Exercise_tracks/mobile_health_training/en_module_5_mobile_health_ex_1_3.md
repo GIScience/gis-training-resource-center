@@ -24,7 +24,7 @@
 :link-type: doc
 __Exercise track: Mobile Health Units__
 ^^^
-This exercise is part of the Mobile Health Exercise track. You can find the overview of the training on [this page]()
+This exercise is part of the Mobile Health Exercise track. You can find the overview of the training on [this page](en_ex_track_mobile_health_overview.md)
 :::
 
 ## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
@@ -42,7 +42,7 @@ __Type of trainings exercise:__
 :::{grid-item-card}
 __Exercise Track:__
 ^^^
-This exercise is part of the [Colombia Mobile Health Unit (MHU) Deployment Planning Exercise Track](../Exercise_tracks/en_col_mhu.html)
+This exercise is part of the [Colombia Mobile Health Unit (MHU) Deployment Planning Exercise Track](en_ex_track_mobile_health_overview.md)
 
 :::
 
@@ -92,7 +92,7 @@ THE GOAL IS TO USE QUANTIT
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](../../Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on facilitating trainings. 
+- Check out [How to do trainings?](../../Trainers_corner/en_how_to_training.md) for some general tips on facilitating trainings. 
 
 :::{note}
 Task 3 now offers three ways to estimate the walking catchment (friction surface, ORS isochrones, native QGIS service area + buffer). You don't need to run all three with participants — pick whichever fits your room, or split participants into groups and have each group run a different method, then compare results at the end of Task 3. If you do only one: the friction-surface method needs GRASS enabled in QGIS (check this on the training machines beforehand) and uses `r.cost`, whose exact parameter labels can shift slightly between QGIS/GRASS versions — run through it yourself first and adjust the field names in the instructions if needed; the ORS method needs a stable internet connection and enough time for everyone to create an account and API key.

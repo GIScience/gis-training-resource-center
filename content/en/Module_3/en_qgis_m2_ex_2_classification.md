@@ -62,7 +62,7 @@ __Relevant Wiki Articles__:
 * [Table function - Add field](../Wiki/en_qgis_table_functions_wiki.md)
 * [Geodata Classification- Categorized](../Wiki/en_qgis_categorised_wiki.md)
 * [Geodata Classification- Graduated](../Wiki/en_qgis_graduated_wiki.md)
-* [Digitization- Point data](../Wiki/en_qgis_digitisation_wiki.md#add-geometries-to-a-layer)
+* [Digitization- Point data](../Wiki/en_qgis_digitisation_wiki.md#adding-geometries-to-a-layer)
 
 :::
 
@@ -129,7 +129,7 @@ GeoPackages can contain multiple files and even whole QGIS projects. When you lo
 
 4. First, let's add a basemap to your map canvas using the plugin `QuickMapServices` by clicking on the ![](../../../fig/QMS_search_icon.png) symbol in you project toolbar. Search for "Bing Maps Satellite Imagery" in the QMS panel and add the base map layer via double click.  For an optimised view [adjust the opacity](https://www.youtube.com/watch?v=WguUkN1YRzY&ab_channel=GISBigfootAnswers) of your layers to optimise the use of the base map. 
 
-5. Using  the attribute table of the airports layer zoom to Tongo Airport by right-clicking on the row in the attribute table and selecting `Zoom to Feature`([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#zoom-in-on-a-specific-feature)). Check the Basemap. Do you think the airstrip is still operational? The answer is no, according to Wikipedia. Delete Tongo Airport in the [Attribute table](../Wiki/en_qgis_attribute_table_wiki.md#attribute-table---data-editing). Delete Kabala airport too, since it is also not operational anymore.
+5. Using  the attribute table of the airports layer zoom to Tongo Airport by right-clicking on the row in the attribute table and selecting `Zoom to Feature`([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#zoom-in-on-a-specific-feature)). Check the Basemap. Do you think the airstrip is still operational? The answer is no, according to Wikipedia. Delete Tongo Airport in the [Attribute table](../Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing). Delete Kabala airport too, since it is also not operational anymore.
 
 6. Now we want to check out the airports of the cities of Bo and Kenema. Are these airstrips in better shape? If yes, add them to the airport layer. To find these cities on your map interface use the QGIS Plugin `OSM Place Search`. 
 To add the plugin `OSM Place Search`, click on `Plugins` → `Manage and Install Plugins…` → `All` and search for "OSM Place Search". Once you have found it click on it and select `Install Plugin`. You can open the `OSM Place Search Panel` like every other panel by clicking on `View` → `Panels` and checking `OSM Place Search Panel`([Wiki Video](../Wiki/en_qgis_plugins_wiki.md)).

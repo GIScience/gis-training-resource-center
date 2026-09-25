@@ -176,7 +176,7 @@ Why these ranges?
 - Most hospitals fall in the **1–60** bed range → we break this into three meaningful groups.  
 - Few hospitals exceed **80 beds**, so the top class isolates the rare high-capacity referral facilities.  
 - This ensures **variation in symbol size** is visible and not compressed into one tiny class. 
-(See [Graduated Classification](../Module_3/en_qgis_data_classification.html#graduated-classification))
+(See [Graduated Classification](../Module_3/en_qgis_data_classification.md#graduated-classification))
 :::
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_proportionla_circel_map_malawi_exampel.mp4"></video>
@@ -1128,6 +1128,6 @@ name: label placement
 ---
 :::
 
-If you want to generate a proper map layout of your epidemological overview map follow the descriptions outlined in [The Print Layout Composer](../Wiki/en_qgis_map_making_wiki).
+If you want to generate a proper map layout of your epidemological overview map follow the descriptions outlined in [The Print Layout Composer](../Wiki/en_qgis_map_making_wiki.md).
 
 

@@ -57,7 +57,7 @@ __Relevant wiki articles:__
 
 ::::{topic} Context
 
-In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. As a result, critical infrastructure, such as health facilities, were impacted and road access to the city of Larkana was severly limited. You have already conducted an analysis utilizing actual data from this natural disaster in the [previous exercise](../Module_3/en_qgis_module_3_ex5.html). We now want to visualize our findings on an appealing map that can be printed out or shared with different stakeholders. The map will show specific medical centers and healthcare facilities that where impacted by the flooding. Additionally, we will visualize the road access to the city of Larkana on August 12 2024. This information is crucial to assess the logistical access to the city. 
+In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. As a result, critical infrastructure, such as health facilities, were impacted and road access to the city of Larkana was severly limited. You have already conducted an analysis utilizing actual data from this natural disaster in the [previous exercise](../Module_3/en_qgis_module_3_ex5.md). We now want to visualize our findings on an appealing map that can be printed out or shared with different stakeholders. The map will show specific medical centers and healthcare facilities that where impacted by the flooding. Additionally, we will visualize the road access to the city of Larkana on August 12 2024. This information is crucial to assess the logistical access to the city. 
  
 The exercise is split into two parts. In the first part, you will adjust the symbolisation of the layers for the final map. In the second part, you will use the print layout composer to create a finished map that can be printed and distributed. 
 
@@ -218,7 +218,7 @@ We can categorise the roads and then select the relevant roads to be displayed. 
 In the [previous exercise](../Module_3/en_qgis_module_3_ex5.md) you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let's mark the airport as a point and visualize it!
 
 To do so we will create an entirely new point dataset representing airports.
-* Click on  `Layer` → `Create Layer` → `New GeoPackage Layer` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#create-a-new-layer)) 
+* Click on  `Layer` → `Create Layer` → `New GeoPackage Layer` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creating-a-new-layer)) 
 * Under `Database` click on ![](../../../fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name __“PAK_airports”__. Click `Save`.
 * `Geometry type`: Select `Point`
 * Under `Additional dimension` you should always make sure that you check `None`. 
@@ -244,7 +244,7 @@ If you cannot see the toolbar `View` → `Toolbars` and check `Digitizing Toolba
 :::
 ::::
 
-* Now you can create a point for the airport and if you would like additional airports as well ([wiki](../Wiki/en_qgis_digitisation_wiki.md#add-geometries-to-a-layer)). Currently the new layer __“PAK_airports”__ is empty. To add features we can use the `Digitising Toolbar`. 
+* Now you can create a point for the airport and if you would like additional airports as well ([wiki](../Wiki/en_qgis_digitisation_wiki.md#adding-geometries-to-a-layer)). Currently the new layer __“PAK_airports”__ is empty. To add features we can use the `Digitising Toolbar`. 
 
 *  Look for the Mohenjodaro Airport in Google. Once you have found the airport, click on ![](../../../fig/mActionCapturePoint.png). Left-click on the feature you want to digitise.
 

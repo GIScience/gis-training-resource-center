@@ -187,7 +187,7 @@ Print your maps and mark with real pens to experience the real use of the Sketch
 - You can choose to use either QGIS (__Option A__) or [uMap](https://umap.openstreetmap.fr/en/) (__Option B__) for the next part of the exercise.
 
 ```{Tip}
-If you like to learn more about the [visualisation](../Module_4/en_module_4_overview.md) and one possible analysis of the Sketch Maps explore exercise [4](en_SMT_ex4_) and [5](en_SMT_ex5_).
+If you like to learn more about the [visualisation](../Module_4/en_module_4_overview.md) and one possible analysis of the Sketch Maps explore exercise [4](en_SMT_ex4_.md) and [5](en_SMT_ex5_.md).
 ```
 
 :::{dropdown} Option A: Open your results in QGIS

@@ -271,7 +271,7 @@ Raster of Population density in flooded areas
 Now we have reached our goal of generating a dataset displaying flood affected population. In the context of real world application in the humanitarian sector or the visualisation of data for people/institutions not familiar with GIS, it can be sensible to aggregate raster data on the level of administrative units. 
 
 6. We will achieve this with our produced dataset on the admin 2 level  (districts) in Pakistan by calculating the total population affected by floods per district.
-    1. Open the tool `Zonal Statistics` ([Wiki Article](../Wiki/en_qgis_raster_basic_wiki.md##zonal-statistics)) from your Processing Toolbox Panel.
+    1. Open the tool `Zonal Statistics` ([Wiki Article](../Wiki/en_qgis_raster_basic_wiki.md#zonal-statistics)) from your Processing Toolbox Panel.
     2. As "Input Layer" choose the layer "Pakistan_admin2" with the polygons of administrative districts.
     3. As "Raster Layer" choose "Pop_floodextent".
     4. Defining a prefix for your output column is optional but can be helpful for finding the calculated values in large attribute tables. Choose "pop_" as "Output column prefix".

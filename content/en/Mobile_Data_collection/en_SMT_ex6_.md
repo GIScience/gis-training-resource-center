@@ -497,7 +497,7 @@ height: 400px
 name: SMT adjusting symbology
 align: center
 ---
-Adjusting the symbology with the [symbology tab](../Module_4/en_qgis_map_design_I.md#styling-panel)
+Adjusting the symbology with the [symbology tab](../Module_4/en_qgis_styling_vector_data.md#styling-panel)
 ```
 
 

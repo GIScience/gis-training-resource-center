@@ -23,7 +23,7 @@
 :link-type: doc
 __Exercise track: Mobile Health Units__
 ^^^
-This exercise is part of the Mobile Health Exercise track. You can find the overview of the training on [this page]()
+This exercise is part of the Mobile Health Exercise track. You can find the overview of the training on [this page](en_ex_track_mobile_health_overview.md)
 :::
 
 ## Characteristics of the exercise <a id="characteristics-of-the-exercise"></a>
@@ -41,7 +41,7 @@ __Type of trainings exercise:__
 :::{grid-item-card}
 __Exercise Track:__
 ^^^
-This exercise is part of the [Colombia Mobile Health Unit (MHU) Deployment Planning Exercise Track](../Exercise_tracks/en_col_mhu.html)
+This exercise is part of the [Colombia Mobile Health Unit (MHU) Deployment Planning Exercise Track](en_ex_track_mobile_health_overview.md)
 
 :::
 
@@ -89,7 +89,7 @@ In this exercise, we will design a potential Mobile Health Unit (MHU) route. We 
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](../../Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on facilitating trainings. 
+- Check out [How to do trainings?](../../Trainers_corner/en_how_to_training.md) for some general tips on facilitating trainings. 
 
 :::{note}
 The friction-surface tool in Task 3 uses GRASS's `r.cost`, which ships with QGIS but exact parameter labels can shift slightly between QGIS/GRASS versions — run through Task 3 yourself in your installed version before the training and adjust the field names in the instructions if needed.

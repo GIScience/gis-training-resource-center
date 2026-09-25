@@ -54,7 +54,7 @@ __Relevant wiki articles:__
 * [Geodata Classification - Graduated](../Wiki/en_qgis_graduated_wiki.md)
 * [Spatial Queries](../Wiki/en_qgis_spatial_queries_wiki.md)
 * [Table function - Add field](../Wiki/en_qgis_table_functions_wiki.md#add-field)
-* [Digitisation- Point data](../Wiki/en_qgis_digitisation_wiki.md#add-geometries-to-a-layer)
+* [Digitisation- Point data](../Wiki/en_qgis_digitisation_wiki.md#adding-geometries-to-a-layer)
 
 :::
 ::::
@@ -78,7 +78,7 @@ __Context:__
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on facilitating trainings. 
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md) for some general tips on facilitating trainings. 
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -379,7 +379,7 @@ In order to get a clearer picture, we need to import the road network data for t
     :::
     * Once you are done, click `Apply` and `OK` to close the symbology window.
 3. To simplify the process, we will visually search for blocked roads and mark them with points. For this purpose, we will create an entirely new point dataset representing blocked roads.
-    * Click on  `Layer` → `Create Layer` → `New GeoPackage Layer`([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#create-a-new-layer)). 
+    * Click on  `Layer` → `Create Layer` → `New GeoPackage Layer`([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creating-a-new-layer)). 
     - Under `Database` click on ![](../../../fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name __“MDG_flood_2024_blocked_road”__. Click `Save`.
     - `Geometry type`: Select `Point`
     - Under `Additional dimension` you should always make sure that you check none of them.. 

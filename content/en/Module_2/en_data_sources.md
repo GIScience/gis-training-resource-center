@@ -118,7 +118,7 @@ There are multiple ways to get OpenStreetMap (OSM) data as a vector file into QG
 
 :::{Tip}
 
-If you wish to practice how to export OSM data, you can do the __[Exercise 4: Exporting OSM Data](en_qgis_data_sources_ex4)__
+If you wish to practice how to export OSM data, you can do the __[Exercise 4: Exporting OSM Data](en_qgis_data_sources_ex4.md)__
 
 :::
 
@@ -215,7 +215,7 @@ Running the QuickOSM plugin.
 
 If you want to get more data in the same area, you can add a query by clicking 
 on the ![](../../../fig/plus_quickosm.png). Be careful choosing the right logical operator 
-`AND` or `OR`. If you are unsure check the page [non-spatial queries](../Wiki/en_qgis_non_spatial_queries_wiki) 
+`AND` or `OR`. If you are unsure check the page [non-spatial queries](../Wiki/en_qgis_non_spatial_queries_wiki.md) 
 on the wiki. There is an example of this in the Module 2 [OSM exercise](en_OSM_data_ex_legacy.md#task-3-quickosm)
 
 :::

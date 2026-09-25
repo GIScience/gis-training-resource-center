@@ -32,7 +32,7 @@ __Type of trainings exercise:__
 :::{grid-item-card}
 __Exercise Track:__
 
-This exercise is part of the [Colombia Mobile Health Unit (MHU) Deployment Planning Exercise Track](../Exercise_tracks/en_col_mhu.html)
+This exercise is part of the [Colombia Mobile Health Unit (MHU) Deployment Planning Exercise Track](../Exercise_tracks/mobile_health_training/en_ex_track_mobile_health_overview.md)
 
 :::
 
@@ -75,7 +75,7 @@ The Colombian Red Cross has been asked by a donor to design a 12-month Mobile He
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board (physical, flip-chart, or digital) where participants can add their findings and questions.
 - Before starting, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md#how-to-do-trainings) for general tips on training conduction.
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md) for general tips on training conduction.
 
 :::{note}
 __Two open data questions to resolve before running this exercise for real:__

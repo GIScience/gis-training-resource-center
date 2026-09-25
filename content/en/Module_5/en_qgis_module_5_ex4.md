@@ -60,10 +60,10 @@ __Estimated time demand for the exercise:__
 __Relevant wiki articles:__
 ^^^
 
-* [Geodata Import in QGIS](../Wiki/en_qgis_import_geodata_wiki)
-* [Layer Concept](../Wiki/en_qgis_layer_concept_wiki)
-* [Geodata Classification- Categorized](../Wiki/en_qgis_categorised_wiki)
-* [Digitisation- Point data](../Wiki/en_qgis_digitisation_wiki#add-geometries-to-a-layer)
+* [Geodata Import in QGIS](../Wiki/en_qgis_import_geodata_wiki.md)
+* [Layer Concept](../Wiki/en_qgis_layer_concept_wiki.md)
+* [Geodata Classification- Categorized](../Wiki/en_qgis_categorised_wiki.md)
+* [Digitisation- Point data](../Wiki/en_qgis_digitisation_wiki.md#adding-geometries-to-a-layer)
 :::
 ::::
 
@@ -76,7 +76,7 @@ __Relevant wiki articles:__
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on facilitating trainings. 
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md) for some general tips on facilitating trainings. 
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -141,7 +141,7 @@ After installing the plugin, we can add basemaps:
 4. Add a roads layer to improve orientation:  
    `Web` → `QuickMapServices` → `Google` → `Google Road`.
 
-5. In the [Layers Panel](../Wiki/en_qgis_layer_concept_wiki), make sure the `Google Road` layer is above the satellite imagery.
+5. In the [Layers Panel](../Wiki/en_qgis_layer_concept_wiki.md), make sure the `Google Road` layer is above the satellite imagery.
 
 6. For easier navigation, make the satellite imagery transparent:
    - Open the layer’s [Symbology tab](../Module_4/en_qgis_styling_vector_data.md#styling-panel).

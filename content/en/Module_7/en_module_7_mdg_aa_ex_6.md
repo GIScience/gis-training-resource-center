@@ -73,7 +73,7 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on training conduction.
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md) for some general tips on training conduction.
 
 ### Conduct the training <a id="conduct-the-training"></a>
 

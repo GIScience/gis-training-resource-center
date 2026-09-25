@@ -65,7 +65,7 @@ To clip a raster layer:
 
 ## Raster Calculator <a id="raster-calculator"></a>
 
-The raster calculator let's you perform mathematical operations with the raster values using one or multiple raster layers. Similar to the [field calculator]() for vector data, you can enter expressions. These expressions can include arithmetic operations such as multiplication, comparison operators such as `<`. `>`, `=`, conditional expressions like "IF" "THEN" statements, and statistical functions such as "mean" or "sum". 
+The raster calculator let's you perform mathematical operations with the raster values using one or multiple raster layers. Similar to the [field calculator](../Wiki/en_qgis_table_functions_wiki.md#calculate-field) for vector data, you can enter expressions. These expressions can include arithmetic operations such as multiplication, comparison operators such as `<`. `>`, `=`, conditional expressions like "IF" "THEN" statements, and statistical functions such as "mean" or "sum". 
 
 Example:
 You have a Digital Elevation Model with the Altitude in m and a land cover classification raster. You want to produce a raster with all agricultural areas (raster value = 5) above 1500m.

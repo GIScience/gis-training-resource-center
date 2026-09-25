@@ -174,7 +174,7 @@ You have questions, feedback or comments on the platform and the content. We are
 
 ## Contributing
 
-We warmly welcome everyone to contribute and collaborate in advancing the IFRC GIS Training Platform, fostering shared knowledge and growth. Before contributing, please read through the [Contribution Plan](contribution_plan).
+We warmly welcome everyone to contribute and collaborate in advancing the IFRC GIS Training Platform, fostering shared knowledge and growth. Before contributing, please read through the [Contribution Plan](contribution_plan.md).
 
 ## Join the Community
 

@@ -60,7 +60,7 @@ __Relevant Wiki Articles__:
 * [Table function - Add field](../Wiki/en_qgis_table_functions_wiki.md)
 * [Geodata Classification- Categorized](../Wiki/en_qgis_categorised_wiki.md)
 * [Geodata Classification- Graduated](../Wiki/en_qgis_graduated_wiki.md)
-* [Digitization- Point data](../Wiki/en_qgis_digitisation_wiki.md#add-geometries-to-a-layer)
+* [Digitization- Point data](../Wiki/en_qgis_digitisation_wiki.md#adding-geometries-to-a-layer)
 
 :::
 

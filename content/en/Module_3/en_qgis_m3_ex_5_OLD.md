@@ -71,7 +71,7 @@ __Relevant wiki articles and module chapters__
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on training conduction
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -156,7 +156,7 @@ You cannot interact with a base map!
 ::::
 
 1. Open QGIS and create a [new project](../Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` → `New`.
-2. Once the project is created [save the project](../Wiki/en_qgis_projects_folder_structure_wiki.md#save) in the “project” folder of the exercise “Module_3_Exercise_2_Flood_Larkana”. To do that click on `Project` → `Save as` and navigate to the folder. Name the project “PAK_Larkana_flood_2024”.
+2. Once the project is created [save the project](../Wiki/en_qgis_projects_folder_structure_wiki.md#save-project) in the “project” folder of the exercise “Module_3_Exercise_2_Flood_Larkana”. To do that click on `Project` → `Save as` and navigate to the folder. Name the project “PAK_Larkana_flood_2024”.
 3. First, we want to add the OpenStreetMap as a base map for orientation. To add the OSM as a base map click on `Layer` → `Add Layer` → `Add XYZ Layer…`. Choose `OpenStreetMap` and click `Add`. 
 4. Next, load the GeoPackage __"PAK_Sindh_adm2.gpkg"__ in your project by drag and drop ([Wiki Video](../Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Or click on `Layer` → `Add Layer` → `Add Vector Layer`. Click on the three points ![](../../../fig/Three_points.png) and navigate to __"PAK_Sindh_adm2.gpkg"__. Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](../Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
 
@@ -413,7 +413,7 @@ There are methods to automate the digitisation process which will be covered in 
 
 ::::{margin}
 :::{tip}
-If you cannot see the toolbar, click on the tab `View` → `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creation-of-point-data)).
+If you cannot see the toolbar, click on the tab `View` → `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creating-point-data)).
 :::
 ::::
 

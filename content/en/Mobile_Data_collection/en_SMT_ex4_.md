@@ -306,7 +306,7 @@ height: 400px
 name: SMT adjusting symbology
 align: center
 ---
-Adjusting the symbology with the [symbology tab](../Module_4/en_qgis_map_design_I.md#styling-panel)
+Adjusting the symbology with the [symbology tab](../Module_4/en_qgis_styling_vector_data.md#styling-panel)
 ```
 
 In the `Symbol Selector`, you can also click on `Simple line` in the upper window and change the `Symbol Layer Type`. In this example, we would like to symbolize the potential hazardous substances with red outlines, so we choose "Outline: Simple Line". Just below we can adjust the color, stroke width, stroke line type, etc. You can find more information about the visualization of vector data [here](../Wiki/en_qgis_visualisation_wiki.md).

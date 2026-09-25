@@ -250,7 +250,7 @@ Admin Pcodes are well suited for non-spatial joins in QGIS because they provide 
     :::
 2. Investigate the new vaccination coverage further:
     - <kbd>Right-click</kbd> on the new layer and open the attribute table. What information is available? How is the table structured. We can see that we are able to use the column `ADM2_PCODE` to perform a [non-spatial join]
-3. In the [processing toolbox](../Module_1/en_qgis_start.md#toolbox--toolbars) on the right, search for the tool __"Join attributes by key value"__ and <kbd>double-click</kbd> on it. 
+3. In the [processing toolbox](../Module_1/en_qgis_start.md#toolbox-and-toolbars) on the right, search for the tool __"Join attributes by key value"__ and <kbd>double-click</kbd> on it. 
     - A new window will open. Here we can specify the parameters for the `Join attributes by field value`-tool.
     - As "Input layer", select the layer `tcd_admbnda_adm2_20250212_AB`.
     - Under "Table field", select `ADM2_PCODE`.

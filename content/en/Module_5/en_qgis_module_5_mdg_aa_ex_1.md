@@ -26,7 +26,7 @@ __Type of trainings exercise:__
 :::{grid-item-card}
 __Exercise Track:__
 
-This exercise is part of the [Madagascar Anticipatory Action Cyclon Analysis Exercise Track](../Exercise_tracks/en_mdg_aa_cyclones)
+This exercise is part of the [Madagascar Anticipatory Action Cyclon Analysis Exercise Track](../Exercise_tracks/en_mdg_aa_cyclones.md)
 
 :::
 
@@ -75,7 +75,7 @@ The goal is to prepare an end-to-end analysis and visualization workflow that ca
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on facilitating trainings.
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md) for some general tips on facilitating trainings.
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -163,7 +163,7 @@ You will manually buffer the cyclone track, clip the population raster, and calc
 
 2. **Save the project** in the “project” folder. To do that click on `Project` → `Save as` and navigate to the folder. Name the project “Cyclon_Harald_Exposure”.
 
-3. **Load the GeoJOSN** file "example_Harald_2025_Track.geojson" in your project by drag and drop ([Wiki Video](../Wiki/en_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)) . Open the folder `data` → `input`.
+3. **Load the GeoJOSN** file "example_Harald_2025_Track.geojson" in your project by drag and drop ([Wiki Video](../Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)) . Open the folder `data` → `input`.
 
 
 4. **Reproject the cyclone track** to use meters instead of degrees (important for accurate buffering):

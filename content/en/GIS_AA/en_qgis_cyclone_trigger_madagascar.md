@@ -440,9 +440,9 @@ We will generate two different types of output maps to support the analysis:
 :::
 
 We will create the maps in two steps:
-First, we will use the __[layer styling panel](../Module_4/en_qgis_styling_vector_data#styling-panel)__ and the __layer style files (.qml)__ to adjust the visualisation of the layers on the map canvas.
+First, we will use the __[layer styling panel](../Module_4/en_qgis_styling_vector_data.md#styling-panel)__ and the __layer style files (.qml)__ to adjust the visualisation of the layers on the map canvas.
 
-In a second step, we will use the __[print layout composer](../Module_4/en_qgis_map_design_2#print-layout)__ to create printable maps with additional data tables. 
+In a second step, we will use the __[print layout composer](../Module_4/en_qgis_map_design_2.md#the-print-layout)__ to create printable maps with additional data tables. 
 
 <!---
 
@@ -454,7 +454,7 @@ align: center
 ---
 ```
 
-__Tool:__ [Symbology tab](../Module_4/en_qgis_map_design_I.md#symbology-for-vector-data)
+__Tool:__ [Symbology tab](../Module_4/en_qgis_styling_vector_data.md#symbology-for-vector-data)
 
 ```{figure} ../../../fig/MAD_Trigger_workflow_Step4b.png
 ---
@@ -465,7 +465,7 @@ align: center
 ```
 
 
-__Tool:__  [Print Layout](../Module_4/en_qgis_map_design_2.md#print-layout)
+__Tool:__  [Print Layout](../Module_4/en_qgis_map_design_2.md#the-print-layout)
 
 -->
 
@@ -538,7 +538,7 @@ To maintain a clear and organized workspace, group the output layers in the Laye
 
 #### Making the Print Layout <a id="making-the-print-layout"></a>
 
-For easier visualization, we have created these [map templates](../Module_4/en_qgis_map_design_2.md#map-templates) for presenting the results of the trigger analysis. These templates serve as a base for your own visualizations and are available in the following directory: `AA_Cyclone_Monitoring_Trigger_MAD/map_templates`. You can customize the templates to suit your needs and preferences. You can find help [here](../Module_4/en_qgis_map_design_2.md#print-layout).
+For easier visualization, we have created these [map templates](../Module_4/en_qgis_understanding_print_layout.md#map-templates) for presenting the results of the trigger analysis. These templates serve as a base for your own visualizations and are available in the following directory: `AA_Cyclone_Monitoring_Trigger_MAD/map_templates`. You can customize the templates to suit your needs and preferences. You can find help [here](../Module_4/en_qgis_map_design_2.md#the-print-layout).
 
 
 1. Deactivate all Layer Groups except the group `Map_Cyclone_Impact_Overview` and the `OpenStreetMap` basemap.
@@ -688,7 +688,7 @@ align: center
 __Purpose:__ Export the designed and finalized map layout in order to print it as a pdf or format of your choice.
 
 
-__Tool:__ [Print Layout Composer](../Module_4/en_qgis_map_design_2.md#print-layout)
+__Tool:__ [Print Layout Composer](../Module_4/en_qgis_map_design_2.md#the-print-layout)
 
 -->
 
@@ -1058,7 +1058,7 @@ align: center
 __Purpose:__ Export the designed and finalized map layout in order to print it as a pdf or format of your choice.
 
 
-__Tool:__ [Print Layout Composer](../Module_4/en_qgis_map_design_2.md#print-layout)
+__Tool:__ [Print Layout Composer](../Module_4/en_qgis_map_design_2.md#the-print-layout)
 
 -->
 
