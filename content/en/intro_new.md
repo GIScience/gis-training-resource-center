@@ -1,7 +1,7 @@
 <script data-goatcounter="https://gtrc.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 
-:::{figure} ../../../fig/HeiGIT_Logo_base.svg
+:::{figure} ../../fig/HeiGIT_Logo_base.svg
 ---
 height: 75
 align: center
@@ -181,7 +181,7 @@ Join trainers, practitioners, and GIS experts across the IFRC Network to strengt
 
 Happy Mapping!
 
-:::{figure} ../../../fig/Training_Somalia.JPG
+:::{figure} ../../fig/Training_Somalia.JPG
 ---
 width: 800px
 ---

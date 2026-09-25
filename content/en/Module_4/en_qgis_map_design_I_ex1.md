@@ -189,7 +189,7 @@ Once you are happy with the symbolization and colours of your data, the next ste
 1. Open a new print layout and give it a name (e.g. Ghana Map with hospitals). A new window will open with a blank canvas and a different set of tools. This is the print layout designer.
     - On the left, you will find a toolbar with tools to add and move items on the print layout canvas.
     - On the right you will find a list of items you added to the print layout (it is still empty). Beneath this, you will find a tab called __"item properties"__. This is where you modify the items on your print layout (e.g. enter the text for a text box or change the font).
-2. Insert a new map by clicking on ![New Map Icon](../../../fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Video](en_qgis_map_design_2.md#adding-a-new-map)
+2. Insert a new map by clicking on ![New Map Icon](../../../fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Video](en_qgis_understanding_print_layout.md#adding-a-new-map)
 3. Move and position the map so that the entire country is visible at a reasonable scale.
 4. Let's add a title:
     - Click on ![Add text icon](../../../fig/30.30.2_print_layout_add_text.png) (`Add text`)
@@ -214,7 +214,7 @@ Once you are happy with the symbolization and colours of your data, the next ste
     - Click on the three dots `...` and select the file with your logo.
     - If necessary, resize or move the picture on the print layout.
 
-:::{figure} ../../fig/30.30.2_print_layout_add_picture_options.png
+:::{figure} ../../../fig/30.30.2_print_layout_add_picture_options.png
 ---
 name: add picture item properties
 width: 600 px

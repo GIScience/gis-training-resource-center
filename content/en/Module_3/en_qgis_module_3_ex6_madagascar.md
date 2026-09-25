@@ -293,7 +293,7 @@ Fixing the geometry
 ::::
 
 6.  Open the attribute table of __"Health_Facilities_Flood_2024_AOI"__ by right click on the layer  → `Open Attribute Table`([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md)) and activate the editing mode by clicking on ![](../../../fig/mActionToggleEditing.png) ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#change-data-in-the-attribute-table)). Now you are able to edit the data directly in the table.
-7. First, we add a new column with the name __“Flood_affected”__. To do so, click on ![](../../../fig/mActionNewAttribute.png). In the `Add field` window, you have to add the name and set the `Type` to `Text(string)`. Click `OK` ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#add-new-column)).
+7. First, we add a new column with the name __“Flood_affected”__. To do so, click on ![](../../../fig/mActionNewAttribute.png). In the `Add field` window, you have to add the name and set the `Type` to `Text(string)`. Click `OK` ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#add-a-new-column)).
 
 
 :::{figure} ../../../fig/ PAK_flood_new_column.PNG
@@ -399,7 +399,7 @@ In order to get a clearer picture, we need to import the road network data for t
     ---
     New layer with the blocked roads.
     :::
-4. Now you can create a point for each place where the flood layer covers the main roads leading through AOI [wiki](../Wiki/en_qgis_digitisation_wiki.md#creation-of-point-data). Currently the new layer __“MDG_flood_2024_blocked_road”__ is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar, click on the tab `View` → `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creation-of-point-data)).  ![](../../../fig/Digitizing_Toolbar.png) 
+4. Now you can create a point for each place where the flood layer covers the main roads leading through AOI [wiki](../Wiki/en_qgis_digitisation_wiki.md#creating-point-data). Currently the new layer __“MDG_flood_2024_blocked_road”__ is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar, click on the tab `View` → `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creating-point-data)).  ![](../../../fig/Digitizing_Toolbar.png) 
     * Activate the editing mode by clicking on ![](../../../fig/mActionToggleEditing.png). Activate then the option to add new points by clicking on ![](../../../fig/mActionCapturePoint.png).
     * Look out for places where the flood layer covers the main roads or bridges. Once you have found one, left-click on the location you want to digitise.
     * Once you click on a place, a window will appear. Indicate that the road is blocked by writing `Yes` in the field `Blocked_road`.

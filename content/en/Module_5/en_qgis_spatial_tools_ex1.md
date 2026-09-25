@@ -168,7 +168,7 @@ Screenshot of the water bodies and flooded areas.
 :::
 
 7. Assess which health sites are prone to flood risk.
-    - Make use of the [`Select by expression` tool]() to select all flooded areas in the `Saint_Louis_flood_clipped` layer. You can access this tool through the attribute table by clicking on this symbol ![](../../../fig/mIconExpressionSelect_new.png). 
+    - Make use of the [`Select by expression` tool](../Wiki/en_qgis_non_spatial_queries_wiki.md#select-by-expression) to select all flooded areas in the `Saint_Louis_flood_clipped` layer. You can access this tool through the attribute table by clicking on this symbol ![](../../../fig/mIconExpressionSelect_new.png). 
     - In the expression window on the left, enter the following expression: 
         ```
         "WATERTYPE" = 'Flooded'

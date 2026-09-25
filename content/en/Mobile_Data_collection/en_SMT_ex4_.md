@@ -327,7 +327,7 @@ __2. Make a printable Map__
 
 1. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "Kumasi Flooding Sketch Map Tool". A new window will open with a blank canvas and a different set of tools. This is the __print layout designer__.
 
-- Insert a new map by clicking on the ![New Map Icon](../../../fig/30.30.2_print_layout_insert_map_icon.png) ("Add Map") on the left toolbar, and drawing a rectangle on the print canvas. [Video](../Module_4/en_qgis_map_design_2.md#adding-a-new-map)
+- Insert a new map by clicking on the ![New Map Icon](../../../fig/30.30.2_print_layout_insert_map_icon.png) ("Add Map") on the left toolbar, and drawing a rectangle on the print canvas. [Video](../Module_4/en_qgis_understanding_print_layout.md#adding-a-new-map)
 2. Move and position the map so that the entire country is visible at a reasonable scale. 
 4. Let's add a title: 
     - Click on the ![Add text icon](../../../fig/30.30.2_print_layout_add_text.png) (`Add text`)
@@ -351,7 +351,7 @@ __2. Make a printable Map__
 
 The finished map could look something like this:
 
-```{figure} ../../fig/en_3.34_SMT_Ex4_map_final.png
+```{figure} ../../../fig/en_3.34_SMT_Ex4_map_final.png
 ---
 width: 700px
 name: Digitized SMT Map Example

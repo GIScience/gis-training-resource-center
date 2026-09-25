@@ -270,7 +270,7 @@ By dragging and dropping your data into QGIS the data will be visualized in the 
 
 
 
-```{figure} /fig/en_3.34_SMT_Ex6_vector_raster.png
+```{figure} ../../../fig/en_3.34_SMT_Ex6_vector_raster.png
 ---
 height: 500px
 name: SMT EX4 Layer Interface QGIS
@@ -301,7 +301,7 @@ When you upload several marked Sketch Maps simultaneously, you will get one vect
 
 
 
-```{figure} /fig/en_3.34_SMT_Ex6_attribute_table.png
+```{figure} ../../../fig/en_3.34_SMT_Ex6_attribute_table.png
 ---
 height: 400px
 name: SMT EX4 vector output attribute table
@@ -347,7 +347,7 @@ Right-click on your vector file and click on `Toggle Editing`. The `Digitizing T
 
 
 
-```{figure} /fig/en_3.34_SMT_Ex4_digit_polygon.png
+```{figure} ../../../fig/en_3.34_SMT_Ex4_digit_polygon.png
 ---
 width: 700px
 name: digitizing toolbox
@@ -358,13 +358,13 @@ Digitsing Toolbox in QGIS 3.36
 
 
 
-Click on `Add Point Feature`![](/fig/mActionCapturePolygon.png). You will note that your mouse pointer now changed its symbol into a target. This means you can now create a point by left-clicking. You will be asked to enter the descriptions. Enter the information and click ok.
+Click on `Add Point Feature`![](../../../fig/mActionCapturePolygon.png). You will note that your mouse pointer now changed its symbol into a target. This means you can now create a point by left-clicking. You will be asked to enter the descriptions. Enter the information and click ok.
 
 
 
 
 
-```{figure} /fig/en_3.34_SMT_Ex6_digitized_polygon.png
+```{figure} ../../../fig/en_3.34_SMT_Ex6_digitized_polygon.png
 ---
 height: 400px
 name: SMT Attribute table
@@ -383,7 +383,7 @@ In the map canvas you can already see your hand-drawn point. In order to save it
 
 
 
-```{figure} /fig/en_3.34_SMT_Ex6_attribute_table_digit_polygon.png
+```{figure} ../../../fig/en_3.34_SMT_Ex6_attribute_table_digit_polygon.png
 ---
 height: 400px
 name: SMT Attribute table with added polygon
@@ -406,15 +406,15 @@ Normally, you know the meaning of the markings in your Sketch Map. We will now l
 
 - Right-click on your vector layer, navigate to `Open Attribute Table` and click on it.
 
-- In the upper left corner click on ![](/fig/mActionToggleEditing.png) to toggle editing mode
+- In the upper left corner click on ![](../../../fig/mActionToggleEditing.png) to toggle editing mode
 
-- click on ![](/fig/mActionNewAttribute.png) to add a new field to the data source
+- click on ![](../../../fig/mActionNewAttribute.png) to add a new field to the data source
 
 - As `Name` enter "Description", choose "Text (String)" `Type`, as `Length` enter "20" and click `OK`
 
 
 
-```{figure} /fig/en_3.34_SMT_Ex6_add_field.png
+```{figure} ../../../fig/en_3.34_SMT_Ex6_add_field.png
 ---
 height: 400px
 name: SMT Attribute table add text field
@@ -429,7 +429,7 @@ Adding a new field to the attribute table
 
 
 
-```{figure} /fig/en_3.34_SMT_Ex6_descritption_field.png
+```{figure} ../../../fig/en_3.34_SMT_Ex6_descritption_field.png
 ---
 height: 400px
 name: SMT attribute add field description
@@ -442,7 +442,7 @@ Adding descriptions to the fields
 
 - now do the same with the Polygons
 
-```{figure} /fig/en_3.34_SMT_Ex6_descritption_field_polygon.png
+```{figure} ../../../fig/en_3.34_SMT_Ex6_descritption_field_polygon.png
 ---
 height: 400px
 name: SMT attribute add field description
@@ -453,7 +453,7 @@ Adding descriptions to the polygons
 
 -Make sure that you don't have any typos in the description
 
-- Save by clicking on ![](/fig/mActionToggleEditing.png) once more -> `Save`
+- Save by clicking on ![](../../../fig/mActionToggleEditing.png) once more -> `Save`
 
 
 
@@ -491,7 +491,7 @@ Right below you can also adjust the opacity level of your feature.
 
 
 
-```{figure} /fig/en_3.34_SMT_Ex6_symbology.png
+```{figure} ../../../fig/en_3.34_SMT_Ex6_symbology.png
 ---
 height: 400px
 name: SMT adjusting symbology
@@ -508,7 +508,7 @@ In the `Symbol Selector`, you can also click on `Simple line` or `Point Pattern 
 
 
 
-```{figure} /fig/en_3.34_SMT_Ex6_line_symbology.png
+```{figure} ../../../fig/en_3.34_SMT_Ex6_line_symbology.png
 ---
 height: 400px
 name: SMT symbol selector
@@ -530,13 +530,13 @@ Using the symbol selector
 1. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "Sketch_Map_Tool_Ex6". A new window will open with a blank canvas and a different set of tools. This is the __print layout designer__.
 
 
-- Insert a new map by clicking on the ![New Map Icon](/fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas
+- Insert a new map by clicking on the ![New Map Icon](../../../fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas
 
 2. Move and position the map so that the entire country is visible at a reasonable scale. 
 
 4. Let's add a title: 
 
-- Click on the ![Add text icon](/fig/30.30.2_print_layout_add_text.png) (`Add text`)
+- Click on the ![Add text icon](../../../fig/30.30.2_print_layout_add_text.png) (`Add text`)
 
 - Drag a rectangle on the canvas
 
@@ -546,23 +546,23 @@ Using the symbol selector
 
 5. Let's add a legend:
 
-- Click on the ![Add legend icon](/fig/30.30.2_print_layout_add_legend.png) (`Add legend`). 
+- Click on the ![Add legend icon](../../../fig/30.30.2_print_layout_add_legend.png) (`Add legend`). 
 
 - Navigate to the __Item Properties__ panel on the right. 
 
 - Scroll down a bit and check turn off `Auto Update` by unchecking the check box. Now you can freely edit every item on the legend
 
-- Adjust the legend by removing unnecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on ![Edit Icon](/fig/30.30.2_print_layout_legend_edit.png) (`Edit selected item properties`) below the legend entries.
+- Adjust the legend by removing unnecessary layers (which are not seen on the map) and rename the layer in the legend by clicking on ![Edit Icon](../../../fig/30.30.2_print_layout_legend_edit.png) (`Edit selected item properties`) below the legend entries.
 
 6. Now, let's add a scale bar:
 
-- Click on the ![Add Scale bar icon](/fig/30.30.2_print_layout_add_scale_bar.png) (`Add Scale bar`)
+- Click on the ![Add Scale bar icon](../../../fig/30.30.2_print_layout_add_scale_bar.png) (`Add Scale bar`)
 
 - Draw a rectangle on the map and position the scale bar on the edge of the map. You can adjust the scale bar units (meters, kilometers, ...), the fixed segment width (50 km, 75 km, 100 km, ...) and the number of segments (to the right).
 
 7. Let's add North arrow:
 
-- Click on the ![Add North Arrow Icon](/fig/30.30.2_print_layout_add_orientation.png) (`Add North Arrow`). 
+- Click on the ![Add North Arrow Icon](../../../fig/30.30.2_print_layout_add_orientation.png) (`Add North Arrow`). 
 
 - Drag a rectangle on the print layout. Adjust the size and location of the north arrow. You can also change the icon in the item properties.
 
@@ -578,7 +578,7 @@ The finished map could look something like this:
 
 
 
-```{figure} /fig/en_3.34_SMT_Ex6_map_final.png
+```{figure} ../../../fig/en_3.34_SMT_Ex6_map_final.png
 ---
 width: 700px
 name: Digitized SMT Map Example

@@ -343,7 +343,7 @@ align: center
 __Model Inputs & Outputs__
 
 
-1. A QGIS model can be run by navigating to the top bar → `Model` (`Modèle`) → `Run Model` (`Exécuter le modèle`) or by clicking on the ![](../../../fig/Module_7/qgis_3.44_run_model.png) icon. 
+1. A QGIS model can be run by navigating to the top bar → `Model` (`Modèle`) → `Run Model` (`Exécuter le modèle`) or by clicking on the ![](../../../fig/qgis_3.40_run_model.png) icon. 
 
 
 2. A new window will open. Here you need to define the model's inputs and outputs. For each of these mandatory inputs, you click on the dropdown arrow and choose the respective file.

@@ -293,7 +293,7 @@ The error message indicating invalid geometries.
 
 6.  Open the attribute table of __"Health_Facilities_Flood_2024_AOI"__ by right click on the layer → `Open Attribute Table`([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md)) and activate the editing mode by clicking on ![](../../../fig/mActionToggleEditing.png) ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#change-data-in-the-attribute-table)). Now you are able to edit the data directly in the table.
 
-7. First, we add a new column with the name __“Flood_affected”__. To do so, click on ![](../../../fig/mActionNewAttribute.png). In the `Add field` window, you have to add the name and set the `Type` to `Text(string)`. Click `Ok` ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#add-new-column))
+7. First, we add a new column with the name __“Flood_affected”__. To do so, click on ![](../../../fig/mActionNewAttribute.png). In the `Add field` window, you have to add the name and set the `Type` to `Text(string)`. Click `Ok` ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#add-a-new-column))
 
 ```{figure} ../../../fig/ PAK_flood_new_column.PNG
 ---

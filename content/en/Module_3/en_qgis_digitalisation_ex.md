@@ -150,7 +150,7 @@ align: center
 Creating a new point layer.
 :::
 
-4. Now you can create a point for each of the three banks in the area [wiki](../Wiki/en_qgis_digitisation_wiki.md#add-geometries-to-a-layer). Currently the new “Abuja_bank_point” is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar `View` → `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creation-of-point-data)).  ![](../../../fig/Digitizing_Toolbar.png) 
+4. Now you can create a point for each of the three banks in the area [wiki](../Wiki/en_qgis_digitisation_wiki.md#adding-geometries-to-a-layer). Currently the new “Abuja_bank_point” is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar `View` → `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creating-point-data)).  ![](../../../fig/Digitizing_Toolbar.png) 
     1. Select the point layer “Abuja_bank_point” in the Layer panel. Navigate to the digitisation toolbar and click on![](../../../fig/mActionToggleEditing.png). Now, the layer is in the editing mode.
     2. Search for banks on the map or use the OSMPlace search panel. Once you have found one, click on ![](../../../fig/mActionCapturePoint.png). Left-click on the feature you want to digitise.
     3. Once you click, a window will appear "Abuja_bank_point". Here you can add the name of the bank.

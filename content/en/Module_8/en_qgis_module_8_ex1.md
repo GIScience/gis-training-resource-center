@@ -132,7 +132,7 @@ Exemplary visualization of the DEM with linear interpolation.
     Histogram of the value distribution of "Pakistan_pop_density_1km"
     ```
 
-    3. Based on the exploration of the histogram try a few value boundaries for visualisation at the top of your layer styling panel (select the ![](../../../fig/mod8_ex1_symbologyicon.png) menu). Keep in mind that we look at population data and that population distribution is very spatially heterogenous most of the time. Try the following combinations and choose the one that suits the data best:
+    3. Based on the exploration of the histogram try a few value boundaries for visualisation at the top of your layer styling panel (select the ![](../../../fig/en_3.34_m8ex1_symbologyicon.png) menu). Keep in mind that we look at population data and that population distribution is very spatially heterogenous most of the time. Try the following combinations and choose the one that suits the data best:
       - Min = 0    Max = 1000
       - Min = 0    Max = 3000
       - Min = 0    Max = 5000
@@ -154,7 +154,7 @@ Prompts to adjust die value range for visualization
     2. The next modifiable Parameter is the "Z factor". It is used to adjust the vertical exaggeration of elevation data, influencing the steepness of slopes in the visualization. You can just use the default od one or change it to to "2" or "3" if you want a more pronounced shading.
     3. The parameters "Azimuth" and "Vertical angle" determine the direction and angle above the horizon of the imaginary light source creating the shading. We recommend to leave the default values.
     4. Name the output "Hillshade_Pakistan" and select your "temp" folder to save it. Click `Run` to generate the Hillshade.
-    5. When the Hillshade layer is generated set its "global opacity" to 20% in your layer styling panel and position it over the DEM in your layer panel to combine the Hillshade with the DEM. You can also enhance the contrast of the Hillshade layer when you scroll down in the symbology tab ![](../../../fig/mod8_ex1_symbologyicon.png) in the layer styling panel to optimize the visualisation.
+    5. When the Hillshade layer is generated set its "global opacity" to 20% in your layer styling panel and position it over the DEM in your layer panel to combine the Hillshade with the DEM. You can also enhance the contrast of the Hillshade layer when you scroll down in the symbology tab ![](../../../fig/en_3.34_m8ex1_symbologyicon.png) in the layer styling panel to optimize the visualisation.
         
     
 ```{Tip}
@@ -192,7 +192,7 @@ To get a approximation of flood exposure our first goal is to create a layer dis
 2. First we will covert the `Pakistan_floodextents_2023.shp` vector layer to the raster format. To achieve this first create an empty raster that will be the base layer for our rasterization. 
     1. Open the tool `Create constant raster layer` from your Processing toolbox panel. 
     2. Under "Desired extent" choose "Calculate from layer" → `Pakistan_pop_dens_1km` to set the layer extent to the extent of your flood extent layer.
-    3.  Under "Target CRS" choose "EPSG:32642 - WGS 84 / UTM zone 42N" from the dropdown menu. If the CRS does not pop up search it by clicking the ![](../../../fig/mod8_ex1_crsicon.png) icon next to the prompt.
+    3.  Under "Target CRS" choose "EPSG:32642 - WGS 84 / UTM zone 42N" from the dropdown menu. If the CRS does not pop up search it by clicking the ![](../../../fig/en_3.34_m8ex1_crsicon.png) icon next to the prompt.
     4. As "Pixel size" choose "1000" as the unit of the chosen CRS is meters and the resolution should match our population raster with a cell size of 1 x 1km.
     5. Under "Constant value" choose "0". This is the value that will be assigned to all raster cells of the created raster.
     6. Save the raster as "Rastermask_floods" in your "temp" folder and click `Run` to generate the empty raster.
@@ -213,7 +213,7 @@ Interface of the "Create constant raster layer" tool
     4. Under "A fixed value to burn" type in "1". This means that all raster cells of your input rasters that are covered by geometries of your input vector layer will be changed to the value "1".
     5. Click on `Run` to rasterize your flood extents.
 
-4. The layer `Rastermask_floods` should now have values of "1" instead of "0" in the cells covered by the flood of 2023. Change the visualization range in your Layer styling panel under "Symbology" ![](../../../fig/mod8_ex1_symbologyicon.png) to Min = 0 and Max = 1 and check if the rasterization was successful. Your layer should look something like this (Singleband grey" visualization):
+4. The layer `Rastermask_floods` should now have values of "1" instead of "0" in the cells covered by the flood of 2023. Change the visualization range in your Layer styling panel under "Symbology" ![](../../../fig/en_3.34_m8ex1_symbologyicon.png) to Min = 0 and Max = 1 and check if the rasterization was successful. Your layer should look something like this (Singleband grey" visualization):
 
  ```{figure} ../../../fig/en_3.34_m8ex1_floodmask.png
 ---
@@ -230,8 +230,8 @@ It is possible that due to an error the raster values are not updating after ras
 
 5. Now we want to extract the population count within the flood zones. We do this by processing two rasters with the `Raster Calculator`.
     1. Open the raster Calculator from your processing toolbox Panel or via `Raster` > `Raster Calculator`.
-    2. As "Input Layers" layers select your raster mask "Rastermask_floods" and the population layer "Pakistan_pop_dens_1km.tif" by clicking on the ![](../../../fig/mod8_ex1_optionsicon.png) icon and ticking the boxes next to the two layers.
-    3. Click on the ![](../../../fig/mod8_ex1_expressionicon.png) icon to open the expression interface. You might know a very similar panel from the "field calculator" for conducting calculations in the attribute table of vector layers.
+    2. As "Input Layers" layers select your raster mask "Rastermask_floods" and the population layer "Pakistan_pop_dens_1km.tif" by clicking on the ![](../../../fig/en_3.34_m8ex1_optionsicon.png) icon and ticking the boxes next to the two layers.
+    3. Click on the ![](../../../fig/en_3.34_m8ex1_expressionicon.png) icon to open the expression interface. You might know a very similar panel from the "field calculator" for conducting calculations in the attribute table of vector layers.
     4. Enter the following expression to  "Raster Calculator Expression" Panel:
 
     ```md
@@ -275,7 +275,7 @@ Now we have reached our goal of generating a dataset displaying flood affected p
     2. As "Input Layer" choose the layer "Pakistan_admin2" with the polygons of administrative districts.
     3. As "Raster Layer" choose "Pop_floodextent".
     4. Defining a prefix for your output column is optional but can be helpful for finding the calculated values in large attribute tables. Choose "pop_" as "Output column prefix".
-    5. Below "Statistics to calculate" click on the ![](../../../fig/mod8_ex1_optionsicon.png) icon to access the different options of statistical operations available for calculating polygon values based on your raster.
+    5. Below "Statistics to calculate" click on the ![](../../../fig/en_3.34_m8ex1_optionsicon.png) icon to access the different options of statistical operations available for calculating polygon values based on your raster.
         - Which statistical operation would suit the task of calculating flood affected population per district?
 
     :::{dropdown} Solution

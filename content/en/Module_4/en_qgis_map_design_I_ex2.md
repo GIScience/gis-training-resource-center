@@ -240,7 +240,7 @@ To do so we will create an entirely new point dataset representing airports.
 
 ::::{margin}
 :::{tip}
-If you cannot see the toolbar `View` → `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creation-of-point-data)). ![](../../../fig/Digitizing_Toolbar.png)
+If you cannot see the toolbar `View` → `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creating-point-data)). ![](../../../fig/Digitizing_Toolbar.png)
 :::
 ::::
 

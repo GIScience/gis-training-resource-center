@@ -4,7 +4,7 @@ This exercise focuses on the first step of working with the Sketch Map Tool “C
 
 
 
-```{figure} ../../fig/SMT_Idee_traffic_light_exerices.png
+```{figure} ../../../fig/SMT_Idee_traffic_light_exerices.png
 ---
 height: 450px
 name: SMT traffic light exercise
@@ -115,7 +115,7 @@ __Wrap up:__
 
 ### Map Quality Check <a id="map-quality-check"></a>
 
-```{figure} ../../fig/SMT_Heidelberg_report_1.jpg
+```{figure} ../../../fig/SMT_Heidelberg_report_1.jpg
 ---
 height: 500px
 name: SMT Heidelberg report

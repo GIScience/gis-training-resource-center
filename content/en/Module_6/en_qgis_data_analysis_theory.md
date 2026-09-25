@@ -401,7 +401,7 @@ Keep in mind that IDW interpolation has a few __disadvantages__. For example, th
 
 TIN interpolation is commonly called __Delauny triangulation__. This interpolation methods creates a triangular surface with its nearest neighbour points. In order to achieve this, circles are added around known sample points and the intersection of these circles are used as corners of the triangle (see {numref}`TIN_interpolation_example`). TIN interpolation is usually used to compute __digital elevation models__ (DEM).  
 
-```{figure} ../../fig/tin_interpolation_example.png
+```{figure} ../../../fig/tin_interpolation_example.png
 ---
 name: TIN_interpolation_example
 width: 500 px

@@ -44,7 +44,7 @@ Assigning the correct attribute value in the labeling options. QGIS needs to kno
 #### Adding Single Labels to a Layer <a id="adding-single-labels-to-a-layer"></a>
 
 1. In the styling panel, click on the `Labels`-tab underneath the Symbology tab.
-2. Select ![](../../fig/en_30.30.2_icon_single_labels) `Single labels`.
+2. Select ![](../../../fig/30.30.2_icon_single_labels.png) `Single labels`.
 3. `Value` is where you choose the attribute that will be displayed as a label. For example `*ADM1_EN*` will display the English names of Nigerian states for each feature in the data set.
 4. Let's __change the font__: Open the font dropdown menu and select Arial. Make the text `Bold` in the Style dropdown menu. Change the colour by clicking on `Colour`, and change the `Size` to 8 pt
 5. Let's __add a white buffer__ around the label. In the `Labels` tab, you will find a list with different options to style the labels. Right now, we are in the `Text` menu. Select `Buffer` and check the `Draw text buffer` option. This will make the labels stand out more on dark or crowded maps.
