@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../intro.md 
+:link: ../intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -254,7 +255,8 @@ Practical experience is key to mastering GIS. Now is a good moment to apply what
 
 :::{card}
 :class-card: sd-text-center sd-rounded-2 sd-border-1
-:link: en_qgis_geodata_concept_ex1.md
+:link: en_qgis_geodata_concept_ex1
+:link-type: doc
 
 __Module 2 Exercise 1: Understanding Geodata__
 

@@ -28,7 +28,8 @@ The content is designed primarily for **GIS trainers**, but also supports practi
 ::::{grid} 2
 
 :::{card} Start teaching
-:link: Trainers_corner/en_TOT_intro.md
+:link: Trainers_corner/en_TOT_intro
+:link-type: doc
 This platform is primarily designed to support **GIS trainers** in the IFRC Network.
 
 You can:
@@ -40,7 +41,8 @@ All trainer-specific guidance is collected in the **Trainer’s Corner**, which 
 :::
 
 :::{card} Start learning
-:link: Module_1/en_module_1_overview.md
+:link: Module_1/en_module_1_overview
+:link-type: doc
 
 This is **not a self-learning platform**.
 

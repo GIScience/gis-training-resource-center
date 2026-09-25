@@ -42,6 +42,7 @@ This content is designed for:
 
 :::{card}
 :link: en_qgis_cyclone_trigger_madagascar
+:link-type: doc
 
 __QGIS Model Workflow: Cyclone Anticipatory Action - Madagascar__
 
@@ -58,6 +59,7 @@ __QGIS Model Workflow: Cyclone Anticipatory Action - Madagascar__
 
 :::{card} 
 :link: en_qgis_drought_trigger_somalia
+:link-type: doc
 
 __QGIS Model Workflow: Drought EAP Trigger for Somalia__
 
@@ -74,6 +76,7 @@ __QGIS Model Workflow: Drought EAP Trigger for Somalia__
 
 :::{card} 
 :link: en_qgis_historical_impact_assessment_sudan
+:link-type: doc
 
 __Historical Impact Assessment of Flooding in Sudan__
 
@@ -87,6 +90,7 @@ In addition to the case studies, this section includes hands-on follow-along exe
 
 :::{card}
 :link: ../Exercise_tracks/en_mdg_aa_cyclones
+:link-type: doc
 
 __Cyclone Anticipatory Action Analysis Exercise Track__
 

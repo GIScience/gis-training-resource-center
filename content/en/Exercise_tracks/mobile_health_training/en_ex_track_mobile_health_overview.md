@@ -14,6 +14,7 @@ PLACEHOLDING TEXT
 :::::{grid} 2
 ::::{grid-item-card}
 :link: en_module_5_mobile_health_ex_1_3
+:link-type: doc
 __Track A: Exercise 1__
 ^^^
 

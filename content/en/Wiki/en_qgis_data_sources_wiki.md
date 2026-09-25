@@ -5,7 +5,7 @@ In our module chapter, you can find an extensive list of possible data sources.
 
 :::{card}
 :class-card: sd-text-center
-:link: ../Module_2/en_data_sources.md#overview-of-useful-data-repositories
+:link: ../Module_2/en_data_sources.html#overview-of-useful-data-repositories
 __Module 2 Chapter 5: Data Sources__
 
 :::

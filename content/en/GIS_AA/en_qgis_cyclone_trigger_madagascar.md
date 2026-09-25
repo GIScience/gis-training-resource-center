@@ -10,7 +10,7 @@ La version française de cet article se trouve ici:
 
 :::{card}
 :class-card: sd-text-center sd-border-1
-:link: ../GIS_AA/fr_qgis_cyclone_trigger_madagascar.md
+:link: ../../fr/GIS_AA/fr_qgis_cyclone_trigger_madagascar.html
 Version française
 :::
 

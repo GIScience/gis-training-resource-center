@@ -20,11 +20,13 @@ Currently available tools include the **Sketch Map Tool** for offline, participa
 
 :::{grid-item-card}
 :link: ../Mobile_Data_collection/en_SMT
+:link-type: doc
 __Sketch Map Tool__
 :::
 
 :::{grid-item-card}
 :link: ../Mobile_Data_collection/en_SMT_training
+:link-type: doc
 __Sketch Map Tool Training Exercises__
 :::
 ::::
@@ -40,6 +42,7 @@ __Sketch Map Tool Training Exercises__
 
 :::{card}
 :link: ../GIS_AA/en_AILAS_madagascar
+:link-type: doc
 __AILAS Street Level Image Collection Field Experiments__
 :::
 
@@ -57,16 +60,19 @@ __AILAS Street Level Image Collection Field Experiments__
 
 :::{grid-item-card}
 :link: ../GIS_AA/en_qgis_risk_assessment_plugin
+:link-type: doc
 __Risk Assessment QGIS Plugin__
 :::
 
 :::{grid-item-card}
 :link: ../GIS_AA/en_qgis_generate_indicators_for_plugin
+:link-type: doc
 __How to generate Risk Indicators__
 :::
 
 :::{grid-item-card}
 :link: ../GIS_AA/en_gaia_indicators_processing
+:link-type: doc
 __GAIA Pipeline Documentation__
 :::
 ::::

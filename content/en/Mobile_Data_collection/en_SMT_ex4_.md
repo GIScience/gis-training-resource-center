@@ -97,14 +97,14 @@ __You can choose whether you want to do the exercise with QGIS (Exercise A) or w
 ::::{grid} 2
 
 :::{grid-item-card}
-:link: en_SMT_ex4_.md#exercise-a-exploration-basic-visualization-of-sketch-map-tool-outputs-in-qgis
+:link: en_SMT_ex4_.html#exercise-a-exploration-basic-visualization-of-sketch-map-tool-outputs-in-qgis
 
 __Click here to start exercise A (QGIS)__
 
 :::
 
 :::{grid-item-card}
-:link: en_SMT_ex4_.md#exercise-b-basic-visualization-of-sketch-map-tool-outputs-in-umap
+:link: en_SMT_ex4_.html#exercise-b-basic-visualization-of-sketch-map-tool-outputs-in-umap
 
 __Click here to start exercise B (uMAP)__
 

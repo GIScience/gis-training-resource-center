@@ -1,11 +1,13 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../intro.md
+:link: ../intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 :::{grid-item-card}
-:link: en_qgis_module_3_exercises.md
+:link: en_qgis_module_3_exercises
+:link-type: doc
 __Click here to return to the exercise overview page for module 3__ 
 :::
 ::::

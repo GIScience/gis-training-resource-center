@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../intro
+:link: ../../intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -20,6 +21,7 @@
 
 :::{card} 
 :link: en_ex_track_mobile_health_overview
+:link-type: doc
 __Exercise track: Mobile Health Units__
 ^^^
 This exercise is part of the Mobile Health Exercise track. You can find the overview of the training on [this page]()
