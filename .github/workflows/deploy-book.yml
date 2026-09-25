@@ -1,9 +1,21 @@
 name: deploy-book
 
+# Builds one GitHub Pages site with two versions of the books:
+#   /en/ /es/ /fr/                   live version, from main
+#   /preview/en/ /preview/es/ /preview/fr/   next release, from the preview branch
+#
+# The preview branch is dev by default. To preview a frozen release branch instead,
+# set the repository variable PREVIEW_BRANCH (Settings > Secrets and variables > Actions).
+#
+# The github-pages environment must allow deployments from main and from the preview branch
+# (Settings > Environments > github-pages > Deployment branches).
+
 on:
   push:
     branches:
       - main
+      - dev
+      - "release/**"
 
   workflow_dispatch:
 
@@ -16,92 +28,157 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+env:
+  LIVE_BRANCH: main
+  PREVIEW_BRANCH: ${{ vars.PREVIEW_BRANCH || 'dev' }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      # A push to any other release branch than the configured preview branch
+      # doesn't change the site, so skip the rest of the job.
+      - name: Check whether this push changes the site
+        id: relevant
+        run: |
+          set -euo pipefail
+
+          branch="${{ github.ref_name }}"
+
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] \
+            || [ "$branch" = "$LIVE_BRANCH" ] \
+            || [ "$branch" = "$PREVIEW_BRANCH" ]; then
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Branch $branch is neither $LIVE_BRANCH nor $PREVIEW_BRANCH, nothing to deploy."
+            echo "deploy=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout live branch
+        if: steps.relevant.outputs.deploy == 'true'
         uses: actions/checkout@v6
+        with:
+          ref: ${{ env.LIVE_BRANCH }}
+          path: live
+
+      - name: Checkout preview branch
+        if: steps.relevant.outputs.deploy == 'true'
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ env.PREVIEW_BRANCH }}
+          path: preview
 
       - name: Set up Python 3.13
+        if: steps.relevant.outputs.deploy == 'true'
         uses: actions/setup-python@v6
         with:
           python-version: "3.13"
           cache: "pip"
+          cache-dependency-path: |
+            live/requirements.txt
+            preview/requirements.txt
 
+      # Each branch gets its own virtual environment, so a dependency change on dev
+      # can't break the live build.
       - name: Install dependencies
+        if: steps.relevant.outputs.deploy == 'true'
         run: |
           set -euo pipefail
 
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          for tree in live preview; do
+            python -m venv "venv-$tree"
+            "venv-$tree/bin/python" -m pip install --upgrade pip
+            "venv-$tree/bin/pip" install -r "$tree/requirements.txt"
+          done
 
       - name: Configure GitHub Pages
+        if: steps.relevant.outputs.deploy == 'true'
+        id: pages
         uses: actions/configure-pages@v5
 
-      - name: Verify language book files
+      # Replaces the announcement banner and points the "edit on GitHub" buttons at the
+      # preview branch. Only the checked-out copy in the runner is changed.
+      - name: Mark preview books
+        if: steps.relevant.outputs.deploy == 'true'
         run: |
           set -euo pipefail
 
-          echo "Checking English book files..."
-          test -f content/en/_config.yml
-          test -f content/en/_toc.yml
+          base="${{ steps.pages.outputs.base_path }}"
 
-          echo "Checking Spanish book files..."
-          test -f content/es/es_config.yml
-          test -f content/es/es_toc.yml
+          mark_preview() {
+            local config="$1"
+            local lang="$2"
+            local banner="Preview of the next release (branch ${PREVIEW_BRANCH}). Content may still change. <a href='${base}/${lang}/'>Go to the current version</a>"
 
-          echo "Checking French book files..."
-          test -f content/fr/fr_config.yml
-          test -f content/fr/fr_toc.yml
+            test -f "$config"
+            sed -i -E "s|^([[:space:]]*announcement:).*|\1 \"${banner}\"|" "$config"
+            sed -i -E "s|^([[:space:]]*branch:).*|\1 ${PREVIEW_BRANCH}|" "$config"
+            grep -q "Preview of the next release" "$config"
+          }
 
-          echo "Language book config and TOC files found."
+          mark_preview preview/content/en/_config.yml en
+          mark_preview preview/content/es/es_config.yml es
+          mark_preview preview/content/fr/fr_config.yml fr
 
-      - name: Build English book
+      - name: Build books
+        if: steps.relevant.outputs.deploy == 'true'
         run: |
           set -euo pipefail
 
-          cd content/en
+          build_tree() {
+            local tree="$1"
+            local jb="$GITHUB_WORKSPACE/venv-$tree/bin/jupyter-book"
 
-          jupyter-book build . \
-            --path-output ../../english
+            echo "::group::Checking $tree book files"
+            test -f "$tree/content/en/_config.yml"
+            test -f "$tree/content/en/_toc.yml"
+            test -f "$tree/content/es/es_config.yml"
+            test -f "$tree/content/es/es_toc.yml"
+            test -f "$tree/content/fr/fr_config.yml"
+            test -f "$tree/content/fr/fr_toc.yml"
+            echo "::endgroup::"
 
-      - name: Build Spanish book
-        run: |
-          set -euo pipefail
+            echo "::group::Building $tree English book"
+            (cd "$tree/content/en" && "$jb" build . --path-output ../../english)
+            echo "::endgroup::"
 
-          cd content/es
+            echo "::group::Building $tree Spanish book"
+            (cd "$tree/content/es" && "$jb" build . \
+              --config es_config.yml --toc es_toc.yml --path-output ../../spanish)
+            echo "::endgroup::"
 
-          jupyter-book build . \
-            --config es_config.yml \
-            --toc es_toc.yml \
-            --path-output ../../spanish
+            echo "::group::Building $tree French book"
+            (cd "$tree/content/fr" && "$jb" build . \
+              --config fr_config.yml --toc fr_toc.yml --path-output ../../french)
+            echo "::endgroup::"
+          }
 
-      - name: Build French book
-        run: |
-          set -euo pipefail
+          build_tree live
+          build_tree preview
 
-          cd content/fr
-
-          jupyter-book build . \
-            --config fr_config.yml \
-            --toc fr_toc.yml \
-            --path-output ../../french
-
-      - name: Combine language builds into one Pages site
+      - name: Combine builds into one Pages site
+        if: steps.relevant.outputs.deploy == 'true'
         run: |
           set -euo pipefail
 
           rm -rf _site
 
-          mkdir -p _site/en
-          mkdir -p _site/es
-          mkdir -p _site/fr
+          for lang in en es fr; do
+            mkdir -p "_site/$lang" "_site/preview/$lang"
+          done
 
-          rsync -a --delete english/_build/html/ _site/en/
-          rsync -a --delete spanish/_build/html/ _site/es/
-          rsync -a --delete french/_build/html/ _site/fr/
+          rsync -a --delete live/english/_build/html/ _site/en/
+          rsync -a --delete live/spanish/_build/html/ _site/es/
+          rsync -a --delete live/french/_build/html/ _site/fr/
+
+          rsync -a --delete preview/english/_build/html/ _site/preview/en/
+          rsync -a --delete preview/spanish/_build/html/ _site/preview/es/
+          rsync -a --delete preview/french/_build/html/ _site/preview/fr/
+
+          # Keep search engines from listing preview pages next to the live ones.
+          find _site/preview -name '*.html' -exec \
+            sed -i '0,/<head>/s//<head>\n<meta name="robots" content="noindex">/' {} +
 
           cat > _site/index.html <<'HTML'
           <!doctype html>
@@ -114,6 +191,21 @@ jobs:
             </head>
             <body>
               <p>Redirecting to <a href="en/">English version</a>.</p>
+            </body>
+          </html>
+          HTML
+
+          cat > _site/preview/index.html <<'HTML'
+          <!doctype html>
+          <html lang="en">
+            <head>
+              <meta charset="utf-8">
+              <meta name="robots" content="noindex">
+              <meta http-equiv="refresh" content="0; url=en/">
+              <title>GIS Training Resource Center (preview)</title>
+            </head>
+            <body>
+              <p>Redirecting to <a href="en/">English preview</a>.</p>
             </body>
           </html>
           HTML
@@ -139,24 +231,33 @@ jobs:
 
           touch _site/.nojekyll
 
-          echo "Created combined GitHub Pages site:"
-          echo "  English: /en/"
-          echo "  Spanish: /es/"
-          echo "  French:  /fr/"
-          echo "  Redirect: /content/intro.html -> /en/intro.html"
-          echo ""
+          live_sha="$(git -C live rev-parse --short HEAD)"
+          preview_sha="$(git -C preview rev-parse --short HEAD)"
 
-          find _site -maxdepth 3 -type f | sort > /tmp/site-files.txt
-          head -n 100 /tmp/site-files.txt
+          {
+            echo "## Site deployed"
+            echo ""
+            echo "| Version | Branch | Commit | Path |"
+            echo "|---|---|---|---|"
+            echo "| Live | \`$LIVE_BRANCH\` | \`$live_sha\` | \`/en/\` \`/es/\` \`/fr/\` |"
+            echo "| Preview | \`$PREVIEW_BRANCH\` | \`$preview_sha\` | \`/preview/en/\` \`/preview/es/\` \`/preview/fr/\` |"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          find _site -maxdepth 3 -type f | sort | head -n 100
 
       - name: Upload GitHub Pages artifact
+        if: steps.relevant.outputs.deploy == 'true'
         uses: actions/upload-pages-artifact@v4
         with:
           path: ./_site
 
+    outputs:
+      deploy: ${{ steps.relevant.outputs.deploy }}
+
   deploy:
     runs-on: ubuntu-latest
     needs: build
+    if: needs.build.outputs.deploy == 'true'
 
     environment:
       name: github-pages
