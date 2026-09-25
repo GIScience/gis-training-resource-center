@@ -45,3 +45,13 @@ exclude_patterns:
 sphinx:
   extra_extensions:
     - custom-launch-buttons
+  config:
+    # Partner logos used by About/about_1.md live in the repo-level _static folder
+    html_static_path: ["../../_static"]
+    # Hide noisy warnings. Links and anchors are checked on the built site instead
+    # (scripts/check_site_links.py), because MyST doesn't recognise our stable <a id> anchors.
+    suppress_warnings:
+      - myst.xref_missing        # link/anchor targets (false alarms for <a id> anchors)
+      - myst.header              # skipped heading levels, e.g. H1 -> H3
+      - design.grid              # sphinx-design grid layout hints
+      - misc.highlighting_failure  # code blocks in an unknown language
