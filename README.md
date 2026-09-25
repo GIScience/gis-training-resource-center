@@ -148,6 +148,25 @@ Then open http://localhost:8080/en/intro.html. Press `Ctrl+C` to stop the server
 
 > **Why a local server and not just opening the HTML file?** Browsers restrict pages opened straight from disk (`file://`). Links to folders and some scripts behave differently there than on GitHub Pages. The local server is much closer to the live site.
 
+### Checking links
+
+After building, check the built site for broken links, images and anchors:
+
+```bash
+python scripts/check_site_links.py              # all languages
+python scripts/check_site_links.py --lang en    # English only
+python scripts/check_site_links.py --external   # also check external URLs (slow)
+```
+
+The script lists every problem by page. It checks the built HTML rather than the build log,
+because MyST doesn't recognise the stable `<a id="...">` heading anchors, so its link warnings
+are switched off in the book configs. Known open issues are tracked in
+[docs/known_issues.md](docs/known_issues.md).
+
+Card links (`:link:` on `{card}` / `{grid-item-card}`) to other pages need `:link-type: doc` and
+a path without `.md`, and text links need the `.md` extension, for example
+`[Clip](../Wiki/en_qgis_geoprocessing_wiki.md#clip)`.
+
 ## Branching workflow
 
 | Branch                | Purpose                                                                               |
@@ -197,7 +216,7 @@ Please **don't edit files in `content/fr/` or `content/es/` by hand**. The next 
 
 1. **Upload sources.** In GitHub, go to **Actions → Crowdin Upload Source XLIFF → Run workflow**. The workflow converts the English Markdown into XLIFF files with [Okapi Tikal](https://okapiframework.org/), commits them to `localisation/xliff/sources/`, and uploads them to Crowdin.
 2. **Translate.** Translators translate and approve the text on Crowdin.
-3. **Download and merge.** Go to **Actions → Crowdin Download and Merge Translations → Run workflow** and pick the language (`fr` or `es`). The workflow downloads the approved translations, merges them back into Markdown with Okapi Tikal, and writes them to `content/<lang>/`. It then opens a pull request from the branch `l10n-crowdin-<lang>`.
+3. **Download and merge.** Go to **Actions → Crowdin Download and Merge Translations → Run workflow** and pick the language (`fr` or `es`). The workflow downloads the approved translations, merges them back into Markdown with Okapi Tikal, and writes them to `content/<lang>/`. It then opens a pull request from the branch `l10n-crowdin-<lang>` against `dev`, so the translations show up in the preview book and go live with the next release. The merge itself runs on `main`, the branch the sources were uploaded from.
 4. **Review.** Every push to an `l10n-crowdin-*` branch triggers the **preview-book** workflow. You can download the built site from that workflow run and check it before merging.
 
 Run these workflows against `dev` (set the branch input when you start them), so translations go through the same review as other changes.
