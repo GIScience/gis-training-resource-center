@@ -12,10 +12,19 @@ on:
           - fr
           - es
 
+      # Must be the branch Crowdin Upload Sources ran on, because the committed source
+      # XLIFF in localisation/xliff/sources/ only exists there.
+      source_branch:
+        description: "Branch the sources were uploaded from (merge runs on this branch)"
+        required: true
+        default: "main"
+        type: string
+
+      # dev, so translations show up in the preview book and go live with the next release.
       base_branch:
         description: "Branch to open the translation PR against"
         required: true
-        default: "main"
+        default: "dev"
         type: string
 
 permissions:
@@ -35,8 +44,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          ref: ${{ inputs.base_branch }}
-          fetch-depth: 1
+          ref: ${{ inputs.source_branch }}
+          # create-pull-request needs history to move the commit onto base_branch
+          fetch-depth: 0
 
       - name: Set up Java
         uses: actions/setup-java@v4
@@ -391,6 +401,8 @@ jobs:
           title: "Add Crowdin translations for ${{ inputs.target_language }}"
           body: |
             This PR adds translated Markdown files generated from approved Crowdin XLIFF translations.
+
+            Merged on `${{ inputs.source_branch }}` (where the sources were uploaded from) and opened against `${{ inputs.base_branch }}`.
 
             Pipeline:
             1. Download approved translated XLIFF from Crowdin.
