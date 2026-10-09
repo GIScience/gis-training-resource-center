@@ -339,7 +339,6 @@ dependencies = [
     { name = "custom-launch-buttons" },
     { name = "ghp-import" },
     { name = "jupyter-book" },
-    { name = "myst-nb" },
     { name = "requests" },
     { name = "sphinx" },
 ]
@@ -350,7 +349,6 @@ requires-dist = [
     { name = "custom-launch-buttons" },
     { name = "ghp-import" },
     { name = "jupyter-book", specifier = "==1.0.4.post1" },
-    { name = "myst-nb", specifier = "==1.2.0" },
     { name = "requests" },
     { name = "sphinx", specifier = "<8" },
 ]
