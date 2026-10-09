@@ -4,7 +4,7 @@
 title: Centro de Recursos de Formación GIS
 author: HeiGIT gGmbH
 copyright: HeiGIT gGmbH
-logo: ../../IFRC_Logo_Horizontal_RGB.svg
+logo: ../../_static/IFRC_Logo_Horizontal_RGB.svg
 
 # Force re-execution of notebooks on each build.
 execute:
@@ -27,7 +27,7 @@ repository:
 
 # Add GitHub buttons to your book
 html:
-  favicon: ../../IFRC_Logo_favicon.png
+  favicon: ../../_static/IFRC_Logo_favicon.png
   use_issues_button: true
   use_repository_button: true
   extra_footer: |
