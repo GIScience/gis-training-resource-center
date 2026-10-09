@@ -25,7 +25,7 @@ El [sitio web Geofabrik](https://download.geofabrik.de/) ofrece descargas de dat
 7. Cargue el archivo `gis_osm_buildings_a_free_1.shp`. Esta capa de polígonos
    contiene todos los edificios de Mauricio mapeados en OSM. Tómese un tiempo
    para explorar la capa.
-8. Añada un mapa base por satélite utilizando el complemento [QuickMapServices](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_basemaps_wiki.html#mapas-base-del-complementoquickmapservices).
+8. Añada un mapa base por satélite utilizando el complemento [QuickMapServices](es_qgis_basemaps_wiki.md).
    para comprobar si hay edificios sin cartografiar.
 8. Cargue el archivo `gis_osm_landuse_a_free_1.shp`. Consulte el
     conjunto de datos y utilice la función de clasificación para obtener una mejor visión de conjunto.
@@ -50,7 +50,7 @@ Para encontrar los datos que busca, deberá formular una consulta de datos. Exis
    [Map features (Entidades del mapa)](https://wiki.openstreetmap.org/wiki/Map_features).
 2. [Taginfo](https://taginfo.openstreetmap.org/)
 
-Este método tiene la ventaja de que se pueden descargar los datos que se necesitan específicamente, pero debe saber formular las consultas. Para utilizar QuickOSM, debe [instalar el complemento de QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_plugins_wiki.html).
+Este método tiene la ventaja de que se pueden descargar los datos que se necesitan específicamente, pero debe saber formular las consultas. Para utilizar QuickOSM, debe [instalar el complemento de QGIS](es_qgis_plugins_wiki.md).
 
 ## Overpass turbo
 
@@ -68,7 +68,7 @@ Busque en la [wiki de OSM](https://wiki.openstreetmap.org/wiki/Tags) o en
 Utilice el asistente y escriba *amenity=school en Heidelberg* o redacte su
 propia consulta (por ejemplo, para su área de búsqueda): 
 **Asistente:**
-:::{figure} /fig/en_wizard_overpassturbo.png
+:::{figure} ../../../fig/en_wizard_overpassturbo.png
 ---
 height: 250px
 align: center
@@ -77,7 +77,7 @@ name: es_wizard_overpassturbo_wiki
 Captura de pantalla del asistente en overpass turbo.
 :::
 
-:::{figure} /fig/en_wizard_result.png
+:::{figure} ../../../fig/en_wizard_result.png
 ---
 height: 250px
 align: center
@@ -119,7 +119,7 @@ Los resultados se pueden exportar de varias formas.
 Exportando los datos como GeoJSON se pueden importar posteriormente en el proyecto
 QGIS.
 
-:::{figure} /fig/en_overpass_turbo_data.png
+:::{figure} ../../../fig/en_overpass_turbo_data.png
 ---
 height: 250px
 align: center
@@ -133,7 +133,7 @@ Captura de pantalla de cómo exportar datos en overpass turbo.
 ::::{tab-item} Mapa
 Al exportar la consulta como mapa, puede compartir su vista actual como enlace o imagen.
 
-:::{figure} /fig/en_overpass_turbo_map.png
+:::{figure} ../../../fig/en_overpass_turbo_map.png
 ---
 height: 150px
 name: es_overpass_turbo_map_wiki
@@ -147,7 +147,7 @@ Captura de pantalla de cómo exportar el mapa en overpass turbo.
 Al exportar su consulta puede obtener el texto o convertirlo en un archivo OverpassXML o
 consulta con formato OverpassQL.
 
-:::{figure} /fig/en_overpass_turbo_query.png
+:::{figure} ../../../fig/en_overpass_turbo_query.png
 ---
 height: 250px
 align: center

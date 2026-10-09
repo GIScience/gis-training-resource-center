@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -100,7 +101,7 @@ For more complex digitisation procedures, you will use the advanced digitisation
 | Tool                                                                                                        | Purpose                               | Tool                                                                                                                              | Purpose                  |
 |-------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|--------------------------|
 | ![](../../../fig/cad.png)                                                                                           | Enable Advanced Digitizing Tools      |                                                                                                                                   |                          |
-| ![](../../../fig/mActionMoveFeature-1.png)![](../../../fig/mActionMoveFeatureLine.png)![](../../../fig/mActionMoveFeaturePoint.png) | Move Feature(s)                       | ![Alt text](../../../fig/mActionMoveFeatureCopy.png) ![](../../../fig/mActionMoveFeatureCopyLine.png) ![](../../../fig/mActionMoveFeatureCopyPoint-2.png) | Copy and Move Feature(s) |
+| ![](../../../fig/mActionMoveFeature.png)![](../../../fig/mActionMoveFeatureLine.png)![](../../../fig/mActionMoveFeaturePoint.png) | Move Feature(s)                       | ![Alt text](../../../fig/mActionMoveFeatureCopy.png) ![](../../../fig/mActionMoveFeatureCopyLine.png) ![](../../../fig/mActionMoveFeatureCopyPoint.png) | Copy and Move Feature(s) |
 | ![Alt text](../../../fig/mActionRotateFeature.png)                                                                  | Rotate Feature(s)                     | ![Alt text](../../../fig/mActionSimplify.png)                                                                                             | Simplify Feature         |
 | ![Alt text](../../../fig/mActionScaleFeature.png)                                                                   | Scale Feature                         |                                                                                                                                   |
 | ![Alt text](../../../fig/mActionAddRing.png)                                                                        | Add Ring                              | ![Alt text](../../../fig/mActionAddPart.png)                                                                                              | Add Part                 |
@@ -317,7 +318,7 @@ Note that this is only possible __before__ you save the changes.
 
 1.	Select the layer you want to modify.
 2.	Go to the digitisation toolbar and click on![](../../../fig/mActionToggleEditing.png) `Toggle Editing`. 
-3.	Click on ![](../../../fig/mActionSelectRectangle.png) and select the feature you want to delete (see the [wiki](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_spatial_queries_wiki.html#manual-selection)).
+3.	Click on ![](../../../fig/mActionSelectRectangle.png) and select the feature you want to delete (see the [wiki](../Wiki/en_qgis_spatial_queries_wiki.md#manual-selection)).
 4.	Once you have selected the features, click on ![](../../../fig/mActionDeleteSelectedFeatures.png) to delete the feature.
 5.	Once you are done with editing, click on ![](../../../fig/mActionSaveEdits.png) to save your edits.
 6.	Click again on ![](../../../fig/mActionToggleEditing.png) to end the editing mode.

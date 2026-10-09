@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -23,25 +23,25 @@ Este capítulo presenta más operaciones intermedias del SIG que probablemente u
 
 *   - __Capítulo__
     - __Competencias y objetivos__
-*   - __[Capítulo 1: Procesamiento de datos espaciales](/content/es/Module_5/es_qgis_spatial_tools.md)__
+*   - __[Capítulo 1: Procesamiento de datos espaciales](es_qgis_spatial_tools.md)__
     - __Al terminar este capítulo, podrá:__
         - conocer las relaciones espaciales,
         - comprender el concepto de uniones espaciales,
         - comprender los operadores geométricos utilizados en QGIS.
-*   - __[Capítulo 2: Operaciones de superposición (Recorte, Disolución, Buffer)](/content/es/Module_5/es_qgis_overlay_operations.md)__
+*   - __[Capítulo 2: Operaciones de superposición (Recorte, Disolución, Buffer)](es_qgis_overlay_operations.md)__
     - __Al terminar este capítulo, podrá:__
         - comprender las operaciones de superposición en QGIS,
         - realizar operaciones de recorte, buffer y disolución,
         - comprender operaciones de recorte más avanzadas.
-*   - __[Capítulo 3: Centroides](/content/es/Module_5/es_qgis_centroids.md)__
+*   - __[Capítulo 3: Centroides](es_qgis_centroids.md)__
     - __Al terminar este capítulo, podrá:__
         - utilizar los centroides en QGIS.
-*   - __[Capítulo 4: Procesamiento no espacial](/content/es/Module_5/es_qgis_non_spatial_tools.md)__
+*   - __[Capítulo 4: Procesamiento no espacial](es_qgis_non_spatial_tools.md)__
     - __Al terminar este capítulo, podrá:__
         - utilizar las funciones de tabla,
         - realizar consultas de datos no espaciales,
         - realizar uniones no espaciales.
-*   -  __[Ejercicios para el módulo 5](/content/es/Module_5/es_qgis_module_5_exercises.md)__
+*   -  __[Ejercicios para el módulo 5](es_qgis_module_5_exercises.md)__
     - Aquí encontrará todos los ejercicios para el módulo 5.
 
 :::

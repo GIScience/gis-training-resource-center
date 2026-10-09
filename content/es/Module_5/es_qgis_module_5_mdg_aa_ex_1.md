@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -25,7 +25,7 @@ __Tipo de ejercicio de capacitación:__
 :::{grid-item-card}
 __Programa de ejercicios:__
 
-Este ejercicio forma parte del [Programa de ejercicios de análisis de acción anticipatoria ante ciclones en Madagascar](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Exercise_tracks/es_mdg_aa_cyclones.html)
+Este ejercicio forma parte del [Programa de ejercicios de análisis de acción anticipatoria ante ciclones en Madagascar](../Exercise_tracks/es_mdg_aa_cyclones.md)
 
 :::
 
@@ -43,12 +43,12 @@ __Duración estimada del ejercicio:__
 __Artículos relevantes en Wiki__
 ^^^
 
-* [Estadísticas zonales](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html)
-* [Intersección](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Proyecciones cartográficas](/content/es/Wiki/es_qgis_projections_wiki.md)
-* [Buffer](/content/es/Wiki/es_qgis_projections_wiki.md)
-* [Recorte](/content/es/Wiki/es_qgis_projections_wiki.md)
-* [Automatización](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_automatisation_wiki.html)
+* [Estadísticas zonales](../Wiki/es_qgis_raster_basic_wiki.md)
+* [Intersección](../../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Proyecciones cartográficas](../Wiki/es_qgis_projections_wiki.md)
+* [Buffer](../Wiki/es_qgis_projections_wiki.md)
+* [Recorte](../Wiki/es_qgis_projections_wiki.md)
+* [Automatización](../Wiki/es_qgis_automation_wiki.md)
 
 :::
 
@@ -74,7 +74,7 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 - Tómese su tiempo para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare una pizarra. Puede ser una pizarra blanca física, un rotafolio o una pizarra digital (por ejemplo, una pizarra Miro) donde los participantes puedan añadir sus conclusiones y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos hayan instalado QGIS y hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo realizar capacitaciones?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Trainers_corner/es_how_to_training.html#how-to-do-trainings) para obtener algunos consejos generales para impartirlas.
+- Consulte [¿Cómo realizar capacitaciones?](../Trainers_corner/es_how_to_training.md) para obtener algunos consejos generales para impartirlas.
 
 ### Impartir la capacitación
 
@@ -108,7 +108,7 @@ __Descargue todos los conjuntos de datos aquí, guarde la carpeta en su computad
 
 
 
-La carpeta contiene toda la [estructura de carpetas estándar](/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md#standard-folder-structure) con todos los datos en la carpeta de entrada y la documentación adicional en la carpeta de documentación.
+La carpeta contiene toda la [estructura de carpetas estándar](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) con todos los datos en la carpeta de entrada y la documentación adicional en la carpeta de documentación.
 
 | Conjunto de datos | Fuente | Descripciones |
 | ----- | --- | --- |
@@ -124,7 +124,7 @@ La carpeta contiene toda la [estructura de carpetas estándar](/content/es/Wiki/
 __Contexto__
 ^^^
 
-:::{figure} /fig/IFRC-icons-colour_SURGE.png
+:::{figure} ../../../fig/IFRC-icons-colour_SURGE.png
 ---
 width: 100px
 align: right
@@ -141,7 +141,7 @@ Este año, Aina quiere adelantarse a los acontecimientos. En lugar de analizar m
 
 ::::
 
-:::{figure} /fig/Module_7/en_ex_m7_cylone_automatisation.drawio.png
+:::{figure} ../../../fig/Module_7/en_ex_m7_cylone_automatisation.drawio.png
 ---
 name: Task_1_workflow
 width: 750 px
@@ -158,11 +158,11 @@ Deberá crear manualmente un buffer de la trayectoria del ciclón, recortar el r
 
 
 
-1. **Abra QGIS** y cree un [nuevo proyecto](/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Projecto` -> `Nuevo`
+1. **Abra QGIS** y cree un [nuevo proyecto](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Projecto` -> `Nuevo`
 
 2. **Guarde el proyecto** en la carpeta “Project”. Para ello, haga clic en `Projecto` -> `Guardar como...` y vaya a la carpeta. Asigne el nombre “Cyclon_Harald_Exposure” al proyecto.
 
-3. **Cargue el archivo GeoJOSN** "example_Harald_2025_Track.geojson" en su proyecto por medio de arrastrar y soltar ([Video Wiki](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop)). Abra la carpeta `data` -> `input`
+3. **Cargue el archivo GeoJOSN** "example_Harald_2025_Track.geojson" en su proyecto por medio de arrastrar y soltar ([Video Wiki](../../en/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Abra la carpeta `data` -> `input`
 
 
 4. **Reproyecte la trayectoria del ciclón** para utilizar metros en lugar de grados (importante para la precisión del buffer):
@@ -170,7 +170,7 @@ Deberá crear manualmente un buffer de la trayectoria del ciclón, recortar el r
    - Entrada: `example_Harald_2025_Track`
    - SRC objetivo: `EPSG:29738` u otro SRC basado en metros adecuado para Madagascar.
    - Guarde el resultado en la carpeta `temp`/`interim` como: **`Harald_Track_Reproyectado`**
-:::{figure} /fig/fr_MDG_AA_reproject_cyclon_track.PNG
+:::{figure} ../../../fig/fr_MDG_AA_reproject_cyclon_track.PNG
 ---
 width: 600px
 align: center
@@ -188,7 +188,7 @@ Las distancias de buffer deben calcularse en metros. Muchos conjuntos de datos (
    - Segmentos: Deje el valor predeterminado (5)
    - Disolver resultado: `Si`
    - Guarde la salida en la carpeta `temp` como: **`Harald_Buffer_200km`**
-:::{figure} /fig/fr_MDG_AA_cyclon_track_buffer.PNG
+:::{figure} ../../../fig/fr_MDG_AA_cyclon_track_buffer.PNG
 ---
 width: 600px
 align: center
@@ -197,7 +197,7 @@ Aplicar un buffer a la trayectoria del ciclón
 :::
 
 ::::{dropdown} Resultado intermedio: Buffer
-:::{figure} /fig/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG
+:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_cyclon_track_buffer.PNG
 ---
 width: 600px
 align: center
@@ -210,7 +210,7 @@ Los resultados intermedios deben mostrar la trayectoria del ciclón y la zona de
    - Entrada: Harald_Buffer_200km_29738
    - SRC objetivo: EPSG:4326 – WGS 84
    - Guarde el resultado en la carpeta temporal como: Harald_Buffer_200km_4326
-:::{figure} /fig/fr_MDG_AA_reproject_cyclon_buffer.PNG
+:::{figure} ../../../fig/fr_MDG_AA_reproject_cyclon_buffer.PNG
 ---
 width: 600px
 align: center
@@ -229,7 +229,7 @@ Reproyectar el buffer del ciclón
    - Ráster de entrada: `MDG_WorldPop_2020_constrained`
    - Capa de máscara: `Harald_Buffer_200km`
    - Guarde la salida en la carpeta `temp` como: **`Harald_Pob_Cortado`**
-:::{figure} /fig/fr_MDG_AA_clip_pop_raster.PNG
+:::{figure} ../../../fig/fr_MDG_AA_clip_pop_raster.PNG
 ---
 width: 600px
 align: center
@@ -237,7 +237,7 @@ align: center
 Recortar el ráster de población con el buffer del ciclón
 :::
 ::::{dropdown} Resultado intermedio: Recorte de Capa ráster de población
-:::{figure} /fig/fr_MDG_AA_intermediate_result_clip_pop_raster.PNG
+:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_clip_pop_raster.PNG
 ---
 width: 600px
 align: center
@@ -254,7 +254,7 @@ Resultados intermedios
    - Prefijo de campo: p. ej., `población_expuesta_`
    - Guarde la capa vectorial actualizada en la carpeta `/results/` como: **`Harald_Exposed_Populationg`**
    - El resultado será una nueva columna en la tabla de atributos de la capa `mdg_admbnda_adm2_BNGRC_OCHA_201810312.gpkg`, que muestra la población total dentro del buffer del ciclón por distrito.
-:::{figure} /fig/fr_MDG_AA_pop_zonal_statistic.PNG
+:::{figure} ../../../fig/fr_MDG_AA_pop_zonal_statistic.PNG
 ---
 width: 600px
 align: center
@@ -278,7 +278,7 @@ Para ello, aplicaremos una **clasificación graduada** a la capa `Harald_Exposed
 Puede ajustar los límites o etiquetas de las clases haciendo doble clic en cada entrada de clase.
 :::
 
-:::{figure} /fig/fr_MDG_AA_pop_graduadt_classification_exposed_population.PNG
+:::{figure} ../../../fig/fr_MDG_AA_pop_graduadt_classification_exposed_population.PNG
 ---
 width: 600px
 align: center
@@ -290,7 +290,7 @@ Clasificar la población expuesta en cinco clases.
 
 Sus resultados deberían tener un aspecto similar a este:
 
-:::{figure} /fig/fr_MDG_AA_intermediate_result_visualisation_exposed_population.PNG
+:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_visualisation_exposed_population.PNG
 ---
 width: 600px
 name: the_world_result

@@ -10,7 +10,7 @@ __QGIS Project__
 ^^^
 The QGIS project and the datasets used in this project can be found here: 
 __[MDG_DROUGHT_EAP.qgz]()__
-
+%% MISSING LINK???
 Note: Copyrighted datasets (CHIRPS and IPC) must be downloaded from the respective publishers or Google Earth Engine. 
 
 :::
@@ -38,7 +38,7 @@ __Output:__
 
 __Questions:__
 
-- CHIRPS monthly or seasonal data: How to define seasons? -> look at rain seasons in mdg or simply DJF, MAM
+- CHIRPS monthly or seasonal data: How to define seasons? → look at rain seasons in mdg or simply DJF, MAM
 - Should I explain my choice for `Daily_RNL` instead of `Daily_SAT`?
 - Is the question: *How widespread are rainfall deficits in the districts?* OR *How widespread are rainfall deficits where livelihoods depend on rainfall?*
 - I calculate the meterological mean per month over the last 25 years. and calculated the anomalies per month. I then put a threshold of 30% deficit to indicate severe deficit and calculated how many months are above that threshold (= recurrence of deficit).
@@ -59,7 +59,7 @@ __Questions:__
 6. Count how often each pixel is in deficit (frequency or count) = recurrence value
 7. Aggregate to admin level:
     - __Options:__
-        - A: Mean pixel recurrence (can also be normalised by dividing with the total number of months -> %)
+        - A: Mean pixel recurrence (can also be normalised by dividing with the total number of months → %)
         - B: Percent of area affected (need to define a threshhold of recurring deficit months, e.g., more than 30 deficit month in time period)
             - "65% of district had more than 30 deficit months".
 
@@ -108,9 +108,9 @@ __Percentage of area above threshold:__
     - ___Data-distribution:__
       - tertiles
     - __Absolute exposure:__
-      - e.g., less than 10 % -> localised/patchy
-      - 10-30% -> substantial exposure
-      - more than 30% -> widespread exposure
+      - e.g., less than 10 % → localised/patchy
+      - 10-30% → substantial exposure
+      - more than 30% → widespread exposure
     - __sensitivity-informed__
       - examine how % area affected behaves for different thresholds 
 :::

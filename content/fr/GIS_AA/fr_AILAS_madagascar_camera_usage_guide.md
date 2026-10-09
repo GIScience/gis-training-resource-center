@@ -18,7 +18,7 @@ Avant le départ, assurez-vous de disposer des éléments suivants :
 ::::{grid} 3
 :::{grid-item}
 
-```{figure} /fig/AILAS_GoPro_front.jpeg
+```{figure} ../../../fig/AILAS_GoPro_front.jpeg
 ---
 name: 
 width: 250 px
@@ -30,7 +30,7 @@ GoPro caméra
 
 :::{grid-item}
 
-```{figure} /fig/AILAS_mount.jpeg
+```{figure} ../../../fig/AILAS_mount.jpeg
 ---
 name: 
 width: 250 px
@@ -42,7 +42,7 @@ Fixation ventouse
 
 :::{grid-item}
 
-```{figure} /fig/AILAS_clip_attachment.jpeg
+```{figure} ../../../fig/AILAS_clip_attachment.jpeg
 ---
 name: 
 width: 250 px
@@ -54,7 +54,7 @@ Fixation clip
 
 :::{grid-item}
 
-```{figure} /fig/AILAS_powerbank.jpeg
+```{figure} ../../../fig/AILAS_powerbank.jpeg
 ---
 name: 
 width: 250 px
@@ -82,7 +82,7 @@ Batterie externe (Powerbank)
 ::::{grid} 2
 :::{grid-item}
 
-```{figure} /fig/AILAS_centre_position.jpeg
+```{figure} ../../../fig/AILAS_centre_position.jpeg
 ---
 name: camera centre position
 width: 375 px
@@ -94,7 +94,7 @@ Position centrale derrière le rétroviseur
 
 :::{grid-item}
 
-```{figure} /fig/AILAS_side_position.jpeg
+```{figure} ../../../fig/AILAS_side_position.jpeg
 ---
 name: camera side position
 width: 375 px
@@ -124,7 +124,7 @@ Pour éviter que la caméra ne soit inclinée sur un côté, assurez-vous que le
 ::::{grid} 2
 :::{grid-item}
 
-```{figure} /fig/AILAS_press_button.png
+```{figure} ../../../fig/AILAS_press_button.png
 ---
 name: 
 width: 400 px
@@ -136,7 +136,7 @@ Press button for suction
 
 :::{grid-item}
 
-```{figure} /fig/AILAS_lever_down.png
+```{figure} ../../../fig/AILAS_lever_down.png
 ---
 name: 
 width: 400 px
@@ -148,7 +148,7 @@ Abaissez le levier pour fixer la fixation
 
 :::{grid-item}
 
-```{figure} /fig/AILAS_camera_alignment.jpeg
+```{figure} ../../../fig/AILAS_camera_alignment.jpeg
 ---
 name: 
 width: 400 px
@@ -197,7 +197,7 @@ Si la caméra est déjà configurée en mode « AILAS », vous n’avez pas beso
 
 <!-- Image QR-code -->
 
-```{figure} /fig/AILAS_QR_code.png
+```{figure} ../../../fig/AILAS_QR_code.png
 ---
 name: QR Code
 width: 375px
@@ -211,7 +211,7 @@ Scannez ce QR code
 
 :::{grid-item}
 
-```{figure} /fig/AILAS_button_overview.png
+```{figure} ../../../fig/AILAS_button_overview.png
 ---
 name: 
 width: 375px
@@ -222,7 +222,7 @@ Button overview
 
 :::{grid-item}
 
-```{figure} /fig/AILAS_AILAS_mode.png
+```{figure} ../../../fig/AILAS_AILAS_mode.png
 ---
 name: 
 width: 375px
@@ -312,7 +312,7 @@ Contactez immédiatement le support technique si :
 ### Dépannage : Menu à l’envers <a id="depannage-menu-a-lenvers"></a>
 Si le menu s’affiche à l’envers sur l’écran de la caméra comme dans l’image ci-dessous, les images seront également enregistrées avec une mauvaise orientation.
 
-```{figure} /fig/AILAS_upside_down.jpg
+```{figure} ../../../fig/AILAS_upside_down.jpg
 ---
 name: 
 width: 400px
@@ -329,7 +329,7 @@ Procédez comme suit pour corriger le problème avant de commencer à enregistre
 ::::{grid} 2
 :::{grid-item}
 
-```{figure} /fig/AILAS_orientation_locked.jpg
+```{figure} ../../../fig/AILAS_orientation_locked.jpg
 
 ---
 name: orientation locked
@@ -340,7 +340,7 @@ Mauvais réglage : le verrouillage de l’orientation est activé.
 :::
 
 :::{grid-item}
-```{figure} /fig/AILAS_orientation_unlocked.jpg
+```{figure} ../../../fig/AILAS_orientation_unlocked.jpg
 ---
 name: orientation unlocked
 width: 375 px

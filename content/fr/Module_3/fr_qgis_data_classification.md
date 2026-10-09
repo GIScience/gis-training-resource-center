@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/fr/fr_intro.html 
+:link: ../fr_intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -12,7 +12,7 @@ La classification des données spatiales dans un SIG consiste à catégoriser l�
 
 Les attributs des données géographiques sont stockés dans une colonne spécifique de la table attributaire. En pratique, nous choisissons une colonne contenant les caractéristiques qui nous intéressent, ce qui permet à QGIS de regrouper les données à partir de ces attributs sélectionnés ({numref}`classification_basic`). 
 
-:::{figure} /fig/classification_basic.drawio.png
+:::{figure} ../../../fig/classification_basic.drawio.png
 ---
 width: 900px
 name: classification_basic
@@ -36,7 +36,7 @@ Le terme « échelles » utilisé ici ne fait pas référence au niveau de zoom 
 - L’__échelle nominale__ (données catégorielles) est la forme de mesure la plus simple, dans laquelle les entités sont regroupées en catégories distinctes sur la base d’attributs qualitatifs. Ces catégories n’ont pas d’ordre ni de hiérarchie intrinsèques. Elles n’ont pas de signification numérique : les valeurs ou les libellés sont simplement des noms ou des identifiants (dans certains cas, les classes d’occupation du sol peuvent être identifiées par des nombres).
     - Exemples : classes d’occupation du sol, types de végétation, types de sols, type d’équipement (hôpital, église, école, etc.)
 
-    :::{figure} /fig/nominal_scale_examples.png
+    :::{figure} ../../../fig/nominal_scale_examples.png
     ---
     name: nominal_scale_example
     width: 600 px
@@ -47,7 +47,7 @@ Le terme « échelles » utilisé ici ne fait pas référence au niveau de zoom 
 - L’__échelle ordinale__ (données classées) consiste également à catégoriser les données, mais ici les catégories possèdent un ordre ou un rang significatif. En revanche, les intervalles entre les rangs ne sont pas nécessairement égaux ni connus. L’ordre de classement est important : les entités peuvent être classées du plus faible au plus élevé, mais l’écart réel entre les rangs n’est pas mesuré. Il est possible de comparer et de classer les données (par exemple, déterminer quelle entité est classée plus haut ou plus bas).
     - Exemples : aptitude des terres, hiérarchie du réseau routier, classes de taille de population, classes de vulnérabilité (par ex. pour des unités administratives)
 
-    :::{figure} /fig/ordinal_scale_example.png
+    :::{figure} ../../../fig/ordinal_scale_example.png
     ---
     name: ordinal_scale_example
     width: 600 px
@@ -60,7 +60,7 @@ Le terme « échelles » utilisé ici ne fait pas référence au niveau de zoom 
     - Échelle de rapport : données numériques pour lesquelles les différences et les rapports sont significatifs, avec un véritable zéro absolu (par ex. distance, surface).
     - Exemples : données d’altitude, distance, surface, données de population.
 
-    :::{figure} /fig/interval_ratio_scale_example.png
+    :::{figure} ../../../fig/interval_ratio_scale_example.png
     ---
     name: interval_scale_example
     width: 600 px
@@ -94,7 +94,7 @@ __Pour ajuster le style d’une couche...__
 9. Cliquez sur `OK` pour fermer la fenêtre.
 
 
-:::{figure} /fig/Single_symbol_classify.png
+:::{figure} ../../../fig/Single_symbol_classify.png
 ---
 width: 900px
 name: Single_symbol_classify
@@ -112,7 +112,7 @@ La classification catégorisée dans QGIS regroupe les données spatiales en cat
 Cette classification organise les entités en catégories à partir de valeurs spécifiques de la table attributaire.
 En attribuant un symbole à chaque catégorie, vous facilitez l’interprétation de l’information géospatiale sur votre carte et obtenez ainsi une lecture plus claire.
 
-:::{figure} /fig/fr_simple_classification_example_map.png
+:::{figure} ../../../fig/fr_simple_classification_example_map.png
 ---
 name: fr_simple_classification_example_map
 width: 750px
@@ -130,7 +130,7 @@ La classification catégorisée est généralement utilisée pour des données d
 | Échelle nominale | Catégories sans ordre ni hiérarchie intrinsèques | Types d’occupation du sol, districts, zones de moyens d’existence | Texte ("Désert") ou entier (5) |
 | Échelle ordinale | Catégories avec un ordre ou un rang significatif | Rang (par ex. faible, moyen)                  | Texte ("élevé") ou entier (5)   |
 
-:::{figure} /fig/Categorized_district_map_SierraLeone.png
+:::{figure} ../../../fig/Categorized_district_map_SierraLeone.png
 ---
 width: 750 px
 name: Categorized_district_map_SierraLeone
@@ -164,7 +164,7 @@ La classification graduée dans un SIG consiste à répartir les données spatia
 
 ::::{card}
 
-:::{figure} /fig/example_classification_hexagons.png
+:::{figure} ../../../fig/example_classification_hexagons.png
 ---
 name: example_classification_hexagons
 width: 750 px
@@ -195,7 +195,7 @@ Prenons l’exemple ci-dessous. Vous voyez un histogramme de la population des d
 2. Il n’y a que quelques districts avec une très faible population.
 3. Il semble qu’il existe trois grands groupes de districts.
 
-:::{figure} /fig/Histogramm_example.drawio.svg
+:::{figure} ../../../fig/Histogramm_example.drawio.svg
 ---
 width: 900px 
 align: center
@@ -209,7 +209,7 @@ Cependant, si nous voulons montrer sur une carte quels districts ont une populat
 Il existe __sept__ façons dans QGIS de répartir des données quantitatives en classes. Les quatre plus importantes sont : __Intervalles égaux__, __Quantiles__, __Seuils naturels__, __Manuel__. Regardons à quoi ressembleraient les classes de population des districts si nous répartissions les données en trois classes en utilisant ces méthodes.
 
 
-:::{figure} /fig/classification_method_map.drawio.svg
+:::{figure} ../../../fig/classification_method_map.drawio.svg
 ---
 width: 900px
 align: center
@@ -270,7 +270,7 @@ __Pour classer les données en classes...__
 7. Cliquez sur `Classify`. Vous devriez maintenant voir toutes les classes et la distribution des valeurs. Pour ajouter ou supprimer des classes, utilisez les boutons `-` et `+`. 
 8. *Optionnel* : cliquez sur `Histogram` → `Load Values`. Vous pouvez alors visualiser la distribution exacte des valeurs dans les différentes classes. Cela est très pratique pour choisir une méthode de classification. Vous pouvez également consulter la moyenne et l’écart-type.
 
-:::{figure} /fig/Graduated_histogram.png
+:::{figure} ../../../fig/Graduated_histogram.png
 ---
 width: 900px
 name: Graduated_histogram
@@ -286,7 +286,7 @@ Classification graduée. Source : [Axis Maps](https://www.axismaps.com/guide/dat
 13. Cliquez sur `Apply` pour appliquer vos modifications.
 14. Cliquez sur `OK` pour fermer la fenêtre.
 
-:::{figure} /fig/classification_graduated_basic.png
+:::{figure} ../../../fig/classification_graduated_basic.png
 ---
 width: 900px
 name: classification_graduated_basic

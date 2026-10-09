@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/fr/fr_intro.html 
+:link: ../fr_intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -23,7 +23,7 @@ Pour trouver les données adaptées à votre besoin, vous pouvez consulter des p
 *Licence des données :* Quel type de licence s’applique aux données ? Comment pouvez-vous les utiliser, les partager, et comment devez-vous citer la source ? Veillez à consulter la licence et à respecter les règles applicables afin d’éviter toute difficulté.
 
 
-:::{figure} /fig/en_data_sources_examples_cartong.png
+:::{figure} ../../../fig/en_data_sources_examples_cartong.png
 ---
 name: en_data_sources_examples_cartong
 width: 600 px
@@ -101,11 +101,11 @@ Les données utilisées pour créer des cartes ou réaliser des analyses SIG peu
 
 OpenStreetMap (OSM) est un projet collaboratif visant à créer une carte du monde libre et modifiable. Contrairement aux cartes traditionnelles, souvent propriétaires et contrôlées par des acteurs commerciaux, OSM permet à chacun de contribuer aux données cartographiques et de les modifier, ce qui produit une carte détaillée et en constante évolution des routes, sentiers, repères et autres objets. Grâce à sa nature open source et à sa communauté mondiale de contributeurs, OpenStreetMap est devenu une ressource précieuse pour de nombreux usages, allant de la navigation et de l’aménagement du territoire à la réponse aux catastrophes et à l’aide humanitaire.
 
-Il existe plusieurs façons d’intégrer des données OpenStreetMap (OSM) dans QGIS sous forme de données vectorielles. Les trois méthodes les plus courantes et les plus faciles à utiliser sont geofabrik.de, HOT Export Tool et l’[extension QGIS](https://giscience.github.io/gis-training-resource-center/content/fr/Wiki/fr_qgis_plugins_wiki.html) QuickOSM. Chacune de ces options présente des avantages et des inconvénients.
+Il existe plusieurs façons d’intégrer des données OpenStreetMap (OSM) dans QGIS sous forme de données vectorielles. Les trois méthodes les plus courantes et les plus faciles à utiliser sont geofabrik.de, HOT Export Tool et l’[extension QGIS](../../en/Wiki/en_qgis_plugins_wiki.md) QuickOSM. Chacune de ces options présente des avantages et des inconvénients.
 
 :::{Tip}
 
-Si vous souhaitez vous entraîner à exporter des données OSM, vous pouvez faire l’__[Exercice 4 : Exporter des données OSM](https://giscience.github.io/gis-training-resource-center/content/fr/Module_2/fr_qgis_data_sources_ex4.html)__
+Si vous souhaitez vous entraîner à exporter des données OSM, vous pouvez faire l’__[Exercice 4 : Exporter des données OSM](fr_qgis_data_sources_ex4.md)__
 
 :::
 
@@ -141,7 +141,7 @@ __Extension QuickOSM__
 
 :::{tip}
 
-Il est possible par défaut d’ajouter le fond de carte OSM à votre projet. Cliquez sur `Layer` → `Add Layer` → `Add XYZ Layer…`. Choisissez `OpenStreetMap` puis cliquez sur `Add` ([Vidéo Wiki](https://giscience.github.io/gis-training-resource-center/content/fr/Wiki/fr_qgis_basemaps_wiki.html#standard-qgis-basemaps)). 
+Il est possible par défaut d’ajouter le fond de carte OSM à votre projet. Cliquez sur `Layer` → `Add Layer` → `Add XYZ Layer…`. Choisissez `OpenStreetMap` puis cliquez sur `Add` ([Vidéo Wiki](../../en/Wiki/en_qgis_basemaps_wiki.md#standard-qgis-basemaps)). 
 
 :::
 
@@ -167,7 +167,7 @@ Suivez les étapes suivantes pour récupérer des données :
 
 1. Sélectionnez une Key et une Value dans la liste déroulante. En cas de doute, reportez-vous à l’illustration ci-dessous :
 
-:::{figure} /fig/key_value_quickosm.png
+:::{figure} ../../../fig/key_value_quickosm.png
 ---
 width: 800px
 align: center
@@ -181,7 +181,7 @@ Choix d’une clé et d’une valeur dans QuickOSM.
 3. Dépliez l’onglet `Advanced`. Sélectionnez uniquement les types de données attendus afin de limiter les erreurs.
    <!-- CLARIFY: would be useful to have an example here --> 
 
-:::{figure} /fig/quickosm_usage.png
+:::{figure} ../../../fig/quickosm_usage.png
 ---
 width: 800px
 name: quickosm_usage
@@ -194,7 +194,7 @@ Utilisation de l’extension QuickOSM.
 
 :::{dropdown} Comment récupérer des données avec plusieurs requêtes
 
-Si vous souhaitez obtenir davantage de données dans une même zone, vous pouvez ajouter une requête en cliquant sur ![](/fig/plus_quickosm.png). Veillez à choisir le bon opérateur logique, `AND` ou `OR`. En cas de doute, consultez la page [requêtes non spatiales](/content/fr/Wiki/fr_qgis_non_spatial_queries_wiki) du wiki.
+Si vous souhaitez obtenir davantage de données dans une même zone, vous pouvez ajouter une requête en cliquant sur ![](../../../fig/plus_quickosm.png). Veillez à choisir le bon opérateur logique, `AND` ou `OR`. En cas de doute, consultez la page [requêtes non spatiales](../../en/Wiki/en_qgis_non_spatial_queries_wiki.md) du wiki.
 Vous trouverez également un exemple dans l’[exercice OSM](https://giscience.github.io/gis-training-resource-center/content/fr/module_2/fr_qgis_data_sources_ex2.html#task-quickosm) du module 2.
 
 :::
@@ -209,7 +209,7 @@ Avec le [Humanitarian OpenStreetMap Team (HOT) Export Tool](https://export.hotos
    Si vous n’en avez pas, vous devrez en créer un : cliquez sur `Log in`, puis dans la nouvelle fenêtre choisissez l’option permettant de créer un nouveau compte.
 2. Après vous être connecté·e, cliquez sur le bouton `Start Exporting` sur la page d’accueil pour ouvrir l’outil d’export.
 
-:::{figure} /fig/hot_export.png
+:::{figure} ../../../fig/hot_export.png
 ---
 height: 400px
 align: center
@@ -230,7 +230,7 @@ Le HOT Export Tool.
       Cliquez sur `Import`.
 8. Cliquez ensuite sur `Next`. Le résultat ressemblera à ceci :
 
-:::{figure} /fig/hot_export_example.png
+:::{figure} ../../../fig/hot_export_example.png
 ---
 height: 400px
 align: center
@@ -241,7 +241,7 @@ Exemple d’utilisation du HOT Export Tool.
 
 9. Cliquez sur `Create Export`. Le traitement durera alors quelques minutes et ressemblera à ceci :
 
-:::{figure} /fig/hot_export_running.png
+:::{figure} ../../../fig/hot_export_running.png
 ---
 height: 400px
 align: center
@@ -252,7 +252,7 @@ Le HOT Export Tool en cours d’exécution.
 
 10. Une fois le traitement terminé, le statut passera à `COMPLETED` et vous pourrez télécharger votre fichier en cliquant sur le lien :
 
-:::{figure} /fig/hot_export_done.png
+:::{figure} ../../../fig/hot_export_done.png
 ---
 height: 400px
 align: center

@@ -1,7 +1,7 @@
 <script data-goatcounter="https://gtrc.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 
-:::{figure} ../../../fig/HeiGIT_Logo_base.svg
+:::{figure} ../../fig/HeiGIT_Logo_base.svg
 ---
 height: 75
 align: center
@@ -28,7 +28,8 @@ The content is designed primarily for **GIS trainers**, but also supports practi
 ::::{grid} 2
 
 :::{card} Start teaching
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/Trainers_corner/en_TOT_intro.html
+:link: Trainers_corner/en_TOT_intro
+:link-type: doc
 This platform is primarily designed to support **GIS trainers** in the IFRC Network.
 
 You can:
@@ -40,7 +41,8 @@ All trainer-specific guidance is collected in the **Trainer’s Corner**, which 
 :::
 
 :::{card} Start learning
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/Module_1/en_module_1_overview.html
+:link: Module_1/en_module_1_overview
+:link-type: doc
 
 This is **not a self-learning platform**.
 
@@ -179,7 +181,7 @@ Join trainers, practitioners, and GIS experts across the IFRC Network to strengt
 
 Happy Mapping!
 
-:::{figure} ../../../fig/Training_Somalia.JPG
+:::{figure} ../../fig/Training_Somalia.JPG
 ---
 width: 800px
 ---

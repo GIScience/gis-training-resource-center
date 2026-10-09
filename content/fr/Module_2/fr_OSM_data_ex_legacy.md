@@ -2,7 +2,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/fr/fr_intro.html 
+:link: ../fr_intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -49,11 +49,11 @@ __Durée estimée de l’exercice__
 __Articles wiki pertinents__
 ^^^
 
-* [Interface QGIS](/content/fr/Wiki/fr_qgis_interface_wiki.md)
-* [Types de données géographiques](/content/fr/Wiki/fr_qgis_geodata_types_wiki.md)
-* [Import de données géographiques dans QGIS](/content/fr/Wiki/fr_qgis_import_geodata_wiki.md)
-* [Concept de couche](/content/fr/Wiki/fr_qgis_layer_concept_wiki.md)
-* [Classification des données géographiques - Graduée](/content/fr/Wiki/fr_qgis_graduated_wiki.md)
+* [Interface QGIS](../../en/Wiki/en_qgis_interface_wiki.md)
+* [Types de données géographiques](../../en/Wiki/en_qgis_geodata_types_wiki.md)
+* [Import de données géographiques dans QGIS](../../en/Wiki/en_qgis_import_geodata_wiki.md)
+* [Concept de couche](../../en/Wiki/en_qgis_layer_concept_wiki.md)
+* [Classification des données géographiques - Graduée](../../en/Wiki/en_qgis_graduated_wiki.md)
 
 :::
 
@@ -68,7 +68,7 @@ __Articles wiki pertinents__
 - Prenez le temps de vous familiariser avec l’exercice et le matériel fourni.
 - Préparez un tableau blanc. Il peut s’agir d’un tableau blanc physique, d’un paperboard ou d’un tableau blanc numérique (par ex. un tableau Miro) sur lequel les participant·e·s peuvent ajouter leurs remarques et leurs questions.
 - Avant de commencer l’exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé __et décompressé__ le dossier de données.
-- Consultez [Comment animer des formations ?](/content/fr/Trainers_corner/fr_how_to_training.md) pour quelques conseils généraux sur la conduite de formations.
+- Consultez [Comment animer des formations ?](../../en/Trainers_corner/en_how_to_training.md) pour quelques conseils généraux sur la conduite de formations.
 
 ### Animer la formation <a id="conduct-the-training"></a>
 
@@ -130,7 +130,7 @@ Le site Geofabrik propose des téléchargements de données OSM par région.
 7. Chargez le fichier `gis_osm_buildings_a_free_1.shp`. Cette couche polygonale
    contient tous les bâtiments de l’île Maurice cartographiés dans OSM. Prenez le temps
    d’explorer cette couche.
-8. Ajoutez un fond de carte satellite à l’aide de l’[extension QuickMapServices](https://giscience.github.io/gis-training-resource-center/content/fr/Wiki/fr_qgis_basemaps_wiki.html#basemaps-from-quickmapservices-plugin)
+8. Ajoutez un fond de carte satellite à l’aide de l’[extension QuickMapServices](../../en/Wiki/en_qgis_basemaps_wiki.md#basemaps-from-quickmapservices-plugin)
    afin de vérifier s’il existe des bâtiments non cartographiés.
 8. Chargez le fichier `gis_osm_landuse_a_free_1.shp`. Examinez ce
     jeu de données et utilisez la fonction de classification pour obtenir une meilleure vue d’ensemble.
@@ -183,7 +183,7 @@ la zone, la période, le type d’objet et le format des données.
        d’attente pendant que l’export est généré. Une fois le traitement terminé,
        la page affichera un lien de téléchargement pour votre fichier.
 
-```{figure} /fig/en_Hot_Export.png
+```{figure} ../../../fig/en_Hot_Export.png
 ---
 width: 800px
 align: center
@@ -252,7 +252,7 @@ Prenez le temps de consulter les deux.
    7. Sous le tableau, réglez le petit menu déroulant sur “Canvas Extent”
    8. Cliquez sur `Run query`.
 
-   ```{figure} /fig/en_quick_OSM_hospital_key.png
+   ```{figure} ../../../fig/en_quick_OSM_hospital_key.png
    ---
    width: 800px
    align: center
@@ -273,7 +273,7 @@ Prenez le temps de consulter les deux.
    devons construire une requête en combinant les opérateurs "OR" et "AND".
    Regardez l’image ci-dessous.
 
-   ```{figure} /fig/en_quick_OSM_hospital_emgerency_key.png
+   ```{figure} ../../../fig/en_quick_OSM_hospital_emgerency_key.png
    ---
    width: 800px
    align: center
@@ -290,7 +290,7 @@ Prenez le temps de consulter les deux.
 
 ::::{dropdown}  Solution accommodation query
 
-```{figure} /fig/en_quick_OSM_accomedation_key.png
+```{figure} ../../../fig/en_quick_OSM_accomedation_key.png
 ---
 width: 800px
 align: center

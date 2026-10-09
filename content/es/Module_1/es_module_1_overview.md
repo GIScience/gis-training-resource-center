@@ -2,7 +2,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -17,23 +17,23 @@ El primer módulo tiene como objetivo familiarizar a los principiantes con el co
 
 *   - __Capítulo__
     - __Competencias y objetivos__
-*   - __[Capítulo 1: ¿Qué es un SIG?](/content/es/Module_1/es_qgis_theory.md)__
+*   - __[Capítulo 1: ¿Qué es un SIG?](es_qgis_theory.md)__
     - __Al terminar este capítulo, podrá:__
         - Comprender el concepto de sistemas de información geográfica (SIG)
         - Comprender el uso de los SIG
         - Saber qué significa análisis espacial y cartografía
         - Conocer los diferentes tipos de mapas utilizados en el trabajo humanitario
         - Tener conocimientos básicos de datos geoespaciales
-*   - __[Capítulo 2: Preparación para la capacitación](/content/es/Module_1/es_qgis_installation.md)__
+*   - __[Capítulo 2: Preparación para la capacitación](es_qgis_installation.md)__
     - __Al terminar este capítulo, podrá:__
         - Crear una estructura de carpetas organizada para la capacitación
         - Saber cómo instalar QGIS
-*   - __[Capítulo 3: Primeros pasos con QGIS](/content/es/Module_1/es_qgis_start.md)__
+*   - __[Capítulo 3: Primeros pasos con QGIS](es_qgis_start.md)__
     - __Al terminar este capítulo, podrá:__
         - Saber lo que puede hacer con QGIS
         - Saber cómo crear, guardar y abrir proyectos en QGIS
         - Entender la interfaz de QGIS y sus componentes
-*   -  __[Ejercicios para el módulo 1](/content/es/Module_1/es_qgis_module_1_exercises.md)__
+*   -  __[Ejercicios para el módulo 1](es_qgis_module_1_exercises.md)__
     - Aquí encontrará una lista de ejercicios relacionados con el contenido del módulo 1.
 
 :::

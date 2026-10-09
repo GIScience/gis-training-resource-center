@@ -4,8 +4,17 @@
 
 __🔙[Back to Homepage](../intro.md)__
 
+QGIS lets you process and modify the datasets loaded into your project in various ways. In general, there are two types of processing: spatial and non-spatial. Spatial processing modifies the data based on their spatial relationship with features in other layers. Non-spatial processing modifies the data based on the values in their attribute table.
+
+:::{Admonition} Be careful when modifying the original datasets
+:class: Tip
+
+If you modify the Attribute table or the features in a dataset you imported into your QGIS project, the original dataset will be modified. To make sure to keep the original dataset as it is, make sure to create a copy before doing any changes.
+
+:::
 
 ## Buffer <a id="buffer"></a>
+
 - Calculate a ![](../../../fig/mAlgorithmBuffer.png) `buffer` with a defined distance.
 - Dissolve: if 2 or more buffer areas overlap, they can be combined.
 
@@ -23,6 +32,7 @@ If you're dealing with really large "megabuffers" or if you can only choose buff
 :::
 
 ## Clip <a id="clip"></a>
+
 - With the ![](../../../fig/mAlgorithmClip.png) `Clip` tool you can extract and retain the spatial extent of one vector layer based on the boundaries of another layer. 
 - `Input Layer`: refers to the specific __layer to be clipped__, for instance, a road network.
 - `Overlay Layer`: e.g. a polygon layer of the region (e.g. borders of Heidelberg).
@@ -33,13 +43,16 @@ If you're dealing with really large "megabuffers" or if you can only choose buff
 :::
 
 ## Dissolve <a id="dissolve"></a>
+
 - The ![](../../../fig/mAlgorithmDissolve.png) `dissolve` tool aggregates geometries with the same attribute values.
 - When 2 or more buffer areas overlap, they can be combined using dissolve.
 
-:::{dropdown} Example: Extract the rail network of Germany
+:::{dropdown} Example: Dissolving country boundaries
 :open:
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_dissolve_wiki.mp4"></video>
 :::
+
+%% A bit random examples. Update?
 
 :::{Attention}
 In QGIS, only the attributes selected for the dissolve operation will receive the accurate attribute, while the remaining attributes remain unaggregated; hence, in this example, the name is not accurately represented (e.g. the name for Western Europe might be mistakenly assigned as "Netherlands").
@@ -76,12 +89,12 @@ name: Intersect_concept_2
 
 With the ![](../../../fig/qgis_3.40_centroids.png) `Centroids`-tool, you can create a new layer with points at the centre of each polygon.  
 
-1. In the top bar, navigate to `Vector` → `Geometry Tools` → `Centroids`. Alternatively, search for `Centroids` in the [Processing Toolbox]. Open the tool by <kbd>Double-clicking</kbd> on it. 
+1. In the top bar, navigate to `Vector` → `Geometry Tools` → `Centroids`. Alternatively, search for `Centroids` in the `Processing Toolbox`. Open the tool by <kbd>Double-clicking</kbd> on it. 
 2. `Input layer`: select the polygon layer
 3. Click `Run`.
 4. The new layer will be added to your project. 
 
 
-:::{dropdown} Example: Create a centroid for each district in madagascar
+:::{dropdown} Example: Create a centroid for each district in Madagascar
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_3.40_centroids.mp4"></video>
 :::

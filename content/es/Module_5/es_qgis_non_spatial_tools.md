@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -16,7 +16,7 @@ El procesamiento de datos no espaciales en QGIS se refiere a la manipulación de
 - QGIS ofrece diversas herramientas de procesamiento no espacial para ayudar a los usuarios a gestionar y analizar eficazmente los datos de atributos.
 - Esto puede incluir la limpieza, transformación, enriquecimiento y análisis de datos basados en la información de atributos asociada, como estadísticas de población, clasificaciones de uso del suelo o indicadores económicos.
 
-:::{figure} /fig/en_attribute_table_large.PNG
+:::{figure} ../../../fig/en_attribute_table_large.PNG
 ---
 height: 500px
 name: es_attribute_table_large
@@ -29,7 +29,7 @@ Captura de pantalla de una tabla de atributos para la versión 3.28.4 de QGIS.
 - Se pueden hacer muchos análisis con una sola capa. Pero, a veces, la información necesaria para nuestro análisis está __dividida entre__ diferentes conjuntos de datos/capas de datos.
 - Con QGIS, estas capas pueden __combinarse__ para realizar el análisis que deseemos. La forma más sencilla de combinar capas es mediante una __unión de atributos__. Esta operación busca información de una segunda fuente de datos basándose en un __valor de atributo compartido__. Este valor funciona como identificador único común, también conocido como ID, UID o clave (véase {numref}`es_simple_attr_join_example`).
 
-:::{figure} /fig/simple_attr_join_example.png
+:::{figure} ../../../fig/simple_attr_join_example.png
 ---
 name: es_simple_attr_join_example
 width: 500 px
@@ -46,7 +46,7 @@ Los códigos P son códigos de identificación de unidades administrativas (por 
 
 Por ejemplo: Tenemos un conjunto de datos espaciales que contiene los límites administrativos de los distritos (adm2) de Nigeria y una tabla de datos que contiene la población por distrito, pero sin los polígonos. Utilizando los códigos P como atributos de identificación, podemos unir fácilmente los datos de población con el conjunto de datos vectoriales.*
 
-:::{figure} /fig/en_attribute_join_pcode_example.png
+:::{figure} ../../../fig/en_attribute_join_pcode_example.png
 ---
 name: es_attribute_join_pcode_example
 width: 550 px
@@ -70,7 +70,7 @@ En este breve ejercicio guiado, añadiremos los datos de población a la capa de
 1. Descargue las capas necesarias [aquí](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/non_spatial_join/non_spatial_join.zip), descomprímalas y añádalas a su proyecto QGIS.
 
 :::{tip}
-La capa de población debe [añadirse como una capa de texto delimitada](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_geodata_concept.html#delimited-text-import-csv-txt) (`Capa` → `Añadir capa` → `Añadir capa de texto delimitado`) sin geometría.
+La capa de población debe [añadirse como una capa de texto delimitada](../../en/Module_2/en_qgis_geodata_concept.md#delimited-text-import-csv-txt) (`Capa` → `Añadir capa` → `Añadir capa de texto delimitado`) sin geometría.
 :::
 
 2. Abra la herramienta `Unir atributos por valor de campo` de la caja de herramientas de Procesos.
@@ -78,7 +78,7 @@ La capa de población debe [añadirse como una capa de texto delimitada](https:/
 4. Como capa de entrada 2, seleccione la capa `nga_adm1pop_2022`, configure "campo de tabla 2" a `ADM1_PCODE`. Además, en `campos de la tabla 2 a copiar`, seleccione `F_TL`, `M_TL` y `T_TL`.
 5. Haga clic en `Ejecutar`. Aparecerá una nueva capa en su panel de capas denominada "Capa unida".
 
-:::{figure} /fig/en_3.36_pcode_join.png
+:::{figure} ../../../fig/en_3.36_pcode_join.png
 ---
 name: es_3.36_pcode_join
 width: 450 px
@@ -91,7 +91,7 @@ Configurar los parámetros de la unión en Pcode
 ¡Estupendo! Hemos añadido correctamente los datos de población a nuestra capa de límites administrativos. Ahora, podemos visualizar la distribución de la población o seguir analizando nuestros datos.
 
 
-:::{figure} /fig/nga_pop_join.png
+:::{figure} ../../../fig/nga_pop_join.png
 ---
 name: es_nga_pop_join
 width: 600 px
@@ -104,7 +104,7 @@ Los datos unidos se clasifican utilizando la simbología graduada para el valor 
 
 Las funciones de la tabla suelen implicar solo una única capa de datos y manipulan la tabla de atributos. Puede añadir nuevos campos, eliminar campos no deseados o incluso calcular nuevos campos utilizando la __calculadora de campos__.
 
-Para obtener una descripción general detallada de la funcionalidad de la tabla de atributos y su propósito, le invitamos a explorar el artículo de [Wiki](/content/es/Wiki/es_qgis_attribute_table_wiki.md) sobre el tema.
+Para obtener una descripción general detallada de la funcionalidad de la tabla de atributos y su propósito, le invitamos a explorar el artículo de [Wiki](../Wiki/es_qgis_attribute_table_wiki.md) sobre el tema.
 
 ### Añadir campo
 Se puede acceder a la información contenida en una capa vectorial a través de su __tabla de atributos__, y se puede mejorar __introduciendo nuevos campos__ en esta tabla. Estos campos adicionales pueden derivarse de cálculos, como se ejemplifica en el siguiente caso, en el que la densidad de población se calcula para proporcionar una visión más profunda de las distribuciones espaciales de la población.
@@ -147,7 +147,7 @@ Un ejemplo podría ser calcular la densidad de población a partir de los campos
 
 Una herramienta muy importante para estos cálculos es la __calculadora de campo__. Le permite __realizar cálculos basados en valores de atributos existentes o funciones definidas__, por ejemplo, para calcular la longitud o el área de una entidad geométrica o, en el ejemplo dado, podría utilizarse para calcular la densidad de población basándose en los campos ya existentes Población y Área. Los resultados de estos cálculos pueden escribirse en un campo nuevo o actualizar un campo existente.
 
-:::{figure} /fig/en_field_calculator_red_boxes.png
+:::{figure} ../../../fig/en_field_calculator_red_boxes.png
 ---
 width: 100%
 name: es_field_calculator_red_boxes
@@ -277,7 +277,7 @@ Puede acceder fácilmente a los comandos esenciales de SQL consultando esta prá
 
 El Generador de consultas proporciona una interfaz que permite definir un __subconjunto de las entidades__ en la capa utilizando comandos de tipo SQL y mostrar los resultados en la ventana principal. Mientras la consulta esté activa, solo estarán disponibles en el proyecto las entidades __correspondientes__ a su resultado. Puede utilizar uno o varios atributos de capa para definir el filtro en el generador de consultas. El generador de consultas está estructurado de la siguiente manera:
 
-:::{figure} /fig/en_query_builder_comment.png
+:::{figure} ../../../fig/en_query_builder_comment.png
 ---
 width: 100%
 name: es_query_builder_comment

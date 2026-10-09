@@ -1,6 +1,6 @@
 # Evaluaciones en la Capacitación SIG: Una Guía
 
-__🔙[Volver a la página principal](/content/intro.md)__
+__🔙[Volver a la página principal](../es_intro.md)__
 
 Este artículo explica la encuesta de evaluación disponible en esta plataforma, que puede usarse para medir el éxito de una capacitación básica en SIG. La evaluación está orientada a medir la motivación por aprender SIG y la autoevaluación de las habilidades de los participantes en SIG. Se mantiene breve y centrada en lo esencial, pero puede ser ampliada por los facilitadores si lo consideran necesario.
 

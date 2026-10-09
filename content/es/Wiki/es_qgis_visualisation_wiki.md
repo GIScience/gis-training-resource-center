@@ -1,7 +1,7 @@
 # Visualización
 
 
-__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
 ## Visualización de datos vectoriales
 
@@ -60,7 +60,7 @@ Para cambiar la simbología de una sola capa:
 3. Haga clic en la flecha situada a la derecha de `Color de relleno`.
 4. Marque la opción `Relleno transparente`.
 
-:::{figure} /fig/en_30.30.2_vector_layer_styling_transparent.png
+:::{figure} ../../../fig/en_30.30.2_vector_layer_styling_transparent.png
 ---
 name: es_30.30.2_vector_layer_styling_transparent_wiki
 width: 500 px
@@ -75,7 +75,7 @@ width: 500 px
 
 En este ejercicio, aplicaremos el mismo estilo a todas las entidades de una capa, pero cambiaremos varias capas y las superpondremos para que cada una sea visible con un estilo diferente. Tenemos los polígonos para tres niveles administrativos.
 
-:::{figure} /fig/en_30.30.2_changing_layer_style_1.png
+:::{figure} ../../../fig/en_30.30.2_changing_layer_style_1.png
 ---
 name: es_30.30.2_changing_layer_style_1_wiki
 height: 400 px
@@ -88,7 +88,7 @@ Ordene las capas y vaya al panel de estilo de la capa superior.
 3. Cambie la simbología de la capa Adm0 abriendo el panel de estilos y yendo hasta la pestaña Symbology.
 
 
-:::{figure} /fig/en_30.30.2_changing_layer_style_2.png
+:::{figure} ../../../fig/en_30.30.2_changing_layer_style_2.png
 ---
 name: es_30.30.2_changing_layer_style_2_wiki
 width: 350 px
@@ -111,7 +111,7 @@ Cambiar el tipo de relleno.
 12. Utilice el mismo color de trazo` que para Adm0 y Adm1, pero haga que el ancho sea de 0,1 milímetros y el estilo de trazo __Línea de guiones__
 13. Haga clic en `Aceptar` y mire el mapa: ¡Parecería tener un mejor aspecto!
 
-:::{figure} /fig/en_30.30.2_changing_layer_style_3.png
+:::{figure} ../../../fig/en_30.30.2_changing_layer_style_3.png
 ---
 name: es_30.30.2_changing_layer_style_3_wiki
 ---
@@ -137,7 +137,7 @@ Podemos utilizar la simbología para __mostrar la diferencia entre las entidades
 La simbología categorizada se utiliza cuando se dispone de ***variables*** discretas.
 :::
 
-:::{figure} /fig/en_30.30.2_categorized_layer_symbology_1.png
+:::{figure} ../../../fig/en_30.30.2_categorized_layer_symbology_1.png
 ---
 name: es_30.30.2_categorized_layer_symbology_1_wiki
 width: 500 px
@@ -152,7 +152,7 @@ Cambie el tipo de simbología a “categorizada” y elija el valor (variable) q
 8. Haga clic en `Aceptar`, luego en `Aplicar` para previsualizar el aspecto que tendrá la capa.
 9. Haga clic en `Aceptar` de nuevo.
 
-:::{figure} /fig/en_30.30.2_categorized_layer_symbology_2.png
+:::{figure} ../../../fig/en_30.30.2_categorized_layer_symbology_2.png
 ---
 name: es_30.30.2_categorized_layer_symbology_2_wiki
 width: 500 px
@@ -162,7 +162,7 @@ Haciendo doble clic en los __unique values__ de la lista clasificada, puede camb
 
 Ahora tenemos un mapa de Nigeria en el que se pueden localizar las zonas más afectadas por las explosiones. En el mapa de abajo, también hemos añadido etiquetas de texto, que se explicarán más adelante.
 
-:::{figure} /fig/en_exercise_map_design_example_Nigeria.png
+:::{figure} ../../../fig/en_exercise_map_design_example_Nigeria.png
 ---
 name: es_exercise_map_design_example_Nigeria_wiki
 width: 500px
@@ -186,7 +186,7 @@ Si una capa contiene valores numéricos que son continuos, pueden organizarse en
 4. Abra sus opciones de `Simbología` y elija `Graduado`.
 5. __Seleccione el valor que desea utilizar para asignar colores__, en este caso, será `Population`.
 
-:::{figure} /fig/en_30.30.2_symbology_variable_ranges.png
+:::{figure} ../../../fig/en_30.30.2_symbology_variable_ranges.png
 ---
 name: es_30.30.2_symbology_variable_ranges_wiki
 width: 550px
@@ -200,7 +200,7 @@ Con rangos variables, seleccione __Graduated__ symbology elija el atributo con v
 9. Haga clic en __la flecha junto a la rampa de color__ para elegir otra combinación de colores - digamos una rampa de color de blanco a azul.
 10. Haga clic en `Aplicar` para previsualizar el aspecto de su capa y, a continuación `Aceptar`.
 
-:::{figure} /fig/en_30.30.2_symbology_variable_ranges_2.png
+:::{figure} ../../../fig/en_30.30.2_symbology_variable_ranges_2.png
 ---
 name: es_30.30.2_symbology_variable_ranges_2_wiki
 width: 500 px
@@ -210,7 +210,7 @@ Puede clasificar los valores continuos en clases y asignarles una rampa de color
 
 El siguiente mapa muestra los estados más poblados de Nigeria mediante una categorización graduada por colores. Este tipo de mapas se denominan __mapas coropléticos__.
 
-:::{figure} /fig/en_map_design_example_variable_ranges.png
+:::{figure} ../../../fig/en_map_design_example_variable_ranges.png
 ---
 name: es_map_design_example_variable_ranges_wiki
 width: 500px
@@ -260,7 +260,7 @@ Por defecto, QGIS genera las etiquetas de manera que no se superpongan con otras
 5. __Añadamos un buffer blanco__ alrededor de la etiqueta. En la pestaña `Etiquetas`, encontrará una lista con diferentes opciones para diseñar las etiquetas. Ahora, estamos en el menú `Texto (cadena)`. Seleccione `Buffer` y marque `Dibujar buffer de texto` la opción. Esto hará que las etiquetas se destaquen más en mapas oscuros o con mucha información.
 7. Haga clic en `Aplicar` y `Aceptar`.
 
-:::{figure} /fig/en_30.30.2_setting_up_labels.png
+:::{figure} ../../../fig/en_30.30.2_setting_up_labels.png
 ---
 width: 500 px
 name: es_30.30.2_setting_up_labels_wiki
@@ -282,7 +282,7 @@ A veces necesitará crear dos estilos de etiqueta diferentes para distintas enti
 3. Haga clic en el botón __Añadir regla__ de la parte inferior (el signo "+") y __cree la primera regla__
 4. Para __Value__, seleccione `"NAME"` (para que las etiquetas muestren el nombre de cada ciudad) y, a continuación, haga clic en `"ε"-button` junto a la barra __Filtro__.
 
-:::{figure} /fig/en_30.30.2_adding_rule-based_labels.png
+:::{figure} ../../../fig/en_30.30.2_adding_rule-based_labels.png
 ---
 width: 500 px
 name: es_30.30.2_adding_rule-based_labels_wiki
@@ -297,7 +297,7 @@ Para añadir etiquetas basadas en reglas, debe introducir una expresión.
 9. __Repita los pasos 4 a 9__, pero seleccione `Value 2` (Capitales del Estado) y elija una etiqueta negra, negrita, 10pt, sin buffer.
 10. Haga clic en `Aplicar`, el `Aceptar`.
 
-:::{figure} /fig/en_30.30.2_adding_rule-based_labels_expression_builder.png
+:::{figure} ../../../fig/en_30.30.2_adding_rule-based_labels_expression_builder.png
 ---
 width: 500 px
 name: es_30.30.2_adding_rule-based_labels_expression_builder_wiki
@@ -355,7 +355,7 @@ Para asignar un gradiente de color a los datos ráster, es necesario:
 4. Haga clic en __la flecha situada a la derecha de la rampa de color__. Aquí puedes elegir una rampa de color preestablecida
 5. Puede modificar la rampa de color presionando __en la rampa de color__.
 
-:::{figure} /fig/en_30.30.2_raster_data_colour_gradient.png
+:::{figure} ../../../fig/en_30.30.2_raster_data_colour_gradient.png
 ---
 name: es_raster data colour gradient
 width: 600px

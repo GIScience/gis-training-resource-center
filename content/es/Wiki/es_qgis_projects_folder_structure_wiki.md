@@ -1,6 +1,6 @@
 # Proyectos y estructura de carpetas
 
-__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
 Este artículo de la Wiki trata sobre las mejores prácticas para la creación y gestión de datos geoespaciales y proyectos QGIS.
 
@@ -30,7 +30,7 @@ No utilice espacios ` ` en el nombre; utilice siempre guiones bajos `_`.
 
 
 
-4. Compruebe el código del sistema de referencia de coordenadas (SRC)/EPSG del proyecto con el SRC/EPSG que desea utilizar. Para más información, consulte el artículo de la Wiki sobre [Proyección cartográfica](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projections_wiki.html#cómo-verificar-el-código-epsgsrc-de-una-capadatos).
+4. Compruebe el código del sistema de referencia de coordenadas (SRC)/EPSG del proyecto con el SRC/EPSG que desea utilizar. Para más información, consulte el artículo de la Wiki sobre [Proyección cartográfica](es_qgis_projections_wiki.md).
 
 ### Verifique y cambie el SRC/EPSG.
 
@@ -58,7 +58,7 @@ La estructura de carpetas estándar tiene dos ventajas principales:
 La plantilla de estructura de carpetas puede descargarse [__aquí__](https://github.com/GIScience/gis-training-resource-center/blob/main/fig/GIS_Project_folder_template.zip).
 
 
-:::{figure} /fig/Standard_project_folder_structure.drawio.svg
+:::{figure} ../../../fig/Standard_project_folder_structure.drawio.svg
 ---
 width: 800px
 align: center

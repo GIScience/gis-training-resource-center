@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -11,7 +11,7 @@
 - Las operaciones de superposición nos permiten combinar las geometrías de dos capas de diferentes maneras (véase {numref}`es_overlay_operations`).
 - La diferencia con las uniones espaciales es que las __geometrías se transforman en el proceso__, y no principalmente los atributos.
 
-:::{figure} /fig/overlay_operations.png
+:::{figure} ../../../fig/overlay_operations.png
 ---
 name: es_overlay_operations
 width: 500 px
@@ -23,7 +23,7 @@ Las operaciones de superposición incluyen __recorte, zona de influencia y disol
 
 ### Recorte
 
-- La herramienta ![](/fig/mAlgorithmClip.png) `Cortar` se utiliza para cortar una capa vectorial utilizando los límites de otra capa de polígonos. En otras palabras, extrae una parte de un conjunto de datos en función de los límites de otro.
+- La herramienta ![](../../../fig/mAlgorithmClip.png) `Cortar` se utiliza para cortar una capa vectorial utilizando los límites de otra capa de polígonos. En otras palabras, extrae una parte de un conjunto de datos en función de los límites de otro.
 - Mantiene solo las partes de las entidades de la capa de entrada que están dentro de los polígonos de la capa de superposición, lo que produce un conjunto de datos refinado.
 - Aunque los atributos principales de las entidades siguen siendo los mismos, algunas propiedades, como el área o la longitud, pueden cambiar después de la operación de recorte. Si ha almacenado estas propiedades como atributos, es posible que deba actualizarlas manualmente.
 
@@ -39,7 +39,7 @@ La herramienta tiene dos diferentes opciones de entrada:
 * __Capa de entrada__: Capa de la que se recorta la selección
 * __Capa de superposición__: Área de interés a la que se recortará la capa de entrada
 
-:::{figure} /fig/en_clip_sudan.PNG
+:::{figure} ../../../fig/en_clip_sudan.PNG
 ---
 width: 550 px
 name: es_clip_sudan
@@ -68,7 +68,7 @@ como una nueva capa: __Road_infrastructure_Sudan.geojson__.
 
 ### Disolución
 
-La herramienta ![](/fig/mAlgorithmDissolve.png) `Disolver` crea una nueva capa y fusiona entidades superpuestas de una o dos capas vectoriales. Puede elegir uno o varios atributos para agrupar entidades que compartan el mismo valor para esos atributos. Alternativamente, puede combinar todas las entidades en una. Si está trabajando con polígonos, eliminará los límites compartidos entre ellos.
+La herramienta ![](../../../fig/mAlgorithmDissolve.png) `Disolver` crea una nueva capa y fusiona entidades superpuestas de una o dos capas vectoriales. Puede elegir uno o varios atributos para agrupar entidades que compartan el mismo valor para esos atributos. Alternativamente, puede combinar todas las entidades en una. Si está trabajando con polígonos, eliminará los límites compartidos entre ellos.
 
 Si activa la opción "Mantener objetos disjuntos separados" al ejecutar la herramienta, se asegurará de que las entidades o partes que no se superponen ni se tocan entre sí se guarden como entidades independientes en lugar de formar parte de una entidad grande. Esto le permite crear varias capas vectoriales.
 
@@ -78,7 +78,7 @@ __Ejemplo en el ámbito humanitario:__
 *Dos conjuntos de datos muestran la extensión de la inundación de dos eventos de inundación diferentes en el último año. Ambas capas se superponen pero muestran diferencias. Disolver puede crear polígonos que muestren el área inundada en el último año.*
 :::
 
-:::{figure} /fig/en_buffer_dissolve.png
+:::{figure} ../../../fig/en_buffer_dissolve.png
 ---
 width: 550 px
 name: es_buffer_dissolve
@@ -104,7 +104,7 @@ Para analizar el acceso a fuentes de agua limpia, un escenario considera qué ta
 
 :::
 
-:::{figure} /fig/en_buffer_point_line_polygon.png
+:::{figure} ../../../fig/en_buffer_point_line_polygon.png
 ---
 width: 550 px
 name: es_buffering_options
@@ -116,7 +116,7 @@ Existen diferentes variantes de zona de influencia. La __distancia de zona de in
 
 ::::{Attention}
 
-:::{figure} /fig/en_dist_in_degrees_error_msg.png
+:::{figure} ../../../fig/en_dist_in_degrees_error_msg.png
 ---
 width: 450 px
 name: es_dist_degree_error_message
@@ -128,7 +128,7 @@ Si...
 - Sus capas no aparecen
 - Las capas se ven extrañas, p. ej., aplastadas
 - Se muestra el mensaje de error "uso de grados" al utilizar distancias (como se muestra en {numref}`es_dist_degree_error_message`)
-… podría ser un problema de [proyección](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_projections.html).
+… podría ser un problema de [proyección](../Module_2/es_qgis_projections.md).
 
 Para resolverlo, intente...
 
@@ -137,7 +137,7 @@ Para resolverlo, intente...
 
 Por ejemplo, si está intentando crear una zona de influencia en una capa con un sistema de coordenadas geográficas, QGIS le advertirá y le sugerirá que vuelva a proyectar la capa a un __sistema de coordenadas métricas__. Esto se debe a que cuando se utiliza un sistema de coordenadas métricas, el algoritmo utilizará grados para calcular la distancia del tamaño de la zona de influencia. Sin embargo, la distancia entre grados no es uniforme y depende de la latitud (véase {numref}`es_distance_longitudes`)
 
-:::{figure} /fig/en_dist_longitudes.png
+:::{figure} ../../../fig/en_dist_longitudes.png
 ---
 name: es_distance_longitudes
 width: 450 px
@@ -180,7 +180,7 @@ También se descargan y se adaptan de los [datos de Natural Earth](https://www.n
 
 Además de la operación estándar __Recorte__ de QGIS, hay otras dos herramientas más avanzadas para realizar procesos de recorte. Estas herramientas son operaciones GDAL, que permiten la definición de la extensión de recorte. Esta extensión puede ser un área específica o una capa de máscara. La segunda opción es bastante similar al proceso de recorte estándar proporcionado por QGIS.
 
-:::{figure} /fig/en_gdal_clipping_tools.PNG
+:::{figure} ../../../fig/en_gdal_clipping_tools.PNG
 ---
 width: 250 px
 name: es_gdal_clipping_tools
@@ -200,7 +200,7 @@ Esta operación recorta cualquier archivo vectorial en una extensión determinad
 * Dibujar en el lienzo: hacer clic y arrastrar un rectángulo que delimite el área a tener en cuenta.
 * Introducir las coordenadas como xmin, xmax, ymin ymax.
 
-:::{figure} /fig/en_clip_vector_by_extent.PNG
+:::{figure} ../../../fig/en_clip_vector_by_extent.PNG
 ---
 width: 450 px
 name: es_clip_vector_by_extent
@@ -215,7 +215,7 @@ Esta operación utiliza una capa de polígonos de máscara para recortar cualqui
 1. La capa de entrada
 2. La capa de máscara que se utiliza como extensión de recorte para la capa vectorial de entrada
 
-:::{figure} /fig/en_clip_vector_by_mask_layer.PNG
+:::{figure} ../../../fig/en_clip_vector_by_mask_layer.PNG
 ---
 width: 450 px
 name: es_clip_vector_by_mask_layer

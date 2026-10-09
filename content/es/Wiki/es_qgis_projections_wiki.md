@@ -1,6 +1,6 @@
 # Proyecciones cartográficas
 
-__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
 ## Cómo verificar el código EPSG
 
@@ -17,7 +17,7 @@ Verificar y modificar el código SRC o el código EPSG es lo primero que se debe
 
 1. Abrir un proyecto QGIS.
 2. En la esquina inferior derecha de QGIS encontrará el botón `EPSG`. El número que aparece junto a él es el código EPSG utilizado actualmente en el proyecto. Para obtener más información, haga clic en el botón.
-![](/fig/EPSG_Code.png)
+![](../../../fig/EPSG_Code.png)
 3. Se abrirá la ventana `Propriedades del proyecto`. Aquí puede ver todos los códigos SRC/EPSG disponibles y sus propiedades.
 4. Para cambiar el código SRC/EPSG, seleccione el que desee utilizar y haga clic en `Aplicar`.
 

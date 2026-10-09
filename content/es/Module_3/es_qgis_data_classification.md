@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -12,7 +12,7 @@ La clasificación de datos geoespaciales en los SIG consiste en categorizar la i
 
 Los atributos de los datos geoespaciales se almacenan en una columna específica dentro de la tabla de atributos. Esencialmente, elegimos una columna que contenga las características específicas de interés, lo que permite a QGIS agrupar los datos según estos atributos seleccionados ({numref}`es_classification_basic`).
 
-:::{figure} /fig/classification_basic.drawio.png
+:::{figure} ../../../fig/classification_basic.drawio.png
 ---
 width: 900px
 name: es_classification_basic
@@ -36,7 +36,7 @@ En la clasificación de datos geoespaciales, se utilizan las escalas __nominal__
 - La __escala nominal__ (datos categóricos) es la forma más sencilla de medición en la que las entidades se agrupan en categorías distintas basadas en atributos cualitativos. Estas categorías no tienen ningún orden ni clasificación inherentes. No tienen ningún significado numérico: los valores o etiquetas son solo nombres o identificadores (en algunos casos, las clases de cubierta terrestre pueden identificarse con números).
     - Ejemplos: Clases de cubiertas terrestres, tipos de vegetación, tipos de suelo, tipo de equipamiento (hospital, iglesia, escuela, etc.).
 
-    :::{figure} /fig/nominal_scale_examples.png
+    :::{figure} ../../../fig/nominal_scale_examples.png
     ---
     name: es_nominal_scale_example
     width: 600 px
@@ -47,7 +47,7 @@ En la clasificación de datos geoespaciales, se utilizan las escalas __nominal__
 - La __escala ordinal__ (datos clasificados) implica categorizar los datos, pero, en este caso, las categorías tienen un orden o rango significativo. Sin embargo, los intervalos entre los rangos no son necesariamente iguales ni conocidos. El orden de clasificación es importante: las entidades pueden clasificarse u ordenarse de menor a mayor, pero la diferencia real entre las clasificaciones no se mide. Es posible comparar y clasificar los datos (es decir, qué entidad está clasificada en un nivel superior o inferior).
     - Ejemplos: Adecuación del terreno, red vial jerárquica, clases de tamaño de la población, clases de vulnerabilidad (p. ej., para unidades administrativas).
 
-    :::{figure} /fig/ordinal_scale_example.png
+    :::{figure} ../../../fig/ordinal_scale_example.png
     ---
     name: es_ordinal_scale_example
     width: 600 px
@@ -60,7 +60,7 @@ En la clasificación de datos geoespaciales, se utilizan las escalas __nominal__
     - Escala de proporciones. Datos numéricos en los que tanto las diferencias como los coeficientes son significativos y existe un verdadero punto cero (p. ej., distancia, área).
     - Ejemplos: Datos de elevación, distancia, área y población.
 
-    :::{figure} /fig/interval_ratio_scale_example.png
+    :::{figure} ../../../fig/interval_ratio_scale_example.png
     ---
     name: es_interval_scale_example
     width: 600 px
@@ -94,7 +94,7 @@ __Para ajustar el estilo de una capa…__
 9. Haga clic en `Aceptar` para cerrar la ventana.
 
 
-:::{figure} /fig/Single_symbol_classify.png
+:::{figure} ../../../fig/Single_symbol_classify.png
 ---
 width: 900px
 name: es_Single_symbol_classify
@@ -112,7 +112,7 @@ La clasificación por categorías en QGIS agrupa los datos espaciales en categor
 Esta clasificación organiza las entidades en categorías basadas en valores específicos de la tabla de atributos.
 Al asignar un símbolo a cada categoría, puede facilitar la interpretación de la información geoespacial en el mapa para obtener una visión más clara.
 
-:::{figure} /fig/fr_simple_classification_example_map.png
+:::{figure} ../../../fig/fr_simple_classification_example_map.png
 ---
 name: es_simple_classification_example_map
 width: 750px
@@ -130,7 +130,7 @@ La clasificación por categorías suele utilizarse para los datos de escala __no
 | Escala nominal | Categorías sin orden ni clasificación inherentes | Tipos de cubiertas terrestres, distritos, zonas de subsistencia | Texto (“Desierto”) o número entero (5) |
 | Escala ordinal | Categorías con un orden o clasificación significativos | Rangos (p. ej., bajo, medio) | Texto (“alto”) o número entero (5) |
 
-:::{figure} /fig/Categorized_district_map_SierraLeone.png
+:::{figure} ../../../fig/Categorized_district_map_SierraLeone.png
 ---
 width: 750 px
 name: es_Categorized_district_map_SierraLeone
@@ -164,7 +164,7 @@ La clasificación graduada en los SIG consiste en categorizar los datos espacial
 
 ::::{card}
 
-:::{figure} /fig/example_classification_hexagons.png
+:::{figure} ../../../fig/example_classification_hexagons.png
 ---
 name: es_example_classification_hexagons
 width: 750 px
@@ -195,7 +195,7 @@ En el ejemplo que figura más abajo se ve un histograma de la población de dist
 2. Solo hay unos pocos distritos con muy poca población.
 3. Parece que hay tres grupos generales de distritos.
 
-:::{figure} /fig/Histogramm_example.drawio.svg
+:::{figure} ../../../fig/Histogramm_example.drawio.svg
 ---
 width: 900px
 align: center
@@ -209,7 +209,7 @@ Sin embargo, si queremos mostrar en un mapa qué distritos tienen más població
 Existen __siete__ maneras en QGIS de dividir datos cuantitativos en clases. Las cuatro más importantes son: __intervalos equitativo__, __cuantil__, __cortes naturales__ y __manual__. Veamos cómo quedarían las clases de la población de distrito si dividiéramos los datos en tres clases utilizando estos métodos.
 
 
-:::{figure} /fig/classification_method_map.drawio.svg
+:::{figure} ../../../fig/classification_method_map.drawio.svg
 ---
 width: 900px
 align: center
@@ -270,7 +270,7 @@ __Clasificar los datos en clases…__
 7. Haga clic en `Clasificar`. Ahora debería ver todas las clases y la distribución de los valores. Para añadir o eliminar clases utilice los botones `-` y `+`.
 8. *Opcional*: Haga clic en `Histograma` → `Cargar valores`. Ahora puede ver la distribución exacta de los valores entre las clases. Esto resulta muy práctico para elegir un método de clasificación. También puede comprobar el valor medio y la desviación estándar.
 
-:::{figure} /fig/Graduated_histogram.png
+:::{figure} ../../../fig/Graduated_histogram.png
 ---
 width: 900px
 name: es_Graduated_histogram
@@ -286,7 +286,7 @@ Clasificación graduada. Fuente: [Axis Maps](https://www.axismaps.com/guide/data
 13. Haga clic en `Aplicar` para aplicar el ajuste.
 14. Haga clic en `Aceptar` para cerrar la ventana.
 
-:::{figure} /fig/classification_graduated_basic.png
+:::{figure} ../../../fig/classification_graduated_basic.png
 ---
 width: 900px
 name: es_classification_graduated_basic

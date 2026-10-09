@@ -14,7 +14,7 @@ To analyse the data in QGIS is just one thing you can do with a HIA dataset. The
 
 ## Data sources <a id="data-sources"></a>
 Download the training data folder __[here](https://nexus.heigit.org/repository/gis-training-resource-center/GIS_AA/Sudan_HIA_Ex/GIS_AA_HIA_Sudan_ex1.zip)__ and save it on your PC. Unzip the .zip file!
-The folder is called __GIS_AA_HIA_Sudan_ex1__ and contains the whole [standard folder structure](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_projects_folder_structure_wiki.html#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
+The folder is called __GIS_AA_HIA_Sudan_ex1__ and contains the whole [standard folder structure](../Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
 
 # Tasks <a id="tasks"></a>
 
@@ -416,15 +416,15 @@ The actual impact information consists of two parts. One part is always the impa
 The other part is either the impact quantity or the impact quality. It can not be both! 
 The impact quantity describes simply how many of something. How many people have been affected? How many schools got damaged?
 
-The impact quality is used if something cannot be described with numbers but with "Yes" or "No". For example, there was a disease outbreak of cholear. Cholera is not a number. Yes there was cholera outbreak. Or a locality was affected -> Yes the locality was affected.
+The impact quality is used if something cannot be described with numbers but with "Yes" or "No". For example, there was a disease outbreak of cholear. Cholera is not a number. Yes there was cholera outbreak. Or a locality was affected → Yes the locality was affected.
 
 Hence we need three columns to describe impacts: impact_typ, impact_quality and impact_quantity.
 
-| impact_typ | impact_quality | impact_quantity |
-|------------|----------------|-----------------|
-| houses_damaged_totaly           |   2500             |                 |
-|      deaths      |              6    |               |
-|      disease_cholera      |               |         yes         |
+| impact_typ            | impact_quality | impact_quantity |
+|-----------------------|----------------|-----------------|
+| houses_damaged_totaly | 2500           |                 |
+| deaths                | 6              |                 |
+| disease_cholera       |                | yes             |
 
 It makes sense to list some of the basic impact types we are interested in or which are very commonly reported. Such as affected people or deaths. The list of impact types can be extended on the fly. It is however important to stay consistent.
 The HeiGIT team used 75 different impact types. You can find the whole list below.
@@ -760,9 +760,9 @@ To make sure our data is consistent, we need to clean it. Although this can be d
 
 ```{Tipp} OpenRefine
 OpenRefine is a free and open-source specialized data cleaning software.
-You download once the folder with the installation files. To start OpenRefine you need to double-click openrefine.exe. The software will run in your browser! -> [Installation Video](https://www.youtube.com/watch?v=nTlTboXoGj4)
+You download once the folder with the installation files. To start OpenRefine you need to double-click openrefine.exe. The software will run in your browser! → [Installation Video](https://www.youtube.com/watch?v=nTlTboXoGj4)
 
-OpenRefine Beginner Tutorials -> __[Video](https://www.youtube.com/watch?v=wfS1qTKFQoI)__
+OpenRefine Beginner Tutorials → __[Video](https://www.youtube.com/watch?v=wfS1qTKFQoI)__
 ```
 
 You can do this step task by cleaning the data you compiled in the previous steps or the data from the folder task_6.
@@ -776,7 +776,7 @@ If you want to use the data from the „task_6“ folder, your principal task is
 2. **Date Columns (Start_Date, End_Date, Date):**
    - Check if all dates are in the correct date format.
    - Ensure that there are no  inconsistent date values.
-   - *OpenRefine Step:* Use the "Edit cells" > "Common transforms" > "To date" option to convert date columns to a standard date format. Use the "Text facet" to identify and correct any inconsistencies in formatting or missing dates.
+   - *OpenRefine Step:* Use the "Edit cells" → "Common transforms" → "To date" option to convert date columns to a standard date format. Use the "Text facet" to identify and correct any inconsistencies in formatting or missing dates.
 
 3. **source_ID Column:**
    - Check that there is only one way of spelling for every individual source_ID! 
@@ -787,7 +787,7 @@ If you want to use the data from the „task_6“ folder, your principal task is
 4. **Admin Columns (admin_level, admin_1, admin_2, admin_3, admin_camp):**
    - Check if all administrative units are correctly categorized.
    - Ensure that there are no misspelled or inconsistent administrative unit names.
-   - *OpenRefine Step:* Use the "Text facet" to explore the distribution of values in each admin level column. Click on [`Cluster`](https://openrefine.org/docs/manual/cellediting#cluster-and-edit) and set `Method` to `Key collision` or `Nearest neighbor`. Consolidate the of states and loclities that they are consisten with the list in the [location chapter](https://giscience.github.io/gis-training-resource-center/english/content/en/GIS_AA/en_qgis_historical_impact_assessment_sudan.html#location).Adjust wrong names by checking `Merge` and adjust the `New cell value` and click on `Merge selected & re-cluster` 
+   - *OpenRefine Step:* Use the "Text facet" to explore the distribution of values in each admin level column. Click on [`Cluster`](https://openrefine.org/docs/manual/cellediting#cluster-and-edit) and set `Method` to `Key collision` or `Nearest neighbor`. Consolidate the of states and loclities that they are consisten with the list in the [location chapter](en_qgis_historical_impact_assessment_sudan.md#location).Adjust wrong names by checking `Merge` and adjust the `New cell value` and click on `Merge selected & re-cluster` 
 
 5. **Impact Type Column:**
    - Check if all impact types are correctly categorized and named.
@@ -820,15 +820,15 @@ Once you are done with data compiling and cleaning, it is recommended to join p-
 ```{dropdown} Join P-code columns in Excel
 
 1.	Create a new empty Excel file and name it „Suadn_impact_p_code“.
-2.	Open the new Excel file and click on the `Data` tab. Click on `Get Data` -> `From Workbook` -> select your cleaned impact data file.
-3.	The „Navigator“ Window will open. Select the relevant Excel sheet. Click on the drop-down menu `Load` -> Select `Load to`. The „Import Data“ Window will open. Here select `Only Create Connection`
+2.	Open the new Excel file and click on the `Data` tab. Click on `Get Data` → `From Workbook` → select your cleaned impact data file.
+3.	The „Navigator“ Window will open. Select the relevant Excel sheet. Click on the drop-down menu `Load` → Select `Load to`. The „Import Data“ Window will open. Here select `Only Create Connection`
 4.	Repeat steps 2 and 3 for the file „sdn_adminboundaries_tabulardata.xlsx“. Select the sheet „ADM1“
 5.	Once you loaded both files you should see the „Queries & Connection “panel on the right-hand side of your Excel. The panel should show the impact sheet and the ADM1 sheet
-6.	Now, click on the `Data` tab -> `Get Data` -> `Combine Queries` -> `Merge`. The window „Merge“ should open.
+6.	Now, click on the `Data` tab → `Get Data` → `Combine Queries` → `Merge`. The window „Merge“ should open.
 7.	In the „Merge“ window, select the „admin_1“ column for the impact dataset and the „ADM1_EN“ and „ADM1_PCODE“ for the ADM1 table.
 8.	Under „Join Kind“ select `Left Outer (all from first, matching from secound)`. This will take all rows from the impact dataset and the matching data from the ADM1 table. 
 The information below should show a green check and „The selection has matched [the number of your rows] out of the first [Number of your rows] rows. If not, some of your state names are not consistent with the ones in the ADM1 file. You would need to do more data cleaning. Click `Ok`
-9.	The new window „Merge 1 – Power Query Edito“ will open. Click on the ![](/conetnt../../../fig/excel_extend.png) icon next to ADM1. Select only the columns you want to keep. We recommend to only keep „ADM1_EN“ and „ADM1_PCODE“. 
+9.	The new window „Merge 1 – Power Query Edito“ will open. Click on the ![](../../../fig/excel_extend.png) icon next to ADM1. Select only the columns you want to keep. We recommend to only keep „ADM1_EN“ and „ADM1_PCODE“. 
     1. Uncheck „Use original column names as prefix“
     2. Click `OK`.
 10.	The table preview should now show your whole impact table with the columns keep „ADM1_EN“ and „ADM1_PCODE“ on the right.
@@ -842,14 +842,14 @@ The Result should be the Excel file „Suadn_impact_p_code“. The file should c
 __Impact Quantity for one year on state level:__
 
 1. Open the Excel dataset.
-2. Turn the data in a table by clicking on `Insert` -> `Table`-> check `My table has headers`
+2. Turn the data in a table by clicking on `Insert` → `Table` → check `My table has headers`
 3. Also under the `Insert`-Tab click on `Pivot Table`. Make sure your table range is correct. Check `New Worksheet`. Click `OK`.
 4. Setup the pivot table by placing the columns as follows:
   - Filter: Start_year
   - Columns: Impact_Type
   - Rows: admin_1 or admin_1_PCODE (If you want to use this table in QGIS, you should use admin_1_PCODE Instead of admin_1)
   - Values: Impact_quantity
-5. To see the sum of the different impacts click on Impact_quantity under Values -> `Value Field Settings` -> select `Sum`.
+5. To see the sum of the different impacts click on Impact_quantity under Values → `Value Field Settings` → select `Sum`.
 6. Directly above the pivot table, you should see the option to filter by year. Select the year you are interested in. For the following example the year 2020 was used.
 
 Now you can just copy the whole table, and place it in a new worksheet. Make sure to only paste the values. Save this output as a CSV-file, this will make the import of the subset into QGIS easier. Now we can use this table to join it with an existing geodataset in QGIS. 
@@ -887,7 +887,7 @@ __Visualise impact quantity data for one year on state level in QGIS:__
     1. Here you can input your CSV-file and depending on the `File Format` you need to define Costum delimiters or you can just select CSV. In thix case go with semicolon `;`. Always check the Sample Data output at the bottom to see if the import is working as expected.
     2. `Record and Fields Options`: Specify that your first record is a header.
     3. `Geometry Definition`: Select `No geometry`.
-    4. Click `Add`
+    4. Click `Add`.
 
 __Outcome:__  You should now have your "Sudan_admin1_Flood_Impact_quantity_2020" file as table in QGIS.
 
@@ -920,8 +920,8 @@ name: HIA_join
 Join the table information onto the geodata
 ```
 
-3. Now we can start creating maps or spatial analysis with our impact data. Let's create a map that shows destroyed houses in 2020. Since absolute destroyed houses are natural numbers, we use the option `Graduated` ([Wiki Video](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_graduated_wiki.html)).
-    1. Right-click on the layer “Sudan_admin1_impact_quantity” in the `Layer Panel` -> `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
+3. Now we can start creating maps or spatial analysis with our impact data. Let's create a map that shows destroyed houses in 2020. Since absolute destroyed houses are natural numbers, we use the option `Graduated` ([Wiki Video](../Wiki/en_qgis_graduated_wiki.md)).
+    1. Right-click on the layer “Sudan_admin1_impact_quantity” in the `Layer Panel` → `Properties`. A new window will open up with a vertical tab section on the left. Navigate to the `Symbology` tab.
     2. On the top you find a dropdown menue. Open it and choose `Graduated`.
     3. Under `Value` select “Houses_damaged_totally”.
     4. `Color ramp`: Select a white-to-red color ramp.

@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -29,7 +29,7 @@ Una estructura de carpetas estándar tiene dos ventajas principales:
 1. Si compartimos toda la carpeta del proyecto, podemos esperar que el proyecto se ejecute sin problemas en un ordenador diferente
 2. La estructura de carpetas contribuye a la correcta organización de los datos del proyecto y ayuda a garantizar que el proyecto QGIS funcione según lo previsto
 
-:::{figure} /fig/standard_folder_structure_new_2025.drawio.png
+:::{figure} ../../../fig/standard_folder_structure_new_2025.drawio.png
 ---
 width: 600px
 align: center

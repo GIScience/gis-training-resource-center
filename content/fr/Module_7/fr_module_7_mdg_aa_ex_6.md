@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: ../fr_intro
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -25,7 +25,7 @@ __Type d'exercice:__
 __Piste d'Exercice:__
 ^^^
 
-Cet exercice est le cinquième exercice de la piste d'exercice ["Analyse d’Action Anticipative pour les Cyclones à Madagascar"](/content/Exercise_tracks/fr_mdg_aa_cyclones.md)
+Cet exercice est le sixième exercice de la piste d'exercice ["Analyse d’Action Anticipative pour les Cyclones à Madagascar"](../Exercise_tracks/fr_mdg_aa_cyclones.md)
 
 :::
 
@@ -44,12 +44,12 @@ __Temps estimé pour l'exercice__
 __Articles Wiki pertinents__
 ^^^
 
-* [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html)
-* [Intersection](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Projections](/content/Wiki/en_qgis_projections_wiki.md)
-* [Buffer](/content/Wiki/en_qgis_projections_wiki.md)
-* [Clip](/content/Wiki/en_qgis_projections_wiki.md)
-* [Automatisation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html)
+* [Zonal Statistics](../../en/Wiki/en_qgis_raster_basic_wiki.md)
+* [Intersection](../../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Projections](../../en/Wiki/en_qgis_projections_wiki.md)
+* [Buffer](../../en/Wiki/en_qgis_geoprocessing_wiki.md#buffer)
+* [Clip](../../en/Wiki/en_qgis_geoprocessing_wiki.md#clip)
+* [Automatisation](../../en/Wiki/en_qgis_automation_wiki.md)
 
 :::
 
@@ -76,7 +76,7 @@ L'objectif est de préparer un workflow d'analyse et de visualisation pour soute
 - Prenez du temps pour vous familiariser avec l'exercice et le matériel founi. 
 - Préparez un tableau blanc. Cela peut être un tableau physique, un paperboard (tableau blanc virtuel, e.g., Miro Board) où les participant·es peuvent ajouter leurs observations et questions. 
 - Avant de commencer l'exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé __et dézippé__ le dossier de données.
-- Consultez [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).
+- Consultez [How to do trainings?](../../en/Trainers_corner/en_how_to_training.md#how-to-do-trainings) pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).
 
 
 ### Animer la formation <a id="animer-la-formation"></a>
@@ -155,7 +155,7 @@ Nous allons joindre les couches suivantes étape par étape:
   - **Type de jointure**: Prendre uniquement les attributs de la première entité correspondante (un-à-un)
   - Laisser la sortie comme **Sortie du modèle** (sans entrer un nom)
 
-```{figure} /fig/fr_MDG_AA_model_join_affacted_pop.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_join_affacted_pop.PNG
 ---
 width: 600px
 name: the_world_result
@@ -187,7 +187,7 @@ Maintenant, joindre le résultat de l’étape précédente (santé + éducation
   - **Type de jointure** : Prendre uniquement les attributs de la première entité correspondante (un-à-un)
   - Laisser la sortie comme **Sortie du modèle** sans nom. 
 
-```{figure} /fig/fr_MDG_AA_model_join_affacted_pop_HS_ES.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_join_affacted_pop_HS_ES.PNG
 ---
 width: 600px
 name: the_world_result
@@ -220,7 +220,7 @@ Copiez toujours les noms de champs **directement depuis la table attributaire** 
 Une fois que vous exécutez le modèle, cette étape génèrera automatiquement un fichier tableur contenant tous les indicateurs nécessaires pour l’équipe des opérations!
 
 
-```{figure} /fig/fr_MDG_AA_model_export_as_table.PNG
+```{figure} ../../../fig/fr_MDG_AA_model_export_as_table.PNG
 ---
 width: 600px
 name: the_world_result
@@ -269,12 +269,12 @@ Exporter tous les indicateurs (population, santé, éducation) vers un tableau u
          ```
    - Cliquez sur **Exécuter** pour lancer le modèle complet.
 
-
+%% PROBLEM: What happened to the pictures here?
 ::::{tab-set}
 
 :::{tab-item} Modeleur
 
-```{figure} /fig/
+```{figure} ../../../fig/
 ---
 width: 600px
 align: center
@@ -283,7 +283,7 @@ align: center
 ```
 :::
 :::{tab-item} Configuration d’exécution du modèle
-```{figure} /fig/
+```{figure} ../../../fig/
 ---
 width: 600px
 align: center
@@ -292,7 +292,7 @@ align: center
 ```
 :::
 :::{tab-item} Résultat du modèle
-```{figure} /fig/
+```{figure} ../../../fig/
 ---
 width: 600px
 align: center

@@ -1,12 +1,12 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
+:link: ../fr_intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
 
-# Exercice 2 : Création rapide de cartes – Aina utilise des modèles de carte <a id="exercice-2-creation-rapide-de-cartes-aina-utilise-des-modeles-de-carte"></a>
+# Exercice 5 : Création rapide de cartes – Aina utilise des modèles de carte <a id="exercice-5-creation-rapide-de-cartes-aina-utilise-des-modeles-de-carte"></a>
 
 ## Caractéristiques <a id="caracteristiques"></a>
 
@@ -25,7 +25,7 @@ __Type d'exercice:__
 __Piste d'Exercice:__
 ^^^
 
-Cet exercice est le cinquième exercice de la piste d'exercice ["Analyse d’Action Anticipative pour les Cyclones à Madagascar"](/content/Exercise_tracks/fr_mdg_aa_cyclones.md)
+Cet exercice est le cinquième exercice de la piste d'exercice ["Analyse d’Action Anticipative pour les Cyclones à Madagascar"](../Exercise_tracks/fr_mdg_aa_cyclones.md)
 
 :::
 
@@ -44,12 +44,12 @@ __Temps estimé pour l'exercice__
 __Articles Wiki pertinents__
 ^^^
 
-* [Zonal Statistics](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_raster_basic_wiki.html)
-* [Intersection](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Projections](/content/Wiki/en_qgis_projections_wiki.md)
-* [Buffer](/content/Wiki/en_qgis_projections_wiki.md)
-* [Clip](/content/Wiki/en_qgis_projections_wiki.md)
-* [Automatisation](https://giscience.github.io/gis-training-resource-center/content/Wiki/en_qgis_automatisation_wiki.html)
+* [Zonal Statistics](../../en/Wiki/en_qgis_raster_basic_wiki.md)
+* [Intersection](../../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Projections](../../en/Wiki/en_qgis_projections_wiki.md)
+* [Buffer](../../en/Wiki/en_qgis_geoprocessing_wiki.md#buffer)
+* [Clip](../../en/Wiki/en_qgis_geoprocessing_wiki.md#clip)
+* [Automatisation](../../en/Wiki/en_qgis_automation_wiki.md)
 
 :::
 
@@ -76,7 +76,7 @@ L'objectif est de préparer un workflow d'analyse et de visualisation pour soute
 - Prenez du temps pour vous familiariser avec l'exercice et le matériel founi. 
 - Préparez un tableau blanc. Cela peut être un tableau physique, un paperboard (tableau blanc virtuel, e.g., Miro Board) où les participant·es peuvent ajouter leurs observations et questions. 
 - Avant de commencer l'exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé __et dézippé__ le dossier de données.
-- Consultez [How to do trainings?](https://giscience.github.io/gis-training-resource-center/content/Trainers_corner/en_how_to_training.html#how-to-do-trainings) pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).
+- Consultez [How to do trainings?](../../en/Trainers_corner/en_how_to_training.md#how-to-do-trainings) pour des conseils généraux sur la conduite de formations (ce matériel est en anglais).
 
 
 ### Animer la formation <a id="animer-la-formation"></a>
@@ -202,7 +202,7 @@ Pour corriger cela, ouvrez les propriétés du tableau dans la mise en page et *
 6. **Mettre à jour les logos et icônes**  
 - Les logos à insérer sont représentés par des **X rouges**.  
 - Cliquez sur l’image dans la **Liste des éléments**.  
-- Cliquez sur les trois points ![](/fig/Three_points.png) à côté du chemin de fichier.  
+- Cliquez sur les trois points ![](../../../fig/Three_points.png) à côté du chemin de fichier.  
 - Parcourez le dossier `logos_pictures` et sélectionnez le bon logo.  
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_map_making_update_logos.mp4"></video>
@@ -237,10 +237,10 @@ La carte montre désormais clairement la population exposée dans les districts 
 
 Sur le côté droit de la carte, un tableau présente tous les districts exposés, avec les données sur la population totale et la population exposée. Les districts (Niveau 2) sont regroupés sous leurs régions correspondantes (Niveau 1).
 
-```{figure} /fig/MAD_Trigger_Impact_Population_Map_example.png
+:::{figure} ../../../fig/MAD_Trigger_Impact_Population_Map_example.png
 ---
 width: 1000px
 name: 
 align: center
 ---
-```
+:::

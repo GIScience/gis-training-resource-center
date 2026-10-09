@@ -1,0 +1,136 @@
+name: preview-book
+
+on:
+  push:
+    branches:
+      - "l10n-crowdin-*"
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          set -euo pipefail
+
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Verify language book files
+        run: |
+          set -euo pipefail
+
+          echo "Checking English book files..."
+          test -f content/en/_config.yml
+          test -f content/en/_toc.yml
+
+          echo "Checking Spanish book files..."
+          test -f content/es/es_config.yml
+          test -f content/es/es_toc.yml
+
+          echo "Checking French book files..."
+          test -f content/fr/fr_config.yml
+          test -f content/fr/fr_toc.yml
+
+          echo "Language book config and TOC files found."
+
+      - name: Build English book
+        run: |
+          set -euo pipefail
+
+          cd content/en
+
+          jupyter-book build . \
+            --path-output ../../english
+
+      - name: Build Spanish book
+        run: |
+          set -euo pipefail
+
+          cd content/es
+
+          jupyter-book build . \
+            --config es_config.yml \
+            --toc es_toc.yml \
+            --path-output ../../spanish
+
+      - name: Build French book
+        run: |
+          set -euo pipefail
+
+          cd content/fr
+
+          jupyter-book build . \
+            --config fr_config.yml \
+            --toc fr_toc.yml \
+            --path-output ../../french
+
+      - name: Combine language builds into one preview site
+        run: |
+          set -euo pipefail
+
+          rm -rf _site
+
+          mkdir -p _site/en
+          mkdir -p _site/es
+          mkdir -p _site/fr
+
+          rsync -a --delete english/_build/html/ _site/en/
+          rsync -a --delete spanish/_build/html/ _site/es/
+          rsync -a --delete french/_build/html/ _site/fr/
+
+          cat > _site/index.html <<'HTML'
+          <!doctype html>
+          <html lang="en">
+            <head>
+              <meta charset="utf-8">
+              <meta http-equiv="refresh" content="0; url=en/">
+              <title>GIS Training Resource Center (preview)</title>
+              <link rel="canonical" href="en/">
+            </head>
+            <body>
+              <p>Redirecting to <a href="en/">English version</a>.</p>
+            </body>
+          </html>
+          HTML
+
+          touch _site/.nojekyll
+
+          echo "Created combined preview site:"
+          echo "  English: /en/"
+          echo "  Spanish: /es/"
+          echo "  French:  /fr/"
+
+      - name: Upload preview site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: book-preview-${{ github.ref_name }}-${{ github.sha }}
+          path: ./_site
+          retention-days: 14
+
+      - name: Write preview summary
+        run: |
+          set -euo pipefail
+
+          {
+            echo "## Book preview built"
+            echo ""
+            echo "Branch: \`${{ github.ref_name }}\`"
+            echo ""
+            echo "Download the \`book-preview-${{ github.ref_name }}-${{ github.sha }}\` artifact from this run, unzip it, and open \`index.html\` in a browser (no Python install needed)."
+          } >> "$GITHUB_STEP_SUMMARY"

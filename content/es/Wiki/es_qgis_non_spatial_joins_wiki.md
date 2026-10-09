@@ -1,7 +1,7 @@
 # Uniones no espaciales
 
 
-__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
 ## Unir atributos por valor de campo
 - Añadir atributos de una tabla no espacial a la capa
@@ -17,7 +17,7 @@ __🔙[Volver a la página de inicio](/content/es/es_intro.md)__
 Si una unión de tablas no funciona a través de la herramienta __Unir atributos por valor de campo__, también se puede realizar una unión a través de las __propiedades de capa__ (clic derecho en la capa → `Propriedades`) en la pestaña `Uniones`.
 :::
 
-:::{figure} /fig/en_qgis_add_vector_join_wiki.png
+:::{figure} ../../../fig/en_qgis_add_vector_join_wiki.png
 ---
 width: 75%
 name: es_qgis_add_vector_join_wiki

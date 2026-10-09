@@ -1,7 +1,7 @@
 # Mapas base
 
 
-__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
 Los mapas base son mapas de fondo. Suelen ser muy prácticos, ya que son fáciles de usar, permiten una fácil orientación en el lienzo del mapa y son diversos.
 
@@ -71,7 +71,7 @@ Después de instalar el complemento (complementos en Wiki), necesita configurarl
 Con el complemento OSM Place Search, puede encontrar lugares en todo el mundo basados en OpenStreetMap. Esto significa que la búsqueda de lugares es independiente de cualquier mapa base que esté utilizando, siempre se basa en OpenStreetMap.
 
 :::{Tip}
-Si el complemento está instalado y activado, pero el panel no es visible, revise [Mover y organizar barras de herramientas y paneles](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_interface_wiki.html#mostrar-y-ocultar-pantallas-y-barras-de-herramientas) en Wiki.
+Si el complemento está instalado y activado, pero el panel no es visible, revise [Mover y organizar barras de herramientas y paneles](es_qgis_interface_wiki.md) en Wiki.
 :::
 
 __Funcionalidad del complemento de OSM Place Search__

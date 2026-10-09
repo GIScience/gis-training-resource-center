@@ -1,7 +1,7 @@
 ## Clasificación por símbolo único
 
 
-__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
 
 - Por defecto, QGIS visualiza todas las capas en la `Símbolo único` configuración.
@@ -20,7 +20,7 @@ __Para ajustar el estilo de una capa...__
 - Haga clic en `Aplicar` para aplicar el ajuste.
 - Haga clic en `Aceptar` para cerrar la ventana.
 
-:::{figure} /fig/Single_symbol_classify.png
+:::{figure} ../../../fig/Single_symbol_classify.png
 ---
 width: 900px
 name: es_Single_symbol_classify_wiki

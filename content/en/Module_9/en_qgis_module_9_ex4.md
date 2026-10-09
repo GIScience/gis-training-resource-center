@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -109,7 +110,7 @@ Open the attribute table of the final and use the field calculator.
     Open Layer Properties (right-click on the layer and choose Properties... or double-click the layer), click on the Attributes Form tab, then under General uncheck Editable and under Defaults in the field Default value type:  maximum("FID") + 1
 2: Export the final grid as Excel File
 
-Export the layer final grid as MS Office Open XMP Spreadsheet [XLSX)
+Export the layer final grid as MS Office Open XMP Spreadsheet (XLSX)
 
 3: Open file and insert pivot table
 

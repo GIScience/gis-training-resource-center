@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -70,7 +71,7 @@ __Relevant Articles__
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on training conduction.
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md) for some general tips on training conduction.
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -188,7 +189,7 @@ Once you are happy with the symbolization and colours of your data, the next ste
 1. Open a new print layout and give it a name (e.g. Ghana Map with hospitals). A new window will open with a blank canvas and a different set of tools. This is the print layout designer.
     - On the left, you will find a toolbar with tools to add and move items on the print layout canvas.
     - On the right you will find a list of items you added to the print layout (it is still empty). Beneath this, you will find a tab called __"item properties"__. This is where you modify the items on your print layout (e.g. enter the text for a text box or change the font).
-2. Insert a new map by clicking on ![New Map Icon](../../../fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Video](en_qgis_map_design_2.md#adding-a-new-map)
+2. Insert a new map by clicking on ![New Map Icon](../../../fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Video](en_qgis_understanding_print_layout.md#adding-a-new-map)
 3. Move and position the map so that the entire country is visible at a reasonable scale.
 4. Let's add a title:
     - Click on ![Add text icon](../../../fig/30.30.2_print_layout_add_text.png) (`Add text`)
@@ -213,7 +214,7 @@ Once you are happy with the symbolization and colours of your data, the next ste
     - Click on the three dots `...` and select the file with your logo.
     - If necessary, resize or move the picture on the print layout.
 
-:::{figure} ../../fig/30.30.2_print_layout_add_picture_options.png
+:::{figure} ../../../fig/30.30.2_print_layout_add_picture_options.png
 ---
 name: add picture item properties
 width: 600 px
@@ -227,12 +228,12 @@ The item properties panel for pictures. You need to specify the save location of
 
 The finished map could look something like this:
 
-:::{figure} ../../fig/en_map_design_exercise_1_results.png
+:::{figure} ../../../fig/en_map_design_exercise_1_results.png
 ---
 name: Main road network and hospitals in Ghana, Africa
 width: 600px
 ---
-Some space has been left in the bottom-right corner for an overview map
+Some space has been left in the bottom-right corner for an overview map.
 :::
 
 What can we learn from this map? We can clearly identify areas that are harder to reach and where the travel time to a hospital is much longer than in the populated regions in the south of Ghana. 

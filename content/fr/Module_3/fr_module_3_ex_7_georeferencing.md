@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/fr/fr_intro.html 
+:link: ../fr_intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -49,7 +49,7 @@ __Durée estimée de l’exercice__
 __Articles pertinents__
 ^^^
 
-* [Géoréférencement](/content/fr/Module_3/fr_qgis_georeferencing.md)
+* [Géoréférencement](fr_qgis_georeferencing.md)
 :::
 
 ::::
@@ -63,7 +63,7 @@ __Articles pertinents__
 - Prenez le temps de vous familiariser avec l’exercice et le matériel fourni.
 - Préparez un tableau blanc. Il peut s’agir d’un tableau blanc physique, d’un paperboard ou d’un tableau blanc numérique (par ex. un tableau Miro) sur lequel les participant·e·s peuvent ajouter leurs remarques et leurs questions. 
 - Avant de commencer l’exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé __et décompressé__ le dossier de données.
-- Consultez [Comment animer des formations ?](/content/fr/Trainers_corner/fr_how_to_training.md) pour quelques conseils généraux sur la conduite d’une formation.
+- Consultez [Comment animer des formations ?](../../en/Trainers_corner/en_how_to_training.md) pour quelques conseils généraux sur la conduite d’une formation.
 
 ### Animer la formation <a id="conduct-the-training"></a>
 
@@ -109,7 +109,7 @@ __Données disponibles :__
 1. Décompressez le dossier et familiarisez-vous avec les données en examinant la carte de dégradation des sols. La carte se trouve dans le dossier `Module_3_Exercise_7_Georeferencing/data/input/`.
 2. Créez un nouveau projet QGIS.
 
-:::{figure} /fig/SOM_Soil_deg.png
+:::{figure} ../../../fig/SOM_Soil_deg.png
 ---
 name: SOM_soil_deg
 width: 500 px
@@ -121,7 +121,7 @@ Dégradation des sols en Somalie.
 
 Le géoréférencement consiste à relier des points de la carte à géoréférencer à des coordonnées dans votre canevas cartographique QGIS. Ajouter un fond de carte ou une couche de référence à votre projet QGIS vous aidera à identifier les coordonnées correspondantes.
 
-1. Ajoutez un fond de carte en utilisant soit les XYZ Tiles, soit le [plugin QuickMapServices](/content/fr/Wiki/fr_qgis_basemaps_wiki.md). 
+1. Ajoutez un fond de carte en utilisant soit les XYZ Tiles, soit le [plugin QuickMapServices](../../en/Wiki/en_qgis_basemaps_wiki.md). 
 2. Importez la couche `som_admbnda_adm1_ocha_20230308` dans le projet QGIS. 
 
 ### Étape 2 : Géoréférencer la carte <a id="step-2-georeferencing-the-map"></a>
@@ -130,7 +130,7 @@ Maintenant que nous avons préparé notre projet QGIS, commençons le géoréfé
 
 3. Ouvrez le Géoréférenceur en allant dans la barre supérieure → `Layer` → `Georeferencer` ({numref}`open_georeferencer`)
 
-:::{figure} /fig/en_3.36_open_georefencer.png
+:::{figure} ../../../fig/en_3.36_open_georefencer.png
 ---
 name: open_georeferencer
 width: 500 px
@@ -138,9 +138,9 @@ width: 500 px
 Ouvrir le Géoréférenceur dans QGIS 3.36.
 :::
 
-4. Une nouvelle fenêtre s’ouvre. Il s’agit du __géoréférenceur__. Pour ajouter une image à géoréférencer, cliquez sur ![](/fig/3.36_add_raster_georef.png) `Open Raster`.
+4. Une nouvelle fenêtre s’ouvre. Il s’agit du __géoréférenceur__. Pour ajouter une image à géoréférencer, cliquez sur ![](../../../fig/3.36_add_raster_georef.png) `Open Raster`.
 5. Sélectionnez l’image de la carte que vous souhaitez géoréférencer. Cliquez sur `Open` (`Module_3_Exercise_7_Georeferencing/data/input`). 
-6. L’image apparaît au centre de la fenêtre du géoréférenceur. Cliquez sur ![](/fig/3.36_georef_transformation_settings.png) `Transformation settings...`.
+6. L’image apparaît au centre de la fenêtre du géoréférenceur. Cliquez sur ![](../../../fig/3.36_georef_transformation_settings.png) `Transformation settings...`.
 7. Une nouvelle fenêtre s’ouvre. Vous pouvez y définir le type de transformation et le SCR cible. Pour notre besoin, nous utiliserons le type de transformation linéaire. Comme SCR cible (système de coordonnées de référence), nous voulons utiliser le même que pour nos autres données. Dans notre cas, nous pouvons utiliser EPSG:4326. En dessous, vous pouvez définir le nom du fichier et son emplacement d’enregistrement. Assurez-vous que l’option `Load in project when done` est cochée.
 
 ::::{margin}
@@ -153,15 +153,15 @@ Pour en savoir plus sur les différents types de transformation dans QGIS, consu
 ::::
 
 8. Cliquez sur `Ok`. 
-9. Une fois le type de transformation défini, vous pouvez commencer à ajouter des points de contrôle au sol (GCP) en cliquant sur ![](/fig/3.36_georef_add_point.png) `Add Point`. Les points de contrôle au sol sont des points auxquels vous attribuez des coordonnées géographiques précises. 
+9. Une fois le type de transformation défini, vous pouvez commencer à ajouter des points de contrôle au sol (GCP) en cliquant sur ![](../../../fig/3.36_georef_add_point.png) `Add Point`. Les points de contrôle au sol sont des points auxquels vous attribuez des coordonnées géographiques précises. 
 10. Cliquez sur un point de l’image de la carte. Il s’agira d’un emplacement précis que vous pouvez identifier à la fois sur le fond de carte et sur la carte que vous souhaitez géoréférencer. 
 11. Une fois la position cliquée, une nouvelle fenêtre apparaît. Vous y ajoutez les coordonnées du point sélectionné. Il existe deux façons de le faire :  
     - Saisir les coordonnées manuellement. Vous devez alors connaître les coordonnées exactes. Il arrive que certaines cartes comportent une grille de coordonnées où vous pouvez les lire.  
-    - Sélectionner les points ![](/fig/en_3.36_georef_select_from_canvas.png). Ce mode minimise le géoréférenceur et ouvre le canevas cartographique QGIS. Zoomez sur le même emplacement que celui sélectionné sur la carte non géoréférencée et cliquez une fois.
+    - Sélectionner les points ![](../../../fig/en_3.36_georef_select_from_canvas.png). Ce mode minimise le géoréférenceur et ouvre le canevas cartographique QGIS. Zoomez sur le même emplacement que celui sélectionné sur la carte non géoréférencée et cliquez une fois.
     - Une fois les coordonnées saisies, cliquez sur `Ok`.
 12. La fenêtre du géoréférenceur s’ouvre de nouveau. Cette fois, vous pouvez voir un point dans le tableau situé sous l’image de la carte. Il s’agit des points de contrôle au sol. Continuez à ajouter d’autres GCP. Répartissez-les sur l’ensemble de la carte. Assurez-vous que le `Mean error` en bas à droite de la fenêtre du géoréférenceur soit aussi faible que possible (idéalement inférieur à 5). 
 
-:::{figure} /fig/en_3.36_georef_dialogue_GCP.png
+:::{figure} ../../../fig/en_3.36_georef_dialogue_GCP.png
 ---
 width: 700 px
 name: georeferencer_dialogue
@@ -169,11 +169,11 @@ name: georeferencer_dialogue
 Fenêtre du Géoréférenceur dans QGIS 3.36.
 :::
 
-13. Une fois que vous avez ajouté suffisamment de points, cliquez sur ![](/fig/3.36_start_georef.png) `Start Georeferencing`. QGIS utilisera les points ajoutés pour transformer l’image en image géoréférencée, dans laquelle chaque pixel possède des coordonnées GPS.
+13. Une fois que vous avez ajouté suffisamment de points, cliquez sur ![](../../../fig/3.36_start_georef.png) `Start Georeferencing`. QGIS utilisera les points ajoutés pour transformer l’image en image géoréférencée, dans laquelle chaque pixel possède des coordonnées GPS.
 14. Vous pouvez fermer la fenêtre du géoréférenceur. Décidez si vous souhaitez enregistrer les points GCP dans un fichier. Si vous n’êtes pas certain·e que la précision du géoréférencement soit suffisante, enregistrez les points GCP afin de ne pas avoir à tout recommencer. 
 15. Félicitations, la carte géoréférencée apparaît maintenant comme couche raster dans votre projet QGIS.
 
-:::{figure} /fig/en_3.36_finished_georef.png
+:::{figure} ../../../fig/en_3.36_finished_georef.png
 ---
 width: 700 px
 name: Som_georef_map
@@ -197,9 +197,9 @@ Nous pouvons désormais voir les couches sous-jacentes. Nous pouvons aussi véri
 
 Maintenant que la carte est géoréférencée, nous pouvons l’utiliser comme couche de fond pour numériser des entités vectorielles, par exemple un polygone indiquant une zone où la dégradation des sols est sévère.
 
-21. Créez une nouvelle couche shapefile (voir [numérisation](https://giscience.github.io/gis-training-resource-center/content/fr/Module_3/fr_qgis_digitisation.html#creating-new-datasets)). Cliquez sur `Layer` → `Create Layer` → `Create new Shapefile Layer` (vous pouvez aussi choisir de créer une nouvelle couche GeoPackage).
+21. Créez une nouvelle couche shapefile (voir [numérisation](fr_qgis_digitisation.md#creating-new-datasets)). Cliquez sur `Layer` → `Create Layer` → `Create new Shapefile Layer` (vous pouvez aussi choisir de créer une nouvelle couche GeoPackage).
 22. Une nouvelle fenêtre de dialogue s’ouvre. Nous devons d’abord préciser l’emplacement d’enregistrement du nouveau jeu de données. 
-    1. Cliquez sur ![](/fig/3.36_three_dots.png) à droite du champ `File Name`. 
+    1. Cliquez sur ![](../../../fig/3.36_three_dots.png) à droite du champ `File Name`. 
     2. Accédez au dossier de sortie des données (`Module_3_Exercise_7_Georeferencing/data/output`).
     3. Saisissez un nom pour le jeu de données. 
     4. Cliquez sur `Save`.
@@ -211,8 +211,8 @@ Maintenant que la carte est géoréférencée, nous pouvons l’utiliser comme c
 25. Terminez la création du jeu de données en cliquant sur `Ok`. La couche sera ajoutée à votre panneau des couches.
 26. Créons maintenant une nouvelle entité polygonale : 
     1. Sélectionnez la nouvelle couche dans le panneau des couches.
-    2. Activez le mode édition en cliquant sur ![](/fig/en_editing_mode.png).
-    3. Cliquez sur ![](/fig/mActionCapturePolygon.png) dans la barre d’outils de numérisation pour créer un nouveau polygone.
+    2. Activez le mode édition en cliquant sur ![](../../../fig/en_editing_mode.png).
+    3. Cliquez sur ![](../../../fig/mActionCapturePolygon.png) dans la barre d’outils de numérisation pour créer un nouveau polygone.
     4. Commencez à tracer le contour d’une zone où la dégradation des sols est sévère (en rouge) en plaçant plusieurs points (<kbd>Left-Click</kbd>)
     5. Une fois le contour terminé, achevez la création de l’entité par un <kbd>clic droit</kbd>.
     6. Une nouvelle fenêtre de dialogue apparaîtra. Vous pourrez y saisir les attributs de la nouvelle entité polygonale. Sous `soil_deg`, saisissez "severe". 

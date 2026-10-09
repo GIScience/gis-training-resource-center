@@ -34,7 +34,7 @@ Au cours du mois dernier, les autorités sanitaires au Tchad ont signalé une ha
 
 :::{note}
 
-Dans cet exercice, nous téléchargerons de vrais jeux de données depuis le [Humanitarian Data Exchange (HDX)](humdata.org) afin d’identifier et d’analyser des informations pertinentes. Toutefois, les jeux de données sur les capacités des structures de santé et la couverture vaccinale utilisés ici sont fictifs et ont été créés uniquement à des fins de formation. Ils ne représentent pas des données du monde réel.
+Dans cet exercice, nous téléchargerons de vrais jeux de données depuis le [Humanitarian Data Exchange (HDX)](https://humdata.org) afin d’identifier et d’analyser des informations pertinentes. Toutefois, les jeux de données sur les capacités des structures de santé et la couverture vaccinale utilisés ici sont fictifs et ont été créés uniquement à des fins de formation. Ils ne représentent pas des données du monde réel.
 
 :::
 
@@ -81,9 +81,9 @@ GIS_Training_Public_Health
 1. Ouvrez QGIS et créez un nouveau projet.
 2. Enregistrez le projet via `Project` → `Save As...`. Accédez au dossier de cette formation et enregistrez-le dans le sous-dossier `/project`. Donnez-lui un nom (par ex. `GIS_Training_Public_Health_Part_1`) puis cliquez sur `Save`. 
 3. Nous devons maintenant définir le SCR du projet.
-    - Dans le coin inférieur droit de la fenêtre QGIS, cliquez sur l’icône de projection ![](/fig/3.40_projection_icon.png). Choisissons un SCR métrique qui représente le Tchad sans trop de déformation. Pour cet exercice, nous utiliserons __"Albers Equal Area Conic" (EPSG: 102022)__.
+    - Dans le coin inférieur droit de la fenêtre QGIS, cliquez sur l’icône de projection ![](../../../fig/3.40_projection_icon.png). Choisissons un SCR métrique qui représente le Tchad sans trop de déformation. Pour cet exercice, nous utiliserons __"Albers Equal Area Conic" (EPSG: 102022)__.
 Dans la barre `Filter`, saisissez le nom ou le numéro EPSG. Le SCR devrait apparaître dans la boîte "Predefined Coordinate Reference Systems". Sélectionnez-le puis cliquez sur `Apply` et `OK`. 
-    :::{figure} /fig/en_3.40_m3_ex_8_pub_health_1_project_crs.png
+    :::{figure} ../../../fig/en_3.40_m3_ex_8_pub_health_1_project_crs.png
     ---
     name: en_3.40_m3_ex_8_pub_health_1_project_crs.png
     width: 450 px
@@ -98,14 +98,14 @@ Choisir un système de coordonnées de référence adapté à votre projet SIG e
 
 Si vous souhaitez effectuer des calculs de distance, vous devez utiliser un SCR métrique. 
 
-Pour en savoir plus sur les projections et les systèmes de coordonnées de référence, consultez ce __[chapitre du module](/content/fr/Module_2/fr_qgis_projections.md)__.
+Pour en savoir plus sur les projections et les systèmes de coordonnées de référence, consultez ce __[chapitre du module](../Module_2/fr_qgis_projections.md)__.
 
 ::::
 
 
 :::{attention}
 
-Le SCR du projet détermine le système de coordonnées de référence utilisé pour afficher les données géographiques dans le canevas cartographique QGIS. En revanche, il ne modifie pas le SCR des couches. Chaque couche, ou jeu de données, est encodé avec un SCR. QGIS reprojette ces couches "à la volée" pour afficher sur le canevas des couches ayant des SCR différents. Cela ne modifie ni les unités de mesure ni les déformations des couches elles-mêmes. Pour effectuer des calculs de distance, vous devrez [reprojeter la couche](/content/fr/wiki/fr_qgis_projections_wiki.md) dans un système de coordonnées de référence métrique. 
+Le SCR du projet détermine le système de coordonnées de référence utilisé pour afficher les données géographiques dans le canevas cartographique QGIS. En revanche, il ne modifie pas le SCR des couches. Chaque couche, ou jeu de données, est encodé avec un SCR. QGIS reprojette ces couches "à la volée" pour afficher sur le canevas des couches ayant des SCR différents. Cela ne modifie ni les unités de mesure ni les déformations des couches elles-mêmes. Pour effectuer des calculs de distance, vous devrez [reprojeter la couche](../../en/wiki/en_qgis_projections_wiki.md) dans un système de coordonnées de référence métrique. 
 
 Définir le SCR du projet sur celui que vous souhaitez utiliser peut vous aider à choisir plus rapidement le bon SCR lors de l’exécution d’algorithmes. 
 :::
@@ -119,7 +119,7 @@ Définir le SCR du projet sur celui que vous souhaitez utiliser peut vous aider 
     - Chad Administrative Boundaries (OCHA): ADM0, ADM1, ADM2 
     - Chad Health Facilities (OpenStreetMap Export)
     - Chad Roads (OCHA)
-:::{figure} /fig/en_m3_ex_8_public_health_part_1_hdx_search.png
+:::{figure} ../../../fig/en_m3_ex_8_public_health_part_1_hdx_search.png
 ---
 width: 600 px
 name: en_m3_ex_8_public_health_part_1_hdx_search
@@ -132,7 +132,7 @@ name: en_m3_ex_8_public_health_part_1_hdx_search
         - Chad Administrative Boundaries (OCHA): __Shapefile__
         - Chad Health Facilities (OpenStreetMap Export): __GeoPackage__ pour les __Points__, nous n’avons pas besoin des polygones pour cet exemple
         - Chad Roads (OCHA): __Shapefile__ 
-        :::{figure} /fig/en_m3_ex_8_public_health_part_1_hdx_data_formats.png
+        :::{figure} ../../../fig/en_m3_ex_8_public_health_part_1_hdx_data_formats.png
         ---
         name: en_m3_ex_8_public_health_part_1_hdx_data_formats
         width: 600 px
@@ -146,7 +146,7 @@ name: en_m3_ex_8_public_health_part_1_hdx_search
 
 ### Tâche 3 : Importer les jeux de données <a id="task-3-importing-the-datasets"></a>
 
-1. Dans votre projet QGIS, [importez les jeux de données suivants](https://giscience.github.io/gis-training-resource-center/content/fr/Wiki/fr_qgis_import_geodata_wiki.html#open-vector-data-via-drag-and-drop) par glisser-déposer :
+1. Dans votre projet QGIS, [importez les jeux de données suivants](../../en/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop) par glisser-déposer :
     - `tcd_admbnda_adm0_20250212_AB.shp`
     - `tcd_admbnda_adm1_20250212_AB.shp`
     - `tcd_admbnda_adm2_20250212_AB.shp`
@@ -167,9 +167,9 @@ Un shapefile est composé de plusieurs fichiers interdépendants. L’informatio
 % THE FOLLOWING SECTION IS NOT NEEDED THEN?
 
 <!--
-4. The file `hotosm_tcd_health_facilities_points.csv` contains point data, but it is in a delimited text format. QGIS won't automatically recognise the geographic information and display the dataset as points. We need to import it as a [delimited text layer](https://giscience.github.io/gis-training-resource-center/content/fr/Wiki/fr_qgis_import_geodata_wiki.html#text-data-import):
+4. The file `hotosm_tcd_health_facilities_points.csv` contains point data, but it is in a delimited text format. QGIS won't automatically recognise the geographic information and display the dataset as points. We need to import it as a [delimited text layer](../../en/Wiki/en_qgis_import_geodata_wiki.md#text-data-import):
     - In the top bar, click on `Layer` → `Add Layer` → `Add Delimited Text Layer...`. A new window will open. Here we need to specify the file, the file format and define the geometry information
-    - To the right of the `File name`-field, click on the ![](/fig/Three_points.png) three points to open the file browser. 
+    - To the right of the `File name`-field, click on the ![](../../../fig/Three_points.png) three points to open the file browser. 
     - Navigate to the data input folder and select the file `hotosm_tcd_health_facilities_points.csv`. Click `Open`.
     - Make sure that QGIS uses the correct delimiter (e.g., comma, tab, semicolon, etc.). If it is the correct delimiter, a preview of the datatable should appear in the Sample Data field. 
     - Specify the `X-` and `Y-field` by selecting the respective column. 
@@ -200,7 +200,7 @@ Les fichiers importés __ne sont pas enregistrés dans__ le projet QGIS. Si vous
 
 > Votre fenêtre QGIS devrait ressembler à ceci (avec des couleurs de couches différentes).
 
-:::{figure} /fig/en_3.40_m3_ex_8_pub_health_1_ordering_layers.png
+:::{figure} ../../../fig/en_3.40_m3_ex_8_pub_health_1_ordering_layers.png
 ---
 name: en_3.40_m3_ex_8_pub_health_1_ordering_layers
 width: 750 px
@@ -211,7 +211,7 @@ width: 750 px
     - Ouvrez la table attributaire en faisant un <kbd>clic droit</kbd> sur la couche ADM2 dans le panneau des couches à gauche → `Open Attribute Table`.
     - Une nouvelle fenêtre s’ouvre. Il s’agit de la table attributaire. Elle affiche la couche vectorielle sous forme tabulaire, ce qui vous permet de consulter les valeurs attributaires, de trier la table et de modifier les valeurs à l’aide des outils de la barre supérieure. 
     - Regardez les différentes colonnes de la table attributaire. Que représentent-elles ?
-    - Essayez de trier la table attributaire en cliquant sur ![](/fig/sort.png)
+    - Essayez de trier la table attributaire en cliquant sur ![](../../../fig/sort.png)
     - Ouvrez les tables attributaires des couches `hotosm_tcd_health_facilities_points_gpkg` et `tcd_admbnda_adm2_20250212_AB.shp` et familiarisez-vous avec les données. 
     - <kbd>Faites un clic droit</kbd> sur chaque couche et sélectionnez 
 
@@ -219,7 +219,7 @@ width: 750 px
 :::{dropdown} Familiarisez-vous avec l’interface QGIS
 
 Familiarisez-vous avec le canevas cartographique en zoomant et dézoomant (<kbd>Molette de souris</kbd> ou <kbd>Ctrl</kbd> + <kbd>+</kbd> et <kbd>Ctrl</kbd> + <kbd>-</kbd>). 
-Maintenir <kbd>Space</kbd> active automatiquement l’outil ![](/fig/qgis_pan_map.png) `Pan Map`. 
+Maintenir <kbd>Space</kbd> active automatiquement l’outil ![](../../../fig/qgis_pan_map.png) `Pan Map`. 
 
 :::
 -->
@@ -229,7 +229,7 @@ Maintenir <kbd>Space</kbd> active automatiquement l’outil ![](/fig/qgis_pan_ma
 
 % ADD A DISCLAIMER MAKING TRAINEES THINK WHERE THE DATA CAME FROM
 
-Dans notre dossier `data/input/`, nous trouvons un fichier csv nommé `vaccination_coverage_adm2`. Ce fichier contient la couverture vaccinale pour les vaccins mcv1 et mcv2. Heureusement, le jeu de données inclut le nom du district (`amd2_name`) ainsi que le pcode adm2. Grâce à ces informations, nous pouvons effectuer une [jointure non spatiale](https://giscience.github.io/gis-training-resource-center/content/fr/Wiki/fr_qgis_non_spatial_joins_wiki.html) afin d’ajouter les données de couverture vaccinale à notre couche des limites de district (adm2). 
+Dans notre dossier `data/input/`, nous trouvons un fichier csv nommé `vaccination_coverage_adm2`. Ce fichier contient la couverture vaccinale pour les vaccins mcv1 et mcv2. Heureusement, le jeu de données inclut le nom du district (`amd2_name`) ainsi que le pcode adm2. Grâce à ces informations, nous pouvons effectuer une [jointure non spatiale](../../en/Wiki/en_qgis_non_spatial_joins_wiki.md) afin d’ajouter les données de couverture vaccinale à notre couche des limites de district (adm2). 
 
 :::{attention}
 Les Pcodes administratifs sont bien adaptés aux jointures non spatiales dans QGIS, car ils fournissent des identifiants uniques et normalisés qui évitent les divergences de noms et garantissent une liaison de données fiable et précise.
@@ -239,11 +239,11 @@ Les Pcodes administratifs sont bien adaptés aux jointures non spatiales dans QG
 
 1. Importez `vaccination_coverage_adm2` dans votre projet QGIS :
     - Dans la barre supérieure, allez à `Layer` → `Add Layer` → `Add Delimited Text Layer...`
-    - À droite du champ `File name`, cliquez sur les ![](/fig/Three_points.png) trois points et accédez au fichier `data/input/vaccination_coverage_adm2.csv`, puis cliquez sur `Open`.
+    - À droite du champ `File name`, cliquez sur les ![](../../../fig/Three_points.png) trois points et accédez au fichier `data/input/vaccination_coverage_adm2.csv`, puis cliquez sur `Open`.
     - Dans la fenêtre d’import, vous verrez un aperçu des données dans le champ des données d’exemple. Examinez les colonnes et les données disponibles. Quel type d’information est présent dans chaque colonne ? 
     - Malheureusement, cette table de données ne contient pas de colonnes avec les coordonnées des structures de santé individuelles. Sous `Geometry Definition`, sélectionnez `No geometry (attribute only table)`.
     - Cliquez sur `Add`. La couche apparaîtra dans l’onglet des couches comme une table de données, mais ne s’affichera pas dans le canevas cartographique.
-    :::{figure} /fig/en_3.40_m3_ex_8_pub_health_1_add_vacc_coverage_csv.png
+    :::{figure} ../../../fig/en_3.40_m3_ex_8_pub_health_1_add_vacc_coverage_csv.png
     ---
     name: en_3.40_m3_ex_8_pub_health_1_add_vacc_coverage_csv
     width: 700 px
@@ -251,28 +251,28 @@ Les Pcodes administratifs sont bien adaptés aux jointures non spatiales dans QG
     :::
 2. Examinez plus en détail cette nouvelle table de couverture vaccinale :
     - <kbd>Faites un clic droit</kbd> sur la nouvelle couche et ouvrez la table attributaire. Quelles informations sont disponibles ? Comment la table est-elle structurée ? Nous pouvons voir que nous pouvons utiliser la colonne `ADM2_PCODE` pour effectuer une [jointure non spatiale].
-3. Dans la [boîte à outils de traitements](/content/fr/Module_1/fr_qgis_start.md#toolbox--toolbars) à droite, recherchez l’outil __"Join attributes by key value"__ et <kbd>double-cliquez</kbd> dessus. 
+3. Dans la [boîte à outils de traitements](../Module_1/fr_qgis_start.md) à droite, recherchez l’outil __"Join attributes by key value"__ et <kbd>double-cliquez</kbd> dessus. 
     - Une nouvelle fenêtre s’ouvre. Nous pouvons y définir les paramètres de l’outil `Join attributes by field value`.
     - Comme "Input layer", sélectionnez la couche `tcd_admbnda_adm2_20250212_AB`.
     - Sous "Table field", sélectionnez `ADM2_PCODE`.
     - Comme "Input layer 2", sélectionnez `vaccination_coverage_adm2`.
     - Sous "Table field 2", sélectionnez `adm2_pcode`.
-    - Sous "Layer 2 fields to copy", nous pouvons choisir les colonnes à copier. Cliquez sur les ![](/fig/Three_points.png) trois points à droite du champ et sélectionnez `vaccination_rate_mcv1` et `vaccination_rate_mcv2`. Puis cliquez sur `OK`.
+    - Sous "Layer 2 fields to copy", nous pouvons choisir les colonnes à copier. Cliquez sur les ![](../../../fig/Three_points.png) trois points à droite du champ et sélectionnez `vaccination_rate_mcv1` et `vaccination_rate_mcv2`. Puis cliquez sur `OK`.
     - Enfin, pour exécuter l’algorithme, cliquez sur `Run`. 
     
-    :::{figure} /fig/en_3.40_m3_ex_8_pub_health_1_join_attr_vaccine_coverage.png
+    :::{figure} ../../../fig/en_3.40_m3_ex_8_pub_health_1_join_attr_vaccine_coverage.png
     ---
     name: en_3.40_m3_ex_8_pub_health_1_join_attr_vaccine_coverage
     width: 650 px
     ---
     :::
 
-Une nouvelle couche appelée "Joined Layer" apparaîtra dans le panneau des couches. À sa droite, vous verrez un symbole ![](/fig/qgis_3.40_temp_layer.png). Ce symbole indique qu’il s’agit d’une couche temporaire de travail. Cela signifie qu’elle sera supprimée lorsque vous fermerez votre projet QGIS, même si vous enregistrez le projet. 
+Une nouvelle couche appelée "Joined Layer" apparaîtra dans le panneau des couches. À sa droite, vous verrez un symbole ![](../../../fig/qgis_3.40_temp_layer.png). Ce symbole indique qu’il s’agit d’une couche temporaire de travail. Cela signifie qu’elle sera supprimée lorsque vous fermerez votre projet QGIS, même si vous enregistrez le projet. 
 
 4. __Nous pouvons enregistrer la couche temporaire__ en faisant un <kbd>clic droit</kbd> dessus puis en sélectionnant `Make permament...`.
     - Une nouvelle fenêtre s’ouvrira. Nous devons y préciser l’emplacement du fichier et le nom de la couche. 
     - Laissez le `Format` sur "GeoPackage".
-    - Cliquez sur les ![](/fig/Three_points.png) trois points, accédez au dossier `data/interim/` et saisissez un nom de fichier tel que `tcd_adm2_vacc_coverage`. Cliquez sur `Save`. 
+    - Cliquez sur les ![](../../../fig/Three_points.png) trois points, accédez au dossier `data/interim/` et saisissez un nom de fichier tel que `tcd_adm2_vacc_coverage`. Cliquez sur `Save`. 
     - Saisissez le même nom dans le champ `Layer name` (ce sera le nom de la couche dans le panneau des couches).
     - Laissez le reste inchangé puis cliquez sur `Ok`.
 
@@ -283,14 +283,14 @@ Une nouvelle couche appelée "Joined Layer" apparaîtra dans le panneau des couc
 :::{Admonition} Enregistrer votre progression
 :class: tip
 
-Pensez à enregistrer votre projet régulièrement pour conserver votre progression en cliquant sur ![](/fig/qgis_save_project.png). QGIS est en constante évolution grâce à la communauté open source et il lui arrive de planter de temps en temps. 
+Pensez à enregistrer votre projet régulièrement pour conserver votre progression en cliquant sur ![](../../../fig/qgis_save_project.png). QGIS est en constante évolution grâce à la communauté open source et il lui arrive de planter de temps en temps. 
 
 :::
 
 Maintenant que les informations de couverture vaccinale figurent dans notre couche adm2, nous pouvons les visualiser afin de comprendre leur répartition spatiale. 
 ::::{margin}
 :::{tip}
-QGIS propose différentes façons de [visualiser les données vectorielles](/content/fr/Module_4/fr_qgis_styling_vector_data.md). Si vous souhaitez en savoir plus sur ces différentes méthodes, consultez le [module 4](/content/fr/Module_4/fr_module_4_overview.md).
+QGIS propose différentes façons de [visualiser les données vectorielles](../../en/Module_4/en_qgis_styling_vector_data.md). Si vous souhaitez en savoir plus sur ces différentes méthodes, consultez le [module 4](../Module_4/fr_module_4_overview.md).
 :::
 ::::
 
@@ -305,7 +305,7 @@ Vous pouvez déplacer la fenêtre des propriétés sur le côté afin de voir le
     - Ici, nous pouvons changer la méthode de symbologie de `Single Symbol` à `Graduated`.
     - Ensuite, nous devons sélectionner la valeur qui sera utilisée pour la classification. Sous `Value`, sélectionnez la colonne `vaccination_rate_mcv1` puis cliquez sur classify. Nous voulons utiliser le mode `Equal Interval` avec 5 classes pour une première évaluation de la couverture vaccinale.
 
-:::{figure} /fig/en_3.40_m3_ex_8_pub_health_1_vacc_coverage_map.png
+:::{figure} ../../../fig/en_3.40_m3_ex_8_pub_health_1_vacc_coverage_map.png
 ---
 name: en_3.40_m3_ex_8_pub_health_1_vacc_coverage_map
 width: 700 px
@@ -329,7 +329,7 @@ Lors des jointures, soyez attentif·ve à ce type d’incohérences.
 
 1. Importons `tcd_healthsite_capacities.csv` dans votre projet QGIS :
     - Dans la barre supérieure, allez à `Layer` → `Add Layer` → `Add Delimited Text Layer...`
-    - À droite du champ `File name`, cliquez sur les ![](/fig/Three_points.png) trois points et accédez au fichier `data/input/tcd_healthsite_capacities.csv`, puis cliquez sur `Open`.
+    - À droite du champ `File name`, cliquez sur les ![](../../../fig/Three_points.png) trois points et accédez au fichier `data/input/tcd_healthsite_capacities.csv`, puis cliquez sur `Open`.
     - Dans la fenêtre d’import, vous verrez un aperçu des données dans le champ des données d’exemple. Examinez les colonnes et les données disponibles. Quel type d’information est présent dans chaque colonne ? 
     - Malheureusement, cette table de données ne contient pas de coordonnées pour les structures de santé individuelles. Sous `Geometry Definition`, sélectionnez `No geometry (attribute only table)`.
     - Cliquez sur `Add`. La couche apparaîtra dans votre onglet des couches sous forme de table de données, mais ne sera pas affichée dans le canevas cartographique.
@@ -338,15 +338,15 @@ Lors des jointures, soyez attentif·ve à ce type d’incohérences.
     - Dans la barre supérieure, vous pouvez voir combien d’entrées contient le jeu de données (*148 features*)
     - La table de données contient une colonne appelée `name`, qui contient le nom des structures de santé. Ces noms sont les mêmes que ceux stockés dans la couche ponctuelle des structures de santé importée précédemment.
     - Cela signifie que nous pouvons joindre les deux tables à l’aide des valeurs attributaires de la colonne `name`.
-3. Dans la [boîte à outils de traitements](https://giscience.github.io/gis-training-resource-center/content/fr/Module_1/fr_qgis_start.html#toolbox-toolbars), recherchez l’outil `Join attributes by field value` et ouvrez-le par <kbd>double-clic</kbd>. 
+3. Dans la [boîte à outils de traitements](../Module_1/fr_qgis_start.md), recherchez l’outil `Join attributes by field value` et ouvrez-le par <kbd>double-clic</kbd>. 
     - Une nouvelle fenêtre s’ouvrira. Nous pouvons y définir les paramètres de l’outil `Join attributes by field value`.
     - Comme "Input layer", sélectionnez la couche `hotosm_tcd_health_facilities_points_gpkg`.
     - Sous "Table field", sélectionnez `name`.
     - Comme "Input layer 2", sélectionnez `tcd_healthsite_capacities`.
     - Sous "Table field 2", sélectionnez `name`.
-    - Sous "Layer 2 fields to copy", nous pouvons choisir les colonnes à copier. Cliquez sur les ![](/fig/Three_points.png) trois points à droite du champ et sélectionnez `cold_chain`, `measles_vaccination`, `measles_treatment`, `beds_total`, `pediatric_beds`, `staff_total`, et `remarks`. Puis cliquez sur `OK`.
+    - Sous "Layer 2 fields to copy", nous pouvons choisir les colonnes à copier. Cliquez sur les ![](../../../fig/Three_points.png) trois points à droite du champ et sélectionnez `cold_chain`, `measles_vaccination`, `measles_treatment`, `beds_total`, `pediatric_beds`, `staff_total`, et `remarks`. Puis cliquez sur `OK`.
     - Enfin, pour exécuter l’algorithme, cliquez sur `Run`. 
-    :::{figure} /fig/en_3.40_m3_ex_8_pub_health_1_join_attr_by_field_value.png
+    :::{figure} ../../../fig/en_3.40_m3_ex_8_pub_health_1_join_attr_by_field_value.png
     ---
     width: 550 px
     name: en_3.40_m3_ex_8_pub_health_1_join_attr_by_field_value
@@ -373,9 +373,9 @@ Lors des jointures, soyez attentif·ve à ce type d’incohérences.
     - Cliquez sur le numéro de ligne à gauche et sélectionnez la première entité. Lorsqu’elle est sélectionnée, l’entité apparaît en bleu.
     - Faites ensuite défiler jusqu’à voir la première entité dont la valeur de la colonne `beds_total` est différente de "NULL".
     - Maintenez <kbd>Shift</kbd> et cliquez sur le numéro de la dernière ligne ayant la valeur NULL. 
-    - Dans la barre d’outils de la table attributaire, cliquez sur le bouton ![](/fig/mActionToggleEditing.png) `Toggle Editing Mode` pour passer en mode édition. 
-    - Ensuite, cliquez sur ![](/fig/attribute_table_delete_feature.png) `Delete selected features` pour supprimer les points sans information de capacité. 
-    - Cliquez sur ![](/fig/mActionToggleEditing.png) pour enregistrer et quitter le mode édition.
+    - Dans la barre d’outils de la table attributaire, cliquez sur le bouton ![](../../../fig/mActionToggleEditing.png) `Toggle Editing Mode` pour passer en mode édition. 
+    - Ensuite, cliquez sur ![](../../../fig/attribute_table_delete_feature.png) `Delete selected features` pour supprimer les points sans information de capacité. 
+    - Cliquez sur ![](../../../fig/mActionToggleEditing.png) pour enregistrer et quitter le mode édition.
     - Enregistrez la couche nettoyée des capacités des structures de santé en faisant un <kbd>clic droit</kbd> dessus puis en sélectionnant `Make permament...`. Choisissez "Geopackage" comme format de sortie, enregistrez la couche dans le dossier `data/interim/` et saisissez un nom de fichier comme `tcd_healthsites_points_capacities`. Cliquez sur `Save`.
 
 
@@ -388,7 +388,7 @@ Lors des jointures, soyez attentif·ve à ce type d’incohérences.
 1. Nous pouvons maintenant classifier les points représentant les structures de santé afin d’indiquer quelles structures disposent d’une chaîne du froid pour stocker les vaccins contre la rougeole.
     - <kbd>Faites un clic droit</kbd> sur `tcd_healthsites_points_capacities` puis sélectionnez `Properties`. Une nouvelle fenêtre s’ouvrira.
     - À gauche, accédez à l’onglet Symbology.
-    :::{figure} /fig/en_3.40_m3_ex_8_pub_health_1_classifying_healthpoint_capacity.png
+    :::{figure} ../../../fig/en_3.40_m3_ex_8_pub_health_1_classifying_healthpoint_capacity.png
     ---
     name: en_3.40_m3_ex_8_pub_health_1_classifying_healthpoint_capacity
     width: 600 px

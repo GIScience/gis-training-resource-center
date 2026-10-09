@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/fr/fr_intro.html 
+:link: ../fr_intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -10,7 +10,7 @@
 
 ## Présentation de QGIS
 
-:::{figure} /fig/en_qgis_banner_website.png
+:::{figure} ../../../fig/en_qgis_banner_website.png
 ---
 name: en_qgis_banner_website
 width: 300 px
@@ -23,7 +23,7 @@ align: right
 - QGIS est un __logiciel SIG open source__. Cela signifie que son code source est accessible à tous, ce qui fait de QGIS une application gratuite. L’intégralité du code source peut être consultée et téléchargée sur https://github.com/qgis/QGIS.
 - QGIS est un __logiciel de bureau__ : cela signifie qu’il s’agit d’un programme qui s’ouvre sur votre ordinateur sous forme de fenêtre, avec des boutons sur lesquels cliquer, des formulaires à remplir pour réaliser des tâches, et une utilisation globalement visuelle et interactive.
 - Il permet de __visualiser, modifier, saisir et analyser des données spatiales, ainsi que de produire des cartes imprimables__. QGIS a été créé en 2002 et est développé par une communauté de bénévoles. Il est __en constante évolution__.
-- QGIS s’appuie sur une __large communauté d’utilisateurs__, ce qui facilite la recherche de solutions à des problèmes techniques via des forums, des blogs ou des subreddits. La communauté officielle QGIS est accessible [ici](https://qgis.org/en/site/forusers/support.html#support). Par ailleurs, une liste de sites utiles est disponible dans le [wiki ici](/content/fr/Wiki/fr_qgis_common_errors_and_Issues.md).
+- QGIS s’appuie sur une __large communauté d’utilisateurs__, ce qui facilite la recherche de solutions à des problèmes techniques via des forums, des blogs ou des subreddits. La communauté officielle QGIS est accessible [ici](https://qgis.org/en/site/forusers/support.html#support). Par ailleurs, une liste de sites utiles est disponible dans le [wiki ici](../../en/Wiki/en_qgis_common_errors_and_Issues.md).
 :::
 
 
@@ -55,21 +55,21 @@ Les SIG peuvent impliquer des mathématiques complexes, mais QGIS s’en charge 
 
 :::{tab-item} Collecte et création de données
 
-QGIS propose des outils pour créer vos propres données géographiques. Par exemple, avec les outils de numérisation, vous pouvez créer des points, des polygones et des lignes avec des informations attributaires représentant des phénomènes géographiques. Par ailleurs, le géoréférencement permet d’ajouter une information géographique à différents types de données, comme des images satellites ou des cartes dessinées à la main. Vous apprendrez à créer des données géographiques et à géoréférencer des données dans le __[module 2](/content/fr/Module_2/fr_module_2_overview.md)__.
+QGIS propose des outils pour créer vos propres données géographiques. Par exemple, avec les outils de numérisation, vous pouvez créer des points, des polygones et des lignes avec des informations attributaires représentant des phénomènes géographiques. Par ailleurs, le géoréférencement permet d’ajouter une information géographique à différents types de données, comme des images satellites ou des cartes dessinées à la main. Vous apprendrez à créer des données géographiques et à géoréférencer des données dans le __[module 2](../Module_2/fr_module_2_overview.md)__.
 
-Il arrive aussi que le travail en SIG nécessite de collecter des données sur le terrain. Dans ce cas, vous pouvez utiliser des [applications web et mobiles](/content/fr/Wiki/fr_web_and_mobile_apps_wiki.md).
+Il arrive aussi que le travail en SIG nécessite de collecter des données sur le terrain. Dans ce cas, vous pouvez utiliser des [applications web et mobiles](../../en/Wiki/en_web_and_mobile_apps_wiki.md).
 
 :::
 
 :::{tab-item} Traitement des données
 
-QGIS offre un large éventail d’algorithmes pour traiter les données géographiques. Dans les modules suivants, vous découvrirez plusieurs algorithmes particulièrement utiles pour l’usage des SIG dans l’action humanitaire. Vous en apprendrez davantage sur le traitement et la manipulation des données à partir du [module 2](https://giscience.github.io/gis-training-resource-center/content/fr/Modulew_2/fr_module_2_overview.html).
+QGIS offre un large éventail d’algorithmes pour traiter les données géographiques. Dans les modules suivants, vous découvrirez plusieurs algorithmes particulièrement utiles pour l’usage des SIG dans l’action humanitaire. Vous en apprendrez davantage sur le traitement et la manipulation des données à partir du [module 2](../Module_2/fr_module_2_overview.md).
 
 :::
 
 :::{tab-item} Visualisation
 
-QGIS permet de visualiser des données géographiques et de produire des cartes pour communiquer des informations. Cela se fait en attribuant des symboles et des couleurs aux différents éléments de vos données. La mise en place d’une symbologie est l’une des compétences clés que vous développerez en tant qu’utilisateur·rice SIG, et une bonne visualisation est extrêmement utile pour communiquer des résultats. Vous apprendrez à attribuer des symboles dans le [Module 4 : Visualisation des données géographiques et cartographie](/content/fr/Module_4/fr_qgis_map_design_I.md)
+QGIS permet de visualiser des données géographiques et de produire des cartes pour communiquer des informations. Cela se fait en attribuant des symboles et des couleurs aux différents éléments de vos données. La mise en place d’une symbologie est l’une des compétences clés que vous développerez en tant qu’utilisateur·rice SIG, et une bonne visualisation est extrêmement utile pour communiquer des résultats. Vous apprendrez à attribuer des symboles dans le [Module 4 : Visualisation des données géographiques et cartographie](../../en/Module_4/en_qgis_map_design_I.md)
 
 :::
 ::::
@@ -81,7 +81,7 @@ QGIS permet de visualiser des données géographiques et de produire des cartes 
 __À propos des extensions__
 ^^^
 
-En plus des algorithmes inclus dans l’installation standard, QGIS propose des extensions qui ajoutent des fonctionnalités supplémentaires à l’application. Ces extensions sont développées par des organisations indépendantes ou par la communauté QGIS. Par exemple, elles permettent de se connecter à des services en ligne comme OpenStreetMap, ou d’ajouter de nouveaux algorithmes pour traiter vos données. Elles peuvent être très utiles selon les besoins. Il existe également des extensions conçues spécifiquement pour l’action humanitaire. Vous en apprendrez davantage sur les extensions dans les modules suivants. Si vous souhaitez savoir comment les installer, consultez le [wiki](/content/fr/Wiki/fr_qgis_plugins_wiki.md).
+En plus des algorithmes inclus dans l’installation standard, QGIS propose des extensions qui ajoutent des fonctionnalités supplémentaires à l’application. Ces extensions sont développées par des organisations indépendantes ou par la communauté QGIS. Par exemple, elles permettent de se connecter à des services en ligne comme OpenStreetMap, ou d’ajouter de nouveaux algorithmes pour traiter vos données. Elles peuvent être très utiles selon les besoins. Il existe également des extensions conçues spécifiquement pour l’action humanitaire. Vous en apprendrez davantage sur les extensions dans les modules suivants. Si vous souhaitez savoir comment les installer, consultez le [wiki](../../en/Wiki/en_qgis_plugins_wiki.md).
 
 :::
 
@@ -102,7 +102,7 @@ Un fichier de projet QGIS possède l’extension `.qgz`.
 
 1. Sur l’écran de démarrage, cliquez sur `Project Template`.
 
-:::{figure} /fig/en_project_template_BRC.png
+:::{figure} ../../../fig/en_project_template_BRC.png
 ---
 height: 400
 name: en_project_template_BRC
@@ -128,7 +128,7 @@ Lorsque vous survolez une icône avec le curseur de la souris, un texte s’affi
 :::
 ::::
 
-:::{figure} /fig/en_QGIS_GUI.png
+:::{figure} ../../../fig/en_QGIS_GUI.png
 ---
 width: 800px 
 align: center
@@ -141,7 +141,7 @@ Interface utilisateur de QGIS. Source : BRC
 
 2. __Barres d’outils :__ Les __barres d’outils__ sont des raccourcis permettant d’exécuter des commandes fréquemment utilisées. Par exemple, il existe des barres d’outils spécifiques pour les __données vectorielles et raster__, ainsi que des barres plus générales pour enregistrer le projet, etc. Les barres d’outils contiennent notamment un accès à la __boîte à outils de traitements__, utilisée plus tard dans de nombreuses vidéos du wiki.
 
-:::{figure} /fig/en_Interface_02.png
+:::{figure} ../../../fig/en_Interface_02.png
 ---
 height: 75 px
 name: en_Interface_02
@@ -184,16 +184,16 @@ Les __raccourcis clavier__ (hotkeys) offrent des accès rapides à différentes 
 
 | Name                      | Menu option                    | Shortcut                        | Description                                 |
 |---------------------------|--------------------------------|---------------------------------|---------------------------------------------|
-| Map pan                   | ![](/fig/qgis_pan_map.png)     | <kbd>Space</kbd>, <kbd>Page Up</kbd>,  <kbd>Page Down</kbd> or the <kbd>Arrow Keys</kbd> | Move the map                                 |
-| Pan map to selection      | ![](/fig/qgis_pan_map_selection.png) |                                  | Pans the map to the selected element        |
-| Zoom in                   | ![](/fig/qgis_zoom_in.png)     | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>+</kbd> or <kbd>mouse wheel</kbd>   | Zoom into the map                            |
-| Zoom out                  | ![](/fig/qgis_zoom_out.png)    | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>-</kbd> or <kbd>mouse wheel</kbd>   | Zoom out of the map                          |
-| Zoom full                 | ![](/fig/qgis_zoom_full.png)   | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd>                  | Zoom to the selected element                |
-| Zoom to selection         | ![](/fig/qgis_zoom_to_selection.png) | <kbd>Ctrl</kbd> + <kbd>J</kbd>     | Zoom to the selected element                |
-| Zoom to layer             | ![](/fig/qgis_zoom_to_layer.png) |                                  | Zoom to the selected layer                   |
-| Zoom to native resolution | ![](/fig/qgis_zoom_native_resolution.png) |                             | Zoom to the native resolution (100%)         |
-| Zoom last                 | ![](/fig/qgis_zoom_last.png)   |                                 | Zoom to the last zoom                        |
-| Zoom next                 | ![](/fig/qgis_zoom_next.png)   |                                 | Zoom to the next zoom                        |
+| Map pan                   | ![](../../../fig/qgis_pan_map.png)     | <kbd>Space</kbd>, <kbd>Page Up</kbd>,  <kbd>Page Down</kbd> or the <kbd>Arrow Keys</kbd> | Move the map                                 |
+| Pan map to selection      | ![](../../../fig/qgis_pan_map_selection.png) |                                  | Pans the map to the selected element        |
+| Zoom in                   | ![](../../../fig/qgis_zoom_in.png)     | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>+</kbd> or <kbd>mouse wheel</kbd>   | Zoom into the map                            |
+| Zoom out                  | ![](../../../fig/qgis_zoom_out.png)    | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>-</kbd> or <kbd>mouse wheel</kbd>   | Zoom out of the map                          |
+| Zoom full                 | ![](../../../fig/qgis_zoom_full.png)   | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd>                  | Zoom to the selected element                |
+| Zoom to selection         | ![](../../../fig/qgis_zoom_to_selection.png) | <kbd>Ctrl</kbd> + <kbd>J</kbd>     | Zoom to the selected element                |
+| Zoom to layer             | ![](../../../fig/qgis_zoom_to_layer.png) |                                  | Zoom to the selected layer                   |
+| Zoom to native resolution | ![](../../../fig/qgis_zoom_native_resolution.png) |                             | Zoom to the native resolution (100%)         |
+| Zoom last                 | ![](../../../fig/qgis_zoom_last.png)   |                                 | Zoom to the last zoom                        |
+| Zoom next                 | ![](../../../fig/qgis_zoom_next.png)   |                                 | Zoom to the next zoom                        |
 
 :::
 
@@ -201,12 +201,12 @@ Les __raccourcis clavier__ (hotkeys) offrent des accès rapides à différentes 
 
 | Name            | Menu option                        | Shortcut         | Description                             |
 |-----------------|------------------------------------|------------------|-----------------------------------------|
-| New Project     | ![](/fig/qgis_new.png)             | <kbd>Ctrl</kbd> + <kbd>N</kbd>   | Create a new project                    |
-| Open Project    | ![](/fig/qgis_open_project.png)   | <kbd>Ctrl</kbd> + <kbd>O</kbd>     | Open an existing project                |
-| Save            | ![](/fig/qgis_save_project.png)   | <kbd>Ctrl</kbd> + <kbd>S</kbd>     | Save the project                        |
-| Save as…        | ![](/fig/qgis_save_project_as.png) | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd>  | Save the project as…           |
+| New Project     | ![](../../../fig/qgis_new.png)             | <kbd>Ctrl</kbd> + <kbd>N</kbd>   | Create a new project                    |
+| Open Project    | ![](../../../fig/qgis_open_project.png)   | <kbd>Ctrl</kbd> + <kbd>O</kbd>     | Open an existing project                |
+| Save            | ![](../../../fig/qgis_save_project.png)   | <kbd>Ctrl</kbd> + <kbd>S</kbd>     | Save the project                        |
+| Save as…        | ![](../../../fig/qgis_save_project_as.png) | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd>  | Save the project as…           |
 | Properties      |                                    | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>   | Open the project properties      |
-| New print layout| ![](/fig/qgis_new_print_layerout.png) | <kbd>Ctrl</kbd> + <kbd>P</kbd>  | Opens the Dialog to create a new print layout |
+| New print layout| ![](../../../fig/qgis_new_print_layerout.png) | <kbd>Ctrl</kbd> + <kbd>P</kbd>  | Opens the Dialog to create a new print layout |
 | Search          |                                    | <kbd>Ctrl</kbd> + <kbd>K</kbd>        | Opens the search bar                    |
 
 :::
@@ -215,11 +215,11 @@ Les __raccourcis clavier__ (hotkeys) offrent des accès rapides à différentes 
 
 | Name                        | Menu option                                  | Shortcut            | Description                       |
 |-----------------------------|----------------------------------------------|----------------------|-----------------------------------|
-| Data source manager         | ![](/fig/qgis_data_source_manager.png)       | <kbd>Ctrl</kbd> + <kbd>L</kbd>        | Add a new layer                   |
-| New GeoPackage layer        | ![](/fig/qgis_new_geopackage_layer.png)     | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd> | Add a new GeoPackage Layer       |
-| Add vector layer            | ![](/fig/qgis_add_vector_layer.png)         | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> | Add a new vector layer           |
-| Add raster layer            | ![](/fig/qgis_add_raster_layer.png)         | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> | Add a new raster layer           |
-| Remove selected layer       | ![](/fig/qgis_remove_selected_layer.png)    | <kbd>Ctrl</kbd> + <kbd>D</kbd>        | Remove the selected layer        |
+| Data source manager         | ![](../../../fig/qgis_data_source_manager.png)       | <kbd>Ctrl</kbd> + <kbd>L</kbd>        | Add a new layer                   |
+| New GeoPackage layer        | ![](../../../fig/qgis_new_geopackage_layer.png)     | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd> | Add a new GeoPackage Layer       |
+| Add vector layer            | ![](../../../fig/qgis_add_vector_layer.png)         | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> | Add a new vector layer           |
+| Add raster layer            | ![](../../../fig/qgis_add_raster_layer.png)         | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> | Add a new raster layer           |
+| Remove selected layer       | ![](../../../fig/qgis_remove_selected_layer.png)    | <kbd>Ctrl</kbd> + <kbd>D</kbd>        | Remove the selected layer        |
 | Toggle layers view          |                                              | <kbd>Ctrl</kbd> + <kbd>1</kbd>        | Toggle the layers view           |
 | Toggle browser view         |                                              | <kbd>Ctrl</kbd> + <kbd>2</kbd>       | Toggle the browser view          |
 
@@ -229,12 +229,12 @@ Les __raccourcis clavier__ (hotkeys) offrent des accès rapides à différentes 
 
 | Name                                     | Menu option                                 | Shortcut                   | Description                                            |
 |------------------------------------------|---------------------------------------------|-----------------------------|--------------------------------------------------------|
-| Identify Features | ![](/fig/qgis_identify_features.png) | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd>  | Identify features on the map view by clicking on them |
-| Select feature   | ![](/fig/qgis_select_features.png) |  | Select a feature by area or single click  |
-| Select feature by value | ![](/fig/qgis_select_features_by_value.png) | <kbd>F3</kbd> | Select features by value  |
-| Open Attribute table    | ![](/fig/qgis_open_attribute_table.png)     | <kbd>F6</kbd>  | Open the Attribute table                              |
-| Open Attribute table with selected features only | ![](/fig/qgis_open_attribute_table.png) | <kbd>Shift</kbd> + `F6`             | Open the Attribute table with selected features only  |
-| Open Attribute table with visible features only | ![](/fig/qgis_open_attribute_table.png)  | <kbd>Ctrl</kbd> + `F6`               | Open the Attribute table with visible features only   |
+| Identify Features | ![](../../../fig/qgis_identify_features.png) | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd>  | Identify features on the map view by clicking on them |
+| Select feature   | ![](../../../fig/qgis_select_features.png) |  | Select a feature by area or single click  |
+| Select feature by value | ![](../../../fig/qgis_select_features_by_value.png) | <kbd>F3</kbd> | Select features by value  |
+| Open Attribute table    | ![](../../../fig/qgis_open_attribute_table.png)     | <kbd>F6</kbd>  | Open the Attribute table                              |
+| Open Attribute table with selected features only | ![](../../../fig/qgis_open_attribute_table.png) | <kbd>Shift</kbd> + `F6`             | Open the Attribute table with selected features only  |
+| Open Attribute table with visible features only | ![](../../../fig/qgis_open_attribute_table.png)  | <kbd>Ctrl</kbd> + `F6`               | Open the Attribute table with visible features only   |
 
 :::
 
@@ -242,8 +242,8 @@ Les __raccourcis clavier__ (hotkeys) offrent des accès rapides à différentes 
 
 | Name                    | Menu option                            | Shortcut          | Description                  |
 |-------------------------|----------------------------------------|--------------------|------------------------------|
-| Processing Toolbox      | ![](/fig/qgis_processing_toolbox.png) | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> | Opens the Processing Toolbox |
-| Python Console          | ![](/fig/qgis_python_console.png)     | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd> | Opens the Python Console     |
+| Processing Toolbox      | ![](../../../fig/qgis_processing_toolbox.png) | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> | Opens the Processing Toolbox |
+| Python Console          | ![](../../../fig/qgis_python_console.png)     | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd> | Opens the Python Console     |
 
 :::
 
@@ -268,7 +268,7 @@ Télécharger les limites officielles (Banque mondiale).
 
 :::{tip}
 
-Maintenir la touche <kbd>Space</kbd> enfoncée active l’outil ![](/fig/qgis_pan_map.png) `Pan Map` lorsque le curseur se trouve dans la zone de carte. Déplacez simplement la souris tout en maintenant <kbd>Space</kbd> pour déplacer la vue.
+Maintenir la touche <kbd>Space</kbd> enfoncée active l’outil ![](../../../fig/qgis_pan_map.png) `Pan Map` lorsque le curseur se trouve dans la zone de carte. Déplacez simplement la souris tout en maintenant <kbd>Space</kbd> pour déplacer la vue.
 
 :::
 
@@ -276,7 +276,7 @@ Maintenir la touche <kbd>Space</kbd> enfoncée active l’outil ![](/fig/qgis_pa
 
 Pour déplacer la vue dans la zone de carte avec la souris, vous devez activer l’outil “main”.
 
-:::{image} /fig/qgis_move_symbol.png
+:::{image} ../../../fig/qgis_move_symbol.png
 ---
 name: qgis_move_symbol
 height: 40 px
@@ -301,7 +301,7 @@ La manière la plus simple de zoomer dans la zone de carte est d’__utiliser la
 
 Ou avec les raccourcis <kbd>Ctrl</kbd> + <kbd>+</kbd> et <kbd>Ctrl</kbd> + <kbd>-</kbd>.
 
-![](/fig/qgis_zoom_symbol.png)
+![](../../../fig/qgis_zoom_symbol.png)
 
 Une autre méthode consiste à utiliser les boutons de zoom du panneau de navigation.
 
@@ -324,7 +324,7 @@ Le raccourci <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> permet d’ouvrir e
 
 Pour ouvrir la Boîte à outils dans QGIS, cliquez sur le bouton en forme d’engrenage, ou cliquez sur `Processing` → `Toolbox`.
 
-![](/fig/Geschlossene_Toolbox_01.png)
+![](../../../fig/Geschlossene_Toolbox_01.png)
 
 Vous pouvez utiliser la barre de recherche pour trouver un outil spécifique.
 
@@ -362,7 +362,7 @@ Dans QGIS, les données géographiques avec lesquelles vous travaillez ne sont _
 Une bonne organisation des données, fondée sur une arborescence de dossiers stable et bien pensée, permet d’éviter ce type de problème.
 
 :::{Warning} 
-Organisez toujours vos données ! Consultez l’article wiki sur l’[Arborescence de dossiers standard](/content/fr/Wiki/fr_qgis_projects_folder_structure_wiki.md) pour en savoir plus. 
+Organisez toujours vos données ! Consultez l’article wiki sur l’[Arborescence de dossiers standard](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md) pour en savoir plus. 
 :::
 
 
@@ -405,7 +405,7 @@ Pour ouvrir un projet QGIS existant, cliquez sur `Project` → `Open…` → acc
 
 Il peut arriver qu’en travaillant avec QGIS, vous voyiez des icônes d’avertissement orange. Cela indique qu’il faut être vigilant. Pour comprendre la signification d’une icône d’avertissement, __survolez-la avec la souris__ : un texte explicatif apparaîtra. Par exemple, dans {numref}`warning_icon_example`, l’icône indique que les unités de mesure sont en degrés, qui ne sont pas constantes (la distance correspondant à 1° de longitude est beaucoup plus grande à l’équateur qu’aux pôles).
 
-:::{figure} /fig/en_3.36_warning_icon_example.png
+:::{figure} ../../../fig/en_3.36_warning_icon_example.png
 ---
 name: warning_icon_example
 width: 700 px
@@ -422,7 +422,7 @@ Si vous avez des questions avant ou après la formation, ou si vous avez besoin 
 
 :::{admonition} Erreurs fréquentes et problèmes courants
 :class: tip
-Nous avons rassemblé une liste des __[Erreurs fréquentes et problèmes courants](https://giscience.github.io/gis-training-resource-center/content/fr/Wiki/fr_qgis_common_errors_and_Issues.html)__. Si vous êtes bloqué·e (ce qui arrive souvent lorsqu’on travaille avec QGIS !), essayez d’y trouver la solution.
+Nous avons rassemblé une liste des __[Erreurs fréquentes et problèmes courants](../../en/Wiki/en_qgis_common_errors_and_Issues.md)__. Si vous êtes bloqué·e (ce qui arrive souvent lorsqu’on travaille avec QGIS !), essayez d’y trouver la solution.
 :::
 
 
@@ -482,7 +482,7 @@ Dans la barre de menu, utilisez `View` → `Panels` ou `Toolbars` pour activer/d
 
 :::{dropdown} Réponse
 
-- Sur notre page [Erreurs fréquentes et problèmes courants](https://giscience.github.io/gis-training-resource-center/content/fr/Wiki/fr_qgis_common_errors_and_Issues.html)
+- Sur notre page [Erreurs fréquentes et problèmes courants](../../en/Wiki/en_qgis_common_errors_and_Issues.md)
 - En consultant la [documentation QGIS](https://docs.qgis.org/3.34/en/docs/index.html)
 - Sur le [forum utilisateurs QGIS sur StackExchange](https://gis.stackexchange.com/?tags=qgis)
 - Via les [groupes d’utilisateurs QGIS](https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups)

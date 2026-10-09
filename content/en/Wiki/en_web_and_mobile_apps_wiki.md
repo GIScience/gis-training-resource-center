@@ -1,5 +1,8 @@
 # Web & mobile GIS applications <a id="web-and-mobile-gis-applications"></a>
 
+
+__🔙[Back to Homepage](../intro.md)__
+
 You can use GIS through __multiple applications__, from desktop software, to 
 online platforms, to mobile apps. At a basic level, you can perform limited 
 geospatial tasks with apps such as __Google Earth__ or __Google Maps__.

@@ -6,7 +6,7 @@ Cette documentation fournit des instructions sur la manière de téléverser et 
 
 <!-- Screenshot Panoramax -->
 
-```{figure} /fig/AILAS_screenshot_panoramax.png
+```{figure} ../../../fig/AILAS_screenshot_panoramax.png
 ---
 name: Screenshot Panoramax
 width: 400px
@@ -52,7 +52,7 @@ Panoramax empêche l’identification des personnes présentes dans les images e
 
 Alors qu’une des principales fonctionnalités de Panoramax est son **métacatalogue global public** qui permet de retrouver les images de toutes les instances fédérées, nous avons délibérément choisi de ne pas rejoindre la fédération avec l’instance Panoramax du projet AILAS. Cela signifie que les images téléversées sur notre instance ne peuvent pas être consultées via l’API globale.
 
-L’API de l’instance Panoramax du projet AILAS fonctionne sur un serveur accessible uniquement depuis notre propre réseau. Les images et leurs dérivés sont stockés dans un bucket privé MinIO. Le site web et l’API donnant accès aux images et aux données sont actuellement hébergés sur un réseau fermé.
+L’instance Panoramax utilisée par le projet AILAS a un paramètre par défaut qui rend les images téléversées visibles uniquement aux utilisateurs connectés du site web. Les utilisateurs ne peuvent pas créer eux-mêmes de compte sur cette instance Panoramax ; les comptes doivent être créés par les administrateurs. Cela signifie que les images et les séquences d’images téléversées ne seront pas visibles par le grand public.
 
 ## Téléversement des images <a id="televersement-des-images"></a>
 🚧 Le processus décrit ici est une solution temporaire et va changer. 🚧
@@ -62,7 +62,7 @@ L’API de l’instance Panoramax du projet AILAS fonctionne sur un serveur acce
 ::::{grid} 2
 :::{grid-item}
 
-```{figure} /fig/AILAS_slide_lid.jpg
+```{figure} ../../../fig/AILAS_slide_lid.jpg
 ---
 name: Slide lid
 width: 375 px
@@ -74,7 +74,7 @@ Faites coulisser le couvercle
 
 :::{grid-item}
 
-```{figure} /fig/AILAS_push_card.jpg
+```{figure} ../../../fig/AILAS_push_card.jpg
 ---
 name: push card
 width: 375 px
@@ -87,7 +87,7 @@ Poussez délicatement la carte SD pour la retirer.
 
 ### 2. Insérez la carte dans le lecteur et connectez-le à l’ordinateur. <a id="2-inserez-la-carte-dans-le-lecteur-et-connectez-le-a-lordinateur"></a>
 
-```{figure} /fig/AILAS_insert_card.jpg
+```{figure} ../../../fig/AILAS_insert_card.jpg
 ---
 name: insert card
 width: 400 px
@@ -99,9 +99,9 @@ Avec la carte SD insérée, connectez le lecteur de cartes à un ordinateur.
 
 ### 3. Se connecter à Panoramax <a id="3-se-connecter-a-panoramax"></a>
 
-Ouvrez le [site web Panoramax](https://panoramax.heigit.org) du projet AILAS et cliquez sur « Connexion » à droite de la barre de navigation supérieure.
+Ouvrez le [site web Panoramax](https://madagascar-panoramax.heigit.org) du projet AILAS et cliquez sur « Connexion » à droite de la barre de navigation supérieure.
 
-```{figure} /fig/AILAS_Panoramax_login_fr.png
+```{figure} ../../../fig/AILAS_Panoramax_login_fr.png
 ---
 name: panoramax login
 width: 400 px
@@ -115,14 +115,14 @@ Si c’est votre première connexion, vous utiliserez un mot de passe initial qu
 
 :::{admonition} Autres instances de Panoramax
 :class: tip
-Pour le projet AILAS, les images doivent être téléversées sur une [instance spécifique de Panoramax](https://panoramax.heigit.org). L’accès aux images sur cette instance est restreint à certains partenaires humanitaires sélectionnés. Si vous n’avez pas accès à cette instance mais souhaitez partager vos images _publiquement_, consultez les instances publiques disponibles sur https://panoramax.fr.
+Pour le projet AILAS, les images doivent être téléversées sur une [instance spécifique de Panoramax](https://madagascar-panoramax.heigit.org). L’accès aux images sur cette instance est restreint à certains partenaires humanitaires sélectionnés. Si vous n’avez pas accès à cette instance mais souhaitez partager vos images _publiquement_, consultez les instances publiques disponibles sur https://panoramax.fr.
 :::
 
 ### 4. Téléverser des images <a id="4-televerser-des-images"></a>
 
 1. Cliquez sur le grand bouton bleu « Partager des photos » dans la barre de navigation supérieure.
 
-```{figure} /fig/AILAS_Panoramax_upload_fr.png
+```{figure} ../../../fig/AILAS_Panoramax_upload_fr.png
 ---
 name: upload images
 width: 400 px
@@ -136,7 +136,7 @@ Téléverser des images
 5. Cliquez sur « Téléverser des photos ». Un navigateur de fichiers s’ouvrira. Sélectionnez et ouvrez toutes les images présentes sur la carte SD dans le dossier `/DCIM/100GOPRO`. Le démarrage du téléversement peut prendre quelques secondes si vous avez sélectionné un grand nombre d’images.
 6. Gardez la fenêtre du navigateur ouverte jusqu’à ce que le téléversement soit terminé.
 
-```{figure} /fig/AILAS_Panoramax_upload_window_fr.png
+```{figure} ../../../fig/AILAS_Panoramax_upload_window_fr.png
 ---
 name: upload window
 width: 400 px
@@ -146,7 +146,7 @@ Gardez la fenêtre de téléversement ouverte jusqu’à la fin du téléverseme
 
 Une fois le téléversement terminé, vous pouvez rencontrer certains messages d’erreur. Les images sont rejetées lorsqu’elles ne contiennent pas de données de localisation, ou lorsqu’elles sont trop proches de l’image précédente dans le temps et l’espace. En général, il n’y a pas lieu de s’inquiéter. Cependant, si un grand nombre d’images n’a pas pu être téléversé en raison de l’absence de données de localisation, essayez d’allumer la caméra plus tôt avant votre prochain trajet, afin de vous assurer que le GPS est prêt lorsque vous commencez.
 
-```{figure} /fig/AILAS_Panoramax_upload_error_fr.png
+```{figure} ../../../fig/AILAS_Panoramax_upload_error_fr.png
 ---
 name: upload completed
 width: 400 px
@@ -177,7 +177,7 @@ Here’s the translated version in French with the image filenames updated to `f
 
 Cliquez sur l’icône de votre compte dans la barre de navigation supérieure de Panoramax et choisissez « Mes photos ». Une page listant toutes vos séquences d’images téléchargées s’ouvrira.
 
-```{figure} /fig/AILAS_Panoramax_my_photos_fr.png
+```{figure} ../../../fig/AILAS_Panoramax_my_photos_fr.png
 ---
 name: mes photos
 width: 400 px
@@ -189,7 +189,7 @@ Les séquences sont listées avec leurs noms, le nombre de photos, les dates de 
 
 Pour voir toutes les photos d’une séquence spécifique, cliquez sur l’une des séquences. Cela ouvrira la page de la séquence.
 
-```{figure} /fig/AILAS_Panoramax_sequence_fr.png
+```{figure} ../../../fig/AILAS_Panoramax_sequence_fr.png
 ---
 name: séquences d'images
 width: 400 px
@@ -207,7 +207,7 @@ Cliquez sur « Explorer » dans la barre de navigation supérieure pour ouvr
 
 Cliquez sur l’un des marqueurs d’image sur la carte pour ouvrir une image.
 
-```{figure} /fig/AILAS_Panoramax_explore_map_fr.png
+```{figure} ../../../fig/AILAS_Panoramax_explore_map_fr.png
 ---
 name: carte d'exploration
 width: 400 px
@@ -219,7 +219,7 @@ Vous pouvez cliquer sur « Agrandir » dans l’encart en bas à gauche pour
 
 Utilisez les flèches de navigation sur l’image pour passer d’une image à l’autre, ou appuyez sur le bouton « ▶ » pour parcourir l’ensemble d’une séquence.
 
-```{figure} /fig/AILAS_Panoramax_explore_image_fr.png
+```{figure} ../../../fig/AILAS_Panoramax_explore_image_fr.png
 ---
 name: image explorée
 width: 400 px

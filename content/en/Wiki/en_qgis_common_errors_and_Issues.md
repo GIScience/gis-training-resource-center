@@ -4,35 +4,35 @@ Here we are collecting common QGIS errors and issues as general QGIS training su
 
 # Table of content <!-- omit from toc --> <a id="table-of-content-omit-from-toc"></a>
 
-- [Different QGIS versions](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#different-qgis-versions)
-- [QGIS on Mac doesn't open](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#qgis-on-mac-doesnt-open)
-- [A layer is not displayed in QGIS](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#a-layer-is-not-displayed-in-qgis)
-- [A layer window has disappeared in QGIS](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#a-layer-window-has-disappeared-in-qgis)
-- [Layers that should actually be in the same position are not on top of each other](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#layers-that-should-actually-be-in-the-same-position-are-not-on-top-of-each-other)
-- [Layer file disappeared from the layer window](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#layer-file-disappeared-from-the-layer-window)
-- [Missing processing tools in the panels tool and incomplete vector tab](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#missing-processing-tools-in-the-panels-tool-and-incomplete-vector-tab)
-- [Missing toolbox](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#missing-toolbox)
-- [The North arrow is not syncing with the corresponding map](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#the-north-arrow-is-not-syncing-with-the-corresponding-map)
-- [Invalid Geometry](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#invalid-geometry)
-- [Coordinate systems: What do all these terms mean?](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#coordinate-systems-what-do-all-these-terms-mean)
-- [Coordinate systems: How do I redefine a dataset's coordinate system?](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#coordinate-systems-how-do-i-redefine-a-datasets-coordinate-system)
-- [Coordinate systems: Why is Mercator ever used if it's so distorted?](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#coordinate-systems-why-is-mercator-ever-used-if-its-so-distorted)
-- [Coordinate systems: My dataset is not located where it should be!](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#coordinate-systems-my-dataset-is-not-located-where-it-should-be)
-- [Coordinate systems: What coordinate system should my dataset be in?](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#coordinate-systems-what-coordinate-system-should-my-dataset-be-in)
-- [My dataset is slightly offset from where it should be!](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#my-dataset-is-slightly-offset-from-where-it-should-be)
-- [Wrong data results or missing data](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#wrong-data-results-or-missing-data)
-- [File Management Issues](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#file-management-issues)
-- [Specific QGIS problems](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#specific-qgis-problems)
-  - [Basic settings \> Deactivating the automatic projection selection](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#basic-settings--deactivating-the-automatic-projection-selection)
-  - [Saving regularly](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#saving-regularly)
-  - [GRASS applications](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#grass-applications)
-  - [SAGA with Linux](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#saga-with-linux)
-  - [Umlauts, special characters, spaces in file paths](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#umlauts-special-characters-spaces-in-file-paths)
-- [QGIS Help Access Links](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#qgis-help-access-links)
-    - [QGIS tutorials and tips:](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#qgis-tutorials-and-tips)
-    - [QGIS community/forums:](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#qgis-communityforums)
-    - [QGIS YouTube channels:](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#qgis-youtube-channels)
-    - [ChatGPT](https://giscience.github.io/gis-training-resource-center/english/content/en/Wiki/en_qgis_common_errors_and_Issues.html#chatgpt)
+- [Different QGIS versions](#different-qgis-versions)
+- [QGIS on Mac doesn't open](#qgis-on-mac-doesnt-open)
+- [A layer is not displayed in QGIS](#a-layer-is-not-displayed-in-qgis)
+- [A layer window has disappeared in QGIS](#a-layer-window-has-disappeared-in-qgis)
+- [Layers that should actually be in the same position are not on top of each other](#layers-that-should-actually-be-in-the-same-position-are-not-on-top-of-each-other)
+- [Layer file disappeared from the layer window](#layer-file-disappeared-from-the-layer-window)
+- [Missing processing tools in the panels tool and incomplete vector tab](#missing-processing-tools-in-the-panels-tool-and-incomplete-vector-tab)
+- [Missing toolbox](#missing-toolbox)
+- [The North arrow is not syncing with the corresponding map](#the-north-arrow-is-not-syncing-with-the-corresponding-map)
+- [Invalid Geometry](#invalid-geometry)
+- [Coordinate systems: What do all these terms mean?](#coordinate-systems-what-do-all-these-terms-mean)
+- [Coordinate systems: How do I redefine a dataset's coordinate system?](#coordinate-systems-how-do-i-redefine-a-datasets-coordinate-system)
+- [Coordinate systems: Why is Mercator ever used if it's so distorted?](#coordinate-systems-why-is-mercator-ever-used-if-its-so-distorted)
+- [Coordinate systems: My dataset is not located where it should be!](#coordinate-systems-my-dataset-is-not-located-where-it-should-be)
+- [Coordinate systems: What coordinate system should my dataset be in?](#coordinate-systems-what-coordinate-system-should-my-dataset-be-in)
+- [My dataset is slightly offset from where it should be!](#my-dataset-is-slightly-offset-from-where-it-should-be)
+- [Wrong data results or missing data](#wrong-data-results-or-missing-data)
+- [File Management Issues](#file-management-issues)
+- [Specific QGIS problems](#specific-qgis-problems)
+  - [Basic settings \> Deactivating the automatic projection selection](#basic-settings-deactivating-the-automatic-projection-selection)
+  - [Saving regularly](#saving-regularly)
+  - [GRASS applications](#grass-applications)
+  - [SAGA with Linux](#saga-with-linux)
+  - [Umlauts, special characters, spaces in file paths](#umlauts-special-characters-spaces-in-file-paths)
+- [QGIS Help Access Links](#qgis-help-access-links)
+    - [QGIS tutorials and tips:](#qgis-tutorials-and-tips)
+    - [QGIS community/forums:](#qgis-communityforums)
+    - [QGIS YouTube channels:](#qgis-youtube-channels)
+    - [ChatGPT](#chatgpt)
 
 
 
@@ -54,7 +54,7 @@ Error when opening QGIS on Mac for the first time.
 
 To solve this, press the control button on your keyboard and right-click open.
     
-If this problem persists, you can change the settings on your device. Go in the `Settings` > `Security & Privacy` and scroll down, click `Open Anyway`
+If this problem persists, you can change the settings on your device. Go to the `Settings` > `Security & Privacy` and scroll down, click `Open Anyway`
 
 :::{figure} ../../../fig/opening_qgis_mac.png
 ---
@@ -132,7 +132,7 @@ name: Layer with different crs
 Layer with different crs.
 :::
 
-You can check this using the `Add Geometry Attributes` < `Geometry Tools` algorithm. The coordinates are different from the coordinates in the other two attribute tables of the other layers.
+You can check this using the `Geometry Tools` > `Add Geometry Attributes` algorithm. The coordinates are different from the coordinates in the other two attribute tables of the other layers.
 
 Instead do this:
 
@@ -330,7 +330,7 @@ Redefining means the metadata about the coordinate system is modified but the co
 
 __Solutions:__
 
-+ In QGIS, for vector datasets, use the `Assign Projection` tool in the `Vector General` toolset, not the `Reproject Layer` tool. See also: https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/gdal/rasterprojections.html#assign-projection 
++ In QGIS, for vector datasets, use the `Assign Projection` tool in the `Vector General` toolset, not the `Reproject Layer` tool. See also: https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html#assign-projection 
 
 
 + In QGIS, for raster datasets, use the `Assign Projection` tool in the `GDAL` toolset, not the `Warp (Reproject)` tool. See also: https://docs.qgis.org/3.28/en/docs/user_manual/processing_algs/gdal/rasterprojections.html#assign-projection 
@@ -370,11 +370,11 @@ __Solution:__
 
 2. Access `Project Properties`: Go to the `Project menu` at the top of the QGIS window and select `Properties`. Alternatively, you can press `Ctrl + Shift + P` as a shortcut.
 
-3. Coordinate System Tab: In the `Project Properties` window, select the `Coordinate System  tab.
+3. Coordinate System Tab: In the `Project Properties` window, select the `Coordinate System` tab.
 
 4. Change Coordinate System: Here, you can select a new coordinate system for your project. You can search for a specific coordinate system using the search bar, or you can browse through the list of available coordinate systems.
 
-Apply Changes: Once you've selected the desired coordinate system, click `OK` to apply the changes. QGIS will reproject the layers in your project to match the new coordinate system.
+5. Apply Changes: Once you've selected the desired coordinate system, click `OK` to apply the changes. QGIS will reproject the layers in your project to match the new coordinate system.
 
 :::{figure} ../../../fig/en_qgis_redefining_CRS01.png
 ---
@@ -385,7 +385,7 @@ align: center
 Redefining CRS.
 :::
 
-5. Check and Adjust Layers: After redefining the coordinate system, it's essential to check your layers to ensure they align correctly. Some layers may require manual adjustments or reprojection if they don't align as expected.
+6. Check and Adjust Layers: After redefining the coordinate system, it's essential to check your layers to ensure they align correctly. Some layers may require manual adjustments or reprojection if they don't align as expected.
 And have also a final look at the right bottom of the QGIS window where the actual CRS is indicated.
 
 :::{figure} ../../../fig/en_qgis_redefining_CRS02.png
@@ -529,7 +529,7 @@ The standard folder structure has two principal advantages:
 1. By sharing the whole project folder, we can be certain that the project will run without problems on a different computer.
 2. The folder structure supports the proper organization of geodata and supports the stable function of a QGIS project. 
 
-The folder structure template can be downloaded [__here__](https://github.com/GIScience/gis-training-resource-center/blob/main/fig/GIS_Project_folder_template.zip).
+The folder structure template can be downloaded [__here__](https://nexus.heigit.org/repository/gis-training-resource-center/Templates/GIS_project_folder_template.zip).
 
 
 :::{Tip}
@@ -537,7 +537,7 @@ The layer data used in the project are not saved in the project file. Instead, t
 Good data organisation with a fixed and well thought-out folder structure prevents such problems.
 :::
 
-See also the following [__Wiki_Page__](https://github.com/GIScience/gis-training-resource-center/blob/main/content/Wiki/en_qgis_projects_folder_structure_wiki.md) for `How to create a new QGIS project` and `How to open an existing QGIS project`.
+See also the following [__Wiki_Page__](en_qgis_projects_folder_structure_wiki.md) for `How to create a new QGIS project` and `How to open an existing QGIS project`.
 
 ## Specific QGIS problems <a id="specific-qgis-problems"></a>
 ### Basic settings > Deactivating the automatic projection selection <a id="basic-settings-deactivating-the-automatic-projection-selection"></a>
@@ -563,7 +563,7 @@ Change crs settings in QGIS.
 Unfortunately, GIS programs are notorious for freezing or crashing completely. Although there is a trend towards fewer complications with better hardware, even a "gaming PC" costing several thousand dollars is not completely safe.
 More complex tasks with longer calculation times may still cause problems. Regular saving is therefore recommended.
 
-See also the following [__Wiki_Page__](https://github.com/GIScience/gis-training-resource-center//content/Wiki/en_qgis_interface_wiki.html#save-open-qgis-projects) `Save and open QGIS Projects.` 
+See also the following [__Wiki_Page__](en_qgis_interface_wiki.md#save-and-open-qgis-projects) `Save and open QGIS Projects.` 
 
 ### GRASS applications <a id="grass-applications"></a>
 
@@ -589,7 +589,7 @@ Temporary files are user-specific (if several people use one PC, each person has
 
 Here you will find further help access links or QGIS community/forum links to address specific issues:
 
-#### QGIS tutorials and tips: <a id="qgis-tutorials-and-tips"></a>
+### QGIS tutorials and tips: <a id="qgis-tutorials-and-tips"></a>
 + Collection of QGIS tutorials and tips: https://www.qgistutorials.com/en/
 
 + QGIS training manual: https://docs.qgis.org/3.28/en/docs/training_manual/index.html
@@ -604,18 +604,18 @@ Here you will find further help access links or QGIS community/forum links to ad
 
 + QGIS tutorial (CartONG): https://cartong.pages.gitlab.cartong.org/learning-corner/en/6_tutorials/6_3_gis/6_3_1_qgis
 
-#### QGIS community/forums: <a id="qgis-communityforums"></a>
+### QGIS community/forums: <a id="qgis-communityforums"></a>
 + Geographic Information Systems: https://gis.stackexchange.com/?tags=qgis
 
 + QGIS user groups: https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups
 
-#### QGIS YouTube channels: <a id="qgis-youtube-channels"></a>
+### QGIS YouTube channels: <a id="qgis-youtube-channels"></a>
 + The best YouTube channels in QGIS and open source gis tools: https://hatarilabs.com/ih-en/the-best-youtube-channels-in-qgis-and-open-source-gis-tools-in-any-language 
 + Absolute beginners guide to QGIS: https://www.youtube.com/watch?v=NHolzMgaqwE
 + QGIS complete tutorial for beginners: https://www.youtube.com/watch?v=d15Xl4OphDk
 + QGIS for beginners: https://www.youtube.com/watch?v=Eg4_duqH5Q4
 + Introduction to QGIS: https://www.youtube.com/watch?v=kxJI5FAGjzQ
 
-#### ChatGPT <a id="chatgpt"></a>
+### ChatGPT <a id="chatgpt"></a>
 + And don't forget ChatGPT https://chat.openai.com/
 It is quick!

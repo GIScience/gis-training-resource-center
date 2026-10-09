@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/fr/fr_intro.html 
+:link: ../fr_intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -18,7 +18,7 @@ Si vous souhaitez comprendre comment la cartographie communautaire et la numéri
 
 :::
 
-:::{figure} /fig/en_digitisation_concept.png
+:::{figure} ../../../fig/en_digitisation_concept.png
 ---
 width: 900px
 align: center
@@ -41,7 +41,7 @@ Une inondation s’est produite dans un village à la suite de fortes pluies. Af
 
 ### Barres d’outils de numérisation <a id="digitisation-toolbars"></a>
 
-:::{figure} /fig/Activate_digitizing_toolbox.png
+:::{figure} ../../../fig/Activate_digitizing_toolbox.png
 ---
 width: 300px
 align: left
@@ -67,7 +67,7 @@ Tout d’abord, vous devez vérifier si la `Digitizing Toolbox` est activée. Po
 
 La barre d’outils de numérisation offre les outils de base pour créer, enregistrer et modifier des entités. Cependant, pour toute opération allant au-delà de la simple création ou suppression d’entités, la barre d’outils de numérisation avancée est nécessaire (voir {numref}`digitising_toolbar`). La barre d’outils de numérisation avancée permet de déplacer des entités, de supprimer des parties d’entités et bien plus encore. Toutes les fonctions sont listées dans les deux tableaux ci-dessous.
 
-:::{figure} /fig/Toolbox.png
+:::{figure} ../../../fig/Toolbox.png
 ---
 width: 700 px
 name: digitising_toolbar
@@ -79,17 +79,17 @@ Barre d’outils de numérisation dans QGIS 3.36.
 :::{dropdown} Barre d’outils de numérisation
 | Outil | Fonction | Outil | Fonction |
 |---|---|-----|---|
-| ![](/fig/mActionAllEdits.png) | Accès à l’enregistrement, à l’annulation ou au rétablissement des modifications dans toutes ou certaines couches simultanément | ![](/fig/mActionToggleEditing.png) | Activer ou désactiver le mode édition des couches sélectionnées |
-| ![](/fig/mActionSaveEdits.png) | Enregistrer les modifications | |
-| ![](/fig/mActionDigitizeWithSegment.png) | Numériser avec des segments droits | ![](/fig/mActionDigitizeWithCurve.png) | Numériser avec des courbes |
-| ![](/fig/mActionStreamingDigitize.png) | Activer la numérisation à main levée | ![](/fig/mActionDigitizeShape.png) | Numériser un polygone de forme régulière |
-| ![](/fig/mActionNewTableRow.png)  | Ajouter un nouvel enregistrement | ![](/fig/mActionCapturePoint.png) | Ajouter une entité : point |
-| ![](/fig/mActionCaptureLine.png) | Ajouter une entité : ligne | ![](/fig/mActionCapturePolygon.png) | Ajouter une entité : polygone |
-| ![](/fig/mActionVertexTool.png) | Outil de sommets (toutes les couches) | ![](/fig/mActionVertexToolActiveLayer.png) | Outil de sommets (couche active) |
-| ![](/fig/checkbox.png) | Définir si le panneau d’édition des sommets doit s’ouvrir automatiquement | ![](/fig/mActionMultiEdit.png) | Modifier les attributs de toutes les entités sélectionnées simultanément |
-| ![](/fig/mActionDeleteSelectedFeatures.png) | Supprimer les entités sélectionnées de la couche active | ![](/fig/mActionEditCut.png) | Couper les entités de la couche active |
-| ![](/fig/mActionCopySelected.png) | Copier les entités sélectionnées de la couche active | ![](/fig/mActionEditPaste.png) | Coller les entités dans la couche active |
-| ![](/fig/mActionUndo.png) | Annuler les modifications dans la couche active | ![](/fig/mActionRedo.png) | Rétablir les modifications dans la couche active |
+| ![](../../../fig/mActionAllEdits.png) | Accès à l’enregistrement, à l’annulation ou au rétablissement des modifications dans toutes ou certaines couches simultanément | ![](../../../fig/mActionToggleEditing.png) | Activer ou désactiver le mode édition des couches sélectionnées |
+| ![](../../../fig/mActionSaveEdits.png) | Enregistrer les modifications | |
+| ![](../../../fig/mActionDigitizeWithSegment.png) | Numériser avec des segments droits | ![](../../../fig/mActionDigitizeWithCurve.png) | Numériser avec des courbes |
+| ![](../../../fig/mActionStreamingDigitize.png) | Activer la numérisation à main levée | ![](../../../fig/mActionDigitizeShape.png) | Numériser un polygone de forme régulière |
+| ![](../../../fig/mActionNewTableRow.png)  | Ajouter un nouvel enregistrement | ![](../../../fig/mActionCapturePoint.png) | Ajouter une entité : point |
+| ![](../../../fig/mActionCaptureLine.png) | Ajouter une entité : ligne | ![](../../../fig/mActionCapturePolygon.png) | Ajouter une entité : polygone |
+| ![](../../../fig/mActionVertexTool.png) | Outil de sommets (toutes les couches) | ![](../../../fig/mActionVertexToolActiveLayer.png) | Outil de sommets (couche active) |
+| ![](../../../fig/checkbox.png) | Définir si le panneau d’édition des sommets doit s’ouvrir automatiquement | ![](../../../fig/mActionMultiEdit.png) | Modifier les attributs de toutes les entités sélectionnées simultanément |
+| ![](../../../fig/mActionDeleteSelectedFeatures.png) | Supprimer les entités sélectionnées de la couche active | ![](../../../fig/mActionEditCut.png) | Couper les entités de la couche active |
+| ![](../../../fig/mActionCopySelected.png) | Copier les entités sélectionnées de la couche active | ![](../../../fig/mActionEditPaste.png) | Coller les entités dans la couche active |
+| ![](../../../fig/mActionUndo.png) | Annuler les modifications dans la couche active | ![](../../../fig/mActionRedo.png) | Rétablir les modifications dans la couche active |
 
 :::
 
@@ -99,18 +99,18 @@ Pour des procédures de numérisation plus complexes, vous utiliserez la barre d
 
 | Outil                                                                                                        | Fonction                               | Outil                                                                                                                              | Fonction                  |
 |-------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|--------------------------|
-| ![](/fig/cad.png)                                                                                           | Activer les outils de numérisation avancée      |                                                                                                                                   |                          |
-| ![](/fig/mActionMoveFeature-1.png)![](/fig/mActionMoveFeatureLine.png)![](/fig/mActionMoveFeaturePoint.png) | Déplacer des entités                       | ![Alt text](/fig/mActionMoveFeatureCopy.png) ![](/fig/mActionMoveFeatureCopyLine.png) ![](/fig/mActionMoveFeatureCopyPoint-2.png) | Copier et déplacer des entités |
-| ![Alt text](/fig/mActionRotateFeature.png)                                                                  | Faire pivoter des entités                     | ![Alt text](/fig/mActionSimplify.png)                                                                                             | Simplifier une entité         |
-| ![Alt text](/fig/mActionScaleFeature.png)                                                                   | Mettre à l’échelle une entité                         |                                                                                                                                   |
-| ![Alt text](/fig/mActionAddRing.png)                                                                        | Ajouter un anneau                              | ![Alt text](/fig/mActionAddPart.png)                                                                                              | Ajouter une partie                 |
-| ![Alt text](/fig/mActionFillRing.png)                                                                       | Remplir un anneau                             | ![Alt text](/fig/mActionReverseLine.png)                                                                                          | Inverser la direction           |
-| ![Alt text](/fig/mActionDeleteRing.png)                                                                     | Supprimer un anneau                           | ![Alt text](/fig/mActionDeletePart.png)                                                                                           | Supprimer une partie              |
-| ![Alt text](/fig/mActionOffsetCurve.png)                                                                    | Décaler une courbe                          | ![Alt text](/fig/mActionReshape.png)                                                                                              | Remodeler des entités         |
-| ![Alt text](/fig/mActionSplitParts.png)                                                                     | Scinder des parties                           | ![Alt text](/fig/mActionSplitFeatures.png)                                                                                        | Scinder des entités           |
-| ![Alt text](/fig/mActionMergeFeatureAttributes.png)                                                         | Fusionner les attributs des entités sélectionnées | ![Alt text](/fig/mActionMergeFeatures.png)                                                                                        | Fusionner les entités sélectionnées  |
-| ![Alt text](/fig/mActionRotatePointSymbols.png)                                                             | Faire pivoter des symboles de points                  | ![Alt text](/fig/mActionOffsetPointSymbols.png)                                                                                   | Décaler des symboles de points     |
-| ![Alt text](/fig/mActionTrimExtend.png)                                                                     | Rogner ou prolonger une entité                |                                                                                                                                   |                          |
+| ![](../../../fig/cad.png)                                                                                           | Activer les outils de numérisation avancée      |                                                                                                                                   |                          |
+| ![](../../../fig/mActionMoveFeature-1.png)![](../../../fig/mActionMoveFeatureLine.png)![](../../../fig/mActionMoveFeaturePoint.png) | Déplacer des entités                       | ![Alt text](../../../fig/mActionMoveFeatureCopy.png) ![](../../../fig/mActionMoveFeatureCopyLine.png) ![](../../../fig/mActionMoveFeatureCopyPoint-2.png) | Copier et déplacer des entités |
+| ![Alt text](../../../fig/mActionRotateFeature.png)                                                                  | Faire pivoter des entités                     | ![Alt text](../../../fig/mActionSimplify.png)                                                                                             | Simplifier une entité         |
+| ![Alt text](../../../fig/mActionScaleFeature.png)                                                                   | Mettre à l’échelle une entité                         |                                                                                                                                   |
+| ![Alt text](../../../fig/mActionAddRing.png)                                                                        | Ajouter un anneau                              | ![Alt text](../../../fig/mActionAddPart.png)                                                                                              | Ajouter une partie                 |
+| ![Alt text](../../../fig/mActionFillRing.png)                                                                       | Remplir un anneau                             | ![Alt text](../../../fig/mActionReverseLine.png)                                                                                          | Inverser la direction           |
+| ![Alt text](../../../fig/mActionDeleteRing.png)                                                                     | Supprimer un anneau                           | ![Alt text](../../../fig/mActionDeletePart.png)                                                                                           | Supprimer une partie              |
+| ![Alt text](../../../fig/mActionOffsetCurve.png)                                                                    | Décaler une courbe                          | ![Alt text](../../../fig/mActionReshape.png)                                                                                              | Remodeler des entités         |
+| ![Alt text](../../../fig/mActionSplitParts.png)                                                                     | Scinder des parties                           | ![Alt text](../../../fig/mActionSplitFeatures.png)                                                                                        | Scinder des entités           |
+| ![Alt text](../../../fig/mActionMergeFeatureAttributes.png)                                                         | Fusionner les attributs des entités sélectionnées | ![Alt text](../../../fig/mActionMergeFeatures.png)                                                                                        | Fusionner les entités sélectionnées  |
+| ![Alt text](../../../fig/mActionRotatePointSymbols.png)                                                             | Faire pivoter des symboles de points                  | ![Alt text](../../../fig/mActionOffsetPointSymbols.png)                                                                                   | Décaler des symboles de points     |
+| ![Alt text](../../../fig/mActionTrimExtend.png)                                                                     | Rogner ou prolonger une entité                |                                                                                                                                   |                          |
 :::
 
 
@@ -133,18 +133,18 @@ Pensez à un jeu de données spatial dont vous pourriez avoir besoin dans vos op
 :::
 
 1. `Layer` → `Create Layer` → `New GeoPackage Layer` ou `New Shapefile Layer`.
-2. Cliquez sur ![](/fig/Three_points.png) à côté du champ `file name` et naviguez vers le dossier où vous souhaitez enregistrer le jeu de données.
+2. Cliquez sur ![](../../../fig/Three_points.png) à côté du champ `file name` et naviguez vers le dossier où vous souhaitez enregistrer le jeu de données.
 3. `File encoding` : assurez-vous qu’il est défini sur UTF-8.
 4. `Geometry type` : sélectionnez le type d’entité que vous souhaitez numériser, par exemple des points ou des lignes.
 5. Sous `Additional dimension`, assurez-vous toujours de sélectionner `None`, sauf si vous avez la possibilité de collecter également des valeurs Z (élévation), ce qui est rarement le cas.
-6. Menu déroulant CRS : sélectionnez le EPSG/CRS que vous souhaitez définir pour la nouvelle couche. Par défaut, QGIS sélectionne le CRS du projet. Pour le modifier, cliquez sur ![](/fig/mIconProjectionEnabled.png).
+6. Menu déroulant CRS : sélectionnez le EPSG/CRS que vous souhaitez définir pour la nouvelle couche. Par défaut, QGIS sélectionne le CRS du projet. Pour le modifier, cliquez sur ![](../../../fig/mIconProjectionEnabled.png).
 7. Sous `New Field`, vous pouvez ajouter des colonnes à la nouvelle couche. Vous pouvez y définir le type de données que vous souhaitez collecter dans ce jeu de données.
     * `Type` : sélectionnez le type de données de la colonne, par exemple `Text`, `Whole number`, `Decimal Number`, `Date`.
-    * Cliquez sur ![](/fig/mActionNewAttribute.png) pour ajouter la nouvelle colonne à la `Fields List`.
+    * Cliquez sur ![](../../../fig/mActionNewAttribute.png) pour ajouter la nouvelle colonne à la `Fields List`.
 8. Cliquez sur `OK` pour créer les données.
 
 
-:::{figure} /fig/New_GeoPackage_Layer.png
+:::{figure} ../../../fig/New_GeoPackage_Layer.png
 ---
 width: 500px
 name: New_GeoPackage_Layer
@@ -155,7 +155,7 @@ La fenêtre de création de couche dans QGIS 3.36.
 
 
 :::{attention} 
-Un concept important à comprendre avant de commencer à ajouter des données aux jeux de données est que, chaque fois que vous effectuez des modifications sur un jeu de données autres que le style, vous devez activer le mode édition. Cela se fait en sélectionnant la couche et en cliquant sur ![](/fig/mActionToggleEditing.png) `Toggle Editing`. Les boutons de nombreuses fonctions de la barre d’outils de numérisation deviennent alors actifs. Une fois les modifications terminées, cliquez sur ![](/fig/mActionSaveEdits.png) `Save Layer Edits` pour enregistrer vos modifications. 
+Un concept important à comprendre avant de commencer à ajouter des données aux jeux de données est que, chaque fois que vous effectuez des modifications sur un jeu de données autres que le style, vous devez activer le mode édition. Cela se fait en sélectionnant la couche et en cliquant sur ![](../../../fig/mActionToggleEditing.png) `Toggle Editing`. Les boutons de nombreuses fonctions de la barre d’outils de numérisation deviennent alors actifs. Une fois les modifications terminées, cliquez sur ![](../../../fig/mActionSaveEdits.png) `Save Layer Edits` pour enregistrer vos modifications. 
 :::
 
 Une fois la nouvelle couche configurée, vous pouvez commencer à ajouter des entités géométriques. Le processus est globalement le même pour les trois types de géométrie : 
@@ -163,23 +163,23 @@ Une fois la nouvelle couche configurée, vous pouvez commencer à ajouter des en
 ### Création de nouvelles entités <a id="creating-new-data-entries"></a>
 
 1. Sélectionnez la couche à laquelle vous souhaitez ajouter des données dans le panneau des couches.
-2. Accédez à la barre d’outils de numérisation et cliquez sur ![](/fig/mActionToggleEditing.png) `Toggle Editing`. Assurez-vous que la couche est en mode édition. Sinon, cliquez sur l’icône ![](/fig/mActionToggleEditing.png) dans la barre d’outils de numérisation. 
+2. Accédez à la barre d’outils de numérisation et cliquez sur ![](../../../fig/mActionToggleEditing.png) `Toggle Editing`. Assurez-vous que la couche est en mode édition. Sinon, cliquez sur l’icône ![](../../../fig/mActionToggleEditing.png) dans la barre d’outils de numérisation. 
 
 ### Création de données ponctuelles <a id="creating-point-data"></a>
 
 1. Sélectionnez la couche de points à laquelle vous souhaitez ajouter des données dans le panneau des couches.
-2. Accédez à la barre d’outils de numérisation et cliquez sur ![](/fig/mActionToggleEditing.png) `Toggle Editing`. Assurez-vous que la couche est en mode édition. Sinon, cliquez sur l’icône ![](/fig/mActionToggleEditing.png). 
-3. Cliquez sur ![](/fig/mActionCapturePoint.png). 
+2. Accédez à la barre d’outils de numérisation et cliquez sur ![](../../../fig/mActionToggleEditing.png) `Toggle Editing`. Assurez-vous que la couche est en mode édition. Sinon, cliquez sur l’icône ![](../../../fig/mActionToggleEditing.png). 
+3. Cliquez sur ![](../../../fig/mActionCapturePoint.png). 
 4. Cliquez avec le bouton gauche sur l’entité que vous souhaitez numériser.
 5. Une fenêtre `[Nom de votre couche] - Feature Attribute` apparaîtra. Vous pouvez y ajouter les informations relatives à cette entité dans les différentes colonnes, en fonction de la table attributaire de la couche.
-5. Une fois la numérisation terminée, cliquez sur ![](/fig/mActionSaveEdits.png) pour enregistrer vos modifications.
-6. Cliquez à nouveau sur ![](/fig/mActionToggleEditing.png) pour quitter le mode édition.
+5. Une fois la numérisation terminée, cliquez sur ![](../../../fig/mActionSaveEdits.png) pour enregistrer vos modifications.
+6. Cliquez à nouveau sur ![](../../../fig/mActionToggleEditing.png) pour quitter le mode édition.
 
 :::{dropdown} Vidéo : Comment créer des données ponctuelles
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_point_feature.mp4"></video>
 :::
 
-:::{figure} /fig/point_creation.png 
+:::{figure} ../../../fig/point_creation.png 
 ---
 width: 750 px
 name: point_creation
@@ -198,7 +198,7 @@ information you can add at this stage-->
 
 Parfois, le moyen le plus simple d’obtenir les coordonnées d’un lieu, comme le bureau d’une branche nationale de la Croix-Rouge ou du Croissant-Rouge ou simplement une maison, est d’utiliser Google Maps. Dans Google Maps, vous pouvez faire un clic droit sur n’importe quel emplacement pour obtenir les coordonnées (en degrés). 
 
-:::{figure} /fig/en_google_maps_rightclick_coords.png
+:::{figure} ../../../fig/en_google_maps_rightclick_coords.png
 ---
 width: 250 px
 align: right
@@ -223,18 +223,18 @@ Essayez de numériser les branches RCRC de votre pays en suivant les étapes ci-
 :::
 
 1. Créez un nouveau jeu de données de points.
-2. Ajoutez un [basemap](/content/fr/Module_2/fr_qgis_basemap.md) (OSM ou Bing Aerial, par exemple).
+2. Ajoutez un [basemap](../../en/Module_2/en_qgis_basemap.md) (OSM ou Bing Aerial, par exemple).
 3. Recherchez les branches RCRC de votre pays sur Google Maps.
 4. Une fois les branches localisées, faites un clic droit sur une branche dans Google Maps et cliquez sur les coordonnées. Elles seront copiées dans votre presse-papiers.
 5. Collez les coordonnées dans la barre de recherche en bas à gauche de la fenêtre QGIS. Sélectionnez l’option pour naviguer vers les coordonnées. L’emplacement sera marqué par un point rouge.
 
-6. Activez le mode édition ![](/fig/mActionToggleEditing.png) dans votre nouvelle couche.
-7. Cliquez sur ![](/fig/mActionCapturePoint.png).
+6. Activez le mode édition ![](../../../fig/mActionToggleEditing.png) dans votre nouvelle couche.
+7. Cliquez sur ![](../../../fig/mActionCapturePoint.png).
 8. Ajoutez l’entité ponctuelle à l’emplacement indiqué.
 9. Ajoutez le nom de la branche RCRC.
 10. Cliquez sur `Ok`. 
-11. Cliquez sur ![](/fig/mActionSaveEdits.png) pour enregistrer vos modifications.
-12. Cliquez sur ![](/fig/mActionToggleEditing.png) pour quitter le mode édition. 
+11. Cliquez sur ![](../../../fig/mActionSaveEdits.png) pour enregistrer vos modifications.
+12. Cliquez sur ![](../../../fig/mActionToggleEditing.png) pour quitter le mode édition. 
 
 
 
@@ -253,12 +253,12 @@ N’oubliez pas de changer le type de géométrie en lignes si vous souhaitez cr
 La création de données linéaires fonctionne de la même manière que la création de données ponctuelles (voir ci-dessus). Vous devez d’abord créer une nouvelle couche linéaire ou en utiliser une existante. 
 
 1. Sélectionnez la couche linéaire à laquelle vous souhaitez ajouter des données dans le panneau des couches.
-2. Accédez à la barre d’outils de numérisation et cliquez sur ![](/fig/mActionToggleEditing.png). La couche est alors en mode édition.
-3. Cliquez sur ![](/fig/mActionCaptureLine.png). 
+2. Accédez à la barre d’outils de numérisation et cliquez sur ![](../../../fig/mActionToggleEditing.png). La couche est alors en mode édition.
+3. Cliquez sur ![](../../../fig/mActionCaptureLine.png). 
 4. Pour numériser des lignes, cliquez le long de la ligne. Lorsque vous avez terminé, faites un clic droit sur le dernier point pour finaliser l’entité.
 5. Une fenêtre `[Nom de votre couche] - Feature Attribute` apparaîtra. Vous pouvez y ajouter les informations relatives à cette entité dans les différentes colonnes, en fonction de la table attributaire de la couche.
-6. Une fois la numérisation terminée, cliquez sur ![](/fig/mActionSaveEdits.png) `Save Layer Edits` pour enregistrer vos modifications.
-7. Cliquez sur ![](/fig/mActionToggleEditing.png) `Toggle Editing` pour quitter le mode édition.
+6. Une fois la numérisation terminée, cliquez sur ![](../../../fig/mActionSaveEdits.png) `Save Layer Edits` pour enregistrer vos modifications.
+7. Cliquez sur ![](../../../fig/mActionToggleEditing.png) `Toggle Editing` pour quitter le mode édition.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_line_feature.mp4"></video>
 
@@ -269,12 +269,12 @@ La création de données linéaires fonctionne de la même manière que la créa
 La création de couches polygonales fonctionne de la même manière que pour les données ponctuelles et linéaires.
 
 1. Sélectionnez la couche polygonale à laquelle vous souhaitez ajouter des données dans le panneau des couches.
-2. Accédez à la barre d’outils de numérisation et cliquez sur ![](/fig/mActionToggleEditing.png). La couche est alors en mode édition.
-3. Cliquez sur ![](/fig/mActionCapturePolygon.png). 
+2. Accédez à la barre d’outils de numérisation et cliquez sur ![](../../../fig/mActionToggleEditing.png). La couche est alors en mode édition.
+3. Cliquez sur ![](../../../fig/mActionCapturePolygon.png). 
 4. Pour numériser des polygones, cliquez avec le bouton gauche autour de la zone que vous souhaitez numériser. Lorsque vous avez terminé, faites un clic droit sur le dernier point pour finaliser l’entité.
 5. Une fenêtre `[Nom de votre couche] - Feature Attribute` apparaîtra. Vous pouvez y ajouter les informations relatives à cette entité dans les différentes colonnes, en fonction de la table attributaire de la couche.
-6. Une fois la numérisation terminée, cliquez sur ![](/fig/mActionSaveEdits.png) pour enregistrer vos modifications.
-7. Cliquez sur ![](/fig/mActionToggleEditing.png) `Toggle Editing` pour quitter le mode édition.
+6. Une fois la numérisation terminée, cliquez sur ![](../../../fig/mActionSaveEdits.png) pour enregistrer vos modifications.
+7. Cliquez sur ![](../../../fig/mActionToggleEditing.png) `Toggle Editing` pour quitter le mode édition.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_add_feature.mp4"></video>
 
@@ -299,13 +299,13 @@ Dans certains cas, vous pouvez vouloir modifier ou corriger des données vectori
 Dans tous les cas :
 
 1. Sélectionnez la couche que vous souhaitez modifier.
-2. Cliquez sur ![](/fig/mActionToggleEditing.png) pour activer le mode édition.
+2. Cliquez sur ![](../../../fig/mActionToggleEditing.png) pour activer le mode édition.
 3. Effectuez vos modifications.
-4. Enregistrez vos modifications en cliquant sur ![](/fig/mActionSaveEdits.png).
-5. Cliquez à nouveau sur ![](/fig/mActionToggleEditing.png) pour quitter le mode édition.
+4. Enregistrez vos modifications en cliquant sur ![](../../../fig/mActionSaveEdits.png).
+5. Cliquez à nouveau sur ![](../../../fig/mActionToggleEditing.png) pour quitter le mode édition.
 
 :::{Tip} 
-Vous pouvez utiliser les boutons ![](/fig/mActionUndo.png) et ![](/fig/mActionRedo.png) pour annuler ou rétablir facilement des modifications.
+Vous pouvez utiliser les boutons ![](../../../fig/mActionUndo.png) et ![](../../../fig/mActionRedo.png) pour annuler ou rétablir facilement des modifications.
 
 Notez que cela n’est possible __avant__ d’enregistrer les modifications.
 :::
@@ -315,14 +315,14 @@ Notez que cela n’est possible __avant__ d’enregistrer les modifications.
 ::::{tab-item} Suppression d’entités
 
 1. Sélectionnez la couche que vous souhaitez modifier.
-2. Accédez à la barre d’outils de numérisation et cliquez sur ![](/fig/mActionToggleEditing.png) `Toggle Editing`. 
-3. Cliquez sur ![](/fig/mActionSelectRectangle.png) et sélectionnez l’entité que vous souhaitez supprimer (voir le [wiki](https://giscience.github.io/gis-training-resource-center/content/fr/Wiki/fr_qgis_spatial_queries_wiki.html#manual-selection)).
-4. Une fois les entités sélectionnées, cliquez sur ![](/fig/mActionDeleteSelectedFeatures.png) pour les supprimer.
-5. Une fois les modifications terminées, cliquez sur ![](/fig/mActionSaveEdits.png) pour enregistrer vos modifications.
-6. Cliquez à nouveau sur ![](/fig/mActionToggleEditing.png) pour quitter le mode édition.
+2. Accédez à la barre d’outils de numérisation et cliquez sur ![](../../../fig/mActionToggleEditing.png) `Toggle Editing`. 
+3. Cliquez sur ![](../../../fig/mActionSelectRectangle.png) et sélectionnez l’entité que vous souhaitez supprimer (voir le [wiki](../../en/Wiki/en_qgis_spatial_queries_wiki.md#manual-selection)).
+4. Une fois les entités sélectionnées, cliquez sur ![](../../../fig/mActionDeleteSelectedFeatures.png) pour les supprimer.
+5. Une fois les modifications terminées, cliquez sur ![](../../../fig/mActionSaveEdits.png) pour enregistrer vos modifications.
+6. Cliquez à nouveau sur ![](../../../fig/mActionToggleEditing.png) pour quitter le mode édition.
 
 :::{note}
-Gardez à l’esprit qu’une fois les modifications enregistrées ![](/fig/mActionSaveEdits.png), vous ne pouvez plus annuler ou récupérer les entités supprimées. Les modifications affectent définitivement le fichier de données dans votre dossier. 
+Gardez à l’esprit qu’une fois les modifications enregistrées ![](../../../fig/mActionSaveEdits.png), vous ne pouvez plus annuler ou récupérer les entités supprimées. Les modifications affectent définitivement le fichier de données dans votre dossier. 
 :::
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/delet_feature_geometry.mp4"></video>
 
@@ -333,10 +333,10 @@ Gardez à l’esprit qu’une fois les modifications enregistrées ![](/fig/mAct
 Il existe plusieurs méthodes pour déplacer des entités. Nous présentons ici une méthode qui fonctionne de la même manière pour les points, les lignes et les polygones. Pour cela, vous devez utiliser la barre d’outils de numérisation avancée.
 
 1. Sélectionnez la couche linéaire à laquelle vous souhaitez ajouter des données dans le panneau des couches.
-2. Accédez à la barre d’outils de numérisation et cliquez sur ![](/fig/mActionToggleEditing.png). 
-3. Cliquez sur ![](/fig/mActionMoveFeaturePoint.png), puis sur l’entité que vous souhaitez déplacer. Cliquez ensuite sur l’emplacement où vous souhaitez la déplacer.
-4. Une fois les modifications terminées, cliquez sur ![](/fig/mActionSaveEdits.png) pour enregistrer vos modifications.
-5. Cliquez à nouveau sur ![](/fig/mActionToggleEditing.png) pour quitter le mode édition.
+2. Accédez à la barre d’outils de numérisation et cliquez sur ![](../../../fig/mActionToggleEditing.png). 
+3. Cliquez sur ![](../../../fig/mActionMoveFeaturePoint.png), puis sur l’entité que vous souhaitez déplacer. Cliquez ensuite sur l’emplacement où vous souhaitez la déplacer.
+4. Une fois les modifications terminées, cliquez sur ![](../../../fig/mActionSaveEdits.png) pour enregistrer vos modifications.
+5. Cliquez à nouveau sur ![](../../../fig/mActionToggleEditing.png) pour quitter le mode édition.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/move_feature_geometry.mp4"></video>
 
@@ -345,11 +345,11 @@ Il existe plusieurs méthodes pour déplacer des entités. Nous présentons ici 
 ::::{tab-item} Modification des géométries
 
 1. Sélectionnez la couche linéaire à laquelle vous souhaitez ajouter des données dans le panneau des couches.
-2. Accédez à la barre d’outils de numérisation et cliquez sur ![](/fig/mActionToggleEditing.png). 
-3. Cliquez sur ![](/fig/mActionVertexToolActiveLayer.png).
+2. Accédez à la barre d’outils de numérisation et cliquez sur ![](../../../fig/mActionToggleEditing.png). 
+3. Cliquez sur ![](../../../fig/mActionVertexToolActiveLayer.png).
 4. Vous pouvez maintenant déplacer chaque sommet d’une entité. Cliquez sur le sommet que vous souhaitez déplacer, puis sur le nouvel emplacement.
-5. Une fois les modifications terminées, cliquez sur ![](/fig/mActionSaveEdits.png) pour enregistrer vos modifications.
-6. Cliquez à nouveau sur ![](/fig/mActionToggleEditing.png) pour quitter le mode édition.
+5. Une fois les modifications terminées, cliquez sur ![](../../../fig/mActionSaveEdits.png) pour enregistrer vos modifications.
+6. Cliquez à nouveau sur ![](../../../fig/mActionToggleEditing.png) pour quitter le mode édition.
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_move_vertices.mp4"></video>
 
@@ -360,11 +360,11 @@ Il existe plusieurs méthodes pour déplacer des entités. Nous présentons ici 
 Un anneau dans QGIS correspond à une zone à l’intérieur d’un polygone qui n’en fait pas partie. Imaginez un polygone représentant un lac : l’anneau correspond alors à une île dans ce lac. Pour mieux comprendre, regardez la vidéo ci-dessous.
 
 1. Sélectionnez la couche linéaire à laquelle vous souhaitez ajouter des données dans le panneau des couches.
-2. Accédez à la barre d’outils de numérisation et cliquez sur ![](/fig/mActionToggleEditing.png). 
-3. Cliquez sur ![add ring icon](/fig/mActionAddRing.png).
+2. Accédez à la barre d’outils de numérisation et cliquez sur ![](../../../fig/mActionToggleEditing.png). 
+3. Cliquez sur ![add ring icon](../../../fig/mActionAddRing.png).
 4. Créez un anneau en cliquant sur la zone que vous souhaitez exclure. Faites un clic droit pour fermer l’anneau.
-5. Une fois les modifications terminées, cliquez sur ![](/fig/mActionSaveEdits.png) pour enregistrer vos modifications.
-6. Cliquez à nouveau sur ![](/fig/mActionToggleEditing.png) pour quitter le mode édition.
+5. Une fois les modifications terminées, cliquez sur ![](../../../fig/mActionSaveEdits.png) pour enregistrer vos modifications.
+6. Cliquez à nouveau sur ![](../../../fig/mActionToggleEditing.png) pour quitter le mode édition.
 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_add_ring.mp4"></video>
@@ -384,12 +384,12 @@ Vous pouvez ouvrir la table attributaire de la couche sélectionnée en appuyant
 :::
 ::::
 
-1. Ouvrir la [table attributaire](/content/fr/Module_2/fr_qgis_attribute_table.md).
-2. Cliquez sur ![](/fig/mActionToggleEditing.png) pour activer le mode édition.
+1. Ouvrir la [table attributaire](../Module_2/fr_qgis_attribute_table.md).
+2. Cliquez sur ![](../../../fig/mActionToggleEditing.png) pour activer le mode édition.
 3. Choisissez le champ que vous souhaitez modifier. 
 4. Saisissez la valeur corrigée.
-5. Cliquez sur ![](/fig/mActionSaveEdits.png) pour enregistrer vos modifications.
-6. Cliquez à nouveau sur ![](/fig/mActionToggleEditing.png) pour quitter le mode édition. 
+5. Cliquez sur ![](../../../fig/mActionSaveEdits.png) pour enregistrer vos modifications.
+6. Cliquez à nouveau sur ![](../../../fig/mActionToggleEditing.png) pour quitter le mode édition. 
 
 Ce processus est appelé __« nettoyage des données »__ et est essentiel lors de l’analyse ou de la manipulation de données. Lors de la collecte ou de la numérisation, il est facile de commettre de petites erreurs, comme une valeur incorrecte, un mauvais type de valeur ou une faute d’orthographe. Il est donc important de vérifier la table attributaire pour détecter les incohérences ou erreurs. Si ces erreurs ne sont pas corrigées, les résultats seront erronés et vous pourriez tirer de mauvaises conclusions.
 
@@ -399,7 +399,7 @@ __Scénario réel 3/3__
 ^^^
 Avec les nouvelles couches, vous êtes prêt à tracer les bâtiments et les routes. Vous disposez déjà d’informations sur l’état des routes (par exemple, le type de surface, la qualité ou si elles sont inondées) et sur l’état des bâtiments (par exemple, s’ils sont affectés par une inondation, s’ils comportent plusieurs étages, etc.). Ces informations sont utiles et peuvent être stockées dans les attributs supplémentaires de la table de données. 
 
-:::{figure} /fig/Building_damage_assessement_bangladesh.png
+:::{figure} ../../../fig/Building_damage_assessement_bangladesh.png
 ---
 name: Building_damage_assessement
 width: 750 px 
@@ -413,7 +413,7 @@ width: 750 px
 
 La précision des géodonnées est essentielle pour l’analyse spatiale. Les erreurs de position sont inévitables lorsque les données sont numérisées manuellement. Les exemples les plus courants incluent les sous-extensions (undershooting) et les dépassements (overshooting). Les sous-extensions se produisent lorsque les entités ne se connectent pas correctement, et les dépassements lorsque les lignes dépassent leur point de connexion. Souvent, ces erreurs ne sont visibles qu’en zoomant fortement sur les coordonnées. La définition d’une tolérance d’accrochage (snapping tolerance) permet de réduire ces erreurs. La tolérance d’accrochage correspond à la distance minimale tolérée entre les nœuds, les lignes et/ou les sommets.
 
-:::{figure} /fig/Digitization_Errors.PNG
+:::{figure} ../../../fig/Digitization_Errors.PNG
 ---
 width: 500px
 align: center

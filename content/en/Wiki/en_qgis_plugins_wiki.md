@@ -44,7 +44,7 @@ Due to the often missing optimization for the used QGIS version, experimental ex
 
 ### Downloading the Quick OSM plugin <a id="downloading-the-quick-osm-plugin"></a>
 
-To download data from data and import it into your QGIS the plugin **QuickOSM** is great. First you need to install it by searching for it in the `Manage and Install Plugins` Tab.
+To download data and import it into your QGIS the plugin **QuickOSM** is great. First you need to install it by searching for it in the `Manage and Install Plugins` Tab.
 
 ::::{dropdown} How to download the plugin
 
@@ -67,7 +67,7 @@ Installing QuickOSM.
 :::
 ::::
 
-To launch the newly installed plugin, click on ![](fig/quickosmplugin.png) or click under `vector` → `QuickOSM`. 
+To launch the newly installed plugin, click on ![](../../../fig/en_quickosmplugin.png) or click under `vector` → `QuickOSM`. 
 
 Follow the steps to fetch for data:
 
@@ -99,6 +99,6 @@ Running the QuickOSM plugin.
 
 :::{dropdown} How to fetch data for multiple queries
 
-If you want to get more data in the same area, you can add a query by clicking on the ![](fig/plus_quickosm.png). Be careful choosing the right logical operator `And` or `Or`. If you are unsure check this [Wikipage](/content/Wiki/en_qgis_non_spatial_queries_wiki). 
+If you want to get more data in the same area, you can add a query by clicking on the ![](../../../fig/plus_quickosm.png). Be careful choosing the right logical operator `And` or `Or`. If you are unsure check this [Wikipage](en_qgis_non_spatial_queries_wiki.md). 
 
 :::

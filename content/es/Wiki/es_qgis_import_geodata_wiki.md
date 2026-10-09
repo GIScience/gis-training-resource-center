@@ -1,7 +1,7 @@
 # Importación de datos geográficos en QGIS
 
 
-__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
 ## Importación de datos vectoriales
 
@@ -14,7 +14,7 @@ Al importar un archivo shapefile mediante la función arrastrar y soltar, debe u
 #### Abrir datos vectoriales mediante la pestaña Layer
 
 1. Haga clic en `Capa` → `Añadir capa` → `Añadir capa vectorial`.
-2. Haga clic en los tres puntos ![](/fig/Three_points.png) y navegue hasta su archivo vectorial.
+2. Haga clic en los tres puntos ![](../../../fig/Three_points.png) y navegue hasta su archivo vectorial.
 3. Seleccione el archivo y haga clic en `Abrir`.
 4. Nuevamente en QGIS, haga clic en `Añadir`.
 
@@ -34,7 +34,7 @@ Al importar un archivo shapefile mediante la función arrastrar y soltar, debe u
 ### Abrir datos ráster mediante la pestaña Layer
 
 1. Haga clic en `Capa` → `Añadir capa` → `Añadir capa ráster`.
-2. Haga clic en los tres puntos ![](/fig/Three_points.png) y navegue hasta su archivo ráster.
+2. Haga clic en los tres puntos ![](../../../fig/Three_points.png) y navegue hasta su archivo ráster.
 3. Seleccione el archivo y haga clic en `Abrir`.
 4. Nuevamente en QGIS, haga clic en `Añadir`.
 
@@ -72,7 +72,7 @@ Al cargar datos vectoriales en formato de texto como .csv o .txt en QGIS, estos 
 :::
 
 1. `Capa` → `Añadir capa` → `Añadir capa de texto delimitado`.
-2. Haga clic en `Nombre de archivo` haga clic en los tres puntos ![](/fig/Three_points.png) y navegue hasta su archivo CSV y haga clic en `Abrir`.
+2. Haga clic en `Nombre de archivo` haga clic en los tres puntos ![](../../../fig/Three_points.png) y navegue hasta su archivo CSV y haga clic en `Abrir`.
 3. En la ventana “Data Source manager | Delimited Text” de QGIS encontrará varios menús desplegables
     * `Formato de archivo`: Aquí puede especificar qué delimitador se utiliza en el archivo que desea importar. En un archivo estándar `.csv` se utilizan comas `,`. Si no es el caso, seleccione `Delimitadores personalizados`. Aquí puede elegir el delimitador exacto utilizado en su archivo.
     :::{tip}

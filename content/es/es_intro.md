@@ -2,7 +2,7 @@
         async src="//gc.zgo.at/count.js"></script>
 
 
-:::{figure} /fig/HeiGIT_Logo_base.svg
+:::{figure} ../../fig/HeiGIT_Logo_base.svg
 ---
 height: 75
 name: HeiGIT Logo
@@ -23,17 +23,17 @@ La plataforma central de capacitación para la enseñanza de habilidades en el s
 ::::{grid} 2
 :::{card}
 :class-card: sd-text-center
-:link: https://giscience.github.io/gis-training-resource-center/content/es/Trainers_corner/es_TOT_intro.html
+:link: Trainers_corner/es_TOT_intro.md
 
-__[Empezar a enseñar](https://giscience.github.io/gis-training-resource-center/content/es/Trainers_corner/es_TOT_intro.html)__ ➡️
+__[Empezar a enseñar](Trainers_corner/es_TOT_intro.md)__ ➡️
 
 :::
 
 :::{card}
 :class-card: sd-text-center
-:link: https://giscience.github.io/gis-training-resource-center/content/es/Module_1/es_module_1_overview.html
+:link: Module_1/es_module_1_overview.md
 
-__[Empezar a aprender](https://giscience.github.io/gis-training-resource-center/content/es/Module_1/es_module_1_overview.html)__ ➡️
+__[Empezar a aprender](Module_1/es_module_1_overview.md)__ ➡️
 
 :::
 
@@ -110,15 +110,15 @@ Las habilidades de QGIS, que ofrece esta plataforma de capacitación, abarcan ni
 
 
 ::::{grid} 2
-:::{card} __[Instructores](/content/es/Trainers_corner/es_TOT_intro.md)__
-Hay una [sección para instructores](/content/es/Trainers_corner/es_how_to_training.md) que deseen utilizar la plataforma de capacitación.
+:::{card} __[Instructores](Trainers_corner/es_TOT_intro.md)__
+Hay una [sección para instructores](Trainers_corner/es_how_to_training.md) que deseen utilizar la plataforma de capacitación.
 
 El componente más importante son los planes de capacitación. Estos brindan orientación sobre cuándo usar qué en su ciclo de capacitación.
 Sin embargo, cada componente del material de capacitación está diseñado para utilizarse de forma independiente. Además de los planes de capacitación, descubrirá una gran variedad de recursos, desde las mejores prácticas para la capacitación hasta métodos innovadores para enseñar el SIG.
 
 :::
 
-:::{card} __[Participantes](https://giscience.github.io/gis-training-resource-center/content/es/Module_1/es_module_1_overview.html)__
+:::{card} __[Participantes](Module_1/es_module_1_overview.md)__
 Sus instructores serán quienes le guíen en esta plataforma de capacitación. Si tiene alguna pregunta sobre esta plataforma de capacitación, póngase en contacto con su instructor.
 Esta no es una plataforma de autoaprendizaje. Si quiere aprender QGIS, siempre es mejor participar en un curso y aprender de un instructor con experiencia. Sin embargo, puede usar esta plataforma para perfeccionar sus habilidades de QGIS, solo tenga en cuenta que el objetivo de la plataforma de capacitación, no es el autoaprendizaje.
 :::
@@ -142,7 +142,7 @@ Si tiene preguntas, observaciones o comentarios sobre la plataforma de capacitac
 
 ## Contribución
 
-Damos una cordial bienvenida a todas las personas que deseen contribuir y colaborar en el desarrollo de la Plataforma de Capacitación en SIG de la IFRC, fomentando el conocimiento compartido y el crecimiento. Antes de contribuir, lea todo el [Plan de contribución](https://giscience.github.io/gis-training-resource-center/content/es/contribution_plan.html).
+Damos una cordial bienvenida a todas las personas que deseen contribuir y colaborar en el desarrollo de la Plataforma de Capacitación en SIG de la IFRC, fomentando el conocimiento compartido y el crecimiento. Antes de contribuir, lea todo el [Plan de contribución](es_contribution_plan.md).
 
 ## Únase a la comunidad
 
@@ -153,7 +153,7 @@ Damos una cordial bienvenida a todas las personas que deseen contribuir y colabo
 
 :::{card}
 
-:::{figure} /fig/Training_Somalia.JPG
+:::{figure} ../../fig/Training_Somalia.JPG
 ---
 width: 800px
 ---

@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -40,7 +40,7 @@ La selección manual se realiza principalmente mediante una de las herramientas 
 \
 Ejemplo: `Seleccionar objeto(s) espacial(es)`
 
-1.	Haga clic en `Seleccionar objeto(s) espacial(es)` en el menú desplegable de ![](/fig/mActionSelectRectangle.png).
+1.	Haga clic en `Seleccionar objeto(s) espacial(es)` en el menú desplegable de ![](../../../fig/mActionSelectRectangle.png).
 2.	Seleccione las entidades haciendo clic en ellas o dibujando un rectángulo que se superponga a ellas.
 3.	Utilice la herramienta fuera de las entidades seleccionables para finalizar la selección.
 
@@ -55,9 +55,9 @@ Si mantiene presionada la tecla “Shift” durante la selección por clic, podr
 
 :::
 
-Las otras opciones de ![](/fig/mActionSelectRectangle.png) funcionan de forma similar, seleccionando todas las entidades que se superponen con la geometría respectiva generada por las herramientas.
+Las otras opciones de ![](../../../fig/mActionSelectRectangle.png) funcionan de forma similar, seleccionando todas las entidades que se superponen con la geometría respectiva generada por las herramientas.
 
-1. Haga clic en `Seleccionar objetos espaciales por polígono` en el menú desplegable de ![](/fig/mActionSelectRectangle.png).
+1. Haga clic en `Seleccionar objetos espaciales por polígono` en el menú desplegable de ![](../../../fig/mActionSelectRectangle.png).
 2. Seleccione las entidades haciendo clic izquierdo alrededor de las entidades que desea seleccionar.
 3. Haga clic derecho cuando haya terminado de dibujar el polígono.
 
@@ -74,7 +74,7 @@ Las entidades seleccionadas se resaltan en amarillo brillante en la vista geoesp
 
 ## Selección por atributos
 
-Se puede realizar una consulta basada en atributos específicos utilizando la herramienta `Seleccionar por expresión` disponible en ![](/fig/mActionSelectbyExpression.png) en la barra de herramientas del proyecto y la tabla de atributos (alternativa: `Editar` > `Seleccionar` > `Seleccionar por expresión`).
+Se puede realizar una consulta basada en atributos específicos utilizando la herramienta `Seleccionar por expresión` disponible en ![](../../../fig/mActionSelectbyExpression.png) en la barra de herramientas del proyecto y la tabla de atributos (alternativa: `Editar` > `Seleccionar` > `Seleccionar por expresión`).
 
 1.	En la interfaz de herramientas, amplíe `Campos y Valores` en el panel derecho.
 2.	Elija el campo en el que desea basar su selección haciendo doble clic sobre él (ahora debería aparecer en el panel de expresión de la izquierda).
@@ -125,7 +125,7 @@ Se pueden utilizar operadores como AND u OR para combinar diferentes consultas o
 :::
 
 ## Selección espacial por capas
-La selección espacial de entidades permite seleccionar partes de una capa según su relación con entidades de otra capa geoespacial (p. ej., la selección de todas las entidades de punto de la capa A que se encuentren dentro de una entidad de polígono de la capa B). Para ello, utilice la herramienta “Select by Location” disponible en ![](/fig/mActionSelectbyLocation.png) en la barra de herramientas del proyecto (alternativa: `Vectorial` → `Research Tools` → `Seleccionar por localización`).
+La selección espacial de entidades permite seleccionar partes de una capa según su relación con entidades de otra capa geoespacial (p. ej., la selección de todas las entidades de punto de la capa A que se encuentren dentro de una entidad de polígono de la capa B). Para ello, utilice la herramienta “Select by Location” disponible en ![](../../../fig/mActionSelectbyLocation.png) en la barra de herramientas del proyecto (alternativa: `Vectorial` → `Research Tools` → `Seleccionar por localización`).
 
 1.	En la interfaz de la herramienta, elija la capa vectorial de la que desea seleccionar entidades mediante “Select features from” y la capa en la que desea basar la selección mediante “By comparing to the features from”.
 2.	Elija el operador geométrico que utilizará para seleccionar las entidades (véase el párrafo inferior).
@@ -201,4 +201,4 @@ Ejemplos:
 
 ::::
 
-[def]: /fig/mActionSelectRectangle.png
+[def]: ../../../fig/mActionSelectRectangle.png

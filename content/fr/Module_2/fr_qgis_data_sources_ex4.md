@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/fr/fr_intro.html 
+:link: ../fr_intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -20,7 +20,7 @@ Cet exercice vise à montrer deux façons d’intégrer [OpenStreetMap (OSM)](ht
 :::{grid-item-card}
 __Parcours d’exercices sur la réponse aux inondations à Larkana__
 
-Cet exercice fait partie du [parcours d’exercices sur la réponse aux inondations à Larkana](https://giscience.github.io/gis-training-resource-center/content/fr/Exercise_tracks/fr_larkana_flood_response.html)
+Cet exercice fait partie du [parcours d’exercices sur la réponse aux inondations à Larkana](../../en/Exercise_tracks/en_larkana_flood_response.md)
 
 :::
 
@@ -47,11 +47,11 @@ __Durée estimée de l’exercice__
 __Articles wiki pertinents__
 ^^^
 
-* [Interface QGIS](/content/fr/Wiki/fr_qgis_interface_wiki.md)
-* [Types de données géographiques](/content/fr/Wiki/fr_qgis_geodata_types_wiki.md)
-* [Import de données géographiques dans QGIS](/content/fr/Wiki/fr_qgis_import_geodata_wiki.md)
-* [Concept de couche](/content/fr/Wiki/fr_qgis_layer_concept_wiki.md)
-* [Classification des données géographiques - Graduée](/content/fr/Wiki/fr_qgis_graduated_wiki.md)
+* [Interface QGIS](../../en/Wiki/en_qgis_interface_wiki.md)
+* [Types de données géographiques](../../en/Wiki/en_qgis_geodata_types_wiki.md)
+* [Import de données géographiques dans QGIS](../../en/Wiki/en_qgis_import_geodata_wiki.md)
+* [Concept de couche](../../en/Wiki/en_qgis_layer_concept_wiki.md)
+* [Classification des données géographiques - Graduée](../../en/Wiki/en_qgis_graduated_wiki.md)
 
 :::
 
@@ -66,7 +66,7 @@ __Articles wiki pertinents__
 - Prenez le temps de vous familiariser avec l’exercice et le matériel fourni.
 - Préparez un tableau blanc. Il peut s’agir d’un tableau blanc physique, d’un paperboard ou d’un tableau blanc numérique (par ex. un tableau Miro) sur lequel les participant·e·s peuvent ajouter leurs remarques et leurs questions. 
 - Avant de commencer l’exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé __et décompressé__ le dossier de données.
-- Consultez [Comment animer des formations ?](/content/fr/Trainers_corner/fr_how_to_training.md) pour quelques conseils généraux sur la conduite d’une formation.
+- Consultez [Comment animer des formations ?](../../en/Trainers_corner/en_how_to_training.md) pour quelques conseils généraux sur la conduite d’une formation.
 
 ### Animer la formation <a id="conduct-the-training"></a>
 
@@ -101,7 +101,7 @@ Téléchargez plutôt la __structure de dossiers standard__ [ici](https://nexus.
 
 ## Tâches <a id="tasks"></a>
 
-OpenStreetMap (OSM) est un projet collaboratif et open source qui produit des cartes libres et modifiables du monde, construites par une communauté mondiale de contributeur·rice·s. Il existe plusieurs façons de télécharger ou d’exporter des données depuis OpenStreetMap (OSM), chacune ayant ses propres avantages. Dans cet exercice, nous allons nous concentrer sur le [HOT Export Tool](https://export.hotosm.org/v3/). [En bas de cet exercice](https://giscience.github.io/gis-training-resource-center/content/fr/Module_2/fr_qgis_data_sources_ex4.html#alternative-tools), vous trouverez une liste d’outils alternatifs.
+OpenStreetMap (OSM) est un projet collaboratif et open source qui produit des cartes libres et modifiables du monde, construites par une communauté mondiale de contributeur·rice·s. Il existe plusieurs façons de télécharger ou d’exporter des données depuis OpenStreetMap (OSM), chacune ayant ses propres avantages. Dans cet exercice, nous allons nous concentrer sur le [HOT Export Tool](https://export.hotosm.org/v3/). [En bas de cet exercice](fr_qgis_data_sources_ex4.md#alternative-tools), vous trouverez une liste d’outils alternatifs.
 
 ### Utiliser le HOT Export Tool <a id="using-the-hot-export-tool"></a>
 
@@ -119,7 +119,7 @@ Pour l’analyse suivante, nous voulons exporter le réseau routier du district 
    cliquant sur `Log in`.
 3. Nous pouvons maintenant commencer à créer un export OSM. Pour cela, cliquez sur `Start Exporting`. Vous serez redirigé·e vers l’outil d’export.
 
-:::{figure} /fig/en_m2_ex4_HOT_Export_Tool1.png
+:::{figure} ../../../fig/en_m2_ex4_HOT_Export_Tool1.png
 ---
 name: HOT_Export_Tool_1
 width: 750 pc
@@ -140,7 +140,7 @@ Sinon, une fois la zone affichée, vous pouvez dessiner un rectangle ou un polyg
 
 5. Sur le canevas cartographique, recherchez Larkana dans la barre de recherche et sélectionnez le district. La carte zoomera sur le district. Cela sélectionnera également le district comme zone d’intérêt. Vous pouvez le voir grâce au polygone bleu. Notre export ne téléchargera que les données situées à l’intérieur de cette zone.
 
-:::{figure} /fig/Module_2/en_m2_ex_4_HOT_Export_Tool3.png
+:::{figure} ../../../fig/Module_2/en_m2_ex_4_HOT_Export_Tool3.png
 ---
 name: HOT_Export_3
 width: 500 px
@@ -153,7 +153,7 @@ width: 500 px
 
 8. Dans l’onglet des données, nous pouvons sélectionner les couples clé-valeur qui nous intéressent. Nous voulons télécharger le réseau routier ; il faut donc ouvrir le menu déroulant sous `Transportation` et cocher la case `Roads`.
 
-:::{figure} /fig/Module_2/en_m2_ex4_HOT_export_tool4.png
+:::{figure} ../../../fig/Module_2/en_m2_ex4_HOT_export_tool4.png
 ---
 name: Hot Export Tool 5
 width: 500 px
@@ -162,7 +162,7 @@ width: 500 px
 
 9. Nous avons terminé la configuration de l’export. Cliquez sur `Next`. Une page récapitulative s’ouvrira. Cliquez sur `Create Export`. Votre nouvel export commencera.
 
-:::{figure} /fig/en_Hot_Export.png
+:::{figure} ../../../fig/en_Hot_Export.png
 ---
 width: 800px
 align: center
@@ -176,7 +176,7 @@ Dans l’exercice suivant du parcours de réponse aux inondations à Larkana, no
 
 ::::
 
-4. [Importez le nouveau fichier dans votre projet QGIS](https://giscience.github.io/gis-training-resource-center/content/fr/Wiki/fr_qgis_import_geodata_wiki.html#vector-data-import).
+4. [Importez le nouveau fichier dans votre projet QGIS](../../en/Wiki/en_qgis_import_geodata_wiki.md#vector-data-import).
 5. Organisez les couches sur la carte de manière à pouvoir voir la nouvelle couche.
 6. (Optionnel) Utilisez la fonction de classification pour obtenir une meilleure vue d’ensemble :
     * Faites un clic droit sur la couche `Larkana_Roads` dans le `Panneau des couches` → `Propriétés`. Une nouvelle fenêtre s’ouvre avec une section d’onglets verticale sur la gauche. Accédez à l’onglet `Symbologie`.
@@ -200,7 +200,7 @@ Comme vous pouvez le constater, le HOT Export Tool offre un bon compromis entre 
 
 :::::{tip}
 
-Le HOT Export Tool constitue une bonne solution pour exporter des données OSM ciblées pour votre usage personnel. Toutefois, dans certains cas, vous préférerez peut-être utiliser un autre outil, comme Geofabrik, QuickOSM ou simplement le site du Humanitarian Data Exchange. Vous trouverez ci-dessous une brève présentation de ces outils et de leurs avantages. Vous pouvez découvrir comment utiliser ces différents outils pas à pas sur [cette page wiki](https://giscience.github.io/gis-training-resource-center/content/fr/Wiki/fr_qgis_OpenStreetMap_wiki.html).
+Le HOT Export Tool constitue une bonne solution pour exporter des données OSM ciblées pour votre usage personnel. Toutefois, dans certains cas, vous préférerez peut-être utiliser un autre outil, comme Geofabrik, QuickOSM ou simplement le site du Humanitarian Data Exchange. Vous trouverez ci-dessous une brève présentation de ces outils et de leurs avantages. Vous pouvez découvrir comment utiliser ces différents outils pas à pas sur [cette page wiki](../../en/Wiki/en_qgis_OpenStreetMap_wiki.md).
 
 ::::{dropdown} Geofabrik, QuickOSM, HDX
 
@@ -228,7 +228,7 @@ Vous devrez formuler une requête pour trouver les données recherchées. Pour a
    [Map features](https://wiki.openstreetmap.org/wiki/Map_features). 
 2. [Taginfo](https://taginfo.openstreetmap.org/)
 
-Cette méthode présente l’avantage de permettre le téléchargement très ciblé des données dont vous avez besoin, mais elle suppose de savoir formuler des requêtes. Pour utiliser QuickOSM, vous devez [installer l’extension QGIS](https://giscience.github.io/gis-training-resource-center/content/fr/Wiki/fr_qgis_plugins_wiki.html). 
+Cette méthode présente l’avantage de permettre le téléchargement très ciblé des données dont vous avez besoin, mais elle suppose de savoir formuler des requêtes. Pour utiliser QuickOSM, vous devez [installer l’extension QGIS](../../en/Wiki/en_qgis_plugins_wiki.md). 
 
 | Advantages                                     | Disadvantages                                 |
 |------------------------------------------------|-----------------------------------------------|

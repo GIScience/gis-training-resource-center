@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -27,7 +27,7 @@ dónde y cómo acceder a los datos pertinentes e identificar posibles problemas.
 __Serie de ejercicios para la respuesta ante inundaciones en Larkana__
 ^^^
 
-Este ejercicio forma parte de la [serie de ejercicios para la respuesta ante inundaciones en Larkana](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Exercise_tracks/es_larkana_flood_response.html).
+Este ejercicio forma parte de la [serie de ejercicios para la respuesta ante inundaciones en Larkana](../Exercise_tracks/es_larkana_flood_response.md).
 
 :::
 
@@ -55,12 +55,12 @@ __Duración estimada del ejercicio:__
 __Artículos relevantes en Wiki y capítulos del módulo__
 ^^^
 
-* [Interfaz de QGIS](/content/es/Wiki/es_qgis_interface_wiki.md)
-* [Tipos de datos geoespaciales](/content/es/Wiki/es_qgis_geodata_types_wiki.md)
-* [Importación de datos geoespaciales en QGIS](/content/es/Wiki/es_qgis_import_geodata_wiki.md)
-* [Concepto de capa](/content/es/Wiki/es_qgis_layer_concept_wiki.md)
-* [Clasificación de datos geoespaciales: graduado](/content/es/Wiki/es_qgis_graduated_wiki.md)
-* [Fuentes de datos](https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_data_sources.html)
+* [Interfaz de QGIS](../Wiki/es_qgis_interface_wiki.md)
+* [Tipos de datos geoespaciales](../Wiki/es_qgis_geodata_types_wiki.md)
+* [Importación de datos geoespaciales en QGIS](../Wiki/es_qgis_import_geodata_wiki.md)
+* [Concepto de capa](../Wiki/es_qgis_layer_concept_wiki.md)
+* [Clasificación de datos geoespaciales: graduado](../Wiki/es_qgis_graduated_wiki.md)
+* [Fuentes de datos](es_data_sources.md)
 
 :::
 
@@ -74,7 +74,7 @@ __Artículos relevantes en Wiki y capítulos del módulo__
 - Tómese el tiempo necesario para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare un pizarrón. Puede ser un pizarrón físico, un rotafolio o un pizarrón digital (p. ej., un pizarrón en Miro) donde los participantes puedan añadir sus resultados y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos los participantes hayan instalado QGIS y que hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo realizar capacitaciones?](/content/es/Trainers_corner/es_how_to_training.md) para obtener algunos consejos generales para impartirlas.
+- Consulte [¿Cómo realizar capacitaciones?](../Trainers_corner/es_how_to_training.md) para obtener algunos consejos generales para impartirlas.
 
 ## Impartir la capacitación
 
@@ -110,7 +110,7 @@ Descargue los datos y el archivo del proyecto para este ejercicio [aquí](https:
 
 
 ::::{dropdown} Estructura de carpetas estándar
-:::{figure} /fig/standard_folder_structure_new_2025.drawio.png
+:::{figure} ../../../fig/standard_folder_structure_new_2025.drawio.png
 name: standard_folder_struc
 width: 500 px
 ---
@@ -139,7 +139,7 @@ Ahora que tenemos el proyecto de QGIS configurado, podemos empezar a buscar los 
 
 :::{dropdown} Posibles fuentes de datos
 
-En Internet hay muchos repositorios de datos diferentes donde puede encontrar datos adecuados. Puede encontrar una lista de posibles fuentes de datos [aquí](https://giscience.github.io/gis-training-resource-center/content/es/Module_2/es_data_sources.html).
+En Internet hay muchos repositorios de datos diferentes donde puede encontrar datos adecuados. Puede encontrar una lista de posibles fuentes de datos [aquí](es_data_sources.md).
 
 Para la mayoría de los datos humanitarios, puede buscar en __[Intercambio de Datos Humanitarios/HDX](https://data.humdata.org/)__.
 El Intercambio de Datos Humanitarios (HDX) es una plataforma primaria para acceder y compartir datos geoespaciales relevantes para las crisis humanitarias. Se trata de un repositorio centralizado que ofrece una amplia gama de conjuntos de datos de diversas fuentes, lo que lo convierte en un recurso invaluable para las organizaciones de ayuda humanitaria y los investigadores.
@@ -169,7 +169,7 @@ La mayoría de las veces, los conjuntos de datos que se descargan de Internet es
 :::
 ::::
 
-6. [Cargue ambos archivos vectoriales en QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_geodata_concept.html#importaciones-de-datos).
+6. [Cargue ambos archivos vectoriales en QGIS](es_qgis_geodata_concept.md).
 
 
 7. Ahora añada el mapa base de OpenStreetMap a través de la ventana del navegador →
@@ -182,7 +182,7 @@ La mayoría de las veces, los conjuntos de datos que se descargan de Internet es
 
 :::{Hint}
 
-Para obtener información sobre cómo filtrar fácilmente sus datos seleccionando manualmente entidades en la tabla de atributos después de haberla ordenado en función de una columna concreta, consulte la página __[tabla de atributos](/content/es/Wiki/es_qgis_attribute_table_wiki.md)__ en la wiki.
+Para obtener información sobre cómo filtrar fácilmente sus datos seleccionando manualmente entidades en la tabla de atributos después de haberla ordenado en función de una columna concreta, consulte la página __[tabla de atributos](../Wiki/es_qgis_attribute_table_wiki.md)__ en la wiki.
 
 :::
 

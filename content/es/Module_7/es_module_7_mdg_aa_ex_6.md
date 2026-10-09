@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -25,7 +25,7 @@ __Tipo de ejercicio de capacitación:__
 :::{grid-item-card}
 __Programa de ejercicios:__
 
-Este ejercicio forma parte del [programa de ejercicios de análisis de ciclones de acción anticipatoria de Madagascar.](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Exercise_tracks/es_mdg_aa_cyclones.html)
+Este ejercicio forma parte del [programa de ejercicios de análisis de ciclones de acción anticipatoria de Madagascar.](../Exercise_tracks/es_mdg_aa_cyclones.md)
 
 :::
 
@@ -43,12 +43,12 @@ __Duración estimada del ejercicio:__
 __Artículos relevantes en Wiki__
 ^^^
 
-* [Estadísticas zonales](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html)
-* [Intersección](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Proyecciones cartográficas](/content/es/Wiki/es_qgis_projections_wiki.md)
-* [Buffer](/content/es/Wiki/es_qgis_projections_wiki.md)
-* [Recorte](/content/es/Wiki/es_qgis_projections_wiki.md)
-* [Automatización](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_automation_wiki.html)
+* [Estadísticas zonales](../Wiki/es_qgis_raster_basic_wiki.md)
+* [Intersección](../../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Proyecciones cartográficas](../Wiki/es_qgis_projections_wiki.md)
+* [Buffer](../Wiki/es_qgis_projections_wiki.md)
+* [Recorte](../Wiki/es_qgis_projections_wiki.md)
+* [Automatización](../Wiki/es_qgis_automation_wiki.md)
 
 :::
 
@@ -72,7 +72,7 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 - Tómese el tiempo para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare una pizarra. Puede tratarse de una pizarra física, un rotafolio o una pizarra digital (p. ej., una pizarra virtual de Miro) en la que los participantes pueden añadir sus hallazgos y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos hayan instalado QGIS y, hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo realizar capacitaciones?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Trainers_corner/es_how_to_training.html#how-to-do-trainings) para obtener algunos consejos generales para impartirlas.
+- Consulte [¿Cómo realizar capacitaciones?](../Trainers_corner/es_how_to_training.md) para obtener algunos consejos generales para impartirlas.
 
 ### Impartir la capacitación
 
@@ -151,7 +151,7 @@ Uniremos las siguientes capas paso a paso:
    - **Tipo de unión**: Tome los atributos de la primera característica coincidente solamente (uno a uno)
    - Deje la salida como **Salida del modelo**
 
-:::{figure} /fig/fr_MDG_AA_model_join_affacted_pop.PNG
+:::{figure} ../../../fig/fr_MDG_AA_model_join_affacted_pop.PNG
 ---
 width: 600px
 align: center
@@ -187,7 +187,7 @@ También se pueden encontrar en las __tablas de atributos__ de las salidas del m
 
 :::
 
-:::{figure} /fig/fr_MDG_AA_model_join_affacted_pop_HS_ES.PNG
+:::{figure} ../../../fig/fr_MDG_AA_model_join_affacted_pop_HS_ES.PNG
 ---
 width: 600px
 name: the_world_result
@@ -215,7 +215,7 @@ Copie siempre los nombres de los campos **directamente de la tabla** de atributo
   - Haga clic en `Aceptar` para agregarlo al modelo.
 Una vez que ejecute el modelo, este paso generará automáticamente una hoja de cálculo con todos los indicadores relevantes listos para el equipo de operaciones.
 
-:::{figure} /fig/fr_MDG_AA_model_export_as_table.PNG
+:::{figure} ../../../fig/fr_MDG_AA_model_export_as_table.PNG
 ---
 width: 600px
 name: fr_MDG_AA_model_export_as_table
@@ -267,7 +267,7 @@ Exportar todos los indicadores (población, salud, educación) a una única tabl
 
 ::::{tab-item} Modelador gráfico
 
-:::{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task_6_export_spreadsheet__model.PNG
+:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_algorythms_task_6_export_spreadsheet__model.PNG
 ---
 width: 600px
 align: center
@@ -276,7 +276,7 @@ Vista del modelador gráfico con la etapa de exportación a una tabla añadida a
 :::
 ::::
 ::::{tab-item} Configuración del modelo de ejecución
-:::{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task6_export_spreadsheet_run_configurations.PNG
+:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_algorythms_task6_export_spreadsheet_run_configurations.PNG
 ---
 width: 600px
 align: center
@@ -285,7 +285,7 @@ Ventana de configuración para ejecutar el modelo con la opción de exportación
 :::
 ::::
 ::::{tab-item} Salida del modelo
-:::{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_task6_export_spreadsheet_results_AT.PNG
+:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_algorythms_task6_export_spreadsheet_results_AT.PNG
 ---
 width: 600px
 align: center

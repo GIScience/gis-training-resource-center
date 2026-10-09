@@ -6,8 +6,8 @@ buttons:
           </svg>
     items:
       - label: English
-        url: https://giscience.github.io/gis-training-resource-center/content/intro.html
+        url: https://giscience.github.io/gis-training-resource-center/en/intro.html
       - label: Español
-        url: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+        url: https://giscience.github.io/gis-training-resource-center/es/es_intro.html
       - label: Français
-        url: https://giscience.github.io/gis-training-resource-center/french/content/fr/fr_intro.html
+        url: https://giscience.github.io/gis-training-resource-center/fr/fr_intro.html

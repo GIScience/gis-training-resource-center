@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/english/content/en/intro.html 
+:link: ../intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -37,7 +38,7 @@ name: en_georef_transformations
 Different transformation types: linear (left), polynomial 2nd degree (middle), polynomial 3rd degree (right) (Source: [ESRI](https://pro.arcgis.com/en/pro-app/latest/help/data/imagery/overview-of-georeferencing.htm)).
 :::
 
-In most cases, you will use either linear, or polynomial (2nd or 3rd degree) transformations. There are many more transformation types to be used in QGIS. Each works best for a specific use case. For an explanation of each transformation type, check out the [QGIS Documentation](https://docs.qgis.org/3.34/en/docs/user_manual/working_with_raster/georeferencer.html).
+In most cases, you will use either linear, or polynomial (2nd or 3rd degree) transformations. There are many more transformation types to be used in QGIS. Each works best for a specific use case. For an explanation of each transformation type, check out the [QGIS Documentation](https://docs.qgis.org/3.44/en/docs/user_manual/managing_data_source/georeferencer.html#available-transformation-algorithms).
 
 
 ### How to Georeference in QGIS <a id="how-to-georeference-in-qgis"></a>
@@ -123,7 +124,7 @@ Alternatively, it is also possible to remove the white background. This is done 
 1. Open the Layer Properties by <kbd>Right-Clicking</kbd> on the layer and selecting __Properties__.
 2. Navigate to the __Transparency Tab__.
 3. In the __Custom Transparency Options__ box, under Transparency Band, select Band 4 (Alpha).
-4. To the right, click on ![](../../../fig/en_3.36_add_value_from_display) `Add value from display`.
+4. To the right, click on ![](../../../fig/en_3.36_add_values_from_display.png) `Add value from display`.
 5. Click on the white colour on the georeferenced map in the map canvas.
 6. Click `Apply`.
 

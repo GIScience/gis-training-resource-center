@@ -1,7 +1,7 @@
 # Automatización en QGIS (el diseñador de modelos)
 
 
-__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
 ## ¿Por qué es necesaria la automatización?
 
@@ -16,7 +16,7 @@ El diseñador de modelos es una herramienta visual que permite a los usuarios cr
 - Abra la herramienta en `Procesos` → `Diseñador de modelos`
     <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_3.40_opening_model_designer.mp4"></video>
 
-- Guarde el archivo del modelo en una carpeta de su elección haciendo clic en el botón ![](/fig/qgis_save_project_as.png) `Guardar modelo como` de la barra superior.
+- Guarde el archivo del modelo en una carpeta de su elección haciendo clic en el botón ![](../../../fig/qgis_save_project_as.png) `Guardar modelo como` de la barra superior.
 
 - Abra un modelo existente a través de `Modelo` → `Abrir modelo` y navegue hasta el archivo del modelo.
     <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_3.40_open_model_file.mp4"></video>
@@ -50,7 +50,7 @@ Hay dos tipos de componentes del modelo que puede utilizar para crear flujos de 
     3. La salida del algoritmo puede definirse como salida del modelo introduciendo un nombre.
     - Pueden aparecer otras diferencias en función del algoritmo.
 
-:::{figure} /fig/en_qgis_3.40_model_adding_algorithms.png
+:::{figure} ../../../fig/en_qgis_3.40_model_adding_algorithms.png
 ---
 width: 500 px
 name: es_qgis_3.40_model_adding_algorithms
@@ -67,7 +67,7 @@ Página de parámetros del algoritmo “buffer” en el diseñador de modelos
 
 - Puede encadenar varios algoritmos seleccionando `Salida del algoritmo` para la `Capa de entrada` y seleccionando una salida de un algoritmo anterior.
 
-:::{figure} /fig/en_qgis_3.40_model_adding_more_steps.png
+:::{figure} ../../../fig/en_qgis_3.40_model_adding_more_steps.png
 ---
 width: 500 px
 name: es_qgis_3.40_model_adding_more_steps
@@ -82,11 +82,11 @@ Para ejecutar el modelo, haga clic en la flecha verde de la barra superior; se a
 
 Una vez que haya terminado de crear su flujo de trabajo, o si desea probar el resultado de su modelo, puede ejecutar el modelo. Esto realizará automáticamente todos los pasos de procesamiento ingresados en el modelador gráfico y creará capas en su proyecto de QGIS para las salidas definidas.
 
-- En la barra superior de la ventana del diseñador de modelos, haga clic en el botón ![](/fig/qgis_3.40_run_model.png) `Ejecutar modelo`.
+- En la barra superior de la ventana del diseñador de modelos, haga clic en el botón ![](../../../fig/qgis_3.40_run_model.png) `Ejecutar modelo`.
 - Se abrirá una nueva ventana; aquí es donde usted define qué capas de su proyecto de QGIS funcionarán como capas de entrada de su modelo.
 - Haga clic en `Ejecutar`. Una vez finalizado, las capas calculadas o procesadas aparecerán en su lienzo principal de QGIS.
 
-:::{figure} /fig/en_3.40_model_run_inputs.png
+:::{figure} ../../../fig/en_3.40_model_run_inputs.png
 ---
 width: 500 px
 name: es_3.40_model_run_inputs

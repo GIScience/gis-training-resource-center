@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -31,7 +31,7 @@ La versión actual de __Long Term Release__ es __[QGIS 3.40.4. 'Bratislava'](htt
 2. Seleccione `Download for Windows`, `Download for macOS` o `Download for Linux`, en función de su sistema operativo.
 3. Haga clic en `Looking for the most stable version? Get QGIS 3.34 LTR`.
 
-:::{figure} /fig/QGIS_download_LTR_version.png
+:::{figure} ../../../fig/QGIS_download_LTR_version.png
 ---
 width: 600 px
 name: es_QGIS_download_LTR_version
@@ -87,7 +87,7 @@ Mantener organizados sus datos y archivos de proyecto es la clave para trabajar 
 - Al descargar los datos de los ejercicios, cree subcarpetas para cada módulo y ejercicio de la capacitación (p. ej. `/Formacion_SIG/Modulo_1/Ejercicio_1`).
 - Guarde todos los proyectos QGIS, así como el material descargado para los ejercicios en estas carpetas.
 
-En el [módulo 2](/content/es/Module_2/es_qgis_geodata_concept.md) se profundizará en la gestión de datos geoespaciales y se introducirá una estructura de carpetas estándar para proyectos QGIS.
+En el [módulo 2](../Module_2/es_qgis_geodata_concept.md) se profundizará en la gestión de datos geoespaciales y se introducirá una estructura de carpetas estándar para proyectos QGIS.
 
 :::{note}
 

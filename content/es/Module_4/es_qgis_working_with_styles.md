@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -26,7 +26,7 @@ Por ejemplo, si desea enviar una capa a un colega con el mismo estilo que usted,
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_exporting_style_to_send_to_colleague
 .mp4"></video>
 
-:::{figure} ../../fig/en_30.30.2_save_layer_style_window.png
+:::{figure} ../../../fig/en_30.30.2_save_layer_style_window.png
 ---
 width: 350px
 name: es_30.30.2_save_layer_style_window

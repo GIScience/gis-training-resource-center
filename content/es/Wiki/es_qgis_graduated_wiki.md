@@ -1,7 +1,7 @@
 # Clasificación graduada
 
 
-__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
 - La clasificación graduada en SIG consiste en categorizar los datos espaciales en **clases o rangos** basados en una progresión de valores.
 - Este método es especialmente útil para visualizar datos cuantitativos, ya que permite diferenciar la intensidad, la densidad o la magnitud a lo largo de un espectro, lo que facilita una representación matizada de los fenómenos geográficos.
@@ -29,7 +29,7 @@ __Clasificar los datos en clases…__
 - En `Modo` seleccione el método de clasificación que desea utilizar, por ejemplo, recuento equitativo (cuantil).
 - Haga clic en `Clasificar`. Ahora debería ver todas las clases y la distribución de los valores. Para añadir o eliminar clases individuales utilice los botones `-` y `+`.
 - *Opcional*: Haga clic en `Histograma` → `Cargar valores`. Ahora puede ver la distribución exacta de los valores entre las clases. Esto resulta muy práctico para decidir un método de clasificación. También puede comprobar el valor medio y la desviación estándar.
-:::{figure} /fig/Graduated_histogram.png
+:::{figure} ../../../fig/Graduated_histogram.png
 ---
 width: 900px
 name: es_graduated classification
@@ -50,7 +50,7 @@ align: center
 - Los cuatro más importantes son: Intervalo equitativo, cuantil, cortes naturales, manual.
 - En general, debe limitar el número de clases entre 3 y 9.
 
-:::{figure} /fig/classification_method_map.drawio.svg
+:::{figure} ../../../fig/classification_method_map.drawio.svg
 ---
 width: 750 px
 name: es_classification_method_map_wiki

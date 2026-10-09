@@ -10,7 +10,7 @@ Parts of the content of this page has been inspired by the [GIS4Schools Webbook]
 
 ## Investigating the Layer properties <a id="investigating-the-layer-properties"></a>
 
-The first thing you should do when working with geodata is to familiarise yourself with the dataset. You can do that by investigating the layer in the map canvas, using the identify tool ![](../../../fig/mod8_ex1_informationtool.png) to see the values of a few of the raster cells. You should also look at their properties to find out the [Coordinate Reference System (CRS)](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_2/en_qgis_projections.html#how-to-choose-an-appropriate-projected-coordinate-system) and the cell size. When working with multiple raster layers, in most cases, it is important that the raster cells overlap exactly. Therefore, the CRS of the raster layers will have to be the same as well as the cell size and the raster extent. You might be unable to compare or combine raster layers correctly if they do not share a common CRS or the raster cells are not aligned. This might lead to unwanted interpolation or the processing operation not succeeding. 
+The first thing you should do when working with geodata is to familiarise yourself with the dataset. You can do that by investigating the layer in the map canvas, using the identify tool ![](../../../fig/mod8_ex1_informationtool.png) to see the values of a few of the raster cells. You should also look at their properties to find out the [Coordinate Reference System (CRS)](../Module_2/en_qgis_projections.md#how-to-choose-an-appropriate-projected-coordinate-system) and the cell size. When working with multiple raster layers, in most cases, it is important that the raster cells overlap exactly. Therefore, the CRS of the raster layers will have to be the same as well as the cell size and the raster extent. You might be unable to compare or combine raster layers correctly if they do not share a common CRS or the raster cells are not aligned. This might lead to unwanted interpolation or the processing operation not succeeding. 
 
 To check the CRS and cell size, <kbd>Right-click</kbd> on the raster layer and select `Properties` → `Information`. 
 
@@ -20,7 +20,7 @@ To check the CRS and cell size, <kbd>Right-click</kbd> on the raster layer and s
 Reprojecting a raster layers works in a similar way as reprojecting vector layers.
 
 1. In the top bar, navigate to `Raster` → `Projections` → `Warp (Reproject)`. The Warp (Reproject)-Tool will open. 
-2. Here, you can select the input layer, the source CRS, the Target CRS and the resampling method. The resampling method determines how the algorithm determines the value of a cell, if it's location shifts during the reprojection. Except when you are working with [continuous data](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_data_classification.html#nominal-ordinal-and-metric-scales) such as temperature or rainfall, you can leave the resampling method on `nearest neighbor`. 
+2. Here, you can select the input layer, the source CRS, the Target CRS and the resampling method. The resampling method determines how the algorithm determines the value of a cell, if it's location shifts during the reprojection. Except when you are working with [continuous data](../Module_3/en_qgis_data_classification.md#nominal-ordinal-and-metric-scales) such as temperature or rainfall, you can leave the resampling method on `nearest neighbor`. 
 3. Once you have set the parameters, click on `Run`. A new layer will be added to your QGIS project. If it is a temporary layer, it will be called "Reprojected" and you should rename it to better identify the layer. 
 
 
@@ -63,9 +63,9 @@ To clip a raster layer:
 
 
 
-### Raster Calculator <a id="raster-calculator"></a>
+## Raster Calculator <a id="raster-calculator"></a>
 
-The raster calculator let's you perform mathematical operations with the raster values using one or multiple raster layers. Similar to the [field calculator]() for vector data, you can enter expressions. These expressions can include arithmetic operations such as multiplication, comparison operators such as `<`. `>`, `=`, conditional expressions like "IF" "THEN" statements, and statistical functions such as "mean" or "sum". 
+The raster calculator let's you perform mathematical operations with the raster values using one or multiple raster layers. Similar to the [field calculator](../Wiki/en_qgis_table_functions_wiki.md#calculate-field) for vector data, you can enter expressions. These expressions can include arithmetic operations such as multiplication, comparison operators such as `<`. `>`, `=`, conditional expressions like "IF" "THEN" statements, and statistical functions such as "mean" or "sum". 
 
 Example:
 You have a Digital Elevation Model with the Altitude in m and a land cover classification raster. You want to produce a raster with all agricultural areas (raster value = 5) above 1500m.
@@ -99,7 +99,7 @@ In the raster calculator,
 
 
 
-### Zonal Statistics <a id="zonal-statistics"></a>
+## Zonal Statistics <a id="zonal-statistics"></a>
 
 The Zonal Statistics tool calculates statistics (like mean, median, sum, etc.) for each zone. A zone can be a polygon of a vector layer or another raster layer.  This is particularly useful for analyzing raster data within defined geographic zones, such as administrative boundaries or land use classes. For example, with a population raster dataset, we can calculate the population sum per district using a vector layer with administrative boundaries. Or, we could calculate the mean temperature of a country. 
 
@@ -117,7 +117,7 @@ Example: We have a raster layer with population count affected by a recent flood
 1. As "Input Layer" choose your polygon layer with district extents. "Pakistan_admin2" in this case.
 3. As "Raster Layer" choose the layer with the cell values you want to base your statistics on. "Pop_floodextent" in this case.
 4. Defining a prefix for your output column is optional but can be helpful for finding the calculated values in large attribute tables. For population counts you can for example choose "pop_" as "Output column prefix".
-5. Below "Statistics to calculate" click on the ![](../../../fig/mod8_ex1_optionsicon.png) icon to access the different options of statistical operations available for calculating polygon values based on your raster. In this case "sum" would be the operation of choice as we want the total sum of flood affected people per district.
+5. Below "Statistics to calculate" click on the ![](../../../fig/en_3.34_m8ex1_optionsicon.png) icon to access the different options of statistical operations available for calculating polygon values based on your raster. In this case "sum" would be the operation of choice as we want the total sum of flood affected people per district.
 
 :::{dropdown} Solution
 :open:
@@ -138,6 +138,6 @@ Interface of the "Zonal statistics" tool
 
 
 
-## Vectorise <a id="vectorise"></a>
+%% ## Vectorise <a id="vectorise"></a>
 
 

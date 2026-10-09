@@ -4,35 +4,35 @@ Aquí recopilamos errores y problemas comunes en QGIS como apoyo general a la ca
 
 # Contenido <!-- omit from toc -->
 
-- [Diferentes versiones de QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#different-qgis-versions)
-- [QGIS no abre en Mac](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#qgis-on-mac-doesnt-open)
-- [Una capa no se muestra en QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#a-layer-is-not-displayed-in-qgis)
-- [Desapareció una ventana de capas en QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#a-layer-window-has-disappeared-in-qgis)
-- [Las capas que deberían estar en la misma posición no están unas sobre otras](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#layers-that-should-actually-be-in-the-same-position-are-not-on-top-of-each-other)
-- [El archivo de capa ha desaparecido de la ventana de capas](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#layer-file-disappeared-from-the-layer-window)
-- [Faltan herramientas de procesamiento en la herramienta de paneles y la pestaña de vectores está incompleta](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#missing-processing-tools-in-the-panels-tool-and-incomplete-vector-tab)
-- [Falta la caja de herramientas](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#missing-toolbox)
-- [La flecha norte no se sincroniza con el mapa correspondiente](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#the-north-arrow-is-not-syncing-with-the-corresponding-map)
-- [Geometría inválida](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#invalid-geometry)
-- [Sistemas de coordenadas: ¿Qué significan todos estos términos?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#coordinate-systems-what-do-all-these-terms-mean)
-- [Sistemas de coordenadas: ¿Cómo puedo redefinir el sistema de coordenadas de un conjunto de datos?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#coordinate-systems-how-do-i-redefine-a-datasets-coordinate-system)
-- [Sistemas de coordenadas: ¿Por qué se utiliza Mercator si está tan distorsionado?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#coordinate-systems-why-is-mercator-ever-used-if-its-so-distorted)
-- [Sistemas de coordenadas: ¡Mi conjunto de datos no se encuentra donde debería!](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#coordinate-systems-my-dataset-is-not-located-where-it-should-be)
-- [Sistemas de coordenadas: ¿En qué sistema de coordenadas debe estar mi conjunto de datos?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#coordinate-systems-what-coordinate-system-should-my-dataset-be-in)
-- [¡Mi conjunto de datos está ligeramente desplazado de donde debería estar!](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#my-dataset-is-slightly-offset-from-where-it-should-be)
-- [Resultados erróneos o falta de datos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#wrong-data-results-or-missing-data)
-- [Problemas de gestión de archivos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#file-management-issues)
-- [Problemas específicos de QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#specific-qgis-problems)
-  - [Configuración básica \> Desactivar la selección automática de proyección](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#basic-settings--deactivating-the-automatic-projection-selection)
-  - [Guardar regularmente](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#saving-regularly)
-  - [Aplicaciones GRASS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#grass-applications)
-  - [SAGA con Linux](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#saga-with-linux)
-  - [Diéresis, caracteres especiales y espacios en las rutas de los archivos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#umlauts-special-characters-spaces-in-file-paths)
-- [Enlaces de acceso a la Ayuda de QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#qgis-help-access-links)
-    - [Tutoriales y consejos sobre QGIS:](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#qgis-tutorials-and-tips)
-    - [Comunidad/foros de QGIS:](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#qgis-communityforums)
-    - [Canales de YouTube sobre QGIS:](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#qgis-youtube-channels)
-    - [ChatGPT](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_common_errors_and_Issues.html#chatgpt)
+- [Diferentes versiones de QGIS](../../en/Wiki/en_qgis_common_errors_and_Issues.md#different-qgis-versions)
+- [QGIS no abre en Mac](../../en/Wiki/en_qgis_common_errors_and_Issues.md#qgis-on-mac-doesnt-open)
+- [Una capa no se muestra en QGIS](../../en/Wiki/en_qgis_common_errors_and_Issues.md#a-layer-is-not-displayed-in-qgis)
+- [Desapareció una ventana de capas en QGIS](../../en/Wiki/en_qgis_common_errors_and_Issues.md#a-layer-window-has-disappeared-in-qgis)
+- [Las capas que deberían estar en la misma posición no están unas sobre otras](../../en/Wiki/en_qgis_common_errors_and_Issues.md#layers-that-should-actually-be-in-the-same-position-are-not-on-top-of-each-other)
+- [El archivo de capa ha desaparecido de la ventana de capas](../../en/Wiki/en_qgis_common_errors_and_Issues.md#layer-file-disappeared-from-the-layer-window)
+- [Faltan herramientas de procesamiento en la herramienta de paneles y la pestaña de vectores está incompleta](../../en/Wiki/en_qgis_common_errors_and_Issues.md#missing-processing-tools-in-the-panels-tool-and-incomplete-vector-tab)
+- [Falta la caja de herramientas](../../en/Wiki/en_qgis_common_errors_and_Issues.md#missing-toolbox)
+- [La flecha norte no se sincroniza con el mapa correspondiente](../../en/Wiki/en_qgis_common_errors_and_Issues.md#the-north-arrow-is-not-syncing-with-the-corresponding-map)
+- [Geometría inválida](../../en/Wiki/en_qgis_common_errors_and_Issues.md#invalid-geometry)
+- [Sistemas de coordenadas: ¿Qué significan todos estos términos?](../../en/Wiki/en_qgis_common_errors_and_Issues.md#coordinate-systems-what-do-all-these-terms-mean)
+- [Sistemas de coordenadas: ¿Cómo puedo redefinir el sistema de coordenadas de un conjunto de datos?](../../en/Wiki/en_qgis_common_errors_and_Issues.md#coordinate-systems-how-do-i-redefine-a-datasets-coordinate-system)
+- [Sistemas de coordenadas: ¿Por qué se utiliza Mercator si está tan distorsionado?](../../en/Wiki/en_qgis_common_errors_and_Issues.md#coordinate-systems-why-is-mercator-ever-used-if-its-so-distorted)
+- [Sistemas de coordenadas: ¡Mi conjunto de datos no se encuentra donde debería!](../../en/Wiki/en_qgis_common_errors_and_Issues.md#coordinate-systems-my-dataset-is-not-located-where-it-should-be)
+- [Sistemas de coordenadas: ¿En qué sistema de coordenadas debe estar mi conjunto de datos?](../../en/Wiki/en_qgis_common_errors_and_Issues.md#coordinate-systems-what-coordinate-system-should-my-dataset-be-in)
+- [¡Mi conjunto de datos está ligeramente desplazado de donde debería estar!](../../en/Wiki/en_qgis_common_errors_and_Issues.md#my-dataset-is-slightly-offset-from-where-it-should-be)
+- [Resultados erróneos o falta de datos](../../en/Wiki/en_qgis_common_errors_and_Issues.md#wrong-data-results-or-missing-data)
+- [Problemas de gestión de archivos](../../en/Wiki/en_qgis_common_errors_and_Issues.md#file-management-issues)
+- [Problemas específicos de QGIS](../../en/Wiki/en_qgis_common_errors_and_Issues.md#specific-qgis-problems)
+  - [Configuración básica \> Desactivar la selección automática de proyección](es_qgis_common_errors_and_Issues.md)
+  - [Guardar regularmente](../../en/Wiki/en_qgis_common_errors_and_Issues.md#saving-regularly)
+  - [Aplicaciones GRASS](../../en/Wiki/en_qgis_common_errors_and_Issues.md#grass-applications)
+  - [SAGA con Linux](../../en/Wiki/en_qgis_common_errors_and_Issues.md#saga-with-linux)
+  - [Diéresis, caracteres especiales y espacios en las rutas de los archivos](../../en/Wiki/en_qgis_common_errors_and_Issues.md#umlauts-special-characters-spaces-in-file-paths)
+- [Enlaces de acceso a la Ayuda de QGIS](../../en/Wiki/en_qgis_common_errors_and_Issues.md#qgis-help-access-links)
+    - [Tutoriales y consejos sobre QGIS:](../../en/Wiki/en_qgis_common_errors_and_Issues.md#qgis-tutorials-and-tips)
+    - [Comunidad/foros de QGIS:](../../en/Wiki/en_qgis_common_errors_and_Issues.md#qgis-communityforums)
+    - [Canales de YouTube sobre QGIS:](../../en/Wiki/en_qgis_common_errors_and_Issues.md#qgis-youtube-channels)
+    - [ChatGPT](../../en/Wiki/en_qgis_common_errors_and_Issues.md#chatgpt)
 
 
 
@@ -42,7 +42,7 @@ La Wiki y, en particular, los videos que contiene son solo una fotografía en el
 ## QGIS no abre en Mac
 Al abrir QGIS por primera vez en Mac puede aparecer este mensaje de error:
 
-:::{figure} /fig/qgis_on_mac.png
+:::{figure} ../../../fig/qgis_on_mac.png
 ---
 width: 55%
 name: es_qgis_on_mac.png
@@ -55,7 +55,7 @@ Para solucionarlo, presione el botón control del teclado y haga clic derecho de
 
 Si este problema persiste, puede cambiar la configuración de su dispositivo. Vaya a `Settings` > `Security & Privacy` y desplácese hacia abajo, haga clic en `Open Anyway`
 
-:::{figure} /fig/opening_qgis_mac.png
+:::{figure} ../../../fig/opening_qgis_mac.png
 ---
 width: 55%
 name: opening_qgis_mac.png
@@ -71,7 +71,7 @@ __Solución:__
   1. Haga clic derecho en la capa correspondiente.
   2. Active la función `Zoom a la capa(s)` en la ventana emergente.
 
-:::{figure} /fig/en_layer_display.png
+:::{figure} ../../../fig/en_layer_display.png
 ---
 width: 55%
 name: es_layer_display.png
@@ -88,7 +88,7 @@ __Solución:__
  2. En la ventana emergente, seleccione `Paneles`.
  3. En la subventana, marque la casilla `Panel Capas`.
 
-:::{figure} /fig/en_closed_layer_view.png
+:::{figure} ../../../fig/en_closed_layer_view.png
 ---
 width: 75%
 name: es_closed_layer_view.png
@@ -118,7 +118,7 @@ Si hay dos capas con diferentes SRC, seleccione una de las capas como capa de en
 Se mostrará en el espacio de trabajo en el mismo lugar que las demás capas, ya que QGIS la reproyecta en tiempo de ejecución. Sin embargo, sus coordenadas reales son diferentes.
 
 
-:::{figure} /fig/en_qgis_layer_with_different_KBS.png
+:::{figure} ../../../fig/en_qgis_layer_with_different_KBS.png
 ---
 width: 75%
 name: es_qgis_layer_with_different_KBS.png
@@ -127,7 +127,7 @@ align: center
 Capa con diferentes SRC.
 :::
 
-Puede comprobarlo utilizando el algoritmo `Agregar atributos de geometría` en la [caja de herramientas de procesos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_interface_wiki.html#caja-de-herramientas-de-procesos). Las coordenadas son distintas a las coordenadas de las otras dos tablas de atributos de las otras capas.
+Puede comprobarlo utilizando el algoritmo `Agregar atributos de geometría` en la [caja de herramientas de procesos](es_qgis_interface_wiki.md). Las coordenadas son distintas a las coordenadas de las otras dos tablas de atributos de las otras capas.
 
 En su lugar, haga lo siguiente:
 
@@ -138,7 +138,7 @@ En su lugar, haga lo siguiente:
 3. Y en el siguiente menú emergente `Reproyectar capa`.
 
 
-:::{figure} /fig/en_qgis_reproject_vector_layer01.png
+:::{figure} ../../../fig/en_qgis_reproject_vector_layer01.png
 ---
 width: 75%
 name: es_qgis_reproject_vector_layer01.png
@@ -148,7 +148,7 @@ Reproyectar capa en QGIS.
 :::
 
 
-:::{figure} /fig/en_qgis_reprojected_layer.png
+:::{figure} ../../../fig/en_qgis_reprojected_layer.png
 ---
 width: 75%
 name: es_qgis_reprojected_layer.png
@@ -159,7 +159,7 @@ Herramienta para reproyectar capas en QGIS.
 
 Guarde siempre las capas reproyectadas mediante las funciones `Exportar` y `Guardar como`, ya que solo se guardan temporalmente y desaparecerán tras cerrar el proyecto.
 
-:::{figure} /fig/en_qgis_reprojection_export.png
+:::{figure} ../../../fig/en_qgis_reprojection_export.png
 ---
 width: 75%
 name: es_qgis_reprojection_export.png
@@ -177,7 +177,7 @@ Procedimiento similar para capas ráster...
 3. Y en el siguiente menú emergente `Combar (Reproyectar)`.
 
 
-:::{figure} /fig/en_qgis_reproject_raster_layers01.png
+:::{figure} ../../../fig/en_qgis_reproject_raster_layers01.png
 ---
 width: 75%
 name: es_qgis_reproject_raster_layers01.png
@@ -193,14 +193,14 @@ Reproyectar capa ráster en QGIS.
 ## El archivo de capa ha desaparecido de la ventana de capas
 
 Si un archivo de capa ya no se muestra o no está activo en la ventana de capas después de reabrir un proyecto de QGIS, se trata solo de una capa temporal. Las capas temporales tienen un símbolo a la derecha de su nombre:
- ![](/fig/en_qgis_temporary_Layer.png)
+ ![](../../../fig/en_qgis_temporary_Layer.png)
 
 __Solución:__
 
 La próxima vez, guárdelo antes de cerrar QGIS:
 1. Haga clic derecho en la capa temporal y seleccione `Hacer permanente`.
 
-:::{figure} /fig/en_qgis_save_layer01.png
+:::{figure} ../../../fig/en_qgis_save_layer01.png
 ---
 width: 65%
 name: es_qgis_save_layer01.png
@@ -210,11 +210,11 @@ Guardar una capa temporal.
 :::
 
 
-2. Ponga un _nombre de archivo_ y haga clic en las tres puntos ![](/fig/Three_points.png) para guardar el archivo en el lugar del directorio elegido.
+2. Ponga un _nombre de archivo_ y haga clic en las tres puntos ![](../../../fig/Three_points.png) para guardar el archivo en el lugar del directorio elegido.
 3. Seleccione el SRC correspondiente.
 4. Haga clic en `Aceptar`.
 
-:::{figure} /fig/en_qgis_save_layer02.png
+:::{figure} ../../../fig/en_qgis_save_layer02.png
 ---
 width: 85%
 name: es_qgis_save_layer02
@@ -234,7 +234,7 @@ __Solución:__
   2. Seleccione `Todos`.
   3. Vuelva a marcar la función `Processing` en la lista correspondiente.
 
-:::{figure} /fig/en_missing_processing_tools.png
+:::{figure} ../../../fig/en_missing_processing_tools.png
 ---
 width: 85%
 name: es_missing_processing_tools
@@ -250,9 +250,9 @@ https://gis.stackexchange.com/questions/202111/missing-processing-tools-in-vecto
 ## Falta la caja de herramientas
 __Solución:__
 
-  1. Para reactivar la __Caja de herramientas de procesos__ ![](/fig/mAction.png) haga clic en `Ver` → `Paneles` → `Panel caja de herramientas de Procesos`. 
+  1. Para reactivar la __Caja de herramientas de procesos__ ![](../../../fig/mAction.png) haga clic en `Ver` → `Paneles` → `Panel caja de herramientas de Procesos`. 
 
-:::{figure} /fig/en_missing_toolbox.png
+:::{figure} ../../../fig/en_missing_toolbox.png
 ---
 width: 75%
 name: es_missing_toolbox
@@ -266,10 +266,10 @@ __Solución:__
 
 Hay dos lugares en los que tiene que definir con qué mapa debe sincronizarse la flecha norte.
 
-En la pestaña `Diseño` (en la ventana del [diseño de impresión](/content/es/Module_4/es_qgis_understanding_print_layout.md)) para la imagen del mapa en `Configuración general` asegúrese de que el mapa de referencia tiene seleccionado el mapa correcto.
+En la pestaña `Diseño` (en la ventana del [diseño de impresión](../Module_4/es_qgis_understanding_print_layout.md)) para la imagen del mapa en `Configuración general` asegúrese de que el mapa de referencia tiene seleccionado el mapa correcto.
 
 
-:::{figure} /fig/en_qgis_correct_referenciation_to_map.png
+:::{figure} ../../../fig/en_qgis_correct_referenciation_to_map.png
 ---
 width: 85%
 name: es_qgis_correct_referenciation_to_map.png
@@ -336,7 +336,7 @@ https://gdal.org/programs/ogr2ogr.html#cmdoption-ogr2ogr-a_srs
 Mercator es la única proyección cartográfica cilíndrica conforme. Las proyecciones cartográficas cilíndricas significan que toda la Tierra se ajusta dentro de un rectángulo, lo que resulta muy conveniente para los algoritmos de procesamiento de datos que están diseñados para trabajar con imágenes rectangulares. Conforme significa que los ángulos y las formas siempre se preservan: el norte siempre está arriba, los cuadrados siguen siendo cuadrados, etc. Utilizar una proyección que no sea conforme haría que las formas se vieran estiradas, aplastadas y/o rotadas al hacer zoom.
 
 
-:::{figure} /fig/qgis_mercator.jpg
+:::{figure} ../../../fig/qgis_mercator.jpg
 ---
 width: 75%
 name: es_qgis_mercator.jpg
@@ -365,7 +365,7 @@ __Solución:__
 
 Aplicar cambios: Una vez seleccionado el sistema de coordenadas deseado, haga clic en `Aceptar` para aplicar los cambios. QGIS reproyectará las capas de su proyecto para que coincidan con el nuevo sistema de coordenadas.
 
-:::{figure} /fig/en_qgis_redefining_CRS01.png
+:::{figure} ../../../fig/en_qgis_redefining_CRS01.png
 ---
 width: 80%
 name: es_qgis_redefining_CRS01
@@ -377,7 +377,7 @@ Redefinir los SRC.
 5. Compruebe y ajuste las capas: después de redefinir el sistema de coordenadas, es esencial comprobar las capas para asegurarse de que se alinean correctamente. Algunas capas pueden requerir ajustes manuales o una reproyección si no se alinean como se esperaba.
 Vuelva a revisar la parte inferior derecha de la ventana de QGIS, donde se indica el SRC real.
 
-:::{figure} /fig/en_qgis_redefining_CRS02.png
+:::{figure} ../../../fig/en_qgis_redefining_CRS02.png
 ---
 width: 80%
 name: es_qgis_redefining_CRS02
@@ -458,7 +458,7 @@ Véase también la siguiente [__Página_Wiki__](../Wiki/es_qgis_projections_wiki
 
 Es probable que su conjunto de datos tenga un sistema de coordenadas geográficas (SCG) con la longitud/latitud incorrecta. Los distintos SCG definen tamaños/formas ligeramente distintos de la Tierra (sus elipsoides) y diferentes posicionamientos sobre ella (sus datums). Como resultado, las mismas coordenadas de longitud/latitud en dos SCG diferentes pueden aparecer desplazadas, aunque normalmente con una diferencia de decenas de metros. Esto puede ocurrir incluso si está utilizando un sistema de coordenadas proyectadas (SCP) cuyas unidades no son grados de longitud/latitud, ya que los SCP tienen un SCG incrustado en ellos.
 
-:::{figure} /fig/qgis_wrong-gcs.png
+:::{figure} ../../../fig/qgis_wrong-gcs.png
 ---
 width: 75%
 name: es_qgis_wrong-gcs.png
@@ -493,7 +493,7 @@ __Solución:__
 
 Estructura de carpetas estándar recomendada:
 
-:::{figure} /fig/Standard_project_folder_structure.drawio.svg
+:::{figure} ../../../fig/Standard_project_folder_structure.drawio.svg
 ---
 width: 75%
 name: es_Standard_project_folder_structure.drawio.svg
@@ -504,7 +504,7 @@ Estructura de carpetas estándar. Fuente: HeiGIT
 
 Cómo podría verse en su PC:
 
-:::{figure} /fig/en_qgis_folder_structure_pc.png
+:::{figure} ../../../fig/en_qgis_folder_structure_pc.png
 ---
 width: 75%
 name: es_qgis_folder_structure_pc.png
@@ -538,7 +538,7 @@ Si un archivo de capas no tiene una proyección, deberá definirse una proyecci�
 4. En `SRC para proyectos` active `Usar SRC de la primera capa añadida`.
 5. Y en `SRC para capas` active `Preguntar SRC`.
 
-:::{figure} /fig/en_qgis_CRS_settings.png
+:::{figure} ../../../fig/en_qgis_CRS_settings.png
 ---
 width: 95%
 name: en_qgis_CRS_settings.png

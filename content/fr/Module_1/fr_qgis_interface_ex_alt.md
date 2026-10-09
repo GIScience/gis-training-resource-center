@@ -2,7 +2,7 @@
 
 % CE FICHIER PEUT-IL ÊTRE SUPPRIMÉ ?
 
-__🔙[Retour à la page d’accueil](/content/fr/intro.md)__
+__🔙[Retour à la page d’accueil](../fr_intro.md)__
 
 ### Objectif de l’exercice :
 
@@ -10,11 +10,11 @@ Cet exercice approfondit le précédent. Cette fois-ci, nous allons également i
 
 ### Wiki :
 
-- [Interface](/content/fr/Wiki/fr_qgis_interface_wiki.md)
+- [Interface](../../en/Wiki/en_qgis_interface_wiki.md)
 
-- [Projections](/content/fr/Wiki/fr_qgis_projections_wiki.md)
+- [Projections](../../en/Wiki/en_qgis_projections_wiki.md)
 
-- [Concept de couche et importation de données](/content/fr/Wiki/fr_qgis_layer_concept_wiki.md)
+- [Concept de couche et importation de données](../../en/Wiki/en_qgis_layer_concept_wiki.md)
 
 
 ### Données :
@@ -37,7 +37,7 @@ Téléchargez les données (fichier .zip : 83,23 KB) et enregistrez-les sur votr
 
 2. Ouvrez les fichiers ci-dessus dans QGIS. Chargez les couches vectorielles dans votre projet. Importez le fichier CSV via `Ajouter un texte délimité`.
 
-![QGIS_User_Interface](/fig/en_airports_text_layer.png)
+![QGIS_User_Interface](../../../fig/en_airports_text_layer.png)
 Couche texte des aéroports
 
 3. Interagissez avec la carte et explorez les jeux de données. Utilisez l’outil de zoom et déplacez la carte. Observez la barre d’état en bas de l’écran et notez comment elle évolue.
@@ -57,5 +57,5 @@ Couche texte des aéroports
 ### Résultat : 
 
 :::{dropdown} Voici (ou similaire) le résultat attendu :
-![QGIS_User_Interface](/fig/en_eExercise_1_result.png)
+![QGIS_User_Interface](../../../fig/en_eExercise_1_result.png)
 :::

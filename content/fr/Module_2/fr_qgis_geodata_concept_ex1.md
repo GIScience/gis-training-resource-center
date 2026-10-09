@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/fr/fr_intro.html 
+:link: ../fr_intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -55,11 +55,11 @@ __Durée estimée de l’exercice :__
 __Articles wiki pertinents__
 ^^^
 
-* [Interface QGIS](/content/fr/Wiki/fr_qgis_interface_wiki.md)
-* [Import de données géographiques dans QGIS](/content/fr/Wiki/fr_qgis_import_geodata_wiki.md)
-* [Concept de couche](/content/fr/Wiki/fr_qgis_layer_concept_wiki.md)
-* [Table attributaire dans QGIS](/content/fr/Wiki/fr_qgis_attribute_table_wiki.md)
-* [Projections](/content/fr/Wiki/fr_qgis_projections_wiki.md)
+* [Interface QGIS](../../en/Wiki/en_qgis_interface_wiki.md)
+* [Import de données géographiques dans QGIS](../../en/Wiki/en_qgis_import_geodata_wiki.md)
+* [Concept de couche](../../en/Wiki/en_qgis_layer_concept_wiki.md)
+* [Table attributaire dans QGIS](../../en/Wiki/en_qgis_attribute_table_wiki.md)
+* [Projections](../../en/Wiki/en_qgis_projections_wiki.md)
 
 <!-- FIXME: to be updated -->
 
@@ -76,7 +76,7 @@ __Articles wiki pertinents__
 - Prenez le temps de vous familiariser avec l’exercice et le matériel fourni.
 - Préparez un tableau blanc. Il peut s’agir d’un tableau blanc physique, d’un paperboard ou d’un tableau blanc numérique (par ex. un tableau Miro) sur lequel les participant·e·s peuvent ajouter leurs remarques et leurs questions. 
 - Avant de commencer l’exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé __et décompressé__ le dossier de données.
-- Consultez [Comment animer des formations ?](/content/fr/Trainers_corner/fr_how_to_training.md) pour quelques conseils généraux sur la conduite d’une formation.
+- Consultez [Comment animer des formations ?](../../en/Trainers_corner/en_how_to_training.md) pour quelques conseils généraux sur la conduite d’une formation.
 
 ### Animer la formation <a id="conduct-the-training"></a>
 
@@ -123,7 +123,7 @@ Le GeoPackage `Sierra_leone_administrative_boundaries.gpkg` contient des informa
 :::{admonition} Arborescence de dossiers
 :type: hint
 
-Gardez une gestion des données rigoureuse en créant sur votre ordinateur une [arborescence de dossiers standard](https://giscience.github.io/gis-training-resource-center/content/fr/Wiki/fr_qgis_projects_folder_structure_wiki.html#standard-folder-structure) pour vos projets QGIS et vos données géographiques.  
+Gardez une gestion des données rigoureuse en créant sur votre ordinateur une [arborescence de dossiers standard](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) pour vos projets QGIS et vos données géographiques.  
 Les données de l’exercice doivent être enregistrées à un emplacement où vous pourrez facilement les retrouver, ainsi que le projet QGIS correspondant.
 
 :::
@@ -142,7 +142,7 @@ Les données de l’exercice doivent être enregistrées à un emplacement où v
       - Cliquez sur ajouter. Une nouvelle couche ponctuelle contenant les aéroports devrait apparaître dans votre canevas cartographique.
 
 
-:::{figure} /fig/en_3.36_add_csv.png
+:::{figure} ../../../fig/en_3.36_add_csv.png
 ---
 width: 500 px
 name: navigation to add csv layer
@@ -151,7 +151,7 @@ Ouverture de la fenêtre d’import CSV.
 :::
 
 
-:::{figure} /fig/en_delimited_text_screenshot.PNG
+:::{figure} ../../../fig/en_delimited_text_screenshot.PNG
 ---
 width: 80%
 name: delimited_text
@@ -182,7 +182,7 @@ Pour obtenir des informations sur une couche et sa projection, double-cliquez su
 
 6. Enregistrez la couche des structures de santé dans la projection `WGS 84 / Pseudo-Mercator EPSG:3857`. Cela modifiera la projection du fichier. Vous pouvez le faire en effectuant un clic droit sur la couche → `Export` → `Save Features As..`. Dans la fenêtre contextuelle, sélectionnez **GeoPackage comme format de sortie** et **précisez l’emplacement et le nom du fichier** en cliquant sur les trois petits points. Il est également possible de donner un nom de couche, qui sera affiché lors de son chargement dans QGIS. Avant d’exécuter cette opération, la **projection peut être modifiée** en sélectionnant le SCR souhaité dans la section prévue à cet effet. Vérifiez la projection modifiée en consultant les propriétés de la nouvelle couche créée.
 
-:::{figure} /fig/en_ex1_export_layer.PNG
+:::{figure} ../../../fig/en_ex1_export_layer.PNG
 ---
 width: 40%
 name: export_layer
@@ -196,12 +196,12 @@ Capture d’écran de la fenêtre d’export.
 
 :::{Note}
 
-La combinaison de couches ayant des projections différentes avec des fonds de carte en ligne (qui ont généralement leurs propres projections) peut entraîner des problèmes d’affichage dus à des [conflits de SCR](https://giscience.github.io/gis-training-resource-center/content/fr/Module_2/fr_qgis_projections.html#how-to-choose-an-appropriate-projected-coordinate-system). Lorsque les couches utilisent des SCR distincts, elles peuvent ne pas s’aligner correctement ou apparaître déformées lorsqu’elles sont superposées à un fond de carte en ligne. Pour limiter ces problèmes, il est conseillé soit de reprojeter les couches pour qu’elles correspondent au SCR du fond de carte (ce qui n’est pas toujours applicable), soit de retirer temporairement le fond de carte avant d’enregistrer le projet. Cela garantit un affichage correct de la carte et évite les incohérences visuelles liées aux différences de SCR.
+La combinaison de couches ayant des projections différentes avec des fonds de carte en ligne (qui ont généralement leurs propres projections) peut entraîner des problèmes d’affichage dus à des [conflits de SCR](fr_qgis_projections.md#how-to-choose-an-appropriate-projected-coordinate-system). Lorsque les couches utilisent des SCR distincts, elles peuvent ne pas s’aligner correctement ou apparaître déformées lorsqu’elles sont superposées à un fond de carte en ligne. Pour limiter ces problèmes, il est conseillé soit de reprojeter les couches pour qu’elles correspondent au SCR du fond de carte (ce qui n’est pas toujours applicable), soit de retirer temporairement le fond de carte avant d’enregistrer le projet. Cela garantit un affichage correct de la carte et évite les incohérences visuelles liées aux différences de SCR.
 
 :::
 
 
-:::{figure} /fig/en_result_geodata_concept_exercise.png
+:::{figure} ../../../fig/en_result_geodata_concept_exercise.png
 ---
 width: 80%
 name: en_result_geodata_concept_exercise

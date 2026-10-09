@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -12,7 +12,7 @@
 
 El procesamiento espacial utiliza la información espacial para extraer un nuevo significado de los datos de SIG. Para ello, utiliza la __relación espacial__ de diferentes capas o entidades. Las relaciones espaciales describen cómo se sitúan las cosas entre sí. En el ámbito humanitario, esto ayuda a responder a preguntas críticas como "¿Qué comunidades están cerca de una fuente de agua?" o "¿Qué zonas están aisladas de los servicios de salud?". O puede que queramos identificar los mejores lugares para distribuir la ayuda, evaluar las zonas de riesgo de inundaciones o planificar las rutas de evacuación.
 
-Ya hemos encontrado relaciones espaciales en el módulo 3 en el subcapítulo sobre __[operadores geométricos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_3/es_qgis_data_queries.html#geometric-operators)__, también denominados predicados geométricos en QGIS.
+Ya hemos encontrado relaciones espaciales en el módulo 3 en el subcapítulo sobre __[operadores geométricos](../../en/Module_3/en_qgis_data_queries.md#geometric-operators)__, también denominados predicados geométricos en QGIS.
 En el cuadro siguiente se describen las relaciones espaciales y se dan ejemplos de cuándo estas relaciones espaciales son relevantes en la ayuda humanitaria.
 
 ## Relaciones espaciales
@@ -35,7 +35,7 @@ incorporar información adicional procedente de capas, que puede ayudarnos a com
 - __Centroides__ crea puntos en el centro geométrico de las geometrías de una capa. Esto resulta especialmente útil para crear mapas con símbolos graduados
 
 
-:::{figure} /fig/en_module5_spatial_geodataprocessing.PNG
+:::{figure} ../../../fig/en_module5_spatial_geodataprocessing.PNG
 ---
 width: 750 px
 name: es_module5_spatial_geodataprocessing
@@ -50,7 +50,7 @@ En este capítulo, exploraremos en primer lugar las __uniones espaciales__. Las 
 
 Las uniones son formas de combinar dos capas de datos diferentes. En general, existen dos tipos de uniones: __uniones no espaciales__ y __uniones espaciales__.
 
-- Las uniones no espaciales se basan en valores de atributos específicos, que se utilizan como campos ID, para combinar dos capas. Se tratan en el capítulo "[Herramientas de procesamiento no espacial](/content/es/Module_5/es_qgis_non_spatial_tools.md)" de este módulo.
+- Las uniones no espaciales se basan en valores de atributos específicos, que se utilizan como campos ID, para combinar dos capas. Se tratan en el capítulo "[Herramientas de procesamiento no espacial](es_qgis_non_spatial_tools.md)" de este módulo.
 - A veces queremos combinar información de diferentes capas que no comparten un valor común. En estos casos, podemos utilizar las uniones espaciales, que nos permiten unir datos basándonos en reglas de localización.
 - Las uniones espaciales en QGIS mejoran los atributos de la capa de entrada añadiendo información adicional de la capa de unión, apoyándose en su __relación espacial__. Este proceso enriquece sus datos incorporando detalles relevantes de una capa a otra en función de sus asociaciones geográficas.
 - En QGIS, una unión espacial crea una nueva capa comparando las entidades de una capa con las de otra, en función de
@@ -68,7 +68,7 @@ __Ejemplo en el ámbito humanitario:__
 
 *El mapa resultante podría tener este aspecto:*
 
-:::{figure} /fig/en_flood_damage_assessement_libya.png
+:::{figure} ../../../fig/en_flood_damage_assessement_libya.png
 ---
 name: en_flood_damage_assessement_libya
 width: 450 px
@@ -119,7 +119,7 @@ Devuelve geometrías que tienen algunos puntos interiores en común, pero no tod
 
 ::::
 
-:::{figure} /fig/en_select_by_location.png
+:::{figure} ../../../fig/en_select_by_location.png
 ---
 width: 600 px
 name: es_select_by_location
@@ -139,7 +139,7 @@ El ejercicio práctico es crucial para comprender cómo funcionan los SIG y QGIS
 
 En el ejemplo anterior ({numref}`es_spatial_join_example`), tenemos un conjunto de datos que contiene el conjunto de datos de centros de salud por healthsite.ioand con los límites administrativos (adm2) de Nigeria. Queremos saber en qué estado se encuentra cada centro de salud. Para ello, debemos utilizar la herramienta "Unir atributos por ubicación".
 
-:::{figure} /fig/en_spatial_join_example.png
+:::{figure} ../../../fig/en_spatial_join_example.png
 ---
 name: es_spatial_join_example
 width: 400 px
@@ -162,7 +162,7 @@ Esta herramienta toma dos capas de entrada y crea una nueva capa vectorial que t
 - La segunda capa de entrada (véase "Comparando con" en {numref}`es_spatial_join_1`) dicta los atributos que se añadirán a la nueva capa sobre los atributos de la primera capa de entrada. Puede seleccionar cuáles de estos atributos deben transferirse a la nueva capa.
 
 
-:::{figure} /fig/en_spatial_join_1.PNG
+:::{figure} ../../../fig/en_spatial_join_1.PNG
 ---
 width: 450 px
 name: es_spatial_join_1
@@ -174,7 +174,7 @@ La herramienta "Unir atributos por ubicación" de QGIS 3.36.
 
 1. Descargue los conjuntos de datos necesarios de HDX
     - [nigeria-healthsites-shp](https://data.humdata.org/dataset/nigeria-healthsites)
-    - [nga_adm_osgof_20190417.zip](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_5/es_qgis_spatial_tools.html)
+    - [nga_adm_osgof_20190417.zip](es_qgis_spatial_tools.md)
 2. Descomprima los archivos, cree un nuevo proyecto QGIS y cargue los archivos en el proyecto QGIS.
 3. Busque la herramienta __"Unir atributos por ubicación"__ en la caja de herramientas de Procesos y haga <kbd>doble clic</kbd> sobre ella. Se abrirá una nueva ventana (véase {numref}`es_join_by_location_ex1`).
 4. Utilice la capa de centros de salud como objetivo ("Unir a entidades en") y la capa adm2 como capa de comparación ("Comparando con").
@@ -189,7 +189,7 @@ La herramienta "Unir atributos por ubicación" de QGIS 3.36.
 
 Enhorabuena, ¡ya hemos añadido la información sobre la región administrativa a la capa de centros de salud! Podemos simbolizar la capa unida con la simbología categorizada para comprobar si ha funcionado (véase {numref}`es_spatial_join_ex1_results_categorised`). Obsérvese que los puntos del conjunto de datos original que estaban fuera de la frontera de Nigeria se han descartado, ya que no se han podido unir.
 
-:::{figure} /fig/spatial_join_ex1_results_categorised.png
+:::{figure} ../../../fig/spatial_join_ex1_results_categorised.png
 ---
 name: es_spatial_join_ex1_results_categorised
 width: 500 px
@@ -211,7 +211,7 @@ Por defecto, QGIS proporciona tres herramientas diferentes para realizar uniones
 
 Esta herramienta es similar a la herramienta "Unir atributos por ubicación". Sin embargo, además de añadir los atributos de una capa a otra, este algoritmo también calcula resúmenes estadísticos de los valores de las entidades coincidentes en la segunda capa. Estos resúmenes incluyen una amplia gama de opciones, como __valores mínimos y máximos__, __valores medios__, así como __recuentos__, __sumas__, __desviación estándar__, y mucho más.
 
-:::{figure} /fig/en_spatial_join_3.PNG
+:::{figure} ../../../fig/en_spatial_join_3.PNG
 ---
 width: 450 px
 name: es_spatial_join_3
@@ -226,7 +226,7 @@ Captura de pantalla de la herramienta Unir atributos por ubicación (resumen) en
 Este tipo de unión espacial es similar a las otras dos uniones, pero la unión de entidades se produce __identificando las entidades más cercanas__ de cada una de estas capas. Además, si se especifica una distancia máxima, solo se considerarán coincidencias adecuadas para el proceso de unión las entidades que se encuentren dentro de esta distancia designada.
 
 
-:::{figure} /fig/en_spatial_join_2.PNG
+:::{figure} ../../../fig/en_spatial_join_2.PNG
 ---
 width: 450 px
 name: es_spatial_join_2
@@ -289,7 +289,7 @@ Una herramienta de __procesamiento espacial__ opera sobre la geometría (ubicaci
 
 :::{dropdown} Respuesta
 - El resultado serán entidades de polígonos (zonas) que representan todas las áreas en un radio de 100 m de cada carretera. Así, si las carreteras de entrada son entidades lineales, después de la zona de influencia tendrá polígono(s) que "envuelven" cada línea de carretera, extendiéndose a ambos lados 100 m (suponiendo una zona de influencia plana simple).
-- Se podría utilizar una zona de influencia para amortiguar una trayectoria del ciclón y aproximarse a la región afectada por el ciclón (véase [Flujo de trabajo de activación de QGIS para Madagascar](https://giscience.github.io/gis-training-resource-center/spanish/content/es/GIS_AA/es_qgis_cyclone_trigger_madagascar.html)).
+- Se podría utilizar una zona de influencia para amortiguar una trayectoria del ciclón y aproximarse a la región afectada por el ciclón (véase [Flujo de trabajo de activación de QGIS para Madagascar](../../en/GIS_AA/en_qgis_cyclone_trigger_madagascar.md)).
 
 :::
 

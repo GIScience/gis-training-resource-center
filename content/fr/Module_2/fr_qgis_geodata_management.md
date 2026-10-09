@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/content/fr/fr_intro.html 
+:link: ../fr_intro.md 
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -29,7 +29,7 @@ Une arborescence de dossiers standard présente deux avantages principaux :
 1. Si nous partageons l’ensemble du dossier de projet, nous pouvons nous attendre à ce que le projet fonctionne sans problème sur un autre ordinateur.
 2. Cette structure favorise une bonne organisation des données du projet et contribue à garantir le bon fonctionnement du projet QGIS.
 
-:::{figure} /fig/standard_folder_structure_new_2025.drawio.png
+:::{figure} ../../../fig/standard_folder_structure_new_2025.drawio.png
 ---
 width: 600px
 align: center

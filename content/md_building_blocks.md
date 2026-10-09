@@ -2,6 +2,8 @@
 
 This page is a collection of syntaxes for the different building blocks used in the jupyterbook for standard markdown, markdown Myst and Sphynx design.
 
+Directives have to use colon fences `:::` in order not to mess with OKAPI filters in the localisation pipeline. Directives can be nested.
+
 ## Websites with information
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/display
@@ -24,7 +26,7 @@ Here are the different header blocks used in the chapters at the beginning of pa
 :::{grid-item-card}
 :class-card: sd-text-center 
 :link: https://giscience.github.io/gis-training-resource-center/content/intro.html 
-__🔙[Back to Homepage](/content/intro.md)__
+__🔙[Back to Homepage](en/intro.md)__
 :::
 
 ::::
@@ -50,6 +52,26 @@ OR
 :::
 ::::
 
+### Figures
+
+:::{figure} ../../../image_name.png
+---
+name: image_name
+width: 600 px
+---
+Caption
+:::
+
+
+### Callouts
+
+
+:::{note}
+
+Text, image, etc.
+
+:::
+
 
 ### Module Chapter Headers:
 
@@ -57,9 +79,9 @@ __[Article info:](https://sphinx-design.readthedocs.io/en/pydata-theme/additiona
 
 - block displaying some characteristics of the page
 
-::::{dropdown} Syntax
-````
-```{article-info}
+:::::{dropdown} Syntax
+::::
+:::{article-info}
 :avatar: images/ebp-logo.png
 :avatar-link: https://executablebooks.org/
 :avatar-outline: muted
@@ -67,9 +89,9 @@ __[Article info:](https://sphinx-design.readthedocs.io/en/pydata-theme/additiona
 :date: Jul 24, 2021
 :read-time: 5 min read
 :class-container: sd-p-2 sd-outline-muted sd-rounded-1
-```
-````
+:::
 ::::
+:::::
 
 
 
