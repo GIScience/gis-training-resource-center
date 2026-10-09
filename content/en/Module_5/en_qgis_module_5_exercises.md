@@ -2,6 +2,7 @@
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
 :link: ../intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -34,5 +35,5 @@ These exercises touch on all the content of module 5.
 
 <!---
 
-*  __⚠️construction⚠️[Risk Assessment](/content/Modul_5/en_qgis_modul_5_ex1.md):__ 
+*  __⚠️construction⚠️[Risk Assessment](en_qgis_module_5_ex1.md):__ 
 >

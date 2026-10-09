@@ -211,7 +211,7 @@ CAPTION
         4. `Result field type`: Text (string)
         ```
     - __All clickable surface has to be written as code snippets e.g. `Attribute Table`__
-    - If a special icon is used in QGIS, place it next to the code snippets e.g `Field Calculator` ![](../../../fig/icon_scratch_layer.png).
+    - If a special icon is used in QGIS, place it next to the code snippets e.g `Field Calculator` ![](../../fig/icon_scratch_layer.png).
     - If an option needs to be selected, write the click surface name in code snippet and the option as normal text e.g. `Result field type`: Text (string)
     - If something like a file name has to be named in a certain way use quotation marks e.g. `Output field name`: Name the new column “Trigger_activation”
     - Where it makes sense add the link to the relevant wiki video when the participants should use a tool or a functionality that is not in detail described in your current step-by-step guide either by linking the tool name e.g. [drag and drop](Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop) or by using something like ([Wiki basemap](Wiki/en_qgis_basemaps_wiki.md))

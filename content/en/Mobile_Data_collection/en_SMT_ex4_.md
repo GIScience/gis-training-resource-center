@@ -97,14 +97,14 @@ __You can choose whether you want to do the exercise with QGIS (Exercise A) or w
 ::::{grid} 2
 
 :::{grid-item-card}
-:link: en_SMT_ex4_.md#exercise-a-exploration-basic-visualization-of-sketch-map-tool-outputs-in-qgis
+:link: en_SMT_ex4_.html#exercise-a-exploration-basic-visualization-of-sketch-map-tool-outputs-in-qgis
 
 __Click here to start exercise A (QGIS)__
 
 :::
 
 :::{grid-item-card}
-:link: en_SMT_ex4_.md#exercise-b-basic-visualization-of-sketch-map-tool-outputs-in-umap
+:link: en_SMT_ex4_.html#exercise-b-basic-visualization-of-sketch-map-tool-outputs-in-umap
 
 __Click here to start exercise B (uMAP)__
 
@@ -213,7 +213,7 @@ Now load your vector file ("Kumasi_SMT_Ex4.geojson") and geotiff files ("Kumasi_
 
 __1. Digitization: Add a marking manually__
 
-So what can we do if a marking has not been detected? We can add missing markings manually by tracking the drawing on the geotiff file. This process is also called [digitisation](/content/Module_3/en_qgis_digitalisation.md). 
+So what can we do if a marking has not been detected? We can add missing markings manually by tracking the drawing on the geotiff file. This process is also called [digitisation](../Module_3/en_qgis_digitisation.md). 
 
 Right-click on your vector file and click on `Toggle Editing`. The `Digitizing Toolbox` in your menu bar on top of your QGIS will be activated:
 
@@ -306,7 +306,7 @@ height: 400px
 name: SMT adjusting symbology
 align: center
 ---
-Adjusting the symbology with the [symbology tab](../Module_4/en_qgis_map_design_I.md#styling-panel)
+Adjusting the symbology with the [symbology tab](../Module_4/en_qgis_styling_vector_data.md#styling-panel)
 ```
 
 In the `Symbol Selector`, you can also click on `Simple line` in the upper window and change the `Symbol Layer Type`. In this example, we would like to symbolize the potential hazardous substances with red outlines, so we choose "Outline: Simple Line". Just below we can adjust the color, stroke width, stroke line type, etc. You can find more information about the visualization of vector data [here](../Wiki/en_qgis_visualisation_wiki.md).
@@ -327,7 +327,7 @@ __2. Make a printable Map__
 
 1. Open a new print layout by clicking on `Project` -> `New Print Layout` -> enter the name of your current Project e.g "Kumasi Flooding Sketch Map Tool". A new window will open with a blank canvas and a different set of tools. This is the __print layout designer__.
 
-- Insert a new map by clicking on the ![New Map Icon](../../../fig/30.30.2_print_layout_insert_map_icon.png) ("Add Map") on the left toolbar, and drawing a rectangle on the print canvas. [Video](../Module_4/en_qgis_map_design_2.md#adding-a-new-map)
+- Insert a new map by clicking on the ![New Map Icon](../../../fig/30.30.2_print_layout_insert_map_icon.png) ("Add Map") on the left toolbar, and drawing a rectangle on the print canvas. [Video](../Module_4/en_qgis_understanding_print_layout.md#adding-a-new-map)
 2. Move and position the map so that the entire country is visible at a reasonable scale. 
 4. Let's add a title: 
     - Click on the ![Add text icon](../../../fig/30.30.2_print_layout_add_text.png) (`Add text`)
@@ -351,7 +351,7 @@ __2. Make a printable Map__
 
 The finished map could look something like this:
 
-```{figure} ../../fig/en_3.34_SMT_Ex4_map_final.png
+```{figure} ../../../fig/en_3.34_SMT_Ex4_map_final.png
 ---
 width: 700px
 name: Digitized SMT Map Example

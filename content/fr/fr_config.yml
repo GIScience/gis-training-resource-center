@@ -1,7 +1,7 @@
 # Book settings
-# Spanish Jupyter Book configuration
+# French Jupyter Book configuration
 
-title: Centro de Recursos de Formación GIS
+title: Centre de ressources pour la formation SIG
 author: HeiGIT gGmbH
 copyright: HeiGIT gGmbH
 logo: ../../IFRC_Logo_Horizontal_RGB.svg
@@ -34,9 +34,9 @@ html:
       <script data-goatcounter="https://gtrc.goatcounter.com/count"
       async src="//gc.zgo.at/count.js"></script>
       <p>
-      Este proyecto se publica bajo una <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">licencia Creative Commons BY-NC-SA 4.0</a>.
+      Este proyecto se publica bajo una <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr">licencia Creative Commons BY-NC-SA 4.0</a>.
       </p>
-  announcement: "¿Quieres contribuir? Consulta las directrices de contribución y ponte en contacto con nosotros."
+  announcement: "Vous souhaitez contribuer ? Consultez les lignes directrices de contribution et contactez-nous !"
 
 exclude_patterns:
   - .venv/*
@@ -45,3 +45,13 @@ exclude_patterns:
 sphinx:
   extra_extensions:
     - custom-launch-buttons
+  config:
+    # Partner logos used by About/about_1.md live in the repo-level _static folder
+    html_static_path: ["../../_static"]
+    # Hide noisy warnings. Links and anchors are checked on the built site instead
+    # (scripts/check_site_links.py), because MyST doesn't recognise our stable <a id> anchors.
+    suppress_warnings:
+      - myst.xref_missing        # link/anchor targets (false alarms for <a id> anchors)
+      - myst.header              # skipped heading levels, e.g. H1 -> H3
+      - design.grid              # sphinx-design grid layout hints
+      - misc.highlighting_failure  # code blocks in an unknown language

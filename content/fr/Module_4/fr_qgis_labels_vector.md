@@ -42,7 +42,7 @@ Attribuer la valeur correcte de l'attribut dans les options d'étiquetage. QGIS 
 #### Ajouter des étiquettes uniques à une couche <a id="adding-single-labels-to-a-layer"></a>
 
 1. Dans le panneau de style, cliquez sur l'onglet `Labels`-sous l'onglet Symbologie.
-2. Sélectionnez ![](../../fig/en_30.30.2_icon_single_labels) `Single labels`.
+2. Sélectionnez ![](../../../fig/en_30.30.2_icon_single_labels) `Single labels`.
 3. `Value` est l'endroit où vous choisissez l'attribut qui sera affiché comme étiquette. Par exemple `*ADM1_EN*` affichera les noms anglais des états nigérians pour chaque fonctionnalité dans le jeu de données.
 4. __Modifions la police__ : ouvrez le menu déroulant de la police et sélectionnez Arial. Mettez le texte en `Bold` dans le menu déroulant Style. Modifiez la couleur en cliquant sur `Colour`, puis définissez la `Size` sur 8 pt
 5. __Ajoutons un tampon blanc__ autour de l'étiquette. Dans l'onglet `Labels` vous trouverez une liste avec différentes options pour styliser les étiquettes. Pour l'instant, nous sommes dans le menu `Text` . Sélectionnez `Buffer` et cochez l'option `Draw text buffer` . Cela fera ressortir les étiquettes plus sur les cartes sombres ou bondées.

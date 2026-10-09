@@ -63,7 +63,7 @@ __Módulo 4, ejercicio 2: Creación de un mapa de situación de inundación de L
 
 :::{card}
 :link: ../Module_5/es_qgis_module_5_ex4.md
-__Módulo 5, ejercicio 3: Seguridad en Peshwar, Pakistán__
+__Módulo 5, ejercicio 4: Seguridad en Peshwar, Pakistán__
 
 - Use el complemento QuickMapServices
 - Digitalice los puntos con información adicional

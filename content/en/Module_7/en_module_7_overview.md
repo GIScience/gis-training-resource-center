@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../intro 
+:link: ../intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -14,6 +15,6 @@ As you progress in your GIS career and hone your analysis skills, you will reali
 | __Chapter__ | __Competences & Objectives__ |
 | ----------- | ---------------------------- |
 | __[Chapter 1: Automation Theory](en_qgis_automation_theory.md)__ | At the end of this chapter, you should know the value of reproducibility in data analysis, know how to use the model builder in QGIS |
-| __[Exercise 1: Automation](en_qgis_module_7_ex1.md)__ | | 
+| __[Exercise Track: Anticipatory Action Analysis for Cyclones in Madagascar](../Exercise_tracks/en_mdg_aa_cyclones.md)__ | | 
 
 

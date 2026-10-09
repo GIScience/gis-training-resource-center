@@ -45,8 +45,8 @@ __Estimated time demand for the exercise:__
 #### Available data <a id="available-data"></a>
 
 - [Introductory slides on the Sketch Map Tool](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx)
-- Case Studies Maps: [Case Study Map 1]( https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_1_Sudan.zip), [Case Study Map 2](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_2_Bolivien.zip), [Case Study Map 3](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_3_Port_Harcourt.zip)
-- [Case Study 1 marked Maps and Sketch Map Tool Outputs](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_1_marked_maps_results.zip)
+- Case Studies Maps: [Case Study Map 1]( https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_1_Sudan.zip), [Case Study Map 2](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_2_Bolivien.zip), [Case Study Map 3](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_3_Port_Harcourt.zip)
+- [Case Study 1 marked Maps and Sketch Map Tool Outputs](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_1_marked_maps_results.zip)
 - [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_1.pdf)
 
 :::
@@ -187,7 +187,7 @@ Print your maps and mark with real pens to experience the real use of the Sketch
 - You can choose to use either QGIS (__Option A__) or [uMap](https://umap.openstreetmap.fr/en/) (__Option B__) for the next part of the exercise.
 
 ```{Tip}
-If you like to learn more about the [visualisation](../Module_4/en_module_4_overview.md) and one possible analysis of the Sketch Maps explore exercise [4](en_SMT_ex4_) and [5](en_SMT_ex5_).
+If you like to learn more about the [visualisation](../Module_4/en_module_4_overview.md) and one possible analysis of the Sketch Maps explore exercise [4](en_SMT_ex4_.md) and [5](en_SMT_ex5_.md).
 ```
 
 :::{dropdown} Option A: Open your results in QGIS

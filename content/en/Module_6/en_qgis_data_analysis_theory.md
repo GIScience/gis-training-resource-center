@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../intro.md
+:link: ../intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -133,11 +134,11 @@ These geometrical attributes can be calculated using the [__field calculator__](
 
 The field calculators has the following functions to calculate geometry attributes as new fields in the attribute table:
 
-| *Function* | *Description* | 
-| --------   | ------------- |
-| `$area` | Returns the area of the current feature. The area calculated by this function respects both the current project's ellipsoid setting and area unit settings.| 
-| `$length` | Returns the length of a linestring. If you need the length of a border of a polygon, use $perimeter instead. The length calculated by this function respects both the current project's ellipsoid setting and distance unit settings.| 
-| `$perimeter` | Returns the perimeter length of the current feature. The perimeter calculated by this function respects both the current project's ellipsoid setting and distance unit settings.| 
+| *Function*   | *Description*                                                                                                                                                                                                                         |
+|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `$area`      | Returns the area of the current feature. The area calculated by this function respects both the current project's ellipsoid setting and area unit settings.                                                                           |
+| `$length`    | Returns the length of a linestring. If you need the length of a border of a polygon, use $perimeter instead. The length calculated by this function respects both the current project's ellipsoid setting and distance unit settings. |
+| `$perimeter` | Returns the perimeter length of the current feature. The perimeter calculated by this function respects both the current project's ellipsoid setting and distance unit settings.                                                      |
 
 For example, to calculate the area of polygons: 
 
@@ -168,10 +169,10 @@ You can check this by opening the CRS selector (in the bottom right corner) and 
 In the field calculator, we can calculate the length, area, perimeter for each feature of a dataset. However, we might want to have __aggregate statistics__ on a dataset (average length/area, total length/area).   
 QGIS comes with two basic processing tools to generate statistics:
 
-| *Processing tool* | *Description* |
-|------------------ | ------------- |
-|"__Basic statistics for fields__"  | This algorithm generates basic statistics (count, sum, mean, median, standard deviation, quartiles, ...) from the analysis of a values in a field in the attribute table of a vector layer. Numeric, date, time and string fields are supported. The statistics returned will depend on the field type. Statistics are generated as an HTML file.|
-| "__Statistics by categories__"    | This algorithm calculates statistics of fields depending on a parent class. In the option `Field to calculate statistics on`, you must select the column that you wish to create statistics for (for example, area/length). In the option `Field(s) with categories` you select the values that will be used as categories in the statistics (for example, flooding=Y/N, type of road, type of building/amenity). | 
+| *Processing tool*                 | *Description*                                                                                                                                                                                                                                                                                                                                                                                                     |
+|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| "__Basic statistics for fields__" | This algorithm generates basic statistics (count, sum, mean, median, standard deviation, quartiles, ...) from the analysis of a values in a field in the attribute table of a vector layer. Numeric, date, time and string fields are supported. The statistics returned will depend on the field type. Statistics are generated as an HTML file.                                                                 |
+| "__Statistics by categories__"    | This algorithm calculates statistics of fields depending on a parent class. In the option `Field to calculate statistics on`, you must select the column that you wish to create statistics for (for example, area/length). In the option `Field(s) with categories` you select the values that will be used as categories in the statistics (for example, flooding=Y/N, type of road, type of building/amenity). |
 
 
 :::{dropdown} Example: Statistics by categories
@@ -264,7 +265,7 @@ Another advantage is that you can use the hexagon grid as spatial units and comb
 
 > WIKI: __Hexagon grids__ are especially useful for density maps. For example, the number of conflict events or water points in an area. 
 
-To create a hexagon grid map, you will first need to [create a hexagon grid](link), by using the "__Create Grid__" vector tool. 
+To create a hexagon grid map, you will first need to [create a hexagon grid](https://www.geographyrealm.com/using-qgis-create-hexbin-map-gisp-registrations/k), by using the "__Create Grid__" vector tool. 
 
 Next, you will need to join the point data with the hexagon grid. We want to know the amount of points that are inside of a hexagon cell. To count the number of points, we need to use the vector tool "__Count points in polygon__". The result will be a hexagonal grid where each polygon has the a value for the number of points in that area. 
 
@@ -392,7 +393,7 @@ width: 500px
 Inverse Distance Weighted interpolation based on weighted sample point distance (left). Interpolated IDW surface from elevation vector points (right). (Source: Mitas, L., Mitasova, H. (1999). Spatial Interpolation. In: P.Longley, M.F. Goodchild, D.J. Maguire, D.W.Rhind (Eds.), Geographical Information Systems: Principles, Techniques, Management and Applications, Wiley.)
 ```
 
-Keep in mind that IDW interpolation has a few __disadvantages__. For example, the quality of the calculated statistical surface decreases, if the distribution of sample points is uneven. Additionally, the highest and lowest values in the interpolated surface only occur at sample points, which is probably not the case in the real world. This often results in peaks or pits around the sample data points (see [IDW interpolation example](../Module_6/en_qgis_data_analysis_theorie.md#Interpolation)) (adopted from the [QGIS documentation](https://docs.qgis.org/2.18/de/docs/gentle_gis_introduction/spatial_analysis_interpolation.html)). 
+Keep in mind that IDW interpolation has a few __disadvantages__. For example, the quality of the calculated statistical surface decreases, if the distribution of sample points is uneven. Additionally, the highest and lowest values in the interpolated surface only occur at sample points, which is probably not the case in the real world. This often results in peaks or pits around the sample data points (see [IDW interpolation example](../Module_6/en_qgis_data_analysis_theory.md#interpolation)) (adopted from the [QGIS documentation](https://docs.qgis.org/2.18/de/docs/gentle_gis_introduction/spatial_analysis_interpolation.html)). 
 
 ### Spline Interpolation <a id="spline-interpolation"></a>
 
@@ -400,7 +401,7 @@ Keep in mind that IDW interpolation has a few __disadvantages__. For example, th
 
 TIN interpolation is commonly called __Delauny triangulation__. This interpolation methods creates a triangular surface with its nearest neighbour points. In order to achieve this, circles are added around known sample points and the intersection of these circles are used as corners of the triangle (see {numref}`TIN_interpolation_example`). TIN interpolation is usually used to compute __digital elevation models__ (DEM).  
 
-```{figure} ../../fig/tin_interpolation_example.png
+```{figure} ../../../fig/tin_interpolation_example.png
 ---
 name: TIN_interpolation_example
 width: 500 px

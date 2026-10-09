@@ -5,7 +5,7 @@ This exercise focuses on the first step of working with the Sketch Map Tool “C
 <!--INFO: Kept as a reference, DELETE-->
 
 
-```{figure} ../../fig/SMT_Idee_traffic_light_exerices.png
+```{figure} ../../../fig/SMT_Idee_traffic_light_exerices.png
 ---
 height: 450px
 name: SMT traffic light exercise
@@ -54,12 +54,12 @@ __Available data__
 - [Introductory slides on the Sketch Map Tool](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool/PPP/Introduction_Sketch_Map_Tool_21_03.pptx)
 
 - Case Studies Maps: 
-    - [Case Study Map 1]( https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_1_Sudan.zip), 
-    - [Case Study Map 2](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_2_Bolivien.zip), 
-    - [Case Study Map 3](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2-3/Case_3_Port_Harcourt.zip), 
+    - [Case Study Map 1]( https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_1_Sudan.zip), 
+    - [Case Study Map 2](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_2_Bolivien.zip), 
+    - [Case Study Map 3](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_3_Port_Harcourt.zip), 
     - [Case Study Map 4](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_4_Borgo_San_Lorenzo.zip), 
     - [Case Study Map 5](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_5_Adelaide.zip)
-- [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_2.pdf)
+- [Printable exercise factsheet](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_Ex_2.pdf)
 
 
 :::
@@ -116,7 +116,7 @@ __Wrap up:__
 
 ### Map Quality Check <a id="map-quality-check"></a>
 
-```{figure} ../../fig/SMT_Heidelberg_report_1.jpg
+```{figure} ../../../fig/SMT_Heidelberg_report_1.jpg
 ---
 height: 500px
 name: SMT Heidelberg report
@@ -130,7 +130,7 @@ The Map Quality Check assists in evaluating the suitability of the area of inter
 
 ## Step-by step introduction for participants <a id="step-by-step-introduction-for-participants"></a>
 
-Download [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_2.pdf) a printable factsheet to guide you through this exercise.
+Download [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_Ex_2.pdf) a printable factsheet to guide you through this exercise.
 
 If you experiences any problems during your use of the [Sketch Map Tool](https://sketch-map-tool.heigit.org/) please take a look at the [Help page](https://sketch-map-tool.heigit.org/help).
 

@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../intro.md
+:link: ../intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -123,7 +124,7 @@ Alternatively, it is also possible to remove the white background. This is done 
 1. Open the Layer Properties by <kbd>Right-Clicking</kbd> on the layer and selecting __Properties__.
 2. Navigate to the __Transparency Tab__.
 3. In the __Custom Transparency Options__ box, under Transparency Band, select Band 4 (Alpha).
-4. To the right, click on ![](../../../fig/en_3.36_add_value_from_display) `Add value from display`.
+4. To the right, click on ![](../../../fig/en_3.36_add_values_from_display.png) `Add value from display`.
 5. Click on the white colour on the georeferenced map in the map canvas.
 6. Click `Apply`.
 

@@ -65,7 +65,7 @@ To clip a raster layer:
 
 ## Raster Calculator <a id="raster-calculator"></a>
 
-The raster calculator let's you perform mathematical operations with the raster values using one or multiple raster layers. Similar to the [field calculator]() for vector data, you can enter expressions. These expressions can include arithmetic operations such as multiplication, comparison operators such as `<`. `>`, `=`, conditional expressions like "IF" "THEN" statements, and statistical functions such as "mean" or "sum". 
+The raster calculator let's you perform mathematical operations with the raster values using one or multiple raster layers. Similar to the [field calculator](../Wiki/en_qgis_table_functions_wiki.md#calculate-field) for vector data, you can enter expressions. These expressions can include arithmetic operations such as multiplication, comparison operators such as `<`. `>`, `=`, conditional expressions like "IF" "THEN" statements, and statistical functions such as "mean" or "sum". 
 
 Example:
 You have a Digital Elevation Model with the Altitude in m and a land cover classification raster. You want to produce a raster with all agricultural areas (raster value = 5) above 1500m.
@@ -117,7 +117,7 @@ Example: We have a raster layer with population count affected by a recent flood
 1. As "Input Layer" choose your polygon layer with district extents. "Pakistan_admin2" in this case.
 3. As "Raster Layer" choose the layer with the cell values you want to base your statistics on. "Pop_floodextent" in this case.
 4. Defining a prefix for your output column is optional but can be helpful for finding the calculated values in large attribute tables. For population counts you can for example choose "pop_" as "Output column prefix".
-5. Below "Statistics to calculate" click on the ![](../../../fig/mod8_ex1_optionsicon.png) icon to access the different options of statistical operations available for calculating polygon values based on your raster. In this case "sum" would be the operation of choice as we want the total sum of flood affected people per district.
+5. Below "Statistics to calculate" click on the ![](../../../fig/en_3.34_m8ex1_optionsicon.png) icon to access the different options of statistical operations available for calculating polygon values based on your raster. In this case "sum" would be the operation of choice as we want the total sum of flood affected people per district.
 
 :::{dropdown} Solution
 :open:

@@ -1,11 +1,13 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../intro.md
+:link: ../intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 :::{grid-item-card}
-:link: en_qgis_module_3_exercises.md
+:link: en_qgis_module_3_exercises
+:link-type: doc
 __Click here to return to the exercise overview page for module 3__ 
 :::
 ::::
@@ -69,7 +71,7 @@ __Relevant wiki articles and module chapters__
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on training conduction
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md) for some general tips on training conduction
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -154,7 +156,7 @@ You cannot interact with a base map!
 ::::
 
 1. Open QGIS and create a [new project](../Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` → `New`.
-2. Once the project is created [save the project](../Wiki/en_qgis_projects_folder_structure_wiki.md#save) in the “project” folder of the exercise “Module_3_Exercise_2_Flood_Larkana”. To do that click on `Project` → `Save as` and navigate to the folder. Name the project “PAK_Larkana_flood_2024”.
+2. Once the project is created [save the project](../Wiki/en_qgis_projects_folder_structure_wiki.md#save-project) in the “project” folder of the exercise “Module_3_Exercise_2_Flood_Larkana”. To do that click on `Project` → `Save as` and navigate to the folder. Name the project “PAK_Larkana_flood_2024”.
 3. First, we want to add the OpenStreetMap as a base map for orientation. To add the OSM as a base map click on `Layer` → `Add Layer` → `Add XYZ Layer…`. Choose `OpenStreetMap` and click `Add`. 
 4. Next, load the GeoPackage __"PAK_Sindh_adm2.gpkg"__ in your project by drag and drop ([Wiki Video](../Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Or click on `Layer` → `Add Layer` → `Add Vector Layer`. Click on the three points ![](../../../fig/Three_points.png) and navigate to __"PAK_Sindh_adm2.gpkg"__. Select the file and click `Open`. Back in QGIS click `Add` ([Wiki Video](../Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
 
@@ -291,7 +293,7 @@ The error message indicating invalid geometries.
 
 6.  Open the attribute table of __"Health_Facilities_Flood_2024_AOI"__ by right click on the layer → `Open Attribute Table`([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md)) and activate the editing mode by clicking on ![](../../../fig/mActionToggleEditing.png) ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#change-data-in-the-attribute-table)). Now you are able to edit the data directly in the table.
 
-7. First, we add a new column with the name __“Flood_affected”__. To do so, click on ![](../../../fig/mActionNewAttribute.png). In the `Add field` window, you have to add the name and set the `Type` to `Text(string)`. Click `Ok` ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#add-new-column))
+7. First, we add a new column with the name __“Flood_affected”__. To do so, click on ![](../../../fig/mActionNewAttribute.png). In the `Add field` window, you have to add the name and set the `Type` to `Text(string)`. Click `Ok` ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#add-a-new-column))
 
 ```{figure} ../../../fig/ PAK_flood_new_column.PNG
 ---
@@ -411,7 +413,7 @@ There are methods to automate the digitisation process which will be covered in 
 
 ::::{margin}
 :::{tip}
-If you cannot see the toolbar, click on the tab `View` → `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](/content/Wiki/en_qgis_digitisation_wiki.md#creation-of-point-data)).
+If you cannot see the toolbar, click on the tab `View` → `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creating-point-data)).
 :::
 ::::
 

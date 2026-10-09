@@ -292,7 +292,7 @@ align: center
 6. Back in the “Layer Properties” Window click `Apply` and `OK`
 
 
-![Figure](../../fig/QGIS_basics_Fig12.png)
+![Figure](../../../fig/QGIS_basics_Fig12.png)
 
 
 

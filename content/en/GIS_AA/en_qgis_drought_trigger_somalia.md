@@ -491,7 +491,7 @@ align: center
 
 __Purpose:__ Definition of how features are represented visually on the map.
 
-__Tool:__ [Symbology tab](../Module_4/en_qgis_map_design_I.md#symbology-for-vector-data)
+__Tool:__ [Symbology tab](../Module_4/en_qgis_styling_vector_data.md#symbology-for-vector-data)
 
 __Trigger Activation__
 
@@ -520,7 +520,7 @@ __Risk Assessment__
 7. Right click on the "risk_assessment_districts" layer → `Properties` → `Symbology`.
 8. In the down left corner click on `Style` → `Load Style`.
 9. In the new window click on the three points ![](../../../fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“somalia_risk_assessment_style.qml”__ style layer.
-10. Move the "risk_assessment_district" layer __below__ "Trigger_Activation" layer ([Layer Concept](../Module_2/en_qgis_geodata_concept.md?highlight=layer#layer-concept)).
+10. Move the "risk_assessment_district" layer __below__ "Trigger_Activation" layer ([Layer Concept](../Module_2/en_qgis_geodata_concept.md#layer-concept)).
 11. Back in the “Layer Properties” Window click `Apply` and `OK`.
 
 
@@ -612,9 +612,9 @@ Make sure you edit the Map Information on the template, e.g. current date. Also 
 
 
 In order to easily visualize the output of the trigger analysis we provide you with a 
-[map template](../Module_4/en_qgis_map_design_2.md#map-templates) that can be used as a base for your visualization. You can find the template in the following directory: ".../FbF_Drought_Monitoring_Trigger/maps_somalia_template_risk_assessment.qpt".
+[map template](../Module_4/en_qgis_understanding_print_layout.md#map-templates) that can be used as a base for your visualization. You can find the template in the following directory: ".../FbF_Drought_Monitoring_Trigger/maps_somalia_template_risk_assessment.qpt".
 
-You can also adapt the template to your needs and preferences. You can find help [here](../Module_4/en_qgis_map_design_2.md#print-layout).
+You can also adapt the template to your needs and preferences. You can find help [here](../Module_4/en_qgis_map_design_2.md#the-print-layout).
 
 ```{Attention}
 Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
@@ -634,7 +634,7 @@ align: center
 __Purpose:__ Export the designed and finalized map layout in order tp print it as a pdf or format of your choice.
 
 
-__Tool:__ [Print Layout](../Module_4/en_qgis_map_design_2.md?highlight=print+layout#print-layout)
+__Tool:__ [Print Layout](../Module_4/en_qgis_map_design_2.md#the-print-layout)
 
 When you have finished the design of you map you can export it as pdf or image file in different datafromats.
 
@@ -930,7 +930,7 @@ __Purpose:__ In this step, all the data needed will be loaded into QGIS.
 
 __Tool:__ No specific tools are needed, only QGIS.
 
-1. Open QGIS and create a [new project](../Wiki/en_qgis_projects_folder_structure_wiki.html#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
+1. Open QGIS and create a [new project](../Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` -> `New`
 2. Once the project is created save the project in the folder you created in Step 1 (e.g. 2022_05). To do that click on `Project` -> `Save as` and navigate to the folder. Give the project the same name as the folder you created (e.g. 2022_05). Then click `Save`
 3. Load all input data in QGIS by [drag and drop](../Wiki/en_qgis_import_geodata_wiki.md#open-raster-data-via-drag-and-drop). Click on `Project` -> `Save` 
   * From the folder you created in step 1
@@ -1011,7 +1011,7 @@ We cannot use a different polygon layer with the adm2 boundaries as we are calcu
 
 * - Instruction
   - Dissolve
-* - 1. In the [processing toolbox](), search for "Dissolve". Click on it.
+* - 1. In the [processing toolbox](../Wiki/en_qgis_interface_wiki.md#open-toolbox), search for "Dissolve". Click on it.
     2. `Input Layer`: IPC Phase Classification (formatted as in step 4)
     3. `Dissolve field(s)`: "area"
     4. Click `Run`. A new layer called "Dissolved" will appear in your layers panel. 
@@ -1048,7 +1048,7 @@ __Tool:__ "Extract by Attributes"
 
 * - Instruction
   - Extract by Attribute
-* - 1. In the [processing toolbox](), search for "Extract by attribute". Click on it.
+* - 1. In the [processing toolbox](../Wiki/en_qgis_interface_wiki.md#open-toolbox), search for "Extract by attribute". Click on it.
     2. `Input Layer`: ML1 and ML2 geojson (`Year_Month_ML1ML2`)
     3. `Selection attribute`: scenario
     4. `Value`: ML1
@@ -1089,7 +1089,7 @@ __Tool:__ Fix geometries
 
 * - Instruction
   - Fix geometries
-* - 1. In the [processing toolbox](), search for "Fix geometries". Click on it.
+* - 1. In the [processing toolbox](../Wiki/en_qgis_interface_wiki.md#open-toolbox), search for "Fix geometries". Click on it.
     2. `Input Layer`: ML1 and ML2
     3. `Repair Method`: structure
     4. Under `Extraced (Attribute)`, click on the three points ![](../../../fig/Three_points.png) -> `Save to File` and navigate to your monitoring folder [Year_Month]. Give the output the name "IPC_Year_Month_ML1_fixed" and click `Save`.
@@ -1618,7 +1618,7 @@ align: center
 
 __Purpose:__ Definition of how features are represented visually on the map.
 
-__Tool:__ [Symbology](../Module_4/en_qgis_map_design_I.md#symbology-for-vector-data)
+__Tool:__ [Symbology](../Module_4/en_qgis_styling_vector_data.md#symbology-for-vector-data)
 
 __Trigger Activation__
 
@@ -1717,7 +1717,7 @@ align: center
 ```
 __Purpose:__ Viualization of the map features in a printable map layout
 
-__Tool:__  [Print Layout](../Module_4/en_qgis_map_design_2.md#print-layout)
+__Tool:__  [Print Layout](../Module_4/en_qgis_map_design_2.md#the-print-layout)
 
 
 1. If not done before, delet all layers expect __Trigger_activation__, __risk_assessment_districts__ and __OpenStreetMap__
@@ -1739,9 +1739,9 @@ Make sure you edit the Map Information on the template, e.g. current date. Also 
 
 
 In order to easily visualize the output of the trigger analysis we provide you with a 
-[map template](../Module_4/en_qgis_map_design_2.md#map-templates) that can be used as a base for your visualization. You can find the template in the following directory: ".../FbF_Drought_Monitoring_Trigger/maps_somalia_template_risk_assessment.qpt".
+[map template](../Module_4/en_qgis_understanding_print_layout.md#map-templates) that can be used as a base for your visualization. You can find the template in the following directory: ".../FbF_Drought_Monitoring_Trigger/maps_somalia_template_risk_assessment.qpt".
 
-You can also adapt the template to your needs and preferences. You can find help [here](../Module_4/en_qgis_map_design_2.md#print-layout).
+You can also adapt the template to your needs and preferences. You can find help [here](../Module_4/en_qgis_map_design_2.md#the-print-layout).
 
 ```{Attention}
 Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
@@ -1761,7 +1761,7 @@ align: center
 __Purpose:__ Export the designed and finalized map layout in order tp print it as a pdf or format of your choice.
 
 
-__Tool:__ [Print Layout](../Module_4/en_qgis_map_design_2.md#print-layout)
+__Tool:__ [Print Layout](../Module_4/en_qgis_map_design_2.md#the-print-layout)
 
 When you have finished the design of you map you can export it as pdf or image file in different datafromats.
 
@@ -2308,7 +2308,7 @@ align: center
 
 __Purpose:__ Definition of how features are represented visually on the map.
 
-__Tool:__ [Symbology](../Module_4/en_qgis_map_design_I.md#symbology-for-vector-data)
+__Tool:__ [Symbology](../Module_4/en_qgis_styling_vector_data.md#symbology-for-vector-data)
 
 __Trigger Activation__
 
@@ -2407,7 +2407,7 @@ align: center
 ```
 __Purpose:__ Viualization of the map features in a printable map layout
 
-__Tool:__  [Print Layout](../Module_4/en_qgis_map_design_2.md#print-layout)
+__Tool:__  [Print Layout](../Module_4/en_qgis_map_design_2.md#the-print-layout)
 
 
 1. If not done before, delet all layers expect __Trigger_activation__, __risk_assessment_districts__ and __OpenStreetMap__
@@ -2429,9 +2429,9 @@ Make sure you edit the Map Information on the template, e.g. current date. Also 
 
 
 In order to easily visualize the output of the trigger analysis we provide you with a 
-[map template](../Module_4/en_qgis_map_design_2.md#map-templates) that can be used as a base for your visualization. You can find the template in the following directory: ".../FbF_Drought_Monitoring_Trigger/maps_somalia_template_risk_assessment.qpt".
+[map template](../Module_4/en_qgis_understanding_print_layout.md#map-templates) that can be used as a base for your visualization. You can find the template in the following directory: ".../FbF_Drought_Monitoring_Trigger/maps_somalia_template_risk_assessment.qpt".
 
-You can also adapt the template to your needs and preferences. You can find help [here](../Module_4/en_qgis_map_design_2.md#print-layout).
+You can also adapt the template to your needs and preferences. You can find help [here](../Module_4/en_qgis_map_design_2.md#the-print-layout).
 
 ```{Attention}
 Make sure you edit the Map Information on the template, e.g. current date. Also make sure to check the legend items: Remove unnecessary items and eventually change the names to meaning descriptions.
@@ -2451,7 +2451,7 @@ align: center
 __Purpose:__ Export the designed and finalized map layout in order tp print it as a pdf or format of your choice.
 
 
-__Tool:__ [Print Layout](../Module_4/en_qgis_map_design_2.md#print-layout)
+__Tool:__ [Print Layout](../Module_4/en_qgis_map_design_2.md#the-print-layout)
 
 When you have finished the design of you map you can export it as pdf or image file in different datafromats.
 

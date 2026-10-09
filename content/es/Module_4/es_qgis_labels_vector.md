@@ -80,14 +80,14 @@ width: 500 px
 El etiquetado basado en reglas permite filtrar conjuntos de datos. De este modo, puede mostrar las etiquetas solo para las entidades seleccionadas sin alterar el conjunto de datos.
 :::
 
-Las reglas, o filtros, se basan en una expresión. Puede utilizar el ![](../../fig/expression_string_builder_icon.png) `Expression builder` situado a la derecha de la opción __Filter__ del panel de etiquetas.
+Las reglas, o filtros, se basan en una expresión. Puede utilizar el ![](../../../fig/expression_string_builder_icon.png) `Expression builder` situado a la derecha de la opción __Filter__ del panel de etiquetas.
 
 #### Añadir etiquetas basadas en reglas a una capa
 
 1. En el panel de estilo, haga clic en la pestaña `Etiquetas` situada debajo de la pestaña Symbology.
-2. Seleccione ![](/../fig/30.30.2_Icon_rule_based_labeling.png) `Etiquetado basado en reglas`.
+2. Seleccione ![](../../../fig/30.30.2_Icon_rule_based_labeling.png) `Etiquetado basado en reglas`.
 3. Añada una regla haciendo clic en el botón `+`, en la esquina izquierda del panel de estilo. Se abrirá una nueva ventana en el panel de estilo. En esta ventana, ingresará la regla (`Filtro`) y personalizará la fuente, el tamaño y la ubicación de la etiqueta. Además, puede introducir una descripción.
-4. Introduzca un filtro (cuadro rojo en la figura inferior). La forma más sencilla es utilizar el `Expression builder` situado a la derecha de la opción Filter. Haga clic en el símbolo ![](/../fig/expression_string_builder_icon.png). Se abrirá un nuevo panel.
+4. Introduzca un filtro (cuadro rojo en la figura inferior). La forma más sencilla es utilizar el `Expression builder` situado a la derecha de la opción Filter. Haga clic en el símbolo ![](../../../fig/expression_string_builder_icon.png). Se abrirá un nuevo panel.
 5. En el generador de cadenas de expresión, ingrese una regla. En el ejemplo del video que aparece a continuación, queremos mostrar únicamente los asentamientos que son capitales nacionales o regionales. Corresponde a la cadena `("CLASS" = 1 ) OR ("CLASS" = 2)`. Lo sabemos porque conocemos nuestros datos y hemos consultado previamente la tabla de atributos.
 6. Haga clic en `Aceptar`.
 7. Establezca la fuente y el tamaño de la fuente.
@@ -157,7 +157,7 @@ Una etiqueta sin buffer de texto (izquierda) y una etiqueta con buffer de texto 
 
 :::{note}
 QGIS genera las etiquetas automáticamente.
-A veces las etiquetas pueden ocultar otros símbolos. En ese caso, puede ajustar la ubicación de las etiquetas en la pestaña __Label__ o utilizar la herramienta ![](../../fig/30.30.2_move_a_label_diagram_callout_icon.png) `Mover una etiqueta, diagrama o leyenda` de la barra de herramientas __Label__.
+A veces las etiquetas pueden ocultar otros símbolos. En ese caso, puede ajustar la ubicación de las etiquetas en la pestaña __Label__ o utilizar la herramienta ![](../../../fig/30.30.2_move_a_label_diagram_callout_icon.png) `Mover una etiqueta, diagrama o leyenda` de la barra de herramientas __Label__.
 
 Por defecto, QGIS genera las etiquetas de manera que no se superpongan con otras etiquetas. Esto significa que no todas las etiquetas serán visibles si los datos son densos o se muestran muy cerca unos de otros. Puede optimizar la generación en la opción de renderizado.
 

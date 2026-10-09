@@ -18,7 +18,7 @@ The objective of this exercise is to understand how to prepare and clean data th
 __Relevant Wiki articles:__
 ^^^
 * [QGIS Interface](../Wiki/en_qgis_interface_wiki.md)
-* [Import CSV-files into QGIS](../Wiki/en_qgis_import_geodata_wiki.md#text-data-importl)
+* [Import CSV-files into QGIS](../Wiki/en_qgis_import_geodata_wiki.md#text-data-import)
 * [Attribute Table in QGIS](../Wiki/en_qgis_attribute_table_wiki.md)
 
 :::
@@ -50,7 +50,7 @@ This exercise makes use of the [tabula.technology tool](https://tabula.technolog
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on facilitating trainings. 
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md) for some general tips on facilitating trainings. 
 
 ### Conduct the training <a id="conduct-the-training"></a>
 

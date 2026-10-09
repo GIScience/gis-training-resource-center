@@ -33,7 +33,7 @@ Siempre puede añadir el OpenStreetMap estándar como un mapa base a su lienzo d
 
 :::{tip}
 
-El [artículo de la wiki sobre mapas base](content/es/wiki/es_qgis_basemaps_wiki.md), tiene un tutorial
+El [artículo de la wiki sobre mapas base](../Wiki/es_qgis_basemaps_wiki.md), tiene un tutorial
 sobre cómo añadir más tipos de mapas base (p. ej., de Google Maps) a las opciones estándar de mapa base
 en QGIS.
 

@@ -65,7 +65,7 @@ Añadir un nuevo mapa al diseño de impresión (fuente: CartONG).
 
 El título deberá describir el fenómeno representado en el mapa.
 
-- Para añadir texto (título, explicaciones), utilice la herramienta ![](../../fig/30.30.2_print_layout_add_text.png) `Añadir etiquetas` y dibuje un rectángulo del tamaño deseado.
+- Para añadir texto (título, explicaciones), utilice la herramienta ![](../../../fig/30.30.2_print_layout_add_text.png) `Añadir etiquetas` y dibuje un rectángulo del tamaño deseado.
 - En el panel __Propiedades del elemento__ (a la derecha de su pantalla) puede __introducir su texto__ y __cambiar la fuente, el estilo, el color, etc.__ (Recuerde utilizar la barra de desplazamiento de la ventana para ver todas las opciones).
 
 :::{figure} ../../../fig/en_30.30.2_print_layout_add_text.png
@@ -86,7 +86,7 @@ Añadir texto al diseño de impresión (fuente: CartONG).
 
 Si trabaja para una organización, lo más probable es que añada el logotipo de esa organización en los mapas que elabore.
 
-1. Haga clic en la herramienta ![](../../fig/30.30.2_print_layout_add_image.png) `Añadir Imagen` de la barra de herramientas de la izquierda.
+1. Haga clic en la herramienta ![](../../../fig/30.30.2_print_layout_add_image.png) `Añadir Imagen` de la barra de herramientas de la izquierda.
 2. Arrastre un rectángulo sobre el lienzo.
 3. En la pestaña __"Propriedades del elemento"__, tendrá la opción de elegir una imagen SVG de su biblioteca SVG en QGIS o elegir una __imagen ráster__. La mayoría de los archivos de imagen son imágenes ráster.
 4. Seleccione `imagen ráster` y haga clic en `...` para elegir la ubicación de la imagen.
@@ -111,7 +111,7 @@ Antes de añadir una leyenda, asegúrese de que:
 - Todas sus capas tengan un nombre explícito ("ríos", "carreteras primarias", etc.).
 - Utilice la versión final de su mapa (asegúrese de que no haya más capas que añadir, mover, renombrar o modificar). Puede modificarlos más tarde, pero tendrá que rehacer la leyenda.
 
-Para añadir una leyenda, puede utilizar el botón ![](../../fig/30.30.2_print_layout_add_legend.png) `Añadir Leyenda` de la __barra de herramientas de la izquierda__.
+Para añadir una leyenda, puede utilizar el botón ![](../../../fig/30.30.2_print_layout_add_legend.png) `Añadir Leyenda` de la __barra de herramientas de la izquierda__.
 
 :::{figure} ../../../fig/en_30.30.2_print_layout_add_legend.png
 ---
@@ -164,7 +164,7 @@ name: es_30.30.2_print_layout_scale
 Asegúrese de que la escala sea un número redondo.
 :::
 
-Para añadir una barra de escala, puede utilizar el botón ![](../../fig/30.30.2_print_layout_scale_bar.png) `Añadir Barra de escala` de la __barra de herramientas de la izquierda__. En el panel __Propiedades del elemento__, personalice las siguientes funciones:
+Para añadir una barra de escala, puede utilizar el botón ![](../../../fig/30.30.2_print_layout_add_scale_bar.png) `Añadir Barra de escala` de la __barra de herramientas de la izquierda__. En el panel __Propiedades del elemento__, personalice las siguientes funciones:
 
 - Qué mapa __está relacionado con la escala__.
 - __Sistema de unidades de la barra__ (metros, millas, grados).
@@ -195,7 +195,7 @@ Para crear un mapa general, debe seguir estos pasos:
 1. Asegúrese de __bloquear las capas y el estilo de capa__ en su mapa principal.
     - Navegue al panel __Item Properties__ → `Bloquear capas` y `Bloquear estilo para las capas`.
 2. Prepare una __capa con las fronteras nacionales o subnacionales o los puntos de referencia importantes__ en su proyecto (p. ej.: límites administrativos, capitales). Estas no deberán ser las mismas capas que las del mapa principal. Si es necesario, puede duplicar las capas, que desee utilizar en el mapa general (como los límites administrativos). No cambie las capas de su mapa principal, si tiene intención de cambiar la simbología, más adelante.
-3. __Inserte el mapa general__ en su diseño de impresión, con el uso de la herramienta ![](../../fig/30.30.2_print_layout_insert_map_icon.png) `Añadir mapa` (en la esquina inferior derecha, por ejemplo).
+3. __Inserte el mapa general__ en su diseño de impresión, con el uso de la herramienta ![](../../../fig/30.30.2_print_layout_insert_map_icon.png) `Añadir mapa` (en la esquina inferior derecha, por ejemplo).
 4. __Bloquee el nuevo mapa__ en el panel de propiedades del elemento.
 5. Añada un rectángulo para mostrar la extensión de su mapa principal.
     1. Vaya a las __propiedades__ de su mapa principal → desplácese hacia abajo hasta que vea __vistas generales__.
@@ -233,7 +233,7 @@ Este método requiere que esté seguro de que no va a modificar el mapa general,
 
 Una vez que haya terminado con la composición del mapa, es el momento de exportar el diseño de impresión como archivo PDF o SVG.
 
-1. En la barra de herramientas encima del lienzo, haga clic en el botón ![](../../fig/30.30.2_print_layout_export_pdf.png) `Exportar como PDF`.
+1. En la barra de herramientas encima del lienzo, haga clic en el botón ![](../../../fig/30.30.2_print_layout_export_pdf.png) `Exportar como PDF`.
 2. Asigne un nombre nuevo al archivo y seleccione la ubicación en la que quiere guardarlo.
 3. Haga clic en `Guardar`.
 4. Se abrirá una nueva ventana "PDF Export Options". Aquí puede ajustar el algoritmo de compresión. Para obtener los mejores resultados, seleccione la compresión de imagen sin pérdida.
@@ -256,7 +256,7 @@ Las capas, los mapas y las imágenes individuales no se guardan en la plantilla.
 ::::{tab-set}
 :::{tab-item} Guardar una plantilla
 
-1. Cuando esté satisfecho con el diseño de su mapa, haga clic en el botón ![](../../fig/en_30.30.2_save_as_template.png) `Guardar como plantilla` de la barra de herramientas encima del lienzo para guardarlo como una nueva plantilla.
+1. Cuando esté satisfecho con el diseño de su mapa, haga clic en el botón ![](../../../fig/en_30.30.2_save_as_template.png) `Guardar como plantilla` de la barra de herramientas encima del lienzo para guardarlo como una nueva plantilla.
 2. Elija la ubicación en la que desea guardarla. Lo ideal, es elegir el directorio de plantillas.
 3. Haga clic en `Guardar`.
 4. Puede abrir la plantilla arrastrándola a un proyecto QGIS.
@@ -318,7 +318,7 @@ Si no puede ver las herramientas del Atlas, primero debe activar la barra de her
 
 Un atlas generará una nueva página, con el mismo diseño de mapa para cada entidad de una capa. Para la mayoría de los propósitos, es útil crear primero, un diseño de mapa con los elementos como leyenda, fuentes y mapa general y luego insertar el elemento de mapa, que será controlado por el Atlas. Para generar un atlas:
 
-1. Haga clic en el botón ![](../../fig/30.30.2_print_layout_atlas_settings.png) `Atlas` de la barra de herramientas del Atlas.
+1. Haga clic en el botón ![](../../../fig/30.30.2_print_layout_atlas_settings.png) `Atlas` de la barra de herramientas del Atlas.
 2. En la nueva ventana, active la `Generar un atlas` opción .
 3. Seleccione `Capa cobertura`. Esto determinará las entidades o polígonos, que se mostrarán en una página. En nuestro ejemplo, utilizaremos las regiones administrativas subnacionales de Nigeria (`ADM1`).
 4. Seleccione `Nombre de página`. Deberá ser el nombre de la región o localidad subnacional, que aparece en esa página. Para mostrar el nombre de la región, elegiremos la columna `ADM1_REF`, que contiene los nombres de las regiones en inglés.

@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../intro 
+:link: ../intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -53,7 +54,7 @@ __Relevant wiki articles:__
 * [Geodata Classification - Graduated](../Wiki/en_qgis_graduated_wiki.md)
 * [Spatial Queries](../Wiki/en_qgis_spatial_queries_wiki.md)
 * [Table function - Add field](../Wiki/en_qgis_table_functions_wiki.md#add-field)
-* [Digitisation- Point data](../Wiki/en_qgis_digitisation_wiki.md#add-geometries-to-a-layer)
+* [Digitisation- Point data](../Wiki/en_qgis_digitisation_wiki.md#adding-geometries-to-a-layer)
 
 :::
 ::::
@@ -77,7 +78,7 @@ __Context:__
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on facilitating trainings. 
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md) for some general tips on facilitating trainings. 
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -108,17 +109,15 @@ __Download all datasets [here](https://nexus.heigit.org/repository/gis-training-
 
 :::
 
-<!--:::{hint}
-Reprojected and fixed Flood extend layer can be downloaded __[here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_4/______________.zip)__
-:::-->
 
-| Dataset name| Original title|Publisher|Download from| 
-| :-------------------- | :----------------- |:----------------- |:----------------- |
-| mdg_admin1.shp | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-mdg) | UN OCHA| HDX |
-| mdg_admin2.shp | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-mdg) | UN OCHA| HDX |
-| hotosm_mdg_health_facilities.gpkg |  [Madagascar Health Facilities (OpenStreetMap Export)](https://data.humdata.org/dataset/madagascar-healthsites) | Humanitarian OpenStreetMap Team (HOT) | HDX |
-| TDX_20240401_FloodExtent_SambavaDistrict_MDG.shp | [Satellite detected water extent over Sambava and Vohemar Districts, Sava Region, Madagascar as of 01 April 2024](https://data.humdata.org/dataset/water-extent-over-sambava-and-vohemar-districts-sava-region-madagascar-as-of-01-april-2024) | UNOSAT | HDX |
-|roads_sava.gpkg | Roads Sava | Humanitarian OpenStreetMap Team | HOT Export Tool |
+
+| Dataset name                                     | Original title                                                                                                                                                                                                                                 | Publisher                             | Download from   |
+|:-------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------|:----------------|
+| mdg_admin1.shp                                   | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-mdg)                                                                                                                                                           | UN OCHA                               | HDX             |
+| mdg_admin2.shp                                   | [Subnational Administrative Boundaries](https://data.humdata.org/dataset/cod-ab-mdg)                                                                                                                                                           | UN OCHA                               | HDX             |
+| hotosm_mdg_health_facilities.gpkg                | [Madagascar Health Facilities (OpenStreetMap Export)](https://data.humdata.org/dataset/madagascar-healthsites)                                                                                                                                 | Humanitarian OpenStreetMap Team (HOT) | HDX             |
+| TDX_20240401_FloodExtent_SambavaDistrict_MDG.shp | [Satellite detected water extent over Sambava and Vohemar Districts, Sava Region, Madagascar as of 01 April 2024](https://data.humdata.org/dataset/water-extent-over-sambava-and-vohemar-districts-sava-region-madagascar-as-of-01-april-2024) | UNOSAT                                | HDX             |
+| roads_sava.gpkg                                  | Roads Sava                                                                                                                                                                                                                                     | Humanitarian OpenStreetMap Team       | HOT Export Tool |
 
 
 <!--ADD: Add an explanation how to create the healthsite dataset by combining points and polygons -->
@@ -275,7 +274,7 @@ Feature (1) from "TDX_20240401_FloodExtent_SambavaDistrict_MDG" has invalid geom
 
 You need to first use the tool __"Fix Geometry"__ before repeating the previously failed step 5 of using the tool __"Select by Location"__.
 
-* To do so open the `Processing Toolbox` ([here is how](/Wiki/en_qgis_interface_wiki.md#open-toolbox)) and search for the tool __"Fix Geometries"__.
+* To do so open the `Processing Toolbox` ([here is how](../Wiki/en_qgis_interface_wiki.md#open-toolbox)) and search for the tool __"Fix Geometries"__.
 * `Input layer` = `TDX_20240401_FloodExtent_SambavaDistrict_MDG`
 * Save the new file in your `temp` folder by clicking on the three dots ![](../../../fig/Three_points.png), specify the file name as __"TDX_20240401_FloodExtent_SambavaDistrict_MDG_fix"__.
 * Click `Run`.
@@ -292,7 +291,7 @@ Fixing the geometry
 ::::
 
 6.  Open the attribute table of __"Health_Facilities_Flood_2024_AOI"__ by right click on the layer  → `Open Attribute Table`([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md)) and activate the editing mode by clicking on ![](../../../fig/mActionToggleEditing.png) ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#change-data-in-the-attribute-table)). Now you are able to edit the data directly in the table.
-7. First, we add a new column with the name __“Flood_affected”__. To do so, click on ![](../../../fig/mActionNewAttribute.png). In the `Add field` window, you have to add the name and set the `Type` to `Text(string)`. Click `OK` ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#add-new-column)).
+7. First, we add a new column with the name __“Flood_affected”__. To do so, click on ![](../../../fig/mActionNewAttribute.png). In the `Add field` window, you have to add the name and set the `Type` to `Text(string)`. Click `OK` ([Wiki Video](../Wiki/en_qgis_attribute_table_wiki.md#add-a-new-column)).
 
 
 :::{figure} ../../../fig/ PAK_flood_new_column.PNG
@@ -378,7 +377,7 @@ In order to get a clearer picture, we need to import the road network data for t
     :::
     * Once you are done, click `Apply` and `OK` to close the symbology window.
 3. To simplify the process, we will visually search for blocked roads and mark them with points. For this purpose, we will create an entirely new point dataset representing blocked roads.
-    * Click on  `Layer` → `Create Layer` → `New GeoPackage Layer`([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#create-a-new-layer)). 
+    * Click on  `Layer` → `Create Layer` → `New GeoPackage Layer`([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creating-a-new-layer)). 
     - Under `Database` click on ![](../../../fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name __“MDG_flood_2024_blocked_road”__. Click `Save`.
     - `Geometry type`: Select `Point`
     - Under `Additional dimension` you should always make sure that you check none of them.. 
@@ -398,7 +397,7 @@ In order to get a clearer picture, we need to import the road network data for t
     ---
     New layer with the blocked roads.
     :::
-4. Now you can create a point for each place where the flood layer covers the main roads leading through AOI [wiki](../Wiki/en_qgis_digitisation_wiki.md#creation-of-point-data). Currently the new layer __“MDG_flood_2024_blocked_road”__ is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar, click on the tab `View` → `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creation-of-point-data)).  ![](../../../fig/Digitizing_Toolbar.png) 
+4. Now you can create a point for each place where the flood layer covers the main roads leading through AOI [wiki](../Wiki/en_qgis_digitisation_wiki.md#creating-point-data). Currently the new layer __“MDG_flood_2024_blocked_road”__ is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar, click on the tab `View` → `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creating-point-data)).  ![](../../../fig/Digitizing_Toolbar.png) 
     * Activate the editing mode by clicking on ![](../../../fig/mActionToggleEditing.png). Activate then the option to add new points by clicking on ![](../../../fig/mActionCapturePoint.png).
     * Look out for places where the flood layer covers the main roads or bridges. Once you have found one, left-click on the location you want to digitise.
     * Once you click on a place, a window will appear. Indicate that the road is blocked by writing `Yes` in the field `Blocked_road`.

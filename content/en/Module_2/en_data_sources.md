@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../intro.md 
+:link: ../intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -113,11 +114,11 @@ The data to create maps or perform GIS analyses can come from various sources (S
 
 OpenStreetMap (OSM) is a collaborative project that aims to create a free and editable map of the world. Unlike traditional maps, which are often proprietary and controlled by commercial entities, OSM allows anyone to contribute and edit map data, resulting in a detailed and constantly evolving map of roads, trails, landmarks, and more. With its open-source nature and global community of contributors, OpenStreetMap has become a valuable resource for a wide range of applications, from navigation and urban planning to disaster response and humanitarian aid.
 
-There are multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are geofabrik.de, HOT Export Tool and QuickOSM [QGIS Plugin](..Wiki/en_qgis_plugins_wiki.html). Each of the options has both advantages and disadvantages.
+There are multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are geofabrik.de, HOT Export Tool and QuickOSM [QGIS Plugin](../Wiki/en_qgis_plugins_wiki.md). Each of the options has both advantages and disadvantages.
 
 :::{Tip}
 
-If you wish to practice how to export OSM data, you can do the __[Exercise 4: Exporting OSM Data](en_qgis_data_sources_ex4)__
+If you wish to practice how to export OSM data, you can do the __[Exercise 4: Exporting OSM Data](en_qgis_data_sources_ex4.md)__
 
 :::
 
@@ -214,8 +215,8 @@ Running the QuickOSM plugin.
 
 If you want to get more data in the same area, you can add a query by clicking 
 on the ![](../../../fig/plus_quickosm.png). Be careful choosing the right logical operator 
-`AND` or `OR`. If you are unsure check the page [non-spatial queries](../Wiki/en_qgis_non_spatial_queries_wiki) 
-on the wiki. There is an example of this in the Module 2 [OSM exercise](en_qgis_data_sources_ex2.html#task-quickosm)
+`AND` or `OR`. If you are unsure check the page [non-spatial queries](../Wiki/en_qgis_non_spatial_queries_wiki.md) 
+on the wiki. There is an example of this in the Module 2 [OSM exercise](en_OSM_data_ex_legacy.md#task-3-quickosm)
 
 :::
 

@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../intro.md 
+:link: ../intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -72,7 +73,7 @@ This exercise makes use of a plugin which is not installed by default: `OSM Plac
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.mdhow-to-do-trainings) for some general tips on how to conduct a training.
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md) for some general tips on how to conduct a training.
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -96,7 +97,7 @@ __Wrap up:__
 
 
 :::{Attention}
-Try to always use the standard folder structure. You can find a template __[here](/content/Wiki/en_qgis_projects_folder_structure_wiki.mf#standard-folder-structure)__.
+Try to always use the standard folder structure. You can find a template __[here](../Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure)__.
 :::
 
 ## Background: Cash crunch in Abuja <a id="background-cash-crunch-in-abuja"></a>
@@ -149,7 +150,7 @@ align: center
 Creating a new point layer.
 :::
 
-4. Now you can create a point for each of the three banks in the area [wiki](../Wiki/en_qgis_digitisation_wiki.md#add-geometries-to-a-layer). Currently the new “Abuja_bank_point” is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar `View` → `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creation-of-point-data)).  ![](../../../fig/Digitizing_Toolbar.png) 
+4. Now you can create a point for each of the three banks in the area [wiki](../Wiki/en_qgis_digitisation_wiki.md#adding-geometries-to-a-layer). Currently the new “Abuja_bank_point” is empty. To add features we can use the `Digitizing Toolbar`. If you cannot see the toolbar `View` → `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creating-point-data)).  ![](../../../fig/Digitizing_Toolbar.png) 
     1. Select the point layer “Abuja_bank_point” in the Layer panel. Navigate to the digitisation toolbar and click on![](../../../fig/mActionToggleEditing.png). Now, the layer is in the editing mode.
     2. Search for banks on the map or use the OSMPlace search panel. Once you have found one, click on ![](../../../fig/mActionCapturePoint.png). Left-click on the feature you want to digitise.
     3. Once you click, a window will appear "Abuja_bank_point". Here you can add the name of the bank.

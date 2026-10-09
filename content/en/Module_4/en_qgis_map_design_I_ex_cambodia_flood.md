@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../intro.md 
+:link: ../intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -34,7 +35,7 @@ The data provided contains shapefiles detailing the flood extent in October 2023
 
 
 ```{Tip}
-If you need inspiration on how to style certain elements of your map, make sure to check out the chapter [Examples for Flood Map Design](/gis-training-resource-center/content/Module_4/en_qgis_map_examples.md) 
+If you need inspiration on how to style certain elements of your map, make sure to check out the chapter [Examples for Flood Map Design](en_qgis_map_examples.md) 
 ```
 
 ## Step 1: Preparing the layers <a id="step-1-preparing-the-layers"></a>

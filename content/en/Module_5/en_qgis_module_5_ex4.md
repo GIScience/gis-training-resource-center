@@ -2,6 +2,7 @@
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
 :link: ../intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -59,10 +60,10 @@ __Estimated time demand for the exercise:__
 __Relevant wiki articles:__
 ^^^
 
-* [Geodata Import in QGIS](../Wiki/en_qgis_import_geodata_wiki)
-* [Layer Concept](../Wiki/en_qgis_layer_concept_wiki)
-* [Geodata Classification- Categorized](../Wiki/en_qgis_categorised_wiki)
-* [Digitisation- Point data](../Wiki/en_qgis_digitisation_wiki#add-geometries-to-a-layer)
+* [Geodata Import in QGIS](../Wiki/en_qgis_import_geodata_wiki.md)
+* [Layer Concept](../Wiki/en_qgis_layer_concept_wiki.md)
+* [Geodata Classification- Categorized](../Wiki/en_qgis_categorised_wiki.md)
+* [Digitisation- Point data](../Wiki/en_qgis_digitisation_wiki.md#adding-geometries-to-a-layer)
 :::
 ::::
 
@@ -75,7 +76,7 @@ __Relevant wiki articles:__
 - Take the time to familiarise yourself with the exercise and the provided material.
 - Prepare a white-board. It can be either a physical whiteboard, a flip-chart, or a digital whiteboard (e.g. Miro board) where the participants can add their findings and questions. 
 - Before starting the exercise, make sure everybody has installed QGIS and has downloaded __and unzipped__ the data folder.
-- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md#how-to-do-trainings) for some general tips on facilitating trainings. 
+- Check out [How to do trainings?](../Trainers_corner/en_how_to_training.md) for some general tips on facilitating trainings. 
 
 ### Conduct the training <a id="conduct-the-training"></a>
 
@@ -140,7 +141,7 @@ After installing the plugin, we can add basemaps:
 4. Add a roads layer to improve orientation:  
    `Web` → `QuickMapServices` → `Google` → `Google Road`.
 
-5. In the [Layers Panel](../Wiki/en_qgis_layer_concept_wiki), make sure the `Google Road` layer is above the satellite imagery.
+5. In the [Layers Panel](../Wiki/en_qgis_layer_concept_wiki.md), make sure the `Google Road` layer is above the satellite imagery.
 
 6. For easier navigation, make the satellite imagery transparent:
    - Open the layer’s [Symbology tab](../Module_4/en_qgis_styling_vector_data.md#styling-panel).
@@ -166,7 +167,7 @@ Below, you will find a table with the information and locations. Read through th
 In order to digitise the information, we will need two new layers: A point layer and a polygon layer. 
 In case the information states an exact area, create a new polygon layer and map it exactly.
 
-8. [Create a new point and a new polygon layer](../Module_3/en_qgis_digitissation.md#creating-new-datasets) to digitise point and polygon information. 
+8. [Create a new point and a new polygon layer](../Module_3/en_qgis_digitisation.md#creating-new-datasets) to digitise point and polygon information. 
 
 :::{tip}
 When creating the point and polygon layer use the CRS UTM 42 N __EPSG: 32642__. This Coordinate reference system is ideal for Pakistan and the __units of measurement are in meters__. 

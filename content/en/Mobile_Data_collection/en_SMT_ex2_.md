@@ -4,7 +4,7 @@ This exercise focuses on the first step of working with the Sketch Map Tool “C
 
 
 
-```{figure} ../../fig/SMT_Idee_traffic_light_exerices.png
+```{figure} ../../../fig/SMT_Idee_traffic_light_exerices.png
 ---
 height: 450px
 name: SMT traffic light exercise
@@ -115,7 +115,7 @@ __Wrap up:__
 
 ### Map Quality Check <a id="map-quality-check"></a>
 
-```{figure} ../../fig/SMT_Heidelberg_report_1.jpg
+```{figure} ../../../fig/SMT_Heidelberg_report_1.jpg
 ---
 height: 500px
 name: SMT Heidelberg report
@@ -129,7 +129,7 @@ The Map Quality Check assists in evaluating the suitability of the area of inter
 
 ## Step-by step introduction for participants <a id="step-by-step-introduction-for-participants"></a>
 
-Download a printable factsheet to guide you through this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_%20Ex_2.pdf).
+Download a printable factsheet to guide you through this exercise [here](https://nexus.heigit.org/repository/gis-training-resource-center/mobile_data_collection/sketch_map_tool_training/Factsheet_printing_Ex_2.pdf).
 
 If you experiences any problems during your use of the [Sketch Map Tool](https://sketch-map-tool.heigit.org/) please take a look at the [Help page](https://sketch-map-tool.heigit.org/help).
 

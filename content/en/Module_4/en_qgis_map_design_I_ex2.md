@@ -2,6 +2,7 @@
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
 :link: ../intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -56,7 +57,7 @@ __Relevant wiki articles:__
 
 ::::{topic} Context
 
-In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. As a result, critical infrastructure, such as health facilities, were impacted and road access to the city of Larkana was severly limited. You have already conducted an analysis utilizing actual data from this natural disaster in the [previous exercise](../Module_3/en_qgis_module_3_ex5.html). We now want to visualize our findings on an appealing map that can be printed out or shared with different stakeholders. The map will show specific medical centers and healthcare facilities that where impacted by the flooding. Additionally, we will visualize the road access to the city of Larkana on August 12 2024. This information is crucial to assess the logistical access to the city. 
+In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. As a result, critical infrastructure, such as health facilities, were impacted and road access to the city of Larkana was severly limited. You have already conducted an analysis utilizing actual data from this natural disaster in the [previous exercise](../Module_3/en_qgis_module_3_ex5.md). We now want to visualize our findings on an appealing map that can be printed out or shared with different stakeholders. The map will show specific medical centers and healthcare facilities that where impacted by the flooding. Additionally, we will visualize the road access to the city of Larkana on August 12 2024. This information is crucial to assess the logistical access to the city. 
  
 The exercise is split into two parts. In the first part, you will adjust the symbolisation of the layers for the final map. In the second part, you will use the print layout composer to create a finished map that can be printed and distributed. 
 
@@ -75,7 +76,7 @@ The map we will be making in this exercise (Source: HeiGIT).
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip
 
-- You have created the data for Larkana in [Module 3 Exercise 5](../Module_3/en_qgis_module_3_ex2.md). In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there. 
+- You have created the data for Larkana in [Module 3 Exercise 5](../Module_3/en_qgis_module_3_ex5.md). In order to conduct this exercise please create a folder on your computer and copy your entire folder structure of Exercise 4 in there. 
 - __In case you did not do Module 3 - Exercise 4 you can download the data [here](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip)__. Save the folder on your computer an unzip the file.
 :::
 
@@ -84,7 +85,7 @@ The map we will be making in this exercise (Source: HeiGIT).
 | :-------------------- | :----------------- |:----------------- |:----------------- |
 | Health_Facilities_Flood_2024_AOI.gpkg |  [Pakistan Health Facilities (OpenStreetMap Export)](https://data.humdata.org/dataset/hotosm_pak_health_facilities) |Humanitarian OpenStreetMap Team (HOT) | HDX |
 | PAK_2024_Minimum_Flood_Extend_reprojected.gpkg | [Satellite detected water extents from 08 to 12 August 2024 over Pakistan)](https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan) | UNO SAT | HDX |
-| PAK_flood_2024_blocked_road.gpkg | PAK_flood_2024_blocked_road | Yourself | This dataset was created in the [previous exercise](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_module_3_ex2.html) | 
+| PAK_flood_2024_blocked_road.gpkg | PAK_flood_2024_blocked_road | Yourself | This dataset was created in the [previous exercise](../Module_3/en_qgis_module_3_ex5.md) | 
 
 
 <!--FIX: add all datasets used in this exercise to the table-->
@@ -214,10 +215,10 @@ We can categorise the roads and then select the relevant roads to be displayed. 
 
 ### __Airports:__ <a id="airports"></a>
 
-In the [previous exercise](../Module_3/en_qgis_module_3_ex2.md) you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let's mark the airport as a point and visualize it!
+In the [previous exercise](../Module_3/en_qgis_module_3_ex5.md) you found out that the Mohenjodaro Airport in the southwest of Larkana City is still accessible via the road network. Essential supplies could potentially be transported from the airport into the city without encountering any roadblocks. We want to point out this possibility. Let's mark the airport as a point and visualize it!
 
 To do so we will create an entirely new point dataset representing airports.
-* Click on  `Layer` → `Create Layer` → `New GeoPackage Layer` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#create-a-new-layer)) 
+* Click on  `Layer` → `Create Layer` → `New GeoPackage Layer` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creating-a-new-layer)) 
 * Under `Database` click on ![](../../../fig/Three_points.png) and navigate to `temp` folder. Give the new dataset the name __“PAK_airports”__. Click `Save`.
 * `Geometry type`: Select `Point`
 * Under `Additional dimension` you should always make sure that you check `None`. 
@@ -239,11 +240,11 @@ To do so we will create an entirely new point dataset representing airports.
 
 ::::{margin}
 :::{tip}
-If you cannot see the toolbar `View` → `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creation-of-point-data)). ![](../../../fig/Digitizing_Toolbar.png)
+If you cannot see the toolbar `View` → `Toolbars` and check `Digitizing Toolbar` ([Wiki Video](../Wiki/en_qgis_digitisation_wiki.md#creating-point-data)). ![](../../../fig/Digitizing_Toolbar.png)
 :::
 ::::
 
-* Now you can create a point for the airport and if you would like additional airports as well ([wiki](../Wiki/en_qgis_digitisation_wiki.md#add-geometries-to-a-layer)). Currently the new layer __“PAK_airports”__ is empty. To add features we can use the `Digitising Toolbar`. 
+* Now you can create a point for the airport and if you would like additional airports as well ([wiki](../Wiki/en_qgis_digitisation_wiki.md#adding-geometries-to-a-layer)). Currently the new layer __“PAK_airports”__ is empty. To add features we can use the `Digitising Toolbar`. 
 
 *  Look for the Mohenjodaro Airport in Google. Once you have found the airport, click on ![](../../../fig/mActionCapturePoint.png). Left-click on the feature you want to digitise.
 
@@ -303,7 +304,7 @@ Creating a new print layout.
 
 2. Insert a new map by clicking on ![New Map Icon](../../../fig/30.30.2_print_layout_insert_map_icon.png) (`Add Map`) on the left toolbar, and drawing a rectangle on the print canvas. [Wiki Video](en_qgis_understanding_print_layout.md#adding-a-new-map).
 
-3. Move and position the map so that the area of interest is visible at a reasonable scale. To move the map content, use the tool ![](30.30.2_print_layout_move_content_icon) `Move item content`. 
+3. Move and position the map so that the area of interest is visible at a reasonable scale. To move the map content, use the tool ![](../../../fig/30.30.2_print_layout_move_content_icon.png) `Move item content`. 
 
 
 :::{figure} ../../../fig/Module_4/m4_ex2_print_layout_add_map.png

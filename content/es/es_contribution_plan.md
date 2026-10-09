@@ -203,7 +203,7 @@ LEYENDA DE LA IMAGEN
         4. `Result field type`: Texto (cadena)
         ```
     - __Toda la superficie en la que se pueda hacer clic debe escribirse como fragmento de código, p. ej.: `Tabla de atributos`__.
-    - Si se utiliza un icono especial en QGIS, colóquelo junto a los fragmentos de código, p. ej.: `Calculadora de campo` ![](/fig/icon_scratch_layer.png).
+    - Si se utiliza un icono especial en QGIS, colóquelo junto a los fragmentos de código, p. ej.: `Calculadora de campo` ![](../../fig/icon_scratch_layer.png).
     - Si es necesario seleccionar una opción, escriba el nombre de la superficie de clic, en el fragmento de código y la opción, como texto normal, por ej.:`Tipo del campo de salida`: Texto (cadena).
     - Si el nombre de un archivo debe escribirse de una forma determinada, utilice comillas, p. ej.:`Nombre del campo de salida`: Nombre la nueva columna “Trigger_activation”
     - Cuando los participantes deban utilizar una herramienta o una funcionalidad, que no esté descrita detalladamente en su guía paso a paso actual, añada tanto el enlace al nombre de la herramienta, por ej.: [arrastrar y soltar](../en/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop) o el use algo como el [mapa base de la Wiki](Wiki/es_qgis_basemaps_wiki.md) y donde sea lógico, añada el enlace al video de la Wiki correspondiente.

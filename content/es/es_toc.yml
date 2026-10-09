@@ -61,7 +61,6 @@ parts:
           - file: Exercise_tracks/es_mdg_aa_cyclones.md
   - caption: Wiki
     chapters:
-      - file: Wiki/es_wiki_homepage.md
       - file: Wiki/es_qgis_qgis_basics_wiki.md
         sections:
           - file: Wiki/es_qgis_installation_wiki.md

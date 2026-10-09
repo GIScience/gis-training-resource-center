@@ -2,6 +2,7 @@
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
 :link: ../intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -175,7 +176,7 @@ Why these ranges?
 - Most hospitals fall in the **1–60** bed range → we break this into three meaningful groups.  
 - Few hospitals exceed **80 beds**, so the top class isolates the rare high-capacity referral facilities.  
 - This ensures **variation in symbol size** is visible and not compressed into one tiny class. 
-(See [Graduated Classification](../Module_3/en_qgis_data_classification.html#graduated-classification))
+(See [Graduated Classification](../Module_3/en_qgis_data_classification.md#graduated-classification))
 :::
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_proportionla_circel_map_malawi_exampel.mp4"></video>
@@ -223,7 +224,7 @@ First, we need to open the **data-defined override Expression Builder**.
 1.  Select your hospital layer (the filtered `Malawi_health_facilities_raw`).  
 2. Right-click the layer → **Properties…** → **Symbology**.
 3. Nex to `Symbol` Tab click on the dropdown menue, then click at the top click on `Configure Symbol`.
-4. In the new window click on `Simpel Marker` and then next to `fill colour`on the `data-defined override` symbol![](en_data_defined_overried_icon.png)
+4. In the new window click on `Simpel Marker` and then next to `fill colour`on the `data-defined override` symbol![](../../../fig/en_data_defined_overried_icon.png)
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_open_data_defined_override_edit.mp4"></video>
 ::::
 
@@ -1127,6 +1128,6 @@ name: label placement
 ---
 :::
 
-If you want to generate a proper map layout of your epidemological overview map follow the descriptions outlined in [The Print Layout Composer](../Wiki/en_qgis_map_making_wiki).
+If you want to generate a proper map layout of your epidemological overview map follow the descriptions outlined in [The Print Layout Composer](../Wiki/en_qgis_map_making_wiki.md).
 
 

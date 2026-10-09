@@ -28,6 +28,7 @@ Each exercise builds on the previous one, using real-world data workflows common
 
 :::{card}
 :link: ../Module_3/en_module_3_public_health_ex_1
+:link-type: doc
 __Part 1: Creating an overview map of the health system and vaccination coverage__
 ^^^
 The aim of this exercise is to produce a map showing the distribution of healthsites with the capacities to treat measle cases and coordinate a vaccination campaign
@@ -36,6 +37,7 @@ The aim of this exercise is to produce a map showing the distribution of healths
 
 :::{card}
 :link: ../Module_5/en_qgis_module_5_public_health_ex_2
+:link-type: doc
 __Part 2: Calculating affected population__
 ^^^
 The Epidemiology Department has shared a line-list of suspected measles cases reported by health districts. Your task in this exercise is to combine this surveillance data with population estimates from WorldPop to identify districts with high measles incidence rates. This will help the response coordination team prioritise vaccination deployments and plan logistics for outreach activities.
@@ -44,6 +46,7 @@ The Epidemiology Department has shared a line-list of suspected measles cases re
 
 :::{card}
 :link: ../Module_9/en_qgis_module_9_public_health_ex_9
+:link-type: doc
 __Part 3: Assessing Accessibility to Vaccination Services__ 
 ^^^
 

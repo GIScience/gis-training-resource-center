@@ -1,5 +1,11 @@
 _build/
 
+# Local preview book builds (scripts/build_preview_book.ps1)
+/english/
+/spanish/
+/french/
+/_site/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -104,7 +104,7 @@ __Cierre de la sesión:__
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_2/Module_2_Exercise_2_Basic_Geodata_Processing.zip
 
-__Descargue todos los conjuntos de datos [aquí](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_2/Module_2_Exercise_2_Basic_geodata_processing.zip), guarde la carpeta en su computadora y descomprima el archivo.__
+__Descargue todos los conjuntos de datos [aquí](https://nexus.heigit.org/repository/gis-training-resource-center/Module_2/Exercise_2/Module_2_Exercise_2_Basic_Geodata_Processing.zip), guarde la carpeta en su computadora y descomprima el archivo.__
 
 :::
 

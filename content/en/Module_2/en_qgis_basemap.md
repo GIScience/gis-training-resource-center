@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../intro.md 
+:link: ../intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -33,7 +34,7 @@ You can always add the standard OpenStreetMap as a basemap to your map canvas.
 
 :::{tip}
 
-The [wiki article on basemaps](/../wiki/en_qgis_basemaps_wiki), has a tutorial 
+The [wiki article on basemaps](../Wiki/en_qgis_basemaps_wiki.md), has a tutorial 
 on adding more types of basemaps (e.g. from Google Maps) to the standard basemap 
 options in QGIS.
 

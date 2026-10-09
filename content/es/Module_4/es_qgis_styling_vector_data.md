@@ -95,7 +95,7 @@ __Por ejemplo__, asigne un símbolo diferente para cada tipo de edificio (indust
 - Crea clases para los datos numéricos.
 - Se puede seleccionar un gradiente de color para representar la distribución de los datos.
 
-__Por ejemplo__, cree seis clases de tamaños de población y asigne un gradiente de color de blanco a rojo para indicar el tamaño de la población en un distrito (consulte el [Módulo 3: Clasificación de datos geoespaciales](/es/Module_3/es_qgis_data_classification.md)).
+__Por ejemplo__, cree seis clases de tamaños de población y asigne un gradiente de color de blanco a rojo para indicar el tamaño de la población en un distrito (consulte el [Módulo 3: Clasificación de datos geoespaciales](../Module_3/es_qgis_data_classification.md)).
 
 :::
 

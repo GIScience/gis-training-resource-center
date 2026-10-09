@@ -75,7 +75,7 @@ El mapa que realizaremos en este ejercicio (fuente: HeiGIT).
 :::{card}
 :link: https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip
 
-Ha creado los datos para Larkana en el [módulo 3, ejercicio 5](https://giscience.github.io/gis-training-resource-center/content/es/Module_3/es_qgis_module_3_ex2.html). Para realizar este ejercicio, cree una carpeta en su computadora y copie toda la estructura de carpetas del Ejercicio 4. __En caso de que no haya hecho el ejercicio 4 del módulo 3, puede descargar los datos [aquí](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip)__. Guarde la carpeta en su computadora y descomprima el archivo.
+Ha creado los datos para Larkana en el [módulo 3, ejercicio 5](../Module_3/es_qgis_module_3_ex5.md). Para realizar este ejercicio, cree una carpeta en su computadora y copie toda la estructura de carpetas del Ejercicio 4. __En caso de que no haya hecho el ejercicio 4 del módulo 3, puede descargar los datos [aquí](https://nexus.heigit.org/repository/gis-training-resource-center/Module_4/Exercise_2/Module_4_Exercise_2_Larkana_flood_map.zip)__. Guarde la carpeta en su computadora y descomprima el archivo.
 :::
 
 
@@ -83,7 +83,7 @@ Ha creado los datos para Larkana en el [módulo 3, ejercicio 5](https://giscienc
 | :-------------------- | :----------------- |:----------------- |:----------------- |
 | Health_Facilities_Flood_2024_AOI.gpkg | [Centros de salud de Pakistán (OpenStreetMap Export)](https://data.humdata.org/dataset/hotosm_pak_health_facilities) | Equipo humanitario de OpenStreetMap (HOT) | HDX |
 | PAK_2024_Minimum_Flood_Extend_reprojected.gpkg | [El satélite detectó extensiones de agua del 08 al 12 de agosto de 2024 sobre Pakistán)](https://data.humdata.org/dataset/satellite-detected-water-extents-from-08-to-12-august-2024-over-pakistan) | UNO SAT | HDX |
-| PAK_flood_2024_blocked_road.gpkg | PAK_flood_2024_blocked_road | Usted mismo | Este conjunto de datos fue creado en el [ejercicio anterior](https://giscience.github.io/gis-training-resource-center/content/es/Module_3/es_qgis_module_3_ex2.html) |
+| PAK_flood_2024_blocked_road.gpkg | PAK_flood_2024_blocked_road | Usted mismo | Este conjunto de datos fue creado en el [ejercicio anterior](../Module_3/es_qgis_module_3_ex5.md) |
 
 
 <!--FIX: add all datasets used in this exercise to the table-->
@@ -215,7 +215,7 @@ Podemos clasificar las carreteras y luego seleccionar aquellas pertinentes, que 
 
 ### __Aeropuertos:__
 
-En el [ejercicio anterior](/content/es/Module_3/es_qgis_module_3_ex2.md) descubrió que el aeropuerto de Mohenjo Daro, en el suroeste de Larkana City, todavía es accesible a través de la red vial. Los suministros esenciales podrían transportarse desde el aeropuerto hasta la ciudad, sin toparse con ninguna barricada. Queremos señalar esta posibilidad. ¡Marquemos el aeropuerto como un punto y visualicémoslo!
+En el [ejercicio anterior](../Module_3/es_qgis_module_3_ex5.md) descubrió que el aeropuerto de Mohenjo Daro, en el suroeste de Larkana City, todavía es accesible a través de la red vial. Los suministros esenciales podrían transportarse desde el aeropuerto hasta la ciudad, sin toparse con ninguna barricada. Queremos señalar esta posibilidad. ¡Marquemos el aeropuerto como un punto y visualicémoslo!
 
 Para ello, crearemos un conjunto de datos de puntos, completamente nuevo, que represente a los aeropuertos.
 * Haga clic en `Capa` → `Crear Capa` -> `Nueva capa GeoPackage`([Video Wiki](../Wiki/es_qgis_digitisation_wiki.md))
@@ -303,7 +303,7 @@ Creación de una nueva composición de impresión
 
 2. Agregue un nuevo mapa haciendo clic en el ![icono New Map](../../../fig/30.30.2_print_layout_insert_map_icon.png) (`Añadir Mapa`) de la barra de herramientas de la izquierda y dibuje un rectángulo en el lienzo de impresión. [Video Wiki](es_qgis_map_design_2.md)
 
-3. Mueva y posicione el mapa para que el área de interés sea visible a una escala razonable. Para mover el contenido del mapa, utilice la herramienta ![](30.30.2_print_layout_move_content_icon) `Mover contenido del elemento`.
+3. Mueva y posicione el mapa para que el área de interés sea visible a una escala razonable. Para mover el contenido del mapa, utilice la herramienta ![](../../../fig/30.30.2_print_layout_move_content_icon.png) `Mover contenido del elemento`.
 
 
 :::{figure} ../../../fig/Module_4/m4_ex2_print_layout_add_map.png

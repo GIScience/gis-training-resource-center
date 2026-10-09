@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../intro.md 
+:link: ../intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -16,7 +17,7 @@ This chapter will present several data analysis methods and their results that
 are common to humanitarian work. It will cover the general idea or workflow, 
 what kind of data is needed to perform the analysis. However, it will not go 
 into a detailed explanation of the workflow step by step. If you are interested 
-in specific workflows step-by-step, check out [module 7](../Module_7/en_qgis_automation_theory.md) "Automation with QGIS", [module 8](../Module_8/en_qgis_remote_sensing_raster_theorie.md) "Remote Sensing and Raster data 
+in specific workflows step-by-step, check out [module 7](../Module_7/en_qgis_automation_theory.md) "Automation with QGIS", [module 8](../Module_8/en_qgis_remote_sensing_raster_theory.md) "Remote Sensing and Raster data 
 theory", and [module 9](../Module_9/en_qgis_network_analysis_theory.md), as well as the chapters covering __GIS in anticipatory action__: [QGIS Trigger Workflow for Somalia](../GIS_AA/en_qgis_drought_trigger_somalia.md), and 
 [Historical Impact Assessment (HIA) for Flood in Sudan](../GIS_AA/en_qgis_historical_impact_assessment_sudan.md).
 
