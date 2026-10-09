@@ -3,16 +3,18 @@ $ErrorActionPreference = "Stop"
 $RepoRoot = Split-Path -Parent $PSScriptRoot
 Set-Location $RepoRoot
 
-$VenvActivate = Join-Path (Split-Path -Parent $RepoRoot) "venv\Scripts\Activate.ps1"
-
-if (-not (Test-Path $VenvActivate)) {
-    Write-Host "Could not find venv activation script at: $VenvActivate" -ForegroundColor Red
-    Write-Host "Expected the venv as a sibling folder to the repo, e.g. ..\venv (see README.md dev setup)." -ForegroundColor Red
+$UvCommand = Get-Command uv -ErrorAction SilentlyContinue
+if (-not $UvCommand) {
+    Write-Host "Could not find 'uv' on PATH. Install uv first: https://docs.astral.sh/uv/getting-started/installation/" -ForegroundColor Red
     exit 1
 }
 
-Write-Host "Activating venv..." -ForegroundColor Cyan
-. $VenvActivate
+Write-Host "Syncing Python environment with uv..." -ForegroundColor Cyan
+uv sync --no-install-project
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "uv sync failed with exit code $LASTEXITCODE" -ForegroundColor Red
+    exit 1
+}
 
 function Build-Book {
     param(
@@ -25,7 +27,7 @@ function Build-Book {
     Write-Host "Building $Name book..." -ForegroundColor Cyan
     Push-Location $ContentDir
     try {
-        jupyter-book build . @ConfigArgs --path-output $OutputDir
+        uv run jupyter-book build . @ConfigArgs --path-output $OutputDir
         if ($LASTEXITCODE -ne 0) {
             throw "$Name book build failed with exit code $LASTEXITCODE"
         }
@@ -107,7 +109,7 @@ Write-Host "Starting local server at http://localhost:$Port (press Ctrl+C to sto
 Push-Location $SitePath
 try {
     Start-Process "http://localhost:$Port"
-    python -m http.server $Port
+    uv run python -m http.server $Port
 } finally {
     Pop-Location
 }

@@ -46,7 +46,8 @@ gis-training-resource-center/
 ├── localisation/        XLIFF files exchanged with Crowdin
 ├── scripts/             Build and localisation helper scripts
 ├── build_preview_book.bat   One-click local preview on Windows
-└── requirements.txt     Python dependencies
+├── pyproject.toml       Python dependencies (managed by uv)
+└── uv.lock              Locked dependency versions
 ```
 
 The folders `english/`, `french/`, `spanish/` and `_site/` are created by local builds. Git ignores them.
@@ -56,7 +57,7 @@ The folders `english/`, `french/`, `spanish/` and `_site/` are created by local 
 You'll need:
 
 - [Git](https://git-scm.com/downloads)
-- [Python](https://www.python.org/downloads/) 3.11 or newer (the site is deployed with 3.13)
+- [uv](https://docs.astral.sh/uv/) — it installs and manages the Python interpreter (3.13) and the project's dependencies. No separate Python install is needed.
 - A text editor. [VS Code](https://code.visualstudio.com/) works well for Markdown.
 
 ### 1. Clone the repository
@@ -65,33 +66,20 @@ You'll need:
 git clone https://github.com/GIScience/gis-training-resource-center.git
 ```
 
-### 2. Create a virtual environment next to the repository
+### 2. Set up the Python environment with [uv](https://docs.astral.sh/uv/)
 
-Create the virtual environment **next to** the repository folder, not inside it. The Windows preview script looks for it at `..\venv`. Your folders should then look like this:
+The project uses [uv](https://docs.astral.sh/uv/) to manage the Python environment. uv creates a virtual environment inside the repository (`.venv/`) and installs the exact locked dependencies.
 
-```
-your-projects-folder/
-├── gis-training-resource-center/
-└── venv/
-```
+If you don't have uv yet, install it: [uv install documentation](https://docs.astral.sh/uv/getting-started/installation/)
 
-**Windows (PowerShell):**
-
-```powershell
-python -m venv venv
-.\venv\Scripts\Activate.ps1
-pip install -r gis-training-resource-center\requirements.txt
-```
-
-**macOS / Linux:**
+Then, from inside the repository folder, sync the environment:
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install -r gis-training-resource-center/requirements.txt
+cd gis-training-resource-center
+uv sync --no-install-project
 ```
 
-Run these commands from the folder that contains the repository.
+uv reads the Python version from `.python-version` (3.13) and installs it automatically if it isn't present. The `.venv/` folder is created in the repository root and is ignored by Git.
 
 ### 3. Switch to the `dev` branch
 
@@ -115,8 +103,8 @@ Double-click **`build_preview_book.bat`** in the repository folder. You can also
 
 The script:
 
-1. activates the virtual environment in `..\venv`
-2. builds the English, Spanish and French books
+1. syncs the Python environment with `uv sync`
+2. builds the English, Spanish and French books (via `uv run`)
 3. combines them into `_site/en`, `_site/es` and `_site/fr`
 4. starts a local server on port 8080 and opens your browser
 
@@ -124,13 +112,13 @@ Press `Ctrl+C` in the terminal window to stop the server.
 
 ### macOS / Linux
 
-Activate your virtual environment, then run this from the repository root:
+Make sure the environment is synced (`uv sync --no-install-project`), then run this from the repository root:
 
 ```bash
 # Build the three language books
-(cd content/en && jupyter-book build . --path-output ../../english)
-(cd content/es && jupyter-book build . --config es_config.yml --toc es_toc.yml --path-output ../../spanish)
-(cd content/fr && jupyter-book build . --config fr_config.yml --toc fr_toc.yml --path-output ../../french)
+(cd content/en && uv run jupyter-book build . --path-output ../../english)
+(cd content/es && uv run jupyter-book build . --config es_config.yml --toc es_toc.yml --path-output ../../spanish)
+(cd content/fr && uv run jupyter-book build . --config fr_config.yml --toc fr_toc.yml --path-output ../../french)
 
 # Combine them into one site
 rm -rf _site && mkdir -p _site
@@ -139,7 +127,7 @@ cp -R spanish/_build/html _site/es
 cp -R french/_build/html  _site/fr
 
 # Serve it
-cd _site && python3 -m http.server 8080
+cd _site && uv run python -m http.server 8080
 ```
 
 Then open http://localhost:8080/en/intro.html. Press `Ctrl+C` to stop the server.
@@ -153,9 +141,9 @@ Then open http://localhost:8080/en/intro.html. Press `Ctrl+C` to stop the server
 After building, check the built site for broken links, images and anchors:
 
 ```bash
-python scripts/check_site_links.py              # all languages
-python scripts/check_site_links.py --lang en    # English only
-python scripts/check_site_links.py --external   # also check external URLs (slow)
+uv run python scripts/check_site_links.py              # all languages
+uv run python scripts/check_site_links.py --lang en    # English only
+uv run python scripts/check_site_links.py --external   # also check external URLs (slow)
 ```
 
 The script lists every problem by page. It checks the built HTML rather than the build log,

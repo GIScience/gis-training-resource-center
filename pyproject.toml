@@ -1,0 +1,20 @@
+[project]
+name = "gis-training-resource-center"
+version = "0.1.0"
+description = "IFRC Network GIS Training Platform (Jupyter Book site)"
+requires-python = ">=3.13"
+dependencies = [
+    "jupyter-book==1.0.4.post1",
+    "sphinx<8",
+    "myst-nb==1.2.0",
+    "ghp-import",
+    "custom-launch-buttons",
+    "beautifulsoup4",
+    "requests",
+]
+
+[dependency-groups]
+dev = []
+
+[tool.uv]
+package = false
