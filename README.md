@@ -57,7 +57,7 @@ The folders `english/`, `french/`, `spanish/` and `_site/` are created by local 
 You'll need:
 
 - [Git](https://git-scm.com/downloads)
-- [uv](https://docs.astral.sh/uv/) — it installs and manages the Python interpreter (3.13) and the project's dependencies. No separate Python install is needed.
+- [uv](https://docs.astral.sh/uv/) — it installs and manages the Python interpreter (3.14) and the project's dependencies. No separate Python install is needed.
 - A text editor. [VS Code](https://code.visualstudio.com/) works well for Markdown.
 
 ### 1. Clone the repository
@@ -79,7 +79,7 @@ cd gis-training-resource-center
 uv sync --no-install-project
 ```
 
-uv reads the Python version from `.python-version` (3.13) and installs it automatically if it isn't present. The `.venv/` folder is created in the repository root and is ignored by Git.
+uv reads the Python version from `.python-version` (3.14) and installs it automatically if it isn't present. The `.venv/` folder is created in the repository root and is ignored by Git.
 
 ### 3. Switch to the `dev` branch
 
