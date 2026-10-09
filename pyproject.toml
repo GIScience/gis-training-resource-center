@@ -6,7 +6,6 @@ requires-python = ">=3.14"
 dependencies = [
     "jupyter-book==1.0.4.post1",
     "sphinx<8",
-    "myst-nb==1.2.0",
     "ghp-import",
     "custom-launch-buttons",
     "beautifulsoup4",

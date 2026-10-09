@@ -155,6 +155,16 @@ Card links (`:link:` on `{card}` / `{grid-item-card}`) to other pages need `:lin
 a path without `.md`, and text links need the `.md` extension, for example
 `[Clip](../Wiki/en_qgis_geoprocessing_wiki.md#clip)`.
 
+### Updating the vendored MathJax file
+
+Mathematical formulas in the book are rendered with [MathJax](https://www.mathjax.org/). Instead of loading it from a CDN, the site bundles a self-contained copy of MathJax 3 in the repository at `_static/mathjax/tex-mml-chtml.js`, and the book configs point `mathjax_path` at it. To update the copy to a newer MathJax 3 release, download the file over the top of the existing one:
+
+```bash
+curl -fSL -o _static/mathjax/tex-mml-chtml.js "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+```
+
+`@3` always resolves to the latest 3.x release. To pin a specific version instead, replace `@3` with a tag, for example `mathjax@3.2.2`. `tex-mml-chtml.js` is a single self-contained bundle (TeX + MathML + HTML output), so the one file is all that's needed — no separate helper scripts. After updating, rebuild the local preview to confirm the math still renders on a page with formulas (for example Module 5).
+
 ## Branching workflow
 
 | Branch                | Purpose                                                                               |
