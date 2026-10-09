@@ -2,7 +2,7 @@
 name = "gis-training-resource-center"
 version = "0.1.0"
 description = "IFRC Network GIS Training Platform (Jupyter Book site)"
-requires-python = ">=3.13"
+requires-python = ">=3.14"
 dependencies = [
     "jupyter-book==1.0.4.post1",
     "sphinx<8",
