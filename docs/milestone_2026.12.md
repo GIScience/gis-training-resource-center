@@ -43,7 +43,7 @@ Each line is one proposed issue.
 
 %% As of 13.10.26: Deployment of preview book had issues and the action does not complete
 %% Where to add "What's new" on hp. 
-%% Update repo homepage?
+%% We should also add that we've revamped the ToC on the sidebar and also the homepage and the wiki. 
 
 ### B. English content fixes
 
