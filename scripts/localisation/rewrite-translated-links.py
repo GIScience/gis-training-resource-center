@@ -1,4 +1,18 @@
 #!/usr/bin/env python3
+"""Rewrite links in translated Markdown so they work in the translated book.
+
+Crowdin translations keep the links of the English source, for example
+`../Wiki/en_qgis_digitisation_wiki.md#adding-geometries-to-a-layer`. Inside the French or
+Spanish book that file doesn't exist, and links to another book (`../../en/...md`) render
+as plain text. For every text link and card link to an English page, this script:
+
+1. points it at the translated page (`fr_...md` / `es_...md`) if that exists, or
+2. points it at the English page on the live site (full URL), so it still works.
+
+Images, downloads and external links are left alone. Running it twice changes nothing.
+
+usage: python scripts/localisation/rewrite-translated-links.py --lang fr [--content-root content]
+"""
 
 from pathlib import Path
 import argparse
@@ -7,162 +21,216 @@ import re
 import sys
 
 
-PAGE_EXTENSIONS = (".md", ".ipynb", ".rst")
-KNOWN_LANGUAGE_PREFIXES = {"en", "fr", "es"}
+SITE_URL = "https://giscience.github.io/gis-training-resource-center"
+
+# [text](target) or [text](target "title"), but not images ![alt](...)
+TEXT_LINK = re.compile(r'(?<!!)(\[[^\]\n]*\]\()([^)\s]+)((?:\s+"[^"]*")?\))')
+# :link: target on a card, with an optional :link-type: line in the same option block
+CARD_LINK = re.compile(r"^(\s*):link:[ \t]*(\S+)[ \t]*$", re.M)
+LINK_TYPE_DOC = re.compile(r"^\s*:link-type:\s*doc\s*$")
 
 
-markdown_link_pattern = re.compile(
-    r'(?P<prefix>!?\[[^\]]*?\]\()'
-    r'(?P<url>/content/[^)\s]+|content/[^)\s]+)'
-    r'(?P<suffix>\))'
-)
+class Rewriter:
+    def __init__(self, content_root: Path, lang: str, site_url: str):
+        self.content_root = content_root.resolve()
+        self.en_root = self.content_root / "en"
+        self.book_root = self.content_root / lang
+        self.lang = lang
+        self.site_url = site_url.rstrip("/")
+        self.counts = {"translated": 0, "english": 0, "card": 0}
+        self.unresolved = []
+        self.missing_anchors = []
+        self._anchors = {}
 
-html_attr_pattern = re.compile(
-    r'(?P<prefix>\b(?:href|src)=["\'])'
-    r'(?P<url>/content/[^"\']+|content/[^"\']+)'
-    r'(?P<suffix>["\'])'
-)
+    def has_anchor(self, page: Path, anchor: str) -> bool:
+        """Whether the page defines the anchor (<a id>, a MyST label, or a heading slug)."""
+        if page not in self._anchors:
+            text = page.read_text(encoding="utf-8")
+            ids = set(re.findall(r'\bid="([^"]+)"', text))
+            ids |= set(re.findall(r"^\(([^)]+)\)=\s*$", text, re.M))
+            for heading in re.findall(r"^#{1,6}\s+(.+?)\s*$", text, re.M):
+                heading = re.sub(r"<[^>]+>", "", heading).strip().lower()
+                ids.add(re.sub(r"\s+", "-", re.sub(r"[^\w\s-]", "", heading)))
+            self._anchors[page] = ids
+        return anchor in self._anchors[page]
 
+    def check_anchor(self, current: Path, page: Path, anchor: str, url: str):
+        if anchor and not self.has_anchor(page, anchor):
+            self.missing_anchors.append((current, url))
 
-def split_url(url: str):
-    match = re.match(r"^(?P<path>[^?#]*)(?P<suffix>[?#].*)?$", url)
-    if not match:
-        return url, ""
+    def resolve(self, current: Path, path: str):
+        """Return ("book", page) for an existing page in the translated book,
+        ("en", path inside content/en) for a link written into the English book,
+        ("source", path inside content/en) for an English source link that Crowdin left
+        unchanged (it points into the translated book, where the page doesn't exist),
+        or None."""
+        if path.startswith("/content/"):
+            path = path[len("/"):]
+        if path.startswith("content/"):
+            target = self.content_root.parent / path
+        else:
+            target = Path(os.path.normpath(current.parent / path))
 
-    return match.group("path"), match.group("suffix") or ""
+        if target.suffix != ".md":
+            # Card doc links leave out .md (and page names can contain dots, e.g. 3.44)
+            target = target.parent / f"{target.name}.md"
 
+        for root in (self.en_root, self.book_root):
+            try:
+                rel = target.relative_to(root)
+            except ValueError:
+                continue
+            if root == self.en_root:
+                return "en", rel
+            if target.exists():
+                return "book", target
+            return "source", rel
+        return None
 
-def strip_content_prefix(path_part: str):
-    if path_part.startswith("/content/"):
-        return path_part[len("/content/"):]
-    if path_part.startswith("content/"):
-        return path_part[len("content/"):]
-    return None
+    def translated_page(self, rel: Path):
+        name = rel.name
+        stem = name[len("en_"):] if name.startswith("en_") else name
+        for candidate in (f"{self.lang}_{stem}", name):
+            page = self.book_root / rel.parent / candidate
+            if page.exists():
+                return page
+        return None
 
+    def rewrite(self, current: Path, url: str, card_doc: bool, url_card: bool = False):
+        """Return (new_url, kind) or None to leave the link alone.
 
-def normalise_content_path(rest: str, target_lang: str):
-    parts = rest.split("/", 1)
-
-    if len(parts) == 2 and parts[0] in KNOWN_LANGUAGE_PREFIXES:
-        lang_prefix, remainder = parts
-
-        # Keep links that explicitly point to another translated language.
-        if lang_prefix not in {"en", target_lang}:
+        kind is "translated", "english", or "card" (a url-type card pointing at a page
+        in the translated book, which only works as a doc link).
+        """
+        if re.match(r"^[a-z][a-z0-9+.-]*:", url, re.I) or url.startswith(("#", "//")):
+            return None
+        path, _, anchor = url.partition("#")
+        suffix = f"#{anchor}" if anchor else ""
+        if not path or (not card_doc and not path.endswith(".md")):
             return None
 
-        return remainder
+        resolved = self.resolve(current, path)
+        if resolved is None:
+            return None
+        where, rel = resolved
+        if where == "book":
+            if not url_card:
+                return None  # already points at an existing translated page
+            self.check_anchor(current, rel, anchor, url)
+            new = os.path.relpath(rel, start=current.parent).replace("\\", "/")
+            return new[: -len(".md")] + suffix, "card"
 
-    return rest
+        page = self.translated_page(rel)
+        # A link written into the English book that leads back to this very page, without a
+        # section anchor, is a language switch ("also available in English"): keep it English.
+        switch = where == "en" and not anchor and page is not None and page.resolve() == current.resolve()
+        if page is not None and not switch:
+            self.check_anchor(current, page, anchor, url)
+            new = os.path.relpath(page, start=current.parent).replace("\\", "/")
+            if card_doc:
+                new = new[: -len(".md")]
+            return new + suffix, "translated"
 
+        if (self.en_root / rel).exists():
+            self.check_anchor(current, self.en_root / rel, anchor, url)
+            html = rel.with_suffix(".html").as_posix()
+            return f"{self.site_url}/en/{html}{suffix}", "english"
 
-def translated_filename_candidates(filename: str, target_lang: str):
-    candidates = []
+        self.unresolved.append((current, url))
+        return None
 
-    if filename.startswith("en_"):
-        candidates.append(f"{target_lang}_{filename[len('en_'):]}")
-        candidates.append(filename)
-    elif filename.startswith(f"{target_lang}_"):
-        candidates.append(filename)
-    else:
-        candidates.append(filename)
+    def process(self, current: Path) -> bool:
+        text = current.read_text(encoding="utf-8")
 
-    return candidates
+        def text_link(m):
+            result = self.rewrite(current, m.group(2), card_doc=False)
+            if result is None:
+                return m.group(0)
+            new, kind = result
+            self.counts[kind] += 1
+            return f"{m.group(1)}{new}{m.group(3)}"
 
+        new_text = TEXT_LINK.sub(text_link, text)
 
-def find_translated_target(book_root: Path, rest: str, target_lang: str):
-    rest_path = Path(rest)
-    parent = rest_path.parent
-    filename = rest_path.name
+        # Card links. First decide what each line becomes, then rebuild the file.
+        lines = new_text.splitlines(keepends=True)
+        replace = {}  # line index -> list of new lines ([] removes the line)
+        option = re.compile(r"^\s*:[\w-]+:")
+        for i, line in enumerate(lines):
+            m = CARD_LINK.match(line.rstrip("\r\n"))
+            if not m:
+                continue
 
-    for candidate_name in translated_filename_candidates(filename, target_lang):
-        candidate = book_root / parent / candidate_name
-        if candidate.exists():
-            return candidate
+            # Option lines (":key: value") directly around :link: belong to the same card.
+            start, end = i, i + 1
+            while start > 0 and option.match(lines[start - 1]):
+                start -= 1
+            while end < len(lines) and option.match(lines[end]):
+                end += 1
+            type_lines = [j for j in range(start, end) if LINK_TYPE_DOC.match(lines[j])]
 
-    return None
+            url = m.group(2)
+            url_card = not type_lines
+            if url_card:
+                path = url.partition("#")[0]
+                if Path(path).suffix not in ("", ".md") and not re.search(r"\.\d", Path(path).name):
+                    continue  # a plain url-type card link, e.g. a download or .html page
+                if path.endswith(".md"):
+                    url = path[: -len(".md")] + url[len(path):]
+            result = self.rewrite(current, url, card_doc=True, url_card=url_card)
+            if result is None:
+                continue
 
+            new, kind = result
+            self.counts[kind] += 1
+            newline = line[len(line.rstrip("\r\n")):]
+            indent = m.group(1)
+            replace[i] = [f"{indent}:link: {new}{newline}"]
+            if kind in ("translated", "card") and not type_lines:
+                replace[i].append(f"{indent}:link-type: doc{newline}")
+            if kind == "english":
+                # A full URL is a url-type link, so the card must not say :link-type: doc.
+                for j in type_lines:
+                    replace[j] = []
 
-def convert_url(url: str, current_file: Path, book_root: Path, target_lang: str) -> str:
-    path_part, suffix = split_url(url)
-
-    rest = strip_content_prefix(path_part)
-    if rest is None:
-        return url
-
-    rest = normalise_content_path(rest, target_lang)
-    if rest is None:
-        return url
-
-    # Only rewrite source-page links, not figures, videos, data, etc.
-    if not rest.endswith(PAGE_EXTENSIONS):
-        return url
-
-    target_file = find_translated_target(book_root, rest, target_lang)
-
-    if target_file is None:
-        print(f"Skipped missing translated target: {url} in {current_file}")
-        return url
-
-    relative_path = os.path.relpath(target_file, start=current_file.parent)
-    relative_path = relative_path.replace("\\", "/")
-
-    return relative_path + suffix
-
-
-def process_file(path: Path, book_root: Path, target_lang: str) -> bool:
-    text = path.read_text(encoding="utf-8")
-
-    def replace_markdown(match):
-        new_url = convert_url(match.group("url"), path, book_root, target_lang)
-        return f'{match.group("prefix")}{new_url}{match.group("suffix")}'
-
-    def replace_html(match):
-        new_url = convert_url(match.group("url"), path, book_root, target_lang)
-        return f'{match.group("prefix")}{new_url}{match.group("suffix")}'
-
-    new_text = markdown_link_pattern.sub(replace_markdown, text)
-    new_text = html_attr_pattern.sub(replace_html, new_text)
-
-    if new_text != text:
-        path.write_text(new_text, encoding="utf-8", newline="")
-        print(f"Updated {path}")
-        return True
-
-    return False
+        new_text = "".join(
+            "".join(replace[i]) if i in replace else line for i, line in enumerate(lines)
+        )
+        if new_text != text:
+            current.write_text(new_text, encoding="utf-8", newline="")
+            return True
+        return False
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Rewrite /content/... links in translated Markdown files."
-    )
-    parser.add_argument(
-        "--lang",
-        required=True,
-        help="Target language code, for example fr or es.",
-    )
-    parser.add_argument(
-        "--content-root",
-        default="content",
-        help="Content root folder. Default: content",
-    )
-
+    parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
+    parser.add_argument("--lang", required=True, help="Target language code, for example fr or es.")
+    parser.add_argument("--content-root", default="content", help="Content root folder. Default: content")
+    parser.add_argument("--site-url", default=SITE_URL, help=f"Live site for untranslated pages. Default: {SITE_URL}")
     args = parser.parse_args()
 
-    target_lang = args.lang
-    content_root = Path(args.content_root)
-    book_root = (content_root / target_lang).resolve()
-
-    if not book_root.exists():
-        print(f"Translated content folder does not exist: {book_root}", file=sys.stderr)
+    rewriter = Rewriter(Path(args.content_root), args.lang, args.site_url)
+    if not rewriter.book_root.exists():
+        print(f"Translated content folder does not exist: {rewriter.book_root}", file=sys.stderr)
         return 1
 
-    updated_count = 0
+    updated = sum(rewriter.process(md) for md in sorted(rewriter.book_root.rglob("*.md")))
 
-    for md_file in book_root.rglob("*.md"):
-        if process_file(md_file, book_root, target_lang):
-            updated_count += 1
-
-    print(f"Updated files: {updated_count}")
+    print(f"Updated files: {updated}")
+    print(f"Links to translated pages: {rewriter.counts['translated']}")
+    print(f"Links to English pages on the live site: {rewriter.counts['english']}")
+    print(f"Card links changed to doc links: {rewriter.counts['card']}")
+    if rewriter.unresolved:
+        print(f"Links left unchanged because the English page doesn't exist: {len(rewriter.unresolved)}")
+        for page, url in rewriter.unresolved:
+            print(f"  {page.relative_to(rewriter.content_root)}: {url}")
+    if rewriter.missing_anchors:
+        print(
+            f"Links rewritten, but the #anchor isn't on the target page "
+            f"(the link opens the top of the page): {len(rewriter.missing_anchors)}"
+        )
+        for page, url in rewriter.missing_anchors:
+            print(f"  {page.relative_to(rewriter.content_root)}: {url}")
     return 0
 
 
