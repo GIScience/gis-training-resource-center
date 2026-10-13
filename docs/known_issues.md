@@ -22,12 +22,12 @@ These pages come from Crowdin. Most problems are the same ones already fixed in 
 source, so they'll mostly clear up with the next **Crowdin Download and Merge** run. Check
 again afterwards.
 
-| Problem | Spanish | French |
-|---|---|---|
-| "Home" and other card links pointing to `intro.md` / `es_intro.md` / `fr_intro.md` (no `:link-type: doc`) | 40 | 25 |
-| Card links without `.html` (only work on GitHub Pages) | – | 8 |
-| Links to pages that aren't translated yet (the `.md` is left in the link) | 14 | 3 |
-| Images and logos with wrong paths or old file names | 5 | 10 |
+| Problem                                                                                                   | Spanish | French |
+|-----------------------------------------------------------------------------------------------------------|---------|--------|
+| "Home" and other card links pointing to `intro.md` / `es_intro.md` / `fr_intro.md` (no `:link-type: doc`) | 40      | 25     |
+| Card links without `.html` (only work on GitHub Pages)                                                    | –       | 8      |
+| Links to pages that aren't translated yet (the `.md` is left in the link)                                 | 14      | 3      |
+| Images and logos with wrong paths or old file names                                                       | 5       | 10     |
 
 The image and logo fixes that still need to reach Spanish and French:
 
@@ -71,12 +71,12 @@ Also:
 
 These return 404:
 
-| File | Used on |
-|---|---|
-| `Module_7/Exercise_1.zip` | `Module_7/fr_qgis_module_7_ex1.md`, `es_qgis_module_7_ex1.md` (the English page was retired, see below) |
-| `sketch_map_tool_training/Exercise_2.zip` | `en_SMT_ex2_.md`, `en_SMT_ex2_old.md` |
-| `sketch_map_tool_training/Sketch_Map_Tool_Exercise_6.zip` | `en_SMT_ex6_.md` |
-| `sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_1_marked_maps_results.zip` | `en_SMT_ex1_.md` |
+| File                                                                                       | Used on                                                                                                 |
+|--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| `Module_7/Exercise_1.zip`                                                                  | `Module_7/fr_qgis_module_7_ex1.md`, `es_qgis_module_7_ex1.md` (the English page was retired, see below) |
+| `sketch_map_tool_training/Exercise_2.zip`                                                  | `en_SMT_ex2_.md`, `en_SMT_ex2_old.md`                                                                   |
+| `sketch_map_tool_training/Sketch_Map_Tool_Exercise_6.zip`                                  | `en_SMT_ex6_.md`                                                                                        |
+| `sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_1_marked_maps_results.zip` | `en_SMT_ex1_.md`                                                                                        |
 
 ### Missing video
 
