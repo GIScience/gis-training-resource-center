@@ -11,20 +11,22 @@ RUN --mount=type=cache,target=/root/.cache/uv \
     uv sync --locked
 
 # Copy source
-COPY content/ content/
 COPY _static/ _static/
 COPY fig/ fig/
 
 # Build books in parallel
 FROM builder AS build-en
+COPY content/en content/en
 RUN --mount=type=cache,target=/root/.cache/uv \
     cd /app/content/en && uv run jupyter-book build .
 
 FROM builder AS build-es
+COPY content/es content/es
 RUN --mount=type=cache,target=/root/.cache/uv \
     cd /app/content/es && uv run jupyter-book build . --config es_config.yml --toc es_toc.yml
 
 FROM builder AS build-fr
+COPY content/fr content/fr
 RUN --mount=type=cache,target=/root/.cache/uv \
     cd /app/content/fr && uv run jupyter-book build . --config fr_config.yml --toc fr_toc.yml
 
