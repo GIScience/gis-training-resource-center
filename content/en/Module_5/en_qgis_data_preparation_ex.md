@@ -29,7 +29,7 @@ __Relevant Wiki articles:__
 :::{Topic} Context
 
 In 2024, the provinces of Punjab, Sindh, and Balochistan in Pakistan experienced devastating floods due to intense and prolonged rainfall. The flood impact on infrastructure is highly dependent on the building material of houses.  To determine the vulnerability of the infrastructure to flood damage, we will use data on the wall material of the houses in each province. The objective is to create a dataset indicating which provinces are more prone to flood damage due to the durability of the material used for buildings. 
-First, we need to extract the data from the PDF-file and save it to a `.csv`- file. Then, we need to clean and prepare the `.csv`-file to remove errors and inconsistencies. Finally, we can import the `.csv`-file and perform an attribute join to attach the information on wall material to a vector-layer containing the polygons of the pakistani provinces. 
+First, we need to extract the data from the PDF-file and save it to a `.csv`- file. Then, we need to clean and prepare the `.csv`-file to remove errors and inconsistencies. Finally, we can import the `.csv`-file and perform an attribute join to attach the information on wall material to a vector-layer containing the polygons of the  provinces. 
 
 :::
 
@@ -83,10 +83,10 @@ Download the datasets [here](https://nexus.heigit.org/repository/gis-training-re
 
 :::
 
-| Dataset| Source | Description |
-| ----- | --- | --- |
-| Administrative boundaries for pakistan | [HDX](https://data.humdata.org/dataset/cod-ab-pak) | The administrative boundaries (adm0-adm3) for pakistan can be accessed via the humanitarian data exchange. For this exercise, we are interested in the districts (adm2) | 
-| Percent distribution of households by material used for walls | [Pakistan Bureau of Statistics](https://www.pbs.gov.pk/content/statistical-tables-pslm-2019-20) | Table 7.7 in the *Pakistan Social and living Standards Measurement Survey (2019-20)* shows the materials used for walls per household in percents. | 
+| Dataset                                                       | Source                                                                                          | Description                                                                                                                                                             |
+|---------------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Administrative boundaries for pakistan                        | [HDX](https://data.humdata.org/dataset/cod-ab-pak)                                              | The administrative boundaries (adm0-adm3) for pakistan can be accessed via the humanitarian data exchange. For this exercise, we are interested in the districts (adm2) |
+| Percent distribution of households by material used for walls | [Pakistan Bureau of Statistics](https://www.pbs.gov.pk/content/statistical-tables-pslm-2019-20) | Table 7.7 in the *Pakistan Social and living Standards Measurement Survey (2019-20)* shows the materials used for walls per household in percents.                      |
 
 
 ### Task 1: Get the data from the PDF file into a CSV file <a id="task-1-get-the-data-from-the-pdf-file-into-a-csv-file"></a>
@@ -225,8 +225,8 @@ The data table should now look like this. It is still missing column headers (re
 3. We have to add the column names back, as we did not extract them with tabular. <kbd>Right-click</kbd> on the first row and select `Insert 1 Row Above`. A new row should appear.
 4. Enter the column headings as they are in the PDF-file:
 
-| Province & District | Burnt Bricks/Blocks | Mud Bricks/Mud | Wood | Other | Total |  
-| :------------------ | :------------------ | :------------- | :--- | :---- | :---- | 
+| Province & District | Burnt Bricks/Blocks | Mud Bricks/Mud | Wood | Other | Total |
+|:--------------------|:--------------------|:---------------|:-----|:------|:------|
 
 5. Now we can format the data into an excel table. This will allow us to apply filters to remove the unwanted entries. Select the columns A to F and navigate to `Home` → `Format as Table` and select a table styling of your choosing. 
 
