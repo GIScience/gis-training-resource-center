@@ -4,7 +4,7 @@
 title: Centro de Recursos de Formación GIS
 author: HeiGIT gGmbH
 copyright: HeiGIT gGmbH
-logo: ../../IFRC_Logo_Horizontal_RGB.svg
+logo: ../../_static/IFRC_Logo_Horizontal_RGB.svg
 
 # Force re-execution of notebooks on each build.
 execute:
@@ -27,12 +27,10 @@ repository:
 
 # Add GitHub buttons to your book
 html:
-  favicon: ../../IFRC_Logo_favicon.png
+  favicon: ../../_static/IFRC_Logo_favicon.png
   use_issues_button: true
   use_repository_button: true
   extra_footer: |
-      <script data-goatcounter="https://gtrc.goatcounter.com/count"
-      async src="//gc.zgo.at/count.js"></script>
       <p>
       Este proyecto se publica bajo una <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">licencia Creative Commons BY-NC-SA 4.0</a>.
       </p>
@@ -48,6 +46,9 @@ sphinx:
   config:
     # Partner logos used by About/about_1.md live in the repo-level _static folder
     html_static_path: ["../../_static"]
+    # Serve MathJax from the site's own _static folder instead of the
+    # jsdelivr CDN, so the built book works offline / without external CDNs.
+    mathjax_path: "mathjax/tex-mml-chtml.js"
     # Hide noisy warnings. Links and anchors are checked on the built site instead
     # (scripts/check_site_links.py), because MyST doesn't recognise our stable <a id> anchors.
     suppress_warnings:
