@@ -10,20 +10,27 @@ MyST's own link check doesn't recognise the stable <a id="..."> anchors that
 scripts/add_stable_anchors.py adds to headings, so the build log is full of false
 alarms (those warnings are switched off in the book configs). Checking the HTML
 catches what readers actually hit: missing pages, missing images, anchors that
-don't exist, and links that only work on GitHub Pages.
+don't exist, and links with a wrong extension or path.
 
 The three books are checked together, laid out like the published site:
-    /en -> english/_build/html    /es -> spanish/_build/html    /fr -> french/_build/html
+    /en -> _site/en    /es -> _site/es    /fr -> _site/fr
 
 Usage
 -----
-Build the books first (build_preview_book.bat, or the jupyter-book commands in the
-README), then from the repository root:
+Build the Docker image and copy the built site out of it, from the repository root:
 
-    python scripts/check_site_links.py                # all languages
-    python scripts/check_site_links.py --lang en      # English only
-    python scripts/check_site_links.py --orphans      # also check pages not in the TOC
-    python scripts/check_site_links.py --external     # also check external URLs (slow)
+    docker build -t gis-training .
+    docker create --name gis-training-site gis-training
+    docker cp gis-training-site:/usr/share/nginx/html ./_site
+    docker rm gis-training-site
+
+Then run the check (it needs PyYAML and beautifulsoup4, e.g. via `uv run`):
+
+    uv run python scripts/check_site_links.py                # all languages
+    uv run python scripts/check_site_links.py --lang en      # English only
+    uv run python scripts/check_site_links.py --orphans      # also check pages not in the TOC
+    uv run python scripts/check_site_links.py --external     # also check external URLs (slow)
+    uv run python scripts/check_site_links.py --site path/to/site   # site in another folder
 
 Exit code is 1 when problems are found on pages in the table of contents.
 """
@@ -40,22 +47,25 @@ from bs4 import BeautifulSoup
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BOOKS = {
-    "en": ("english", "content/en/_toc.yml"),
-    "es": ("spanish", "content/es/es_toc.yml"),
-    "fr": ("french", "content/fr/fr_toc.yml"),
+    "en": "content/en/_toc.yml",
+    "es": "content/es/es_toc.yml",
+    "fr": "content/fr/fr_toc.yml",
 }
-SITE_PREFIX = "/gis-training-resource-center/"
+# Folder with the built site (en/, es/, fr/). Set from --site in main().
+SITE_DIR = os.path.join(ROOT, "_site")
+# Path prefix of the old GitHub Pages site. Links starting with it break on the new domain.
+OLD_PAGES_PREFIX = "/gis-training-resource-center/"
 SKIP_DIRS = {"_static", "_sources", "_images", "_sphinx_design_static", "_panels_static"}
 SKIP_PAGES = {"genindex.html", "search.html", "py-modindex.html"}
 
 
 def book_dir(lang):
-    return os.path.join(ROOT, BOOKS[lang][0], "_build", "html")
+    return os.path.join(SITE_DIR, lang)
 
 
 def toc_docs(lang):
     """Document names (without extension) listed in a book's table of contents."""
-    with open(os.path.join(ROOT, BOOKS[lang][1]), encoding="utf-8") as fh:
+    with open(os.path.join(ROOT, BOOKS[lang]), encoding="utf-8") as fh:
         data = yaml.safe_load(fh)
     docs = set()
 
@@ -102,7 +112,8 @@ def check(langs, include_orphans):
     for lang in langs:
         base = book_dir(lang)
         if not os.path.isdir(base):
-            sys.exit(f"No build found for '{lang}' at {base}. Build the books first.")
+            sys.exit(f"No build found for '{lang}' at {base}. "
+                     "Build the Docker image and copy the site to _site/ first (see the top of this script).")
         in_toc = toc_docs(lang)
         for dirpath, dirnames, filenames in os.walk(base):
             rel_dir = os.path.relpath(dirpath, base).replace("\\", "/")
@@ -152,10 +163,10 @@ def check_target(page, href, external):
     path, frag = unquote(sp.path), sp.fragment
     if path == "":
         target = page
+    elif path.startswith(OLD_PAGES_PREFIX):
+        return "old GitHub Pages path, use a relative link instead"
     elif path.startswith("/"):
-        if not path.startswith(SITE_PREFIX):
-            return "absolute path outside the site (breaks on GitHub Pages)"
-        target = posixpath.normpath(path[len(SITE_PREFIX):])
+        target = posixpath.normpath(path.lstrip("/"))
     else:
         target = posixpath.normpath(posixpath.join(posixpath.dirname(page), path))
     if target.startswith(".."):
@@ -167,7 +178,7 @@ def check_target(page, href, external):
         fs = os.path.join(fs, "index.html")
     if not os.path.exists(fs):
         if not os.path.splitext(fs)[1] and os.path.exists(fs + ".html"):
-            return "missing .html (only works on GitHub Pages)"
+            return "missing .html extension"
         return "target does not exist"
     if frag and fs.endswith(".html") and frag not in page_ids(fs):
         return f"anchor #{frag} not found on target page"
@@ -200,11 +211,14 @@ def check_external(external):
 
 
 def main():
+    global SITE_DIR
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--lang", choices=sorted(BOOKS), action="append", help="language(s) to check (default: all)")
     ap.add_argument("--orphans", action="store_true", help="also check pages that are not in the table of contents")
     ap.add_argument("--external", action="store_true", help="also check external URLs (slow)")
+    ap.add_argument("--site", default=SITE_DIR, help="folder with the built site (default: _site in the repository root)")
     args = ap.parse_args()
+    SITE_DIR = os.path.abspath(args.site)
     langs = args.lang or list(BOOKS)
 
     problems, external, pages = check(langs, args.orphans)
