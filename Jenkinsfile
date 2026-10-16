@@ -16,8 +16,9 @@ pipeline {
         RELEASE_DEPLOY = false
         SNAPSHOT_DEPLOY = false
 
-        DOCKER_CREDENTIALS_ID = 'DockerHubHeiGITCredentials'
-        DOCKER_REPOSITORY = 'heigit/gis-training'
+        DOCKER_IMAGE_NAME = 'repo.heigit.org/heigit/gis-training'
+        DOCKER_CREDENTIALS_ID = 'docker-heigit-ci-service'
+        DOCKER_REGISTRY_URL = 'https://repo.heigit.org'
     }
     stages {
         stage('Build') {
@@ -51,14 +52,14 @@ pipeline {
         stage('Build and Deploy Image') {
             steps {
                 script {
-                    docker.withRegistry('', DOCKER_CREDENTIALS_ID) {
+                    docker.withRegistry(DOCKER_REGISTRY_URL, DOCKER_CREDENTIALS_ID) {
                         if (env.BRANCH_NAME ==~ SNAPSHOT_BRANCH_REGEX) {
                             sh 'uv version "$VERSION+$LATEST_COMMIT_ID"'
-                            dockerImage = docker.build(DOCKER_REPOSITORY + ':' + env.BRANCH_NAME)
+                            dockerImage = docker.build(DOCKER_IMAGE_NAME + ':' + env.BRANCH_NAME)
                             dockerImage.push()
                         }
                         if (VERSION ==~ RELEASE_REGEX && env.TAG_NAME ==~ RELEASE_REGEX) {
-                            dockerImage = docker.build(DOCKER_REPOSITORY + ':' + VERSION)
+                            dockerImage = docker.build(DOCKER_IMAGE_NAME + ':' + VERSION)
                             dockerImage.push()
                             dockerImage.push('latest')
                         }
