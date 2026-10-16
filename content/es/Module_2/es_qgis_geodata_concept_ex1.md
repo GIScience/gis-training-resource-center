@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -55,11 +55,11 @@ __Duración estimada del ejercicio:__
 __Artículos relevantes en Wiki__
 ^^^
 
-* [Interfaz de QGIS](/content/es/Wiki/es_qgis_interface_wiki.md)
-* [Importación de datos geoespaciales en QGIS](/content/es/Wiki/es_qgis_import_geodata_wiki.md)
-* [Concepto de capa](/content/es/Wiki/es_qgis_layer_concept_wiki.md)
-* [Tabla de atributos en QGIS](/content/es/Wiki/es_qgis_attribute_table_wiki.md)
-* [Proyecciones cartográficas](/content/es/Wiki/es_qgis_projections_wiki.md)
+* [Interfaz de QGIS](../Wiki/es_qgis_interface_wiki.md)
+* [Importación de datos geoespaciales en QGIS](../Wiki/es_qgis_import_geodata_wiki.md)
+* [Concepto de capa](../Wiki/es_qgis_layer_concept_wiki.md)
+* [Tabla de atributos en QGIS](../Wiki/es_qgis_attribute_table_wiki.md)
+* [Proyecciones cartográficas](../Wiki/es_qgis_projections_wiki.md)
 
 <!-- FIXME: to be updated -->
 
@@ -76,7 +76,7 @@ __Artículos relevantes en Wiki__
 - Tómese el tiempo necesario para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare un pizarrón. Puede ser un pizarrón físico, un rotafolio o un pizarrón digital (p. ej., un pizarrón en Miro) donde los participantes puedan añadir sus resultados y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos los participantes hayan instalado QGIS y que hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo realizar capacitaciones?](/content/es/Trainers_corner/es_how_to_training.md) para obtener algunos consejos generales para impartirlas.
+- Consulte [¿Cómo realizar capacitaciones?](../Trainers_corner/es_how_to_training.md) para obtener algunos consejos generales para impartirlas.
 
 ### Impartir la capacitación
 
@@ -123,7 +123,7 @@ El GeoPackage `Sierra_leone_administrative_boundaries.gpkg` contiene informació
 :::{admonition} Estructura de las carpetas
 :type: hint
 
-Mantenga la gestión de sus datos organizada creando una [estructura de carpetas estándar]() en su ordenador para sus proyectos QGIS y datos geográficos.
+Mantenga la gestión de sus datos organizada creando una [estructura de carpetas estándar](es_qgis_geodata_management.md) en su ordenador para sus proyectos QGIS y datos geográficos.
 Los datos del ejercicio deben guardarse en un lugar donde pueda encontrarlos fácilmente, así como el proyecto QGIS correspondiente
 
 :::
@@ -134,29 +134,29 @@ Los datos del ejercicio deben guardarse en un lugar donde pueda encontrarlos fá
    - __Descomprima la carpeta__ con los datos del ejercicio.
    - El GeoPackage (`.gpkg`) y el shapefile (`.shp`) pueden arrastrarse y soltarse sobre el lienzo del mapa en QGIS.
    - El archivo .csv debe importarse a través del menú de capas.
-      - Navegue hasta `Layer`> `Add Layer` > `Add delimited text layer`. Se abrirá una nueva ventana. Aquí puede seleccionar el archivo que desea importar haciendo clic en `...` a la derecha del campo __Nombre de archivo__ situado en la parte superior.
+      - Navegue hasta `Capa` → `Añadir capa` → `Añadir capa de texto delimitado`. Se abrirá una nueva ventana. Aquí puede seleccionar el archivo que desea importar haciendo clic en `...` a la derecha del campo __Nombre de archivo__ situado en la parte superior.
       - Navegue hasta la carpeta con los archivos de ejercicios y seleccione `sl-airports.csv`.
       - Haga clic en abrir. La ventana de importación CSV se actualizará y le mostrará una vista previa de la tabla CSV.
       - La tabla contiene información geográfica. Tendremos que especificar esto en __"Definición de geometría"__.
-         - Haga clic en `Point Coordinates` y seleccione `longitude_deg` como su __"campo X"__ y `latitude_deg` como su __"campo Y"__.
+         - Haga clic en `Coordenadas del punto` y seleccione `longitude_deg` como su __"campo X"__ y `latitude_deg` como su __"campo Y"__.
       - Haz clic en Agregar. Debería aparecer una nueva capa de puntos con los aeropuertos en el lienzo del mapa.
 
 
-:::{figure} /fig/en_3.36_add_csv.png
+:::{figure} ../../../fig/en_3.36_add_csv.png
 ---
 width: 500 px
-name: navigation to add csv layer
+name: es_navigation to add csv layer
 ---
 Abrir la ventana de importación de CSV.
 :::
 
 
-:::{figure} /fig/en_delimited_text_screenshot.PNG
+:::{figure} ../../../fig/en_delimited_text_screenshot.PNG
 ---
 width: 80%
-name: delimited_text
+name: es_delimited_text
 ---
-Captura de pantalla del Administrador de fuentes de datos - Texto delimitado para cargar un archivo CSV
+Captura de pantalla del Administrador de fuentes de datos - Texto delimitado para cargar un archivo CSV.
 :::
 
 2. Interactúe con el mapa y explore los conjuntos de datos. Utilice la herramienta de zoom y desplácese
@@ -181,16 +181,16 @@ de la vista del mapa. Compruébelo con una consulta sobre las propiedades de la 
 :::
 
 :::{Hint}
-Para obtener información sobre una capa y sus proyecciones cartográficas, haga doble clic sobre la capa y busque la sección `Information`. Esta sección contiene detalles generales como el nombre y la ruta del archivo, así como información sobre el Sistema de Referencia de Coordenadas (SRC) en la sección correspondiente.
+Para obtener información sobre una capa y sus proyecciones cartográficas, haga doble clic sobre la capa y busque la sección `Información`. Esta sección contiene detalles generales como el nombre y la ruta del archivo, así como información sobre el Sistema de Referencia de Coordenadas (SRC) en la sección correspondiente.
 :::
 
 
-6. Guarde la capa del centro de salud en la proyección cartográfica `WGS 84 / Pseudo-Mercator EPSG:3857`. Esto cambiará la proyección cartográfica del archivo. Para ello, haga clic con el botón derecho en la capa --> `Export` --> `Save Features As..`. En la ventana emergente, seleccione **GeoPackage como formato de archivo de salida** y **especifique la ubicación del archivo y el nombre** haciendo clic en los tres puntos pequeños. También se le puede dar al archivo un nombre de capa, que se mostrará cuando se cargue en QGIS. Antes de ejecutar este proceso, **se puede cambiar la proyección** seleccionando el SRC deseado en la sección designada. Verifique la proyección modificada observando las propiedades de la capa recién creada.
+6. Guarde la capa del centro de salud en la proyección cartográfica `WGS 84 / Pseudo-Mercator EPSG:3857`. Esto cambiará la proyección cartográfica del archivo. Para ello, haga clic con el botón derecho en la capa → `Exportar` → `Guardar objetos seleccionados como...`. En la ventana emergente, seleccione **GeoPackage como formato de archivo de salida** y **especifique la ubicación del archivo y el nombre** haciendo clic en los tres puntos pequeños. También se le puede dar al archivo un nombre de capa, que se mostrará cuando se cargue en QGIS. Antes de ejecutar este proceso, **se puede cambiar la proyección** seleccionando el SRC deseado en la sección designada. Verifique la proyección modificada observando las propiedades de la capa recién creada.
 
-:::{figure} /fig/en_ex1_export_layer.PNG
+:::{figure} ../../../fig/en_ex1_export_layer.PNG
 ---
 width: 40%
-name: export_layer
+name: es_export_layer
 ---
 Captura de pantalla de la ventana Exportar
 :::
@@ -198,19 +198,19 @@ Captura de pantalla de la ventana Exportar
 7. Guarde su proyecto.
 
 8. Opcional: Puede añadir el mapa base de OpenStreetMap a través de la ventana del navegador,
-   en `XYZ Tiles`.
+   en `Teselas XYZ`.
 
 :::{Note}
 
-La combinación de capas en diferentes proyecciones cartográficas con mapas base en línea (que suelen tener sus propias proyecciones) puede dar lugar a problemas de visualización debido a los [conflictos del SRC](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_qgis_projections.html#how-to-choose-an-appropriate-projected-coordinate-system). Cuando las capas tienen un SRC distinto, podrían no alinearse correctamente o aparecer distorsionadas al superponerlas con un mapa base en línea. Para mitigar estos problemas, es aconsejable reproyectar las capas para que coincidan con SRC del mapa base (lo que a menudo no es aplicable) o eliminar temporalmente el mapa base antes de guardar el proyecto. Esto garantiza que el mapa se muestre con precisión y evita posibles discrepancias visuales causadas por incoherencias del SRC.
+La combinación de capas en diferentes proyecciones cartográficas con mapas base en línea (que suelen tener sus propias proyecciones) puede dar lugar a problemas de visualización debido a los [conflictos del SRC](es_qgis_projections.md). Cuando las capas tienen un SRC distinto, podrían no alinearse correctamente o aparecer distorsionadas al superponerlas con un mapa base en línea. Para mitigar estos problemas, es aconsejable reproyectar las capas para que coincidan con SRC del mapa base (lo que a menudo no es aplicable) o eliminar temporalmente el mapa base antes de guardar el proyecto. Esto garantiza que el mapa se muestre con precisión y evita posibles discrepancias visuales causadas por incoherencias del SRC.
 
 :::
 
 
-:::{figure} /fig/en_result_geodata_concept_exercise.png
+:::{figure} ../../../fig/en_result_geodata_concept_exercise.png
 ---
 width: 80%
-name: en_result_geodata_concept_exercise
+name: es_result_geodata_concept_exercise
 ---
 Este es el aspecto que podría tener el resultado final.
 :::

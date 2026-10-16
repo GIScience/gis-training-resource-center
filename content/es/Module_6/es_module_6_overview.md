@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -12,7 +12,7 @@
 El **Módulo 6: Análisis de Datos con QGIS** aún **no está disponible en español**.  
 Sin embargo, puedes acceder a la **versión en inglés** mediante el siguiente enlace:
 
-**[Module 6 – Data Analysis with QGIS (English)](https://giscience.github.io/gis-training-resource-center/content/Module_6/en_module_6_overview.html)**  
+**[Module 6 – Data Analysis with QGIS (English)](es_module_6_overview.md)**  
 :::
 
 

@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -12,13 +12,13 @@
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/kIID5FDi2JQ?si=C0tYz7nteMF_xqvr" title="Reproductor de video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Una cuestión importante a la hora de crear un mapa de una región, es que es imposible crear una representación de una esfera en un plano 2D sin distorsionar el mapa. La transformación de un objeto 3D en una superficie plana puede realizarse con ayuda de una __proyección cartográfica__. A lo largo de los siglos, los cartógrafos y los matemáticos han desarrollado una multitud de métodos diferentes para proyectar la Tierra sobre una superficie plana ({numref}`en_examples_projections_IBIS`). Sin embargo, nunca es posible representar correctamente el mundo en una superficie plana (consulte el video anterior). Toda proyección cartográfica distorsiona la longitud entre dos puntos, los ángulos entre dos líneas (direcciones) o el tamaño de un área. Una proyección cartográfica sólo puede representar correctamente una de estas tres dimensiones. Esto significa que, según método de proyección cartográfica, su mapamundi no representará correctamente el tamaño, los ángulos o las distancias.
+Una cuestión importante a la hora de crear un mapa de una región, es que es imposible crear una representación de una esfera en un plano 2D sin distorsionar el mapa. La transformación de un objeto 3D en una superficie plana puede realizarse con ayuda de una __proyección cartográfica__. A lo largo de los siglos, los cartógrafos y los matemáticos han desarrollado una multitud de métodos diferentes para proyectar la Tierra sobre una superficie plana ({numref}`es_examples_projections_IBIS`). Sin embargo, nunca es posible representar correctamente el mundo en una superficie plana (consulte el video anterior). Toda proyección cartográfica distorsiona la longitud entre dos puntos, los ángulos entre dos líneas (direcciones) o el tamaño de un área. Una proyección cartográfica sólo puede representar correctamente una de estas tres dimensiones. Esto significa que, según método de proyección cartográfica, su mapamundi no representará correctamente el tamaño, los ángulos o las distancias.
 
-:::{figure} /fig/en_examples_projections_IBIS.png
+:::{figure} ../../../fig/en_examples_projections_IBIS.png
 ---
 width: 700px
 align: center
-name: en_examples_projections_IBIS
+name: es_examples_projections_IBIS
 ---
 Ejemplos de proyecciones cartográficas (fuente desconocida. Esta figura se incluye únicamente con fines ilustrativos y no está sujeta a la licencia Creative Commons de esta plataforma).
 :::
@@ -30,11 +30,11 @@ La proyección cartográfica Mercator es conocida por distorsionar el tamaño de
 :::
 
 
-:::{figure} /fig/en_greenland_africa.png
+:::{figure} ../../../fig/en_greenland_africa.png
 ---
 width: 600px
 align: center
-name: en_greenland_africa
+name: es_greenland_africa
 ---
 Comparación Groenlandia - África (fuente: [The True Size of](https://www.thetruesize.com/#?borders=1~!MTYwODM1MTk.MzkyNDUyNg*MjY5NjM4Mzg(MTA1MjgyOTE~!CONTIGUOUS_US*MTAwMjQwNzU.MjUwMjM1MTc(MTc1)MQ~!IN*NTI2NDA1MQ.Nzg2MzQyMQ)MA~!CN*OTkyMTY5Nw.NzMxNDcwNQ(MjI1)Mg)).
 :::
@@ -44,7 +44,7 @@ Comparación Groenlandia - África (fuente: [The True Size of](https://www.thetr
 
 En los SIG, proyectamos la Tierra sobre un sistema de coordenadas plano (de ahí el nombre de sistema de referencia de coordenadas o SRC). Es crucial, que sea consciente de que sus datos pueden estar en un SRC y su proyecto QGIS en otro SRC.
 
-El SRC del proyecto aparece en la esquina inferior derecha de la [interfaz de QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_1/es_qgis_start.html#vision-general-de-la-interfaz-de-qgis). Aquí, puede ver el código EPSG. EPSG son las siglas de European Petroleum Survey Group y se refiere a un sistema de códigos estandarizado para sistemas de referencia de coordenadas (SRC) y sus proyecciones cartográficas. Cada código EPSG (p.ej., EPSG:4326 para WGS84) identifica, de forma única, un SRC específico, lo que ayuda a garantizar la coherencia y la interoperabilidad de los datos geoespaciales entre diferentes plataformas y aplicaciones.
+El SRC del proyecto aparece en la esquina inferior derecha de la [interfaz de QGIS](../Module_1/es_qgis_start.md). Aquí, puede ver el código EPSG. EPSG son las siglas de European Petroleum Survey Group y se refiere a un sistema de códigos estandarizado para sistemas de referencia de coordenadas (SRC) y sus proyecciones cartográficas. Cada código EPSG (p.ej., EPSG:4326 para WGS84) identifica, de forma única, un SRC específico, lo que ayuda a garantizar la coherencia y la interoperabilidad de los datos geoespaciales entre diferentes plataformas y aplicaciones.
 
 - __Códigos EPSG:__ Se trata de identificadores numéricos asignados por la base de datos EPSG a sistemas de referencia de coordenadas específicos, por lo que son concisos e inequívocos (p.ej., EPSG:4326 para WGS84). Proporcionan una forma normalizada de hacer referencia a los SRC en diversas aplicaciones SIG.
 - __Nomenclatura del SRC:__ Suelen ser nombres descriptivos para los sistemas de referencia de coordenadas (p.ej., "WGS 84" o "NAD83"). Aunque los nombres pueden proporcionar información sobre el sistema utilizado, es posible que no sean únicos o universalmente reconocidos, lo que puede dar lugar a confusión sin el código EPSG que los acompaña.
@@ -58,10 +58,10 @@ Elija la proyección cartográfica en función de su área de interés. Existen 
 
 Observe las siguientes imágenes y preste atención a cómo los diferentes sistema de referencia de coordenadas cambian y distorsionan el mapamundi.
 
-:::{figure} /fig/world_mercator_tissots.png
+:::{figure} ../../../fig/world_mercator_tissots.png
 ---
 width: 500 px
-name: world_mercator_tissot
+name: es_world_mercator_tissot
 ---
 La proyección cartográfica de Mercator (EPSG:54004) (fuente: HeiGIT).
 :::
@@ -69,9 +69,9 @@ La proyección cartográfica de Mercator (EPSG:54004) (fuente: HeiGIT).
 Observe que la forma del círculo no cambia. Fuera de esto, podemos concluir que los ángulos permanecen iguales. Sin embargo, los círculos se hacen más grandes cuanto más se alejan del ecuador, y la distancia entre estos círculos cambia cuanto más se alejan del ecuador. Por lo tanto, podemos concluir que las distancias y los tamaños se distorsionan con la proyección cartográfica de Mercator. El punto fuerte de la proyección cartográfica de Mercator es que conserva los ángulos entre dos líneas. Podemos verlo porque los círculos permanecen perfectamente redondos cuanto más se alejan del ecuador.
 
 
-:::{figure} /fig/WGS_84_tissots.png
+:::{figure} ../../../fig/WGS_84_tissots.png
 ---
-name: WGS_84_tissots
+name: es_WGS_84_tissots
 width: 500 px
 ---
 Sistema Geodésico Mundial 1984 (EPSG:4326) (fuente: HeiGIT).
@@ -80,9 +80,9 @@ Sistema Geodésico Mundial 1984 (EPSG:4326) (fuente: HeiGIT).
 El WGS 84 es un SRC que consiste en un elipsoide que se asemeja mucho a la forma de la Tierra. En lugar de unidades métricas de medida, utiliza grados angulares (latitud y longitud). La forma de los círculos de Tissot no tiene distorsiones cerca del ecuador, pero se alarga en el eje Este-Oeste, cuanto más se aleja del ecuador. A diferencia de la proyección cartográfica de Mercator, no hay distorsión en la dirección Norte-Sur. Como los círculos se distorsionan, podemos deducir que este SRC distorsiona los ángulos.
 
 
-:::{figure} /fig/World_equidistant_cylindrical_tissots.png
+:::{figure} ../../../fig/World_equidistant_cylindrical_tissots.png
 ---
-name: World_equidistant_cylindrical_tissots
+name: es_World_equidistant_cylindrical_tissots
 width: 500 px
 ---
 Proyección cilíndrica equidistante mundial (EPSG:54002) (fuente: HeiGIT).
@@ -98,11 +98,11 @@ Esta tabla muestra una visión general sobre qué proyecciones cartográficas ut
 | Rotación | ✅ | ✅ | ❌ |
 | Zona | ❌ | ✅ | ✅ |
 
-Otra consideración muy importante a la hora de elegir el sistema de referencia de coordenadas es que, dependiendo del elipsoide y del método utilizado para proyectar, un mismo punto puede estar situado en lugares diferentes (véase {numref}`wrong_CRS`). En la figura siguiente, el mismo punto se codifica en 3 sistemas de referencia diferentes.
+Otra consideración muy importante a la hora de elegir el sistema de referencia de coordenadas es que, dependiendo del elipsoide y del método utilizado para proyectar, un mismo punto puede estar situado en lugares diferentes (véase {numref}`es_wrong_CRS`). En la figura siguiente, el mismo punto se codifica en 3 sistemas de referencia diferentes.
 
-:::{figure} /fig/wrong_CRS.png
+:::{figure} ../../../fig/wrong_CRS.png
 ---
-name: wrong_CRS
+name: es_wrong_CRS
 width: 750 px
 ---
 El mismo punto en tres sistemas de referencia diferentes (fuente: HeiGIT).
@@ -119,7 +119,7 @@ Existen dos tipos diferentes de sistemas de referencia de coordenadas: __geográ
    - __Ventajas__: Como utiliza una superficie plana, usted puede calcular distancias, áreas y ángulos con precisión.
    - __Desventajas__: Un determinado SRC proyectado suele estar optimizado para una región concreta. Utilizarlo fuera de su área prevista puede provocar distorsiones significativas en la distancia, el área y la forma.
 
-:::{figure} /fig/Problem_distance_geographic_coords.png
+:::{figure} ../../../fig/Problem_distance_geographic_coords.png
 ---
 name: problem_distance_geographic_coords
 width: 600 px
@@ -129,14 +129,14 @@ Una representación geográfica del globo terráqueo. La distancia entre los mer
 
 :::{caution}
 
-Al procesar los datos geográficos, el QGIS siempre utiliza las unidades de medida de la capa que está procesando. Esto significa que si desea calcular, por ejemplo, la distancia en kilómetros, la capa debe estar en un SRC métrico. Puede comprobar las unidades de medida de cualquier capa haciendo <kbd>clic con el botón derecho</kbd> sobre la capa en el panel de capas > `Properties` > `Information` > `Coordinate Reference System (CRS)`.
+Al procesar los datos geográficos, el QGIS siempre utiliza las unidades de medida de la capa que está procesando. Esto significa que si desea calcular, por ejemplo, la distancia en kilómetros, la capa debe estar en un SRC métrico. Puede comprobar las unidades de medida de cualquier capa haciendo <kbd>clic con el botón derecho</kbd> sobre la capa en el panel de capas > `Propriedades` > `Información` > `Sistema de referencia de coordenadas (SRC)`
 
 :::
 
 ### SRC local y mundial
 
 
-:::{figure} /fig/en_local_crs.png
+:::{figure} ../../../fig/en_local_crs.png
 ---
 width: 800px
 name: en_local_crs
@@ -162,9 +162,9 @@ Una de las primeras cosas que debe hacer al iniciar un nuevo proyecto QGIS es co
 
 
 1. Abrir un proyecto QGIS
-2. En la esquina inferior derecha de QGIS se encuentra el botón `EPSG`. El número que aparece junto a él es el código EPSG utilizado actualmente en el proyecto. Para ver más información o cambiar el SRC, haga clic en el botón `Current CRS`![](/fig/EPSG_Code.png).
-3. Se abrirá la ventana `Project Properties`. Aquí puede ver todos los códigos SRC/EPSG disponibles y sus propiedades.
-4. Para cambiar el código SRC/EPSG, seleccione el que desee utilizar y haga clic en `Apply`.
+2. En la esquina inferior derecha de QGIS se encuentra el botón `EPSG`. El número que aparece junto a él es el código EPSG utilizado actualmente en el proyecto. Para ver más información o cambiar el SRC, haga clic en el botón `SRC actual`![](../../../fig/EPSG_Code.png).
+3. Se abrirá la ventana `Propriedades del proyecto`. Aquí puede ver todos los códigos SRC/EPSG disponibles y sus propiedades.
+4. Para cambiar el código SRC/EPSG, seleccione el que desee utilizar y haga clic en `Aplicar`.
 
 
 :::{dropdown} Video: Cómo comprobar y cambiar el SRC en su proyecto QGIS
@@ -186,11 +186,11 @@ Lo primero que debe hacer al cargar una nueva capa o conjunto de datos en su pro
 
 #### Modificación de la proyección cartográfica de una capa vectorial
 
-1. Pestaña `Vector` -> `Data Management Tools` -> `Reproject Layer`
+1. Pestaña `Vectorial` → `Data Management Tools` → `Reproyectar capa`. 
 2. Seleccione el código SRC/EPSG de destino.
-3. Guarde el nuevo archivo con un clic en los tres puntos situados junto a `Reprojected`,
+3. Guarde el nuevo archivo con un clic en los tres puntos situados junto a `Reproyectada`,
    especifique el nombre del archivo y la ubicación donde desea guardarlo.
-5. Haga clic en `Run`
+5. Haga clic en `Ejecutar`.
 
 :::{dropdown} Video: Cómo cambiar el SRC de un vector una capa
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_vector.mp4"></video>
@@ -198,12 +198,12 @@ Lo primero que debe hacer al cargar una nueva capa o conjunto de datos en su pro
 
 #### Modificación de la proyección cartográfica de una capa ráster
 
-1. Pestaña `Raster` -> `Projections` -> `Warp (Reproject)`
-2. Seleccione el código SRC/EPSG de destino
-3. Seleccione el método de remuestreo
-4. Guarde el nuevo archivo haciendo clic en los tres puntos situados junto a `Reprojected`, especifique en
+1. Pestaña `Ráster` → `Projections` → `Combar (reproyectar)`.
+2. Seleccione el código SRC/EPSG de destino.
+3. Seleccione el método de remuestreo.
+4. Guarde el nuevo archivo haciendo clic en los tres puntos situados junto a `Reproyectada`, especifique en
    el nombre del archivo y la ubicación donde desea guardarlo.
-5. Haga clic en `Run`
+5. Haga clic en `Ejecutar`.
 
 :::{dropdown} Video: Cómo cambiar el SRC de una capa ráster
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_raster.mp4"></video>
@@ -263,9 +263,9 @@ Tómese un momento para poner a prueba lo que ha aprendido en este capítulo res
 
 :::{dropdown} Respuesta
 
-1. En la barra superior, navegue hasta el menú `Vector` → `Data Management Tools` → `Reproject Layer`
+1. En la barra superior, navegue hasta el menú `Vectorial` → `Data Management Tools` → `Reproyectar capa`
 2. En la ventana de parámetros, seleccione el SRC de destino (mediante la búsqueda del código EPSG o el nombre)
-3. Hacer clic en `Run`. Se añadirá una nueva capa llamada `Reprojected` al lienzo del mapa
+3. Hacer clic en `Ejecutar`. Se añadirá una nueva capa llamada `Reproyectada` al lienzo del mapa
 
 :::
 

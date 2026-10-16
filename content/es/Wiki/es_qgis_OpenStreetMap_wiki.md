@@ -7,15 +7,14 @@ El [sitio web Geofabrik](https://download.geofabrik.de/) ofrece descargas de dat
 ***Ejemplo***
 
 1. Vaya a __https://download.geofabrik.de/__ y navegue hasta Mauricio  
-   haciendo clic en `Africa` -> ` Mauritius`
+   haciendo clic en `Africa` → ` Mauritius`.
 2. En __Formatos más usados__ seleccione la opción `mauritius-latest-free.shp.zip`
    y descargue el archivo. Guárdelo en algún lugar de su computadora donde pueda encontrarlo
    y descomprímalo.
 3. Verifique el contenido de la carpeta. Existen muchos shapefiles diferentes,
    cada uno contiene un solo tipo de datos OSM. Toda la lista de capas y lo que
    incluyen puede consultarse [aquí](https://download.geofabrik.de/osm-data-in-gis-formats-free.pdf).
-
-4. Abra un nuevo proyecto QGIS y guárdelo en la carpeta `project` de la
+4. Abra un nuevo proyecto QGIS y guárdelo en la carpeta `proyecto` de la
    carpeta del ejercicio.
 5. Cargue el archivo `gis_osm_places_a_free_1.shp`. Esta capa de polígonos
    contiene los límites de las distintas entidades. Tómese un tiempo para explorar
@@ -26,19 +25,18 @@ El [sitio web Geofabrik](https://download.geofabrik.de/) ofrece descargas de dat
 7. Cargue el archivo `gis_osm_buildings_a_free_1.shp`. Esta capa de polígonos
    contiene todos los edificios de Mauricio mapeados en OSM. Tómese un tiempo
    para explorar la capa.
-8. Añada un mapa base por satélite utilizando el complemento [QuickMapServices](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_basemaps_wiki.html#basemaps-from-quickmapservices-plugin)
+8. Añada un mapa base por satélite utilizando el complemento [QuickMapServices](es_qgis_basemaps_wiki.md).
    para comprobar si hay edificios sin cartografiar.
 8. Cargue el archivo `gis_osm_landuse_a_free_1.shp`. Consulte el
     conjunto de datos y utilice la función de clasificación para obtener una mejor visión de conjunto.
-    * Haga clic derecho en la capa `gis_osm_landuse_a_free_1` en el panel `Layer Panel`
-          -> `Properties`. Se abrirá una nueva ventana con una sección de pestañas verticales
-          a la izquierda. Vaya a la pestaña `Symbology`.
-    * En la parte superior encontrará un menú desplegable. Despliéguelo y elija `Categorized`.
-          En `Value` seleccione “fclass” (abreviatura de _featureclass [clase de entidad]_).
-    * Más abajo, haga clic en `Classify`.  Verá todos los valores únicos
+    * Haga clic derecho en la capa `gis_osm_landuse_a_free_1` en el panel de capas → `Propriedades`. Se abrirá una nueva ventana con una sección de pestañas verticales
+          a la izquierda. Vaya a la pestaña `Simbología`.
+    * En la parte superior encontrará un menú desplegable. Despliéguelo y elija `Categorizado`.
+          En `Valor` seleccione “fclass” (abreviatura de _featureclass [clase de entidad]_).
+    * Más abajo, haga clic en `Clasificar`.  Verá todos los valores únicos
           de la columna “fclass”.  Puede ajustar los
           colores haciendo doble clic en una fila del campo central. Una vez que haya
-          terminado, haga clic en `Apply` y `OK` para cerrar la ventana de simbología.
+          terminado, haga clic en `Aplicar` y `Aceptar` para cerrar la ventana de simbología.
 
 Como puede ver, Geofabrik es ideal si desea obtener conjuntos de datos de OSM
 completos para países o regiones enteros.
@@ -52,7 +50,7 @@ Para encontrar los datos que busca, deberá formular una consulta de datos. Exis
    [Map features (Entidades del mapa)](https://wiki.openstreetmap.org/wiki/Map_features).
 2. [Taginfo](https://taginfo.openstreetmap.org/)
 
-Este método tiene la ventaja de que se pueden descargar los datos que se necesitan específicamente, pero debe saber formular las consultas. Para utilizar QuickOSM, debe [instalar el complemento de QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_plugins_wiki.html).
+Este método tiene la ventaja de que se pueden descargar los datos que se necesitan específicamente, pero debe saber formular las consultas. Para utilizar QuickOSM, debe [instalar el complemento de QGIS](es_qgis_plugins_wiki.md).
 
 ## Overpass turbo
 
@@ -70,22 +68,22 @@ Busque en la [wiki de OSM](https://wiki.openstreetmap.org/wiki/Tags) o en
 Utilice el asistente y escriba *amenity=school en Heidelberg* o redacte su
 propia consulta (por ejemplo, para su área de búsqueda): 
 **Asistente:**
-:::{figure} /fig/en_wizard_overpassturbo.png
+:::{figure} ../../../fig/en_wizard_overpassturbo.png
 ---
 height: 250px
 align: center
-name: en_wizard_overpassturbo_wiki
+name: es_wizard_overpassturbo_wiki
 ---
-Captura de pantalla del asistente en overpass turbo
+Captura de pantalla del asistente en overpass turbo.
 :::
 
-:::{figure} /fig/en_wizard_result.png
+:::{figure} ../../../fig/en_wizard_result.png
 ---
 height: 250px
 align: center
-name: en_wizard_result_wiki
+name: es_wizard_result_wiki
 ---
-Captura de pantalla del resultado
+Captura de pantalla del resultado.
 :::  
 **Consulta:**
 ```sql
@@ -121,13 +119,13 @@ Los resultados se pueden exportar de varias formas.
 Exportando los datos como GeoJSON se pueden importar posteriormente en el proyecto
 QGIS.
 
-:::{figure} /fig/en_overpass_turbo_data.png
+:::{figure} ../../../fig/en_overpass_turbo_data.png
 ---
 height: 250px
 align: center
-name: en_overpass_turbo_data_wiki
+name: es_overpass_turbo_data_wiki
 ---
-Captura de pantalla de cómo exportar datos en overpass turbo
+Captura de pantalla de cómo exportar datos en overpass turbo.
 :::
 
 ::::
@@ -135,13 +133,13 @@ Captura de pantalla de cómo exportar datos en overpass turbo
 ::::{tab-item} Mapa
 Al exportar la consulta como mapa, puede compartir su vista actual como enlace o imagen.
 
-:::{figure} /fig/en_overpass_turbo_map.png
+:::{figure} ../../../fig/en_overpass_turbo_map.png
 ---
 height: 150px
-name: en_overpass_turbo_map_wiki
+name: es_overpass_turbo_map_wiki
 align: center
 ---
-Captura de pantalla de cómo exportar el mapa en overpass turbo
+Captura de pantalla de cómo exportar el mapa en overpass turbo.
 :::
 ::::
 
@@ -149,13 +147,13 @@ Captura de pantalla de cómo exportar el mapa en overpass turbo
 Al exportar su consulta puede obtener el texto o convertirlo en un archivo OverpassXML o
 consulta con formato OverpassQL.
 
-:::{figure} /fig/en_overpass_turbo_query.png
+:::{figure} ../../../fig/en_overpass_turbo_query.png
 ---
 height: 250px
 align: center
-name: en_overpass_turbo_query_wiki
+name: es_overpass_turbo_query_wiki
 ---
-Captura de pantalla de cómo exportar una consulta en overpass turbo
+Captura de pantalla de cómo exportar una consulta en overpass turbo.
 :::
 ::::
 

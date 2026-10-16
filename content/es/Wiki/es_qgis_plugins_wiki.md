@@ -1,7 +1,7 @@
 (content:references:wiki:plugins)=
 # Complementos
 
-__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
 Existen muchas extensiones para QGIS, también llamadas complementos, que proporcionan funcionalidades adicionales. Si hay que llevar a cabo una tarea específica y QGIS no tiene la funcionalidad adecuada, busque un complemento. Puede buscarlo en Google o en la ventana del complemento.
 
@@ -13,7 +13,7 @@ No es necesario reinstalar los complementos para cada nuevo proyecto.
 
 ## Instalación de complementos
 
-Para instalar un complemento vaya a `Plugins` -> `Manage and Install Plugins…` -> `All` -> Buscar el complemento -> `Install Plugin`
+Para instalar un complemento vaya a `Complementos` → `Administrar e instalar complementos` → `Todos` → Buscar el complemento → `Instalar complemento`.
 
 
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_plugins.mp4"></video>
@@ -45,61 +45,61 @@ Debido a que a menudo no están optimizadas para la versión de QGIS utilizada, 
 
 ### Descargar el complemento Quick OSM
 
-Para descargar datos e importarlos a QGIS, el complemento **QuickOSM** es una buena opción. Primero es necesario instalarlo. Puede encontrarlo en la pestaña `Manage and Install Plugins`.
+Para descargar datos e importarlos a QGIS, el complemento **QuickOSM** es una buena opción. Primero es necesario instalarlo. Puede encontrarlo en la pestaña `Administrar e instalar complementos`.
 
 ::::{dropdown} Cómo descargar el complemento
 
-:::{figure} /fig/managa_install_plugins.png
+:::{figure} ../../../fig/managa_install_plugins.png
 ---
 width: 400px
 align: center
-name: managa_install_plugins_wiki
+name: es_manage_install_plugins_wiki
 ---
-Gestionar e instalar complementos
+Gestionar e instalar complementos.
 :::
 
-:::{figure} /fig/install_quickosm.png
+:::{figure} ../../../fig/install_quickosm.png
 ---
 width: 800px
-name: install_quickosm_wiki
+name: es_install_quickosm_wiki
 align: center
 ---
-Instalar QuickOSM
+Instalar QuickOSM.
 :::
 ::::
 
-Para iniciar el complemento recién instalado, haga clic en ![](fig/quickosmplugin.png) o en `vector` -> `QuickOSM`.
+Para iniciar el complemento recién instalado, haga clic en ![](fig/quickosmplugin.png) o en `Vectorial` → `QuickOSM` → `Consulta rápida`.
 
 Siga los pasos para obtener los datos:
 
 1. Seleccione una clave y un valor en la lista desplegable. Si no está seguro, consulte aquí: [taginfo.openstreetmap.org](https://taginfo.openstreetmap.org).
 
-:::{figure} /fig/key_value_quickosm.png
+:::{figure} ../../../fig/key_value_quickosm.png
 ---
 width: 800px
 align: center
-name: key_value_quickosm_wiki
+name: es_key_value_quickosm_wiki
 ---
-Elegir la clave y el valor en QuickOSM
+Elegir la clave y el valor en QuickOSM.
 :::
 
 2. Limite el área escribiendo el nombre de su área de interés.
 
-3. Despliegue la pestaña `Advanced`. Solo seleccione los tipos de datos que espera para minimizar la cantidad de errores.
+3. Despliegue la pestaña `Avanzado`. Solo seleccione los tipos de datos que espera para minimizar la cantidad de errores.
 
-:::{figure} /fig/quickosm_usage.png
+:::{figure} ../../../fig/quickosm_usage.png
 ---
 width: 800px
 align: center
 name: quickosm_usage_wiki
 ---
-Ejecutar el complemento QuickOSM
+Ejecutar el complemento QuickOSM.
 :::
 
-4. Haga clic en `Run query`.
+4. Haga clic en `Ejecutar consulta`.
 
 :::{dropdown} Cómo obtener datos para varias consultas
 
-Si desea obtener más datos en la misma área, puede agregar una consulta haciendo clic en el icono ![](fig/plus_quickosm.png). Tenga cuidado al elegir el operador lógico correcto `And` o `Or`. Si no está seguro, consulte la [Wiki](/content/es/Wiki/es_qgis_non_spatial_queries_wiki).
+Si desea obtener más datos en la misma área, puede agregar una consulta haciendo clic en el icono ![](../../../fig/plus_quickosm.png). Tenga cuidado al elegir el operador lógico correcto `AND` o `OR`. Si no está seguro, consulte la [Wiki](es_qgis_non_spatial_queries_wiki.md).
 
 :::

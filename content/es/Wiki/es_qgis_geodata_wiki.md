@@ -1,11 +1,11 @@
 # Datos geográficos generales
 
-__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
 ## Subsecciones:
-- [Tipos de datos geográficos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_geodata_types_wiki.html)
-- [Importación de datos geográficos en QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_import_geodata_wiki.html)
-- [OpenStreetMap (OSM) Data](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_OpenStreetMap_wiki.html)
-- [El concepto de capa](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_layer_concept_wiki.html)
-- [La tabla de atributos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_attribute_table_wiki.html)
-- [Digitalización](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_digitisation_wiki.html)
+- [Tipos de datos geográficos](es_qgis_geodata_types_wiki.md)
+- [Importación de datos geográficos en QGIS](es_qgis_import_geodata_wiki.md)
+- [OpenStreetMap (OSM) Data](es_qgis_OpenStreetMap_wiki.md)
+- [El concepto de capa](es_qgis_layer_concept_wiki.md)
+- [La tabla de atributos](es_qgis_attribute_table_wiki.md)
+- [Digitalización](es_qgis_digitisation_wiki.md)

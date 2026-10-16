@@ -1,6 +1,6 @@
 # Cómo planificar una capacitación en SIG
 
-__🔙[Volver a la página principal](/content/intro.md)__
+__🔙[Volver a la página principal](../es_intro.md)__
 
 Si estás impartiendo un curso de capacitación en QGIS por primera vez, hay varios aspectos prácticos que debes tener en cuenta. Este artículo ofrece experiencias prácticas que complementan el material de capacitación disponible en la plataforma, además de consejos sobre cómo planificar una sesión de formación.
 
@@ -36,7 +36,7 @@ Antes de planificar tu capacitación, debes tomar algunas decisiones básicas so
 
 ## 2. Planificación
 
-Puedes usar la estructura modular de la plataforma y los [niveles de habilidad](https://giscience.github.io/gis-training-resource-center/content/es_intro.html) como guía al planificar tu cronograma de capacitación. En el plano práctico, considera lo siguiente:
+Puedes usar la estructura modular de la plataforma y los [niveles de habilidad](../es_intro.md) como guía al planificar tu cronograma de capacitación. En el plano práctico, considera lo siguiente:
 
 - Define los objetivos de aprendizaje con detalle y comunícalos al inicio de la capacitación. Organizar el material es más fácil cuando sabes qué quieres lograr. Las personas participantes deben entender qué se espera que aprendan y en qué etapa del proceso se encuentran.
 - Al planificar la estructura de tu capacitación, puedes usar el modelo de referencia disponible, pero adáptalo según las necesidades específicas de tus participantes. Si es posible, utiliza materiales y ejercicios relacionados con su contexto profesional.
@@ -50,5 +50,5 @@ Durante y después de la capacitación, puedes fortalecer el proceso fomentando 
 
 - Motiva a las personas participantes a mantener la comunicación y el contacto después de la capacitación, para intercambiar ideas y experiencias. Así podrán apoyarse y motivarse mutuamente al compartir sus logros y aprendizajes.
 - Planifica una evaluación de la capacitación. Esto te ayudará a mejorar el proceso y a incorporar las perspectivas de quienes participaron.
-- Para medir el éxito de la capacitación y el progreso de aprendizaje, realiza una evaluación antes y después de la actividad. Puedes usar las [encuestas disponibles en esta plataforma](/content/Trainers_corner/es_how_to_assessment.md) como referencia. 
+- Para medir el éxito de la capacitación y el progreso de aprendizaje, realiza una evaluación antes y después de la actividad. Puedes usar las [encuestas disponibles en esta plataforma](es_how_to_assessment.md) como referencia. 
 

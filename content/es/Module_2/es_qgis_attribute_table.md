@@ -1,21 +1,21 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
 
 # Tabla de atributos
 
-Cada capa vectorial consta de entidades geométricas (puntos, líneas o polígonos) y de una __tabla de atributos__ ({numref}`en_vector_data_overview`). La tabla de atributos contiene información sobre cada entidad en la capa. La información se almacena en filas y columnas en la tabla de atributos. Cada __fila__ de la tabla representa una __entidad__, mientras que las __columnas__ almacenan __atributos__ de esa entidad. Puede utilizar la tabla de atributos para buscar, ordenar, filtrar, editar y seleccionar datos.
+Cada capa vectorial consta de entidades geométricas (puntos, líneas o polígonos) y de una __tabla de atributos__ ({numref}`es_vector_data_overview`). La tabla de atributos contiene información sobre cada entidad en la capa. La información se almacena en filas y columnas en la tabla de atributos. Cada __fila__ de la tabla representa una __entidad__, mientras que las __columnas__ almacenan __atributos__ de esa entidad. Puede utilizar la tabla de atributos para buscar, ordenar, filtrar, editar y seleccionar datos.
 
 
-:::{figure} /fig/en_vector_data_overview.png
+:::{figure} ../../../fig/en_vector_data_overview.png
 ---
 width: 600px
 align: center
-name: en_vector_data_overview
+name: es_vector_data_overview
 ---
 Visión general de los datos vectoriales (fuente: HeiGIT).
 :::
@@ -41,18 +41,18 @@ También puede utilizar el atajo <kbd>F6</kbd> (en algunos casos <kbd>Fn</kbd> +
 :::
 ::::
 
-1. Haga clic con el botón derecho en una capa del panel de capas Layers y seleccione `Open Attribute Table` ({numref}`en_attributetable_right_click`).
+1. Haga clic con el botón derecho en una capa del panel de capas Layers y seleccione `Abrir tabla de atributos` ({numref}`es_attributetable_right_click`).
 
-:::{figure} /fig/en_attributetable_right_click.png
+:::{figure} ../../../fig/en_attributetable_right_click.png
 ---
 height: 500px
 align: center
-name: en_attributetable_right_click
+name: es_attributetable_right_click
 ---
-Abrir la tabla de atributos haciendo clic derecho en QGIS 3.36
+Abrir la tabla de atributos haciendo clic derecho en QGIS 3.36.
 :::
 
-2. Seleccione una capa en el panel de capas Layers y haga clic en el símbolo de la tabla de atributos en la barra de herramientas ({numref}`en_attributetable_top_right`).
+2. Seleccione una capa en el panel de capas Layers y haga clic en el símbolo de la tabla de atributos en la barra de herramientas ({numref}`es_attributetable_top_right`).
 
 :::{note}
 
@@ -60,13 +60,13 @@ Si tiene varias capas, solo se abrirá la tabla de atributos de la capa actualme
 
 :::
 
-:::{figure} /fig/en_attributetable_top_right.png
+:::{figure} ../../../fig/en_attributetable_top_right.png
 ---
 height: 500px
 align: center
-name: en_attributetable_top_right
+name: es_attributetable_top_right
 ---
-Abrir la tabla de atributos en QGIS 3.36
+Abrir la tabla de atributos en QGIS 3.36.
 :::
 
 :::{dropdown} Botones de la tabla de atributos
@@ -74,30 +74,30 @@ Abrir la tabla de atributos en QGIS 3.36
 
 | Icono | Descripción | Propósito | Atajo |
 |---|---|-----|---|
-| ![](/fig/mActionToggleEditing.png) | __Conmutar el modo de edición__ | Habilitar las funciones de edición |          |
-| ![](/fig/mActionMultiEdit.png) | Conmutar el modo de edición múltiple | Actualizar múltiples campos de muchas entidades |  |
-| ![](/fig/mActionSaveEdits.png) | __Guardar ediciones__ | Guardar las modificaciones actuales | |
-| ![](/fig/mActionRefresh.png) | Volver a cargar la tabla | | |
-| ![](/fig/mActionNewTableRow.png) | Añadir objeto espacial | Añadir una nueva entidad sin geometría |  |
-| ![](/fig/mActionDeleteSelectedFeatures.png) | Borrar objetos seleccionados | Eliminar las entidades seleccionadas de la capa |  |
-| ![](/fig/mActionEditCut.png) | Cortar las entidades seleccionadas al portapapeles |  | <kbd>Ctrl</kbd> + <kbd>X</kbd> |
-| ![](/fig/mActionCopySelected.png) | Copiar las entidades seleccionadas al portapapeles |   | <kbd>Ctrl</kbd> + <kbd>C</kbd> |
-| ![](/fig/mActionEditPaste.png) | Pegar entidades desde el portapapeles | Insertar nuevas entidades a partir de las copiadas | <kbd>Ctrl</kbd> + <kbd>V</kbd> |
-| ![](/fig/mIconExpressionSelect.png) | Seleccionar entidades mediante una expresión | |
-| ![](/fig/mActionSelectAll.png) | Seleccionar todo | Seleccionar todas las entidades en la capa |       |
-| ![](/fig/mActionInvertSelection.png) | Invertir selección | Invertir la selección actual en la capa | <kbd>Ctrl</kbd> + <kbd>I</kbd> |
-| ![](/fig/mActionDeselectActiveLayer.png) | Deseleccionar todo | Deseleccionar todas las entidades en la capa actual | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> |
-| ![](/fig/mActionFilterMap.png) | Filtrar/seleccionar entidades mediante formulario | | <kbd>Ctrl</kbd> + <kbd>F</kbd> |
-| ![](/fig/mActionSelectedToTop.png) | Mover la selección hacia arriba | Mover las filas seleccionadas a la parte superior de la tabla |  |
-| ![](/fig/mActionPanToSelected.png) | Desplazar el mapa a las filas seleccionadas |  | <kbd>Ctrl</kbd> + <kbd>P</kbd> |
-| ![](/fig/mActionZoomToSelected.png) | Hacer zoom a las filas seleccionadas | | <kbd>Ctrl</kbd> + <kbd>J</kbd> |
-| ![](/fig/mActionNewAttribute.png) | Campo nuevo | Añadir un campo nuevo a la fuente de datos | <Kbd>Ctrl</kbd> + <kbd>W</kbd> |
-| ![](/fig/mActionDeleteAttribute.png) | Borrar campo | Eliminar un campo de la fuente de datos | |
-| ![](/fig/mActionEditTable.png) | Organizar columnas | Mostrar/ocultar campos de la tabla de atributos |
-| ![](/fig/mActionCalculateField.png) | __Abrir calculadora de campos__ | Actualizar el campo para muchas entidades en una fila | <kbd>Ctrl</kbd> + <kbd>M</kbd> |
-| ![](/fig/mActionConditionalFormatting.png) | Formato condicional | Habilitar dar formato a la tabla | |
-| ![](/fig/dock.png) | Acoplar la tabla de atributos | Permite acoplar o desacoplar la tabla de atributos |
-| ![](/fig/mAction.png) | Acciones | Lista las acciones relacionadas con la capa | |
+| ![](../../../fig/mActionToggleEditing.png) | __Conmutar el modo de edición__ | Habilitar las funciones de edición |          |
+| ![](../../../fig/mActionMultiEdit.png) | Conmutar el modo de edición múltiple | Actualizar múltiples campos de muchas entidades |  |
+| ![](../../../fig/mActionSaveEdits.png) | __Guardar ediciones__ | Guardar las modificaciones actuales | |
+| ![](../../../fig/mActionRefresh.png) | Volver a cargar la tabla | | |
+| ![](../../../fig/mActionNewTableRow.png) | Añadir objeto espacial | Añadir una nueva entidad sin geometría |  |
+| ![](../../../fig/mActionDeleteSelectedFeatures.png) | Borrar objetos seleccionados | Eliminar las entidades seleccionadas de la capa |  |
+| ![](../../../fig/mActionEditCut.png) | Cortar las entidades seleccionadas al portapapeles |  | <kbd>Ctrl</kbd> + <kbd>X</kbd> |
+| ![](../../../fig/mActionCopySelected.png) | Copiar las entidades seleccionadas al portapapeles |   | <kbd>Ctrl</kbd> + <kbd>C</kbd> |
+| ![](../../../fig/mActionEditPaste.png) | Pegar entidades desde el portapapeles | Insertar nuevas entidades a partir de las copiadas | <kbd>Ctrl</kbd> + <kbd>V</kbd> |
+| ![](../../../fig/mIconExpressionSelect.png) | Seleccionar entidades mediante una expresión | |
+| ![](../../../fig/mActionSelectAll.png) | Seleccionar todo | Seleccionar todas las entidades en la capa |       |
+| ![](../../../fig/mActionInvertSelection.png) | Invertir selección | Invertir la selección actual en la capa | <kbd>Ctrl</kbd> + <kbd>I</kbd> |
+| ![](../../../fig/mActionDeselectActiveLayer.png) | Deseleccionar todo | Deseleccionar todas las entidades en la capa actual | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> |
+| ![](../../../fig/mActionFilterMap.png) | Filtrar/seleccionar entidades mediante formulario | | <kbd>Ctrl</kbd> + <kbd>F</kbd> |
+| ![](../../../fig/mActionSelectedToTop.png) | Mover la selección hacia arriba | Mover las filas seleccionadas a la parte superior de la tabla |  |
+| ![](../../../fig/mActionPanToSelected.png) | Desplazar el mapa a las filas seleccionadas |  | <kbd>Ctrl</kbd> + <kbd>P</kbd> |
+| ![](../../../fig/mActionZoomToSelected.png) | Hacer zoom a las filas seleccionadas | | <kbd>Ctrl</kbd> + <kbd>J</kbd> |
+| ![](../../../fig/mActionNewAttribute.png) | Campo nuevo | Añadir un campo nuevo a la fuente de datos | <Kbd>Ctrl</kbd> + <kbd>W</kbd> |
+| ![](../../../fig/mActionDeleteAttribute.png) | Borrar campo | Eliminar un campo de la fuente de datos | |
+| ![](../../../fig/mActionEditTable.png) | Organizar columnas | Mostrar/ocultar campos de la tabla de atributos |
+| ![](../../../fig/mActionCalculateField.png) | __Abrir calculadora de campos__ | Actualizar el campo para muchas entidades en una fila | <kbd>Ctrl</kbd> + <kbd>M</kbd> |
+| ![](../../../fig/mActionConditionalFormatting.png) | Formato condicional | Habilitar dar formato a la tabla | |
+| ![](../../../fig/dock.png) | Acoplar la tabla de atributos | Permite acoplar o desacoplar la tabla de atributos |
+| ![](../../../fig/mAction.png) | Acciones | Lista las acciones relacionadas con la capa | |
 
 :::
 
@@ -112,10 +112,10 @@ Puede ordenar los datos de la tabla de atributos haciendo clic en el encabezado 
 :::::{grid} 2
 ::::{grid-item-card}
 
-:::{figure} /fig/en_ascending.png
+:::{figure} ../../../fig/en_ascending.png
 ---
 width: 300px
-name: en_ascending
+name: es_ascending
 ---
 Tabla de atributos ordenada de forma ascendente.
 :::
@@ -124,10 +124,10 @@ Tabla de atributos ordenada de forma ascendente.
 
 ::::{grid-item-card}
 
-:::{figure} /fig/en_descending.png
+:::{figure} ../../../fig/en_descending.png
 ---
 width: 300px
-name: en_descending
+name: es_descending
 ---
 Tabla de atributos ordenada de forma descendente.  
 :::
@@ -139,7 +139,7 @@ Tabla de atributos ordenada de forma descendente.
 
 Puede acercar el zoom a una entidad específica si necesita ubicarla geográficamente o si quiere verla más de cerca:
 
-1. __Zoom:__ Haga clic con el botón derecho en una entidad --> `Zoom To Feature`
+1. __Zoom:__ Haga clic con el botón derecho en una entidad → `Zoom a objeto`
 2. Cierre su tabla de atributos. El lienzo del mapa ahora mostrará la entidad seleccionada.
 
 :::{dropdown} Video: Acercar el zoom a una entidad
@@ -153,11 +153,11 @@ Puede acercar el zoom a una entidad específica si necesita ubicarla geográfica
 Para interactuar con las entidades de una capa, debe seleccionarlas. Una forma de seleccionar entidades es a través de la tabla de atributos.
 
 * __Selección:__ haga clic en las líneas de las entidades.
-* __Selección múltiple:__ para seleccionar varias entidades, presione `Ctrl` y seleccione `features`.
+* __Selección múltiple:__ para seleccionar varias entidades, presione <kbd>Ctrl</kbd> y seleccione objetos en la tabla.
 * __Mostrar solo las entidades seleccionadas:__ en la parte inferior izquierda de la tabla de atributos, abra
-  el menú desplegable y seleccione `Show selected features`. Para volver a mostrar todas
+  el menú desplegable (`Mostrar todos los objetos espaciales`) y seleccione `Mostrar objetos espaciales seleccionados`. Para volver a mostrar todas
   las entidades, haga clic en `Show all features`.
-* __Mostrar solo las entidades no seleccionadas:__ seleccione las entidades y haga clic en ![](/fig/mActionInvertSelection.png).
+* __Mostrar solo las entidades no seleccionadas:__ seleccione las entidades y haga clic en ![](../../../fig/mActionInvertSelection.png).
 
 :::{dropdown} Video: Seleccionar manualmente entidades en la tabla de atributos
 
@@ -169,22 +169,22 @@ Para interactuar con las entidades de una capa, debe seleccionarlas. Una forma d
 
 Ahora que ya sabe cómo seleccionar las entidades, puede hacer zoom a su área de
 interés. Para ello, puede hacer clic en el símbolo de la barra de herramientas o hacer clic derecho
-en la capa y seleccionar `Zoom to Selection` ({numref}`en_zoom_to_selection_1`).
+en la capa y seleccionar `Zoom a la Selección` ({numref}`es_zoom_to_selection_1`).
 
-:::{figure} /fig/en_zoom_to_selection_1.png
+:::{figure} ../../../fig/en_zoom_to_selection_1.png
 ---
 width: 800px
 align: center
-name: en_zoom_to_selection_1
+name: es_zoom_to_selection_1
 ---
 Captura de pantalla que muestra cómo hacer zoom a la selección en la parte superior.
 :::
 
-:::{figure} /fig/en_zoom_to_selection_2.png
+:::{figure} ../../../fig/en_zoom_to_selection_2.png
 ---
 width: 450px
 align: center
-name: en_zoom_to_selection_2
+name: es_zoom_to_selection_2
 ---
 Captura de pantalla que muestra cómo hacer zoom a la selección al dar clic derecho.
 :::
@@ -193,9 +193,9 @@ Captura de pantalla que muestra cómo hacer zoom a la selección al dar clic der
 
 Una vez que haya seleccionado sus datos, es posible que desee continuar solo con la
 selección. Puede guardar su selección como una nueva capa. Para ello, haga clic con el botón derecho en la
-capa - `Export` -> `Save only selected features`.
+capa - `Exportar` → `Guardar objetos seleccionados como...`.
 
-:::{figure} /fig/en_save_selection.png
+:::{figure} ../../../fig/en_save_selection.png
 ---
 height: 500px
 align: center
@@ -211,7 +211,7 @@ Ahora, puede elegir el formato, el nombre de la capa y el SRC.
 :::{tip}
 
 Recomendamos utilizar GeoPackage (.gpkg) en lugar de shapefile (.shp) en la mayoría de los casos.
-Si no tiene la certeza de cuál es el formato más adecuado, consulte la página sobre [tipos de datos geoespaciales](/content/es/Wiki/es_qgis_geodata_types_wiki.md) en la wiki.
+Si no tiene la certeza de cuál es el formato más adecuado, consulte la página sobre [tipos de datos geoespaciales](../Wiki/es_qgis_geodata_types_wiki.md) en la wiki.
 
 :::
 
@@ -236,7 +236,7 @@ La tabla de atributos es una representación tabular de los datos no espaciales 
 
 :::{dropdown} Respuesta
 - En QGIS hacer clic derecho sobre la capa en el panel de capas Layers y seleccionar abrir tabla de atributos.
-- También puede utilizar el botón Tabla de atributos ![](/fig/qgis_open_attribute_table.png) de la barra de herramientas.
+- También puede utilizar el botón Tabla de atributos ![](../../../fig/qgis_open_attribute_table.png) de la barra de herramientas.
 :::
 
 3. __¿Cómo hacer zoom a una entidad específica utilizando la tabla de atributos?__
@@ -258,15 +258,15 @@ __Mostrar solo las entidades seleccionadas o no seleccionadas:__
   - __Mostrar las entidades seleccionadas__
   - __Mostrar las entidades no seleccionadas__
   - Otros filtros: mostrar entidades visibles en el mapa, mostrar entidades editadas y nuevas, etc.
-- También se puede utilizar el botón ![](/fig/qgis_3.40_move_selection_to_top.png) `Move selected features to the top` de la barra de herramientas de la tabla de atributos.
+- También se puede utilizar el botón ![](../../../fig/qgis_3.40_move_selection_to_top.png) `Mover la selección arriba del todo` de la barra de herramientas de la tabla de atributos.
 :::
 
 5. __Una vez seleccionado un subconjunto de entidades, ¿cómo se guardan solo esas entidades en una nueva capa (o archivo)?__
 
 :::{dropdown} Respuesta
 1. <kbd>Clic derecho</kbd> en la capa donde están seleccionadas las entidades.
-2. Seleccionar `Export` → `Save Selected Features as...`. Se abrirá una nueva ventana.
-3. Elegir el formato de los datos, especificar la ubicación de almacenamiento y el nombre del archivo haciendo clic en ![](/fig/Three_points.png).
-4. Hacer clic en `Ok`.
+2. Seleccionar `Exportar` → `Guardar objetos seleccionados como...`. Se abrirá una nueva ventana.
+3. Elegir el formato de los datos, especificar la ubicación de almacenamiento y el nombre del archivo haciendo clic en ![](../../../fig/Three_points.png).
+4. Hacer clic en `Aceptar`.
 ::::
 

@@ -1,6 +1,6 @@
 # Agenda de capacitación y material de apoyo
 
-__🔙[Volver a la página principal](/content/intro.md)__
+__🔙[Volver a la página principal](../es_intro.md)__
 
 Una agenda es donde las personas participantes pueden encontrar toda la información relevante sobre el taller: qué necesitan llevar, qué necesitarán para tener éxito y cómo pueden prepararse por su cuenta antes, durante y después de la capacitación. Esta sección destacará los principales elementos y aspectos necesarios para crear una agenda detallada para la capacitación.
 
@@ -42,7 +42,7 @@ A continuación se presentan algunos ejemplos de esquemas gráficos de talleres 
 
 - https://miro.com/app/board/uXjVNi7BRoQ=/
 
-```{figure} ../../fig/en_miro_board_example.png
+```{figure} ../../../fig/en_miro_board_example.png
 ---
 name: ejemplo_Miro_board
 width: 760 px

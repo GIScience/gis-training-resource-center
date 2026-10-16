@@ -1,12 +1,12 @@
 # Conceptos básicos de QGIS
 
-__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
 ## Subsecciones:
-* [Instalación de QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_installation_wiki.html)
-* [Interfaz QGIS](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_interface_wiki.html)
-* [Proyectos y estructura de carpetas](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.html)
-* [Proyecciones](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_projections_wiki.html)
-* [Mapas base](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_basemaps_wiki.html)
-* [Complementos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_plugins_wiki.html)
-* [Fuentes de datos](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_data_sources_wiki.html)
+* [Instalación de QGIS](es_qgis_installation_wiki.md)
+* [Interfaz QGIS](es_qgis_interface_wiki.md)
+* [Proyectos y estructura de carpetas](es_qgis_projects_folder_structure_wiki.md)
+* [Proyecciones](es_qgis_projections_wiki.md)
+* [Mapas base](es_qgis_basemaps_wiki.md)
+* [Complementos](es_qgis_plugins_wiki.md)
+* [Fuentes de datos](es_qgis_data_sources_wiki.md)

@@ -1,7 +1,7 @@
 # Consultas no espaciales
 
 
-__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
 ## Selección manual
 
@@ -15,15 +15,15 @@ __🔙[Volver a la página de inicio](/content/es/es_intro.md)__
 
 ## Seleccionar por expresión
 
-La herramienta `Select by Expression` le permite crear una expresión para seleccionar las entidades de una capa. Por ejemplo, puede seleccionar atributos específicos o seleccionar entidades donde el valor de un atributo se encuentre en un rango específico.
+La herramienta `Seleccionar por expresión` le permite crear una expresión para seleccionar las entidades de una capa. Por ejemplo, puede seleccionar atributos específicos o seleccionar entidades donde el valor de un atributo se encuentre en un rango específico.
 
-1. Abra la tabla de atributos y seleccione la herramienta `Select by Expression`.
+1. Abra la tabla de atributos y seleccione la herramienta `Seleccionar por expresión`.
 
-![](/fig/en_select_features_expression.png)
+![](../../../fig/en_select_features_expression.png)
 
 2. Se abrirá el generador de expresiones.
 
-![](/fig/en_query_builder.PNG)
+![](../../../fig/en_query_builder.PNG)
 
 
 
@@ -63,7 +63,7 @@ También es posible agregar expresiones que encadenen diferentes requisitos. En 
 
 ### Guardar las entidades seleccionadas como un archivo nuevo
 
-- `Layer-Properties` -> `Export` -> `Save only selected features`
+- Clic derecho en la capa → `Exportar` → `Guardar objetos seleccionados como`.
 
 :::{dropdown} Ejemplo: Exportar las entidades seleccionadas como un archivo nuevo
 :open:

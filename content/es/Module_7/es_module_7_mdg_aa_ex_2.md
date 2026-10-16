@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -25,7 +25,7 @@ __Tipo de ejercicio de capacitación:__
 :::{grid-item-card}
 __Programa de ejercicios:__
 
-Este ejercicio forma parte del [Programa de ejercicios para el análisis de acción anticipatoria de ciclones en Madagascar.](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Exercise_tracks/es_mdg_aa_cyclones.html)
+Este ejercicio forma parte del [Programa de ejercicios para el análisis de acción anticipatoria de ciclones en Madagascar.](../Exercise_tracks/es_mdg_aa_cyclones.md)
 
 :::
 
@@ -43,12 +43,12 @@ __Duración estimada del ejercicio:__
 __Artículos relevantes en Wiki__
 ^^^
 
-* [Estadísticas zonales](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_raster_basic_wiki.html)
-* [Intersección](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_spatial_joins_wiki.html#join-attributes-by-location-summary)
-* [Proyecciones cartográficas](/content/es/Wiki/es_qgis_projections_wiki.md)
-* [Buffer](/content/es/Wiki/es_qgis_projections_wiki.md)
-* [Recorte](/content/es/Wiki/es_qgis_projections_wiki.md)
-* [Automatización](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_automation_wiki.html)
+* [Estadísticas zonales](../Wiki/es_qgis_raster_basic_wiki.md)
+* [Intersección](../../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Proyecciones cartográficas](../Wiki/es_qgis_projections_wiki.md)
+* [Buffer](../Wiki/es_qgis_projections_wiki.md)
+* [Recorte](../Wiki/es_qgis_projections_wiki.md)
+* [Automatización](../Wiki/es_qgis_automation_wiki.md)
 
 :::
 
@@ -74,7 +74,7 @@ El objetivo es preparar un flujo de trabajo de análisis y visualización de pri
 - Tómese el tiempo para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare una pizarra. Puede tratarse de una pizarra física, un rotafolio o una pizarra digital (p. ej., una pizarra virtual de Miro) en la que los participantes pueden añadir sus hallazgos y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos hayan instalado QGIS y, hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo realizar capacitaciones?](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Trainers_corner/es_how_to_training.html#how-to-do-trainings) para obtener algunos consejos generales para impartirlas.
+- Consulte [¿Cómo realizar capacitaciones?](../Trainers_corner/es_how_to_training.md) para obtener algunos consejos generales para impartirlas.
 
 ### Impartir la capacitación
 
@@ -150,7 +150,7 @@ En esta tarea, ayudarás a Aina a construir una versión sencilla de ese modelo 
 :::::{tab-set}
 
 ::::{tab-item} Entrada Trayectoria del ciclón
-:::{figure} /fig/fr_MDG_AA_model_input_cyclon_track.PNG
+:::{figure} ../../../fig/fr_MDG_AA_model_input_cyclon_track.PNG
 ---
 width: 600px
 align: center
@@ -160,7 +160,7 @@ Definición de la entrada del modelo: Trayectoria del ciclón
 ::::
 
 ::::{tab-item} Entrada de límites administrativos
-:::{figure} /fig/fr_MDG_AA_model_input_admin_bounderies.PNG
+:::{figure} ../../../fig/fr_MDG_AA_model_input_admin_bounderies.PNG
 ---
 width: 600px
 align: center
@@ -170,7 +170,7 @@ Definición de la entrada del modelo: Límites administrativos
 ::::
 
 ::::{tab-item} Ráster de población
-:::{figure} /fig/fr_MDG_AA_model_input_population_raster.PNG
+:::{figure} ../../../fig/fr_MDG_AA_model_input_population_raster.PNG
 ---
 width: 600px
 align: center
@@ -182,10 +182,9 @@ Definición de la entrada del modelo: Ráster de población
 
 **Resultado intermedio**
 
-:::{figure} /fig/fr_MDG_AA_intermediate_result_model_input.PNG
+:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_input.PNG
 ---
 width: 600px
-name: the_world_result
 align: center
 ---
 Résultat intermédiaire de la définition des données d'entrée du modèle
@@ -199,10 +198,9 @@ Résultat intermédiaire de la définition des données d'entrée du modèle
      - Configure **SRC de destino** a `EPSG:29738 – Madagascar / Laborde Grid`.
      - Configure la salida como **Salida del modelo** (deje el nombre de la salida **en blanco** ).
    - Haga clic en **Aceptar** para añadir el paso al modelo.
-:::{figure} /fig/fr_MDG_AA_model_reporject_cyclon_track.PNG
+:::{figure} ../../../fig/fr_MDG_AA_model_reporject_cyclon_track.PNG
 ---
 width: 600px
-name: the_world_result
 align: center
 ---
 Reproyectar la capa de trayectoria del ciclón a un sistema de referencia de coordenadas métrico (SRC/CRS) EPSG:29738
@@ -218,10 +216,9 @@ Reproyectar la capa de trayectoria del ciclón a un sistema de referencia de coo
      - Configure **Dissolver Resultado** en `Si`.
      - Configure la salida como **Salida del modelo** (deje el nombre de la salida **en blanco** ).
    - Haga clic en **Aceptar** para añadir el paso al modelo.
-:::{figure} /fig/fr_MDG_AA_model_buffer_cyclon_track.PNG
+:::{figure} ../../../fig/fr_MDG_AA_model_buffer_cyclon_track.PNG
 ---
 width: 600px
-name: the_world_result
 align: center
 ---
 Generar un buffer de la capa de ciclón reproyectada.
@@ -235,13 +232,12 @@ Generar un buffer de la capa de ciclón reproyectada.
      - Configure **SRC de destino** a `EPSG:4326 – WGS 84`.
      - Configure la salida como **Salida del modelo** (deje el nombre de la salida **en blanco** ).
    - Haga clic en **Aceptar** para añadir el paso al modelo.
-:::{figure} /fig/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG
+:::{figure} ../../../fig/fr_MDG_AA_model_reporject_bufferd_cyclon_track.PNG
 ---
 width: 600px
-name: the_world_result
 align: center
 ---
-Reprojectar el buffer al SRC EPSG:4326
+Reproyectar el buffer al SRC EPSG:4326
 :::
 8. **Recorte el ráster de población utilizando el área amortiguada.**
    - En el panel **Algorithms**, busque **Cortar ráster por capa de máscara**.
@@ -255,10 +251,9 @@ Reprojectar el buffer al SRC EPSG:4326
      trayectoria_harald_buffer
      ```
    - Haga clic en **Aceptar** para añadir el paso al modelo.
-   :::{figure} /fig/fr_MDG_AA_model_clip_pop_raster.PNG
+   :::{figure} ../../../fig/fr_MDG_AA_model_clip_pop_raster.PNG
 ---
 width: 600px
-name: the_world_result
 align: center
 ---
 Cortar la capa ráster de población para ajustarla al buffer del ciclón
@@ -275,11 +270,10 @@ Cortar la capa ráster de población para ajustarla al buffer del ciclón
       ```
       población_expuesta_suma
       ```
-   - Haga clic en `Ok` para añadir el paso al modelo.
-:::{figure} /fig/fr_MDG_AA_model_zonal_statistic_pop_admin2.PNG
+   - Haga clic en `Aceptar` para añadir el paso al modelo.
+:::{figure} ../../../fig/fr_MDG_AA_model_zonal_statistic_pop_admin2.PNG
 ---
 width: 600px
-name: the_world_result
 align: center
 ---
 Cálculo de la población expuesta a ciclones por distrito
@@ -287,7 +281,7 @@ Cálculo de la población expuesta a ciclones por distrito
 
 **Los resultados deberían ser parecidos a los siguientes:**
 
-:::{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms.PNG
+:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_algorythms.PNG
 ---
 width: 600px
 name: fr_MDG_AA_intermediate_result_model_algorythms
@@ -302,29 +296,27 @@ Su modelo debería verse así. Todos los algoritmos están correctamente conecta
    - Esto ayuda a garantizar que el modelo esté completo y no se rompa durante la ejecución.
 
 11. **Ejecute el modelo**
-   - Ejecute el modelo haciendo clic en `Modelo` -> `Ejectar Modelo`
+   - Ejecute el modelo haciendo clic en `Modelo` → `Ejecutar Modelo`
    - Configure **Límites administrativos** en `mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg`
    - Configure **Trayectoria del ciclón** en `example_Harald_2025_Track`
    - Configure **Ráster de población** en `MDG_WorldPop_2020_constrained.tif`
-   - Configure la salida del modelo **exposed_population_sum** en `Harald_Exposed_Population`y guárdela en `data` -> `output`
+   - Configure la salida del modelo **exposed_population_sum** en `Harald_Exposed_Population`y guárdela en `data` → `output`
 
 
 Ahora puede ejecutar este modelo cada vez que esté disponible una nueva trayectoria de ciclón.
 
-:::{figure} /fig/fr_MDG_AA_model_run_model_M7_e1_task2.PNG
+:::{figure} ../../../fig/fr_MDG_AA_model_run_model_M7_e1_task2.PNG
 ---
 width: 600px
-name: the_world_result
 align: center
 ---
 Para ejecutar el modelo, especifique la entrada tal y como se muestra en la imagen y defina el nombre de la casilla de salida.
 :::
 
 **Los resultados deberían ser parecidos a los siguientes:**
-:::{figure} /fig/fr_MDG_AA_intermediate_result_model_task1_basics.PNG
+:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_task1_basics.PNG
 ---
 width: 600px
-name: the_world_result
 align: center
 ---
 
@@ -339,21 +331,20 @@ align: center
    - Haga clic en **Aceptar** para guardar el cambio.
    - Esto permitirá que el modelo genere tanto los resultados de la población expuesta como la zona buffer de impacto del ciclón cuando se ejecute.
 
-:::{figure} /fig/fr_MDG_AA_model_output_buffer.PNG
+:::{figure} ../../../fig/fr_MDG_AA_model_output_buffer.PNG
 ---
 width: 600px
-name: the_world_result
 align: center
 ---
 :::
 
 13. **Ejecute el modelo otra vez**
-   - Ejecute el modelo haciendo clic en `Modelo` -> `Ejecutar Modelo`
+   - Ejecute el modelo haciendo clic en `Modelo` → `Ejecutar Modelo`
    - Configure **Límites administrativos** en `mdg_admbnda_adm2_BNGRC_OCHA_20181031.gpkg`
    - Configure **Trayectoria del ciclón** en `example_Harald_2025_Track`
    - Configure **Ráster de población** en `MDG_WorldPop_2020_constrained.tif`
-   - Configure la salida del modelo **cyclone_harald_buffer** en `cyclone_harald_buffer`y guárdela en `data` -> `output`
-   - Configure la salida del modelo **exposed_population_sum** en `Harald_Exposed_Population`y guárdela en `data` -> `output`
+   - Configure la salida del modelo **cyclone_harald_buffer** en `cyclone_harald_buffer`y guárdela en `data` → `output`
+   - Configure la salida del modelo **exposed_population_sum** en `Harald_Exposed_Population`y guárdela en `data` → `output`
 
 
 :::::{tab-set}
@@ -361,10 +352,9 @@ align: center
 
 ::::{tab-item} Buffer de salida del modelador gráfico
 
-:::{figure} /fig/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_graphic.PNG
+:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_graphic.PNG
 ---
 width: 600px
-name: the_world_result
 align: center
 ---
 :::
@@ -372,7 +362,7 @@ Definición de la entrada del modelo: Límites administrativos
 ::::
 
 ::::{tab-item} Ejecute modelo con salida de buffer
-:::{figure} /fig/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_model_exicution.PNG
+:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_task1_buffer_output_model_model_exicution.PNG
 ---
 width: 600px
 align: center
@@ -382,7 +372,7 @@ Definición de la entrada del modelo: Ráster de población
 ::::
 
 ::::{tab-item} Salida del modelo
-:::{figure} /fig/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG
+:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_algorythms_extended_buffer.PNG
 ---
 width: 600px
 align: center

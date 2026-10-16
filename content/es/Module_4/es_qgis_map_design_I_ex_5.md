@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -51,15 +51,15 @@ __Duración estimada del ejercicio:__
 __Artículos relevantes en Wiki__:
 ^^^
 
-* [Interfaz de QGIS](/content/es/Wiki/es_qgis_interface_wiki.md)
-* [Tipos de datos geoespaciales](/content/es/Wiki/es_qgis_geodata_types_wiki.md)
-* [Importación de datos geoespaciales en QGIS](/content/es/Wiki/es_qgis_import_geodata_wiki.md)
-* [Concepto de capa](/content/es/Wiki/es_qgis_layer_concept_wiki.md)
-* [Tabla de atributos](/content/es/Wiki/es_qgis_attribute_table_wiki.md)
-* [Función de tabla: añadir campo](/content/es/Wiki/es_qgis_table_functions_wiki.md)
-* [Clasificación de datos geoespaciales: categorizados](/content/es/Wiki/es_qgis_categorized_wiki.md)
-* [Clasificación de datos geoespaciales: graduados](/content/es/Wiki/es_qgis_graduated_wiki.md)
-* [Digitalización: datos de punto](https://giscience.github.io/gis-training-resource-center/spanish/content/es/Wiki/es_qgis_digitisation_wiki.html#add-geometries-to-a-layer)
+* [Interfaz de QGIS](../Wiki/es_qgis_interface_wiki.md)
+* [Tipos de datos geoespaciales](../Wiki/es_qgis_geodata_types_wiki.md)
+* [Importación de datos geoespaciales en QGIS](../Wiki/es_qgis_import_geodata_wiki.md)
+* [Concepto de capa](../Wiki/es_qgis_layer_concept_wiki.md)
+* [Tabla de atributos](../Wiki/es_qgis_attribute_table_wiki.md)
+* [Función de tabla: añadir campo](../Wiki/es_qgis_table_functions_wiki.md)
+* [Clasificación de datos geoespaciales: categorizados](../Wiki/es_qgis_categorised_wiki.md)
+* [Clasificación de datos geoespaciales: graduados](../Wiki/es_qgis_graduated_wiki.md)
+* [Digitalización: datos de punto](../Wiki/es_qgis_digitisation_wiki.md)
 
 :::
 
@@ -74,7 +74,7 @@ __Artículos relevantes en Wiki__:
 - Tómese el tiempo necesario para familiarizarse con el ejercicio y el material proporcionado.
 - Prepare una pizarra. Puede ser un pizarrón físico, un rotafolio o un pizarrón digital (p. ej., un pizarrón en Miro) donde los participantes puedan añadir sus resultados y preguntas.
 - Antes de comenzar el ejercicio, asegúrese de que todos hayan instalado QGIS y hayan descargado __y descomprimido__ la carpeta de datos.
-- Consulte [¿Cómo hacer capacitaciones?](/content/es/Trainers_corner/es_how_to_training.md) para obtener consejos generales sobre cómo impartirlas.
+- Consulte [¿Cómo hacer capacitaciones?](../Trainers_corner/es_how_to_training.md) para obtener consejos generales sobre cómo impartirlas.
 
 ### Impartir la capacitación
 

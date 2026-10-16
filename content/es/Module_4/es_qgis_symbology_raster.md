@@ -1,28 +1,28 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
 
 # Simbología para los datos ráster
 
-Como ya hemos aprendido, los datos ráster son básicamente una cuadrícula de píxeles con diferentes valores (numéricos). Como tal, no se puede aplicar estilo a la forma, ni relleno ni contorno a los datos ráster. Los datos ráster se visualizan con la asignación de una rampa de color al valor del píxel. QGIS ofrece varias opciones para visualizar los datos ráster. Por ejemplo, puede crear un relieve sombreado con un modelo digital de elevación (DEM). Este breve capítulo solo cubre los aspectos básicos de la visualización de datos ráster. Si desea obtener más información sobre datos ráster y cómo trabajar con capas ráster, consulte el [módulo 8](/content/es/Module_8/es_module_8_overview.md).
+Como ya hemos aprendido, los datos ráster son básicamente una cuadrícula de píxeles con diferentes valores (numéricos). Como tal, no se puede aplicar estilo a la forma, ni relleno ni contorno a los datos ráster. Los datos ráster se visualizan con la asignación de una rampa de color al valor del píxel. QGIS ofrece varias opciones para visualizar los datos ráster. Por ejemplo, puede crear un relieve sombreado con un modelo digital de elevación (DEM). Este breve capítulo solo cubre los aspectos básicos de la visualización de datos ráster. Si desea obtener más información sobre datos ráster y cómo trabajar con capas ráster, consulte el [módulo 8](../../en/Module_8/en_module_8_overview.md).
 
 ## Asignar un gradiente de color a datos ráster
 
 Para asignar un gradiente de color a los datos ráster:
 
-1. Abra el `styling panel` de la capa ráster.
-2. Navegue a `Symbology tab`.
-3. Por defecto, el esquema de color se configura en Singleband Gray (si solo tiene una banda de color en el conjunto de datos). Haga clic en `Singleband Gray` y cambie a `Singleband Pseudocolour`.
+1. Abra las `Propriedades` de la capa ráster.
+2. Navegue a la pesteña `Simbología`.
+3. Por defecto, el esquema de color se configura en Singleband Gray (si solo tiene una banda de color en el conjunto de datos). Haga clic en `Gris monobanda` y cambie a `Pseudocolor monobanda`.
 4. Haga clic en __la flecha situada a la derecha de la rampa de color__. Aquí puede elegir una rampa de color predefinida.
 5. Puede modificarla __con un clic en la rampa de color__.
 
-:::{figure} ../../fig/en_30.30.2_raster_data_colour_gradient.png
+:::{figure} ../../../fig/en_30.30.2_raster_data_colour_gradient.png
 ---
-name: en_30.30.2_raster_data_colour_gradient
+name: es_30.30.2_raster_data_colour_gradient
 width: 600px
 ---
 Selector de rampa de color en QGIS 3.36.
@@ -35,7 +35,7 @@ En el selector de rampa de color, puede ajustar paso a paso el color. En la part
 En algunos casos, la rampa de color deberá invertirse para facilitar la lectura del mapa:
 
 1. Haga clic en la __flecha junto a la rampa de color__ para abrir el menú desplegable.
-2. Haga clic en `Invert Colour Ramp`.
+2. Haga clic en `Invertir rampa de color`.
 
 ## Uso de mejores paletas de colores
 
@@ -45,9 +45,9 @@ Las rampas de color disponibles, por defecto, en QGIS son limitadas y no se ajus
 
 :::
 
-:::{figure} /fig/en_3.36_cpt-city_cat_1.png
+:::{figure} ../../../fig/en_3.36_cpt-city_cat_1.png
 ---
-name: en_3.36_cpt-city_cat_1
+name: es_3.36_cpt-city_cat_1
 width: 350 px
 ---
 Acceso al catálogo de colores.
@@ -55,21 +55,21 @@ Acceso al catálogo de colores.
 
 Para acceder al catálogo `cpt-city`,
 
-1. abra la pestaña de simbología de capas ráster y seleccione `Singleband Pseudocolor` como método de simbolización.
+1. abra la pestaña de simbología de capas ráster y seleccione `monobanda pseudocolor` como método de simbolización.
 2. Navegue hasta la flecha desplegable, situada junto a la rampa de color, esto abrirá un menú desplegable con diferentes rampas de color.
-3. Haga clic en `Create New Color Ramp`. Se abrirá un pequeño cuadro de diálogo.
-    :::{figure} /fig/en_3.36_cpt-city_cat_2.png
+3. Haga clic en `Crear nueva rampa de color`. Se abrirá un pequeño cuadro de diálogo.
+    :::{figure} ../../../fig/en_3.36_cpt-city_cat_2.png
     ---
-    name: en_3.36_cpt-city_cat_2
+    name: es_3.36_cpt-city_cat_2
     width: 200 px
     ---
     Selección del catálogo de rampas de colores
     :::
 4. Se abrirá una nueva ventana. Aquí encontrará una multitud de paletas de colores. Por ejemplo, para un modelo digital de elevación, puede seleccionar una rampa de color para topografía o en concreto, para modelos digitales de elevación.
 
-:::{figure} /fig/en_3.36_cpt-city_cat_3.png
+:::{figure} ../../../fig/en_3.36_cpt-city_cat_3.png
 ---
-name: en_3.36_cpt-city_cat_3
+name: es_3.36_cpt-city_cat_3
 width: 600 px
 ---
 El catálogo de rampas de colores cpt-city en QGIS 3.36
@@ -92,8 +92,8 @@ El catálogo de rampas de colores cpt-city en QGIS 3.36
 2. __¿Cuál es el estilo de representación, por defecto, para un ráster de banda única en QGIS, y qué estilo se suele cambiar para obtener una mejor visualización?__
 
 :::{dropdown} Respuesta
-- La representación, por defecto, para un ráster de una sola banda es __Singleband gray (escala de grises)__: los valores bajos son más oscuros y los valores altos, más claros.
-- Para conseguir una mejor visualización, es habitual cambiarlo a __Singleband pseudocolor__ (es decir, asignar una rampa de color) para que las variaciones en los valores sean más distintivos visualmente.
+- La representación, por defecto, para un ráster de una sola banda es __gris monobanda (escala de grises)__: los valores bajos son más oscuros y los valores altos, más claros.
+- Para conseguir una mejor visualización, es habitual cambiarlo a __pseudocolor monobanda__ (es decir, asignar una rampa de color) para que las variaciones en los valores sean más distintivos visualmente.
 :::
 
 3. __¿Qué es una “rampa de color” (o gradiente) en el contexto de la simbología ráster y cómo ayuda a interpretar los datos?__

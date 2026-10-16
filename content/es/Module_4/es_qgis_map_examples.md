@@ -1,7 +1,7 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/es_intro.html
+:link: ../es_intro.md
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -18,7 +18,7 @@ En este capítulo analizaremos los mapas bien diseñados y daremos ejemplos de c
 
 ### Ejemplo de mapa 1: Zonas y carreteras afectadas por las inundaciones en la región somalí de Etiopía
 
-:::{figure} ../../fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
+:::{figure} ../../../fig/ET_Somali_Humanitarian_Access_Flooded_Areas_11152023_A4.png
 ---
 name: Flood affected Areas in Somali
 width: 800 px
@@ -55,9 +55,9 @@ La combinación de colores de las carreteras permite leer el mapa de forma intui
 
 ### Ejemplo de mapa 2: Riesgo de inundaciones en la región de Ouham de la República Centroafricana
 
-:::{figure} ../../fig/REACH_CAF_Susceptibilite_inondations_CF32_Juillet2023_A3_FR.png
+:::{figure} ../../../fig/REACH_CAF_Susceptibilite_inondations_CF32_Juillet2023_A3_FR.png
 ---
-name: REACH Flooding Risk Ouhman Region, Central African Republic
+name: es_EACH Flooding Risk Ouhman Region, Central African Republic
 width: 720 px
 ---
 Riesgo de inundaciones en la región de Ouham de la República Centroafricana (fuente: REACH).
@@ -112,9 +112,9 @@ __¿Por qué es importante en el sistema de información geográfica (SIG)?__
 - Decisiones políticas: Si el análisis depende de límites arbitrarios, las decisiones (p. ej.:, la asignación de recursos) pueden basarse en resultados engañosos.
 - Estadísticas espaciales: Las correlaciones, las regresiones y otros análisis, que involucran datos geoespaciales, pueden estar sesgados debido al Problema de la Unidad de Área Modificable (MAUP).
 
-:::{figure} /fig/en_modifiable_areal_unit_problem_diagram.png
+:::{figure} ../../../fig/en_modifiable_areal_unit_problem_diagram.png
 ---
-name: en_modifiable_areal_unit_problem_diagram
+name: es_modifiable_areal_unit_problem_diagram
 width: 500 px
 ---
 Visualización del Problema de la Unidad de Área Modificable (MAUP): El mismo indicador representado en tres escalas diferentes (Fuente: Kitchin, Rob y Lauriault, Tracey y McArdle, Gavin. (2015). Knowing and governing cities through urban indicators, city benchmarking and real-time dashboards. Regional Studies, Regional Science. 2. 6-28. 10.1080/21681376.2014.983149. )

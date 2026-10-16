@@ -1,11 +1,11 @@
 # Operaciones básicas de ráster
 
 
-__🔙[Volver a la página de inicio](/content/es/es_intro.md)__
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
 ## Estadísticas zonales
 
-El `Zonal Statistics` permite la combinación de datos vectoriales y ráster.
+El `Estadísticas zonales` permite la combinación de datos vectoriales y ráster.
 
 Calcule las estadísticas de cada entidad vectorial sobre la base de la capa de ráster (véase el cuadro siguiente).
 

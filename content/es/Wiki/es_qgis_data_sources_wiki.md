@@ -5,7 +5,7 @@ En el capítulo de nuestro módulo, encontrará una extensa lista de posibles fu
 
 :::{card}
 :class-card: sd-text-center
-:link: https://giscience.github.io/gis-training-resource-center/spanish/content/es/Module_2/es_data_sources.html#overview-of-useful-data-repositories
+:link: ../../en/Module_2/en_data_sources.md#overview-of-useful-data-repositories
 __Módulo 2, capítulo 5: Fuentes de datos__
 
 :::
