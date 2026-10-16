@@ -20,11 +20,11 @@ on:
         default: "main"
         type: string
 
-      # dev, so translations show up in the preview book and go live with the next release.
+      # main, the branch all changes go to. Translations show up on the staging site after the merge.
       base_branch:
         description: "Branch to open the translation PR against"
         required: true
-        default: "dev"
+        default: "main"
         type: string
 
 permissions:
