@@ -334,6 +334,25 @@ jobs:
             exit 1
           fi
 
+      # Translated pages keep the English links (en_*.md). Point them at the translated page,
+      # or at the English page on the live site if it isn't translated yet.
+      - name: Rewrite links in translated Markdown
+        run: |
+          set -euo pipefail
+
+          python3 scripts/localisation/rewrite-translated-links.py \
+            --lang "${{ inputs.target_language }}" \
+            --content-root content \
+            | tee "$RUNNER_TEMP/rewrite-links.txt"
+
+          {
+            echo "## Link rewrite"
+            echo ""
+            echo '```'
+            cat "$RUNNER_TEMP/rewrite-links.txt"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - name: Write merge summary
         run: |
           set -euo pipefail
@@ -410,6 +429,7 @@ jobs:
             3. Pair the translated XLIFF with the original Markdown source in `content/`.
             4. Merge the translated XLIFF back to Markdown using Okapi/Tikal.
             5. Write translated Markdown files into `content/${{ inputs.target_language }}/`.
+            6. Rewrite links to English pages: to the translated page if it exists, otherwise to the English page on the live site (see the run summary).
 
             Target language: `${{ inputs.target_language }}`
 

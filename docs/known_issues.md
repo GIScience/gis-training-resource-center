@@ -22,12 +22,12 @@ These pages come from Crowdin. Most problems are the same ones already fixed in 
 source, so they'll mostly clear up with the next **Crowdin Download and Merge** run. Check
 again afterwards.
 
-| Problem | Spanish | French |
-|---|---|---|
-| "Home" and other card links pointing to `intro.md` / `es_intro.md` / `fr_intro.md` (no `:link-type: doc`) | 40 | 25 |
-| Card links without `.html` (only work on GitHub Pages) | – | 8 |
-| Links to pages that aren't translated yet (the `.md` is left in the link) | 14 | 3 |
-| Images and logos with wrong paths or old file names | 5 | 10 |
+| Problem                                                                                                   | Spanish | French |
+|-----------------------------------------------------------------------------------------------------------|---------|--------|
+| "Home" and other card links pointing to `intro.md` / `es_intro.md` / `fr_intro.md` (no `:link-type: doc`) | 40      | 25     |
+| Card links without `.html` (only work on GitHub Pages)                                                    | –       | 8      |
+| Links to pages that aren't translated yet (the `.md` is left in the link)                                 | 14      | 3      |
+| Images and logos with wrong paths or old file names                                                       | 5       | 10     |
 
 The image and logo fixes that still need to reach Spanish and French:
 
@@ -59,6 +59,11 @@ Also:
   - `GIS_AA/en_south_madagascar_drought_EAP.md`: `MDG_DROUGHT_EAP.qgz`
   - `Mobile_Data_collection/en_SMT_ex3_.md`: "EVCA Sketch Map Tool Slides"
   - `Mobile_Data_collection/en_SMT_ex5_.md`: prepared vectors ("here") and "XX Chapter"
+- **Retired Module 7 exercise 1:** the English page was removed, because its seven tasks are now
+  the Madagascar cyclones exercise track. The Module 7 pages link to the track instead. The old
+  address (`/en/Module_7/en_qgis_module_7_ex1.html`) now returns 404. The French and Spanish copies
+  (`fr_qgis_module_7_ex1.md`, `es_qgis_module_7_ex1.md`) and the link in `es_module_7_overview.md`
+  are still there and need removing or repointing.
 
 ## 3. External links
 
@@ -66,21 +71,20 @@ Also:
 
 These return 404:
 
-| File | Used on |
-|---|---|
-| `Module_7/Exercise_1.zip` | `Module_7/*_qgis_module_7_ex1.md` (en, es) |
-| `sketch_map_tool_training/Exercise_2.zip` | `en_SMT_ex2_.md`, `en_SMT_ex2_old.md` |
-| `sketch_map_tool_training/Sketch_Map_Tool_Exercise_6.zip` | `en_SMT_ex6_.md` |
-| `sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_1_marked_maps_results.zip` | `en_SMT_ex1_.md` |
+| File                                                                                       | Used on                                                                                                 |
+|--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| `Module_7/Exercise_1.zip`                                                                  | `Module_7/fr_qgis_module_7_ex1.md`, `es_qgis_module_7_ex1.md` (the English page was retired, see below) |
+| `sketch_map_tool_training/Exercise_2.zip`                                                  | `en_SMT_ex2_.md`, `en_SMT_ex2_old.md`                                                                   |
+| `sketch_map_tool_training/Sketch_Map_Tool_Exercise_6.zip`                                  | `en_SMT_ex6_.md`                                                                                        |
+| `sketch_map_tool_training/Sketch_Map_Tool_Exercise_2_and_3/Case_1_marked_maps_results.zip` | `en_SMT_ex1_.md`                                                                                        |
 
-### Videos that don't play (24)
+### Missing video
 
-The video address inside `src="..."` has a line break before `.mp4`
-(for example in `Module_4/en_module_4_operation_maps.md`). The video files are in `fig/`. The fix
-is to join the line. This affects Module 4 and 6 pages and the Spanish map-making and
-visualisation wiki pages.
+`fig/SRCS_trigger_export_image_pdf.mp4` (drought trigger Somalia) doesn't exist.
 
-Separately, `fig/SRCS_trigger_export_image_pdf.mp4` (drought trigger Somalia) doesn't exist.
+Some video addresses have a line break before `.mp4` (16 in English, 32 in Spanish, for example
+in `Module_4/en_module_4_operation_maps.md`). These videos still play, because browsers remove
+line breaks from URLs. This was checked on the live site on 25 September 2026.
 
 ### Links to old site addresses (11)
 
@@ -112,10 +116,11 @@ automated checks. Worth checking by hand:
 
 ## 4. Localisation pipeline
 
-- **Translated links are never rewritten.** The link-rewrite step only exists in
-  `crowdin-sync-and-merge.yml`, which isn't used, and it looks for
-  `rewrite_translated_links.py`, but the file is called `rewrite-translated-links.py`.
-  `crowdin-download-merge.yml` has no rewrite step.
+- **Translated pages lack the English section anchors.** Download and Merge now rewrites links
+  in translated pages (`scripts/localisation/rewrite-translated-links.py`). Links to a translated
+  page keep their `#anchor`, but most Spanish and French pages (for example the Spanish Wiki)
+  don't define the English anchor IDs, so those links open the top of the page. In the September
+  2026 test run: 108 Spanish and 15 French links. The script lists them in the run summary.
 - **Sources come from `main` on purpose, for now.** `crowdin-upload-sources.yml` uploads from
   `main`, so translators work on the published English content. `crowdin-download-merge.yml`
   merges on `main` too, but opens its PR against `dev`, so translations appear in the preview
@@ -138,3 +143,24 @@ automated checks. Worth checking by hand:
   - unknown directive options
 - **The MIT licence for the workflows** is only stated in the README. There's no licence file in
   `.github/workflows/`.
+
+## 6. Move from GitHub Pages to gis-training.heigit.org
+
+The `add-deployment` branch replaces the GitHub Pages workflows with a Dockerfile and a Jenkins
+pipeline. Every merge into `main` is deployed to a staging domain, and only releases (git tags)
+go live on [gis-training.heigit.org](https://gis-training.heigit.org). These places still point
+to the old GitHub Pages site:
+
+- **`README.md`:**
+  - The intro says a GitHub Action publishes the site to GitHub Pages whenever changes are
+    merged into `main`. It should describe the Jenkins build: `main` goes to staging, and
+    releases go live.
+  - The "Live site" link and the French and Spanish links (lines 5–6) and the Contribution Plan
+    link point to `giscience.github.io/gis-training-resource-center/...`.
+  - The branching workflow table says every merge into `main` redeploys the live site.
+- **`_launch_buttons.yml`:** the en/es/fr language buttons link to
+  `giscience.github.io/gis-training-resource-center/.../intro.html`. Once the new site is live,
+  these buttons would send readers back to the old site.
+- **Old GitHub Pages site:** once the workflows are removed, it stops updating but stays online.
+  Add a redirect to gis-training.heigit.org, or take it down, so old links and search results
+  don't lead to an outdated version.

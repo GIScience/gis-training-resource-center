@@ -30,6 +30,7 @@ Exit code is 1 when problems are found on pages in the table of contents.
 import argparse
 import os
 import posixpath
+import re
 import sys
 from collections import defaultdict
 from urllib.parse import unquote, urlsplit
@@ -129,9 +130,12 @@ def check(langs, include_orphans):
                     for t in article.find_all(["img", "source", "video", "iframe"], src=True)
                 ]
                 for kind, href in targets:
-                    reason = check_target(page, href.strip(), external)
+                    # Browsers drop tabs and line breaks from URLs, so a src split over
+                    # two lines still loads. Check the URL the browser would actually use.
+                    href = re.sub(r"[\t\r\n]", "", href).strip()
+                    reason = check_target(page, href, external)
                     if reason:
-                        problems.append((page, page_in_toc, kind, href.strip(), reason))
+                        problems.append((page, page_in_toc, kind, href, reason))
     return problems, external, pages
 
 
