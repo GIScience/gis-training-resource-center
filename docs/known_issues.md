@@ -143,3 +143,24 @@ automated checks. Worth checking by hand:
   - unknown directive options
 - **The MIT licence for the workflows** is only stated in the README. There's no licence file in
   `.github/workflows/`.
+
+## 6. Move from GitHub Pages to gis-training.heigit.org
+
+The `add-deployment` branch replaces the GitHub Pages workflows with a Dockerfile and a Jenkins
+pipeline. Every merge into `main` is deployed to a staging domain, and only releases (git tags)
+go live on [gis-training.heigit.org](https://gis-training.heigit.org). These places still point
+to the old GitHub Pages site:
+
+- **`README.md`:**
+  - The intro says a GitHub Action publishes the site to GitHub Pages whenever changes are
+    merged into `main`. It should describe the Jenkins build: `main` goes to staging, and
+    releases go live.
+  - The "Live site" link and the French and Spanish links (lines 5–6) and the Contribution Plan
+    link point to `giscience.github.io/gis-training-resource-center/...`.
+  - The branching workflow table says every merge into `main` redeploys the live site.
+- **`_launch_buttons.yml`:** the en/es/fr language buttons link to
+  `giscience.github.io/gis-training-resource-center/.../intro.html`. Once the new site is live,
+  these buttons would send readers back to the old site.
+- **Old GitHub Pages site:** once the workflows are removed, it stops updating but stays online.
+  Add a redirect to gis-training.heigit.org, or take it down, so old links and search results
+  don't lead to an outdated version.
