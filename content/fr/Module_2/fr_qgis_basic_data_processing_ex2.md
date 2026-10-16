@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../fr_intro.md 
+:link: ../fr_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -54,11 +55,11 @@ __Durée estimée de l’exercice :__
 __Articles wiki associés :__
 ^^^
 
-* [Interface QGIS](../../en/Wiki/en_qgis_interface_wiki.md)
-* [Import de données dans QGIS](../../en/Wiki/en_qgis_import_geodata_wiki.md)
-* [Concept de couche](../../en/Wiki/en_qgis_layer_concept_wiki.md)
-* [Table attributaire dans QGIS](../../en/Wiki/en_qgis_attribute_table_wiki.md)
-* [Projections](../../en/Wiki/en_qgis_projections_wiki.md)
+* [Interface QGIS](../Wiki/fr_qgis_interface_wiki.md)
+* [Import de données dans QGIS](../Wiki/fr_qgis_import_geodata_wiki.md)
+* [Concept de couche](../Wiki/fr_qgis_layer_concept_wiki.md)
+* [Table attributaire dans QGIS](../Wiki/fr_qgis_attribute_table_wiki.md)
+* [Projections](../Wiki/fr_qgis_projections_wiki.md)
 
 :::
 
@@ -72,7 +73,7 @@ __Préparation de la formation :__
 - Prenez le temps de vous familiariser avec l’exercice et les ressources fournies.
 - Préparez un tableau (physique ou numérique, par exemple Miro) permettant aux participants de noter leurs observations et questions. 
 - Avant de commencer, assurez-vous que tous les participants ont installé QGIS et ont téléchargé __et décompressé__ les données.
-- Consultez [Comment organiser une formation ?](../../en/Trainers_corner/en_how_to_training.md) pour des conseils généraux.
+- Consultez [Comment organiser une formation ?](../Trainers_corner/fr_how_to_training.md) pour des conseils généraux.
 
 __Conduite de la formation :__
 

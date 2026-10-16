@@ -118,7 +118,7 @@ Incorporar discusión y trabajo en grupo crea entornos dinámicos donde los part
 
 En el mundo acelerado de la ayuda humanitaria, el tiempo es un recurso valioso y asistir a quienes lo necesitan es prioritario. La motivación de los participantes depende de ver el valor que SIG aporta a su trabajo diario. Por ello, siempre se deben usar ejemplos, datos y ejercicios de la vida real. Los ejercicios abstractos son menos efectivos porque los participantes no comprenden la relevancia de los métodos y flujos de trabajo.
 
-La plataforma refleja esto. La sección principal sobre este tema es "[Módulo 1: Ejemplos de SIG utilizados por organizaciones humanitarias](../../en/Module_1/en_qgis_theory.md#examples-of-gis-used-by-humanitarian-organisations)".
+La plataforma refleja esto. La sección principal sobre este tema es "[Módulo 1: Ejemplos de SIG utilizados por organizaciones humanitarias](../Module_1/es_qgis_theory.md#examples-of-gis-used-by-humanitarian-organisations)".
 
 Casi todos los ejercicios se orientan a métodos, flujos de trabajo o productos estándar en el sector humanitario, como mapas generales o mapas de regiones afectadas.
 

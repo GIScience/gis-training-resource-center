@@ -11,7 +11,7 @@ Este artículo de la Wiki trata sobre las mejores prácticas para la creación y
 Una de las prácticas recomendadas consiste en utilizar una __estructura de carpetas estándar__ para los proyectos QGIS en la que se almacenen el proyecto, todos los datos geoespaciales utilizados, los archivos de estilo y la documentación.
 :::
 
-1. Copie la estructura de carpetas estándar para proyectos QGIS en el lugar donde desee almacenar todo el proyecto. Puede descargar la estructura de carpetas estándar [aqui](https://github.com/GIScience/gis-training-resource-center/blob/main/fig/GIS_Project_folder_template.zip).
+1. Copie la estructura de carpetas estándar para proyectos QGIS en el lugar donde desee almacenar todo el proyecto. Puede descargar la estructura de carpetas estándar [aqui](https://nexus.heigit.org/repository/gis-training-resource-center/Templates/GIS_project_folder_template.zip).
 
 2. Abra QGIS y cree un nuevo proyecto. Haga clic en `Proyecto` → `Nuevo proyecto`.
 
@@ -55,7 +55,7 @@ La estructura de carpetas estándar tiene dos ventajas principales:
 1. Al compartir toda la carpeta del proyecto, podemos garantizar que el proyecto se ejecutará sin problemas en una computadora diferente.
 2. La estructura de carpetas permite la correcta organización de los datos geoespaciales y favorece el funcionamiento estable de un proyecto en QGIS.
 
-La plantilla de estructura de carpetas puede descargarse [__aquí__](https://github.com/GIScience/gis-training-resource-center/blob/main/fig/GIS_Project_folder_template.zip).
+La plantilla de estructura de carpetas puede descargarse [__aquí__](https://nexus.heigit.org/repository/gis-training-resource-center/Templates/GIS_project_folder_template.zip).
 
 
 :::{figure} ../../../fig/Standard_project_folder_structure.drawio.svg

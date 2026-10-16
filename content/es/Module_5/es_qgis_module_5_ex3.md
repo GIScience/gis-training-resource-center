@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../es_intro.md
+:link: ../es_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -51,10 +52,10 @@ __Artículos relevantes en Wiki:__
 ^^^
 
 * [Importación de datos geoespaciales en QGIS](../Wiki/es_qgis_import_geodata_wiki.md)
-* [Intersección](../../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Intersección](../Wiki/es_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
 * [Estadísticas zonales](../Wiki/es_qgis_raster_basic_wiki.md)
-* [Unir atributos por ubicación (resumen](../../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
-* [Funciones de la tabla](../../en/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)
+* [Unir atributos por ubicación (resumen](../Wiki/es_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Funciones de la tabla](../Wiki/es_qgis_attribute_table_wiki.md#attribute-table-data-editing)
 
 :::
 
@@ -232,7 +233,7 @@ align: center
   :::
 
 ::::{Warning}
-Recuerde que debe copiar todos los componentes del [shapefile](../../en/Wiki/en_qgis_geodata_types_wiki.md#vector-data) correspondiente. Lo más probable es que tenga 5 componentes: .cpg, .dbf, .prj, .shp y .shx.
+Recuerde que debe copiar todos los componentes del [shapefile](../Wiki/es_qgis_geodata_types_wiki.md#vector-data) correspondiente. Lo más probable es que tenga 5 componentes: .cpg, .dbf, .prj, .shp y .shx.
 ::::
 
 :::{figure} ../../../fig/IPC_zip.PNG
@@ -261,9 +262,9 @@ __Propósito:__ En este paso, todos los datos necesarios se cargarán en un proy
 
 __Herramienta:__ No se necesitan herramientas específicas, solo QGIS.
 
-1. Abra QGIS y cree un [nuevo proyecto](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Proyecto` → `Nuevo`
+1. Abra QGIS y cree un [nuevo proyecto](../Wiki/es_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Proyecto` → `Nuevo`
 2. Una vez creado el proyecto, guárdelo en la carpeta que creó en el paso 1 (por ejemplo, 2022_05). Para ello, haga clic en `Proyecto` → `Guardar como...` y vaya hasta la carpeta. Asigne al proyecto el mismo nombre que la carpeta que ha creado (por ejemplo, 2022_05). A continuación, haga clic en `Guardar`
-3. Cargue todos los datos de entrada en QGIS mediante [arrastrar y soltar](../../en/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop). Haga clic en `Proyecto` → `Guardar`
+3. Cargue todos los datos de entrada en QGIS mediante [arrastrar y soltar](../Wiki/es_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop). Haga clic en `Proyecto` → `Guardar`
   * Desde la carpeta creada en el paso 1
     * ML1
   * En la carpeta `Fixed_data`:
@@ -277,7 +278,7 @@ __Resultado:__ Proyecto QGIS con todos los datos necesarios listos para ser anal
 __Propósito:__ El objetivo es recibir capas de polígonos que compartan tanto los bordes como los atributos de ambas capas de entrada.
 
 
-__Herramienta:__ [`Intersection`](../../en/Wiki/en_qgis_geoprocessing_wiki.md#intersection)
+__Herramienta:__ [`Intersection`](../Wiki/es_qgis_geoprocessing_wiki.md#intersection)
 
 
 ::::::{list-table}
@@ -286,7 +287,7 @@ __Herramienta:__ [`Intersection`](../../en/Wiki/en_qgis_geoprocessing_wiki.md#in
 
 * - Instrucciones
   - Captura de pantalla de la ventana Intersección
-* - 1. Haga clic en `Vectorial` → `Geoprocessing Tools` → [`Intersección`](../../en/Wiki/en_qgis_geoprocessing_wiki.md#intersection)
+* - 1. Haga clic en `Vectorial` → `Geoprocessing Tools` → [`Intersección`](../Wiki/es_qgis_geoprocessing_wiki.md#intersection)
     2. `Capa de entrada`: ML 1
     3. `Capa de superposición`: district_pop_sum
     4. En `Intersección` haga clic en los tres puntos ![](../../../fig/Three_points.png) → `Guardar a archivo` y vaya hasta su carpeta de seguimiento [Año_Mes]. Asigne a la salida el nombre "ML1_Intersección" y haga clic en `Guardar`
@@ -316,7 +317,7 @@ La capa resultante puede tener más filas que las capas originales.
 __Propósito:__ Aquí calculamos la población en cada polígono de la capa de intersección del paso 4.
 
 
-__Herramienta:__ [Estadísticas de zona`](../../en/Wiki/en_qgis_raster_basic_wiki.md#zonal-statistics)
+__Herramienta:__ [Estadísticas de zona`](../Wiki/es_qgis_raster_basic_wiki.md#zonal-statistics)
 
 ::::::{list-table}
 :header-rows: 1
@@ -324,7 +325,7 @@ __Herramienta:__ [Estadísticas de zona`](../../en/Wiki/en_qgis_raster_basic_wik
 
 * - Instrucciones
   - Captura de pantalla de la ventana de estadísticas zonales
-* - 1. En la Caja de herramientas de Procesos → Buscar [`Estadísticas de zona`](../../en/Wiki/en_qgis_raster_basic_wiki.md#zonal-statistics)
+* - 1. En la Caja de herramientas de Procesos → Buscar [`Estadísticas de zona`](../Wiki/es_qgis_raster_basic_wiki.md#zonal-statistics)
     * Consejo: Si la página `Caja de herramientas de Procesos` no está abierta, haga clic en `Procesos` → `Caja de herramientas`
     2. `Capa de entrada`: "ML1_Intersection"
     3. `Capa ráster`: "som_ppp_2020_UNadj_constrained.tif"
@@ -351,7 +352,7 @@ __Resultado:__ El resultado debería ser la "ML1_zonal_statistic" como capa de p
 ### Paso 6: Ponderación de la población en función de la fase IPC
 
 
-__Propósito:__ La finalidad de este paso es la ponderación de la población en las cinco fases de la IPC, tal como se describe en [IPC Data](../../en/GIS_AA/en_qgis_drought_trigger_somalia.md#ipc-population-weighted-index).
+__Propósito:__ La finalidad de este paso es la ponderación de la población en las cinco fases de la IPC, tal como se describe en [IPC Data](../GIS_AA/es_qgis_drought_trigger_somalia.md#ipc-population-weighted-index).
 
 :::{Note}
 El Índice IPC trata a los distritos de baja población igual que a los de alta población, garantizando que los distritos pequeños con alta inseguridad alimentaria no estén subrepresentados.
@@ -375,10 +376,10 @@ Donde las ponderaciones se definen como:
 
 El índice IPC trata a los distritos con poca población de la misma manera que a los distritos con alta población. No se produce una subrepresentación de la alta inseguridad alimentaria de los distritos pequeños.
 :::
-__Herramienta:__ [`Calculadora de campo`](../../en/Wiki/en_qgis_table_functions_wiki.md#calculate-field)
+__Herramienta:__ [`Calculadora de campo`](../Wiki/es_qgis_table_functions_wiki.md#calculate-field)
 
 
-1. Haga clic con el botón derecho en la capa "ML1_zonal_statistic" → `Abrir tabla de atributos` → haga clic en [`Calculadora de campo`](../../en/Wiki/en_qgis_table_functions_wiki.md#calculate-field) ![](../../../fig/mActionCalculateField.png) para abrir la calculadora de campos
+1. Haga clic con el botón derecho en la capa "ML1_zonal_statistic" → `Abrir tabla de atributos` → haga clic en [`Calculadora de campo`](../Wiki/es_qgis_table_functions_wiki.md#calculate-field) ![](../../../fig/mActionCalculateField.png) para abrir la calculadora de campos
 2. Verifique `Crear un nuevo campo`
 3. `Nombre del campo de salida`: Nombre la nueva columna “pop_suma_ponderada”
 4. `Tipo del campo de salida`: Número decimal (real)
@@ -395,16 +396,16 @@ ELSE "_sum"
 
 END
 ```
-6. Cuando haya terminado, haga clic en ![](../../../fig/mActionSaveEdits.png) para guardar sus ediciones y desactive el modo de edición haciendo clic de nuevo en ![](../../../fig/mActionToggleEditing.png)([Wiki Video](../../en/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)).
+6. Cuando haya terminado, haga clic en ![](../../../fig/mActionSaveEdits.png) para guardar sus ediciones y desactive el modo de edición haciendo clic de nuevo en ![](../../../fig/mActionToggleEditing.png)([Wiki Video](../Wiki/es_qgis_attribute_table_wiki.md#attribute-table-data-editing)).
 
 ## Paso 7: Cálculo de la proporción de población por polígono de intersección
 
-__Propósito:__ En este paso, calculamos el [Índice IPC ponderado por la población](../../en/GIS_AA/en_qgis_drought_trigger_somalia.md#ipc-population-weighted-index) para cada pequeña parte de la capa de polígonos.
+__Propósito:__ En este paso, calculamos el [Índice IPC ponderado por la población](../GIS_AA/es_qgis_drought_trigger_somalia.md#ipc-population-weighted-index) para cada pequeña parte de la capa de polígonos.
 
 
-__Herramienta:__[`Calculadora de campo`](../../en/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)
+__Herramienta:__[`Calculadora de campo`](../Wiki/es_qgis_attribute_table_wiki.md#attribute-table-data-editing)
 
-1. Haga clic con el botón derecho en la capa "ML1_zonal_statistic" → `Abrir tabla de atributos` → haga clic en [`Calculadora de campo`](../../en/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing) ![](../../../fig/mActionCalculateField.png) para abrir la calculadora de campos
+1. Haga clic con el botón derecho en la capa "ML1_zonal_statistic" → `Abrir tabla de atributos` → haga clic en [`Calculadora de campo`](../Wiki/es_qgis_attribute_table_wiki.md#attribute-table-data-editing) ![](../../../fig/mActionCalculateField.png) para abrir la calculadora de campos
 2. Verifique `Crear un campo nuevo`
 3. `Nombre del campo de salida `: Nombre la nueva columna “Index_per_IPCPolygon_ML1”
 4. `Tipo del campo de salida`: Número decimal (real)
@@ -471,9 +472,9 @@ __Resultado:__ Como resultado, su capa "ML1_IPC_Index" debería tener la columna
 
 __Propósito:__ El objetivo de este paso es obtener una visión general rápida de la posible activación del desencadenante sin tener que revisar los datos reales. En su lugar, tendremos una columna binaria con valores trigger = sí o trigger=no.
 
-__Herramienta:__ [`Calculadora de campo`](../../en/Wiki/en_qgis_table_functions_wiki.md#calculate-field)
+__Herramienta:__ [`Calculadora de campo`](../Wiki/es_qgis_table_functions_wiki.md#calculate-field)
 
-1. Haga clic con el botón derecho en la capa "ML1_IPC_Index" → `Abrir tabla de atributos` → haga clic en [`Calculadora de campo`](../../en/Wiki/en_qgis_table_functions_wiki.md#calculate-field) ![](../../../fig/mActionCalculateField.png) para abrir la calculadora de campos
+1. Haga clic con el botón derecho en la capa "ML1_IPC_Index" → `Abrir tabla de atributos` → haga clic en [`Calculadora de campo`](../Wiki/es_qgis_table_functions_wiki.md#calculate-field) ![](../../../fig/mActionCalculateField.png) para abrir la calculadora de campos
 2. Verifique `Crear un campo nuevo`
 3. `Nombre del campo de salida`: Nombre la nueva columna "Activación_desencadenante".
 4. `Tipo del campo de salida`: Texto (cadena).
@@ -517,7 +518,7 @@ align: center
 
 __Propósito:__ Definición de cómo se representan visualmente las entidades en el mapa.
 
-__Herramienta:__ [Simbología](../../en/Module_4/en_qgis_styling_vector_data.md#symbology-for-vector-data)
+__Herramienta:__ [Simbología](../Module_4/es_qgis_styling_vector_data.md#symbology-for-vector-data)
 
 __Activación del desencadenante__
 

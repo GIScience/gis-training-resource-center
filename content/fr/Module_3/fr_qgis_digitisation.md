@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../fr_intro.md 
+:link: ../fr_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -100,7 +101,7 @@ Pour des procédures de numérisation plus complexes, vous utiliserez la barre d
 | Outil                                                                                                        | Fonction                               | Outil                                                                                                                              | Fonction                  |
 |-------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|--------------------------|
 | ![](../../../fig/cad.png)                                                                                           | Activer les outils de numérisation avancée      |                                                                                                                                   |                          |
-| ![](../../../fig/mActionMoveFeature-1.png)![](../../../fig/mActionMoveFeatureLine.png)![](../../../fig/mActionMoveFeaturePoint.png) | Déplacer des entités                       | ![Alt text](../../../fig/mActionMoveFeatureCopy.png) ![](../../../fig/mActionMoveFeatureCopyLine.png) ![](../../../fig/mActionMoveFeatureCopyPoint-2.png) | Copier et déplacer des entités |
+| ![](../../../fig/mActionMoveFeature.png)![](../../../fig/mActionMoveFeatureLine.png)![](../../../fig/mActionMoveFeaturePoint.png) | Déplacer des entités                       | ![Alt text](../../../fig/mActionMoveFeatureCopy.png) ![](../../../fig/mActionMoveFeatureCopyLine.png) ![](../../../fig/mActionMoveFeatureCopyPoint.png) | Copier et déplacer des entités |
 | ![Alt text](../../../fig/mActionRotateFeature.png)                                                                  | Faire pivoter des entités                     | ![Alt text](../../../fig/mActionSimplify.png)                                                                                             | Simplifier une entité         |
 | ![Alt text](../../../fig/mActionScaleFeature.png)                                                                   | Mettre à l’échelle une entité                         |                                                                                                                                   |
 | ![Alt text](../../../fig/mActionAddRing.png)                                                                        | Ajouter un anneau                              | ![Alt text](../../../fig/mActionAddPart.png)                                                                                              | Ajouter une partie                 |
@@ -223,7 +224,7 @@ Essayez de numériser les branches RCRC de votre pays en suivant les étapes ci-
 :::
 
 1. Créez un nouveau jeu de données de points.
-2. Ajoutez un [basemap](../../en/Module_2/en_qgis_basemap.md) (OSM ou Bing Aerial, par exemple).
+2. Ajoutez un [basemap](../Module_2/fr_qgis_basemap.md) (OSM ou Bing Aerial, par exemple).
 3. Recherchez les branches RCRC de votre pays sur Google Maps.
 4. Une fois les branches localisées, faites un clic droit sur une branche dans Google Maps et cliquez sur les coordonnées. Elles seront copiées dans votre presse-papiers.
 5. Collez les coordonnées dans la barre de recherche en bas à gauche de la fenêtre QGIS. Sélectionnez l’option pour naviguer vers les coordonnées. L’emplacement sera marqué par un point rouge.
@@ -316,7 +317,7 @@ Notez que cela n’est possible __avant__ d’enregistrer les modifications.
 
 1. Sélectionnez la couche que vous souhaitez modifier.
 2. Accédez à la barre d’outils de numérisation et cliquez sur ![](../../../fig/mActionToggleEditing.png) `Toggle Editing`. 
-3. Cliquez sur ![](../../../fig/mActionSelectRectangle.png) et sélectionnez l’entité que vous souhaitez supprimer (voir le [wiki](../../en/Wiki/en_qgis_spatial_queries_wiki.md#manual-selection)).
+3. Cliquez sur ![](../../../fig/mActionSelectRectangle.png) et sélectionnez l’entité que vous souhaitez supprimer (voir le [wiki](../Wiki/fr_qgis_spatial_queries_wiki.md#manual-selection)).
 4. Une fois les entités sélectionnées, cliquez sur ![](../../../fig/mActionDeleteSelectedFeatures.png) pour les supprimer.
 5. Une fois les modifications terminées, cliquez sur ![](../../../fig/mActionSaveEdits.png) pour enregistrer vos modifications.
 6. Cliquez à nouveau sur ![](../../../fig/mActionToggleEditing.png) pour quitter le mode édition.

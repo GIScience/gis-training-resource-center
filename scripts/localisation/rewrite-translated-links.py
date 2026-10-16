@@ -4,10 +4,13 @@
 Crowdin translations keep the links of the English source, for example
 `../Wiki/en_qgis_digitisation_wiki.md#adding-geometries-to-a-layer`. Inside the French or
 Spanish book that file doesn't exist, and links to another book (`../../en/...md`) render
-as plain text. For every text link and card link to an English page, this script:
+as plain text. For every text link and card link to an English page, this script points it
+at the translated page (`fr_...md` / `es_...md`), in the same folder as the English page.
+If that page isn't translated yet, the link starts working as soon as it is.
 
-1. points it at the translated page (`fr_...md` / `es_...md`) if that exists, or
-2. points it at the English page on the live site (full URL), so it still works.
+Language switch links ("English version" on a translated page) stay English. On cards they
+become relative links to the English HTML page (`../../en/...html`); text links point at the
+English page on the live site (full URL).
 
 Images, downloads and external links are left alone. Running it twice changes nothing.
 
@@ -17,6 +20,7 @@ usage: python scripts/localisation/rewrite-translated-links.py --lang fr [--cont
 from pathlib import Path
 import argparse
 import os
+import posixpath
 import re
 import sys
 
@@ -30,6 +34,11 @@ CARD_LINK = re.compile(r"^(\s*):link:[ \t]*(\S+)[ \t]*$", re.M)
 LINK_TYPE_DOC = re.compile(r"^\s*:link-type:\s*doc\s*$")
 
 
+def stem_of(name: str) -> str:
+    """Page name without the language prefix: en_qgis_x.md -> qgis_x.md"""
+    return name[len("en_"):] if name.startswith("en_") else name
+
+
 class Rewriter:
     def __init__(self, content_root: Path, lang: str, site_url: str):
         self.content_root = content_root.resolve()
@@ -37,7 +46,8 @@ class Rewriter:
         self.book_root = self.content_root / lang
         self.lang = lang
         self.site_url = site_url.rstrip("/")
-        self.counts = {"translated": 0, "english": 0, "card": 0}
+        self.counts = {"translated": 0, "untranslated": 0, "english": 0, "card": 0}
+        self.untranslated = []
         self.unresolved = []
         self.missing_anchors = []
         self._anchors = {}
@@ -89,8 +99,7 @@ class Rewriter:
 
     def translated_page(self, rel: Path):
         name = rel.name
-        stem = name[len("en_"):] if name.startswith("en_") else name
-        for candidate in (f"{self.lang}_{stem}", name):
+        for candidate in (f"{self.lang}_{stem_of(name)}", name):
             page = self.book_root / rel.parent / candidate
             if page.exists():
                 return page
@@ -131,10 +140,27 @@ class Rewriter:
                 new = new[: -len(".md")]
             return new + suffix, "translated"
 
-        if (self.en_root / rel).exists():
-            self.check_anchor(current, self.en_root / rel, anchor, url)
+        if switch:
             html = rel.with_suffix(".html").as_posix()
+            if card_doc:
+                # The books are published side by side (/en, /es, /fr), so a relative
+                # url-type link works on any domain.
+                here = current.parent.relative_to(self.content_root).as_posix()
+                return posixpath.relpath(f"en/{html}", here) + suffix, "english"
             return f"{self.site_url}/en/{html}{suffix}", "english"
+
+        if where == "source" and rel.name.startswith(f"{self.lang}_"):
+            return None  # already points at a page that isn't translated yet
+
+        if (self.en_root / rel).exists():
+            # Not translated yet: point at the page it will become, so the link works
+            # as soon as the translation is merged.
+            page = self.book_root / rel.parent / f"{self.lang}_{stem_of(rel.name)}"
+            self.untranslated.append((current, page))
+            new = os.path.relpath(page, start=current.parent).replace("\\", "/")
+            if card_doc:
+                new = new[: -len(".md")]
+            return new + suffix, "untranslated"
 
         self.unresolved.append((current, url))
         return None
@@ -186,7 +212,7 @@ class Rewriter:
             newline = line[len(line.rstrip("\r\n")):]
             indent = m.group(1)
             replace[i] = [f"{indent}:link: {new}{newline}"]
-            if kind in ("translated", "card") and not type_lines:
+            if kind in ("translated", "untranslated", "card") and not type_lines:
                 replace[i].append(f"{indent}:link-type: doc{newline}")
             if kind == "english":
                 # A full URL is a url-type link, so the card must not say :link-type: doc.
@@ -218,7 +244,13 @@ def main():
 
     print(f"Updated files: {updated}")
     print(f"Links to translated pages: {rewriter.counts['translated']}")
-    print(f"Links to English pages on the live site: {rewriter.counts['english']}")
+    print(f"Links to pages that aren't translated yet: {rewriter.counts['untranslated']}")
+    if rewriter.untranslated:
+        pages = sorted({page.relative_to(rewriter.content_root).as_posix() for _, page in rewriter.untranslated})
+        print(f"  They work once these pages are translated ({len(pages)}):")
+        for page in pages:
+            print(f"  {page}")
+    print(f"Language switch links to the English page: {rewriter.counts['english']}")
     print(f"Card links changed to doc links: {rewriter.counts['card']}")
     if rewriter.unresolved:
         print(f"Links left unchanged because the English page doesn't exist: {len(rewriter.unresolved)}")

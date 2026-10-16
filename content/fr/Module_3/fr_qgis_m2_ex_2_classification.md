@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../fr_intro.md 
+:link: ../fr_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -53,15 +54,15 @@ __Temps estimé nécessaire pour l’exercice :__
 __Articles Wiki pertinents__:
 ^^^
 
-* [Interface QGIS](../../en/Wiki/en_qgis_interface_wiki.md)
-* [Types de géodonnées](../../en/Wiki/en_qgis_geodata_types_wiki.md)
-* [Importation de géodonnées dans QGIS](../../en/Wiki/en_qgis_import_geodata_wiki.md)
-* [Concept de couche](../../en/Wiki/en_qgis_layer_concept_wiki.md)
-* [Table attributaire](../../en/Wiki/en_qgis_attribute_table_wiki.md)
-* [Fonction de table - Ajouter un champ](../../en/Wiki/en_qgis_table_functions_wiki.md)
-* [Classification des géodonnées - Catégorisée](../../en/Wiki/en_qgis_categorised_wiki.md)
-* [Classification des géodonnées - Graduée](../../en/Wiki/en_qgis_graduated_wiki.md)
-* [Numérisation - Données ponctuelles](../../en/Wiki/en_qgis_digitisation_wiki.md)
+* [Interface QGIS](../Wiki/fr_qgis_interface_wiki.md)
+* [Types de géodonnées](../Wiki/fr_qgis_geodata_types_wiki.md)
+* [Importation de géodonnées dans QGIS](../Wiki/fr_qgis_import_geodata_wiki.md)
+* [Concept de couche](../Wiki/fr_qgis_layer_concept_wiki.md)
+* [Table attributaire](../Wiki/fr_qgis_attribute_table_wiki.md)
+* [Fonction de table - Ajouter un champ](../Wiki/fr_qgis_table_functions_wiki.md)
+* [Classification des géodonnées - Catégorisée](../Wiki/fr_qgis_categorised_wiki.md)
+* [Classification des géodonnées - Graduée](../Wiki/fr_qgis_graduated_wiki.md)
+* [Numérisation - Données ponctuelles](../Wiki/fr_qgis_digitisation_wiki.md)
 
 :::
 
@@ -76,7 +77,7 @@ __Articles Wiki pertinents__:
 - Prenez le temps de vous familiariser avec l’exercice et le matériel fourni.
 - Préparez un tableau blanc. Il peut s’agir d’un tableau blanc physique, d’un paperboard ou d’un tableau blanc numérique (par ex. un tableau Miro) où les participants peuvent ajouter leurs observations et leurs questions. 
 - Avant de commencer l’exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé __et décompressé__ le dossier de données.
-- Consultez [Comment organiser des formations ?](../../en/Trainers_corner/en_how_to_training.md) pour quelques conseils généraux sur la conduite des formations.
+- Consultez [Comment organiser des formations ?](../Trainers_corner/fr_how_to_training.md) pour quelques conseils généraux sur la conduite des formations.
 
 ### Conduire la formation <a id="conduct-the-training"></a>
 
@@ -115,12 +116,12 @@ Téléchargez tous les jeux de données __[ici](https://nexus.heigit.org/reposit
 
 Notre objectif est de produire un aperçu de la situation de l’insécurité alimentaire en Sierra Leone en 2015 avec l’affichage des principaux éléments d’infrastructure. Pour y parvenir, nous visualiserons les classifications de l’insécurité alimentaire totale ainsi que les aéroports, les hôpitaux et les routes principales sur une carte.
 
-1. Ouvrez QGIS et créez un [nouveau projet](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) en cliquant sur `Project` → `New`.
+1. Ouvrez QGIS et créez un [nouveau projet](../Wiki/fr_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) en cliquant sur `Project` → `New`.
 
 2. Une fois le projet créé, enregistrez le projet dans le dossier “project” de “Ex_Sierra_Leone_foodinsecurity”. Pour cela, cliquez sur `Project` → `Save as` et naviguez jusqu’au dossier. Nommez le projet “Sierra_Leone_foodinsecurity”.
 
-3. Importez les GeoPackages `Sierra_leone_borders.gpkg`, `Sierra_leone_airports`, `Sierra_leone_healthsites` et `Sierra_leone_roads.gpkg` ainsi que le shapefile `Sierra_leone_foodinsecurity_2015.shp` dans votre projet par glisser-déposer ([Vidéo Wiki](../../en/Wiki/en_qgis_import_geodata_wiki.md#open-raster-data-via-drag-and-drop)). 
-Ou en cliquant sur `Layer` → `Add Layer` → `Add Vector Layer` : cliquez sur les trois points ![](../../../fig/Three_points.png) et naviguez jusqu’à "Sierra_leone_borders.gpkg" dans votre navigateur de fichiers. Sélectionnez le fichier et cliquez sur `Open`. De retour dans QGIS, cliquez sur `Add` ([Vidéo Wiki](../../en/Wiki/en_qgis_import_geodata_wiki.md#open-raster-data-via-layer-tab)).
+3. Importez les GeoPackages `Sierra_leone_borders.gpkg`, `Sierra_leone_airports`, `Sierra_leone_healthsites` et `Sierra_leone_roads.gpkg` ainsi que le shapefile `Sierra_leone_foodinsecurity_2015.shp` dans votre projet par glisser-déposer ([Vidéo Wiki](../Wiki/fr_qgis_import_geodata_wiki.md#open-raster-data-via-drag-and-drop)). 
+Ou en cliquant sur `Layer` → `Add Layer` → `Add Vector Layer` : cliquez sur les trois points ![](../../../fig/Three_points.png) et naviguez jusqu’à "Sierra_leone_borders.gpkg" dans votre navigateur de fichiers. Sélectionnez le fichier et cliquez sur `Open`. De retour dans QGIS, cliquez sur `Add` ([Vidéo Wiki](../Wiki/fr_qgis_import_geodata_wiki.md#open-raster-data-via-layer-tab)).
 
 :::{Attention}
 Les GeoPackages peuvent contenir plusieurs fichiers et même des projets QGIS entiers. Lorsque vous chargez un tel fichier dans QGIS, une fenêtre apparaît dans laquelle vous devez sélectionner les fichiers que vous souhaitez charger dans votre projet QGIS.
@@ -128,10 +129,10 @@ Les GeoPackages peuvent contenir plusieurs fichiers et même des projets QGIS en
 
 4. Tout d’abord, ajoutons un fond de carte à votre canevas cartographique en utilisant le plugin `QuickMapServices` en cliquant sur le symbole ![](../../../fig/QMS_search_icon.png) dans la barre d’outils de votre projet. Recherchez "Bing Maps Satellite Imagery" dans le panneau QMS et ajoutez la couche de fond de carte par double-clic. Pour une vue optimisée, [ajustez l’opacité](https://www.youtube.com/watch?v=WguUkN1YRzY&ab_channel=GISBigfootAnswers) de vos couches afin d’optimiser l’utilisation du fond de carte. 
 
-5. En utilisant la table attributaire de la couche des aéroports, zoomez sur l’aéroport de Tongo en faisant un clic droit sur la ligne dans la table attributaire puis en sélectionnant `Zoom to Feature`([Vidéo Wiki](../../en/Wiki/en_qgis_attribute_table_wiki.md#zoom-in-on-a-specific-feature)). Vérifiez le fond de carte. Pensez-vous que la piste d’atterrissage soit encore opérationnelle ? La réponse est non, selon Wikipédia. Supprimez Tongo Airport dans la [table attributaire](../../en/Wiki/en_qgis_attribute_table_wiki.md). Supprimez aussi l’aéroport de Kabala, puisqu’il n’est lui non plus plus opérationnel.
+5. En utilisant la table attributaire de la couche des aéroports, zoomez sur l’aéroport de Tongo en faisant un clic droit sur la ligne dans la table attributaire puis en sélectionnant `Zoom to Feature`([Vidéo Wiki](../Wiki/fr_qgis_attribute_table_wiki.md#zoom-in-on-a-specific-feature)). Vérifiez le fond de carte. Pensez-vous que la piste d’atterrissage soit encore opérationnelle ? La réponse est non, selon Wikipédia. Supprimez Tongo Airport dans la [table attributaire](../Wiki/fr_qgis_attribute_table_wiki.md). Supprimez aussi l’aéroport de Kabala, puisqu’il n’est lui non plus plus opérationnel.
 
 6. Nous voulons maintenant examiner les aéroports des villes de Bo et Kenema. Ces pistes d’atterrissage sont-elles en meilleur état ? Si oui, ajoutez-les à la couche des aéroports. Pour trouver ces villes sur votre interface cartographique, utilisez le plugin QGIS `OSM Place Search`. 
-Pour ajouter le plugin `OSM Place Search`, cliquez sur `Plugins` → `Manage and Install Plugins…` → `All` puis recherchez "OSM Place Search". Une fois que vous l’avez trouvé, cliquez dessus puis sélectionnez `Install Plugin`. Vous pouvez ouvrir le `OSM Place Search Panel` comme n’importe quel autre panneau en cliquant sur `View` → `Panels` puis en cochant `OSM Place Search Panel`([Vidéo Wiki](../../en/Wiki/en_qgis_plugins_wiki.md)).
+Pour ajouter le plugin `OSM Place Search`, cliquez sur `Plugins` → `Manage and Install Plugins…` → `All` puis recherchez "OSM Place Search". Une fois que vous l’avez trouvé, cliquez dessus puis sélectionnez `Install Plugin`. Vous pouvez ouvrir le `OSM Place Search Panel` comme n’importe quel autre panneau en cliquant sur `View` → `Panels` puis en cochant `OSM Place Search Panel`([Vidéo Wiki](../Wiki/fr_qgis_plugins_wiki.md)).
     * Dans le panneau, vous pouvez rechercher des lieux dans OpenStreetMap en saisissant le nom dans la barre de recherche. Il est souvent utile d’ajouter des informations supplémentaires comme le nom du pays. Essayez par exemple “Bo, Sierra Leone”.
 
 :::{figure} ../../../fig/mod3_classification_ex_OSMsearch.png
@@ -142,15 +143,15 @@ align: center
 Recherche de lieux OSM.
 :::
 
-Ajoutez les aéroports de Bo et Kenema sous forme de points à la couche `Sierra_Leone_airports`. Vous trouverez de l’aide sur l’ajout d’entités à une couche de points [ici](../../en/Wiki/en_qgis_digitisation_wiki.md). 
+Ajoutez les aéroports de Bo et Kenema sous forme de points à la couche `Sierra_Leone_airports`. Vous trouverez de l’aide sur l’ajout d’entités à une couche de points [ici](../Wiki/fr_qgis_digitisation_wiki.md). 
  
 
 8. *Optionnel :* Dans la table attributaire, créez une nouvelle colonne `Runway_length` et ajoutez la longueur des pistes de Bo et Kenema en les mesurant approximativement avec l’outil de mesure ![](../../../fig/measuring_tool_icon.png).
 
-9. Nous voulons maintenant créer une visualisation intuitive des différences d’insécurité alimentaire. Pour y parvenir, nous utilisons l’option de visualisation "[Classification graduée](../../en/Wiki/en_qgis_graduated_wiki.md)" pour la couche `Sierra_leone_foodinsecurity_2015` en affichant les polygones selon des classes créées sur la base de la colonne "Total_FI" dans la table attributaire.
+9. Nous voulons maintenant créer une visualisation intuitive des différences d’insécurité alimentaire. Pour y parvenir, nous utilisons l’option de visualisation "[Classification graduée](../Wiki/fr_qgis_graduated_wiki.md)" pour la couche `Sierra_leone_foodinsecurity_2015` en affichant les polygones selon des classes créées sur la base de la colonne "Total_FI" dans la table attributaire.
     * Faites un clic droit sur la couche `Sierra_leone_foodinsecurity_2015.shp` dans le `Layer Panel` → `Properties`. Une nouvelle fenêtre s’ouvrira avec une section verticale d’onglets sur la gauche. Accédez à l’onglet `Symbology`.
     * Dans le menu déroulant tout en haut, choisissez `Graduated`. Sous `Value`, sélectionnez “Total_FI”.
-    * Plus bas dans la fenêtre, cliquez sur `Classify`. Vous devriez maintenant voir plusieurs classes basées sur la plage de valeurs de la colonne "TotalFI", représentées avec différentes couleurs. Vous pouvez ajuster les couleurs en choisissant différentes palettes de couleurs dans le menu déroulant `Color ramp`. Vous pouvez également modifier la distribution des valeurs des classes en sélectionnant différents modes de classification ([Wiki](../../en/Wiki/en_qgis_graduated_wiki.md)) dans le menu déroulant `Mode`. 
+    * Plus bas dans la fenêtre, cliquez sur `Classify`. Vous devriez maintenant voir plusieurs classes basées sur la plage de valeurs de la colonne "TotalFI", représentées avec différentes couleurs. Vous pouvez ajuster les couleurs en choisissant différentes palettes de couleurs dans le menu déroulant `Color ramp`. Vous pouvez également modifier la distribution des valeurs des classes en sélectionnant différents modes de classification ([Wiki](../Wiki/fr_qgis_graduated_wiki.md)) dans le menu déroulant `Mode`. 
     * Testez ces options afin d’obtenir un schéma de couleurs adapté aux données. Une fois terminé, cliquez sur `Apply` puis sur `OK` pour fermer la fenêtre de symbologie.
 
 :::{figure} ../../../fig/mod3_classification_ex_Graduatedclassification.png
@@ -173,7 +174,7 @@ align: center
 Symbole pour hôpital.
 :::
 
-11. Comme dernière étape de visualisation, ouvrez l’onglet `Symbology` de `Sierra_Leone_roads (Lines)` et, comme à l’étape 9, ouvrez le menu déroulant supérieur. Maintenant, au lieu de `Graduated`, choisissez [Classification catégorisée](../../en/Wiki/en_qgis_categorised_wiki.md) puis sélectionnez "highway" dans le menu `Value`. Cliquez sur `Classify` pour obtenir une classification avec des couleurs individuelles pour toutes les valeurs uniques de la colonne "highway". Dans les carrés à côté des classes, désélectionnez toutes les classes sauf "primary". Vous pouvez changer la couleur des classes en cliquant manuellement dessus puis en ajustant la couleur dans le menu déroulant `Symbol` près du haut de la fenêtre.
+11. Comme dernière étape de visualisation, ouvrez l’onglet `Symbology` de `Sierra_Leone_roads (Lines)` et, comme à l’étape 9, ouvrez le menu déroulant supérieur. Maintenant, au lieu de `Graduated`, choisissez [Classification catégorisée](../Wiki/fr_qgis_categorised_wiki.md) puis sélectionnez "highway" dans le menu `Value`. Cliquez sur `Classify` pour obtenir une classification avec des couleurs individuelles pour toutes les valeurs uniques de la colonne "highway". Dans les carrés à côté des classes, désélectionnez toutes les classes sauf "primary". Vous pouvez changer la couleur des classes en cliquant manuellement dessus puis en ajustant la couleur dans le menu déroulant `Symbol` près du haut de la fenêtre.
 
 :::{figure} ../../../fig/mod3_classification_ex_Categorizedclassification.png
 ---

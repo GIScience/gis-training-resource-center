@@ -12,7 +12,7 @@
 Maps play a central role in humanitarian work, helping teams understand needs, capacities, and conditions on the ground. This page brings together practical, scenario-focused tutorials that show how to create clear and effective operational maps in QGIS. Each example highlights techniques you can adapt to your own data and context, supporting better coordination and decision-making in the field.
 
 - [Health Facility Capacity Map](en_module_4_operation_maps.md#health-facility-capacity-map-visualising-with-multi-variable-point-symbols)
-- [3W Map (Who, What, Where)](#w-map-who-what-where)
+- [3W Map (Who, What, Where)](#3w-map-who-what-where)
 - [Epidemiological Overview Map](#epidemological-overview-map)
 
 ## Health Facility Capacity Map: Visualising with multi-variable point symbols <a id="health-facility-capacity-map-visualising-with-multi-variable-point-symbols"></a>

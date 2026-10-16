@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../es_intro.md
+:link: ../es_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -292,9 +293,9 @@ En lugar de buscar coincidencias exactas, la fusión difusa utiliza algoritmos p
 
 1. Abra QGIS y cree un nuevo proyecto.
 2. Guarde el proyecto en la carpeta de ejercicios.
-3. [Importe la capa CSV a QGIS](../../en/Wiki/en_qgis_import_geodata_wiki.md#text-data-import).
+3. [Importe la capa CSV a QGIS](../Wiki/es_qgis_import_geodata_wiki.md#text-data-import).
 4. Importe los límites administrativos situados en la carpeta de entrada de datos: `.../module_5_ex_7_data_cleansing/data/input/`
-5. Ahora vamos a realizar una fusión difusa: Abra la [calculadora de campo](../../en/Wiki/en_qgis_table_functions_wiki.md#calculate-field) __para la capa denominada `tabula-pakistan_wall_type7.7`__ e introduzca la siguiente expresión:
+5. Ahora vamos a realizar una fusión difusa: Abra la [calculadora de campo](../Wiki/es_qgis_table_functions_wiki.md#calculate-field) __para la capa denominada `tabula-pakistan_wall_type7.7`__ e introduzca la siguiente expresión:
     ```
     array_first(aggregate(
     layer:= 'pak_admbnda_adm2_wfp_20220909',

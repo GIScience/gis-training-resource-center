@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../es_intro.md
+:link: ../es_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -70,7 +71,7 @@ En este breve ejercicio guiado, añadiremos los datos de población a la capa de
 1. Descargue las capas necesarias [aquí](https://nexus.heigit.org/repository/gis-training-resource-center/Module_5/non_spatial_join/non_spatial_join.zip), descomprímalas y añádalas a su proyecto QGIS.
 
 :::{tip}
-La capa de población debe [añadirse como una capa de texto delimitada](../../en/Module_2/en_qgis_geodata_concept.md#delimited-text-import-csv-txt) (`Capa` → `Añadir capa` → `Añadir capa de texto delimitado`) sin geometría.
+La capa de población debe [añadirse como una capa de texto delimitada](../Module_2/es_qgis_geodata_concept.md#delimited-text-import-csv-txt) (`Capa` → `Añadir capa` → `Añadir capa de texto delimitado`) sin geometría.
 :::
 
 2. Abra la herramienta `Unir atributos por valor de campo` de la caja de herramientas de Procesos.

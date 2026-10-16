@@ -20,7 +20,8 @@ La plataforma central de capacitación para la enseñanza de habilidades en el s
 ::::{grid} 2
 :::{card}
 :class-card: sd-text-center
-:link: Trainers_corner/es_TOT_intro.md
+:link: Trainers_corner/es_TOT_intro
+:link-type: doc
 
 __[Empezar a enseñar](Trainers_corner/es_TOT_intro.md)__ ➡️
 
@@ -28,7 +29,8 @@ __[Empezar a enseñar](Trainers_corner/es_TOT_intro.md)__ ➡️
 
 :::{card}
 :class-card: sd-text-center
-:link: Module_1/es_module_1_overview.md
+:link: Module_1/es_module_1_overview
+:link-type: doc
 
 __[Empezar a aprender](Module_1/es_module_1_overview.md)__ ➡️
 

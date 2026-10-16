@@ -13,7 +13,8 @@ Debido a un brote de cólera en Khyber Pakhtunkhwa, la Media Luna Roja de Pakist
 :::
 
 :::{card}
-:link: ../Module_2/es_qgis_data_sources_ex3.md
+:link: ../Module_2/es_qgis_data_sources_ex3
+:link-type: doc
 __Módulo 2, ejercicio 3: Fuentes de datos__
 ^^^
 
@@ -23,7 +24,8 @@ __Módulo 2, ejercicio 3: Fuentes de datos__
 :::
 
 :::{card}
-:link: ../Module_2/es_qgis_data_sources_ex4.md
+:link: ../Module_2/es_qgis_data_sources_ex4
+:link-type: doc
 __Módulo 2, ejercicio 4: Exportación de datos de OSM__
 ^^^
 - Exporte datos de OSM utilizando la herramienta de exportación HOT
@@ -33,7 +35,8 @@ __Módulo 2, ejercicio 4: Exportación de datos de OSM__
 
 
 :::{card}
-:link: ../Module_3/es_qgis_module_3_ex5.md
+:link: ../Module_3/es_qgis_module_3_ex5
+:link-type: doc
 __Módulo 3, ejercicio 5: Respuesta a la inundación de Larkana__
 ^^^
 
@@ -48,7 +51,8 @@ __Módulo 3, ejercicio 5: Respuesta a la inundación de Larkana__
 :::
 
 :::{card}
-:link: ../Module_4/es_qgis_map_design_I_ex2.md
+:link: ../Module_4/es_qgis_map_design_I_ex2
+:link-type: doc
 __Módulo 4, ejercicio 2: Creación de un mapa de situación de inundación de Larkana, Pakistán__
 ^^^
 
@@ -62,7 +66,8 @@ __Módulo 4, ejercicio 2: Creación de un mapa de situación de inundación de L
 :::
 
 :::{card}
-:link: ../Module_5/es_qgis_module_5_ex4.md
+:link: ../Module_5/es_qgis_module_5_ex4
+:link-type: doc
 __Módulo 5, ejercicio 4: Seguridad en Peshwar, Pakistán__
 
 - Use el complemento QuickMapServices

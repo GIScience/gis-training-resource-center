@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../fr_intro.md 
+:link: ../fr_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -123,7 +124,7 @@ Il est également possible de supprimer l’arrière-plan blanc. Cela se fait en
 1. Ouvrez les propriétés de la couche en <kbd>faisant un clic droit</kbd> sur la couche, puis en sélectionnant __Properties__.
 2. Allez dans l’__onglet Transparency__.
 3. Dans la zone __Custom Transparency Options__, sous Transparency Band, sélectionnez Band 4 (Alpha).
-4. À droite, cliquez sur ![](../../../fig/en_3.36_add_value_from_display) `Add value from display`.
+4. À droite, cliquez sur ![](../../../fig/en_3.36_add_values_from_display.png) `Add value from display`.
 5. Cliquez sur la couleur blanche de la carte géoréférencée dans le canevas cartographique.
 6. Cliquez sur `Apply`.
 

@@ -10,11 +10,11 @@ Cet exercice approfondit le précédent. Cette fois-ci, nous allons également i
 
 ### Wiki :
 
-- [Interface](../../en/Wiki/en_qgis_interface_wiki.md)
+- [Interface](../Wiki/fr_qgis_interface_wiki.md)
 
-- [Projections](../../en/Wiki/en_qgis_projections_wiki.md)
+- [Projections](../Wiki/fr_qgis_projections_wiki.md)
 
-- [Concept de couche et importation de données](../../en/Wiki/en_qgis_layer_concept_wiki.md)
+- [Concept de couche et importation de données](../Wiki/fr_qgis_layer_concept_wiki.md)
 
 
 ### Données :

@@ -11,7 +11,7 @@ Dans cette piste, vous construirez un flux de travail analytique sous forme de m
 We offer an english version of this exercise track which can be found here: 
 
 :::{card}
-:link: ../../en/Exercise_tracks/en_mdg_aa_cyclones.md
+:link: ../../en/Exercise_tracks/en_mdg_aa_cyclones.html
 English version
 :::
 
@@ -52,6 +52,7 @@ anticipative rapide et fondée sur les données, avant que le cyclone n’atteig
 
 :::{card}
 :link: ../Module_5/fr_qgis_module_5_mdg_aa_ex_1
+:link-type: doc
 __Exercice 1 : Estimation de la population exposée – L’approche manuelle d’Aina (Module 5)__
 ^^^
 
@@ -71,6 +72,7 @@ __Exercice 1 : Estimation de la population exposée – L’approche manuelle d�
 
 :::{card}
 :link: ../Module_7/fr_module_7_mdg_aa_ex_2
+:link-type: doc
 __Exercice 2 : Automatisation de l’estimation de la population exposée – Le modèle d’Aina (Module 7)__
 ^^^
 
@@ -90,6 +92,7 @@ __Exercice 2 : Automatisation de l’estimation de la population exposée – Le
 
 :::{card}
 :link: ../Module_7/fr_module_7_mdg_aa_ex_3
+:link-type: doc
 __Exercice 3 : Identification des établissements de santé et écoles affectés – Aina ajoute des couches (Module 7)__
 ^^^
 
@@ -103,6 +106,7 @@ __Exercice 3 : Identification des établissements de santé et écoles affectés
 
 :::{card}
 :link: ../Module_4/fr_module_4_mdg_aa_ex_4
+:link-type: doc
 __Exercice 4 : Visualisation des résultats d’impact du cyclone – Aina applique des styles à ses couches (Module 4)__
 ^^^
 
@@ -116,6 +120,7 @@ __Exercice 4 : Visualisation des résultats d’impact du cyclone – Aina appli
 
 :::{card}
 :link: ../Module_4/fr_module_4_mdg_aa_ex_5
+:link-type: doc
 __Exercice 5 : Création rapide de cartes – Aina utilise des modèles de carte (Module 4)__
 ^^^
 
@@ -129,6 +134,7 @@ __Exercice 5 : Création rapide de cartes – Aina utilise des modèles de carte
 
 :::{card}
 :link: ../Module_7/fr_module_7_mdg_aa_ex_6
+:link-type: doc
 __Exercice 6 : Exportation des résultats du modèle pour l’équipe des opérations (Module 7)__
 ^^^
 
@@ -140,6 +146,7 @@ __Exercice 6 : Exportation des résultats du modèle pour l’équipe des opéra
 
 :::{card}
 :link: ../Module_9/fr_qgis_module_9_mdg_aa_ex_7
+:link-type: doc
 __Exercice 7 : Accessibilité des postes de santé depuis les entrepôts de la CRM__
 ^^^
 

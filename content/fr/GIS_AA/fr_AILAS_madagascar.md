@@ -6,7 +6,7 @@
 The english original version of this page can be found here / La version originale anglaise de cet article se trouve ici :
 
 :::{card}
-:link: ../../en/GIS_AA/en_AILAS_madagascar
+:link: ../../en/GIS_AA/en_AILAS_madagascar.html
 English version - Version anglaise
 :::
 

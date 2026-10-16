@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../es_intro.md
+:link: ../es_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -123,7 +124,7 @@ También es posible eliminar el fondo blanco. Esto se hace asignando los píxele
 1. Para abrir las propiedades de la capa, <kbd>haga clic derecho</kbd> en la capa y seleccione __Propiedades__.
 2. Vaya a la pestaña __Transparencia__.
 3. En el cuadro __Custom Transparency Options__, en Transparency Band, seleccione Band 4 (Alpha).
-4. A la derecha, haga clic en ![](../../../fig/en_3.36_add_value_from_display) `Añadir valores de la visualización`
+4. A la derecha, haga clic en ![](../../../fig/en_3.36_add_values_from_display.png) `Añadir valores de la visualización`
 5. Haga clic en el color blanco del mapa georreferenciado en el lienzo del mapa.
 6. Haga clic en `Aplicar`.
 

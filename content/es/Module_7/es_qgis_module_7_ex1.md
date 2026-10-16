@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../es_intro.md
+:link: ../es_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -45,7 +46,7 @@ __Artículos relevantes en Wiki__
 ^^^
 
 * [Estadísticas zonales](../Wiki/es_qgis_raster_basic_wiki.md)
-* [Intersección](../../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Intersección](../Wiki/es_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
 * [Proyecciones cartográficas](../Wiki/es_qgis_projections_wiki.md)
 * [Buffer](../Wiki/es_qgis_projections_wiki.md)
 * [Recorte](../Wiki/es_qgis_projections_wiki.md)
@@ -106,7 +107,7 @@ __Descargue todos los conjuntos de datos [aquí](), guarde la carpeta en su comp
 
 :::
 
-La carpeta se llama “ y contiene toda la [estructura de carpetas estándar](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) con todos los datos de la carpeta de entrada y la documentación adicional en la carpeta de documentación.
+La carpeta se llama “ y contiene toda la [estructura de carpetas estándar](../Wiki/es_qgis_projects_folder_structure_wiki.md#standard-folder-structure) con todos los datos de la carpeta de entrada y la documentación adicional en la carpeta de documentación.
 
 | Conjunto de datos | Fuente | Descripciones |
 | ----- | --- | --- |
@@ -156,11 +157,11 @@ Deberá crear manualmente una zona de amortiguación para la trayectoria del cic
 
 
 
-1. **Abra QGIS** y cree un [Nuevo proyecto](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Project` -> `New`
+1. **Abra QGIS** y cree un [Nuevo proyecto](../Wiki/es_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Project` -> `New`
 
 2. **Guarde el proyecto** en la carpeta "proyecto". Para ello, haga clic en `Project` -> `Save as` y navegue hasta la carpeta. Asigne el nombre “Cyclon_Harald_Exposure”.
 
-3. **Cargue el GeoJOSN** archivo "example_Harald_2025_Track.geojson" en su proyecto arrastrando y soltando ([Video de Wiki](../../en/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Abra la carpeta `data` -> `input`
+3. **Cargue el GeoJOSN** archivo "example_Harald_2025_Track.geojson" en su proyecto arrastrando y soltando ([Video de Wiki](../Wiki/es_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Abra la carpeta `data` -> `input`
 
 
 4. **Reproyectar la trayectoria del ciclón** para usar metros en lugar de grados (importante para una amortiguación precisa):

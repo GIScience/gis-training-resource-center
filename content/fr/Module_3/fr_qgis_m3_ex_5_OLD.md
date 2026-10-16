@@ -1,11 +1,13 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../fr_intro.md 
+:link: ../fr_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 :::{grid-item-card}
-:link: fr_qgis_module_3_exercises.md
+:link: fr_qgis_module_3_exercises
+:link-type: doc
 __Cliquez ici pour revenir à la page d’aperçu des exercices du module 3__ 
 :::
 ::::
@@ -48,13 +50,13 @@ __Temps estimé nécessaire pour l’exercice__
 __Articles wiki et chapitres de module pertinents__
 ^^^
 
-* [Importation de géodonnées dans QGIS](../../en/Wiki/en_qgis_import_geodata_wiki.md)
-* [Concept de couche](../../en/Wiki/en_qgis_layer_concept_wiki.md)
-* [Classification des géodonnées - Catégorisée](../../en/Wiki/en_qgis_categorised_wiki.md)
-* [Classification des géodonnées - Graduée](../../en/Wiki/en_qgis_graduated_wiki.md)
-* [Requêtes spatiales](../../en/Wiki/en_qgis_spatial_queries_wiki.md)
-* [Fonction de table - Ajouter un champ](../../en/Wiki/en_qgis_table_functions_wiki.md#add-field)
-* [Numérisation - Données ponctuelles](../../en/Wiki/en_qgis_digitisation_wiki.md)
+* [Importation de géodonnées dans QGIS](../Wiki/fr_qgis_import_geodata_wiki.md)
+* [Concept de couche](../Wiki/fr_qgis_layer_concept_wiki.md)
+* [Classification des géodonnées - Catégorisée](../Wiki/fr_qgis_categorised_wiki.md)
+* [Classification des géodonnées - Graduée](../Wiki/fr_qgis_graduated_wiki.md)
+* [Requêtes spatiales](../Wiki/fr_qgis_spatial_queries_wiki.md)
+* [Fonction de table - Ajouter un champ](../Wiki/fr_qgis_table_functions_wiki.md#add-field)
+* [Numérisation - Données ponctuelles](../Wiki/fr_qgis_digitisation_wiki.md)
 :::
 ::::
 
@@ -69,7 +71,7 @@ __Articles wiki et chapitres de module pertinents__
 - Prenez le temps de vous familiariser avec l’exercice et le matériel fourni.
 - Préparez un tableau blanc. Il peut s’agir d’un tableau blanc physique, d’un paperboard ou d’un tableau blanc numérique (par exemple un tableau Miro) où les participants peuvent ajouter leurs observations et leurs questions. 
 - Avant de commencer l’exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé __et décompressé__ le dossier de données.
-- Consultez [Comment organiser des formations ?](../../en/Trainers_corner/en_how_to_training.md) pour quelques conseils généraux sur la conduite de formations
+- Consultez [Comment organiser des formations ?](../Trainers_corner/fr_how_to_training.md) pour quelques conseils généraux sur la conduite de formations
 
 ### Conduire la formation <a id="conduct-the-training"></a>
 
@@ -153,10 +155,10 @@ Vous ne pouvez pas interagir avec un fond de carte !
 ```
 ::::
 
-1. Ouvrez QGIS et créez un [nouveau projet](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) en cliquant sur `Project` → `New`.
-2. Une fois le projet créé, [enregistrez le projet](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md) dans le dossier “project” de l’exercice “Module_3_Exercise_2_Flood_Larkana”. Pour cela, cliquez sur `Project` → `Save as` et naviguez jusqu’au dossier. Nommez le projet “PAK_Larkana_flood_2024”.
+1. Ouvrez QGIS et créez un [nouveau projet](../Wiki/fr_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) en cliquant sur `Project` → `New`.
+2. Une fois le projet créé, [enregistrez le projet](../Wiki/fr_qgis_projects_folder_structure_wiki.md) dans le dossier “project” de l’exercice “Module_3_Exercise_2_Flood_Larkana”. Pour cela, cliquez sur `Project` → `Save as` et naviguez jusqu’au dossier. Nommez le projet “PAK_Larkana_flood_2024”.
 3. Tout d’abord, nous voulons ajouter OpenStreetMap comme fond de carte pour l’orientation. Pour ajouter OSM comme fond de carte, cliquez sur `Layer` → `Add Layer` → `Add XYZ Layer…`. Choisissez `OpenStreetMap` puis cliquez sur `Add`. 
-4. Ensuite, chargez le GeoPackage __"PAK_Sindh_adm2.gpkg"__ dans votre projet par glisser-déposer ([Vidéo Wiki](../../en/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Ou cliquez sur `Layer` → `Add Layer` → `Add Vector Layer`. Cliquez sur les trois points ![](../../../fig/Three_points.png) et naviguez jusqu’à __"PAK_Sindh_adm2.gpkg"__. Sélectionnez le fichier puis cliquez sur `Open`. De retour dans QGIS, cliquez sur `Add` ([Vidéo Wiki](../../en/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
+4. Ensuite, chargez le GeoPackage __"PAK_Sindh_adm2.gpkg"__ dans votre projet par glisser-déposer ([Vidéo Wiki](../Wiki/fr_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Ou cliquez sur `Layer` → `Add Layer` → `Add Vector Layer`. Cliquez sur les trois points ![](../../../fig/Three_points.png) et naviguez jusqu’à __"PAK_Sindh_adm2.gpkg"__. Sélectionnez le fichier puis cliquez sur `Open`. De retour dans QGIS, cliquez sur `Add` ([Vidéo Wiki](../Wiki/fr_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
 
 
 ```{Attention}
@@ -164,11 +166,11 @@ Les fichiers GeoPackage peuvent contenir plusieurs fichiers et même des projets
 ```
 
 5. Tout d’abord, nous voulons exporter __le district de Larkana__ et les districts voisins __Kambar Shahdad Kot__, __Shikarpur__ et __Sukkur__ depuis __PAK_adm2_Sindh__ afin de les avoir comme couche vectorielle autonome. Pour cela : 
-    * Ouvrez la table attributaire de __PAK_adm2_Sindh__ en faisant un clic droit sur la couche → `Open Attribute Table` ([Vidéo Wiki](../../en/Wiki/en_qgis_attribute_table_wiki.md)).
-    * Trouvez la ligne de Larkana et sélectionnez-la en cliquant sur le numéro tout à gauche de la table attributaire. La ligne apparaîtra en bleu et la zone de Larkana deviendra jaune sur le canevas cartographique. Vous pouvez faire un clic droit sur la ligne puis cliquer sur `Zoom to Feature` ([Vidéo Wiki](../../en/Wiki/en_qgis_attribute_table_wiki.md#zoom-in-on-a-specific-feature)).
-    Pour sélectionner les districts environnants, cliquez sur l’icône `Select Feature(s)` ![](../../../fig/selection_toolbar_feature_selection.png) dans la barre d’outils QGIS, maintenez la touche `Shift` de votre clavier et cliquez sur les districts soit sur la carte, soit dans la table attributaire ([Vidéo Wiki](../../en/Wiki/en_qgis_spatial_queries_wiki.md#manual-selection)).
+    * Ouvrez la table attributaire de __PAK_adm2_Sindh__ en faisant un clic droit sur la couche → `Open Attribute Table` ([Vidéo Wiki](../Wiki/fr_qgis_attribute_table_wiki.md)).
+    * Trouvez la ligne de Larkana et sélectionnez-la en cliquant sur le numéro tout à gauche de la table attributaire. La ligne apparaîtra en bleu et la zone de Larkana deviendra jaune sur le canevas cartographique. Vous pouvez faire un clic droit sur la ligne puis cliquer sur `Zoom to Feature` ([Vidéo Wiki](../Wiki/fr_qgis_attribute_table_wiki.md#zoom-in-on-a-specific-feature)).
+    Pour sélectionner les districts environnants, cliquez sur l’icône `Select Feature(s)` ![](../../../fig/selection_toolbar_feature_selection.png) dans la barre d’outils QGIS, maintenez la touche `Shift` de votre clavier et cliquez sur les districts soit sur la carte, soit dans la table attributaire ([Vidéo Wiki](../Wiki/fr_qgis_spatial_queries_wiki.md#manual-selection)).
     * Une fois la sélection des districts terminée, cliquez sur l’icône ![](../../../fig/qgis_move_symbol.png) pour quitter le mode de sélection d’entités.
-    * Faites ensuite un clic droit sur la couche dans le panneau des couches puis cliquez sur `Export` → `Save Selected Features as`. Nous voulons enregistrer les districts sélectionnés sous forme de GeoPackage, choisissez donc l’option `Format` correspondante. Cliquez sur les trois points et naviguez jusqu’à votre dossier `temp`. Vous pouvez donner à la couche le nom __“Flood_2024_AOI”__ puis cliquer sur `Save`. Vous devriez maintenant voir le même nom dans le champ `Layer name`. Cliquez sur `Ok` ([Vidéo Wiki](../../en/Wiki/en_qgis_non_spatial_queries_wiki.md#save-selected-features-as-a-new-file))
+    * Faites ensuite un clic droit sur la couche dans le panneau des couches puis cliquez sur `Export` → `Save Selected Features as`. Nous voulons enregistrer les districts sélectionnés sous forme de GeoPackage, choisissez donc l’option `Format` correspondante. Cliquez sur les trois points et naviguez jusqu’à votre dossier `temp`. Vous pouvez donner à la couche le nom __“Flood_2024_AOI”__ puis cliquer sur `Save`. Vous devriez maintenant voir le même nom dans le champ `Layer name`. Cliquez sur `Ok` ([Vidéo Wiki](../Wiki/fr_qgis_non_spatial_queries_wiki.md#save-selected-features-as-a-new-file))
     * Cliquez sur l’icône ![](../../../fig/selection_toolbar_feature_deselection.png) dans la barre d’outils pour terminer la sélection des entités.
 
 :::{topic} Résultat obtenu
@@ -201,9 +203,9 @@ Des publications sur les réseaux sociaux ont indiqué un impact important sur l
 
 1. La première chose à faire est de déterminer où se situent les établissements de santé dans la zone. Pour cela, vous effectuez une recherche rapide sur HDX. Vous trouvez le jeu de données Pakistan Health Facilities (OpenStreetMap Export). Cela conviendra pour le moment.
 
-    * Chargez le GeoPackage __"PAK_Health_Facilities_complete.gpkg"__ dans votre projet par glisser-déposer ([Vidéo Wiki](../../en/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Ou cliquez sur `Layer` → `Add Layer` → `Add Vector Layer`. Cliquez sur les trois points ![](../../../fig/Three_points.png) et naviguez jusqu’à __"PAK_Sindh_adm2.gpkg"__. Sélectionnez le fichier puis cliquez sur `Open`. De retour dans QGIS, cliquez sur `Add` ([Vidéo Wiki](../../en/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
+    * Chargez le GeoPackage __"PAK_Health_Facilities_complete.gpkg"__ dans votre projet par glisser-déposer ([Vidéo Wiki](../Wiki/fr_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Ou cliquez sur `Layer` → `Add Layer` → `Add Vector Layer`. Cliquez sur les trois points ![](../../../fig/Three_points.png) et naviguez jusqu’à __"PAK_Sindh_adm2.gpkg"__. Sélectionnez le fichier puis cliquez sur `Open`. De retour dans QGIS, cliquez sur `Add` ([Vidéo Wiki](../Wiki/fr_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
     * Nous devons d’abord extraire les établissements de santé situés dans notre zone d’intérêt. Pour cela, nous utiliserons l’outil __"Extract by Location"__.
-    * Ouvrez la `Processing Toolbox` ([voici comment faire](../../en/Wiki/en_qgis_interface_wiki.md#open-toolbox)) et recherchez l’outil.
+    * Ouvrez la `Processing Toolbox` ([voici comment faire](../Wiki/fr_qgis_interface_wiki.md#open-toolbox)) et recherchez l’outil.
         * Comme `Input Layer`, nous utiliserons "PAK_Health_Facilities_complete".
         * Pour `By comparing to the features from`, nous utiliserons la couche “Flood_2024_AOI”.
         * Comme `Geometric predicate`, nous utiliserons `intersect`. 
@@ -211,7 +213,7 @@ Des publications sur les réseaux sociaux ont indiqué un impact important sur l
     * Ouvrez la table attributaire de la nouvelle couche et examinez-la.
 
     * Nous devons d’abord extraire les établissements de santé situés dans notre zone d’intérêt. Pour cela, nous utiliserons l’outil __"Extract by Location"__.
-    * Ouvrez la `Processing Toolbox` ([voici comment faire](../../en/Wiki/en_qgis_interface_wiki.md#open-toolbox)) et recherchez l’outil.
+    * Ouvrez la `Processing Toolbox` ([voici comment faire](../Wiki/fr_qgis_interface_wiki.md#open-toolbox)) et recherchez l’outil.
         * Comme `Input Layer`, nous utiliserons "PAK_Health_Facilities_complete".
         * Pour `By comparing to the features from`, nous utiliserons la couche "Flood_2024_AOI".
         * Comme `Geometric predicate`, nous utiliserons `intersect`. 
@@ -230,13 +232,13 @@ Extraction par localisation au Pakistan
 Très bien, nous avons maintenant une bonne vue d’ensemble de l’emplacement des établissements de santé. Nous avons besoin d’informations beaucoup plus précises sur la zone inondée afin d’identifier les établissements de santé touchés par l’inondation. Heureusement, l’ONU vient de partager un jeu de données sur l’étendue des inondations : Satellite detected water extents from 08 to 12 August 2024 over Pakistan.
 
 2. Chargez le jeu de données __"VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp"__ dans QGIS.
-3. Une fois les couches chargées dans QGIS, vous pouvez voir qu’elles s’affichent correctement. Cependant, en vérifiant les informations de la couche, vous pouvez constater que les nouvelles couches ont un système de coordonnées de référence (CRS) différent. Elles ont le code EPSG 9707 alors que notre projet est en 4326 ([Vidéo Wiki](../../en/Wiki/en_qgis_projections_wiki.md)).
+3. Une fois les couches chargées dans QGIS, vous pouvez voir qu’elles s’affichent correctement. Cependant, en vérifiant les informations de la couche, vous pouvez constater que les nouvelles couches ont un système de coordonnées de référence (CRS) différent. Elles ont le code EPSG 9707 alors que notre projet est en 4326 ([Vidéo Wiki](../Wiki/fr_qgis_projections_wiki.md)).
     * Faites un clic droit sur la couche de données, puis cliquez sur `Properties`.
     * La fenêtre "Layer Properties" de la couche de données s’ouvrira. Cliquez sur l’onglet `Information`.
     * Sous l’intitulé “Coordinate Reference System (CRS)”, vous trouverez toutes les informations concernant le CRS. Les plus importantes sont :
     - __Name :__ vous y trouvez le code EPSG.
     - __Units :__ vous pouvez y vérifier s’il est possible d’utiliser des mètres avec cette couche de données, des degrés, ou des coordonnées latitude/longitude. <!--ADD: Why is it a problem? Add explanation-->
-4. Cela posera problème dès que nous ferons autre chose qu’afficher les couches. Puisque nous voulons manipuler les couches à l’étape suivante, nous devons d’abord les reprojeter ([Vidéo Wiki](../../en/Wiki/en_qgis_projections_wiki.md#changing-the-projection-of-a-vector-layer)). 
+4. Cela posera problème dès que nous ferons autre chose qu’afficher les couches. Puisque nous voulons manipuler les couches à l’étape suivante, nous devons d’abord les reprojeter ([Vidéo Wiki](../Wiki/fr_qgis_projections_wiki.md#changing-the-projection-of-a-vector-layer)). 
     * Cliquez sur l’onglet `Vector` → `Data Management Tools` → `Reproject Layer` ou recherchez l’outil dans la `Processing Toolbox`.
     * Comme `Input layer`, sélectionnez __"VIIRS_20240721_20240803_MinimumFloodExtent_PAK.shp"__.
     * Sélectionnez comme CRS cible / code EPSG __4326__.
@@ -248,7 +250,7 @@ Très bien, nous avons maintenant une bonne vue d’ensemble de l’emplacement 
 Nous avons observé que certains établissements de santé ont été touchés par l’inondation. Afin de visualiser cette information sur la carte, nous prévoyons d’inclure un nouvel attribut appelé __"affected"__ dans la table attributaire de __"Health_Facilities_Flood_2024_AOI"__.
 Pour y parvenir, notre première étape consistera à sélectionner tous les établissements de santé affectés. Une nouvelle colonne contenant cette information sera ensuite ajoutée à la table attributaire de __"Health_Facilities_Flood_2024_AOI"__.
 
-5. Ouvrez la `Processing Toolbox` ([voici comment faire](../../en/Wiki/en_qgis_interface_wiki.md#open-toolbox)) et recherchez l’outil __"Select by Location"__.
+5. Ouvrez la `Processing Toolbox` ([voici comment faire](../Wiki/fr_qgis_interface_wiki.md#open-toolbox)) et recherchez l’outil __"Select by Location"__.
     * `Select features from` = __"Health_Facilities_Flood_2024_AOI"__.
     * Comme `Geometric predicate`, nous utilisons `intersect`.
     * Pour `By comparing to the features from`, nous utilisons la couche __"2024_MinFloodExtent_reprojected"__.
@@ -273,7 +275,7 @@ Execution failed after 0.07 seconds
 
 Vous devez d’abord utiliser l’outil __"Fix Geometry"__ avant de répéter l’étape 5 précédente utilisant l’outil __"Select by Location"__.
 
-* Pour cela, ouvrez la [`Processing Toolbox`](../../en/Wiki/en_qgis_interface_wiki.md#open-toolbox) et recherchez l’outil __"Fix Geometries"__.
+* Pour cela, ouvrez la [`Processing Toolbox`](../Wiki/fr_qgis_interface_wiki.md#open-toolbox) et recherchez l’outil __"Fix Geometries"__.
 * `Input layer` = `2024_MinFloodExtend_reprojected`
 * Enregistrez le nouveau fichier dans votre dossier `temp` en cliquant sur les trois points ![](../../../fig/Three_points.png), puis indiquez le nom de fichier __"2024_MinFloodExtend_reprojected_fix"__.
 * Cliquez sur `Run`.
@@ -289,9 +291,9 @@ Le message d’erreur indiquant des géométries invalides.
 
 ::::
 
-6. Ouvrez la table attributaire de __"Health_Facilities_Flood_2024_AOI"__ en faisant un clic droit sur la couche → `Open Attribute Table` ([Vidéo Wiki](../../en/Wiki/en_qgis_attribute_table_wiki.md)) et activez le mode édition en cliquant sur ![](../../../fig/mActionToggleEditing.png) ([Vidéo Wiki](../../en/Wiki/en_qgis_attribute_table_wiki.md#change-data-in-the-attribute-table)). Vous pouvez maintenant modifier les données directement dans la table.
+6. Ouvrez la table attributaire de __"Health_Facilities_Flood_2024_AOI"__ en faisant un clic droit sur la couche → `Open Attribute Table` ([Vidéo Wiki](../Wiki/fr_qgis_attribute_table_wiki.md)) et activez le mode édition en cliquant sur ![](../../../fig/mActionToggleEditing.png) ([Vidéo Wiki](../Wiki/fr_qgis_attribute_table_wiki.md#change-data-in-the-attribute-table)). Vous pouvez maintenant modifier les données directement dans la table.
 
-7. Ajoutez d’abord une nouvelle colonne nommée __“Flood_affected”__. Pour cela, cliquez sur ![](../../../fig/mActionNewAttribute.png). Dans la fenêtre `Add field`, vous devez saisir le nom et définir le `Type` sur `Text(string)`. Cliquez sur `Ok` ([Vidéo Wiki](../../en/Wiki/en_qgis_attribute_table_wiki.md))
+7. Ajoutez d’abord une nouvelle colonne nommée __“Flood_affected”__. Pour cela, cliquez sur ![](../../../fig/mActionNewAttribute.png). Dans la fenêtre `Add field`, vous devez saisir le nom et définir le `Type` sur `Text(string)`. Cliquez sur `Ok` ([Vidéo Wiki](../Wiki/fr_qgis_attribute_table_wiki.md))
 
 ```{figure} ../../../fig/ PAK_flood_new_column.PNG
 ---
@@ -302,12 +304,12 @@ align: center
 Ajout d’une nouvelle colonne à la table attributaire. 
 ```
 
-8. Recherchez maintenant l’option `Show all Features` en bas à gauche et cliquez dessus. Sélectionnez ensuite l’option `Show selected features` ([Vidéo Wiki](../../en/Wiki/en_qgis_attribute_table_wiki.md#manually-select-features-in-the-attribute-table)). Cela filtrera la table pour n’afficher que les lignes représentant les établissements de santé directement touchés par l’inondation.
+8. Recherchez maintenant l’option `Show all Features` en bas à gauche et cliquez dessus. Sélectionnez ensuite l’option `Show selected features` ([Vidéo Wiki](../Wiki/fr_qgis_attribute_table_wiki.md#manually-select-features-in-the-attribute-table)). Cela filtrera la table pour n’afficher que les lignes représentant les établissements de santé directement touchés par l’inondation.
 Vous pouvez maintenant écrire `Yes` dans la colonne __"Flood_affected"__.
- * Une fois terminé, cliquez sur ![](../../../fig/mActionSaveEdits.png) pour enregistrer vos modifications, puis désactivez le mode édition en cliquant à nouveau sur ![](../../../fig/mActionToggleEditing.png) ([Vidéo Wiki](../../en/Wiki/en_qgis_attribute_table_wiki.md#change-data-in-the-attribute-table)).
+ * Une fois terminé, cliquez sur ![](../../../fig/mActionSaveEdits.png) pour enregistrer vos modifications, puis désactivez le mode édition en cliquant à nouveau sur ![](../../../fig/mActionToggleEditing.png) ([Vidéo Wiki](../Wiki/fr_qgis_attribute_table_wiki.md#change-data-in-the-attribute-table)).
  * Cliquez sur l’icône ![](../../../fig/selection_toolbar_feature_deselection.png) dans la barre d’outils pour terminer la sélection des entités.
 
-9. Pour visualiser le jeu de données enrichi, nous utilisons la fonction "Categorized Classification". Cela signifie que nous sélectionnons une colonne de la table attributaire et utilisons son contenu comme catégories pour trier et afficher les données ([Vidéo Wiki](../../en/Wiki/en_qgis_categorised_wiki.md)).
+9. Pour visualiser le jeu de données enrichi, nous utilisons la fonction "Categorized Classification". Cela signifie que nous sélectionnons une colonne de la table attributaire et utilisons son contenu comme catégories pour trier et afficher les données ([Vidéo Wiki](../Wiki/fr_qgis_categorised_wiki.md)).
     * Faites un clic droit sur la couche __"Health_Facilities_Flood_2024_AOI"__ dans le panneau des couches puis cliquez sur `Properties`. Une nouvelle fenêtre s’ouvrira avec une section d’onglets verticale à gauche. Accédez à l’onglet `Symbology`.
     * En haut, vous trouverez un menu déroulant. Ouvrez-le et choisissez `Categorized`. Sous `Value`, sélectionnez "Flood_affacted".
     * Plus bas dans la fenêtre, cliquez sur `Classify`. Vous devriez alors voir toutes les valeurs ou tous les attributs uniques de la colonne sélectionnée "Flood_affacted". Vous pouvez ajuster les couleurs en double-cliquant sur chaque couleur dans le champ central. Une fois terminé, cliquez sur `Apply` puis sur `Ok` pour fermer la fenêtre de symbologie.
@@ -354,7 +356,7 @@ Afin d’avoir une vue plus claire, nous devons importer dans QGIS les données 
 ::::
 
 1. Chargez le jeu de données __"Roads_Larkana.gpkg"__ depuis votre dossier input dans QGIS.
-2. Pour la classification catégorisée, faites un clic droit sur la couche __"Roads_Larkana"__ dans le panneau des couches puis cliquez sur `Properties`. Une nouvelle fenêtre s’ouvrira avec une section d’onglets verticale à gauche. Accédez à l’onglet `Symbology` ([Vidéo Wiki](../../en/Wiki/en_qgis_categorised_wiki.md)).
+2. Pour la classification catégorisée, faites un clic droit sur la couche __"Roads_Larkana"__ dans le panneau des couches puis cliquez sur `Properties`. Une nouvelle fenêtre s’ouvrira avec une section d’onglets verticale à gauche. Accédez à l’onglet `Symbology` ([Vidéo Wiki](../Wiki/fr_qgis_categorised_wiki.md)).
     * En haut, vous trouverez un menu déroulant. Ouvrez-le et choisissez `Categorized`. Sous `Value`, sélectionnez "highway".
     * Plus bas dans la fenêtre, cliquez sur `Classify`. Vous devriez maintenant voir toutes les valeurs ou attributs uniques de la colonne sélectionnée "highway". Vous pouvez ajuster les couleurs en double-cliquant sur les couleurs dans chaque ligne du champ central.
     * Décochez toutes les catégories sauf : `motorway`, `primary`, `secondary`, `trunk`.
@@ -382,12 +384,12 @@ Afin d’avoir une vue plus claire, nous devons importer dans QGIS les données 
 ::::{margin}
 :::{tip}
 
-Il existe des méthodes pour automatiser le processus de numérisation, qui seront abordées dans le [module 5 : Opérations SIG intermédiaires](../../en/Module_5/en_module_5_overview.md).
+Il existe des méthodes pour automatiser le processus de numérisation, qui seront abordées dans le [module 5 : Opérations SIG intermédiaires](../Module_5/fr_module_5_overview.md).
 :::
 ::::
 
 3. Pour simplifier le processus, nous allons rechercher visuellement les routes bloquées et les marquer avec des points. À cette fin, nous créerons un tout nouveau jeu de données ponctuelles représentant les routes bloquées.
-    * Cliquez sur `Layer` → `Create Layer` → `New GeoPackage Layer` ([Vidéo Wiki](../../en/Wiki/en_qgis_digitisation_wiki.md)). 
+    * Cliquez sur `Layer` → `Create Layer` → `New GeoPackage Layer` ([Vidéo Wiki](../Wiki/fr_qgis_digitisation_wiki.md)). 
     - Sous `Database`, cliquez sur ![](../../../fig/Three_points.png) et naviguez jusqu’au dossier `temp`. Donnez au nouveau jeu de données le nom __“PAK_flood_2024_blocked_road”__. Cliquez sur `Save`.
     - `Geometry type` : sélectionnez `Point`
     - Sous `Additional dimension`, assurez-vous toujours que l’option `None` est cochée. 
@@ -411,11 +413,11 @@ Il existe des méthodes pour automatiser le processus de numérisation, qui sero
 
 ::::{margin}
 :::{tip}
-Si vous ne voyez pas la barre d’outils, cliquez sur l’onglet `View` → `Toolbars` et cochez `Digitizing Toolbar` ([Vidéo Wiki](../../en/Wiki/en_qgis_digitisation_wiki.md)).
+Si vous ne voyez pas la barre d’outils, cliquez sur l’onglet `View` → `Toolbars` et cochez `Digitizing Toolbar` ([Vidéo Wiki](../Wiki/fr_qgis_digitisation_wiki.md)).
 :::
 ::::
 
-4. Vous pouvez maintenant créer un point pour chaque endroit où la couche des inondations recouvre les routes principales menant hors de Larkana [wiki](../../en/Wiki/en_qgis_digitisation_wiki.md). 
+4. Vous pouvez maintenant créer un point pour chaque endroit où la couche des inondations recouvre les routes principales menant hors de Larkana [wiki](../Wiki/fr_qgis_digitisation_wiki.md). 
     * Actuellement, la nouvelle couche __“PAK_flood_2024_blocked_road”__ est vide. Pour ajouter des entités, nous pouvons utiliser la `Digitizing Toolbar`. ![](../../../fig/Digitizing_Toolbar.png) 
     * Activez le mode édition en cliquant sur ![](../../../fig/mActionToggleEditing.png). Ensuite, activez l’option d’ajout de nouveaux points en cliquant sur ![](../../../fig/mActionCapturePoint.png) `Add Point Feature`.
     * Repérez les endroits où la couche d’inondation recouvre les routes principales ou les ponts menant hors de Larkana. Une fois que vous en avez trouvé un, faites un clic gauche sur l’emplacement que vous souhaitez numériser.
@@ -434,7 +436,7 @@ Si vous ne voyez pas la barre d’outils, cliquez sur l’onglet `View` → `Too
     * Une fois la numérisation terminée, cliquez sur ![](../../../fig/mActionSaveEdits.png) pour enregistrer vos modifications.
     * Cliquez à nouveau sur ![](../../../fig/mActionToggleEditing.png) pour quitter le mode édition.
 
-5. Nous avons maintenant cartographié toutes les principales routes d’accès bloquées vers Larkana. Nous pouvons utiliser des icônes au lieu de simples points pour afficher la couche __“PAK_flood_2024_blocked_road”__ afin de mieux visualiser cette information [wiki](../../en/Wiki/en_qgis_single_symbol_wiki.md).
+5. Nous avons maintenant cartographié toutes les principales routes d’accès bloquées vers Larkana. Nous pouvons utiliser des icônes au lieu de simples points pour afficher la couche __“PAK_flood_2024_blocked_road”__ afin de mieux visualiser cette information [wiki](../Wiki/fr_qgis_single_symbol_wiki.md).
 
     * Faites un clic droit sur la couche __“PAK_flood_2024_blocked_road”__ dans le panneau des couches puis cliquez sur `Properties`. Une nouvelle fenêtre s’ouvrira avec une section d’onglets verticale à gauche. Accédez à l’onglet `Symbology`.
     * Conservez l’option `Single Symbol`. Sélectionnez n’importe quel symbole de la liste qui convient pour marquer les routes bloquées. 

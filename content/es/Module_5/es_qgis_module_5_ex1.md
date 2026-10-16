@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../es_intro.md
+:link: ../es_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -45,10 +46,10 @@ __Artículos relevantes en Wiki:__
 ^^^
 
 * [Importación de datos geoespaciales en QGIS](../Wiki/es_qgis_import_geodata_wiki.md)
-* [Intersección](../../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Intersección](../Wiki/es_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
 * [Estadísticas zonales](../Wiki/es_qgis_raster_basic_wiki.md)
-* [Unir atributos por ubicación (resumen](../../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
-* [Funciones de la tabla](../../en/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)
+* [Unir atributos por ubicación (resumen](../Wiki/es_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Funciones de la tabla](../Wiki/es_qgis_attribute_table_wiki.md#attribute-table-data-editing)
 
 <!--FIME: Check if these wiki articles are relevant-->
 
@@ -131,7 +132,7 @@ A lo largo del proceso de procesamiento de indicadores, se obtendrán varios res
 ```
 
 
-* Cuando haya terminado, haga clic en ![](../../../fig/mActionSaveEdits.png) para guardar sus cambios y desactive el modo de edición haciendo clic de nuevo en ![](../../../fig/mActionToggleEditing.png)([video en Wiki](../../en/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)).
+* Cuando haya terminado, haga clic en ![](../../../fig/mActionSaveEdits.png) para guardar sus cambios y desactive el modo de edición haciendo clic de nuevo en ![](../../../fig/mActionToggleEditing.png)([video en Wiki](../Wiki/es_qgis_attribute_table_wiki.md#attribute-table-data-editing)).
 
 :::{figure} ../../../fig/en_qgis_module_5_ex1_field_calc.PNG
 ---
@@ -254,7 +255,7 @@ $ Valor\ normalizado\ = \frac{value\ -\ min value}{max\ value \ - \ min } $
 ```md
 ("LandD_Clas" - minimum( "LandD_Clas" ))/( maximum( "LandD_Clas") - minimum( "LandD_Clas" ))
 ```
-* Cuando haya terminado, haga clic en ![](../../../fig/mActionSaveEdits.png) para guardar sus cambios y desactive el modo de edición haciendo clic en ![](../../../fig/mActionToggleEditing.png)([Video Wiki](../../en/Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing)).
+* Cuando haya terminado, haga clic en ![](../../../fig/mActionSaveEdits.png) para guardar sus cambios y desactive el modo de edición haciendo clic en ![](../../../fig/mActionToggleEditing.png)([Video Wiki](../Wiki/es_qgis_attribute_table_wiki.md#attribute-table-data-editing)).
 
 :::{figure} ../../../fig/en_qgis_module_5_ex1_Part2_normalization.PNG
 ---
@@ -285,7 +286,7 @@ $ ponderado=  (1 - valor) \times peso $
 
 La segunda fórmula invierte el valor $(1 - valor)$ antes de aplicar la ponderación, lo que da lugar a un cálculo diferente para las variables con ponderaciones negativas.
 
-No profundizaremos más sobre este tema en este módulo, pero puede encontrar más información [aquí](../../en/GIS_AA/en_qgis_risk_assessment_plugin.md#risk).
+No profundizaremos más sobre este tema en este módulo, pero puede encontrar más información [aquí](../GIS_AA/es_qgis_risk_assessment_plugin.md#risk).
 
 :::{Hint}
 Se recomienda comprobar debidamente la lógica de cada indicador. A menudo, los indicadores de una determinada dimensión siguen la misma lógica, pero siempre hay excepciones. Una vez aplicadas las direcciones a los datos, podemos usar la expresión "falta de capacidad de afrontamiento" en lugar de "capacidad de afrontamiento", ya que hemos forzado los indicadores respectivos en otra dirección siguiendo la lógica predefinida (a mayor valor = peores circunstancias).
@@ -431,7 +432,7 @@ Posible resultado del mapa.
 #### 7. Automatización del proceso
 
 HeiGIT ha desarrollado un complemento de evaluación de riesgos para QGIS con el fin de simplificar este proceso y ahorrar tiempo.
-Puede encontrar más información sobre la metodología de riesgos y el uso del complemento [aquí](../../en/GIS_AA/en_qgis_risk_assessment_plugin.md).
+Puede encontrar más información sobre la metodología de riesgos y el uso del complemento [aquí](../GIS_AA/es_qgis_risk_assessment_plugin.md).
 
 
 Para probar el complemento y ver el resultado, utilice los datos de entrada proporcionados en la carpeta: "Modul_5_Ex1_Part_2\Input data\QGIS Plugin Risk Assessment\input"

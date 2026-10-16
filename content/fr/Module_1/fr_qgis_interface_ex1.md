@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../intro
+:link: ../fr_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -23,8 +24,8 @@ L'exercice couvre :
 
 ## Articles wiki associés<a id="related-wiki-articles"></a>
 
-- [Interface QGIS](../../en/Wiki/en_qgis_interface_wiki.md)
-- [Projets et structure de dossier](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md)
+- [Interface QGIS](../Wiki/fr_qgis_interface_wiki.md)
+- [Projets et structure de dossier](../Wiki/fr_qgis_projects_folder_structure_wiki.md)
 
 
 ## Préparation des données <a id="data-preparation"></a>
@@ -58,7 +59,7 @@ name: en_project_template_BRC
 
 - Les barres d’outils se situent par défaut en haut de l’écran. Elles regroupent les commandes permettant d’interagir avec l’interface.
 - Les panneaux se trouvent par défaut sur les côtés de l’écran. Ils incluent notamment le navigateur de fichiers et le panneau des couches à gauche. D’autres panneaux peuvent être activés pour rechercher et utiliser des outils de traitement. Dans le panneau des couches, vous verrez apparaître les données que nous ajouterons ultérieurement.
-À droite de l’écran, vous trouverez très probablement le panneau __Boîte à outils de traitements__. S’il n’apparaît pas, consultez cette [page wiki](../../en/Wiki/en_qgis_common_errors_and_Issues.md#missing-toolbox).
+À droite de l’écran, vous trouverez très probablement le panneau __Boîte à outils de traitements__. S’il n’apparaît pas, consultez cette [page wiki](../Wiki/fr_qgis_common_errors_and_Issues.md#missing-toolbox).
 
 ```{figure} ../../../fig/en_QGIS_GUI.png
 ---
@@ -69,7 +70,7 @@ name: QGIS User Interface
 QGIS User Interface.
 ```
 
-3. Vous pouvez détacher un panneau de son emplacement en cliquant sur son titre et en le faisant glisser. Vous pouvez soit l’ancrer à un autre panneau (il apparaîtra alors sous forme d’onglet), soit le transformer en fenêtre indépendante. Vous pouvez également redimensionner les panneaux. Essayez par exemple de déplacer le panneau des couches vers la droite ([Vidéo Wiki](../../en/Wiki/en_qgis_interface_wiki.md#move-and-arrange-toolbars)).
+3. Vous pouvez détacher un panneau de son emplacement en cliquant sur son titre et en le faisant glisser. Vous pouvez soit l’ancrer à un autre panneau (il apparaîtra alors sous forme d’onglet), soit le transformer en fenêtre indépendante. Vous pouvez également redimensionner les panneaux. Essayez par exemple de déplacer le panneau des couches vers la droite ([Vidéo Wiki](../Wiki/fr_qgis_interface_wiki.md#move-and-arrange-toolbars)).
 
 :::{tip}
 

@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../es_intro.md 
+:link: ../es_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -170,4 +171,4 @@ name: join_attribute_by_location_2
 Captura de pantalla de la segunda operación Unir objetos por localizaciòn.
 ```
 
-% Los siguientes pasos del cálculo del índice de vulnerabilidad se completarán en la segunda parte de este ejercicio, dentro de la sección de Geoprocesamiento No Espacial. Consulte el [enlace proporcionado](../../en/Module_6/en_qgis_non_spatial_tools_ex2.md) para este ejercicio.
+% Los siguientes pasos del cálculo del índice de vulnerabilidad se completarán en la segunda parte de este ejercicio, dentro de la sección de Geoprocesamiento No Espacial. Consulte el [enlace proporcionado](../Module_6/es_qgis_non_spatial_tools_ex2.md) para este ejercicio.

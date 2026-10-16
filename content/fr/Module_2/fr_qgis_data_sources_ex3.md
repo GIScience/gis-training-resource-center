@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../fr_intro.md 
+:link: ../fr_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -26,7 +27,7 @@ L’objectif de cet exercice est d’explorer différentes sources de données, 
 __Parcours d’exercices sur la réponse aux inondations à Larkana__
 ^^^
 
-Cet exercice fait partie du [parcours d’exercices sur la réponse aux inondations à Larkana](../../en/Exercise_tracks/en_larkana_flood_response.md).
+Cet exercice fait partie du [parcours d’exercices sur la réponse aux inondations à Larkana](../Exercise_tracks/fr_larkana_flood_response.md).
 
 :::
 
@@ -54,11 +55,11 @@ __Durée estimée de l’exercice :__
 __Articles wiki et chapitres de module pertinents__
 ^^^
 
-* [Interface QGIS](../../en/Wiki/en_qgis_interface_wiki.md)
-* [Types de données géographiques](../../en/Wiki/en_qgis_geodata_types_wiki.md)
-* [Import de données géographiques dans QGIS](../../en/Wiki/en_qgis_import_geodata_wiki.md)
-* [Concept de couche](../../en/Wiki/en_qgis_layer_concept_wiki.md)
-* [Classification des données géographiques - Graduée](../../en/Wiki/en_qgis_graduated_wiki.md)
+* [Interface QGIS](../Wiki/fr_qgis_interface_wiki.md)
+* [Types de données géographiques](../Wiki/fr_qgis_geodata_types_wiki.md)
+* [Import de données géographiques dans QGIS](../Wiki/fr_qgis_import_geodata_wiki.md)
+* [Concept de couche](../Wiki/fr_qgis_layer_concept_wiki.md)
+* [Classification des données géographiques - Graduée](../Wiki/fr_qgis_graduated_wiki.md)
 * [Sources de données](fr_data_sources.md)
 
 :::
@@ -73,7 +74,7 @@ __Articles wiki et chapitres de module pertinents__
 - Prenez le temps de vous familiariser avec l’exercice et le matériel fourni.
 - Préparez un tableau blanc. Il peut s’agir d’un tableau blanc physique, d’un paperboard ou d’un tableau blanc numérique (par ex. un tableau Miro) sur lequel les participant·e·s peuvent ajouter leurs remarques et leurs questions. 
 - Avant de commencer l’exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé __et décompressé__ le dossier de données.
-- Consultez [Comment animer des formations ?](../../en/Trainers_corner/en_how_to_training.md) pour quelques conseils généraux sur la conduite d’une formation.
+- Consultez [Comment animer des formations ?](../Trainers_corner/fr_how_to_training.md) pour quelques conseils généraux sur la conduite d’une formation.
 
 ## Animer la formation <a id="conduct-the-training"></a>
 
@@ -176,7 +177,7 @@ La plupart du temps, les jeux de données téléchargés depuis le web sont comp
 
 :::{Hint}
 
-Pour savoir comment filtrer facilement vos données en sélectionnant manuellement des entités dans la table attributaire après avoir trié une colonne, consultez la page __[table attributaire](../../en/Wiki/en_qgis_attribute_table_wiki.md)__ du wiki.
+Pour savoir comment filtrer facilement vos données en sélectionnant manuellement des entités dans la table attributaire après avoir trié une colonne, consultez la page __[table attributaire](../Wiki/fr_qgis_attribute_table_wiki.md)__ du wiki.
 
 :::
 

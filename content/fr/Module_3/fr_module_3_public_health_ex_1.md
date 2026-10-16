@@ -105,7 +105,7 @@ Pour en savoir plus sur les projections et les systèmes de coordonnées de réf
 
 :::{attention}
 
-Le SCR du projet détermine le système de coordonnées de référence utilisé pour afficher les données géographiques dans le canevas cartographique QGIS. En revanche, il ne modifie pas le SCR des couches. Chaque couche, ou jeu de données, est encodé avec un SCR. QGIS reprojette ces couches "à la volée" pour afficher sur le canevas des couches ayant des SCR différents. Cela ne modifie ni les unités de mesure ni les déformations des couches elles-mêmes. Pour effectuer des calculs de distance, vous devrez [reprojeter la couche](../../en/wiki/en_qgis_projections_wiki.md) dans un système de coordonnées de référence métrique. 
+Le SCR du projet détermine le système de coordonnées de référence utilisé pour afficher les données géographiques dans le canevas cartographique QGIS. En revanche, il ne modifie pas le SCR des couches. Chaque couche, ou jeu de données, est encodé avec un SCR. QGIS reprojette ces couches "à la volée" pour afficher sur le canevas des couches ayant des SCR différents. Cela ne modifie ni les unités de mesure ni les déformations des couches elles-mêmes. Pour effectuer des calculs de distance, vous devrez [reprojeter la couche](../wiki/fr_qgis_projections_wiki.md) dans un système de coordonnées de référence métrique. 
 
 Définir le SCR du projet sur celui que vous souhaitez utiliser peut vous aider à choisir plus rapidement le bon SCR lors de l’exécution d’algorithmes. 
 :::
@@ -146,7 +146,7 @@ name: en_m3_ex_8_public_health_part_1_hdx_search
 
 ### Tâche 3 : Importer les jeux de données <a id="task-3-importing-the-datasets"></a>
 
-1. Dans votre projet QGIS, [importez les jeux de données suivants](../../en/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop) par glisser-déposer :
+1. Dans votre projet QGIS, [importez les jeux de données suivants](../Wiki/fr_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop) par glisser-déposer :
     - `tcd_admbnda_adm0_20250212_AB.shp`
     - `tcd_admbnda_adm1_20250212_AB.shp`
     - `tcd_admbnda_adm2_20250212_AB.shp`
@@ -167,7 +167,7 @@ Un shapefile est composé de plusieurs fichiers interdépendants. L’informatio
 % THE FOLLOWING SECTION IS NOT NEEDED THEN?
 
 <!--
-4. The file `hotosm_tcd_health_facilities_points.csv` contains point data, but it is in a delimited text format. QGIS won't automatically recognise the geographic information and display the dataset as points. We need to import it as a [delimited text layer](../../en/Wiki/en_qgis_import_geodata_wiki.md#text-data-import):
+4. The file `hotosm_tcd_health_facilities_points.csv` contains point data, but it is in a delimited text format. QGIS won't automatically recognise the geographic information and display the dataset as points. We need to import it as a [delimited text layer](../Wiki/fr_qgis_import_geodata_wiki.md#text-data-import):
     - In the top bar, click on `Layer` → `Add Layer` → `Add Delimited Text Layer...`. A new window will open. Here we need to specify the file, the file format and define the geometry information
     - To the right of the `File name`-field, click on the ![](../../../fig/Three_points.png) three points to open the file browser. 
     - Navigate to the data input folder and select the file `hotosm_tcd_health_facilities_points.csv`. Click `Open`.
@@ -229,7 +229,7 @@ Maintenir <kbd>Space</kbd> active automatiquement l’outil ![](../../../fig/qgi
 
 % ADD A DISCLAIMER MAKING TRAINEES THINK WHERE THE DATA CAME FROM
 
-Dans notre dossier `data/input/`, nous trouvons un fichier csv nommé `vaccination_coverage_adm2`. Ce fichier contient la couverture vaccinale pour les vaccins mcv1 et mcv2. Heureusement, le jeu de données inclut le nom du district (`amd2_name`) ainsi que le pcode adm2. Grâce à ces informations, nous pouvons effectuer une [jointure non spatiale](../../en/Wiki/en_qgis_non_spatial_joins_wiki.md) afin d’ajouter les données de couverture vaccinale à notre couche des limites de district (adm2). 
+Dans notre dossier `data/input/`, nous trouvons un fichier csv nommé `vaccination_coverage_adm2`. Ce fichier contient la couverture vaccinale pour les vaccins mcv1 et mcv2. Heureusement, le jeu de données inclut le nom du district (`amd2_name`) ainsi que le pcode adm2. Grâce à ces informations, nous pouvons effectuer une [jointure non spatiale](../Wiki/fr_qgis_non_spatial_joins_wiki.md) afin d’ajouter les données de couverture vaccinale à notre couche des limites de district (adm2). 
 
 :::{attention}
 Les Pcodes administratifs sont bien adaptés aux jointures non spatiales dans QGIS, car ils fournissent des identifiants uniques et normalisés qui évitent les divergences de noms et garantissent une liaison de données fiable et précise.
@@ -290,7 +290,7 @@ Pensez à enregistrer votre projet régulièrement pour conserver votre progress
 Maintenant que les informations de couverture vaccinale figurent dans notre couche adm2, nous pouvons les visualiser afin de comprendre leur répartition spatiale. 
 ::::{margin}
 :::{tip}
-QGIS propose différentes façons de [visualiser les données vectorielles](../../en/Module_4/en_qgis_styling_vector_data.md). Si vous souhaitez en savoir plus sur ces différentes méthodes, consultez le [module 4](../Module_4/fr_module_4_overview.md).
+QGIS propose différentes façons de [visualiser les données vectorielles](../Module_4/fr_qgis_styling_vector_data.md). Si vous souhaitez en savoir plus sur ces différentes méthodes, consultez le [module 4](../Module_4/fr_module_4_overview.md).
 :::
 ::::
 

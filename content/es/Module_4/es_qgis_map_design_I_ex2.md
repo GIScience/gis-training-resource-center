@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../es_intro.md
+:link: ../es_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -107,7 +108,7 @@ Mantenga su gestión de datos ordenada, mediante la creación de una estructura 
 
 4. Tómese un momento para familiarizarse con los datos disponibles. Examine la tabla de atributos de las diferentes capas y observe qué información hay disponible y cómo se denominan los atributos.
 
-5. [Añadir un mapa base](../../en/Wiki/en_qgis_basemaps_wiki.md#standard-qgis-basemaps):
+5. [Añadir un mapa base](../Wiki/es_qgis_basemaps_wiki.md#standard-qgis-basemaps):
     - Navegar a la barra de menús -> `Capa` -> `Añadir capa` -> `Añadir capa XYZ...` y añadir un mapa base OpenStreetMap.
 
 
@@ -121,7 +122,7 @@ En el panel de capas:
 - coloque las capas de carreteras y extensión de inundaciones en el medio
 - y coloque las capas de puntos (centros de salud y carreteras bloqueadas) en la parte superior.
 
-Cada capa tiene su propio [panel de simbología](../../en/Module_4/en_qgis_styling_vector_data.md#styling-panel) donde puede ajustar la simbología, los colores y las etiquetas de las entidades geográficas de esa capa. ¿Necesita cambiar algunos colores? ¿Están las capas ordenadas de forma que la información sea visible? Piense en qué datos necesitamos y qué datos podemos omitir.
+Cada capa tiene su propio [panel de simbología](es_qgis_styling_vector_data.md#styling-panel) donde puede ajustar la simbología, los colores y las etiquetas de las entidades geográficas de esa capa. ¿Necesita cambiar algunos colores? ¿Están las capas ordenadas de forma que la información sea visible? Piense en qué datos necesitamos y qué datos podemos omitir.
 Por ejemplo, la capa `Roads_Larkana` contiene demasiadas carreteras para un mapa a escala nacional. Abramos la tabla de atributos y veamos cómo se clasifican las carreteras. Los datos utilizan la clasificación convencional de OpenStreetMap: El tipo de carretera se describe en el atributo `highway`. En nuestro caso, podría ser útil mostrar solo las carreteras primarias y secundarias, por lo tanto, todas las entidades en las que `highway=primary` OR `highway=secondary`.
 
 Recorramos las capas una por una y visualicémoslas, de manera significativa.
@@ -261,7 +262,7 @@ Si no puede ver la barra de herramientas, `Ver` -> `Barra de herramientas` consu
 
 Simbolicemos el aeropuerto con un icono de avión, para que podamos identificarlo con rapidez.
 
-* Haga clic con el botón derecho en la capa __"PAK_airports"__ en el `Penel de capas` → `Propriedades`. Se abrirá una nueva ventana, con una sección de pestañas vertical, a la izquierda. Navegue a la pestaña [`Simbología`](../../en/Module_4/en_qgis_styling_vector_data.md#styling-panel).
+* Haga clic con el botón derecho en la capa __"PAK_airports"__ en el `Penel de capas` → `Propriedades`. Se abrirá una nueva ventana, con una sección de pestañas vertical, a la izquierda. Navegue a la pestaña [`Simbología`](es_qgis_styling_vector_data.md#styling-panel).
 * Haga clic en `Marcador simple`.
 * En `Tipo de capa del símbolo`, seleccione __`Marcador SVG`__.
 * Desplácese un poco hacia abajo y encontrará un cuadro con todos los símbolos SVG disponibles.

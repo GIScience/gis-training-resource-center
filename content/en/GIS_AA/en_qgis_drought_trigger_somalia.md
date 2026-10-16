@@ -520,7 +520,7 @@ __Risk Assessment__
 7. Right click on the "risk_assessment_districts" layer → `Properties` → `Symbology`.
 8. In the down left corner click on `Style` → `Load Style`.
 9. In the new window click on the three points ![](../../../fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“somalia_risk_assessment_style.qml”__ style layer.
-10. Move the "risk_assessment_district" layer __below__ "Trigger_Activation" layer ([Layer Concept](../Module_2/en_qgis_geodata_concept.md#layer-concept)).
+10. Move the "risk_assessment_district" layer __below__ "Trigger_Activation" layer ([Layer Concept](../Module_2/en_qgis_geodata_concept.md#the-layer-concept)).
 11. Back in the “Layer Properties” Window click `Apply` and `OK`.
 
 
@@ -1647,7 +1647,7 @@ __Risk Assessment__
 7. Right click on the "risk_assessment_districts" layer -> `Properties` -> `Symbology`
 8. In the down left corner click on `Style` -> `Load Style`
 9. In the new window click on the three points ![](../../../fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“somalia_risk_assessment_style.qml”__ style layer.
-10. Move the "risk_assessment_district" layer __below__ "Trigger_Activation" layer ([Layer Concept](../Module_2/en_qgis_geodata_concept.md#layer-concept)).
+10. Move the "risk_assessment_district" layer __below__ "Trigger_Activation" layer ([Layer Concept](../Module_2/en_qgis_geodata_concept.md#the-layer-concept)).
 11. Back in the “Layer Properties” Window click `Apply` and `OK`
 
 
@@ -1701,7 +1701,7 @@ __Administrative 2 Boundaries (Regions)__
 ``````
 
 ```{Attention}
-Remember the [layer concept](../Module_2/en_qgis_geodata_concept.md#layer-concept) and make sure the basemap layer is at the bottom of your layers panel.
+Remember the [layer concept](../Module_2/en_qgis_geodata_concept.md#the-layer-concept) and make sure the basemap layer is at the bottom of your layers panel.
 ```
 
 
@@ -2337,7 +2337,7 @@ __Risk Assessment__
 7. Right click on the "risk_assessment_districts" layer -> `Properties` -> `Symbology`
 8. In the down left corner click on `Style` -> `Load Style`
 9. In the new window click on the three points ![](../../../fig/Three_points.png). Navigate to the “FbF_Drought_Monitoring_Trigger/layer_styles” folder and select the file __“somalia_risk_assessment_style.qml”__ style layer.
-10. Move the "risk_assessment_district" layer __below__ "Trigger_Activation" layer ([Layer Concept](../Module_2/en_qgis_geodata_concept.md#layer-concept)).
+10. Move the "risk_assessment_district" layer __below__ "Trigger_Activation" layer ([Layer Concept](../Module_2/en_qgis_geodata_concept.md#the-layer-concept)).
 11. Back in the “Layer Properties” Window click `Apply` and `OK`
 
 
@@ -2391,7 +2391,7 @@ __Administrative 2 Boundaries (Regions)__
 ``````
 
 ```{Attention}
-Remember the [layer concept](../Module_2/en_qgis_geodata_concept.md#layer-concept) and make sure the basemap layer is at the bottom of your layers panel.
+Remember the [layer concept](../Module_2/en_qgis_geodata_concept.md#the-layer-concept) and make sure the basemap layer is at the bottom of your layers panel.
 ```
 
 

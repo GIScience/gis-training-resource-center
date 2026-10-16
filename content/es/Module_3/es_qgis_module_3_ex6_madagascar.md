@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../es_intro.md
+:link: ../es_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -52,7 +53,7 @@ __Artículos relevantes en Wiki:__
 * [Clasificación de datos geoespaciales: por categorías](../Wiki/es_qgis_categorised_wiki.md)
 * [Clasificación de datos geoespaciales: graduado](../Wiki/es_qgis_graduated_wiki.md)
 * [Consultas espaciales](../Wiki/es_qgis_spatial_queries_wiki.md)
-* [Función de tabla: agregar campo](../../en/Wiki/en_qgis_table_functions_wiki.md#add-field)
+* [Función de tabla: agregar campo](../Wiki/es_qgis_table_functions_wiki.md#add-field)
 * [Digitalización: datos de punto](../Wiki/es_qgis_digitisation_wiki.md)
 
 :::
@@ -148,7 +149,7 @@ Usted ha sido enviado como gestor de información a las regiones de Madagascar a
 
 ::::
 
-1. Abra QGIS y cree un [nuevo proyecto](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Projecto` → `Nuevo proyecto`
+1. Abra QGIS y cree un [nuevo proyecto](../Wiki/es_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Projecto` → `Nuevo proyecto`
 2. Una vez creado el proyecto [guárdelo](../Wiki/es_qgis_projects_folder_structure_wiki.md) en la carpeta “proyecto” del ejercicio “Modul3_Exercise_2_Flood_Larkana”. Para hacer esto, haga clic en `Projecto` → `Guardar como...` y navegue hasta la carpeta. Nombre el proyecto “MDG_Sava_flood_2024”.
 3. Primero, queremos agregar el OpenStreetMap como mapa base para la orientación. Para añadir el OSM como mapa base, haga clic en `Capa` → `Añadir capa` → `Añadir capa XYZ`. Elija `OpenStreetMap` y haga clic en `Añadir`.
 
@@ -156,7 +157,7 @@ Usted ha sido enviado como gestor de información a las regiones de Madagascar a
 No se puede interactuar con un mapa base.
 :::
 
-4. A continuación, cargue el GeoPackage __"mdg_admin2.gpkg"__ en su proyecto. Para hacerlo, solo tiene que arrastrar y soltar ([video en Wiki](../../en/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). O haga clic en `Capa` → `Añadir capa` → `Añadir capa vectorial`. Haga clic en los tres puntos ![](../../../fig/Three_points.png) y vaya hasta __"mdg_admin2.gpkg"__. Seleccione el archivo y hacer clic en `Abrir`. De vuelta en QGIS, haga clic en `Añadir` ([Wiki Video](../../en/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
+4. A continuación, cargue el GeoPackage __"mdg_admin2.gpkg"__ en su proyecto. Para hacerlo, solo tiene que arrastrar y soltar ([video en Wiki](../Wiki/es_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). O haga clic en `Capa` → `Añadir capa` → `Añadir capa vectorial`. Haga clic en los tres puntos ![](../../../fig/Three_points.png) y vaya hasta __"mdg_admin2.gpkg"__. Seleccione el archivo y hacer clic en `Abrir`. De vuelta en QGIS, haga clic en `Añadir` ([Wiki Video](../Wiki/es_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
 
 
 :::{Attention}
@@ -166,10 +167,10 @@ Los archivos GeoPackage pueden contener varios archivos e incluso proyectos QGIS
 5. En primer lugar, queremos exportar el distrito __Sambava__ y el distrito vecino __Vohemar__ desde __mdg_admin2__ para tenerlo como capa vectorial independiente. Para hacer esto:
     * Abra la tabla de atributos de __mdg_admin2__ haciendo clic derecho en la capa -> `Abrir tabla de atributos
     `([video en Wiki](../Wiki/es_qgis_attribute_table_wiki.md)).
-    * Busque la fila de Sambava en la columna __ADM2_ES__ y márquela haciendo clic en el número situado en el extremo izquierdo de la tabla de atributos. La fila aparecerá en color azul y la zona de Sambava se volverá de color amarilla en el lienzo del mapa. Puede hacer clic con el botón derecho en la fila y hacer clic en `Zoom to Feature`([Wiki Video](../../en/Wiki/en_qgis_attribute_table_wiki.md#zoom-in-on-a-specific-feature)).
-        Para seleccionar el distrito de Vohemar, haga clic en el icono `Seleccionar objetos...` ![](../../../fig/selection_toolbar_feature_selection.png) de la barra de herramientas de QGIS, mantenga presionado el botón `Shift` del teclado y haga clic en los distritos, ya sea en el mapa o en la tabla de atributos ([video en Wiki](../../en/Wiki/en_qgis_spatial_queries_wiki.md#manual-selection)).
+    * Busque la fila de Sambava en la columna __ADM2_ES__ y márquela haciendo clic en el número situado en el extremo izquierdo de la tabla de atributos. La fila aparecerá en color azul y la zona de Sambava se volverá de color amarilla en el lienzo del mapa. Puede hacer clic con el botón derecho en la fila y hacer clic en `Zoom to Feature`([Wiki Video](../Wiki/es_qgis_attribute_table_wiki.md#zoom-in-on-a-specific-feature)).
+        Para seleccionar el distrito de Vohemar, haga clic en el icono `Seleccionar objetos...` ![](../../../fig/selection_toolbar_feature_selection.png) de la barra de herramientas de QGIS, mantenga presionado el botón `Shift` del teclado y haga clic en los distritos, ya sea en el mapa o en la tabla de atributos ([video en Wiki](../Wiki/es_qgis_spatial_queries_wiki.md#manual-selection)).
     * Cuando haya terminado de seleccionar los distritos, haga clic en el icono ![](../../../fig/qgis_move_symbol.png) para finalizar el modo de selección de entidades geográficas.
-    * Ahora haga clic derecho en la capa en el Panel de Capas y luego haga clic en `Exportar` → `Guardar objetos seleccionados como`. Queremos guardar los distritos seleccionados como un GeoPackage, así que elija la opción `Formato` en consecuencia. Haga clic en los tres puntos y navegue hasta su carpeta `temp`. Aquí puede nombrar la capa como __“Flood_2024_AOI”__ y haga clic en `Guardar`. Ahora debería ver el mismo nombre en el campo `Nombre de capa`. Haga clic en `Aceptar`([Wiki Video](../../en/Wiki/en_qgis_non_spatial_queries_wiki.md#save-selected-features-as-a-new-file))
+    * Ahora haga clic derecho en la capa en el Panel de Capas y luego haga clic en `Exportar` → `Guardar objetos seleccionados como`. Queremos guardar los distritos seleccionados como un GeoPackage, así que elija la opción `Formato` en consecuencia. Haga clic en los tres puntos y navegue hasta su carpeta `temp`. Aquí puede nombrar la capa como __“Flood_2024_AOI”__ y haga clic en `Guardar`. Ahora debería ver el mismo nombre en el campo `Nombre de capa`. Haga clic en `Aceptar`([Wiki Video](../Wiki/es_qgis_non_spatial_queries_wiki.md#save-selected-features-as-a-new-file))
     * Haga clic en el icono ![](../../../fig/selection_toolbar_feature_deselection.png) en la barra de herramientas para finalizar la selección de entidades.
 
 :::{card}
@@ -204,9 +205,9 @@ Las publicaciones en las redes sociales han indicado un impacto significativo en
 
 1. Lo primero que hay que hacer es averiguar dónde se encuentran los centros de salud de la zona. Para ello, haga una búsqueda rápida en HDX. Encontrará el conjunto de datos con los Centros de salud de Madagascar (exportado de OpenStreetMap). Esto bastará por ahora.
 
-    * Cargue el GeoPackage __“hotosm_mdg_health_facilities.gpkg”__ en su proyecto. Para hacerlo, solo tiene que arrastrar y soltar ([video en Wiki](../../en/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). O haga clic en `Capa` → `Añadir capa` → `Añadir capa vectorial`. Haga clic en los tres puntos ![](../../../fig/Three_points.png) y vaya hasta __"mdg_admin2.gpkg"__. Seleccione el archivo y hacer clic en `Abrir`. De vuelta en QGIS, haga clic en `Añadir` ([Wiki Video](../../en/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
+    * Cargue el GeoPackage __“hotosm_mdg_health_facilities.gpkg”__ en su proyecto. Para hacerlo, solo tiene que arrastrar y soltar ([video en Wiki](../Wiki/es_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). O haga clic en `Capa` → `Añadir capa` → `Añadir capa vectorial`. Haga clic en los tres puntos ![](../../../fig/Three_points.png) y vaya hasta __"mdg_admin2.gpkg"__. Seleccione el archivo y hacer clic en `Abrir`. De vuelta en QGIS, haga clic en `Añadir` ([Wiki Video](../Wiki/es_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
     * En primer lugar, debemos extraer los centros de salud que se encuentran en nuestra área de interés. Para ello utilizaremos la herramienta __“Extraer por ubicación”__.
-    * Abra la página `Caja de herramientos de Procesos` ([así se hace](../../en/Wiki/en_qgis_interface_wiki.md#open-toolbox)) y busque la herramienta.
+    * Abra la página `Caja de herramientos de Procesos` ([así se hace](../Wiki/es_qgis_interface_wiki.md#open-toolbox)) y busque la herramienta.
         * Como `Capa de entrada` usaremos “hotosm_mdg_health_facilities”.
         * Para `Comparando con los objetos de` utilizamos la capa “Flood_2024_AOI”.
         * Como `Donde los objetos (predicado geométrico)` utilizamos `intersecan`.
@@ -234,7 +235,7 @@ Bien, ahora tenemos una buena visión general de la ubicación de los centros de
     * Under the headline “Coordinate Reference System (CRS)” you find all information about the CRS. The most important are:
     - __Name:__     Here you find the EPSG Code.
     - __Unites:__    Here you can find whether it is possible to use meters with this data layer, degrees or latitude and longitude.
-4. This will be a problem as soon as we do something different then just displaying the layers. Since we want to manipulate the layers in the next step we need to reproject them first ([Wiki Video](../../en/Wiki/en_qgis_projections_wiki.md#changing-the-projection-of-a-vector-layer)).
+4. This will be a problem as soon as we do something different then just displaying the layers. Since we want to manipulate the layers in the next step we need to reproject them first ([Wiki Video](../Wiki/es_qgis_projections_wiki.md#changing-the-projection-of-a-vector-layer)).
     * Click on the `Vector` tab -> `Data Management Tools` -> `Reproject Layer` or search for the tool in the `Processing Toolbox`.
     * As `Input layer` select __"TDX_20240401_FloodExtent_SambavaDistrict_MDG.shp"__
     * Select as target CRS/ EPSG-Code __4326__.
@@ -246,7 +247,7 @@ Bien, ahora tenemos una buena visión general de la ubicación de los centros de
 Hemos observado que algunos centros de salud se encuentran dentro de la zona inundada. Para visualizar esta información en el mapa, planeamos incluir un nuevo atributo llamado __“afectado”__ en la tabla de atributos de __“Health_Facilities_Flood_2024_AOI”__.
 Para ello, nuestro primer paso consistirá en seleccionar todos los centros sanitarios afectados. A continuación, se agrega una nueva columna con esta información a la tabla de atributos __“Health_Facilities_Flood_2024_AOI”__.
 
-3. Abra `Caja de herramientas de Procesos` ([aquí se explica cómo](../../en/Wiki/en_qgis_interface_wiki.md#open-toolbox)) y busque la herramienta __“Seleccionar objetos por localización”__.
+3. Abra `Caja de herramientas de Procesos` ([aquí se explica cómo](../Wiki/es_qgis_interface_wiki.md#open-toolbox)) y busque la herramienta __“Seleccionar objetos por localización”__.
     * `Seleccionar objetos de` = __“Health_Facilities_Flood_2024_AOI”__.
     * Como `Donde los objetos (predicado geométrico)` utilizamos `intersecan`.
     * Para `Comparando con los objetos de` utilizamos la capa __“TDX_20240401_FloodExtent_SambavaDistrict_MDG”__.
@@ -276,7 +277,7 @@ Falló la ejecución después de 0,07 segundos
 
 Primero debe usar la herramienta __“Corregir geometría”__ antes de repetir el paso 5 fallido anteriormente de usar la herramienta __“Seleccionar por ubicación”__.
 
-* Para ello, abra `Caja de herramientos de Procesos` ([aquí se explica cómo](../../en/Wiki/en_qgis_interface_wiki.md#open-toolbox)) y busque la herramienta __"Reparar geometrías"__.
+* Para ello, abra `Caja de herramientos de Procesos` ([aquí se explica cómo](../Wiki/es_qgis_interface_wiki.md#open-toolbox)) y busque la herramienta __"Reparar geometrías"__.
 * `Capa de entrada` = `TDX_20240401_FloodExtent_SambavaDistrict_MDG`
 * Guarde el nuevo archivo en su carpeta `temp` haciendo clic en los tres puntos ![](../../../fig/Three_points.png), especifique el nombre del archivo como __“TDX_20240401_FloodExtent_SambavaDistrict_MDG_fix”__.
 * Haga clic en `Ejecutar`.
@@ -292,7 +293,7 @@ Corregir geometría
 
 ::::
 
-4.  Abra la tabla de atributos de __“Health_Facilities_Flood_2024_AOI”__ haciendo clic con el botón derecho en la capa -> `Open Attribute Table`([video en Wiki](../Wiki/es_qgis_attribute_table_wiki.md)) y active el modo de edición haciendo clic en ![](../../../fig/mActionToggleEditing.png) ([video en Wiki](../../en/Wiki/en_qgis_attribute_table_wiki.md#change-data-in-the-attribute-table)). Ahora puede editar los datos directamente en la tabla.
+4.  Abra la tabla de atributos de __“Health_Facilities_Flood_2024_AOI”__ haciendo clic con el botón derecho en la capa -> `Open Attribute Table`([video en Wiki](../Wiki/es_qgis_attribute_table_wiki.md)) y active el modo de edición haciendo clic en ![](../../../fig/mActionToggleEditing.png) ([video en Wiki](../Wiki/es_qgis_attribute_table_wiki.md#change-data-in-the-attribute-table)). Ahora puede editar los datos directamente en la tabla.
 5. En primer lugar, agregamos una nueva columna con el nombre __“Flood_affected”__. Para hacer esto, haga clic en ![](../../../fig/mActionNewAttribute.png). En la ventana `Nuevo campo`, tiene que agregar el nombre y establecer el `Tipo` a `Texto (cadena)`. Haga clic en `Aceptar` ([video en Wiki](../Wiki/es_qgis_attribute_table_wiki.md))
 
 
@@ -305,10 +306,10 @@ align: center
 Agregar nueva columna
 :::
 
-6. Ahora busque la opción `Mostrar todos los objetos espaciales` en la esquina inferior izquierda y haga clic en ella. A continuación, seleccione la opción `Mostrat objetos espaciales seleccionados` ([video en Wiki](../../en/Wiki/en_qgis_attribute_table_wiki.md#manually-select-features-in-the-attribute-table)). Esto filtrará la tabla para mostrar solo las filas que representan los centros de salud directamente afectados por la inundación.
+6. Ahora busque la opción `Mostrar todos los objetos espaciales` en la esquina inferior izquierda y haga clic en ella. A continuación, seleccione la opción `Mostrat objetos espaciales seleccionados` ([video en Wiki](../Wiki/es_qgis_attribute_table_wiki.md#manually-select-features-in-the-attribute-table)). Esto filtrará la tabla para mostrar solo las filas que representan los centros de salud directamente afectados por la inundación.
 Afortunadamente, ningún centro de salud se ha visto directamente afectado por la inundación.
 7. Si alguno se ha visto afectado: Escriba `Si` en la columna __“Flood_affected”__.
- * Cuando haya terminado, haga clic en ![](../../../fig/mActionSaveEdits.png) para guardar sus ediciones y desactive el modo de edición haciendo clic de nuevo en ![](../../../fig/mActionToggleEditing.png)([Wiki Video](../../en/Wiki/en_qgis_attribute_table_wiki.md#change-data-in-the-attribute-table)).
+ * Cuando haya terminado, haga clic en ![](../../../fig/mActionSaveEdits.png) para guardar sus ediciones y desactive el modo de edición haciendo clic de nuevo en ![](../../../fig/mActionToggleEditing.png)([Wiki Video](../Wiki/es_qgis_attribute_table_wiki.md#change-data-in-the-attribute-table)).
  * Haga clic en el icono ![](../../../fig/selection_toolbar_feature_deselection.png) en la barra de herramientas para finalizar la selección de entidades.
 
 * Para visualizar el conjunto de datos enriquecidos, utilizamos la función "Clasificación por categorías". Esto significa que seleccionamos una columna de la tabla de atributos y utilizamos el contenido como categorías para ordenar y mostrar los datos ([Wiki Video](../Wiki/es_qgis_categorised_wiki.md)).

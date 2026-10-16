@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../es_intro.md
+:link: ../es_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -123,7 +124,7 @@ Un mapa base es una capa de mapa fundamental o de fondo que proporciona un conte
 
 :::{dropdown} Respuesta
 - En el panel `Navegador`, expandir el grupo de las teselas “*XYZ Tiles*” y seleccionar un servicio como OpenStreetMap.
-- Alternativamente, [instalar el complemento QuickMapServices](../../en/Module_2/en_qgis_basemap.md#quickmapservices) y utilizarlo para añadir un mapa.
+- Alternativamente, [instalar el complemento QuickMapServices](es_qgis_basemap.md#quickmapservices) y utilizarlo para añadir un mapa.
 :::
 
 3. __¿Qué son los requisitos de atribución y cómo hay que gestionarlos cuando se utilizan mapas base de terceros?__

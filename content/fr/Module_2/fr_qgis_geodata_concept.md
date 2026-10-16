@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../fr_intro.md 
+:link: ../fr_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -242,7 +243,8 @@ La pratique est essentielle pour maîtriser les SIG. C’est le bon moment pour 
 
 :::{card}
 :class-card: sd-text-center sd-rounded-2 sd-border-1
-:link: fr_qgis_geodata_concept_ex1.md
+:link: fr_qgis_geodata_concept_ex1
+:link-type: doc
 
 __Module 2 Exercice 1 : Comprendre les données géographiques__
 

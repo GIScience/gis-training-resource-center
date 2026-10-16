@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../es_intro.md
+:link: ../es_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -44,7 +45,7 @@ __Artículos relevantes en Wiki__
 ^^^
 
 * [Estadísticas zonales](../Wiki/es_qgis_raster_basic_wiki.md)
-* [Intersección](../../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Intersección](../Wiki/es_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
 * [Proyecciones cartográficas](../Wiki/es_qgis_projections_wiki.md)
 * [Buffer](../Wiki/es_qgis_projections_wiki.md)
 * [Recorte](../Wiki/es_qgis_projections_wiki.md)
@@ -108,7 +109,7 @@ __Descargue todos los conjuntos de datos aquí, guarde la carpeta en su computad
 
 
 
-La carpeta contiene toda la [estructura de carpetas estándar](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) con todos los datos en la carpeta de entrada y la documentación adicional en la carpeta de documentación.
+La carpeta contiene toda la [estructura de carpetas estándar](../Wiki/es_qgis_projects_folder_structure_wiki.md#standard-folder-structure) con todos los datos en la carpeta de entrada y la documentación adicional en la carpeta de documentación.
 
 | Conjunto de datos | Fuente | Descripciones |
 | ----- | --- | --- |
@@ -158,11 +159,11 @@ Deberá crear manualmente un buffer de la trayectoria del ciclón, recortar el r
 
 
 
-1. **Abra QGIS** y cree un [nuevo proyecto](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Projecto` -> `Nuevo`
+1. **Abra QGIS** y cree un [nuevo proyecto](../Wiki/es_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) haciendo clic en `Projecto` -> `Nuevo`
 
 2. **Guarde el proyecto** en la carpeta “Project”. Para ello, haga clic en `Projecto` -> `Guardar como...` y vaya a la carpeta. Asigne el nombre “Cyclon_Harald_Exposure” al proyecto.
 
-3. **Cargue el archivo GeoJOSN** "example_Harald_2025_Track.geojson" en su proyecto por medio de arrastrar y soltar ([Video Wiki](../../en/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Abra la carpeta `data` -> `input`
+3. **Cargue el archivo GeoJOSN** "example_Harald_2025_Track.geojson" en su proyecto por medio de arrastrar y soltar ([Video Wiki](../Wiki/es_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Abra la carpeta `data` -> `input`
 
 
 4. **Reproyecte la trayectoria del ciclón** para utilizar metros en lugar de grados (importante para la precisión del buffer):

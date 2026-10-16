@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../es_intro.md
+:link: ../es_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -44,7 +45,7 @@ __Artículos relevantes en Wiki__
 ^^^
 
 * [Estadísticas zonales](../Wiki/es_qgis_raster_basic_wiki.md)
-* [Intersección](../../en/Wiki/en_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
+* [Intersección](../Wiki/es_qgis_spatial_joins_wiki.md#join-attributes-by-location-summary)
 * [Proyecciones cartográficas](../Wiki/es_qgis_projections_wiki.md)
 * [Buffer](../Wiki/es_qgis_projections_wiki.md)
 * [Recorte](../Wiki/es_qgis_projections_wiki.md)

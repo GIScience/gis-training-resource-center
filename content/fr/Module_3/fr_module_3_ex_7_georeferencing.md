@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../fr_intro.md 
+:link: ../fr_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 
@@ -63,7 +64,7 @@ __Articles pertinents__
 - Prenez le temps de vous familiariser avec l’exercice et le matériel fourni.
 - Préparez un tableau blanc. Il peut s’agir d’un tableau blanc physique, d’un paperboard ou d’un tableau blanc numérique (par ex. un tableau Miro) sur lequel les participant·e·s peuvent ajouter leurs remarques et leurs questions. 
 - Avant de commencer l’exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé __et décompressé__ le dossier de données.
-- Consultez [Comment animer des formations ?](../../en/Trainers_corner/en_how_to_training.md) pour quelques conseils généraux sur la conduite d’une formation.
+- Consultez [Comment animer des formations ?](../Trainers_corner/fr_how_to_training.md) pour quelques conseils généraux sur la conduite d’une formation.
 
 ### Animer la formation <a id="conduct-the-training"></a>
 
@@ -121,7 +122,7 @@ Dégradation des sols en Somalie.
 
 Le géoréférencement consiste à relier des points de la carte à géoréférencer à des coordonnées dans votre canevas cartographique QGIS. Ajouter un fond de carte ou une couche de référence à votre projet QGIS vous aidera à identifier les coordonnées correspondantes.
 
-1. Ajoutez un fond de carte en utilisant soit les XYZ Tiles, soit le [plugin QuickMapServices](../../en/Wiki/en_qgis_basemaps_wiki.md). 
+1. Ajoutez un fond de carte en utilisant soit les XYZ Tiles, soit le [plugin QuickMapServices](../Wiki/fr_qgis_basemaps_wiki.md). 
 2. Importez la couche `som_admbnda_adm1_ocha_20230308` dans le projet QGIS. 
 
 ### Étape 2 : Géoréférencer la carte <a id="step-2-georeferencing-the-map"></a>

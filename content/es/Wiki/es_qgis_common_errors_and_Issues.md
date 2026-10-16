@@ -4,35 +4,35 @@ Aquí recopilamos errores y problemas comunes en QGIS como apoyo general a la ca
 
 # Contenido <!-- omit from toc -->
 
-- [Diferentes versiones de QGIS](../../en/Wiki/en_qgis_common_errors_and_Issues.md#different-qgis-versions)
-- [QGIS no abre en Mac](../../en/Wiki/en_qgis_common_errors_and_Issues.md#qgis-on-mac-doesnt-open)
-- [Una capa no se muestra en QGIS](../../en/Wiki/en_qgis_common_errors_and_Issues.md#a-layer-is-not-displayed-in-qgis)
-- [Desapareció una ventana de capas en QGIS](../../en/Wiki/en_qgis_common_errors_and_Issues.md#a-layer-window-has-disappeared-in-qgis)
-- [Las capas que deberían estar en la misma posición no están unas sobre otras](../../en/Wiki/en_qgis_common_errors_and_Issues.md#layers-that-should-actually-be-in-the-same-position-are-not-on-top-of-each-other)
-- [El archivo de capa ha desaparecido de la ventana de capas](../../en/Wiki/en_qgis_common_errors_and_Issues.md#layer-file-disappeared-from-the-layer-window)
-- [Faltan herramientas de procesamiento en la herramienta de paneles y la pestaña de vectores está incompleta](../../en/Wiki/en_qgis_common_errors_and_Issues.md#missing-processing-tools-in-the-panels-tool-and-incomplete-vector-tab)
-- [Falta la caja de herramientas](../../en/Wiki/en_qgis_common_errors_and_Issues.md#missing-toolbox)
-- [La flecha norte no se sincroniza con el mapa correspondiente](../../en/Wiki/en_qgis_common_errors_and_Issues.md#the-north-arrow-is-not-syncing-with-the-corresponding-map)
-- [Geometría inválida](../../en/Wiki/en_qgis_common_errors_and_Issues.md#invalid-geometry)
-- [Sistemas de coordenadas: ¿Qué significan todos estos términos?](../../en/Wiki/en_qgis_common_errors_and_Issues.md#coordinate-systems-what-do-all-these-terms-mean)
-- [Sistemas de coordenadas: ¿Cómo puedo redefinir el sistema de coordenadas de un conjunto de datos?](../../en/Wiki/en_qgis_common_errors_and_Issues.md#coordinate-systems-how-do-i-redefine-a-datasets-coordinate-system)
-- [Sistemas de coordenadas: ¿Por qué se utiliza Mercator si está tan distorsionado?](../../en/Wiki/en_qgis_common_errors_and_Issues.md#coordinate-systems-why-is-mercator-ever-used-if-its-so-distorted)
-- [Sistemas de coordenadas: ¡Mi conjunto de datos no se encuentra donde debería!](../../en/Wiki/en_qgis_common_errors_and_Issues.md#coordinate-systems-my-dataset-is-not-located-where-it-should-be)
-- [Sistemas de coordenadas: ¿En qué sistema de coordenadas debe estar mi conjunto de datos?](../../en/Wiki/en_qgis_common_errors_and_Issues.md#coordinate-systems-what-coordinate-system-should-my-dataset-be-in)
-- [¡Mi conjunto de datos está ligeramente desplazado de donde debería estar!](../../en/Wiki/en_qgis_common_errors_and_Issues.md#my-dataset-is-slightly-offset-from-where-it-should-be)
-- [Resultados erróneos o falta de datos](../../en/Wiki/en_qgis_common_errors_and_Issues.md#wrong-data-results-or-missing-data)
-- [Problemas de gestión de archivos](../../en/Wiki/en_qgis_common_errors_and_Issues.md#file-management-issues)
-- [Problemas específicos de QGIS](../../en/Wiki/en_qgis_common_errors_and_Issues.md#specific-qgis-problems)
+- [Diferentes versiones de QGIS](es_qgis_common_errors_and_Issues.md#different-qgis-versions)
+- [QGIS no abre en Mac](es_qgis_common_errors_and_Issues.md#qgis-on-mac-doesnt-open)
+- [Una capa no se muestra en QGIS](es_qgis_common_errors_and_Issues.md#a-layer-is-not-displayed-in-qgis)
+- [Desapareció una ventana de capas en QGIS](es_qgis_common_errors_and_Issues.md#a-layer-window-has-disappeared-in-qgis)
+- [Las capas que deberían estar en la misma posición no están unas sobre otras](es_qgis_common_errors_and_Issues.md#layers-that-should-actually-be-in-the-same-position-are-not-on-top-of-each-other)
+- [El archivo de capa ha desaparecido de la ventana de capas](es_qgis_common_errors_and_Issues.md#layer-file-disappeared-from-the-layer-window)
+- [Faltan herramientas de procesamiento en la herramienta de paneles y la pestaña de vectores está incompleta](es_qgis_common_errors_and_Issues.md#missing-processing-tools-in-the-panels-tool-and-incomplete-vector-tab)
+- [Falta la caja de herramientas](es_qgis_common_errors_and_Issues.md#missing-toolbox)
+- [La flecha norte no se sincroniza con el mapa correspondiente](es_qgis_common_errors_and_Issues.md#the-north-arrow-is-not-syncing-with-the-corresponding-map)
+- [Geometría inválida](es_qgis_common_errors_and_Issues.md#invalid-geometry)
+- [Sistemas de coordenadas: ¿Qué significan todos estos términos?](es_qgis_common_errors_and_Issues.md#coordinate-systems-what-do-all-these-terms-mean)
+- [Sistemas de coordenadas: ¿Cómo puedo redefinir el sistema de coordenadas de un conjunto de datos?](es_qgis_common_errors_and_Issues.md#coordinate-systems-how-do-i-redefine-a-datasets-coordinate-system)
+- [Sistemas de coordenadas: ¿Por qué se utiliza Mercator si está tan distorsionado?](es_qgis_common_errors_and_Issues.md#coordinate-systems-why-is-mercator-ever-used-if-its-so-distorted)
+- [Sistemas de coordenadas: ¡Mi conjunto de datos no se encuentra donde debería!](es_qgis_common_errors_and_Issues.md#coordinate-systems-my-dataset-is-not-located-where-it-should-be)
+- [Sistemas de coordenadas: ¿En qué sistema de coordenadas debe estar mi conjunto de datos?](es_qgis_common_errors_and_Issues.md#coordinate-systems-what-coordinate-system-should-my-dataset-be-in)
+- [¡Mi conjunto de datos está ligeramente desplazado de donde debería estar!](es_qgis_common_errors_and_Issues.md#my-dataset-is-slightly-offset-from-where-it-should-be)
+- [Resultados erróneos o falta de datos](es_qgis_common_errors_and_Issues.md#wrong-data-results-or-missing-data)
+- [Problemas de gestión de archivos](es_qgis_common_errors_and_Issues.md#file-management-issues)
+- [Problemas específicos de QGIS](es_qgis_common_errors_and_Issues.md#specific-qgis-problems)
   - [Configuración básica \> Desactivar la selección automática de proyección](es_qgis_common_errors_and_Issues.md)
-  - [Guardar regularmente](../../en/Wiki/en_qgis_common_errors_and_Issues.md#saving-regularly)
-  - [Aplicaciones GRASS](../../en/Wiki/en_qgis_common_errors_and_Issues.md#grass-applications)
-  - [SAGA con Linux](../../en/Wiki/en_qgis_common_errors_and_Issues.md#saga-with-linux)
-  - [Diéresis, caracteres especiales y espacios en las rutas de los archivos](../../en/Wiki/en_qgis_common_errors_and_Issues.md#umlauts-special-characters-spaces-in-file-paths)
-- [Enlaces de acceso a la Ayuda de QGIS](../../en/Wiki/en_qgis_common_errors_and_Issues.md#qgis-help-access-links)
-    - [Tutoriales y consejos sobre QGIS:](../../en/Wiki/en_qgis_common_errors_and_Issues.md#qgis-tutorials-and-tips)
-    - [Comunidad/foros de QGIS:](../../en/Wiki/en_qgis_common_errors_and_Issues.md#qgis-communityforums)
-    - [Canales de YouTube sobre QGIS:](../../en/Wiki/en_qgis_common_errors_and_Issues.md#qgis-youtube-channels)
-    - [ChatGPT](../../en/Wiki/en_qgis_common_errors_and_Issues.md#chatgpt)
+  - [Guardar regularmente](es_qgis_common_errors_and_Issues.md#saving-regularly)
+  - [Aplicaciones GRASS](es_qgis_common_errors_and_Issues.md#grass-applications)
+  - [SAGA con Linux](es_qgis_common_errors_and_Issues.md#saga-with-linux)
+  - [Diéresis, caracteres especiales y espacios en las rutas de los archivos](es_qgis_common_errors_and_Issues.md#umlauts-special-characters-spaces-in-file-paths)
+- [Enlaces de acceso a la Ayuda de QGIS](es_qgis_common_errors_and_Issues.md#qgis-help-access-links)
+    - [Tutoriales y consejos sobre QGIS:](es_qgis_common_errors_and_Issues.md#qgis-tutorials-and-tips)
+    - [Comunidad/foros de QGIS:](es_qgis_common_errors_and_Issues.md#qgis-communityforums)
+    - [Canales de YouTube sobre QGIS:](es_qgis_common_errors_and_Issues.md#qgis-youtube-channels)
+    - [ChatGPT](es_qgis_common_errors_and_Issues.md#chatgpt)
 
 
 
@@ -517,7 +517,7 @@ La estructura de carpetas estándar tiene dos ventajas principales:
 1. Al compartir toda la carpeta del proyecto, podemos garantizar que el proyecto se ejecutará sin problemas en una computadora diferente.
 2. La estructura de carpetas permite la correcta organización de los datos geoespaciales y favorece el funcionamiento estable de un proyecto en QGIS.
 
-La plantilla de estructura de carpetas puede descargarse [__aquí__](https://github.com/GIScience/gis-training-resource-center/blob/main/fig/GIS_Project_folder_template.zip).
+La plantilla de estructura de carpetas puede descargarse [__aquí__](https://nexus.heigit.org/repository/gis-training-resource-center/Templates/GIS_project_folder_template.zip).
 
 
 :::{Tip}
@@ -525,7 +525,7 @@ Los datos de capa utilizados en el proyecto no se guardan en el archivo de proye
 Una buena organización de los datos con una estructura de carpetas fija y bien elaborada evita tales problemas.
 :::
 
-Véase también la siguiente [__Página_Wiki__](https://github.com/GIScience/gis-training-resource-center/blob/main/spanish/content/es/Wiki/es_qgis_projects_folder_structure_wiki.md) para entender como crear un nuevo proyecto y abrir un proyecto.
+Véase también la siguiente [__Página_Wiki__](es_qgis_projects_folder_structure_wiki.md) para entender como crear un nuevo proyecto y abrir un proyecto.
 
 ## Problemas específicos de QGIS
 ### Configuración básica > Desactivar la selección automática de la proyección
@@ -551,7 +551,7 @@ Cambiar la configuración del SRC en QGIS.
 Lamentablemente, los programas de SIG son conocidos por congelarse o fallar por completo. Aunque existe una tendencia a reducir las complicaciones con un mejor hardware, incluso una “computadora para videojuegos” que cuesta varios miles de dólares no es completamente segura.
 Las tareas más complejas, con tiempos de cálculo más largos, pueden seguir causando problemas. Por ello, se recomienda guardar con regularidad.
 
-Véase también la siguiente [__Página_Wiki__](https://github.com/GIScience/gis-training-resource-center/content/es/Wiki/es_qgis_interface_wiki.html#save-open-qgis-projects).
+Véase también la siguiente [__Página_Wiki__](es_qgis_interface_wiki.md#guardar-y-abrir-proyectos-qgis).
 
 ### Aplicaciones GRASS
 

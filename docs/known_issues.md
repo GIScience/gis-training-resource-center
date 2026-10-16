@@ -1,11 +1,13 @@
 # Known issues
 
-Status: 24 September 2026, `dev` branch. Found with a full link check of all three books
-(`scripts/check_site_links.py`, including `--external`).
+Status: 16 October 2026, `main` branch. Internal links were checked in the Markdown sources of
+all three books; external links are from the full check on 24 September 2026
+(`scripts/check_site_links.py --external`).
 
-**English:** every link, image and anchor on English pages works, except the items listed below
-that need content (empty links, missing files).
-**Spanish and French:** 106 broken links and images on pages in the table of contents.
+**English:** every internal link, image and anchor on English pages works, except the items
+listed below that need content (empty links, missing files).
+**Spanish and French:** all links were rewritten with `rewrite-translated-links.py` and the
+broken image paths fixed. What's left is listed in section 1.
 
 Run the check yourself after building the books:
 
@@ -18,36 +20,25 @@ python scripts/check_site_links.py --external   # also external URLs (slow)
 
 ## 1. Spanish and French pages
 
-These pages come from Crowdin. Most problems are the same ones already fixed in the English
-source, so they'll mostly clear up with the next **Crowdin Download and Merge** run. Check
-again afterwards.
+These pages come from Crowdin. On 16 October 2026 the links in the repo were rewritten with
+`scripts/localisation/rewrite-translated-links.py` (Download and Merge runs the same script), and
+the broken image and logo paths were fixed by hand. What's left:
 
-| Problem                                                                                                   | Spanish | French |
-|-----------------------------------------------------------------------------------------------------------|---------|--------|
-| "Home" and other card links pointing to `intro.md` / `es_intro.md` / `fr_intro.md` (no `:link-type: doc`) | 40      | 25     |
-| Card links without `.html` (only work on GitHub Pages)                                                    | –       | 8      |
-| Links to pages that aren't translated yet (the `.md` is left in the link)                                 | 14      | 3      |
-| Images and logos with wrong paths or old file names                                                       | 5       | 10     |
-
-The image and logo fixes that still need to reach Spanish and French:
-
-- Module 3 digitisation and georeferencing icons, Module 4 single-labels icon (renamed files)
-- `qgis_3.44_run_model.png` in the French cyclone trigger page (now `qgis_3.40_run_model.png`)
-- `Wiki/fig/quickosmplugin.png` in the Spanish plugins wiki (now `en_quickosmplugin.png`)
-- Partner logos on the French About page: use `../_static/...` (the logos are now copied into
-  each book's `_static/` folder)
-
-Also:
-
-- `fr_intro.md` and `es_intro.md`: the "Start teaching" / "Start learning" cards link to `.md`
-  files, which don't work as card links.
+- **Links to pages that aren't translated yet** point at the page they will become, for example
+  `fr_qgis_map_design_I.md`. Until that page exists, the link shows as plain text and the build
+  logs a warning. On pages in the table of contents: 35 French, 4 Spanish. The rewrite script
+  lists the missing pages in its run summary.
+- **Spanish links with English section anchors** (35 on pages in the table of contents, mostly
+  in `es_qgis_common_errors_and_Issues.md`): the Spanish pages don't define the English anchor
+  IDs, so these links open the top of the page. See section 4.
 - `fr_config.yml`: the licence line in the footer is still in Spanish.
 
 ## 2. Missing content
 
-- **French Trainers' corner:** `content/fr/Trainers_corner/` is empty. `fr_intro.md` links to the
-  English page instead.
-- **French contribution plan:** `fr_contribution_plan.md` doesn't exist yet.
+- **French Trainers' corner:** `content/fr/Trainers_corner/` is empty. The "Start teaching" card
+  in `fr_intro.md` links to `Trainers_corner/fr_TOT_intro`, which works once it's translated.
+- **French contribution plan:** `fr_contribution_plan.md` doesn't exist yet (`fr_intro.md` already
+  links to it).
 - **Colombia MHU exercise track** (`Exercise_tracks/mobile_health_training/`): the overview
   page still has "PLACEHOLDING TEXT" in the Context box, and the Track B card has no link.
 - **Cards with an empty `:link:`**, which need a destination:
@@ -80,26 +71,20 @@ These return 404:
 
 ### Missing video
 
-`fig/SRCS_trigger_export_image_pdf.mp4` (drought trigger Somalia) doesn't exist.
+`fig/SRCS_trigger_export_image_pdf.mp4` doesn't exist. It's used in the drought trigger Somalia
+page and in the English and French cyclone trigger Madagascar pages.
 
 Some video addresses have a line break before `.mp4` (16 in English, 32 in Spanish, for example
 in `Module_4/en_module_4_operation_maps.md`). These videos still play, because browsers remove
 line breaks from URLs. This was checked on the live site on 25 September 2026.
 
-### Links to old site addresses (11)
+### Links to old site addresses
 
 Links to `giscience.github.io/gis-training-resource-center/english/content/...` or
-`/content/fr/...` no longer work. Most are on `*_OLD` pages. The ones on live pages:
-
-- `Mobile_Data_collection/en_SMT_ex4_.md` (digitisation page)
-- `fr/Module_2/fr_data_sources.md`, `fr/Module_3/fr_qgis_module_3_ex5.md`
-
-These should become relative links to the `.md` file.
-
-### Other GitHub links (Spanish wiki)
-
-`es_qgis_common_errors_and_Issues.md` links to repo paths that no longer exist
-(`/content/es/...`, `/spanish/content/...`, `fig/GIS_Project_folder_template.zip`).
+`/content/...` no longer work. The ones on live pages were fixed on 16 October 2026. The rest are
+on pages that aren't in any table of contents (`*_OLD.md`, `old_en_qgis_drought_trigger_somalia.md`,
+and `fr/Module_3/fr_qgis_module_3_ex5.md`, whose "next exercise" `fr_qgis_map_design_I_ex4` doesn't
+exist in any language).
 
 ### Third-party sites
 
@@ -120,7 +105,7 @@ automated checks. Worth checking by hand:
   in translated pages (`scripts/localisation/rewrite-translated-links.py`). Links to a translated
   page keep their `#anchor`, but most Spanish and French pages (for example the Spanish Wiki)
   don't define the English anchor IDs, so those links open the top of the page. In the September
-  2026 test run: 108 Spanish and 15 French links. The script lists them in the run summary.
+  2026 test run: 108 Spanish and 15 French links; after the rewrite in the repo on 16 October 2026: 108 Spanish and 5 French. The script lists them in the run summary.
 - **Sources come from `main` on purpose, for now.** `crowdin-upload-sources.yml` uploads from
   `main`, so translators work on the published English content. `crowdin-download-merge.yml`
   merges on `main` too, but opens its PR against `dev`, so translations appear in the preview

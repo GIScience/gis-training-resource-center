@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../es_intro.md
+:link: ../es_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -38,7 +39,7 @@ Asignar el valor de atributo correcto en las opciones de etiquetado. QGIS necesi
 #### Añadir etiquetas simples a una capa
 
 1. En el panel de estilo, haga clic en la pestaña `Etiquetas` situada debajo de la pestaña Symbology.
-2. Seleccione ![](../../fig/en_30.30.2_icon_single_labels) `Etiquetas sencillas`.
+2. Seleccione ![](../../../fig/30.30.2_icon_single_labels.png) `Etiquetas sencillas`.
 3. `Valor` es donde se elige el atributo que se mostrará como etiqueta. Por ejemplo, `*ADM1_EN*` mostrará los nombres en inglés de los estados nigerianos para cada entidad del conjunto de datos.
 4. __Cambiemos la fuente__: Abra el menú desplegable de fuentes y seleccione Arial. Cree el texto `Bold` en el menú desplegable Style. Cambie el color haciendo clic en `Color`, y cambie el `Tamaño` a 8 pts.
 5. __Añadamos un buffer blanco__ alrededor de la etiqueta. En la pestaña `Etiquetas`, encontrará una lista con diferentes opciones para diseñar las etiquetas. Ahora, estamos en el menú `Texto`. Seleccione `Buffer` y marque la opción `Dibujar buffer de texto`. Esto hará que las etiquetas se destaquen más en mapas oscuros o con mucha información.
@@ -136,7 +137,7 @@ Etiquetas numéricas
 ---
 name: labels_graduated_symbology_example
 ---
-[Simbología graduada](../../en/Module_3/en_qgis_data_classification.md#graduated-classification)
+[Simbología graduada](../Module_3/es_qgis_data_classification.md#graduated-classification)
 :::
 
 ::::

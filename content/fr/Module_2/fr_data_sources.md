@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../fr_intro.md 
+:link: ../fr_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -101,7 +102,7 @@ Les données utilisées pour créer des cartes ou réaliser des analyses SIG peu
 
 OpenStreetMap (OSM) est un projet collaboratif visant à créer une carte du monde libre et modifiable. Contrairement aux cartes traditionnelles, souvent propriétaires et contrôlées par des acteurs commerciaux, OSM permet à chacun de contribuer aux données cartographiques et de les modifier, ce qui produit une carte détaillée et en constante évolution des routes, sentiers, repères et autres objets. Grâce à sa nature open source et à sa communauté mondiale de contributeurs, OpenStreetMap est devenu une ressource précieuse pour de nombreux usages, allant de la navigation et de l’aménagement du territoire à la réponse aux catastrophes et à l’aide humanitaire.
 
-Il existe plusieurs façons d’intégrer des données OpenStreetMap (OSM) dans QGIS sous forme de données vectorielles. Les trois méthodes les plus courantes et les plus faciles à utiliser sont geofabrik.de, HOT Export Tool et l’[extension QGIS](../../en/Wiki/en_qgis_plugins_wiki.md) QuickOSM. Chacune de ces options présente des avantages et des inconvénients.
+Il existe plusieurs façons d’intégrer des données OpenStreetMap (OSM) dans QGIS sous forme de données vectorielles. Les trois méthodes les plus courantes et les plus faciles à utiliser sont geofabrik.de, HOT Export Tool et l’[extension QGIS](../Wiki/fr_qgis_plugins_wiki.md) QuickOSM. Chacune de ces options présente des avantages et des inconvénients.
 
 :::{Tip}
 
@@ -141,7 +142,7 @@ __Extension QuickOSM__
 
 :::{tip}
 
-Il est possible par défaut d’ajouter le fond de carte OSM à votre projet. Cliquez sur `Layer` → `Add Layer` → `Add XYZ Layer…`. Choisissez `OpenStreetMap` puis cliquez sur `Add` ([Vidéo Wiki](../../en/Wiki/en_qgis_basemaps_wiki.md#standard-qgis-basemaps)). 
+Il est possible par défaut d’ajouter le fond de carte OSM à votre projet. Cliquez sur `Layer` → `Add Layer` → `Add XYZ Layer…`. Choisissez `OpenStreetMap` puis cliquez sur `Add` ([Vidéo Wiki](../Wiki/fr_qgis_basemaps_wiki.md#standard-qgis-basemaps)). 
 
 :::
 
@@ -194,8 +195,8 @@ Utilisation de l’extension QuickOSM.
 
 :::{dropdown} Comment récupérer des données avec plusieurs requêtes
 
-Si vous souhaitez obtenir davantage de données dans une même zone, vous pouvez ajouter une requête en cliquant sur ![](../../../fig/plus_quickosm.png). Veillez à choisir le bon opérateur logique, `AND` ou `OR`. En cas de doute, consultez la page [requêtes non spatiales](../../en/Wiki/en_qgis_non_spatial_queries_wiki.md) du wiki.
-Vous trouverez également un exemple dans l’[exercice OSM](https://giscience.github.io/gis-training-resource-center/content/fr/module_2/fr_qgis_data_sources_ex2.html#task-quickosm) du module 2.
+Si vous souhaitez obtenir davantage de données dans une même zone, vous pouvez ajouter une requête en cliquant sur ![](../../../fig/plus_quickosm.png). Veillez à choisir le bon opérateur logique, `AND` ou `OR`. En cas de doute, consultez la page [requêtes non spatiales](../Wiki/fr_qgis_non_spatial_queries_wiki.md) du wiki.
+Vous trouverez également un exemple dans l’[exercice OSM](fr_OSM_data_ex_legacy.md#task-3-quickosm) du module 2.
 
 :::
 

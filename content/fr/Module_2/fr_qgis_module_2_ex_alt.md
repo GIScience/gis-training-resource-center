@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../fr_intro.md 
+:link: ../fr_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -53,10 +54,10 @@ __Durée estimée de l’exercice__
 __Articles wiki pertinents__
 ^^^
 
-* [Interface QGIS](../../en/Wiki/en_qgis_interface_wiki.md)
-* [Types de données géographiques](../../en/Wiki/en_qgis_geodata_types_wiki.md)
-* [Import de données géographiques dans QGIS](../../en/Wiki/en_qgis_import_geodata_wiki.md)
-* [Concept de couche](../../en/Wiki/en_qgis_layer_concept_wiki.md)
+* [Interface QGIS](../Wiki/fr_qgis_interface_wiki.md)
+* [Types de données géographiques](../Wiki/fr_qgis_geodata_types_wiki.md)
+* [Import de données géographiques dans QGIS](../Wiki/fr_qgis_import_geodata_wiki.md)
+* [Concept de couche](../Wiki/fr_qgis_layer_concept_wiki.md)
 
 :::
 
@@ -71,7 +72,7 @@ __Articles wiki pertinents__
 - Prenez le temps de vous familiariser avec l’exercice et le matériel fourni.
 - Préparez un tableau blanc. Il peut s’agir d’un tableau blanc physique, d’un paperboard ou d’un tableau blanc numérique (par ex. un tableau Miro) sur lequel les participant·e·s peuvent ajouter leurs remarques et leurs questions. 
 - Avant de commencer l’exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé __et décompressé__ le dossier de données.
-- Consultez [Comment animer des formations ?](../../en/Trainers_corner/en_how_to_training.md) pour quelques conseils généraux sur la conduite d’une formation.
+- Consultez [Comment animer des formations ?](../Trainers_corner/fr_how_to_training.md) pour quelques conseils généraux sur la conduite d’une formation.
 
 ### Animer la formation <a id="conduct-the-training"></a>
 
@@ -103,7 +104,7 @@ __Téléchargez tous les jeux de données [ici](https://nexus.heigit.org/reposit
 
 :::
 
-Le dossier s’appelle “Module_2_Exercise_5_The_World” et contient l’ensemble de l’[arborescence de dossiers standard](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure), avec toutes les données dans le dossier input et la documentation complémentaire dans le dossier documentation.
+Le dossier s’appelle “Module_2_Exercise_5_The_World” et contient l’ensemble de l’[arborescence de dossiers standard](../Wiki/fr_qgis_projects_folder_structure_wiki.md#standard-folder-structure), avec toutes les données dans le dossier input et la documentation complémentaire dans le dossier documentation.
 
 - [World Countries (Generalized)](https://hub.arcgis.com/datasets/2b93b06dc0dc4e809d3c8db5cb96ba69_0/explore) (Polygones / Shapefile)
 - [Significant Earthquake Dataset](https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ngdc.mgg.hazards:G012153) (CSV)
@@ -117,23 +118,23 @@ Veillez à __décompresser__ le dossier de l’exercice avant de commencer les t
 :::
 ::::
 
-1. Ouvrez QGIS et créez un [nouveau projet](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) en cliquant sur `Project` → `New`
+1. Ouvrez QGIS et créez un [nouveau projet](../Wiki/fr_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) en cliquant sur `Project` → `New`
 
 2. Une fois le projet créé, enregistrez-le dans le sous-dossier `/Project` de `/Module_2_Exercise_5_The_World`/. Dans la barre supérieure, cliquez sur `Project` → `Save as` et accédez au dossier. Nommez le projet “Module_2_Ex_5_The_World”.
 
-3. Chargez le shapefile `World_countries_generalized.shp` dans votre projet par glisser-déposer ([Vidéo Wiki](../../en/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Ou cliquez sur `Layer` → `Add Layer` → `Add Vector Layer`. Cliquez sur les trois points ![](../../../fig/Three_points.png) et accédez à "World_countries__generalized". Sélectionnez le fichier puis cliquez sur `Open`. De retour dans QGIS, cliquez sur `Add` ([Vidéo Wiki](../../en/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
+3. Chargez le shapefile `World_countries_generalized.shp` dans votre projet par glisser-déposer ([Vidéo Wiki](../Wiki/fr_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)). Ou cliquez sur `Layer` → `Add Layer` → `Add Vector Layer`. Cliquez sur les trois points ![](../../../fig/Three_points.png) et accédez à "World_countries__generalized". Sélectionnez le fichier puis cliquez sur `Open`. De retour dans QGIS, cliquez sur `Add` ([Vidéo Wiki](../Wiki/fr_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
 
     :::{Attention}
     Avec les deux méthodes, vous devez sélectionner le fichier portant l’extension `.shp` ! Un [shapefile est composé de plusieurs fichiers](fr_qgis_geodata_concept.md#shapefile-structure) qui se référencent entre eux. Le fichier qui contient les informations géométriques est celui qui se termine par `.shp`.
     :::
 
-4. Chargez le fichier GeoPackage `global_power_plant_database_nuclear.gpkg` dans le projet QGIS. Vous pouvez utiliser l’une des méthodes de l’étape précédente : soit glisser-déposer ([Vidéo Wiki](../../en/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)) le fichier, soit cliquer sur `Layer` → `Add Layer` → `Add Vector Layer`. Cliquez sur les trois points ![](../../../fig/Three_points.png) et accédez à `/data/input/`. Sélectionnez le fichier puis cliquez sur `Open`. De retour dans QGIS, cliquez sur `Add` ([Vidéo Wiki](../../en/Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
+4. Chargez le fichier GeoPackage `global_power_plant_database_nuclear.gpkg` dans le projet QGIS. Vous pouvez utiliser l’une des méthodes de l’étape précédente : soit glisser-déposer ([Vidéo Wiki](../Wiki/fr_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)) le fichier, soit cliquer sur `Layer` → `Add Layer` → `Add Vector Layer`. Cliquez sur les trois points ![](../../../fig/Three_points.png) et accédez à `/data/input/`. Sélectionnez le fichier puis cliquez sur `Open`. De retour dans QGIS, cliquez sur `Add` ([Vidéo Wiki](../Wiki/fr_qgis_import_geodata_wiki.md#open-vector-data-via-layer-tab)).
 
     :::{Note}
     Les fichiers GeoPackage peuvent contenir plusieurs fichiers, voire des projets QGIS complets. Lorsque vous chargez un tel fichier dans QGIS, une fenêtre apparaît dans laquelle vous devez sélectionner les fichiers à charger dans votre projet QGIS.
     :::
 
-5. Nous voulons ensuite charger le fichier `Significant_earthquake_data.txt` dans QGIS. Comme il s’agit de données vectorielles au format texte, nous devons suivre des étapes spécifiques ([Vidéo Wiki](../../en/Wiki/en_qgis_import_geodata_wiki.md#open-csv-data-in-qgis)).
+5. Nous voulons ensuite charger le fichier `Significant_earthquake_data.txt` dans QGIS. Comme il s’agit de données vectorielles au format texte, nous devons suivre des étapes spécifiques ([Vidéo Wiki](../Wiki/fr_qgis_import_geodata_wiki.md#open-csv-data-in-qgis)).
     * Cliquez sur `Layer` → `Add Layer` → `Add Delimited text Layer`. Cliquez sur les trois points ![](../../../fig/Three_points.png) et accédez à `Significant_earthquake_data.txt` dans le sous-dossier `data/input/`. Sélectionnez le fichier puis cliquez sur `Open`.
     * Dans la fenêtre "Data Source manager| Delimited Text" de QGIS, ouvrez le menu déroulant `File Format` et cochez `Custom delimiter` puis `Tab`.
     * Ouvrez le menu déroulant `Geometry definition`. Assurez-vous que l’option `Point coordinates` est cochée. Sélectionnez ensuite “LONGITUDE” pour le `X field` et “LATITUDE” pour le `Y field`.
@@ -153,7 +154,7 @@ Veillez à __décompresser__ le dossier de l’exercice avant de commencer les t
     ---
     :::
 
-6. Dans le panneau des couches à gauche, organisez les trois couches dans un ordre logique. Rappelez-vous le [concept de couche](../../en/Wiki/en_qgis_layer_concept_wiki.md). La couche des pays doit se trouver en dessous des couches des séismes et des centrales électriques.
+6. Dans le panneau des couches à gauche, organisez les trois couches dans un ordre logique. Rappelez-vous le [concept de couche](../Wiki/fr_qgis_layer_concept_wiki.md). La couche des pays doit se trouver en dessous des couches des séismes et des centrales électriques.
 
 :::{figure} ../../../fig/Module_2/en_m2_ex_5_interface_explanation.png
 ---

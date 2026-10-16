@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../fr_intro.md 
+:link: ../fr_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -205,7 +206,7 @@ Vous pouvez ensuite choisir le format, le nom de la couche et le SCR.
 :::{tip}
 
 Nous recommandons d’utiliser le format GeoPackage (.gpkg) plutôt que le shapefile (.shp) dans la plupart des cas.
-Si vous hésitez sur le format le plus adapté, consultez la page [types de données géographiques](../../en/Wiki/en_qgis_geodata_types_wiki.md) du wiki.
+Si vous hésitez sur le format le plus adapté, consultez la page [types de données géographiques](../Wiki/fr_qgis_geodata_types_wiki.md) du wiki.
 
 :::
 

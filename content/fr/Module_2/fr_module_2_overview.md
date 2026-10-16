@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../fr_intro.md 
+:link: ../fr_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -45,7 +46,7 @@ Le deuxième module vise à approfondir la compréhension des données géograph
         - connaître quelques sites web pour trouver des données spécifiques,
         - connaître le projet collaboratif de cartographie OpenStreetMap,
         - savoir exporter des données OpenStreetMap.
-*   - __[Chapitre 6 : Fonds de carte](../../en/Module_2/en_qgis_basemap.md)__
+*   - __[Chapitre 6 : Fonds de carte](fr_qgis_basemap.md)__
     - __À la fin de ce chapitre, vous devriez :__
         - savoir ajouter des fonds de carte à votre projet QGIS.
 *   - __[Exercices du module 2](fr_qgis_module_2_exercises.md)__

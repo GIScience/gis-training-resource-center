@@ -2,7 +2,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../fr_intro.md 
+:link: ../fr_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -49,11 +50,11 @@ __Durée estimée de l’exercice__
 __Articles wiki pertinents__
 ^^^
 
-* [Interface QGIS](../../en/Wiki/en_qgis_interface_wiki.md)
-* [Types de données géographiques](../../en/Wiki/en_qgis_geodata_types_wiki.md)
-* [Import de données géographiques dans QGIS](../../en/Wiki/en_qgis_import_geodata_wiki.md)
-* [Concept de couche](../../en/Wiki/en_qgis_layer_concept_wiki.md)
-* [Classification des données géographiques - Graduée](../../en/Wiki/en_qgis_graduated_wiki.md)
+* [Interface QGIS](../Wiki/fr_qgis_interface_wiki.md)
+* [Types de données géographiques](../Wiki/fr_qgis_geodata_types_wiki.md)
+* [Import de données géographiques dans QGIS](../Wiki/fr_qgis_import_geodata_wiki.md)
+* [Concept de couche](../Wiki/fr_qgis_layer_concept_wiki.md)
+* [Classification des données géographiques - Graduée](../Wiki/fr_qgis_graduated_wiki.md)
 
 :::
 
@@ -68,7 +69,7 @@ __Articles wiki pertinents__
 - Prenez le temps de vous familiariser avec l’exercice et le matériel fourni.
 - Préparez un tableau blanc. Il peut s’agir d’un tableau blanc physique, d’un paperboard ou d’un tableau blanc numérique (par ex. un tableau Miro) sur lequel les participant·e·s peuvent ajouter leurs remarques et leurs questions.
 - Avant de commencer l’exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé __et décompressé__ le dossier de données.
-- Consultez [Comment animer des formations ?](../../en/Trainers_corner/en_how_to_training.md) pour quelques conseils généraux sur la conduite de formations.
+- Consultez [Comment animer des formations ?](../Trainers_corner/fr_how_to_training.md) pour quelques conseils généraux sur la conduite de formations.
 
 ### Animer la formation <a id="conduct-the-training"></a>
 
@@ -130,7 +131,7 @@ Le site Geofabrik propose des téléchargements de données OSM par région.
 7. Chargez le fichier `gis_osm_buildings_a_free_1.shp`. Cette couche polygonale
    contient tous les bâtiments de l’île Maurice cartographiés dans OSM. Prenez le temps
    d’explorer cette couche.
-8. Ajoutez un fond de carte satellite à l’aide de l’[extension QuickMapServices](../../en/Wiki/en_qgis_basemaps_wiki.md#basemaps-from-quickmapservices-plugin)
+8. Ajoutez un fond de carte satellite à l’aide de l’[extension QuickMapServices](../Wiki/fr_qgis_basemaps_wiki.md#basemaps-from-quickmapservices-plugin)
    afin de vérifier s’il existe des bâtiments non cartographiés.
 8. Chargez le fichier `gis_osm_landuse_a_free_1.shp`. Examinez ce
     jeu de données et utilisez la fonction de classification pour obtenir une meilleure vue d’ensemble.

@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../es_intro.md
+:link: ../es_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -51,7 +52,7 @@ __Artículos relevantes en Wiki y los capítulos del módulo__
 * [Clasificación de datos geoespaciales: por categorías](../Wiki/es_qgis_categorised_wiki.md)
 * [Clasificación de datos geoespaciales: graduado](../Wiki/es_qgis_graduated_wiki.md)
 * [Consultas espaciales](../Wiki/es_qgis_spatial_queries_wiki.md)
-* [Función de tabla: agregar campo](../../en/Wiki/en_qgis_table_functions_wiki.md#add-field)
+* [Función de tabla: agregar campo](../Wiki/es_qgis_table_functions_wiki.md#add-field)
 * [Digitalización: datos de punto](../Wiki/es_qgis_digitisation_wiki.md)
 :::
 ::::
@@ -187,7 +188,7 @@ Los archivos GeoPackage pueden contener varios archivos e incluso proyectos QGIS
     Mantener <kbd>Ctrl</kbd> mientras selecciona entidades geográfica le permite agregar más entidades a su selección actual. De lo contrario, anulará la selección del polígono anterior.
     Tenga en cuenta que solo puede seleccionar entidades geográficas de la capa que ha seleccionado actualmente en el panel capas.
     ::::
-    - En la barra de herramientas en la parte superior de la ventana de QGIS, seleccione la herramienta `Seleccionar objeto(s) espacial(es)` ![](../../../fig/selection_toolbar_feature_selection.png). Mantenga presionado <kbd>Ctrl</kbd> y <kbd>haga clic</kbd> en los distritos que rodean el distrito de Larkana ([video en Wiki](../../en/Wiki/en_qgis_spatial_queries_wiki.md#manual-selection)). Los seis distritos seleccionados se verán de color amarillo en el lienzo del mapa.
+    - En la barra de herramientas en la parte superior de la ventana de QGIS, seleccione la herramienta `Seleccionar objeto(s) espacial(es)` ![](../../../fig/selection_toolbar_feature_selection.png). Mantenga presionado <kbd>Ctrl</kbd> y <kbd>haga clic</kbd> en los distritos que rodean el distrito de Larkana ([video en Wiki](../Wiki/es_qgis_spatial_queries_wiki.md#manual-selection)). Los seis distritos seleccionados se verán de color amarillo en el lienzo del mapa.
     <!--FIX: The districts named are not the only ones surrounding the -->
     - Desactive la herramienta `Seleccionar objeto(s) espacial(es)`. Para hacerlo, haga clic en el icono ![](../../../fig/qgis_move_symbol.png) en la barra de herramientas en la parte superior de la ventana de QGIS.
     - Ahora podemos exportar las entidad geográfica seleccionadas y guardarlas en un nuevo archivo. Haga clic derecho en la capa de `PAK_adm2_Sindh` y seleccione `Exportar` > `Guardar objetos seleccionados como`.
@@ -355,9 +356,9 @@ Agregar una nueva columna a la tabla de atributos para la capa de centros de sal
 
 7. A continuación, queremos editar las filas de la tabla de atributos para las entidades que hemos seleccionado.
     - Busque la opción `Mostrar todos los objetos espaciales` en la esquina inferior izquierda y haga clic en ella.
-    - Seleccione la opción `Mostrar objetos espaciales seleccionados` ([video en Wiki](../../en/Wiki/en_qgis_attribute_table_wiki.md#manually-select-features-in-the-attribute-table)). Esto filtrará la tabla para mostrar solo las filas que representan los centros de salud directamente afectados por la inundación.
+    - Seleccione la opción `Mostrar objetos espaciales seleccionados` ([video en Wiki](../Wiki/es_qgis_attribute_table_wiki.md#manually-select-features-in-the-attribute-table)). Esto filtrará la tabla para mostrar solo las filas que representan los centros de salud directamente afectados por la inundación.
     - Escriba `Yes` en la columna __"Flood_affected"__ en cada fila seleccionada.
-    - Cuando haya terminado, haga clic en ![](../../../fig/mActionSaveEdits.png) para guardar sus ediciones y desactive el modo de edición haciendo clic de nuevo en ![](../../../fig/mActionToggleEditing.png)([Wiki Video](../../en/Wiki/en_qgis_attribute_table_wiki.md#change-data-in-the-attribute-table)).
+    - Cuando haya terminado, haga clic en ![](../../../fig/mActionSaveEdits.png) para guardar sus ediciones y desactive el modo de edición haciendo clic de nuevo en ![](../../../fig/mActionToggleEditing.png)([Wiki Video](../Wiki/es_qgis_attribute_table_wiki.md#change-data-in-the-attribute-table)).
     - Haga clic en el icono ![](../../../fig/selection_toolbar_feature_deselection.png) en la barra de herramientas para finalizar la selección de entidades.
 
 8. Podemos mostrar el conjunto de datos enriquecido y visualizarlo mediante el método de simbolización de clasificación por categorías. Esto significa que seleccionamos una columna de la tabla de atributos y usamos los valores o el contenido como categorías para ordenar y mostrar los datos ([video en Wiki](../Wiki/es_qgis_categorised_wiki.md)):

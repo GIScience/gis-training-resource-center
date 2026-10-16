@@ -1,14 +1,15 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../es_intro.md
+:link: ../es_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
 
 # Simbología para los datos ráster
 
-Como ya hemos aprendido, los datos ráster son básicamente una cuadrícula de píxeles con diferentes valores (numéricos). Como tal, no se puede aplicar estilo a la forma, ni relleno ni contorno a los datos ráster. Los datos ráster se visualizan con la asignación de una rampa de color al valor del píxel. QGIS ofrece varias opciones para visualizar los datos ráster. Por ejemplo, puede crear un relieve sombreado con un modelo digital de elevación (DEM). Este breve capítulo solo cubre los aspectos básicos de la visualización de datos ráster. Si desea obtener más información sobre datos ráster y cómo trabajar con capas ráster, consulte el [módulo 8](../../en/Module_8/en_module_8_overview.md).
+Como ya hemos aprendido, los datos ráster son básicamente una cuadrícula de píxeles con diferentes valores (numéricos). Como tal, no se puede aplicar estilo a la forma, ni relleno ni contorno a los datos ráster. Los datos ráster se visualizan con la asignación de una rampa de color al valor del píxel. QGIS ofrece varias opciones para visualizar los datos ráster. Por ejemplo, puede crear un relieve sombreado con un modelo digital de elevación (DEM). Este breve capítulo solo cubre los aspectos básicos de la visualización de datos ráster. Si desea obtener más información sobre datos ráster y cómo trabajar con capas ráster, consulte el [módulo 8](../Module_8/es_module_8_overview.md).
 
 ## Asignar un gradiente de color a datos ráster
 

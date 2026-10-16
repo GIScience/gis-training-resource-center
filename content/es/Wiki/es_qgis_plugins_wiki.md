@@ -68,7 +68,7 @@ Instalar QuickOSM.
 :::
 ::::
 
-Para iniciar el complemento recién instalado, haga clic en ![](fig/quickosmplugin.png) o en `Vectorial` → `QuickOSM` → `Consulta rápida`.
+Para iniciar el complemento recién instalado, haga clic en ![](../../../fig/en_quickosmplugin.png) o en `Vectorial` → `QuickOSM` → `Consulta rápida`.
 
 Siga los pasos para obtener los datos:
 

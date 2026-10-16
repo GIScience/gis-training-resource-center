@@ -150,7 +150,7 @@ Les étapes clés suivantes sont exécutées dans le modèle :
 
 ### Comment exécuter le modèle <a id="comment-executer-le-modele"></a>
 
-Le [QGIS Model Designer](../../en/Wiki/en_qgis_automation_wiki.md#the-qgis-model-designer) est un outil visuel qui permet aux utilisateurs de créer et de modifier un flux de travail avec tous les outils disponibles dans QGIS qui peuvent être utilisés de manière répétée, simple et rapide, tout en garantissant la reproductibilité. Il fournit une interface graphique pour créer des flux de travail en connectant des outils et des algorithmes de géomatique. L'utilisateur peut définir les entrées, les sorties et le flux de données entre les différentes étapes de traitement.
+Le [QGIS Model Designer](../Wiki/fr_qgis_automation_wiki.md#the-qgis-model-designer) est un outil visuel qui permet aux utilisateurs de créer et de modifier un flux de travail avec tous les outils disponibles dans QGIS qui peuvent être utilisés de manière répétée, simple et rapide, tout en garantissant la reproductibilité. Il fournit une interface graphique pour créer des flux de travail en connectant des outils et des algorithmes de géomatique. L'utilisateur peut définir les entrées, les sorties et le flux de données entre les différentes étapes de traitement.
 
 
 ### Étape 1 : Explication de la structure des fichiers <a id="etape-1-explication-de-la-structure-des-fichiers"></a>
@@ -326,7 +326,7 @@ __Outils:__ Modeleur de QGIS
 __Entrées et sorties du modèle:__
 
 
-1. Un modèle QGIS peut être exécuté en naviguant vers la barre du haut → `Modèle` → `Exécuter le modèle` ou en cliquant sur l'icône ![](../../../fig/Module_7/qgis_3.44_run_model.png). 
+1. Un modèle QGIS peut être exécuté en naviguant vers la barre du haut → `Modèle` → `Exécuter le modèle` ou en cliquant sur l'icône ![](../../../fig/qgis_3.40_run_model.png). 
 
 
 2. Une nouvelle fenêtre s'ouvrira. Vous devrez y définir les entrées et les sorties du modèle. Pour chacune de ces entrées obligatoires, cliquez sur la flèche déroulante et sélectionnez le fichier correspondant.
@@ -423,9 +423,9 @@ Nous générerons deux types de cartes différents pour faciliter l'analyse :
 :::
 
 Nous allons créer les cartes en deux étapes:
-Tout d'abord, nous allons utiliser le __[layer styling panel (panneau de style des couches)](../../en/Module_4/en_qgis_styling_vector_data.md#styling-panel)__ et le __layer style files (fichiers de style des couches) (.qml)__ pour ajuster la visualisation des couches sur le canevas de la carte.
+Tout d'abord, nous allons utiliser le __[layer styling panel (panneau de style des couches)](../Module_4/fr_qgis_styling_vector_data.md#styling-panel)__ et le __layer style files (fichiers de style des couches) (.qml)__ pour ajuster la visualisation des couches sur le canevas de la carte.
 
-La deuxième étape consiste à utiliser le __[print layout composer](../../en/Module_4/en_qgis_map_design_2.md#print-layout)__ pour créer des cartes imprimables avec des tableaux de données supplémentaires.
+La deuxième étape consiste à utiliser le __[print layout composer](../Module_4/fr_qgis_map_design_2.md#the-print-layout)__ pour créer des cartes imprimables avec des tableaux de données supplémentaires.
 
 <!---
 
@@ -437,7 +437,7 @@ align: center
 ---
 ```
 
-__Tool:__ [Symbology tab](../../en/Module_4/en_qgis_map_design_I.md#symbology-for-vector-data)
+__Tool:__ [Symbology tab](../Module_4/fr_qgis_map_design_I.md#symbology-for-vector-data)
 
 ```{figure} ../../../fig/MAD_Trigger_workflow_Step4b.png
 ---
@@ -448,7 +448,7 @@ align: center
 ```
 
 
-__Tool:__  [Print Layout](../../en/Module_4/en_qgis_map_design_2.md#print-layout)
+__Tool:__  [Print Layout](../Module_4/fr_qgis_map_design_2.md#the-print-layout)
 
 -->
 
@@ -519,7 +519,7 @@ Pour conserver un espace de travail clair et organisé, regroupez les couches de
 
 #### Carte 1: Création de la mise en page <a id="carte-1-creation-de-la-mise-en-page"></a>
 
-Pour faciliter la visualisation, nous avons créé ces [modèles de carte](../../en/Module_4/en_qgis_map_design_2.html#map-templates) afin de présenter les résultats de l'analyse des déclencheurs. Ces modèles servent de base à vos propres visualisations et sont disponibles dans le répertoire suivant: `AA_Cyclone_Monitoring_Trigger_MAD/map_templates`. Vous pouvez personnaliser les modèles en fonction de vos besoins et préférences. Vous trouverez de l'aide [ici](../../en/Module_4/en_qgis_map_design_2.md#print-layout).
+Pour faciliter la visualisation, nous avons créé ces [modèles de carte](../Module_4/fr_qgis_map_design_2.md) afin de présenter les résultats de l'analyse des déclencheurs. Ces modèles servent de base à vos propres visualisations et sont disponibles dans le répertoire suivant: `AA_Cyclone_Monitoring_Trigger_MAD/map_templates`. Vous pouvez personnaliser les modèles en fonction de vos besoins et préférences. Vous trouverez de l'aide [ici](../Module_4/fr_qgis_map_design_2.md#the-print-layout).
 
 
 1. Désactivez tous les groupes de couches à l'exception du groupe `Map_Cyclone_Impact_Overview` et de la carte de base `OpenStreetMap`.
@@ -1019,7 +1019,7 @@ align: center
 __Purpose:__ Export the designed and finalized map layout in order to print it as a pdf or format of your choice.
 
 
-__Tool:__ [Print Layout Composer](../../en/Module_4/en_qgis_map_design_2.md#print-layout)
+__Tool:__ [Print Layout Composer](../Module_4/fr_qgis_map_design_2.md#the-print-layout)
 
 -->
 

@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../fr_intro.md 
+:link: ../fr_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -23,7 +24,7 @@ align: right
 - QGIS est un __logiciel SIG open source__. Cela signifie que son code source est accessible à tous, ce qui fait de QGIS une application gratuite. L’intégralité du code source peut être consultée et téléchargée sur https://github.com/qgis/QGIS.
 - QGIS est un __logiciel de bureau__ : cela signifie qu’il s’agit d’un programme qui s’ouvre sur votre ordinateur sous forme de fenêtre, avec des boutons sur lesquels cliquer, des formulaires à remplir pour réaliser des tâches, et une utilisation globalement visuelle et interactive.
 - Il permet de __visualiser, modifier, saisir et analyser des données spatiales, ainsi que de produire des cartes imprimables__. QGIS a été créé en 2002 et est développé par une communauté de bénévoles. Il est __en constante évolution__.
-- QGIS s’appuie sur une __large communauté d’utilisateurs__, ce qui facilite la recherche de solutions à des problèmes techniques via des forums, des blogs ou des subreddits. La communauté officielle QGIS est accessible [ici](https://qgis.org/en/site/forusers/support.html#support). Par ailleurs, une liste de sites utiles est disponible dans le [wiki ici](../../en/Wiki/en_qgis_common_errors_and_Issues.md).
+- QGIS s’appuie sur une __large communauté d’utilisateurs__, ce qui facilite la recherche de solutions à des problèmes techniques via des forums, des blogs ou des subreddits. La communauté officielle QGIS est accessible [ici](https://qgis.org/en/site/forusers/support.html#support). Par ailleurs, une liste de sites utiles est disponible dans le [wiki ici](../Wiki/fr_qgis_common_errors_and_Issues.md).
 :::
 
 
@@ -57,7 +58,7 @@ Les SIG peuvent impliquer des mathématiques complexes, mais QGIS s’en charge 
 
 QGIS propose des outils pour créer vos propres données géographiques. Par exemple, avec les outils de numérisation, vous pouvez créer des points, des polygones et des lignes avec des informations attributaires représentant des phénomènes géographiques. Par ailleurs, le géoréférencement permet d’ajouter une information géographique à différents types de données, comme des images satellites ou des cartes dessinées à la main. Vous apprendrez à créer des données géographiques et à géoréférencer des données dans le __[module 2](../Module_2/fr_module_2_overview.md)__.
 
-Il arrive aussi que le travail en SIG nécessite de collecter des données sur le terrain. Dans ce cas, vous pouvez utiliser des [applications web et mobiles](../../en/Wiki/en_web_and_mobile_apps_wiki.md).
+Il arrive aussi que le travail en SIG nécessite de collecter des données sur le terrain. Dans ce cas, vous pouvez utiliser des [applications web et mobiles](../Wiki/fr_web_and_mobile_apps_wiki.md).
 
 :::
 
@@ -69,7 +70,7 @@ QGIS offre un large éventail d’algorithmes pour traiter les données géograp
 
 :::{tab-item} Visualisation
 
-QGIS permet de visualiser des données géographiques et de produire des cartes pour communiquer des informations. Cela se fait en attribuant des symboles et des couleurs aux différents éléments de vos données. La mise en place d’une symbologie est l’une des compétences clés que vous développerez en tant qu’utilisateur·rice SIG, et une bonne visualisation est extrêmement utile pour communiquer des résultats. Vous apprendrez à attribuer des symboles dans le [Module 4 : Visualisation des données géographiques et cartographie](../../en/Module_4/en_qgis_map_design_I.md)
+QGIS permet de visualiser des données géographiques et de produire des cartes pour communiquer des informations. Cela se fait en attribuant des symboles et des couleurs aux différents éléments de vos données. La mise en place d’une symbologie est l’une des compétences clés que vous développerez en tant qu’utilisateur·rice SIG, et une bonne visualisation est extrêmement utile pour communiquer des résultats. Vous apprendrez à attribuer des symboles dans le [Module 4 : Visualisation des données géographiques et cartographie](../Module_4/fr_qgis_map_design_I.md)
 
 :::
 ::::
@@ -81,7 +82,7 @@ QGIS permet de visualiser des données géographiques et de produire des cartes 
 __À propos des extensions__
 ^^^
 
-En plus des algorithmes inclus dans l’installation standard, QGIS propose des extensions qui ajoutent des fonctionnalités supplémentaires à l’application. Ces extensions sont développées par des organisations indépendantes ou par la communauté QGIS. Par exemple, elles permettent de se connecter à des services en ligne comme OpenStreetMap, ou d’ajouter de nouveaux algorithmes pour traiter vos données. Elles peuvent être très utiles selon les besoins. Il existe également des extensions conçues spécifiquement pour l’action humanitaire. Vous en apprendrez davantage sur les extensions dans les modules suivants. Si vous souhaitez savoir comment les installer, consultez le [wiki](../../en/Wiki/en_qgis_plugins_wiki.md).
+En plus des algorithmes inclus dans l’installation standard, QGIS propose des extensions qui ajoutent des fonctionnalités supplémentaires à l’application. Ces extensions sont développées par des organisations indépendantes ou par la communauté QGIS. Par exemple, elles permettent de se connecter à des services en ligne comme OpenStreetMap, ou d’ajouter de nouveaux algorithmes pour traiter vos données. Elles peuvent être très utiles selon les besoins. Il existe également des extensions conçues spécifiquement pour l’action humanitaire. Vous en apprendrez davantage sur les extensions dans les modules suivants. Si vous souhaitez savoir comment les installer, consultez le [wiki](../Wiki/fr_qgis_plugins_wiki.md).
 
 :::
 
@@ -362,7 +363,7 @@ Dans QGIS, les données géographiques avec lesquelles vous travaillez ne sont _
 Une bonne organisation des données, fondée sur une arborescence de dossiers stable et bien pensée, permet d’éviter ce type de problème.
 
 :::{Warning} 
-Organisez toujours vos données ! Consultez l’article wiki sur l’[Arborescence de dossiers standard](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md) pour en savoir plus. 
+Organisez toujours vos données ! Consultez l’article wiki sur l’[Arborescence de dossiers standard](../Wiki/fr_qgis_projects_folder_structure_wiki.md) pour en savoir plus. 
 :::
 
 
@@ -422,7 +423,7 @@ Si vous avez des questions avant ou après la formation, ou si vous avez besoin 
 
 :::{admonition} Erreurs fréquentes et problèmes courants
 :class: tip
-Nous avons rassemblé une liste des __[Erreurs fréquentes et problèmes courants](../../en/Wiki/en_qgis_common_errors_and_Issues.md)__. Si vous êtes bloqué·e (ce qui arrive souvent lorsqu’on travaille avec QGIS !), essayez d’y trouver la solution.
+Nous avons rassemblé une liste des __[Erreurs fréquentes et problèmes courants](../Wiki/fr_qgis_common_errors_and_Issues.md)__. Si vous êtes bloqué·e (ce qui arrive souvent lorsqu’on travaille avec QGIS !), essayez d’y trouver la solution.
 :::
 
 
@@ -482,7 +483,7 @@ Dans la barre de menu, utilisez `View` → `Panels` ou `Toolbars` pour activer/d
 
 :::{dropdown} Réponse
 
-- Sur notre page [Erreurs fréquentes et problèmes courants](../../en/Wiki/en_qgis_common_errors_and_Issues.md)
+- Sur notre page [Erreurs fréquentes et problèmes courants](../Wiki/fr_qgis_common_errors_and_Issues.md)
 - En consultant la [documentation QGIS](https://docs.qgis.org/3.34/en/docs/index.html)
 - Sur le [forum utilisateurs QGIS sur StackExchange](https://gis.stackexchange.com/?tags=qgis)
 - Via les [groupes d’utilisateurs QGIS](https://www.qgis.org/en/site/forusers/usergroups.html#qgis-usergroups)

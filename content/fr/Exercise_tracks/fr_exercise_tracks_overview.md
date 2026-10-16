@@ -14,7 +14,7 @@ Aperçu des exercices disponibles sur la plateforme
 
 :::{admonition} Exercices du module 4:class: note
 
-Vous pouvez adapter la plupart des exercices du module 3 pour un exercice de carte consécutif pour le module 4. Pensez à une symbolisation sensée et suivez la carte en faisant des étapes décrites dans le chapitre [4. . La mise en page d'impression](../Module_4/fr_qgis_map_design_2.md) et [4.7. Comprendre la mise en page d'impression](../../en/Module_4/en_qgis_understanding_print_layout.md).
+Vous pouvez adapter la plupart des exercices du module 3 pour un exercice de carte consécutif pour le module 4. Pensez à une symbolisation sensée et suivez la carte en faisant des étapes décrites dans le chapitre [4. . La mise en page d'impression](../Module_4/fr_qgis_map_design_2.md) et [4.7. Comprendre la mise en page d'impression](../Module_4/fr_qgis_understanding_print_layout.md).
 
 :::
 
@@ -24,10 +24,10 @@ Vous pouvez adapter la plupart des exercices du module 3 pour un exercice de car
 - __[Module 2 Exercices](../Module_2/fr_qgis_module_2_exercises.md)__
 - __[Module 3 Exercices](../Module_3/fr_qgis_module_3_exercises.md)__
 - __[Module 4 Exercices](../Module_4/fr_qgis_module_4_exercises.md)__
-- __[Module 5 Exercices](../../en/Module_5/en_qgis_module_5_exercises.md)__
+- __[Module 5 Exercices](../Module_5/fr_qgis_module_5_exercises.md)__
 
 ## Pistes d'exercices disponibles :
 
-- [Réponse aux Déluges en Larkana ](../../en/Exercise_tracks/en_larkana_flood_response.md)
+- [Réponse aux Déluges en Larkana ](fr_larkana_flood_response.md)
 - [Analyse d'action Anticipatoire pour les Cyclones à Madagascar](fr_mdg_aa_cyclones.md)
-- [Santé publique : Éclosion et préparation](../../en/Exercise_tracks/en_public_health_outbreak_and_preparedness.md)
+- [Santé publique : Éclosion et préparation](fr_public_health_outbreak_and_preparedness.md)

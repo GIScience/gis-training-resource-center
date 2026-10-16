@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../intro
+:link: ../fr_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -42,7 +43,7 @@ Attribuer la valeur correcte de l'attribut dans les options d'étiquetage. QGIS 
 #### Ajouter des étiquettes uniques à une couche <a id="adding-single-labels-to-a-layer"></a>
 
 1. Dans le panneau de style, cliquez sur l'onglet `Labels`-sous l'onglet Symbologie.
-2. Sélectionnez ![](../../../fig/en_30.30.2_icon_single_labels) `Single labels`.
+2. Sélectionnez ![](../../../fig/30.30.2_icon_single_labels.png) `Single labels`.
 3. `Value` est l'endroit où vous choisissez l'attribut qui sera affiché comme étiquette. Par exemple `*ADM1_EN*` affichera les noms anglais des états nigérians pour chaque fonctionnalité dans le jeu de données.
 4. __Modifions la police__ : ouvrez le menu déroulant de la police et sélectionnez Arial. Mettez le texte en `Bold` dans le menu déroulant Style. Modifiez la couleur en cliquant sur `Colour`, puis définissez la `Size` sur 8 pt
 5. __Ajoutons un tampon blanc__ autour de l'étiquette. Dans l'onglet `Labels` vous trouverez une liste avec différentes options pour styliser les étiquettes. Pour l'instant, nous sommes dans le menu `Text` . Sélectionnez `Buffer` et cochez l'option `Draw text buffer` . Cela fera ressortir les étiquettes plus sur les cartes sombres ou bondées.
@@ -142,7 +143,7 @@ name: labels_numerical_values_bad_example
 ---
 name: labels_graduated_symbology_example
 ---
-[Symbologie graduée](../../en/Module_3/en_qgis_data_classification.md#graduated-classification)
+[Symbologie graduée](../Module_3/fr_qgis_data_classification.md#graduated-classification)
 :::
 
 ::::
@@ -171,7 +172,7 @@ Par défaut, QGIS rend les étiquettes de sorte qu'elles ne se chevauchent pas a
 
 :::{Attention}
 
-Consultez l'article [du wiki](../../en/Wiki/en_qgis_representation_wiki.md) pour des tutoriels détaillés étape par étape sur la façon d'utiliser les différentes fonctionnalités du panneau de style.
+Consultez l'article [du wiki](../Wiki/fr_qgis_representation_wiki.md) pour des tutoriels détaillés étape par étape sur la façon d'utiliser les différentes fonctionnalités du panneau de style.
 
 Vous pouvez également lire plus loin dans l'article "[Étiquetage et hiérarchie de texte dans la cartographie](https://www.axismaps.com/guide/labeling)" par Axis Maps.
 

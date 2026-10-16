@@ -251,7 +251,7 @@ align: center
 Attribute Table with added polygon 
 ```
 
-The whole process of Digitization is explained in detail [here](https://giscience.github.io/gis-training-resource-center/english/content/en/Module_3/en_qgis_digitalisation.html?highlight=digitize#digitalisation).
+The whole process of Digitization is explained in detail [here](../Module_3/en_qgis_digitisation.md).
 
 
 __2. Add a property/column to the Attribute Table__
@@ -361,7 +361,7 @@ Example of a finished map using the Sketch Map Tool
 
 
 
-You can find Videos along with all the necessary information about making printable maps and the print layout composer in the [Print Layout Chapter](../Module_4/en_qgis_map_design_2.md#understanding-the-print-layout-composer), the [Symbology Chapter](../Module_4/en_qgis_map_design_I.md), and in the [Map Making Wiki](../Wiki/en_qgis_map_making_wiki.md)
+You can find Videos along with all the necessary information about making printable maps and the print layout composer in the [Print Layout Chapter](../Module_4/en_qgis_map_design_2.md#the-print-layout), the [Symbology Chapter](../Module_4/en_qgis_map_design_I.md), and in the [Map Making Wiki](../Wiki/en_qgis_map_making_wiki.md)
  
 ::::
 

@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../es_intro.md
+:link: ../es_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -98,7 +99,7 @@ Para procedimientos de digitalización más complejos, utilizará la barra de he
 | Herramienta                                                                                                 | Propósito                                        | Herramienta                                                                                                                                | Propósito                     |
 |-------------------------------------------------------------------------------------------------------------|--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
 | ![](../../../fig/cad.png)                                                                                           | Activar herramientas avanzadas de digitalización |
-| ![](../../../fig/mActionMoveFeature-1.png)![](../../../fig/mActionMoveFeatureLine.png)![](../../../fig/mActionMoveFeaturePoint.png) | Mover entidades                                  | ![Texto alternativo](../../../fig/mActionMoveFeatureCopy.png) ![](../../../fig/mActionMoveFeatureCopyLine.png) ![](../../../fig/mActionMoveFeatureCopyPoint-2.png) | Copiar y mover entidades      |
+| ![](../../../fig/mActionMoveFeature.png)![](../../../fig/mActionMoveFeatureLine.png)![](../../../fig/mActionMoveFeaturePoint.png) | Mover entidades                                  | ![Texto alternativo](../../../fig/mActionMoveFeatureCopy.png) ![](../../../fig/mActionMoveFeatureCopyLine.png) ![](../../../fig/mActionMoveFeatureCopyPoint.png) | Copiar y mover entidades      |
 | ![Texto alternativo](../../../fig/mActionRotateFeature.png)                                                         | Girar entidades                                  | ![Texto alternativo](../../../fig/mActionSimplify.png)                                                                                             | Simplificar entidad           |
 | ![Texto alternativo](../../../fig/mActionScaleFeature.png)                                                          | Escalar entidad                                  |
 | ![Texto alternativo](../../../fig/mActionAddRing.png)                                                               | Añadir anillo                                    | ![Texto alternativo](../../../fig/mActionAddPart.png)                                                                                              | Añadir parte                  |

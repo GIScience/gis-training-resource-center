@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../es_intro.md
+:link: ../es_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -95,7 +96,7 @@ __Cierre de la sesión:__
 ## Fuentes de datos
 
 Descargue la carpeta de datos [aquí](https://nexus.heigit.org/repository/gis-training-resource-center/Module_3/Exercise_1/Module_3_Exercise_1_Flood_Nigeria.zip) y guárdela en su PC. Descomprima el archivo .zip.
-La carpeta se llama “Module_3_Exercise_1_Flood_Nigeria” y contiene toda la [estructura de carpetas estándar](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) con todos los datos en la carpeta de entrada y la documentación adicional en la carpeta de documentación.
+La carpeta se llama “Module_3_Exercise_1_Flood_Nigeria” y contiene toda la [estructura de carpetas estándar](../Wiki/es_qgis_projects_folder_structure_wiki.md#standard-folder-structure) con todos los datos en la carpeta de entrada y la documentación adicional en la carpeta de documentación.
 
 * [Nigeria: División administrativa con población agregada (“kontur_boundaries_NG_20230628.gpkg”)](https://data.humdata.org/dataset/kontur-boundaries-nigeria)-Kontor
 * [Nigeria: Datos de inundaciones (“Nigeria_flood_2022_affacted_population”)](https://data.humdata.org/dataset/nigeria-nema-flood-affected-geographical-areasnorth-east-nigeria-flood-affected-geographical-areas)- UN OCHA. Este conjunto de datos se manipuló con fines de formación.
@@ -272,7 +273,7 @@ Una vez cargadas las capas en QGIS, podrá comprobar si se muestran correctament
     * Haga clic en `Ejecutar`
     * Elimine la capa antigua del panel de capas al hacer clic derecho en la capa → `Eliminar capa`.
 
-18. La capa de extensión de la inundación cubre la totalidad de Nigeria. Podemos utilizar la herramienta `Cortar (Superposición vectorial)` para cortarlo con la forma del estado de Borno ([video en Wiki](../../en/Wiki/en_qgis_geoprocessing_wiki.md#clip)).
+18. La capa de extensión de la inundación cubre la totalidad de Nigeria. Podemos utilizar la herramienta `Cortar (Superposición vectorial)` para cortarlo con la forma del estado de Borno ([video en Wiki](../Wiki/es_qgis_geoprocessing_wiki.md#clip)).
     * Abra `Caja de herramientas de Procesos` ([así se hace](../Wiki/es_qgis_interface_wiki.md)) y buscar la herramienta `Cortar (Superposición vectorial)`.
     :::{Note}
     Hay __dos__ versiones de la herramienta `Cortar`. Dado que trabajamos con datos vectoriales, asegúrese de utilizar el que se encuentra en "Superposición vectorial".

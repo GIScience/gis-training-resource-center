@@ -1,7 +1,8 @@
 ::::{grid} auto
 :::{grid-item-card}
 :class-card: sd-text-center sd-rounded-circle
-:link: ../fr_intro.md 
+:link: ../fr_intro
+:link-type: doc
 {octicon}`home-fill;1.5em;sd-text-danger`
 :::
 ::::
@@ -55,11 +56,11 @@ __Durée estimée de l’exercice :__
 __Articles wiki pertinents__
 ^^^
 
-* [Interface QGIS](../../en/Wiki/en_qgis_interface_wiki.md)
-* [Import de données géographiques dans QGIS](../../en/Wiki/en_qgis_import_geodata_wiki.md)
-* [Concept de couche](../../en/Wiki/en_qgis_layer_concept_wiki.md)
-* [Table attributaire dans QGIS](../../en/Wiki/en_qgis_attribute_table_wiki.md)
-* [Projections](../../en/Wiki/en_qgis_projections_wiki.md)
+* [Interface QGIS](../Wiki/fr_qgis_interface_wiki.md)
+* [Import de données géographiques dans QGIS](../Wiki/fr_qgis_import_geodata_wiki.md)
+* [Concept de couche](../Wiki/fr_qgis_layer_concept_wiki.md)
+* [Table attributaire dans QGIS](../Wiki/fr_qgis_attribute_table_wiki.md)
+* [Projections](../Wiki/fr_qgis_projections_wiki.md)
 
 <!-- FIXME: to be updated -->
 
@@ -76,7 +77,7 @@ __Articles wiki pertinents__
 - Prenez le temps de vous familiariser avec l’exercice et le matériel fourni.
 - Préparez un tableau blanc. Il peut s’agir d’un tableau blanc physique, d’un paperboard ou d’un tableau blanc numérique (par ex. un tableau Miro) sur lequel les participant·e·s peuvent ajouter leurs remarques et leurs questions. 
 - Avant de commencer l’exercice, assurez-vous que tout le monde a installé QGIS et a téléchargé __et décompressé__ le dossier de données.
-- Consultez [Comment animer des formations ?](../../en/Trainers_corner/en_how_to_training.md) pour quelques conseils généraux sur la conduite d’une formation.
+- Consultez [Comment animer des formations ?](../Trainers_corner/fr_how_to_training.md) pour quelques conseils généraux sur la conduite d’une formation.
 
 ### Animer la formation <a id="conduct-the-training"></a>
 
@@ -123,7 +124,7 @@ Le GeoPackage `Sierra_leone_administrative_boundaries.gpkg` contient des informa
 :::{admonition} Arborescence de dossiers
 :type: hint
 
-Gardez une gestion des données rigoureuse en créant sur votre ordinateur une [arborescence de dossiers standard](../../en/Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) pour vos projets QGIS et vos données géographiques.  
+Gardez une gestion des données rigoureuse en créant sur votre ordinateur une [arborescence de dossiers standard](../Wiki/fr_qgis_projects_folder_structure_wiki.md#standard-folder-structure) pour vos projets QGIS et vos données géographiques.  
 Les données de l’exercice doivent être enregistrées à un emplacement où vous pourrez facilement les retrouver, ainsi que le projet QGIS correspondant.
 
 :::
