@@ -109,7 +109,10 @@ Las habilidades de QGIS, que ofrece esta plataforma de capacitación, abarcan ni
 
 
 ::::{grid} 2
-:::{card} __[Instructores](Trainers_corner/es_TOT_intro.md)__
+:::{card} __Instructores__
+:link: Trainers_corner/es_TOT_intro
+:link-type: doc
+
 Hay una [sección para instructores](Trainers_corner/es_how_to_training.md) que deseen utilizar la plataforma de capacitación.
 
 El componente más importante son los planes de capacitación. Estos brindan orientación sobre cuándo usar qué en su ciclo de capacitación.
@@ -117,7 +120,10 @@ Sin embargo, cada componente del material de capacitación está diseñado para 
 
 :::
 
-:::{card} __[Participantes](Module_1/es_module_1_overview.md)__
+:::{card} __Participantes__
+:link: Module_1/es_module_1_overview
+:link-type: doc
+
 Sus instructores serán quienes le guíen en esta plataforma de capacitación. Si tiene alguna pregunta sobre esta plataforma de capacitación, póngase en contacto con su instructor.
 Esta no es una plataforma de autoaprendizaje. Si quiere aprender QGIS, siempre es mejor participar en un curso y aprender de un instructor con experiencia. Sin embargo, puede usar esta plataforma para perfeccionar sus habilidades de QGIS, solo tenga en cuenta que el objetivo de la plataforma de capacitación, no es el autoaprendizaje.
 :::
