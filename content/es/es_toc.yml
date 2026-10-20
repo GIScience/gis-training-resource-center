@@ -1,5 +1,6 @@
 # Table of contents
-# Learn more at https://jupyterbook.org/customize/toc.html
+# Generated from content/en/_toc.yml by scripts/localisation/update-translated-toc.py.
+# Only translated pages are listed. Captions can be translated here; they are kept.
 
 format: jb-book
 root: es_intro.md
@@ -9,7 +10,7 @@ parts:
     numbered: True
     chapters:
       - file: Module_1/es_module_1_overview.md
-        sections: 
+        sections:
           - file: Module_1/es_qgis_theory.md
           - file: Module_1/es_qgis_installation.md
           - file: Module_1/es_qgis_start.md
@@ -31,7 +32,7 @@ parts:
           - file: Module_3/es_qgis_georeferencing.md
           - file: Module_3/es_qgis_module_3_exercises.md
       - file: Module_4/es_module_4_overview.md
-        sections: 
+        sections:
           - file: Module_4/es_qgis_map_design_I.md
           - file: Module_4/es_qgis_styling_vector_data.md
           - file: Module_4/es_qgis_labels_vector.md
@@ -50,11 +51,11 @@ parts:
           - file: Module_5/es_qgis_module_5_exercises.md
       - file: Module_6/es_module_6_overview.md
       - file: Module_7/es_module_7_overview.md
-        sections: 
+        sections:
           - file: Module_7/es_qgis_automation_theory.md
           - file: Module_7/es_qgis_module_7_exercises.md
   - caption: Ejercicios
-    chapters: 
+    chapters:
       - file: Exercise_tracks/es_exercise_tracks_overview.md
         sections:
           - file: Exercise_tracks/es_larkana_flood_response.md
@@ -66,54 +67,55 @@ parts:
           - file: Wiki/es_qgis_installation_wiki.md
           - file: Wiki/es_qgis_interface_wiki.md
           - file: Wiki/es_qgis_projects_folder_structure_wiki.md
-          - file: Wiki/es_qgis_projections_wiki.md
           - file: Wiki/es_qgis_basemaps_wiki.md
           - file: Wiki/es_qgis_plugins_wiki.md
-          - file: Wiki/es_qgis_data_sources_wiki.md
-          - file: Wiki/es_licensing_data.md
       - file: Wiki/es_qgis_geodata_wiki.md
         sections:
-          - file: Wiki/es_qgis_geodata_types_wiki.md      
+          - file: Wiki/es_qgis_geodata_types_wiki.md
           - file: Wiki/es_qgis_import_geodata_wiki.md
           - file: Wiki/es_qgis_OpenStreetMap_wiki.md
           - file: Wiki/es_qgis_layer_concept_wiki.md
-          - file: Wiki/es_qgis_attribute_table_wiki.md
-          - file: Wiki/es_qgis_digitisation_wiki.md   
+          - file: Wiki/es_qgis_digitisation_wiki.md
+          - file: Wiki/es_qgis_projections_wiki.md
+      - file: Wiki/es_qgis_attribute_table_wiki.md
+      - file: Wiki/es_qgis_table_functions_wiki.md
+      - file: Wiki/es_qgis_queries_wiki.md
+        sections:
+          - file: Wiki/es_qgis_spatial_queries_wiki.md
+          - file: Wiki/es_qgis_non_spatial_queries_wiki.md
+      - file: Wiki/es_qgis_joins_wiki.md
+        sections:
+          - file: Wiki/es_qgis_spatial_joins_wiki.md
+          - file: Wiki/es_qgis_non_spatial_joins_wiki.md
+      - file: Wiki/es_qgis_geoprocessing_wiki.md
+      - file: Wiki/es_qgis_raster_wiki.md
+        sections:
+          - file: Wiki/es_qgis_raster_basic_wiki.md
+      - file: Wiki/es_qgis_automation_wiki.md
       - file: Wiki/es_qgis_data_classification_wiki.md
         sections:
           - file: Wiki/es_qgis_single_symbol_wiki.md
           - file: Wiki/es_qgis_categorised_wiki.md
           - file: Wiki/es_qgis_graduated_wiki.md
-      - file: Wiki/es_qgis_geoprocessing_wiki.md
-      - file: Wiki/es_qgis_queries_wiki.md
-        sections:
-          - file: Wiki/es_qgis_spatial_queries_wiki.md
-          - file: Wiki/es_qgis_non_spatial_queries_wiki.md
-      - file: Wiki/es_qgis_table_functions_wiki.md
-      - file: Wiki/es_qgis_joins_wiki.md
-        sections:
-          - file: Wiki/es_qgis_spatial_joins_wiki.md
-          - file: Wiki/es_qgis_non_spatial_joins_wiki.md      
-      - file: Wiki/es_qgis_raster_wiki.md
-        sections:
-          - file: Wiki/es_qgis_raster_basic_wiki.md
-      - file: Wiki/es_qgis_automation_wiki.md
       - file: Wiki/es_qgis_representation_wiki.md
         sections:
           - file: Wiki/es_qgis_visualisation_wiki.md
           - file: Wiki/es_qgis_map_making_wiki.md
-      - file: Wiki/es_qgis_common_errors_and_Issues.md   
-      - file: Wiki/es_web_and_mobile_apps_wiki.md
+      - file: Wiki/es_qgis_data_sources_wiki.md
+      - file: Wiki/es_licensing_data.md
       - file: Wiki/es_geodata_management_sharepoint.md
+      - file: Wiki/es_web_and_mobile_apps_wiki.md
+      - file: Wiki/es_qgis_common_errors_and_Issues.md
   - caption: Rincón de los Capacitadores
-    chapters: 
-      - file: Trainers_corner/es_TOT_intro.md  
-      - file: Trainers_corner/es_how_to_training.md
-      - file: Trainers_corner/es_training_graphical_outline.md
-      - file: Trainers_corner/es_training_day_structure.md  
-      - file: Trainers_corner/es_how_to_teach_GIS.md
-      - file: Trainers_corner/es_how_to_assessment.md 
+    chapters:
+      - file: Trainers_corner/es_TOT_intro.md
+        sections:
+          - file: Trainers_corner/es_how_to_training.md
+          - file: Trainers_corner/es_training_graphical_outline.md
+          - file: Trainers_corner/es_training_day_structure.md
+          - file: Trainers_corner/es_how_to_teach_GIS.md
+          - file: Trainers_corner/es_how_to_assessment.md
   - caption: About
     chapters:
-      - file: About/about_1.md
       - file: es_contribution_plan.md
+      - file: About/about_1.md
