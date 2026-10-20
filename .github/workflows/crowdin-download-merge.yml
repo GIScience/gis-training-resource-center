@@ -353,6 +353,25 @@ jobs:
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
 
+      # Pages that aren't translated yet get a placeholder that links to the English page.
+      # The merge above has already replaced the placeholders of newly translated pages.
+      - name: Create placeholder pages
+        run: |
+          set -euo pipefail
+
+          python3 scripts/localisation/create-placeholder-pages.py \
+            --lang "${{ inputs.target_language }}" \
+            --content-root content \
+            | tee "$RUNNER_TEMP/placeholders.txt"
+
+          {
+            echo "## Placeholder pages"
+            echo ""
+            echo '```'
+            cat "$RUNNER_TEMP/placeholders.txt"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - name: Write merge summary
         run: |
           set -euo pipefail
@@ -430,6 +449,7 @@ jobs:
             4. Merge the translated XLIFF back to Markdown using Okapi/Tikal.
             5. Write translated Markdown files into `content/${{ inputs.target_language }}/`.
             6. Rewrite links to English pages: to the translated page, including pages that aren't translated yet (listed in the run summary).
+            7. Create placeholder pages ("not translated yet", with a link to the English page) for pages that aren't translated yet.
 
             Target language: `${{ inputs.target_language }}`
 
