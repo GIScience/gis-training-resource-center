@@ -32,6 +32,8 @@ TEXT_LINK = re.compile(r'(?<!!)(\[[^\]\n]*\]\()([^)\s]+)((?:\s+"[^"]*")?\))')
 # :link: target on a card, with an optional :link-type: line in the same option block
 CARD_LINK = re.compile(r"^(\s*):link:[ \t]*(\S+)[ \t]*$", re.M)
 LINK_TYPE_DOC = re.compile(r"^\s*:link-type:\s*doc\s*$")
+# Front matter marker of a placeholder page (create-placeholder-pages.py)
+PLACEHOLDER = "translation_placeholder: true"
 
 
 def stem_of(name: str) -> str:
@@ -65,7 +67,9 @@ class Rewriter:
         return anchor in self._anchors[page]
 
     def check_anchor(self, current: Path, page: Path, anchor: str, url: str):
-        if anchor and not self.has_anchor(page, anchor):
+        # A placeholder (create-placeholder-pages.py) gets its sections once it's translated.
+        if anchor and PLACEHOLDER not in page.read_text(encoding="utf-8").split("\n---", 1)[0] \
+                and not self.has_anchor(page, anchor):
             self.missing_anchors.append((current, url))
 
     def resolve(self, current: Path, path: str):
