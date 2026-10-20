@@ -1,6 +1,6 @@
 # Historical Impact Assessment (HIA) Sudan exercise <a id="historical-impact-assessment-hia-sudan-exercise"></a>
 
-__🔙[Back to Homepage](../intro.md)__
+__{octicon}`arrow-left` [Back to Homepage](../intro.md)__
 
 A HIA has two purposes: First, understanding in detail what kind of problems are caused by a particular hazard, allows people to make informed decisions on the selection of early actions to counter those problems. Secondly, without a good understanding of which magnitude of flood causes significant humanitarian impact, one can not adjust trigger levels accordingly to tackle those significant events.
 This exercise is based on the article Historical Impact Assessment (HIA) for Flood in Sudan. In this article, there are seven steps listed for the HIA in Sudan. This exercise will start with step 3- Selecting datasets.
@@ -18,11 +18,11 @@ The folder is called __GIS_AA_HIA_Sudan_ex1__ and contains the whole [standard f
 
 # Tasks <a id="tasks"></a>
 
-### Step 1: Area of interest ✅ <a id="step-1-area-of-interest"></a>
+### Step 1: Area of interest <a id="step-1-area-of-interest"></a>
 
 This step is outlined in the article Historical Impact Assessment (HIA) for Flood in Sudan will not be the subject of this exercise. 
 
-### Step 2: Finding Flood Disaster Timeframes ✅ <a id="step-2-finding-flood-disaster-timeframes"></a>
+### Step 2: Finding Flood Disaster Timeframes <a id="step-2-finding-flood-disaster-timeframes"></a>
 
 
 ```{attention} 
@@ -143,7 +143,7 @@ Expected outcome:
 - A folder with all datasets to be used in the HIA. The dataset's names should be their ID.
 - A list of all datasets to be used, with ID.
 
-### Task 4: Preparing Excel table Structure ✅ <a id="task-4-preparing-excel-table-structure"></a>
+### Task 4: Preparing Excel table Structure <a id="task-4-preparing-excel-table-structure"></a>
 
 ```{attention} 
 In this exercise, you will be provided with the ready-to-use table. You can find it „temp“ folder of the exercise data structure.
@@ -750,7 +750,7 @@ __Data extracted from dataset__
 :::
 
 
-### Task 6: HIA Data Cleaning ✅ <a id="task-6-hia-data-cleaning"></a>
+### Task 6: HIA Data Cleaning <a id="task-6-hia-data-cleaning"></a>
 
 ```{attention}
 In this exercise, you can skip this step by using the provided data in the folder task_7
@@ -807,7 +807,7 @@ If you want to use the data from the „task_6“ folder, your principal task is
     Probably, the reddened information is from two different sources. So you can delete the information of the older source and only keep the one from the up-to-date source as possible.
 
 
-### Task 7: Joining P-Code columns ✅ <a id="task-7-joining-p-code-columns"></a>
+### Task 7: Joining P-Code columns <a id="task-7-joining-p-code-columns"></a>
 
 
 ```{attention}
@@ -837,7 +837,7 @@ The information below should show a green check and „The selection has matched
 The Result should be the Excel file „Suadn_impact_p_code“. The file should contain all info from the original impact table and the two new columns „ADM1_EN“ and „ADM1_PCODE“.
 
 ```
-### Task 8: Data export using Pivot-Table in Excel ✅ <a id="task-8-data-export-using-pivot-table-in-excel"></a>
+### Task 8: Data export using Pivot-Table in Excel <a id="task-8-data-export-using-pivot-table-in-excel"></a>
 
 __Impact Quantity for one year on state level:__
 

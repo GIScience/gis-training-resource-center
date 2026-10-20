@@ -1,6 +1,6 @@
 # Visualisation and Map Making in QGIS <a id="visualisation-and-map-making-in-qgis"></a>
 
-__🔙[Back to Homepage](../intro.md)__
+__{octicon}`arrow-left` [Back to Homepage](../intro.md)__
 
 
 ## Subsections <a id="subsections"></a>

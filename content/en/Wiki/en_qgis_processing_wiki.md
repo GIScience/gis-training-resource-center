@@ -1,6 +1,6 @@
 # Processing <a id="processing"></a>
 
-__🔙[Back to Homepage](../intro.md)__
+__{octicon}`arrow-left` [Back to Homepage](../intro.md)__
 
 ## Subsections: <a id="subsections"></a>
 - [Spatial Processing](en_qgis_geoprocessing_wiki.md)

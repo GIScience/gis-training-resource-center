@@ -1,7 +1,7 @@
 # The Print Layout Composer <a id="the-print-layout-composer"></a>
 
 
-__🔙[Back to Homepage](../intro.md)__
+__{octicon}`arrow-left` [Back to Homepage](../intro.md)__
 
 ## Adding elements to the print layout <a id="adding-elements-to-the-print-layout"></a>
 

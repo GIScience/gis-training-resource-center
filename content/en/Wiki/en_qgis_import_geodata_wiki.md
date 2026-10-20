@@ -1,7 +1,7 @@
 # Geodata Import in QGIS <a id="geodata-import-in-qgis"></a>
 
 
-__🔙[Back to Homepage](../intro.md)__
+__{octicon}`arrow-left` [Back to Homepage](../intro.md)__
 
 ## Vector data Import <a id="vector-data-import"></a>
 

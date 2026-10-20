@@ -7,7 +7,7 @@
 :::
 ::::
 
-# Remote Sensing and Raster data theory 🛰️ <a id="remote-sensing-and-raster-data-theory"></a>
+# Remote Sensing and Raster data theory <a id="remote-sensing-and-raster-data-theory"></a>
 
 
 ## What is Raster Data <a id="what-is-raster-data"></a>

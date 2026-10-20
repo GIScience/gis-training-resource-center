@@ -206,7 +206,7 @@ To fix this, open the table properties in the layout and **reduce the font size*
 
 <video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_mak_making_adjust_title.mp4"></video>
 
-### ✅ Final Checklist <a id="final-checklist"></a>
+### Final Checklist <a id="final-checklist"></a>
 
 | Task                                           | Done |
 |------------------------------------------------|------|

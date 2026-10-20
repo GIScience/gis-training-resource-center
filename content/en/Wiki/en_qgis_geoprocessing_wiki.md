@@ -2,7 +2,7 @@
 
 
 
-__🔙[Back to Homepage](../intro.md)__
+__{octicon}`arrow-left` [Back to Homepage](../intro.md)__
 
 QGIS lets you process and modify the datasets loaded into your project in various ways. In general, there are two types of processing: spatial and non-spatial. Spatial processing modifies the data based on their spatial relationship with features in other layers. Non-spatial processing modifies the data based on the values in their attribute table.
 

@@ -1,6 +1,6 @@
 # Attribute Data <a id="attribute-data"></a>
 
-__🔙[Back to Homepage](../intro.md)__
+__{octicon}`arrow-left` [Back to Homepage](../intro.md)__
 
 ## Subsections: <a id="subsections"></a>
 - [The Attribute Table](en_qgis_attribute_table_wiki.md)
