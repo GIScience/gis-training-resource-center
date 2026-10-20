@@ -24,10 +24,11 @@ These pages come from Crowdin. On 16 October 2026 the links in the repo were rew
 `scripts/localisation/rewrite-translated-links.py` (Download and Merge runs the same script), and
 the broken image and logo paths were fixed by hand. What's left:
 
-- **Links to pages that aren't translated yet** point at the page they will become, for example
-  `fr_qgis_map_design_I.md`. Until that page exists, the link shows as plain text and the build
-  logs a warning. On pages in the table of contents: 35 French, 4 Spanish. The rewrite script
-  lists the missing pages in its run summary.
+- **Pages that aren't translated yet** have a placeholder page (103 French, 48 Spanish, created
+  by `scripts/localisation/create-placeholder-pages.py`). It says the page isn't translated yet
+  and links to the English page. Placeholders aren't in the French or Spanish menu. Links to a
+  section of a placeholder open the top of the page until it's translated. To find them, search
+  for `translation_placeholder: true`.
 - **Spanish links with English section anchors** (35 on pages in the table of contents, mostly
   in `es_qgis_common_errors_and_Issues.md`): the Spanish pages don't define the English anchor
   IDs, so these links open the top of the page. See section 4.
