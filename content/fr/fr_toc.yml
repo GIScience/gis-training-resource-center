@@ -1,5 +1,6 @@
 # Table of contents
-# Learn more at https://jupyterbook.org/customize/toc.html
+# Generated from content/en/_toc.yml by scripts/localisation/update-translated-toc.py.
+# Only translated pages are listed. Captions can be translated here; they are kept.
 
 format: jb-book
 root: fr_intro.md
