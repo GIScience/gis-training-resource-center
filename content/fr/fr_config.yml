@@ -46,6 +46,8 @@ sphinx:
   config:
     # Partner logos used by About/about_1.md live in the repo-level _static folder
     html_static_path: ["../../_static"]
+    # Language dropdown: open the current page in the other language (_static/language-switch.js)
+    html_js_files: ["language-switch.js"]
     # Serve MathJax from the site's own _static folder instead of the
     # jsdelivr CDN, so the built book works offline / without external CDNs.
     mathjax_path: "mathjax/tex-mml-chtml.js"
