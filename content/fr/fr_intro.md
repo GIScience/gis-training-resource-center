@@ -19,7 +19,7 @@ Le guichet unique pour enseigner les compétences en Systèmes d’Information G
 ## Comment utiliser la plateforme de formation SIG du Réseau de la FICR
 
 ::::{grid} 2
-:::{card} __[Commencer à enseigner](Trainers_corner/fr_TOT_intro.md)__ 
+:::{card} __Commencer à enseigner__
 :link: Trainers_corner/fr_TOT_intro
 :link-type: doc
 
@@ -30,7 +30,7 @@ Néanmoins, chaque composant du matériel pédagogique est conçu pour être uti
 
 :::
 
-:::{card} __[Commencer à apprendre](Module_1/fr_module_1_overview.md)__ 
+:::{card} __Commencer à apprendre__
 :link: Module_1/fr_module_1_overview
 :link-type: doc
 
