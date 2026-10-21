@@ -151,12 +151,22 @@ div.admonition:not(.note, .tip, .hint, .seealso, .important, .attention, .warnin
 }
 
 /* IFRC brand icons on cards (:img-top: with :class-img-top: ifrc-card-icon), from the IFRC
-   icon set (https://brand.ifrc.org/ifrc-brand-system, Basics → Icons). */
+   icon set (https://brand.ifrc.org/ifrc-brand-system, Basics → Icons). The icon sits in the
+   top right corner next to the title; the text runs full width below both. */
 .sd-card-img-top.ifrc-card-icon {
-  width: 3.5rem;
-  height: 3.5rem;
-  margin: 1rem 0 0 1rem;
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  width: 3.75rem;
+  height: 3.75rem;
   object-fit: contain;
+}
+.sd-card:has(> .ifrc-card-icon) .sd-card-title {
+  display: flex;
+  align-items: center;
+  min-height: 3.75rem;
+  margin-top: -0.25rem;
+  padding-right: 4.5rem;
 }
 
 /* The theme colours only the card body; give the strip with the icon the same colour. */
@@ -189,7 +199,7 @@ html[data-theme="dark"] .bd-content img.ifrc-inline-icon {
 /* A larger IFRC brand icon on the right of a paragraph (<img class="ifrc-side-icon">) */
 img.ifrc-side-icon {
   float: right;
-  height: 5rem;
+  height: 7.5rem;
   width: auto;
   margin: 0 0 0.5rem 1.5rem;
 }
