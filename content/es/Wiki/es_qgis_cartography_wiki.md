@@ -1,16 +1,7 @@
----
-orphan: true
-translation_placeholder: true
----
+# Visualización y cartografía <a id="visualisation-and-cartography"></a>
 
-# Visualisation & Cartography
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
-:::{note}
-Esta página aún no está disponible en español.
-:::
-
-:::{button-link} ../../en/Wiki/en_qgis_cartography_wiki.html
-:color: primary
-
-Leer la versión en inglés
-:::
+## Subsecciones: <a id="subsections"></a>
+- [Clasificación de datos geoespaciales](es_qgis_data_classification_wiki.md)
+- [Visualización y creación de mapas en QGIS](es_qgis_representation_wiki.md)

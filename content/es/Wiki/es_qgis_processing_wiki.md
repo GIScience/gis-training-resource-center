@@ -1,16 +1,8 @@
----
-orphan: true
-translation_placeholder: true
----
+# Procesamiento <a id="processing"></a>
 
-# Processing
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
-:::{note}
-Esta página aún no está disponible en español.
-:::
-
-:::{button-link} ../../en/Wiki/en_qgis_processing_wiki.html
-:color: primary
-
-Leer la versión en inglés
-:::
+## Subsecciones: <a id="subsections"></a>
+- [Procesamiento espacial](es_qgis_geoprocessing_wiki.md)
+- [Datos ráster](es_qgis_raster_wiki.md)
+- [Automatización (diseñador de modelos)](es_qgis_automation_wiki.md)

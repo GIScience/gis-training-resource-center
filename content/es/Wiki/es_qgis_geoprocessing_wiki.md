@@ -1,9 +1,15 @@
 # Procesamiento espacial
 
-
-
 __🔙[Volver a la página de inicio](../es_intro.md)__
 
+QGIS le permite procesar y modificar los conjuntos de datos cargados en su proyecto de diversas maneras. En general, existen dos tipos de procesamiento: espacial y no espacial. El procesamiento espacial modifica los datos en función de su relación espacial con las entidades de otras capas. El procesamiento no espacial modifica los datos en función de los valores de su tabla de atributos.
+
+:::{Admonition} Tenga cuidado al modificar los conjuntos de datos originales.
+:class: Tip
+
+Si modifica la tabla de atributos o las entidades de un conjunto de datos que importó a su proyecto QGIS, el conjunto de datos original se modificará. Para asegurarse de mantener el conjunto de datos original intacto, asegúrese de crear una copia antes de realizar cualquier cambio.
+
+:::
 
 ## Buffer
 - Calcule un ![](../../../fig/mAlgorithmBuffer.png) `buffer` con una distancia definida.
@@ -36,7 +42,7 @@ Si se trata de “megabuffers”, realmente grandes, o si solo se pueden elegir 
 - La herramienta ![](../../../fig/mAlgorithmDissolve.png) `Disolver` agrega geometrías con los mismos valores de atributo.
 - Cuando dos o más áreas buffer se superponen, se pueden combinar usando disolver.
 
-:::{dropdown} Ejemplo: Extraer la red ferroviaria de Alemania
+:::{dropdown} Ejemplo: Disolver los límites de los países
 :open:
 <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_dissolve_wiki.mp4"></video>
 :::

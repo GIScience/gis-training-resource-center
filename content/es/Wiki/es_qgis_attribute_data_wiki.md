@@ -1,16 +1,9 @@
----
-orphan: true
-translation_placeholder: true
----
+# Datos de atributos <a id="attribute-data"></a>
 
-# Attribute Data
+__🔙[Volver a la página de inicio](../es_intro.md)__
 
-:::{note}
-Esta página aún no está disponible en español.
-:::
-
-:::{button-link} ../../en/Wiki/en_qgis_attribute_data_wiki.html
-:color: primary
-
-Leer la versión en inglés
-:::
+## Subsecciones: <a id="subsections"></a>
+- [La tabla de atributos](es_qgis_attribute_table_wiki.md)
+- [Manipulación de la tabla de atributos](es_qgis_table_functions_wiki.md)
+- [Consultas espaciales y no espaciales](es_qgis_queries_wiki.md)
+- [Unir datos geográficos](es_qgis_joins_wiki.md)
