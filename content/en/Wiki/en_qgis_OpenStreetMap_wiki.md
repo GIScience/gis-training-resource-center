@@ -1,7 +1,7 @@
 # OpenStreetMap (OSM) Data <a id="openstreetmap-osm-data"></a>
 
 
-__🔙[Back to Homepage](../intro.md)__
+__{octicon}`arrow-left` [Back to Homepage](../intro.md)__
 
 ## Geofabrik <a id="geofabrik"></a>
 

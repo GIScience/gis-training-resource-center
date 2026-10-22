@@ -1,6 +1,6 @@
 # Train of trainers introduction <a id="train-of-trainers-introduction"></a>
 
-__🔙[Back to Homepage](../intro.md)__
+__{octicon}`arrow-left` [Back to Homepage](../intro.md)__
 
 Welcome to the trainer’s corner! Here you can find all the needed information about how to plan your training and teach GIS. This section presents an overview of the training platform and all the functions of the trainer’s corner.
 
@@ -12,16 +12,16 @@ If you have questions, feedback or comments on the platform and the content. We 
 
 This platform intends to make your life as a trainer easier by providing you with: explanatory articles called modules, exercises and a Wiki. The platform, however, does not eliminate the need to prepare and plan your training. 
 
-* 🎓 The modules are intended to serve as references for participants who want to delve deeper into a topic or review concepts. Think of the modules as an enhanced version of PowerPoint slides that you would normally share with participants, providing them with comprehensive information. They can also serve as a guide for trainers to assess what participants should learn at different stages of their GIS education.
+* <img src="../_static/icons/ifrc-icon-graduation-cap.svg" class="ifrc-inline-icon" alt=""> The modules are intended to serve as references for participants who want to delve deeper into a topic or review concepts. Think of the modules as an enhanced version of PowerPoint slides that you would normally share with participants, providing them with comprehensive information. They can also serve as a guide for trainers to assess what participants should learn at different stages of their GIS education.
 
-* ✍️ The __exercises__ encompass all the content covered in the modules. They range from smaller exercises focused on specific topics like the QGIS interface to larger-scale exercises covering entire modules. These exercises can be utilized in any order or format, including {ref}`follow-along exercises or group work <handson>`. Additionally, trainers can assign exercises as homework for participants who are capable of completing them independently.
+* <img src="../_static/icons/ifrc-icon-checklist.svg" class="ifrc-inline-icon" alt=""> The __exercises__ encompass all the content covered in the modules. They range from smaller exercises focused on specific topics like the QGIS interface to larger-scale exercises covering entire modules. These exercises can be utilized in any order or format, including {ref}`follow-along exercises or group work <handson>`. Additionally, trainers can assign exercises as homework for participants who are capable of completing them independently.
 
-* 📖 The Wiki serves as a support resource for both participants and trainers while using QGIS, whether during exercises or in day-to-day work. It provides trainers with the assurance that their participants have access to an updated, interactive resource to help solve challenges encountered while using QGIS.
+* <img src="../_static/icons/ifrc-icon-book.svg" class="ifrc-inline-icon" alt=""> The Wiki serves as a support resource for both participants and trainers while using QGIS, whether during exercises or in day-to-day work. It provides trainers with the assurance that their participants have access to an updated, interactive resource to help solve challenges encountered while using QGIS.
 
 In summary: 
 
 ::::{grid} 2
-:::{card} What the Platform offers ✔️
+:::{card} {octicon}`check-circle;1em;sd-text-success` What the Platform offers
 ||
 |---|
 |➕ Provide explanatory modules that can be used by the trainees as a reference and for reiterating and understanding content.|
@@ -32,7 +32,7 @@ In summary:
 
 :::
 
-:::{card} What the Platform doesn't offer❌
+:::{card} {octicon}`x-circle;1em;sd-text-danger` What the Platform doesn't offer
 ||
 |---|
 |➖ No ready-to-use presentations.|

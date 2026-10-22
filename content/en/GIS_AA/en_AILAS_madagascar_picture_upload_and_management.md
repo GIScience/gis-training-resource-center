@@ -24,7 +24,7 @@ This means that data ownership stays with the contributors and hosting instituti
 
 ### Features <a id="features"></a>
 
-#### 🌍 Core Features <a id="core-features"></a>
+#### Core Features <a id="core-features"></a>
 
 * **Street-level imagery viewer** – explore panoramic or directional images along roads, paths, and places.
 * **Open & federated hosting** – imagery is stored on independent servers operated by different organizations (municipalities, research centers, NGOs, etc.).
@@ -32,14 +32,14 @@ This means that data ownership stays with the contributors and hosting instituti
 * **Contributions from multiple sources** – imagery can come from institutions, community projects, or individuals.
 * **Integration into mapping workflows** – imagery can be linked with OpenStreetMap or other geospatial datasets.
 
-#### 🔍 Privacy & Processing <a id="privacy-and-processing"></a>
+#### Privacy & Processing <a id="privacy-and-processing"></a>
 
 * **Automatic face and license plate blurring** – built-in anonymization before imagery is published.
 * **Object detections** – AI models can detect relevant features (e.g., traffic signs) within the imagery.
 * **Custom detection models** – operators can run their own detection pipelines for specific use cases.
 * **Metadata enrichment** – detected objects can be stored as data linked to the images, making the imagery searchable and analyzable.
 
-#### ⚙️ Platform & Ecosystem <a id="platform-and-ecosystem"></a>
+#### Platform & Ecosystem <a id="platform-and-ecosystem"></a>
 
 * **API access** – developers can query and use imagery programmatically.
 * **Web-based viewer** – lightweight, embeddable viewer for public portals or project websites.

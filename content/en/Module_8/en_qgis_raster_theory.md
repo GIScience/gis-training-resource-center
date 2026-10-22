@@ -7,7 +7,7 @@
 :::
 ::::
 
-# Remote Sensing and Raster data theory 🛰️ <a id="remote-sensing-and-raster-data-theory"></a>
+# Remote Sensing and Raster data theory <a id="remote-sensing-and-raster-data-theory"></a>
 
 🚧This training platform and the entire content is under ⚠️construction⚠️ and may not be shared or published! 🚧
 

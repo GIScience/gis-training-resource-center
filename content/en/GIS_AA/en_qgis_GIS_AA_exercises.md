@@ -1,6 +1,6 @@
 # Exercises - GIS in Anticipatory Action <a id="exercises-gis-in-anticipatory-action"></a>
 
-__🔙[Back to Homepage](../intro.md)__
+__{octicon}`arrow-left` [Back to Homepage](../intro.md)__
 
 Here you can find all exercises related to the topics in the chapter GIS in Anticipatory Action.
 

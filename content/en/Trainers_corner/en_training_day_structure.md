@@ -1,6 +1,6 @@
 # How to plan and structure a GIS Training Session <a id="how-to-plan-and-structure-a-gis-training-session"></a>
 
-__🔙[Back to Homepage](../intro.md)__
+__{octicon}`arrow-left` [Back to Homepage](../intro.md)__
 
 Designing an effective and engaging GIS training requires careful consideration of various factors, including the training objectives, participant demographics, and preferred learning styles. Much of the necessary information can be pulled from the initial high-level planning phase covered in the article "[How to plan a whole GIS Training](en_how_to_training.md)". 
 A well-structured training day provides a cohesive framework for delivering content, facilitating interactive activities, and maximizing participant learning outcomes. From the initial welcome and orientation to the final recap and reflection, each aspect of the training day contributes to a comprehensive and impactful learning experience.

@@ -1,6 +1,6 @@
 # Data Management <a id="data-management"></a>
 
-__🔙[Back to Homepage](../intro.md)__
+__{octicon}`arrow-left` [Back to Homepage](../intro.md)__
 
 ## Subsections: <a id="subsections"></a>
 - [Data Sources](en_qgis_data_sources_wiki.md)
