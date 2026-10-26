@@ -1,6 +1,6 @@
 # Getting Started <a id="qgis-basics"></a>
 
-__🔙[Back to Homepage](../intro.md)__
+__{octicon}`arrow-left` [Back to Homepage](../intro.md)__
 
 ## Subsections: <a id="subsections"></a>
 * [Installation of QGIS](en_qgis_installation_wiki.md)

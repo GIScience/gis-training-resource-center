@@ -67,7 +67,7 @@ __QGIS Model Workflow: Drought EAP Trigger for Somalia__
 
 ---
 
-### 🌊 Historical Impact Assessment – Flooding in Sudan <a id="historical-impact-assessment-flooding-in-sudan"></a>
+### Historical Impact Assessment – Flooding in Sudan <a id="historical-impact-assessment-flooding-in-sudan"></a>
 **Focus:** Retrospective analysis to inform anticipatory planning  
 **Key elements:**
 - Historical flood impact data

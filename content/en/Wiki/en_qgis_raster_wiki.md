@@ -1,6 +1,6 @@
 # Raster Data <a id="raster-data"></a>
 
-__🔙[Back to Homepage](../intro.md)__
+__{octicon}`arrow-left` [Back to Homepage](../intro.md)__
 
 Raster data in GIS is a type of spatial data that represents the world as a grid of pixels (cells), where each pixel has a value representing information such as:
 

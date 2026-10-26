@@ -49,19 +49,28 @@ Trainers for QGIS are the principal audience of the IFRC Network GIS Training Pl
 ::::{grid} 1 3 3 3
 :gutter: 2
 
-:::{grid-item-card} Wiki 📖
+:::{grid-item-card} Wiki
+:img-top: ../../_static/icons/ifrc-icon-book.svg
+:class-img-top: ifrc-card-icon
+:img-alt:
 :link: Wiki/en_wiki_homepage
 :link-type: doc
 The wiki is your companion for working with QGIS in training in real life. It brings together all practical information in the form of how-to guides and videos
 :::
 
-:::{grid-item-card} Modules 🎓
+:::{grid-item-card} Modules
+:img-top: ../../_static/icons/ifrc-icon-graduation-cap.svg
+:class-img-top: ifrc-card-icon
+:img-alt:
 :link: en_modules_overview
 :link-type: doc
 In the learning modules, all relevant concepts and techniques of QGIS are explained, enabling trainees to reinforce their understanding of the training content
 :::
 
-:::{grid-item-card} Exercises ✍️
+:::{grid-item-card} Exercises
+:img-top: ../../_static/icons/ifrc-icon-checklist.svg
+:class-img-top: ifrc-card-icon
+:img-alt:
 :link: Exercise_tracks/en_exercise_tracks_overview
 :link-type: doc
 In the exercises, essential concepts and practical techniques are presented, providing participants with hands-on opportunities to apply and reinforce their QGIS skills
@@ -72,13 +81,19 @@ In the exercises, essential concepts and practical techniques are presented, pro
 ::::{grid} 1 2 2 2
 :gutter: 2
 
-:::{grid-item-card} GIS in Anticipatory Action 🌦️
+:::{grid-item-card} GIS in Anticipatory Action
+:img-top: ../../_static/icons/ifrc-icon-wind.svg
+:class-img-top: ifrc-card-icon
+:img-alt:
 :link: GIS_AA/en_GIS_AA_overview
 :link-type: doc
 Case studies and workflows showing how geospatial analysis supports anticipatory action protocols, from risk analysis and trigger monitoring to impact estimation and targeting of early actions
 :::
 
-:::{grid-item-card} Tools & Methods 🧰
+:::{grid-item-card} Tools & Methods
+:img-top: ../../_static/icons/ifrc-icon-gears.svg
+:class-img-top: ifrc-card-icon
+:img-alt:
 :link: Tools_and_Methods/en_tools_methods_overview
 :link-type: doc
 Reusable tools and methods applied across humanitarian mapping contexts, such as the Sketch Map Tool, the AILAS street-level imagery workflow and the Risk Assessment QGIS Plugin
@@ -175,7 +190,7 @@ We warmly welcome everyone to contribute and collaborate in advancing the IFRC G
 
 ## Join the Community
 
-🤝 Learning is most enjoyable when shared. Join our vibrant community of GIS enthusiasts, learners, and experts by participating in discussions, asking questions, and sharing your insights. Together, we can leverage the power of GIS to make a positive impact on humanitarian causes around the world.
+<img src="_static/icons/ifrc-icon-handshake.svg" class="ifrc-side-icon" alt="">Learning is most enjoyable when shared. Join our vibrant community of GIS enthusiasts, learners, and experts by participating in discussions, asking questions, and sharing your insights. Together, we can leverage the power of GIS to make a positive impact on humanitarian causes around the world.
 
 
 Happy Mapping!

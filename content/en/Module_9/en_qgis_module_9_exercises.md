@@ -9,7 +9,7 @@
 
 # Exercises Module 9: Network Analysis <a id="exercises-module-9-network-analysis"></a>
 
-__🔙[Back to Homepage](../intro.md)__
+__{octicon}`arrow-left` [Back to Homepage](../intro.md)__
 
 
 The following exercises for module 9 comprise one full network analysis from start to finish. Each exercise deals with one step of the analysis process. 

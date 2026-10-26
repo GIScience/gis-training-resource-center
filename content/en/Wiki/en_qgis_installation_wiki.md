@@ -1,6 +1,6 @@
 # QGIS installation <a id="qgis-installation"></a>
 
-__🔙[Back to Homepage](../intro.md)__
+__{octicon}`arrow-left` [Back to Homepage](../intro.md)__
 
 QGIS is open source and therefore freely available to everyone at no cost. You can install QGIS for Windows, Mac and Linux computers.
 

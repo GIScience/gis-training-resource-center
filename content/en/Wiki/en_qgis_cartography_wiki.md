@@ -1,6 +1,6 @@
 # Visualisation & Cartography <a id="visualisation-and-cartography"></a>
 
-__🔙[Back to Homepage](../intro.md)__
+__{octicon}`arrow-left` [Back to Homepage](../intro.md)__
 
 ## Subsections: <a id="subsections"></a>
 - [Geodata Classification](en_qgis_data_classification_wiki.md)

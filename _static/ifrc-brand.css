@@ -1,0 +1,211 @@
+/* IFRC brand colours for the platform, in a light and a dark scheme.
+   Colours from the IFRC brand system (https://brand.ifrc.org/ifrc-brand-system, Basics → Colour).
+   Text colours meet WCAG AA contrast (4.5:1) on their background. The bright IFRC red is
+   4.3:1 on white, so it's only used for lines, icons and accents. */
+:root {
+  /* Primary brand colours */
+  --ifrc-red: #EE2435;
+  --ifrc-dark-blue: #011E41;
+  --ifrc-black: #000000;
+  --ifrc-white: #FFFFFF;
+  /* Disasters and crises */
+  --ifrc-dark-red: #D22730;
+  /* Health and wellbeing */
+  --ifrc-blue-dark: #0F3A50;
+  --ifrc-blue-medium: #8DCDE2;
+  --ifrc-blue-light: #CCF5FC;
+  /* Climate and environment */
+  --ifrc-green-dark: #009775;
+  --ifrc-green-light: #47D7AC;
+  /* Migration and identity */
+  --ifrc-orange-medium: #FF8200;
+  --ifrc-orange-light: #FFB25B;
+  /* Values, power and inclusion */
+  --ifrc-purple-dark: #2E1A47;
+  --ifrc-purple-medium: #512D6D;
+  --ifrc-purple-light: #958DBE;
+  /* Links in the text: the standard web link blue, and a light blue for dark mode */
+  --link-blue: #0000EE;
+  --link-blue-hover: #00008B;
+  --link-blue-dark: #8AB4F8;
+  --link-blue-dark-hover: #C2D7FC;
+}
+
+/* Light scheme: white pages, dark blue headings, dark red accents, standard blue links */
+html[data-theme="light"] {
+  --pst-color-background: var(--ifrc-white);
+  --pst-color-on-background: var(--ifrc-white);
+  --pst-color-surface: #F2F2F2;
+  --pst-color-on-surface: #1A1A1A;
+  --pst-color-text-base: #1A1A1A;
+  --pst-color-text-muted: #4D5562;
+  --pst-color-heading: var(--ifrc-dark-blue);
+  --pst-color-primary: var(--ifrc-dark-red);
+  --pst-color-primary-bg: var(--ifrc-blue-light);
+  --pst-color-secondary: var(--ifrc-dark-blue);
+  --pst-color-secondary-bg: var(--ifrc-blue-light);
+  --pst-color-accent: var(--ifrc-red);
+  --pst-color-link: var(--link-blue);
+  --pst-color-link-hover: var(--link-blue-hover);
+  --pst-color-inline-code: var(--ifrc-dark-red);
+  --pst-color-table-row-hover-bg: var(--ifrc-blue-light);
+  --ifrc-announcement-bg: var(--ifrc-dark-blue);
+  --sd-color-danger: var(--ifrc-red);
+}
+
+/* Dark scheme: the theme's own dark background and panels, light blue links, red accents */
+html[data-theme="dark"] {
+  --pst-color-accent: var(--ifrc-red);
+  --pst-color-link: var(--link-blue-dark);
+  --pst-color-link-hover: var(--link-blue-dark-hover);
+  --ifrc-announcement-bg: var(--ifrc-black);
+  --sd-color-danger: var(--ifrc-red);
+}
+
+/* Announcement banner at the very top */
+.bd-header-announcement {
+  background-color: var(--ifrc-announcement-bg) !important;
+  color: var(--ifrc-white);
+}
+.bd-header-announcement::after {
+  display: none; /* the theme's coloured overlay */
+}
+.bd-header-announcement a {
+  color: var(--ifrc-white);
+}
+
+/* The bar with the icons above the content stays at the top while scrolling. A thin IFRC red
+   line underneath is the brand accent. */
+.bd-header-article {
+  border-bottom: 4px solid var(--ifrc-red);
+}
+
+/* Cards (homepage "Start teaching" / "Start learning", overview pages, exercise tracks): a very
+   thin IFRC red line on top. Not on the small round icon cards (the "home" button) or dropdowns. */
+.sd-card:not(.sd-rounded-circle, .sd-dropdown) {
+  border-top: 2px solid var(--ifrc-red);
+}
+
+/* IFRC logo in the left sidebar: the brand system doesn't allow effects on the logo, and its
+   white background must stay. In dark mode the theme dims all images, so switch that off. */
+html[data-theme="dark"] .navbar-brand img {
+  filter: none;
+}
+
+/* HeiGIT logo on the homepage: in dark mode the theme puts a white box behind images. Show the
+   version with white lettering on the page background instead. */
+html[data-theme="dark"] .bd-content img[src$="HeiGIT_Logo_base.svg"] {
+  background: url("HeiGIT_Logo_base_white.svg") center / contain no-repeat transparent !important;
+  object-position: -99999px 0; /* hide the original, keep its size */
+  filter: none;
+}
+
+/* Callouts (note, tip, warning, ...): a stronger colour for the left edge and the icon, and a
+   lighter one for the title row, each from one theme of the brand palette.
+     note                   health blue
+     tip, hint, seealso     climate and environment green
+     attention, important   migration orange
+     warning, caution       disasters dark red
+     danger, error          IFRC red
+     custom titles          values purple ("Question", "Test your knowledge", ...)
+   The light title rows are tints of the brand colours; in dark mode they are dark tints. */
+html[data-theme="light"] {
+  --pst-color-info: var(--ifrc-blue-dark);
+  --pst-color-info-bg: var(--ifrc-blue-light);
+  --pst-color-success: var(--ifrc-green-dark);
+  --pst-color-success-bg: #D1F5EA;
+  --pst-color-attention: var(--ifrc-orange-medium);
+  --pst-color-attention-bg: #FFE8CE;
+  --pst-color-warning: var(--ifrc-dark-red);
+  --pst-color-warning-bg: #FCDEE1;
+  --pst-color-danger: var(--ifrc-red);
+  --pst-color-danger-bg: #FCDEE1;
+  --ifrc-callout: var(--ifrc-purple-medium);
+  --ifrc-callout-bg: #E5E3EF;
+}
+
+html[data-theme="dark"] {
+  --pst-color-info: var(--ifrc-blue-medium);
+  --pst-color-info-bg: var(--ifrc-blue-dark);
+  --pst-color-success: var(--ifrc-green-light);
+  --pst-color-success-bg: #15443C;
+  --pst-color-attention: var(--ifrc-orange-light);
+  --pst-color-attention-bg: #56391B;
+  --pst-color-warning: #F26B74;
+  --pst-color-warning-bg: #4B2327;
+  --pst-color-danger: var(--ifrc-red);
+  --pst-color-danger-bg: #4B2327;
+  --ifrc-callout: var(--ifrc-purple-light);
+  --ifrc-callout-bg: var(--ifrc-purple-dark);
+}
+
+/* Callouts with their own title ({admonition} without a type) */
+div.admonition:not(.note, .tip, .hint, .seealso, .important, .attention, .warning, .caution, .danger, .error, .admonition-todo) {
+  border-color: var(--ifrc-callout);
+}
+div.admonition:not(.note, .tip, .hint, .seealso, .important, .attention, .warning, .caution, .danger, .error, .admonition-todo) > .admonition-title {
+  background-color: var(--ifrc-callout-bg);
+}
+div.admonition:not(.note, .tip, .hint, .seealso, .important, .attention, .warning, .caution, .danger, .error, .admonition-todo) > .admonition-title::after {
+  color: var(--ifrc-callout);
+}
+
+/* IFRC brand icons on cards (:img-top: with :class-img-top: ifrc-card-icon), from the IFRC
+   icon set (https://brand.ifrc.org/ifrc-brand-system, Basics → Icons). The icon sits in the
+   top right corner next to the title; the text runs full width below both. */
+.sd-card-img-top.ifrc-card-icon {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  width: 3.75rem;
+  height: 3.75rem;
+  object-fit: contain;
+}
+.sd-card:has(> .ifrc-card-icon) .sd-card-title {
+  display: flex;
+  align-items: center;
+  min-height: 3.75rem;
+  margin-top: -0.25rem;
+  padding-right: 4.5rem;
+}
+
+/* The theme colours only the card body; give the strip with the icon the same colour. */
+.sd-card:has(> .ifrc-card-icon) {
+  background-color: var(--pst-color-on-background);
+}
+
+/* The icons are dark blue and red; in dark mode they sit on a light circle. */
+html[data-theme="dark"] .bd-content img.ifrc-card-icon {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0.4rem;
+  filter: none;
+}
+
+/* IFRC brand icons inside the text (<img class="ifrc-inline-icon">), about one line high */
+img.ifrc-inline-icon {
+  height: 1.6em;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 0.25em;
+}
+html[data-theme="dark"] .bd-content img.ifrc-inline-icon {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0.15em;
+  filter: none;
+}
+
+/* A larger IFRC brand icon on the right of a paragraph (<img class="ifrc-side-icon">) */
+img.ifrc-side-icon {
+  float: right;
+  height: 7.5rem;
+  width: auto;
+  margin: 0 0 0.5rem 1.5rem;
+}
+html[data-theme="dark"] .bd-content img.ifrc-side-icon {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0.5rem;
+  filter: none;
+}

@@ -1,6 +1,6 @@
 # Working with Geodata <a id="general-geodata"></a>
 
-__🔙[Back to Homepage](../intro.md)__
+__{octicon}`arrow-left` [Back to Homepage](../intro.md)__
 
 ## Subsections: <a id="subsections"></a>
 - [Types of Geodata](en_qgis_geodata_types_wiki.md)

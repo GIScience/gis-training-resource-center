@@ -1,7 +1,7 @@
 # Non-Spatial Joins <a id="non-spatial-joins"></a>
 
 
-__🔙[Back to Homepage](../intro.md)__
+__{octicon}`arrow-left` [Back to Homepage](../intro.md)__
 
 ## Join attributes by field value <a id="join-attributes-by-field-value"></a>
 - Adds attributes of a non-spatial table to the layer
