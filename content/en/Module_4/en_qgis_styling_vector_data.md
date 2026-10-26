@@ -347,7 +347,6 @@ On top of simple markers, QGIS lets you also use SVG-symbols and raster images a
 
 :::
 
-#### __Using SVG-Symbols and IFRC symbols__ <a id="using-svg-symbols-and-ifrc-symbols"></a>
 
 ### Using SVG-Symbols <a id="using-svg-symbols"></a>
 
