@@ -6,6 +6,9 @@ _build/
 /french/
 /_site/
 
+# GitHub Pages redirect site (scripts/build_pages_redirects.py)
+/_redirect_site/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
