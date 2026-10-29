@@ -32,7 +32,7 @@ html:
   use_repository_button: true
   extra_footer: |
       <p>
-      Este proyecto se publica bajo una <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr">licencia Creative Commons BY-NC-SA 4.0</a>.
+      Ce projet est publié sous <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr">licence Creative Commons BY-NC-SA 4.0</a>.
       </p>
   announcement: "Vous souhaitez contribuer ? Consultez les lignes directrices de contribution et contactez-nous !"
 
