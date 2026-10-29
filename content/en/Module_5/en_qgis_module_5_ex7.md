@@ -8,7 +8,6 @@
 ::::
 
 # Exercise 12: Larkana Damage Assessment <a id="exercise-12-larkana-damage-assessment"></a>
-id="exercise-7-larkana-damage-assessment"></a>
 
 :::{attention}
 The locations in this exercise are real and the flood extent is based on satellite data from UNOSAT (08–12 August 2024). However, __all messages, persons, numbers and damages are fictional__ and were created for training purposes only.
@@ -139,9 +138,57 @@ __Download all datasets [here](https://nexus.heigit.org/repository/gis-training-
 
 1. Create a new QGIS project and save it into the exercise folder.
 2. Load the layers `PAK_Sindh_adm2.gpkg` and `PAK_2024_Minimum_Flood_Extend_reprojected_fix.gpkg` into your project ([Wiki Video](../Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)).
-3. Install the plugins __QuickMapServices__, __Lat Lon Tools__ and __OSM Place Search__ ([Plugin installation](../Wiki/en_qgis_plugins_wiki.md#installation-of-plugins)).
-4. Add a satellite basemap via `Web` → `QuickMapServices`. If you cannot find `ESRI` or `Google` in the list, you first have to [configure QuickMapServices](../Wiki/en_qgis_basemaps_wiki.md#configuration-of-quickmapservices) and click on `Get contributed pack`.
-5. [Create a new point layer](../Wiki/en_qgis_digitisation_wiki.md#creating-a-new-layer) with the name `damage_reports` and save it in the folder `data/results/`. Use the CRS __EPSG:32642__ and add the following fields (all of type text):
+3. Install the plugins __QuickMapServices__, __Lat Lon Tools__ and __OSM Place Search__.
+
+:::{dropdown} How to install a plugin
+1. In the menu bar, click on `Plugins` → `Manage and Install Plugins…`
+2. Under `All`, search for "QuickMapServices" and click `Install Plugin`.
+3. Repeat the steps for "Lat Lon Tools" and "OSM Place Search".
+
+For general plugin management in QGIS, see the [QGIS plugin installation guide](../Wiki/en_qgis_plugins_wiki.md#installation-of-plugins).
+:::
+
+4. Add a satellite basemap. We will use the satellite imagery to check the locations of the reports, e.g. to find a bridge, a market or a farmstead.
+
+::::{dropdown} How to add a satellite basemap with QuickMapServices
+1. In the menu bar, navigate to `Web` → `QuickMapServices` → `ESRI` → `ESRI Satellite`. This adds a satellite imagery basemap to the Layers Panel.
+2. Optional: add a roads layer to improve orientation: `Web` → `QuickMapServices` → `Google` → `Google Road`. In the [Layers Panel](../Wiki/en_qgis_layer_concept_wiki.md), make sure the `Google Road` layer is above the satellite imagery.
+3. Optional: for easier navigation, make the satellite imagery transparent. Open the layer's [Symbology tab](../Module_4/en_qgis_styling_vector_data.md#styling-panel) and adjust the global opacity.
+
+If you cannot find `ESRI` or `Google` in the list, you first have to configure the plugin: `Web` → `QuickMapServices` → `Settings` → use the horizontal arrows to navigate to `More services` → `Get contributed pack` ([Wiki](../Wiki/en_qgis_basemaps_wiki.md#configuration-of-quickmapservices)).
+
+:::{dropdown} Watch here:
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/add_basemap_quickmapservice.mp4"></video>
+:::
+
+::::
+
+5. Get to know the __Lat Lon Tools__ plugin. We will use it to zoom to coordinates that we receive in the reports.
+
+:::{dropdown} How to open Lat Lon Tools
+1. In the menu bar, click on `Plugins` → `Lat Lon Tools` → `Zoom To Coordinate`. You can also use the Lat Lon Tools icon in the toolbar. A small panel opens.
+2. Enter the coordinates in the order __latitude, longitude__ (e.g. `27.5565, 68.2104`) and press <kbd>Enter</kbd>. The map zooms to the location and marks it.
+3. The plugin can read different coordinate types. You can change the type with the coordinate type button in the `Zoom To` panel, or via `Plugins` → `Lat Lon Tools` → `Settings`. For most reports, the type __WGS 84 (Latitude & Longitude)__ is the right one. It reads decimal degrees and degrees, minutes, seconds (DMS).
+
+The names of the menu entries can differ slightly depending on the version of the plugin.
+:::
+
+6. Get to know the __OSM Place Search__ plugin. We will use it to find places and addresses.
+
+::::{dropdown} How to find places with OSM Place Search
+1. After the installation, a search panel appears in QGIS. If you cannot see it, open it via `View` → `Panels` → `OSM Place Search` ([Show and hide panels](../Wiki/en_qgis_interface_wiki.md#show-and-hide-displays-and-toolbars)).
+2. Type the name of a place or an address into the search field, e.g. "Larkana", and press <kbd>Enter</kbd>.
+3. Select a result from the list. The map zooms to the place.
+
+The search is based on [OpenStreetMap](https://www.openstreetmap.org). Place names are often written in different ways (e.g. "Moenjodaro" and "Mohenjo-daro"). If you do not find a place, try another spelling.
+
+:::{dropdown} Watch here:
+<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/OSM_Place_Search.mp4"></video>
+:::
+
+::::
+
+7. [Create a new point layer](../Wiki/en_qgis_digitisation_wiki.md#creating-a-new-layer) with the name `damage_reports` and save it in the folder `data/results/`. Use the CRS __EPSG:32642__ and add the following fields (all of type text):
     - `report_id`
     - `source`
     - `category`
@@ -225,9 +272,12 @@ __Report 5: Inspection report from the National Highway Authority__
 :::
 
 :::{dropdown} How to locate this report
-- The coordinates are given in __UTM zone 42N__ (EPSG:32642) in meters, not in degrees.
-- Open `Plugins` → `Lat Lon Tools` → `Settings`. Set the input coordinate system for `Zoom to Coordinate` to UTM or to the CRS EPSG:32642 ([How to check the CRS](../Wiki/en_qgis_projections_wiki.md#how-to-check-epsg-codecrs-of-layer-data)).
-- Enter the easting (E) and northing (N) values.
+- The coordinates are given in __UTM zone 42N__ ([Projections](../Wiki/en_qgis_projections_wiki.md)). The values are in meters, not in degrees: the easting (E) is the distance to the east, the northing (N) the distance to the north.
+- Open `Plugins` → `Lat Lon Tools` → `Zoom To Coordinate`. With the coordinate type button in the panel (or in `Plugins` → `Lat Lon Tools` → `Settings`), set the coordinate type to __Standard UTM__.
+- Enter the coordinates in the format `zone and hemisphere`, `easting`, `northing`, separated by spaces:
+
+    `42n 429526 3068408`
+
 - Check the result on the basemap: is there a bridge over a canal?
 :::
 
@@ -250,6 +300,7 @@ __Report 7: WhatsApp message from a local NGO volunteer__
 
 :::{dropdown} How to locate this report
 - The volunteer shared a WhatsApp location. The coordinates are in decimal degrees: latitude first, then longitude.
+- If you changed the coordinate type in Lat Lon Tools to Standard UTM for report 5, switch it back to __WGS 84 (Latitude & Longitude)__ first.
 - Use `Lat Lon Tools` → `Zoom to Coordinate` and enter `27.5115, 68.1634`.
 :::
 
@@ -363,13 +414,14 @@ __Report 16: GPS track from a PRCS assessment team__
 :::{card}
 __Report 17: Voice message from a local NGO (transcript)__
 ^^^
-"About 80 families have taken refuge in the courtyard of the Dargah Mashori Sharif, about 1.5 km west of the Mashori Sharif railway station. Address from Google: F4QX+8P, Lashari Goth. They need cooked food and drinking water."
+"About 80 families have taken refuge in the courtyard of the Dargah Mashori Sharif, about 1.5 km west of the Mashori Sharif railway station. Google shows this Plus Code for the place: 7JVCF4QX+8P. They need cooked food and drinking water."
 :::
 
 :::{dropdown} How to locate this report
-- `F4QX+8P` is a __Plus Code__, an address format used by Google Maps.
-- Copy `F4QX+8P Lashari Goth` into the search bar of [Google Maps](https://www.google.com/maps). Right-click on the marker to copy the coordinates.
-- Use `Lat Lon Tools` → `Zoom to Coordinate` to locate the coordinates in QGIS.
+- `7JVCF4QX+8P` is a __Plus Code__, an address format used by Google Maps for places without a street address.
+- Option 1: Open `Lat Lon Tools` → `Zoom to Coordinate`. Make sure the coordinate type is __WGS 84 (Latitude & Longitude)__ or __Plus Codes__ and enter `7JVCF4QX+8P`.
+- Option 2: Copy `7JVCF4QX+8P` into the search bar of [Google Maps](https://www.google.com/maps). Right-click on the marker to copy the coordinates and use `Lat Lon Tools` → `Zoom to Coordinate` to locate them in QGIS.
+- A full Plus Code has 8 characters before the `+` and works everywhere. Google Maps often shows a short version (e.g. `F4QX+8P Larkana`). A short code only works together with a place name that the search engine knows.
 :::
 
 :::{card}

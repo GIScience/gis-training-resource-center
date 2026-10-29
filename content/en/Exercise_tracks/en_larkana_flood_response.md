@@ -79,3 +79,19 @@ __Module 5 Exercise 4: Security in Peshwar, Pakistan__
 - Join layers by field value
 
 :::
+
+:::{card}
+:link: ../Module_5/en_qgis_module_5_ex7
+:link-type: doc
+__Module 5 Exercise 12: Larkana Damage Assessment__
+^^^
+
+- Locating places from addresses and descriptions
+- Reading coordinates from Google Maps, OpenStreetMap and WhatsApp links
+- Working with different coordinate formats (decimal degrees, DMS, UTM)
+- Using the Lat Lon Tools and OSM Place Search plugins
+- Importing GPS tracks (GPX) and KoBo exports
+- Importing geotagged photos
+- Digitising point data with attributes
+
+:::
