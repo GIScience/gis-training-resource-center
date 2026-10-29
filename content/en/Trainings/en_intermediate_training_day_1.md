@@ -6,7 +6,7 @@ orphan: true
 
 Welcome to the first day of the training! Today is about **getting data into shape and creating your own**: we clean a table and join it to administrative boundaries, look at what broken geometries are and how to fix them, digitise new data, and think together about which spatial data your own operations need.
 
-::::{grid} 1 2 2 2
+::::{grid} 1
 :gutter: 2
 
 :::{grid-item-card} A space to learn from each other
@@ -39,7 +39,7 @@ We are here as GIS experts, but you know much more about humanitarian operations
 
 ## Sessions <a id="sessions"></a>
 
-::::{grid} 1 2 2 2
+::::{grid} 1
 :gutter: 2
 
 :::{grid-item-card} 1. Cleaning and joining data
