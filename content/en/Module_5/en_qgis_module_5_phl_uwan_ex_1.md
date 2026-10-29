@@ -265,10 +265,6 @@ In this exercise we use the observed IBTrACS track of Uwan and treat it as if it
      - Layer name: change it to `Storm_Track_Fung_Wong`.
      - Make sure `Add saved file to map` is ticked and click `OK`.
 
-:::{tip}
-Uwan is the local Philippine name (assigned by PAGASA). IBTrACS uses the international name, **Fung-wong**. Storm names are reused over the years, so when you work with the full IBTrACS archive, always combine the name with the season, e.g. `"SEASON" = 2025 AND "NAME" = 'FUNG-WONG'`. If the filter returns nothing, check the spelling of the name in the attribute table.
-:::
-
 :::{figure} ../../../fig/qgis_3.44_module_5_phl_uwan_ex_1_task_1_filter.png
 ---
 width: 460 px
@@ -276,6 +272,12 @@ name: qgis_3.44_module_5_phl_uwan_ex_1_task_1_filter
 ---
 The query builder in QGIS 3.44 to filter the storm tracks.
 :::
+
+:::{tip}
+Uwan is the local Philippine name (assigned by PAGASA). IBTrACS uses the international name, **Fung-wong**. Storm names are reused over the years, so when you work with the full IBTrACS archive, always combine the name with the season, e.g. `"SEASON" = 2025 AND "NAME" = 'FUNG-WONG'`. If the filter returns nothing, check the spelling of the name in the attribute table.
+:::
+
+
 
 :::{figure} ../../../fig/qgis_3.44_module_5_phl_uwan_ex_1_task_1.png
 ---
