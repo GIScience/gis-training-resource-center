@@ -2,8 +2,10 @@
 
 Welcome! This repository holds the source of the **IFRC Network GIS Training Platform**. It's a free, open collection of training material for teaching QGIS and GIS for humanitarian work in the Red Cross Red Crescent network.
 
-🌐 **Live site:** https://giscience.github.io/gis-training-resource-center/en/intro.html
-(also available in [French](https://giscience.github.io/gis-training-resource-center/fr/) and [Spanish](https://giscience.github.io/gis-training-resource-center/es/))
+🌐 **Live site:** https://gis-training.heigit.org/en/intro.html
+(also available in [French](https://gis-training.heigit.org/fr/) and [Spanish](https://gis-training.heigit.org/es/))
+
+The old address (`giscience.github.io/gis-training-resource-center`) redirects to the new site.
 
 The platform is developed in a collaboration between [HeiGIT](https://heigit.org/), the [German Red Cross](https://www.drk.de/), the [British Red Cross](https://www.redcross.org.uk/) and the [Netherlands Red Cross](https://www.rodekruis.nl/). It includes:
 
@@ -32,7 +34,16 @@ We welcome contributions from Red Cross and Red Crescent staff and volunteers, N
 
 ## How the platform is built
 
-All content is written in Markdown ([MyST](https://mystmd.org/) flavour). [Jupyter Book](https://jupyterbook.org/) turns it into a static website. English is the source language, and each language (English, French, Spanish) is built as a separate book. A GitHub Action combines the three books and publishes them to GitHub Pages whenever changes are merged into `main`.
+All content is written in Markdown ([MyST](https://mystmd.org/) flavour). [Jupyter Book](https://jupyterbook.org/) turns it into a static website. English is the source language, and each language (English, French, Spanish) is built as a separate book.
+
+The site is built and hosted by HeiGIT:
+
+- The `Dockerfile` builds the three books and packs them into an nginx image, with English at `/en/`, French at `/fr/` and Spanish at `/es/`.
+- The Jenkins pipeline (`Jenkinsfile`) builds this image on every push to `main` and deploys it to an internal test site for the HeiGIT team. To see your own changes, [build a local preview](#building-a-local-preview).
+- Only **releases** go live on [gis-training.heigit.org](https://gis-training.heigit.org). A release is a git tag that matches the version in `pyproject.toml` (for example `0.2.0`).
+- The GitHub workflow **Deploy GitHub Pages redirects** replaces the old GitHub Pages site with redirects to the new domain. Rerun it by hand after adding pages if old links to them should redirect too.
+
+Changes for readers are listed on the [What's new](content/en/whats_new.md) page.
 
 ## Repository layout
 
@@ -42,13 +53,17 @@ gis-training-resource-center/
 │   ├── en/              English source content (the book you edit)
 │   ├── fr/              French content, generated from Crowdin (do not edit by hand)
 │   └── es/              Spanish content, generated from Crowdin (do not edit by hand)
+├── docs/                Known issues and release milestones
 ├── fig/                 Images and figures used across the platform
-├── localisation/        XLIFF files exchanged with Crowdin
-├── scripts/             Build and localisation helper scripts
-├── build_preview_book.bat   One-click local preview on Windows
-├── pyproject.toml       Python dependencies (managed by uv)
+├── scripts/             Link checker, redirect builder and localisation scripts
+├── Dockerfile           Builds the site image (all three books + nginx)
+├── Jenkinsfile          CI pipeline: builds main for internal testing, release tags go live
+├── index.html           Root page, redirects to /en/
+├── pyproject.toml       Python dependencies (managed by uv) and the release version
 └── uv.lock              Locked dependency versions
 ```
+
+The `localisation/` folder (XLIFF files exchanged with Crowdin) is written by the Crowdin workflows.
 
 The folders `english/`, `french/`, `spanish/` and `_site/` are created by local builds. Git ignores them.
 
@@ -61,6 +76,8 @@ You'll need:
 - A text editor. [VS Code](https://code.visualstudio.com/) works well for Markdown.
 
 ### 1. Clone the repository
+
+If you want to contribute, [fork the repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) first and clone your fork. To only build the site locally, clone it directly:
 
 ```bash
 git clone https://github.com/GIScience/gis-training-resource-center.git
@@ -81,38 +98,24 @@ uv sync --no-install-project
 
 uv reads the Python version from `.python-version` (3.14) and installs it automatically if it isn't present. The `.venv/` folder is created in the repository root and is ignored by Git.
 
-### 3. Switch to the `dev` branch
-
-```bash
-cd gis-training-resource-center
-git switch dev
-git pull
-```
-
 ## Building a local preview
 
 The preview builds all three books, combines them into one site in `_site/` and serves it at **http://localhost:8080**. This mirrors the published site.
 
-### Windows
+### With Docker
 
-Double-click **`build_preview_book.bat`** in the repository folder. You can also run it from a terminal:
+If you have [Docker](https://docs.docker.com/get-docker/), this builds exactly the image that is deployed:
 
-```powershell
-.\build_preview_book.bat
+```bash
+docker build -t gis-training .
+docker run --rm -p 8080:80 gis-training
 ```
 
-The script:
+Then open http://localhost:8080/en/intro.html. Press `Ctrl+C` to stop the container.
 
-1. syncs the Python environment with `uv sync`
-2. builds the English, Spanish and French books (via `uv run`)
-3. combines them into `_site/en`, `_site/es` and `_site/fr`
-4. starts a local server on port 8080 and opens your browser
+### With uv
 
-Press `Ctrl+C` in the terminal window to stop the server.
-
-### macOS / Linux
-
-Make sure the environment is synced (`uv sync --no-install-project`), then run this from the repository root:
+Make sure the environment is synced (`uv sync --no-install-project`), then run this from the repository root (on Windows, use Git Bash):
 
 ```bash
 # Build the three language books
@@ -134,7 +137,7 @@ Then open http://localhost:8080/en/intro.html. Press `Ctrl+C` to stop the server
 
 > **Tip:** If you only changed English content, you can build just the English book (the first build line) and serve `english/_build/html` instead.
 
-> **Why a local server and not just opening the HTML file?** Browsers restrict pages opened straight from disk (`file://`). Links to folders and some scripts behave differently there than on GitHub Pages. The local server is much closer to the live site.
+> **Why a local server and not just opening the HTML file?** Browsers restrict pages opened straight from disk (`file://`). Links to folders and some scripts behave differently there than on a web server. The local server is much closer to the live site.
 
 ### Checking links
 
@@ -167,28 +170,38 @@ curl -fSL -o _static/mathjax/tex-mml-chtml.js "https://cdn.jsdelivr.net/npm/math
 
 ## Branching workflow
 
-| Branch                | Purpose                                                                               |
-|-----------------------|---------------------------------------------------------------------------------------|
-| `dev`                 | Where all changes go. Push your work here, or open a pull request into it.            |
-| `main`                | The published version. Every merge into `main` redeploys the live site automatically. |
-| `l10n-crowdin-<lang>` | Created automatically by the translation workflow (see below).                        |
+| Branch / tag          | Purpose                                                                                     |
+|-----------------------|---------------------------------------------------------------------------------------------|
+| `main`                | The current version of the platform. All changes are merged here through pull requests.     |
+| Release tag (`0.2.0`) | A published version. Tagging a release deploys it to gis-training.heigit.org.               |
+| `l10n-crowdin-<lang>` | Created automatically by the translation workflow (see below).                              |
 
-The workflow:
+### Contributing changes
 
-1. Make your changes on `dev`, or on your own feature branch created from `dev`.
-2. Build the local preview and check your changes.
-3. Commit and push:
+Contributions come in as **pull requests into `main`**, from a fork or from a branch.
+
+1. **Fork the repository** on GitHub ([how to fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)) and clone your fork. Members of the GIScience organisation can create a branch in this repository instead.
+2. Create a branch for your change from an up-to-date `main`:
    ```bash
+   git switch main
    git pull
+   git switch -c my-change
+   ```
+3. Make your changes and [build a local preview](#building-a-local-preview) to check them. There is no public test site, so the local preview is the place to see your changes before they're merged.
+4. Commit and push your branch:
+   ```bash
    git add <files>
    git commit -m "Short description of the change"
-   git push
+   git push -u origin my-change
    ```
-4. When a set of changes is ready to publish, open a **pull request from `dev` into `main`**. Once it's merged, the site redeploys.
+5. Open a **pull request into `main`** and describe what you changed. The HeiGIT team reviews it and merges it.
 
-⚠️ **Please don't push directly to `main`.** We plan to add branch protection to `main` so that it can only be changed through reviewed pull requests.
+If your pull request is open for a while, update it with the latest `main` before it's merged (`git pull origin main` on your branch, or `git pull upstream main` from a fork).
 
-If you're not a member of the GIScience organisation, [fork the repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) and open a pull request from your fork into `dev`.
+### Publishing a release (maintainers)
+
+1. Bump `version` in `pyproject.toml` and add the changes to the [What's new](content/en/whats_new.md) page.
+2. Tag the commit on `main` with the same version, for example `git tag 0.3.0 && git push --tags`. Jenkins builds the release and deploys it to the live site.
 
 ## Localisation (translations)
 
@@ -214,10 +227,10 @@ Please **don't edit files in `content/fr/` or `content/es/` by hand**. The next 
 
 1. **Upload sources.** In GitHub, go to **Actions → Crowdin Upload Source XLIFF → Run workflow**. The workflow converts the English Markdown into XLIFF files with [Okapi Tikal](https://okapiframework.org/), commits them to `localisation/xliff/sources/`, and uploads them to Crowdin.
 2. **Translate.** Translators translate and approve the text on Crowdin.
-3. **Download and merge.** Go to **Actions → Crowdin Download and Merge Translations → Run workflow** and pick the language (`fr` or `es`). The workflow downloads the approved translations, merges them back into Markdown with Okapi Tikal, and writes them to `content/<lang>/`. Links to English pages are pointed at the translated pages, and every page that isn't translated yet gets a placeholder ("not translated yet", with a link to the English page) that the translation replaces later. It then opens a pull request from the branch `l10n-crowdin-<lang>` against `dev`, so the translations show up in the preview book and go live with the next release. The merge itself runs on `main`, the branch the sources were uploaded from.
-4. **Review.** Every push to an `l10n-crowdin-*` branch triggers the **preview-book** workflow. You can download the built site from that workflow run and check it before merging.
+3. **Download and merge.** Go to **Actions → Crowdin Download and Merge Translations → Run workflow** and pick the language (`fr` or `es`). The workflow downloads the approved translations, merges them back into Markdown with Okapi Tikal, and writes them to `content/<lang>/`. Links to English pages are pointed at the translated pages, and every page that isn't translated yet gets a placeholder ("not translated yet", with a link to the English page) that the translation replaces later. The French or Spanish menu is updated to follow the English one, listing only translated pages. It then opens a pull request from the branch `l10n-crowdin-<lang>` against `main`.
+4. **Review.** Check out the `l10n-crowdin-<lang>` branch and build the French or Spanish book locally before merging. Translations go live with the next release.
 
-Run these workflows against `dev` (set the branch input when you start them), so translations go through the same review as other changes.
+Both workflows use `main` by default, so you don't need to change the branch inputs.
 
 If you'd like to help translate, please contact us (see below) and we'll add you to the Crowdin project.
 
@@ -228,7 +241,7 @@ Contributions of all sizes are welcome: fixing a typo, improving an explanation,
 Before you start:
 
 1. **Get in touch** at **gis-training-platform@heigit.org**. Tell us what you'd like to work on so we can coordinate and avoid duplicate work.
-2. **Read the [Contribution Plan](https://giscience.github.io/gis-training-resource-center/en/contribution_plan.html)**. It explains the structure, style and review process for new content.
+2. **Read the [Contribution Plan](https://gis-training.heigit.org/en/contribution_plan.html)**. It explains the structure, style and review process for new content.
 
 A few conventions:
 
