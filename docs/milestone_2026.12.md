@@ -7,6 +7,60 @@ This is the first release under the new publication schedule. It has two goals:
 1. Set up the release process itself (hosted preview book, protected `main`, announcements).
 2. Fix the problems from the link check that can be fixed without new content.
 
+## Status on 29 October 2026
+
+The plan below was written for a `dev` → `main` workflow with a preview book on GitHub Pages.
+Both are gone: contributors fork the repository (or create a branch) and open pull requests into
+`main`, the site is built by Jenkins, and release tags on `main` go live on
+gis-training.heigit.org. Releases `0.1.0` (16 Oct) and
+`0.2.0` (21 Oct) are already out. So:
+
+- **There's no public preview book.** The GitHub Pages preview was dropped, and the internal test
+  site isn't shared. Remove the preview link from the milestone description. For the announcement
+  on 3 Nov, ask people to build the book locally (see the README) or describe the changes on the
+  "What's new" page instead.
+- **The scope freeze (27 Oct) and "merge `dev` into `main`" (1 Dec) steps no longer apply.**
+  Instead, only merge pull requests for milestone issues into `main` until the release, and tag
+  `main` on 1 Dec.
+- **Release name:** the tags so far use `0.x.y`. Decide whether the December release is `0.3.0`
+  or `2026.12` (the Jenkins release pattern accepts both), and update the title and tag below.
+
+Progress per item (✅ done, 🟡 partly done, ⬜ open, ➖ no longer needed):
+
+| Item                                                     | Status | Notes                                                                                   |
+|----------------------------------------------------------|--------|-----------------------------------------------------------------------------------------|
+| **A. Release process**                                   |        |                                                                                         |
+| Preview book from `dev`                                  | ➖     | Dropped: `deploy-book.yml` was deleted; contributors build locally                      |
+| Protect `main`                                           | ⬜     | Repository setting                                                                      |
+| Delete `dev`                                             | ⬜     | New: no longer used; all pull requests go into `main`                                   |
+| Discussions with "Announcements"                         | ⬜     | Not checked (repository setting)                                                        |
+| "What's new" page                                        | 🟡     | `content/en/whats_new.md` written (About section). Not linked from a banner yet         |
+| Repository homepage URL                                  | ⬜     | Should now be `https://gis-training.heigit.org/en/intro.html`                           |
+| README and old-site links (from known issues section 6)  | ✅     | README, language buttons and GitHub Pages redirects updated                             |
+| **B. English content fixes**                             |        |                                                                                         |
+| Replace links to old site addresses                      | 🟡     | `en_SMT_ex4_.md` fixed; 2 left on the live page `en_how_to_training.md`                 |
+| Restore the 404 downloads on nexus                       | ⬜     | Needs server access; recheck with `--external`                                          |
+| Missing `SRCS_trigger_export_image_pdf.mp4`              | ⬜     | Still referenced on 3 live pages                                                        |
+| Check failing third-party links by hand                  | ⬜     |                                                                                         |
+| Empty card links and `[text]()` links                    | ⬜     | All 4 cards and 4 text links still empty                                                |
+| "PLACEHOLDING TEXT" in Colombia MHU overview             | ⬜     |                                                                                         |
+| Delete or move pages not in any ToC                      | ⬜     |                                                                                         |
+| New: Philippines exercise links to a missing track page  | ⬜     | `Exercise_tracks/en_phl_typhoon_uwan.md` doesn't exist                                  |
+| **C. French and Spanish**                                |        |                                                                                         |
+| Download and Merge for `fr`/`es`, then link check        | 🟡     | Placeholders and link rewrite done (16–20 Oct); rerun after section B                   |
+| Remaining image and logo paths                           | ✅     | Fixed by hand on 16 Oct                                                                 |
+| `fr_config.yml` licence line                             | ✅     | Translated on 29 Oct                                                                    |
+| Remove or repoint Module 7 ex 1 copies (fr/es)           | ⬜     | From known issues section 2                                                             |
+| **D. Localisation pipeline**                             |        |                                                                                         |
+| Anchors on translated pages                              | ⬜     | 108 Spanish, 5 French links still open the top of the page                             |
+| Remove or fix `crowdin-sync-and-merge.yml`               | ⬜     | Still in `.github/workflows/`                                                           |
+| Licence file for the workflows                           | ⬜     |                                                                                         |
+| New: translated menus from the English one               | 🟡     | `update-translated-toc.py` and workflow step written, not committed yet                 |
+
+**Summary:** of the 20 original items, 4 are done or no longer needed, 3 are partly done and
+13 are open. Most open items in B need content owners or server access, so they should be
+assigned before the announcement on 3 November.
+
 ## GitHub milestone
 
 - **Title:** `2026.12`
