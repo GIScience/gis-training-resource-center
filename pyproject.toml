@@ -1,6 +1,6 @@
 [project]
 name = "gis-training-resource-center"
-version = "0.3.0"
+version = "0.3.1"
 description = "IFRC Network GIS Training Platform (Jupyter Book site)"
 requires-python = ">=3.14"
 dependencies = [
