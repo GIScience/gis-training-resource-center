@@ -50,6 +50,8 @@ To keep sharing after the training, join the **[Community of Practice](https://c
 :img-alt:
 Data from reports and PDFs is rarely ready to use. You clean a table on household wall materials in Pakistan, import it into QGIS and join it to the district boundaries. Afterwards, you check which districts did *not* join, and why.
 
+**Start the exercise at [Task 2](../Module_5/en_qgis_data_preparation_ex.md#task-2-clean-the-data-from-errors-and-unwanted-entries). The table has already been extracted from the PDF, so you can skip Task 1.**
+
 * [Data preparation exercise](../Module_5/en_qgis_data_preparation_ex.md)
 * [Import CSV files](../Wiki/en_qgis_import_geodata_wiki.md#text-data-import)
 * [Join attributes by field value](../Wiki/en_qgis_non_spatial_joins_wiki.md#join-attributes-by-field-value)
@@ -63,7 +65,7 @@ The result of session 1: share of households with walls made of burnt bricks or 
 :::
 
 :::{tip} Names that don't match
-District names are often spelled slightly differently in two datasets, so the join leaves them out. A **fuzzy merge** finds names that are almost the same, using the `levenshtein()` function in the field calculator. See [Task 3 of the data preparation exercise](../Module_5/en_qgis_data_preparation_ex.md#task-3-import-the-data-into-qgis).
+District names are often spelled differently in two datasets, so the join silently leaves them out. Save the rows that didn't join as their own layer, look up the correct names and fix them in the attribute table. See [Task 4 of the data preparation exercise](../Module_5/en_qgis_data_preparation_ex.md#task-4-join-the-data-to-the-districts).
 :::
 
 :::{dropdown} Using AI for data cleaning

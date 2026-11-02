@@ -20,6 +20,7 @@ __Relevant Wiki articles:__
 * [QGIS Interface](../Wiki/en_qgis_interface_wiki.md)
 * [Import CSV-files into QGIS](../Wiki/en_qgis_import_geodata_wiki.md#text-data-import)
 * [Attribute Table in QGIS](../Wiki/en_qgis_attribute_table_wiki.md)
+* [Non-spatial joins](../Wiki/en_qgis_non_spatial_joins_wiki.md)
 
 :::
 
@@ -83,9 +84,9 @@ Download the datasets [here](https://nexus.heigit.org/repository/gis-training-re
 
 :::
 
-| Dataset                                                       | Source                                                                                          | Description                                                                                                                                                             |
-|---------------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Administrative boundaries for pakistan                        | [HDX](https://data.humdata.org/dataset/cod-ab-pak)                                              | The administrative boundaries (adm0-adm3) for pakistan can be accessed via the humanitarian data exchange. For this exercise, we are interested in the districts (adm2) |
+| Dataset                                                       | Source                                                          | Description                                                                                                                                                             |
+|---------------------------------------------------------------|-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Administrative boundaries for pakistan                        | [HDX](https://data.humdata.org/dataset/cod-ab-pak)              | The administrative boundaries (adm0-adm3) for pakistan can be accessed via the humanitarian data exchange. For this exercise, we are interested in the districts (adm2) |
 | Percent distribution of households by material used for walls | [Pakistan Bureau of Statistics](https://www.pbs.gov.pk/pslm-3/) | Table 7.7 in the *Pakistan Social and living Standards Measurement Survey (2019-20)* shows the materials used for walls per household in percents.                      |
 
 
@@ -186,170 +187,133 @@ width: 550 px
 
 Congratulations, the data from the PDF has been extracted into a CSV file!
 
-### Task 2: Clean the data from errors and unwanted entries <a id="task-2-clean-the-data-from-errors-and-unwanted-entries"></a>
+### Task 2: Clean the CSV file <a id="task-2-clean-the-data-from-errors-and-unwanted-entries"></a>
 
 :::{topic} Context
-The data has been extracted from the PDF. However, there are a few formatting errors and unwanted information. Before loading the extracted CSV into QGIS, we need to clean the formatting and remove unwanted entries. This can be done in many ways, for example in a spreadsheet editor such as Microsoft Excel or Libreoffice Calc.
+Tabula reads the table line by line from the PDF. Where the columns in the PDF are close together, it doesn't always split the values correctly. It also copies everything in the table, including rows we don't need. Before we load the CSV into QGIS, we need to check it and fix these problems. Otherwise, QGIS reads some columns wrongly, or some districts can't be joined to the district polygons later.
 :::
 
-:::{note} 
-The necessary steps to filter the data might be different depending on the editor you use. In this exercise, we will go through the workflow with the free version of Microsoft Excel. 
+:::{attention}
+For this task, use the prepared file `tabula-pakistan_wall_type7.7_training.csv` from the exercise data folder (`data/input/`). It's the Tabula output where most of the problems have already been fixed, so you only have to fix a few rows.
+
+If you extracted the table yourself in Task 1, your file has more problems. See the dropdown "If you extracted the CSV yourself" at the end of this task.
 :::
 
-1. Open the extracted CSV file in Excel. It might look like this:
-
-:::{figure} ../../../fig/en_tabula_csv_excel.png
----
-name: en_tabula_csv_excel
-width: 300 px
----
-
-:::
-
-2. Excel does not automatically recognise the comma delimited format. We can fix this by selecting the column A, navigating to `Data` → `Text to Columns`. A new window will open. Leave the settings as they are and click `Ok`. 
+1. Open `tabula-pakistan_wall_type7.7_training.csv` in a spreadsheet editor such as Microsoft Excel or LibreOffice Calc.
 
 :::{note}
-
-In the web version of excel, you can fix the columns by selecting column A, navigating to `Data` → `Split Text to Columns`
-
+If Excel shows all values in column A, select column A and go to `Data` → `Text to Columns` (in the web version of Excel: `Data` → `Split Text to Columns`). Leave the settings as they are and click `OK`.
 :::
 
-:::{figure} ../../../fig/en_m5_data_cleaning_ex_task2.png
----
-name: en_m5_data_cleaning_ex_task2
-width: 450 px
----
-The data table should now look like this. It is still missing column headers (red).
+2. Go through the table and look for these problems:
+
+:::{admonition} What went wrong in the extraction?
+:class: note
+
+| Problem                                  | Rows affected                                                                           | Example                                                                                                                                                              | How to fix it                                                                                                                             | What happens in QGIS if you don't fix it                                                                                                                 |
+|:-----------------------------------------|:----------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Column headers split over three rows** | The first three rows                                                                    | `PROVINCE & DISTRICT, BURNT BRICKS, MUD` in one row, `/BLOCKS, BRICKS/MUD, WOOD, OTHER, TOTAL` in the next, and `MATERIAL USED FOR WALLS` above them                 | Make one header row: `Province & District`, `Burnt Bricks/Blocks`, `Mud Bricks/Mud`, `Wood`, `Other`, `Total`. Delete the other two rows. | QGIS takes the first row as column names, so the columns get the wrong names. The other header rows become data, so all number columns are read as text. |
+| **Two numbers in one cell**              | Faisalabad, Lahore                                                                      | `Faisalabad, 97.91, , 1.73 .22, 0.14, 100`: the **Mud** cell is empty, and the values for Mud and Wood are both in the **Wood** cell.                                | Move the first number into **Mud** and keep the second in **Wood**.                                                                       | QGIS reads the whole **Wood** column as text instead of numbers. You can't use it for a map.                                                             |
+| **Name and number in one cell**          | Nushki, Sohbatpur                                                                       | `Nushki 24.64, 74.6, 0.76, 0, , 100`: the value for Burnt Bricks/Blocks is attached to the district name, so Mud, Wood and Other are one column too far to the left. | Move **Mud**, **Wood** and **Other** one column to the right, then move the number from the name into **Burnt Bricks/Blocks**.            | The district name is `Nushki 24.64`, so it can't be joined to the district `Nushki`.                                                                     |
+| **A name split over two rows**           | Tando Muhammad Khan (Sindh)                                                             | `Tando Muhammad, 35.48, 51.95, 12.02, 0.56, 100` and, in the next row, `Khan` with no values                                                                         | Write the full name `Tando Muhammad Khan` in the first row and delete the second.                                                         | `Tando Muhammad` doesn't join to the district `Tando Muhammad Khan`, and `Khan` is an empty row.                                                         |
+| **Rows that are not districts**          | `Pakistan`, `Punjab`, `Sindh`, `Khyber Pakhtunkhwa`, `Balochistan`, the note at the end | `Punjab, 91.72, 7.06, 0.37, 0.85, 100`                                                                                                                               | Delete these rows. We only want one row per district. Read the note first: it lists the districts that are missing from the survey.       | Extra rows that don't belong to any district.                                                                                                            |
+
+Values such as `.22` are fine: they mean `0.22`.
 :::
 
-3. We have to add the column names back, as we did not extract them with tabular. <kbd>Right-click</kbd> on the first row and select `Insert 1 Row Above`. A new row should appear.
-4. Enter the column headings as they are in the PDF-file:
+3. Fix the rows with these problems. To check your work, add a column that adds up __Burnt Bricks/Blocks__, __Mud Bricks/Mud__, __Wood__ and __Other__, e.g. `=SUM(B2:E2)`. For every district, the result should be about 100. If it isn't, the values in that row are still in the wrong columns. Delete the check column when you're done.
 
-| Province & District | Burnt Bricks/Blocks | Mud Bricks/Mud | Wood | Other | Total |
-|:--------------------|:--------------------|:---------------|:-----|:------|:------|
+4. Save the file as CSV (`File` → `Save As`, file type `CSV (Comma delimited)`) in the folder `data/interim/` under the name `pakistan_wall_type_clean.csv`. If Excel asks whether to keep the format, choose to keep CSV.
 
-5. Now we can format the data into an excel table. This will allow us to apply filters to remove the unwanted entries. Select the columns A to F and navigate to `Home` → `Format as Table` and select a table styling of your choosing. 
+Great! Now we are ready to import the CSV-file into QGIS!
 
-Now we have a usable .csv file with the information. However, there are still some unwanted entries and a few formatting mistakes. First, let's remove all the rows with the data on rural and urban distribution. We want to visualise the distribution on district level, so a distinction between urban and rural is not necessary. 
+::::{dropdown} If you extracted the CSV yourself
 
-6. Click on the small arrow next to the "Province & District" column. A dropdown-menu will open.
-7. In the dropdown-menu, uncheck the `Select All`-Box and scroll down to check all the entries with the value `Urban` and `Rural`. Also add the entries that have numerical values attached to `Urban` or `Rural`. Click `Apply`. 
+Your own Tabula output has the same problems as the prepared file, but in more rows, and some more:
 
-:::::{grid} 2
+- **No column headers:** we didn't select the headers in Tabula. Insert a new first row and enter the headings:
 
-::::{grid-item}
+  | Province & District | Burnt Bricks/Blocks | Mud Bricks/Mud | Wood | Other | Total |
+  |:--------------------|:--------------------|:---------------|:-----|:------|:------|
+
+- **Urban and Rural rows:** below every district, there is one row for urban and one for rural areas. We only need the district totals. Select the table, go to `Home` → `Format as Table`, then click the arrow next to "Province & District" and use `Text Filters` → `Begins With...` to show all rows that begin with `Urban`, and then all that begin with `Rural`. Some of these rows have a number attached to the word (e.g. `Urban 55.06`), so "Equals" would miss them. Select the filtered rows, delete them and remove the filter.
+- **More district names that don't match the boundaries,** e.g. `Layyah` (in the boundaries: `Leiah`) or `Karachi East` (`East Karachi`). You will find them in Task 4.
+
+Your file may also look slightly different depending on how you drew the selection in Tabula.
+
 :::{figure} ../../../fig/en_m5_data_cleaning_ex_filter_excel.png
 ---
 name: en_m5_data_cleaning_ex_filter_excel
 width: 350 px
 ---
+Filtering the rows in Excel.
 :::
+
 ::::
-::::{grid-item}
-:::{figure} ../../../fig/en_m5_data_cleaning_ex_filter_excel_2.png
----
-name: en_m5_data_cleaning_ex_filter_excel_2
-width: 350 px
----
-:::
-::::
-:::::
 
+### Task 3: Import the data into QGIS <a id="task-3-import-the-data-into-qgis"></a>
 
-8. The table should now only show the entries with rural or urban in the "Province & District". Select them all and click on `Remove selected rows`. 
+1. Open QGIS, create a new project and save it in the exercise folder.
+2. [Import the cleaned CSV file](../Wiki/en_qgis_import_geodata_wiki.md#text-data-import) `data/interim/pakistan_wall_type_clean.csv`. In the Data Source Manager:
+    1. Under `Geometry Definition`, select `No geometry (attribute only table)`. Our CSV has no coordinates, only district names.
+    2. Under `Record and Fields Options`, make sure `Detect field types` is checked.
+    3. Click `Add`.
+3. Import the administrative boundaries `pak_admbnda_adm2_wfp_20220909.shp` from the folder `data/input/pak_adm_wfp_20220909_shp/`.
+4. Check that QGIS has read the numbers as numbers: <kbd>Right-click</kbd> on the CSV layer → `Properties` → `Fields`. __Burnt Bricks/Blocks__, __Mud Bricks/Mud__, __Wood__ and __Other__ should have the type `double` (a decimal number). If one of them is `text` or `string`, a cell in that column still has a problem. Fix it in the spreadsheet, save the CSV, remove the layer and import it again.
 
-9. Now, we have to remove the filter we applied. 
+### Task 4: Join the data to the districts <a id="task-4-join-the-data-to-the-districts"></a>
 
-10. Let's go through the resulting table and see if we need to fix more entries. Tabula reads the table line by line from the PDF, and where the columns in the PDF are close together, it doesn't always split the values correctly. Look out for these problems:
-
-:::{admonition} What went wrong in the extraction?
-:class: note
-
-| Problem | Rows affected | Example | How to fix it |
-|:--------|:--------------|:--------|:--------------|
-| **Two numbers in one cell** | Chiniot, Faisalabad, Jhang, Lahore | `Faisalabad, 97.91, , 1.73 .22, 0.14, 100`: the **Mud** cell is empty, and the values for Mud and Wood are both in the **Wood** cell. | Move the first number into **Mud** and keep the second in **Wood**. |
-| **Name and number in one cell** | Nushki, Qilla Abdullah, Sheerani, Sohbat pur | `Nushki 24.64, 74.6, 0.76, 0, , 100`: the value for Burnt Bricks/Blocks is attached to the district name, so Mud, Wood and Other are one column too far to the left. | Move **Mud**, **Wood** and **Other** one column to the right, then move the number from the name into **Burnt Bricks/Blocks**. **Total** is already in the right column. |
-| **Rows that are not districts** | `Pakistan`, `Punjab`, `Sindh`, `Khyber Pakhtunkhwa`, `Balochistan`, the note at the end | `Punjab, 91.72, 7.06, 0.37, 0.85, 100` | Delete these rows. We only want one row per district. Read the note first: it lists the districts that are missing from the survey. |
-| **A name split over two rows** | Tando Muhammad Khan (Sindh) | `Tando Muhammad` and, in the next row, `Khan` | Write the full name `Tando Muhammad Khan` in the first row and delete the second. |
-
-Values such as `.13` are fine: they mean `0.13`.
+:::{topic} Context
+To show the data on a map, we attach the CSV to the district polygons with a [non-spatial join](../Wiki/en_qgis_non_spatial_joins_wiki.md). QGIS links the rows where the district name in the CSV is __exactly__ the same as the district name in the boundary layer (`ADM2_EN`). `D.G Khan` doesn't join with `Dera Ghazi Khan`, and nothing tells you so: the district is just empty. That's why we first check which districts don't join.
 :::
 
-:::{attention}
-The rows listed in the table are for the prepared CSV file from the exercise data, where some of the broken rows have already been fixed. If you extracted the table with Tabula yourself, you will find the same kinds of problems, but in more rows. Your file may also look slightly different depending on how you drew the selection in Tabula.
-:::
+1. Open the processing toolbox, search for __"Join attributes by field value"__ and <kbd>double-click</kbd> on it.
+2. Set the following parameters:
+    1. __Input layer:__ `pakistan_wall_type_clean` (the CSV)
+    2. __Table field:__ `Province & District`
+    3. __Input layer 2:__ `pak_admbnda_adm2_wfp_20220909`
+    4. __Table field 2:__ `ADM2_EN`
+    5. __Layer 2 fields to copy:__ `ADM2_PCODE`
+    6. __Unjoinable features from first layer:__ click on the arrow next to the field and select `Create Temporary Layer`.
+3. Click `Run`. In the `Log` tab, you can see how many rows were joined and how many weren't.
+4. Open the attribute table of the new layer `Unjoinable features from first layer`. These are the districts whose name in the CSV doesn't exist in the boundary layer. You should find four:
+    - `D.G Khan` and `Karachi central`
+    - `Chitral` and `Kohistan`
+5. Open the attribute table of `pak_admbnda_adm2_wfp_20220909` and click on the column header `ADM2_EN` to sort the names. Look for the correct names:
+    - `D.G Khan` is `Dera Ghazi Khan`, and `Karachi central` is `Central Karachi`.
+    - `Chitral` and `Kohistan` don't exist anymore: in the boundary layer, they have been split into smaller districts (`Chitral Lower`, `Chitral Upper`, `Kohistan Lower`, `Kohistan Upper`, `Kolai Palas Kohistan`). The boundaries changed after the survey, so we can't fix this by changing the name. We leave these two as they are.
+6. QGIS can't edit CSV files directly, so we first save the table in an editable format: <kbd>Right-click</kbd> on the CSV layer → `Export` → `Save Features As...`. Set `Format` to `GeoPackage` and save it as `data/interim/pakistan_wall_type_clean.gpkg`. Click `OK`. The new layer is added to your project.
+7. Select the new layer, click on the pencil icon (`Toggle Editing`) and open its [attribute table](../Wiki/en_qgis_attribute_table_wiki.md#attribute-table-data-editing). <kbd>Double-click</kbd> on `D.G Khan` and change it to `Dera Ghazi Khan`. Change `Karachi central` to `Central Karachi`. Click on `Save Edits` and turn off the editing mode.
+8. Now join the data to the district polygons. Open __"Join attributes by field value"__ again and set:
+    1. __Input layer:__ `pak_admbnda_adm2_wfp_20220909`
+    2. __Table field:__ `ADM2_EN`
+    3. __Input layer 2:__ `pakistan_wall_type_clean` (the GeoPackage layer)
+    4. __Table field 2:__ `Province & District`
+    5. __Layer 2 fields to copy:__ `Burnt Bricks/Blocks`, `Mud Bricks/Mud`, `Wood`, `Other`
+    6. __Joined layer:__ save it as `data/output/pakistan_wall_type_districts.gpkg`
+9. Click `Run`.
 
-11. Fix the rows with these problems. To check your work, add a column that adds up __Burnt Bricks/Blocks__, __Mud Bricks/Mud__, __Wood__ and __Other__, e.g. `=SUM(B2:E2)`. For every district, the result should be about 100. If it isn't, the values in that row are still in the wrong columns. Delete the check column when you're done.
-
-12. Save the formatted csv file in the input data folder (`.../module_5_ex_7_data_cleansing/data/input/`) under the name `tabula-pakistan_wall_type7.7`. 
-
-Great! Now we are ready to import the CSV-file into QGIS!
-
-### Task 3: Import the Data into QGIS <a id="task-3-import-the-data-into-qgis"></a>
-
-:::{topic}
-With the data formatted as a usable CSV-file, we can import it into QGIS and join it with a polygon layer containing the districts (adm2) by using the columns containing the district names in english. However, in this step, we might encounter the problem that the district names are written differently. In this case, we can't simply perform a [attribute join](../Module_5/en_qgis_spatial_tools.md#spatial-joins) as the attributes need to __match exactly__. To fix this, we have to perform a __fuzzy merge__. 
-
-:::
-
+Congratulations, we have now joined the information from the PDF file to the district polygons!
 
 :::{note}
-Fuzzy merge is a technique used in data processing to combine two datasets based on similar, but not necessarily identical, values. This is particularly useful when dealing with data that may have inconsistencies, such as typos or different formats. 
+The `Log` tab still shows quite a few polygons that weren't joined. That's expected: these districts have no data in the survey. They are
+- the districts in Azad Kashmir and Gilgit-Baltistan, which the survey doesn't cover,
+- the five districts in the note at the end of the CSV,
+- Chitral and Kohistan, and the districts Chaman and Lehri, which were created after the survey.
 
-Instead of looking for exact matches, fuzzy merge uses algorithms to compare values and determine how similar they are. For example, "Jon" and John" might be considered a match because how similar they are. Each comparison generates a similarity score, which indicates how closely the two values match. 
-
+Not every missing value is a mistake. But always check *why* something didn't join.
 :::
 
-1. Open QGIS and create a new project.
-2. Save the project in the exercise folder.
-3. [Import the CSV layer into QGIS](../Wiki/en_qgis_import_geodata_wiki.md#text-data-import).
-4. Import the administrative boundaries located in the data input folder: `.../module_5_ex_7_data_cleansing/data/input/`
-5. Now let's perform a fuzzy merge: Open the [field calculator](../Wiki/en_qgis_table_functions_wiki.md#calculate-field) __for the layer called `tabula-pakistan_wall_type7.7`__ and enter the following expression: 
-    ```
-    array_first(aggregate(
-    layer:= 'pak_admbnda_adm2_wfp_20220909',
-    aggregate:='array_agg',
-    expression:=ADM2_EN,
-    filter:=levenshtein(ADM2_EN, attribute(@parent, 'Province & Disctrict')) <= 2,
-    order_by:=levenshtein(ADM2_EN, attribute(@parent, 'Province & Disctrict'))
-    ))
-    ```
-
-6. Enter an `Output field name`, set the `Output field type` to `Text (string)` and increase the `output field length` to 40.
-
-7. Click `OK`. The CSV file should now have a new column. In this column you will find the values from the adm2 polygon layer which have been matched using the fuzzy merge algorithm. 
-
-8. We can now perform an attribute join by selecting the `ADM2_EN` and newly created fuzzy merge column as identifying column. In the processing toolbox, search for the tool __"Join attributes by field value"__. <kbd>Double-click</kbd> on it. 
-
-9. A new window will open. Here, set the following parameters:
-    1. __Input layer:__ ADM2 polygon layer
-    2. __Table field:__ `ADM2_EN`
-    3. __Input layer 2:__ `tabula-pakistan_wall_type7.7`
-    4. __Table field 2:__ `Fuzzy_match`
-    5. __Layer 2 fields to copy:__ `Burnt Bricks/Blocks, Mud Bricks/Mud, Wood, Other`
-
-:::{figure} ../../../fig/en_3.36_m5_ex_7_attr_join.png
----
-name: m5_ex7_attr_join
-width: 450 px
----
-The "Join attributes by field value" parameters
-:::
-
-10. Click `Run`.
-
-Congratulations, we have now successfully joined the information from the PDF file to a polygon layer!
-
-### Task 4: Visualisation of the Data <a id="task-4-visualisation-of-the-data"></a>
+### Task 5: Visualisation of the Data <a id="task-5-visualisation-of-the-data"></a>
 
 :::{topic}
 
-We extracted the data from the PDF and now have a polygon layer containing the information on the wall material per district. With the new column, we can create a map visualising the amount of buildings that have, for example, burnt bricks or blocks as wall material. 
+We now have a polygon layer containing the information on the wall material per district. We can create a map showing the share of households that have, for example, burnt bricks or blocks as wall material.
 
 :::
 
-1. Open the layer styling panel and select the __Graduated__ symbolisation method.
-2. Under `Value`, select `Burnt Bricks/Blocks`. 
+1. Open the layer styling panel for the joined layer and select the __Graduated__ symbolisation method.
+2. Under `Value`, select `Burnt Bricks/Blocks`.
 3. Click on `Classify`.
 
 The resulting symbolisation could look something like this:
@@ -359,5 +323,5 @@ The resulting symbolisation could look something like this:
 name: m5_ex_7_visualisation_results
 width: 600 px
 ---
-The darker the colour, the higher the percentage of buildings having burnt bricks or blocks as wall type. The grey areas are the districts where we there is no data available.
+The darker the colour, the higher the percentage of households having burnt bricks or blocks as wall type. The grey areas are the districts where there is no data available.
 :::
