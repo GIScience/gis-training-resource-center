@@ -260,9 +260,28 @@ width: 350 px
 
 9. Now, we have to remove the filter we applied. 
 
-10. Lets go through the resulting table and see if we need to fix more entries. There are a few entries where the the values for the percentages are not formatted correctly. Copy the values from the columns __Burnt Bricks/Blocks__, __Mud Bricks/Mud__, __Wood__, __Other__ one cell to the right and enter the numerical value that mistakenly got added to the __Provinces & District__ column. 
+10. Let's go through the resulting table and see if we need to fix more entries. Tabula reads the table line by line from the PDF, and where the columns in the PDF are close together, it doesn't always split the values correctly. Look out for these problems:
 
-11. Save the formatted csv file in the input data folder (`.../module_5_ex_7_data_cleansing/data/input/`) under the name `tabula-pakistan_wall_type7.7`. 
+:::{admonition} What went wrong in the extraction?
+:class: note
+
+| Problem | Rows affected | Example | How to fix it |
+|:--------|:--------------|:--------|:--------------|
+| **Two numbers in one cell** | Chiniot, Faisalabad, Jhang, Lahore | `Faisalabad, 97.91, , 1.73 .22, 0.14, 100`: the **Mud** cell is empty, and the values for Mud and Wood are both in the **Wood** cell. | Move the first number into **Mud** and keep the second in **Wood**. |
+| **Name and number in one cell** | Nushki, Qilla Abdullah, Sheerani, Sohbat pur | `Nushki 24.64, 74.6, 0.76, 0, , 100`: the value for Burnt Bricks/Blocks is attached to the district name, so Mud, Wood and Other are one column too far to the left. | Move **Mud**, **Wood** and **Other** one column to the right, then move the number from the name into **Burnt Bricks/Blocks**. **Total** is already in the right column. |
+| **Rows that are not districts** | `Pakistan`, `Punjab`, `Sindh`, `Khyber Pakhtunkhwa`, `Balochistan`, the note at the end | `Punjab, 91.72, 7.06, 0.37, 0.85, 100` | Delete these rows. We only want one row per district. Read the note first: it lists the districts that are missing from the survey. |
+| **A name split over two rows** | Tando Muhammad Khan (Sindh) | `Tando Muhammad` and, in the next row, `Khan` | Write the full name `Tando Muhammad Khan` in the first row and delete the second. |
+
+Values such as `.13` are fine: they mean `0.13`.
+:::
+
+:::{attention}
+The rows listed in the table are for the prepared CSV file from the exercise data, where some of the broken rows have already been fixed. If you extracted the table with Tabula yourself, you will find the same kinds of problems, but in more rows. Your file may also look slightly different depending on how you drew the selection in Tabula.
+:::
+
+11. Fix the rows with these problems. To check your work, add a column that adds up __Burnt Bricks/Blocks__, __Mud Bricks/Mud__, __Wood__ and __Other__, e.g. `=SUM(B2:E2)`. For every district, the result should be about 100. If it isn't, the values in that row are still in the wrong columns. Delete the check column when you're done.
+
+12. Save the formatted csv file in the input data folder (`.../module_5_ex_7_data_cleansing/data/input/`) under the name `tabula-pakistan_wall_type7.7`. 
 
 Great! Now we are ready to import the CSV-file into QGIS!
 

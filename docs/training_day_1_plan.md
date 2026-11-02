@@ -47,30 +47,101 @@ operations.
 Based on [Data preparation](../content/en/Module_5/en_qgis_data_preparation_ex.md) (Module 5),
 **without the Tabula steps** (Task 1).
 
-**Preparation:** extract the table from the PDF with Tabula yourself and give trainees the raw,
-uncleaned CSV. Don't clean it: the errors in it are the exercise (missing headers, Urban/Rural rows,
-values shifted into the wrong column).
+**Preparation:** give trainees the half-cleaned CSV `tabula-pakistan_wall_type7.7_training.csv`
+(see [The data file](#the-data-file)) and have the original PDF open to show where it comes from.
 
 **Steps:**
 
-1. Open the raw CSV in a spreadsheet editor and clean it (Task 2 of the exercise): add the headers,
-   remove the Urban/Rural rows, move the shifted values back into the right columns.
-2. Import the cleaned CSV and the admin boundaries (adm2) into QGIS.
-3. Try a plain attribute join on the district names first. Filter the result for `NULL` values:
-   several districts did not join because the names are spelled differently.
-4. Match the names with the fuzzy-merge expression from
+1. Show the PDF (Table 7.7) and the raw CSV side by side: this is what you get out of Tabula.
+2. Clean the CSV in a spreadsheet editor (Task 2 of the exercise):
+   - make one header row out of the three
+   - remove the Urban and Rural rows (filter with "begins with", see below)
+   - remove the national and province rows, the empty rows and the note at the end
+   - fix the remaining rows with two values in one cell, and the split name "Tando Muhammad Khan"
+   - check: a column that adds up the four materials should give about 100 for every district
+3. Import the cleaned CSV and the admin boundaries (adm2) into QGIS.
+4. Try a plain attribute join on the district names first. Look at the map: the grey districts
+   didn't join. Filter for `NULL` values and look at why (see
+   [What happens at the join](#what-happens-at-the-join)).
+5. Match the names with the fuzzy-merge expression from
    [Task 3 of the exercise](../content/en/Module_5/en_qgis_data_preparation_ex.md#task-3-import-the-data-into-qgis)
    (steps 5–8): in the field calculator, `levenshtein()` finds the district name in the boundaries
-   that differs by at most 2 characters. Join again on this new field and check the `NULL` values
-   once more.
-5. Style the result as a graduated map (Task 4).
+   that differs by at most 2 characters. Join again on this new field, check the `NULL` values once
+   more, and check a few matches (Jehlum!).
+6. Show P-codes: the boundaries have `ADM2_PCODE`. If the survey had used P-codes, none of the name
+   problems would have happened.
+7. Present the [other cleaning tools](#other-cleaning-tools).
+8. If time allows: style the result as a graduated map (Task 4).
 
 **Key messages:**
 
 - Data from reports and PDFs almost always needs cleaning before it can be used.
 - Always check what did *not* join. A join that "worked" can still silently drop features.
+- Check fuzzy matches too: a close spelling isn't always the right place.
+- Not every grey district is a mistake: some have no data, some boundaries have changed.
 
-**Other cleaning tools (mention, about 5 min):**
+### The data file
+
+`tabula-pakistan_wall_type7.7_training.csv` is the raw Tabula output with most of the broken
+rows already fixed, so trainees fix about 4 of each problem and don't spend the session on
+repetitive edits. Pre-fixed are Chakwal, D.G Khan, Gujranwala, Gujrat, Hafizabad, Islamabad,
+Jehlum, Kasur, Khanewal and Khushab in the first block, and Pishin, Qilla Saifullah, Quetta,
+Shaheed Skindar, Sibi, Washuk and Ziarat in the last block. The Total column has also been moved
+to the same column in every row. Everything else is as Tabula produced it.
+
+What trainees still have to fix:
+
+| Problem                         | Where                               | Example                                    | Left to fix                                                                                          |
+|---------------------------------|-------------------------------------|--------------------------------------------|------------------------------------------------------------------------------------------------------|
+| Header split over three rows    | Top                                 | `PROVINCE & DISTRICT,BURNT BRICKS,MUD,...` | Make one header row                                                                                  |
+| Two numbers in one cell         | First block, Pakistan to Lahore     | `Faisalabad,97.91,,1.73 .22,0.14,100,`     | 4 districts: Chiniot, Faisalabad, Jhang, Lahore                                                      |
+| Name and number in one cell     | Last block, Nushki to Ziarat        | `Nushki 24.64,74.6,0.76,0,,100,`           | 4 districts: Nushki, Qilla Abdullah, Sheerani, Sohbat pur                                            |
+| Urban and Rural rows            | Everywhere                          | `Urban 55.06,...` in the last block        | All. A filter "equals Urban" misses the last block; use "begins with"                                |
+| National and province rows      | Pakistan, Punjab, Sindh, KP, Balochistan |                                       | All. Easy to forget if you only remove Urban and Rural                                              |
+| Name split over two rows        | Sindh                               | `Tando Muhammad` / `Khan`                  | Merge into "Tando Muhammad Khan"                                                                     |
+| Empty rows and a note           | E.g. `Rural,,,,,,` for Lahore; note at the end | The note lists 5 districts dropped from the survey | Delete; read the note first                                                   |
+
+The middle block (Layyah to Nasirabad) is already in the right layout and needs no fixing.
+
+Expect 15–25 min for the cleaning. If the group is slow, do the last block as a demo.
+
+The original CSV and the half-fixed version are in the trainer's `Downloads` folder
+(`tabula-pakistan_wall_type7.7.csv`, `tabula-pakistan_wall_type7.7_training.csv`). Upload the
+training version to Nexus or share it directly with the trainees.
+
+The solution file in the exercise data (`data/temp/Solution_tabula-pakistan_wall_type7.7.csv`) is
+only partly cleaned: it still has the Urban and Rural rows and the merged names in the last block.
+Don't hand it out as the answer.
+
+### What happens at the join
+
+After cleaning there are about 130 districts in the CSV and 160 in the boundaries.
+
+- **About 100 join directly** by exact name.
+- **Fixed by fuzzy matching** (at most 2 characters different): Mitiari / Matiari,
+  Bajur / Bajaur, Sheerani / Sherani, Qilla Abdullah / Killa Abdullah, Qilla Saifullah /
+  Killa Saifullah, Umerkot / Umer Kot, Sohbat pur / Sohbatpur, D.I Khan / D. I. Khan,
+  Shaheed Benazirabad / Shaheed Benazir Abad, Tando Allah Yar / Tando Allahyar.
+- **A wrong fuzzy match:** "Jehlum" is 2 characters from both **Jhelum** and **Neelum** (in Azad
+  Jammu and Kashmir). QGIS can pick Neelum. Good moment to show that fuzzy matches need checking.
+- **Not fixed by fuzzy matching:**
+  - abbreviations: D.G Khan / Dera Ghazi Khan
+  - spelling variants: Bhawal Nagar / Bahawalnagar, Layyah / Leiah
+  - different names: Ketch/turbat / Kech, Kachhi( Bolan) / Kachhi, Shaheed Skindar / Shaheed
+    Sikandarabad, Shahdadkot / Kambar Shahdad Kot, Malakand PA / Malakand
+  - reversed word order: Karachi central / Central Karachi (and the other Karachi districts),
+    Korangi / Korangi Karachi
+- **Boundaries that changed after the survey:** Chitral is now Upper and Lower Chitral, Kohistan is
+  now three districts. No name matching fixes this.
+- **No data at all:** Gilgit-Baltistan and Azad Jammu and Kashmir aren't in the survey, and five
+  districts were dropped (the note at the end of the CSV). These grey areas are expected.
+
+P-codes fix the spelling problems, but not the boundary changes: for those you need data and
+boundaries from the same point in time.
+
+### Other cleaning tools
+
+Mention, about 5 min:
 
 - **Getting tables out of PDFs:** Tabula, or *Get Data → From PDF* in Excel (Microsoft 365).
 - **Spreadsheets:** Excel or LibreOffice Calc (`TRIM`, Text to Columns, Remove Duplicates, filters).
