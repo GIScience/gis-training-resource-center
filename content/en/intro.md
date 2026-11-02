@@ -168,6 +168,13 @@ ___
 
 Currently, there are no public trainings scheduled. Most of our trainings are organized directly with National Societies within the IFRC network. In the last couple of years, we conducted several online and in-person trainings with National Societies in the MENA region, across Africa, and the Americas, as well as specialized trainings for Public Health. More are planned for 2026 and 2027. If you are interested in a training or would like to explore collaboration opportunities, please contact us via email.
 
+:::{card} __Intermediate training: Day 1__
+:link: Trainings/en_intermediate_training_day_1
+:link-type: doc
+
+Programme and materials for the first day of the intermediate training: cleaning and joining data, fixing geometries, digitising and spatial data needs in your operations.
+:::
+
 <!--
 ## Past public trainings
 
