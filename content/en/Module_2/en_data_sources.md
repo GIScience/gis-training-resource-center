@@ -48,79 +48,90 @@ The data to create maps or perform GIS analyses can come from various sources (S
 
 ### General geodata <a id="general-geodata"></a>
 
-| Name  | Data | Link |
-| :-------------------- | :----------------- | :---------- |
-| Natural Earth | Administrative and physical geography | https://www.naturalearthdata.com/ |
-| Geonames | Administrative geodata | https://www.geonames.org/ |
-| OpenAfrica | Open-source data on Africa | https://africaopendata.org/dataset |
-| DivaGIS | Different data, e.g. administrative, roads, population, elevation, climate | https://diva-gis.org/data.html |
-| Open Topography | Data on topography | https://opentopography.org/ |
-| OSM Boundaries | Administrative boundaries (need to authenticate via your osm account) | https://osm-boundaries.com |
-| GADM | Administrative boundaries | http://gadm.org |
+| Name            | Data                                                                       | Link                               |
+|:----------------|:---------------------------------------------------------------------------|:-----------------------------------|
+| Natural Earth   | Administrative and physical geography                                      | https://www.naturalearthdata.com/  |
+| Geonames        | Administrative geodata                                                     | https://www.geonames.org/          |
+| OpenAfrica      | Open-source data on Africa                                                 | https://africaopendata.org/dataset |
+| DivaGIS         | Different data, e.g. administrative, roads, population, elevation, climate | https://diva-gis.org/data.html     |
+| Open Topography | Data on topography                                                         | https://opentopography.org/        |
+| OSM Boundaries  | Administrative boundaries (need to authenticate via your osm account)      | https://osm-boundaries.com         |
+| GADM            | Administrative boundaries                                                  | http://gadm.org                    |
 
 ### Humanitarian data <a id="humanitarian-data"></a>
 
-| Name | Data | Link |
-| :-------------------- | :----------------- | :---------- |
-| Humanitarian Data Exchange | Various open data from different humanitarian organisations | https://data.humdata.org |
-| Healthsites | Locations of health facilities | https://healthsites.io/ |
-| UNHCR Geoservices | Data on displaced populations | https://data.unhcr.org/en/situations |
-| Waterpoint | Data on waterpoints | https://www.waterpointdata.org | 
+| Name                       | Data                                                        | Link                                 |
+|:---------------------------|:------------------------------------------------------------|:-------------------------------------|
+| Humanitarian Data Exchange | Various open data from different humanitarian organisations | https://data.humdata.org             |
+| Healthsites                | Locations of health facilities                              | https://healthsites.io/              |
+| UNHCR Geoservices          | Data on displaced populations                               | https://data.unhcr.org/en/situations |
+| Waterpoint                 | Data on waterpoints                                         | https://www.waterpointdata.org       |
 
 ### Disaster data <a id="disaster-data"></a>
 
-| Name | Data | Link |
-| :-------------------- | :----------------- | :---------- |
-| MapAction | Emergency mapping resources | https://maps.mapaction.org/ | 
-| fieldmaps.io | Data and map download platform for humanitarian use | https://fieldmaps.io | 
-| ACLED | Conflict data | https://acleddata.com/conflict-data/data-export-tool |
-| GDACS | Disaster database | https://www.gdacs.org |
-| ZKI/DLR | Flood extents, damage extents, earth observation data | https://activations.zki.dlr.de/en/activations/ |
-| WFP Vulnerability Analysis and Mapping | Data on food security, hazards, conflicts, climate | https://dataviz.vam.wfp.org/ |
+| Name                                   | Data                                                  | Link                                                 |
+|:---------------------------------------|:------------------------------------------------------|:-----------------------------------------------------|
+| MapAction                              | Emergency mapping resources                           | https://maps.mapaction.org/                          |
+| fieldmaps.io                           | Data and map download platform for humanitarian use   | https://fieldmaps.io                                 |
+| ACLED                                  | Conflict data                                         | https://acleddata.com/conflict-data/data-export-tool |
+| GDACS                                  | Disaster database                                     | https://www.gdacs.org                                |
+| ZKI/DLR                                | Flood extents, damage extents, earth observation data | https://activations.zki.dlr.de/en/activations/       |
+| WFP Vulnerability Analysis and Mapping | Data on food security, hazards, conflicts, climate    | https://dataviz.vam.wfp.org/                         |
 
 ### Population data <a id="population-data"></a>
 
-| Name | Data | Link |
-| :-------------------- | :----------------- | :---------- |
-| WorldPop | Population estimates | https://wopr.worldpop.org/ |
-| GHSL | Global settlement data | https://ghsl.jrc.ec.europa.eu/ |
-| HRSL | Settlement layer based on earth observation and Facebook data | https://research.facebook.com/downloads/high-resolution-settlement-layer-hrsl/ |
-| GRID3 Settlement extents and settlement points | Settlement extents data | https://grid3.org/ |
-| Pangea | Environmental & biosciences data | https://www.pangaea.de/ |
-| United Nations Population Fund | Data on sexual and reproductive health and population trends | https://www.unfpa.org/data
+| Name                                           | Data                                                          | Link                                                                           |
+|:-----------------------------------------------|:--------------------------------------------------------------|:-------------------------------------------------------------------------------|
+| WorldPop                                       | Population estimates                                          | https://wopr.worldpop.org/                                                     |
+| GHSL                                           | Global settlement data                                        | https://ghsl.jrc.ec.europa.eu/                                                 |
+| HRSL                                           | Settlement layer based on earth observation and Facebook data | https://research.facebook.com/downloads/high-resolution-settlement-layer-hrsl/ |
+| GRID3 Settlement extents and settlement points | Settlement extents data                                       | https://grid3.org/                                                             |
+| Pangea                                         | Environmental & biosciences data                              | https://www.pangaea.de/                                                        |
+| United Nations Population Fund                 | Data on sexual and reproductive health and population trends  | https://www.unfpa.org/data                                                     |
 
 ### Buildings data <a id="buildings-data"></a>
 
-| Name | Data | Link |
-| :-------------------- | :----------------- | :---------- |
-| World Settlement Footprint | World Settlement Footprint | https://download.geoservice.dlr.de/WSF2019/ |
-| VIDA building footprint | Combined Google and Microsoft building footprint datasets | https://beta.source.coop/repositories/vida/google-microsoft-open-buildings/download/ |
-| Open-building | Google building footprints | https://sites.research.google/open-buildings/#download |
+| Name                       | Data                                                      | Link                                                                                 |
+|:---------------------------|:----------------------------------------------------------|:-------------------------------------------------------------------------------------|
+| World Settlement Footprint | World Settlement Footprint                                | https://download.geoservice.dlr.de/WSF2019/                                          |
+| VIDA building footprint    | Combined Google and Microsoft building footprint datasets | https://beta.source.coop/repositories/vida/google-microsoft-open-buildings/download/ |
+| Open-building              | Google building footprints                                | https://sites.research.google/open-buildings/#download                               |
 
 ### Remote sensing/earth observation data <a id="remote-sensingearth-observation-data"></a>
 
-| Name | Data | Link |
-| :-------------------- | :----------------- | :---------- |
-| Global Forest Watch | Data on global forests | https://www.globalforestwatch.org/ |
-| OpenAerialMap | Crowdsourced drone imagery | https://map.openaerialmap.org/ |
-| USGS Earth Explorer | Satellite data from multiple sources, including Landsat and Sentinel | https://earthexplorer.usgs.gov/ |
-| NASA Shuttle Radar Topography Mission (SRTM) | Global elevation data | http://srtm.csi.cgiar.org/srtmdata/ |
-| Earth Observe | Digital elevation model on a global scale |https://earthexplorer.usgs.gov/ | 
-| Copernicus | Earth observation data | https://scihub.copernicus.eu/ | 
-| GlobCover | Raster data on land cover | https://due.esrin.esa.int/page_globcover.php |
+| Name                                         | Data                                                                 | Link                                         |
+|:---------------------------------------------|:---------------------------------------------------------------------|:---------------------------------------------|
+| Global Forest Watch                          | Data on global forests                                               | https://www.globalforestwatch.org/           |
+| OpenAerialMap                                | Crowdsourced drone imagery                                           | https://map.openaerialmap.org/               |
+| USGS Earth Explorer                          | Satellite data from multiple sources, including Landsat and Sentinel | https://earthexplorer.usgs.gov/              |
+| NASA Shuttle Radar Topography Mission (SRTM) | Global elevation data                                                | http://srtm.csi.cgiar.org/srtmdata/          |
+| Earth Observe                                | Digital elevation model on a global scale                            | https://earthexplorer.usgs.gov/              |
+| Copernicus                                   | Earth observation data                                               | https://scihub.copernicus.eu/                |
+| GlobCover                                    | Raster data on land cover                                            | https://due.esrin.esa.int/page_globcover.php |
 
 
 ## OpenStreetMap data <a id="openstreetmap-data"></a>
 
 OpenStreetMap (OSM) is a collaborative project that aims to create a free and editable map of the world. Unlike traditional maps, which are often proprietary and controlled by commercial entities, OSM allows anyone to contribute and edit map data, resulting in a detailed and constantly evolving map of roads, trails, landmarks, and more. With its open-source nature and global community of contributors, OpenStreetMap has become a valuable resource for a wide range of applications, from navigation and urban planning to disaster response and humanitarian aid.
 
-There are multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are geofabrik.de, HOT Export Tool and QuickOSM [QGIS Plugin](../Wiki/en_qgis_plugins_wiki.md). Each of the options has both advantages and disadvantages.
+There are multiple ways to get OpenStreetMap (OSM) data as a vector file into QGIS. The three most common and easy-to-use ways are geofabrik.de, HOT Export Tool, HeiGIT's ohsome API and QuickOSM [QGIS Plugin](../Wiki/en_qgis_plugins_wiki.md). Each of the options has both advantages and disadvantages.
 
 :::{Tip}
 
 If you wish to practice how to export OSM data, you can do the __[Exercise 4: Exporting OSM Data](en_qgis_data_sources_ex4.md)__
 
 :::
+
+__[ohsome framework](https://heigit.org/technology/#osm-data)__
+
+The ohsome framework, developed by HeiGIT, is a set of tools for analysing OpenStreetMap data, with a special focus on its history. Instead of only showing the current state of the map, ohsome gives access to OSM data at any point in time since 2007. This makes it possible to answer questions like "How many buildings were mapped in this district before and after a mapping campaign?" or "How has the road network in this area grown over the last ten years?". With the ohsome API you can get statistics (e.g. count, length or area of features such as hospitals, roads or buildings) for your area of interest and time period, and you can also extract the OSM features themselves as GeoJSON, either for a specific date or including their full edit history. Data can be filtered by tags (e.g. amenity=hospital), geometry type and area (bounding box, circle or your own polygon). You can use ohsome without programming via the ohsome Dashboard or the ohsome QGIS plugin, or work with it in Python (ohsome-py) and R (ohsome). This is particularly useful in humanitarian work to assess how complete and up to date OSM data is in a region before relying on it for an analysis.
+
+| Advantages                                        | Disadvantages                                                                      |
+|---------------------------------------------------|------------------------------------------------------------------------------------|
+| + Access to the full history of OSM data          | - Not suitable for downloading very large areas (e.g. whole countries)             |
+| + Statistics and data extraction in one tool      | - Requires knowledge of the OSM data model (keys and values)                       |
+| + Flexible filtering by tags, area and time       | - Output only as GeoJSON                                                           |
+| + Usable via dashboard, QGIS plugin, Python and R | - Data is updated periodically, so it may be slightly behind the live OSM database |
 
 __[Geofabrik.de](https://download.geofabrik.de/)__
 
