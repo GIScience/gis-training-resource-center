@@ -68,8 +68,8 @@ Based on [Data preparation](../content/en/Module_5/en_qgis_data_preparation_ex.m
    (steps 5–8): in the field calculator, `levenshtein()` finds the district name in the boundaries
    that differs by at most 2 characters. Join again on this new field, check the `NULL` values once
    more, and check a few matches (Jehlum!).
-6. Show P-codes: the boundaries have `ADM2_PCODE`. If the survey had used P-codes, none of the name
-   problems would have happened.
+6. **Show P-codes: the boundaries have `ADM2_PCODE`. If the survey had used P-codes, none of the name**
+   **problems would have happened.**
 7. Present the [other cleaning tools](#other-cleaning-tools).
 8. If time allows: style the result as a graduated map (Task 4).
 
@@ -152,6 +152,7 @@ Mention, about 5 min:
 - **QGIS:** field calculator, `levenshtein()` and `soundex()` for names, `Fix geometries` for
   shapes.
 - **Python or R** (pandas, GeoPandas, tidyverse): for large or repeated jobs.
+- **Do you know any more tools?`**
 - **AI assistants:** useful to write a formula, QGIS expression or script. Always check the result,
   and don't upload personal or sensitive data unless your organisation allows it.
 
