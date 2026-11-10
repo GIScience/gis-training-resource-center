@@ -54,7 +54,7 @@ gis-training-resource-center/
 │   ├── fr/              French content, generated from Crowdin (do not edit by hand)
 │   └── es/              Spanish content, generated from Crowdin (do not edit by hand)
 ├── docs/                Known issues and release milestones
-├── fig/                 Images and figures used across the platform
+├── fig/                 Images and figures used across the platform (videos are on Nexus)
 ├── scripts/             Link checker, redirect builder and localisation scripts
 ├── Dockerfile           Builds the site image (all three books + nginx)
 ├── Jenkinsfile          CI pipeline: builds main for internal testing, release tags go live
@@ -248,6 +248,11 @@ A few conventions:
 - Write new content in **English** in `content/en/`. Translations follow through Crowdin.
 - English files use the `en_` prefix, for example `en_qgis_buffer.md`.
 - Put images in `fig/` and link to them with a relative path.
+- **Don't commit videos (`.mp4`) to the repository.** Videos are hosted on our Nexus server at `https://nexus.heigit.org/repository/gis-training-resource-center/videos/`. Send new videos to the HeiGIT team (or upload them yourself if you have Nexus access) and embed them with the full Nexus address:
+
+  ```html
+  <video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/my_video.mp4"></video>
+  ```
 - New pages must be added to `content/en/_toc.yml` to appear on the site.
 - Always build the local preview before opening a pull request.
 
