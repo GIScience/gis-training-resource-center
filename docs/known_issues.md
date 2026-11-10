@@ -81,7 +81,8 @@ These returned 404 on 24 September 2026:
 
 ### Missing video
 
-`fig/SRCS_trigger_export_image_pdf.mp4` doesn't exist. It's used in the drought trigger Somalia
+Videos are hosted on Nexus (`videos/`), not in the repository. `SRCS_trigger_export_image_pdf.mp4`
+doesn't exist there. It's used in the drought trigger Somalia
 page and in the English and French cyclone trigger Madagascar pages.
 
 Some video addresses have a line break before `.mp4` (16 in English, 32 in Spanish, for example
