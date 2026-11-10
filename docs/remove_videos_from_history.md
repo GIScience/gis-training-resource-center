@@ -43,8 +43,6 @@ Old clones can't bring the videos back by accident:
 - Pushing an old `main` is rejected (non-fast-forward), and `git pull` refuses to merge the
   unrelated histories. Only `--force` or `--allow-unrelated-histories` would bring the old history back.
 - A PR from an old fork can't be merged on GitHub ("entirely different commit histories").
-- The `Block videos` workflow fails any PR or push that adds an `.mp4`. Make it a required
-  status check in the branch protection of `main` so it really blocks.
 
 To take over a PR from an old fork without its history, copy only its commits onto the new `main`:
 
@@ -55,5 +53,13 @@ git cherry-pick <first-commit-of-the-PR>^..<last-commit-of-the-PR>
 git push -u origin take-over-pr          # then open a new PR from this branch
 ```
 
-`cherry-pick` copies only the changes of those commits, not the old history. If one of them adds a
-video, the `Block videos` check will fail: upload the video to Nexus instead and link it there.
+`cherry-pick` copies only the changes of those commits, not the old history.
+
+## New videos in pull requests
+
+Contributors without Nexus access may add a video to `fig/` in their PR. Before merging:
+
+1. Upload it to Nexus (`python scripts/sync_videos_nexus.py PATH/TO/VIDEOS --apply`).
+2. In the PR branch, change the link to the Nexus address and delete the video from `fig/`.
+3. **Squash and merge.** `main` then gets one commit without the video. A normal merge would
+   keep the video in the history, even though it's deleted afterwards.
