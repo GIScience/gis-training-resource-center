@@ -278,7 +278,7 @@ QGIS vous permet d’importer uniquement des shapefiles __décompressés__. Veil
 
 :::{dropdown} Vidéo : importer des données vectorielles via le Gestionnaire des sources de données
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_vector.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_open_vector.mp4"></video>
 
 :::
 
@@ -287,7 +287,7 @@ QGIS vous permet d’importer uniquement des shapefiles __décompressés__. Veil
 QGIS vous permet d’ouvrir des données dans votre projet simplement en faisant glisser les fichiers depuis votre explorateur vers la fenêtre de QGIS. Les shapefiles ne contiennent qu’une seule couche par fichier, qui sera automatiquement ajoutée dans le panneau des couches. Les fichiers GeoPackage (`.gpkg`) peuvent contenir plusieurs couches dans un même fichier. Si vous ajoutez un fichier GeoPackage, une nouvelle fenêtre s’ouvrira pour vous demander de sélectionner les couches à ajouter à votre projet.
 
 :::{dropdown} Vidéo : importer des données vectorielles par glisser-déposer
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_import_vector_d_d.mp4"></video>
 :::
 
 ### Import de texte délimité (.csv, .txt) <a id="delimited-text-import-csv-txt"></a>
@@ -332,7 +332,7 @@ Réglage des paramètres de format lors de l’import d’une couche de texte d�
 
 :::{dropdown} Vidéo : ouvrir des fichiers texte délimités dans QGIS
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_open_textfile.mp4"></video>
 
 :::
 
@@ -347,13 +347,13 @@ L’import de données raster fonctionne de la même manière que pour les donn�
 3. Sélectionnez le fichier puis cliquez sur `Open`.
 4. De retour dans QGIS, cliquez sur `Add`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_raster.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_open_raster.mp4"></video>
 
 :::
 
 :::{dropdown} Vidéo : ouvrir des données raster par glisser-déposer
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_raster_d_d.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_import_raster_d_d.mp4"></video>
 
 :::
 

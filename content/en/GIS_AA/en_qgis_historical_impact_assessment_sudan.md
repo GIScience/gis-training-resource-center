@@ -987,7 +987,7 @@ The table preview should now show your entire impact table with the columns `ADM
 The result should be in the Excel file `Sudan_impact_p_code`. The file should contain all the information from the original impact table and the two new columns `ADM1_EN` and `ADM1_PCODE` with this important information for later operations.
 
 ```{dropdown} Video: How to combine Workbooks using Excel 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_hia_power_query.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_hia_power_query.mp4"></video>
 ```
 
 ## Step 8: Data export from Excel to QGIS <a id="step-8-data-export-from-excel-to-qgis"></a>

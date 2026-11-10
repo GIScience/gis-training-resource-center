@@ -16,7 +16,7 @@ __🔙[Volver a la página de inicio](../es_intro.md)__
 
 
 :::{dropdown} Video: Aplicar una clasificación graduada a una capa
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/graduated_classification.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/graduated_classification.mp4"></video>
 :::
 
 

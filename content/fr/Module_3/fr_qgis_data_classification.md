@@ -81,7 +81,7 @@ La classification à symbole unique est utile lorsque vous disposez d’un jeu d
 ::::{dropdown} Comment faire : classification à symbole unique
 :open: 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Single_symbol_video.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/Single_symbol_video.mp4"></video>
 
 __Pour ajuster le style d’une couche...__
 1. Faites un clic droit sur votre couche.
@@ -143,7 +143,7 @@ Exemple de carte utilisant une classification catégorisée.
 :::{dropdown} Comment faire : classification catégorisée
 :open:
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Classify_by_categorized.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/Classify_by_categorized.mp4"></video>
 
 __Pour classer les données par catégories...__
 1. Faites un clic droit sur votre couche.
@@ -259,7 +259,7 @@ La classification par écart-type est une méthode qui détermine les seuils de 
 
 La mise en place d’une classification graduée dans QGIS est similaire à celle d’une classification catégorisée. Toutefois, contrairement à la classification catégorisée, vous devez ici décider du nombre de classes et de la méthode de graduation à utiliser. 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/graduated_classification.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/graduated_classification.mp4"></video>
 
 __Pour classer les données en classes...__
 1. Faites un clic droit sur votre couche.

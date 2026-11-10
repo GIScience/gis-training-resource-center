@@ -188,7 +188,7 @@ __Herramienta:__ No se necesitan herramientas ni programas especiales.
 El siguiente video muestra el proceso para configurar la carpeta para diciembre de 2023.
 
 :::{dropdown} Video: Configurar la estructura de carpetas
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_folder_setup.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/SRCS_Trigger_folder_setup.mp4"></video>
 :::
 
 ### Paso 2: Descargue los datos de previsión
@@ -309,7 +309,7 @@ La capa resultante puede tener más filas que las capas originales.
 :::
 
 :::{dropdown} Video: Intersección de los datos de ML 1 con los polígonos del distrito
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_4_Intersection.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/SRCS_Trigger_step_4_Intersection.mp4"></video>
 :::
 
 ### Paso 5: Cálculo de la población por polígono de intersección
@@ -346,7 +346,7 @@ __Resultado:__ El resultado debería ser la "ML1_zonal_statistic" como capa de p
 
 
 :::{dropdown} Video: Cálculo de la población por polígono de intersección
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_5_zonal_statistic.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/SRCS_Trigger_step_5_zonal_statistics.mp4"></video>
 :::
 
 ### Paso 6: Ponderación de la población en función de la fase IPC
@@ -428,7 +428,7 @@ __Resultado:__ La capa "ML1_zonal_statistic" debería tener ahora la columna "In
 
 
 :::{dropdown} Video: Cálculo de la proporción de población por polígono de intersección
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_TRigger_step_8_field_calculator.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/SRCS_Trigger_step_8_field_calculator.mp4"></video>
 :::
 
 ### Paso 8: Calcular el índice IPC por distrito
@@ -465,7 +465,7 @@ __Herramienta:__ `Unir atributos por localización (resumen)`
 __Resultado:__ Como resultado, su capa "ML1_IPC_Index" debería tener la columna "Index_per_IPCPolygon_ML1_mean". Además, el número de filas debe ser exactamente igual al número de distritos en Somalia y los polígonos deben tener la forma exacta de los distritos.
 
 :::{dropdown} Video: Calcular el índice IPC por distrito
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_9_join_location.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/SRCS_Trigger_step_9_join_location.mp4"></video>
 :::
 
 ### Paso 9: Evaluar la activación del desencadenante
@@ -511,7 +511,7 @@ align: center
 :::
 
 :::{dropdown} Video: Evaluar la activación del desencadenante
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_step_13_trigger_activation.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/SRCS_Trigger_step_13_trigger_activation.mp4"></video>
 :::
 
 ### Paso 10.: Visualización de los resultados
@@ -559,7 +559,7 @@ __Fronteras administrativas 2 (Regiones)__
     * OpenStreetMap
 
 :::{dropdown} Video: Visualización de resultados
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Trigger_model_style.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/Trigger_model_style.mp4"></video>
 :::
 
 ::::::{list-table}
@@ -609,7 +609,7 @@ __Herramienta:__ [Diseño de impresión](../Module_4/es_qgis_map_design_2.md)
 
 
 :::{dropdown} Video: Hacer un mapa impreso
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/SRCS_Trigger_print_map.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/SRCS_Trigger_print_map.mp4"></video>
 :::
 
 :::{Attention}

@@ -163,7 +163,7 @@ L’une des premières choses à faire lors de la création d’un nouveau proje
 
 :::{dropdown} Vidéo : comment vérifier et modifier le SCR dans votre projet QGIS
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_change_project_CRS.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_change_project_CRS.mp4"></video>
 
 :::
 
@@ -183,7 +183,7 @@ La première chose à faire lorsque vous chargez une nouvelle couche ou un nouve
 5. Cliquez sur `Run`.
 
 :::{dropdown} Vidéo : comment modifier le SCR d’une couche vectorielle
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_vector.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_reproject_vector.mp4"></video>
 :::
 
 #### Modifier la projection d’une couche raster <a id="changing-the-projection-of-a-raster-layer"></a>
@@ -195,7 +195,7 @@ La première chose à faire lorsque vous chargez une nouvelle couche ou un nouve
 5. Cliquez sur `Run`.
 
 :::{dropdown} Vidéo : comment modifier le SCR d’une couche raster
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_raster.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_reproject_raster.mp4"></video>
 :::
 
 <!-- Move this part? At this point trainees have not worked with rasterdata--->

@@ -170,7 +170,7 @@ Una de las primeras cosas que debe hacer al iniciar un nuevo proyecto QGIS es co
 
 :::{dropdown} Video: Cómo comprobar y cambiar el SRC en su proyecto QGIS
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_change_project_CRS.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_change_project_CRS.mp4"></video>
 
 :::
 
@@ -194,7 +194,7 @@ Lo primero que debe hacer al cargar una nueva capa o conjunto de datos en su pro
 5. Haga clic en `Ejecutar`.
 
 :::{dropdown} Video: Cómo cambiar el SRC de un vector una capa
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_vector.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_reproject_vector.mp4"></video>
 :::
 
 #### Modificación de la proyección cartográfica de una capa ráster
@@ -207,7 +207,7 @@ Lo primero que debe hacer al cargar una nueva capa o conjunto de datos en su pro
 5. Haga clic en `Ejecutar`.
 
 :::{dropdown} Video: Cómo cambiar el SRC de una capa ráster
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_raster.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_reproject_raster.mp4"></video>
 :::
 
 <!-- Move this part? At this point trainees have not worked with rasterdata--->

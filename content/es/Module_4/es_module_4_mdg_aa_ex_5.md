@@ -138,7 +138,7 @@ Utilice una plantilla de mapas de QGIS ya preparada para crear y exportar rápid
   - **Tamaño**: A3
   - **Orientación**: Horizontal
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_load_mpa_template.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/fr_MDG_load_map_template.mp4"></video>
 
 3. Actualizar la tabla de atributos de los distritos expuestos
 - En el **diseño de impresión**, haga clic en la tabla de atributos (parte derecha del diseño).
@@ -152,7 +152,7 @@ Utilice una plantilla de mapas de QGIS ya preparada para crear y exportar rápid
     - **Orden de clasificación**: Ascendente
   - Haga clic en `Aceptar`.
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_map_makingadjust_AT.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/fr_MDG_map_making_adjust_AT.mp4"></video>
 
 
 :::{admonition} ⚠️ Advertencia: Tablas largas
@@ -185,7 +185,7 @@ Para solucionarlo, abra las propiedades de la tabla en el diseño y **reduzca el
      Número de personas expuestas al ciclón
      ```
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_adjust_map_making_Legend.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/fr_MDG_adjust_map_making_Legend.mp4"></video>
 
 6. **Actualizar logotipos e iconos**
 - Los logotipos que hay que añadir al mapa están representados por la **X** roja.
@@ -193,7 +193,7 @@ Para solucionarlo, abra las propiedades de la tabla en el diseño y **reduzca el
 - Haga clic en los tres puntos ![](../../../fig/Three_points.png) junto a la ruta del archivo.
 - Vaya a la carpeta `logos_pictures` y seleccione el archivo del logotipo correcto.
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_map_making_update_logos.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/fr_MDG_map_making_update_logos.mp4"></video>
 
 
 7. Revisión y actualización de los elementos de texto del diseño
@@ -203,7 +203,7 @@ Para solucionarlo, abra las propiedades de la tabla en el diseño y **reduzca el
   - **Autor/Organización** (opcional)
 - Ajuste el tamaño de letra o la alineación si es necesario
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_mak_making_adjust_title.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/fr_MDG_map_making_adjust_title.mp4"></video>
 
 ### ✅ Lista de control final
 

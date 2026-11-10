@@ -167,7 +167,7 @@ Explore the data. We have a column "LandD_CLas" which indicators the severity of
 
 See the Wiki entry [Spatial Joins](../Wiki/en_qgis_spatial_joins_wiki.md) for further information.
 
-:::{figure} ../../../fig/en_qgis_module_5_ex1_join.png
+:::{figure} ../../../fig/en_qgis_module_5_ex1_join.PNG
 ---
 width: 100%
 name: Join attributes by location
@@ -192,7 +192,7 @@ Explore the data. In which resolution is the data available? Do you have ideas a
 * As `join type` set `Take attributes of the first matching feature only (one-to-one)`.
 * Save the layer to file.
 
-:::{figure} ../../../fig/en_qgis_module_5_ex1_joinbyvalue.png
+:::{figure} ../../../fig/en_qgis_module_5_ex1_joinbyvalue.PNG
 ---
 width: 100%
 name: Join attributes by field value
@@ -206,7 +206,7 @@ In the Log file you will get a message: "6 feature(s) from input layer could not
 It is possible that the CSV file the column headers of the attribute table will not have the correct names (instead they may have "field 1", "field 2" etc.) after importing. In this case, the correct field names is usually located below the header.
 :::
 
-:::{figure} ../../../fig/en_qgis_module_5_ex1_error.png
+:::{figure} ../../../fig/en_qgis_module_5_ex1_error.PNG
 ---
 width: 100%
 name: Join attributes by field value
@@ -317,7 +317,7 @@ We have used so far the following weighting scale:
 ```
 
 
-:::{figure} ../../../fig/en_qgis_module_5_ex1_part2_weigthed.png 
+:::{figure} ../../../fig/en_qgis_module_5_ex1_part2_weigthed.PNG 
 ---
 width: 80%
 name: Add new field to weight indicators
@@ -327,7 +327,7 @@ Adding a new field to weight indicators.
 
 * For each indicator we now have the normalised and weighted version:
 
-:::{figure} ../../../fig/en_qgis_module_5_ex1_part2_weighted_attribute.png
+:::{figure} ../../../fig/en_qgis_module_5_ex1_part2_weighted_attribute.PNG
 ---
 width: 100%
 name: Attribute Table with "_norm" and "_weighted" indicators
@@ -353,7 +353,7 @@ In order to calculate the risk we have to bring our 3 dimension exposure, vulner
 * Right click om one of the layer and select `Properties` → Go the `Joins` tab.
 * Click on the `+` button, add a new join and select the layer you want to join. Define "admin2Name" as `Join Field`:
 
-:::{figure} ../../../fig/en_qgis_module_5_ex1_part2_join_risk.png
+:::{figure} ../../../fig/en_qgis_module_5_ex1_part2_join_risk.PNG
 ---
 width: 90%
 name: Join Layers 
@@ -364,7 +364,7 @@ Joining Layers by Join Field.
 * Right click on the layer → `Export` → `Save feature as` and save the layer as "risk" layer into your temp folder.
 * We will now work with the "risk" layer: Delete all fields but the normalised scores: Open the Attribute Table of your risk layer `Toggle editing mode `![](../../../fig/mActionToggleEditing.png) → `Delete field` ![](../../../fig/mActionDeleteAttribute.png) and select all the indicator fields. In the end your layer look should like this:
 
-:::{figure} ../../../fig/en_qgis_module_5_ex1_part2_risklayer_attributetable.png
+:::{figure} ../../../fig/en_qgis_module_5_ex1_part2_risklayer_attributetable.PNG
 ---
 width: 70%
 name: Risk Layer Attribute Table normalised Scores
@@ -390,7 +390,7 @@ sqrt("Susceptibility" * "exposure_norm")
 
 ```
 
-:::{figure} ../../../fig/en_qgis_module_5_ex1_part2_risk.png
+:::{figure} ../../../fig/en_qgis_module_5_ex1_part2_risk.PNG
 ---
 width: 80%
 name: Calculate risk 
@@ -420,7 +420,7 @@ Print Layout:
 * If necessary, adjust the legend by clicking on the legend in the `Item Properties` tab and scroll down until you see the `Legend items` field. If it is not there check if you have to open the dropdown. Make sure `Auto update` is not checked.
 * Remove all items in the legend be clicking on the item and then on the red minus icon below.
  
-:::{figure} ../../../fig/en_qgis_module_5_ex1_possible_result.png
+:::{figure} ../../../fig/en_qgis_module_5_ex1_possible_result.PNG
 ---
 width: 90%
 name: Possible Map Result

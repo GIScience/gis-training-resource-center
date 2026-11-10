@@ -104,7 +104,7 @@ If you want to know more about Projections and Coordinate Reference Systems, che
 
 :::{attention}
 
-The project CRS determines which coordinate reference system is being used to display the geodata on the QGIS map canvas. However, it does not change the CRS of layers. Each layer, or dataset, is encoded with a CRS. QGIS reprojects these layers "on the fly" to display layers with different CRS on the map canvas. This does not change the units of measurements or distortion of the actual layers. To perform distance calculations, you will need to [reproject the layer](../wiki/en_qgis_projections_wiki.md) to a metric coordinate reference system. 
+The project CRS determines which coordinate reference system is being used to display the geodata on the QGIS map canvas. However, it does not change the CRS of layers. Each layer, or dataset, is encoded with a CRS. QGIS reprojects these layers "on the fly" to display layers with different CRS on the map canvas. This does not change the units of measurements or distortion of the actual layers. To perform distance calculations, you will need to [reproject the layer](../Wiki/en_qgis_projections_wiki.md) to a metric coordinate reference system. 
 
 Setting the Project CRS to your desired CRS can help you choosing the correct CRS quicker when running algorithms. 
 :::
@@ -158,7 +158,7 @@ A shapefile consists of several, interrelated files. The geometric information i
 ::::
 
 :::{dropdown} Video: Importing Shapefiles into a QGIS project via drag-and-drop
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
+<video width="90%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_import_vector_d_d.mp4"></video>
 :::
 
 %% THIS STEP NEEDS REVISING: THEY ARE DOWNLOADING THE DATASET THEMSELVES AS GEOPACKAGE
@@ -175,7 +175,7 @@ A shapefile consists of several, interrelated files. The geometric information i
     - Click `Add`. The healthsites should now appear as points on your map canvas. 
 
 :::{dropdown} Video: Importing CSV files via the Data Source Manager
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video>
+<video width="90%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_open_textfile.mp4"></video>
 :::
 -->
 

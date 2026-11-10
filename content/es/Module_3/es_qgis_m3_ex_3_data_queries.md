@@ -102,7 +102,7 @@ Asegúrese de __descomprimir__ la carpeta del ejercicio antes de cargar las capa
 6. En el siguiente paso, queremos identificar edificios especiales entre los edificios afectados. Abra la tabla de atributos y revise qué tipo de edificios se encuentran en la capa. Esta información se encuentra en la columna "edificio". Puede ordenar esta columna.
 Para extraer "hospitales", "escuelas" y "mezquitas", podemos utilizar la herramienta `Extraer por expresión`.
     1.  Busque la herramienta `Extraer por expresión` en la __[caja de herramientas de procesos](../Wiki/es_qgis_interface_wiki.md)__.
-    2. Haga clic en `Expression`![](../../../fig/miconexpression.png).
+    2. Haga clic en `Expression`![](../../../fig/mIconExpression.png).
     3. Se abrirá la ventana "Expresión". Aquí podemos construir una consulta muy específica. En el panel central, abra `Campos y valores`. Aquí se pueden ver todas las columnas de la capa. Haga clic en `building`. A la derecha, debería aparecer la opción `Todos únicos`. Haga clic en esta. Aquí puede ver ahora todos los valores únicos de la columna "edificio".
     4. En el campo `Expresión`, introduzca la siguiente expresión (consultar la figura siguiente):
         ```

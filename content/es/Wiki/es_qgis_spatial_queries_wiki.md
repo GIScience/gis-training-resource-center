@@ -15,7 +15,7 @@ __🔙[Volver a la página de inicio](../es_intro.md)__
 
 :::{dropdown} Ejemplo: Seleccionar países manualmente
 :open:
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_features_by_click_wiki.mp4"></video>
+<video width="90%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_select_features_by_click_wiki.mp4"></video>
 :::
 
 
@@ -29,12 +29,12 @@ __🔙[Volver a la página de inicio](../es_intro.md)__
 
 :::{dropdown} Ejemplo: Seleccionar todas las ciudades de China (`intersect`)
 :open:
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_location_intersect_wiki.mp4"></video>
+<video width="90%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_select_by_location_intersect_wiki.mp4"></video>
 :::
 
 :::{dropdown} Ejemplo: Seleccionar todos los países vecinos de China (`touch`)
 :open:
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_location_touch_wiki.mp4"></video>
+<video width="90%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_select_by_location_touch_wiki.mp4"></video>
 :::
 
 

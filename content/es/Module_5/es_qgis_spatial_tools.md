@@ -264,7 +264,7 @@ Tras las inundaciones, es fundamental disponer de datos sobre la población afec
 
 
 :::{dropdown} Solución: Calcular la suma de la población afectada y la superficie inundada para el área de interés
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_spatial_join.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_exercise_spatial_join.mp4"></video>
 :::
 
 ## Preguntas de autoevaluación

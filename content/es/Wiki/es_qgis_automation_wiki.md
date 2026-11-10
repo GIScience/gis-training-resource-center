@@ -14,12 +14,12 @@ El diseñador de modelos es una herramienta visual que permite a los usuarios cr
 ### Uso del diseñador de modelos/Modelador gráfico
 
 - Abra la herramienta en `Procesos` → `Diseñador de modelos`
-    <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_3.40_opening_model_designer.mp4"></video>
+    <video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_3.40_opening_model_designer.mp4"></video>
 
 - Guarde el archivo del modelo en una carpeta de su elección haciendo clic en el botón ![](../../../fig/qgis_save_project_as.png) `Guardar modelo como` de la barra superior.
 
 - Abra un modelo existente a través de `Modelo` → `Abrir modelo` y navegue hasta el archivo del modelo.
-    <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_3.40_open_model_file.mp4"></video>
+    <video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_3.40_open_model_file.mp4"></video>
 
 
 ### Componentes del modelo
@@ -37,7 +37,7 @@ Hay dos tipos de componentes del modelo que puede utilizar para crear flujos de 
 - Puede añadir entradas al modelo a través de la pestaña `Entrada` situada a la izquierda de la ventana del diseñador de modelos, ya sea haciendo <kbd>doble clic</kbd> en ella o arrastrándola al lienzo del diseñador de modelos.
 - Una vez añadida, se abrirá una nueva ventana en la que podrá especificar la descripción de la entrada, que aparecerá como título, así como el tipo de geometría para los datos vectoriales y seleccionar si se trata de una entrada obligatoria u opcional para el flujo de trabajo.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_3.40_model_adding_inputs.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_3.40_model_adding_inputs.mp4"></video>
 
 
 **Añadir pasos de procesamiento:**
@@ -60,7 +60,7 @@ Página de parámetros del algoritmo “buffer” en el diseñador de modelos
 
 - Una vez configurados los parámetros, haga clic en `Aceptar`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_3.40_model_adding_algorithms.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_3.40_model_adding_algorithms.mp4"></video>
 
 
 **Añadir más pasos de procesamiento**

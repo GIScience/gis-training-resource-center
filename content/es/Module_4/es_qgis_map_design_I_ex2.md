@@ -136,7 +136,7 @@ En `Tipo de capa del símbolo`, seleccione __`Marcador SVG`__.
 2. Desplácese hacia abajo hasta el navegador SVG. Aquí encontrará todas las carpetas de sus bibliotecas instaladas SVG.
 
 :::{dropwodn} Video: Uso de los símbolos SVG
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_using_svg_symbols.mp4"></video>
 :::
 
 - Desplácese por la carpeta hasta encontrar un símbolo adecuado (p. ej.:![](../../../fig/en_m4_ex_2_cross_symbol.png)).

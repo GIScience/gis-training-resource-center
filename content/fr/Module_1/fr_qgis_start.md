@@ -113,7 +113,7 @@ align: center
 
 2. Dans l’angle supérieur gauche, cliquez sur `Project` → `New Project`.
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_new_project.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_new_project.mp4"></video>
 
 
 
@@ -286,7 +286,7 @@ height: 40 px
 
 Vous pouvez aussi déplacer la vue avec les touches fléchées de votre clavier.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_move.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_move.mp4"></video>
 
 ### Zoomer dans la vue cartographique
 
@@ -306,7 +306,7 @@ Ou avec les raccourcis <kbd>Ctrl</kbd> + <kbd>+</kbd> et <kbd>Ctrl</kbd> + <kbd>
 
 Une autre méthode consiste à utiliser les boutons de zoom du panneau de navigation.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_zoom.mp4"></video>
 ___
 
 ## Boîte à outils et barres d’outils
@@ -335,7 +335,7 @@ Il arrive que vous souhaitiez faire quelque chose dans QGIS sans connaître le n
 
 :::
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_toolbars.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_open_toolbars.mp4"></video>
 
 ### Afficher/masquer les panneaux et barres d’outils
 
@@ -345,13 +345,13 @@ Il existe des barres d’outils et des panneaux pour de nombreuses tâches. Pour
 
 - Pour ajouter ou retirer des panneaux, cliquez sur `View` → `Panels` → cochez/décochez les panneaux souhaités.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Anzeigen_einblenden_ausblenden.mp4"></video> 
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/Show_hide_panels.mp4"></video> 
 
 ### Déplacer et organiser les barres d’outils
 
 Sur chaque barre d’outils, un repère composé de deux lignes pointillées est présent. En plaçant le curseur dessus jusqu’à voir apparaître une croix de déplacement, puis en maintenant le bouton gauche de la souris, vous pouvez déplacer la barre d’outils. Cela permet de personnaliser l’organisation de votre interface. En regroupant les barres d’outils sur quelques lignes, vous pouvez également agrandir la zone de carte.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_arrange_toolbars.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_arrange_toolbars.mp4"></video>
 
 ___
 
@@ -381,7 +381,7 @@ Le raccourci <kbd>Ctrl</kbd> + <kbd>O</kbd> ouvre également la boîte de dialog
 
 Pour ouvrir un projet QGIS existant, cliquez sur `Project` → `Open…` → accédez à votre projet et ouvrez-le.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_project.mp4">
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_open_project.mp4">
 </video>
 
 ### Enregistrer des projets
@@ -399,7 +399,7 @@ Pour ouvrir un projet QGIS existant, cliquez sur `Project` → `Open…` → acc
     * Cliquez sur `Project` → `Save`. 
 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_save_project.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_save_project.mp4"></video>
 
 
 ## Icônes d’avertissement

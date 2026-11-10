@@ -67,7 +67,7 @@ width: 500 px
 ---
 :::
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_make_only_outlines_visible.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_make_only_outlines_visible.mp4"></video>
 
 ::::
 
@@ -118,7 +118,7 @@ name: es_30.30.2_changing_layer_style_3_wiki
 El estilo de un dato vectorial consiste en el color y el contorno.
 :::
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_change_style_for_multiple_layers
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_change_style_for_multiple_layers
 .mp4"></video>
 
 
@@ -126,7 +126,7 @@ El estilo de un dato vectorial consiste en el color y el contorno.
 
 ::::{dropdown} Utilizar diferentes estilos en una misma capa
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_rule_based_styling
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_rule_based_styling
 .mp4"></video>
 
 Podemos utilizar la simbología para __mostrar la diferencia entre las entidades__ en la misma capa. Por ejemplo, podría tratarse de distintos tipos de edificios, cantidades de casos Covid por distrito o tipos de carreteras. Podemos elegir un atributo específico de un conjunto de datos para asignar diferentes colores, contornos o tamaños a las entidades:
@@ -175,7 +175,7 @@ Regiones afectadas por las explosiones en Nigeria.
 
 Si una capa contiene valores numéricos que son continuos, pueden organizarse en intervalos. Estos intervalos pueden visualizarse en colores graduados. En este ejercicio, asignamos colores a los polígonos de Adm1 en función de la población total de cada Estado.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_graduated_styling
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_graduated_styling
 .mp4"></video>
 
 % IMPORTANT ADD LINK TO DOWNLOAD THE FILE!!
@@ -268,7 +268,7 @@ name: es_30.30.2_setting_up_labels_wiki
 Configurar etiquetas en QGIS 30.30.2.
 :::
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_labels
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_setting_up_labels
 .mp4"></video>
 
 ::::
@@ -304,7 +304,7 @@ name: es_30.30.2_adding_rule-based_labels_expression_builder_wiki
 ---
 El constructor de expresiones: Expresión (izquierda); módulos, operadores, campos y valores (centro); valores únicos (derecha).
 :::
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_rule_based_labelling
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_rule_based_labelling
 .mp4"></video>
 
 ::::
@@ -314,7 +314,7 @@ El constructor de expresiones: Expresión (izquierda); módulos, operadores, cam
 1. Configure las etiquetas siguiendo los mismos pasos que antes.
 2. Para subrayar las etiquetas, haga clic en el botón de subrayado
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_underlign_labels
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_underline_labels
 .mp4"></video>
 
 ::::
@@ -327,7 +327,7 @@ A veces, la colocación de las etiquetas no es la ideal y puede obstaculizar la 
 3. Se le pedirá que seleccione la clave primaria para la unión con el almacenamiento interno de datos. __No es necesario cambiarlo__ (puede seleccionar el campo ID del conjunto de datos) y hacer clic en `Aceptar`.
 4. Vuelve a hacer clic en la etiqueta, ahora podrás moverla libremente.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_move_labels_independently
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_move_labels_independently
 .mp4"></video>
 
 ::::
@@ -335,7 +335,7 @@ A veces, la colocación de las etiquetas no es la ideal y puede obstaculizar la 
 ::::{dropdown} Añadir etiquetas a las carreteras
 Al trabajar con entidades lineales, las etiquetas se alinearán paralelas a la línea que representa el elemento.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_add_road_labels
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_add_road_labels
 .mp4"></video>
 
 ::::
@@ -392,7 +392,7 @@ En algunos casos, la rampa de colores debe invertirse para facilitar la lectura 
 2. Como en este caso, el estilo es exactamente para ese conjunto de datos, puede dejar todas las casillas marcadas.
 3. Selecciona una ubicación y un nombre para el estilismo. El estilo se guardará en un archivo `.qml`. __Asegúrese de que se guarde en la misma carpeta que el conjunto de datos y asígnele el mismo nombre que al conjunto de datos correspondiente. De este modo, al cargar los datos en QGIS, el estilo se aplicará automáticamente.__
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_exporting_style_to_send_to_colleague
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_exporting_style_to_send_to_colleague
 .mp4"></video>
 ::::
 
@@ -419,7 +419,7 @@ Con el complemento __"Plugin Resource Sharing"__, puede instalar las bibliotecas
 
 Ahora los símbolos deberían estar disponibles en el gestor de estilos en la carpeta SVG.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_resource_sharing_plugin.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_resource_sharing_plugin.mp4"></video>
 
 
 :::{tip}
@@ -433,7 +433,7 @@ No deje de consultar los demás recursos disponibles en el complemento para comp
 2. En `Tipo de capa del símbolo`, seleccione __"Marcador SVG"__.
 3. Desplácese hasta el navegador SVG. Aquí encontrará todas las carpetas de sus bibliotecas SVG instaladas.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_using_svg_symbols.mp4"></video>
 
 ::::
 
@@ -448,7 +448,7 @@ Si tiene una biblioteca de símbolos SVG en una carpeta, puede añadirlos a su g
 4. Haga clic en `Importar`
 Los nuevos símbolos SVG están en su biblioteca SVG.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_using_svg_symbols.mp4"></video>
 
 ::::
 :::::

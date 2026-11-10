@@ -33,7 +33,7 @@ En el panel de estilos, puede cambiar el estilo de todas las entidades de una ca
 crear etiquetas y crear rampas de color para diferenciar las entidades con valores variables.
 
 :::{dropdown} Video: Abrir el panel de estilo
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_the_styling_panel.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_opening_the_styling_panel.mp4"></video>
 
 :::
 
@@ -144,7 +144,7 @@ width: 500 px
 
 :::{dropdown} Video: Transparentar el color de relleno
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_make_only_outlines_visible.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_make_only_outlines_visible.mp4"></video>
 
 :::
 
@@ -184,7 +184,7 @@ El estilo de datos vectoriales consiste en el color y el contorno.
 :::
 
 :::{dropdown} Video: Ajuste del estilo para múltiples capas
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_change_style_for_multiple_layers
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_change_style_for_multiple_layers
 .mp4"></video>
 :::
 
@@ -234,7 +234,7 @@ Mapa que muestra la población de los estados nigerianos.
 :::
 
 :::{dropdown} Video: Cómo crear un mapa coroplético
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_graduated_styling
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_graduated_styling
 .mp4"></video>
 :::
 
@@ -277,7 +277,7 @@ Mapa de Nigeria que muestra los mismos datos. Una vez con el uso de colores grad
 
 :::{dropdown} Video: Cómo crear un mapa de círculos proporcionales
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_3.36_graduated_symbols.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.36_graduated_symbols.mp4"></video>
 
 :::
 
@@ -332,7 +332,7 @@ Regiones afectadas por las explosiones en Nigeria.
 
 :::{dropdown} Video: Configurar diferentes símbolos en una sola capa
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_rule_based_styling
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_rule_based_styling
 .mp4"></video>
 
 :::
@@ -362,7 +362,7 @@ Para utilizar los símbolos SVG:
 2. En `Tipo de capa del símbolo`, seleccione __“Marcador SVG”__.
 3. Desplácese hacia abajo hasta el navegador SVG. Aquí encontrará todas las carpetas de sus bibliotecas instaladas SVG.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_using_svg_symbols.mp4"></video>
 
 Ya existe, por defecto, una biblioteca de símbolos SVG. Si busca un símbolo concreto, inténtelo en la barra de búsqueda.
 
@@ -379,7 +379,7 @@ Si tiene una biblioteca de símbolos SVG en una carpeta, puede añadirlos a su a
 
 Los nuevos símbolos SVG están en su biblioteca SVG.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_using_svg_symbols.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_using_svg_symbols.mp4"></video>
 
 #### Uso de símbolos de IFRC
 

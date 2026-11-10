@@ -102,7 +102,7 @@ Make sure you __unzip__ the exercise folder before loading the layers into QGIS.
 6. In the next step, we want to identify special buildings among the affected buildings. Open the attribute table and check what kind of buildings can be found in the layer. This information can be found in the column "building". You can sort this column.
 To extract "hospitals", "schools", and "mosques", we can use the tool `Extract by Expression`.
     1.  Find the tool `Extract by Expression` in the `Toolbox`.
-    2. `Expression`: click on ![](../../../fig/miconexpression.png). 
+    2. `Expression`: click on ![](../../../fig/mIconExpression.png). 
     3. The window "Expression" will open. Here we can build a very specific query. In the central panel open `Field and values`. Here you can see all the columns oft he the layer. Click on `building`. On the right-hand side, you should now see the option `All unique`. Click on it. Here you can see now all unique values in the column „building“.
     4. In the `Expression` field, enter the following expression (see the figure below):
         ```

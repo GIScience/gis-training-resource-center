@@ -8,7 +8,7 @@ __🔙[Volver a la página de inicio](../es_intro.md)__
 - Unir utilizando un campo presente en ambos conjuntos de datos
 
 :::{dropdown} Ejemplo: Añadir cifras de población de una tabla a la capa de estados
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_non_spatial_join_wiki.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_non_spatial_join_wiki.mp4"></video>
 :::
 
 ---

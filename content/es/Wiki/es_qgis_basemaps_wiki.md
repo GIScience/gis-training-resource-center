@@ -20,7 +20,7 @@ __Opción 1:__ Busque `Teselas XYZ` en el panel `Navegador`. Abra el menú desp
 __Opción 2:__ `Capa` → `Añadir capa` → `Añadir capa XYZ...` → Seleccione el mapa de OpenStreetMap u otro mapa base.
 
 __Añadir un mapa de OpenStreetMap estándar como mapa base__
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Add_basemap_OSM.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/Add_basemap_OSM.mp4"></video>
 
 ### Añadir mapas base de Google y Bing
 
@@ -59,7 +59,7 @@ El complemento QuickMapServices permite acceder a una amplia gama de mapas base.
 `Web` → `QuickMapServices` → seleccionar el proveedor, p. ej., NASA → seleccionar mapa base
 
 __Funcionalidad del complemento QuickMapServices__
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/add_basemap_quickmapservice.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/add_basemap_quickmapservice.mp4"></video>
 
 ### Configuración de QuickMapServices
 Después de instalar el complemento (complementos en Wiki), necesita configurarlo para acceder a todos los mapas base.
@@ -75,4 +75,4 @@ Si el complemento está instalado y activado, pero el panel no es visible, revis
 :::
 
 __Funcionalidad del complemento de OSM Place Search__
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/OSM_Place_Search.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/OSM_Place_Search.mp4"></video>

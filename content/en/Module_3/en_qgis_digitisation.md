@@ -129,7 +129,7 @@ Think of a spatial dataset you could need in your humanitarian operations. What 
 
 :::{dropdown} Video: How to create a new dataset
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_create_layer.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_create_layer.mp4"></video>
 
 :::
 
@@ -177,7 +177,7 @@ Once you have set up the new layer, you can start adding geometrical features. T
 6.	Click again on ![](../../../fig/mActionToggleEditing.png) to end the editing mode.
 
 :::{dropdown} Video: How to create point data
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_point_feature.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/Create_point_feature.mp4"></video>
 :::
 
 :::{figure} ../../../fig/point_creation.png 
@@ -261,7 +261,7 @@ Creating line data works in the same way as creating point data (see above). Fir
 6.	Once you are done with digitisation, click on ![](../../../fig/mActionSaveEdits.png) `Save Layer Edits` to save your edits.
 7.	Click on ![](../../../fig/mActionToggleEditing.png) `Toggle Editing` again to end the editing mode.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_line_feature.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/Create_line_feature.mp4"></video>
 
 :::
 
@@ -277,7 +277,7 @@ The creation of polygon layers works in the same way as for point and line data.
 6.	Once you are done with digitisation ![](../../../fig/mActionSaveEdits.png) to save your edits.
 7.	Click on ![](../../../fig/mActionToggleEditing.png) `Toggle Editing` again to end the editing mode.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_add_feature.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_digitize_add_feature.mp4"></video>
 
 :::
 
@@ -326,7 +326,7 @@ Note that this is only possible __before__ you save the changes.
 :::{note}
 Keep in mind that once you save the changes ![](../../../fig/mActionSaveEdits.png), you can no longer undo or recover the deleted features. The changes permanently change the datafile in your folder. 
 :::
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/delet_feature_geometry.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/delete_feature_geometry.mp4"></video>
 
 ::::
 
@@ -340,7 +340,7 @@ There are multiple methods to move features. Here we show the method that works 
 4.	Once you are done with editing, click on ![](../../../fig/mActionSaveEdits.png) to save your edits.
 5.	Click on ![](../../../fig/mActionToggleEditing.png) again to end the editing mode.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/move_feature_geometry.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/move_feature_geometry.mp4"></video>
 
 ::::
 
@@ -353,7 +353,7 @@ There are multiple methods to move features. Here we show the method that works 
 5.	Once you are done with editing click on ![](../../../fig/mActionSaveEdits.png) to save your edits.
 6.	Click on ![](../../../fig/mActionToggleEditing.png) again to end the editing mode.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_move_vertices.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_digitize_move_vertices.mp4"></video>
 
 ::::
 
@@ -369,7 +369,7 @@ A ring in QGIS is a part inside a polygon that is not part of the polygon. Image
 6.	Click on ![](../../../fig/mActionToggleEditing.png) again to end the editing mode.
 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_add_ring.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_digitize_add_ring.mp4"></video>
 
 ::::
 

@@ -102,7 +102,7 @@ Assurez-vous de __décompresser__ le dossier de l’exercice avant de charger le
 6. Dans l’étape suivante, nous voulons identifier des bâtiments particuliers parmi les bâtiments affectés. Ouvrez la table attributaire et vérifiez quels types de bâtiments se trouvent dans la couche. Cette information se trouve dans la colonne "building". Vous pouvez trier cette colonne.
 Pour extraire les "hospitals", "schools" et "mosques", nous pouvons utiliser l’outil `Extract by Expression`.
     1. Trouvez l’outil `Extract by Expression` dans la `Toolbox`.
-    2. `Expression` : cliquez sur ![](../../../fig/miconexpression.png). 
+    2. `Expression` : cliquez sur ![](../../../fig/mIconExpression.png). 
     3. La fenêtre "Expression" s’ouvrira. Nous pouvons y construire une requête très spécifique. Dans le panneau central, ouvrez `Field and values`. Vous pourrez y voir toutes les colonnes de la couche. Cliquez sur `building`. Sur le côté droit, vous devriez maintenant voir l’option `All unique`. Cliquez dessus. Vous verrez alors toutes les valeurs uniques de la colonne „building“.
     4. Dans le champ `Expression`, saisissez l’expression suivante (voir la figure ci-dessous) :
         ```

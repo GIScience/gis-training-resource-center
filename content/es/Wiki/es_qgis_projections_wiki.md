@@ -21,7 +21,7 @@ Verificar y modificar el código SRC o el código EPSG es lo primero que se debe
 3. Se abrirá la ventana `Propriedades del proyecto`. Aquí puede ver todos los códigos SRC/EPSG disponibles y sus propiedades.
 4. Para cambiar el código SRC/EPSG, seleccione el que desee utilizar y haga clic en `Aplicar`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_change_project_CRS.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_change_project_CRS.mp4"></video>
 
 ### Cómo verificar el código EPSG/SRC de una capa/datos
 :::{Note}
@@ -41,7 +41,7 @@ Después de cargar cualquier dato espacial en QGIS, verifique el código SRC/EPS
 3. Guarde el nuevo archivo haciendo clic en los tres puntos situados junto a `Reproyectado`, especifique en el nombre del archivo y la ubicación donde desea guardarlo.
 5. Haga clic en `Ejecutar`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_vector.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_reproject_vector.mp4"></video>
 
 
 ## Modificación de la proyección cartográfica de una capa ráster
@@ -52,7 +52,7 @@ Después de cargar cualquier dato espacial en QGIS, verifique el código SRC/EPS
 4. Guarde el nuevo archivo haciendo clic en los tres puntos situados junto a `Reproyectado`, especifique en el nombre del archivo y la ubicación donde desea guardarlo.
 5. Haga clic en `Ejecutar`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_reproject_raster.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_reproject_raster.mp4"></video>
 
 ## Errores comunes con los sistemas de referencia de coordenadas
 

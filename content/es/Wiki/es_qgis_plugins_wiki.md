@@ -16,7 +16,7 @@ No es necesario reinstalar los complementos para cada nuevo proyecto.
 Para instalar un complemento vaya a `Complementos` → `Administrar e instalar complementos` → `Todos` → Buscar el complemento → `Instalar complemento`.
 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_plugins.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_plugins.mp4"></video>
 
 :::{tip}
 Si no encuentra una extensión específica, compruebe el uso de las mayúsculas y la correcta utilización de los espacios. Si sigue sin encontrar una extensión, es posible que tenga que habilitar las extensiones experimentales en las opciones (consulte más abajo).
@@ -27,7 +27,7 @@ Si no encuentra una extensión específica, compruebe el uso de las mayúsculas 
 Si actualmente no utiliza complementos instalados, podría ser útil desactivarlos para evitar la saturación de las barras de herramientas y reducir loa cantidad de paneles abiertos.
 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Manage_plugins.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/Manage_plugins.mp4"></video>
 
 ## Permitir extensiones experimentales
 
@@ -37,7 +37,7 @@ Las extensiones experimentales son extensiones que están en desarrollo o son ob
 * Cuando haya problemas con alguna otra extensión.
 * Un tutorial utiliza una extensión específica.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Experimentel_plugins.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/Experimental_plugins.mp4"></video>
 
 :::{tip}
 Debido a que a menudo no están optimizadas para la versión de QGIS utilizada, las extensiones experimentales pueden generar más mensajes de error u otros problemas, e incluso provocar que QGIS se bloquee. Por lo tanto, las extensiones experimentales solo deben activarse para su uso y luego permanecer desactivadas. Además, asegúrese de guardar el progreso del trabajo para evitar la pérdida de datos cuando QGIS se bloquee.

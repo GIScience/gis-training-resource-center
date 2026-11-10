@@ -37,7 +37,7 @@ Calcule las estadísticas de cada entidad vectorial sobre la base de la capa de 
 5.	`Zonal Statistics`: Especifique dónde quiere guardar los resultados y dele un buen nombre.
 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zonal_stats.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_zonal_stats.mp4"></video>
 
 
 

@@ -129,7 +129,7 @@ Pensez à un jeu de données spatial dont vous pourriez avoir besoin dans vos op
 
 :::{dropdown} Vidéo : Comment créer un nouveau jeu de données
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_create_layer.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_create_layer.mp4"></video>
 
 :::
 
@@ -177,7 +177,7 @@ Une fois la nouvelle couche configurée, vous pouvez commencer à ajouter des en
 6. Cliquez à nouveau sur ![](../../../fig/mActionToggleEditing.png) pour quitter le mode édition.
 
 :::{dropdown} Vidéo : Comment créer des données ponctuelles
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_point_feature.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/Create_point_feature.mp4"></video>
 :::
 
 :::{figure} ../../../fig/point_creation.png 
@@ -261,7 +261,7 @@ La création de données linéaires fonctionne de la même manière que la créa
 6. Une fois la numérisation terminée, cliquez sur ![](../../../fig/mActionSaveEdits.png) `Save Layer Edits` pour enregistrer vos modifications.
 7. Cliquez sur ![](../../../fig/mActionToggleEditing.png) `Toggle Editing` pour quitter le mode édition.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_line_feature.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/Create_line_feature.mp4"></video>
 
 :::
 
@@ -277,7 +277,7 @@ La création de couches polygonales fonctionne de la même manière que pour les
 6. Une fois la numérisation terminée, cliquez sur ![](../../../fig/mActionSaveEdits.png) pour enregistrer vos modifications.
 7. Cliquez sur ![](../../../fig/mActionToggleEditing.png) `Toggle Editing` pour quitter le mode édition.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_add_feature.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_digitize_add_feature.mp4"></video>
 
 :::
 
@@ -325,7 +325,7 @@ Notez que cela n’est possible __avant__ d’enregistrer les modifications.
 :::{note}
 Gardez à l’esprit qu’une fois les modifications enregistrées ![](../../../fig/mActionSaveEdits.png), vous ne pouvez plus annuler ou récupérer les entités supprimées. Les modifications affectent définitivement le fichier de données dans votre dossier. 
 :::
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/delet_feature_geometry.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/delete_feature_geometry.mp4"></video>
 
 ::::
 
@@ -339,7 +339,7 @@ Il existe plusieurs méthodes pour déplacer des entités. Nous présentons ici 
 4. Une fois les modifications terminées, cliquez sur ![](../../../fig/mActionSaveEdits.png) pour enregistrer vos modifications.
 5. Cliquez à nouveau sur ![](../../../fig/mActionToggleEditing.png) pour quitter le mode édition.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/move_feature_geometry.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/move_feature_geometry.mp4"></video>
 
 ::::
 
@@ -352,7 +352,7 @@ Il existe plusieurs méthodes pour déplacer des entités. Nous présentons ici 
 5. Une fois les modifications terminées, cliquez sur ![](../../../fig/mActionSaveEdits.png) pour enregistrer vos modifications.
 6. Cliquez à nouveau sur ![](../../../fig/mActionToggleEditing.png) pour quitter le mode édition.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_move_vertices.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_digitize_move_vertices.mp4"></video>
 
 ::::
 
@@ -368,7 +368,7 @@ Un anneau dans QGIS correspond à une zone à l’intérieur d’un polygone qui
 6. Cliquez à nouveau sur ![](../../../fig/mActionToggleEditing.png) pour quitter le mode édition.
 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_add_ring.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_digitize_add_ring.mp4"></video>
 
 ::::
 

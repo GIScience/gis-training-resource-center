@@ -17,7 +17,7 @@ It is good practice to use a __standard folder structure__ for QGIS projects in 
 
 ### Create a new QGIS Project <a id="create-a-new-qgis-project"></a>
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_new_project.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_new_project.mp4"></video>
 
 3. Save the new project in the `Project` folder in the standard folder structure and git push. 
 4. Give your project a name and click `Save`.
@@ -27,7 +27,7 @@ Do not use spaces ` ` in the name, instead always use underscores `_`.
 :::
 #### Save Project <a id="save-project"></a>
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_save_as.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_save_as.mp4"></video>
 
 
 
@@ -35,7 +35,7 @@ Do not use spaces ` ` in the name, instead always use underscores `_`.
 
 ### Check and change CRS/EPSG <a id="check-and-change-crsepsg"></a>
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_change_project_CRS.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_change_project_CRS.mp4"></video>
 
 :::{Tip}
 The layer data used in the project are not saved in the project file. Instead, the project file only contains the file paths where the layer data were located at the time the project was last saved on the PC. If the location of this layer data is subsequently changed, the error message "handle unavailable layers" will appear when the project is opened again.
@@ -48,7 +48,7 @@ Open QGIS → `Project` → `Open` → Select your project
 
 __Open QGIS Project__
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_project.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_open_project.mp4"></video>
 
 ## Standard Folder Structure <a id="standard-folder-structure"></a>
 

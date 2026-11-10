@@ -190,7 +190,7 @@ LEYENDA DE LA IMAGEN
 
 - __Incrustación de videos:__ Los videos deben incrustarse mediante el uso del código HTML:
     ```md
-    <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_change_project_CRS.mp4"></video>
+    <video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_change_project_CRS.mp4"></video>
     ```
     - Copie el código e ingrese el nombre del archivo de video que desea incrustar.
 

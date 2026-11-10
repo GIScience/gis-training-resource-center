@@ -13,7 +13,7 @@ __🔙[Volver a la página de inicio](../es_intro.md)__
 
 :::{dropdown} Ejemplo: Añada la zona horaria (capa de unión) a las ciudades (capa de entrada)
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_spatial_join_wiki.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_spatial_join_wiki.mp4"></video>
 :::
 
 ## Unir atributos por localización (resumen)
@@ -25,7 +25,7 @@ __🔙[Volver a la página de inicio](../es_intro.md)__
 
 :::{dropdown} Solución: Calcule la suma de la población afectada y el área inundada para el área de interés
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_spatial_join.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_exercise_spatial_join.mp4"></video>
 :::
 
 ## Unión de relaciones espaciales

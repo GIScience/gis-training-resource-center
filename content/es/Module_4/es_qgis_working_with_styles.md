@@ -24,7 +24,7 @@ Por ejemplo, si desea enviar una capa a un colega con el mismo estilo que usted,
 2. Dado que en este caso el estilo es precisamente para ese conjunto de datos, puede dejar todas las casillas marcadas.
 3. Seleccione una ubicación y un nombre para el estilo. El estilo se guardará en un archivo `.qml`. __Asegúrese de guardarlo en la misma carpeta que el conjunto de datos y asígnele el mismo nombre que al conjunto de datos correspondiente. De este modo, al cargar los datos en QGIS, el estilo se aplicará automáticamente.__
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_exporting_style_to_send_to_colleague
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_exporting_style_to_send_to_colleague
 .mp4"></video>
 
 :::{figure} ../../../fig/en_30.30.2_save_layer_style_window.png

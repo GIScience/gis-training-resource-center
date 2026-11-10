@@ -291,7 +291,7 @@ QGIS only lets you import __unzipped__ shapefiles. Make sure to unzip your data 
 
 :::{dropdown} Video: Importing vector data via the Data Source Manager
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_vector.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_open_vector.mp4"></video>
 
 :::
 
@@ -300,7 +300,7 @@ QGIS only lets you import __unzipped__ shapefiles. Make sure to unzip your data 
 QGIS lets you open data in your QGIS project by simply dragging the files from your file browser onto your QGIS window. Shapefiles contain only one layer per shapefile, which will be added automatically into you layer panel. Geopackage files (`.gpkg`) can contain multiple layers in a single file. If you add a geopackage file, a new window will open where you will be prompted to select the layers you want to add to your project. 
 
 :::{dropdown} Video: Importing vector data via drag-and-drop
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_import_vector_d_d.mp4"></video>
 :::
 
 ### Delimited text import (.csv, .txt) <a id="delimited-text-import-csv-txt"></a>
@@ -347,7 +347,7 @@ Adjusting the file format parameters while importing a delimited text layer into
 
 :::{dropdown} Video: Opening delimited text files in QGIS
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_open_textfile.mp4"></video>
 
 :::
 
@@ -363,13 +363,13 @@ The import of raster data works in the same way as for vector data. You can eith
 3. Select the file and click `Open`.
 4. Back in QGIS click `Add`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_raster.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_open_raster.mp4"></video>
 
 :::
 
 :::{dropdown} Video: Open raster data via drag-and-drop
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_raster_d_d.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_import_raster_d_d.mp4"></video>
 
 :::
 

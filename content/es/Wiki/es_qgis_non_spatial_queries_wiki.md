@@ -10,7 +10,7 @@ __🔙[Volver a la página de inicio](../es_intro.md)__
 
 :::{dropdown} Ejemplo: Seleccionar manualmente los países con la tabla de atributos
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_attribute_table_wiki.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_select_by_attribute_table_wiki.mp4"></video>
 :::
 
 ## Seleccionar por expresión
@@ -32,7 +32,7 @@ La herramienta `Seleccionar por expresión` le permite crear una expresión para
 
 :::{dropdown} Ejemplo: Seleccione todas las ciudades con más de 20 millones de habitantes en 2015: `"2015" > 20000`
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expresion_greater_wiki.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_select_by_expression_greater_wiki.mp4"></video>
 :::
 
 ### Operadores especiales
@@ -41,7 +41,7 @@ La herramienta `Seleccionar por expresión` le permite crear una expresión para
 
 :::{dropdown} Ejemplo: Seleccione todos los países de Asia: `"continent" LIKE 'asia'`
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_like_wiki.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_select_by_expression_like_wiki.mp4"></video>
 :::
 
 ### Operadores lógicos
@@ -50,7 +50,7 @@ La herramienta `Seleccionar por expresión` le permite crear una expresión para
 
 :::{dropdown} Ejemplo: Las ciudades, que no contaban con una población de un millón de habitantes en 1950, habían aumentado vertiginosamente hasta superar los 10 millones de habitantes en 2015: `"1950" < 1000 AND "2015" > 10000`
 :open:
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_and_wiki.mp4"></video>
+<video width="90%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_select_by_expression_and_wiki.mp4"></video>
 :::
 
 ## Expresiones complejas
@@ -67,7 +67,7 @@ También es posible agregar expresiones que encadenen diferentes requisitos. En 
 
 :::{dropdown} Ejemplo: Exportar las entidades seleccionadas como un archivo nuevo
 :open:
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_export_wiki.mp4"></video>
+<video width="90%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_select_export_wiki.mp4"></video>
 :::
 
 

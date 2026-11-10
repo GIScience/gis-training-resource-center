@@ -39,7 +39,7 @@ Leave all settings at default except:
 
 
 :::{dropdown} Watch here:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/module_9_task1_1.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/module_9_task1_1.mp4"></video>
 :::
 
 
@@ -63,7 +63,7 @@ Leave all settings at default except:
 | Summaries to Calculate         | count                          |
 
 :::{dropdown} Watch here:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/module_9_task1_2.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/module_9_task1_2.mp4"></video>
 :::
 
 `````{admonition} Question
@@ -74,7 +74,7 @@ What is the min/max number of waterpoints available to the buildings in camp 18?
 Look into the attributes of the waterpoints layer. Filter for all waterpoints that are operational (search for `Extract by Attribute`). Redo the analysis for operational waterpoints only.
 
 :::{dropdown} Watch here:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/module_9_task1_3.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/module_9_task1_3.mp4"></video>
 :::
 
 `````{admonition} Question
@@ -97,7 +97,7 @@ Leave all settings at default except:
 
 
 :::{dropdown} Watch here:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/module_9_task1_4.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/module_9_task1_4.mp4"></video>
 :::
 
 The output layer has the same point geometry type like the input building_centroid layer. But it now features two attributes:
@@ -123,7 +123,7 @@ Leave all settings at default except:
 
 
 :::{dropdown} Watch here:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/module_9_task1_5.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/module_9_task1_5.mp4"></video>
 :::
 
 `````{admonition} Question

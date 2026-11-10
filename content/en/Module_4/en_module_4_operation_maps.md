@@ -119,7 +119,7 @@ Next, we need to reduce the points visualised on the map to the facilities that 
     - QGIS will now hide all non-hospital facilities.
     - Your filtered layer now shows only hospital facilities.
 
-    <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_malwai_exampel_hospital_filter.mp4"></video>
+    <video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_malawi_example_hospital_filter.mp4"></video>
 
 ::::
 #### Visualising the number of beds with proportional circle methods <a id="visualising-the-number-of-beds-with-proportional-circle-methods"></a>
@@ -179,7 +179,7 @@ Why these ranges?
 (See [Graduated Classification](../Module_3/en_qgis_data_classification.md#graduated-classification))
 :::
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_proportionla_circel_map_malawi_exampel.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_proportional_circle_map_malawi_example.mp4"></video>
 
 ::::
 
@@ -225,7 +225,7 @@ First, we need to open the **data-defined override Expression Builder**.
 2. Right-click the layer → **Properties…** → **Symbology**.
 3. Nex to `Symbol` Tab click on the dropdown menue, then click at the top click on `Configure Symbol`.
 4. In the new window click on `Simpel Marker` and then next to `fill colour`on the `data-defined override` symbol![](../../../fig/en_data_defined_overried_icon.png)
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_open_data_defined_override_edit.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_open_data_defined_override_edit.mp4"></video>
 ::::
 
 To make this work, we now need to tell QGIS which colour to use for each hospital. Data-defined overrides use the QGIS expression language, which lets you write short rules that are applied automatically to every feature in the layer. In this step, we will write a small expression that checks the value in the STATUS field and assigns the correct colour based on whether the hospital is functional or not.
@@ -245,7 +245,7 @@ CASE
 END
 ```
 Or write the code yourself using the help of the functionality of the expression builder:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_data_defined_overried_calculator_Malwai_Exampel_code - Made with Clipchamp.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_data_defined_override_calculator_Malawi_example_code.mp4"></video>
 
 :::{figure} ../../../fig/en_data_defined_overried_calculator_Malwai_Exampel.png
 ---
@@ -295,14 +295,14 @@ A straightforward workaround is to duplicate your hospital layer and use these c
 
 In the `Print layout`, you can add this layer to the legend. This way, the legend will display the correct colors, while your original layer, which contains the data-defined overrides, will still be responsible for the actual map styling.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_data_defined_overried_calculator_Malwai_Exampel_Legend_workaround_helper_layer.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_data_defined_override_calculator_Malawi_example_legend_workaround_helper_layer.mp4"></video>
 ::::
 
 ::::{dropdown} Option 2: Edit Legend Colours Directly in the Print Layout
 
 Another option works only in the `Print Layout`. In the Legend, just add your hospital layer twice. The secound one, you can adjust the colour of each symbol directly in the Legend. Set each item to green. Using the option `Start a new column before this term`, you can place the two layers next to each other.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_data_defined_overried_calculator_Malwai_Exampel_Legend_workaround_print_layout_costum_symbol.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_data_defined_override_calculator_Malawi_example_legend_workaround_print_layout_custom_symbol.mp4"></video>
 ::::
 
 
@@ -325,7 +325,7 @@ Your hospital capacity map now contains a rich amount of information, and it is 
 2. Right-click the layer → **Properties…** → **Symbology**.
 3. Nex to `Symbol` Tab click on the dropdown menue, then click at the top click on `Configure Symbol`.
 4. In the new window click on `Simpel Marker` and then on the 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_open_data_defined_override_strock_style_edit.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_open_data_defined_override_stroke_style_edit.mp4"></video>
 
 4. You will see:
 - Fill colour
@@ -356,7 +356,7 @@ QGIS applies the rule automatically to each feature.
 - `Hospital` → dotted outline
 - `All others` → solid (fallback)
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_open_data_defined_override_strock_style_expression_builder.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_open_data_defined_override_stroke_style_expression_builder.mp4"></video>
 
 ::::
 
@@ -397,7 +397,7 @@ With three visual variables now shown in a single symbol, it’s important that 
 A straightforward workaround is to duplicate your hospital layer and use the copy solely as legend helpers. Rename the duplicated layer so it’s easy to recognise in the legend. Use 'categorised' classification. Adjust the stroke style (solid, dashed, dotted) to match the categories you used in your map. Make sure to hide the helper layer in the map view so it doesn’t appear on the actual map.
 
 In the Print layout, add the helper layer to the legend. This ensures the legend shows the correct stroke patterns, while your original layer—with its data-defined overrides—continues to control the real map symbology.
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_data_Malwai_Exampel_Legend_workaround_helper_layer_strok_style.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_data_Malawi_example_legend_workaround_helper_layer_stroke_style.mp4"></video>
 ::::
 
 :::{figure} ../../../fig/en_Malwai_Exampel_proportional_circel_data_defined_override_strock_style_result_map_complet.png
@@ -537,7 +537,7 @@ Adjusting the file format parameters while importing a delimited text layer into
 
 :::{dropdown} Video: Opening delimited text files in QGIS
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_open_textfile.mp4"></video>
 
 :::
 
@@ -570,7 +570,7 @@ width: 500 px
 
 :::{dropdown} Video: Making the fill color transparent
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_make_only_outlines_visible.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_make_only_outlines_visible.mp4"></video>
 
 :::
 
@@ -610,7 +610,7 @@ The styling of a vector data consists of the color and the outline.
 :::
 
 :::{dropdown} Video: Adjusting the style for multiple layers
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_change_style_for_multiple_layers
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_change_style_for_multiple_layers
 .mp4"></video>
 :::
 
@@ -660,7 +660,7 @@ A map showing the population of Nigerian states.
 :::
 
 :::{dropdown} Video: How to create a choropleth map
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_graduated_styling
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_graduated_styling
 .mp4"></video>
 :::
 
@@ -710,7 +710,7 @@ Setting up labels in QGIS 30.30.2.
 :::
 
 :::{dropdown} Video: How to add single labels
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_labels.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_setting_up_labels.mp4"></video>
 :::
 
 ::::{attention}

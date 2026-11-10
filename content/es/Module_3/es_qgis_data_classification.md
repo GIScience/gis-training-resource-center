@@ -81,7 +81,7 @@ La clasificación por símbolo único es útil cuando se dispone de un conjunto 
 ::::{dropdown} Cómo: Establecer la clasificación por símbolo único
 :open:
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Single_symbol_video.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/Single_symbol_video.mp4"></video>
 
 __Para ajustar el estilo de una capa…__
 1. Haga clic derecho en la capa.
@@ -143,7 +143,7 @@ Ejemplo de mapa con una clasificación por categorías.
 :::{dropdown} Cómo: Establecer la clasificación por categorías
 :open:
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Classify_by_categorized.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/Classify_by_categorized.mp4"></video>
 
 __Para clasificar los datos en categorías…__
 1. Haga clic derecho en la capa.
@@ -259,7 +259,7 @@ La clasificación por desviación estándar es un método que determina los cort
 
 La configuración de una clasificación graduada en QGIS es similar a la configuración de una clasificación por categorías. Sin embargo, a diferencia de esta última, aquí tiene que decidir cuántas clases y qué método de graduación desea utilizar.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/graduated_classification.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/graduated_classification.mp4"></video>
 
 __Clasificar los datos en clases…__
 1. Haga clic derecho en la capa.

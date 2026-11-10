@@ -125,14 +125,14 @@ Opciones adicionales:
 - Booleano
 
 :::{dropdown} Ejemplo: Añadir un campo para la densidad de población
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_add_field.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_add_field.mp4"></video>
 :::
 
 ### Borrar campo
 También es posible __borrar campos__ de la tabla de atributos. Una práctica comúnmente utilizada es __eliminar todos los campos no utilizados o innecesarios__ de una capa antes de empezar a trabajar en ella. Esto __hace que el conjunto de datos esté mucho más organizado__.
 
 :::{dropdown} Ejemplo: Eliminar todos los campos no utilizados o innecesarios de una capa vectorial
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_delete_field.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_delete_field.mp4"></video>
 :::
 
 ### Calcular campos
@@ -170,7 +170,7 @@ A continuación se enumeran los grupos más importantes y sus respectivas funcio
     - Calcula el `min` y `max`
 
 :::{dropdown} Ejemplo: Calcular la densidad de población
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_calculate_field.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_calculate_field.mp4"></video>
 :::
 
 
@@ -179,7 +179,7 @@ A continuación se enumeran los grupos más importantes y sus respectivas funcio
 La herramienta __Basic statistics for fields__ genera estadísticas para un campo específico de la tabla de atributos de una capa vectorial. Los resultados se generan como un archivo HTML y se puede acceder a ellos utilizando el enlace __ruta del archivo__ en el __Visor de resultados__. Esta operación es muy valiosa para conocer a fondo los datos con los que se pretende trabajar. Permite determinar el intervalo de valores, precisar los valores mínimos y máximos. En el ejemplo proporcionado, esta operación se aplica para calcular la densidad de población global, lo que permite identificar con facilidad la región más densamente poblada del mundo.
 
 :::{dropdown} Ejemplo: Calcular estadísticas de densidad de población por campo para países de todo el mundo.
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_field_stats.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_field_stats.mp4"></video>
 :::
 
 ### Estadísticas por categorías
@@ -192,7 +192,7 @@ __Cuestiones que deben tenerse en cuenta al realizar estos cálculos:__
 Para conseguir una mayor precisión en estos cálculos, la opción “statistics by categories” ofrece una visión más completa que las mencionadas anteriormente. En este caso, resulta sencillo determinar el número de ciudades por país con más de 300 000 habitantes y, para cada país, la población que vive en la mayor aglomeración urbana.
 
 :::{dropdown} Ejemplo: Ciudades de más de 300 000 habitantes y cantidad de población en las mayores aglomeraciones.
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_stats_by_category.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_stats_by_category.mp4"></video>
 :::
 
 ## Consultas no espaciales
@@ -202,7 +202,7 @@ En SIG, puede __consultar__ (filtrar) datos basados en información de atributos
 Es posible seleccionar manualmente filas concretas haciendo clic en el número que aparece a su izquierda. Esto resulta muy útil para seleccionar un número reducido de filas. Si se seleccionan correctamente, aparecerán en __amarillo__.
 
 :::{dropdown} Ejemplo: Selección manual de filas.
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_attribute_table.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_select_by_attribute_table.mp4"></video>
 :::
 
 ### Selección por expresión
@@ -255,7 +255,7 @@ Se pueden utilizar operadores como AND, OR para combinar diferentes consultas o 
 La consulta de sus datos para responder a preguntas más complejas es de gran importancia. Para ello, utilice la herramienta "Selección por expresión". En el ejemplo proporcionado, aspiramos responder a la pregunta: ¿Qué ciudades, excluidas las que tenían una población de un millón de habitantes en 1950, habían superado los diez millones de habitantes en 2015?
 
 :::{dropdown} Ejemplo: Ciudades, excluidas las que tenían una población de un millón de habitantes en 1950, que han superado los diez millones de habitantes en 2015.
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_by_expression_and.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_select_by_expression_and.mp4"></video>
 :::
 
 ##### SQL
@@ -302,7 +302,7 @@ Cuando se aplica un filtro con el generador de consultas, QGIS trata el subconju
 En este breve video, descubrirá la ubicación del generador de consultas y aprenderá a crear una consulta sencilla para aislar un estado concreto de un conjunto de datos que abarca todo el país. El ejemplo se centra en un conjunto de datos relacionados con Sudán del Sur y sirve como ilustración básica.
 
 :::{dropdown} Ejemplo: Uso sencillo del generador de consultas.
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_query_builder.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_query_builder.mp4"></video>
 :::
 
 ## Preguntas de autoevaluación

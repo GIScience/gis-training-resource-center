@@ -948,7 +948,7 @@ Aplique los siguientes archivos de estilo`.qml` a las capas correspondientes:
 - Navegue hasta el archivo `.qml` correspondiente en la carpeta `layer_sytle` y selecciónelo.
 - Haga clic en **Abrir**,luego en **Aplicar** y **Aceptar** para confirmar
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_output_style.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/fr_MDG_model_output_style.mp4"></video>
 
 > 💡 *Si el estilo no se carga correctamente, vuelva a comprobar los nombres de las columnas y asegúrese de que el nombre de columna utilizado en el `.qml` coincide con el de la capa. Para ello, abra el comando **Tabla de atributos** de la capa y comparar nombres de campo.*
 
@@ -1014,7 +1014,7 @@ Aina también quiere visualizar el porcentaje de instalaciones sanitarias y educ
 - Opcionalmente, personalice las etiquetas de clase para mayor claridad
 - Haga clic en `Apply`
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_affacted_HS_pct.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/fr_MDG_model_style_affected_HS_pct.mp4"></video>
 
 - Repite el mismo proceso para la capa `admin2_education_affected`.
 Después de duplicar la capa, cambie el nombre de la nueva a:
@@ -1047,7 +1047,7 @@ Después de duplicar la capa, cambie el nombre de la nueva a:
   ```
 
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_save_new_style.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/fr_MDG_model_style_save_new_style.mp4"></video>
 
 
 ### 5. *(Opcional)* Importar estilos a su biblioteca QGIS
@@ -1093,7 +1093,7 @@ Utilice una plantilla de mapas de QGIS predefinida para crear y exportar rápida
   - **Tamaño de página**: A3
   - **Orientación**: Apaisado
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_load_mpa_template.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/fr_MDG_load_map_template.mp4"></video>
 
 3. Actualizar la tabla de atributos de los distritos expuestos
 - En el **diseño de impresión**, haga clic en la tabla de atributos (parte derecha del diseño).
@@ -1107,7 +1107,7 @@ Utilice una plantilla de mapas de QGIS predefinida para crear y exportar rápida
     - **Orden de clasificación**: Ascendente
   - Haga clic en `OK`
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_map_makingadjust_AT.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/fr_MDG_map_making_adjust_AT.mp4"></video>
 
 
 ```{admonition} ⚠️ Advertencia – Tablas Largas
@@ -1140,7 +1140,7 @@ Para solucionar esto, abra las propiedades de la tabla en el diseño y **reduzca
      Número de personas expuestas
      ```
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_adjust_map_making_Legend.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/fr_MDG_adjust_map_making_Legend.mp4"></video>
 
 6. **Actualice logotipos e iconos**
  - Los logotipos que hay que añadir al mapa están representados por la **X** roja.
@@ -1148,7 +1148,7 @@ Para solucionar esto, abra las propiedades de la tabla en el diseño y **reduzca
  - Haga clic en los tres puntos ![](../../../fig/Three_points.png) junto a la ruta del archivo.
  - Vaya a la carpeta `logos_pictures` y seleccione el archivo del logotipo correcto.
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_map_making_update_logos.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/fr_MDG_map_making_update_logos.mp4"></video>
 
 
 7. Revisión y actualización de los elementos de texto del diseño
@@ -1158,7 +1158,7 @@ Para solucionar esto, abra las propiedades de la tabla en el diseño y **reduzca
   - **Autor/Organización** (opcional)
 - Ajuste el tamaño de fuente o la alineación si es necesario
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_mak_making_adjust_title.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/fr_MDG_map_making_adjust_title.mp4"></video>
 
 ### ✅ Lista de verificación final
 

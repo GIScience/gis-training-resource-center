@@ -115,7 +115,7 @@ Ensuite, nous devons réduire les points visualisés sur la carte aux installati
     - QGIS va masquer toutes les installations non hospitalières.
     - Votre calque filtré montre seulement les établissements hospitaliers.
 
-   <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_malwai_exampel_hospital_filter.mp4"></video>
+   <video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_malawi_example_hospital_filter.mp4"></video>
 
 ::::
 ### Visualisation du nombre de lits avec les méthodes du cercle proportionnel <a id="visualising-the-number-of-beds-with-proportional-circle-methods"></a>
@@ -175,7 +175,7 @@ Why these ranges?
 (See [Graduated Classification](../Module_3/fr_qgis_data_classification.md#graduated-classification))
 ```
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_proportionla_circel_map_malawi_exampel.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_proportional_circle_map_malawi_example.mp4"></video>
 
 ::::
 
@@ -217,7 +217,7 @@ Tout d'abord, nous devons ouvrir le module de substitution **défini par les don
 1.  Sélectionnez votre calque hospitalière (la A filtrée `Malawi_health_facilities_raw`).
 2. Faites un clic droit sur le calque → **Propriétés…** → **Symbologie**.
 3. Nex to `Symbol` Tab cliquez sur le menu déroulant, puis cliquez en haut sur `Configure Symbol`.
-4. <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_open_data_defined_override_edit.mp4"></video>Dans la nouvelle fenêtre, cliquez sur `Simpel Marker` puis sur `fill colour`sur le symbole `data-defined override`![](../../../fig/en_data_defined_overried_icon.png)
+4. <video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_open_data_defined_override_edit.mp4"></video>Dans la nouvelle fenêtre, cliquez sur `Simpel Marker` puis sur `fill colour`sur le symbole `data-defined override`![](../../../fig/en_data_defined_overried_icon.png)
 
 ::::
 
@@ -237,7 +237,7 @@ CASE
   ELSE color_rgb(150, 150, 150)                               -- fallback for missing/unknown
 END
 ```
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_data_defined_overried_calculator_Malwai_Exampel_code - Made with Clipchamp.mp4"></video>Ou écrivez vous-même le code en utilisant l'aide de la fonctionnalité du constructeur d'expression :
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_data_defined_override_calculator_Malawi_example_code.mp4"></video>Ou écrivez vous-même le code en utilisant l'aide de la fonctionnalité du constructeur d'expression :
 
 
 :::{figure} ../../../fig/en_data_defined_overried_calculator_Malwai_Exampel.png
@@ -288,14 +288,14 @@ Une solution simple consiste à dupliquer votre couche hospitalière et à utili
 
 Dans le `Print layout`, vous pouvez ajouter ce calque à la légende. De cette façon, la légende affichera les couleurs correctes, tandis que votre calque d'origine, qui contient les substitutions définies par les données, sera toujours responsable du style actuel de la carte.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_data_defined_overried_calculator_Malwai_Exampel_Legend_workaround_helper_layer.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_data_defined_override_calculator_Malawi_example_legend_workaround_helper_layer.mp4"></video>
 ::::
 
 ::::{dropdown} Option 2 : Modifier les couleurs de légende directement dans la mise en page d'impression
 
 Une autre option ne fonctionne que dans le `Print Layout`. Dans la Légende, il vous suffit d'ajouter la couche de l'hôpital deux fois. La secound, vous pouvez ajuster la couleur de chaque symbole directement dans la Legend. Définissez chaque élément en vert. En utilisant l'option `Start a new column before this term`, vous pouvez placer les deux calques les uns à côté des autres.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_data_defined_overried_calculator_Malwai_Exampel_Legend_workaround_print_layout_costum_symbol.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_data_defined_override_calculator_Malawi_example_legend_workaround_print_layout_custom_symbol.mp4"></video>
 ::::
 
 
@@ -317,7 +317,7 @@ Votre carte des capacités de votre hôpital contient maintenant une riche quant
 1.  Sélectionnez votre calque hospitalière (la A filtrée `Malawi_health_facilities_raw`).
 2. Faites un clic droit sur le calque → **Propriétés…** → **Symbologie**.
 3. Nex to `Symbol` Tab cliquez sur le menu déroulant, puis cliquez en haut sur `Configure Symbol`.
-4. <video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_open_data_defined_override_strock_style_edit.mp4"></video>Dans la nouvelle fenêtre, cliquez sur `Simpel Marker` puis sur
+4. <video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_open_data_defined_override_stroke_style_edit.mp4"></video>Dans la nouvelle fenêtre, cliquez sur `Simpel Marker` puis sur
 
 
 4. Vous verrez :
@@ -349,7 +349,7 @@ QGIS applique automatiquement la règle à chaque fonction.
 - `Hospital` → contour pointillé
 - `All others` → solide (par défaut)
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_open_data_defined_override_strock_style_expression_builder.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_open_data_defined_override_stroke_style_expression_builder.mp4"></video>
 
 ::::
 
@@ -389,7 +389,7 @@ Avec trois variables visuelles maintenant affichées en un seul symbole, il est 
 ::::{dropdown} La légende avec la couche d'aide
 Une solution simple est de dupliquer votre calque hospitalière et d'utiliser la copie uniquement comme aides de légende. Renommez le calque dupliqué pour qu’il soit facile à reconnaître dans la légende. Utilisez la classification 'catégorisée'. Ajustez le style de trait (solide, tirée, pointée) pour correspondre aux catégories que vous avez utilisées sur votre carte. Assurez-vous de cacher le calque d'aide dans la vue de la carte afin qu'il n'apparaisse pas sur la carte actuelle.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_data_Malwai_Exampel_Legend_workaround_helper_layer_strok_style.mp4"></video>Dans la mise en page Imprimer, ajoutez le calque d'aide à la légende. Cela permet de s'assurer que la légende montre les bons traits, tandis que votre calque d'origine, avec ses substitutions définies par des données, continue de contrôler la symbologie réelle de la carte.
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_data_Malawi_example_legend_workaround_helper_layer_stroke_style.mp4"></video>Dans la mise en page Imprimer, ajoutez le calque d'aide à la légende. Cela permet de s'assurer que la légende montre les bons traits, tandis que votre calque d'origine, avec ses substitutions définies par des données, continue de contrôler la symbologie réelle de la carte.
 
 ::::
 

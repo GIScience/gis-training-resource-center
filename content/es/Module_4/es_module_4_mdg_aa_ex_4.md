@@ -155,7 +155,7 @@ Aplique los siguientes archivos de estilo `.qml` a las capas correspondientes:
 - Navegue hasta el archivo `.qml` correspondiente en la carpeta `layer_style` y selecciónelo.
 - Haga clic en **Open**, luego **Apply** y **OK** para confirmar.
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_output_style.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/fr_MDG_model_output_style.mp4"></video>
 
 💡 *Si el estilo no se carga correctamente, revise los nombres de columna y asegúrese de que el nombre de columna utilizado en el archivo `.qml` coincida con el de su capa. Para ello, abra la página **Tabla de atributos** de la capa y compare los nombres de los campos.*
 
@@ -221,7 +221,7 @@ Aina también quiere visualizar el porcentaje de instalaciones sanitarias y educ
 - Opcionalmente, personalice las etiquetas de las clases para mayor claridad
 - Haga clic en `Apliquar`.
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_affacted_HS_pct.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/fr_MDG_model_style_affected_HS_pct.mp4"></video>
 
 - Repita el mismo proceso para la capa `adm2_educación_expuesta`.
 Después de duplicar la capa, cambie el nombre de la nueva a:
@@ -254,7 +254,7 @@ Guarde los estilos creados manualmente como archivos `.qml` para reutilizarlos e
   ```
 
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/fr_MDG_model_style_save_new_style.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/fr_MDG_model_style_save_new_style.mp4"></video>
 
 
 ### 5. *(Opcional)* Importar estilos a su biblioteca QGIS

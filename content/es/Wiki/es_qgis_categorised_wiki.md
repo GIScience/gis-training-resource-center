@@ -13,7 +13,7 @@ La clasificación por categorías suele utilizarse para los datos con escala __n
 | Escala ordinal | Categorías con un orden o clasificación significativos | Rangos (p. ej., bajo, medio) | Texto (“alto”) o número entero (5) |
 
 :::{dropdown} Video: Clasificación de datos
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Classify_by_categorized.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/Classify_by_categorized.mp4"></video>
 :::
 
 __Para clasificar los datos en categorías…__

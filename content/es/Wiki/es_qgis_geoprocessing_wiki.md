@@ -21,7 +21,7 @@ La unidad de distancia depende de la proyección de la capa. Para crear un buffe
 
 :::{dropdown} Ejemplo: ¿Qué regiones se encuentran dentro de un radio de 100 kilómetros de las principales ciudades?
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_buffer_wiki.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_buffer_wiki.mp4"></video>
 :::
 
 :::{tip}
@@ -35,7 +35,7 @@ Si se trata de “megabuffers”, realmente grandes, o si solo se pueden elegir 
 
 :::{dropdown} Ejemplo: Extraer la red ferroviaria de Alemania
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_clip_wiki.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_clip_wiki.mp4"></video>
 :::
 
 ## Disolver
@@ -44,7 +44,7 @@ Si se trata de “megabuffers”, realmente grandes, o si solo se pueden elegir 
 
 :::{dropdown} Ejemplo: Disolver los límites de los países
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_dissolve_wiki.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_dissolve_wiki.mp4"></video>
 :::
 
 :::{Attention}
@@ -75,7 +75,7 @@ name: es_Intersect_concept_2
 :::
 
 :::{dropdown} Ejemplo: Intersección de países con zonas horarias
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_intersect.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_intersect.mp4"></video>
 :::
 
 ## Centroides
@@ -89,5 +89,5 @@ Con la herramienta ![](../../../fig/qgis_3.40_centroids.png) `Centroides`, puede
 
 
 :::{dropdown} Ejemplo: Crear un centroide para cada distrito de Madagascar
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_3.40_centroids.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_3.40_centroids.mp4"></video>
 :::

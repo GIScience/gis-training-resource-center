@@ -19,7 +19,7 @@ Al importar un archivo shapefile mediante la función arrastrar y soltar, debe u
 4. Nuevamente en QGIS, haga clic en `Añadir`.
 
 
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_vector.mp4"></video>
+<video width="90%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_open_vector.mp4"></video>
 
 
 #### Abra los datos vectoriales mediante la función arrastrar y soltar
@@ -27,7 +27,7 @@ Al importar un archivo shapefile mediante la función arrastrar y soltar, debe u
 1. En el explorador de archivos, abra la carpeta con los datos vectoriales que desea importar.
 2. Arrástrelo y suéltelo en el lienzo del mapa de QGIS.
 
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
+<video width="90%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_import_vector_d_d.mp4"></video>
 
 ## Importación de datos ráster
 
@@ -38,7 +38,7 @@ Al importar un archivo shapefile mediante la función arrastrar y soltar, debe u
 3. Seleccione el archivo y haga clic en `Abrir`.
 4. Nuevamente en QGIS, haga clic en `Añadir`.
 
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_raster.mp4"></video>
+<video width="90%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_open_raster.mp4"></video>
 
 
 ### Abra los datos ráster mediante arrastrar y soltar
@@ -46,7 +46,7 @@ Al importar un archivo shapefile mediante la función arrastrar y soltar, debe u
 1. En el explorador de archivos, abra la carpeta con los datos ráster que desea importar.
 2. Arrástrelo y suéltelo en el lienzo del mapa de QGIS.
 
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_raster_d_d.mp4"></video>
+<video width="90%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_import_raster_d_d.mp4"></video>
 
 ### Abrir archivos ráster NetCDF
 
@@ -54,7 +54,7 @@ Al importar un archivo shapefile mediante la función arrastrar y soltar, debe u
 2. Se abrirá una ventana en la que deberá seleccionar el conjunto de datos exacto que desea utilizar → Haga clic en `Añadir capa`.
 3. Haga clic en ? en la ventana Layers. Se abrirá la ventana `Seleccionar sistema de referencia de coordenadas` → Seleccione el sistema de referencia correcto → Haga clic en `Aceptar`.
 
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_NetCDF_raster.mp4"></video>
+<video width="90%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_import_NetCDF_raster.mp4"></video>
 
 
 ## Importación de datos de texto
@@ -84,7 +84,7 @@ Al cargar datos vectoriales en formato de texto como .csv o .txt en QGIS, estos 
         Si el archivo no contiene información espacial, elija la opción `Ninguna geometría (tabla solo de atributos)`.
 4. Haga clic en `Añadir`.
 
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video>
+<video width="90%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_open_textfile.mp4"></video>
 
 ### Abrir archivos .xlsx en QGIS
 
@@ -99,7 +99,7 @@ Al cargar datos vectoriales en formato de texto como .csv o .txt en QGIS, estos 
 Otra opción es siempre transformar el archivo .xlsx en .csv, que es más fácil de abrir en QGIS.
 :::
 
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_xlsx.mp4"></video>
+<video width="90%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_open_xlsx.mp4"></video>
 
 
 

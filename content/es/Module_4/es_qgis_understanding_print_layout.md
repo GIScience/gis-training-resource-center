@@ -51,13 +51,13 @@ Añadir un nuevo mapa al diseño de impresión (fuente: CartONG).
 ::::{tab-set}
 :::{tab-item} Añadir un nuevo mapa
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_new_map.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_adding_a_new_map.mp4"></video>
 
 :::
 
 :::{tab-item} Mover y escalar el mapa
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_moving_the_map.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_moving_the_map.mp4"></video>
 
 :::
 ::::
@@ -79,7 +79,7 @@ Añadir texto al diseño de impresión (fuente: CartONG).
 
 :::{dropdown} Video: Añadir un cuadro de texto
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_a_title.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_print_layout_adding_a_title.mp4"></video>
 
 :::
 
@@ -102,7 +102,7 @@ Añadir una imagen o logotipo al diseño de impresión.
 :::
 
 :::{dropdown} Video: Añadir una imagen al diseño de impresión
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_raster_image.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_adding_a_raster_image.mp4"></video>
 :::
 
 ### Añadir una leyenda
@@ -130,14 +130,14 @@ Si tiene demasiados elementos en su leyenda y no caben en su mapa horizontalment
 ::::{tab-set}
 :::{tab-item} Añadir una leyenda
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_legend
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_adding_a_legend
 .mp4"></video>
 
 :::
 
 :::{tab-item} Editar la leyenda
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_editing_the_legend
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_editing_the_legend
 .mp4"></video>
 
 :::
@@ -146,7 +146,7 @@ Si tiene demasiados elementos en su leyenda y no caben en su mapa horizontalment
 
 A veces, el espacio de su mapa no es el adecuado para una sola leyenda vertical. En este caso, es útil añadir varias columnas. Asegúrese de agrupar los elementos de la leyenda de forma lógica para que la leyenda vertical sea más fácil de leer.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_multiple_columns_legend
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_multiple_columns_legend
 .mp4"></video>
 
 :::
@@ -184,7 +184,7 @@ Añadir y personalizar la barra de escala.
 :::
 
 :::{dropdown}
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_scalebar.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_print_layout_adding_scalebar.mp4"></video>
 :::
 
 ### Añadir un mapa general
@@ -220,7 +220,7 @@ Añadir un mapa general y __bloquear la capa__.
 :::
 
 :::{dropdown} Video: Configurar un mapa general
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_overview_maps
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_adding_overview_maps
 .mp4"></video>
 :::
 
@@ -262,7 +262,7 @@ Las capas, los mapas y las imágenes individuales no se guardan en la plantilla.
 3. Haga clic en `Guardar`.
 4. Puede abrir la plantilla arrastrándola a un proyecto QGIS.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_saving_layout_template
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_saving_layout_template
 .mp4"></video>
 :::
 
@@ -275,7 +275,7 @@ Puede arrastrar y soltar archivos de plantillas (`.qpt`, QGIS template file) en 
 3. Elija `Específico` y seleccione la ubicación donde guardó su plantilla.
 4. Haga clic en `Crear`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_template
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_opening_template
 .mp4"></video>
 
 :::
@@ -285,7 +285,7 @@ Puede arrastrar y soltar archivos de plantillas (`.qpt`, QGIS template file) en 
 El directorio de plantillas es donde QGIS almacena las plantillas de diseño. Si tiene plantillas guardadas aquí, puede cargarlas directamente a través del gestor de diseño, sin seleccionar el archivo.
 En computadoras con Windows, la ruta del archivo es `\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_template_directory.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_template_directory.mp4"></video>
 
 :::
 
@@ -335,7 +335,7 @@ El único elemento del diseño de impresión, que es controlado por el atlas, es
 :::
 
 :::{dropdown} Video: Configurar un Atlas
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_an_atlas
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_setting_up_an_atlas
 .mp4"></video>
 :::
 

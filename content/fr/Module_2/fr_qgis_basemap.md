@@ -42,7 +42,7 @@ Il existe deux méthodes pour ajouter OpenStreetMap comme fond de carte :
 1. Dans le panneau `Browser`, recherchez `XYZ Tiles`. Ouvrez le menu déroulant en cliquant sur la flèche et sélectionnez OpenStreetMap.
 2. Dans le menu `Layer` → `Add Layer` → `Add XYZ layer...` → sélectionnez OpenStreetMap.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Add_basemap_OSM.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/Add_basemap_OSM.mp4"></video>
 
 ## QuickMapServices <a id="quickmapservices"></a>
 
@@ -52,7 +52,7 @@ Il existe de nombreux plugins pour QGIS qui fournissent des outils supplémentai
 
 Pour [installer un plugin](../Wiki/fr_qgis_plugins_wiki.md), dans la barre supérieure, allez dans `Plugins` → `Manage and Install Plugins…` → `All` → recherchez le plugin → `Install Plugin`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_plugins.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_plugins.mp4"></video>
 
 :::{tip}
 
@@ -86,7 +86,7 @@ Une liste de fonds de carte et de requêtes utiles pour le plugin QMS est dispon
 
 :::{dropdown} Vidéo : fonctionnement du plugin QuickMapServices
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/add_basemap_quickmapservice.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/add_basemap_quickmapservice.mp4"></video>
 
 :::
 

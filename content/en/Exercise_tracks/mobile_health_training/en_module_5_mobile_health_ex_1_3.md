@@ -153,7 +153,7 @@ __Download all datasets [here] and save the folder on your computer and unzip th
 
 Before we begin evaluating the MHU stops, we need to familiarise ourselves with the area of interest (AOI) and the available data. We will be working in the municipio of __Tibú__, in the department of Norte de Santander, so we can begin by clipping our data to the AOI. Before beginning with any processing, take the time to look at the available data and opening the [attribute tables](../../Wiki/en_qgis_attribute_table_wiki.md)
 
-1. [Import the layers](../../wiki/en_qgis_import_geodata_wiki.md) in the `/data/input`-folder. 
+1. [Import the layers](../../Wiki/en_qgis_import_geodata_wiki.md) in the `/data/input`-folder. 
     - `ABC.gpkg`
     - `XYZ.shp`
     - XYZ

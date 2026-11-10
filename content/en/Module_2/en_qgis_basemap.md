@@ -46,7 +46,7 @@ There are two ways to add OpenStreetMap as a basemap:
    clicking on the arrow next to it and select OpenStreetMap.
 2. In the `Layer` menu → `Add Layer` → `Add XYZ layer...` → Select OpenStreetMap. 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Add_basemap_OSM.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/Add_basemap_OSM.mp4"></video>
 
 ## QuickMapServices <a id="quickmapservices"></a>
 
@@ -57,7 +57,7 @@ There are lots of plugins available for QGIS that provide additional tools not a
 To [install a plugin](../Wiki/en_qgis_plugins_wiki.md), in the top bar, navigate to `Plugins` → `Manage and Install Plugins…` → `All` → Search for the plugin → `Install Plugin`.
 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_plugins.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_plugins.mp4"></video>
 
 :::{Tip}
 
@@ -92,7 +92,7 @@ A list of basemaps and useful search queries for the QMS-plugin can be found on 
 
 :::{dropdown} Video: Functionality of the QuickMapServices Plugin__
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/add_basemap_quickmapservice.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/add_basemap_quickmapservice.mp4"></video>
 
 :::
 

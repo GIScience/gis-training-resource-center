@@ -108,7 +108,7 @@ Ouverture de la table attributaire dans QGIS 3.36
 
 Vous pouvez trier les données de la table attributaire en cliquant sur l’en-tête d’une colonne. Les données textuelles seront triées par ordre alphabétique et les données numériques par valeur. Pour inverser l’ordre de tri, cliquez à nouveau sur l’en-tête. Une petite flèche dans l’en-tête indique si le tri est croissant ou décroissant.
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_attribute_table.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_show_attribute_table.mp4"></video>
 
 :::::{grid} 2
 ::::{grid-item-card} 
@@ -145,7 +145,7 @@ Vous pouvez zoomer sur une entité spécifique pour la localiser géographiqueme
 
 :::{dropdown} Vidéo : zoom sur une entité
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom_to_feature.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_zoom_to_feature.mp4"></video>
 
 :::
 
@@ -160,7 +160,7 @@ Pour interagir avec des entités dans une couche, vous devez les sélectionner. 
 
 :::{dropdown} Vidéo : sélection manuelle d’entités
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_attribute_table_select.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_attribute_table_select.mp4"></video>
 
 :::
 
@@ -210,7 +210,7 @@ Si vous hésitez sur le format le plus adapté, consultez la page [types de donn
 
 :::
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_export_wiki.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_select_export_wiki.mp4"></video>
 
 
 ## Questions d’auto-évaluation <a id="self-assessment-questions"></a>

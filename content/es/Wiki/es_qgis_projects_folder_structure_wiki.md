@@ -17,7 +17,7 @@ Una de las prácticas recomendadas consiste en utilizar una __estructura de carp
 
 ### Cree un nuevo proyecto en QGIS.
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_new_project.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_new_project.mp4"></video>
 
 3. Guarde el nuevo proyecto en la carpeta `Proyecto` en la estructura de carpetas estándar y ejecute un git push.
 4. Nombre su proyecto y haga clic en
@@ -26,7 +26,7 @@ No utilice espacios ` ` en el nombre; utilice siempre guiones bajos `_`.
 :::
 #### Guarde el proyecto.
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_save_as.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_save_as.mp4"></video>
 
 
 
@@ -34,7 +34,7 @@ No utilice espacios ` ` en el nombre; utilice siempre guiones bajos `_`.
 
 ### Verifique y cambie el SRC/EPSG.
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_change_project_CRS.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_change_project_CRS.mp4"></video>
 
 :::{Tip}
 Los datos de capa utilizados en el proyecto no se guardan en el archivo de proyecto. En cambio, el archivo de proyecto solo contiene las rutas de los archivos donde se encontraban los datos de las capas en el momento en que el proyecto se guardó por última vez en la computadora. Si posteriormente se cambia la ubicación de estos datos de la capa, aparecerá el mensaje de error “handle unavailable layers” (gestionar capas no disponibles) cuando se vuelva a abrir el proyecto.
@@ -47,7 +47,7 @@ Abra QGIS → `Proyecto` → `Abrir` → Seleccione su proyecto.
 
 __Abrir proyecto QGIS__
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_project.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_open_project.mp4"></video>
 
 ## Estructura de carpetas estándar
 

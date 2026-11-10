@@ -19,12 +19,12 @@ Añadir un nuevo mapa al diseño de impresión.
 
 :::: {tab-set}
 ::: {tab-item} Añadir un nuevo mapa
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_new_map
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_adding_a_new_map
 .mp4"></video>
 :::
 
 ::: {tab-item} Mover y escalar el mapa
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_moving_the_map
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_moving_the_map
 .mp4"></video>
 :::
 ::::
@@ -45,7 +45,7 @@ Añadir texto al diseño de impresión.
 :::
 
 :::{dropdown} Video: Añadir un cuadro de texto
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_a_title
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_print_layout_adding_a_title
 .mp4"></video>
 :::
 
@@ -60,7 +60,7 @@ Si trabaja para una organización, lo más probable es que añada el logotipo de
 5. Su imagen aparecerá en el diseño de impresión. Para asegurarse de que la imagen no se distorsione, deje el `Modo de redimensionado` en “Zoom”.
 
 :::{dropdown}
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_raster_image.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_adding_a_raster_image.mp4"></video>
 :::
 
 ### Añadir una leyenda
@@ -88,21 +88,21 @@ Si tiene demasiados elementos en su leyenda y no caben horizontalmente en el map
 :::: {tab-set}
 ::: {tab-item} Añadir una leyenda
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_a_legend
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_adding_a_legend
 .mp4"></video>
 
 :::
 
 :::{tab-item} Editar la leyenda
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_editing_the_legend
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_editing_the_legend
 .mp4"></video>
 
 :::
 
 :::{tab-item} Leyenda de 2 columnas
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_multiple_columns_legend
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_multiple_columns_legend
 .mp4"></video>
 
 :::
@@ -140,7 +140,7 @@ Añadir y personalizar la barra de escala.
 :::
 
 :::{dropdown}
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_print_layout_adding_scalebar
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_print_layout_adding_scalebar
 .mp4"></video>
 :::
 
@@ -185,7 +185,7 @@ Añadir la extensión del mapa principal al mapa general (el rectángulo rojo de
 :::
 
 :::{dropdown} Video: Configurar un mapa general
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_overview_maps
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_adding_overview_maps
 .mp4"></video>
 :::
 
@@ -220,7 +220,7 @@ Asegúrese de comprobar el mapa, después de exportar el PDF, ya que algunos ele
 3. Haga clic en `Guardar`.
 4. Puede abrir la plantilla arrastrándola a un proyecto QGIS.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_saving_layout_template
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_saving_layout_template
 .mp4"></video>
 
 :::
@@ -234,7 +234,7 @@ Puede arrastrar y soltar archivos de plantillas (`.qpt`, archivo de plantilla QG
 3. Elija `Especifico` y seleccione la ubicación donde guardó su plantilla.
 4. Haga clic en Abrir.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_opening_template
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_opening_template
 .mp4"></video>
 
 :::
@@ -245,7 +245,7 @@ El directorio de plantillas es donde QGIS busca las plantillas de diseño. Si ti
 En Windows, la ruta del archivo es `\Users\AppData\Roaming\QGIS\QGIS3\profiles\default\composer_templates`.
 En Mac, la ruta del archivo suele ser `~/Library/Application Support/QGIS/QGIS3/profiles/default/layouts/`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_template_directory
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_template_directory
 .mp4"></video>
 
 :::
@@ -279,7 +279,7 @@ Por ahora, el único elemento del diseño de impresión controlado por el atlas 
 :::
 
 :::{dropdown} Video: Configurar un atlas
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_an_atlas
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_setting_up_an_atlas
 .mp4"></video>
 :::
 

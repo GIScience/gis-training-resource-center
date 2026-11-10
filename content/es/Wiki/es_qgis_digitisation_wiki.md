@@ -40,7 +40,7 @@ Si planea realizar un cálculo basado en la distancia con el nuevo conjunto de d
     * Haga clic en ![](../../../fig/mActionNewAttribute.png) para añadir la nueva columna a la `lista de campos`.
 8. Una vez que haya terminado de agregar los campos, haga clic en `Aceptar`.
 
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_create_layer.mp4"></video>
+<video width="90%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_create_layer.mp4"></video>
 
 ## Agregar geometrías a una capa
 
@@ -64,7 +64,7 @@ align: center
 5.	Una vez que haya terminado con las ![](../../../fig/mActionSaveEdits.png) de digitalización para guardar sus ediciones.
 6.	Haga clic de nuevo en ![](../../../fig/mActionToggleEditing.png) para finalizar el modo de edición.
 
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_point_feature.mp4"></video>
+<video width="90%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/Create_point_feature.mp4"></video>
 
 
 ### Creación de datos de línea
@@ -84,7 +84,7 @@ Si crea una nueva capa de línea recuerde cambiar el tipo de geometría en líne
 7.	Haga clic en el icono ![](../../../fig/mActionToggleEditing.png) de nuevo para finalizar el modo de edición.
 
 
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_line_feature.mp4"></video>
+<video width="90%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/Create_line_feature.mp4"></video>
 
 ### Creación de datos de polígono
 
@@ -95,7 +95,7 @@ Si crea una nueva capa de línea recuerde cambiar el tipo de geometría en líne
 5. Se abrirá una nueva ventana. Aquí puede agregar la información de la columna para esta entidad.
 4. Guarde las ediciones haciendo clic en el icono de ![](../../../fig/mActionSaveEdits.png) y saliendo del modo de edición haciendo clic en el icono de ![](../../../fig/mActionToggleEditing.png).
 
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_digitize_add_feature.mp4"></video>
+<video width="90%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_digitize_add_feature.mp4"></video>
 
 
 
@@ -106,7 +106,7 @@ Si crea una nueva capa de línea recuerde cambiar el tipo de geometría en líne
 3. En la barra de herramientas de digitalización, haga clic en ![](../../../fig/qgis_3.40_vertex_tool.png). Ahora, puede mover y editar vértices de geometrías.
 4. Una vez que haya terminado, no olvide salir del modo de edición haciendo clic en ![](../../../fig/mActionToggleEditing.png) y guarde sus ediciones.
 
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_digitize_move_vertices.mp4"></video>
+<video width="90%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_digitize_move_vertices.mp4"></video>
 
 ### Agregar anillo a la capa de polígonos existente
 
@@ -119,7 +119,7 @@ En QGIS, la adición de anillos a polígonos se realiza con la "barra de herrami
 2. Haga clic en ![](../../../fig/mActionAddRing.png) (por ejemplo, mapear el patio interior de un edificio, o - como se muestra en el video - crear un círculo para marcar una isla en el lago).
 
 
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_digitize_add_ring.mp4"></video>
+<video width="90%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_digitize_add_ring.mp4"></video>
 
 
 ## Recursos adicionales

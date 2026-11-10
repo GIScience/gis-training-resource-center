@@ -12,7 +12,7 @@ Dependiendo de la información que se vaya a introducir en el campo de atributo,
 
 :::{dropdown} Ejemplo: Agregue un campo para la densidad de población, tipo de dato: Float, Double o Real (números de punto flotante)
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_add_field_wiki.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_add_field_wiki.mp4"></video>
 :::
 
 ## Borrar campo
@@ -21,7 +21,7 @@ Dependiendo de la información que se vaya a introducir en el campo de atributo,
 
 :::{dropdown} Ejemplo: Borre todos los campos no utilizados/innecesarios de la capa.
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_delete_field_wiki.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_delete_field_wiki.mp4"></video>
 :::
 
 ## Calcular campo
@@ -35,7 +35,7 @@ Compruebe que el tipo de datos del campo y su cálculo coincidan. Por ejemplo, s
 
 :::{dropdown} Ejemplo: Calcula la densidad de población utilizando los campos ya existentes Población y Área.
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_calculate_field_wiki.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_calculate_field_wiki.mp4"></video>
 :::
 
 ## Estadísticas básicas para campos
@@ -44,7 +44,7 @@ Compruebe que el tipo de datos del campo y su cálculo coincidan. Por ejemplo, s
 
 :::{dropdown} Ejemplo: Estadísticas sobre la densidad de población en todos los países: ¿Cuál es el valor máximo, el promedio, etc.?
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_field_stats_wiki.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_field_stats_wiki.mp4"></video>
 :::
 
 ## Estadísticas por categorías
@@ -55,5 +55,5 @@ Compruebe que el tipo de datos del campo y su cálculo coincidan. Por ejemplo, s
 
 :::{dropdown} Ejemplo: ¿Cuántas ciudades con más de 300 000 habitantes hay por país? Para cada país: ¿Cuántas personas viven en la mayor aglomeración urbana?
 :open:
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_stats_by_category_wiki.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_stats_by_category_wiki.mp4"></video>
 :::

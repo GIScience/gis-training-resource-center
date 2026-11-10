@@ -397,7 +397,7 @@ Vue d’ensemble du Modèle Graphique de la tâche 3 montrant tous les algorithm
 :::
 ::::
 ::::{tab-item} Run Model Configuration
-:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.png
+:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_run_configurations.PNG
 ---
 width: 600px
 align: center
@@ -406,7 +406,7 @@ Configuration des paramètres pour exécuter le modèle de la tâche 3 avec tout
 :::
 ::::
 ::::{tab-item} Model Output
-:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.png
+:::{figure} ../../../fig/fr_MDG_AA_intermediate_result_model_algorythms_task3_exposed_HF_EF_model_results_AT.PNG
 ---
 width: 600px
 align: center

@@ -22,7 +22,7 @@ Ejemplo de una tabla de atributos en QGIS.
 * __Abrir tabla de atributos:__ haga clic con el botón derecho en su capa y seleccione `Abrir tabla de atributos`.
 * __Ordenar columna:__ haga clic en el encabezado de una columna.
 
-<video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_attribute_table.mp4"></video>
+<video width="90%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_show_attribute_table.mp4"></video>
 
 
 ### Seleccionar las entidades en la tabla de atributos manualmente.
@@ -33,19 +33,19 @@ Ejemplo de una tabla de atributos en QGIS.
 * __Mostrar solo las entidades no seleccionadas__: seleccione las entidades y haga clic en ![](../../../fig/mActionInvertSelection.png) en la barra de herramientas arriba de la tabla de atributos.
 
 
-<video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_attribute_table_select.mp4"></video>
+<video width="90%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_attribute_table_select.mp4"></video>
 
 ### Deseleccionar entidad
 
 * __Deseleccionar:__ haga clic en ![](../../../fig/mActionDeselectActiveLayer.png) o usa <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd>.
 
-<video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_attribute_table_unselect.mp4"></video>
+<video width="90%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_attribute_table_unselect.mp4"></video>
 
 ### Acercar el zoom a una entidad específica
 
 * __Zoom:__ haga <kbd>clic</kbd> con el botón derecho en su entidad y seleccione `Zoom a objeto`.
 
-<video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom_to_feature.mp4"></video>
+<video width="90%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_zoom_to_feature.mp4"></video>
 
 ## Vista de tabla vs vista de formulario
 
@@ -69,7 +69,7 @@ ___
     - Realice sus ediciones.
 * __Guardar ediciones:__ haga clic en ![](../../../fig/mActionSaveEdits.png) __o__ desactive el modo de edición haciendo clic en ![](../../../fig/mActionToggleEditing.png) y acepte los cambios guardando su capa.
 
-<video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Attributtabel_edit.mp4"></video>
+<video width="90%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/Attribute_table_edit.mp4"></video>
 
 ### Agregar una nueva columna
 
@@ -93,7 +93,7 @@ ___
 | Objeto binario (BLOB)      | Para almacenar datos binarios como imágenes, audio o archivos.                   |
 | Booleano                   | Valores simples de verdadero/falso o sí/no.                                      |
 
-<video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_add_column.mp4"></video>
+<video width="90%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_add_column.mp4"></video>
 
 ### Borrar columnas
 
@@ -107,7 +107,7 @@ ___
 Para seleccionar varias columnas, presione <kbd>Ctrl</kbd> y seleccione las columnas.
 :::
 
-<video width="90%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_delet_column.mp4"></video>
+<video width="90%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_delete_column.mp4"></video>
 
 ## Botones y atajos de la tabla de atributos
 

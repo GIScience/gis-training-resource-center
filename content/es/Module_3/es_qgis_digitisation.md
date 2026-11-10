@@ -127,7 +127,7 @@ Piense en un conjunto de datos espaciales que podría necesitar en sus operacion
 
 :::{dropdown} Video: Cómo crear un conjunto de datos nuevo
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_create_layer.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_create_layer.mp4"></video>
 
 :::
 
@@ -176,7 +176,7 @@ barra de herramientas de digitalización.
 6.	Haga clic de nuevo en ![](../../../fig/mActionToggleEditing.png) para cerrar el modo de edición.
 
 :::{dropdown} Video: Cómo crear datos de punto
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_point_feature.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/Create_point_feature.mp4"></video>
 :::
 
 :::{figure} ../../../fig/point_creation.png
@@ -260,7 +260,7 @@ La creación de datos de líneas funciona de la misma manera que la creación de
 6.	Una vez que haya terminado la digitalización, haga clic en ![](../../../fig/mActionSaveEdits.png) `Guardar modificaciones de la capa` para guardar los cambios.
 7.	Vuelva a hacer clic en ![](../../../fig/mActionToggleEditing.png) `Conmutar edición` para salir del modo de edición.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Creat_line_feature.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/Create_line_feature.mp4"></video>
 
 :::
 
@@ -276,7 +276,7 @@ La creación de capas de polígonos funciona del mismo modo que para los datos d
 6.	Una vez que haya terminado la digitalización, ![](../../../fig/mActionSaveEdits.png) para guardar los cambios.
 7.	Vuelva a hacer clic en ![](../../../fig/mActionToggleEditing.png) `Toggle Editing` para salir del modo de edición.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_add_feature.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_digitize_add_feature.mp4"></video>
 
 :::
 
@@ -325,7 +325,7 @@ Tenga en cuenta que esto solo es posible __antes__ de guardar los cambios.
 :::{note}
 Tenga en cuenta que una vez que guarde los cambios ![](../../../fig/mActionSaveEdits.png), ya no podrá deshacer o recuperar las entidades eliminadas. Los cambios modifican permanentemente el archivo de datos de su carpeta.
 :::
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/delet_feature_geometry.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/delete_feature_geometry.mp4"></video>
 
 ::::
 
@@ -339,7 +339,7 @@ Existen múltiples métodos para mover entidades. Aquí mostraremos el método q
 4.	Una vez que haya terminado de editar, haga clic en ![](../../../fig/mActionSaveEdits.png) para guardar los cambios.
 5.	Vuelva a hacer clic en ![](../../../fig/mActionToggleEditing.png) para cerrar el modo de edición.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/move_feature_geometry.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/move_feature_geometry.mp4"></video>
 
 ::::
 
@@ -352,7 +352,7 @@ Existen múltiples métodos para mover entidades. Aquí mostraremos el método q
 5.	Una vez que haya terminado de editar, haga clic en ![](../../../fig/mActionSaveEdits.png) para guardar los cambios.
 6.	Vuelva a hacer clic en ![](../../../fig/mActionToggleEditing.png) para cerrar el modo de edición.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_move_vertices.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_digitize_move_vertices.mp4"></video>
 
 ::::
 
@@ -368,7 +368,7 @@ Un anillo en QGIS es una parte dentro de un polígono que no forma parte del pol
 6.	Vuelva a hacer clic en ![](../../../fig/mActionToggleEditing.png) para cerrar el modo de edición.
 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_digitize_add_ring.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_digitize_add_ring.mp4"></video>
 
 ::::
 

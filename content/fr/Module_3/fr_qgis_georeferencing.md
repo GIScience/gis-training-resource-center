@@ -43,7 +43,7 @@ Dans la plupart des cas, vous utiliserez soit des transformations linéaires, so
 
 ### Comment géoréférencer dans QGIS <a id="how-to-georeference-in-qgis"></a>
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_3.36_georeferencing_howto.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.36_georeferencing_howto.mp4"></video>
 
 Afin de géoréférencer une carte PDF, vous devez suivre les étapes suivantes :
 

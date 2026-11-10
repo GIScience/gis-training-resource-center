@@ -301,8 +301,8 @@ En lugar de buscar coincidencias exactas, la fusión difusa utiliza algoritmos p
     layer:= 'pak_admbnda_adm2_wfp_20220909',
     aggregate:='array_agg',
     expression:=ADM2_EN,
-    filter:=levenshtein(ADM2_EN, attribute(@parent, 'Province & Disctrict')) <= 2,
-    order_by:=levenshtein(ADM2_EN, attribute(@parent, 'Province & Disctrict'))
+    filter:=levenshtein(ADM2_EN, attribute(@parent, 'Province & District')) <= 2,
+    order_by:=levenshtein(ADM2_EN, attribute(@parent, 'Province & District'))
     ))
     ```
 

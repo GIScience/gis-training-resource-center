@@ -101,7 +101,7 @@ Para moverse por el lienzo del mapa con el cursor del mouse, debe activar el bot
 
 También puede desplazarse por el lienzo del mapa con las teclas de flecha del teclado.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_move.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_move.mp4"></video>
 
 ### Acercar la vista del mapa
 
@@ -113,7 +113,7 @@ O con los atajos de teclado rápido <kbd>Ctrl</kbd> + <kbd>+</kbd> y <kbd>Ctrl</
 
 Otra forma es utilizar los botones de zoom del caja de herramientas.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_zoom.mp4"></video>
 ___
 
 ## Caja de herramientas de procesos
@@ -130,7 +130,7 @@ Para abrir la Caja de herramientas en QGIS, haga clic en el botón de la rueda d
 
 Puede utilizar la barra de búsqueda para encontrar herramientas específicas.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_toolbars.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_open_toolbars.mp4"></video>
 
 ## Barras de herramientas
 
@@ -145,13 +145,13 @@ Para agregar o eliminar barras de herramientas de su interfaz, haga clic en `Ver
 
 Para añadir o eliminar paneles de su interfaz, haga clic en `Ver` → `Paneles` → Marque o desmarque los paneles que desea agregar o eliminar
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Anzeigen_einblenden_ausblenden.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/Show_hide_panels.mp4"></video>
 
 ### Mover y organizar las barras de herramientas
 
 En cada barra de herramientas hay un campo con dos líneas punteadas. Si mueve el puntero del mouse sobre él hasta que aparezca una cruz de flechas y luego mantiene pulsado el botón izquierdo del mouse, puede mover la barra de herramientas. Esto permite una organización individualizada de sus propias herramientas. Al comprimir todas las barras de herramientas en unas pocas líneas, también se puede ampliar la ventana de visualización del mapa.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_arrange_toolbars.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_arrange_toolbars.mp4"></video>
 
 ## Guardar y abrir proyectos QGIS
 
@@ -162,7 +162,7 @@ En QGIS, los datos geográficos con los que trabaja __no__ se guardan en el arch
 
 Para abrir un proyecto QGIS existente, haga clic en `Proyecto` → `Abrir...` → Busque su proyecto y ábralo.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_project.mp4">
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_open_project.mp4">
 </video>
 
 ### Guardar proyectos
@@ -173,4 +173,4 @@ Para abrir un proyecto QGIS existente, haga clic en `Proyecto` → `Abrir...` �
     * Haga clic en `Proyecto` → `Guardar`.
 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_save_project.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_save_project.mp4"></video>

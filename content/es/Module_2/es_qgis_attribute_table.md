@@ -108,7 +108,7 @@ Abrir la tabla de atributos en QGIS 3.36.
 
 Puede ordenar los datos de la tabla de atributos haciendo clic en el encabezado de una columna. Los datos de texto se ordenarán alfabéticamente y los datos numéricos se ordenarán por valor. Para invertir el orden de clasificación, vuelva a hacer clic en el encabezado. Una pequeña flecha en el encabezado de la columna indica si está ordenada de forma ascendente o descendente.
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_show_attribute_table.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_show_attribute_table.mp4"></video>
 
 :::::{grid} 2
 ::::{grid-item-card}
@@ -145,7 +145,7 @@ Puede acercar el zoom a una entidad específica si necesita ubicarla geográfica
 
 :::{dropdown} Video: Acercar el zoom a una entidad
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_zoom_to_feature.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_zoom_to_feature.mp4"></video>
 
 :::
 
@@ -162,7 +162,7 @@ Para interactuar con las entidades de una capa, debe seleccionarlas. Una forma d
 
 :::{dropdown} Video: Seleccionar manualmente entidades en la tabla de atributos
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_attribute_table_select.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_attribute_table_select.mp4"></video>
 
 :::
 
@@ -217,7 +217,7 @@ Si no tiene la certeza de cuál es el formato más adecuado, consulte la página
 :::
 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_select_export_wiki.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_select_export_wiki.mp4"></video>
 
 
 ## Preguntas de autoevaluación

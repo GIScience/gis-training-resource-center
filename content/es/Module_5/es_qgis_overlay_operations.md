@@ -63,7 +63,7 @@ como una nueva capa: __Road_infrastructure_Sudan.geojson__.
 7. Ahora tiene una capa de carreteras ordenadas que contiene la información necesaria.
 
 :::{dropdown} Solución: Recortar una capa de carreteras a límites administrativos
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_clip_roads.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_exercise_clip_roads.mp4"></video>
 :::
 
 
@@ -173,7 +173,7 @@ También se descargan y se adaptan de los [datos de Natural Earth](https://www.n
 6. Ahora tiene una visión general aproximada de la cobertura con centros de salud para el distrito de Jartum.
 
 :::{dropdown} Solución: Crear una zona de influencia de 10 km alrededor de los centros de salud
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_exercise_buffer_health.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_exercise_buffer_health.mp4"></video>
 :::
 
 ### Operaciones de recorte más avanzadas

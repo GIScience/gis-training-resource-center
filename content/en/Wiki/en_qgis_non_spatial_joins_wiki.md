@@ -8,7 +8,7 @@ __{octicon}`arrow-left` [Back to Homepage](../intro.md)__
 - Join using a field that is present in both data sets
 
 :::{dropdown} Example: Add population figures from a table to the states layer
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_qgis_non_spatial_join_wiki.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_qgis_non_spatial_join_wiki.mp4"></video>
 :::
 
 ---

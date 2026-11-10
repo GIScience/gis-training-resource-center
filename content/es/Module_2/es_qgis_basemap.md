@@ -46,7 +46,7 @@ Hay dos formas de añadir OpenStreetMap como mapa base:
    clic en la flecha que aparece junto a él y seleccione OpenStreetMap.
 2. En el menú `Capa` → `Añadir Capa` → `Añadir capa XYZ...` → seleccione OpenStreetMap.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/Add_basemap_OSM.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/Add_basemap_OSM.mp4"></video>
 
 ## QuickMapServices
 
@@ -61,7 +61,7 @@ QGIS, como las imágenes satelitales de Bing o Sentinel-2.
 Para [instalar un plugin](../Wiki/es_qgis_plugins_wiki.md), en la barra superior, navegue a `Complementos` -> `Administrat e instalar complementos` → `Todos` → Busque el plugin → `Instalar complemento`.
 
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_plugins.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_plugins.mp4"></video>
 
 :::{Tip}
 
@@ -97,7 +97,7 @@ Encontrará una lista de mapas base y consultas de búsqueda útiles para el plu
 
 :::{dropdown} Video: Funcionalidad del plugin QuickMapServices__
 
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/add_basemap_quickmapservice.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/add_basemap_quickmapservice.mp4"></video>
 
 :::
 

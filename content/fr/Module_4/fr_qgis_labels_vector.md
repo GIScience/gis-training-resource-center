@@ -57,7 +57,7 @@ name: en_30.30.2_setting_up_labels
 Configurer les étiquettes dans QGIS 30.30.2
 :::
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_setting_up_labels.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_setting_up_labels.mp4"></video>
 
 ::::{attention}
 
@@ -100,7 +100,7 @@ Les règles, ou filtres, sont basées sur une expression. Vous pouvez utiliser l
 7. Définissez la taille de la police et de la police.
 8. Cliquez sur `Apply`.
 
-<video width="100%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/en_30.30.2_adding_rule-based_labels.mp4"></video>
+<video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/en_3.30.2_adding_rule-based_labels.mp4"></video>
 
 :::{note}
 Pour ajouter des règles à vos étiquettes, vous devez être familier avec vos données ! Regardez les métadonnées (dans les propriétés ou à la source) et regardez la table d'attributs. Pensez à ce que les différentes colonnes signifient et identifiez les attributs. Cela peut ne pas toujours être facile, car ils peuvent avoir des noms abrégés, mais comme vous travaillez plus avec des données, cela deviendra plus facile.

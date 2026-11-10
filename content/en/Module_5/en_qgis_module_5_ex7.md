@@ -158,7 +158,7 @@ For general plugin management in QGIS, see the [QGIS plugin installation guide](
 If you cannot find `ESRI` or `Google` in the list, you first have to configure the plugin: `Web` → `QuickMapServices` → `Settings` → use the horizontal arrows to navigate to `More services` → `Get contributed pack` ([Wiki](../Wiki/en_qgis_basemaps_wiki.md#configuration-of-quickmapservices)).
 
 :::{dropdown} Watch here:
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/add_basemap_quickmapservice.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/add_basemap_quickmapservice.mp4"></video>
 :::
 
 ::::
@@ -183,7 +183,7 @@ The names of the menu entries can differ slightly depending on the version of th
 The search is based on [OpenStreetMap](https://www.openstreetmap.org). Place names are often written in different ways (e.g. "Moenjodaro" and "Mohenjo-daro"). If you do not find a place, try another spelling.
 
 :::{dropdown} Watch here:
-<video width="100%" controls muted src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/OSM_Place_Search.mp4"></video>
+<video width="100%" controls muted src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/OSM_Place_Search.mp4"></video>
 :::
 
 ::::

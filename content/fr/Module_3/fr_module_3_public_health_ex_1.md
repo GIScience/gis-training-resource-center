@@ -105,7 +105,7 @@ Pour en savoir plus sur les projections et les systèmes de coordonnées de réf
 
 :::{attention}
 
-Le SCR du projet détermine le système de coordonnées de référence utilisé pour afficher les données géographiques dans le canevas cartographique QGIS. En revanche, il ne modifie pas le SCR des couches. Chaque couche, ou jeu de données, est encodé avec un SCR. QGIS reprojette ces couches "à la volée" pour afficher sur le canevas des couches ayant des SCR différents. Cela ne modifie ni les unités de mesure ni les déformations des couches elles-mêmes. Pour effectuer des calculs de distance, vous devrez [reprojeter la couche](../wiki/fr_qgis_projections_wiki.md) dans un système de coordonnées de référence métrique. 
+Le SCR du projet détermine le système de coordonnées de référence utilisé pour afficher les données géographiques dans le canevas cartographique QGIS. En revanche, il ne modifie pas le SCR des couches. Chaque couche, ou jeu de données, est encodé avec un SCR. QGIS reprojette ces couches "à la volée" pour afficher sur le canevas des couches ayant des SCR différents. Cela ne modifie ni les unités de mesure ni les déformations des couches elles-mêmes. Pour effectuer des calculs de distance, vous devrez [reprojeter la couche](../Wiki/fr_qgis_projections_wiki.md) dans un système de coordonnées de référence métrique. 
 
 Définir le SCR du projet sur celui que vous souhaitez utiliser peut vous aider à choisir plus rapidement le bon SCR lors de l’exécution d’algorithmes. 
 :::
@@ -159,7 +159,7 @@ Un shapefile est composé de plusieurs fichiers interdépendants. L’informatio
 ::::
 
 :::{dropdown} Vidéo : importer des shapefiles dans un projet QGIS par glisser-déposer
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_import_vector_d_d.mp4"></video>
+<video width="90%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_import_vector_d_d.mp4"></video>
 :::
 
 % THIS STEP NEEDS REVISING: THEY ARE DOWNLOADING THE DATASET THEMSELVES AS GEOPACKAGE
@@ -176,7 +176,7 @@ Un shapefile est composé de plusieurs fichiers interdépendants. L’informatio
     - Click `Add`. The healthsites should now appear as points on your map canvas. 
 
 :::{dropdown} Video: Importing CSV files via the Data Source Manager
-<video width="90%" controls src="https://github.com/GIScience/gis-training-resource-center/raw/main/fig/qgis_open_textfile.mp4"></video>
+<video width="90%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/qgis_open_textfile.mp4"></video>
 :::
 -->
 
