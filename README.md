@@ -248,7 +248,7 @@ A few conventions:
 - Write new content in **English** in `content/en/`. Translations follow through Crowdin.
 - English files use the `en_` prefix, for example `en_qgis_buffer.md`.
 - Put images in `fig/` and link to them with a relative path.
-- **Don't commit videos (`.mp4`) to the repository.** Videos are hosted on our Nexus server at `https://nexus.heigit.org/repository/gis-training-resource-center/videos/`. Send new videos to the HeiGIT team (or upload them yourself if you have Nexus access) and embed them with the full Nexus address:
+- **Videos (`.mp4`) are hosted on our Nexus server**, not in the repository, at `https://nexus.heigit.org/repository/gis-training-resource-center/videos/`. If you don't have Nexus access, you can add a new video to `fig/` in your pull request; the HeiGIT team moves it to Nexus before merging. Embed videos with the full Nexus address:
 
   ```html
   <video width="100%" controls src="https://nexus.heigit.org/repository/gis-training-resource-center/videos/my_video.mp4"></video>
