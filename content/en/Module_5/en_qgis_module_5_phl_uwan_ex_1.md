@@ -118,7 +118,7 @@ The data folder should follow the [standard folder structure](../Wiki/en_qgis_pr
 | File name in exercise                                                           | How to prepare it                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `IBTrACS.last3years.list.v04r01.lines/IBTrACS.last3years.list.v04r01.lines.shp` | Download the **last3years lines** shapefile (`IBTrACS.last3years.list.v04r01.lines.zip`) from the [IBTrACS v04r01 shapefile folder](https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/shapefile/) and unzip it into its own folder. It contains all storms worldwide of the last three years, which keeps the file small but still requires participants to find the right storm. |
-| `admin_boundaries/phl_admin_boundaries.shp/phl_admin2.shp`                      | Download the shapefile version of the administrative boundaries from [HDX (COD-AB Philippines)](https://data.humdata.org/dataset/cod-ab-phl) and unzip it. We use admin level 2 (provinces, `phl_admin2.shp`). Check that the fields `adm2_name` and `adm2_pcode` exist.                                                                                                                                                                      |
+| `admin_boundaries/phl_admin2_simplified.gpkg`                                   | Download the administrative boundaries from [HDX (COD-AB Philippines)](https://data.humdata.org/dataset/cod-ab-phl). We use admin level 2 (provinces). Simplify the geometries (`Simplify` in the Processing Toolbox) to keep the file small and save the result as a GeoPackage named `phl_admin2_simplified.gpkg`. Check that the fields `adm2_name` and `adm2_pcode` exist.                                                                |
 | `worldpop/phl_pop_2015_CN_100m_R2025A_v1.tif`                                   | Download the constrained population count raster at 100 m resolution from [HDX (WorldPop Philippines)](https://data.humdata.org/dataset/worldpop-population-counts-2015-2030-phl).                                                                                                                                                                                                                                                            |
 | `phl_healthsites_osm.gpkg`                                                      | Export health facilities for the Philippines with the [HOT Export Tool](https://export.hotosm.org/) (or download them from [healthsites.io](https://healthsites.io/)). Keep the fields `name`, `amenity` and `healthcare`. Convert polygons to points (centroids) so that all facilities are points.                                                                                                                                          |
 | *optional:* `worldpop/phl_agesex_structures_2015_CN_1km_R2025A_UA_v1.zip`       | For the optional vulnerability extension: [WorldPop age and sex structures](https://data.humdata.org/dataset/worldpop-age-and-gender-structures-2015-2030-phl). Use the 1 km version to save space.                                                                                                                                                                                                                                           |
@@ -398,14 +398,14 @@ Great, you now have the area that is potentially exposed to Typhoon Uwan! But th
 We add the results one after another to the province layer. Each processing step creates a new layer that contains all previous columns plus the new one, so at the end you have **one layer with all results**.
 
 1. **Load the data:**
-    - `phl_admin2.shp` from `/data/input/admin_boundaries/phl_admin_boundaries.shp`
+    - `phl_admin2_simplified.gpkg` from `/data/input/admin_boundaries`
     - `phl_pop_2015_CN_100m_R2025A_v1.tif` from `/data/input/worldpop`
 
 2. **Calculate the total population per province.** We need it later to calculate what share of each province’s population is exposed.
     - In the **Processing Toolbox**, search for `Zonal Statistics`.
-    - Input layer: `phl_admin2`
+    - Input layer: `phl_admin2_simplified`
     - Raster layer: `phl_pop_2015_CN_100m_R2025A_v1`
-    - Field prefix: `pop_total_`
+    - Output column prefix: `pop_total_`
     - Statistics to calculate: `Sum` only
     - Save the output in the `/data/temp` folder as **`admin2_pop_sum`**
 
@@ -446,7 +446,7 @@ The clipped raster layer should look similar to this. Only the population inside
     - Run `Zonal Statistics` again.
     - Input layer: `admin2_pop_sum`
     - Raster layer: `Uwan_Pop_200km`
-    - Field prefix: `pop200_`
+    - Output column prefix: `pop200_`
     - Statistics: `Sum`
     - Save the output in the `/data/temp` folder as **`admin2_pop_exposed`**
 
