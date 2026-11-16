@@ -266,7 +266,7 @@ In this exercise we use the observed IBTrACS track of Uwan and treat it as if it
    - Save the filtered track as its own file. Like this, we do not change the `IBTrACS.last3years.list.v04r01.lines` layer, and we can always come back to it and filter it again.
      - Right-click on `IBTrACS.last3years.list.v04r01.lines` → `Export` → `Save Features As…`
      - Format: `GeoPackage`
-     - File name: click on the `…` button, navigate to `/data/interim` and name the file **`Storm_Track_Fung_Wong`**.
+     - File name: click on the `…` button, navigate to `/data/temp` and name the file **`Storm_Track_Fung_Wong`**.
      - Layer name: change it to `Storm_Track_Fung_Wong`.
      - Make sure `Add saved file to map` is ticked and click `OK`.
 
@@ -296,7 +296,7 @@ Buffer distances must be calculated in a CRS that measures in metres. The IBTrAC
    - In the **Processing Toolbox**, search for `Reproject Layer`.
    - Input: `Storm_Track_Fung_Wong`
    - Target CRS: `EPSG:32651` (WGS 84 / UTM zone 51N, which covers Luzon)
-   - Save the result in the `/data/interim` folder as **`Storm_Track_Fung_Wong_32651`**
+   - Save the result in the `/data/temp` folder as **`Storm_Track_Fung_Wong_32651`**
 
 
 2. **Buffer the storm track.** A [buffer](../Wiki/en_qgis_geoprocessing_wiki.md#buffer) is a zone of a fixed distance around a feature. Here we draw a zone of 200 km around the track and treat everything inside it as exposed to the storm.
@@ -305,7 +305,7 @@ Buffer distances must be calculated in a CRS that measures in metres. The IBTrAC
    - Distance: `200` and set the unit next to it to `kilometers`
    - Segments: leave default (5)
    - Dissolve result: `Yes`
-   - Save the output in the `/data/interim` folder as **`Uwan_Buffer_200km`**
+   - Save the output in the `/data/temp` folder as **`Uwan_Buffer_200km`**
 
 :::{figure} ../../../fig/qgis_3.44_module_5_phl_uwan_ex_1_task_1_buffer_dialogue.png
 ---
@@ -374,7 +374,7 @@ Why not the `USA_R34_*`, `USA_R50_*` and `USA_R64_*` fields? For 2025 Western Pa
    - Distance: click the **Data defined override** button next to the distance field, choose `Field type: int, double` and select `r30_m`.
    - Segments: leave default (5)
    - Dissolve result: `Yes`
-   - Save the output in the `/data/interim` folder as **`Uwan_Zone_30kt`**
+   - Save the output in the `/data/temp` folder as **`Uwan_Zone_30kt`**
 
 3. **Repeat the buffer for the 50-knot zone** using the field `r50_m`. Save the output as **`Uwan_Zone_50kt`**.
 
@@ -407,7 +407,7 @@ We add the results one after another to the province layer. Each processing step
     - Raster layer: `phl_pop_2015_CN_100m_R2025A_v1`
     - Field prefix: `pop_total_`
     - Statistics to calculate: `Sum` only
-    - Save the output in the `/data/interim` folder as **`admin2_pop_sum`**
+    - Save the output in the `/data/temp` folder as **`admin2_pop_sum`**
 
 __Intermediate result: Total Population per province__
 :::{figure} ../../../fig/qgis_3.44_module_5_phl_uwan_ex_1_task_2_admin_pop_sum.png
@@ -423,7 +423,7 @@ The total population per province stylised using graduated classification in the
     - In the **Processing Toolbox**, search for `Clip Raster by Mask Layer`.
     - Input layer: `phl_pop_2015_CN_100m_R2025A_v1`
     - Mask layer: `Uwan_Buffer_200km`
-    - Save the output in the `/data/interim` folder as **`Uwan_Pop_200km`**
+    - Save the output in the `/data/temp` folder as **`Uwan_Pop_200km`**
 
 
 :::{tip}
@@ -448,7 +448,7 @@ The clipped raster layer should look similar to this. Only the population inside
     - Raster layer: `Uwan_Pop_200km`
     - Field prefix: `pop200_`
     - Statistics: `Sum`
-    - Save the output in the `/data/interim` folder as **`admin2_pop_exposed`**
+    - Save the output in the `/data/temp` folder as **`admin2_pop_exposed`**
 
 __Intermediate Results: Estimated exposed population per province__
 :::{figure} ../../../fig/qgis_3.44_module_5_phl_uwan_ex_1_task_3_exposed_pop_adm2.png
@@ -483,7 +483,7 @@ The absolute number (`pop200_sum`) shows where most people are affected, which m
     - Extract features from: `phl_healthsites_osm`
     - Where the features: `intersect`
     - By comparing to the features from: `Uwan_Buffer_200km`
-    - Save the output in the `/data/interim` folder as **`Uwan_Healthsites_200km`**
+    - Save the output in the `/data/temp` folder as **`Uwan_Healthsites_200km`**
     - In the **Processing Toolbox**, search for `Count points in polygon`.
     - Polygons: `admin2_pop_exposed`, Points: `Uwan_Healthsites_200km`, Count field name: `hs200`. Save the result in the `/data/output` folder as **`Uwan_Exposure_Provinces`**.
 
@@ -515,7 +515,7 @@ Duplicate the layer (right-click → `Duplicate Layer`) to make a second map of 
 
 2. **Flag provinces already hit by Typhoon Tino.** This is the step that brings the stretched capacity into the analysis.
     - Right-click on `IBTrACS.last3years.list.v04r01.lines` → `Filter...` and change the filter to `"NAME" = 'KALMAEGI'`. The Uwan track is already saved as its own file, so it is not affected.
-    - Export the filtered layer as in Task 1, step 4, and save it in `/data/interim` as **`Storm_Track_Kalmaegi`**.
+    - Export the filtered layer as in Task 1, step 4, and save it in `/data/temp` as **`Storm_Track_Kalmaegi`**.
     - Repeat Task 2 (steps 1 and 2) with `Storm_Track_Kalmaegi` as input. Save the reprojected track as **`Storm_Track_Kalmaegi_32651`** and the buffer as **`Tino_Buffer_200km`**.
     - Use `Select by Location` to select all features of `Uwan_Exposure_Provinces` that **intersect** `Tino_Buffer_200km`.
     - Open the **Field Calculator** on `Uwan_Exposure_Provinces`, make sure `Only update selected features` is **unchecked**, and create a new integer field `tino_hit`:
