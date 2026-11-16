@@ -8,6 +8,7 @@
 
 ::::
 
+%% This exercise should be made part of AA more explicitly
 
 # Estimating Typhoon Uwan’s Exposure – A Manual Analysis Under Pressure <a id="estimating-typhoon-uwan-exposure"></a>
 
@@ -24,13 +25,6 @@ __Type of trainings exercise:__
 
 :::
 
-:::{grid-item-card}
-__Exercise Track:__
-
-This exercise is part of the [Philippines Typhoon Response Exercise Track](../Exercise_tracks/en_phl_typhoon_uwan.md)
-
-:::
-
 ::::
 
 ::::{grid} 2
@@ -38,10 +32,7 @@ This exercise is part of the [Philippines Typhoon Response Exercise Track](../Ex
 __Estimated time demand for the exercise__
 ^^^
 
-- Tasks 1–6 (hazard zone): approx. 30 minutes
-- Tasks 7–13 (population and health sites): approx. 60 minutes
-- Tasks 14–16 (visualisation, prior impact, export): approx. 45 minutes
-- Discussion: 20–30 minutes
+3 hours
 
 :::
 
@@ -101,20 +92,20 @@ __Follow-along:__
 - Show and explain each step yourself at least twice and slow enough so everybody can see what you are doing, and follow along in their own QGIS-project.
 - Make sure that everybody is following along and doing the steps themselves by periodically asking if anybody needs help or if everybody is still following.
 - Be open and patient to every question or problem that might come up. Your participants are essentially multitasking by paying attention to your instructions and orienting themselves in their own QGIS-project.
-- Many participants will create a buffer for the first time in Task 6. Take a moment to explain what a buffer is before moving on. When you get to the note after Task 6, point out that the 200 km buffer is a simplification and show where to find the literature on wind radii.
-- Tasks 8 to 12 repeat the same logic for different datasets. Once participants have understood the population steps, faster participants can continue on their own while you support the others.
+- Many participants will create a buffer for the first time in Task 2. Take a moment to explain what a buffer is before moving on. When you get to the note at the end of Task 2, point out that the 200 km buffer is a simplification and show where to find the literature on wind radii.
+- Tasks 3 and 4 repeat the same logic for different datasets. Once participants have understood the population steps, faster participants can continue on their own while you support the others.
 
 __Wrap up:__
 
 - Use the discussion questions in the [Results](#results) section.
-- Point out that every step done manually here can later be automated with the Model Designer (see the Madagascar exercise track).
+- Point out that every step done manually here can later be automated with the Model Designer (see the [Madagascar exercise track](../Exercise_tracks/en_mdg_aa_cyclones.md)).
 - Leave some time for open questions.
 
 :::
 
 :::{dropdown} __Trainers Corner: Preparing the data folder__
 
-The data folder should follow the [standard folder structure](../Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure). The following files are expected in `data/input` (paths relative to this folder). The file names below are the names used in the instructions; rename the downloaded files accordingly.
+The data folder should follow the [standard folder structure](../Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure). The following files are expected in `/data/input` (paths relative to this folder). The file names below are the names used in the instructions; rename the downloaded files accordingly.
 
 | File name in exercise                                                           | How to prepare it                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -139,9 +130,6 @@ __Download all datasets here, save the folder on your computer and unzip the fil
 
 The folder contains the whole [standard folder structure](../Wiki/en_qgis_projects_folder_structure_wiki.md#standard-folder-structure) with all data in the input folder and the additional documentation in the documentation folder.
 
-:::{note}
-All intermediate results of this exercise are saved in the `data` → `interim` folder. In some versions of the folder structure, this folder is called `temp`. If you have a `temp` folder instead, use that one.
-:::
 
 | Dataset                   | Source                                                                                                                                    | Description                                                                                                                                                                                                               |
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -239,16 +227,16 @@ In this exercise we use the observed IBTrACS track of Uwan and treat it as if it
 
 # Tasks: <a id="tasks"></a>
 
-## Part A – Preparing the hazard: from storm track to hazard zone
+## Task 1: Filtering the storm track layer
 
 1. **Open QGIS** and [create a new project](../Wiki/en_qgis_projects_folder_structure_wiki.md#step-by-step-setting-up-a-new-qgis-project-from-scratch) by clicking on `Project` → `New`.
 
-2. **Save the project** in the `project` folder. Click on `Project` → `Save as`, navigate to the folder and name the project `Typhoon_Uwan_Exposure`.
+2. **Save the project** in the `/project` folder. Click on `Project` → `Save as`, navigate to the folder and name the project `Typhoon_Uwan_Exposure`.
 
 3. **Add the OpenStreetMap basemap** for orientation. Click on `Layer` → `Add Layer` → `Add XYZ Layer...`, select `OpenStreetMap` and click `Add`. Alternatively, open `XYZ Tiles` in the `Browser` panel and double-click on `OpenStreetMap` ([Wiki basemap](../Wiki/en_qgis_basemaps_wiki.md#standard-qgis-basemaps)). Keep the basemap at the bottom of the Layers panel.
 
 4. **Load the storm tracks and find Uwan:**
-   - Load `IBTrACS.last3years.list.v04r01.lines.shp` from `data` → `input` → `IBTrACS.last3years.list.v04r01.lines` by drag and drop ([Wiki Video](../Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)).
+   - Load `IBTrACS.last3years.list.v04r01.lines.shp` from `/data/input/IBTrACS.last3years.list.v04r01.lines` by drag and drop ([Wiki Video](../Wiki/en_qgis_import_geodata_wiki.md#open-vector-data-via-drag-and-drop)).
    - Open the attribute table and look at the fields. Find `NAME`, `ISO_TIME` (time in UTC) and `USA_WIND` (maximum wind speed in knots).
    - The layer contains every storm worldwide of the last three years. Untick the box next to `IBTrACS.last3years.list.v04r01.lines` in the Layers panel to make it invisible while we filter it.
    - Right-click on `IBTrACS.last3years.list.v04r01.lines` → `Filter...`. The [Query Builder](en_qgis_non_spatial_tools.md#query-builder) opens.
@@ -257,21 +245,22 @@ In this exercise we use the observed IBTrACS track of Uwan and treat it as if it
    - Under `Values`, click on `All`. This loads all storm names in the dataset.
    - Type `FUNG` in the search field under `Values` and double-click on `FUNG-WONG`. The expression now reads `"NAME" = 'FUNG-WONG'`.
    - Click `OK`.
+
+   :::{figure} ../../../fig/qgis_3.44_module_5_phl_uwan_ex_1_task_1_filter.png
+   ---
+   width: 460px
+   name: qgis_3.44_module_5_phl_uwan_ex_1_task_1_filter
+   ---
+   The query builder in QGIS 3.44 to filter the storm tracks.
+   :::
+
    - Tick the box next to `IBTrACS.last3years.list.v04r01.lines` again. Only the track of Uwan is now visible. The filter icon next to the layer name shows that the layer is filtered. Processing tools only use the features that pass the filter, so every tool we run on this layer from now on only works with Uwan.
    - Save the filtered track as its own file. Like this, we do not change the `IBTrACS.last3years.list.v04r01.lines` layer, and we can always come back to it and filter it again.
      - Right-click on `IBTrACS.last3years.list.v04r01.lines` → `Export` → `Save Features As…`
      - Format: `GeoPackage`
-     - File name: click on the `…` button, navigate to `data` → `interim` and name the file **`Storm_Track_Fung_Wong`**.
+     - File name: click on the `…` button, navigate to `/data/interim` and name the file **`Storm_Track_Fung_Wong`**.
      - Layer name: change it to `Storm_Track_Fung_Wong`.
      - Make sure `Add saved file to map` is ticked and click `OK`.
-
-:::{figure} ../../../fig/qgis_3.44_module_5_phl_uwan_ex_1_task_1_filter.png
----
-width: 460 px
-name: qgis_3.44_module_5_phl_uwan_ex_1_task_1_filter
----
-The query builder in QGIS 3.44 to filter the storm tracks.
-:::
 
 :::{tip}
 Uwan is the local Philippine name (assigned by PAGASA). IBTrACS uses the international name, **Fung-wong**. Storm names are reused over the years, so when you work with the full IBTrACS archive, always combine the name with the season, e.g. `"SEASON" = 2025 AND "NAME" = 'FUNG-WONG'`. If the filter returns nothing, check the spelling of the name in the attribute table.
@@ -282,26 +271,33 @@ Uwan is the local Philippine name (assigned by PAGASA). IBTrACS uses the interna
 width: 100%
 name: qgis_3.44_module_5_phl_uwan_ex_1_task_1
 ---
-Your QGIS map canvas should resemble this. 
+Your QGIS map canvas should resemble this.
 :::
 
-5. **[Reproject](../Module_2/en_qgis_projections.md) the storm track** to a CRS that uses metres. The IBTrACS data is in degrees, and a buffer distance in kilometres can only be calculated correctly in a CRS that measures in metres.
+
+## Task 2: Creating a buffer around the storm track
+
+In this task, we will estimate the exposed area by creating a [buffer](../Module_5/en_qgis_overlay_operations.md#buffer) around the storm track.
+
+:::{tip}
+Buffer distances must be calculated in a CRS that measures in metres. The IBTrACS data uses EPSG:4326, which measures in degrees. Always reproject a layer to a projected (metric) CRS before buffering it.
+:::
+
+
+1. **[Reproject](../Module_2/en_qgis_projections.md) the storm track** to a CRS that uses metres.
    - In the **Processing Toolbox**, search for `Reproject Layer`.
    - Input: `Storm_Track_Fung_Wong`
    - Target CRS: `EPSG:32651` (WGS 84 / UTM zone 51N, which covers Luzon)
-   - Save the result in the `interim` folder as **`Storm_Track_Fung_Wong_32651`**
+   - Save the result in the `/data/interim` folder as **`Storm_Track_Fung_Wong_32651`**
 
-:::{Attention}
-Buffer distances must be calculated in a CRS that measures in metres. The IBTrACS data uses EPSG:4326, which measures in degrees. Always reproject to a projected CRS before buffering.
-:::
 
-6. **Buffer the storm track.** A [buffer](../Wiki/en_qgis_geoprocessing_wiki.md#buffer) is a zone of a fixed distance around a feature. Here we draw a zone of 200 km around the track and treat everything inside it as exposed to the storm.
+2. **Buffer the storm track.** A [buffer](../Wiki/en_qgis_geoprocessing_wiki.md#buffer) is a zone of a fixed distance around a feature. Here we draw a zone of 200 km around the track and treat everything inside it as exposed to the storm.
    - In the **Processing Toolbox**, search for `Buffer`.
    - Input: `Storm_Track_Fung_Wong_32651`
    - Distance: `200` and set the unit next to it to `kilometers`
    - Segments: leave default (5)
    - Dissolve result: `Yes`
-   - Save the output in the `interim` folder as **`Uwan_Buffer_200km`**
+   - Save the output in the `/data/interim` folder as **`Uwan_Buffer_200km`**
 
 :::{figure} ../../../fig/qgis_3.44_module_5_phl_uwan_ex_1_task_1_buffer_dialogue.png
 ---
@@ -311,21 +307,22 @@ name: qgis_3.44_module_5_phl_uwan_ex_1_task_1_buffer_dialogue
 Buffer dialogue for the storm track in QGIS 3.44.
 :::
 
-::::{dropdown} Intermediate Result: Buffer
 
 The intermediate result shows the track of Uwan and a 200 km wide zone on each side of it. The buffer must be a single feature.
 
 :::{figure} ../../../fig/qgis_3.44_module_5_phl_uwan_ex_1_task_1_buffer_result.png
 ---
 name: qgis_3.44_module_5_phl_uwan_ex_1_task_1_buffer_result
-width: 100 %
+width: 100%
 ---
 Your buffer should look similar to the picture.
-::::
+:::
 
 :::{admonition} Note: The 200 km buffer is a simplification
 :class: note dropdown
 A real wind field is not the same width along the whole track. It grows and shrinks as the storm develops, and it is not symmetric: in the northern hemisphere, the strongest winds are usually on the right side of the track. Forecasting agencies therefore report **wind radii**, which give the distance from the storm centre to which winds of a certain speed (e.g. 34, 50 and 64 knots) reach in each of four quadrants. Operational products, such as GDACS or the ADAM alerts of the World Food Programme, use modelled wind fields to show zones of different wind speeds.
+
+%% REMOVE THIS STEP BECAUSE IT IS AI GENERATED AND SHOULD BE VALIDATED BY ALEC OR ALEXEI
 
 For this exercise we keep it quick and use one fixed buffer, so that you first understand what a buffer does. If you want to learn more about wind radii, have a look at:
 
@@ -336,89 +333,111 @@ For this exercise we keep it quick and use one fixed buffer, so that you first u
 :::
 
 :::::{dropdown} Going further: Wind zones from the reported wind radii (optional)
-Instead of one fixed 200 km buffer, you can use the size of the wind field that was reported along the track. IBTrACS gives the **34-knot radius** (gale-force winds, about 63 km/h) and the **64-knot radius** (typhoon-force winds, about 118 km/h) for four quadrants (NE, SE, SW, NW), in **nautical miles**. Each line segment of the track carries the wind radii reported at its start.
+Instead of one fixed 200 km buffer, you can use the size of the wind field that was reported along the track. IBTrACS collects wind radii from several agencies. For the Western Pacific, the official regional centre is the **Japan Meteorological Agency (JMA, RSMC Tokyo)**. Its fields start with `TOK_`:
+
+| Field                       | Meaning                                                                           |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| `TOK_R30_L` / `TOK_R30_S`   | Longest / shortest radius of **30-knot winds** (about 56 km/h, strong winds)      |
+| `TOK_R50_L` / `TOK_R50_S`   | Longest / shortest radius of **50-knot winds** (about 93 km/h, storm-force winds) |
+| `TOK_R30_DR` / `TOK_R50_DR` | Direction of the longest radius (code 1–9, e.g. 1 = NE)                           |
+
+All radii are in **nautical miles**. Each line segment of the track carries the values reported at its start.
+
+:::{note}
+Why not the `USA_R34_*`, `USA_R50_*` and `USA_R64_*` fields? For 2025 Western Pacific storms, IBTrACS only contains the **provisional** US radii. In this version of the dataset, the 50-knot and 64-knot fields are **empty** for both Uwan and Tino, so a buffer based on them returns nothing. The JMA radii are complete for the part of the track that crosses the Philippines.
+:::
 
 1. **Calculate the wind radii in metres.**
    - Open the **Field Calculator** on the layer `Storm_Track_Fung_Wong_32651`.
-   - Create a new field: name `r34_m`, type `Decimal number (real)`.
+   - Create a new field: name `r30_m`, type `Decimal number (real)`.
    - Expression:
 
      ```
-     max(
-       coalesce("USA_R34_NE", 0),
-       coalesce("USA_R34_SE", 0),
-       coalesce("USA_R34_SW", 0),
-       coalesce("USA_R34_NW", 0)
-     ) * 1852
+     coalesce("TOK_R30_L", 0) * 1852
      ```
+
    - Click `OK`.
-   - Repeat the same for a field `r64_m`, replacing `R34` with `R64` in all four field names.
+   - Repeat the same for a field `r50_m` with the expression `coalesce("TOK_R50_L", 0) * 1852`.
    - Save your edits and switch off editing mode.
 
-2. **Buffer the track with the wind radii (34-knot zone):**
+2. **Buffer the track with the wind radii (30-knot zone):**
    - In the **Processing Toolbox**, search for `Buffer`.
    - Input: `Storm_Track_Fung_Wong_32651`
-   - Distance: click the **Data defined override** button next to the distance field, choose `Field type: int, double` and select `r34_m`.
+   - Distance: click the **Data defined override** button next to the distance field, choose `Field type: int, double` and select `r30_m`.
    - Segments: leave default (5)
    - Dissolve result: `Yes`
-   - Save the output in the `interim` folder as **`Uwan_Zone_34kt`**
+   - Save the output in the `/data/interim` folder as **`Uwan_Zone_30kt`**
 
-3. **Repeat the buffer for the 64-knot zone** using the field `r64_m`. Save the output as **`Uwan_Zone_64kt`**.
+3. **Repeat the buffer for the 50-knot zone** using the field `r50_m`. Save the output as **`Uwan_Zone_50kt`**.
 
-The 34-knot zone is a corridor along the track that changes its width as the storm develops. The 64-knot zone is a much narrower corridor in its centre and only exists where Uwan had typhoon strength. You can run Part B with these two zones instead of `Uwan_Buffer_200km` and compare the results.
+The 30-knot zone is a wide corridor along the track that changes its width as the storm develops. Uwan was an unusually large storm: in places, its 30-knot winds reached almost 800 km from the centre, so this zone covers most of Luzon and the Visayas. The 50-knot zone is a much narrower corridor (up to about 280 km) and only exists where Uwan had at least severe tropical storm strength, roughly from 7 to 11 November. Run Tasks 3 and 4 with `Uwan_Zone_50kt` instead of `Uwan_Buffer_200km` and compare the results.
 
-__Why `max`, `coalesce` and `1852`?__
+__Why `_L`, `coalesce` and `1852`?__
+
 - `1852` converts nautical miles to metres (1 nautical mile = 1852 m).
-- `max(...)` takes the largest of the four quadrants. This turns the asymmetric wind field into a circle that is as large as the widest quadrant. It is a cautious simplification, because the real wind field is not a circle.
-- `coalesce(field, 0)` replaces missing values with 0. Early and late parts of a storm often have no wind radii, and without `coalesce` the whole result would become empty (`NULL`).
+- `_L` is the **longest** radius. Using it turns the asymmetric wind field into a circle that is as large as its widest side. This is a cautious simplification, because the real wind field is not a circle. Try `_S` (the shortest radius) to see the most optimistic version.
+- `coalesce(field, 0)` replaces missing values with 0. JMA only reports radii once a storm reaches the required strength, so early and late parts of the track have none. Those segments get a buffer distance of 0 and simply don't contribute to the zone. Without `coalesce`, they would cause errors or empty results.
+
+:::{tip}
+JMA uses **10-minute** average wind speeds, while US agencies use **1-minute** averages. That is why JMA reports 30 and 50 knots rather than 34, 50 and 64, and why the same storm can have different wind speeds in the `TOK_WIND` and `USA_WIND` fields. Never mix the two in one comparison.
+:::
 :::::
 
-## Part B – Who and what is exposed?
+## Task 3: Estimating the exposed population
 
-Great, you now have the area that is potentially exposed to Typhoon Uwan! But the operations team does not plan with buffers. They need to know **how many people** are potentially exposed and **where** they are. In this part we therefore combine the buffer with the administrative boundaries and find out, for every province, how much of the population lies inside the buffer and which health facilities, especially hospitals, are potentially exposed to the coming typhoon.
+Great, you now have the area that is potentially exposed to Typhoon Uwan! But the operations team does not plan with buffers. They need to know **how many people** are potentially exposed and **where** they are. In Tasks 3 and 4 we therefore combine the buffer with the administrative boundaries and find out, for every province, how much of the population lies inside the buffer and which health facilities, especially hospitals, are potentially exposed to the coming typhoon.
 
 We add the results one after another to the province layer. Each processing step creates a new layer that contains all previous columns plus the new one, so at the end you have **one layer with all results**.
 
-7. **Load the base data:**
-    - `phl_admin2.shp` from `data` → `input` → `admin_boundaries` → `phl_admin_boundaries.shp`
-    - `phl_pop_2015_CN_100m_R2025A_v1.tif` from `data` → `input` → `worldpop` (`Layer` → `Add Layer` → `Add Raster Layer`)
+1. **Load the data:**
+    - `phl_admin2.shp` from `/data/input/admin_boundaries/phl_admin_boundaries.shp`
+    - `phl_pop_2015_CN_100m_R2025A_v1.tif` from `/data/input/worldpop`
 
-8. **Calculate the total population per province.** We need it later to calculate what share of each province’s population is exposed.
+2. **Calculate the total population per province.** We need it later to calculate what share of each province’s population is exposed.
     - In the **Processing Toolbox**, search for `Zonal Statistics`.
     - Input layer: `phl_admin2`
     - Raster layer: `phl_pop_2015_CN_100m_R2025A_v1`
     - Field prefix: `pop_total_`
     - Statistics to calculate: `Sum` only
-    - Save the output in the `interim` folder as **`admin2_pop_sum`**
+    - Save the output in the `/data/interim` folder as **`admin2_pop_sum`**
 
-9. **Clip the population raster to the buffer:**
+
+
+%% ADD PICTURE
+
+3. **Clip the population raster to the buffer:**
     - In the **Processing Toolbox**, search for `Clip Raster by Mask Layer`.
     - Input layer: `phl_pop_2015_CN_100m_R2025A_v1`
     - Mask layer: `Uwan_Buffer_200km`
-    - Save the output in the `interim` folder as **`Uwan_Pop_200km`**
+    - Save the output in the `/data/interim` folder as **`Uwan_Pop_200km`**
+
 
 :::{tip}
-The population raster is in EPSG:4326 and the buffer is in EPSG:32651. `Clip Raster by Mask Layer` handles the difference automatically. If you run into problems, reproject the buffer to EPSG:4326 first, as done in the Madagascar exercise.
+The population raster is in EPSG:4326 and the buffer is in EPSG:32651. `Clip Raster by Mask Layer` handles the difference automatically. If you run into problems, reproject the buffer to EPSG:4326 first, as done in the [Madagascar exercise](en_qgis_module_5_mdg_aa_ex_1.md).
 :::
+
 
 ::::{dropdown} Intermediate Result: Clipped population
 % TODO figure: population raster clipped to the 200 km buffer
 Only the population inside the 200 km buffer should remain visible.
 ::::
 
-10. **Calculate the exposed population per province:**
+4. **Calculate the exposed population per province:**
     - Run `Zonal Statistics` again.
     - Input layer: `admin2_pop_sum`
     - Raster layer: `Uwan_Pop_200km`
     - Field prefix: `pop200_`
     - Statistics: `Sum`
-    - Save as **`admin2_pop_exposed`**
+    - Save the output in the `/data/interim` folder as **`admin2_pop_exposed`**
 
-11. **Calculate the share of exposed people.** Open the **Field Calculator** on `admin2_pop_exposed` and create a new decimal field `pop200_pct`:
+5. **Optional: Calculate the share of exposed people.**
+    - Open the **Field Calculator** on `admin2_pop_exposed` and create a new decimal field `pop200_pct` with the expression:
 
-    ```
-    round("pop200_sum" / "pop_total_sum" * 100, 1)
-    ```
+      ```
+      round("pop200_sum" / "pop_total_sum" * 100, 1)
+      ```
+
+    - Save your edits and switch off editing mode.
 
     Provinces that are completely outside the buffer have no value (`NULL`) in `pop200_sum`, so they also get `NULL` in `pop200_pct`. Read these as 0 % exposed.
 
@@ -426,73 +445,80 @@ Only the population inside the 200 km buffer should remain visible.
 The absolute number (`pop200_sum`) shows where most people are affected, which matters for the size of the response. The percentage (`pop200_pct`) shows which provinces are hit almost completely, which matters because neighbouring areas in the same province cannot easily support them. A large province with many exposed people and a small province where nearly everyone is exposed can both be priorities, for different reasons.
 :::
 
-12. **Count the exposed health facilities.**
-    - Load `phl_healthsites_osm.gpkg`.
+## Task 4: Assessing the impact on health facilities
+
+1. **Count the exposed health facilities.**
+    - Load `phl_healthsites_osm.gpkg` from `/data/input`.
     - In the **Processing Toolbox**, search for `Extract by location`.
     - Extract features from: `phl_healthsites_osm`
     - Where the features: `intersect`
     - By comparing to the features from: `Uwan_Buffer_200km`
-    - Save as **`Uwan_Healthsites_200km`**
+    - Save the output in the `/data/interim` folder as **`Uwan_Healthsites_200km`**
     - In the **Processing Toolbox**, search for `Count points in polygon`.
-    - Polygons: `admin2_pop_exposed`, Points: `Uwan_Healthsites_200km`, Count field name: `hs200`. Save the result in the `output` folder as **`Uwan_Exposure_Provinces`**.
+    - Polygons: `admin2_pop_exposed`, Points: `Uwan_Healthsites_200km`, Count field name: `hs200`. Save the result in the `/data/output` folder as **`Uwan_Exposure_Provinces`**.
 
-13. **Look at the hospitals in the buffer.** Open the attribute table of `Uwan_Healthsites_200km`. Use `Select by expression` with `"amenity" = 'hospital'` to see which hospitals lie within the buffer. Hospitals close to the track are the facilities whose functioning is most at risk and which the health team should contact first.
+2. **Look at the hospitals in the buffer.** Open the attribute table of `Uwan_Healthsites_200km`. Use `Select by expression` with `"amenity" = 'hospital'` to see which hospitals lie within the buffer. Hospitals close to the track are the facilities whose functioning is most at risk and which the health team should contact first.
 
 :::{note}
 OpenStreetMap coverage in the Philippines is comparatively good because of many past mapping activities, but it is not complete. A province with zero health facilities in the result may simply be poorly mapped. Compare with official facility lists (e.g. from the Department of Health) where possible.
 :::
 
-## Part C – Making the results usable
+---
 
-14. **Visualise the exposed population.**
+%% MAKE THIS TASK ITS OWN EXERCISE?
+## Task 5: Creating a map and flagging provinces hit by Tino
+
+1. **Visualise the exposed population.**
     - Right-click on `Uwan_Exposure_Provinces` → `Properties` → `Symbology`.
     - Change `Single Symbol` to `Graduated`.
     - Value: `pop200_sum`
     - Colour ramp: e.g. `Reds`
     - Mode: e.g. `Natural Breaks (Jenks)` with 5 classes
     - Click `Classify`, then `OK`.
-    - Add `Storm_Track_Fung_Wong` and `Uwan_Buffer_200km` (with a transparent fill) on top, so the reader can see where the storm passed.
+    - Move `Storm_Track_Fung_Wong` and `Uwan_Buffer_200km` above `Uwan_Exposure_Provinces` in the Layers panel and give the buffer a transparent fill, so the reader can see where the storm passed.
 
 :::{tip}
-Duplicate the layer (right-click → `Duplicate Layer`) to make a second map of `pop200_pct` or `hs200` without losing your first style. See [Module 4](../Module_4/en_module_4_overview.md) for more on styling and print layouts.
+Duplicate the layer (right-click → `Duplicate Layer`) to make a second map of `hs200` (or `pop200_pct`, if you did the optional step 5 of Task 3) without losing your first style. See [Module 4](../Module_4/en_module_4_overview.md) for more on styling and print layouts.
 :::
 
 % TODO figure: graduated map of exposed population with track and buffer
 
-15. **Flag provinces already hit by Typhoon Tino.** This is the step that brings the stretched capacity into the analysis.
+2. **Flag provinces already hit by Typhoon Tino.** This is the step that brings the stretched capacity into the analysis.
     - Right-click on `IBTrACS.last3years.list.v04r01.lines` → `Filter...` and change the filter to `"NAME" = 'KALMAEGI'`. The Uwan track is already saved as its own file, so it is not affected.
-    - Export the filtered layer as in Task 4 and save it in `data` → `interim` as **`Storm_Track_Kalmaegi`**.
-    - Repeat Tasks 5 and 6 with `Storm_Track_Kalmaegi` as input. Save the reprojected track as **`Storm_Track_Kalmaegi_32651`** and the buffer as **`Tino_Buffer_200km`**.
+    - Export the filtered layer as in Task 1, step 4, and save it in `/data/interim` as **`Storm_Track_Kalmaegi`**.
+    - Repeat Task 2 (steps 1 and 2) with `Storm_Track_Kalmaegi` as input. Save the reprojected track as **`Storm_Track_Kalmaegi_32651`** and the buffer as **`Tino_Buffer_200km`**.
     - Use `Select by Location` to select all features of `Uwan_Exposure_Provinces` that **intersect** `Tino_Buffer_200km`.
     - Open the **Field Calculator** on `Uwan_Exposure_Provinces`, make sure `Only update selected features` is **unchecked**, and create a new integer field `tino_hit`:
 
       ```
       if(is_selected(), 1, 0)
       ```
+
     - Save your edits and clear the selection.
     - Symbolise these provinces with a hatched outline on top of your population map.
 
 :::{dropdown} Going further: other information on stretched capacity
 Tino is only one part of the picture. If available, you could also add:
+
 - the provinces affected by the Cebu earthquake,
 - a 3W map showing where Red Cross and partner teams are currently deployed,
-- the locations of warehouses with pre-positioned stock (see Exercise 7 of the Madagascar track for an accessibility analysis).
+- the locations of warehouses with pre-positioned stock (see Exercise 7 of the [Madagascar exercise track](../Exercise_tracks/en_mdg_aa_cyclones.md) for an accessibility analysis).
 :::
 
-16. **Export the results for the operations team.**
+3. **Export the results for the operations team.**
     - Right-click on `Uwan_Exposure_Provinces` → `Export` → `Save Features As…`
     - Format: `Comma Separated Value [CSV]`
-    - Under `Select fields to export`, keep `adm2_name`, `adm2_pcode`, `pop_total_sum`, `pop200_sum`, `pop200_pct`, `hs200` and `tino_hit`.
-    - Save it in the `output` folder as **`Uwan_Exposure_Provinces.csv`**.
+    - Under `Select fields to export`, keep `adm2_name`, `adm2_pcode`, `pop_total_sum`, `pop200_sum`, `pop200_pct` (if you did the optional step 5 of Task 3), `hs200` and `tino_hit`.
+    - Save it in the `/data/output` folder as **`Uwan_Exposure_Provinces.csv`**.
     - Open the CSV in a spreadsheet and sort by `pop200_sum`. These are the first provinces you would report.
 
 ## Optional extension: Who is most vulnerable?
 
-Repeat Tasks 9 and 10 with the WorldPop age and sex rasters (e.g. children under 5 and people over 65). This helps the shelter and health teams estimate how many people will need extra support during evacuation.
+Repeat steps 3 and 4 of Task 3 with the WorldPop age and sex rasters (e.g. children under 5 and people over 65). This helps the shelter and health teams estimate how many people will need extra support during evacuation.
 
 # Results <a id="results"></a>
 
-Your final layer `Uwan_Exposure_Provinces` contains, for every province, the total population, the population within 200 km of the track, the share of exposed people, the number of exposed health facilities and a flag for previous impact by Tino.
+Your final layer `Uwan_Exposure_Provinces` contains, for every province, the total population, the population within 200 km of the track, the share of exposed people (if you did the optional step 5 of Task 3), the number of exposed health facilities and a flag for previous impact by Tino.
 
 % TODO figure: final map (exposed population, buffer, track, Tino-affected provinces hatched)
 
@@ -508,7 +534,7 @@ Your final layer `Uwan_Exposure_Provinces` contains, for every province, the tot
 
 ## Discussion <a id="discussion"></a>
 
-- We used a fixed 200 km buffer. Where would it overestimate or underestimate the area hit by strong winds? How could the reported wind radii improve the analysis (see the dropdown after Task 6)?
+- We used a fixed 200 km buffer. Where would it overestimate or underestimate the area hit by strong winds? How could the reported wind radii improve the analysis (see the optional dropdown in Task 2)?
 - **Exposure is not impact.** What is missing from this analysis to say how badly people will be affected (e.g. housing quality, poverty, previous damage)?
 - Our analysis only looks at **wind**. Uwan also brought heavy rain, storm surge, landslides and lahar flows. Which areas might be hit hard even though they are outside the buffer? Which additional data would you need?
 - The operations team can only support a few provinces. How would you combine the absolute numbers, the percentages and the `tino_hit` flag to suggest priorities?
