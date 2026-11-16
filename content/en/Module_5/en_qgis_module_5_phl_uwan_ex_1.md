@@ -332,7 +332,7 @@ For this exercise we keep it quick and use one fixed buffer, so that you first u
 - Knaff, J. A. et al. (2007): [Statistical tropical cyclone wind radii prediction using climatology and persistence](https://www.aoml.noaa.gov/general/lib/lib1/nhclib/Publications/Statistical%20tropical%20cyclone%20wind%20radii.pdf). *Weather and Forecasting*, 22, 781–791. How wind radii are forecast and how much they vary between storms.
 :::
 
-:::::{dropdown} Going further: Wind zones from the reported wind radii (optional)
+:::::{dropdown} **Optional** Going further: Wind zones from the reported wind radii 
 Instead of one fixed 200 km buffer, you can use the size of the wind field that was reported along the track. IBTrACS collects wind radii from several agencies. For the Western Pacific, the official regional centre is the **Japan Meteorological Agency (JMA, RSMC Tokyo)**. Its fields start with `TOK_`:
 
 | Field                       | Meaning                                                                           |
@@ -401,9 +401,16 @@ We add the results one after another to the province layer. Each processing step
     - Statistics to calculate: `Sum` only
     - Save the output in the `/data/interim` folder as **`admin2_pop_sum`**
 
+::::{dropdown} Intermediate result: Total Population per province
+:::{figure} ../../../fig/qgis_3.44_module_5_phl_uwan_ex_1_task_2_admin_pop_sum.png
+---
+name: qgis_3.44_module_5_phl_uwan_ex_1_task_2_admin_pop_sum
+width: 95%
+---
+The total population per province stylised using graduated classification in the styling panel
+:::
 
-
-%% ADD PICTURE
+::::
 
 3. **Clip the population raster to the buffer:**
     - In the **Processing Toolbox**, search for `Clip Raster by Mask Layer`.
@@ -418,8 +425,14 @@ The population raster is in EPSG:4326 and the buffer is in EPSG:32651. `Clip Ras
 
 
 ::::{dropdown} Intermediate Result: Clipped population
-% TODO figure: population raster clipped to the 200 km buffer
-Only the population inside the 200 km buffer should remain visible.
+
+:::{figure} ../../../fig/qgis_3.44_module_5_phl_uwan_ex_1_task_3_clipped_raster.png
+---
+name: qgis_3.44_module_5_phl_uwan_ex_1_task_3_clipped_raster
+width: 90 %
+---
+The clipped raster layer should look similar to this. Only the population inside the 200 km buffer should remain visible.
+:::
 ::::
 
 4. **Calculate the exposed population per province:**
@@ -429,6 +442,16 @@ Only the population inside the 200 km buffer should remain visible.
     - Field prefix: `pop200_`
     - Statistics: `Sum`
     - Save the output in the `/data/interim` folder as **`admin2_pop_exposed`**
+
+::::{dropdown} Intermediate Results: Estimated exposed population per province
+:::{figure} ../../../fig/qgis_3.44_module_5_phl_uwan_ex_1_task_3_exposed_pop_adm2.png
+---
+name: qgis_3.44_module_5_phl_uwan_ex_1_task_3_exposed_pop_adm2
+width: 90%
+---
+The total exposed population per province (adm2) stylised using the graduated classification. 
+:::
+::::
 
 5. **Optional: Calculate the share of exposed people.**
     - Open the **Field Calculator** on `admin2_pop_exposed` and create a new decimal field `pop200_pct` with the expression:
