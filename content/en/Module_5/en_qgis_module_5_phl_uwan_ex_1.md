@@ -25,6 +25,14 @@ __Type of trainings exercise:__
 
 :::
 
+:::{grid-item-card}
+__Focus Group__
+^^^
+
+This exercise is aimed at IM personal with intermediate QGIS skills. It is useful for Anticipatory Action analyses and disaster impact assessments. 
+
+:::
+
 ::::
 
 ::::{grid} 2
@@ -122,7 +130,7 @@ Note: 2025 storms are still **provisional** tracks in IBTrACS and are usually re
 ## Available Data <a id="available-data"></a>
 
 :::{card}
-:link: https://nexus.heigit.org/repository/gis-training-resource-center/TODO_PHL_UWAN_DATA.zip
+:link: https://nexus.heigit.org/repository/gis-training-resource-center/module_5/module_5_phl_typhoon_ex_1.zip
 
 __Download all datasets here, save the folder on your computer and unzip the file.__
 
