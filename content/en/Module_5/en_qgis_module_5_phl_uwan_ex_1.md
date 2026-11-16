@@ -516,8 +516,8 @@ Duplicate the layer (right-click → `Duplicate Layer`) to make a second map of 
 2. **Flag provinces already hit by Typhoon Tino.** This is the step that brings the stretched capacity into the analysis.
     - Right-click on `IBTrACS.last3years.list.v04r01.lines` → `Filter...` and change the filter to `"NAME" = 'KALMAEGI'`. The Uwan track is already saved as its own file, so it is not affected.
     - Export the filtered layer as in Task 1, step 4, and save it in `/data/temp` as **`Storm_Track_Kalmaegi`**.
-    - Repeat Task 2 (steps 1 and 2) with `Storm_Track_Kalmaegi` as input. Save the reprojected track as **`Storm_Track_Kalmaegi_32651`** and the buffer as **`Tino_Buffer_200km`**.
-    - Use `Select by Location` to select all features of `Uwan_Exposure_Provinces` that **intersect** `Tino_Buffer_200km`.
+    - Repeat Task 2 (steps 1 and 2) with `Storm_Track_Kalmaegi` as input. Save the reprojected track as **`Storm_Track_Kalmaegi_32651`** and the buffer as **`Kalmaegi_Buffer_200km`**.
+    - Use `Select by Location` to select all features of `Uwan_Exposure_Provinces` that **intersect** `Kalmaegi_Buffer_200km`.
     - Open the **Field Calculator** on `Uwan_Exposure_Provinces`, make sure `Only update selected features` is **unchecked**, and create a new integer field `tino_hit`:
 
       ```
