@@ -34,7 +34,7 @@ html:
       <p>
       Ce projet est publié sous <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr">licence Creative Commons BY-NC-SA 4.0</a>.
       </p>
-      <p>Version 0.4.1</p>
+      <p>Version 0.4.2</p>
   announcement: "Vous souhaitez contribuer ? Consultez les lignes directrices de contribution et contactez-nous !"
 
 exclude_patterns:

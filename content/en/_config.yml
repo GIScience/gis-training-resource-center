@@ -37,7 +37,7 @@ html:
       <p>
       This project is released under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Creative Commons BY-NC-SA 4.0 license</a>.
       </p>
-      <p>Version 0.4.1</p>
+      <p>Version 0.4.2</p>
   announcement: "Looking to contribute? Take a look at the contribution guidelines and contact us!"
 exclude_patterns: [.venv/*, venv/*]
 
