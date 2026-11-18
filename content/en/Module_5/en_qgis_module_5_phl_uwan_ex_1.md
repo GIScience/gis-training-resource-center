@@ -147,9 +147,7 @@ The folder contains the whole [standard folder structure](../Wiki/en_qgis_projec
 | Health facilities         | [HOT Export Tool](https://export.hotosm.org/)                                                                                             | Health facilities from OpenStreetMap. Completeness depends on how well an area has been mapped.                                                                                                                           |
 
 
-::::::{card}
-__Context__
-^^^
+::::::{topic} Context
 
 :::{figure} ../../../fig/IFRC-icons-colour_SURGE.png
 ---
@@ -266,8 +264,8 @@ In this exercise we use the observed IBTrACS track of Uwan and treat it as if it
    - Save the filtered track as its own file. Like this, we do not change the `IBTrACS.last3years.list.v04r01.lines` layer, and we can always come back to it and filter it again.
      - Right-click on `IBTrACS.last3years.list.v04r01.lines` → `Export` → `Save Features As…`
      - Format: `GeoPackage`
-     - File name: click on the `…` button, navigate to `/data/temp` and name the file **`Storm_Track_Fung_Wong`**.
-     - Layer name: change it to `Storm_Track_Fung_Wong`.
+     - File name: click on the `…` button, navigate to `/data/temp` and name the file **`Storm_Track_Uwan`**.
+     - Layer name: change it to `Storm_Track_Uwan`.
      - Make sure `Add saved file to map` is ticked and click `OK`.
 
 :::{tip}
@@ -294,14 +292,14 @@ Buffer distances must be calculated in a CRS that measures in metres. The IBTrAC
 
 1. **[Reproject](../Module_2/en_qgis_projections.md) the storm track** to a CRS that uses metres.
    - In the **Processing Toolbox**, search for `Reproject Layer`.
-   - Input: `Storm_Track_Fung_Wong`
+   - Input: `Storm_Track_Uwan`
    - Target CRS: `EPSG:32651` (WGS 84 / UTM zone 51N, which covers Luzon)
-   - Save the result in the `/data/temp` folder as **`Storm_Track_Fung_Wong_32651`**
+   - Save the result in the `/data/temp` folder as **`Storm_Track_Uwan_32651`**
 
 
 2. **Buffer the storm track.** A [buffer](../Wiki/en_qgis_geoprocessing_wiki.md#buffer) is a zone of a fixed distance around a feature. Here we draw a zone of 200 km around the track and treat everything inside it as exposed to the storm.
    - In the **Processing Toolbox**, search for `Buffer`.
-   - Input: `Storm_Track_Fung_Wong_32651`
+   - Input: `Storm_Track_Uwan_32651`
    - Distance: `200` and set the unit next to it to `kilometers`
    - Segments: leave default (5)
    - Dissolve result: `Yes`
@@ -356,7 +354,7 @@ Why not the `USA_R34_*`, `USA_R50_*` and `USA_R64_*` fields? For 2025 Western Pa
 :::
 
 1. **Calculate the wind radii in metres.**
-   - Open the **Field Calculator** on the layer `Storm_Track_Fung_Wong_32651`.
+   - Open the **Field Calculator** on the layer `Storm_Track_Uwan_32651`.
    - Create a new field: name `r30_m`, type `Decimal number (real)`.
    - Expression:
 
@@ -370,7 +368,7 @@ Why not the `USA_R34_*`, `USA_R50_*` and `USA_R64_*` fields? For 2025 Western Pa
 
 2. **Buffer the track with the wind radii (30-knot zone):**
    - In the **Processing Toolbox**, search for `Buffer`.
-   - Input: `Storm_Track_Fung_Wong_32651`
+   - Input: `Storm_Track_Uwan_32651`
    - Distance: click the **Data defined override** button next to the distance field, choose `Field type: int, double` and select `r30_m`.
    - Segments: leave default (5)
    - Dissolve result: `Yes`
@@ -505,7 +503,7 @@ OpenStreetMap coverage in the Philippines is comparatively good because of many 
     - Colour ramp: e.g. `Reds`
     - Mode: e.g. `Natural Breaks (Jenks)` with 5 classes
     - Click `Classify`, then `OK`.
-    - Move `Storm_Track_Fung_Wong` and `Uwan_Buffer_200km` above `Uwan_Exposure_Provinces` in the Layers panel and give the buffer a transparent fill, so the reader can see where the storm passed.
+    - Move `Storm_Track_Uwan` and `Uwan_Buffer_200km` above `Uwan_Exposure_Provinces` in the Layers panel and give the buffer a transparent fill, so the reader can see where the storm passed.
 
 :::{tip}
 Duplicate the layer (right-click → `Duplicate Layer`) to make a second map of `hs200` (or `pop200_pct`, if you did the optional step 5 of Task 3) without losing your first style. See [Module 4](../Module_4/en_module_4_overview.md) for more on styling and print layouts.
